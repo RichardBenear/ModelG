@@ -27,7 +27,7 @@ documented separately.
 | λ₀ (registered estimator) | 3.0754 | 3.0751 | 3.0619 |
 | deterministic seed threshold (scale) | 0.975 | 0.968 | 0.949 |
 | Turing threshold b_c | 30.0441 | 30.0476 | 30.0458 |
-| **single-soliton window [b_s, b_r]** | b_s = 28.9932 (b_r not computed) | [28.9782, 29.4119] | [28.9286, 29.3967] |
+| **single-soliton window [b_s, b_r]** | b_s = 28.9932 (1D); 27.3434 (2D); 26.9718 (3D); b_r not computed | [28.9782, 29.4119] | [28.9286, 29.3967] |
 | LNA Ω·Var(c) per node, homogeneous (G, X, Y) | — | 15.57, 63.46, 2.29 | 15.59, 112.7, 2.73 |
 
 Sources: `results/MG003/lattice_reference.txt`, `existence_window.txt`, `replication_edge.txt`.
@@ -41,7 +41,10 @@ narrow band of b:
   MG1's slow 1D relaxation (critical slowing near a saddle-node) and the 0.975 seed threshold.
   "Exists" means φ_X(0) < −1 at t = 300 after seed-free continuation. Slow decay near the saddle-node
   can only bias b_s low, so 28.993 ≤ b_s ≤ 29.
-- 2D/3D continuum b_s: pending, `results/MG003/existence_window.txt`.
+- In the 2D and 3D continuum the window is much wider: b_s = 27.343 (2D) and 26.972 (3D), so b = 29 sits
+  6.1% and 7.5% above the lower edge there. Being near the edge is a **1D-specific** feature, which
+  matters for Phase 2 being 1D. In higher dimensions, the published point sits comfortably inside the
+  window.
 
 This window is the deterministic backbone of MG3. The homogeneous state and the soliton are both stable
 only inside it, and that bistability is what noise-driven nucleation requires.

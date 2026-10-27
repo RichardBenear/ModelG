@@ -1,3 +1,9 @@
+Lower edge b_s of the stationary single-soliton window (seed-free continuation from the b=29 soliton,
+'exists' if phi_X(0) < -1 at t=300; src/existence_window.py). Slow decay near a saddle-node can only bias b_s low.
 lattice h=0.2: b_s in [28.92859, 28.92871]
 lattice h=0.1: b_s in [28.97815, 28.97827]
 continuum 1D (h=0.025): b_s in [28.99316, 28.99329]
+continuum 2D (h=0.025): b_s in [27.34343, 27.34351]
+continuum 3D (h=0.025): b_s in [26.97180, 26.97188]
+Turing threshold b_c: continuum 30.04408; lattice h=0.1 30.0476, h=0.2 30.0458.
+Upper edge (self-replication onset) b_r: results/MG003/replication_edge.txt (lattice only).
