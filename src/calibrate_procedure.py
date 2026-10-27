@@ -90,6 +90,14 @@ for fam in GFAM + HFAM:
     lines.append(f"  A1 diagnostics flag rate, {fam:12s} (12 runs, bias 0.5%, run noise 0.3%): {fl / Rf:.3f}")
 print("\n".join(lines[-6:]), flush=True)
 
+if "--skip-e" in sys.argv:
+    prev = json.load(open("results/MG003c/procedure_calibration_partE.json"))
+    js["E"] = prev["E"]
+    lines += prev["lines"]
+    import os; os.makedirs("results/MG003c", exist_ok=True)
+    open("results/MG003c/procedure_calibration.txt", "w").write("\n".join(lines) + "\n")
+    json.dump(js, open("results/MG003c/procedure_calibration.json", "w"), indent=1)
+    sys.exit(0)
 # ---------------- Part E: Welch two-sample, unequal noise and M, deterministic normalisation
 lines.append("Part E: Welch two-sample bound, deterministic normalisation (|phi| = 1), unequal noise (x3) and M (8/12)")
 Re = 2000
@@ -114,3 +122,5 @@ for (MA, MB) in ((8, 12), (12, 8), (12, 12)):
 import os; os.makedirs("results/MG003c", exist_ok=True)
 open("results/MG003c/procedure_calibration.txt", "w").write("\n".join(lines) + "\n")
 json.dump(js, open("results/MG003c/procedure_calibration.json", "w"), indent=1)
+json.dump({"E": js["E"], "lines": [l for l in lines if l.startswith("Part E") or l.startswith("  MA=")]},
+          open("results/MG003c/procedure_calibration_partE.json", "w"), indent=1)

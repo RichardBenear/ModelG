@@ -1,0 +1,169 @@
+{
+ "E": [
+  {
+   "MA": 8,
+   "MB": 12,
+   "sd_ratio": 0.3333333333333333,
+   "margin": 0.1,
+   "worst_cov": 0.991,
+   "worst_false_equiv": 0.0005
+  },
+  {
+   "MA": 8,
+   "MB": 12,
+   "sd_ratio": 0.3333333333333333,
+   "margin": 0.0025,
+   "worst_cov": 0.9905,
+   "worst_false_equiv": 0.0005
+  },
+  {
+   "MA": 8,
+   "MB": 12,
+   "sd_ratio": 1.0,
+   "margin": 0.1,
+   "worst_cov": 0.992,
+   "worst_false_equiv": 0.0005
+  },
+  {
+   "MA": 8,
+   "MB": 12,
+   "sd_ratio": 1.0,
+   "margin": 0.0025,
+   "worst_cov": 0.9925,
+   "worst_false_equiv": 0.0005
+  },
+  {
+   "MA": 8,
+   "MB": 12,
+   "sd_ratio": 3.0,
+   "margin": 0.1,
+   "worst_cov": 0.99,
+   "worst_false_equiv": 0.0005
+  },
+  {
+   "MA": 8,
+   "MB": 12,
+   "sd_ratio": 3.0,
+   "margin": 0.0025,
+   "worst_cov": 0.9915,
+   "worst_false_equiv": 0.0
+  },
+  {
+   "MA": 12,
+   "MB": 8,
+   "sd_ratio": 0.3333333333333333,
+   "margin": 0.1,
+   "worst_cov": 0.9895,
+   "worst_false_equiv": 0.001
+  },
+  {
+   "MA": 12,
+   "MB": 8,
+   "sd_ratio": 0.3333333333333333,
+   "margin": 0.0025,
+   "worst_cov": 0.991,
+   "worst_false_equiv": 0.0
+  },
+  {
+   "MA": 12,
+   "MB": 8,
+   "sd_ratio": 1.0,
+   "margin": 0.1,
+   "worst_cov": 0.99,
+   "worst_false_equiv": 0.0005
+  },
+  {
+   "MA": 12,
+   "MB": 8,
+   "sd_ratio": 1.0,
+   "margin": 0.0025,
+   "worst_cov": 0.9915,
+   "worst_false_equiv": 0.0005
+  },
+  {
+   "MA": 12,
+   "MB": 8,
+   "sd_ratio": 3.0,
+   "margin": 0.1,
+   "worst_cov": 0.9915,
+   "worst_false_equiv": 0.0005
+  },
+  {
+   "MA": 12,
+   "MB": 8,
+   "sd_ratio": 3.0,
+   "margin": 0.0025,
+   "worst_cov": 0.992,
+   "worst_false_equiv": 0.0
+  },
+  {
+   "MA": 12,
+   "MB": 12,
+   "sd_ratio": 0.3333333333333333,
+   "margin": 0.1,
+   "worst_cov": 0.9915,
+   "worst_false_equiv": 0.0
+  },
+  {
+   "MA": 12,
+   "MB": 12,
+   "sd_ratio": 0.3333333333333333,
+   "margin": 0.0025,
+   "worst_cov": 0.9895,
+   "worst_false_equiv": 0.001
+  },
+  {
+   "MA": 12,
+   "MB": 12,
+   "sd_ratio": 1.0,
+   "margin": 0.1,
+   "worst_cov": 0.9915,
+   "worst_false_equiv": 0.0005
+  },
+  {
+   "MA": 12,
+   "MB": 12,
+   "sd_ratio": 1.0,
+   "margin": 0.0025,
+   "worst_cov": 0.9915,
+   "worst_false_equiv": 0.001
+  },
+  {
+   "MA": 12,
+   "MB": 12,
+   "sd_ratio": 3.0,
+   "margin": 0.1,
+   "worst_cov": 0.991,
+   "worst_false_equiv": 0.0
+  },
+  {
+   "MA": 12,
+   "MB": 12,
+   "sd_ratio": 3.0,
+   "margin": 0.0025,
+   "worst_cov": 0.9925,
+   "worst_false_equiv": 0.0005
+  }
+ ],
+ "lines": [
+  "Part E: Welch two-sample bound, deterministic normalisation (|phi| = 1), unequal noise (x3) and M (8/12) [unchanged by MG003c diagnostic fix; no diagnostics involved]",
+  "  MA=8 MB=12 sdB/sdA=0.33 margin 10.00%: worst coverage 0.991, worst false-equivalence 0.001",
+  "  MA=8 MB=12 sdB/sdA=0.33 margin 0.25%: worst coverage 0.991, worst false-equivalence 0.001",
+  "  MA=8 MB=12 sdB/sdA=1.00 margin 10.00%: worst coverage 0.992, worst false-equivalence 0.001",
+  "  MA=8 MB=12 sdB/sdA=1.00 margin 0.25%: worst coverage 0.993, worst false-equivalence 0.001",
+  "  MA=8 MB=12 sdB/sdA=3.00 margin 10.00%: worst coverage 0.990, worst false-equivalence 0.001",
+  "  MA=8 MB=12 sdB/sdA=3.00 margin 0.25%: worst coverage 0.992, worst false-equivalence 0.000",
+  "  MA=12 MB=8 sdB/sdA=0.33 margin 10.00%: worst coverage 0.990, worst false-equivalence 0.001",
+  "  MA=12 MB=8 sdB/sdA=0.33 margin 0.25%: worst coverage 0.991, worst false-equivalence 0.000",
+  "  MA=12 MB=8 sdB/sdA=1.00 margin 10.00%: worst coverage 0.990, worst false-equivalence 0.001",
+  "  MA=12 MB=8 sdB/sdA=1.00 margin 0.25%: worst coverage 0.992, worst false-equivalence 0.001",
+  "  MA=12 MB=8 sdB/sdA=3.00 margin 10.00%: worst coverage 0.992, worst false-equivalence 0.001",
+  "  MA=12 MB=8 sdB/sdA=3.00 margin 0.25%: worst coverage 0.992, worst false-equivalence 0.000",
+  "  MA=12 MB=12 sdB/sdA=0.33 margin 10.00%: worst coverage 0.992, worst false-equivalence 0.000",
+  "  MA=12 MB=12 sdB/sdA=0.33 margin 0.25%: worst coverage 0.990, worst false-equivalence 0.001",
+  "  MA=12 MB=12 sdB/sdA=1.00 margin 10.00%: worst coverage 0.992, worst false-equivalence 0.001",
+  "  MA=12 MB=12 sdB/sdA=1.00 margin 0.25%: worst coverage 0.992, worst false-equivalence 0.001",
+  "  MA=12 MB=12 sdB/sdA=3.00 margin 10.00%: worst coverage 0.991, worst false-equivalence 0.000",
+  "  MA=12 MB=12 sdB/sdA=3.00 margin 0.25%: worst coverage 0.993, worst false-equivalence 0.001"
+ ]
+}

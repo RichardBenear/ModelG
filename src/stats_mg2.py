@@ -144,12 +144,27 @@ def _robust_z(x):
     return np.where(np.abs(x - med) > 0, np.inf, 0.0)
 
 
-def a1_diagnostics(block_profiles, ref, z_block=5.0, z_run=4.0, p_min=1e-3):
+def _studentized_loo(x):
+    """Externally studentised leave-one-out residuals; ~ t_{M-2} under i.i.d. Gaussian.
+    Zero leave-one-out spread with a differing value -> infinite (flagged)."""
+    M = x.size
+    out = np.empty(M)
+    for i in range(M):
+        r = np.delete(x, i)
+        s = r.std(ddof=1)
+        dev = x[i] - r.mean()
+        out[i] = dev / (s * np.sqrt(1 + 1 / (M - 1))) if s > 0 else (np.inf if dev != 0 else 0.0)
+    return out
+
+
+def a1_diagnostics(block_profiles, ref, z_block=5.0, alpha_run=0.01, p_min=1e-3):
     """block_profiles: (M runs, K blocks, d). Checks A1 on the decision data:
       (i)  within-run block deviations (block mean minus run mean), projected on the run-mean bias
            direction and the first two principal components: Shapiro-Wilk p >= p_min and no
            robust |z| > z_block;
-      (ii) run-level means projected on the same directions: no robust |z| > z_run.
+      (ii) run-level means projected on the same directions: no externally studentised leave-one-out
+           residual beyond the Bonferroni t_{M-2} critical value at overall level alpha_run
+           (MG003c: replaces a MAD-based robust z, whose null false-alarm rate at M = 12 was ~21%).
     Returns dict(ok=bool, details=...)."""
     M, K, d = block_profiles.shape
     runs = block_profiles.mean(1)
@@ -161,15 +176,17 @@ def a1_diagnostics(block_profiles, ref, z_block=5.0, z_run=4.0, p_min=1e-3):
     W = (block_profiles - runs[:, None, :]).reshape(M * K, d)
     _, _, Vt = np.linalg.svd(W - W.mean(0), full_matrices=False)
     dirs += [Vt[0], Vt[1]]
-    det = {"shapiro_p": [], "max_block_z": [], "max_run_z": []}
+    det = {"shapiro_p": [], "max_block_z": [], "max_run_t": []}
+    t_crit = stats.t.ppf(1 - alpha_run / (2 * M * len(dirs)), M - 2)
+    det["run_t_crit"] = float(t_crit)
     ok = True
     for v in dirs:
         pb = W @ v
         p = stats.shapiro(pb).pvalue if np.std(pb) > 0 else 1.0
         zb = np.max(np.abs(_robust_z(pb)))
-        zr = np.max(np.abs(_robust_z((runs - mbar) @ v)))
-        det["shapiro_p"].append(float(p)); det["max_block_z"].append(float(zb)); det["max_run_z"].append(float(zr))
-        ok &= (p >= p_min) and (zb <= z_block) and (zr <= z_run)
+        tr = np.max(np.abs(_studentized_loo((runs - mbar) @ v)))
+        det["shapiro_p"].append(float(p)); det["max_block_z"].append(float(zb)); det["max_run_t"].append(float(tr))
+        ok &= (p >= p_min) and (zb <= z_block) and (tr <= t_crit)
     return dict(ok=bool(ok), details=det)
 
 
