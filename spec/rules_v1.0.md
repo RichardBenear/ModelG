@@ -1,6 +1,6 @@
 # Rewrite-Rule Specification v1.0 (FROZEN)
 
-Status: frozen 2026-10-26 (MG000). Changes require `rules_v1.1.md` or later.
+Status: frozen 2026-10-26 (MG000). **SUPERSEDED by `rules_v1.1.md` (MG001)**: v1.0 omits the G ⇌ X back-reaction required by the published parameters.
 
 ## 1. Source system: Model G (forward reactions)
 
