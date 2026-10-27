@@ -1,0 +1,39 @@
+N1 n=1: max|phi|=4.06e-14 (first_step=None)
+N1b n=1 seed 1e-3: max|phi|(t=100)=6.57e-12
+N2 n=1 scale=0.25: phiX(0,t=100)=-0.0000
+N2 n=1 scale=0.5: phiX(0,t=100)=-0.0000
+N2 n=1 scale=0.75: phiX(0,t=100)=-0.0000
+N2 n=1: threshold scale in [0.9749, 0.9751] (judged at t=100)
+N2 n=1 scale=0.9651 at t=400: phiX(0)=-0.0000
+N1 n=2: max|phi|=2.46e-14 (first_step=None)
+N1b n=2 seed 1e-3: max|phi|(t=100)=1.59e-11
+N2 n=2 scale=0.25: phiX(0,t=100)=-0.0000
+N2 n=2 scale=0.5: phiX(0,t=100)=-0.0000
+N2 n=2 scale=0.75: phiX(0,t=100)=-13.5943
+N2 n=2: threshold scale in [0.5715, 0.5718] (judged at t=100)
+N2 n=2 scale=0.5658 at t=400: phiX(0)=-0.0000
+N1 n=3: max|phi|=4.09e-14 (first_step=0.001)
+N1b n=3 seed 1e-3: max|phi|(t=100)=2.53e-11
+N2 n=3 scale=0.25: phiX(0,t=100)=-0.0000
+N2 n=3 scale=0.5: phiX(0,t=100)=-14.6331
+N2 n=3 scale=0.75: phiX(0,t=100)=-14.6331
+N2 n=3: threshold scale in [0.4861, 0.4863] (judged at t=100)
+N2 n=3 scale=0.4812 at t=400: phiX(0)=-0.0000
+diag n=1 R=50 t=100: I_G=+1.820e-06 I_X=+1.733e-05 I_Y=+0.2821 F_G=+6.28e-12 F_X=+3.84e-10 dIG=-8.64e-08 dIsum=-1.56e-05 resG=+2.5e-14 resS=-2.8e-14
+diag n=1 R=50 t=300: I_G=+1.693e-10 I_X=+1.552e-09 I_Y=+0.2818 F_G=+6.20e-12 F_X=+3.83e-10 dIG=-7.87e-12 dIsum=-1.46e-09 resG=+3.0e-14 resS=+1.2e-14
+diag n=1 R=100 t=100: I_G=+1.820e-06 I_X=+1.733e-05 I_Y=+0.2821 F_G=+2.35e-15 F_X=+7.64e-14 dIG=-8.64e-08 dIsum=-1.56e-05 resG=+5.2e-14 resS=-8.1e-13
+diag n=1 R=100 t=300: I_G=+1.700e-10 I_X=+1.621e-09 I_Y=+0.2818 F_G=+3.03e-15 F_X=+1.03e-13 dIG=-7.87e-12 dIsum=-1.46e-09 resG=+5.9e-14 resS=-9.4e-13
+diag n=1 R=200 t=100: I_G=+1.820e-06 I_X=+1.733e-05 I_Y=+0.2821 F_G=+2.57e-15 F_X=+1.08e-13 dIG=-8.64e-08 dIsum=-1.56e-05 resG=+1.1e-13 resS=-2.9e-12
+diag n=1 R=200 t=300: I_G=+1.698e-10 I_X=+1.618e-09 I_Y=+0.2818 F_G=+2.62e-15 F_X=+8.99e-14 dIG=-7.87e-12 dIsum=-1.46e-09 resG=+1.2e-13 resS=-3.3e-12
+diag n=2 R=50 t=100: I_G=+9.349e-12 I_X=-2.942e-10 I_Y=+0.9064 F_G=+3.87e-11 F_X=+6.49e-09 dIG=+1.99e-12 dIsum=+7.33e-11 resG=+2.1e-12 resS=+5.5e-12
+diag n=2 R=50 t=300: I_G=+2.101e-11 I_X=-1.273e-10 I_Y=+0.9064 F_G=+3.15e-11 F_X=+6.19e-09 dIG=+5.04e-14 dIsum=+1.70e-12 resG=+2.3e-12 resS=+1.3e-11
+diag n=2 R=100 t=100: I_G=-2.697e-11 I_X=-3.468e-10 I_Y=+0.9064 F_G=+7.92e-13 F_X=+2.66e-11 dIG=+3.11e-12 dIsum=+5.37e-11 resG=+1.0e-11 resS=-2.6e-10
+diag n=2 R=100 t=300: I_G=-1.733e-11 I_X=-2.955e-10 I_Y=+0.9064 F_G=+1.22e-12 F_X=+4.97e-11 dIG=+2.47e-12 dIsum=-1.61e-12 resG=+1.3e-11 resS=-2.6e-10
+diag n=2 R=200 t=100: I_G=-1.175e-10 I_X=-1.563e-09 I_Y=+0.9064 F_G=+2.67e-12 F_X=+1.18e-10 dIG=+1.39e-12 dIsum=+2.21e-11 resG=+3.8e-11 resS=-1.4e-09
+diag n=2 R=200 t=300: I_G=-1.079e-10 I_X=-1.497e-09 I_Y=+0.9064 F_G=+2.39e-12 F_X=+9.93e-11 dIG=+4.89e-12 dIsum=-3.82e-12 resG=+4.4e-11 resS=-1.3e-09
+diag n=3 R=50 t=100: I_G=-1.502e-11 I_X=+3.937e-08 I_Y=+3.4849 F_G=-3.85e-09 F_X=-1.04e-07 dIG=+2.42e-10 dIsum=+1.03e-08 resG=+1.4e-10 resS=+2.7e-10
+diag n=3 R=50 t=300: I_G=+1.341e-09 I_X=+5.304e-08 I_Y=+3.4849 F_G=-4.08e-09 F_X=-1.18e-07 dIG=+6.11e-12 dIsum=-2.57e-10 resG=+1.2e-10 resS=-2.3e-10
+diag n=3 R=100 t=100: I_G=-4.593e-09 I_X=-5.748e-08 I_Y=+3.4849 F_G=+1.92e-10 F_X=+7.16e-09 dIG=+4.09e-10 dIsum=+1.44e-08 resG=+1.4e-09 resS=-3.7e-08
+diag n=3 R=100 t=300: I_G=-3.140e-09 I_X=-4.836e-08 I_Y=+3.4849 F_G=+2.44e-10 F_X=+1.01e-08 dIG=+8.26e-11 dIsum=+1.78e-09 resG=+1.5e-09 resS=-4.0e-08
+diag n=3 R=200 t=100: I_G=-3.286e-08 I_X=-4.255e-07 I_Y=+3.4849 F_G=+5.17e-10 F_X=+2.01e-08 dIG=+7.98e-10 dIsum=+7.33e-09 resG=+1.0e-08 resS=-3.8e-07
+diag n=3 R=200 t=300: I_G=-3.203e-08 I_X=-4.393e-07 I_Y=+3.4849 F_G=+1.04e-09 F_X=+4.43e-08 dIG=+7.70e-10 dIsum=+4.58e-09 resG=+1.2e-08 resS=-3.8e-07

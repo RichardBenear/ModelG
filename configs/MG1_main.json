@@ -1,0 +1,15 @@
+{
+  "stage": "MG002",
+  "gate": "MG1",
+  "spec": "spec/model_g_published.md (eq. 17 parameters, seed eq. 18)",
+  "params": {"a": 14, "b": 29, "g": 0.1, "p": 1, "q": 1, "s": 0, "u": 0, "w": 0, "dx": 1, "dy": 12},
+  "dims": [1, 2, 3],
+  "R": 50,
+  "h_ladder": [0.05, 0.025, 0.0125],
+  "t_end": 100,
+  "t_supplementary": 300,
+  "integrator": "scipy solve_ivp BDF, analytic sparse Jacobian, rtol=1e-8, atol=1e-10, max_step=0.5",
+  "tolerance_check": "rtol=1e-10, atol=1e-12 at h=0.0125",
+  "wavelength_measure": "2 x mean spacing of successive zeros, pooled over G,X,Y, excluding the core-to-first-ring spacing, zeros with r < 0.6 R",
+  "notes": "1D solved on symmetric half-line [0,50] with zero-flux at 0; equivalent to [-50,50] for the symmetric seed."
+}
