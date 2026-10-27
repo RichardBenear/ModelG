@@ -1,0 +1,10 @@
+Amendment 1 diagnostics (MG004). Raw (unsmoothed) phi_X minimum vs time, and threshold geometry.
+b=29.0: unsmoothed A* = -9.023; smoothed reference min = -5.537; registered threshold -0.5|A*| = -4.511 (81% of smoothed depth)
+b=29.08: unsmoothed A* = -9.397; smoothed reference min = -5.792; registered threshold = -4.699
+raw min phi_X at t = 0.5, 5, 10, 15, 20, 25, 30 (non-gate diagnostic streams, gate id 9):
+  b=29.0  Omega=1e5 : -9.03 -9.11 -9.07 -9.11 -9.03 -8.98 -9.01   (holds)
+  b=29.08 Omega=300 : -8.85 -8.02 -9.20 -8.00 -6.94 -9.50 -8.83   (holds)
+  b=29.08 Omega=300 : -9.39 -8.40 -8.95 -9.67 -8.28 -9.25 -10.24  (holds)
+  b=29.0  Omega=300 : -9.10 -9.44 -8.85 -5.64 -3.49 -2.13 -2.64   (decays)
+  b=29.0  Omega=300 (V2 stream rep 22): raw min -8.11 (t=0.5) -> -2.62 (t=8.0) (decays)
+V2 attempt 1 (b=29, Omega=300, tau): 3 eligible of 24; 20 recorded 'loss' events, 1 run with too few eligible snapshots.
