@@ -6,8 +6,8 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | Gate | Phase | Question | Status |
 |---|---|---|---|
 | MG1 | 1 | Continuum PDE reproduces a published stationary Model G soliton | PASS by PI exception (registered FAIL on 1D stationarity preserved) |
-| MG2 | 2 | Stochastic token rules converge to the MG1 PDE solution as Ω → ∞ | PENDING |
-| MG3 | 2 | Particles nucleate spontaneously from intrinsic fluctuations at finite Ω | PENDING |
+| MG2 | 2 | Stochastic token rules converge to the same-lattice mean-field solution as Ω → ∞ | PROPOSED (awaiting PI sign-off) |
+| MG3 | 2 | Particles nucleate spontaneously from intrinsic fluctuations at finite Ω | PROPOSED (awaiting PI sign-off) |
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale | PENDING |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve) | PENDING |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | PENDING |
@@ -124,3 +124,96 @@ PI sign-off (criteria): Richard Benear, 2026-10-27
 PI sign-off (result): Richard Benear, 2026-10-27 — MG1 accepted as PASS with documented exception:
 criterion 4 failed in 1D at t = 100 (registered failure record preserved above); the 1D soliton is
 stationary by t = 300. Proceed to Phase 2.
+
+---
+
+### Phase 2 common setup (both gates)
+Protocol: `spec/phase2_protocol_v1.0.md` (lattice, algorithm, measurement definitions, budget).
+1D periodic ring, h = 0.2, L = 100. Rules v1.1. Tau-leaping with τ = 1.333e-3 (τ/2 if V2 fails).
+Validations V1 (tau-leap vs exact SSA) and V2 (τ-halving) must pass before any gate run.
+Operating points: **b = 29** (published) and **b_mid = 29.16** (centre of the h = 0.2 single-soliton
+window [28.929, 29.397]). Deterministic references: `results/MG003/`.
+
+### MG2 — Ω → ∞ convergence of the token rules to the lattice mean field
+Status: PROPOSED 2026-10-27 (MG003).
+
+Setup: start each run from the lattice-ODE soliton at that b (counts = round(Ω·(S₀ + φ*))), T = 100,
+discard t < 10, record every 0.5. Ω ∈ {10, 30, 100, 300, 1000, 3000, 10000}, 6 runs per Ω per b.
+
+Prediction: the aligned mean profile converges to the same-lattice ODE soliton with bias O(1/Ω).
+Far-field fluctuations match the linear-noise approximation (LNA).
+
+Pass criteria:
+- C1: E(Ω = 10⁴) < 1% at both b.
+- C2: bias scaling. A fit E_b ∝ Ω^(−α) over Ω ≥ 100 gives α ∈ [0.7, 1.3] at both b. If E_b ≤ σ_E at
+  ≥ 2 of the Ω values ≥ 100, leaving < 3 usable points, C2 is INCONCLUSIVE (reported, not a fail).
+- C3: far-field Ω·Var(φ_S) for S = G, X, Y within 10% of the LNA at every Ω ≥ 100.
+  LNA targets: b = 29: 15.59 / 112.7 / 2.73; b = 29.16: 15.59 / 121.9 / 2.84.
+- C4: persistence at b_mid. For Ω ≥ 100, every run keeps exactly one particle for all t ∈ [0, 100]
+  (no decay, no replication). At b = 29, persistence is reported as a measurement (noise-induced decay
+  near the window edge), not a criterion.
+- C5: seeded nucleation (b = 29, homogeneous start, R_seed rule, detection by t = 60, 20 runs per cell).
+  At seed scale 1.5 (1.58× the lattice threshold 0.949), P(nucleate) ≥ 0.9 at each of Ω = 300, 1000,
+  3000. At seed scale 0.5, P ≤ 0.1 at Ω = 3000. Exploratory: P(Ω) at scale 1.0.
+- C6: lattice independence (secondary). On the h = 0.1 lattice, b = 29, Ω = 10⁴, 4 runs, E < 1% against
+  the h = 0.1 lattice ODE.
+
+Gate passes if C1, C3, C4, C5 and C6 pass and C2 is not FAIL.
+
+Null controls:
+- N1: homogeneous start, b = 29, Ω = 10⁴, 4 runs, T = 100 → no particle detected.
+- N2 (mis-specified reference; tests the metric's discriminating power): E of the b = 29 runs computed
+  against the b_mid reference must plateau near 9.46% (the deterministic difference) and fail C1.
+
+Exploratory (reported): particle diffusion coefficient D_p(Ω) (expected ∝ 1/Ω); noise-induced decay
+events at b = 29.
+
+### MG3 — Spontaneous nucleation from intrinsic noise
+Status: PROPOSED 2026-10-27 (MG003).
+
+Setup: b = 29, homogeneous start (independent Poisson counts at the steady state), no seed, T = 500.
+Particle detection as defined in the protocol §5 (smoothed φ_X < −4.51, persisting ≥ 20).
+Rate = first-nucleation events per unit length per unit time. This is a censored-exponential maximum-
+likelihood estimate over runs; only the first event per run is used, since later events are seeded by
+the first particle's tails.
+
+Pre-registered adaptive design:
+- Stage A (scan): Ω descending through {300, 100, 50, 30, 20, 15, 10, 7, 5, 3, 2, 1}, 4 runs each.
+  Stop after the first Ω at which all 4 runs nucleate before t = 50.
+- Stage B (rates): every Ω from the grid at which Stage A had 1–3 of 4 runs nucleate. If fewer than 3
+  such values, add geometric midpoints between the bracketing grid values until there are 3.
+  16 runs each, T = 500.
+
+Prediction: nucleation is an activated (large-deviation) process with ln k ≈ c − S·Ω.
+
+Pass criteria:
+- C1: spontaneous nucleation exists: ≥ 10 first-nucleation events at some Ω (Stage A + B).
+- C2: what nucleates is a Model G soliton. The aligned mean profile 30 time units after detection
+  (runs where it persists) has E ≤ max(10%, 2·E_MG2(Ω)) against the lattice-ODE soliton, and λ is
+  within 5% of the lattice value.
+- C3: activated scaling. A weighted fit of ln k vs Ω over the Stage B values (each with ≥ 5 events)
+  gives slope −S with the 95% CI excluding 0 and R² ≥ 0.9.
+- C4: distance from the window edge. At the median Stage-B Ω, rates at b ∈ {29.0, 29.16, 29.3}
+  (16 runs each) increase monotonically, and k(29.3)/k(29.0) > 1 at 95% confidence.
+
+Gate passes if C1–C4 pass.
+
+Null control:
+- N1: b = 28.5 (below the lattice b_s, where no stationary soliton exists), smallest Stage-B Ω, 16 runs,
+  T = 500 → zero persistent particles. This checks the detector at comparable noise.
+
+Interpretation of a FAIL (pre-stated):
+- No events at any Ω ≥ 1 → the barrier is too high for intrinsic noise at the lattice scale; Ω_len ≤ 5
+  needed.
+- Events that aren't solitons (C2 fail) → noise drives a different structure (e.g. noisy Turing
+  patches).
+- Non-activated scaling → nucleation isn't a single-barrier process here.
+
+Exploratory (reported): annihilation rate (soliton → homogeneous) at Stage B Ω; structure factor S(k)
+before first nucleation vs the LNA; multi-particle growth after the first event.
+
+Configs (both gates): `configs/MG2_*.json`, `configs/MG3_*.json` (written at sign-off).
+Result:
+Replication (ChatGPT):
+PI sign-off (criteria):
+PI sign-off (result):

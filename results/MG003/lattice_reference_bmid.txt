@@ -1,0 +1,5 @@
+b=29.16 h=0.2: amp G -0.1882 X -9.6686 Y 1.0798; max|dphi/dt| 2.3e-13
+b=29.16 h=0.1: amp G -0.1849 X -9.4993 Y 1.0620; max|dphi/dt| 3.4e-13
+b=29.16 h=0.2: LNA Omega*Var G 15.590 X 121.868 Y 2.839
+b=29.16 h=0.2: seed threshold 0.8868-0.8870
+h=0.2 L2 difference b=29 vs b=29.16 (|x|<10): G 9.29% X 9.44% Y 9.46% -> N2 expected plateau 9.46%
