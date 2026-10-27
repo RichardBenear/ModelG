@@ -54,37 +54,61 @@ def diff_bounds(runsA, runsB, ref_norm, level=0.95):
     return dict(diff=d, upper=d + k * np.sqrt(v) / ref_norm, lower=max(d - k * np.sqrt(v) / ref_norm, 0.0))
 
 
-def alpha_fit(omegas, e2):
-    """Least-squares fit of log(Ehat2) = c - 2 alpha log(Omega) over cells with Ehat2 > 0."""
-    om, e = np.asarray(omegas, float), np.asarray(e2, float)
-    ok = e > 0
-    if ok.sum() < 3:
+def u_stat_bias2_boot(runs, idx, ref):
+    """U-statistic on a bootstrap resample, using only pairs of DISTINCT original runs (MG003b fix:
+    pairing a duplicated run with itself adds |d|^2 terms and biases the bootstrap upward)."""
+    D = runs - ref
+    c = np.bincount(idx, minlength=runs.shape[0]).astype(float)
+    S = (c[:, None] * D).sum(0)
+    self_terms = np.sum(c**2 * np.einsum("ij,ij->i", D, D))
+    npairs = idx.size**2 - np.sum(c**2)
+    if npairs <= 0:
         return np.nan
-    A = np.vstack([np.ones(ok.sum()), -2 * np.log(om[ok])]).T
-    coef, *_ = np.linalg.lstsq(A, np.log(e[ok]), rcond=None)
+    return (S @ S - self_terms) / npairs / (ref @ ref)
+
+
+def select_cells(cells, omegas, level=0.95):
+    """Pre-registered cell selection for the alpha fit: Omega >= 100 cells whose bias lower bound > 0
+    (significant bias), decided once on the original data."""
+    keep = []
+    for o, r in zip(omegas, cells["runs"]):
+        if o >= 100 and bias_bounds(r, cells["ref"], level)["lower"] > 0:
+            keep.append(True)
+        else:
+            keep.append(False)
+    return np.array(keep)
+
+
+def alpha_fit(omegas, e2):
+    """LS fit of log(Ehat2) = c - 2 alpha log(Omega); requires >= 3 cells, all Ehat2 > 0."""
+    om, e = np.asarray(omegas, float), np.asarray(e2, float)
+    if len(e) < 3 or np.any(~np.isfinite(e)) or np.any(e <= 0):
+        return np.nan
+    A = np.vstack([np.ones(len(e)), -2 * np.log(om)]).T
+    coef, *_ = np.linalg.lstsq(A, np.log(e), rcond=None)
     return coef[1]
 
 
 def alpha_ci(cells, omegas, B=2000, level=0.95, widen=1.0, rng=None):
-    """Run-level nonparametric bootstrap CI for alpha: resample runs within each Omega cell,
-    recompute the U-statistics, refit. widen: calibrated multiplicative half-width factor."""
+    """alpha point estimate and run-level bootstrap percentile CI on the pre-selected cells.
+    Returns (alpha_hat, (lo, hi), fraction of valid bootstrap fits, selected-cell mask)."""
     rng = np.random.default_rng(rng)
     ref = cells["ref"]
-    a_hat = alpha_fit(omegas, [u_stat_bias2(r, ref) for r in cells["runs"]])
-    boots = []
-    for _ in range(B):
+    om = np.asarray(omegas, float)
+    keep = select_cells(cells, om, level)
+    if keep.sum() < 3:
+        return np.nan, (np.nan, np.nan), 0.0, keep
+    runs = [r for r, k in zip(cells["runs"], keep) if k]
+    a_hat = alpha_fit(om[keep], [u_stat_bias2(r, ref) for r in runs])
+    boots = np.empty(B)
+    for b in range(B):
         e2 = []
-        for r in cells["runs"]:
+        for r in runs:
             idx = rng.integers(0, r.shape[0], r.shape[0])
-            if len(np.unique(idx)) < 2:
-                idx[0] = (idx[0] + 1) % r.shape[0]
-            e2.append(u_stat_bias2(r[idx], ref))
-        boots.append(alpha_fit(omegas, e2))
-    boots = np.array(boots)
-    frac_valid = np.mean(np.isfinite(boots))
-    boots = boots[np.isfinite(boots)]
-    if len(boots) < 0.8 * B:
-        return a_hat, (np.nan, np.nan), frac_valid
-    lo, hi = np.quantile(boots, [(1 - level) / 2, (1 + level) / 2])
-    lo, hi = a_hat - widen * (a_hat - lo), a_hat + widen * (hi - a_hat)
-    return a_hat, (lo, hi), frac_valid
+            e2.append(u_stat_bias2_boot(r, idx, ref))
+        boots[b] = alpha_fit(om[keep], e2)
+    ok = np.isfinite(boots)
+    if ok.mean() < 0.8 or not np.isfinite(a_hat):
+        return a_hat, (np.nan, np.nan), ok.mean(), keep
+    lo, hi = np.quantile(boots[ok], [(1 - level) / 2, (1 + level) / 2])
+    return a_hat, (a_hat - widen * (a_hat - lo), a_hat + widen * (hi - a_hat)), ok.mean(), keep

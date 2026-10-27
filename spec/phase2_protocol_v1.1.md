@@ -1,6 +1,6 @@
 # Phase 2 Protocol v1.1: Stochastic Token Rules on a Fixed Lattice (MG003a)
 
-Status: PROPOSED 2026-10-27. Supersedes v1.0 (never frozen) after ChatGPT review MG003
+Status: **SUPERSEDED by `phase2_protocol_v1.2.md` (MG003b)** before sign-off (inference layer revised). Originally: PROPOSED 2026-10-27. Supersedes v1.0 (never frozen) after ChatGPT review MG003
 (`review/MG003_chatgpt.md`, response `review/MG003_response.md`). Becomes frozen on PI sign-off.
 Rules: `spec/rules_v1.1.md`, unchanged. Gate definitions: `GATES.md` (MG2, MG3).
 

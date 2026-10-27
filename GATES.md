@@ -128,30 +128,34 @@ stationary by t = 300. Proceed to Phase 2.
 ---
 
 ### Phase 2 common setup (both gates)
-Protocol: `spec/phase2_protocol_v1.1.md` (v1.0 superseded after ChatGPT review MG003; see
-`review/MG003_response.md`). 1D periodic ring, h = 0.2, L = 100. Rules v1.1. Unsplit multinomial
+Protocol: `spec/phase2_protocol_v1.2.md` (v1.0 and v1.1 superseded after ChatGPT reviews MG003 r1–r2; see
+`review/MG003_response.md`, `review/MG003_response_r2.md`). 1D periodic ring, h = 0.2, L = 100. Rules v1.1. Unsplit multinomial
 tau-leaping (its Ω → ∞ mean map is exactly forward Euler of the lattice ODE). τ = 6.667e-4, with
 Ω-dependent halving under the clip rule. Validations V1–V4 must pass before any gate run.
 Operating points: **b = 29** (published) and **b_mid = 29.16** (centre of the operational h = 0.2
 single-soliton window [28.929, 29.397]).
 
 ### MG2 — Ω → ∞ convergence of the token rules to the lattice mean field
-Status: PROPOSED 2026-10-27 (MG003, revised MG003a).
+Status: PROPOSED 2026-10-27 (MG003, revised MG003a, MG003b).
 
 Setup: each run starts from the lattice-ODE soliton at that b (counts = round(Ω·(S₀ + φ*))), T = 100,
-snapshots every 0.5, t ≥ 10 used. Ω ∈ {10, 30, 100, 300, 1000, 3000, 10000}, 6 runs per (b, Ω).
+snapshots every 0.5, t ≥ 10 used. Ω ∈ {10, 30, 100, 300, 1000, 3000, 10000}, **12 runs per (b, Ω)**
+(the calibrated minimum, protocol §5.3).
 Profiles are survival-conditioned (protocol §5.2), with survival reported separately.
 
 Prediction: the aligned mean profile converges to the same-lattice ODE soliton with O(1/Ω) bias.
 Far-field fluctuations match the LNA.
 
 Pass criteria:
-- C1: at Ω = 10⁴ and both b, the upper 95% bound of E_b,S < 1% for each of S = G, X, Y
-  (unbiased estimator, protocol §5.3).
-- C2: bias scaling. A fit of Ê²_b,X = A·Ω^(−2α) over Ω ≥ 100 at each b.
-  - **PASS** if α̂ ∈ [0.7, 1.3] and the 95% CI excludes 0.5.
-  - **INCONCLUSIVE** if the CI width is > 1.0, or fewer than 3 Ω values have Ê² > 2·SE.
-  - **FAIL** otherwise.
+- C1: at Ω = 10⁴ and both b, three-way decision on the bias bounds (protocol §5.3) with ε = 1%, for each
+  of S = G, X, Y. PASS if all upper bounds are < 1%; FAIL if any lower bound is > 1%; otherwise
+  INCONCLUSIVE, in which case one extension of 12 runs for that cell is allowed and the cell is
+  re-decided.
+- C2: bias scaling. α̂ and its calibrated CI at each b (protocol §5.3: pre-selected cells, distinct-pair
+  bootstrap, widening w).
+  - **PASS** if α̂ ∈ [0.7, 1.3] and the CI excludes 0.5.
+  - **FAIL** if the CI lies entirely outside [0.7, 1.3].
+  - **INCONCLUSIVE** otherwise, including fewer than 3 selected cells.
 - C3: far-field Ω·Var(φ_S) for each of S = G, X, Y within 10% of the continuous-time LNA at every
   Ω ≥ 100. Targets: b = 29: 15.59 / 112.69 / 2.73; b = 29.16: 15.59 / 121.87 / 2.84. The scheme's own
   discrete LNA differs from these by < 1%.
@@ -163,15 +167,18 @@ Pass criteria:
   - Seed scale 1.5 (1.58× the lattice threshold): P ≥ 0.9 at each of Ω = 300, 1000, 3000.
   - Seed scale 0.5: P ≤ 0.1 at Ω = 3000.
   - Exploratory: P(Ω) at scale 1.0.
-- C6: lattice independence. h = 0.1 lattice (τ = 1.667e-4), b = 29, Ω = 10⁴, 4 runs: upper 95% bound
-  of E_b,S < 1% against the h = 0.1 lattice ODE.
+- C6: lattice independence. h = 0.1 lattice (τ = 1.667e-4), b = 29, Ω = 10⁴, 12 runs: three-way
+  decision with ε = 1% against the h = 0.1 lattice ODE (same extension rule as C1).
 
-Gate passes if C1, C3, C4, C5 and C6 pass and C2 is not FAIL.
+Gate outcome:
+- **PASS** if C1, C3, C4, C5 and C6 pass and C2 is not FAIL.
+- **FAIL** if any of them FAILs.
+- **INCONCLUSIVE** if C1 or C6 remains INCONCLUSIVE after its extension.
 
 Controls:
 - N1: homogeneous start, b = 29, Ω = 10⁴, 4 runs, T = 100 → no particle detected.
-- N2 (the metric's discriminating power): Ê_b of the b = 29 runs computed against the b_mid reference
-  must be ≈ 9.46% (the deterministic difference), failing C1 by a wide margin.
+- N2 (the metric's discriminating power): the b = 29 runs evaluated against the b_mid reference must
+  give C1 = FAIL (lower bound > 1%; the deterministic difference is 9.46%).
 - V4's alignment-induced bias is reported next to every E_b.
 
 Exploratory (reported): particle diffusion coefficient D_p(Ω) (expected ∝ 1/Ω); survival curves at b = 29.
@@ -210,14 +217,13 @@ Pass criteria:
 - C2: what nucleates is a Model G soliton. In every Stage-B cell:
   - (a) ≥ 80% of detections are confirmed (not excursions);
   - (b) the survival-conditioned aligned mean profile, 30 time units after detection, matches a
-    **same-Ω reference ensemble**: 6 runs started from the deterministic soliton, MG2 protocol, T = 100.
-    The test uses the unbiased two-sample estimator ‖μ_nuc − μ_ref‖² = ‖m̄_nuc − m̄_ref‖² −
-    tr(Σ̂_nuc)/M_nuc − tr(Σ̂_ref)/M_ref, relative to ‖m̄_ref‖². Its bootstrap upper 95% bound must be
-    < 10% (X field).
+    **same-Ω reference ensemble**: 8 runs started from the deterministic soliton, MG2 protocol, T = 100.
+    Test: the calibrated two-sample bound (protocol §5.3) on ‖μ_nuc − μ_ref‖/‖m̄_ref‖ (X field), with
+    PASS if the upper bound < 10%. It needs ≥ 8 eligible runs on each side; otherwise (b) is
+    INCONCLUSIVE and the stated replacement below applies.
   - (c) λ of the nucleated mean profile is within 5% of the lattice value.
   - Survival fractions are reported.
-  - If the reference ensemble itself does not survive to provide ≥ 3 eligible runs, (b) is replaced by
-    (a) plus (c), and this is stated.
+  - If either side has < 8 eligible runs, (b) is replaced by (a) plus (c), and this is stated.
 - C3: activated scaling. Over ≥ 3 Stage-B cells with ≥ 5 events that pass the stationary-hazard check,
   a weighted fit of ln k̂ vs Ω (weights from Poisson counts) gives slope −S with the 95% CI excluding 0,
   and R² ≥ 0.9. If fewer than 3 cells qualify, C3 is INCONCLUSIVE.

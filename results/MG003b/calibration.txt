@@ -1,0 +1,23 @@
+Part A (3000 reps/cell, M in 4/6/12, 6 noise types, bias 0-2%, sigma 0.1-3%):
+  worst coverage of [lower,upper] = 0.6640; worst false-PASS rate (true bias >= 1%) = 0.3220; worst false-FAIL rate (true bias <= 1%) = 0.3327
+  M=4: min coverage 0.6640; max false-PASS 0.3220; max false-FAIL 0.3327
+    bias 0.0% sigma 0.1%: P(INCONCLUSIVE) worst over noise types 0.000
+    bias 0.0% sigma 0.3%: P(INCONCLUSIVE) worst over noise types 0.047
+    bias 0.5% sigma 0.1%: P(INCONCLUSIVE) worst over noise types 0.006
+    bias 0.5% sigma 0.3%: P(INCONCLUSIVE) worst over noise types 0.681
+  M=6: min coverage 0.8020; max false-PASS 0.1943; max false-FAIL 0.1890
+    bias 0.0% sigma 0.1%: P(INCONCLUSIVE) worst over noise types 0.000
+    bias 0.0% sigma 0.3%: P(INCONCLUSIVE) worst over noise types 0.014
+    bias 0.5% sigma 0.1%: P(INCONCLUSIVE) worst over noise types 0.002
+    bias 0.5% sigma 0.3%: P(INCONCLUSIVE) worst over noise types 0.166
+  M=12: min coverage 0.9450; max false-PASS 0.0340; max false-FAIL 0.0347
+    bias 0.0% sigma 0.1%: P(INCONCLUSIVE) worst over noise types 0.000
+    bias 0.0% sigma 0.3%: P(INCONCLUSIVE) worst over noise types 0.003
+    bias 0.5% sigma 0.1%: P(INCONCLUSIVE) worst over noise types 0.000
+    bias 0.5% sigma 0.3%: P(INCONCLUSIVE) worst over noise types 0.014
+Part B (alpha CI; true alpha = 1; Omega = [100, 300, 1000, 3000, 10000]; 300 reps x 400 bootstrap):
+  widen=1.0: worst coverage 0.000 (target >= 0.95 - 2 MC SE = 0.925)
+  widen=1.25: worst coverage 0.000 (target >= 0.95 - 2 MC SE = 0.925)
+  widen=1.5: worst coverage 0.003 (target >= 0.95 - 2 MC SE = 0.925)
+  widen=2.0: worst coverage 0.013 (target >= 0.95 - 2 MC SE = 0.925)
+  calibrated widening factor: None

@@ -14,6 +14,7 @@ import json, sys
 import numpy as np
 sys.path.insert(0, "src")
 from stats_mg2 import bias_bounds, decide, alpha_ci
+PART_A = '--skip-a' not in sys.argv
 
 rng = np.random.default_rng(20261027)
 d = 100
@@ -42,7 +43,7 @@ EPS = 0.01
 # ---------------- Part A
 R = 3000
 worst = dict(cov=1.0, fp=0.0, ff=0.0)
-for M in (4, 6, 12):
+for M in ((4, 6, 12) if PART_A else ()):
     for kind in KINDS:
         for beta in (0.0, 0.005, 0.01, 0.02):
             for sigma in (0.001, 0.003, 0.01, 0.03):
@@ -59,10 +60,15 @@ for M in (4, 6, 12):
                 out["A"].append(rec)
                 worst["cov"] = min(worst["cov"], rec["coverage"])
                 worst["fp"] = max(worst["fp"], rec["false_pass"]); worst["ff"] = max(worst["ff"], rec["false_fail"])
-lines.append(f"Part A ({R} reps/cell, M in 4/6/12, 6 noise types, bias 0-2%, sigma 0.1-3%):")
-lines.append(f"  worst coverage of [lower,upper] = {worst['cov']:.4f}; worst false-PASS rate (true bias >= 1%) = {worst['fp']:.4f}; "
+if not PART_A:
+    prev = json.load(open("results/MG003b/calibration.json"))
+    out["A"] = prev["A"]
+    lines = open("results/MG003b/calibration.txt").read().split("Part B")[0].rstrip().split("\n")
+if PART_A:
+  lines.append(f"Part A ({R} reps/cell, M in 4/6/12, 6 noise types, bias 0-2%, sigma 0.1-3%):")
+  lines.append(f"  worst coverage of [lower,upper] = {worst['cov']:.4f}; worst false-PASS rate (true bias >= 1%) = {worst['fp']:.4f}; "
              f"worst false-FAIL rate (true bias <= 1%) = {worst['ff']:.4f}")
-for M in (4, 6, 12):
+for M in ((4, 6, 12) if PART_A else ()):
     sub = [r for r in out["A"] if r["M"] == M]
     lines.append(f"  M={M}: min coverage {min(r['coverage'] for r in sub):.4f}; max false-PASS {max(r['false_pass'] for r in sub):.4f}; "
                  f"max false-FAIL {max(r['false_fail'] for r in sub):.4f}")
@@ -76,18 +82,18 @@ print("\n".join(lines), flush=True)
 # ---------------- Part B: alpha CI calibration
 OM = np.array([100, 300, 1000, 3000, 10000.0])
 RB, B = 300, 400
-lines.append(f"Part B (alpha CI; true alpha = 1; Omega = {OM.astype(int).tolist()}; {RB} reps x {B} bootstrap):")
+lines.append(f"Part B v2 (MG003b fix: distinct-pair bootstrap U-stat, pre-selected significant cells; alpha CI; true alpha = 1; Omega = {OM.astype(int).tolist()}; {RB} reps x {B} bootstrap):")
 best = None
 for widen in (1.0, 1.25, 1.5, 2.0):
     worst_cov_b, rows = 1.0, []
-    for M in (6, 12):
-        for kind in ("iso", "rank3", "twoP+", "t3"):
+    for M in (12,):
+        for kind in ("iso", "rank1b", "rank3", "twoP+", "twoP-", "t3"):
             for ratio in (0.1, 0.3, 1.0):          # run-level noise / bias at Omega = 100
                 beta100 = 0.05
                 cov = n_def = 0
                 for _ in range(RB):
                     runs = [phi + beta100 * (100 / o) * u + noise(kind, M, ratio * beta100 * np.sqrt(100 / o)) for o in OM]
-                    a, (lo, hi), fv = alpha_ci({"ref": phi, "runs": runs}, OM, B=B, widen=widen, rng=rng)
+                    a, (lo, hi), fv, keep = alpha_ci({"ref": phi, "runs": runs}, OM, B=B, widen=widen, rng=rng)
                     if np.isfinite(lo):
                         n_def += 1; cov += lo <= 1.0 <= hi
                 c = cov / max(n_def, 1)
