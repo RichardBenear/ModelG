@@ -1,6 +1,6 @@
 # Phase 2 Protocol v1.0: Stochastic Token Rules on a Fixed Lattice (MG003)
 
-Status: PROPOSED 2026-10-27. Becomes frozen on PI sign-off. Gate definitions are in `GATES.md` (MG2, MG3).
+Status: **SUPERSEDED by `phase2_protocol_v1.1.md` (MG003a)** before sign-off. Its integrator's deterministic limit loses the soliton (review MG003, item 1). Kept for the record. Gate definitions are in `GATES.md` (MG2, MG3).
 Rules: `spec/rules_v1.1.md`, unchanged. Reference data: `results/MG003/`.
 
 ## 1. Substrate
