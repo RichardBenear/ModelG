@@ -1,0 +1,18 @@
+V1: exact SSA vs tau_leap_euler_1d; ring N=30, h=0.2, b=29, T=500, discard t<50, 20 batch means
+ Omega=3 (tau=3.333e-04; SSA events 1.66e+08, 18s; tau clips 0)
+   mean G   : SSA 15.53142±0.02526  tau 15.55369±0.02502  |diff| 0.02227 tol 0.46594 ok
+   mean X   : SSA 15.53894±0.02805  tau 15.49243±0.02952  |diff| 0.04651 tol 0.46617 ok
+   mean Y   : SSA 1.98202±0.00732  tau 1.99368±0.00838  |diff| 0.01165 tol 0.05946 ok
+   var G    : SSA 5.16037±0.05383  tau 5.16990±0.04968  |diff| 0.00953 tol 0.21975 ok
+   var X    : SSA 34.69131±0.91403  tau 35.29711±0.85359  |diff| 0.60580 tol 3.75187 ok
+   var Y    : SSA 0.93146±0.00931  tau 0.94687±0.01196  |diff| 0.01542 tol 0.04548 ok
+   nn-cov X : SSA 21.78371±0.83437  tau 22.67599±0.82203  |diff| 0.89227 tol 3.51384 ok
+ Omega=30 (tau=6.667e-04; SSA events 1.64e+09, 155s; tau clips 0)
+   mean G   : SSA 15.56623±0.01048  tau 15.55716±0.00831  |diff| 0.00907 tol 0.46699 ok
+   mean X   : SSA 15.56551±0.01201  tau 15.54690±0.00916  |diff| 0.01861 tol 0.46697 ok
+   mean Y   : SSA 1.90648±0.00477  tau 1.90490±0.00518  |diff| 0.00158 tol 0.05719 ok
+   var G    : SSA 0.52573±0.00456  tau 0.51868±0.00532  |diff| 0.00705 tol 0.02104 ok
+   var X    : SSA 11.39583±1.04886  tau 10.17356±1.36444  |diff| 1.22227 tol 5.16297 ok
+   var Y    : SSA 0.17468±0.01120  tau 0.16293±0.01418  |diff| 0.01175 tol 0.05419 ok
+   nn-cov X : SSA 9.25822±0.94631  tau 8.15358±1.22389  |diff| 1.10464 tol 4.64120 ok
+V1 PASS
