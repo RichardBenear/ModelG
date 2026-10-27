@@ -5,7 +5,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 
 | Gate | Phase | Question | Status |
 |---|---|---|---|
-| MG1 | 1 | Continuum PDE reproduces a published stationary Model G soliton | PROPOSED (awaiting PI sign-off) |
+| MG1 | 1 | Continuum PDE reproduces a published stationary Model G soliton | PRE-REGISTERED |
 | MG2 | 2 | Stochastic token rules converge to the MG1 PDE solution as Ω → ∞ | PENDING |
 | MG3 | 2 | Particles nucleate spontaneously from intrinsic fluctuations at finite Ω | PENDING |
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale | PENDING |
@@ -31,7 +31,7 @@ PI sign-off:
 ---
 
 ### MG1 — Continuum reproduction of the published Model G soliton
-Status: PROPOSED 2026-10-27 (MG001). Becomes pre-registered on PI sign-off, before any MG1 run.
+Status: PRE-REGISTERED 2026-10-27 (MG001b), with PI sign-off on the criteria below; reviewed by ChatGPT (round 2). No MG1 run preceded this commit.
 
 Reference: `spec/model_g_published.md` (Pulver & LaViolette 2013, eq. 17 parameters, Table 1).
 
@@ -59,10 +59,16 @@ Null controls:
 - N2 (exploratory, not pass/fail): seed amplitude scaled by 0.25, 0.5, 0.75 → report whether a
   soliton nucleates and estimate the nucleation threshold amplitude. This feeds MG3.
 
-Diagnostic (not pass/fail; added MG001a): integral identity. Report full integrals of φ_G and φ_X
-together with boundary fluxes F_S at R = 50, 100 and 200. Predicted: the steady-state balances in
-`model_g_published.md` §9.2 close to within quadrature error, and I_G, I_X → 0 as R grows.
-A Table 1 row (e) mismatch at R = 50 that is explained by boundary flux counts as consistent.
+Diagnostic (not pass/fail; added MG001a, corrected MG001b): integral balances. At R = 50, 100
+and 200, report I_S, the measured boundary fluxes F_S, **and the integrated time derivatives**
+dI_G/dt and d(I_G + I_X + I_Y)/dt. Check both time-dependent balances in
+`model_g_published.md` §9.2 before dropping any term. A pointwise tolerance |∂φ/∂t| < 10⁻⁴ does
+not guarantee small integrated residuals: the 3D ball of radius 50 has volume ≈ 5.24 × 10⁵.
+The balance-error budget includes spatial discretization, time integration, boundary
+differentiation and quadrature. Each is estimated from the grid- and tolerance-refinement runs.
+Expected: balances close within that budget, and I_G, I_X → 0 as R grows. A Table 1 row (e)
+mismatch at R = 50 counts as consistent only if the *measured* fluxes and time derivatives
+account for it.
 
 Out of scope for MG1 (later stages): the 2Dδ variant, multi-particle bonding (3.303 / 3.314),
 gradient drift (v = −0.0599 m).
@@ -70,4 +76,5 @@ gradient drift (v = −0.0599 m).
 Configs: `configs/MG1_*.json` (to be written)
 Result:
 Replication (ChatGPT):
-PI sign-off:
+PI sign-off (criteria): Richard Benear, 2026-10-27
+PI sign-off (result):

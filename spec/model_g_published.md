@@ -158,31 +158,41 @@ Other reported behavior:
 
 1. **Rule spec needs the G ⇌ X back-reaction.** Rules v1.0 omitted k₋₂, but the
    reference set uses g = 0.1. This is fixed in `spec/rules_v1.1.md`.
-2. **Integral identity: in infinite space, standard Model G solitons carry zero net G and X
-   (MG001a).** Integrate eqs. 13a–c over a domain V for any parameters, with constant-coefficient
-   (conservative) diffusion. The nonlinear X²Y terms and the b, s, u terms cancel in the sum of
-   all three equations, leaving linear balances:
+2. **Integral identity (MG001a, wording per review round 2).** Integrate eqs. 13a–c over a
+   domain V with constant-coefficient (conservative) diffusion. The X²Y, b, s and u terms cancel in
+   the sum of all three equations, leaving two linear balances (F_S = d_S∮∇φ_S·n dS):
    - G equation: dI_G/dt = F_G − q I_G + g I_X
    - Sum: d(I_G + I_X + I_Y)/dt = F_G + F_X + F_Y − (q − p) I_G − (1 − g) I_X
 
-   Here F_S = d_S ∮∇φ_S·n dS is the boundary flux. For a stationary soliton whose tails decay
-   fast enough that F_S → 0 as V → ℝⁿ, this gives **I_X = 0 and I_G = 0 exactly**
-   (generic q, p, g); I_Y is unconstrained. Consequences:
-   - The nonzero Table 1 full integrals (row e) are finite-domain/boundary effects. With q = p = 1
-     and g = 0.1, stationarity would require boundary fluxes F_G = I_G − g·I_X of −0.164 (3D)
-     and −0.0099 (2D), and total flux 0.9·I_X = +1.74 (3D). These are larger than the integrals
-     themselves (`results/MG001/integral_identity.txt`). This confirms the review's concern
-     (item 4): small residual integrals must not be read physically before domain size,
-     boundary flux, quadrature and convergence time are checked.
-   - The 2Dδ variant's negative I_G (−0.480), the authors' "positive gravitational mass", is
-     possible only because δ(r)∇² is non-conservative and breaks the identity.
-   - **For Phase 5 this is decisive.** With conservative diffusion (which graph-hopping rules
-     are), a particle has **no net G monopole**. Coupling local G to spatial growth would then
-     predict a far-field curvature with no 1/r (monopole) term, unless the diffusion is made
-     non-conservative or another sink breaks the identity. Defining "mass" from the core
-     integral would be a **new project convention**, not the paper's. That choice is the PI's
-     at the Phase 5 spec.
-   - MG1 should test the identity numerically: full integrals → 0 as the domain grows.
+   **Assumptions:** (i) the perturbations φ_S are integrable over ℝⁿ; (ii) the integrated time
+   derivatives vanish (stationarity); (iii) the boundary fluxes F_S → 0 in the limit V → ℝⁿ.
+   Under these, the balances become
+
+   ⎡ q      −g  ⎤ ⎡I_G⎤
+   ⎣ q − p  1 − g⎦ ⎣I_X⎦ = 0,  with determinant q − gp.
+
+   So **I_G = I_X = 0 whenever q − gp ≠ 0** (reference set: q − gp = 0.9). The balances impose
+   **no condition on I_Y**. (Determinant form and assumption list from ChatGPT review round 2.)
+
+   Consequences, stated conservatively:
+   - **Table 1 row (e).** If the published R = 50 states were stationary, the balances would
+     *require* boundary fluxes F_G = −0.1643 and F_total = +1.737 in 3D
+     (`results/MG001/integral_identity.txt`). These are inferred required fluxes, not measured
+     ones. The nonzero full integrals are compatible with finite-boundary flux, but nonstationarity,
+     numerical error or inconsistent tabulation remain alternative explanations. MG1 will
+     distinguish them by measuring the fluxes.
+   - **2Dδ.** The negative I_G = −0.480 (the authors' "positive gravitational mass") is not
+     excluded by the unweighted zero-integral identity, because δ∇² changes that balance. Finite
+     boundaries and incomplete stationarity still need checking before it is attributed to δ.
+   - **Phase 5 (conditional constraint, not a conclusion).** Under the assumptions above, the
+     integrated G perturbation of a standard Model G soliton is zero. Whether that rules out a 1/r
+     geometric response depends on the coupling and field equation still to be specified. For
+     example, a linear Poisson-type equation sourced proportionally to φ_G would have no monopole
+     term, but a nonlinear growth coupling need not inherit the zero integral. Any Phase 5
+     coupling model must state how it interacts with this identity. Defining "mass" from the
+     core integral would be a new project convention, not the paper's, and is a PI decision.
+   - MG1 tests the identity numerically, including the time-derivative terms (see `GATES.md`).
+
 3. **The X core is nearly depleted.** In 3D, X ≈ X₀ + φ_X ≈ 15.56 − 14.6 ≈ 0.96 at the center,
    about 6% of background. Relative stochastic fluctuations will be largest exactly there,
    which matters for choosing Ω in MG2/MG3.
