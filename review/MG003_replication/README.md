@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Independent Phase 2 protocol audit
 
 This directory contains reviewer checks, not MG2/MG3 gate runs. No stochastic gate ensemble was run.
@@ -104,9 +103,3 @@ locations or proof that no other stable soliton branch exists. Do not infer a sa
 universal activation-mechanism claims from a failed finite-budget rate fit.
 
 Disposition: request changes before freezing Phase 2 or starting MG2/MG3 gate runs.
-=======
-# MG003 audit (ChatGPT)
-
-Place here, unmodified, the contents of ChatGPT's local `review/MG003_replication/` folder
-(audit code, data, detailed notes). Copy and commit from VS Code.
->>>>>>> 6ecd0bdb664dcac791bbc86539e3d5e05cd82411
