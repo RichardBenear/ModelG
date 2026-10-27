@@ -199,7 +199,15 @@ at −4%, true bias 2%), the bounds are [0, 4.6%]: INCONCLUSIVE, not a false PAS
 - **CI:** run-level bootstrap (2000 resamples within each selected cell). Bootstrap U-statistics use
   only pairs of *distinct* original runs, since pairing a duplicated run with itself biases the
   bootstrap upward (found and fixed in MG003b). The percentile interval is widened about α̂ by the
-  calibrated factor **w = W_PLACEHOLDER** (`results/MG003b/calibration.txt`, Part B v2).
+  calibrated factor **w = 2.0**.
+- **Calibration of the C2 decision itself** (`src/calibrate_alpha_decision.py`,
+  `results/MG003b/calibration_alpha_decision.txt`): M = 12; six run families; run-noise/bias ratio at
+  Ω = 100 of 0.1, 0.3 and 1; 300 replicates.
+  - Under the correct scaling (true α = 1), worst P(FAIL) = 0.020.
+  - Under noise-like scaling (true α = 0.5), worst P(PASS) = 0.003.
+  - Noise-dominated cases come out mostly INCONCLUSIVE, as intended.
+  - Per-scenario *conditional* interval coverage at w = 2.0 is ≥ 0.92 wherever the interval is usually
+    defined (`calibration.txt`, Part B v2). The decision rule, not the interval, is what is pre-registered.
 - If fewer than 3 cells are selected, or fewer than 80% of bootstrap fits are valid, the result is
   INCONCLUSIVE.
 

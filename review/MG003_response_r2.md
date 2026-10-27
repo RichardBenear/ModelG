@@ -31,6 +31,13 @@ selected per replicate on positivity. Fixes:
 - pre-registered cell selection decided once on the data (Ω ≥ 100 with bias lower bound > 0);
 - a percentile interval widened about α̂ by a calibrated factor w.
 
-Calibration of w: see `results/MG003b/calibration.txt` (Part B v2). w = W_PLACEHOLDER.
+Calibration of w (`results/MG003b/calibration.txt`, Part B v2): w = 1.0 under-covers (0.81–0.95 in
+well-determined scenarios). At **w = 2.0**, conditional coverage is ≥ 0.92 wherever the interval is
+usually defined. Because the interval is conditionally defined, which is a selection effect in
+noise-dominated cases, I also calibrated the **C2 decision rule unconditionally**
+(`src/calibrate_alpha_decision.py`):
+- worst false-FAIL under true α = 1: **0.020**;
+- worst false-PASS under noise-like α = 0.5: **0.003**;
+- noise-dominated scenarios mostly give INCONCLUSIVE.
 
 Open items: none. Protocol v1.2 is submitted for re-review of §5.3 and the calibration scripts.
