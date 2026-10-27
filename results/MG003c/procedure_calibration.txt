@@ -1,20 +1,20 @@
 Part D: full single-cell procedure (min 12 eligible of <= 24 attempted; A1 diagnostics; one 12-run extension), 600 reps/cell
   A1-satisfying families (Gaussian; t3 blocks is a stress case):
     gauss_iso   : worst false-PASS (true bias >= 1%) 0.000; worst false-FAIL (true bias <= 1%) 0.000
-    gauss_rank3 : worst false-PASS (true bias >= 1%) 0.002; worst false-FAIL (true bias <= 1%) 0.000
+    gauss_rank3 : worst false-PASS (true bias >= 1%) 0.002; worst false-FAIL (true bias <= 1%) 0.002
     t3_blocks   : worst false-PASS (true bias >= 1%) 0.000; worst false-FAIL (true bias <= 1%) 0.000
   HELD-OUT A1-violating families (documented, not covered by the confidence claim):
-    mix_run_0.9 : worst false-PASS 0.235; worst false-FAIL 0.002
-    mix_run_0.97: worst false-PASS 0.560; worst false-FAIL 0.000
-    mix_block_0.1: worst false-PASS 0.000; worst false-FAIL 0.002
-  power check (Gaussian, bias 0-0.5%, run noise 0.1%): P(PASS) min 0.790
-  A1 diagnostics flag rate, gauss_iso    (12 runs, bias 0.5%, run noise 0.3%): 0.204
-  A1 diagnostics flag rate, gauss_rank3  (12 runs, bias 0.5%, run noise 0.3%): 0.202
-  A1 diagnostics flag rate, t3_blocks    (12 runs, bias 0.5%, run noise 0.3%): 0.842
-  A1 diagnostics flag rate, mix_run_0.9  (12 runs, bias 0.5%, run noise 0.3%): 0.785
-  A1 diagnostics flag rate, mix_run_0.97 (12 runs, bias 0.5%, run noise 0.3%): 0.442
-  A1 diagnostics flag rate, mix_block_0.1 (12 runs, bias 0.5%, run noise 0.3%): 0.999
-Part E: Welch two-sample bound, deterministic normalisation (|phi| = 1), unequal noise (x3) and M (8/12)
+    mix_run_0.9 : worst false-PASS 0.312; worst false-FAIL 0.003
+    mix_run_0.97: worst false-PASS 0.698; worst false-FAIL 0.000
+    mix_block_0.1: worst false-PASS 0.002; worst false-FAIL 0.000
+  power check (Gaussian, bias 0-0.5%, run noise 0.1%): P(PASS) min 0.985
+  A1 diagnostics flag rate, gauss_iso    (12 runs, bias 0.5%, run noise 0.3%): 0.015
+  A1 diagnostics flag rate, gauss_rank3  (12 runs, bias 0.5%, run noise 0.3%): 0.015
+  A1 diagnostics flag rate, t3_blocks    (12 runs, bias 0.5%, run noise 0.3%): 0.785
+  A1 diagnostics flag rate, mix_run_0.9  (12 runs, bias 0.5%, run noise 0.3%): 0.384
+  A1 diagnostics flag rate, mix_run_0.97 (12 runs, bias 0.5%, run noise 0.3%): 0.273
+  A1 diagnostics flag rate, mix_block_0.1 (12 runs, bias 0.5%, run noise 0.3%): 1.000
+Part E: Welch two-sample bound, deterministic normalisation (|phi| = 1), unequal noise (x3) and M (8/12) [unchanged by MG003c diagnostic fix; no diagnostics involved]
   MA=8 MB=12 sdB/sdA=0.33 margin 10.00%: worst coverage 0.991, worst false-equivalence 0.001
   MA=8 MB=12 sdB/sdA=0.33 margin 0.25%: worst coverage 0.991, worst false-equivalence 0.001
   MA=8 MB=12 sdB/sdA=1.00 margin 10.00%: worst coverage 0.992, worst false-equivalence 0.001
