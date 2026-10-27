@@ -1,0 +1,10 @@
+{"gate": "MG2", "protocol": "spec/phase2_protocol_v1.3.md (frozen)", "gate_id": 2,
+ "b": [29.0, 29.16], "Omega": [10, 30, 100, 300, 1000, 3000, 10000],
+ "runs_eligible": 12, "runs_attempt_cap": 24, "extension": 12,
+ "T": 100, "record_every": 0.5, "t_discard": 10, "blocks": 6,
+ "lattice": {"h": 0.2, "L": 100}, "tau": 6.666666666666667e-4,
+ "C1_eps": 0.01, "C2": {"omega_min": 100, "widen": 2.0, "bootstrap": 2000},
+ "C3_tol_rel": 0.10, "LNA": {"29.0": [15.59, 112.69, 2.73], "29.16": [15.59, 121.87, 2.84]},
+ "C5": {"seed_scales": [1.5, 0.5, 1.0], "Omega": [300, 1000, 3000], "runs": 20, "t_detect": 60},
+ "C6": {"h": 0.1, "tau": 1.6666666666666666e-4, "Omega": 10000},
+ "N1": {"Omega": 10000, "runs": 4}, "budget_core_hours": 8}

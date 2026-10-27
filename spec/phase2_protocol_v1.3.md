@@ -1,7 +1,10 @@
 # Phase 2 Protocol v1.3: Stochastic Token Rules on a Fixed Lattice (MG003c)
 
-Status: PROPOSED 2026-10-27. Supersedes v1.2 (never frozen) after ChatGPT review round 3
-(`review/MG003_chatgpt_r3.md`, response `review/MG003_response_r3.md`). Becomes frozen on PI sign-off.
+Status: **FROZEN 2026-10-27 (MG003d)** on PI sign-off (Richard Benear). ChatGPT closed its specification
+review in round 4 with no further changes requested (`review/MG003_chatgpt_r4.md`). The PI accepts
+assumptions A1–A2 and the stated residual risks (§5.3). Supersedes v1.2. Freezing the specification does
+not pre-approve any gate result. The only post-freeze edit is the wording clarification below, flagged
+as such.
 
 Changes from v1.2 (MG003c):
 - The confidence claims are now explicitly **conditional on stated assumptions A1–A2** (§5.3).
@@ -222,7 +225,11 @@ probability 0.9¹² = 28%. A1 is therefore checked rather than presumed:
 - **Gate-level pooled audit.** After all of a gate's cells are run, the run-level studentised test is
   repeated over **all** runs of the gate pooled (each cell standardised by its own mean and SD;
   Bonferroni over every run and direction, overall level 1%). Pooling gives power against rare modes
-  that no single cell has: a 3% mode is missed in all 168 MG2 runs with probability 0.97¹⁶⁸ ≈ 0.6%.
+  that no single cell has. Under A2, a 3% run-level mode **shared across all cells** would produce no
+  minority run among the 168 MG2 runs with probability 0.97¹⁶⁸ ≈ 0.6%. That figure is the chance of the
+  mode being entirely absent from the data, **not** the audit's overall failure probability, which also
+  depends on the audit's detection power when a minority run is present and on whether the mode is
+  shared across cells. (Clarified at freeze per review round 4.)
   Any flag downgrades every PASS in that gate to **INCONCLUSIVE pending investigation**, and the
   flagged runs are reported.
 

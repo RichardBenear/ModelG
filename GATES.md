@@ -6,8 +6,8 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | Gate | Phase | Question | Status |
 |---|---|---|---|
 | MG1 | 1 | Continuum PDE reproduces a published stationary Model G soliton | PASS by PI exception (registered FAIL on 1D stationarity preserved) |
-| MG2 | 2 | Stochastic token rules converge to the same-lattice mean-field solution as Ω → ∞ | PROPOSED (awaiting PI sign-off) |
-| MG3 | 2 | Particles nucleate spontaneously from intrinsic fluctuations at finite Ω | PROPOSED (awaiting PI sign-off) |
+| MG2 | 2 | Stochastic token rules converge to the same-lattice mean-field solution as Ω → ∞ | PRE-REGISTERED (pending V1–V4, V6) |
+| MG3 | 2 | Particles nucleate spontaneously from intrinsic fluctuations at finite Ω | PRE-REGISTERED (pending V1–V4, V6) |
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale | PENDING |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve) | PENDING |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | PENDING |
@@ -139,7 +139,7 @@ Operating points: **b = 29** (published) and **b_mid = 29.16** (centre of the op
 single-soliton window [28.929, 29.397]).
 
 ### MG2 — Ω → ∞ convergence of the token rules to the lattice mean field
-Status: PROPOSED 2026-10-27 (MG003, revised MG003a, MG003b, MG003c).
+Status: PRE-REGISTERED 2026-10-27 (MG003d), with PI sign-off on protocol v1.3 and the criteria below. No MG2 gate run preceded this commit.
 
 Setup: each run starts from the lattice-ODE soliton at that b (counts = round(Ω·(S₀ + φ*))), T = 100,
 snapshots every 0.5, t ≥ 10 used. Ω ∈ {10, 30, 100, 300, 1000, 3000, 10000}, **12 eligible runs per
@@ -187,7 +187,7 @@ Controls:
 Exploratory (reported): particle diffusion coefficient D_p(Ω) (expected ∝ 1/Ω); survival curves at b = 29.
 
 ### MG3 — Spontaneous nucleation from intrinsic noise
-Status: PROPOSED 2026-10-27 (MG003, revised MG3 design in MG003a).
+Status: PRE-REGISTERED 2026-10-27 (MG003d), with PI sign-off on protocol v1.3 and the criteria below. No MG3 gate run preceded this commit.
 
 Setup: b = 29, homogeneous Poisson start, no seed, T = 500. Events are **confirmed nucleations**
 (protocol §5.4), handled by the first-passage model of protocol §6 (burn-in 50, censoring at 480,
@@ -260,8 +260,8 @@ Interpretation of a FAIL or INCONCLUSIVE (pre-stated):
 Exploratory (reported): annihilation rate (soliton → homogeneous) at Stage-B Ω; structure factor before
 first nucleation vs the LNA; multi-particle growth after the first event; excursion statistics.
 
-Configs (both gates): `configs/MG2_*.json`, `configs/MG3_*.json` (written at sign-off).
+Configs (both gates): `configs/MG2_main.json`, `configs/MG3_main.json`, `configs/validations.json`.
 Result:
 Replication (ChatGPT):
-PI sign-off (criteria):
+PI sign-off (criteria): Richard Benear, 2026-10-27 (both MG2 and MG3; protocol v1.3 frozen; ChatGPT spec review closed, round 4)
 PI sign-off (result):

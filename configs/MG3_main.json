@@ -1,0 +1,5 @@
+{"gate": "MG3", "protocol": "spec/phase2_protocol_v1.3.md (frozen)", "gate_id": 3,
+ "b": 29.0, "Omega_grid": [300, 100, 50, 30, 20, 15, 10, 7, 5, 3, 2, 1],
+ "stageA_runs": 4, "stageB_runs": 16, "stageB_extension": 16, "max_stageB_cells": 4, "max_midpoints": 2,
+ "T": 500, "burn_in": 50, "persist": 20, "censor": 480,
+ "C4_b": [29.0, 29.16, 29.3], "N1_b": 28.5, "budget_core_hours": 10}
