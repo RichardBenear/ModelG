@@ -52,6 +52,9 @@ This is a choice of foliation and is examined in Phase 6.
 
 ## 5. Reserved for Phase 5
 
-Coupling of local n_G to the spatial rewrite rate. Note from MG001: the G-deficit
-is defined at the soliton core. The full-space φ_G integral is slightly positive in
-standard Model G (see `model_g_published.md` §9).
+Coupling of local n_G to the spatial rewrite rate.
+
+Erratum (MG001a, non-normative note only; the rules above are unchanged): the earlier note
+here is superseded. With conservative hopping (D_S as specified), a stationary localized
+soliton has ∫φ_G = ∫φ_X = 0 exactly in infinite space. See `model_g_published.md` §9.2.
+How "mass" is defined for Phase 5 is an open PI decision.

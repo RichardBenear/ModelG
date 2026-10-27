@@ -6,6 +6,7 @@ Primary source for all numbers below:
 doi:10.1080/03081079.2013.776313. Author-hosted PDF: https://etheric.com/Downloads/model_g.pdf
 
 Transcribed 2026-10-27 in two independent read passes; values agreed in both.
+Revised MG001a (2026-10-27) after ChatGPT review: `review/MG001_chatgpt.md`, `review/MG001_response.md`.
 Equation numbers refer to that paper. Anything that is our inference rather than
 the paper's statement is marked **[ours]**.
 
@@ -19,9 +20,11 @@ the paper's statement is marked **[ours]**.
 | 3d | 2X + Y ⇌ 3X | k₄ | k₋₄ |
 | 3e | X ⇌ Ω | k₅ | k₋₅ |
 
-In the published soliton runs, **only k₋₂ is nonzero among the reverse rates**
-(g = 1/10; s = u = w = 0, and p = q implies k₋₁ = 0). The G ⇌ X back-reaction is
-the feedback that couples X back into G and creates the G-well.
+In the published reference PDEs, **only the X → G reverse contribution remains active**
+(g = 1/10). The other reverse contributions vanish as *combinations*: p = q gives k₋₁ = 0;
+s = 0 gives k₋₄ = 0; u = 0 gives k₋₃Z = 0; w = 0 gives k₋₅Ω = 0. The last two do not fix
+k₋₃ or k₋₅ individually without assuming nonzero reservoir concentrations Z and Ω.
+(Corrected in MG001a per review item 2.) The G ⇌ X back-reaction couples X back into G.
 
 ## 2. Dimensional PDEs (eqs. 4a–4c)
 
@@ -36,7 +39,12 @@ With K = k₋₂ + k₅:
 - Scales: T = 1/K, L = √(D_G T), C = 1/√(k₄ T)
 - d_x = D_X/D_G, d_y = D_Y/D_G
 - a = k₁A√k₄ / K^{3/2}, b = k₃B/K, g = k₋₂/K, p = k₂/K, q = (k₋₁ + k₂)/K,
-  s = k₋₄/k₄, u = k₋₃Z/K, w = √(k₄k₋₅) Ω / K^{3/2}
+  s = k₋₄/k₄, u = k₋₃Z/K, **w = √k₄ · k₋₅Ω / K^{3/2}**
+
+Check: a source term σ in a dimensional equation scales to (T/C)σ, and T/C = √k₄ / K^{3/2}.
+This gives a = √k₄ k₁A / K^{3/2} and w = √k₄ k₋₅Ω / K^{3/2}. (MG001a: the earlier
+√(k₄k₋₅) was a transcription error and is dimensionally inconsistent. It has no effect on the
+reference set, where w = 0.)
 
 ## 4. Dimensionless PDEs (eqs. 7a–7c)
 
@@ -44,7 +52,7 @@ With K = k₋₂ + k₅:
 - ∂X/∂t = d_x∇²X + pG − (1 + b)X + uY − sX³ + X²Y + w
 - ∂Y/∂t = d_y∇²Y + bX − uY + sX³ − X²Y
 
-Potentials: φ_G = G − G₀, φ_X = X − X₀, φ_Y = Y − Y₀ (eqs. 13a–c).
+Potentials (eq. 12): φ_G = G − G₀, φ_X = X − X₀, φ_Y = Y − Y₀. Potential-form PDEs: eqs. 13a–c.
 
 **Homogeneous steady state:** G₀ = (a + gw)/(q − gp), X₀ = (pa + qw)/(q − gp),
 Y₀ = X₀(sX₀² + b)/(X₀² + u).
@@ -72,7 +80,35 @@ Steady state: G₀ = X₀ = 140/9 ≈ 15.5556, Y₀ = b/X₀ ≈ 1.86429.
 
 Multi-particle seeds: χ₂ = χ(x + d₂/2) + χ(x − d₂/2); χ₃ = χ(x + d₃) + χ(x) + χ(x − d₃).
 
-Core-broadening variant "2Dδ": ∇² → δ(r)∇² with δ(r) = 1 + exp(−4r²/9).
+Core-broadening variant "2Dδ" (eqs. 24–25): ∇² → δ(r)∇² with δ(r) = 1 + exp(−4r²/9),
+applied to all three Laplacian terms (the paper states one blanket substitution into eqs. 19).
+**Note:** δ∇²φ is *not* conservative diffusion. It differs from ∇·(δ∇φ) by ∇δ·∇φ, so it does
+not conserve ∫φ under transport. This matters for graph translation (§9) and for the integral
+identity in §9.2. A graph hopping rule with a node-dependent rate δ(source) gives yet another
+form, ∇²(δφ). The three forms must not be conflated.
+
+### 6a. Benchmark measurement definitions (§3.2, eqs. 20–21)
+
+- **Core radius r₀:** each field's own innermost zero crossing. φ_G, φ_X, φ_Y each have their own r₀.
+- **Core integral (eq. 21):** 1D ∫₋ᵣ₀^{r₀} φ dr; 2D 2π∫₀^{r₀} φ r dr; 3D 4π∫₀^{r₀} φ r² dr.
+- **Core RMS radius (eq. 20):** √(∫φ r² dS / ∫φ dS) over the core, with the same geometric measure.
+- **Full integral:** the same as eq. 21 with r₀ → 50, the domain edge. It is a **finite-domain** quantity.
+- **Turing wavelength:** twice the mean spacing of successive zeros, using centrally aligned points.
+
+### 6b. Gradient benchmark (§4.3, eqs. 26–27): separate setup
+
+This benchmark does **not** use the zero-initial-condition setup above.
+- 1D, x ∈ [−50, 50], t ∈ [0, 200].
+- Gradient γ_m(x,t) = 0 for t < 100, and m·x + 10⁻⁴/6 for t ≥ 100 (eq. 26).
+  It is added as a source to the φ_G equation (13a) **and** sets the G boundary:
+  φ_G(±50,t) = γ_m(±50,t) (eq. 27e). φ_X and φ_Y keep zero boundaries (27f–g).
+- Gaussian initial conditions (27b–d), α = 3875/4096:
+  φ_G = −0.161α·e^{−½(x/0.363)²}, φ_X = −8.37α·e^{−½(x/0.272)²}, φ_Y = 0.930α·e^{−½(x/0.302)²}.
+  (The paper uses −8.37 here and −8.36 in Table 1.)
+- Slopes m = −10⁻⁵k/3, k = 0…10.
+- Position: midpoint of the two central zeros of φ_X flanking its minimum. Velocity: averaged
+  over t = 150–200 (the differencing method is not stated).
+- Result: v = −0.0599 m.
 
 ## 7. Published results (Table 1 and text)
 
@@ -109,7 +145,12 @@ Other reported behavior:
 
 - Steady-state residuals vanish at the eq. 17 values (transcription self-consistent).
 - The homogeneous state is **linearly stable**: max Re σ(k) = −0.195 at k* = 1.995
-  (λ* = 3.149). The system is **subcritical**, matching the paper's claim that it needs a seed.
+  (λ* = 3.149). The operating point is therefore below the linear Turing threshold.
+  This alone does **not** establish a subcritical bifurcation, which needs nonlinear branch
+  analysis. If MG1 confirms that a finite-amplitude stationary soliton coexists with this stable
+  homogeneous state, that shows bistability. Bistability is consistent with, but not proof of, a
+  subcritical branch. (Wording tightened in MG001a per review item 6. The numbers were
+  independently reproduced by ChatGPT.)
 - Turing threshold: b_c = 30.044 (λ_c = 2.993). The published b = 29 is **3.5% below threshold**.
 - The least-stable linear wavelength (3.15) is within 2.3% of the reported nonlinear λ₀ = 3.08.
 
@@ -117,11 +158,31 @@ Other reported behavior:
 
 1. **Rule spec needs the G ⇌ X back-reaction.** Rules v1.0 omitted k₋₂, but the
    reference set uses g = 0.1. This is fixed in `spec/rules_v1.1.md`.
-2. **The "G-well" is a core feature, not a net deficit.** φ_G is negative in the core,
-   but its full-space integral is slightly **positive** in standard 1D/2D/3D. It is negative
-   (the authors' "positive gravitational mass") only in the core-broadened 2Dδ variant.
-   MG6's "integrated G-deficit" must therefore be defined on the core (row d), or use the δ variant.
-   This decision is deferred to the Phase 5 spec.
+2. **Integral identity: in infinite space, standard Model G solitons carry zero net G and X
+   (MG001a).** Integrate eqs. 13a–c over a domain V for any parameters, with constant-coefficient
+   (conservative) diffusion. The nonlinear X²Y terms and the b, s, u terms cancel in the sum of
+   all three equations, leaving linear balances:
+   - G equation: dI_G/dt = F_G − q I_G + g I_X
+   - Sum: d(I_G + I_X + I_Y)/dt = F_G + F_X + F_Y − (q − p) I_G − (1 − g) I_X
+
+   Here F_S = d_S ∮∇φ_S·n dS is the boundary flux. For a stationary soliton whose tails decay
+   fast enough that F_S → 0 as V → ℝⁿ, this gives **I_X = 0 and I_G = 0 exactly**
+   (generic q, p, g); I_Y is unconstrained. Consequences:
+   - The nonzero Table 1 full integrals (row e) are finite-domain/boundary effects. With q = p = 1
+     and g = 0.1, stationarity would require boundary fluxes F_G = I_G − g·I_X of −0.164 (3D)
+     and −0.0099 (2D), and total flux 0.9·I_X = +1.74 (3D). These are larger than the integrals
+     themselves (`results/MG001/integral_identity.txt`). This confirms the review's concern
+     (item 4): small residual integrals must not be read physically before domain size,
+     boundary flux, quadrature and convergence time are checked.
+   - The 2Dδ variant's negative I_G (−0.480), the authors' "positive gravitational mass", is
+     possible only because δ(r)∇² is non-conservative and breaks the identity.
+   - **For Phase 5 this is decisive.** With conservative diffusion (which graph-hopping rules
+     are), a particle has **no net G monopole**. Coupling local G to spatial growth would then
+     predict a far-field curvature with no 1/r (monopole) term, unless the diffusion is made
+     non-conservative or another sink breaks the identity. Defining "mass" from the core
+     integral would be a **new project convention**, not the paper's. That choice is the PI's
+     at the Phase 5 spec.
+   - MG1 should test the identity numerically: full integrals → 0 as the domain grows.
 3. **The X core is nearly depleted.** In 3D, X ≈ X₀ + φ_X ≈ 15.56 − 14.6 ≈ 0.96 at the center,
    about 6% of background. Relative stochastic fluctuations will be largest exactly there,
    which matters for choosing Ω in MG2/MG3.
@@ -134,8 +195,10 @@ Other reported behavior:
 
 - P. A. LaViolette, "An introduction to subquantum kinetics," *Int. J. General Systems* 11 (1985):
   the original Model G papers.
-- P. A. LaViolette, "The electric charge and magnetization distribution of the nucleon,"
-  *Physics Essays* 21 (2008): https://starburstfound.org/downloads/physics/nucleon.pdf.
+- P. A. LaViolette, "The electric charge and magnetization distribution of the nucleon:
+  Evidence of a subatomic Turing wave pattern," *Int. J. General Systems* 37(6) (2008),
+  649–676: https://starburstfound.org/downloads/physics/nucleon.pdf. (Citation corrected in MG001a.
+  Verify volume and pages against the journal record before the paper draft.)
   Gives only the forward scheme and no numerical parameters.
 - Model G Vortical Motion Group, "Explanation of Model G in subquantum kinetics" (2020):
   https://starburstfound.org/downloads/physics/explanation-Model-G.pdf. Same reversible scheme;

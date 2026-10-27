@@ -59,6 +59,11 @@ Null controls:
 - N2 (exploratory, not pass/fail): seed amplitude scaled by 0.25, 0.5, 0.75 → report whether a
   soliton nucleates and estimate the nucleation threshold amplitude. This feeds MG3.
 
+Diagnostic (not pass/fail; added MG001a): integral identity. Report full integrals of φ_G and φ_X
+together with boundary fluxes F_S at R = 50, 100 and 200. Predicted: the steady-state balances in
+`model_g_published.md` §9.2 close to within quadrature error, and I_G, I_X → 0 as R grows.
+A Table 1 row (e) mismatch at R = 50 that is explained by boundary flux counts as consistent.
+
 Out of scope for MG1 (later stages): the 2Dδ variant, multi-particle bonding (3.303 / 3.314),
 gradient drift (v = −0.0599 m).
 

@@ -28,7 +28,18 @@ framework does alone.
 | Computation & documentation | Claude | Code, runs, stage log, white paper |
 | Independent replication & adversarial review | ChatGPT | Re-derives gate results from the spec alone; critiques |
 
-Reviews from ChatGPT go in `review/` as `review/MGxxx_chatgpt.md`.
+### Review protocol (Claude ⇄ ChatGPT)
+
+1. Claude commits a stage and names the files to review in `STAGE_LOG.md`.
+2. ChatGPT reviews the repo read-only. The PI saves its review **verbatim** as
+   `review/MGxxx_chatgpt.md` (or pastes it to Claude, who saves it verbatim).
+3. Claude answers in `review/MGxxx_response.md` with a disposition for each numbered item:
+   **Accepted / Accepted with modification / Rejected**, with reasoning and the commit that
+   addresses it. Corrections are logged as a lettered sub-stage (e.g. MG001a).
+4. ChatGPT re-checks against the response file and the diff. Rounds continue as
+   `MGxxx_chatgpt_r2.md` / `MGxxx_response_r2.md` until it has no open items, or the PI rules on
+   a disagreement.
+5. No gate run starts while review items on its spec are open.
 
 ## Conventions
 
