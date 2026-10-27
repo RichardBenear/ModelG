@@ -15,9 +15,9 @@ Part A (3000 reps/cell, M in 4/6/12, 6 noise types, bias 0-2%, sigma 0.1-3%):
     bias 0.0% sigma 0.3%: P(INCONCLUSIVE) worst over noise types 0.003
     bias 0.5% sigma 0.1%: P(INCONCLUSIVE) worst over noise types 0.000
     bias 0.5% sigma 0.3%: P(INCONCLUSIVE) worst over noise types 0.014
-Part B (alpha CI; true alpha = 1; Omega = [100, 300, 1000, 3000, 10000]; 300 reps x 400 bootstrap):
+Part B v2 (MG003b fix: distinct-pair bootstrap U-stat, pre-selected significant cells; alpha CI; true alpha = 1; Omega = [100, 300, 1000, 3000, 10000]; 300 reps x 400 bootstrap):
   widen=1.0: worst coverage 0.000 (target >= 0.95 - 2 MC SE = 0.925)
   widen=1.25: worst coverage 0.000 (target >= 0.95 - 2 MC SE = 0.925)
-  widen=1.5: worst coverage 0.003 (target >= 0.95 - 2 MC SE = 0.925)
-  widen=2.0: worst coverage 0.013 (target >= 0.95 - 2 MC SE = 0.925)
+  widen=1.5: worst coverage 0.000 (target >= 0.95 - 2 MC SE = 0.925)
+  widen=2.0: worst coverage 0.000 (target >= 0.95 - 2 MC SE = 0.925)
   calibrated widening factor: None

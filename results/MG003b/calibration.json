@@ -2884,106 +2884,10 @@
  "B": [
   {
    "widen": 1.0,
-   "M": 6,
-   "kind": "iso",
-   "ratio": 0.1,
-   "coverage": 0.5333333333333333,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.0,
-   "M": 6,
-   "kind": "iso",
-   "ratio": 0.3,
-   "coverage": 0.18,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.0,
-   "M": 6,
-   "kind": "iso",
-   "ratio": 1.0,
-   "coverage": 0.016666666666666666,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.0,
-   "M": 6,
-   "kind": "rank3",
-   "ratio": 0.1,
-   "coverage": 0.94,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.0,
-   "M": 6,
-   "kind": "rank3",
-   "ratio": 0.3,
-   "coverage": 0.9433333333333334,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.0,
-   "M": 6,
-   "kind": "rank3",
-   "ratio": 1.0,
-   "coverage": 0.6047430830039525,
-   "defined": 0.8433333333333334
-  },
-  {
-   "widen": 1.0,
-   "M": 6,
-   "kind": "twoP+",
-   "ratio": 0.1,
-   "coverage": 0.8666666666666667,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.0,
-   "M": 6,
-   "kind": "twoP+",
-   "ratio": 0.3,
-   "coverage": 0.5738831615120275,
-   "defined": 0.97
-  },
-  {
-   "widen": 1.0,
-   "M": 6,
-   "kind": "twoP+",
-   "ratio": 1.0,
-   "coverage": 0.06666666666666667,
-   "defined": 0.3
-  },
-  {
-   "widen": 1.0,
-   "M": 6,
-   "kind": "t3",
-   "ratio": 0.1,
-   "coverage": 0.8733333333333333,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.0,
-   "M": 6,
-   "kind": "t3",
-   "ratio": 0.3,
-   "coverage": 0.9233333333333333,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.0,
-   "M": 6,
-   "kind": "t3",
-   "ratio": 1.0,
-   "coverage": 0.7454545454545455,
-   "defined": 0.9166666666666666
-  },
-  {
-   "widen": 1.0,
    "M": 12,
    "kind": "iso",
    "ratio": 0.1,
-   "coverage": 0.6533333333333333,
+   "coverage": 0.9166666666666666,
    "defined": 1.0
   },
   {
@@ -2991,7 +2895,7 @@
    "M": 12,
    "kind": "iso",
    "ratio": 0.3,
-   "coverage": 0.12666666666666668,
+   "coverage": 0.9533333333333334,
    "defined": 1.0
   },
   {
@@ -3000,36 +2904,12 @@
    "kind": "iso",
    "ratio": 1.0,
    "coverage": 0.0,
-   "defined": 1.0
+   "defined": 0.0
   },
   {
    "widen": 1.0,
    "M": 12,
-   "kind": "rank3",
-   "ratio": 0.1,
-   "coverage": 0.93,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.0,
-   "M": 12,
-   "kind": "rank3",
-   "ratio": 0.3,
-   "coverage": 0.9566666666666667,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.0,
-   "M": 12,
-   "kind": "rank3",
-   "ratio": 1.0,
-   "coverage": 0.8028169014084507,
-   "defined": 0.9466666666666667
-  },
-  {
-   "widen": 1.0,
-   "M": 12,
-   "kind": "twoP+",
+   "kind": "rank1b",
    "ratio": 0.1,
    "coverage": 0.94,
    "defined": 1.0
@@ -3037,169 +2917,169 @@
   {
    "widen": 1.0,
    "M": 12,
+   "kind": "rank1b",
+   "ratio": 0.3,
+   "coverage": 0.9202898550724637,
+   "defined": 0.92
+  },
+  {
+   "widen": 1.0,
+   "M": 12,
+   "kind": "rank1b",
+   "ratio": 1.0,
+   "coverage": 0.6296296296296297,
+   "defined": 0.09
+  },
+  {
+   "widen": 1.0,
+   "M": 12,
+   "kind": "rank3",
+   "ratio": 0.1,
+   "coverage": 0.9033333333333333,
+   "defined": 1.0
+  },
+  {
+   "widen": 1.0,
+   "M": 12,
+   "kind": "rank3",
+   "ratio": 0.3,
+   "coverage": 0.9292929292929293,
+   "defined": 0.99
+  },
+  {
+   "widen": 1.0,
+   "M": 12,
+   "kind": "rank3",
+   "ratio": 1.0,
+   "coverage": 0.6875,
+   "defined": 0.05333333333333334
+  },
+  {
+   "widen": 1.0,
+   "M": 12,
+   "kind": "twoP+",
+   "ratio": 0.1,
+   "coverage": 0.9498327759197325,
+   "defined": 0.9966666666666667
+  },
+  {
+   "widen": 1.0,
+   "M": 12,
    "kind": "twoP+",
    "ratio": 0.3,
-   "coverage": 0.9833333333333333,
-   "defined": 1.0
+   "coverage": 0.8544061302681992,
+   "defined": 0.87
   },
   {
    "widen": 1.0,
    "M": 12,
    "kind": "twoP+",
    "ratio": 1.0,
-   "coverage": 0.6592920353982301,
-   "defined": 0.7533333333333333
+   "coverage": 0.5714285714285714,
+   "defined": 0.04666666666666667
+  },
+  {
+   "widen": 1.0,
+   "M": 12,
+   "kind": "twoP-",
+   "ratio": 0.1,
+   "coverage": 0.8066666666666666,
+   "defined": 1.0
+  },
+  {
+   "widen": 1.0,
+   "M": 12,
+   "kind": "twoP-",
+   "ratio": 0.3,
+   "coverage": 0.83,
+   "defined": 1.0
+  },
+  {
+   "widen": 1.0,
+   "M": 12,
+   "kind": "twoP-",
+   "ratio": 1.0,
+   "coverage": 0.2,
+   "defined": 0.06666666666666667
   },
   {
    "widen": 1.0,
    "M": 12,
    "kind": "t3",
    "ratio": 0.1,
-   "coverage": 0.92,
-   "defined": 1.0
+   "coverage": 0.9297658862876255,
+   "defined": 0.9966666666666667
   },
   {
    "widen": 1.0,
    "M": 12,
    "kind": "t3",
+   "ratio": 0.3,
+   "coverage": 0.9081632653061225,
+   "defined": 0.98
+  },
+  {
+   "widen": 1.0,
+   "M": 12,
+   "kind": "t3",
+   "ratio": 1.0,
+   "coverage": 0.7111111111111111,
+   "defined": 0.15
+  },
+  {
+   "widen": 1.25,
+   "M": 12,
+   "kind": "iso",
+   "ratio": 0.1,
+   "coverage": 0.9566666666666667,
+   "defined": 1.0
+  },
+  {
+   "widen": 1.25,
+   "M": 12,
+   "kind": "iso",
    "ratio": 0.3,
    "coverage": 0.9666666666666667,
    "defined": 1.0
   },
   {
-   "widen": 1.0,
-   "M": 12,
-   "kind": "t3",
-   "ratio": 1.0,
-   "coverage": 0.8450704225352113,
-   "defined": 0.9466666666666667
-  },
-  {
-   "widen": 1.25,
-   "M": 6,
-   "kind": "iso",
-   "ratio": 0.1,
-   "coverage": 0.49333333333333335,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.25,
-   "M": 6,
-   "kind": "iso",
-   "ratio": 0.3,
-   "coverage": 0.09333333333333334,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.25,
-   "M": 6,
-   "kind": "iso",
-   "ratio": 1.0,
-   "coverage": 0.016666666666666666,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.25,
-   "M": 6,
-   "kind": "rank3",
-   "ratio": 0.1,
-   "coverage": 0.9466666666666667,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.25,
-   "M": 6,
-   "kind": "rank3",
-   "ratio": 0.3,
-   "coverage": 0.9566666666666667,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.25,
-   "M": 6,
-   "kind": "rank3",
-   "ratio": 1.0,
-   "coverage": 0.7279693486590039,
-   "defined": 0.87
-  },
-  {
-   "widen": 1.25,
-   "M": 6,
-   "kind": "twoP+",
-   "ratio": 0.1,
-   "coverage": 0.9066666666666666,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.25,
-   "M": 6,
-   "kind": "twoP+",
-   "ratio": 0.3,
-   "coverage": 0.6829268292682927,
-   "defined": 0.9566666666666667
-  },
-  {
-   "widen": 1.25,
-   "M": 6,
-   "kind": "twoP+",
-   "ratio": 1.0,
-   "coverage": 0.09859154929577464,
-   "defined": 0.23666666666666666
-  },
-  {
-   "widen": 1.25,
-   "M": 6,
-   "kind": "t3",
-   "ratio": 0.1,
-   "coverage": 0.93,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.25,
-   "M": 6,
-   "kind": "t3",
-   "ratio": 0.3,
-   "coverage": 0.95,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.25,
-   "M": 6,
-   "kind": "t3",
-   "ratio": 1.0,
-   "coverage": 0.8597785977859779,
-   "defined": 0.9033333333333333
-  },
-  {
-   "widen": 1.25,
-   "M": 12,
-   "kind": "iso",
-   "ratio": 0.1,
-   "coverage": 0.7033333333333334,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.25,
-   "M": 12,
-   "kind": "iso",
-   "ratio": 0.3,
-   "coverage": 0.09,
-   "defined": 1.0
-  },
-  {
    "widen": 1.25,
    "M": 12,
    "kind": "iso",
    "ratio": 1.0,
    "coverage": 0.0,
-   "defined": 1.0
+   "defined": 0.0
+  },
+  {
+   "widen": 1.25,
+   "M": 12,
+   "kind": "rank1b",
+   "ratio": 0.1,
+   "coverage": 0.959731543624161,
+   "defined": 0.9933333333333333
+  },
+  {
+   "widen": 1.25,
+   "M": 12,
+   "kind": "rank1b",
+   "ratio": 0.3,
+   "coverage": 0.9745454545454545,
+   "defined": 0.9166666666666666
+  },
+  {
+   "widen": 1.25,
+   "M": 12,
+   "kind": "rank1b",
+   "ratio": 1.0,
+   "coverage": 0.7714285714285715,
+   "defined": 0.11666666666666667
   },
   {
    "widen": 1.25,
    "M": 12,
    "kind": "rank3",
    "ratio": 0.1,
-   "coverage": 0.9866666666666667,
+   "coverage": 0.9633333333333334,
    "defined": 1.0
   },
   {
@@ -3207,140 +3087,212 @@
    "M": 12,
    "kind": "rank3",
    "ratio": 0.3,
-   "coverage": 0.9733333333333334,
-   "defined": 1.0
+   "coverage": 0.9665551839464883,
+   "defined": 0.9966666666666667
   },
   {
    "widen": 1.25,
    "M": 12,
    "kind": "rank3",
    "ratio": 1.0,
-   "coverage": 0.8794326241134752,
-   "defined": 0.94
+   "coverage": 0.7368421052631579,
+   "defined": 0.06333333333333334
   },
   {
    "widen": 1.25,
    "M": 12,
    "kind": "twoP+",
    "ratio": 0.1,
-   "coverage": 0.9833333333333333,
-   "defined": 1.0
+   "coverage": 0.959866220735786,
+   "defined": 0.9966666666666667
   },
   {
    "widen": 1.25,
    "M": 12,
    "kind": "twoP+",
    "ratio": 0.3,
-   "coverage": 0.9866666666666667,
-   "defined": 1.0
+   "coverage": 0.9310344827586207,
+   "defined": 0.87
   },
   {
    "widen": 1.25,
    "M": 12,
    "kind": "twoP+",
    "ratio": 1.0,
-   "coverage": 0.8879310344827587,
-   "defined": 0.7733333333333333
+   "coverage": 0.36363636363636365,
+   "defined": 0.03666666666666667
+  },
+  {
+   "widen": 1.25,
+   "M": 12,
+   "kind": "twoP-",
+   "ratio": 0.1,
+   "coverage": 0.8733333333333333,
+   "defined": 1.0
+  },
+  {
+   "widen": 1.25,
+   "M": 12,
+   "kind": "twoP-",
+   "ratio": 0.3,
+   "coverage": 0.8666666666666667,
+   "defined": 1.0
+  },
+  {
+   "widen": 1.25,
+   "M": 12,
+   "kind": "twoP-",
+   "ratio": 1.0,
+   "coverage": 0.5238095238095238,
+   "defined": 0.07
   },
   {
    "widen": 1.25,
    "M": 12,
    "kind": "t3",
+   "ratio": 0.1,
+   "coverage": 0.9666666666666667,
+   "defined": 1.0
+  },
+  {
+   "widen": 1.25,
+   "M": 12,
+   "kind": "t3",
+   "ratio": 0.3,
+   "coverage": 0.9389830508474576,
+   "defined": 0.9833333333333333
+  },
+  {
+   "widen": 1.25,
+   "M": 12,
+   "kind": "t3",
+   "ratio": 1.0,
+   "coverage": 0.75,
+   "defined": 0.13333333333333333
+  },
+  {
+   "widen": 1.5,
+   "M": 12,
+   "kind": "iso",
    "ratio": 0.1,
    "coverage": 0.98,
    "defined": 1.0
   },
   {
-   "widen": 1.25,
+   "widen": 1.5,
    "M": 12,
-   "kind": "t3",
+   "kind": "iso",
    "ratio": 0.3,
-   "coverage": 0.9733333333333334,
+   "coverage": 0.9966666666666667,
    "defined": 1.0
   },
   {
-   "widen": 1.25,
+   "widen": 1.5,
    "M": 12,
-   "kind": "t3",
-   "ratio": 1.0,
-   "coverage": 0.9479166666666666,
-   "defined": 0.96
-  },
-  {
-   "widen": 1.5,
-   "M": 6,
-   "kind": "iso",
-   "ratio": 0.1,
-   "coverage": 0.53,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.5,
-   "M": 6,
-   "kind": "iso",
-   "ratio": 0.3,
-   "coverage": 0.04666666666666667,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.5,
-   "M": 6,
    "kind": "iso",
    "ratio": 1.0,
-   "coverage": 0.006666666666666667,
-   "defined": 1.0
+   "coverage": 0.0,
+   "defined": 0.0
   },
   {
    "widen": 1.5,
-   "M": 6,
+   "M": 12,
+   "kind": "rank1b",
+   "ratio": 0.1,
+   "coverage": 0.9933110367892977,
+   "defined": 0.9966666666666667
+  },
+  {
+   "widen": 1.5,
+   "M": 12,
+   "kind": "rank1b",
+   "ratio": 0.3,
+   "coverage": 0.977859778597786,
+   "defined": 0.9033333333333333
+  },
+  {
+   "widen": 1.5,
+   "M": 12,
+   "kind": "rank1b",
+   "ratio": 1.0,
+   "coverage": 0.84375,
+   "defined": 0.10666666666666667
+  },
+  {
+   "widen": 1.5,
+   "M": 12,
    "kind": "rank3",
    "ratio": 0.1,
-   "coverage": 0.9533333333333334,
+   "coverage": 0.98,
    "defined": 1.0
   },
   {
    "widen": 1.5,
-   "M": 6,
+   "M": 12,
    "kind": "rank3",
    "ratio": 0.3,
-   "coverage": 0.9566666666666667,
+   "coverage": 0.98,
    "defined": 1.0
   },
   {
    "widen": 1.5,
-   "M": 6,
+   "M": 12,
    "kind": "rank3",
    "ratio": 1.0,
-   "coverage": 0.8358778625954199,
-   "defined": 0.8733333333333333
+   "coverage": 0.8947368421052632,
+   "defined": 0.06333333333333334
   },
   {
    "widen": 1.5,
-   "M": 6,
+   "M": 12,
    "kind": "twoP+",
    "ratio": 0.1,
-   "coverage": 0.92,
+   "coverage": 0.9531772575250836,
+   "defined": 0.9966666666666667
+  },
+  {
+   "widen": 1.5,
+   "M": 12,
+   "kind": "twoP+",
+   "ratio": 0.3,
+   "coverage": 0.9444444444444444,
+   "defined": 0.84
+  },
+  {
+   "widen": 1.5,
+   "M": 12,
+   "kind": "twoP+",
+   "ratio": 1.0,
+   "coverage": 0.5833333333333334,
+   "defined": 0.04
+  },
+  {
+   "widen": 1.5,
+   "M": 12,
+   "kind": "twoP-",
+   "ratio": 0.1,
+   "coverage": 0.9066666666666666,
    "defined": 1.0
   },
   {
    "widen": 1.5,
-   "M": 6,
-   "kind": "twoP+",
+   "M": 12,
+   "kind": "twoP-",
    "ratio": 0.3,
-   "coverage": 0.7724137931034483,
-   "defined": 0.9666666666666667
+   "coverage": 0.9233333333333333,
+   "defined": 1.0
   },
   {
    "widen": 1.5,
-   "M": 6,
-   "kind": "twoP+",
+   "M": 12,
+   "kind": "twoP-",
    "ratio": 1.0,
-   "coverage": 0.18181818181818182,
-   "defined": 0.29333333333333333
+   "coverage": 0.5555555555555556,
+   "defined": 0.06
   },
   {
    "widen": 1.5,
-   "M": 6,
+   "M": 12,
    "kind": "t3",
    "ratio": 0.1,
    "coverage": 0.99,
@@ -3348,240 +3300,144 @@
   },
   {
    "widen": 1.5,
-   "M": 6,
+   "M": 12,
    "kind": "t3",
    "ratio": 0.3,
+   "coverage": 0.9765100671140939,
+   "defined": 0.9933333333333333
+  },
+  {
+   "widen": 1.5,
+   "M": 12,
+   "kind": "t3",
+   "ratio": 1.0,
+   "coverage": 0.9090909090909091,
+   "defined": 0.11
+  },
+  {
+   "widen": 2.0,
+   "M": 12,
+   "kind": "iso",
+   "ratio": 0.1,
+   "coverage": 0.9966666666666667,
+   "defined": 1.0
+  },
+  {
+   "widen": 2.0,
+   "M": 12,
+   "kind": "iso",
+   "ratio": 0.3,
+   "coverage": 1.0,
+   "defined": 1.0
+  },
+  {
+   "widen": 2.0,
+   "M": 12,
+   "kind": "iso",
+   "ratio": 1.0,
+   "coverage": 0.0,
+   "defined": 0.0
+  },
+  {
+   "widen": 2.0,
+   "M": 12,
+   "kind": "rank1b",
+   "ratio": 0.1,
+   "coverage": 0.9966555183946488,
+   "defined": 0.9966666666666667
+  },
+  {
+   "widen": 2.0,
+   "M": 12,
+   "kind": "rank1b",
+   "ratio": 0.3,
+   "coverage": 0.9963369963369964,
+   "defined": 0.91
+  },
+  {
+   "widen": 2.0,
+   "M": 12,
+   "kind": "rank1b",
+   "ratio": 1.0,
+   "coverage": 0.90625,
+   "defined": 0.10666666666666667
+  },
+  {
+   "widen": 2.0,
+   "M": 12,
+   "kind": "rank3",
+   "ratio": 0.1,
+   "coverage": 0.9933333333333333,
+   "defined": 1.0
+  },
+  {
+   "widen": 2.0,
+   "M": 12,
+   "kind": "rank3",
+   "ratio": 0.3,
+   "coverage": 0.9932659932659933,
+   "defined": 0.99
+  },
+  {
+   "widen": 2.0,
+   "M": 12,
+   "kind": "rank3",
+   "ratio": 1.0,
+   "coverage": 1.0,
+   "defined": 0.03666666666666667
+  },
+  {
+   "widen": 2.0,
+   "M": 12,
+   "kind": "twoP+",
+   "ratio": 0.1,
+   "coverage": 0.9899665551839465,
+   "defined": 0.9966666666666667
+  },
+  {
+   "widen": 2.0,
+   "M": 12,
+   "kind": "twoP+",
+   "ratio": 0.3,
+   "coverage": 0.9224806201550387,
+   "defined": 0.86
+  },
+  {
+   "widen": 2.0,
+   "M": 12,
+   "kind": "twoP+",
+   "ratio": 1.0,
+   "coverage": 0.42857142857142855,
+   "defined": 0.04666666666666667
+  },
+  {
+   "widen": 2.0,
+   "M": 12,
+   "kind": "twoP-",
+   "ratio": 0.1,
    "coverage": 0.9633333333333334,
    "defined": 1.0
   },
   {
-   "widen": 1.5,
-   "M": 6,
-   "kind": "t3",
-   "ratio": 1.0,
-   "coverage": 0.9010989010989011,
-   "defined": 0.91
-  },
-  {
-   "widen": 1.5,
+   "widen": 2.0,
    "M": 12,
-   "kind": "iso",
-   "ratio": 0.1,
-   "coverage": 0.7,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.5,
-   "M": 12,
-   "kind": "iso",
+   "kind": "twoP-",
    "ratio": 0.3,
-   "coverage": 0.03,
+   "coverage": 0.9566666666666667,
    "defined": 1.0
   },
   {
-   "widen": 1.5,
+   "widen": 2.0,
    "M": 12,
-   "kind": "iso",
+   "kind": "twoP-",
    "ratio": 1.0,
-   "coverage": 0.0033333333333333335,
-   "defined": 1.0
+   "coverage": 0.6,
+   "defined": 0.06666666666666667
   },
   {
-   "widen": 1.5,
-   "M": 12,
-   "kind": "rank3",
-   "ratio": 0.1,
-   "coverage": 0.9833333333333333,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.5,
-   "M": 12,
-   "kind": "rank3",
-   "ratio": 0.3,
-   "coverage": 0.9933333333333333,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.5,
-   "M": 12,
-   "kind": "rank3",
-   "ratio": 1.0,
-   "coverage": 0.9436619718309859,
-   "defined": 0.9466666666666667
-  },
-  {
-   "widen": 1.5,
-   "M": 12,
-   "kind": "twoP+",
-   "ratio": 0.1,
-   "coverage": 0.98,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.5,
-   "M": 12,
-   "kind": "twoP+",
-   "ratio": 0.3,
-   "coverage": 0.9533333333333334,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.5,
-   "M": 12,
-   "kind": "twoP+",
-   "ratio": 1.0,
-   "coverage": 0.963302752293578,
-   "defined": 0.7266666666666667
-  },
-  {
-   "widen": 1.5,
+   "widen": 2.0,
    "M": 12,
    "kind": "t3",
-   "ratio": 0.1,
-   "coverage": 0.9866666666666667,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.5,
-   "M": 12,
-   "kind": "t3",
-   "ratio": 0.3,
-   "coverage": 0.9866666666666667,
-   "defined": 1.0
-  },
-  {
-   "widen": 1.5,
-   "M": 12,
-   "kind": "t3",
-   "ratio": 1.0,
-   "coverage": 0.9583333333333334,
-   "defined": 0.96
-  },
-  {
-   "widen": 2.0,
-   "M": 6,
-   "kind": "iso",
-   "ratio": 0.1,
-   "coverage": 0.53,
-   "defined": 1.0
-  },
-  {
-   "widen": 2.0,
-   "M": 6,
-   "kind": "iso",
-   "ratio": 0.3,
-   "coverage": 0.02,
-   "defined": 1.0
-  },
-  {
-   "widen": 2.0,
-   "M": 6,
-   "kind": "iso",
-   "ratio": 1.0,
-   "coverage": 0.02,
-   "defined": 1.0
-  },
-  {
-   "widen": 2.0,
-   "M": 6,
-   "kind": "rank3",
-   "ratio": 0.1,
-   "coverage": 0.9833333333333333,
-   "defined": 1.0
-  },
-  {
-   "widen": 2.0,
-   "M": 6,
-   "kind": "rank3",
-   "ratio": 0.3,
-   "coverage": 0.9866666666666667,
-   "defined": 1.0
-  },
-  {
-   "widen": 2.0,
-   "M": 6,
-   "kind": "rank3",
-   "ratio": 1.0,
-   "coverage": 0.90625,
-   "defined": 0.8533333333333334
-  },
-  {
-   "widen": 2.0,
-   "M": 6,
-   "kind": "twoP+",
-   "ratio": 0.1,
-   "coverage": 0.9733333333333334,
-   "defined": 1.0
-  },
-  {
-   "widen": 2.0,
-   "M": 6,
-   "kind": "twoP+",
-   "ratio": 0.3,
-   "coverage": 0.7842465753424658,
-   "defined": 0.9733333333333334
-  },
-  {
-   "widen": 2.0,
-   "M": 6,
-   "kind": "twoP+",
-   "ratio": 1.0,
-   "coverage": 0.19753086419753085,
-   "defined": 0.27
-  },
-  {
-   "widen": 2.0,
-   "M": 6,
-   "kind": "t3",
-   "ratio": 0.1,
-   "coverage": 0.9933333333333333,
-   "defined": 1.0
-  },
-  {
-   "widen": 2.0,
-   "M": 6,
-   "kind": "t3",
-   "ratio": 0.3,
-   "coverage": 0.9866666666666667,
-   "defined": 1.0
-  },
-  {
-   "widen": 2.0,
-   "M": 6,
-   "kind": "t3",
-   "ratio": 1.0,
-   "coverage": 0.9422382671480144,
-   "defined": 0.9233333333333333
-  },
-  {
-   "widen": 2.0,
-   "M": 12,
-   "kind": "iso",
-   "ratio": 0.1,
-   "coverage": 0.75,
-   "defined": 1.0
-  },
-  {
-   "widen": 2.0,
-   "M": 12,
-   "kind": "iso",
-   "ratio": 0.3,
-   "coverage": 0.02,
-   "defined": 1.0
-  },
-  {
-   "widen": 2.0,
-   "M": 12,
-   "kind": "iso",
-   "ratio": 1.0,
-   "coverage": 0.013333333333333334,
-   "defined": 1.0
-  },
-  {
-   "widen": 2.0,
-   "M": 12,
-   "kind": "rank3",
    "ratio": 0.1,
    "coverage": 1.0,
    "defined": 1.0
@@ -3589,66 +3445,18 @@
   {
    "widen": 2.0,
    "M": 12,
-   "kind": "rank3",
-   "ratio": 0.3,
-   "coverage": 0.9966666666666667,
-   "defined": 1.0
-  },
-  {
-   "widen": 2.0,
-   "M": 12,
-   "kind": "rank3",
-   "ratio": 1.0,
-   "coverage": 0.9642857142857143,
-   "defined": 0.9333333333333333
-  },
-  {
-   "widen": 2.0,
-   "M": 12,
-   "kind": "twoP+",
-   "ratio": 0.1,
-   "coverage": 0.9866666666666667,
-   "defined": 1.0
-  },
-  {
-   "widen": 2.0,
-   "M": 12,
-   "kind": "twoP+",
-   "ratio": 0.3,
-   "coverage": 0.9833333333333333,
-   "defined": 1.0
-  },
-  {
-   "widen": 2.0,
-   "M": 12,
-   "kind": "twoP+",
-   "ratio": 1.0,
-   "coverage": 0.9466666666666667,
-   "defined": 0.75
-  },
-  {
-   "widen": 2.0,
-   "M": 12,
-   "kind": "t3",
-   "ratio": 0.1,
-   "coverage": 0.9966666666666667,
-   "defined": 1.0
-  },
-  {
-   "widen": 2.0,
-   "M": 12,
    "kind": "t3",
    "ratio": 0.3,
-   "coverage": 0.9933333333333333,
-   "defined": 1.0
+   "coverage": 1.0,
+   "defined": 0.9933333333333333
   },
   {
    "widen": 2.0,
    "M": 12,
    "kind": "t3",
    "ratio": 1.0,
-   "coverage": 0.9965397923875432,
-   "defined": 0.9633333333333334
+   "coverage": 0.9722222222222222,
+   "defined": 0.12
   }
  ],
  "widen": null
