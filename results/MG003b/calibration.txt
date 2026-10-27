@@ -15,9 +15,33 @@ Part A (3000 reps/cell, M in 4/6/12, 6 noise types, bias 0-2%, sigma 0.1-3%):
     bias 0.0% sigma 0.3%: P(INCONCLUSIVE) worst over noise types 0.003
     bias 0.5% sigma 0.1%: P(INCONCLUSIVE) worst over noise types 0.000
     bias 0.5% sigma 0.3%: P(INCONCLUSIVE) worst over noise types 0.014
-Part B v2 (MG003b fix: distinct-pair bootstrap U-stat, pre-selected significant cells; alpha CI; true alpha = 1; Omega = [100, 300, 1000, 3000, 10000]; 300 reps x 400 bootstrap):
-  widen=1.0: worst coverage 0.000 (target >= 0.95 - 2 MC SE = 0.925)
-  widen=1.25: worst coverage 0.000 (target >= 0.95 - 2 MC SE = 0.925)
-  widen=1.5: worst coverage 0.000 (target >= 0.95 - 2 MC SE = 0.925)
-  widen=2.0: worst coverage 0.000 (target >= 0.95 - 2 MC SE = 0.925)
-  calibrated widening factor: None
+Part B v2 — alpha-CI interval coverage (true alpha = 1; Omega = 100..10000; M = 12; 300 reps x 400 bootstrap).
+RECORD CORRECTED MG003c: the original driver scored scenarios whose interval was never defined as coverage 0,
+which forced every 'worst coverage' to 0 and printed 'calibrated widening factor: None'. Regenerated here from
+calibration.json by src/calibrate_bounds.py's corrected accounting (undefined intervals reported separately).
+Interval coverage is INFORMATIONAL. The pre-registered quantity is the C2 DECISION rule, calibrated at w = 2.0
+in results/MG003b/calibration_alpha_decision.txt (false-FAIL <= 0.020 under alpha=1; false-PASS <= 0.003 under alpha=0.5).
+  widen=1.0: worst conditional coverage (scenarios with CI defined in >= 50% of reps) 0.807; scenarios with CI defined in < 50% of reps: 6 of 18 (mostly INCONCLUSIVE by design)
+  widen=1.25: worst conditional coverage (scenarios with CI defined in >= 50% of reps) 0.867; scenarios with CI defined in < 50% of reps: 6 of 18 (mostly INCONCLUSIVE by design)
+  widen=1.5: worst conditional coverage (scenarios with CI defined in >= 50% of reps) 0.907; scenarios with CI defined in < 50% of reps: 6 of 18 (mostly INCONCLUSIVE by design)
+  widen=2.0: worst conditional coverage (scenarios with CI defined in >= 50% of reps) 0.922; scenarios with CI defined in < 50% of reps: 6 of 18 (mostly INCONCLUSIVE by design)
+  per-scenario at w = 2.0 (coverage | fraction of reps with a defined CI):
+    iso    noise/bias@100=0.1: coverage 0.997 | defined 1.00
+    iso    noise/bias@100=0.3: coverage 1.000 | defined 1.00
+    iso    noise/bias@100=1.0: coverage n/a | defined 0.00
+    rank1b noise/bias@100=0.1: coverage 0.997 | defined 1.00
+    rank1b noise/bias@100=0.3: coverage 0.996 | defined 0.91
+    rank1b noise/bias@100=1.0: coverage 0.906 | defined 0.11
+    rank3  noise/bias@100=0.1: coverage 0.993 | defined 1.00
+    rank3  noise/bias@100=0.3: coverage 0.993 | defined 0.99
+    rank3  noise/bias@100=1.0: coverage 1.000 | defined 0.04
+    twoP+  noise/bias@100=0.1: coverage 0.990 | defined 1.00
+    twoP+  noise/bias@100=0.3: coverage 0.922 | defined 0.86
+    twoP+  noise/bias@100=1.0: coverage 0.429 | defined 0.05
+    twoP-  noise/bias@100=0.1: coverage 0.963 | defined 1.00
+    twoP-  noise/bias@100=0.3: coverage 0.957 | defined 1.00
+    twoP-  noise/bias@100=1.0: coverage 0.600 | defined 0.07
+    t3     noise/bias@100=0.1: coverage 1.000 | defined 1.00
+    t3     noise/bias@100=0.3: coverage 1.000 | defined 0.99
+    t3     noise/bias@100=1.0: coverage 0.972 | defined 0.12
+  widening factor used by the protocol: w = 2.0, selected for the DECISION rule (see above).

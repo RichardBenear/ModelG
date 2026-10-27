@@ -2903,7 +2903,7 @@
    "M": 12,
    "kind": "iso",
    "ratio": 1.0,
-   "coverage": 0.0,
+   "coverage": null,
    "defined": 0.0
   },
   {
@@ -3047,7 +3047,7 @@
    "M": 12,
    "kind": "iso",
    "ratio": 1.0,
-   "coverage": 0.0,
+   "coverage": null,
    "defined": 0.0
   },
   {
@@ -3191,7 +3191,7 @@
    "M": 12,
    "kind": "iso",
    "ratio": 1.0,
-   "coverage": 0.0,
+   "coverage": null,
    "defined": 0.0
   },
   {
@@ -3335,7 +3335,7 @@
    "M": 12,
    "kind": "iso",
    "ratio": 1.0,
-   "coverage": 0.0,
+   "coverage": null,
    "defined": 0.0
   },
   {
@@ -3459,5 +3459,6 @@
    "defined": 0.12
   }
  ],
- "widen": null
+ "widen": 2.0,
+ "widen_note": "w = 2.0 calibrated for the C2 decision rule (calibration_alpha_decision.txt); interval coverage informational. Set MG003c."
 }

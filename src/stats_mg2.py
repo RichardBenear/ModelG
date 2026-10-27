@@ -112,3 +112,87 @@ def alpha_ci(cells, omegas, B=2000, level=0.95, widen=1.0, rng=None):
         return a_hat, (np.nan, np.nan), ok.mean(), keep
     lo, hi = np.quantile(boots[ok], [(1 - level) / 2, (1 + level) / 2])
     return a_hat, (a_hat - widen * (a_hat - lo), a_hat + widen * (hi - a_hat)), ok.mean(), keep
+
+
+# ============================================================================ MG003c additions
+# Assumption A1 (stated in protocol v1.3 §5.3): run-level aligned profiles of eligible runs are i.i.d.
+# with approximately Gaussian fluctuations, i.e. no rare discrete run-level modes beyond the tracked
+# events (loss / replication / merge), which are removed by survival conditioning. The confidence
+# claims of bias_bounds / diff_bounds are conditional on A1. a1_diagnostics() checks A1 on the actual
+# decision data; a cell that fails the check is INCONCLUSIVE.
+
+def welch_diff_bounds(runsA, runsB, ref_norm, level=0.95):
+    """Two-sample bounds on |muA - muB| / ref_norm with Welch-Satterthwaite df on the trace variances.
+    ref_norm must be a DETERMINISTIC norm (e.g. |phi*| of the lattice-ODE soliton)."""
+    MA, MB = runsA.shape[0], runsB.shape[0]
+    mA, mB = runsA.mean(0), runsB.mean(0)
+    d = np.sqrt((mA - mB) @ (mA - mB)) / ref_norm
+    vA = np.sum(runsA.var(0, ddof=1)) / MA
+    vB = np.sum(runsB.var(0, ddof=1)) / MB
+    df = (vA + vB) ** 2 / (vA**2 / (MA - 1) + vB**2 / (MB - 1)) if (vA + vB) > 0 else min(MA, MB) - 1
+    k = stats.t.ppf(0.5 + level / 2, df)
+    half = k * np.sqrt(vA + vB) / ref_norm
+    return dict(diff=d, upper=d + half, lower=max(d - half, 0.0), df=df)
+
+
+def _robust_z(x):
+    med = np.median(x)
+    mad = np.median(np.abs(x - med)) * 1.4826
+    if mad > 0:
+        return (x - med) / mad
+    # MAD = 0: a majority of identical values; any differing value is an infinite outlier
+    return np.where(np.abs(x - med) > 0, np.inf, 0.0)
+
+
+def a1_diagnostics(block_profiles, ref, z_block=5.0, z_run=4.0, p_min=1e-3):
+    """block_profiles: (M runs, K blocks, d). Checks A1 on the decision data:
+      (i)  within-run block deviations (block mean minus run mean), projected on the run-mean bias
+           direction and the first two principal components: Shapiro-Wilk p >= p_min and no
+           robust |z| > z_block;
+      (ii) run-level means projected on the same directions: no robust |z| > z_run.
+    Returns dict(ok=bool, details=...)."""
+    M, K, d = block_profiles.shape
+    runs = block_profiles.mean(1)
+    mbar = runs.mean(0)
+    dirs = []
+    b = mbar - ref
+    if np.linalg.norm(b) > 0:
+        dirs.append(b / np.linalg.norm(b))
+    W = (block_profiles - runs[:, None, :]).reshape(M * K, d)
+    _, _, Vt = np.linalg.svd(W - W.mean(0), full_matrices=False)
+    dirs += [Vt[0], Vt[1]]
+    det = {"shapiro_p": [], "max_block_z": [], "max_run_z": []}
+    ok = True
+    for v in dirs:
+        pb = W @ v
+        p = stats.shapiro(pb).pvalue if np.std(pb) > 0 else 1.0
+        zb = np.max(np.abs(_robust_z(pb)))
+        zr = np.max(np.abs(_robust_z((runs - mbar) @ v)))
+        det["shapiro_p"].append(float(p)); det["max_block_z"].append(float(zb)); det["max_run_z"].append(float(zr))
+        ok &= (p >= p_min) and (zb <= z_block) and (zr <= z_run)
+    return dict(ok=bool(ok), details=det)
+
+
+def decide_cell(get_runs, ref, eps, level_stage=0.95, m_min=12, m_max_total=24, ext=12):
+    """Full pre-registered single-cell procedure (MG2-C1/C6, V4):
+      1. obtain eligible runs (survival-conditioned) until m_min eligible or m_max_total attempted;
+         fewer than m_min eligible -> INCONCLUSIVE ('insufficient eligible runs');
+      2. A1 diagnostics fail -> INCONCLUSIVE ('A1 not supported');
+      3. three-way decision at level_stage; if INCONCLUSIVE, ONE extension of `ext` eligible runs and
+         re-decide on all runs at level_stage (calibrated two-look error rates, protocol §5.3).
+    get_runs(n) must return (block_profiles (n_eligible, K, d), n_attempted)."""
+    blocks, att = get_runs(m_min)
+    if blocks.shape[0] < m_min:
+        return "INCONCLUSIVE", dict(reason="insufficient eligible runs", attempted=att)
+    if not a1_diagnostics(blocks, ref)["ok"]:
+        return "INCONCLUSIVE", dict(reason="A1 not supported")
+    dcs = decide(bias_bounds(blocks.mean(1), ref, level_stage), eps)
+    if dcs != "INCONCLUSIVE":
+        return dcs, dict(stage=1)
+    more, att2 = get_runs(ext)
+    allb = np.concatenate([blocks, more], 0)
+    if more.shape[0] < ext:
+        return "INCONCLUSIVE", dict(reason="insufficient eligible runs in extension")
+    if not a1_diagnostics(allb, ref)["ok"]:
+        return "INCONCLUSIVE", dict(reason="A1 not supported (extension)")
+    return decide(bias_bounds(allb.mean(1), ref, level_stage), eps), dict(stage=2)

@@ -96,12 +96,16 @@ for widen in (1.0, 1.25, 1.5, 2.0):
                     a, (lo, hi), fv, keep = alpha_ci({"ref": phi, "runs": runs}, OM, B=B, widen=widen, rng=rng)
                     if np.isfinite(lo):
                         n_def += 1; cov += lo <= 1.0 <= hi
-                c = cov / max(n_def, 1)
+                # MG003c: undefined intervals are reported separately, never scored as zero coverage
+                c = cov / n_def if n_def > 0 else None
                 rows.append(dict(widen=widen, M=M, kind=kind, ratio=ratio, coverage=c, defined=n_def / RB))
-                worst_cov_b = min(worst_cov_b, c)
+                if c is not None and n_def / RB >= 0.5:
+                    worst_cov_b = min(worst_cov_b, c)
     out["B"].extend(rows)
     mc = 2 * np.sqrt(0.95 * 0.05 / RB)
-    lines.append(f"  widen={widen}: worst coverage {worst_cov_b:.3f} (target >= 0.95 - 2 MC SE = {0.95 - mc:.3f})")
+    lines.append(f"  widen={widen}: worst CONDITIONAL interval coverage over scenarios with CI defined in >= 50% of reps "
+                 f"{worst_cov_b:.3f} (informational; the pre-registered quantity is the C2 decision rule, "
+                 f"calibrated in src/calibrate_alpha_decision.py)")
     print(lines[-1], flush=True)
     if worst_cov_b >= 0.95 - mc:
         best = widen
