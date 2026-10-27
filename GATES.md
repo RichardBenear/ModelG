@@ -5,7 +5,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 
 | Gate | Phase | Question | Status |
 |---|---|---|---|
-| MG1 | 1 | Continuum PDE reproduces a published stationary Model G soliton | FAIL as registered (1D stationarity only); PI ruling requested |
+| MG1 | 1 | Continuum PDE reproduces a published stationary Model G soliton | PASS by PI exception (registered FAIL on 1D stationarity preserved) |
 | MG2 | 2 | Stochastic token rules converge to the MG1 PDE solution as Ω → ∞ | PENDING |
 | MG3 | 2 | Particles nucleate spontaneously from intrinsic fluctuations at finite Ω | PENDING |
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale | PENDING |
@@ -87,10 +87,8 @@ Result (MG002, 2026-10-27; full tables in `results/MG002/MG1_evaluation.md`):
 - **Verdict as registered: FAIL.** 14 of 15 cells pass. The single failure is 1D stationarity at
   t = 100. The 1D soliton is still relaxing there (an exponential mode with rate ≈ 0.047, converged
   under grid and tolerance refinement). It is stationary by t = 300 (3e-8), where φ_X(0) has moved
-  0.1% (−8.372 → −8.365). The paper's 1D Table 1 values match our t = 100 snapshot (within 0.15%),
-  so the paper's 1D column is itself a pre-stationary snapshot. This is a property of the published
-  protocol, not a reproduction error. PI ruling requested on whether MG1 counts as passed with this
-  documented exception.
+  0.1% (−8.372 → −8.365). Our reproduction of the published protocol remains nonstationary at
+  t = 100 while matching the tabulated values (within 0.15%). (Wording softened MG002a per review.)
 - Unregistered rows also reproduce: RMS radii and core integrals agree within 0.5%, except 2D
   core ∫φ_G (−1.4%).
 - **Table 1 row (e) (full integrals) is NOT reproduced for G and X.** Stationary I_G and I_X are
@@ -98,8 +96,8 @@ Result (MG002, 2026-10-27; full tables in `results/MG002/MG1_evaluation.md`):
   The measured boundary fluxes at R = 50 are ≤ 1.2e-7, so finite-boundary flux does **not**
   explain the paper's values. Nonstationarity does not either (2D/3D are stationary to ≤ 1e-8).
   The remaining candidates are numerical/quadrature error in the paper's integration or a
-  tabulation inconsistency. I_Y differs by +1.5% (2D) and +5.6% (3D), whereas core integrals
-  agree, which points to the paper's tail quadrature.
+  tabulation inconsistency. I_Y differs by +1.5% (2D) and +5.6% (3D) while core integrals agree,
+  so tail quadrature is a plausible explanation, not an established cause.
 - Integral identity confirmed numerically: I_G, I_X are at round-off × volume level for
   R = 50, 100, 200 once stationary. Discrete balance residuals ≤ 4e-7 scale with domain volume
   (round-off). In 1D at t = 100, the nonzero I_G, I_X (≈ 2e-6, 2e-5) are carried by
@@ -110,6 +108,19 @@ Result (MG002, 2026-10-27; full tables in `results/MG002/MG1_evaluation.md`):
 - Solver note: scipy BDF step control failed on the 3D zero-seed run (state at round-off). It is
   retried automatically with an explicit first step, and the retry is recorded in `controls.json`.
   There was no effect on any seeded run.
-Replication (ChatGPT):
+- Wavelength window sensitivity (MG002a, `results/MG002/wavelength_windows.txt`): the pooled
+  zero-spacing wavelength depends on the radial window. The registered estimator gives 3.0756 /
+  3.0766 / 3.0793 (1D/2D/3D); the window 10 < r < 25 gives 3.0864 / 3.0853 / 3.0854. All windows
+  pass criterion 1. The spread across windows is 0.2–0.4%, so the quoted four decimal places
+  describe a particular window, not a uniquely determined wavelength.
+- Seeded integral balance corrected (MG002a): the summed balance includes +∫χ dV. Residual during
+  seeding (t = 10) ≤ 4e-9. The reported t = 100/300 diagnostics are unaffected (∫χ ≈ 0 there).
+Replication (ChatGPT): independent implementation (centered finite differences, Radau, own
+expansion of the equations), h = 0.0125, t = 100. 3D φ_G(0) −0.41148105, φ_X(0) −14.63365708,
+φ_Y(0) 1.69934939, λ₀ 3.07930594, max |∂φ/∂t| 1.3090e-8: agreement with ours within 0.0012%.
+1D max |∂φ/∂t| = 3.49318e-4, confirming the registered failure. Integrals and null controls not
+independently replicated. Review: `review/MG002_chatgpt.md`; script and data: `review/MG002_replication/`.
 PI sign-off (criteria): Richard Benear, 2026-10-27
-PI sign-off (result):
+PI sign-off (result): Richard Benear, 2026-10-27 — MG1 accepted as PASS with documented exception:
+criterion 4 failed in 1D at t = 100 (registered failure record preserved above); the 1D soliton is
+stationary by t = 300. Proceed to Phase 2.

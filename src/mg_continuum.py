@@ -7,8 +7,10 @@ Nodes r_i = i*h, i = 0..N, r_N = R (Dirichlet phi = 0). Node 0 control volume [0
 (symmetry: zero flux at r = 0). n = 1 is the symmetric half of the 1D domain [-R, R].
 
 The discrete scheme conserves exactly, so the integrated balances
-    dI_G/dt = F_G - q I_G + g I_X  and  d(sum I)/dt = sum F - (q-p) I_G - (1-g) I_X
-hold to round-off at every instant, with F_S the discrete outer-face flux. What the
+    dI_G/dt = F_G - q I_G + g I_X  and  d(sum I)/dt = sum F - (q-p) I_G - (1-g) I_X + int_V chi dV
+hold to round-off at every instant, with F_S the discrete outer-face flux and chi the seed
+(added to the X equation; negligible for t >= 100). Corrected MG002a per ChatGPT review: the
+seed term was previously omitted from the summed balance. What the
 diagnostic measures is therefore the size of the dI/dt and F terms, not discretization error
 in the balance itself (truncation error is estimated by grid refinement).
 
@@ -154,21 +156,27 @@ def core_measures(grid, f):
                 full_int=full_int, zeros=z)
 
 
-def wavelength(grid, fields, r_max_frac=0.6):
-    """Turing wavelength = 2 x mean spacing of successive zeros, using zeros beyond the core
-    (excluding the first zero) and inside r < r_max_frac * R, pooled over the three fields."""
+def wavelength(grid, fields, r_max_frac=0.6, window=None):
+    """Turing wavelength = 2 x mean spacing of successive zeros, pooled over the three fields.
+    Default (registered MG002 estimator): zeros with r < r_max_frac * R, excluding the
+    core-to-first-ring spacing. window=(r_lo, r_hi): use only zeros inside that window instead.
+    The value depends on the window at the ~0.3% level (MG002a); quote it with its window."""
     sp_all, per = [], {}
     for k, f in fields.items():
         z = zeros(grid.ri, f)
-        z = z[(z < r_max_frac * grid.R)]
-        d = np.diff(z)[1:]           # drop the core-to-first-ring spacing
+        if window is None:
+            z = z[(z < r_max_frac * grid.R)]
+            d = np.diff(z)[1:]       # drop the core-to-first-ring spacing
+        else:
+            z = z[(z > window[0]) & (z < window[1])]
+            d = np.diff(z)
         per[k] = 2 * float(np.mean(d)) if len(d) else np.nan
         sp_all.extend(d)
     sp_all = np.array(sp_all)
     return 2 * float(np.mean(sp_all)), per, float(2 * np.std(sp_all))
 
 
-def analyze(grid, P, sol, rhs):
+def analyze(grid, P, sol, rhs, seed_scale=1.0):
     N = grid.N
     y = sol.y[:, -1]
     F = dict(G=y[:N], X=y[N:2 * N], Y=y[2 * N:])
@@ -188,7 +196,9 @@ def analyze(grid, P, sol, rhs):
     out["integrals"] = dict(
         I=I, dIdt=dI, flux=Fl,
         balance_G_residual=dI["G"] - (Fl["G"] - q * I["G"] + g * I["X"]),
-        balance_sum_residual=sum(dI.values()) - (sum(Fl.values()) - (q - p) * I["G"] - (1 - g) * I["X"]))
+        seed_integral=float(np.sum(grid.w * seed(grid.ri, sol.t[-1], seed_scale))),
+        balance_sum_residual=sum(dI.values()) - (sum(Fl.values()) - (q - p) * I["G"] - (1 - g) * I["X"]
+                                                 + float(np.sum(grid.w * seed(grid.ri, sol.t[-1], seed_scale)))))
     G0, X0, Y0 = steady_state(P)
     out["min_concentration"] = dict(G=float(G0 + F["G"].min()), X=float(X0 + F["X"].min()),
                                     Y=float(Y0 + F["Y"].min()))

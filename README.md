@@ -40,6 +40,9 @@ framework does alone.
    `MGxxx_chatgpt_r2.md` / `MGxxx_response_r2.md` until it has no open items, or the PI rules on
    a disagreement.
 5. No gate run starts while review items on its spec are open.
+6. Independent replication code and data from ChatGPT go in `review/MGxxx_replication/`
+   (committed by the PI from VS Code). A replication that lives only on a local machine can't be
+   re-run by anyone else.
 
 ## Conventions
 
