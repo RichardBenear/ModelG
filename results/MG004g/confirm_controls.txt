@@ -1,0 +1,17 @@
+Confirmation-rule controls. Truth = deterministic fate at t = 2000. Rule = classification from checks at t = 200..300.
+(a) stationary single soliton                              rule: persistent (n_persist=1, deep@300=1, maxdt@300=2.8e-13) | truth@2000: persistent (deep=1, maxdt=2.7e-13) | AGREE
+(b1) two solitons, separation 20                           rule: persistent (n_persist=2, deep@300=2, maxdt@300=2.0e-05) | truth@2000: persistent (deep=2, maxdt=1.4e-05) | AGREE
+(b2) two solitons, separation 5                            rule: excursion  (n_persist=0, deep@300=0, maxdt@300=1.4e-13) | truth@2000: decays (deep=0, maxdt=1.7e-13) | AGREE
+(b3) two solitons, separation 6.6                          rule: persistent (n_persist=3, deep@300=3, maxdt@300=1.5e-06) | truth@2000: persistent (deep=3, maxdt=2.8e-13) | AGREE
+(b4) two solitons, separation 9                            rule: persistent (n_persist=2, deep@300=2, maxdt@300=5.0e-03) | truth@2000: persistent (deep=2, maxdt=8.7e-06) | AGREE
+(b5) four solitons, irregular spacing                      rule: persistent (n_persist=4, deep@300=4, maxdt@300=1.1e-04) | truth@2000: persistent (deep=4, maxdt=7.4e-05) | AGREE
+(c) subthreshold seed 0.5 x threshold (state t=20)         rule: excursion  (n_persist=0, deep@300=0, maxdt@300=1.7e-13) | truth@2000: decays (deep=0, maxdt=1.7e-13) | AGREE
+(c) subthreshold seed 0.9 x threshold (state t=20)         rule: excursion  (n_persist=0, deep@300=0, maxdt@300=1.6e-13) | truth@2000: decays (deep=0, maxdt=1.8e-13) | AGREE
+(c) subthreshold seed 0.99 x threshold (state t=20)        rule: excursion  (n_persist=0, deep@300=0, maxdt@300=1.7e-13) | truth@2000: decays (deep=0, maxdt=1.7e-13) | AGREE
+(c) subthreshold seed 0.999 x threshold (state t=20)       rule: excursion  (n_persist=0, deep@300=0, maxdt@300=1.3e-13) | truth@2000: decays (deep=0, maxdt=1.7e-13) | AGREE
+(c') suprathreshold seed 1.01 x threshold (state t=20)     rule: persistent (n_persist=1, deep@300=1, maxdt@300=2.3e-13) | truth@2000: persistent (deep=1, maxdt=1.7e-13) | AGREE
+(c') suprathreshold seed 1.1 x threshold (state t=20)      rule: persistent (n_persist=1, deep@300=1, maxdt@300=2.8e-13) | truth@2000: persistent (deep=1, maxdt=2.7e-13) | AGREE
+(d) phi*(29) continued at b=28.928 (near/below b_s=28.929) rule: excursion  (n_persist=0, deep@300=0, maxdt@300=6.1e-08) | truth@2000: decays (deep=0, maxdt=1.7e-13) | AGREE
+(d) phi*(29) continued at b=28.92 (near/below b_s=28.929)  rule: excursion  (n_persist=0, deep@300=0, maxdt@300=1.8e-13) | truth@2000: decays (deep=0, maxdt=1.7e-13) | AGREE
+(d) phi*(29) continued at b=28.9 (near/below b_s=28.929)   rule: excursion  (n_persist=0, deep@300=0, maxdt@300=1.7e-13) | truth@2000: decays (deep=0, maxdt=1.8e-13) | AGREE
+Agreement with long-run truth: 15/15

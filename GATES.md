@@ -6,8 +6,8 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | Gate | Phase | Question | Status |
 |---|---|---|---|
 | MG1 | 1 | Continuum PDE reproduces a published stationary Model G soliton | PASS by PI exception (registered FAIL on 1D stationarity preserved) |
-| MG2 | 2 | Stochastic token rules converge to the same-lattice mean-field solution as Ω → ∞ | PRE-REGISTERED (pending V1–V4, V6) |
-| MG3 | 2 | Particles nucleate spontaneously from intrinsic fluctuations at finite Ω | PRE-REGISTERED (pending V1–V4, V6) |
+| MG2 | 2 | Stochastic token rules converge to the same-lattice mean-field solution as Ω → ∞ | PRE-REGISTERED; validations passed (v1.3.2); running under v1.3.3 |
+| MG3 | 2 | Particles nucleate spontaneously from intrinsic fluctuations at finite Ω | PRE-REGISTERED; V7 checkpoint passed with Amendment 3 (v1.3.3) |
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale | PENDING |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve) | PENDING |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | PENDING |
@@ -128,7 +128,7 @@ stationary by t = 300. Proceed to Phase 2.
 ---
 
 ### Phase 2 common setup (both gates)
-Protocol: `spec/phase2_protocol_v1.3.2.md` = v1.3 + Amendments 1–2 (A2 PI-approved 2026-10-28) [v1.3.1 = v1.3 + Amendment 1 (PI-approved 2026-10-27; v1.0–v1.2 superseded after ChatGPT reviews MG003 r1–r3; see
+Protocol: `spec/phase2_protocol_v1.3.3.md` = v1.3 + Amendments 1–3 (A3 PI-approved 2026-10-28) [v1.3.2 = v1.3 + Amendments 1–2 (A2 PI-approved 2026-10-28) [v1.3.1 = v1.3 + Amendment 1 (PI-approved 2026-10-27; v1.0–v1.2 superseded after ChatGPT reviews MG003 r1–r3; see
 `review/MG003_response*.md`). 1D periodic ring, h = 0.2, L = 100. Rules v1.1. Unsplit multinomial
 tau-leaping (its Ω → ∞ mean map is exactly forward Euler of the lattice ODE). τ = 6.667e-4, with
 Ω-dependent halving under the clip rule. Validations V1–V4 and V6 (A1 pilot on real runs) must pass
@@ -166,7 +166,8 @@ Pass criteria:
   all t ∈ [0, 100] (no loss, replication or merge). At b = 29, survival is reported as a measurement
   (near-edge noise-induced decay), not a criterion.
 - C5: seeded nucleation (b = 29, homogeneous start, R_seed rule, 20 runs per cell). Nucleation = a
-  confirmed particle (protocol §5.4) by t = 60.
+  confirmed particle (protocol §5.4) by t = 60. [A3: the §5.4 field-level persistence rule; the field
+  at min(first detection + 20, 60)]
   - Seed scale 1.5 (1.58× the lattice threshold): P ≥ 0.9 at each of Ω = 300, 1000, 3000.
   - Seed scale 0.5: P ≤ 0.1 at Ω = 3000.
   - Exploratory: P(Ω) at scale 1.0.
@@ -195,7 +196,12 @@ Setup: b = 29, homogeneous Poisson start, no seed, T = 500. Events are **confirm
 first event per run, constant-hazard MLE, Garwood CIs, stationary-hazard check).
 
 Adaptive design (fully specified):
-- **Ω grid:** {300, 100, 50, 30, 20, 15, 10, 7, 5, 3, 2, 1}.
+- **Ω grid:** [A3] {300, 250, 200, 150, 120, 100, 80, 65, 50} (v1.3–v1.3.2: {300, 100, 50, 30, 20, 15, 10,
+  7, 5, 3, 2, 1}).
+- **Crowding exclusion [A3]:** a cell with mean detections per snapshot > 2 in t < 50 is excluded from
+  the isolated-event study. It is applied to every Stage-A and Stage-B candidate, including midpoints.
+  Excluded cells never re-enter via neighbour selection, are reported, and stop the descent (a budget
+  choice). Events are confirmed by the A3 field-level rule.
 - **Stage A (scan):** 4 runs per Ω, descending. Stop after the first Ω at which 4/4 runs have a
   confirmed event in [50, 150]. At most 12 cells (48 runs).
   - If there is no confirmed event at any Ω down to 1: **C1 FAIL**. Report 95% upper bounds per Ω and

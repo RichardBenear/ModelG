@@ -19,7 +19,7 @@
 | MG004c | 2026-10-28 | 2 | ChatGPT review of Amendment 2: G power understated; Amendment 2 revised (decision Omega 1e8, bounded allocation, signed variance rule, conditional alpha wording, accurate C3/C4 expectations, V7 with PI checkpoint) | awaiting PI ruling | a34f15e |
 | MG004d | 2026-10-28 | 2 | Amendment 2 (r2) approved by PI; protocol v1.3.2 frozen; V2b/V4b at Omega=1e8 and V7 implemented; validations rerun | v1.3.2 frozen | 6011830 |
 | MG004e | 2026-10-28 | 2 | V2, V4 PASS (Omega=1e8); V7 done: three noise regimes at b=29 (patterned Omega<=50, transitional ~100, quiet 300); confirmation criterion too strict; Amendment 3 proposed (PI checkpoint before MG3) | PI checkpoint | b5c944a |
-| MG004f | 2026-10-28 | — | Glossary and assumptions register added (PI request): Omega definitions and values, token = etheron, notation clash with LaViolette's sink Omega, assumptions M1–M10, N1–N5, S1–S4, I1–I4 | — | (this commit) |
+| MG004f | 2026-10-28 | — | Glossary and assumptions register added (PI request): Omega definitions and values, token = etheron, notation clash with LaViolette's sink Omega, assumptions M1–M10, N1–N5, S1–S4, I1–I4 | — | 8b2f742 |
 
 ## MG000 — Project scaffold
 - Created charter, `spec/rules_v1.0.md`, `GATES.md`, folder layout.
@@ -132,3 +132,10 @@
 ## MG004e — V7 and the PI checkpoint
 - V7 (descriptive): at Ω ≤ 50 there are 8–25 persistent minima per snapshot (noise-sustained Turing-like patterning; cf. Biancalani, Fanelli & Di Patti, arXiv:0910.4984). Ω = 100 is transitional; Ω = 300 is quiet. Seed-free continuations from Ω ≤ 50 fields reach soliton depth but are still evolving at t = 300, so the §5.4 stationarity requirement classifies them as "unresolved".
 - Amendment 3 proposed: basin-membership confirmation rule (affects MG3 and MG2-C5); MG3 grid focused on Ω 50–300 with a pre-declared regime screen; exploratory E1 (stochastic Turing patterns vs LNA).
+
+## MG004g — Amendment 3 finalized and approved; protocol v1.3.3
+- ChatGPT review of Amendment 3 and the glossary accepted in full: corrected the large-Ω statement; regime wording ("crowded / transitional / quiet detector regimes"; stochastic Turing patterning as a candidate interpretation pending E1); confirmation renamed and made field-level with identity linking; crowding exclusion applied to all candidates without re-entry; clip pilots for the new grid; glossary limits separated (Euler map vs lattice ODE vs PDE); noise formula qualified (Ω^(−1/2), Poisson only a benchmark).
+- Confirmation controls against t = 2000 deterministic truth: **15/15 agree**, including slowly evolving multi-soliton states, near-threshold seeds (0.999 decays; 1.01 persists) and near-edge decay. Seeds at separation 6.6 spawn a third particle, matching Pulver & LaViolette's 6.628 observation.
+- Clip pilots for the new grid values: no clipping; τ standard.
+- Erratum: stale V2 sentence in v1.3.2 struck (the code had applied the amended rule).
+- PI approval (conditional on considering the review) → protocol v1.3.3 frozen. Next: MG2.

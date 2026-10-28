@@ -148,8 +148,11 @@ Cost: about 0.4–0.9 s per unit time at h = 0.2 (2-core container), and about 4
     §5.3) must be < 0.25%, a quarter of MG2-C1's tolerance.
   - **Fluctuations:** for each of G, X, Y, the 90% CI (Welch t, run-level values) of the difference in
     far-field Ω·Var must lie within ±5% of the τ value.
-  - PASS if all hold; FAIL if any point estimate lies outside its margin; INCONCLUSIVE otherwise. If
-    INCONCLUSIVE, one extension of 12 + 12 runs is allowed, after which INCONCLUSIVE counts as FAIL.
+  - ~~PASS if all hold; FAIL if any point estimate lies outside its margin; INCONCLUSIVE otherwise.~~
+    **[Erratum MG004g]** This v1.3/v1.3.1 sentence was carried over by mistake. Under v1.3.2 the
+    Amendment 2 rules stated at the top of this V2 entry govern (profiles bound-based; variances signed),
+    and the V2 run under v1.3.2 (`results/MG004/v2b.*`) applied them. If INCONCLUSIVE, one extension of
+    12 + 12 runs is allowed, after which INCONCLUSIVE counts as FAIL.
 - **V3 — clip pilot.** One run of T = 20 per Ω in each gate's Ω set, homogeneous start. This sets the
   per-Ω τ (§3.3). Only the clip counter is read from these runs.
 - **V6 — A1 pilot on real runs** (MG003c). Two non-gate cells, b = 29.08 at Ω = 300 and Ω = 3000, 12

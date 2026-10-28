@@ -50,11 +50,18 @@ token counts: n_S(v) = Ω · c_S(v).
 - On the 500-node ring that is ≈ 16,500 Ω tokens in all: about 1.65 million at Ω = 100, and
   ≈ 1.65 × 10¹² at Ω = 10⁸.
 
-**Noise strength.** A count n fluctuates by about √n, so relative concentration noise scales as
-1/√(Ω·c).
+**Noise strength** [corrected MG004g]. In the weak-noise (linear-noise) regime, concentration
+fluctuations scale as **Ω^(−1/2)**. That is the general statement here. "√n" fluctuations are only the
+Poisson benchmark: this interacting system's homogeneous X variance is substantially *larger* than
+Poisson (LNA Ω·Var(X) ≈ 113 vs Poisson 15.6 at h = 0.2).
 - **Small Ω** means strong intrinsic noise.
-- **Ω → ∞** recovers LaViolette's deterministic Model G equations exactly. MG2 tests this
-  convergence.
+- **The limits are separate** [corrected MG004g]:
+  - at fixed h and τ, Ω → ∞ gives the **forward-Euler lattice map**;
+  - recovering the continuous-time **lattice ODE** additionally needs τ → 0;
+  - recovering LaViolette's **continuum PDE** additionally needs spatial refinement (h → 0).
+  - Stationary states are shared exactly between the Euler map and the lattice ODE (when no clipping
+    or capping is active), which is why stationary profiles are compared directly.
+- MG2 tests the Ω → ∞ convergence; MG1 covers the continuum PDE.
 
 **Ω/h (tokens per unit length).** Ω is per node, and the node spacing h is our choice. The
 lattice-independent noise parameter is Ω/h (in 1D; Ω/h^d in d dimensions). Both are reported.
@@ -71,7 +78,7 @@ lattice-independent noise parameter is Ω/h (in 1D; Ω/h^d in d dimensions). Bot
 | V7 (detector characterization) | 1, 2, 3, 5, 7, 10, 15, 20, 30, 50, 100, 300 | MG3's range |
 | MG2 ladder (registered, v1.3.2) | 10, 30, 100, 300, 10³, 3×10³, 10⁴, 10⁵, 10⁶, **10⁸** (decision point for C1/C6) | convergence and bias scaling |
 | MG3 grid (registered v1.3) | 300, 100, 50, 30, 20, 15, 10, 7, 5, 3, 2, 1 | nucleation scan |
-| MG3 grid (Amendment 3, *proposed*) | 300, 250, 200, 150, 120, 100, 80, 65, 50 | the activated window found by V7 |
+| MG3 grid (Amendment 3, approved; v1.3.3) | 300, 250, 200, 150, 120, 100, 80, 65, 50 | V7's transitional range, with crowding exclusion |
 
 **Rough physical calibration of Ω.** This is an order-of-magnitude estimate, not a project result, and
 it has heavy caveats.
@@ -135,9 +142,9 @@ it has heavy caveats.
 | **Block profile** | Mean aligned profile over one of 6 consecutive 15-time-unit blocks of a run |
 | **Far-field variance** | Ω·Var of φ_S at nodes more than 20 from any detected particle; compared with the LNA |
 | **LNA** | Linear noise approximation: the analytic prediction of fluctuation size about the uniform state (continuous-time and the scheme's exact discrete-time version) |
-| **Confirmation** | Deterministic test of a detection: run the noise-free lattice ODE from the detected state and see whether it ends in particle territory. Rule under review (Amendment 3). |
+| **Confirmation** | Field-level deterministic test (v1.3.3, `src/confirm.py`). The seed-free lattice ODE runs from the field at detection + 20; the outcome is "deterministically persistent particle-depth structure over continuation times 200–300" (identity-linked across 11 checks), excursion, or unresolved. Interpreted as basin membership, with a finite-horizon limitation. Validated by controls against long-run truth. |
 | **Excursion** | A detection that relaxes back to the uniform state, i.e. noise that did not create a particle |
-| **Stochastic Turing pattern** | A noise-sustained Turing-like pattern below the deterministic threshold. Seen in V7 at Ω ≤ 50. Cf. Biancalani, Fanelli & Di Patti, arXiv:0910.4984. |
+| **Stochastic Turing pattern** | A noise-sustained Turing-like pattern below the deterministic threshold. A **candidate interpretation** of V7's crowded detector regime (Ω ≤ 50), **pending E1**. Established in the Brusselator (Biancalani, Fanelli & Di Patti, arXiv:0910.4984): a precedent, not verification for Model G. |
 
 ## 5. Statistical terms
 
@@ -190,7 +197,7 @@ review), **Retired**.
 | N1 | MG1 continuum solutions are converged (grid halving < 0.5%; tolerance check) | MG002 | Checked; independently replicated by ChatGPT (within 0.0012%) |
 | N2 | τ chosen by bounded selection: exact fixed points, discrete LNA within 2%, exit-probability margin | MG003a | Checked (`tau_selection*.txt`) |
 | N3 | Clipping is negligible (≤ 10⁻⁴ per node-step), with τ/2 for Ω ≤ 5 | MG004 | Checked (V3) |
-| N4 | The seed-free lattice ODE run to t = 300 is a valid way to decide basin membership (confirmation) | MG003a | **Open.** V7 showed the stationarity version is too strict; Amendment 3 proposes a basin-membership rule |
+| N4 | Persistence of a particle-depth structure over continuation times 200–300 indicates basin membership (confirmation) | MG003a; revised MG004g | **Checked on controls** (all agree with t = 2000 truth). Finite-horizon limitation stated; field-level, not per-detection |
 | N5 | Window edges b_s and b_r found by finite-time continuation | MG003 | Adopted as operational estimates, not bifurcation points |
 
 ### Statistical assumptions
@@ -208,7 +215,7 @@ review), **Retired**.
 |---|---|---|
 | I1 | A Model G soliton corresponds to a physical particle (LaViolette's interpretation) | Adopted as a working hypothesis; not tested |
 | I2 | A lower ∫G is "mass" | **Open (PI decision at Phase 5).** In standard Model G the net ∫φ_G of a stationary particle is 0 |
-| I3 | Intrinsic token-count noise represents the "fluctuating ether" from which particles nucleate | Open. If Ω_physical ≳ 10²⁰ (§2), this noise is negligible in reality |
+| I3 | Intrinsic token-count noise represents the "fluctuating ether" from which particles nucleate | Open. *Conditional on the unverified density figure and the stated assumptions:* if Ω_physical ≳ 10²⁰ (§2), this noise would be negligible in reality |
 | I4 | A 1D ring captures the qualitative physics | Open. Some effects are 1D-specific (e.g. b = 29 near the window edge only in 1D) |
 
 ---

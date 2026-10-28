@@ -263,7 +263,7 @@ def lap_periodic(N, h):
     return L.tocsr() / h**2
 
 
-def lattice_ode_1d(P, N, h, t_end, seed_scale=1.0, y0=None, rtol=1e-8, atol=1e-10):
+def lattice_ode_1d(P, N, h, t_end, seed_scale=1.0, y0=None, rtol=1e-8, atol=1e-10, t_eval=None):
     """Mean-field of tau_leap_1d (potentials, periodic, x centred at 0)."""
     G0, X0, Y0 = steady_state(P)
     x = (np.arange(N) - N // 2) * h
@@ -289,9 +289,12 @@ def lattice_ode_1d(P, N, h, t_end, seed_scale=1.0, y0=None, rtol=1e-8, atol=1e-1
     sol = None
     for fs in (None, 1e-3, 1e-2):
         sol = solve_ivp(rhs, (0, t_end), y0, method="BDF", jac=jac, rtol=rtol, atol=atol,
-                        max_step=0.5, first_step=fs)
+                        max_step=0.5, first_step=fs, t_eval=t_eval)
         if sol.success:
             break
+    if t_eval is not None:
+        # MG004g: time series at t_eval (used by confirm.py); last column is t_end
+        return x, sol.t, sol.y, float(np.abs(rhs(t_end, sol.y[:, -1])).max())
     y = sol.y[:, -1]
     return x, y[:N], y[N:2 * N], y[2 * N:], float(np.abs(rhs(t_end, y)).max())
 
