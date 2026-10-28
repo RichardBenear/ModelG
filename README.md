@@ -54,6 +54,13 @@ framework does alone.
   a commit hash. No hand-edited numbers.
 - Specs are versioned. Changing a frozen spec means a new version file, not an edit.
 
+## Glossary and assumptions
+
+See [`spec/GLOSSARY_AND_ASSUMPTIONS.md`](spec/GLOSSARY_AND_ASSUMPTIONS.md). It defines every symbol
+(including the two different meanings of Ω), explains how tokens map to LaViolette's etherons, lists the
+Ω values used, and keeps the register of modelling, numerical, statistical and interpretive assumptions
+with their status.
+
 ## Layout
 
 ```

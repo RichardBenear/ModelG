@@ -18,7 +18,8 @@
 | MG004b | 2026-10-28 | 2 | Validations under v1.3.1: V1, V3, V6 PASS; V2 FAIL as registered; V4 INCONCLUSIVE (blocking). Root cause: run-level profile noise far above tolerances (design power failure). Amendment 2 proposed | validations blocked | e4cb48e |
 | MG004c | 2026-10-28 | 2 | ChatGPT review of Amendment 2: G power understated; Amendment 2 revised (decision Omega 1e8, bounded allocation, signed variance rule, conditional alpha wording, accurate C3/C4 expectations, V7 with PI checkpoint) | awaiting PI ruling | a34f15e |
 | MG004d | 2026-10-28 | 2 | Amendment 2 (r2) approved by PI; protocol v1.3.2 frozen; V2b/V4b at Omega=1e8 and V7 implemented; validations rerun | v1.3.2 frozen | 6011830 |
-| MG004e | 2026-10-28 | 2 | V2, V4 PASS (Omega=1e8); V7 done: three noise regimes at b=29 (patterned Omega<=50, transitional ~100, quiet 300); confirmation criterion too strict; Amendment 3 proposed (PI checkpoint before MG3) | PI checkpoint | (this commit) |
+| MG004e | 2026-10-28 | 2 | V2, V4 PASS (Omega=1e8); V7 done: three noise regimes at b=29 (patterned Omega<=50, transitional ~100, quiet 300); confirmation criterion too strict; Amendment 3 proposed (PI checkpoint before MG3) | PI checkpoint | b5c944a |
+| MG004f | 2026-10-28 | — | Glossary and assumptions register added (PI request): Omega definitions and values, token = etheron, notation clash with LaViolette's sink Omega, assumptions M1–M10, N1–N5, S1–S4, I1–I4 | — | (this commit) |
 
 ## MG000 — Project scaffold
 - Created charter, `spec/rules_v1.0.md`, `GATES.md`, folder layout.
