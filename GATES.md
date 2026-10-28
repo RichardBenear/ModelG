@@ -188,6 +188,10 @@ Controls:
 
 Exploratory (reported): particle diffusion coefficient D_p(Ω) (expected ∝ 1/Ω); survival curves at b = 29.
 
+Budget note (PI decision, 2026-10-28, recorded before any C2–C5 evaluation): the MG2 compute cap is raised from 8 to
+12 core-hours. The Ω = 10 and 30 ladder cells are deferred (STAGE_LOG D3); they enter no criterion (C3 and C4 apply
+at Ω ≥ 100, and C2 uses pre-selected cells), and they are reported as not run.
+
 ### MG3 — Spontaneous nucleation from intrinsic noise
 Status: PRE-REGISTERED 2026-10-27 (MG003d), with PI sign-off on protocol v1.3 and the criteria below. No MG3 gate run preceded this commit.
 

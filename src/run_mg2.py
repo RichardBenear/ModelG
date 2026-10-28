@@ -1,7 +1,7 @@
 """MG005: MG2 gate driver (protocol v1.3.3, frozen; criteria in GATES.md).
 
 Resumable: every completed cell is stored in results/MG2/cells/<name>.pkl and skipped on restart.
-Budget: 8 core-hours (sum of per-run wall times). The order runs the decisive cells first:
+Budget: 12 core-hours (sum of per-run wall times; raised from 8 by PI decision 2026-10-28; P6 deferred as D3). The order runs the decisive cells first:
   P1  C1 cells   Omega = 1e8, b in {29, 29.16} (with the single extension decided inline)
   P2  C6         h = 0.1, b = 29, Omega = 1e8
   P3  ladder     Omega in {1e4, 3e3, 1e3, 300, 100, 1e5, 1e6}, both b   (C2, C3, C4)
@@ -23,7 +23,7 @@ GATE = 2
 B = [29.0, 29.16]
 LADDER = [10, 30, 100, 300, 1000, 3000, 10000, 100000, 1000000, 100000000]
 TAU = {0.2: 6.666666666666667e-4, 0.1: 1.6666666666666666e-4}
-BUDGET = 8 * 3600.0
+BUDGET = 12 * 3600.0   # PI decision 2026-10-28: raised from 8 h; low-Omega cells (p6) deferred as D3
 OUT = "results/MG2"
 CELLS = f"{OUT}/cells"
 os.makedirs(CELLS, exist_ok=True)
