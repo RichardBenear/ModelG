@@ -143,3 +143,8 @@
 ## MG005 — MG2 gate run (protocol v1.3.3)
 - Driver `src/run_mg2.py`: resumable cell-level checkpoints (raw cells in `results/MG2/cells/`, not committed for size; summaries are committed); 8 core-hour budget tracked; decisive cells first (C1 at Ω = 1e8, C6, ladder, C5, N1, low Ω).
 - `measure.analyze_run` now also reports the far-field snapshot count (C3 data rule) and per-snapshot particle positions (exploratory D_p).
+
+## Deferred work (PI decisions)
+Items deliberately postponed so the project reaches its main questions first. They can be revisited later.
+- **D1 (2026-10-28):** Noisy existence-window edge study: survival S(δ, Ω, T) with δ = b − b_s(h); noisy edge at S = 1/2; test of the saddle-node scaling δ ∝ Ω^(−2/3). Deferred by PI.
+- **D2 (2026-10-28):** Repeating key MG3 cells at h = 0.1, and reporting b relative to each lattice's window. Deferred by PI. Until then, near-edge results at b = 29 (e.g. survival) are stated as h = 0.2-specific (assumption M11).
