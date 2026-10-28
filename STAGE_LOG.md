@@ -141,8 +141,12 @@
 - PI approval (conditional on considering the review) → protocol v1.3.3 frozen. Next: MG2.
 
 ## MG005 — MG2 gate run (protocol v1.3.3)
-- Driver `src/run_mg2.py`: resumable cell-level checkpoints (raw cells in `results/MG2/cells/`, not committed for size; summaries are committed); 8 core-hour budget tracked; decisive cells first (C1 at Ω = 1e8, C6, ladder, C5, N1, low Ω).
+- Driver `src/run_mg2.py`: resumable cell-level checkpoints (raw cells in `results/MG2/cells/`, committed after a container restart, 4.3 MB); budget tracked, raised from 8 to 12 core-hours by PI decision; decisive cells first (C1 at Ω = 1e8, C6, ladder, C5, N1; low Ω deferred as D3).
 - `measure.analyze_run` now also reports the far-field snapshot count (C3 data rule) and per-snapshot particle positions (exploratory D_p).
+
+- **Result: MG2 FAIL as registered** (C3 FAIL at b = 29, Ω = 100; C4 FAIL from noise-induced replication at b_mid, Ω ≤ 300). C1, C5, C6, N1, N2 PASS; C2 INCONCLUSIVE (bias unresolved at 12 runs); pooled audit ok. 11.6 core-hours. Details in GATES.md (MG2 result) and `results/MG2/MG2_evaluation.md`.
+- Post-gate diagnostic `src/diag_mg2_replication.py`: replication events are physical (two persistent particles under deterministic continuation).
+- Awaiting ChatGPT review (`review/MG005_review_request.md`) and PI decision on next steps.
 
 ## Deferred work (PI decisions)
 Items deliberately postponed so the project reaches its main questions first. They can be revisited later.
