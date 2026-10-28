@@ -149,7 +149,7 @@ def analyze_run(nG, nX, nY, times, Om, h, S0, Astar, lam, t_discard=10.0, K=6, T
     edges = np.linspace(t_discard, T, K + 1)
     blocks = np.full((K, 3, int(win.sum())), np.nan)
     nb = np.zeros(K, dtype=int)
-    fs1 = np.zeros(3); fs2 = np.zeros(3); fcount = 0
+    fs1 = np.zeros(3); fs2 = np.zeros(3); fcount = 0; n_far_snap = 0
     for s in np.where(use & elig)[0]:
         p = dets[s][0]
         al = fourier_shift(phi[s], h, p)          # particle moved to x = 0
@@ -164,7 +164,7 @@ def analyze_run(nG, nX, nY, times, Om, h, S0, Astar, lam, t_discard=10.0, K=6, T
             far &= circ(x, p, L) > FAR
         if far.sum() > 0:   # v1.3.1: snapshots without any particle contribute all nodes (C3 data rule)
             v = phi[s][:, far]
-            fs1 += v.sum(1); fs2 += (v**2).sum(1); fcount += v.shape[1]
+            fs1 += v.sum(1); fs2 += (v**2).sum(1); fcount += v.shape[1]; n_far_snap += 1
     for b in range(K):
         if nb[b] > 0:
             blocks[b] /= nb[b]
@@ -173,7 +173,10 @@ def analyze_run(nG, nX, nY, times, Om, h, S0, Astar, lam, t_discard=10.0, K=6, T
     eligible = (len(disq) == 0) and bool(np.all(nb >= min_snap_per_block))
     # far-field variance about the run's own far-field mean (pooled over far nodes and snapshots)
     farvar = Om * (fs2 / fcount - (fs1 / fcount) ** 2) if fcount else np.full(3, np.nan)
+    # MG004h: original-track position per snapshot (nan when unmatched), for the exploratory D_p estimate
+    pos = np.array([dets[s][tr["orig_hit"][s]] if tr["orig_hit"][s] >= 0 else np.nan for s in range(len(times))])
     return dict(eligible=eligible, blocks=blocks, n_per_block=nb.tolist(), events=events,
+                n_far_snap=int(n_far_snap), positions=pos.tolist(),
                 farvar=farvar.tolist(), n_elig_snap=int((use & elig).sum()),
                 n_dets=[len(d) for d in dets])
 

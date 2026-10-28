@@ -139,3 +139,7 @@
 - Clip pilots for the new grid values: no clipping; τ standard.
 - Erratum: stale V2 sentence in v1.3.2 struck (the code had applied the amended rule).
 - PI approval (conditional on considering the review) → protocol v1.3.3 frozen. Next: MG2.
+
+## MG005 — MG2 gate run (protocol v1.3.3)
+- Driver `src/run_mg2.py`: resumable cell-level checkpoints (raw cells in `results/MG2/cells/`, not committed for size; summaries are committed); 8 core-hour budget tracked; decisive cells first (C1 at Ω = 1e8, C6, ladder, C5, N1, low Ω).
+- `measure.analyze_run` now also reports the far-field snapshot count (C3 data rule) and per-snapshot particle positions (exploratory D_p).
