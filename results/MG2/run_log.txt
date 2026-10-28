@@ -3,3 +3,19 @@
 [decide] C1_b29.0_1e8: PASS {"G": {"dec": "PASS", "upper": 0.07}, "X": {"dec": "PASS", "upper": 0.012}, "Y": {"dec": "PASS", "upper": 0.0122}}
 [cell] C1_b29.16_1e8: b=29.16 Omega=1e+08 h=0.2: 12 eligible of 12 attempted; events {}; core-s 989; budget used 0.56 h
 [decide] C1_b29.16_1e8: PASS {"G": {"dec": "PASS", "upper": 0.0655}, "X": {"dec": "PASS", "upper": 0.0115}, "Y": {"dec": "PASS", "upper": 0.0117}}
+[cell] C6_h0.1_b29.0_1e8: b=29.0 Omega=1e+08 h=0.1: 12 eligible of 12 attempted; events {}; core-s 8166; budget used 2.83 h
+[decide] C6_h0.1_b29.0_1e8: PASS {"G": {"dec": "PASS", "upper": 0.0686}, "X": {"dec": "PASS", "upper": 0.0093}, "Y": {"dec": "PASS", "upper": 0.0102}}
+=== phase p1 done
+=== phase p3 start 2026-10-28 11:02:12
+[cell] L_b29.0_10000: b=29.0 Omega=10000 h=0.2: 12 eligible of 12 attempted; events {}; core-s 1120; budget used 3.14 h
+[cell] L_b29.16_10000: b=29.16 Omega=10000 h=0.2: 12 eligible of 12 attempted; events {}; core-s 1144; budget used 3.46 h
+[cell] L_b29.0_3000: b=29.0 Omega=3000 h=0.2: 12 eligible of 12 attempted; events {}; core-s 1254; budget used 3.81 h
+=== phase p3 start 2026-10-28 11:37:02
+[skip] L_b29.0_10000 (done)
+[skip] L_b29.16_10000 (done)
+[skip] L_b29.0_3000 (done)
+[cell] L_b29.16_3000: b=29.16 Omega=3000 h=0.2: 12 eligible of 12 attempted; events {}; core-s 1240; budget used 4.15 h
+[cell] L_b29.0_1000: b=29.0 Omega=1000 h=0.2: 12 eligible of 18 attempted; events {'loss': 5}; core-s 1875; budget used 4.67 h
+[cell] L_b29.16_1000: b=29.16 Omega=1000 h=0.2: 12 eligible of 12 attempted; events {}; core-s 1277; budget used 5.03 h
+[cell] L_b29.0_300: b=29.0 Omega=300 h=0.2: 5 eligible of 24 attempted; events {'loss': 17}; core-s 2376; budget used 5.69 h
+[cell] L_b29.16_300: b=29.16 Omega=300 h=0.2: 11 eligible of 24 attempted; events {'replication': 12}; core-s 2408; budget used 6.36 h
