@@ -189,6 +189,7 @@ review), **Retired**.
 | M8 | Continuous-time stochastic dynamics define the model; tau-leaping is a numerical approximation of them | MG003 | Adopted; V1 (exact SSA) and V2 (time-step check at Ω = 10⁸) PASS |
 | M9 | **Ω is a free parameter** of the discretization, not taken from LaViolette | MG003 | Adopted. Physical scale only roughly estimated (§2, Ω ≳ 10²⁰), with caveats |
 | M10 | The single-particle state at b = 29 is the target object; b_mid = 29.16 is used where robustness is needed | MG003 | Adopted. b = 29 is near the window's lower edge in 1D (not in 2D/3D) |
+| M11 | **Node spacing h = 0.2 is a free parameter**, chosen for cost (MG003): about 15 nodes per wavelength; the deterministic particle is 8% off the continuum (3% at h = 0.1, 1% at 0.05); measured cost about 4× per unit time at h = 0.1. **Two readings:** (i) numerical discretization of continuum Model G (truth at h → 0), or (ii) the physical node spacing of the space graph (Wolfram reading; a model in its own right). **Effects:** the window edges move with h (b_s = 28.929 / 28.978 / 28.993 at h = 0.2 / 0.1 / continuum), so near-edge results at b = 29 (e.g. particle survival) are h-dependent; seed threshold 0.949 vs 0.975; noise comparisons across lattices should use Ω/h. MG2 is h-neutral by design (same-lattice reference), with C6 checking h = 0.1 | MG003; documented MG005 | Adopted. Suggested mitigation: report b relative to each lattice's window, and repeat key MG3 cells at h = 0.1 |
 
 ### Numerical assumptions
 
