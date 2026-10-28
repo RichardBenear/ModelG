@@ -128,11 +128,11 @@ stationary by t = 300. Proceed to Phase 2.
 ---
 
 ### Phase 2 common setup (both gates)
-Protocol: `spec/phase2_protocol_v1.3.1.md` = v1.3 + Amendment 1 (PI-approved 2026-10-27; v1.0–v1.2 superseded after ChatGPT reviews MG003 r1–r3; see
+Protocol: `spec/phase2_protocol_v1.3.2.md` = v1.3 + Amendments 1–2 (A2 PI-approved 2026-10-28) [v1.3.1 = v1.3 + Amendment 1 (PI-approved 2026-10-27; v1.0–v1.2 superseded after ChatGPT reviews MG003 r1–r3; see
 `review/MG003_response*.md`). 1D periodic ring, h = 0.2, L = 100. Rules v1.1. Unsplit multinomial
 tau-leaping (its Ω → ∞ mean map is exactly forward Euler of the lattice ODE). τ = 6.667e-4, with
 Ω-dependent halving under the clip rule. Validations V1–V4 and V6 (A1 pilot on real runs) must pass
-before any gate run. All statistical decisions are conditional on assumptions A1–A2 (protocol §5.3),
+before any gate run [A2: V2/V4 decided at Ω = 10⁸; V7 descriptive, with a PI checkpoint before MG3]. All statistical decisions are conditional on assumptions A1–A2 (protocol §5.3),
 which are checked per cell (diagnostics → INCONCLUSIVE) and per gate (pooled audit → every PASS
 downgraded to INCONCLUSIVE pending investigation).
 Operating points: **b = 29** (published) and **b_mid = 29.16** (centre of the operational h = 0.2
@@ -142,15 +142,15 @@ single-soliton window [28.929, 29.397]).
 Status: PRE-REGISTERED 2026-10-27 (MG003d), with PI sign-off on protocol v1.3 and the criteria below. No MG2 gate run preceded this commit.
 
 Setup: each run starts from the lattice-ODE soliton at that b (counts = round(Ω·(S₀ + φ*))), T = 100,
-snapshots every 0.5, t ≥ 10 used. Ω ∈ {10, 30, 100, 300, 1000, 3000, 10000}, **12 eligible runs per
-(b, Ω)** (at most 24 attempted; protocol §5.2–5.3).
+snapshots every 0.5, t ≥ 10 used. Ω ∈ {10, 30, 100, 300, 1000, 3000, 10⁴, **10⁵, 10⁶, 10⁸**}
+[A2: 10⁵, 10⁶ and 10⁸ added], **12 eligible runs per (b, Ω)** (at most 24 attempted; protocol §5.2–5.3).
 Profiles are survival-conditioned (protocol §5.2), with survival reported separately.
 
 Prediction: the aligned mean profile converges to the same-lattice ODE soliton with O(1/Ω) bias.
 Far-field fluctuations match the LNA.
 
 Pass criteria:
-- C1: at Ω = 10⁴ and both b, the complete single-cell procedure (protocol §5.3: eligibility and
+- C1: at **Ω = 10⁸** [A2; was 10⁴, which remains in the ladder and is reported] and both b, the complete single-cell procedure (protocol §5.3: eligibility and
   top-up, A1 diagnostics, three-way decision with ε = 1%, one 12-run extension) for each of
   S = G, X, Y. PASS if all fields PASS; FAIL if any field FAILs; otherwise INCONCLUSIVE.
 - C2: bias scaling. α̂ and its calibrated CI at each b (protocol §5.3: pre-selected cells, distinct-pair
@@ -170,7 +170,7 @@ Pass criteria:
   - Seed scale 1.5 (1.58× the lattice threshold): P ≥ 0.9 at each of Ω = 300, 1000, 3000.
   - Seed scale 0.5: P ≤ 0.1 at Ω = 3000.
   - Exploratory: P(Ω) at scale 1.0.
-- C6: lattice independence. h = 0.1 lattice (τ = 1.667e-4), b = 29, Ω = 10⁴: the complete single-cell
+- C6: lattice independence. h = 0.1 lattice (τ = 1.667e-4), b = 29, **Ω = 10⁸** [A2; was 10⁴]: the complete single-cell
   procedure with ε = 1% against the h = 0.1 lattice ODE.
 
 Gate outcome:

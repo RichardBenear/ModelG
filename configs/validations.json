@@ -1,8 +1,79 @@
-{"stage": "MG004", "protocol": "spec/phase2_protocol_v1.3.md (frozen)",
- "lattice": {"h": 0.2, "L": 100, "N": 500}, "tau": 6.666666666666667e-4,
- "V1": {"N": 30, "h": 0.2, "b": 29.0, "Omega": [3, 30], "T": 500, "discard": 50, "pass_tol": "max(3%, 3 batch-means SE)"},
- "V2": {"b": 29.0, "Omega": 300, "runs_eligible_each": 12, "profile_margin": 0.0025, "var_margin_rel": 0.05, "var_ci": 0.90},
- "V3": {"T": 20, "clip_fraction_max": 1e-4, "tau_halvings_max": 2},
- "V4": {"Omega": [100, 1000, 10000], "runs": 12, "eps": 0.003},
- "V6": {"b": 29.08, "Omega": [300, 3000], "runs_eligible_each": 12},
- "rng": {"entropy": 20261027, "gate_id": 0}}
+{
+ "stage": "MG004",
+ "protocol": "spec/phase2_protocol_v1.3.2.md",
+ "lattice": {
+  "h": 0.2,
+  "L": 100,
+  "N": 500
+ },
+ "tau": 0.0006666666666666668,
+ "V1": {
+  "N": 30,
+  "h": 0.2,
+  "b": 29.0,
+  "Omega": [
+   3,
+   30
+  ],
+  "T": 500,
+  "discard": 50,
+  "pass_tol": "max(3%, 3 batch-means SE)"
+ },
+ "V2": {
+  "b": 29.08,
+  "Omega": 100000000.0,
+  "runs_eligible_each": 12,
+  "cap": 24,
+  "profile_margin": 0.0025,
+  "var_margin_rel": 0.05,
+  "var_ci": 0.9,
+  "rules": "A2 bound/signed"
+ },
+ "V3": {
+  "T": 20,
+  "clip_fraction_max": 0.0001,
+  "tau_halvings_max": 2
+ },
+ "V4": {
+  "Omega": [
+   10000.0,
+   1000000.0,
+   100000000.0
+  ],
+  "decide_at": 100000000.0,
+  "runs": 12,
+  "eps": 0.003
+ },
+ "V6": {
+  "b": 29.08,
+  "Omega": [
+   300,
+   3000
+  ],
+  "runs_eligible_each": 12
+ },
+ "rng": {
+  "entropy": 20261027,
+  "gate_id": 0
+ },
+ "V7": {
+  "b": 29.0,
+  "Omega": [
+   1,
+   2,
+   3,
+   5,
+   7,
+   10,
+   15,
+   20,
+   30,
+   50,
+   100,
+   300
+  ],
+  "runs": 4,
+  "T": 100,
+  "confirm_max_per_run": 10
+ }
+}

@@ -295,7 +295,160 @@ def v6(pool):
     save("v6", out)
 
 
+# ================================================================================ protocol v1.3.2 (Amendment 2)
+def evaluate_v2b(res, phis):
+    """A2 rules. Profiles: PASS upper<0.25%, FAIL lower>0.25%, else INCONCLUSIVE.
+    Variances (signed, 90% CI, margin m=5% of tau value): PASS -m<lo & hi<m; FAIL lo>m or hi<-m; else INC."""
+    (eA, _), (eB, _) = res["tau"], res["tau/2"]
+    if len(eA) < 12 or len(eB) < 12:
+        return dict(verdict="INCONCLUSIVE", reason="insufficient eligible runs", n=[len(eA), len(eB)])
+    RA = np.array([r["blocks"] for r in eA]).mean(1); RB = np.array([r["blocks"] for r in eB]).mean(1)
+    dec, rows = [], []
+    for s, nm in enumerate("GXY"):
+        b = welch_diff_bounds(RA[:, s], RB[:, s], float(np.linalg.norm(phis[s])))
+        pd = "PASS" if b["upper"] < 0.0025 else ("FAIL" if b["lower"] > 0.0025 else "INCONCLUSIVE")
+        vA = np.array([r["farvar"][s] for r in eA]); vB = np.array([r["farvar"][s] for r in eB])
+        d = vB.mean() - vA.mean()
+        sa, sb = vA.var(ddof=1) / len(vA), vB.var(ddof=1) / len(vB)
+        se = np.sqrt(sa + sb); dfw = (sa + sb) ** 2 / (sa**2 / (len(vA) - 1) + sb**2 / (len(vB) - 1))
+        tq = stats.t.ppf(0.95, dfw); lo, hi = d - tq * se, d + tq * se; m = 0.05 * vA.mean()
+        vd = "PASS" if (lo > -m and hi < m) else ("FAIL" if (lo > m or hi < -m) else "INCONCLUSIVE")
+        dec += [pd, vd]
+        rows.append(dict(field=nm, prof_diff=b["diff"], prof_lower=b["lower"], prof_upper=b["upper"], prof_decision=pd,
+                         var_tau=vA.mean(), var_tau2=vB.mean(), var_diff=d, var_ci90=[lo, hi], var_margin=m, var_decision=vd))
+        log(f"   {nm}: profile diff {100*b['diff']:.4f}% bounds [{100*b['lower']:.4f}, {100*b['upper']:.4f}]% (margin 0.25%) -> {pd}; "
+            f"far-field Omega*Var {vA.mean():.3f} vs {vB.mean():.3f}, diff 90% CI [{lo:+.3f}, {hi:+.3f}] (margin ±{m:.3f}) -> {vd}")
+    v = "FAIL" if "FAIL" in dec else ("PASS" if all(x == "PASS" for x in dec) else "INCONCLUSIVE")
+    return dict(verdict=v, rows=rows, n=[len(eA), len(eB)])
+
+
+def v2b(pool):
+    LOG.clear()
+    log("V2 (protocol v1.3.2, Amendment 2): tau-halving equivalence, b=29.08, Omega=1e8, 12 eligible each at tau and tau/2 (cap 24, one extension)")
+    ref = reference(29.08, H); phis = window_ref(ref)
+    Om = 1e8; tau = TAU0
+    res = {}
+    for j, (lab, tv) in enumerate((("tau", tau), ("tau/2", tau / 2))):
+        base = dict(b=29.08, Om=Om, h=H, tau=tv, T=100.0, start="soliton", kind="mg2")
+        el, al = run_cell(pool, base, (G_V, 1, 8, 50 + j), 12, 24, log=log)
+        res[lab] = (el, al); log(f"  {lab}: {len(el)} eligible of {len(al)} attempted")
+    out = evaluate_v2b(res, phis)
+    if out["verdict"] == "INCONCLUSIVE":
+        log("  V2 INCONCLUSIVE -> one extension of 12 + 12 eligible runs")
+        for j, (lab, tv) in enumerate((("tau", tau), ("tau/2", tau / 2))):
+            base = dict(b=29.08, Om=Om, h=H, tau=tv, T=100.0, start="soliton", kind="mg2")
+            el, al = run_cell(pool, base, (G_V, 1, 8, 50 + j), 12, 24, start_rep=len(res[lab][1]), log=log)
+            res[lab] = (res[lab][0] + el, res[lab][1] + al)
+        out = evaluate_v2b(res, phis)
+        if out["verdict"] == "INCONCLUSIVE":
+            out["verdict"] = "FAIL (INCONCLUSIVE after extension counts as FAIL)"
+    log(f"V2 {out['verdict']}")
+    out["runs"] = {lab: run_records(al) for lab, (el, al) in res.items()}
+    out["protocol"] = "v1.3.2"
+    save("v2b", out)
+
+
+def v4b(pool):
+    from measure import analyze_run, fourier_shift
+    LOG.clear()
+    log("V4 (protocol v1.3.2, Amendment 2): alignment validation, b=29; synthetic phi* + homogeneous-run noise; 12 runs per Omega in {1e4, 1e6, 1e8}; decided at 1e8")
+    ref = reference(29.0, H); phis = window_ref(ref); S0 = ref["S0"]
+    out = {}
+    for k, Om in enumerate((1e4, 1e6, 1e8)):
+        jobs = [dict(b=29.0, Om=Om, h=H, tau=TAU0, T=100.0, start="homog", kind="homog", keep_fields=True,
+                     rng=seed_for(G_V, 0, 10 + k, 42, rep)) for rep in range(12)]
+        runs = pool.map(one_run, jobs)
+        rs = np.random.default_rng(seed_for(G_V, 0, 10 + k, 43, 0))
+        elig = []
+        for r in runs:
+            s = rs.uniform(-50.0, 50.0)
+            phi = r["phi"].astype(float) + fourier_shift(ref["phi"], H, -s)[None, :, :]
+            n = Om * (S0[None, :, None] + phi)
+            a = analyze_run(n[:, 0], n[:, 1], n[:, 2], r["times"], Om, H, S0, ref["A_s"], ref["lam"], x0=s)
+            if a["eligible"]:
+                elig.append(a)
+        cell = dict(n_eligible=len(elig))
+        if len(elig) >= 2:
+            Bk = np.array([a["blocks"] for a in elig]); R = Bk.mean(1)
+            for s_, nm in enumerate("GXY"):
+                bb = bias_bounds(R[:, s_], phis[s_]); diag = a1_diagnostics(Bk[:, :, s_], phis[s_])
+                cell[nm] = dict(Eb_point=bb["Eb_point"], E_total=bb["E_total"], lower=bb["lower"], upper=bb["upper"],
+                                decision=decide(bb, 0.003), a1_ok=diag["ok"])
+                log(f"  Omega={Om:g} {nm}: alignment-induced bias point {100*bb['Eb_point']:.5f}% bounds [{100*bb['lower']:.5f}, {100*bb['upper']:.5f}]% "
+                    f"(eps 0.3%: {decide(bb, 0.003)}; A1 {'ok' if diag['ok'] else 'flag'}); eligible {len(elig)}/12")
+        else:
+            log(f"  Omega={Om:g}: eligible {len(elig)}/12 -- insufficient")
+        out[f"{Om:g}"] = cell
+    c = out["1e+08"]
+    if c["n_eligible"] < 12:
+        v = "INCONCLUSIVE (blocking): insufficient eligible synthetic runs at Omega=1e8"
+    else:
+        ds = [c[nm]["decision"] for nm in "GXY"]; a1 = all(c[nm]["a1_ok"] for nm in "GXY")
+        v = ("INCONCLUSIVE (blocking): A1 not supported" if not a1 else
+             "PASS" if all(d == "PASS" for d in ds) else ("FAIL" if any(d == "FAIL" for d in ds) else "INCONCLUSIVE (blocking)"))
+    out["verdict"] = v; out["protocol"] = "v1.3.2"
+    log(f"V4 {v}")
+    save("v4b", out)
+
+
+def _v7_job(args):
+    """One homogeneous run at b=29; detections, tracks, and deterministic confirmation of persistent ones."""
+    from measure import smooth_periodic, detect, track, circ
+    from lattice import lattice_ode_1d
+    r = one_run(dict(args, kind="homog", keep_fields=True))
+    ref = reference(29.0, H)
+    phi, times = r["phi"].astype(float), r["times"]
+    x = ref["x"]; L = 100.0
+    ps = smooth_periodic(phi[:, 1, :], H)
+    dets = [detect(ps[s], x, H, ref["thr"], ref["lam"]) for s in range(len(times))]
+    tr = track(dets, times, L, x0=None)
+    durs = [float(q["t_last"] - q["t_start"]) for q in tr["tracks"]]
+    pers = [q for q in tr["tracks"] if q["t_last"] - q["t_start"] >= 20.0]
+    cls = []
+    for q in pers[:10]:
+        tc = q["t_start"] + 20.0
+        s = int(np.argmin(np.abs(times - tc)))
+        y0 = np.concatenate([phi[s, 0], phi[s, 1], phi[s, 2]])
+        xx, pG, pX, pY, mdt = lattice_ode_1d({**P17, "b": 29.0}, 500, H, 300.0, seed_scale=0.0, y0=y0)
+        if pX.min() < -0.5 * abs(ref["A"]) and mdt < 1e-6:
+            c = "confirmed"
+        elif np.max(np.abs(np.concatenate([pG, pX, pY]))) < 1e-3:
+            c = "excursion"
+        else:
+            c = "unresolved"
+        cls.append(dict(t_start=float(q["t_start"]), duration=float(q["t_last"] - q["t_start"]), cls=c, ode_min_phiX=float(pX.min()), ode_maxdt=float(mdt)))
+    return dict(Om=args["Om"], rng=args["rng"], n_dets=[len(d) for d in dets], track_durations=durs,
+                n_persistent=len(pers), classified=cls, clip_frac=r["clip_frac"])
+
+
+def v7(pool):
+    LOG.clear()
+    log("V7 (protocol v1.3.2, descriptive): detector characterization, b=29, homogeneous start, MG3 Omega grid, 4 runs, T=100; "
+        "persistent detections classified by deterministic confirmation (max 10 per run). PI checkpoint before MG3.")
+    tt = tau_table()
+    grid = [1, 2, 3, 5, 7, 10, 15, 20, 30, 50, 100, 300]
+    jobs = [dict(b=29.0, Om=float(om), h=H, tau=(tt.get(float(om)) or TAU0), T=100.0, start="homog",
+                 rng=seed_for(G_V, 0, k, 7, rep)) for k, om in enumerate(grid) for rep in range(4)]
+    res = pool.map(_v7_job, jobs)
+    out = {"protocol": "v1.3.2", "cells": {}}
+    for om in grid:
+        rr = [r for r in res if r["Om"] == float(om)]
+        nd = np.concatenate([r["n_dets"] for r in rr])
+        durs = np.concatenate([r["track_durations"] for r in rr]) if any(len(r["track_durations"]) for r in rr) else np.zeros(0)
+        cls = [c for r in rr for c in r["classified"]]
+        cnt = {k: sum(c["cls"] == k for c in cls) for k in ("confirmed", "excursion", "unresolved")}
+        npers = sum(r["n_persistent"] for r in rr)
+        out["cells"][str(om)] = dict(mean_dets_per_snapshot=float(nd.mean()), frac_snapshots_with_dets=float((nd > 0).mean()),
+                                     n_tracks=int(durs.size), track_duration_quantiles=(np.quantile(durs, [0.5, 0.9, 0.99]).tolist() if durs.size else []),
+                                     n_persistent=int(npers), classified=cnt, n_unclassified=int(npers - len(cls)), runs=rr)
+        log(f"  Omega={om:4d}: dets/snapshot {nd.mean():.3f} (snapshots with any {100*(nd>0).mean():.1f}%); tracks {durs.size}, "
+            f"duration median/90%/99% {np.round(np.quantile(durs,[.5,.9,.99]),1).tolist() if durs.size else '-'}; persistent>=20: {npers} "
+            f"-> confirmed {cnt['confirmed']}, excursion {cnt['excursion']}, unresolved {cnt['unresolved']}, unclassified {npers-len(cls)}")
+    log("V7 complete (descriptive). Awaiting PI checkpoint before MG3.")
+    save("v7", out)
+
+
 if __name__ == "__main__":
     which = sys.argv[1]
     with Pool(2) as pool:
-        dict(v3=v3, v1=v1, v2=v2, v4=v4, v6=v6)[which](pool)
+        dict(v3=v3, v1=v1, v2=v2, v4=v4, v6=v6, v2b=v2b, v4b=v4b, v7=v7)[which](pool)

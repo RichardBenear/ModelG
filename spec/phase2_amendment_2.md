@@ -1,6 +1,7 @@
 # Phase 2 Protocol v1.3.1 — Amendment 2 (PROPOSED, MG004b)
 
-Status: PROPOSED, revision 2, 2026-10-28. Revised after ChatGPT review (`review/MG004_amendment2_chatgpt.md`);
+Status: **APPROVED 2026-10-28** by the PI (Richard Benear), revision 2. Applied as **protocol v1.3.2**
+(`spec/phase2_protocol_v1.3.2.md`). Originally: PROPOSED, revision 2, 2026-10-28. Revised after ChatGPT review (`review/MG004_amendment2_chatgpt.md`);
 changes are marked [r2]. It needs a PI ruling. No gate run has been made. v1.3.1 and all validation records
 stay as registered: V2's registered FAIL and V4's INCONCLUSIVE remain on record, and the scientific reading
 of V2 is that profile equivalence was **unresolved**.
