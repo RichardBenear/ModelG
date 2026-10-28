@@ -128,7 +128,7 @@ stationary by t = 300. Proceed to Phase 2.
 ---
 
 ### Phase 2 common setup (both gates)
-Protocol: `spec/phase2_protocol_v1.3.md` (v1.0–v1.2 superseded after ChatGPT reviews MG003 r1–r3; see
+Protocol: `spec/phase2_protocol_v1.3.1.md` = v1.3 + Amendment 1 (PI-approved 2026-10-27; v1.0–v1.2 superseded after ChatGPT reviews MG003 r1–r3; see
 `review/MG003_response*.md`). 1D periodic ring, h = 0.2, L = 100. Rules v1.1. Unsplit multinomial
 tau-leaping (its Ω → ∞ mean map is exactly forward Euler of the lattice ODE). τ = 6.667e-4, with
 Ω-dependent halving under the clip rule. Validations V1–V4 and V6 (A1 pilot on real runs) must pass
@@ -159,7 +159,8 @@ Pass criteria:
   - **FAIL** if the CI lies entirely outside [0.7, 1.3].
   - **INCONCLUSIVE** otherwise, including fewer than 3 selected cells.
 - C3: far-field Ω·Var(φ_S) for each of S = G, X, Y within 10% of the continuous-time LNA at every
-  Ω ≥ 100. Targets: b = 29: 15.59 / 112.69 / 2.73; b = 29.16: 15.59 / 121.87 / 2.84. The scheme's own
+  Ω ≥ 100. [Amendment 1] Data rule: the first 12 attempted runs per cell, whether eligible or not
+  (protocol v1.3.1 §5.2). A cell lacking data is INCONCLUSIVE, and C3 cannot then PASS. Targets: b = 29: 15.59 / 112.69 / 2.73; b = 29.16: 15.59 / 121.87 / 2.84. The scheme's own
   discrete LNA differs from these by < 1%.
 - C4: persistence at b_mid. For Ω ≥ 100, every run keeps its original particle as the only particle for
   all t ∈ [0, 100] (no loss, replication or merge). At b = 29, survival is reported as a measurement

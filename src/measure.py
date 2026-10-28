@@ -120,7 +120,7 @@ def track(dets, times, L, x0=0.0):
     return dict(orig_hit=orig_hit, tracks=tracks, events=ev)
 
 
-def analyze_run(nG, nX, nY, times, Om, h, S0, Astar, lam, t_discard=10.0, K=6, T=100.0,
+def analyze_run(nG, nX, nY, times, Om, h, S0, Astar, lam,  # Astar: SMOOTHED reference depth (v1.3.1) t_discard=10.0, K=6, T=100.0,
                 min_snap_per_block=20, x0=0.0):
     """Full §5.1–5.2 analysis of one MG2-type run. Returns dict with eligibility, block profiles
     (K, 3, n_window) aligned to the original particle, far-field Omega*Var per field, and events."""
@@ -162,7 +162,7 @@ def analyze_run(nG, nX, nY, times, Om, h, S0, Astar, lam, t_discard=10.0, K=6, T
         far = np.ones(N, dtype=bool)
         for p in dets[s]:
             far &= circ(x, p, L) > FAR
-        if far.sum() > 0 and len(dets[s]) >= 1:
+        if far.sum() > 0:   # v1.3.1: snapshots without any particle contribute all nodes (C3 data rule)
             v = phi[s][:, far]
             fs1 += v.sum(1); fs2 += (v**2).sum(1); fcount += v.shape[1]
     for b in range(K):

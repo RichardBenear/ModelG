@@ -113,6 +113,12 @@ def v1(pool):
 
 
 # ------------------------------------------------------------------------------------------------ helpers
+def run_records(runs):
+    """Audit record of every attempted run (no profiles)."""
+    return [dict(replicate=r.get("replicate"), rng=r["rng"], eligible=bool(r.get("eligible")), events=r.get("events"),
+                 n_per_block=r.get("n_per_block"), farvar=r.get("farvar"), clip_frac=r.get("clip_frac")) for r in runs]
+
+
 def run_profiles(elig, ref):
     """eligible runs -> run-level profiles (M,3,n) and block profiles (M,K,3,n)."""
     B = np.array([r["blocks"] for r in elig])          # (M, K, 3, n)
@@ -126,26 +132,27 @@ def window_ref(ref):
 
 # ------------------------------------------------------------------------------------------------ V2
 def v2(pool):
-    log("V2: tau-halving equivalence, b=29, Omega=300, 12 eligible runs each at tau and tau/2 (cap 24)")
-    ref = reference(29.0, H); phis = window_ref(ref)
+    log("V2 (protocol v1.3.1, Amendment 1): tau-halving equivalence, b=29.08, Omega=300, 12 eligible runs each at tau and tau/2 (cap 24)")
+    ref = reference(29.08, H); phis = window_ref(ref)
     tt = tau_table(); tau = tt.get(300.0, TAU0) or TAU0
     res = {}
     for j, (lab, tv) in enumerate((("tau", tau), ("tau/2", tau / 2))):
-        base = dict(b=29.0, Om=300.0, h=H, tau=tv, T=100.0, start="soliton", kind="mg2")
-        el, al = run_cell(pool, base, (G_V, 0, 0, 20 + j), 12, 24, log=log)
+        base = dict(b=29.08, Om=300.0, h=H, tau=tv, T=100.0, start="soliton", kind="mg2")
+        el, al = run_cell(pool, base, (G_V, 1, 0, 30 + j), 12, 24, log=log)
         res[lab] = (el, al)
         log(f"  {lab}: {len(el)} eligible of {len(al)} attempted")
     out = evaluate_v2(res, phis, ref)
     if out["verdict"] == "INCONCLUSIVE":
         log("  V2 INCONCLUSIVE -> one extension of 12 + 12 eligible runs")
         for j, (lab, tv) in enumerate((("tau", tau), ("tau/2", tau / 2))):
-            base = dict(b=29.0, Om=300.0, h=H, tau=tv, T=100.0, start="soliton", kind="mg2")
-            el, al = run_cell(pool, base, (G_V, 0, 0, 20 + j), 12, 24, start_rep=len(res[lab][1]), log=log)
+            base = dict(b=29.08, Om=300.0, h=H, tau=tv, T=100.0, start="soliton", kind="mg2")
+            el, al = run_cell(pool, base, (G_V, 1, 0, 30 + j), 12, 24, start_rep=len(res[lab][1]), log=log)
             res[lab] = (res[lab][0] + el, res[lab][1] + al)
         out = evaluate_v2(res, phis, ref)
         if out["verdict"] == "INCONCLUSIVE":
             out["verdict"] = "FAIL (INCONCLUSIVE after extension counts as FAIL)"
     log(f"V2 {out['verdict']}")
+    out["runs"] = {lab: run_records(al) for lab, (el, al) in res.items()}
     save("v2", out)
 
 
@@ -183,7 +190,7 @@ def evaluate_v2(res, phis, ref):
 # ------------------------------------------------------------------------------------------------ V4
 def v4(pool):
     from measure import analyze_run, fourier_shift
-    log("V4: alignment validation, b=29; synthetic phi* + homogeneous-run noise, random circular shifts; 12 runs per Omega")
+    log("V4 (protocol v1.3.1): alignment validation, b=29; synthetic phi* + homogeneous-run noise, random circular shifts; 12 runs per Omega")
     ref = reference(29.0, H); phis = window_ref(ref); S0 = ref["S0"]
     tt = tau_table()
     out = {}
@@ -200,7 +207,7 @@ def v4(pool):
             sol = fourier_shift(ref["phi"], H, -s)            # soliton centred at x = s
             phi = r["phi"].astype(float) + sol[None, :, :]
             n = Om * (S0[None, :, None] + phi)
-            a = analyze_run(n[:, 0], n[:, 1], n[:, 2], r["times"], Om, H, S0, ref["A"], ref["lam"], x0=s)
+            a = analyze_run(n[:, 0], n[:, 1], n[:, 2], r["times"], Om, H, S0, ref["A_s"], ref["lam"], x0=s)
             if a["eligible"]:
                 elig.append(a)
         R, Bk = run_profiles(elig, ref) if elig else (None, None)
@@ -227,7 +234,7 @@ def v4(pool):
 
 # ------------------------------------------------------------------------------------------------ V6
 def v6(pool):
-    log("V6: A1 pilot on real survival-conditioned runs, b=29.08, Omega in {300, 3000}, 12 eligible each (cap 24)")
+    log("V6 (protocol v1.3.1): A1 pilot on real survival-conditioned runs, b=29.08, Omega in {300, 3000}, 12 eligible each (cap 24)")
     ref = reference(29.08, H); phis = window_ref(ref)
     tt = tau_table()
     cells, out = {}, {}
@@ -238,6 +245,7 @@ def v6(pool):
         log(f"  Omega={Om:g}: {len(el)} eligible of {len(al)} attempted; events in ineligible runs: "
             f"{[r['events'] for r in al if not r.get('eligible')]}")
         cells[Om] = el
+        out.setdefault("runs", {})[str(Om)] = run_records(al)
     ok_all = True
     pooled = {nm: [] for nm in "GXY"}
     for Om, el in cells.items():

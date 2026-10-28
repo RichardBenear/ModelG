@@ -34,7 +34,10 @@ def reference(b, h, L=100.0):
     i0 = N // 2
     z = zeros(x[i0:], pX[i0:])
     lam = 2 * float(np.mean(np.diff(z[z < 30])[1:]))
-    return dict(x=x, phi=np.vstack([pG, pX, pY]), A=float(pX[i0]), lam=lam,
+    # Amendment 1 (v1.3.1): detection threshold = -0.5 |A_s|, with A_s the minimum of the reference phi_X
+    # smoothed by EXACTLY the detector's smoothing operation (measure.smooth_periodic, sigma = 0.4).
+    A_s = float(smooth_periodic(pX, h).min())
+    return dict(x=x, phi=np.vstack([pG, pX, pY]), A=float(pX[i0]), A_s=A_s, thr=-0.5 * abs(A_s), lam=lam,
                 S0=np.array(steady_state({**P17, "b": b})))
 
 
@@ -59,10 +62,10 @@ def one_run(args):
     wall = time.time() - t0
     out = dict(rng=args["rng"], clips=int(clips), clip_frac=clips / (3 * N * nsteps), wall=wall)
     if args.get("kind", "mg2") == "mg2":
-        a = analyze_run(rG, rX, rY, rt, Om, h, S0, ref["A"], ref["lam"])
+        a = analyze_run(rG, rX, rY, rt, Om, h, S0, ref["A_s"], ref["lam"])
         out.update(a)
     elif args.get("kind") == "homog":
-        a = analyze_homogeneous(rG, rX, rY, rt, Om, h, S0, ref["A"], ref["lam"])
+        a = analyze_homogeneous(rG, rX, rY, rt, Om, h, S0, ref["A_s"], ref["lam"])
         out.update(dict(births=a["births"], first_birth=a["first_birth"], n_dets=a["n_dets"]))
         if args.get("keep_fields"):
             out["phi"] = np.stack([rG / Om - S0[0], rX / Om - S0[1], rY / Om - S0[2]], axis=1).astype(np.float32)
