@@ -120,9 +120,9 @@ def track(dets, times, L, x0=0.0):
     return dict(orig_hit=orig_hit, tracks=tracks, events=ev)
 
 
-def analyze_run(nG, nX, nY, times, Om, h, S0, Astar, lam,  # Astar: SMOOTHED reference depth (v1.3.1) t_discard=10.0, K=6, T=100.0,
+def analyze_run(nG, nX, nY, times, Om, h, S0, Astar, lam, t_discard=10.0, K=6, T=100.0,
                 min_snap_per_block=20, x0=0.0):
-    """Full §5.1–5.2 analysis of one MG2-type run. Returns dict with eligibility, block profiles
+    """Full §5.1–5.2 analysis of one MG2-type run. Astar is the SMOOTHED reference depth A*_s (v1.3.1). Returns dict with eligibility, block profiles
     (K, 3, n_window) aligned to the original particle, far-field Omega*Var per field, and events."""
     N = nX.shape[1]
     L = N * h
