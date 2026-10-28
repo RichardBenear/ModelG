@@ -1,0 +1,31 @@
+V2 (protocol v1.3.2, Amendment 2): tau-halving equivalence, b=29.08, Omega=1e8, 12 eligible each at tau and tau/2 (cap 24, one extension)
+  (0, 1, 8, 50) rep 0: eligible=True events=[] clip_frac=0.0e+00 wall=79s
+  (0, 1, 8, 50) rep 1: eligible=True events=[] clip_frac=0.0e+00 wall=79s
+  (0, 1, 8, 50) rep 2: eligible=True events=[] clip_frac=0.0e+00 wall=78s
+  (0, 1, 8, 50) rep 3: eligible=True events=[] clip_frac=0.0e+00 wall=78s
+  (0, 1, 8, 50) rep 4: eligible=True events=[] clip_frac=0.0e+00 wall=77s
+  (0, 1, 8, 50) rep 5: eligible=True events=[] clip_frac=0.0e+00 wall=77s
+  (0, 1, 8, 50) rep 6: eligible=True events=[] clip_frac=0.0e+00 wall=79s
+  (0, 1, 8, 50) rep 7: eligible=True events=[] clip_frac=0.0e+00 wall=78s
+  (0, 1, 8, 50) rep 8: eligible=True events=[] clip_frac=0.0e+00 wall=79s
+  (0, 1, 8, 50) rep 9: eligible=True events=[] clip_frac=0.0e+00 wall=78s
+  (0, 1, 8, 50) rep 10: eligible=True events=[] clip_frac=0.0e+00 wall=80s
+  (0, 1, 8, 50) rep 11: eligible=True events=[] clip_frac=0.0e+00 wall=80s
+  tau: 12 eligible of 12 attempted
+  (0, 1, 8, 51) rep 0: eligible=True events=[] clip_frac=0.0e+00 wall=159s
+  (0, 1, 8, 51) rep 1: eligible=True events=[] clip_frac=0.0e+00 wall=159s
+  (0, 1, 8, 51) rep 2: eligible=True events=[] clip_frac=0.0e+00 wall=163s
+  (0, 1, 8, 51) rep 3: eligible=True events=[] clip_frac=0.0e+00 wall=164s
+  (0, 1, 8, 51) rep 4: eligible=True events=[] clip_frac=0.0e+00 wall=169s
+  (0, 1, 8, 51) rep 5: eligible=True events=[] clip_frac=0.0e+00 wall=170s
+  (0, 1, 8, 51) rep 6: eligible=True events=[] clip_frac=0.0e+00 wall=162s
+  (0, 1, 8, 51) rep 7: eligible=True events=[] clip_frac=0.0e+00 wall=163s
+  (0, 1, 8, 51) rep 8: eligible=True events=[] clip_frac=0.0e+00 wall=169s
+  (0, 1, 8, 51) rep 9: eligible=True events=[] clip_frac=0.0e+00 wall=170s
+  (0, 1, 8, 51) rep 10: eligible=True events=[] clip_frac=0.0e+00 wall=171s
+  (0, 1, 8, 51) rep 11: eligible=True events=[] clip_frac=0.0e+00 wall=173s
+  tau/2: 12 eligible of 12 attempted
+   G: profile diff 0.0271% bounds [0.0000, 0.0882]% (margin 0.25%) -> PASS; far-field Omega*Var 15.589 vs 15.603, diff 90% CI [-0.062, +0.089] (margin ±0.779) -> PASS
+   X: profile diff 0.0047% bounds [0.0000, 0.0156]% (margin 0.25%) -> PASS; far-field Omega*Var 116.521 vs 116.881, diff 90% CI [-2.606, +3.327] (margin ±5.826) -> PASS
+   Y: profile diff 0.0047% bounds [0.0000, 0.0158]% (margin 0.25%) -> PASS; far-field Omega*Var 2.764 vs 2.783, diff 90% CI [-0.011, +0.050] (margin ±0.138) -> PASS
+V2 PASS

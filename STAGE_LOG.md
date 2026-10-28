@@ -123,3 +123,6 @@
 ## MG004d — Amendment 2 approved; protocol v1.3.2
 - PI approved Amendment 2 revision 2. Protocol v1.3.2: decision point Ω = 1e8 for MG2-C1, C6, V4 and the V2 profile test; bounded allocation; bound-based and signed V2 rules; new descriptive V7 with a PI checkpoint before MG3. The MG2 ladder adds 1e5, 1e6 and 1e8.
 - Code: `validations.py` v2b, v4b, v7 (the v1.3.1 functions are kept for the record). Stream keys are distinct from all earlier validations.
+- V2 (v1.3.2) **PASS** at b = 29.08, Ω = 1e8 (12/12 eligible each arm): profile differences ≤ 0.027% point, ≤ 0.088% upper (G); variance equivalence PASS for G, X, Y.
+- V4 (v1.3.2) **PASS** at Ω = 1e8: alignment-bias upper bounds 0.137% (G), 0.154% (X), 0.143% (Y) vs 0.3%. Observation: the X/Y upper bounds plateau (0.20% at 1e6 → 0.15% at 1e8) instead of scaling as Ω^(−1/2). This suggests an alignment floor of about 0.1% (sub-node position estimate); it is far below MG2's 1% tolerance.
+- Validation status under v1.3.2: V1, V2, V3, V4, V6 PASS. V7 (descriptive) next, then the PI checkpoint before MG3. MG2 may proceed after V7 is reviewed or in parallel (V7 gates MG3 only).

@@ -1,0 +1,11 @@
+V4 (protocol v1.3.2, Amendment 2): alignment validation, b=29; synthetic phi* + homogeneous-run noise; 12 runs per Omega in {1e4, 1e6, 1e8}; decided at 1e8
+  Omega=10000 G: alignment-induced bias point 0.00000% bounds [0.00000, 7.37938]% (eps 0.3%: INCONCLUSIVE; A1 ok); eligible 12/12
+  Omega=10000 X: alignment-induced bias point 0.12765% bounds [0.00000, 1.14741]% (eps 0.3%: INCONCLUSIVE; A1 ok); eligible 12/12
+  Omega=10000 Y: alignment-induced bias point 0.10049% bounds [0.00000, 1.14618]% (eps 0.3%: INCONCLUSIVE; A1 ok); eligible 12/12
+  Omega=1e+06 G: alignment-induced bias point 0.07677% bounds [0.00000, 0.72048]% (eps 0.3%: INCONCLUSIVE; A1 ok); eligible 12/12
+  Omega=1e+06 X: alignment-induced bias point 0.00000% bounds [0.00000, 0.19988]% (eps 0.3%: PASS; A1 ok); eligible 12/12
+  Omega=1e+06 Y: alignment-induced bias point 0.00000% bounds [0.00000, 0.19105]% (eps 0.3%: PASS; A1 ok); eligible 12/12
+  Omega=1e+08 G: alignment-induced bias point 0.00000% bounds [0.00000, 0.13720]% (eps 0.3%: PASS; A1 ok); eligible 12/12
+  Omega=1e+08 X: alignment-induced bias point 0.00000% bounds [0.00000, 0.15391]% (eps 0.3%: PASS; A1 ok); eligible 12/12
+  Omega=1e+08 Y: alignment-induced bias point 0.00000% bounds [0.00000, 0.14302]% (eps 0.3%: PASS; A1 ok); eligible 12/12
+V4 PASS

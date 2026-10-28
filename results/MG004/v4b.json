@@ -1,0 +1,85 @@
+{
+ "10000": {
+  "n_eligible": 12,
+  "G": {
+   "Eb_point": 0.0,
+   "E_total": 0.022228272405542857,
+   "lower": 0.0,
+   "upper": 0.07379383115031654,
+   "decision": "INCONCLUSIVE",
+   "a1_ok": true
+  },
+  "X": {
+   "Eb_point": 0.001276534002301591,
+   "E_total": 0.0037390272296327224,
+   "lower": 0.0,
+   "upper": 0.01147410002344905,
+   "decision": "INCONCLUSIVE",
+   "a1_ok": true
+  },
+  "Y": {
+   "Eb_point": 0.001004868806323395,
+   "E_total": 0.0036769576664212387,
+   "lower": 0.0,
+   "upper": 0.011461807131932697,
+   "decision": "INCONCLUSIVE",
+   "a1_ok": true
+  }
+ },
+ "1e+06": {
+  "n_eligible": 12,
+  "G": {
+   "Eb_point": 0.0007676888870321193,
+   "E_total": 0.0023398576688612575,
+   "lower": 0.0,
+   "upper": 0.007204775623674388,
+   "decision": "INCONCLUSIVE",
+   "a1_ok": true
+  },
+  "X": {
+   "Eb_point": 0.0,
+   "E_total": 0.000380859555183425,
+   "lower": 0.0,
+   "upper": 0.0019988299472454185,
+   "decision": "PASS",
+   "a1_ok": true
+  },
+  "Y": {
+   "Eb_point": 0.0,
+   "E_total": 0.0003736656897278755,
+   "lower": 0.0,
+   "upper": 0.0019104788508576566,
+   "decision": "PASS",
+   "a1_ok": true
+  }
+ },
+ "1e+08": {
+  "n_eligible": 12,
+  "G": {
+   "Eb_point": 0.0,
+   "E_total": 0.0003175482923528642,
+   "lower": 0.0,
+   "upper": 0.0013719528439359702,
+   "decision": "PASS",
+   "a1_ok": true
+  },
+  "X": {
+   "Eb_point": 0.0,
+   "E_total": 0.000345536065712426,
+   "lower": 0.0,
+   "upper": 0.0015391113213211155,
+   "decision": "PASS",
+   "a1_ok": true
+  },
+  "Y": {
+   "Eb_point": 0.0,
+   "E_total": 0.00032203295112669274,
+   "lower": 0.0,
+   "upper": 0.0014301548651654919,
+   "decision": "PASS",
+   "a1_ok": true
+  }
+ },
+ "verdict": "PASS",
+ "protocol": "v1.3.2"
+}
