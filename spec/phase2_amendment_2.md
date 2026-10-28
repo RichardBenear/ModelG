@@ -1,7 +1,9 @@
 # Phase 2 Protocol v1.3.1 — Amendment 2 (PROPOSED, MG004b)
 
-Status: PROPOSED 2026-10-28. It needs a PI ruling, and ChatGPT review is recommended. No gate run has
-been made. v1.3.1 and all validation records stay as registered.
+Status: PROPOSED, revision 2, 2026-10-28. Revised after ChatGPT review (`review/MG004_amendment2_chatgpt.md`);
+changes are marked [r2]. It needs a PI ruling. No gate run has been made. v1.3.1 and all validation records
+stay as registered: V2's registered FAIL and V4's INCONCLUSIVE remain on record, and the scientific reading
+of V2 is that profile equivalence was **unresolved**.
 
 ## Validation record under v1.3.1
 
@@ -57,39 +59,90 @@ As registered:
 These are permitted outcomes under the protocol, but running a gate that is predictably INCONCLUSIVE
 wastes about 8 core-hours.
 
-## Proposed changes
+## Proposed changes (revision 2)
 
-1. **Move MG2's decision Ω to 10⁶ (C1, C6) and V4's to 10⁶.** Add 10⁵ and 10⁶ to the MG2 ladder; V4
-   ladder {10⁴, 10⁵, 10⁶}.
-   - Kernel cost does not grow with Ω (measured 0.85 / 0.66 / 0.64 s per unit time at 10⁴ / 10⁵ / 10⁶).
-   - Projected 12-run half-widths at 10⁶ from the measured Ω^(−1/2) scaling: G ≈ 0.49%, X ≈ 0.07%,
-     Y ≈ 0.07% (V4 at 0.3% resolvable for X and Y; G marginal).
-   - Tolerances unchanged: C1/C6 ε = 1%; V4 ε = 0.3%.
-   - **Alternative 1b, if the PI prefers:** apply V4's 0.3% to X and Y, and give G a tolerance of 1%
-     (G is reported, never dropped).
-2. **V2 redesign.**
-   - Replace "FAIL if point estimate outside margin" with the §5.3 bound rule everywhere it appears
-     (V2 profiles and variances): FAIL only if the lower bound exceeds the margin.
-   - Move the profile-equivalence test to **b = 29.08, Ω = 10⁶**, where C1/C6 are decided (margin
-     0.25%; 12 + 12 runs; one extension).
-   - Keep the Ω = 300 variance-equivalence result, which already passed, as the fluctuation-accuracy
-     evidence.
-   - Rationale for C2: in this scheme the τ-induced change of the stationary mean enters at O(τ/Ω),
-     the same 1/Ω order as the finite-Ω bias. It rescales the bias amplitude by 1 + O(τ·rate) but
-     cannot change the exponent α that C2 tests.
-3. **New pre-gate check V7 before MG3 (detector characterization at small Ω).** On homogeneous runs
-   at b = 29 for each MG3 grid Ω (1–300), 4 runs, T = 100, report:
-   - the rate of sub-threshold detections, their persistence-time distribution, and the fraction
-     persisting ≥ 20;
-   - the tracking load (detections per snapshot).
+### 1. Bounded high-Ω allocation for the precision tests [r2: power recomputed]
 
-   V7 is descriptive; it sets no thresholds. If persistent noise minima are common, MG3's design
-   (smoothing scale, or detection on deterministic confirmation alone) returns to the PI before any
-   MG3 run.
-4. **No change** to the reaction model, the integrator, A1–A2, or the C3/C4/C5 criteria.
+Projection basis: the half-widths and upper bounds measured in V2 and V4, scaled as (Ω·M)^(−1/2).
+These are approximate (the t critical values change slightly with M).
 
-## What this does not fix
+Measured at Ω = 10⁴ with 12 runs (V4): G upper bound 7.36%, half-width 4.87%; X and Y about 1.0% / 0.71%.
 
-- MG2 cells at Ω ≤ 100 will still mostly be INCONCLUSIVE because no particle can be isolated. They are
-  reported as such.
-- C2 may still be INCONCLUSIVE. Under the protocol that does not block the gate.
+**Revision 1 was wrong for G.** At Ω = 10⁶ the projected G upper bound is ≈ 0.74% for V4 (tolerance
+0.3%) and the V2 half-width ≈ 0.61% (margin 0.25%). Both are unresolvable.
+
+**Proposal: one decision point, Ω = 10⁸**, for MG2-C1, MG2-C6, V4 and the V2 profile test.
+
+| Test | Projected upper bound at Ω = 10⁸ (12 runs per arm) | Tolerance |
+|---|---|---|
+| V4 alignment, G | ≈ 0.074% | 0.30% |
+| V4 alignment, X / Y | ≈ 0.01% | 0.30% |
+| V2 profile difference, G (two-sample, upper ≈ 2× half-width) | ≈ 0.09% | 0.25% |
+| MG2-C1 / C6, G (noise part; intrinsic bias ∝ 1/Ω is negligible) | ≈ 0.07% | 1% |
+
+- **Cost check** (`results/MG004/amendment2_highomega_check.txt`): 0.77 s per unit time at Ω = 10⁸
+  (1.8 s at 10⁷, probably process contention); no clipping; counts ≤ 2×10⁹ fit in int64. The
+  single-snapshot X deviation from φ* falls as Ω^(−1/2) (0.35% → 0.11%, 10⁷ → 10⁸).
+- **Bounded allocation and stopping rule:** each decision cell gets exactly 12 eligible runs (cap 24
+  attempted) plus at most **one** 12-run extension, as in §5.3. There is **no further increase of Ω or
+  M** after an INCONCLUSIVE result: it stands.
+- **Tolerances unchanged:** C1/C6 ε = 1%; V4 0.3% for **all** fields, G included [r2: no relaxation
+  for G, per the reviewer's recommendation]; V2 margin 0.25%.
+- The registered Ω = 10⁴ cells remain in the MG2 ladder and are reported. Ω = 10⁵, 10⁶ and 10⁸ are
+  added. V4's ladder becomes {10⁴, 10⁶, 10⁸}, decided at 10⁸.
+- **What 10⁸ establishes:** convergence of the token rules to the lattice mean field (C1) and the
+  absence of alignment artifacts at that noise level (V4). The *approach* to the limit is C2's job.
+
+### 2. V2 decision rules [r2: signed rule for variances]
+
+- **Profiles** (unsigned norm): PASS if the upper bound < margin; FAIL if the lower bound > margin;
+  INCONCLUSIVE otherwise. This replaces the noise-inflated point-estimate rule, consistent with §5.3.
+- **Variances** (signed difference d = Var_τ/2 − Var_τ, 90% CI [lo, hi], margin m = 5% of Var_τ):
+  - PASS if −m < lo and hi < m (CI entirely inside the margins);
+  - FAIL if lo > m or hi < −m (CI entirely outside);
+  - INCONCLUSIVE otherwise.
+- **Location:** the profile test moves to b = 29.08, Ω = 10⁸ (12 + 12 runs; one extension). The
+  Ω = 300 variance equivalence, which passed for G, X and Y, is retained as evidence **at that operating
+  point only** [r2].
+
+### 3. Asymptotic wording on τ and α [r2]
+
+Under a regular weak-noise expansion, bias(Ω, τ) = B(τ)/Ω + O(Ω⁻²). The time step changes the leading
+coefficient B(τ) but preserves the asymptotic exponent, **provided B(τ) ≠ 0**.
+- This does **not** guarantee an unchanged *fitted* exponent over the actual finite-Ω ladder, given
+  survival conditioning, near-threshold dynamics and higher-order terms.
+- A high-Ω V2 pass establishes the stated absolute time-step accuracy at Ω = 10⁸. It does **not**
+  validate the low-Ω bias coefficient.
+- C2's α is therefore reported as the exponent of the τ-scheme's bias over the tested ladder.
+
+### 4. Expected MG2 outcomes, stated accurately [r2]
+
+Raising the decision Ω makes C1, C6 and V4 resolvable. **It does not make MG2 capable of passing by
+itself:**
+- **C3 is mandatory.** At Ω = 100 (and possibly 300), detector crowding (V4: no isolatable particle at
+  Ω = 100) may leave too little far-field data. The C3 cell is then INCONCLUSIVE, and C3 cannot PASS.
+- **C4 is a hard criterion.** Every b_mid run at every Ω ≥ 100 must keep its original particle as the
+  only particle. **A confirmed loss or replication is a FAIL**, not an insufficient-data INCONCLUSIVE.
+  Validation data at b = 29.08, Ω = 300 (eligibility 22/48, 22/48, 12/18 under the amended detector)
+  make losses at b = 29.16 for Ω ≤ 300 likely.
+- **C4 is not changed.** Revising it after seeing validation data would be post hoc. A C4 FAIL would be
+  a legitimate, informative outcome: particles at the window centre are not stable against intrinsic
+  noise at Ω ≤ about 300.
+- C1, C2, C3, C5 and C6 are evaluated and reported regardless. The gate verdict follows the registered
+  rule.
+
+### 5. V7 detector characterization, then a PI checkpoint before MG3 [r2]
+
+- Homogeneous runs at b = 29 for each MG3 grid Ω (1–300): 4 runs, T = 100.
+- Every persistent detection (≥ 20 time units) is classified by §5.4 deterministic confirmation as
+  **confirmed** (relaxes to a soliton; this is genuine spontaneous nucleation, i.e. signal), an
+  **excursion** (relaxes to homogeneous), or **unresolved** (neither by t = 300).
+- Also reported: the sub-threshold detection rate, the persistence-time distribution, and the tracking
+  load (detections per snapshot).
+- V7 is descriptive and sets no thresholds. **Explicit PI checkpoint:** the PI reviews V7 before any
+  MG3 run. A noisy detection workload is a measurement-design issue, to be resolved by then; confirmed
+  nucleations are early signal for MG3 and are reported as such.
+
+### 6. No change
+
+The reaction model, the integrator, assumptions A1–A2, and the C3, C4 and C5 criteria are unchanged.

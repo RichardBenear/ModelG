@@ -1,0 +1,4 @@
+Amendment 2 r2 high-Omega check (b=29.08, h=0.2, tau=6.667e-4, soliton start, T=5; diagnostic streams gate 9):
+Omega=1e7: 1.84 s per unit time (likely process contention); clips 0; max count ~2.0e8; |phi_X(t=5)-phi*_X|/|phi*_X| = 3.54e-3
+Omega=1e8: 0.77 s per unit time; clips 0; max count ~2.0e9 (int64 ok); |phi_X(t=5)-phi*_X|/|phi*_X| = 1.11e-3
+Earlier: Omega=1e4 0.85, 1e5 0.66, 1e6 0.64 s per unit time.
