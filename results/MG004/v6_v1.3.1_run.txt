@@ -1,0 +1,49 @@
+V6 (protocol v1.3.1): A1 pilot on real survival-conditioned runs, b=29.08, Omega in {300, 3000}, 12 eligible each (cap 24)
+  (0, 1, 0, 6) rep 0: eligible=True events=[] clip_frac=0.0e+00 wall=84s
+  (0, 1, 0, 6) rep 1: eligible=False events=[('loss', 23.500000000018193)] clip_frac=0.0e+00 wall=83s
+  (0, 1, 0, 6) rep 2: eligible=True events=[] clip_frac=0.0e+00 wall=82s
+  (0, 1, 0, 6) rep 3: eligible=False events=[('loss', 62.50000000006585)] clip_frac=0.0e+00 wall=81s
+  (0, 1, 0, 6) rep 4: eligible=True events=[] clip_frac=0.0e+00 wall=85s
+  (0, 1, 0, 6) rep 5: eligible=True events=[] clip_frac=0.0e+00 wall=85s
+  (0, 1, 0, 6) rep 6: eligible=False events=[('loss', 10.500000000002307)] clip_frac=0.0e+00 wall=85s
+  (0, 1, 0, 6) rep 7: eligible=True events=[] clip_frac=0.0e+00 wall=85s
+  (0, 1, 0, 6) rep 8: eligible=True events=[] clip_frac=0.0e+00 wall=84s
+  (0, 1, 0, 6) rep 9: eligible=False events=[('loss', 12.00000000000414)] clip_frac=0.0e+00 wall=83s
+  (0, 1, 0, 6) rep 10: eligible=True events=[] clip_frac=0.0e+00 wall=85s
+  (0, 1, 0, 6) rep 11: eligible=True events=[] clip_frac=0.0e+00 wall=85s
+  (0, 1, 0, 6) rep 12: eligible=False events=[('replication', 14.000000000006585)] clip_frac=0.0e+00 wall=79s
+  (0, 1, 0, 6) rep 13: eligible=True events=[] clip_frac=0.0e+00 wall=81s
+  (0, 1, 0, 6) rep 14: eligible=True events=[] clip_frac=0.0e+00 wall=82s
+  (0, 1, 0, 6) rep 15: eligible=False events=[('loss', 32.00000000002858)] clip_frac=0.0e+00 wall=82s
+  (0, 1, 0, 6) rep 16: eligible=True events=[] clip_frac=0.0e+00 wall=85s
+  (0, 1, 0, 6) rep 17: eligible=True events=[] clip_frac=0.0e+00 wall=84s
+  Omega=300: 12 eligible of 18 attempted; events in ineligible runs: [[('loss', 23.500000000018193)], [('loss', 62.50000000006585)], [('loss', 10.500000000002307)], [('loss', 12.00000000000414)], [('replication', 14.000000000006585)], [('loss', 32.00000000002858)]]
+  (0, 1, 1, 6) rep 0: eligible=True events=[] clip_frac=0.0e+00 wall=84s
+  (0, 1, 1, 6) rep 1: eligible=True events=[] clip_frac=0.0e+00 wall=83s
+  (0, 1, 1, 6) rep 2: eligible=True events=[] clip_frac=0.0e+00 wall=81s
+  (0, 1, 1, 6) rep 3: eligible=True events=[] clip_frac=0.0e+00 wall=81s
+  (0, 1, 1, 6) rep 4: eligible=True events=[] clip_frac=0.0e+00 wall=80s
+  (0, 1, 1, 6) rep 5: eligible=True events=[] clip_frac=0.0e+00 wall=81s
+  (0, 1, 1, 6) rep 6: eligible=True events=[] clip_frac=0.0e+00 wall=80s
+  (0, 1, 1, 6) rep 7: eligible=True events=[] clip_frac=0.0e+00 wall=82s
+  (0, 1, 1, 6) rep 8: eligible=True events=[] clip_frac=0.0e+00 wall=82s
+  (0, 1, 1, 6) rep 9: eligible=True events=[] clip_frac=0.0e+00 wall=81s
+  (0, 1, 1, 6) rep 10: eligible=True events=[] clip_frac=0.0e+00 wall=84s
+  (0, 1, 1, 6) rep 11: eligible=True events=[] clip_frac=0.0e+00 wall=84s
+  Omega=3000: 12 eligible of 12 attempted; events in ineligible runs: []
+  Omega=300 G: A1 diagnostics pass (Shapiro p min 0.0695, max block |z| 4.30, max run t 2.88 vs crit 5.46); run/block variance ratios [0.86, 0.35, 0.29]
+  Omega=300 X: A1 diagnostics pass (Shapiro p min 0.274, max block |z| 2.97, max run t 2.52 vs crit 5.46); run/block variance ratios [0.88, 0.71, 1.2]
+  Omega=300 Y: A1 diagnostics pass (Shapiro p min 0.0855, max block |z| 3.86, max run t 3.04 vs crit 5.46); run/block variance ratios [0.89, 0.55, 1.22]
+  Omega=3000 G: A1 diagnostics pass (Shapiro p min 0.202, max block |z| 4.14, max run t 2.95 vs crit 5.46); run/block variance ratios [0.73, 0.34, 0.65]
+  Omega=3000 X: A1 diagnostics pass (Shapiro p min 0.0589, max block |z| 2.99, max run t 4.24 vs crit 5.46); run/block variance ratios [1.22, 0.87, 0.93]
+  Omega=3000 Y: A1 diagnostics pass (Shapiro p min 0.286, max block |z| 2.88, max run t 3.47 vs crit 5.46); run/block variance ratios [1.26, 0.65, 1.09]
+  pooled audit G dir0: max |t| 2.35 vs crit 5.05 (ok)
+  pooled audit G dir1: max |t| 2.47 vs crit 5.05 (ok)
+  pooled audit G dir2: max |t| 2.51 vs crit 5.05 (ok)
+  pooled audit X dir0: max |t| 2.24 vs crit 5.05 (ok)
+  pooled audit X dir1: max |t| 3.12 vs crit 5.05 (ok)
+  pooled audit X dir2: max |t| 2.22 vs crit 5.05 (ok)
+  pooled audit Y dir0: max |t| 2.41 vs crit 5.05 (ok)
+  pooled audit Y dir1: max |t| 2.79 vs crit 5.05 (ok)
+  pooled audit Y dir2: max |t| 2.56 vs crit 5.05 (ok)
+V6 PASS
