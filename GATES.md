@@ -518,6 +518,37 @@ run).**
 - **Driver order:** it refuses to start without `decisions.json`; it runs Part 1 arms interleaved by batch (τ, τ/2);
   evaluates the Part 1 rule only when both arms are complete; then Part 1b or Part 2 automatically.
 - Anything further that the code needs and this text leaves open is appended here, dated, before the run it affects.
+- **Part 3 implementation choices (2026-10-29; made in `src/calib_mg3b.py` before the calibration run but recorded
+  here only after it — a procedural deviation, stated in `results/MG3b/calibration/README.md`):**
+  - Startup times are not simulated, because they do not enter any statistic; startup runs give no exposure.
+  - Per-cell configurations cover the designs fixed64, fixed96 and stop20 (16 × 4 p_s × 4 rates × 6 shapes each).
+    The central configuration (p_s 0.35, k·L = 4.6e-3) is added to each design. Constant hazard gives 51
+    configurations.
+  - Widths: rates and ratios use the mean log(hi/lo) over replicates with lo > 0; the slope uses the mean
+    log(hi − lo). The central configuration for the ratio is r = 1, p_s (0.35, 0.05), 64 runs, 95% interval. For the
+    slope it is S = 0.073, 64 runs, r = 1.
+  - "Highest minimum coverage" in the no-eligible fallback uses the 95% coverage. A stationary-split tie means power
+    within 0.01 (absolute).
+  - Decision tree: all Part 1 and Part 1b arms use the Ω = 120 cell's p_s. Part 1b ratio r2 = 1 except for r = 0.5,
+    which uses r2 ∈ {1, 0.71}. The capped configurations are at S = 0.073. Each slope configuration runs at 64 and 96
+    runs per arm. Replicates ending in "stop" have no slope and are counted.
+  - Slope bootstrap: the Ω = 120 cell is re-simulated as a fixed sample of its size. The other cells use stop20. Startup
+    loss uses each cell's own p̂_s. A per-cell bootstrap with k̂ = 0 gives the degenerate interval [0, 0].
+  - Non-constant hazards: the bias target is Σ H(exposure) / (L Σ exposure), i.e. expected events per unit exposure.
+  - Seeds: SeedSequence(20261029).spawn(2) gives one root for the benchmark (index 0) and one for the main run (index 1).
+    Each root spawns one child per configuration, in the fixed order cell, Part 1, tree.
+  - GLM fit: Newton on the profile likelihood, with step cap 0.5 and step halving (added after the first benchmark,
+    before the main run).
+  - Branch threshold for the bootstrap: 1000 × R_boot / 4000. The first version used the live-replicate count; this was
+    corrected after the run, and the selection is unchanged (`eligibility_recheck.json`).
+- **Part 3 result (2026-10-29), from `results/MG3b/calibration/decisions.json`:**
+  - per-cell rate CI: Garwood;
+  - Part 1 ratio CI: Clopper–Pearson;
+  - 64 runs per arm (P(EQUIVALENT | r = 1) = 0.85);
+  - slope CI: no candidate eligible, so the profile likelihood is used, labelled **approximate** (calibrated minimum
+    coverage 0.937), with no 95% claim on the slope;
+  - stationary split: exposure median (low power; usually uninformative).
+  - Cost: 0.74 core-hours. Awaiting ChatGPT review before the driver and any lattice run.
 
 Result:
 Replication (ChatGPT):

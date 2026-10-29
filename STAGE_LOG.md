@@ -179,6 +179,16 @@
 - **PI approved draft 3 of the MG3b follow-up, 2026-10-29** ("I'm satisfied. go ahead and register it"), after two ChatGPT review rounds. Registered in `GATES.md` (MG3b) with a pre-run implementation specification (streams, run records, ledger columns, τ/4 timing runs, driver order). Design frozen as `spec/MG3b_followup_proposal.md` at commit `202c00f`. Estimation study, no pass/fail; MG3's FAIL unchanged. No MG3b run of any kind has been made.
 - Next: Part 3 synthetic calibration (`results/MG3b/calibration/`, with `decisions.json`), sent for review before the driver and any lattice run.
 
+## MG007a — MG3b Part 3 calibration (synthetic)
+- `src/calib_mg3b.py` and `tests/test_calib_mg3b.py` (10 pass). The benchmark projected 0.60 core-hours, so R = 4000 throughout. The main run took 0.62 core-hours on 4 cloud workers; the total with benchmarks and diagnostics is 0.74.
+- Decisions (`results/MG3b/calibration/decisions.json`; report `results/MG3b/calibration/README.md`):
+  - per-cell rate CI: Garwood;
+  - Part 1 ratio CI: Clopper–Pearson; 64 runs per arm;
+  - slope CI: **no candidate eligible**. The cause is branch-conditional tail asymmetry, with an upper miss up to 0.047 in a few selected branches. Mean coverage is 0.952, and Monte Carlo noise contributes. The registered fallback is the profile likelihood, labelled approximate (minimum 0.937);
+  - stationary split: exposure median. The fixed split is slightly anticonservative. Power is low, so the check will mostly be uninformative.
+- Deviations: the implementation choices were recorded in GATES.md after the run rather than before; the GLM fit was fixed before the main run; the bootstrap branch threshold was corrected after the run, with the selection unchanged.
+- Next: ChatGPT review of the calibration, then the MG3b driver.
+
 ## Deferred work (PI decisions)
 Items deliberately postponed so the project reaches its main questions first. They can be revisited later.
 - **D1 (2026-10-28):** Noisy existence-window edge study: survival S(δ, Ω, T) with δ = b − b_s(h); noisy edge at S = 1/2; test of the saddle-node scaling δ ∝ Ω^(−2/3). Deferred by PI.
