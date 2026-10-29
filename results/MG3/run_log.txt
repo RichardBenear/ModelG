@@ -141,3 +141,28 @@
   [V5_120 rep 1] t_end 140, births 1, first 81.0 (event), wall 338s
   [V5_120 rep 2] t_end 120, births 1, first 68.0 (event), wall 304s
   [V5_120 rep 0] t_end 340, births 1, first 287.5 (event), wall 842s
+  [V5_120 rep 4] t_end 140, births 1, first 81.5 (event), wall 371s
+  [V5_120 rep 3] t_end 280, births 1, first 226.0 (event), wall 715s
+  [V5_120 rep 6] t_end 300, births 1, first 245.5 (event), wall 727s
+  [V5_120 rep 5] t_end 460, births 1, first 409.5 (event), wall 1148s
+  [V5_120 rep 7] t_end 270, births 1, first 216.5 (event), wall 670s
+=== MG3 driver start 2026-10-29 03:10:04; budget used 11.50 h
+[A] A_300: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 11.50 h
+[A] A_250: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 11.50 h
+[A] A_200: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 11.50 h
+[A] A_150: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 11.50 h
+[A] A_120: 0/4 with a confirmed event in [50,150]; post-burn-in events 1, startup 3; mean dets/snapshot t<50 0.87; budget used 11.50 h
+[A] A_100: 2/4 with a confirmed event in [50,150]; post-burn-in events 4, startup 0; mean dets/snapshot t<50 0.26; budget used 11.50 h
+[A] A_80: EXCLUDED by crowding (mean detections/snapshot in t<50 = 2.26 > 2); descent stops
+[select] Stage-B cells [150, 120, 100] (selected)
+[cell] B_150: 32 runs, events 5, startup 0, exposure 12334, k = 4.054e-06 [1.316e-06, 9.461e-06], stationary p = 0.0683059721424948; budget used 11.50 h
+[cell] B_120: 16 runs, events 10, startup 5, exposure 2158, k = 4.633e-05 [2.222e-05, 8.520e-05], stationary p = 0.5190726862793336; budget used 11.50 h
+[cell] B_100: 16 runs, events 11, startup 5, exposure 694, k = 1.584e-04 [7.907e-05, 2.834e-04], stationary p = 1.0; budget used 11.50 h
+  [V5_120 rep 0] t_end 340, births 1, first 287.5 (event), wall 842s
+  [V5_120 rep 1] t_end 140, births 1, first 81.0 (event), wall 338s
+  [V5_120 rep 2] t_end 120, births 1, first 68.0 (event), wall 304s
+  [V5_120 rep 4] t_end 140, births 1, first 81.5 (event), wall 371s
+  [V5_120 rep 3] t_end 280, births 1, first 226.0 (event), wall 715s
+  [V5_120 rep 5] t_end 460, births 1, first 409.5 (event), wall 1148s
+  [V5_120 rep 6] t_end 300, births 1, first 245.5 (event), wall 727s
+  [V5_120 rep 7] t_end 270, births 1, first 216.5 (event), wall 670s
