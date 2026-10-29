@@ -148,6 +148,13 @@
 - Post-gate diagnostic `src/diag_mg2_replication.py`: replication events are physical (two persistent particles under deterministic continuation).
 - Awaiting ChatGPT review (`review/MG005_review_request.md`) and PI decision on next steps.
 
+## MG005a — MG2 review; corrections before MG3; Amendment 4 proposed
+- ChatGPT review (`review/MG005_chatgpt.md`): independent re-scoring confirms every MG2 decision. Registered FAIL retained; option (a) recommended (MG3 after corrections, by PI decision). Response: `review/MG005_response.md`.
+- Record corrections: C4 is 12 replication events in 11 of 24 runs (not 12 of 24); C3 causal attribution withdrawn; b_mid design statement softened.
+- Tracker fix (`measure.track`): the first homogeneous birth was omitted. Regression tests in `tests/test_track.py`. Earlier records unaffected.
+- Audit defect: the registered pooled audit (and V6's) cannot flag data of these shapes. A corrected within-cell audit flags no MG2 run (descriptive); calibration in `results/MG005/`. It adds no power over per-cell diagnostics, and the residual risk is stated.
+- `spec/phase2_amendment_4.md` PROPOSED: tracker fix, audit replacement, MG3 Stage-A terminal outcomes. Awaiting ChatGPT review and PI approval before MG3.
+
 ## Deferred work (PI decisions)
 Items deliberately postponed so the project reaches its main questions first. They can be revisited later.
 - **D1 (2026-10-28):** Noisy existence-window edge study: survival S(δ, Ω, T) with δ = b − b_s(h); noisy edge at S = 1/2; test of the saddle-node scaling δ ∝ Ω^(−2/3). Deferred by PI.

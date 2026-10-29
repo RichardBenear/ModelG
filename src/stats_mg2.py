@@ -213,3 +213,27 @@ def decide_cell(get_runs, ref, eps, level_stage=0.95, m_min=12, m_max_total=24, 
     if not a1_diagnostics(allb, ref)["ok"]:
         return "INCONCLUSIVE", dict(reason="A1 not supported (extension)")
     return decide(bias_bounds(allb.mean(1), ref, level_stage), eps), dict(stage=2)
+
+
+# ---------------------------------------------------------------- MG005: corrected gate-level audit
+def audit_within_cell(cell_projections, alpha=0.01):
+    """Corrected gate-level A1 audit (MG005; replaces the registered pooled audit, which standardised each
+    cell before pooling and therefore could never exceed its critical value: max |t| <= ~3.43 < 4.65 for
+    13 cells of 12 runs).
+    cell_projections: list over (cell, field, direction) of 1-D arrays of run-level projections.
+    Each value is externally studentised against the other runs of its own cell (~ t_{M-2} under i.i.d.
+    Gaussian runs) and Bonferroni-corrected over every run x field x direction test at overall level alpha.
+    Returns dict(max_stat, crit, n_tests, flagged=list of (index, run, stat))."""
+    from scipy import stats as _st
+    n_tests = int(sum(p.size for p in cell_projections))
+    out, mx, crit_by_m = [], 0.0, {}
+    for i, p in enumerate(cell_projections):
+        M = p.size
+        if M not in crit_by_m:
+            crit_by_m[M] = _st.t.ppf(1 - alpha / (2 * n_tests), M - 2)
+        t = np.abs(_studentized_loo(p))
+        mx = max(mx, float(t.max()))
+        for r in np.where(t > crit_by_m[M])[0]:
+            out.append((i, int(r), float(t[r])))
+    crit = min(crit_by_m.values()) if crit_by_m else np.nan
+    return dict(max_stat=mx, crit=float(crit), n_tests=n_tests, flagged=out)

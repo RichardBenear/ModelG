@@ -65,7 +65,7 @@ def track(dets, times, L, x0=0.0):
     tracks = []      # each: dict(id, t_start, t_last, pos_last, hits:list of (snap, det_idx))
     orig_hit = -np.ones(len(times), dtype=int)
     if x0 is not None:
-        tracks.append(dict(id=0, t_start=times[0], t_last=times[0] - 1e-9, pos=x0, hits=[], alive=True))
+        tracks.append(dict(id=0, orig=True, t_start=times[0], t_last=times[0] - 1e-9, pos=x0, hits=[], alive=True))
     for s, (t, D) in enumerate(zip(times, dets)):
         used = set()
         pairs = []
@@ -97,19 +97,19 @@ def track(dets, times, L, x0=0.0):
                 tr["pos"], tr["t_last"] = D[j], t
                 tr["hits"].append((s, j))
                 used.add(j)
-                if tr["id"] == 0:
+                if tr.get("orig"):
                     orig_hit[s] = j
             elif t - tr["t_last"] >= PERSIST:
                 tr["alive"] = False
         for j, p in enumerate(D):
             if j not in used and j not in det_owner:
-                tracks.append(dict(id=len(tracks), t_start=t, t_last=t, pos=p, hits=[(s, j)], alive=True))
+                tracks.append(dict(id=len(tracks), orig=False, t_start=t, t_last=t, pos=p, hits=[(s, j)], alive=True))
     # events (persistence-qualified)
     ev = []
     t_end = times[-1]
     for tr in tracks:
         dur = tr["t_last"] - tr["t_start"]
-        if tr["id"] == 0:
+        if tr.get("orig"):   # MG005 fix (ChatGPT P1): only the x0-designated track is the original particle
             if t_end - tr["t_last"] >= PERSIST:
                 ev.append(("loss", tr["t_last"]))
             if "merge_t" in tr:

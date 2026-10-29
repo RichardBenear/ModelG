@@ -7,7 +7,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 |---|---|---|---|
 | MG1 | 1 | Continuum PDE reproduces a published stationary Model G soliton | PASS by PI exception (registered FAIL on 1D stationarity preserved) |
 | MG2 | 2 | Stochastic token rules converge to the same-lattice mean-field solution as Ω → ∞ | **FAIL** as registered (C3, C4); convergence criteria C1, C6 PASS — see MG2 result |
-| MG3 | 2 | Particles nucleate spontaneously from intrinsic fluctuations at finite Ω | PRE-REGISTERED; V7 checkpoint passed with Amendment 3 (v1.3.3) |
+| MG3 | 2 | Particles nucleate spontaneously from intrinsic fluctuations at finite Ω | PRE-REGISTERED; V7 checkpoint passed with Amendment 3 (v1.3.3); Amendment 4 (MG3 corrections) PROPOSED |
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale | PENDING |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve) | PENDING |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | PENDING |
@@ -199,25 +199,31 @@ Registered verdict: **FAIL** (C3 and C4 FAIL). Compute used 11.6 of 12 core-hour
 |---|---|---|
 | C1 (Ω = 10⁸, b = 29 and 29.16) | PASS | bias upper bounds ≤ 0.070 % (G), ≤ 0.012 % (X, Y) vs ε = 1 % |
 | C2 (bias scaling α) | INCONCLUSIVE | no ladder cell has a bias lower bound > 0, so no cell is selected; 12 runs cannot resolve the O(1/Ω) bias |
-| C3 (far-field Ω·Var vs LNA, Ω ≥ 100) | FAIL | single failing cell: b = 29, Ω = 100, X +17.1 % (G −0.0 %, Y +7.3 %); every cell Ω ≥ 300 within ±10 %; b = 29.16, Ω = 100 INCONCLUSIVE (data rule) |
-| C4 (b_mid persistence, Ω ≥ 100) | FAIL | Ω = 300: replication in 12 of 24 runs; Ω = 100: 115 replications, 72 births; Ω ≥ 1000: no events |
+| C3 (far-field Ω·Var vs LNA, Ω ≥ 100) | FAIL | single failing cell: b = 29, Ω = 100, X +17.1 % (run-level SE 1.6 on 131.9; G −0.0 %, Y +7.3 %); every cell Ω ≥ 300 within ±10 %; b = 29.16, Ω = 100 INCONCLUSIVE (data rule) |
+| C4 (b_mid persistence, Ω ≥ 100) | FAIL | Ω = 300: 12 replication events in 11 of 24 runs [corrected per MG005 review; first record said "12 of 24 runs"]; Ω = 100: all 24 runs violate (121 loss/replication events; 72 births); Ω ≥ 1000: no events |
 | C5 (seeded nucleation) | PASS | scale 1.5: 19/20, 20/20, 20/20 at Ω = 300/1000/3000; scale 0.5: 0/20 at Ω = 3000 |
 | C6 (h = 0.1, Ω = 10⁸) | PASS | bias upper bounds ≤ 0.069 % (G), ≤ 0.010 % (X, Y) |
-| N1, N2, pooled A1 audit | PASS / PASS / ok | |
+| N1, N2, pooled A1 audit | PASS / PASS / ok* | *The registered pooled audit is non-informative: per-cell standardisation caps its statistic at ≈ 3.43 < 4.65, so it cannot flag any data of this shape (MG005 review P1). A corrected within-cell audit (descriptive, not a retroactive replacement) flags no run: max \|t\| 4.22 vs 8.47 (`results/MG005/audit_corrected.txt`). |
 
 Post-gate diagnostic (descriptive, `results/MG2/diag_replication.txt`): the C4 replication events are physical. Three
 replicating runs re-run with identical streams reproduce their events; their fields 20 time units after the event
 continue deterministically (b = 29.16, to t = 300) to **two** persistent particles. A no-event run continues to one.
 
+The diagnostic shows genuine two-particle states in the numerical Model G system for the checked runs; it does not validate every
+replication label (nor the crowded Ω = 100 labels), and does not distinguish a split from nucleation nearby.
+
 Exploratory: Ω·D_p ≈ 0.08–0.13 from Ω = 300 to 10⁸ (particle diffusion ∝ 1/Ω). Seeded nucleation at scale 1.0:
 13/20, 14/20, 18/20 at Ω = 300/1000/3000.
 
-Interpretation (Claude; for review): the token rules converge to the lattice mean field (C1, C6, and C3 for Ω ≥ 300).
-The failures are both at low Ω and both reflect the narrow existence window on this lattice: b_mid = 29.16 lies
-0.24 below the replication edge b_r ≈ 29.40, and noise at Ω ≤ 300 drives the particle across it (as it drives the
-b = 29 particle across the lower edge: loss in 17 of 24 runs at Ω = 300). The b_mid choice was a design error. At
-Ω = 100 the far-field variance is contaminated by births and replications, outside the LNA's domain. No criterion is
-re-scored; any re-test needs a PI-approved amendment.
+Interpretation (revised after the MG005 review, `review/MG005_chatgpt.md`): the high-Ω agreement (C1, C6, and C3 for
+Ω ≥ 300) is a success; the low-Ω failures are limitations of that agreement. C4 is not a counterexample to mean-field
+convergence. Noise at Ω ≤ 300 produced replication at b_mid and loss at b = 29 (17 of 24 runs at Ω = 300); a narrow
+noisy persistence region is a plausible reading, **not a mapped result**. The deterministic distance b_r − b_mid is not a
+stochastic escape barrier, so choosing the deterministic window midpoint did not guarantee noise-robust persistence,
+and it is not established that another b would pass at Ω = 100. The C3 cell at Ω = 100 contains 16 births and 23
+replications in its 12 measured runs, but finite-Ω corrections to the leading-order LNA (Ω·Var = C0 + O(1/Ω)), detection
+and masking effects can coexist with that contamination; the saved aggregates cannot separate them, and no cause is
+asserted. The registered FAIL stands; MG2 will not be re-scored by re-selecting b.
 
 ### MG3 — Spontaneous nucleation from intrinsic noise
 Status: PRE-REGISTERED 2026-10-27 (MG003d), with PI sign-off on protocol v1.3 and the criteria below. No MG3 gate run preceded this commit.
