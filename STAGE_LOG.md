@@ -168,6 +168,11 @@
 - Response: `review/MG006_response.md`. Follow-up `spec/MG3b_followup_proposal.md` DRAFT: burn-in/time-step check first, rates with ≥ 20 events per cell, simulation-calibrated intervals, and an optional full-trajectory confirmation study. Awaiting review and PI approval.
 - Full review committed by the PI (`review/MG006_replication/`). Record corrected per its §§2–8: wording on excursions (18/54, a minority), attribution (`near`), profile eligibility ≠ survival, C3 and V5 wording, interval exactness, the C4 contrast, the Stage-A power figure (2.2%), the test count (14), and the budget recorded as an explicit exception with a ledger (`results/MG3/budget_ledger.txt`; Ω = 80 checkpoints committed). The follow-up proposal is to be revised to the review's §8 before registration.
 
+## MG006b — MG3b follow-up proposal revised after review
+- ChatGPT reviewed draft 1 of the follow-up (`review/MG006b_chatgpt.md`, verbatim). Response: `review/MG006b_response.md`. Draft 1 preserved as `spec/MG3b_followup_proposal_v1.md` (superseded).
+- `spec/MG3b_followup_proposal.md` DRAFT 2: Part 3 calibration first, with startup probability varied independently of the hazard and the methods, grid, Monte Carlo precision and selection rule frozen; Part 1 decides τ by equivalence (margin [0.5, 2]) on the post-burn-in rate ratio at Ω = 120, 64 runs per arm, outcomes EQUIVALENT / DIFFERENT / INCONCLUSIVE with τ/4 escalation closed; startup comparison descriptive only; Part 2 capped cells kept in a joint Poisson-GLM likelihood, rates conditional on τ; Part 4 removed (field-level confirmation is not detection-level attribution); budget enforcement by run caps, per-batch ceiling checks and a summed ledger. Projected 24 / 36 / 63 core-hours by path.
+- Not registered. Awaiting PI discussion, ChatGPT review of draft 2, and PI approval.
+
 ## Deferred work (PI decisions)
 Items deliberately postponed so the project reaches its main questions first. They can be revisited later.
 - **D1 (2026-10-28):** Noisy existence-window edge study: survival S(δ, Ω, T) with δ = b − b_s(h); noisy edge at S = 1/2; test of the saddle-node scaling δ ∝ Ω^(−2/3). Deferred by PI.
