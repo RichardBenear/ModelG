@@ -23,33 +23,20 @@ Full records: `GATES.md` (each gate's "result" section), `STAGE_LOG.md`, `result
 `results/MG3/MG3_evaluation.md`. Reviews: `review/` (most recent: `MG006_replication/README.md`, ChatGPT's full MG3
 review, and `MG006_response.md`).
 
-## Immediate next steps
-1. **Check the local environment.**
-   - Python 3.13 with numpy, scipy and numba. The cloud used numpy 2.5.3, scipy 1.18.1, numba 0.68.0; ChatGPT's Windows
-     replay used numpy 2.2.4, scipy 1.16.1, numba 0.68.0. `requirements.txt` lists the packages.
-   - Run the tests: `python tests/test_track.py`, `python tests/test_mg3.py`.
-   - Measure the cost per time unit with 9 workers. A short run of one cell into a scratch output folder works:
-     `MG3_OUT` can point the MG3 driver elsewhere.
-2. **Revise the follow-up proposal** `spec/MG3b_followup_proposal.md` (currently a DRAFT written before the full review)
-   to ChatGPT's §8 recommendations in `review/MG006_replication/README.md`:
-   - a fixed Ω grid around 120–160 with interior values (e.g. 130, 140); Ω = 100 only as a diagnostic boundary; no 4/4
-     adaptive trigger;
-   - sample sizes from a precision/budget calculation, well above 5 events per fitted cell, with run caps;
-   - **censored first-event likelihood** fits; calibrate the whole procedure, including any event-dependent extension,
-     by simulation; treat 1/n as estimated information;
-   - burn-in and time step studied together: full startup survival curves; landmarks at 50/100/150 from the same
-     histories; τ against τ/2 with adequate samples, adding τ/4 if they disagree;
-   - risk-set sizes and late-window exposure reported, with windows chosen so the hazard check can actually diagnose
-     time dependence;
-   - C2(a)-type detector questions as a **separate** study with a defined population (pre-first-event or fixed window).
-     Save **every** confirmation field (including excursions and unresolved), tracker summaries, screen checkpoints and
-     a budget ledger;
-   - any new confirmation threshold is a new design decision, not a re-score of MG3.
+## Immediate next steps (updated 2026-10-29, MG007)
+1. **Local environment: done.** Python 3.13.2, numpy 2.2.4, scipy 1.16.1, numba 0.68.0; tests pass locally (8 and 14).
+   Measured cost at Ω = 150, 9 workers: 0.89 core-s per time unit at τ, 2.43 at τ/2.
+2. **MG3b follow-up: REGISTERED** in `GATES.md` (MG3b), design frozen as `spec/MG3b_followup_proposal.md` at commit
+   `202c00f`. Reviews and responses: `review/MG006b_*`. Estimation study, no pass/fail; MG3's FAIL is unchanged.
+3. **Next: Part 3 calibration** (synthetic, no lattice). Write `src/calib_mg3b.py` exactly to the proposal's Part 3:
+   the frozen configurations, candidates, eligibility and selection rules, the full decision tree, and the runtime
+   benchmark first (200 replicates per candidate and configuration, then R = 4000 or the registered R = 1000 fallback).
+   Output to `results/MG3b/calibration/`, including `decisions.json`. Send for ChatGPT review before going further.
+4. Then the MG3b driver, reusing `src/mg3.py`, with the ledger, the per-batch budget check, full confirmation-field
+   storage and the `decisions.json` gate. Tests first. Then the τ/4 timing runs, Part 1, Part 1b if triggered, and Part 2.
 
-   With 9 local workers the budget is much less of a constraint; propose run caps and a core-hour estimate. Then: send
-   it for ChatGPT review (the PI relays), revise, get PI approval, register it in `GATES.md` before running.
-3. Write the follow-up driver, reusing `src/mg3.py` (simulation, confirmation, first-passage bookkeeping). Add
-   per-run storage of all confirmation fields and a budget ledger. Tests first.
+Workflow note: ChatGPT reads the public repo's `main`. Claude works on a branch and opens a PR, and the PI merges it, so
+review material must be merged before it is sent for review.
 
 ## Also pending (not started; PI decisions)
 - **Exploratory E1** (registered in protocol v1.3.3): structure factor S(k) of φ_X at Ω ≤ 100, compared with the LNA

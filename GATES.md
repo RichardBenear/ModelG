@@ -8,6 +8,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG1 | 1 | Continuum PDE reproduces a published stationary Model G soliton | PASS by PI exception (registered FAIL on 1D stationarity preserved) |
 | MG2 | 2 | Stochastic token rules converge to the same-lattice mean-field solution as Ω → ∞ | **FAIL** as registered (C3, C4); convergence criteria C1, C6 PASS — see MG2 result |
 | MG3 | 2 | Particles nucleate spontaneously from intrinsic fluctuations at finite Ω | **FAIL** as registered (C2); C1, C3, C4, V5 PASS — see MG3 result |
+| MG3b | 2 | Follow-up to MG3: time-step check, nucleation rates with more events, calibrated uncertainty (estimation study; no pass/fail) | PRE-REGISTERED 2026-10-29; not yet run |
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale | PENDING |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve) | PENDING |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | PENDING |
@@ -428,4 +429,98 @@ Configs (both gates): `configs/MG2_main.json`, `configs/MG3_main.json`, `configs
 Result:
 Replication (ChatGPT):
 PI sign-off (criteria): Richard Benear, 2026-10-27 (both MG2 and MG3; protocol v1.3 frozen; ChatGPT spec review closed, round 4)
+PI sign-off (result):
+
+---
+
+### MG3b — Follow-up to MG3: time step, nucleation rates and calibrated uncertainty
+Status: **PRE-REGISTERED 2026-10-29 (MG007)**, with PI approval. No MG3b run of any kind (calibration or lattice) preceded
+this commit. The registered design is `spec/MG3b_followup_proposal.md` **draft 3, as merged at commit `202c00f`**
+(content frozen from that commit). Reviews: `review/MG006b_chatgpt.md` and `_r2.md`, with responses
+`review/MG006b_response.md` and `_r2.md`. Drafts 1 and 2 are preserved as superseded (`_v1.md`, `_v2.md`).
+
+Nature of the study: a **separate follow-up designed after MG3's data were seen**. It is an estimation study with
+registered decision rules. It has **no pass/fail verdict**, and it does not re-score MG3 (MG3's FAIL and the A1 residual
+risk are unchanged). It runs under protocol v1.3.4, with no protocol amendment. The study-specific methods (Part 3
+candidates, the GLM slope, the equivalence rule) are those of the registered proposal.
+
+Summary of the registered design (the proposal governs where this summary is shorter):
+- **Order:** Part 3 (synthetic calibration), then the driver and tests, then Part 1, Part 1b if triggered, then Part 2.
+  The Part 3 results and `results/MG3b/calibration/decisions.json` are committed and reviewed before the first lattice run.
+- **Setting:** b = 29, h = 0.2, L = 100, homogeneous Poisson start, τ = 6.667e-4. MG3 detection, tracking (A4) and
+  §5.4 confirmation; stop 50 time units after the first confirmed event; burn-in 50; censoring 480 by detection time.
+  Every confirmation field is saved.
+- **Part 1 (time step):** Ω = 120, 64 runs at τ and 64 at τ/2 (96 each if Part 3 gives P(EQUIVALENT | r = 1) < 0.80).
+  The decision is on r = k(τ/2)/k(τ) after burn-in, with margin [0.5, 2]:
+  - EQUIVALENT if the 90% CI lies inside [0.5, 2] → production at τ;
+  - DIFFERENT if not EQUIVALENT and the 95% CI excludes 1 → Part 1b (64 runs at τ/4, same rule against τ/2);
+  - INCONCLUSIVE otherwise → production at τ/2, labelled "time-step agreement not established".
+  - Part 1b: EQUIVALENT → production at τ/2; otherwise **MG3b stops**, and its rates are INCONCLUSIVE on time-step
+    grounds.
+  - If no rate-ratio method is eligible in Part 3, Part 1 is INCONCLUSIVE.
+  - Startup fractions are descriptive only.
+- **Part 2 (rates):** Ω ∈ {130, 120, 110, 100} at the production τ. The Ω = 120 cell is Part 1's arm at that τ. The
+  other cells run in batches of 16 until ≥ 20 post-burn-in events, cap 64.
+  - Every cell, capped or not, enters the joint Poisson-GLM fit of log k = α − S·Ω.
+  - Sensitivity fit without Ω = 100.
+  - Landmarks at 100 and 150, with risk sets.
+  - Stationary check labelled informative only if its simulated power against both ×2 and ×0.5 is ≥ 0.5.
+  - **All rates and the slope are conditional on the production τ.** EQUIVALENT means agreement within a factor 2 at
+    Ω = 120, not time-step independence.
+- **Part 3 (calibration):** as frozen in the proposal.
+  - The configuration grid, including the activated-preserving capped configurations and the full decision tree.
+  - The candidates, and the eligibility thresholds (≥ 0.94 coverage, ≤ 0.035 per tail, in every constant-hazard
+    configuration and every production branch with ≥ 1000 replicates; R = 4000).
+  - The deterministic selection rule, and the fallbacks.
+  - The runtime benchmark rule, with R = 1000 for the bootstrap candidates if the projection exceeds the ceiling.
+- **Removed:** the full-trajectory confirmation study (draft 1, Part 4). It is deferred until detection-level
+  attribution is validated.
+
+Prediction (descriptive; not a criterion): S near MG3's 0.073 per unit Ω; Part 1 EQUIVALENT is the expected outcome,
+given MG3's V5 ratio of 0.88. The startup asymmetry observed in MG3 (5/16 against 0/16) may or may not recur.
+
+Null controls: none new. MG3's N1 (b = 28.5: no confirmed event in 16 × 500) and N2 apply to the same detector and
+confirmation rule. The internal checks are the Part 1 comparison, the landmarks and the stationary check.
+
+Budget (binding run caps; core-hour ceilings are stop triggers, checked before every batch):
+| Item | Run cap | Ceiling (core-h) |
+|---|---|---|
+| Part 3 calibration | — | 8 |
+| Part 1, τ arm | 64 (96) | 6 (9) |
+| Part 1, τ/2 arm | 64 (96) | 20 (30) |
+| Part 1b, τ/4 arm | 64 | 40 × (measured τ/4 cost ÷ 5.0 core-s per time unit) |
+| Part 2 at τ: Ω = 130, 110, 100 | 64 each | 12 |
+| Part 2 at τ/2: Ω = 130, 110, 100 | 64 each | 30 |
+
+Enforcement rules (from the proposal):
+- Every core-second on the production machine goes into `results/MG3b/budget_ledger.csv`, and the evaluator sums it.
+- A batch is not submitted if used + projected cost would exceed the item's ceiling.
+- A budget stop reports only counts and costs, and the affected item is INCONCLUSIVE unless the PI records an
+  extension here first.
+- The escalation branches are pre-authorised within these ceilings.
+- Calibration can change only the method choice and the 64 → 96 rule, both through the committed `decisions.json`.
+
+Projected cost: about 24, 36 or 63 core-hours plus calibration, depending on the branch.
+
+**Pre-run implementation specification (2026-10-29; Claude's choices for details left open; recorded before any MG3b
+run).**
+- **Streams:** `runner.seed_for` with gate id 4. Stage index: Part 1 τ = 0, τ/2 = 1, τ/4 = 2, Part 2 = 3, timing runs
+  = 6. b_idx = 0 (b = 29). om_idx: Ω = 130 → 0, 120 → 1, 110 → 2, 100 → 3. replicate = run number within the arm or
+  cell; segment = t₀/10. Part 3 uses numpy `default_rng` with entropy 20261029, and a per-configuration child from
+  `SeedSequence.spawn`.
+- **Run records:** the MG3 `summarize` fields, plus every confirmation field (float32, 3 × 500) with its class, the
+  detection position and `near`, and the per-snapshot detection counts. Batches are 16 runs. Run-level resume is as in
+  MG3.
+- **Ledger columns:** item, key, kind (run / partial / failed / excluded / reference / timing / calibration / test),
+  wall_s, workers, machine, os, python, numpy, scipy, numba, utc_time.
+- **Timing:** before Part 1, 2 runs of 100 time units at τ/4, Ω = 120, timing stream 6. They are counted in the ledger
+  and not used in any estimate. Their mean core-s per time unit rescales the Part 1b projection and ceiling.
+- **Driver order:** it refuses to start without `decisions.json`; it runs Part 1 arms interleaved by batch (τ, τ/2);
+  evaluates the Part 1 rule only when both arms are complete; then Part 1b or Part 2 automatically.
+- Anything further that the code needs and this text leaves open is appended here, dated, before the run it affects.
+
+Result:
+Replication (ChatGPT):
+PI sign-off (design): Richard Benear, 2026-10-29, project thread ("I'm satisfied. go ahead and register it and modify
+GATES.md etc."), approving draft 3 after ChatGPT's two review rounds.
 PI sign-off (result):
