@@ -104,3 +104,13 @@
 [A] A_80: EXCLUDED by crowding (mean detections/snapshot in t<50 = 2.26 > 2); descent stops
 [select] Stage-B cells [150, 120, 100] (selected)
 [cell] B_150: 32 runs, events 5, startup 0, exposure 12334, k = 4.054e-06 [1.316e-06, 9.461e-06], stationary p = 0.0683059721424948; budget used 7.65 h
+  [B_120 rep 0] t_end 390, births 1, first 338.5 (event), wall 511s
+  [B_120 rep 1] t_end 400, births 1, first 344.0 (event), wall 532s
+  [B_120 rep 2] t_end 100, births 1, first 45.0 (startup), wall 135s
+  [B_120 rep 3] t_end 90, births 1, first 39.5 (startup), wall 124s
+  [B_120 rep 5] t_end 300, births 1, first 241.5 (event), wall 408s
+  [B_120 rep 4] t_end 390, births 1, first 334.5 (event), wall 512s
+  [B_120 rep 7] t_end 130, births 1, first 75.5 (event), wall 169s
+  [B_120 rep 8] t_end 70, births 1, first 11.5 (startup), wall 90s
+  [B_120 rep 6] t_end 500, births 2, first none (censored), wall 651s
+  [B_120 rep 9] t_end 250, births 1, first 198.5 (event), wall 323s
