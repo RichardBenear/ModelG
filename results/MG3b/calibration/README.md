@@ -60,7 +60,7 @@ The 95% coverage is 0.955–0.964 and the 90% coverage is 0.910–0.926 in all 2
 - **Deviance lack-of-fit (df 2):** size at nominal 0.05 is 0.037–0.065 across the activated configurations. Its power
   against Ω = 130 at a third of the activated rate is 0.78, with Ŝ shifting from 0.073 to 0.103.
 - **Capped configurations work as intended.** Ω = 130 capped below 20 events in 91% (prefactor ÷ 3), 86% (p_s 0.6) and
-  100% (both) of replicates. The slope stays unbiased: Ŝ is 0.074 in each.
+  100% (both) of replicates. The mean slope estimate stays close to its generating value of 0.073: mean Ŝ is 0.074 in each case. No bias estimate with Monte Carlo uncertainty is claimed. [Wording corrected per `review/MG007_replication/README.md` §3.]
 - **Branch frequencies** (S = 0.073, 64 runs, r = 1, tree with both arms at p_s 0.35): τ 75%, τ/2 after INCONCLUSIVE 22%,
   τ/2 after Part 1b 1.6%, stop 2.0%.
 
@@ -107,6 +107,11 @@ and 64 runs per arm (τ/4 included): 70 configurations at R = 20 000, costing 0.
   whole-study, against ChatGPT's 9.06% and 2.285%.
 - So a Part 1b EQUIVALENT will be reported as "whole-study error ≤ 0.040 at the margin; conditional on Part 1b being
   triggered, up to 0.161". It will not carry the standalone 5% interpretation.
+
+**Scope restriction (per `review/MG007_replication/README.md` §3):** in the slope's decision-tree calibration, all
+time-step arms share the Ω = 120 cell's startup probability. Different startup losses between arms, such as
+(0.35, 0.05), were calibrated for Part 1 and in addendum 1, but not for the slope. The slope calibration therefore
+covers equal startup loss across arms only.
 
 **Implementation correction:** the τ/4 arm now always has 64 runs. The main run's 96-run tree configurations used 96.
 Those are hypothetical (the selected design is 64), and the main-run results are left as they are.

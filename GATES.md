@@ -579,6 +579,24 @@ run).**
     - (B) The whole-study Part 1b equivalence error at the margin is at most 0.040 (≤ 0.05, so no label). The
       conditional error is up to 0.161, and both figures are reported with any Part 1b EQUIVALENT.
     - The Part 3 method decisions are unchanged.
+- **Driver implementation choices (2026-10-29; recorded before any MG3b lattice run; code `src/mg3b.py`,
+  `src/run_mg3b.py`, tests `tests/test_mg3b.py`):**
+  - **Clip pilots:** Ω = 130 and 110 are not on MG3's grid. Each gets a V3-procedure clip pilot at τ: T = 20, stage 7,
+    replicate 0, threshold 1e-4. If a pilot fails, MG3b stops for a PI decision (exit 4), because τ is fixed by the
+    registration. Smaller time steps clip less, so a pilot at τ covers τ/2.
+  - **Timing:** the two τ/4 timing runs (100 time units each) run concurrently in the pool. Their mean core-s per time
+    unit divided by 5.0 rescales the Part 1b ceiling.
+  - **Budget accounting:** an item's used core-hours are its ledger rows plus the walls of its partial checkpoints. Part 2
+    at τ (or τ/2) is one item covering the three cells. The projected cost per run is the mean over the item's completed
+    runs. The ledger records each finished run (kind `run`), the timing runs and the pilots. Walls of runs left
+    unfinished at the end are added by the evaluator from `partial/`.
+  - **Order:** Part 1 arms run as batches of 16, alternating τ and τ/2. The Part 1 decision is made only when both arms
+    are complete. Part 1b compares τ/4 against τ/2. Part 2 cells run in the order 130, 110, 100, one batch at a time.
+  - **Records:** each record is the MG3 `summarize` record plus `conf_fields`, keyed by snapshot index. Each entry holds
+    the float32 field (3 × 500), its class, the confirmation time, and MG3's confirmation summary.
+  - **Exit codes:** 2 = budget stop (counts and costs only), 4 = clip pilot failed, 5 = `decisions.json` missing.
+  - **Production machine:** the PI's machine, with `MODELG_WORKERS=9`. The platform and worker count are written into
+    `plan.json`, `timing_tau4.json` and the ledger.
 
 Result:
 Replication (ChatGPT):
