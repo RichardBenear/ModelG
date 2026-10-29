@@ -549,6 +549,36 @@ run).**
     coverage 0.937), with no 95% claim on the slope;
   - stationary split: exposure median (low power; usually uninformative).
   - Cost: 0.74 core-hours. Awaiting ChatGPT review before the driver and any lattice run.
+- **Part 3 addendum 1 (2026-10-29; registered here before it is run; responds to `review/MG007_chatgpt.md`).**
+  Two post-selection diagnostics. They change only labels, not methods, sample sizes or the decision tree. There is no
+  lattice simulation, and the existing Part 3 decisions stand.
+  - **Simulation:** Part 1 and Part 1b only, with the selected method (Clopper–Pearson) and 64 runs per arm. The τ/4
+    arm always has 64 runs. The grid is r = k(τ/2)/k(τ) ∈ {0.5, 0.71, 0.8, 1, 1.25, 1.41, 2} × r2 = k(τ/4)/k(τ/2) ∈
+    {0.5, 0.71, 1, 1.41, 2} × startup pairs (τ, τ/2 and τ/4) ∈ {(0.35, 0.35, 0.35), (0.35, 0.05, 0.05)}, at
+    k·L = 4.6e-3 for τ. That is 70 configurations, each with **R = 20 000** replicates, and seeds from
+    SeedSequence(20261029, spawn_key=(2,)).
+  - **(A) Reused Ω = 120 rate.** Garwood 95% coverage of the selected arm's own true rate is computed within each
+    production branch (τ after EQUIVALENT; τ/2 after INCONCLUSIVE; τ/2 after Part 1b EQUIVALENT), together with each
+    one-sided miss. A branch qualifies in a configuration if it has ≥ 1000 replicates. **Rule:** in any branch where some
+    qualifying configuration has coverage < 0.94 or a tail > 0.035, the Ω = 120 rate interval reported in that branch is
+    labelled "approximate (observed minimum branch-conditional coverage X over qualifying configurations)", and no 95%
+    claim is made for it. It still enters the slope fit unchanged.
+  - **(B) Part 1b equivalence error.** At the boundaries r2 ∈ {0.5, 2}, for every r and startup pair, the diagnostic
+    reports P(Part 1b triggered), the **conditional** error P(EQUIVALENT | triggered) and the **whole-study** error
+    P(triggered and EQUIVALENT). **Rule:** a Part 1b EQUIVALENT is reported with both observed maxima. If the
+    whole-study maximum exceeds 0.05, Part 1b's EQUIVALENT is labelled "approximate (selected comparison)", and the τ/2
+    production rates carry that label as well as "conditional on τ/2".
+  - **Wording:** 0.937 for the slope is an *observed minimum over qualifying calibration cells*, not a guaranteed
+    coverage floor.
+  - **Implementation correction:** in the main run's hypothetical 96-run tree configurations, the τ/4 arm had 96 runs
+    where Part 1b specifies 64. The code now always uses 64. The main run's results are left as they are, and the
+    selected 64-run design is unaffected.
+  - **Addendum 1 result (2026-10-29; `results/MG3b/calibration/addendum1/`; 0.005 core-hours):**
+    - (A) The Ω = 120 rate interval is labelled **approximate in every branch**. The observed minimum
+      branch-conditional coverage is 0.943 (τ), 0.875 (τ/2 after INCONCLUSIVE) and 0.841 (τ/2 after Part 1b).
+    - (B) The whole-study Part 1b equivalence error at the margin is at most 0.040 (≤ 0.05, so no label). The
+      conditional error is up to 0.161, and both figures are reported with any Part 1b EQUIVALENT.
+    - The Part 3 method decisions are unchanged.
 
 Result:
 Replication (ChatGPT):

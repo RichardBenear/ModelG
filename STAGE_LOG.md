@@ -189,6 +189,13 @@
 - Deviations: the implementation choices were recorded in GATES.md after the run rather than before; the GLM fit was fixed before the main run; the bootstrap branch threshold was corrected after the run, with the selection unchanged.
 - Next: ChatGPT review of the calibration, then the MG3b driver.
 
+## MG007b — Calibration review and addendum 1
+- ChatGPT reviewed the Part 3 calibration (`review/MG007_chatgpt.md`). The method decisions are kept. Two post-selection gaps were found: the reused Ω = 120 rate's coverage within branches, and Part 1b's selected comparison.
+- Addendum 1 was registered in GATES.md (commit `bccf62a`) before it was run. The τ/4 arm is fixed at 64 runs. Results:
+  - the Ω = 120 rate is labelled approximate in every branch (observed minima 0.943 / 0.875 / 0.841);
+  - the Part 1b whole-study error is ≤ 0.040 and its conditional error is ≤ 0.161; both are reported.
+- These reproduce ChatGPT's figures. The 0.937 slope figure is reworded as an observed minimum over qualifying cells. Response: `review/MG007_response.md`.
+
 ## Deferred work (PI decisions)
 Items deliberately postponed so the project reaches its main questions first. They can be revisited later.
 - **D1 (2026-10-28):** Noisy existence-window edge study: survival S(δ, Ω, T) with δ = b − b_s(h); noisy edge at S = 1/2; test of the saddle-node scaling δ ∝ Ω^(−2/3). Deferred by PI.
