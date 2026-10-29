@@ -156,7 +156,10 @@
 - `spec/phase2_amendment_4.md` PROPOSED: tracker fix, audit replacement, MG3 Stage-A terminal outcomes. Awaiting ChatGPT review and PI approval before MG3.
 - ChatGPT reviewed Amendment 4 (`review/MG005_amendment4_chatgpt.md`): approve with two wording qualifications (incorporated). **PI approved Amendment 4 and authorized MG3 (option a), 2026-10-28.** Applied as `spec/phase2_protocol_v1.3.4.md`; `configs/MG3_main.json` updated to the A3 grid (it still listed the v1.3 grid).
 
-## Deferred work (PI decisions)
+## MG006 — MG3 gate run (protocol v1.3.4)
+- PI decisions before the run: MG3 cap 18 core-hours (from 10), and each run stops 50 time units after its first confirmed event.
+- `src/mg3.py` (segmented simulation with online detection, tracking, confirmation; first-passage statistics; Stage-B selection), `src/run_mg3.py` (resumable driver), `tests/test_mg3.py` (15 tests). Pre-run implementation specification recorded in GATES.md before any MG3 run.
+
 Items deliberately postponed so the project reaches its main questions first. They can be revisited later.
 - **D1 (2026-10-28):** Noisy existence-window edge study: survival S(δ, Ω, T) with δ = b − b_s(h); noisy edge at S = 1/2; test of the saddle-node scaling δ ∝ Ω^(−2/3). Deferred by PI.
 - **D2 (2026-10-28):** Repeating key MG3 cells at h = 0.1, and reporting b relative to each lattice's window. Deferred by PI. Until then, near-edge results at b = 29 (e.g. survival) are stated as h = 0.2-specific (assumption M11).

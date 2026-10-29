@@ -267,6 +267,48 @@ Adaptive design (fully specified):
 - **Hard budget:** 10 core-hours for all of MG3. If it would be exceeded, stop at the current step:
   MG3 = INCONCLUSIVE, with all data reported.
 
+**Pre-run implementation specification (2026-10-28; recorded before any MG3 run; Claude's choices for details the
+registration left open, plus two PI decisions; flagged for ChatGPT review).** Code: `src/mg3.py`, `src/run_mg3.py`;
+tests `tests/test_mg3.py` (15 pass), `tests/test_track.py`.
+- **Budget (PI decision):** 18 core-hours (was 10). From MG2's measured cost (~1.07 core-s per time unit per run plus
+  ~7 s per confirmation), the registered design needs about 23 core-hours with full-length runs.
+- **Early stop (PI decision):** each run stops at the first 10-unit segment boundary at least 50 time units after its first
+  confirmed event's detection. Runs without one go to T = 500. Only the first event per run enters any criterion.
+  The exploratory post-event studies are limited to that 50-unit window.
+- **Event bookkeeping:** births (persistent tracks, §5.1 with the A4 fix) are confirmed (§5.4) in detection order at
+  detection + 20. After the run's first confirmed event, later births are not confirmed. A first event at t < 50 is a
+  startup event: the run is left-truncated, gives no exposure, and does not count in Stage A.
+- **Stage-A statistic:** the number of the 4 runs whose first confirmed event is detected in [50, 150]. Crowding screen:
+  the mean over the 4 runs of mean detections per snapshot in t < 50, using only those first 50 time units.
+- **Rates:** Stage-B runs only. Stage-A runs are excluded from k̂ because they were used for selection; they count for C1.
+- **Stage-B selection details:** neighbour ties go to more Stage-A events, then lower Ω. More than 4 partial cells: the 4
+  lowest Ω. Events only after t = 150 (no partial cell, no 4/4): anchor at the lowest-Ω cell with an event.
+  Midpoints: the geometric mean to 2 significant figures, up to 2, bisecting the remaining 0/4 → 4/4 bracket.
+- **Middle cell** (V5 and C4): the median Ω of the Stage-B cells (for an even count, the lower of the two middle values).
+  If V5 fails, the driver stops and returns to the PI, since repeating every run at τ/2 needs a budget decision.
+- **C2(a):** persistent / (persistent + excursion + unresolved) field outcomes over the cell's runs, up to and including
+  each run's first confirmed event. A shared outcome is counted once.
+- **C2(b):** for the nucleated side, each Stage-B run with a first confirmed event contributes its aligned profile over
+  [t_e + 30, t_e + 50] in 4 blocks of 5 time units. An eligible snapshot has exactly one detection, belonging to the
+  nucleated track; a run is eligible if every block has ≥ 7 eligible snapshots (of 10). The reference side is 8
+  soliton-start runs at the same Ω (MG2 protocol, T = 100, MG2 eligibility). The test is on φ_X, |x| < 10: Welch bound
+  on run means, normalised by the deterministic ‖φ*_X‖ on that window, PASS if the upper bound < 10%. A1 diagnostics
+  are applied to both sides. Fewer than 8 eligible on either side → the registered replacement, (a) plus (c).
+- **C2(c):** λ by a pre-stated core estimator: 2 × the mean spacing of zero crossings in 1 < x < 7 of the x-symmetrised
+  aligned mean φ_X, pooled over the cell's eligible nucleated runs. It is compared with the same estimator on the
+  lattice-ODE soliton (3.0296 at b = 29; the tail estimator gives λ* = 3.0619), PASS within 5%. The tail-based λ* is
+  not used because the soliton's tail falls below the Ω ~ 10² noise beyond x ≈ 7.
+- **C3:** weighted LS of ln k̂ on Ω with weights n_i (inverse Poisson variance of ln k̂). The 95% slope CI uses those known
+  variances (normal); a t-based CI (df m − 2) is reported as a sensitivity check. PASS needs the slope CI below 0 and
+  weighted R² ≥ 0.9.
+- **C4:** the detector at each b uses that b's reference (§5.1 thresholds −2.7685, −2.9908, −3.1225); b = 29 reuses the
+  Stage-B cell. Monotonic point rates, and k(29.3)/k(29.0) with its exact conditional-binomial two-sided 95% CI lower
+  bound > 1.
+- **N1:** b = 28.5 dynamics and confirmation, b = 29 detector (no soliton exists at 28.5 to define one), smallest
+  Stage-B Ω, 16 runs. **N2:** the Euler mean map from the exact homogeneous state at b = 29 to T = 500; max |φ| reported.
+- **Clip pilots** (V3 procedure) for each new (b, Ω). **Streams:** stage A 0, B 1, C4 2, N1 3, V5 4, C2(b) reference 5,
+  pilot 6; b_idx in [29, 29.16, 29.3, 28.5]; midpoints om_idx 9, 10; segment = t₀/10.
+
 Prediction: nucleation is an activated (large-deviation) process, ln k ≈ c − S·Ω.
 
 Pass criteria:
