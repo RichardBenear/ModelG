@@ -175,6 +175,10 @@
 
 - ChatGPT reviewed draft 2 (`review/MG006b_chatgpt_r2.md`): design supported; three calibration corrections (capped-cell configuration preserving the activated model; safe INCONCLUSIVE fallback for Part 1 and a rule if no stationary split qualifies; full decision-tree calibration with coverage by production branch) and two smaller ones (tighter-margin power was overstated in draft 2; benchmark calibration runtime). All accepted: draft 3 (`spec/MG3b_followup_proposal.md`; draft 2 preserved as `_v2.md`), response `review/MG006b_response_r2.md`. Stationary-check power now simulated from the actual procedure. Part 3 ceiling 8 core-hours with a registered R = 1000 fallback for bootstrap candidates. Not registered; awaiting PI approval.
 
+## MG007 — MG3b registered
+- **PI approved draft 3 of the MG3b follow-up, 2026-10-29** ("I'm satisfied. go ahead and register it"), after two ChatGPT review rounds. Registered in `GATES.md` (MG3b) with a pre-run implementation specification (streams, run records, ledger columns, τ/4 timing runs, driver order). Design frozen as `spec/MG3b_followup_proposal.md` at commit `202c00f`. Estimation study, no pass/fail; MG3's FAIL unchanged. No MG3b run of any kind has been made.
+- Next: Part 3 synthetic calibration (`results/MG3b/calibration/`, with `decisions.json`), sent for review before the driver and any lattice run.
+
 ## Deferred work (PI decisions)
 Items deliberately postponed so the project reaches its main questions first. They can be revisited later.
 - **D1 (2026-10-28):** Noisy existence-window edge study: survival S(δ, Ω, T) with δ = b − b_s(h); noisy edge at S = 1/2; test of the saddle-node scaling δ ∝ Ω^(−2/3). Deferred by PI.

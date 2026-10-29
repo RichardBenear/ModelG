@@ -1,10 +1,11 @@
-# MG3b — Follow-up to MG3: nucleation rates, time step and uncertainty (DRAFT 3 for review)
+# MG3b — Follow-up to MG3: nucleation rates, time step and uncertainty (REGISTERED, draft 3)
 
-Status: **DRAFT 3** (Claude, 2026-10-29). Draft 2 was revised after ChatGPT's review of draft 1
+Status: **REGISTERED 2026-10-29 (MG007)** in `GATES.md` (MG3b), approved by the PI. Content frozen as merged at
+commit `202c00f`; later changes only by a versioned amendment. History: **DRAFT 3** (Claude, 2026-10-29). Draft 2 was revised after ChatGPT's review of draft 1
 (`review/MG006b_chatgpt.md`; response `review/MG006b_response.md`). Draft 3 makes the calibration corrections from
 ChatGPT's review of draft 2 (`review/MG006b_chatgpt_r2.md`; response `review/MG006b_response_r2.md`). Drafts 1 and 2 are
-preserved as `spec/MG3b_followup_proposal_v1.md` and `_v2.md`. Nothing here is
-registered: it needs PI approval and entry in `GATES.md` before any lattice run. MG3's registered FAIL, and the accepted
+preserved as `spec/MG3b_followup_proposal_v1.md` and `_v2.md`. Registration (PI
+approval and entry in `GATES.md`) was required before any run, and is now done. MG3's registered FAIL, and the accepted
 A1 residual risk, are unchanged by anything here. This is a separate study, designed after MG3's data were seen.
 
 ## Summary of the design
