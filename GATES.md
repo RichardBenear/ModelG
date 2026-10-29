@@ -347,13 +347,25 @@ cell, which started at 15.6 h. The budget is checked at cell start (as in MG2), 
 | Stage A | — | Ω = 300, 250, 200, 150: 0/4, no events in 4 × 500; Ω = 120: 0/4 in [50,150] (3 startup events, 1 at t = 330); Ω = 100: 2/4; Ω = 80 excluded by crowding (2.26 detections/snapshot). Stage B: Ω = 150, 120, 100 |
 | C1 (≥ 10 confirmed post-burn-in events at some Ω) | PASS | 15 at Ω = 100, 11 at Ω = 120 (Stage A + B) |
 | C2 (what nucleates is a soliton) | **FAIL** | (a) persistent fraction 5/7 = 0.71, 15/21 = 0.71, 16/26 = 0.62 against ≥ 0.80, so it fails in every cell. (b) replaced by (a)+(c), as pre-stated: the soliton-start reference ensembles kept their particle in 1, 0 and 0 of 8 runs. (c) λ_core −2.9% (Ω = 150, 1 run), −2.3% (Ω = 120, 3 runs), PASS; Ω = 100 INCONCLUSIVE (no profile-eligible run) |
-| C3 (activated scaling) | PASS | k̂ = 4.05e−6, 4.63e−5, 1.58e−4 at Ω = 150, 120, 100 (5, 10, 11 events). Weighted fit S = 0.0726 per unit Ω, 95% CI [0.0516, 0.0936]; R² = 0.993. With 3 cells the t-based sensitivity interval (1 df) includes 0 |
-| C4 (distance from the edge, Ω = 120) | PASS | k̂ = 4.63e−5, 1.52e−4, 2.73e−3 at b = 29, 29.16, 29.3 (monotone); k(29.3)/k(29) = 58.9, 95% CI [10.4, 229]. Most b = 29.3 runs (29/32) nucleated during burn-in |
-| V5 (τ/2, Ω = 120) | PASS | ratio 0.883, 95% CI [0.365, 2.221] (14 vs 10 events) |
+| C3 (activated scaling) | PASS | k̂ = 4.05e−6, 4.63e−5, 1.58e−4 at Ω = 150, 120, 100 (5, 10, 11 events). Weighted fit S = 0.0726 per unit Ω, 95% CI [0.0516, 0.0936]; R² = 0.993. With 3 cells the t-based sensitivity interval (1 df) includes 0. [MG006 review] The weights are estimated, not known, Poisson variances; three cells (5 events in the weakest) support an activated trend over Ω = 100–150 but do not establish the mechanism |
+| C4 (distance from the edge, Ω = 120) | PASS | k̂ = 4.63e−5, 1.52e−4, 2.73e−3 at b = 29, 29.16, 29.3 (monotone); k(29.3)/k(29) = 58.9, 95% CI [10.4, 229]. Most b = 29.3 runs (29/32) nucleated during burn-in; the b = 29.3 rate rests on the 3 surviving runs, whose waits after burn-in were 2, 4 and 5 time units [MG006 review] |
+| V5 (τ/2, Ω = 120) | PASS | ratio 0.883, 95% CI [0.365, 2.221] (14 vs 10 events). [MG006 review] Registered comparison passed; time-step independence is **not resolved**, given the broad interval and the startup asymmetry |
 | N1 (b = 28.5, Ω = 100) | no confirmed event | 16 runs to T = 500, 0 persistent detections |
 | N2 | PASS | mean map stays homogeneous (exact start 0; 10⁻³ perturbation decays to 1e−11) |
 
 Independent recomputation from the raw run files (rates, the C3 fit, the C4 interval, the C2(a) counts) agrees.
+ChatGPT's independent replication (`review/MG006_chatgpt.md`) checked 168 run records with no bookkeeping mismatch (exposure,
+censoring, confirmation time, early stop). It re-derived C1–C4 and V5, re-confirmed all 36 Stage-B first-event fields with a
+separately implemented solver, and replayed two excursion records exactly (both decay).
+
+Qualifications from that review, adopted:
+- **C2(a)** describes outcomes through each run's first confirmed event, as pre-specified. It is not a measure of detector quality
+  over full trajectories.
+- **Stationarity is weakly checked.** Ω = 100 and b = 29.3 have no late-window exposure, so their p = 1 values carry no information.
+- The CIs (Garwood, conditional binomial) are applied to stopped, left-truncated first-passage data. Their exactness in this
+  design has not been justified; no undercoverage has been shown either.
+- The Stage-A 4/4 trigger had at most 0.385⁴ ≈ 2.2% probability per cell under the exponential model.
+- The budget overrun (19.03 against 18 core-hours) stands as recorded.
 
 Interpretation (Claude; for review). Spontaneous nucleation from intrinsic noise is **observed and confirmed** (C1).
 Its rate is consistent with an activated law ln k ≈ c − S·Ω over Ω = 100–150 (C3). It rises toward the window interior
