@@ -29,3 +29,5 @@
   [A_100 rep 1] t_end 270, births 1, first 219.5 (event), wall 367s
   [A_100 rep 3] t_end 230, births 1, first 177.0 (event), wall 307s
 [A] A_100: 2/4 with a confirmed event in [50,150]; post-burn-in events 4, startup 0; mean dets/snapshot t<50 0.26; budget used 2.88 h
+[A] A_80: EXCLUDED by crowding (mean detections/snapshot in t<50 = 2.26 > 2); descent stops
+[select] Stage-B cells [150, 120, 100] (selected)
