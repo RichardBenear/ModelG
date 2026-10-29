@@ -1,6 +1,7 @@
 # Phase 2 Protocol v1.3.3 — Amendment 4 (PROPOSED, MG005a): corrections before MG3
 
-Status: **PROPOSED** for ChatGPT review and PI approval. If approved it is applied as **protocol v1.3.4**.
+Status: **PROPOSED, revised after ChatGPT review** (`review/MG005_amendment4_chatgpt.md`: approve with two wording
+qualifications, incorporated and marked [r]). Awaiting PI approval. If approved it is applied as **protocol v1.3.4**.
 Origin: the MG005 review of the MG2 result (`review/MG005_chatgpt.md`, findings P1 tracking, P1 audit, and the MG3
 stopping-rule cleanup). No MG3 gate run has been made. Nothing here re-scores MG2, whose registered FAIL stands.
 
@@ -55,11 +56,17 @@ Bonferroni is applied over every run × field × direction test at overall level
 | 20 | 0.000 | 1.000 |
 
 - **Stated limitation.** With 12 runs per cell this audit is the per-cell A1 run-level test at a stricter, gate-wide
-  error rate (critical value 8.47 against the per-cell ≈ 5.9). It **adds no power** over the per-cell diagnostics, and
-  detects a single outlying run reliably only at about 12–15 run-level SDs (76% at 10, 99.8% at 15). The rare-mode residual risk that
-  pooling was meant to address (protocol §5.3) is therefore **not covered by any test**, and is stated as residual
-  risk. A more powerful pooled audit would need an independent scale estimate (e.g. within-run block variance),
-  which depends on block independence. It is not proposed here.
+  error rate (critical value 8.47 against the per-cell ≈ 5.9). It **adds no power** over the per-cell diagnostics:
+  anything it flags would already fail the per-cell run-level check. In the calibration it detects a single outlying
+  run reliably only at about 12–15 run-level SDs (76% at 10, 99.8% at 15). [r] That power curve applies to **one
+  displaced run in one scalar projection under the simulated Gaussian model**. It does not measure sensitivity to every
+  kind of rare mode.
+- **Residual risk (A1).** The rare-mode risk that pooling was meant to address (protocol §5.3) is **not covered by any
+  test**. Absence of rare modes remains an assumption. Passing these diagnostics does not establish it, and does not
+  validate confidence bounds against such modes. This limitation is carried into the interpretation of MG3 and later
+  gates. [r] The route considered here to a stronger pooled audit, borrowing within-run block variance, would require
+  a separately justified scale estimate, because block variance is not automatically the variance of a run mean
+  (temporal correlation, variation between runs). Other statistical designs are possible. None is proposed here.
 
 ## 3. MG3 Stage A: terminal outcomes on the amended grid
 
