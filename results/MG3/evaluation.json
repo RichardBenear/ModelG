@@ -130,7 +130,8 @@
    "a_ok": false,
    "b": "replaced",
    "lam": 2.941351263545363,
-   "c_ok": true,
+   "c": "PASS",
+   "cell": "FAIL",
    "n_nuc": 1,
    "n_ref": 1
   },
@@ -139,7 +140,8 @@
    "a_ok": false,
    "b": "replaced",
    "lam": 2.959943507185236,
-   "c_ok": true,
+   "c": "PASS",
+   "cell": "FAIL",
    "n_nuc": 3,
    "n_ref": 0
   },
@@ -148,7 +150,8 @@
    "a_ok": false,
    "b": "replaced",
    "lam": NaN,
-   "c_ok": false,
+   "c": "INCONCLUSIVE (no eligible nucleated profile)",
+   "cell": "FAIL",
    "n_nuc": 0,
    "n_ref": 0
   }
@@ -177,6 +180,10 @@
   "hi": 228.62804733907467
  },
  "C4": "PASS",
+ "N1": {
+  "confirmed": 0,
+  "outcomes": {}
+ },
  "N2": {
   "exact": 0.0,
   "perturbed": 1.0548006912358687e-11

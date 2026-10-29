@@ -41,14 +41,17 @@ Midpoints inserted: none. Stage-B selection: **[150, 120, 100]** (selected).
   - (b) replaced by (a)+(c): eligible nucleated 1, eligible reference 1 (need ≥ 8 each)
   - (c) λ_core = 2.9414 vs deterministic 3.0296 (-2.91%, ≤ 5%) → PASS (1 eligible nucleated runs of 5 with a first event)
   - survival to t_e + 50 (profile-eligible runs / runs with a first event): 1/5
+  - **cell: FAIL**
 - Ω = 120: (a) persistent 15 / classified 21 = 0.714 (≥ 0.8) → FAIL; outcomes {'persistent': 15, 'excursion': 6}
   - (b) replaced by (a)+(c): eligible nucleated 3, eligible reference 0 (need ≥ 8 each)
   - (c) λ_core = 2.9599 vs deterministic 3.0296 (-2.30%, ≤ 5%) → PASS (3 eligible nucleated runs of 15 with a first event)
   - survival to t_e + 50 (profile-eligible runs / runs with a first event): 3/15
+  - **cell: FAIL**
 - Ω = 100: (a) persistent 16 / classified 26 = 0.615 (≥ 0.8) → FAIL; outcomes {'persistent': 16, 'excursion': 10}
   - (b) replaced by (a)+(c): eligible nucleated 0, eligible reference 0 (need ≥ 8 each)
-  - (c) λ_core = nan vs deterministic 3.0296 (+nan%, ≤ 5%) → FAIL (0 eligible nucleated runs of 16 with a first event)
+  - (c) λ_core = nan vs deterministic 3.0296 (+nan%, ≤ 5%) → INCONCLUSIVE (no eligible nucleated profile) (0 eligible nucleated runs of 16 with a first event)
   - survival to t_e + 50 (profile-eligible runs / runs with a first event): 0/16
+  - **cell: FAIL**
 
 - **C2: FAIL**
 
@@ -73,6 +76,7 @@ Midpoints inserted: none. Stage-B selection: **[150, 120, 100]** (selected).
 
 ## Controls
 
+- N1 (b = 28.5, Ω = 100, 16 runs): confirmed events 0; field outcomes {}; detections per snapshot 0.032; persistent detections per unit length·time 0.000e+00
 - N2 (Ω → ∞ mean map, b = 29, T = 500): from the exact homogeneous state max|φ| = 0.00e+00; from a 10⁻³ random perturbation max|φ| = 1.05e-11 → PASS
 
 ## Gate verdict (as registered)

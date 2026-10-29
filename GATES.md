@@ -7,7 +7,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 |---|---|---|---|
 | MG1 | 1 | Continuum PDE reproduces a published stationary Model G soliton | PASS by PI exception (registered FAIL on 1D stationarity preserved) |
 | MG2 | 2 | Stochastic token rules converge to the same-lattice mean-field solution as Ω → ∞ | **FAIL** as registered (C3, C4); convergence criteria C1, C6 PASS — see MG2 result |
-| MG3 | 2 | Particles nucleate spontaneously from intrinsic fluctuations at finite Ω | PRE-REGISTERED; amended A3 (v1.3.3) and A4 (v1.3.4); authorized by PI 2026-10-28 |
+| MG3 | 2 | Particles nucleate spontaneously from intrinsic fluctuations at finite Ω | **FAIL** as registered (C2); C1, C3, C4, V5 PASS — see MG3 result |
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale | PENDING |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve) | PENDING |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | PENDING |
@@ -337,6 +337,36 @@ Gate outcome:
 - **PASS** if C1–C4 and V5 pass.
 - **INCONCLUSIVE** if C3 is inconclusive or the budget stops the gate.
 - **FAIL** otherwise.
+
+#### MG3 result (2026-10-29, protocol v1.3.4; full record `results/MG3/MG3_evaluation.md`)
+Registered verdict: **FAIL** (C2). Compute: 19.03 core-hours against the 18-hour cap. The overrun is inside N1, the last
+cell, which started at 15.6 h. The budget is checked at cell start (as in MG2), so no step was cut.
+
+| Criterion | Result | Note |
+|---|---|---|
+| Stage A | — | Ω = 300, 250, 200, 150: 0/4, no events in 4 × 500; Ω = 120: 0/4 in [50,150] (3 startup events, 1 at t = 330); Ω = 100: 2/4; Ω = 80 excluded by crowding (2.26 detections/snapshot). Stage B: Ω = 150, 120, 100 |
+| C1 (≥ 10 confirmed post-burn-in events at some Ω) | PASS | 15 at Ω = 100, 11 at Ω = 120 (Stage A + B) |
+| C2 (what nucleates is a soliton) | **FAIL** | (a) persistent fraction 5/7 = 0.71, 15/21 = 0.71, 16/26 = 0.62 against ≥ 0.80, so it fails in every cell. (b) replaced by (a)+(c), as pre-stated: the soliton-start reference ensembles kept their particle in 1, 0 and 0 of 8 runs. (c) λ_core −2.9% (Ω = 150, 1 run), −2.3% (Ω = 120, 3 runs), PASS; Ω = 100 INCONCLUSIVE (no profile-eligible run) |
+| C3 (activated scaling) | PASS | k̂ = 4.05e−6, 4.63e−5, 1.58e−4 at Ω = 150, 120, 100 (5, 10, 11 events). Weighted fit S = 0.0726 per unit Ω, 95% CI [0.0516, 0.0936]; R² = 0.993. With 3 cells the t-based sensitivity interval (1 df) includes 0 |
+| C4 (distance from the edge, Ω = 120) | PASS | k̂ = 4.63e−5, 1.52e−4, 2.73e−3 at b = 29, 29.16, 29.3 (monotone); k(29.3)/k(29) = 58.9, 95% CI [10.4, 229]. Most b = 29.3 runs (29/32) nucleated during burn-in |
+| V5 (τ/2, Ω = 120) | PASS | ratio 0.883, 95% CI [0.365, 2.221] (14 vs 10 events) |
+| N1 (b = 28.5, Ω = 100) | no confirmed event | 16 runs to T = 500, 0 persistent detections |
+| N2 | PASS | mean map stays homogeneous (exact start 0; 10⁻³ perturbation decays to 1e−11) |
+
+Independent recomputation from the raw run files (rates, the C3 fit, the C4 interval, the C2(a) counts) agrees.
+
+Interpretation (Claude; for review). Spontaneous nucleation from intrinsic noise is **observed and confirmed** (C1).
+Its rate is consistent with an activated law ln k ≈ c − S·Ω over Ω = 100–150 (C3). It rises toward the window interior
+(C4). It is insensitive to halving τ (V5). The FAIL is C2(a): about 30% of persistent detections (tracks lasting ≥ 20
+time units) relax to the homogeneous state when the field at detection + 20 is continued without noise. That fits the
+pre-stated reading that noise also drives transient structures that do not cross the separatrix. The 80% threshold was
+set before any such data existed. C2(b) could not be tested: at b = 29 and these Ω, seeded solitons do not survive
+(MG2's finding). C2(c) rests on 1 and 3 runs. After nucleating, the particle is usually not the only detection for the
+next 50 time units (profile-eligible 1/5, 3/15, 0/16); whether that is from extra nucleation, replication or loss is
+not established. Design limitation: under a constant hazard the Stage-A statistic (first event in [50,150], with startup
+events excluded) is at most 0.385 per run, so a 4/4 stop was effectively unreachable. The descent ended at the crowding
+exclusion. No criterion is re-scored. Observation for follow-up: startup events at Ω = 120 were 5/16 at τ against 0/16
+at τ/2 (Fisher p = 0.043), outside any criterion.
 
 Controls:
 - N1 (detector false-positive rate): b = 28.5, below the operational lattice b_s, at the smallest
