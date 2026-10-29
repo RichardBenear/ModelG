@@ -481,7 +481,8 @@ def job_tree(cfg, seed, R, ratio_method, boot):
     a1 = sim_cell(rng, d, k[1] * L, p120, R)                         # tau arm
     a2 = sim_cell(rng, d, cfg["r"] * k[1] * L, p120, R)              # tau/2 arm
     dec = part1_decision(ratio_method, a1["n"], a1["E"], a2["n"], a2["E"])
-    a4 = sim_cell(rng, d, cfg["r"] * cfg["r2"] * k[1] * L, p120, R)  # tau/4 arm (used only where DIFFERENT)
+    # tau/4 arm (used only where DIFFERENT). Part 1b always has 64 runs [corrected in addendum 1; the main run used d]
+    a4 = sim_cell(rng, "fixed64", cfg["r"] * cfg["r2"] * k[1] * L, p120, R)
     dec1b = part1_decision(ratio_method, a2["n"], a2["E"], a4["n"], a4["E"])
     branch = np.where(dec == 0, "tau", np.where(dec == 2, "tau2_inc", np.where(dec1b == 0, "tau2_1b", "stop")))
     fac = np.where(branch == "tau", 1.0, cfg["r"])                   # production-tau rate factor (constant in Omega)
@@ -729,6 +730,81 @@ def run():
     print(json.dumps(decisions, indent=1, default=str))
 
 
+# ------------------------------------------------------------------------------------------------ addendum 1
+R_ADD = 20000
+
+
+def addendum_configs():
+    out = []
+    for pair in ((0.35, 0.35, 0.35), (0.35, 0.05, 0.05)):
+        for r in (0.5, 0.71, 0.8, 1.0, 1.25, 1.41, 2.0):
+            for r2 in (0.5, 0.71, 1.0, 1.41, 2.0):
+                out.append(dict(kind="addendum1", r=r, r2=r2, pair=pair))
+    return out
+
+
+def job_addendum(cfg, seed, R, method="a"):
+    """(A) Garwood coverage of the reused Omega = 120 arm's rate, by production branch; (B) Part 1b triggered and
+    whole-study equivalence error. Part 1 and 1b only, 64 runs per arm."""
+    rng = np.random.default_rng(seed)
+    t0 = time.process_time()
+    k1 = K120 * L
+    a1 = sim_cell(rng, "fixed64", k1, cfg["pair"][0], R)
+    a2 = sim_cell(rng, "fixed64", cfg["r"] * k1, cfg["pair"][1], R)
+    a4 = sim_cell(rng, "fixed64", cfg["r"] * cfg["r2"] * k1, cfg["pair"][2], R)
+    dec = part1_decision(method, a1["n"], a1["E"], a2["n"], a2["E"])
+    dec1b = part1_decision(method, a2["n"], a2["E"], a4["n"], a4["E"])
+    branch = np.where(dec == 0, "tau", np.where(dec == 2, "tau2_inc", np.where(dec1b == 0, "tau2_1b", "stop")))
+    rate = {}
+    for b, arm, true in (("tau", a1, K120), ("tau2_inc", a2, cfg["r"] * K120), ("tau2_1b", a2, cfg["r"] * K120)):
+        sel = branch == b
+        if sel.sum() == 0:
+            continue
+        lo, hi = ci_garwood(arm["n"][sel], arm["E"][sel])
+        cv = _cov(lo, hi, true); cv["n_rep"] = int(sel.sum())
+        rate[b] = cv
+    trig = dec == 1
+    eq1b = trig & (dec1b == 0)
+    out = dict(cfg=cfg, R=R, rate_by_branch=rate,
+               part1b=dict(p_triggered=float(trig.mean()), p_equiv_given_triggered=float(eq1b.sum() / max(trig.sum(), 1)),
+                           p_triggered_and_equiv=float(eq1b.mean()), n_triggered=int(trig.sum())),
+               branch_counts={b: int(np.sum(branch == b)) for b in ("tau", "tau2_inc", "tau2_1b", "stop")},
+               cpu_s=time.process_time() - t0)
+    return out
+
+
+def addendum():
+    cfgs = addendum_configs()
+    root = np.random.SeedSequence(ENTROPY, spawn_key=(2,))
+    seeds = root.spawn(len(cfgs))
+    w0 = time.time()
+    res = _run_jobs([(job_addendum, c, seeds[i], R_ADD) for i, c in enumerate(cfgs)])
+    # (A) per branch: qualifying configurations and the observed minimum
+    A = {}
+    for b in ("tau", "tau2_inc", "tau2_1b"):
+        rows = [(r["cfg"], r["rate_by_branch"][b]) for r in res if b in r["rate_by_branch"]
+                and r["rate_by_branch"][b]["n_rep"] >= BRANCH_MIN]
+        fail = [dict(r=c["r"], r2=c["r2"], pair=c["pair"], **cv) for c, cv in rows
+                if not (cv["cov"] >= COV95 and cv["miss_lo"] <= TAIL95 and cv["miss_hi"] <= TAIL95)]
+        A[b] = dict(n_qualifying=len(rows), min_cov=min((cv["cov"] for _, cv in rows), default=None),
+                    max_miss_lo=max((cv["miss_lo"] for _, cv in rows), default=None),
+                    max_miss_hi=max((cv["miss_hi"] for _, cv in rows), default=None),
+                    label_approximate=bool(fail), n_failing=len(fail), failing=fail)
+    # (B) boundaries r2 in {0.5, 2}
+    bnd = [r for r in res if r["cfg"]["r2"] in (0.5, 2.0)]
+    B = dict(max_whole_study=max(r["part1b"]["p_triggered_and_equiv"] for r in bnd),
+             max_conditional=max(r["part1b"]["p_equiv_given_triggered"] for r in bnd if r["part1b"]["n_triggered"] >= 100),
+             rows=[dict(r=r["cfg"]["r"], r2=r["cfg"]["r2"], pair=r["cfg"]["pair"], **r["part1b"]) for r in bnd])
+    B["label_approximate"] = B["max_whole_study"] > 0.05
+    cpu = sum(r["cpu_s"] for r in res)
+    out = dict(R=R_ADD, n_configs=len(cfgs), A_reused_rate=A, B_part1b=B, platform=_platform(), cpu_core_h=cpu / 3600,
+               wall_s=time.time() - w0, results=res)
+    d = os.path.join(OUT, "addendum1"); os.makedirs(d, exist_ok=True)
+    json.dump(out, open(os.path.join(d, "addendum1_results.json"), "w"), indent=1, default=str)
+    _ledger("Part 3 calibration", "calibration", cpu, f"addendum 1 R={R_ADD} (cpu-s summed)")
+    print(json.dumps({k: v for k, v in out.items() if k != "results"}, indent=1, default=str)[:6000])
+
+
 def recheck():
     """Recompute the slope eligibility and selection from part3_results.json with the corrected branch threshold
     (no new simulation). Writes eligibility_recheck.json; decisions.json is left as the run wrote it."""
@@ -744,4 +820,4 @@ def recheck():
 
 
 if __name__ == "__main__":
-    {"bench": bench, "run": run, "recheck": recheck}[sys.argv[1]]()
+    {"bench": bench, "run": run, "recheck": recheck, "addendum": addendum}[sys.argv[1]]()

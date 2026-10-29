@@ -10,7 +10,7 @@ Platform: cloud container (Linux, Python 3.13.17, numpy 2.5.3, scipy 1.18.1), 4 
 | Per-cell rate CI | **(a) Garwood** | The only eligible candidate. Minimum coverage over the 51 constant-hazard configurations is 0.950. The profile likelihood (0.938) and the bootstrap (0.922) fail |
 | Part 1 rate-ratio CI | **(a) conditional binomial, Clopper–Pearson** | The only eligible candidate. Mid-p and Wald fail the 90% tail requirement and the equivalence-error requirement (P(EQUIVALENT) at the margin up to 0.052–0.056, against ≤ 0.05) |
 | Part 1 runs per arm | **64** | P(EQUIVALENT \| r = 1) = 0.85 under startup losses (0.35, 0.05), above the 0.80 rule. It is 0.75 if τ/2 has the same startup loss as τ (0.35, 0.35) |
-| Activated-slope CI | **No candidate eligible.** Fallback: **(b) profile likelihood**, reported as "approximate (calibrated minimum coverage 0.937)". No claim about the slope may be stated at 95% | See "Slope" below |
+| Activated-slope CI | **No candidate eligible.** Fallback: **(b) profile likelihood**, reported as "approximate (observed minimum coverage 0.937 over qualifying calibration cells; not a guaranteed floor)". No claim about the slope may be stated at 95% | See "Slope" below |
 | Stationary-check split | **(b) the cell's exposure median** | Split (a) at t = 200 is not eligible: its size is 0.0143 > 0.012 in one configuration. Split (b) has a maximum size of 0.009. Its power is low (see below) |
 | Bootstrap replicates | R = 4000 (no fallback needed) | The benchmark projected 0.60 core-hours, against the 8-hour ceiling |
 
@@ -77,6 +77,39 @@ The 95% coverage is 0.955–0.964 and the 90% coverage is 0.910–0.926 in all 2
    its live-replicate count, giving about 995 instead of 1000 at R = 4000. Corrected; `python src/calib_mg3b.py recheck`
    recomputes eligibility from the saved results. The selection is unchanged: none eligible, (b) chosen
    (`eligibility_recheck.json`). `decisions.json` is left exactly as the run wrote it.
+
+## Addendum 1 (2026-10-29): post-selection checks requested in `review/MG007_chatgpt.md`
+This addendum was registered in `GATES.md` before it was run. It covers Part 1 and Part 1b only, with Clopper–Pearson
+and 64 runs per arm (τ/4 included): 70 configurations at R = 20 000, costing 0.005 core-hours. Results are in
+`addendum1/addendum1_results.json`.
+
+**(A) The reused Ω = 120 rate: its Garwood interval is labelled approximate in every branch.**
+
+| Production branch | Qualifying configurations | Observed minimum coverage | Largest one-sided miss | Failing configurations |
+|---|---|---|---|---|
+| τ after EQUIVALENT | 50 | 0.943 | 0.057 (lower), 0.040 (upper) | 19 |
+| τ/2 after INCONCLUSIVE | 70 | 0.875 | 0.090 (upper) | 30 |
+| τ/2 after Part 1b EQUIVALENT | 31 | 0.841 | 0.159 (lower) | 15 |
+
+- Even in the τ branch, where coverage is high (0.987 at r = 1), the tails are lopsided whenever selection depends on
+  the arm's own count. For example, at r = 1.41 the τ arm is chosen when its count happens to be high.
+- These results reproduce ChatGPT's figures. At r = 1 with 35% startup loss in every arm, I get 0.987, 0.908 and 0.862,
+  against ChatGPT's 98.6%, 90.8% and 84.8%. The last branch has only 369 replicates there, so it does not qualify.
+- Consequence (registered rule): the Ω = 120 rate interval is reported as "approximate (observed minimum
+  branch-conditional coverage X)", with the X of whichever branch production lands in. No 95% claim is made for it. Its
+  data enter the slope fit unchanged; the slope's own calibration already covers selection.
+
+**(B) Part 1b equivalence error: within 5% for the whole study, but not for triggered comparisons.**
+- At the boundaries r2 ∈ {0.5, 2}, the whole-study probability of triggering Part 1b and then wrongly declaring
+  EQUIVALENT is at most **0.040** (r = r2 = 2). That is ≤ 0.05, so the registered rule adds no label.
+- The **conditional** error among triggered comparisons is much higher, up to **0.161** (among configurations with ≥ 100
+  triggered replicates). In ChatGPT's illustrative case (r = 0.71, r2 = 0.5), I get 9.6% conditional and 2.4%
+  whole-study, against ChatGPT's 9.06% and 2.285%.
+- So a Part 1b EQUIVALENT will be reported as "whole-study error ≤ 0.040 at the margin; conditional on Part 1b being
+  triggered, up to 0.161". It will not carry the standalone 5% interpretation.
+
+**Implementation correction:** the τ/4 arm now always has 64 runs. The main run's 96-run tree configurations used 96.
+Those are hypothetical (the selected design is 64), and the main-run results are left as they are.
 
 ## Files
 - `bench.json`: benchmark (the last of the three runs).

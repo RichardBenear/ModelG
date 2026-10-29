@@ -573,6 +573,12 @@ run).**
   - **Implementation correction:** in the main run's hypothetical 96-run tree configurations, the τ/4 arm had 96 runs
     where Part 1b specifies 64. The code now always uses 64. The main run's results are left as they are, and the
     selected 64-run design is unaffected.
+  - **Addendum 1 result (2026-10-29; `results/MG3b/calibration/addendum1/`; 0.005 core-hours):**
+    - (A) The Ω = 120 rate interval is labelled **approximate in every branch**. The observed minimum
+      branch-conditional coverage is 0.943 (τ), 0.875 (τ/2 after INCONCLUSIVE) and 0.841 (τ/2 after Part 1b).
+    - (B) The whole-study Part 1b equivalence error at the margin is at most 0.040 (≤ 0.05, so no label). The
+      conditional error is up to 0.161, and both figures are reported with any Part 1b EQUIVALENT.
+    - The Part 3 method decisions are unchanged.
 
 Result:
 Replication (ChatGPT):
