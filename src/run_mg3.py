@@ -45,7 +45,15 @@ def used():
     return tot
 
 
-def check_budget(where):
+def started(cell):
+    return bool(glob.glob(f"{RUNS}/{cell}/*.pkl") or glob.glob(f"{PART}/{cell}/*.pkl"))
+
+
+def check_budget(where, cell=None):
+    """Budget is checked when a cell (or extension) starts, as in MG2. A cell already started before a forced restart
+    (2-hour background limit) is not re-checked, so restarts do not change the stopping rule."""
+    if cell is not None and started(cell):
+        return used()
     u = used()
     if u > BUDGET:
         log(f"[BUDGET] {u/3600:.2f} core-hours used > cap before {where}; MG3 stops here (INCONCLUSIVE by the budget rule)")
@@ -194,7 +202,7 @@ def grow_cell(pool, cell, b, Om, tau, stage, b_idx, mids, b_det=None):
     """16 runs; one extension of 16 if fewer than 5 counted events."""
     runs = finished(cell)
     if len(runs) < 16:
-        check_budget(cell)
+        check_budget(cell, cell)
         runs = run_cell(pool, cell, b, Om, tau, stage, b_idx, range(16), mids, b_det=b_det)
     n = counted_events(runs)
     if n < CFG["stageB_min_events"] and len(runs) < 32:
@@ -267,7 +275,7 @@ def main():
         nOm = min(sel)
         cell = f"N1_b28.5_{nOm:g}"
         if len(finished(cell)) < CFG["N1_runs"]:
-            check_budget(cell)
+            check_budget(cell, cell)
             run_cell(pool, cell, 28.5, nOm, tau_for(pool, 28.5, nOm, mids), STAGE["N1"], 3, range(CFG["N1_runs"]), mids, b_det=29.0)
         log(f"[cell] {cell}: done; budget used {used()/3600:.2f} h")
     log(f"=== MG3 driver complete {time.strftime('%Y-%m-%d %H:%M:%S')} (session wall {time.time()-t0:.0f}s); budget used {used()/3600:.2f} h")
