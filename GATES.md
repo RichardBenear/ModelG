@@ -7,7 +7,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 |---|---|---|---|
 | MG1 | 1 | Continuum PDE reproduces a published stationary Model G soliton | PASS by PI exception (registered FAIL on 1D stationarity preserved) |
 | MG2 | 2 | Stochastic token rules converge to the same-lattice mean-field solution as Ω → ∞ | **FAIL** as registered (C3, C4); convergence criteria C1, C6 PASS — see MG2 result |
-| MG3 | 2 | Particles nucleate spontaneously from intrinsic fluctuations at finite Ω | PRE-REGISTERED; V7 checkpoint passed with Amendment 3 (v1.3.3); Amendment 4 (MG3 corrections) PROPOSED |
+| MG3 | 2 | Particles nucleate spontaneously from intrinsic fluctuations at finite Ω | PRE-REGISTERED; amended A3 (v1.3.3) and A4 (v1.3.4); authorized by PI 2026-10-28 |
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale | PENDING |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve) | PENDING |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | PENDING |
@@ -227,6 +227,8 @@ asserted. The registered FAIL stands; MG2 will not be re-scored by re-selecting 
 
 ### MG3 — Spontaneous nucleation from intrinsic noise
 Status: PRE-REGISTERED 2026-10-27 (MG003d), with PI sign-off on protocol v1.3 and the criteria below. No MG3 gate run preceded this commit.
+Amended by A3 (v1.3.3) and **A4 (v1.3.4, approved 2026-10-28)**: Stage-A terminal outcomes, tracker fix, corrected audit. Interpretation
+carries the A1 residual risk (absence of rare run-level modes is assumed, not tested).
 
 Setup: b = 29, homogeneous Poisson start, no seed, T = 500. Events are **confirmed nucleations**
 (protocol §5.4), handled by the first-passage model of protocol §6 (burn-in 50, censoring at 480,
@@ -241,8 +243,17 @@ Adaptive design (fully specified):
   choice). Events are confirmed by the A3 field-level rule.
 - **Stage A (scan):** 4 runs per Ω, descending. Stop after the first Ω at which 4/4 runs have a
   confirmed event in [50, 150]. At most 12 cells (48 runs).
-  - If there is no confirmed event at any Ω down to 1: **C1 FAIL**. Report 95% upper bounds per Ω and
-    stop. No Stage B.
+  - [A4] *Screened set* = the grid cells run in Stage A and not excluded by crowding. Terminal outcomes:
+    - (a) No confirmed event in any screened cell (grid exhausted at Ω = 50, or descent stopped by an excluded
+      cell): **C1 FAIL**, an exposure-limited bound over the screened Ω range. Report 95% upper bounds per Ω
+      and stop. No Stage B. (v1.3–v1.3.3 text: "at any Ω down to 1".)
+    - (b) Confirmed events but no 4/4 cell before the screened set ends: S = screened cells with 1–3 of 4;
+      neighbours only from screened, non-excluded grid values; if |S| < 3 when these are exhausted, Stage B runs
+      on the available cells (C3 then INCONCLUSIVE by its own rule). No midpoints.
+    - (c) Midpoints only between two adjacent screened, non-excluded grid values bracketing a 0/4 → 4/4
+      transition; each gets a V3 clip pilot and the crowding screen before its Stage-A cell.
+    - (d) 4/4 already at Ω = 300: Stage B at Ω = 300 only (C1 and C2 evaluable); C3 INCONCLUSIVE.
+    - (e) Ω = 300 excluded by crowding: no screened set; MG3 INCONCLUSIVE.
 - **Stage B cell selection:**
   - Start from S = the grid values with 1–3 of 4 runs confirmed in Stage A.
   - If |S| < 3, add the nearest grid neighbours of S, or of the 0/4 → 4/4 transition, until |S| = 3.
@@ -295,7 +306,7 @@ Controls:
   (deterministic).
 
 Interpretation of a FAIL or INCONCLUSIVE (pre-stated):
-- No events at any Ω ≥ 1 → the barrier is too high for intrinsic noise at this lattice scale. This is
+- No events at any screened Ω [A4; was "any Ω ≥ 1"] → the barrier is too high for intrinsic noise at this lattice scale. This is
   an exposure-limited bound, not impossibility.
 - Detections that are mostly excursions (C2a fail) → noise drives transient structures that don't cross
   the separatrix.

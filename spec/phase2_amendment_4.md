@@ -1,6 +1,6 @@
-# Phase 2 Protocol v1.3.3 — Amendment 4 (PROPOSED, MG005a): corrections before MG3
+# Phase 2 Protocol v1.3.3 — Amendment 4 (MG005a): corrections before MG3
 
-Status: **PROPOSED, revised after ChatGPT review** (`review/MG005_amendment4_chatgpt.md`: approve with two wording
+Status: **APPROVED 2026-10-28** by the PI (Richard Benear); applied as **protocol v1.3.4**. Was: **PROPOSED, revised after ChatGPT review** (`review/MG005_amendment4_chatgpt.md`: approve with two wording
 qualifications, incorporated and marked [r]). Awaiting PI approval. If approved it is applied as **protocol v1.3.4**.
 Origin: the MG005 review of the MG2 result (`review/MG005_chatgpt.md`, findings P1 tracking, P1 audit, and the MG3
 stopping-rule cleanup). No MG3 gate run has been made. Nothing here re-scores MG2, whose registered FAIL stands.

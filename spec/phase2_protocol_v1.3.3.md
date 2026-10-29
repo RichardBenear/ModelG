@@ -1,6 +1,6 @@
 # Phase 2 Protocol v1.3.3: Stochastic Token Rules on a Fixed Lattice (MG004g)
 
-Status: **FROZEN 2026-10-28 (MG004g)**. This is v1.3.2 with **Amendment 3** applied
+Status: **SUPERSEDED 2026-10-28 by v1.3.4** (Amendment 4). Was: **FROZEN 2026-10-28 (MG004g)**. This is v1.3.2 with **Amendment 3** applied
 (`spec/phase2_amendment_3.md`), approved by the PI after ChatGPT review. Earlier versions and all their
 records are preserved. Changes are marked **[A3-amend]**.
 
