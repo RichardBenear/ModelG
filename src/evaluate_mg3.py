@@ -95,6 +95,7 @@ for Om in sel:
     else:
         lam = float("nan")
     c_ok = np.isfinite(lam) and abs(lam / lam_det - 1) <= 0.05
+    c_dec = "PASS" if c_ok else ("FAIL" if np.isfinite(lam) else "INCONCLUSIVE (no eligible nucleated profile)")
     # (b)
     if len(nuc) >= 8 and len(refel) >= 8:
         A = np.array([r["profile"]["blocks"][:, 1, :].mean(0) for r in nuc])
@@ -108,20 +109,22 @@ for Om in sel:
             mb = M_.mean(0); _, _, Vt = np.linalg.svd(M_ - mb, full_matrices=False)
             for v in Vt[:2]:
                 audit_projs.append((M_ - mb) @ v)
-        cell_ok = a_ok and b_dec == "PASS" and c_ok
+        parts = ["PASS" if a_ok else "FAIL", b_dec, c_dec]
         replaced = False
     else:
         b_dec, b_txt, replaced = "replaced", f"replaced by (a)+(c): eligible nucleated {len(nuc)}, eligible reference {len(refel)} (need ≥ 8 each)", True
-        cell_ok = a_ok and c_ok
-    c2_all.append(cell_ok)
+        parts = ["PASS" if a_ok else "FAIL", c_dec]
+    cell_dec = "FAIL" if any(p_ == "FAIL" for p_ in parts) else ("PASS" if all(p_ == "PASS" for p_ in parts) else "INCONCLUSIVE")
+    c2_all.append(cell_dec)
     P(f"- Ω = {Om:g}: (a) persistent {outs.get('persistent', 0)} / classified {tot} = {frac:.3f} (≥ 0.8) → {'PASS' if a_ok else 'FAIL'}; "
       f"outcomes {outs}")
     P(f"  - (b) {b_txt}")
-    P(f"  - (c) λ_core = {lam:.4f} vs deterministic {lam_det:.4f} ({100*(lam/lam_det-1) if np.isfinite(lam) else float('nan'):+.2f}%, ≤ 5%) → {'PASS' if c_ok else 'FAIL'}"
+    P(f"  - (c) λ_core = {lam:.4f} vs deterministic {lam_det:.4f} ({100*(lam/lam_det-1) if np.isfinite(lam) else float('nan'):+.2f}%, ≤ 5%) → {c_dec}"
       f" ({len(nuc)} eligible nucleated runs of {sum(r['first'] is not None for r in rr)} with a first event)")
     P(f"  - survival to t_e + 50 (profile-eligible runs / runs with a first event): {len(nuc)}/{sum(r['first'] is not None for r in rr)}")
-    RES.setdefault("C2_cells", {})[str(Om)] = dict(a=frac, a_ok=a_ok, b=b_dec, lam=lam, c_ok=bool(c_ok), n_nuc=len(nuc), n_ref=len(refel))
-c2 = "PASS" if c2_all and all(c2_all) else "FAIL"
+    P(f"  - **cell: {cell_dec}**")
+    RES.setdefault("C2_cells", {})[str(Om)] = dict(a=frac, a_ok=a_ok, b=b_dec, lam=lam, c=c_dec, cell=cell_dec, n_nuc=len(nuc), n_ref=len(refel))
+c2 = "FAIL" if "FAIL" in c2_all else ("PASS" if c2_all and all(d == "PASS" for d in c2_all) else "INCONCLUSIVE")
 P(f"\n- **C2: {c2}**\n"); RES["C2"] = c2
 
 # ---------------------------------------------------------------- C3
