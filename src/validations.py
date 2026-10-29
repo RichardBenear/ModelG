@@ -450,5 +450,5 @@ def v7(pool):
 
 if __name__ == "__main__":
     which = sys.argv[1]
-    with Pool(2) as pool:
+    with Pool(int(os.environ.get("MODELG_WORKERS", "2"))) as pool:
         dict(v3=v3, v1=v1, v2=v2, v4=v4, v6=v6, v2b=v2b, v4b=v4b, v7=v7)[which](pool)

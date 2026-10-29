@@ -184,7 +184,7 @@ def p5(pool):
 
 if __name__ == "__main__":
     phases = sys.argv[1:] or ["p1", "p3", "p4", "p5", "p6"]
-    with Pool(2) as pool:
+    with Pool(int(os.environ.get("MODELG_WORKERS", "2"))) as pool:
         for ph in phases:
             log(f"=== phase {ph} start {time.strftime('%Y-%m-%d %H:%M:%S')}")
             dict(p1=p1_p2, p3=p3, p4=p4, p5=p5, p6=p6)[ph](pool)

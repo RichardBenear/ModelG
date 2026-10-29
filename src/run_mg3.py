@@ -255,7 +255,7 @@ def main():
     log(f"=== MG3 driver start {time.strftime('%Y-%m-%d %H:%M:%S')}; budget used {used()/3600:.2f} h")
     for b in (29.16, 29.3):
         reference(b, 0.2)                 # computed once in the main process (shared cache file)
-    with Pool(2) as pool:
+    with Pool(int(os.environ.get("MODELG_WORKERS", "2"))) as pool:
         screened, mids = stage_a(pool)
         sel, note = mg3.select_stage_b(screened)
         json.dump(dict(screened=screened, midpoints=mids, selected=sel, note=note), open(f"{OUT}/plan.json", "w"), indent=1)

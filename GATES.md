@@ -269,7 +269,7 @@ Adaptive design (fully specified):
 
 **Pre-run implementation specification (2026-10-28; recorded before any MG3 run; Claude's choices for details the
 registration left open, plus two PI decisions; flagged for ChatGPT review).** Code: `src/mg3.py`, `src/run_mg3.py`;
-tests `tests/test_mg3.py` (15 pass), `tests/test_track.py`.
+tests `tests/test_mg3.py` (15 pass [corrected MG006a: 14 test functions, all pass]), `tests/test_track.py` (8).
 - **Budget (PI decision):** 18 core-hours (was 10). From MG2's measured cost (~1.07 core-s per time unit per run plus
   ~7 s per confirmation), the registered design needs about 23 core-hours with full-length runs.
 - **Early stop (PI decision):** each run stops at the first 10-unit segment boundary at least 50 time units after its first
@@ -365,11 +365,36 @@ Qualifications from that review, adopted:
 - The CIs (Garwood, conditional binomial) are applied to stopped, left-truncated first-passage data. Their exactness in this
   design has not been justified; no undercoverage has been shown either.
 - The Stage-A 4/4 trigger had at most 0.385⁴ ≈ 2.2% probability per cell under the exponential model.
-- The budget overrun (19.03 against 18 core-hours) stands as recorded.
+- The budget overrun (19.03 against 18 core-hours) stands as recorded. **Budget exception, recorded explicitly:** the pre-run
+  text raised the cap to 18 h but did not replace the registered hard-stop wording with the driver's cell-start check
+  (which was in the code before any data). Under a literal hard-cap reading MG3 would be INCONCLUSIVE, with the observed
+  C2 failure retained. Following the reviewer's recommendation, the registered verdict is kept as FAIL with this overrun
+  documented as an exception. Ledger: `results/MG3/budget_ledger.txt` (18.958 h of completed work + 0.075 h in the excluded
+  Ω = 80 checkpoints, now committed in `results/MG3/excluded_A_80_checkpoints/`).
+
+Further wording corrections from the full review (`review/MG006_replication/README.md`):
+- 18 of 54 sampled field outcomes (33%) are excursions: a minority, not "mostly". Preferred wording: some fields sampled
+  after persistent detections relax to homogeneous under noise-free continuation; others keep particle-depth structures.
+  An operational excursion is a finite-horizon result, not proof that the earlier noisy trajectory never crossed a
+  basin boundary.
+- Field-level confirmation does not attribute the persistent structure to the candidate detection. B_100 replicates 13
+  and 14 have `near = False`. This is allowed by the protocol and is not grounds for rejection, but it limits per-track
+  wording.
+- The profile-eligible fractions (1/5, 3/15, 0/16) combine isolation, tracking and coverage. They are **profile
+  eligibility, not survival probabilities**.
+- C3: "PASS under the specified normal approximation; consistent with activated scaling over Ω = 100–150". It does not
+  establish a large-deviation mechanism. At Ω = 150 the early rate is about 6.7 times the late rate (4 vs 1 events);
+  not rejecting at 0.01 is weak evidence. The τ/2 cell's p = 0.060 (4 early, 10 late) is not a convincing validation either.
+- Garwood and conditional-binomial "exactness" does not transfer automatically to stopped first-passage data. In a
+  one-subject example Garwood covers about 97% (conservative); MG3 undercoverage has not been shown.
+- C4's factor 58.9 is an imprecise, model-dependent contrast resting on 3 survivors (waits 5, 4, 2), not a
+  well-measured physical factor.
+- Stage A: the 4/4 trigger is poorly powered (≤ 2.2% per cell under a constant hazard from t = 0), not literally
+  unreachable.
 
 Interpretation (Claude; for review). Spontaneous nucleation from intrinsic noise is **observed and confirmed** (C1).
 Its rate is consistent with an activated law ln k ≈ c − S·Ω over Ω = 100–150 (C3). It rises toward the window interior
-(C4). It is insensitive to halving τ (V5). The FAIL is C2(a): about 30% of persistent detections (tracks lasting ≥ 20
+(C4). V5 passed its registered post-burn-in comparison; startup sensitivity to τ is unresolved [wording corrected per MG006 review]. The FAIL is C2(a): about 30% of persistent detections (tracks lasting ≥ 20
 time units) relax to the homogeneous state when the field at detection + 20 is continued without noise. That fits the
 pre-stated reading that noise also drives transient structures that do not cross the separatrix. The 80% threshold was
 set before any such data existed. C2(b) could not be tested: at b = 29 and these Ω, seeded solitons do not survive
