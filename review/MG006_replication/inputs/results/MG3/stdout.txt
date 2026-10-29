@@ -1,0 +1,283 @@
+=== MG3 driver start 2026-10-28 21:09:52; budget used 0.00 h
+  [A_300 rep 0] t_end 500, births 0, first none (censored), wall 524s
+  [A_300 rep 1] t_end 500, births 0, first none (censored), wall 524s
+  [A_300 rep 3] t_end 500, births 0, first none (censored), wall 520s
+  [A_300 rep 2] t_end 500, births 0, first none (censored), wall 524s
+[A] A_300: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 0.58 h
+  [A_250 rep 1] t_end 500, births 0, first none (censored), wall 529s
+  [A_250 rep 0] t_end 500, births 0, first none (censored), wall 531s
+  [A_250 rep 2] t_end 500, births 0, first none (censored), wall 535s
+  [A_250 rep 3] t_end 500, births 0, first none (censored), wall 536s
+[A] A_250: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 1.17 h
+  [A_200 rep 1] t_end 500, births 0, first none (censored), wall 538s
+  [A_200 rep 0] t_end 500, births 0, first none (censored), wall 540s
+  [A_200 rep 2] t_end 500, births 0, first none (censored), wall 541s
+  [A_200 rep 3] t_end 500, births 0, first none (censored), wall 542s
+[A] A_200: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 1.77 h
+  [A_150 rep 0] t_end 500, births 0, first none (censored), wall 548s
+  [A_150 rep 1] t_end 500, births 0, first none (censored), wall 550s
+  [A_150 rep 2] t_end 500, births 0, first none (censored), wall 548s
+  [A_150 rep 3] t_end 500, births 0, first none (censored), wall 552s
+[A] A_150: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 2.38 h
+  [A_120 rep 0] t_end 80, births 1, first 27.5 (startup), wall 96s
+  [A_120 rep 2] t_end 60, births 1, first 8.0 (startup), wall 72s
+  [A_120 rep 3] t_end 90, births 1, first 35.5 (startup), wall 107s
+  [A_120 rep 1] t_end 380, births 1, first 330.0 (event), wall 447s
+[A] A_120: 0/4 with a confirmed event in [50,150]; post-burn-in events 1, startup 3; mean dets/snapshot t<50 0.87; budget used 2.58 h
+  [A_100 rep 0] t_end 130, births 2, first 78.5 (event), wall 185s
+  [A_100 rep 2] t_end 160, births 1, first 102.5 (event), wall 218s
+  [A_100 rep 1] t_end 270, births 1, first 219.5 (event), wall 367s
+  [A_100 rep 3] t_end 230, births 1, first 177.0 (event), wall 307s
+[A] A_100: 2/4 with a confirmed event in [50,150]; post-burn-in events 4, startup 0; mean dets/snapshot t<50 0.26; budget used 2.88 h
+[A] A_80: EXCLUDED by crowding (mean detections/snapshot in t<50 = 2.26 > 2); descent stops
+[select] Stage-B cells [150, 120, 100] (selected)
+  [B_150 rep 1] t_end 500, births 0, first none (censored), wall 556s
+  [B_150 rep 0] t_end 500, births 0, first none (censored), wall 558s
+  [B_150 rep 2] t_end 500, births 0, first none (censored), wall 551s
+  [B_150 rep 3] t_end 500, births 0, first none (censored), wall 554s
+=== MG3 driver start 2026-10-28 23:09:57; budget used 3.82 h
+[A] A_300: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 3.82 h
+[A] A_250: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 3.82 h
+[A] A_200: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 3.82 h
+[A] A_150: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 3.82 h
+[A] A_120: 0/4 with a confirmed event in [50,150]; post-burn-in events 1, startup 3; mean dets/snapshot t<50 0.87; budget used 3.82 h
+[A] A_100: 2/4 with a confirmed event in [50,150]; post-burn-in events 4, startup 0; mean dets/snapshot t<50 0.26; budget used 3.82 h
+[A] A_80: EXCLUDED by crowding (mean detections/snapshot in t<50 = 2.26 > 2); descent stops
+[select] Stage-B cells [150, 120, 100] (selected)
+  [B_150 rep 1] t_end 500, births 0, first none (censored), wall 556s
+  [B_150 rep 0] t_end 500, births 0, first none (censored), wall 558s
+  [B_150 rep 2] t_end 500, births 0, first none (censored), wall 551s
+  [B_150 rep 3] t_end 500, births 0, first none (censored), wall 554s
+  [B_150 rep 4] t_end 500, births 0, first none (censored), wall 551s
+  [B_150 rep 5] t_end 500, births 0, first none (censored), wall 556s
+  [B_150 rep 6] t_end 170, births 1, first 113.0 (event), wall 187s
+  [B_150 rep 7] t_end 240, births 1, first 187.0 (event), wall 264s
+  [B_150 rep 8] t_end 500, births 0, first none (censored), wall 543s
+  [B_150 rep 9] t_end 500, births 0, first none (censored), wall 546s
+  [B_150 rep 10] t_end 500, births 0, first none (censored), wall 544s
+  [B_150 rep 11] t_end 500, births 0, first none (censored), wall 545s
+  [B_150 rep 13] t_end 420, births 1, first 365.5 (event), wall 474s
+  [B_150 rep 12] t_end 500, births 0, first none (censored), wall 560s
+  [B_150 rep 14] t_end 500, births 0, first none (censored), wall 563s
+  [B_150 rep 15] t_end 500, births 0, first none (censored), wall 564s
+[ext] B_150: 3 events < 5; one extension of 16 runs
+  [B_150 rep 0] t_end 500, births 0, first none (censored), wall 558s
+  [B_150 rep 1] t_end 500, births 0, first none (censored), wall 556s
+  [B_150 rep 2] t_end 500, births 0, first none (censored), wall 551s
+  [B_150 rep 4] t_end 500, births 0, first none (censored), wall 551s
+  [B_150 rep 5] t_end 500, births 0, first none (censored), wall 556s
+  [B_150 rep 3] t_end 500, births 0, first none (censored), wall 554s
+  [B_150 rep 6] t_end 170, births 1, first 113.0 (event), wall 187s
+  [B_150 rep 8] t_end 500, births 0, first none (censored), wall 543s
+  [B_150 rep 9] t_end 500, births 0, first none (censored), wall 546s
+  [B_150 rep 7] t_end 240, births 1, first 187.0 (event), wall 264s
+  [B_150 rep 11] t_end 500, births 0, first none (censored), wall 545s
+  [B_150 rep 12] t_end 500, births 0, first none (censored), wall 560s
+  [B_150 rep 13] t_end 420, births 1, first 365.5 (event), wall 474s
+  [B_150 rep 10] t_end 500, births 0, first none (censored), wall 544s
+  [B_150 rep 14] t_end 500, births 0, first none (censored), wall 563s
+  [B_150 rep 15] t_end 500, births 0, first none (censored), wall 564s
+  [B_150 rep 16] t_end 230, births 1, first 176.5 (event), wall 263s
+  [B_150 rep 17] t_end 500, births 0, first none (censored), wall 559s
+  [B_150 rep 18] t_end 500, births 0, first none (censored), wall 563s
+  [B_150 rep 19] t_end 500, births 0, first none (censored), wall 575s
+  [B_150 rep 20] t_end 500, births 0, first none (censored), wall 582s
+  [B_150 rep 21] t_end 500, births 0, first none (censored), wall 585s
+  [B_150 rep 22] t_end 500, births 0, first none (censored), wall 589s
+  [B_150 rep 24] t_end 190, births 1, first 131.5 (event), wall 231s
+  [B_150 rep 23] t_end 500, births 0, first none (censored), wall 583s
+  [B_150 rep 25] t_end 500, births 1, first none (censored), wall 600s
+  [B_150 rep 26] t_end 500, births 0, first none (censored), wall 603s
+  [B_150 rep 27] t_end 500, births 0, first none (censored), wall 600s
+  [B_150 rep 28] t_end 500, births 0, first none (censored), wall 593s
+  [B_150 rep 29] t_end 500, births 0, first none (censored), wall 606s
+  [B_150 rep 30] t_end 500, births 1, first none (censored), wall 624s
+  [B_150 rep 31] t_end 500, births 0, first none (censored), wall 617s
+[cell] B_150: 32 runs, events 5, startup 0, exposure 12334, k = 4.054e-06 [1.316e-06, 9.461e-06], stationary p = 0.0683059721424948; budget used 7.65 h
+=== MG3 driver start 2026-10-29 01:10:00; budget used 7.65 h
+[A] A_300: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 7.65 h
+[A] A_250: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 7.65 h
+[A] A_200: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 7.65 h
+[A] A_150: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 7.65 h
+[A] A_120: 0/4 with a confirmed event in [50,150]; post-burn-in events 1, startup 3; mean dets/snapshot t<50 0.87; budget used 7.65 h
+[A] A_100: 2/4 with a confirmed event in [50,150]; post-burn-in events 4, startup 0; mean dets/snapshot t<50 0.26; budget used 7.65 h
+[A] A_80: EXCLUDED by crowding (mean detections/snapshot in t<50 = 2.26 > 2); descent stops
+[select] Stage-B cells [150, 120, 100] (selected)
+[cell] B_150: 32 runs, events 5, startup 0, exposure 12334, k = 4.054e-06 [1.316e-06, 9.461e-06], stationary p = 0.0683059721424948; budget used 7.65 h
+  [B_120 rep 0] t_end 390, births 1, first 338.5 (event), wall 511s
+  [B_120 rep 1] t_end 400, births 1, first 344.0 (event), wall 532s
+  [B_120 rep 2] t_end 100, births 1, first 45.0 (startup), wall 135s
+  [B_120 rep 3] t_end 90, births 1, first 39.5 (startup), wall 124s
+  [B_120 rep 5] t_end 300, births 1, first 241.5 (event), wall 408s
+  [B_120 rep 4] t_end 390, births 1, first 334.5 (event), wall 512s
+  [B_120 rep 7] t_end 130, births 1, first 75.5 (event), wall 169s
+  [B_120 rep 8] t_end 70, births 1, first 11.5 (startup), wall 90s
+  [B_120 rep 6] t_end 500, births 2, first none (censored), wall 651s
+  [B_120 rep 9] t_end 250, births 1, first 198.5 (event), wall 323s
+  [B_120 rep 10] t_end 90, births 1, first 39.0 (startup), wall 115s
+  [B_120 rep 11] t_end 150, births 1, first 90.5 (event), wall 190s
+  [B_120 rep 13] t_end 190, births 3, first 139.5 (event), wall 264s
+  [B_120 rep 12] t_end 340, births 1, first 280.5 (event), wall 439s
+  [B_120 rep 15] t_end 70, births 1, first 11.0 (startup), wall 94s
+  [B_120 rep 14] t_end 240, births 3, first 185.5 (event), wall 330s
+[cell] B_120: 16 runs, events 10, startup 5, exposure 2158, k = 4.633e-05 [2.222e-05, 8.520e-05], stationary p = 0.5190726862793336; budget used 9.01 h
+  [B_100 rep 1] t_end 90, births 1, first 34.0 (startup), wall 136s
+  [B_100 rep 0] t_end 190, births 1, first 139.0 (event), wall 283s
+  [B_100 rep 2] t_end 150, births 2, first 96.0 (event), wall 229s
+  [B_100 rep 3] t_end 150, births 2, first 92.0 (event), wall 230s
+  [B_100 rep 4] t_end 140, births 1, first 88.0 (event), wall 207s
+  [B_100 rep 6] t_end 60, births 1, first 7.0 (startup), wall 89s
+  [B_100 rep 5] t_end 170, births 2, first 114.5 (event), wall 257s
+  [B_100 rep 8] t_end 70, births 1, first 12.0 (startup), wall 106s
+  [B_100 rep 7] t_end 160, births 2, first 106.5 (event), wall 239s
+  [B_100 rep 10] t_end 80, births 1, first 26.0 (startup), wall 116s
+  [B_100 rep 9] t_end 100, births 1, first 48.0 (startup), wall 146s
+  [B_100 rep 11] t_end 140, births 1, first 83.5 (event), wall 210s
+  [B_100 rep 12] t_end 200, births 3, first 148.0 (event), wall 314s
+  [B_100 rep 13] t_end 100, births 3, first 50.0 (event), wall 160s
+  [B_100 rep 14] t_end 200, births 2, first 144.5 (event), wall 300s
+  [B_100 rep 15] t_end 240, births 2, first 182.5 (event), wall 353s
+[cell] B_100: 16 runs, events 11, startup 5, exposure 694, k = 1.584e-04 [7.907e-05, 2.834e-04], stationary p = 1.0; budget used 9.95 h
+  [V5_120 rep 1] t_end 140, births 1, first 81.0 (event), wall 338s
+  [V5_120 rep 2] t_end 120, births 1, first 68.0 (event), wall 304s
+  [V5_120 rep 0] t_end 340, births 1, first 287.5 (event), wall 842s
+  [V5_120 rep 4] t_end 140, births 1, first 81.5 (event), wall 371s
+  [V5_120 rep 3] t_end 280, births 1, first 226.0 (event), wall 715s
+  [V5_120 rep 6] t_end 300, births 1, first 245.5 (event), wall 727s
+  [V5_120 rep 5] t_end 460, births 1, first 409.5 (event), wall 1148s
+  [V5_120 rep 7] t_end 270, births 1, first 216.5 (event), wall 670s
+=== MG3 driver start 2026-10-29 03:10:04; budget used 11.50 h
+[A] A_300: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 11.50 h
+[A] A_250: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 11.50 h
+[A] A_200: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 11.50 h
+[A] A_150: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 11.50 h
+[A] A_120: 0/4 with a confirmed event in [50,150]; post-burn-in events 1, startup 3; mean dets/snapshot t<50 0.87; budget used 11.50 h
+[A] A_100: 2/4 with a confirmed event in [50,150]; post-burn-in events 4, startup 0; mean dets/snapshot t<50 0.26; budget used 11.50 h
+[A] A_80: EXCLUDED by crowding (mean detections/snapshot in t<50 = 2.26 > 2); descent stops
+[select] Stage-B cells [150, 120, 100] (selected)
+[cell] B_150: 32 runs, events 5, startup 0, exposure 12334, k = 4.054e-06 [1.316e-06, 9.461e-06], stationary p = 0.0683059721424948; budget used 11.50 h
+[cell] B_120: 16 runs, events 10, startup 5, exposure 2158, k = 4.633e-05 [2.222e-05, 8.520e-05], stationary p = 0.5190726862793336; budget used 11.50 h
+[cell] B_100: 16 runs, events 11, startup 5, exposure 694, k = 1.584e-04 [7.907e-05, 2.834e-04], stationary p = 1.0; budget used 11.50 h
+  [V5_120 rep 0] t_end 340, births 1, first 287.5 (event), wall 842s
+  [V5_120 rep 1] t_end 140, births 1, first 81.0 (event), wall 338s
+  [V5_120 rep 2] t_end 120, births 1, first 68.0 (event), wall 304s
+  [V5_120 rep 4] t_end 140, births 1, first 81.5 (event), wall 371s
+  [V5_120 rep 3] t_end 280, births 1, first 226.0 (event), wall 715s
+  [V5_120 rep 5] t_end 460, births 1, first 409.5 (event), wall 1148s
+  [V5_120 rep 6] t_end 300, births 1, first 245.5 (event), wall 727s
+  [V5_120 rep 7] t_end 270, births 1, first 216.5 (event), wall 670s
+  [V5_120 rep 8] t_end 500, births 3, first none (censored), wall 1240s
+  [V5_120 rep 9] t_end 370, births 1, first 318.5 (event), wall 903s
+  [V5_120 rep 10] t_end 390, births 2, first 340.0 (event), wall 942s
+  [V5_120 rep 11] t_end 500, births 1, first 475.0 (event), wall 1190s
+  [V5_120 rep 13] t_end 100, births 1, first 50.0 (event), wall 235s
+  [V5_120 rep 12] t_end 300, births 1, first 250.0 (event), wall 705s
+  [V5_120 rep 15] t_end 270, births 1, first 214.5 (event), wall 643s
+  [V5_120 rep 14] t_end 500, births 1, first none (censored), wall 1204s
+[V5] Omega=120: k(tau/2)/k(tau) = 0.883 [0.365, 2.221] (events 14 vs 10) -> PASS
+[pilot] b=29.16 Omega=120: tau=6.6667e-04 (rows [(0.0006666666666666668, 0, 0.0)])
+  [C4_b29.16_120 rep 1] t_end 70, births 1, first 20.0 (startup), wall 91s
+  [C4_b29.16_120 rep 0] t_end 90, births 1, first 38.5 (startup), wall 121s
+  [C4_b29.16_120 rep 2] t_end 90, births 1, first 37.0 (startup), wall 122s
+  [C4_b29.16_120 rep 3] t_end 80, births 1, first 28.5 (startup), wall 109s
+  [C4_b29.16_120 rep 4] t_end 80, births 1, first 27.0 (startup), wall 108s
+  [C4_b29.16_120 rep 6] t_end 150, births 1, first 98.0 (event), wall 186s
+  [C4_b29.16_120 rep 5] t_end 260, births 2, first 209.5 (event), wall 339s
+  [C4_b29.16_120 rep 8] t_end 60, births 1, first 5.5 (startup), wall 77s
+  [C4_b29.16_120 rep 7] t_end 150, births 1, first 98.0 (event), wall 193s
+  [C4_b29.16_120 rep 9] t_end 130, births 1, first 78.5 (event), wall 168s
+  [C4_b29.16_120 rep 10] t_end 150, births 1, first 94.5 (event), wall 187s
+  [C4_b29.16_120 rep 12] t_end 90, births 1, first 39.0 (startup), wall 111s
+  [C4_b29.16_120 rep 11] t_end 170, births 2, first 116.0 (event), wall 214s
+  [C4_b29.16_120 rep 13] t_end 90, births 1, first 39.0 (startup), wall 111s
+  [C4_b29.16_120 rep 14] t_end 70, births 1, first 15.0 (startup), wall 89s
+  [C4_b29.16_120 rep 15] t_end 90, births 1, first 31.0 (startup), wall 110s
+[cell] C4_b29.16_120: 16 runs, events 6, startup 10, exposure 394, k = 1.521e-04 [5.581e-05, 3.310e-04], stationary p = 0.1360624872407725; budget used 13.98 h
+[pilot] b=29.3 Omega=120: tau=6.6667e-04 (rows [(0.0006666666666666668, 0, 0.0)])
+  [C4_b29.3_120 rep 0] t_end 70, births 1, first 20.0 (startup), wall 91s
+  [C4_b29.3_120 rep 1] t_end 110, births 1, first 55.0 (event), wall 140s
+  [C4_b29.3_120 rep 2] t_end 60, births 1, first 7.0 (startup), wall 78s
+  [C4_b29.3_120 rep 3] t_end 80, births 1, first 24.0 (startup), wall 101s
+  [C4_b29.3_120 rep 4] t_end 60, births 1, first 9.5 (startup), wall 77s
+  [C4_b29.3_120 rep 5] t_end 70, births 1, first 15.0 (startup), wall 89s
+  [C4_b29.3_120 rep 6] t_end 70, births 1, first 12.5 (startup), wall 89s
+  [C4_b29.3_120 rep 7] t_end 60, births 1, first 4.0 (startup), wall 78s
+  [C4_b29.3_120 rep 8] t_end 70, births 1, first 16.5 (startup), wall 91s
+  [C4_b29.3_120 rep 9] t_end 110, births 1, first 52.0 (event), wall 135s
+  [C4_b29.3_120 rep 10] t_end 100, births 1, first 41.5 (startup), wall 124s
+  [C4_b29.3_120 rep 11] t_end 70, births 1, first 14.0 (startup), wall 85s
+  [C4_b29.3_120 rep 12] t_end 70, births 1, first 10.5 (startup), wall 86s
+  [C4_b29.3_120 rep 14] t_end 60, births 1, first 6.5 (startup), wall 77s
+  [C4_b29.3_120 rep 13] t_end 70, births 1, first 20.0 (startup), wall 89s
+  [C4_b29.3_120 rep 15] t_end 70, births 1, first 10.5 (startup), wall 91s
+[ext] C4_b29.3_120: 2 events < 5; one extension of 16 runs
+  [C4_b29.3_120 rep 0] t_end 70, births 1, first 20.0 (startup), wall 91s
+  [C4_b29.3_120 rep 1] t_end 110, births 1, first 55.0 (event), wall 140s
+  [C4_b29.3_120 rep 2] t_end 60, births 1, first 7.0 (startup), wall 78s
+  [C4_b29.3_120 rep 3] t_end 80, births 1, first 24.0 (startup), wall 101s
+  [C4_b29.3_120 rep 5] t_end 70, births 1, first 15.0 (startup), wall 89s
+  [C4_b29.3_120 rep 4] t_end 60, births 1, first 9.5 (startup), wall 77s
+  [C4_b29.3_120 rep 6] t_end 70, births 1, first 12.5 (startup), wall 89s
+  [C4_b29.3_120 rep 7] t_end 60, births 1, first 4.0 (startup), wall 78s
+  [C4_b29.3_120 rep 9] t_end 110, births 1, first 52.0 (event), wall 135s
+  [C4_b29.3_120 rep 8] t_end 70, births 1, first 16.5 (startup), wall 91s
+  [C4_b29.3_120 rep 11] t_end 70, births 1, first 14.0 (startup), wall 85s
+  [C4_b29.3_120 rep 12] t_end 70, births 1, first 10.5 (startup), wall 86s
+  [C4_b29.3_120 rep 13] t_end 70, births 1, first 20.0 (startup), wall 89s
+  [C4_b29.3_120 rep 10] t_end 100, births 1, first 41.5 (startup), wall 124s
+  [C4_b29.3_120 rep 15] t_end 70, births 1, first 10.5 (startup), wall 91s
+  [C4_b29.3_120 rep 14] t_end 60, births 1, first 6.5 (startup), wall 77s
+  [C4_b29.3_120 rep 17] t_end 60, births 1, first 8.5 (startup), wall 76s
+  [C4_b29.3_120 rep 16] t_end 80, births 1, first 26.0 (startup), wall 101s
+  [C4_b29.3_120 rep 18] t_end 60, births 1, first 8.0 (startup), wall 78s
+  [C4_b29.3_120 rep 19] t_end 110, births 1, first 54.0 (event), wall 146s
+  [C4_b29.3_120 rep 20] t_end 90, births 1, first 36.0 (startup), wall 121s
+  [C4_b29.3_120 rep 21] t_end 60, births 1, first 8.5 (startup), wall 79s
+  [C4_b29.3_120 rep 22] t_end 100, births 2, first 48.5 (startup), wall 135s
+  [C4_b29.3_120 rep 23] t_end 70, births 1, first 12.0 (startup), wall 91s
+  [C4_b29.3_120 rep 25] t_end 70, births 1, first 19.0 (startup), wall 96s
+  [C4_b29.3_120 rep 24] t_end 80, births 1, first 22.0 (startup), wall 108s
+  [C4_b29.3_120 rep 27] t_end 60, births 1, first 8.5 (startup), wall 78s
+  [C4_b29.3_120 rep 26] t_end 90, births 1, first 35.0 (startup), wall 117s
+  [C4_b29.3_120 rep 28] t_end 70, births 1, first 14.5 (startup), wall 92s
+  [C4_b29.3_120 rep 29] t_end 60, births 1, first 8.5 (startup), wall 79s
+  [C4_b29.3_120 rep 30] t_end 100, births 2, first 45.5 (startup), wall 138s
+  [C4_b29.3_120 rep 31] t_end 90, births 1, first 32.0 (startup), wall 117s
+[cell] C4_b29.3_120: 32 runs, events 3, startup 29, exposure 11, k = 2.727e-03 [5.624e-04, 7.970e-03], stationary p = 1.0; budget used 14.87 h
+[ref] R_150: 1 eligible of 8 soliton-start runs (C2(b) needs >= 8)
+=== MG3 driver start 2026-10-29 05:10:08; budget used 15.14 h
+[A] A_300: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 15.14 h
+[A] A_250: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 15.14 h
+[A] A_200: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 15.14 h
+[A] A_150: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 15.14 h
+[A] A_120: 0/4 with a confirmed event in [50,150]; post-burn-in events 1, startup 3; mean dets/snapshot t<50 0.87; budget used 15.14 h
+[A] A_100: 2/4 with a confirmed event in [50,150]; post-burn-in events 4, startup 0; mean dets/snapshot t<50 0.26; budget used 15.14 h
+[A] A_80: EXCLUDED by crowding (mean detections/snapshot in t<50 = 2.26 > 2); descent stops
+[select] Stage-B cells [150, 120, 100] (selected)
+[cell] B_150: 32 runs, events 5, startup 0, exposure 12334, k = 4.054e-06 [1.316e-06, 9.461e-06], stationary p = 0.0683059721424948; budget used 15.14 h
+[cell] B_120: 16 runs, events 10, startup 5, exposure 2158, k = 4.633e-05 [2.222e-05, 8.520e-05], stationary p = 0.5190726862793336; budget used 15.14 h
+[cell] B_100: 16 runs, events 11, startup 5, exposure 694, k = 1.584e-04 [7.907e-05, 2.834e-04], stationary p = 1.0; budget used 15.14 h
+[V5] Omega=120: k(tau/2)/k(tau) = 0.883 [0.365, 2.221] (events 14 vs 10) -> PASS
+[cell] C4_b29.16_120: 16 runs, events 6, startup 10, exposure 394, k = 1.521e-04 [5.581e-05, 3.310e-04], stationary p = 0.1360624872407725; budget used 15.14 h
+[cell] C4_b29.3_120: 32 runs, events 3, startup 29, exposure 11, k = 2.727e-03 [5.624e-04, 7.970e-03], stationary p = 1.0; budget used 15.14 h
+[ref] R_120: 0 eligible of 8 soliton-start runs (C2(b) needs >= 8)
+[ref] R_100: 0 eligible of 8 soliton-start runs (C2(b) needs >= 8)
+[pilot] b=28.5 Omega=100: tau=6.6667e-04 (rows [(0.0006666666666666668, 0, 0.0)])
+  [N1_b28.5_100 rep 0] t_end 500, births 0, first none (censored), wall 812s
+  [N1_b28.5_100 rep 1] t_end 500, births 0, first none (censored), wall 813s
+  [N1_b28.5_100 rep 2] t_end 500, births 0, first none (censored), wall 717s
+  [N1_b28.5_100 rep 3] t_end 500, births 0, first none (censored), wall 718s
+  [N1_b28.5_100 rep 4] t_end 500, births 0, first none (censored), wall 725s
+  [N1_b28.5_100 rep 5] t_end 500, births 0, first none (censored), wall 732s
+  [N1_b28.5_100 rep 6] t_end 500, births 0, first none (censored), wall 732s
+  [N1_b28.5_100 rep 7] t_end 500, births 0, first none (censored), wall 727s
+  [N1_b28.5_100 rep 8] t_end 500, births 0, first none (censored), wall 715s
+  [N1_b28.5_100 rep 9] t_end 500, births 0, first none (censored), wall 715s
+  [N1_b28.5_100 rep 11] t_end 500, births 0, first none (censored), wall 730s
+  [N1_b28.5_100 rep 10] t_end 500, births 0, first none (censored), wall 734s
+  [N1_b28.5_100 rep 12] t_end 500, births 0, first none (censored), wall 731s
+  [N1_b28.5_100 rep 13] t_end 500, births 0, first none (censored), wall 729s
+  [N1_b28.5_100 rep 15] t_end 500, births 0, first none (censored), wall 723s
+  [N1_b28.5_100 rep 14] t_end 500, births 0, first none (censored), wall 727s
+[cell] N1_b28.5_100: done; budget used 19.03 h
+=== MG3 driver complete 2026-10-29 07:07:15 (session wall 7027s); budget used 19.03 h

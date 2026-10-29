@@ -1,0 +1,192 @@
+{
+ "stageA": [
+  {
+   "Om": 300,
+   "count": 0,
+   "excluded": false,
+   "any_event": false,
+   "crowd": 0.0,
+   "n_startup": 0,
+   "n_event": 0
+  },
+  {
+   "Om": 250,
+   "count": 0,
+   "excluded": false,
+   "any_event": false,
+   "crowd": 0.0,
+   "n_startup": 0,
+   "n_event": 0
+  },
+  {
+   "Om": 200,
+   "count": 0,
+   "excluded": false,
+   "any_event": false,
+   "crowd": 0.0,
+   "n_startup": 0,
+   "n_event": 0
+  },
+  {
+   "Om": 150,
+   "count": 0,
+   "excluded": false,
+   "any_event": false,
+   "crowd": 0.0,
+   "n_startup": 0,
+   "n_event": 0
+  },
+  {
+   "Om": 120,
+   "count": 0,
+   "excluded": false,
+   "any_event": true,
+   "crowd": 0.8737373737373737,
+   "n_startup": 3,
+   "n_event": 1
+  },
+  {
+   "Om": 100,
+   "count": 2,
+   "excluded": false,
+   "any_event": true,
+   "crowd": 0.26010101010101006,
+   "n_startup": 0,
+   "n_event": 4
+  },
+  {
+   "Om": 80,
+   "count": 0,
+   "excluded": true,
+   "any_event": false,
+   "crowd": 2.257575757575758
+  }
+ ],
+ "selected": [
+  150,
+  120,
+  100
+ ],
+ "rates": {
+  "150": {
+   "n": 5,
+   "exposure": 12333.5,
+   "k": 4.053999270280131e-06,
+   "k_lo": 1.3163225281699607e-06,
+   "k_hi": 9.460681946992072e-06,
+   "k_upper95_onesided": null,
+   "n_startup": 0,
+   "n_runs": 32,
+   "n_incomplete": 0,
+   "stat_n1": 4,
+   "stat_n2": 1,
+   "stat_E1": 4608.0,
+   "stat_E2": 7725.5,
+   "stat_p": 0.0683059721424948,
+   "stationary_ok": true,
+   "usable": true
+  },
+  "120": {
+   "n": 10,
+   "exposure": 2158.5,
+   "k": 4.63284688441047e-05,
+   "k_lo": 2.221630158041433e-05,
+   "k_hi": 8.519970369246133e-05,
+   "k_upper95_onesided": null,
+   "n_startup": 5,
+   "n_runs": 16,
+   "n_incomplete": 0,
+   "stat_n1": 5,
+   "stat_n2": 5,
+   "stat_E1": 1339.5,
+   "stat_E2": 819.0,
+   "stat_p": 0.5190726862793336,
+   "stationary_ok": true,
+   "usable": true
+  },
+  "100": {
+   "n": 11,
+   "exposure": 694.5,
+   "k": 0.00015838732901367892,
+   "k_lo": 7.906638397749228e-05,
+   "k_hi": 0.0002833986826969324,
+   "k_upper95_onesided": null,
+   "n_startup": 5,
+   "n_runs": 16,
+   "n_incomplete": 0,
+   "stat_n1": 11,
+   "stat_n2": 0,
+   "stat_E1": 694.5,
+   "stat_E2": 0.0,
+   "stat_p": 1.0,
+   "stationary_ok": true,
+   "usable": true
+  }
+ },
+ "C1": "PASS",
+ "C2_cells": {
+  "150": {
+   "a": 0.7142857142857143,
+   "a_ok": false,
+   "b": "replaced",
+   "lam": 2.941351263545363,
+   "c": "PASS",
+   "cell": "FAIL",
+   "n_nuc": 1,
+   "n_ref": 1
+  },
+  "120": {
+   "a": 0.7142857142857143,
+   "a_ok": false,
+   "b": "replaced",
+   "lam": 2.959943507185236,
+   "c": "PASS",
+   "cell": "FAIL",
+   "n_nuc": 3,
+   "n_ref": 0
+  },
+  "100": {
+   "a": 0.6153846153846154,
+   "a_ok": false,
+   "b": "replaced",
+   "lam": NaN,
+   "c": "INCONCLUSIVE (no eligible nucleated profile)",
+   "cell": "FAIL",
+   "n_nuc": 0,
+   "n_ref": 0
+  }
+ },
+ "C2": "FAIL",
+ "C3_fit": {
+  "S": 0.07257480858570739,
+  "slope": -0.07257480858570739,
+  "intercept": -1.4145593912456071,
+  "r2": 0.9926328478828648,
+  "ci": [
+   -0.09357429349476923,
+   -0.051575323676645544
+  ],
+  "ci_t": [
+   -0.1520181029548363,
+   0.006868485783421516
+  ],
+  "m": 3
+ },
+ "C3": "PASS",
+ "V5": "PASS",
+ "C4_ratio": {
+  "ratio": 58.86818181818181,
+  "lo": 10.410639860123766,
+  "hi": 228.62804733907467
+ },
+ "C4": "PASS",
+ "N1": {
+  "confirmed": 0,
+  "outcomes": {}
+ },
+ "N2": {
+  "exact": 0.0,
+  "perturbed": 1.0548006912358687e-11
+ },
+ "verdict": "FAIL"
+}

@@ -1,0 +1,928 @@
+{
+  "N2": {
+    "exact": 0.0,
+    "perturbed": 1.0675904604795505e-11
+  },
+  "stageA": {
+    "max_probability": 0.38490017945975047,
+    "hazard_at_max": 0.010986122886681098,
+    "four_of_four": 0.021947873799725643,
+    "max_chance_one_four_of_four_12_independent_cells": 0.23379669952261128
+  },
+  "shared_stageB": 0,
+  "persistent_near_false": 2,
+  "C4_high_b_waits": [
+    5.0,
+    4.0,
+    2.0
+  ],
+  "garwood_counterexample_coverage": 0.971156,
+  "garwood_counterexample_analytic_coverage": 0.9711957765336947,
+  "birth_history": {
+    "150": [
+      {
+        "rep": 0,
+        "first": null,
+        "births": []
+      },
+      {
+        "rep": 1,
+        "first": null,
+        "births": []
+      },
+      {
+        "rep": 10,
+        "first": null,
+        "births": []
+      },
+      {
+        "rep": 11,
+        "first": null,
+        "births": []
+      },
+      {
+        "rep": 12,
+        "first": null,
+        "births": []
+      },
+      {
+        "rep": 13,
+        "first": 365.5,
+        "births": [
+          {
+            "t_start": 365.5,
+            "track": 10,
+            "pos": -17.009011261950064,
+            "s_conf": 770,
+            "t_conf": 385.5,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 14,
+        "first": null,
+        "births": []
+      },
+      {
+        "rep": 15,
+        "first": null,
+        "births": []
+      },
+      {
+        "rep": 16,
+        "first": 176.5,
+        "births": [
+          {
+            "t_start": 176.5,
+            "track": 0,
+            "pos": 48.423770239095916,
+            "s_conf": 392,
+            "t_conf": 196.5,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 17,
+        "first": null,
+        "births": []
+      },
+      {
+        "rep": 18,
+        "first": null,
+        "births": []
+      },
+      {
+        "rep": 19,
+        "first": null,
+        "births": []
+      },
+      {
+        "rep": 2,
+        "first": null,
+        "births": []
+      },
+      {
+        "rep": 20,
+        "first": null,
+        "births": []
+      },
+      {
+        "rep": 21,
+        "first": null,
+        "births": []
+      },
+      {
+        "rep": 22,
+        "first": null,
+        "births": []
+      },
+      {
+        "rep": 23,
+        "first": null,
+        "births": []
+      },
+      {
+        "rep": 24,
+        "first": 131.5,
+        "births": [
+          {
+            "t_start": 131.5,
+            "track": 0,
+            "pos": -39.542016083082885,
+            "s_conf": 302,
+            "t_conf": 151.5,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 25,
+        "first": null,
+        "births": [
+          {
+            "t_start": 19.0,
+            "track": 0,
+            "pos": -30.63538448312805,
+            "s_conf": 77,
+            "t_conf": 39.0,
+            "cls": "excursion",
+            "shared": false,
+            "near": false
+          }
+        ]
+      },
+      {
+        "rep": 26,
+        "first": null,
+        "births": []
+      },
+      {
+        "rep": 27,
+        "first": null,
+        "births": []
+      },
+      {
+        "rep": 28,
+        "first": null,
+        "births": []
+      },
+      {
+        "rep": 29,
+        "first": null,
+        "births": []
+      },
+      {
+        "rep": 3,
+        "first": null,
+        "births": []
+      },
+      {
+        "rep": 30,
+        "first": null,
+        "births": [
+          {
+            "t_start": 54.5,
+            "track": 0,
+            "pos": -47.67469347796911,
+            "s_conf": 148,
+            "t_conf": 74.5,
+            "cls": "excursion",
+            "shared": false,
+            "near": false
+          }
+        ]
+      },
+      {
+        "rep": 31,
+        "first": null,
+        "births": []
+      },
+      {
+        "rep": 4,
+        "first": null,
+        "births": []
+      },
+      {
+        "rep": 5,
+        "first": null,
+        "births": []
+      },
+      {
+        "rep": 6,
+        "first": 113.0,
+        "births": [
+          {
+            "t_start": 113.0,
+            "track": 0,
+            "pos": -4.013751683458352,
+            "s_conf": 265,
+            "t_conf": 133.0,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 7,
+        "first": 187.0,
+        "births": [
+          {
+            "t_start": 187.0,
+            "track": 1,
+            "pos": -8.044175333578963,
+            "s_conf": 413,
+            "t_conf": 207.0,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 8,
+        "first": null,
+        "births": []
+      },
+      {
+        "rep": 9,
+        "first": null,
+        "births": []
+      }
+    ],
+    "120": [
+      {
+        "rep": 0,
+        "first": 338.5,
+        "births": [
+          {
+            "t_start": 338.5,
+            "track": 12,
+            "pos": -33.2809575862619,
+            "s_conf": 716,
+            "t_conf": 358.5,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 1,
+        "first": 344.0,
+        "births": [
+          {
+            "t_start": 344.0,
+            "track": 8,
+            "pos": 8.90502111679077,
+            "s_conf": 727,
+            "t_conf": 364.0,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 10,
+        "first": 39.0,
+        "births": [
+          {
+            "t_start": 39.0,
+            "track": 4,
+            "pos": 27.201961947154032,
+            "s_conf": 117,
+            "t_conf": 59.0,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 11,
+        "first": 90.5,
+        "births": [
+          {
+            "t_start": 90.5,
+            "track": 5,
+            "pos": 43.1512000526276,
+            "s_conf": 220,
+            "t_conf": 110.5,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 12,
+        "first": 280.5,
+        "births": [
+          {
+            "t_start": 280.5,
+            "track": 14,
+            "pos": -12.264902038672439,
+            "s_conf": 600,
+            "t_conf": 300.5,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 13,
+        "first": 139.5,
+        "births": [
+          {
+            "t_start": 7.5,
+            "track": 1,
+            "pos": -42.359756095953145,
+            "s_conf": 54,
+            "t_conf": 27.5,
+            "cls": "excursion",
+            "shared": false,
+            "near": false
+          },
+          {
+            "t_start": 51.0,
+            "track": 4,
+            "pos": 21.402423770266168,
+            "s_conf": 141,
+            "t_conf": 71.0,
+            "cls": "excursion",
+            "shared": false,
+            "near": false
+          },
+          {
+            "t_start": 139.5,
+            "track": 14,
+            "pos": -31.148354620683477,
+            "s_conf": 318,
+            "t_conf": 159.5,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 14,
+        "first": 185.5,
+        "births": [
+          {
+            "t_start": 127.0,
+            "track": 6,
+            "pos": -24.691081903024603,
+            "s_conf": 293,
+            "t_conf": 147.0,
+            "cls": "excursion",
+            "shared": false,
+            "near": false
+          },
+          {
+            "t_start": 127.5,
+            "track": 7,
+            "pos": -1.4157707199325529,
+            "s_conf": 294,
+            "t_conf": 147.5,
+            "cls": "excursion",
+            "shared": false,
+            "near": false
+          },
+          {
+            "t_start": 185.5,
+            "track": 8,
+            "pos": 11.234760370768555,
+            "s_conf": 410,
+            "t_conf": 205.5,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 15,
+        "first": 11.0,
+        "births": [
+          {
+            "t_start": 11.0,
+            "track": 1,
+            "pos": 1.0298378158412973,
+            "s_conf": 61,
+            "t_conf": 31.0,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 2,
+        "first": 45.0,
+        "births": [
+          {
+            "t_start": 45.0,
+            "track": 0,
+            "pos": 1.6816924344049298,
+            "s_conf": 129,
+            "t_conf": 65.0,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 3,
+        "first": 39.5,
+        "births": [
+          {
+            "t_start": 39.5,
+            "track": 0,
+            "pos": -38.1494273126143,
+            "s_conf": 118,
+            "t_conf": 59.5,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 4,
+        "first": 334.5,
+        "births": [
+          {
+            "t_start": 334.5,
+            "track": 15,
+            "pos": -34.72099823865162,
+            "s_conf": 708,
+            "t_conf": 354.5,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 5,
+        "first": 241.5,
+        "births": [
+          {
+            "t_start": 241.5,
+            "track": 8,
+            "pos": 45.15203974385325,
+            "s_conf": 522,
+            "t_conf": 261.5,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 6,
+        "first": null,
+        "births": [
+          {
+            "t_start": 155.0,
+            "track": 8,
+            "pos": 1.1646688857198129,
+            "s_conf": 349,
+            "t_conf": 175.0,
+            "cls": "excursion",
+            "shared": false,
+            "near": false
+          },
+          {
+            "t_start": 174.0,
+            "track": 10,
+            "pos": 4.158709870364994,
+            "s_conf": 387,
+            "t_conf": 194.0,
+            "cls": "excursion",
+            "shared": false,
+            "near": false
+          }
+        ]
+      },
+      {
+        "rep": 7,
+        "first": 75.5,
+        "births": [
+          {
+            "t_start": 75.5,
+            "track": 6,
+            "pos": -34.293984180364546,
+            "s_conf": 190,
+            "t_conf": 95.5,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 8,
+        "first": 11.5,
+        "births": [
+          {
+            "t_start": 11.5,
+            "track": 0,
+            "pos": 11.586982120597796,
+            "s_conf": 62,
+            "t_conf": 31.5,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 9,
+        "first": 198.5,
+        "births": [
+          {
+            "t_start": 198.5,
+            "track": 11,
+            "pos": -5.904214532311457,
+            "s_conf": 436,
+            "t_conf": 218.5,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      }
+    ],
+    "100": [
+      {
+        "rep": 0,
+        "first": 139.0,
+        "births": [
+          {
+            "t_start": 139.0,
+            "track": 24,
+            "pos": -44.3461734387586,
+            "s_conf": 317,
+            "t_conf": 159.0,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 1,
+        "first": 34.0,
+        "births": [
+          {
+            "t_start": 34.0,
+            "track": 1,
+            "pos": -28.33118983453692,
+            "s_conf": 107,
+            "t_conf": 54.0,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 10,
+        "first": 26.0,
+        "births": [
+          {
+            "t_start": 26.0,
+            "track": 2,
+            "pos": -5.210868248046488,
+            "s_conf": 91,
+            "t_conf": 46.0,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 11,
+        "first": 83.5,
+        "births": [
+          {
+            "t_start": 83.5,
+            "track": 8,
+            "pos": 8.074838564527553,
+            "s_conf": 206,
+            "t_conf": 103.5,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 12,
+        "first": 148.0,
+        "births": [
+          {
+            "t_start": 3.0,
+            "track": 0,
+            "pos": -6.553970750241163,
+            "s_conf": 45,
+            "t_conf": 23.0,
+            "cls": "excursion",
+            "shared": false,
+            "near": false
+          },
+          {
+            "t_start": 46.5,
+            "track": 4,
+            "pos": -46.26019319632669,
+            "s_conf": 132,
+            "t_conf": 66.5,
+            "cls": "excursion",
+            "shared": false,
+            "near": false
+          },
+          {
+            "t_start": 148.0,
+            "track": 18,
+            "pos": 32.33949285702758,
+            "s_conf": 335,
+            "t_conf": 168.0,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 13,
+        "first": 50.0,
+        "births": [
+          {
+            "t_start": 16.0,
+            "track": 0,
+            "pos": 37.45570548598235,
+            "s_conf": 71,
+            "t_conf": 36.0,
+            "cls": "excursion",
+            "shared": false,
+            "near": false
+          },
+          {
+            "t_start": 25.0,
+            "track": 2,
+            "pos": 40.627513628884884,
+            "s_conf": 89,
+            "t_conf": 45.0,
+            "cls": "excursion",
+            "shared": false,
+            "near": false
+          },
+          {
+            "t_start": 50.0,
+            "track": 7,
+            "pos": 43.718529893620826,
+            "s_conf": 139,
+            "t_conf": 70.0,
+            "cls": "persistent",
+            "shared": false,
+            "near": false
+          }
+        ]
+      },
+      {
+        "rep": 14,
+        "first": 144.5,
+        "births": [
+          {
+            "t_start": 90.5,
+            "track": 9,
+            "pos": -4.263075532346974,
+            "s_conf": 220,
+            "t_conf": 110.5,
+            "cls": "excursion",
+            "shared": false,
+            "near": false
+          },
+          {
+            "t_start": 144.5,
+            "track": 19,
+            "pos": 19.584191270265535,
+            "s_conf": 328,
+            "t_conf": 164.5,
+            "cls": "persistent",
+            "shared": false,
+            "near": false
+          }
+        ]
+      },
+      {
+        "rep": 15,
+        "first": 182.5,
+        "births": [
+          {
+            "t_start": 35.5,
+            "track": 3,
+            "pos": 28.63620487021079,
+            "s_conf": 110,
+            "t_conf": 55.5,
+            "cls": "excursion",
+            "shared": false,
+            "near": false
+          },
+          {
+            "t_start": 182.5,
+            "track": 22,
+            "pos": 1.1108659612021157,
+            "s_conf": 404,
+            "t_conf": 202.5,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 2,
+        "first": 96.0,
+        "births": [
+          {
+            "t_start": 50.5,
+            "track": 3,
+            "pos": -6.740174953823775,
+            "s_conf": 140,
+            "t_conf": 70.5,
+            "cls": "excursion",
+            "shared": false,
+            "near": false
+          },
+          {
+            "t_start": 96.0,
+            "track": 9,
+            "pos": 33.475480584397374,
+            "s_conf": 231,
+            "t_conf": 116.0,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 3,
+        "first": 92.0,
+        "births": [
+          {
+            "t_start": 23.0,
+            "track": 4,
+            "pos": 11.732001475696435,
+            "s_conf": 85,
+            "t_conf": 43.0,
+            "cls": "excursion",
+            "shared": false,
+            "near": false
+          },
+          {
+            "t_start": 92.0,
+            "track": 16,
+            "pos": 8.405695809956882,
+            "s_conf": 223,
+            "t_conf": 112.0,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 4,
+        "first": 88.0,
+        "births": [
+          {
+            "t_start": 88.0,
+            "track": 10,
+            "pos": -20.17622839723266,
+            "s_conf": 215,
+            "t_conf": 108.0,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 5,
+        "first": 114.5,
+        "births": [
+          {
+            "t_start": 47.5,
+            "track": 4,
+            "pos": 33.52932802807892,
+            "s_conf": 134,
+            "t_conf": 67.5,
+            "cls": "excursion",
+            "shared": false,
+            "near": false
+          },
+          {
+            "t_start": 114.5,
+            "track": 15,
+            "pos": 37.05036684504957,
+            "s_conf": 268,
+            "t_conf": 134.5,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 6,
+        "first": 7.0,
+        "births": [
+          {
+            "t_start": 7.0,
+            "track": 0,
+            "pos": 17.192204987327244,
+            "s_conf": 53,
+            "t_conf": 27.0,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 7,
+        "first": 106.5,
+        "births": [
+          {
+            "t_start": 74.5,
+            "track": 11,
+            "pos": -45.3983626765832,
+            "s_conf": 188,
+            "t_conf": 94.5,
+            "cls": "excursion",
+            "shared": false,
+            "near": false
+          },
+          {
+            "t_start": 106.5,
+            "track": 14,
+            "pos": -9.39897907743017,
+            "s_conf": 252,
+            "t_conf": 126.5,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 8,
+        "first": 12.0,
+        "births": [
+          {
+            "t_start": 12.0,
+            "track": 0,
+            "pos": 23.24551850442286,
+            "s_conf": 63,
+            "t_conf": 32.0,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      },
+      {
+        "rep": 9,
+        "first": 48.0,
+        "births": [
+          {
+            "t_start": 48.0,
+            "track": 7,
+            "pos": 43.69175832776678,
+            "s_conf": 135,
+            "t_conf": 68.0,
+            "cls": "persistent",
+            "shared": false,
+            "near": true
+          }
+        ]
+      }
+    ]
+  }
+}

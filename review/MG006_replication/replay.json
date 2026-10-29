@@ -1,0 +1,99 @@
+{
+  "cell": "B_100",
+  "rep": 13,
+  "claimed_births": [
+    {
+      "t_start": 16.0,
+      "track": 0,
+      "pos": 37.45570548598235,
+      "s_conf": 71,
+      "t_conf": 36.0,
+      "cls": "excursion",
+      "shared": false,
+      "near": false
+    },
+    {
+      "t_start": 25.0,
+      "track": 2,
+      "pos": 40.627513628884884,
+      "s_conf": 89,
+      "t_conf": 45.0,
+      "cls": "excursion",
+      "shared": false,
+      "near": false
+    },
+    {
+      "t_start": 50.0,
+      "track": 7,
+      "pos": 43.718529893620826,
+      "s_conf": 139,
+      "t_conf": 70.0,
+      "cls": "persistent",
+      "shared": false,
+      "near": false
+    }
+  ],
+  "replayed_births": [
+    {
+      "t_start": 16.0,
+      "track": 0,
+      "pos": 37.45570548598235,
+      "s_conf": 71,
+      "t_conf": 36.0,
+      "cls": "excursion",
+      "shared": false,
+      "near": false
+    },
+    {
+      "t_start": 25.0,
+      "track": 2,
+      "pos": 40.627513628884884,
+      "s_conf": 89,
+      "t_conf": 45.0,
+      "cls": "excursion",
+      "shared": false,
+      "near": false
+    },
+    {
+      "t_start": 50.0,
+      "track": 7,
+      "pos": 43.718529893620826,
+      "s_conf": 139,
+      "t_conf": 70.0,
+      "cls": "persistent",
+      "shared": false,
+      "near": false
+    }
+  ],
+  "first_field_equal": true,
+  "t_end": 100.0,
+  "independent_outcomes": [
+    {
+      "t_start": 16.0,
+      "claimed": "excursion",
+      "cls": "excursion",
+      "persistent_structures": 0,
+      "deep_minima_end": 0,
+      "min_X": -4.801496773588781e-26,
+      "max_dt": 9.386807774761983e-27
+    },
+    {
+      "t_start": 25.0,
+      "claimed": "excursion",
+      "cls": "excursion",
+      "persistent_structures": 0,
+      "deep_minima_end": 0,
+      "min_X": -4.7088304036079254e-26,
+      "max_dt": 9.259117679387359e-27
+    },
+    {
+      "t_start": 50.0,
+      "claimed": "persistent",
+      "cls": "persistent",
+      "persistent_structures": 1,
+      "deep_minima_end": 1,
+      "min_X": -8.86040122072413,
+      "max_dt": 0.00011527213563056193
+    }
+  ]
+}
