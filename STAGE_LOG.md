@@ -196,6 +196,17 @@
   - the Part 1b whole-study error is ≤ 0.040 and its conditional error is ≤ 0.161; both are reported.
 - These reproduce ChatGPT's figures. The 0.937 slope figure is reworded as an observed minimum over qualifying cells. Response: `review/MG007_response.md`.
 
+## MG007c — MG3b driver
+- `src/mg3b.py` and `src/run_mg3b.py` reuse MG3's simulation, detection, tracking and confirmation. They add:
+  - storage of every confirmation field;
+  - the run ledger and the per-batch ceiling check;
+  - the stop20 rule and the Part 1 → 1b → production-branch logic;
+  - τ/4 timing runs, clip pilots for Ω = 130 and 110, and the `decisions.json` gate.
+- `tests/test_mg3b.py`: 7 pass.
+- A plumbing smoke run of `main()` was made in a scratch folder on the cloud machine, with runs cut to t = 60, batches of 2 and a cap of 4. Nothing was committed. It exercised the pilots, Part 1, the branch, Part 2, the ledger and resume (a re-run did nothing and added no ledger rows).
+- The driver's implementation choices are recorded in GATES.md before any production run.
+- Next: the production run on the PI's machine (`MODELG_WORKERS=9 python src/run_mg3b.py`). Projected 24–63 core-hours, about 3–7 h of wall time.
+
 ## Deferred work (PI decisions)
 Items deliberately postponed so the project reaches its main questions first. They can be revisited later.
 - **D1 (2026-10-28):** Noisy existence-window edge study: survival S(δ, Ω, T) with δ = b − b_s(h); noisy edge at S = 1/2; test of the saddle-node scaling δ ∝ Ω^(−2/3). Deferred by PI.

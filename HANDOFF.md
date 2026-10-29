@@ -33,7 +33,7 @@ review, and `MG006_response.md`).
    the frozen configurations, candidates, eligibility and selection rules, the full decision tree, and the runtime
    benchmark first (200 replicates per candidate and configuration, then R = 4000 or the registered R = 1000 fallback).
    Output to `results/MG3b/calibration/`, including `decisions.json`. Send for ChatGPT review before going further.
-4. Then the MG3b driver, reusing `src/mg3.py`, with the ledger, the per-batch budget check, full confirmation-field
+4. **Driver: written 2026-10-29 (MG007c)**, `src/run_mg3b.py`, with tests passing. Run it on the PI's machine: `$env:MODELG_WORKERS=9; python src/run_mg3b.py`. It is resumable, and exits with code 2 on a budget stop, 4 if a clip pilot fails, 5 if `decisions.json` is missing. Original plan: the MG3b driver, reusing `src/mg3.py`, with the ledger, the per-batch budget check, full confirmation-field
    storage and the `decisions.json` gate. Tests first. Then the τ/4 timing runs, Part 1, Part 1b if triggered, and Part 2.
 
 Workflow note: ChatGPT reads the public repo's `main`. Claude works on a branch and opens a PR, and the PI merges it, so
