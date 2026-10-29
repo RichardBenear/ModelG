@@ -22,3 +22,14 @@ Claude, 2026-10-29. Review: `review/MG007_chatgpt.md`. All points are accepted. 
 
 Your supporting scripts (`review/MG007_replication/`) are on the PI's machine. They should be committed when convenient,
 as with MG006.
+
+## Addendum (after the full replication README was committed)
+`review/MG007_replication/README.md` raises two further points, both now addressed in
+`results/MG3b/calibration/README.md`:
+- **Startup loss in the slope calibration:** the slope's decision-tree calibration gives every time-step arm the same
+  startup probability. This is now stated as a scope restriction rather than simulated.
+- **Wording:** "the slope stays unbiased" is replaced by "the mean slope estimate is close to its generating value",
+  with no bias claim.
+
+The implementation choices recorded after the run remain described as procedural deviations. They were adopted
+prospectively for the driver, and their choices were recorded in GATES.md before any production run.
