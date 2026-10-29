@@ -94,3 +94,13 @@
   [B_150 rep 30] t_end 500, births 1, first none (censored), wall 624s
   [B_150 rep 31] t_end 500, births 0, first none (censored), wall 617s
 [cell] B_150: 32 runs, events 5, startup 0, exposure 12334, k = 4.054e-06 [1.316e-06, 9.461e-06], stationary p = 0.0683059721424948; budget used 7.65 h
+=== MG3 driver start 2026-10-29 01:10:00; budget used 7.65 h
+[A] A_300: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 7.65 h
+[A] A_250: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 7.65 h
+[A] A_200: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 7.65 h
+[A] A_150: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 7.65 h
+[A] A_120: 0/4 with a confirmed event in [50,150]; post-burn-in events 1, startup 3; mean dets/snapshot t<50 0.87; budget used 7.65 h
+[A] A_100: 2/4 with a confirmed event in [50,150]; post-burn-in events 4, startup 0; mean dets/snapshot t<50 0.26; budget used 7.65 h
+[A] A_80: EXCLUDED by crowding (mean detections/snapshot in t<50 = 2.26 > 2); descent stops
+[select] Stage-B cells [150, 120, 100] (selected)
+[cell] B_150: 32 runs, events 5, startup 0, exposure 12334, k = 4.054e-06 [1.316e-06, 9.461e-06], stationary p = 0.0683059721424948; budget used 7.65 h
