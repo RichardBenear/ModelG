@@ -19,3 +19,8 @@
   [A_150 rep 2] t_end 500, births 0, first none (censored), wall 548s
   [A_150 rep 3] t_end 500, births 0, first none (censored), wall 552s
 [A] A_150: 0/4 with a confirmed event in [50,150]; post-burn-in events 0, startup 0; mean dets/snapshot t<50 0.00; budget used 2.38 h
+  [A_120 rep 0] t_end 80, births 1, first 27.5 (startup), wall 96s
+  [A_120 rep 2] t_end 60, births 1, first 8.0 (startup), wall 72s
+  [A_120 rep 3] t_end 90, births 1, first 35.5 (startup), wall 107s
+  [A_120 rep 1] t_end 380, births 1, first 330.0 (event), wall 447s
+[A] A_120: 0/4 with a confirmed event in [50,150]; post-burn-in events 1, startup 3; mean dets/snapshot t<50 0.87; budget used 2.58 h
