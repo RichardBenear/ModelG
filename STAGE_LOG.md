@@ -160,6 +160,14 @@
 - PI decisions before the run: MG3 cap 18 core-hours (from 10), and each run stops 50 time units after its first confirmed event.
 - `src/mg3.py` (segmented simulation with online detection, tracking, confirmation; first-passage statistics; Stage-B selection), `src/run_mg3.py` (resumable driver), `tests/test_mg3.py` (15 tests). Pre-run implementation specification recorded in GATES.md before any MG3 run.
 
+- Driver change during the run (before N1 restarted): the budget is checked only at cell start, so a forced 2-hour restart does not re-check a cell already started.
+- **Result: MG3 FAIL as registered (C2(a))**; C1, C3, C4, V5 PASS; N1 had no confirmed event; N2 PASS. Rates 4.05e−6, 4.63e−5, 1.58e−4 at Ω = 150, 120, 100; S = 0.0726 per unit Ω. 19.03 core-hours (the overrun is inside the last cell, N1). Details in GATES.md (MG3 result) and `results/MG3/MG3_evaluation.md`. Review request: `review/MG006_review_request.md`.
+
+## MG006a — MG3 review; follow-up drafted
+- ChatGPT review (summary in `review/MG006_chatgpt.md`; full review on the PI's machine): MG3's FAIL preserved. Numbers reproduce (168 records; 36 first-event fields re-confirmed independently). Qualifications adopted in GATES.md: C2(a) scope, C3 estimated variances, weak stationarity, C4's three short waits, V5 not resolving time-step independence, interval exactness unjustified for this design, Stage-A trigger ≤ 2.2%.
+- Response: `review/MG006_response.md`. Follow-up `spec/MG3b_followup_proposal.md` DRAFT: burn-in/time-step check first, rates with ≥ 20 events per cell, simulation-calibrated intervals, and an optional full-trajectory confirmation study. Awaiting review and PI approval.
+
+## Deferred work (PI decisions)
 Items deliberately postponed so the project reaches its main questions first. They can be revisited later.
 - **D1 (2026-10-28):** Noisy existence-window edge study: survival S(δ, Ω, T) with δ = b − b_s(h); noisy edge at S = 1/2; test of the saddle-node scaling δ ∝ Ω^(−2/3). Deferred by PI.
 - **D2 (2026-10-28):** Repeating key MG3 cells at h = 0.1, and reporting b relative to each lattice's window. Deferred by PI. Until then, near-edge results at b = 29 (e.g. survival) are stated as h = 0.2-specific (assumption M11).
