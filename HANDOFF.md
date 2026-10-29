@@ -28,7 +28,8 @@ review, and `MG006_response.md`).
    Measured cost at Ω = 150, 9 workers: 0.89 core-s per time unit at τ, 2.43 at τ/2.
 2. **MG3b follow-up: REGISTERED** in `GATES.md` (MG3b), design frozen as `spec/MG3b_followup_proposal.md` at commit
    `202c00f`. Reviews and responses: `review/MG006b_*`. Estimation study, no pass/fail; MG3's FAIL is unchanged.
-3. **Next: Part 3 calibration** (synthetic, no lattice). Write `src/calib_mg3b.py` exactly to the proposal's Part 3:
+3. **Part 3 calibration: done 2026-10-29 (MG007a)**; see `results/MG3b/calibration/README.md`. Awaiting ChatGPT review.
+   Original plan: (synthetic, no lattice). Write `src/calib_mg3b.py` exactly to the proposal's Part 3:
    the frozen configurations, candidates, eligibility and selection rules, the full decision tree, and the runtime
    benchmark first (200 replicates per candidate and configuration, then R = 4000 or the registered R = 1000 fallback).
    Output to `results/MG3b/calibration/`, including `decisions.json`. Send for ChatGPT review before going further.
