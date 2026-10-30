@@ -795,6 +795,17 @@ before the run it affects. (The MG3b lesson: record choices before the run, not 
   - Part 0 evaluations already finished keep their records. The remaining window-bisection steps and all of Part A use
     the new path. Ledger rows carry the platform, as before.
 
+- **Part 0 budget overrun (deviation, recorded 2026-10-30 after Part 0 finished):** Part 0 used 10.57 core-hours
+  against its 8 core-hour ceiling, which the registration makes a stop trigger checked before every batch.
+  - The total includes three estimated rows (2.04 core-h) for work lost when the cloud's 2-hour background limit
+    stopped the driver. The measured total is 8.53 core-h. Including the estimates, the ledger passed 8 at about
+    19:20 UTC, during the window bisection.
+  - Cause: the Part 0 driver never checked the ceiling (Claude's implementation error), and the cost of the 2D graph
+    ODE was underestimated in the design. Nothing in the outcome depended on it, and Part 0 scores no criterion.
+  - The Part A driver now checks its ceiling before every job is started (`run_mg4_partA.py`, `CEILING`).
+  - **PI decision, 2026-10-30 23:00 UTC (decision card in the project thread):** "Record as exception, continue." MG4 is
+    not stopped. The overrun stands as a recorded exception, as MG3's did, and goes to ChatGPT's review with the result.
+
 Result:
 Replication (ChatGPT):
 PI sign-off (design): Richard Benear, 2026-10-30 14:19 UTC, project thread ("I approve MG4 draft 4."), after ChatGPT's
