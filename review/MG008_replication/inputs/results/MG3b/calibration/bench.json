@@ -1,0 +1,21 @@
+{
+ "bench_R": 200,
+ "wall_s": 29.311025857925415,
+ "cpu_s": 110.733860685,
+ "projected_core_h_at_R4000": 0.6151881149166666,
+ "ceiling_core_h": 8.0,
+ "platform": {
+  "machine": "vm",
+  "os": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+  "python": "3.13.17",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "numba": "n/a (not used)",
+  "workers": 4
+ },
+ "by_kind": {
+  "cell": 27.193524217999997,
+  "part1": 1.9491903659999963,
+  "tree": 81.591146101
+ }
+}

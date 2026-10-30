@@ -1,5 +1,8 @@
 # MG3b — evaluation of the production run
 
+*Labels corrected 2026-10-30 after ChatGPT's review (`review/MG008_chatgpt.md`, response `review/MG008_response.md`): the
+three-cell sensitivity interval and the landmark and early/late intervals are nominal, not calibrated. No number changed.*
+
 Claude, 2026-10-30. Registered design: `GATES.md` (MG3b) and `spec/MG3b_followup_proposal.md` (frozen at `202c00f`).
 Methods: `results/MG3b/calibration/decisions.json`, with the addendum 1 labels. Run on the PI's machine (RB_LibraryPC,
 Windows 11, Python 3.13.2, numpy 2.2.4, scipy 1.16.1, numba 0.68.0, 9 workers), 2026-10-29 local time. Evaluator:
@@ -26,7 +29,8 @@ MG3b is an estimation study. It has no pass/fail verdict and does not re-score M
 3. **Activated slope:** S = **0.064** per unit Ω, profile-likelihood 95% interval **0.047–0.082**, labelled
    approximate (observed minimum coverage 0.937 over qualifying calibration cells; not a guaranteed floor). The
    deviance lack of fit is 0.23 on 2 df (p = 0.89), so the four cells are consistent with log k linear in Ω. Without
-   Ω = 100 (the registered sensitivity fit): S = 0.068, 0.041–0.094. MG3's 0.073 (95% CI 0.052–0.094) lies inside both
+   Ω = 100 (the registered sensitivity fit): S = 0.068, nominal 95% profile interval 0.041–0.094. That interval is
+   not calibrated: the 0.937 figure belongs to the four-cell fit only (review MG008, item 1). MG3's 0.073 (95% CI 0.052–0.094) lies inside both
    intervals. The Wald interval (0.047–0.082) is almost the same as the profile interval.
 4. **Stationary check: uninformative in every cell.** None rejects at α = 0.01. The smallest p is 0.0125, at Ω = 110.
    The simulated power against a ×2 or ×0.5 change at the split is 0.04–0.26, far below the 0.5 needed for the
@@ -43,7 +47,10 @@ MG3b is an estimation study. It has no pass/fail verdict and does not re-score M
   first-event times of every run are in `evaluation.json` (`part1.first_event_times`), for the survival curves.
 
 ## Part 2 (rates), more detail
-**Risk sets and landmarks** (k̂ with left truncation at the landmark; Garwood CIs):
+**Risk sets and landmarks** (k̂ with left truncation at the landmark). The landmark and early/late intervals are
+**nominal 95% intervals and descriptive sensitivities**. Their sampling differs from the calibrated principal
+estimates, so no coverage claim is made for them (review MG008, item 2). The landmark intervals are Garwood and the
+early/late ones Clopper–Pearson.
 
 | Ω | Risk set at 50 / 100 / 150 | k̂ from 100 | k̂ from 150 | k[100, 480] / k[50, 100), 95% CI |
 |---|---|---|---|---|

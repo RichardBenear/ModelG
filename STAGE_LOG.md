@@ -217,7 +217,10 @@
   uninformative in every cell. 26.75 core-hours in all.
 - `src/evaluate_mg3b.py` (written after the run, implementing the registered analyses; open details listed in the
   record). Independent recomputation in `results/MG3b/independent/`. Record: `results/MG3b/MG3b_evaluation.md`.
-- Next: ChatGPT review of the result. No gate runs while review items are open.
+- ChatGPT review (`review/MG008_chatgpt.md`): supports accepting MG3b as an estimation result and reproduced every
+  number, including all 302 confirmation classifications. Two label clarifications were applied
+  (`review/MG008_response.md`): the three-cell sensitivity interval and the landmark and early/late intervals are
+  nominal, not calibrated. No number changed. Awaiting PI sign-off of the result.
 
 ## Deferred work (PI decisions)
 Items deliberately postponed so the project reaches its main questions first. They can be revisited later.

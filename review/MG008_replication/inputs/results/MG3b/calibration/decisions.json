@@ -1,0 +1,45 @@
+{
+ "registered_design": "spec/MG3b_followup_proposal.md at 202c00f; GATES.md MG3b",
+ "R": 4000,
+ "R_bootstrap": 4000,
+ "B": 999,
+ "mc_se_at_0p95": {
+  "R4000": 0.0034460121880225555,
+  "R_boot": 0.0034460121880225555
+ },
+ "n_configurations": {
+  "cell": 291,
+  "cell_constant": 51,
+  "part1": 28,
+  "tree": 49
+ },
+ "per_cell_rate_ci": {
+  "method": "a",
+  "approximate": false,
+  "reason": "eligible; smallest central width (1% tie rule)"
+ },
+ "rate_ratio_ci": {
+  "method": "a",
+  "fallback_part1_always_inconclusive": false
+ },
+ "part1_runs_per_arm": 64,
+ "p_equiv_at_r1_64": 0.85,
+ "slope_ci": {
+  "method": "b",
+  "approximate": true,
+  "reason": "no candidate eligible: highest minimum coverage"
+ },
+ "stationary_split": "median",
+ "stationary_fallback_uncalibrated": false,
+ "platform": {
+  "machine": "vm",
+  "os": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+  "python": "3.13.17",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "numba": "n/a (not used)",
+  "workers": 4
+ },
+ "cpu_core_h": 0.6159020996175,
+ "wall_s": 584.0139977931976
+}
