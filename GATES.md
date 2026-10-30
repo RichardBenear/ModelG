@@ -739,6 +739,22 @@ before the run it affects. (The MG3b lesson: record choices before the run, not 
   - The balances held to 4e-12.
   - It is recorded here because it bears on the *stationary* label (§5.2), which is reported only.
 - **Timing:** Part 0's first full-size T run is timed, and the Part A projection is re-stated here before Part A.
+- **Driver (`src/run_mg4_part0.py`), added 2026-10-30 before the Part 0 run:**
+  - It is resumable by step: one JSON per step in `results/MG4/part0/steps/`, plus a ledger `budget_ledger.csv`.
+  - Replacements for a panel slot come from the family's unused reps 50, 51, … in order.
+  - N3 has the D panel's mean node count (rounded up to even) and the D panel's mean h.
+  - Spectra are computed for T, the 8 panel graphs and both N3 graphs. The window bisection uses the threshold from
+    T's node-placement reference, θ_ref = −0.5·|smoothed depth|. Part A uses the registered 4-placement mean.
+  - It applies the §3 stop rule automatically (`stop_for_PI`). If the box check fails, it records `torus_for_partA =
+    30x30`, and the panel would then need rebuilding on that torus. That would be stated here before Part A.
+- **Driver smoke test (disclosed; scratch, not committed, not a registered run).** The full driver was run once with
+  `MG4_SMOKE=1`: a 62 × 70 torus (10.1 × 9.9), box 74 × 84, and only 2 bisection steps. It exercised every step.
+  - Its numbers do not apply to the registered 122 × 142 torus. They are disclosed because one of them previews a
+    criterion: the C3(a) band-mean count ratio was 1.058–1.065 on the four small D graphs and 1.066–1.096 on the four
+    small R graphs, against 1.015 on T and 0.031 on N3.
+  - It also gave: the T depth −13.59 (smoothed −10.30); the box difference 3.6% between those two small tori; T's
+    max |∂φ/∂t| at t = 300 of 6e-6; c_F of 1.89 (D) and 3.85 (R); a T ODE run of 86 s for 4 340 nodes on 2 cores.
+  - **No criterion, threshold or rule is changed in response.** The registered Part 0 and Part A run as written.
 
 Result:
 Replication (ChatGPT):

@@ -15,7 +15,8 @@ sys.path.insert(0, os.path.dirname(__file__))
 from lattice import steady_state, P17
 import graphs as gr
 
-CONT_FILE = os.path.join(os.path.dirname(__file__), "..", "results", "MG4", "part0", "continuum2d.npz")
+CONT_FILE = os.path.join(os.environ.get("MG4_OUT") or
+                         os.path.join(os.path.dirname(__file__), "..", "results", "MG4", "part0"), "continuum2d.npz")
 
 
 def continuum2d(R=50.0, h=0.025, t_end=300.0, path=CONT_FILE):
