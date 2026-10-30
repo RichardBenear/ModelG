@@ -1,2 +1,23 @@
 --- relaunch 2026-10-30T18:51:45Z (previous run stopped at 2 h limit; resumes per evaluation)
 --- relaunch 2026-10-30T20:58:16Z (stopped at 2 h limit 20:51; resumes; nested-dissection solver from here, see GATES.md MG010)
+{
+ "depth": -13.583783934082076,
+ "depth_s": -10.283097872402696,
+ "depth_ok": true,
+ "threshold_node_ref": -5.141548936201348,
+ "b_s": [
+  27.32421875,
+  27.3271484375
+ ],
+ "b_r": [
+  29.195,
+  29.197031250000002
+ ],
+ "in_window": true,
+ "box_l2": 0.00017546461087472525,
+ "box_ok": true,
+ "T_max_dphidt": 6.707523425575346e-12,
+ "T_balances_ok": true
+}
+stop_for_PI: False  torus: 20x20
+exit 0
