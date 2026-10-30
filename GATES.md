@@ -697,6 +697,49 @@ re-stated here before Part A starts.
 Pre-run implementation specification: anything the code needs that the proposal leaves open is appended here, dated,
 before the run it affects. (The MG3b lesson: record choices before the run, not after.)
 
+**Part 0 implementation specification (2026-10-30, MG010; recorded before any Part 0 run; code `src/graphs.py`,
+`src/graph_ode.py`, `src/measure_graph.py`; tests `tests/test_mg4.py`, 9 pass).**
+- **Streams:** `runner.seed_for(5, 0, family, stage, replicate)` seeds a numpy `default_rng` for the point sets (stage 0)
+  and the placements (stage 1). For N3 it is passed to `networkx.random_regular_graph`; networkx is version 3.x, recorded in
+  `decisions.json`. Replicates: panel graphs 0–3, pilot graphs 90–93, replacements 50 onward in order, N3 graphs 0–1.
+  Placements: graph × 100 + i.
+- **Point counts:** pilots use D: N = round(2.39·A/h_t²) and R: N = round(c·A/h_t²) with c = 12²/(8π) (from h² = k̄r²/8;
+  design-stage values). Each pilot gives c_F = (point density)·h². The panel uses the mean c_F over the 4 pilots.
+  - R's connection radius always keeps the mean degree at 12 for the realised point density: r = √(12/(π ρ)). Its h and
+    acceptance refer to the largest component.
+- **Corrector:** the minimiser of Σ_edges (e·Δx + χ_J − χ_I)², by sparse LU with one node pinned, which gives the tensor
+  D = FᵀF/N. On T this reproduces 1.5a² exactly in the tests.
+- **Continuum profile** (initial condition and C3(b)): `mg_continuum.run(2, R=50, h=0.025, t_end=300)`, seed scale 1.
+  The stationary state at t = 300 is cached in `results/MG4/part0/continuum2d.npz`: φ_X(0) = −13.594, max |∂φ/∂t| = 5.5e-12.
+  - It is interpolated onto nodes by a cubic spline with zero slope at r = 0, and set to 0 beyond r = 50 (never reached on
+    a 20 × 20 torus).
+  - C3(b)'s continuum ∇²f is that solver's own conservative radial Laplacian, interpolated the same way.
+- **ODE:** BDF with a sparse analytic Jacobian (checked against finite differences in the tests), rtol 1e-8, atol 1e-10,
+  max step 0.5, and the 1D first-step retries. Fields are saved at the 11 checks. Stationarity is judged from max |RHS|
+  at t = 300.
+- **Measurement:** the smoother is a row-normalised sparse matrix, self weight counted once. Candidate, merge, centroid
+  and link radii are 1.0, 1.5, 0.6 and 1.0, as registered. Positions are wrapped into the torus for neighbour searches.
+- **T's threshold:** A*_s(T) is the mean, over T's 4 placements, of the minimum smoothed φ_X at t = 300, and
+  θ = −0.5·|A*_s(T)|. T placements are the node nearest the torus centre, the midpoint of its +x edge, the centroid of
+  its upper-right triangle, and one uniform random point (stage 1, replicate 0).
+- **Positive control:**
+  - Depth check: the unsmoothed minimum φ_X of the T particle at t = 300 (node placement), against −13.6, within 20%.
+  - Window: start from that state and run seed-free to t = 300 at each b.
+    - b_s: bisection on [26.0, 29.0], 10 steps (±0.003). A particle "exists" if at least one particle is detected at
+      t = 300.
+    - b_r: bisection on [29.0, 30.04], 9 steps (±0.002). "Replicating" means two or more particles at t = 300.
+    - Both edges are operational finite-time estimates, as in 1D (N5).
+  - Box check: the same on a 184 × 212 torus (30.05 × 29.98). Relative L2 of the radial φ_X profile over r < 6.
+- **Spectra:** shift-invert Lanczos at σ = −10⁻³ (the shift keeps the factorisation non-singular), growing k until the
+  cutoff 1.5 k*² is passed. Eigenvectors are kept for the plane-wave diagnostic.
+- **Smoke run (code validation, not a registered run):** one T particle on a small 62 × 70 torus (10.1 × 9.9) at h = 0.2,
+  on the 2-core cloud machine.
+  - It took 80 s for 4 340 nodes. Its centre φ_X was −13.55 at t = 300.
+  - It was not stationary at t = 300 (max |∂φ/∂t| = 6e-6), probably slow drift towards a lattice pinning site.
+  - The balances held to 4e-12.
+  - It is recorded here because it bears on the *stationary* label (§5.2), which is reported only.
+- **Timing:** Part 0's first full-size T run is timed, and the Part A projection is re-stated here before Part A.
+
 Result:
 Replication (ChatGPT):
 PI sign-off (design): Richard Benear, 2026-10-30 14:19 UTC, project thread ("I approve MG4 draft 4."), after ChatGPT's

@@ -264,3 +264,18 @@ Items deliberately postponed so the project reaches its main questions first. Th
   design frozen at `773255d`. No MG4 run preceded the registration.
 - Next: Part 0 code with tests first (`src/graphs.py`, `src/graph_ode.py`, `src/measure_graph.py`, `tests/test_mg4.py`).
   Every implementation choice is recorded in GATES.md before the run it affects.
+
+## MG010 — MG4 Part 0 code
+- `src/graphs.py` covers the commensurate torus, the T, D, R and N3 builders, the Laplacian, the homogenized corrector,
+  shift-invert spectra and the exact torus count. `src/graph_ode.py` covers the graph ODE, the continuum 2D initial
+  condition and the node-sum balances. `src/measure_graph.py` covers smoothing, particles, classes, radial profiles and λ.
+- `tests/test_mg4.py`: 9 tests pass. They cover:
+  - T's corrector against 1.5a²;
+  - T's spectrum against the analytic one;
+  - Delaunay E = 3N on the torus;
+  - the Jacobian against finite differences;
+  - the balances, including at the exact homogeneous state;
+  - detection and class precedence on synthetic fields.
+- Part 0 implementation choices are recorded in GATES.md (MG4) before any Part 0 run. A small-torus smoke run (code
+  validation only) gave 80 s for 4 340 nodes, and the particle was not yet stationary at t = 300.
+- Next: run Part 0.
