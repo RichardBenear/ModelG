@@ -9,6 +9,7 @@ machine (10 cores). Everything referred to here is committed. Read `CLAUDE.md` f
 | MG1 | Continuum PDE reproduces the published stationary soliton | **PASS by PI exception** (the registered FAIL on 1D stationarity is preserved) |
 | MG2 | Token rules converge to the lattice mean field as Ω → ∞ | **FAIL as registered** (C3 at Ω = 100; C4 noise-driven replication at b_mid). The core convergence tests C1 and C6 PASS; C5 PASS |
 | MG3 | Particles nucleate spontaneously from intrinsic noise | **FAIL as registered** (C2(a): 0.71, 0.71, 0.62 confirmed vs ≥ 0.80). C1, C3, C4, V5 PASS. Budget overrun 19.03/18 h recorded as an exception |
+| MG3b | Follow-up: time step, rates with more events, calibrated uncertainty | Estimation study, no verdict. Part 1 EQUIVALENT (τ/2 vs τ ratio 0.95); S = 0.064 per unit Ω, approximate 95% 0.047–0.082 (MG3b record) |
 | MG4–MG7 | Irregular graphs, evolving hypergraph, gravity-like deficit and mass, multiway | PENDING (not designed in detail yet) |
 
 Key physics so far, on the h = 0.2 lattice at b = 29:
@@ -23,7 +24,11 @@ Full records: `GATES.md` (each gate's "result" section), `STAGE_LOG.md`, `result
 `results/MG3/MG3_evaluation.md`. Reviews: `review/` (most recent: `MG006_replication/README.md`, ChatGPT's full MG3
 review, and `MG006_response.md`).
 
-## Immediate next steps (updated 2026-10-29, MG007)
+## Immediate next steps (updated 2026-10-30, MG007d)
+0. **MG3b: run and evaluated** (`results/MG3b/MG3b_evaluation.md`). Next is ChatGPT's review of the result; after
+   that, the PI decides what comes next (MG4 design, or deferred items D1–D3).
+
+### Earlier steps (2026-10-29, MG007)
 1. **Local environment: done.** Python 3.13.2, numpy 2.2.4, scipy 1.16.1, numba 0.68.0; tests pass locally (8 and 14).
    Measured cost at Ω = 150, 9 workers: 0.89 core-s per time unit at τ, 2.43 at τ/2.
 2. **MG3b follow-up: REGISTERED** in `GATES.md` (MG3b), design frozen as `spec/MG3b_followup_proposal.md` at commit
