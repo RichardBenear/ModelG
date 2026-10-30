@@ -637,7 +637,7 @@ independently by `results/MG3b/independent/recompute.py` with identical numbers)
 - **Deviation:** the evaluator was written after the data were in. It implements the registered Part 2 analyses. Its
   open details (landmark exposure, early/late split at 100, the stationary power simulation, the slope fit) are listed
   in the record for review.
-Replication (ChatGPT): `review/MG008_chatgpt.md` (2026-10-30). Supports accepting MG3b as an estimation result.
+Replication (ChatGPT): `review/MG008_chatgpt.md` and `review/MG008_replication/` (2026-10-30). Supports accepting MG3b as an estimation result.
 Independently reproduced all rates, exposures, stopping decisions and slope estimates, all 302 confirmation
 classifications (206 persistent, 96 excursion) with a separate deterministic solver, the stationary-check powers, and
 the budget replay (every Part 2 batch fits under the original 12-hour ceiling). It asked for two label clarifications,

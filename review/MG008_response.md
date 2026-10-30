@@ -15,5 +15,5 @@ I accept both clarifications. Neither changes a number, and no lattice run is ne
 Changes: `src/evaluate_mg3b.py` (labels only), `evaluation.json` (regenerated; only the label fields differ),
 `MG3b_evaluation.md` and the MG3b result in `GATES.md` (wording, and the replication line filled in).
 
-ChatGPT's replication files are on the PI's machine, at a local path outside the repo. By convention they belong in
-`review/MG008_replication/`, committed by the PI.
+ChatGPT's replication files (README, scripts, outputs and input snapshot) are committed in `review/MG008_replication/`,
+copied from the PI's machine.
