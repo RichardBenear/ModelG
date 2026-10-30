@@ -595,6 +595,13 @@ run).**
   - **Records:** each record is the MG3 `summarize` record plus `conf_fields`, keyed by snapshot index. Each entry holds
     the float32 field (3 × 500), its class, the confirmation time, and MG3's confirmation summary.
   - **Exit codes:** 2 = budget stop (counts and costs only), 4 = clip pilot failed, 5 = `decisions.json` missing.
+  - **PI budget decision (2026-10-30, 01:51 UTC; recorded before the Part 1 result is known):** the τ/4 timing ran
+    only 2 runs on the machine and measured 2.71 core-s per time unit. That scaled the Part 1b ceiling to
+    40 × 0.54 = 21.7 core-hours. Under the full 9-worker load, τ runs cost about 1.0 and τ/2 about 2.1 core-s per time
+    unit, so τ/4 probably needs about 4. On Claude's recommendation, the PI restored the **unscaled 40 core-hour
+    ceiling** for Part 1b. The measured factor still scales the prior per-run projection. The running driver loaded the
+    old rule, so if Part 1b triggers a budget stop under it, the driver is restarted (resume) with the corrected code.
+    This counts as the recorded PI extension, not a new decision.
   - **Production machine:** the PI's machine, with `MODELG_WORKERS=9`. The platform and worker count are written into
     `plan.json`, `timing_tau4.json` and the ledger.
 

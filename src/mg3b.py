@@ -124,8 +124,11 @@ def ledger_used_s(path, item=None, kinds=None):
 
 
 def ceiling_h(item, n_arm=64, tau4_factor=1.0):
+    # P1_tau4: the registered rule scaled 40 h by the measured tau/4 cost / 5.0. PI decision 2026-10-30 (before the
+    # Part 1 result; GATES.md MG3b): the timing ran 2 runs alone and underestimates loaded cost, so the ceiling is the
+    # unscaled 40 core-hours. tau4_factor still scales the prior per-run projection.
     c = CEIL_H_96.get(item, CEIL_H[item]) if n_arm == 96 else CEIL_H[item]
-    return c * tau4_factor if item == "P1_tau4" else c
+    return c
 
 
 def batch_allowed(used_s, completed_walls, batch_size, item, n_arm=64, tau4_factor=1.0):
