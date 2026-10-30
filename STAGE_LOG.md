@@ -207,6 +207,18 @@
 - The driver's implementation choices are recorded in GATES.md before any production run.
 - Next: the production run on the PI's machine (`MODELG_WORKERS=9 python src/run_mg3b.py`). Projected 24–63 core-hours, about 3–7 h of wall time.
 
+## MG007d — MG3b production run and evaluation
+- Ran on the PI's machine (RB_LibraryPC, 9 workers) through Remote Control, 2026-10-29 local time, about 4.0 h wall,
+  with no errors and no budget stop. Run records committed from the PC (258 records, about 6 MB).
+- PI decisions during the run: τ/4 ceiling back to the unscaled 40 core-hours (before Part 1 was known; not used) and
+  no core-hour ceiling for Part 2 at τ (after Part 1 was known; not exercised). Both are in GATES.md.
+- Part 1 EQUIVALENT (r = 0.95, 90% CI 0.65–1.40), so production at τ. Part 2: Ω = 130, 110, 100 reached 25, 28 and 21
+  events in 48, 48 and 32 runs. S = 0.064 (approximate profile 95% interval 0.047–0.082). The stationary check is
+  uninformative in every cell. 26.75 core-hours in all.
+- `src/evaluate_mg3b.py` (written after the run, implementing the registered analyses; open details listed in the
+  record). Independent recomputation in `results/MG3b/independent/`. Record: `results/MG3b/MG3b_evaluation.md`.
+- Next: ChatGPT review of the result. No gate runs while review items are open.
+
 ## Deferred work (PI decisions)
 Items deliberately postponed so the project reaches its main questions first. They can be revisited later.
 - **D1 (2026-10-28):** Noisy existence-window edge study: survival S(δ, Ω, T) with δ = b − b_s(h); noisy edge at S = 1/2; test of the saddle-node scaling δ ∝ Ω^(−2/3). Deferred by PI.

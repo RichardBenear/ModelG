@@ -8,7 +8,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG1 | 1 | Continuum PDE reproduces a published stationary Model G soliton | PASS by PI exception (registered FAIL on 1D stationarity preserved) |
 | MG2 | 2 | Stochastic token rules converge to the same-lattice mean-field solution as Ω → ∞ | **FAIL** as registered (C3, C4); convergence criteria C1, C6 PASS — see MG2 result |
 | MG3 | 2 | Particles nucleate spontaneously from intrinsic fluctuations at finite Ω | **FAIL** as registered (C2); C1, C3, C4, V5 PASS — see MG3 result |
-| MG3b | 2 | Follow-up to MG3: time-step check, nucleation rates with more events, calibrated uncertainty (estimation study; no pass/fail) | PRE-REGISTERED 2026-10-29; not yet run |
+| MG3b | 2 | Follow-up to MG3: time-step check, nucleation rates with more events, calibrated uncertainty (estimation study; no pass/fail) | **Run 2026-10-29/30** (estimation study, no verdict): Part 1 EQUIVALENT; S = 0.064 (approximate 95% 0.047–0.082) — see MG3b result |
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale | PENDING |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve) | PENDING |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | PENDING |
@@ -614,7 +614,29 @@ run).**
   - **Production machine:** the PI's machine, with `MODELG_WORKERS=9`. The platform and worker count are written into
     `plan.json`, `timing_tau4.json` and the ledger.
 
-Result:
+Result (2026-10-30; full record `results/MG3b/MG3b_evaluation.md`; evaluator `src/evaluate_mg3b.py`, recomputed
+independently by `results/MG3b/independent/recompute.py` with identical numbers). No pass/fail verdict (estimation study).
+- **Part 1: EQUIVALENT.** Ω = 120: τ 44 events / exposure 12 891.5, τ/2 39 / 12 017.5. r = k(τ/2)/k(τ) = 0.951,
+  Clopper–Pearson 90% CI 0.646–1.397 (inside [0.5, 2]), 95% CI 0.602–1.497. Production at τ; Part 1b not run. Startup
+  9/64 vs 10/64 (Fisher p = 1.0; no difference was detected at the 0.05 level).
+- **Part 2 at τ** (all rates conditional on τ = 6.667e-4; no cell capped):
+  | Ω | Runs | Events | Startup | k̂ | 95% CI |
+  |---|---|---|---|---|---|
+  | 130 | 48 | 25 | 0 | 1.62e-5 | 1.05e-5 – 2.39e-5 |
+  | 120 | 64 | 44 | 9 | 3.41e-5 | 2.48e-5 – 4.58e-5, approximate (observed minimum branch-conditional coverage 0.943) |
+  | 110 | 48 | 28 | 19 | 6.27e-5 | 4.17e-5 – 9.07e-5 |
+  | 100 | 32 | 21 | 11 | 1.13e-4 | 6.97e-5 – 1.72e-4 |
+- **Slope:** S = 0.064 per unit Ω, profile 95% interval 0.047–0.082, **approximate** (observed minimum coverage 0.937;
+  not a guaranteed floor). Deviance 0.23 on 2 df (p = 0.89). Without Ω = 100: S = 0.068, 0.041–0.094. MG3's 0.073
+  lies inside both.
+- **Stationary check:** no rejection at 0.01 (smallest p = 0.0125, Ω = 110). Power against ×2 / ×0.5 is 0.04–0.26 in
+  every cell, so the check is **uninformative** everywhere. Landmark rates (100, 150) and the late/early ratios are in
+  the record; none of the ratios excludes 1.
+- **Cost:** 26.0 core-hours of production plus 0.75 calibration. Part 2 used 9.94 core-hours, inside the original
+  12-hour ceiling, so the PI's extension was not exercised.
+- **Deviation:** the evaluator was written after the data were in. It implements the registered Part 2 analyses. Its
+  open details (landmark exposure, early/late split at 100, the stationary power simulation, the slope fit) are listed
+  in the record for review.
 Replication (ChatGPT):
 PI sign-off (design): Richard Benear, 2026-10-29, project thread ("I'm satisfied. go ahead and register it and modify
 GATES.md etc."), approving draft 3 after ChatGPT's two review rounds.

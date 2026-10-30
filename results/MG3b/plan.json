@@ -1,0 +1,47 @@
+{
+ "part1": "EQUIVALENT",
+ "part1_counts": {
+  "n_a": 44,
+  "E_a": 12891.5,
+  "n_b": 39,
+  "E_b": 12017.5
+ },
+ "part1b": null,
+ "part1b_counts": null,
+ "branch": "tau",
+ "production_tau": 0.0006666666666666668,
+ "omega120_cell": "P1_tau",
+ "decisions": "C:\\Users\\rbene\\Documents\\GravityStudy\\ModelG\\src\\..\\results\\MG3b\\calibration\\decisions.json",
+ "timing": {
+  "core_s_per_time_unit": 2.711157238483429,
+  "factor": 0.5422314476966859,
+  "runs": [
+   [
+    100.0,
+    271.0565049648285
+   ],
+   [
+    100.0,
+    271.1749427318573
+   ]
+  ],
+  "platform": {
+   "machine": "RB_LibraryPC",
+   "os": "Windows-11-10.0.26200-SP0",
+   "python": "3.13.2",
+   "numpy": "2.2.4",
+   "scipy": "1.16.1",
+   "numba": "0.68.0"
+  },
+  "workers": 9
+ },
+ "platform": {
+  "machine": "RB_LibraryPC",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.2",
+  "numpy": "2.2.4",
+  "scipy": "1.16.1",
+  "numba": "0.68.0"
+ },
+ "workers": 9
+}
