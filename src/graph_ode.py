@@ -11,6 +11,7 @@ import os, sys
 import numpy as np
 import scipy.sparse as sp
 from scipy.integrate import solve_ivp
+import scipy.integrate._ivp.bdf as _bdf
 sys.path.insert(0, os.path.dirname(__file__))
 from lattice import steady_state, P17
 import graphs as gr
@@ -88,18 +89,44 @@ def make_system(g, h, P=None, seed_centre=None, seed_scale=0.0):
 
 
 def integrate(g, h, y0, t_end=300.0, t_eval=None, P=None, seed_centre=None, seed_scale=0.0,
-              rtol=1e-8, atol=1e-10):
-    """BDF with sparse Jacobian, as lattice_ode_1d (with its first-step retries). Returns (sol, rhs)."""
+              rtol=1e-8, atol=1e-10, order="nd"):
+    """BDF with sparse Jacobian, as lattice_ode_1d (with its first-step retries). Returns (sol, rhs).
+
+    order="nd" (MG010 solver speed-up): the solver works on the same system with its unknowns renumbered node by node
+    in geometric nested-dissection order (graphs.nd_order), and SciPy's sparse LU keeps that order (NATURAL) instead
+    of its default COLAMD. The equations, tolerances and steps are unchanged; only rounding differs. Graphs without
+    geometry (N3) keep order=None, the original path. sol.y is returned in the original numbering."""
     rhs, jac, P = make_system(g, h, P, seed_centre, seed_scale)
+    if order == "nd" and g["kind"] == "N3":
+        order = None
+    if order == "nd":
+        N = g["N"]
+        o = gr.nd_order(g)
+        perm = np.column_stack([o, N + o, 2 * N + o]).ravel()
+        inv = np.argsort(perm)
+        f = lambda t, z: rhs(t, z[inv])[perm]
+        fj = lambda t, z: jac(t, z[inv])[perm][:, perm].tocsc()
+        z0 = np.asarray(y0)[perm]
+    else:
+        f, fj, z0 = rhs, jac, y0
     sol = None
-    for fs in (None, 1e-3, 1e-2):
-        sol = solve_ivp(rhs, (0.0, t_end), y0, method="BDF", jac=jac, rtol=rtol, atol=atol,
-                        max_step=0.5, first_step=fs, t_eval=t_eval)
-        sol.first_step_used = fs
-        if sol.success:
-            break
+    orig = _bdf.splu
+    try:
+        if order == "nd":
+            _bdf.splu = lambda A: orig(A, permc_spec="NATURAL")
+        for fs in (None, 1e-3, 1e-2):
+            sol = solve_ivp(f, (0.0, t_end), z0, method="BDF", jac=fj, rtol=rtol, atol=atol,
+                            max_step=0.5, first_step=fs, t_eval=t_eval)
+            sol.first_step_used = fs
+            if sol.success:
+                break
+    finally:
+        _bdf.splu = orig
     if not sol.success:
         raise RuntimeError(sol.message)
+    if order == "nd":
+        sol.y = sol.y[inv]
+    sol.order = order
     return sol, rhs
 
 

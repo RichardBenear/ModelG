@@ -109,6 +109,20 @@ def test_jacobian_matches_finite_difference():
     assert np.abs(J - Jn).max() < 1e-5 * max(1.0, np.abs(J).max())
 
 
+def test_nd_order_matches_default_solver():
+    """MG010 speed-up: the nested-dissection path gives the same steps and the same solution to rounding."""
+    import graph_ode as go
+    rng = np.random.default_rng(9)
+    g = gr.delaunay(gr.poisson_points(900, 6.0, 6.0, rng), 6.0, 6.0)
+    o = gr.nd_order(g)
+    assert sorted(o) == list(range(g["N"]))
+    y0 = go.soliton_ic(g, np.array([3.0, 3.0]))
+    a, _ = go.integrate(g, 0.2, y0, 2.0, order=None)
+    b, _ = go.integrate(g, 0.2, y0, 2.0, order="nd")
+    assert a.nfev == b.nfev and a.nlu == b.nlu
+    assert np.abs(a.y[:, -1] - b.y[:, -1]).max() < 1e-10
+
+
 def test_measurement_on_synthetic_fields():
     import measure_graph as mg
     g = gr.triangular(gr.torus(0.2, 62, 70))

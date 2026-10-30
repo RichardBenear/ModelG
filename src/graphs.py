@@ -146,6 +146,36 @@ def corrector(g):
                 h2_naive=naive)
 
 
+def nd_order(g, leaf=64):
+    """Geometric nested-dissection node order (fill-reducing order for the sparse LU in the ODE solver; MG010).
+    Recursive median bisection of the positions, alternating axes; the nodes of the lower half that touch the upper
+    half form the separator and are ordered after both halves. Changes only the order of elimination, not the system."""
+    A = (laplacian(g) != 0).tocsr()
+    pos, out = g["pos"], []
+
+    def rec(nodes, depth):
+        if len(nodes) <= leaf:
+            out.append(nodes)
+            return
+        x = pos[nodes, depth % 2]
+        m = np.median(x)
+        lo, hi = nodes[x < m], nodes[x >= m]
+        in_hi = np.zeros(g["N"], bool)
+        in_hi[hi] = True
+        sub = A[lo]
+        rows = np.repeat(np.arange(len(lo)), np.diff(sub.indptr))
+        sep = np.zeros(len(lo), bool)
+        sep[rows[in_hi[sub.indices]]] = True
+        rec(lo[~sep], depth + 1)
+        rec(hi, depth + 1)
+        out.append(lo[sep])
+
+    rec(np.arange(g["N"]), 0)
+    o = np.concatenate(out)
+    assert len(o) == g["N"] and len(np.unique(o)) == g["N"]
+    return o
+
+
 def spectrum(g, h, cutoff, k0=None, vectors=False):
     """Nonnegative eigenvalues nu of -L_G = -(A - D_deg)/h^2 up to `cutoff` (inclusive), ascending.
     Shift-invert Lanczos; k grows until the largest returned eigenvalue exceeds the cutoff."""

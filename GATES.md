@@ -776,6 +776,24 @@ before the run it affects. (The MG3b lesson: record choices before the run, not 
     smoothed e_X was 0.032 on T and 0.276 on the small D graph (unsmoothed 0.06 and 2.6).
   - **No criterion, threshold or rule is changed in response.** No further dynamics will be run on non-registered
     graphs before Part A.
+- **Solver speed-up (MG010, recorded 2026-10-30 before any use in a registered run):** the cost of a run is mostly
+  SciPy's sparse LU of the BDF Newton matrix, whose default ordering (COLAMD) gives 50–90 times the Jacobian's nonzeros
+  on these graphs.
+  - From now on `graph_ode.integrate` (default `order="nd"`) renumbers the unknowns node by node in a geometric
+    nested-dissection order (`graphs.nd_order`) and keeps that order in the LU (`permc_spec="NATURAL"`).
+  - The equations, the solver (BDF), the tolerances, max_step and the first-step retries are all unchanged. Only the
+    elimination order and therefore the rounding differ. N3 has no embedding and keeps the original path.
+  - **Checks:**
+    - The full Part 0 T reference run (122 × 142, t = 0–300) was repeated with the new path. It took the same steps
+      (nfev 1634 in both; nlu 229) and its final state differs from the saved `Tstate_122x142.npy` by at most 1.4e-13
+      (field values up to 13.6). Wall time went from 1332 s to 283 s on the cloud machine
+      (`results/MG4/part0/nd_check_T122x142.json`).
+    - On T for t = 0–20 the steps are again identical (nfev 510, nlu 47) and the largest difference is 5.5e-14.
+    - A new unit test (`test_nd_order_matches_default_solver`) compares the two paths on a 900-point scratch Delaunay
+      graph for t = 0–2 (identical step counts, difference < 1e-10). This is a solver-equivalence check, not a dynamics
+      outcome. The R panel graph 0 is being timed the same way, for t = 0–5.
+  - Part 0 evaluations already finished keep their records. The remaining window-bisection steps and all of Part A use
+    the new path. Ledger rows carry the platform, as before.
 
 Result:
 Replication (ChatGPT):
