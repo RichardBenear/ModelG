@@ -27,6 +27,7 @@ review, and `MG006_response.md`).
 ## Immediate next steps (updated 2026-10-30, MG007d)
 0. **MG3b: done and signed off 2026-10-30** (`results/MG3b/MG3b_evaluation.md`; review `review/MG008_*`). The PI
    decides what comes next (MG4 design, or deferred items D1–D3).
+   **MG4 design: draft 1 written 2026-10-30 (MG009)**, `spec/MG4_proposal.md`; awaiting PI choices and ChatGPT review.
 
 ### Earlier steps (2026-10-29, MG007)
 1. **Local environment: done.** Python 3.13.2, numpy 2.2.4, scipy 1.16.1, numba 0.68.0; tests pass locally (8 and 14).
