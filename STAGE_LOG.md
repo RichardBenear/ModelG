@@ -220,7 +220,9 @@
 - ChatGPT review (`review/MG008_chatgpt.md`): supports accepting MG3b as an estimation result and reproduced every
   number, including all 302 confirmation classifications. Two label clarifications were applied
   (`review/MG008_response.md`): the three-cell sensitivity interval and the landmark and early/late intervals are
-  nominal, not calibrated. No number changed. Awaiting PI sign-off of the result.
+  nominal, not calibrated. No number changed.
+- **PI sign-off of the result: Richard Benear, 2026-10-30** ("I sign off on MG3b"). MG3b is closed as an estimation
+  result; MG3's FAIL stands.
 
 ## Deferred work (PI decisions)
 Items deliberately postponed so the project reaches its main questions first. They can be revisited later.

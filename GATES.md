@@ -644,4 +644,6 @@ the budget replay (every Part 2 batch fits under the original 12-hour ceiling). 
 both applied (`review/MG008_response.md`). No number changed, and no lattice run is needed.
 PI sign-off (design): Richard Benear, 2026-10-29, project thread ("I'm satisfied. go ahead and register it and modify
 GATES.md etc."), approving draft 3 after ChatGPT's two review rounds.
-PI sign-off (result):
+PI sign-off (result): Richard Benear, 2026-10-30, project thread ("I sign off on MG3b"), after ChatGPT's review
+(`review/MG008_chatgpt.md`) and the two label clarifications (`review/MG008_response.md`). MG3b is accepted as an
+estimation result. It has no verdict and does not change MG3's FAIL.
