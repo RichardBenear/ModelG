@@ -63,7 +63,8 @@ def step(name, fn, *a):
     out = fn(*a)
     out["wall_s"] = time.time() - t0
     json.dump(out, open(path, "w"), indent=1)
-    ledger("part0", name, out["wall_s"])
+    if not name.startswith("window_"):            # bisection evaluations are ledgered one by one
+        ledger("part0", name, out["wall_s"])
     return out
 
 
