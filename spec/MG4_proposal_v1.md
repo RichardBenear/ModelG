@@ -1,6 +1,6 @@
 # MG4 — Particles on frozen irregular graphs (Phase 3): design proposal, DRAFT 1
 
-**SUPERSEDED** by draft 3 (`spec/MG4_proposal.md`). Kept unchanged below as the record.
+**SUPERSEDED** by later drafts (`spec/MG4_proposal.md`). Kept unchanged below as the record.
 
 Status: **DRAFT 1** (Claude, 2026-10-30, stage MG009). Not registered. Nothing in it binds until the PI approves it after
 ChatGPT's design review and it is entered in `GATES.md`. **No MG4 dynamics of any kind has been run.** The only
