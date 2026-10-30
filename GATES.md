@@ -627,17 +627,21 @@ independently by `results/MG3b/independent/recompute.py` with identical numbers)
   | 110 | 48 | 28 | 19 | 6.27e-5 | 4.17e-5 – 9.07e-5 |
   | 100 | 32 | 21 | 11 | 1.13e-4 | 6.97e-5 – 1.72e-4 |
 - **Slope:** S = 0.064 per unit Ω, profile 95% interval 0.047–0.082, **approximate** (observed minimum coverage 0.937;
-  not a guaranteed floor). Deviance 0.23 on 2 df (p = 0.89). Without Ω = 100: S = 0.068, 0.041–0.094. MG3's 0.073
-  lies inside both.
+  not a guaranteed floor). Deviance 0.23 on 2 df (p = 0.89). Without Ω = 100: S = 0.068, nominal (uncalibrated) 95%
+  interval 0.041–0.094; the 0.937 figure applies to the four-cell fit only. MG3's 0.073 lies inside both.
 - **Stationary check:** no rejection at 0.01 (smallest p = 0.0125, Ω = 110). Power against ×2 / ×0.5 is 0.04–0.26 in
   every cell, so the check is **uninformative** everywhere. Landmark rates (100, 150) and the late/early ratios are in
-  the record; none of the ratios excludes 1.
+  the record as nominal, descriptive sensitivities (not calibrated); none of the ratios excludes 1.
 - **Cost:** 26.0 core-hours of production plus 0.75 calibration. Part 2 used 9.94 core-hours, inside the original
   12-hour ceiling, so the PI's extension was not exercised.
 - **Deviation:** the evaluator was written after the data were in. It implements the registered Part 2 analyses. Its
   open details (landmark exposure, early/late split at 100, the stationary power simulation, the slope fit) are listed
   in the record for review.
-Replication (ChatGPT):
+Replication (ChatGPT): `review/MG008_chatgpt.md` (2026-10-30). Supports accepting MG3b as an estimation result.
+Independently reproduced all rates, exposures, stopping decisions and slope estimates, all 302 confirmation
+classifications (206 persistent, 96 excursion) with a separate deterministic solver, the stationary-check powers, and
+the budget replay (every Part 2 batch fits under the original 12-hour ceiling). It asked for two label clarifications,
+both applied (`review/MG008_response.md`). No number changed, and no lattice run is needed.
 PI sign-off (design): Richard Benear, 2026-10-29, project thread ("I'm satisfied. go ahead and register it and modify
 GATES.md etc."), approving draft 3 after ChatGPT's two review rounds.
 PI sign-off (result):

@@ -19,6 +19,10 @@ CELLS = {130.0: "P2_130", 110.0: "P2_110", 100.0: "P2_100"}
 POWER_R, POWER_SEED, ALPHA = 2000, 20261030, 0.01
 # Registered labels (GATES.md MG3b: Part 3 result and addendum 1)
 SLOPE_LABEL = "approximate (observed minimum coverage 0.937 over qualifying calibration cells; not a guaranteed floor)"
+SENS_LABEL = ("nominal 95% profile interval, not calibrated (the 0.937 calibration figure belongs to the four-cell fit; "
+              "review/MG008_chatgpt.md item 1)")
+LANDMARK_LABEL = ("nominal 95% intervals; descriptive sensitivities, not calibrated (their sampling differs from the "
+                  "calibrated principal estimates; review/MG008_chatgpt.md item 2)")
 OM120_LABEL = {"tau": 0.943, "tau2_inc": 0.875, "tau2_1b": 0.841}
 
 
@@ -60,6 +64,7 @@ def cell_stats(runs):
     lm["ratio_late_over_early"] = dict(n_early=n1, E_early=E1, n_late=n2, E_late=E2,
                                        ratio=(n2 / E2) / (n1 / E1) if n1 > 0 and E2 > 0 else float("nan"),
                                        lo=float(rl[0]), hi=float(rh[0]))
+    lm["label"] = LANDMARK_LABEL
     out["landmarks"] = lm
     return out
 
@@ -206,7 +211,7 @@ def main():
         Om = np.array(sorted(cells, reverse=True))
         n = np.array([p2[f"{o:g}"]["n"] for o in Om], float); E = np.array([p2[f"{o:g}"]["exposure"] for o in Om])
         fit = glm(Om, n, E); fit["label"] = SLOPE_LABEL
-        sens = glm(Om[Om != 100.0], n[Om != 100.0], E[Om != 100.0]); sens["label"] = SLOPE_LABEL
+        sens = glm(Om[Om != 100.0], n[Om != 100.0], E[Om != 100.0]); sens["label"] = SENS_LABEL
         res["part2"] = dict(cells=p2, slope=fit, slope_without_100=sens,
                             conditional_on="production tau " + str(plan["production_tau"]))
     rows = mg3b.ledger_rows(f"{OUT}/budget_ledger.csv")
