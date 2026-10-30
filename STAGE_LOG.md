@@ -236,4 +236,6 @@ Items deliberately postponed so the project reaches its main questions first. Th
   survival, profile and spectral (Weyl) criteria. Part B (stochastic, Ω·ρ matched, 16 runs) carries survival under noise.
 - No MG4 dynamics was run. Only graph statistics (degrees, edge-length moments) were computed to size τ and the cost.
 - Wolfram hypergraph snapshots are proposed as a separate later study (MG4b).
+- Draft 2 (same day): the PI chose "2D graphs, noise-free only" (13:41 UTC). The stochastic Part B is removed and
+  deferred; the primary h returns to 0.2; projected cost about 14 core-hours, all deterministic.
 - Next: PI choices on the questions in §12, ChatGPT design review, then registration in GATES.md.
