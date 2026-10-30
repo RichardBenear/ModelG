@@ -53,8 +53,12 @@ def test_budget_check():
     ok, _ = mg3b.batch_allowed(5.0 * 3600, [], 16, "P1_tau", n_arm=96)     # ceiling 9 with 96 runs
     assert ok
     # completed-run mean replaces the prior
-    ok, info = mg3b.batch_allowed(0.0, [3600.0], 16, "P2_tau")             # 16 x 1 h x 1.25 = 20 h > 12
-    assert not ok and abs(info["projected_h"] - 20.0) < 1e-9
+    ok, info = mg3b.batch_allowed(0.0, [3600.0], 16, "P2_tau2")            # 16 x 1 h x 1.25 = 20 h <= 30
+    assert ok and abs(info["projected_h"] - 20.0) < 1e-9
+    ok, _ = mg3b.batch_allowed(15.0 * 3600, [3600.0], 16, "P2_tau2")       # 15 + 20 > 30
+    assert not ok
+    ok, _ = mg3b.batch_allowed(1e3 * 3600, [3600.0], 16, "P2_tau")         # PI decision: no ceiling at tau
+    assert ok
     # tau/4 ceiling: unscaled 40 h (PI decision); the measured cost still scales the prior projection
     assert mg3b.ceiling_h("P1_tau4", tau4_factor=0.54) == 40.0             # PI decision 2026-10-30: unscaled
     assert mg3b.ceiling_h("P2_tau2") == 30.0

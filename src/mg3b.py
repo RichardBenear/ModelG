@@ -19,7 +19,8 @@ BATCH, TARGET, CAP = 16, 20, 64
 OUTCOME = {0: "EQUIVALENT", 1: "DIFFERENT", 2: "INCONCLUSIVE"}
 
 # Registered core-hour ceilings (GATES.md MG3b) and prior projections per run (core-s; proposal tables / run counts).
-CEIL_H = dict(P1_tau=6.0, P1_tau2=20.0, P1_tau4=40.0, P2_tau=12.0, P2_tau2=30.0)
+# P2_tau: PI decision 2026-10-30 02:56 UTC (GATES.md MG3b): no core-hour ceiling; the run caps (64 per cell) bind.
+CEIL_H = dict(P1_tau=6.0, P1_tau2=20.0, P1_tau4=40.0, P2_tau=float("inf"), P2_tau2=30.0)
 CEIL_H_96 = dict(P1_tau=9.0, P1_tau2=30.0)
 PRIOR_S = dict(P1_tau=3.8 * 3600 / 64, P1_tau2=13.0 * 3600 / 64, P1_tau4=26.7 * 3600 / 64,
                P2_tau=7.2 * 3600 / 117, P2_tau2=19.4 * 3600 / 117)
