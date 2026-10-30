@@ -239,3 +239,14 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - Draft 2 (same day): the PI chose "2D graphs, noise-free only" (13:41 UTC). The stochastic Part B is removed and
   deferred; the primary h returns to 0.2; projected cost about 14 core-hours, all deterministic.
 - Next: PI choices on the questions in §12, ChatGPT design review, then registration in GATES.md.
+
+## MG009a — MG4 design review and draft 3
+- ChatGPT reviewed draft 2 (`review/MG009_chatgpt.md`). All five items were accepted (`review/MG009_response.md`).
+- Draft 3 changes:
+  - C1 becomes a fixed benchmark panel with explicit counts. Draft 2's Clopper–Pearson claim was wrong.
+  - C3 splits into a spectral count against the exact torus and a coarse-grained operator test on the soliton.
+  - All families use one commensurate rectangular torus.
+  - A measurement specification is added, with a precedence rule for outcome classes.
+  - Stationarity is now reported separately from survival.
+- Drafts 1 and 2 are preserved as `spec/MG4_proposal_v1.md` and `_v2.md`. No MG4 dynamics has been run.
+- Next: ChatGPT re-review of draft 3, then PI approval and registration.
