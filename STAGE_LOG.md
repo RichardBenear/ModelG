@@ -228,3 +228,14 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - **D1 (2026-10-28):** Noisy existence-window edge study: survival S(δ, Ω, T) with δ = b − b_s(h); noisy edge at S = 1/2; test of the saddle-node scaling δ ∝ Ω^(−2/3). Deferred by PI.
 - **D2 (2026-10-28):** Repeating key MG3 cells at h = 0.1, and reporting b relative to each lattice's window. Deferred by PI. Until then, near-edge results at b = 29 (e.g. survival) are stated as h = 0.2-specific (assumption M11).
 - **D3 (2026-10-28):** MG2 ladder cells at Ω = 10 and 30 (both b). Deferred by PI when the MG2 cap was raised from 8 to 12 core-hours. Not used by any MG2 criterion.
+
+## MG009 — MG4 design, draft 1
+- `spec/MG4_proposal.md` (draft 1, not registered). MG4 tests particles on frozen irregular 2D graphs: a triangular
+  comparator, Delaunay (primary) and random geometric graphs, and a random regular graph as a negative control.
+  Part 0 calibrates each graph's spacing from its homogenized diffusivity. Part A (deterministic graph ODE) carries
+  survival, profile and spectral (Weyl) criteria. Part B (stochastic, Ω·ρ matched, 16 runs) carries survival under noise.
+- No MG4 dynamics was run. Only graph statistics (degrees, edge-length moments) were computed to size τ and the cost.
+- Wolfram hypergraph snapshots are proposed as a separate later study (MG4b).
+- Draft 2 (same day): the PI chose "2D graphs, noise-free only" (13:41 UTC). The stochastic Part B is removed and
+  deferred; the primary h returns to 0.2; projected cost about 14 core-hours, all deterministic.
+- Next: PI choices on the questions in §12, ChatGPT design review, then registration in GATES.md.
