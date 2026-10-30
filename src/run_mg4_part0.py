@@ -153,8 +153,15 @@ def window_edge(which, thr):
     hist = []
     for _ in range(n):
         m = 0.5 * (lo + hi)
-        sol, _ = go.integrate(g, h, y0, 300.0, P={**P17, "b": m})
-        k = len(mg.particles(g, S @ sol.y[N:2 * N, -1], thr))
+        cache = os.path.join(STEPS, f"window_{which}_b{m:.6f}.json")      # per-evaluation resume
+        if os.path.exists(cache):
+            k = json.load(open(cache))["n_particles"]
+        else:
+            t0 = time.time()
+            sol, _ = go.integrate(g, h, y0, 300.0, P={**P17, "b": m})
+            k = len(mg.particles(g, S @ sol.y[N:2 * N, -1], thr))
+            json.dump(dict(b=m, n_particles=k, wall_s=time.time() - t0), open(cache, "w"))
+            ledger("part0", f"window_{which}_b{m:.6f}", time.time() - t0)
         hist.append(dict(b=m, n_particles=k))
         if which == "b_s":
             lo, hi = (lo, m) if k >= 1 else (m, hi)
