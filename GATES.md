@@ -602,6 +602,15 @@ run).**
     ceiling** for Part 1b. The measured factor still scales the prior per-run projection. The running driver loaded the
     old rule, so if Part 1b triggers a budget stop under it, the driver is restarted (resume) with the corrected code.
     This counts as the recorded PI extension, not a new decision.
+  - **PI budget decision (2026-10-30, 02:56 UTC; after the Part 1 result):** Part 1 gave EQUIVALENT, so Part 2 runs at
+    τ (item `P2_tau`, registered ceiling 12 core-hours). The first 16 runs at Ω = 130 cost 1.9 core-hours (8 events).
+    At that cost, the three cells could need up to about 23 core-hours at their caps, so a budget stop was likely before
+    Ω = 110 and 100 finished. The PI removed the core-hour ceiling for `P2_tau`: "I will go ahead and approve a higher
+    ceiling. Complete the run, regardless of time." The run caps are unchanged and still bind: stop20 with batches of
+    16, at most 64 runs per cell. No estimand, stopping rule or criterion changes. **Disclosure:** the decision was made
+    after the Part 1 outcome and the first Ω = 130 batch had been seen. It affects only whether the registered design
+    runs to completion, not how any result is computed. The `P2_tau2` ceiling (30 h) is unchanged and not used. If the
+    running driver (old rule) stops with exit 2, it is restarted from the corrected code and resumes.
   - **Production machine:** the PI's machine, with `MODELG_WORKERS=9`. The platform and worker count are written into
     `plan.json`, `timing_tau4.json` and the ledger.
 
