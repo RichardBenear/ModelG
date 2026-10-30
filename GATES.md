@@ -9,7 +9,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG2 | 2 | Stochastic token rules converge to the same-lattice mean-field solution as Ω → ∞ | **FAIL** as registered (C3, C4); convergence criteria C1, C6 PASS — see MG2 result |
 | MG3 | 2 | Particles nucleate spontaneously from intrinsic fluctuations at finite Ω | **FAIL** as registered (C2); C1, C3, C4, V5 PASS — see MG3 result |
 | MG3b | 2 | Follow-up to MG3: time-step check, nucleation rates with more events, calibrated uncertainty (estimation study; no pass/fail) | **ACCEPTED 2026-10-30** (estimation study, no verdict; PI sign-off): Part 1 EQUIVALENT; S = 0.064 (approximate 95% 0.047–0.082) — see MG3b result |
-| MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale | PENDING |
+| MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale (2D frozen graphs, noise-free) | **PRE-REGISTERED 2026-10-30** (draft 4, PI approval); no run yet |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve) | PENDING |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | PENDING |
 | MG7 | 6 | Multiway branch divergence and foliation dependence | PENDING |
@@ -646,3 +646,59 @@ PI sign-off (design): Richard Benear, 2026-10-29, project thread ("I'm satisfied
 GATES.md etc."), approving draft 3 after ChatGPT's two review rounds.
 PI sign-off (result): Richard Benear, 2026-10-30 12:50 UTC, project thread ("I sign off on MG3b"), after ChatGPT's
 review (MG008) and the two label clarifications. MG3b is accepted as an estimation result; MG3's FAIL is unchanged.
+
+---
+
+### MG4 — Particles on frozen irregular 2D graphs (noise-free)
+Status: **PRE-REGISTERED 2026-10-30 (MG009c)**, with PI approval. **No MG4 run of any kind preceded this commit.** The only
+computation behind the design was graph statistics (degrees and edge-length moments of random point sets, with no
+reaction or diffusion). The registered design is `spec/MG4_proposal.md` **draft 4**, with its content frozen as committed
+at `773255d`. Any change after this point needs a versioned amendment. Reviews and responses: `review/MG009_chatgpt.md` and
+`_r2.md`, with `review/MG009_response.md` and `_r2.md`. Drafts 1–3 are preserved as superseded (`spec/MG4_proposal_v1.md`,
+`_v2.md`, `_v3.md`).
+
+Scope (PI decision, 2026-10-30 13:41 UTC): 2D graphs, noise-free only. Survival under token noise is deferred, and so are
+Wolfram hypergraph snapshots (MG4b). MG4's verdict applies to the Ω → ∞ mean field of rules v1.1 on these graphs.
+
+Summary of the registered design (the proposal governs where this summary is shorter):
+- **Setting:** b = 29, eq. 17 parameters, rules v1.1 unchanged. Every family uses one rectangular torus commensurate with
+  the triangular lattice: 122 × 142 cells, 19.92 × 20.08 at h_t = 0.2. Each graph's h is calibrated from its
+  homogenized diffusivity tensor, h² = (e₁ + e₂)/2, and accepted within ±3% of h_t.
+- **Families:** T is the triangular comparator and positive control. D is Delaunay of a periodic Poisson set, the
+  primary family. R is a random geometric graph with mean degree 12, largest component only. N3 is random 6-regular,
+  the negative control for C3(a). D and R each use a fixed panel of 4 graphs × 8 placements.
+- **Part 0:** graph construction and calibration, spectra, T's existence window and depth check, and the box check
+  (20 against 30). It writes `results/MG4/part0/decisions.json`.
+- **Part A:** the deterministic graph ODE to t = 300, started from the MG1 continuum 2D soliton. Measurement follows
+  proposal §5.1 and outcome classes follow §5.2, with precedence multiplied > decayed > single > unresolved.
+- **Criteria:**
+  - C1 (survival panel): PASS if ≥ 28/32 and every graph ≥ 6/8. FAIL if ≤ 20/32 or any graph ≤ 3/8.
+  - C2 (shape against T): componentwise medians, with (a) L2 < 10%, both depth measures ≤ 10%, and λ ≤ 5%, plus ≥ 80% of
+    runs meeting (a).
+  - C3(a) (spectral count of −L_G against the exact finite-torus count): the band mean over [0.9, 1.1] k* within ±5% on
+    every graph, with all 21 ratios saved.
+  - C3(b) (coarse-grained action on the soliton profiles): panel median ≤ 10% for G, X and Y; FAIL if any exceeds 20%.
+  - N3 must fail C3(a).
+- **Gate precedence:** proposal §7. In order: Part 0 stop; budget stop; implementation failure; a failed positive control
+  makes the gate INCONCLUSIVE; FAIL dominates INCONCLUSIVE; otherwise INCONCLUSIVE; otherwise PASS.
+- **Implementation checks:** the node-sum balances with their derivative terms, with |r| ≤ 10⁻¹⁰ + 10⁻⁹·M. Zero sums are
+  required only for stationary runs.
+
+Prediction (descriptive; not a criterion): D and R pass C1–C3. Disorder pins the particle (drift under one λ₀). N3 fails
+C3(a). The least certain parts are C2 and C3(b) on D.
+
+Null and positive controls: N3, as above. T is the positive control (window, depth, C3 on T, and a single particle at all
+4 placements). The homogeneous state must be an exact fixed point, and a 10⁻³ perturbation must decay.
+
+Budget: run caps as in proposal §9. Core-hour ceilings, checked before every batch: Part 0 8, Part A 25, the h = 0.3
+check 3. The projection is about 14 core-hours. The cost of the 2D graph ODE is timed in Part 0, and the projection is
+re-stated here before Part A starts.
+
+Pre-run implementation specification: anything the code needs that the proposal leaves open is appended here, dated,
+before the run it affects. (The MG3b lesson: record choices before the run, not after.)
+
+Result:
+Replication (ChatGPT):
+PI sign-off (design): Richard Benear, 2026-10-30 14:19 UTC, project thread ("I approve MG4 draft 4."), after ChatGPT's
+two design reviews (MG009 r1 and r2; the reviewer was comfortable with registration once draft 4's definitions were in).
+PI sign-off (result):

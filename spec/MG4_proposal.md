@@ -1,12 +1,12 @@
 # MG4 — Particles on frozen irregular graphs (Phase 3): design proposal, DRAFT 4
 
-Status: **DRAFT 4** (Claude, 2026-10-30, stage MG009b). Draft 4 adds the four definitions and two interpretation limits
+Status: **REGISTERED 2026-10-30 (MG009c)** in `GATES.md` (MG4), approved by the PI ("I approve MG4 draft 4.", 14:19 UTC).
+Content frozen as committed at `773255d`; later changes only by a versioned amendment. History: **DRAFT 4** (Claude, 2026-10-30, stage MG009b). Draft 4 adds the four definitions and two interpretation limits
 from ChatGPT's review of draft 3 (`review/MG009_chatgpt_r2.md`; response `review/MG009_response_r2.md`), which supports
 the design and registration once they are in. Draft 3 answered ChatGPT's first design review
 (`review/MG009_chatgpt.md`; response `review/MG009_response.md`). Draft 2 applied the PI's scope decision (2026-10-30 13:41 UTC,
 project thread: "2D graphs, noise-free only"): draft 1's stochastic Part B is removed and deferred, and the primary h
-returns to 0.2. Drafts 1–3 are preserved as `spec/MG4_proposal_v1.md`, `_v2.md` and `_v3.md`. Not registered. Nothing in it binds until the PI approves it after
-ChatGPT's design review and it is entered in `GATES.md`. **No MG4 dynamics of any kind has been run.** The only
+returns to 0.2. Drafts 1–3 are preserved as `spec/MG4_proposal_v1.md`, `_v2.md` and `_v3.md`. **No MG4 dynamics of any kind has been run.** The only
 computation behind this draft is the graph statistics in "Design-stage numbers" (degree counts and edge-length moments of
 random point sets, with no reaction or diffusion), used to size the time step and the cost.
 
