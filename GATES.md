@@ -8,7 +8,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG1 | 1 | Continuum PDE reproduces a published stationary Model G soliton | PASS by PI exception (registered FAIL on 1D stationarity preserved) |
 | MG2 | 2 | Stochastic token rules converge to the same-lattice mean-field solution as Ω → ∞ | **FAIL** as registered (C3, C4); convergence criteria C1, C6 PASS — see MG2 result |
 | MG3 | 2 | Particles nucleate spontaneously from intrinsic fluctuations at finite Ω | **FAIL** as registered (C2); C1, C3, C4, V5 PASS — see MG3 result |
-| MG3b | 2 | Follow-up to MG3: time-step check, nucleation rates with more events, calibrated uncertainty (estimation study; no pass/fail) | **Run 2026-10-29/30** (estimation study, no verdict): Part 1 EQUIVALENT; S = 0.064 (approximate 95% 0.047–0.082) — see MG3b result |
+| MG3b | 2 | Follow-up to MG3: time-step check, nucleation rates with more events, calibrated uncertainty (estimation study; no pass/fail) | **ACCEPTED 2026-10-30** (estimation study, no verdict; PI sign-off): Part 1 EQUIVALENT; S = 0.064 (approximate 95% 0.047–0.082) — see MG3b result |
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale | PENDING |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve) | PENDING |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | PENDING |
@@ -644,4 +644,5 @@ the budget replay (every Part 2 batch fits under the original 12-hour ceiling). 
 both applied (`review/MG008_response.md`). No number changed, and no lattice run is needed.
 PI sign-off (design): Richard Benear, 2026-10-29, project thread ("I'm satisfied. go ahead and register it and modify
 GATES.md etc."), approving draft 3 after ChatGPT's two review rounds.
-PI sign-off (result):
+PI sign-off (result): Richard Benear, 2026-10-30 12:50 UTC, project thread ("I sign off on MG3b"), after ChatGPT's
+review (MG008) and the two label clarifications. MG3b is accepted as an estimation result; MG3's FAIL is unchanged.
