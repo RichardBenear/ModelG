@@ -195,14 +195,47 @@ def jobs_for(dec):
     return J
 
 
-def run_batch(jobs):
-    out = {}
+# Core-hour ceilings (GATES.md MG4 budget; stop triggers checked before every job is started). The ledger's summed
+# per-run wall time is the measure. Re-stated values must be recorded in GATES.md before they are changed here.
+CEILING = {"A": 25.0, "h03": 3.0}
+
+
+def spent(group):
+    path = os.path.join(OUT, "budget_ledger.csv")
+    if not os.path.exists(path):
+        return 0.0
+    rows = list(csv.DictReader(open(path)))
+    return sum(float(r["wall_s"]) for r in rows if r["key"].startswith("h03_") == (group == "h03")) / 3600
+
+
+class BudgetStop(Exception):
+    pass
+
+
+def run_batch(jobs, group="A"):
+    """Runs the jobs not yet recorded, keeping at most WORKERS in flight. Before each job is started the ledger is
+    checked against the group's ceiling; once it is reached no further job starts (budget stop: INCONCLUSIVE)."""
+    out, todo = {}, list(jobs)
     with ProcessPoolExecutor(WORKERS) as ex:
-        futs = {ex.submit(run_one, j): j["key"] for j in jobs}
-        for fu in as_completed(futs):
-            r = fu.result()
+        live = {}
+        while todo or live:
+            while todo and len(live) < WORKERS:
+                used = spent(group)
+                if used >= CEILING[group]:
+                    todo.clear()
+                    print(f"BUDGET STOP: {group} ledger {used:.2f} core-h >= ceiling {CEILING[group]}", flush=True)
+                    break
+                j = todo.pop(0)
+                live[ex.submit(run_one, j)] = j["key"]
+            if not live:
+                break
+            done = next(as_completed(live))
+            live.pop(done)
+            r = done.result()
             out[r["key"]] = r
             print(f"{r['key']}: wall {r['wall_s']:.0f}s, max|dphi/dt| {r['max_dphidt']:.2e}", flush=True)
+    if len(out) < len(jobs) and spent(group) >= CEILING[group]:
+        raise BudgetStop(group)
     return out
 
 
@@ -224,9 +257,12 @@ def main():
               open(os.path.join(OUT, "threshold.json"), "w"), indent=1)
     print("theta =", theta, flush=True)
     for part in ("main", "seed", "N3", "h03"):
-        run_batch(J[part])
+        run_batch(J[part], "h03" if part == "h03" else "A")
     print("Part A runs complete. Evaluate with: python src/evaluate_mg4.py", flush=True)
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except BudgetStop as e:
+        sys.exit(f"Budget stop ({e}): MG4 is INCONCLUSIVE under proposal §7 item 2; all completed data are reported.")
