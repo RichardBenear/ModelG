@@ -88,6 +88,10 @@ best estimate of the barrier steepness S.
 - ChatGPT independently reproduced every number, including all 302 "real particle or not" checks. You signed off on
   2026-10-30.
 
+![Creation rate against Ω](creation_rate_vs_omega.png)
+
+*Creation rate against Ω (log scale). Blue circles: MG3; orange squares: MG3b; bars: 95% intervals; dashed line: the MG3b fit. Made by `paper/make_rate_chart.py` from the recorded event counts and exposures.*
+
 **What it means.** Spontaneous particle creation from token noise is now a measured, reproducible effect with a
 well-defined rate law over the tested range. It does not yet show the underlying mechanism.
 
@@ -99,10 +103,22 @@ well-defined rate law over the tested range. It does not yet show the underlying
 
 **Caveats a reader should keep in mind:**
 - All of this is on a 1D ring, with one particular point spacing.
-- The interesting effects need very few tokens per point (Ω of about 100). A rough estimate from LaViolette's own etheron
-  densities suggests that real-world Ω would be enormously larger (about 10²⁰ or more), so this kind of noise would be
-  negligible. If so, spontaneous creation in nature would need a different source of fluctuation. This is an
-  interpretive point, not a test result.
+- **Noise-driven effects need very few tokens per point.** Particles appearing on their own (MG3, MG3b), and particles
+  being lost or splitting (MG2), happen at Ω of about 100–300. The creation rate falls roughly as e^(−S·Ω) with
+  S ≈ 0.064, so it halves for every 11 more tokens per unit (see the chart).
+  - A rough estimate from LaViolette's own etheron densities puts real-world Ω at about 10²⁰ or more. That figure is an
+    order-of-magnitude guess with heavy caveats.
+  - At that Ω the exponent is about −6 × 10¹⁸, so the rate is zero for any practical purpose. Counting noise shrinks like
+    1/√Ω, to about 10⁻¹⁰ of the background. It would still jiggle the field very slightly, but it could never push the
+    field over the barrier to create or destroy a particle.
+  - If that holds, spontaneous creation in nature needs fluctuations that are much larger at the particle's scale. What
+    matters is the number of *independent* fluctuating units per cell, not the raw count. More independent tokens mean
+    more entropy but *smaller* relative fluctuations.
+  - So strongly correlated or entangled etherons, fluctuating together rather than one by one, could act like a much
+    smaller effective Ω. Something like 10²⁰ etherons could behave like Ω_eff ≈ 100. That is one candidate source.
+    Fluctuations from the rewriting of the network itself (the MG5 phase) are another.
+  - This is speculative, but testable later: give tokens correlated noise, and check whether the creation rate follows
+    the effective Ω rather than the raw count.
 - In standard Model G, a settled particle has no net G deficit, so "mass" and "gravity" still need defining (Phase 5).
 
 **Next (MG4, registered 2026-10-30):** move from a regular ring to irregular 2D networks, closer to Wolfram-style space,
