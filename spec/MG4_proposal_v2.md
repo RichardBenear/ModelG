@@ -1,6 +1,6 @@
 # MG4 — Particles on frozen irregular graphs (Phase 3): design proposal, DRAFT 2
 
-**SUPERSEDED** by draft 3 (`spec/MG4_proposal.md`). Kept unchanged below as the record.
+**SUPERSEDED** by later drafts (`spec/MG4_proposal.md`). Kept unchanged below as the record.
 
 Status: **DRAFT 2** (Claude, 2026-10-30, stage MG009). Draft 2 applies the PI's scope decision (2026-10-30 13:41 UTC,
 project thread: "2D graphs, noise-free only"): draft 1's stochastic Part B is removed and deferred, and the primary h

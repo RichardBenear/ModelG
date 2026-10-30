@@ -1,10 +1,12 @@
-# MG4 — Particles on frozen irregular graphs (Phase 3): design proposal, DRAFT 3
+# MG4 — Particles on frozen irregular graphs (Phase 3): design proposal, DRAFT 4
 
-Status: **DRAFT 3** (Claude, 2026-10-30, stage MG009a). Draft 3 answers ChatGPT's design review
+Status: **REGISTERED 2026-10-30 (MG009c)** in `GATES.md` (MG4), approved by the PI ("I approve MG4 draft 4.", 14:19 UTC).
+Content frozen as committed at `773255d`; later changes only by a versioned amendment. History: **DRAFT 4** (Claude, 2026-10-30, stage MG009b). Draft 4 adds the four definitions and two interpretation limits
+from ChatGPT's review of draft 3 (`review/MG009_chatgpt_r2.md`; response `review/MG009_response_r2.md`), which supports
+the design and registration once they are in. Draft 3 answered ChatGPT's first design review
 (`review/MG009_chatgpt.md`; response `review/MG009_response.md`). Draft 2 applied the PI's scope decision (2026-10-30 13:41 UTC,
 project thread: "2D graphs, noise-free only"): draft 1's stochastic Part B is removed and deferred, and the primary h
-returns to 0.2. Drafts 1 and 2 are preserved as `spec/MG4_proposal_v1.md` and `_v2.md`. Not registered. Nothing in it binds until the PI approves it after
-ChatGPT's design review and it is entered in `GATES.md`. **No MG4 dynamics of any kind has been run.** The only
+returns to 0.2. Drafts 1–3 are preserved as `spec/MG4_proposal_v1.md`, `_v2.md` and `_v3.md`. **No MG4 dynamics of any kind has been run.** The only
 computation behind this draft is the graph statistics in "Design-stage numbers" (degree counts and edge-length moments of
 random point sets, with no reaction or diffusion), used to size the time step and the cost.
 
@@ -132,9 +134,13 @@ placements, at the same bin centres):
 - (a) relative L2 difference of the radial φ_X profile over r < 6, area-weighted (r dr), non-empty bins only;
 - (b) core depth φ_X at the centre bin (smoothed and unsmoothed);
 - (c) λ as in §5.1. A *missing* λ counts as not meeting (c).
-- PASS if the **median** run meets (a) < 10%, (b) within 10% and (c) within 5%, **and** at least 80% of runs meet (a);
-- FAIL if the median run misses any of the three;
-- INCONCLUSIVE otherwise, or if fewer than 8 runs are *single particle*.
+- **Medians are componentwise (draft 4).** Over the single-particle runs, take four separate medians:
+  - m_a, the median of the per-run errors (a);
+  - m_b,s and m_b,u, the medians of the per-run |relative depth errors| (b), smoothed and unsmoothed;
+  - m_c, the median of the per-run |relative λ errors| (c). A run with *missing* λ enters m_c as +∞, a failed comparison.
+- PASS if m_a < 10%, **both** m_b,s and m_b,u ≤ 10%, m_c ≤ 5%, **and** at least 80% of runs have (a) < 10%;
+- FAIL if any of m_a, m_b,s, m_b,u or m_c misses its tolerance;
+- INCONCLUSIVE otherwise (the medians pass but the 80% condition fails), or if fewer than 8 runs are *single particle*.
 The per-graph medians are reported. Why 10%: on the 1D ring the h = 0.2 lattice particle is 8% off the continuum, so the
 tolerance lets disorder cost about as much as discretization already does.
 
@@ -142,12 +148,15 @@ tolerance lets disorder cost about as much as discretization already does.
 operator test. C3 has two parts, and both must PASS.
 
 - **C3(a) — spectral-count benchmark** (intrinsic, so it carries over to MG4b).
-  - Compute the eigenvalues μ_m of the graph Laplacian up to 1.5 k*², where k* = 2π/λ₀ ≈ 2.04. That is about 200
-    eigenvalues, found by shift-invert Lanczos.
+  - **Sign convention (draft 4).** The dynamics and C3(b) use the negative-semidefinite generator
+    L_G = (A − D_deg)/h². C3(a) counts the **nonnegative** eigenvalues ν_m of −L_G = (D_deg − A)/h², and
+    N_graph(k²) = #{m : ν_m ≤ k²}, which includes the constant mode ν = 0.
+  - Compute the ν_m up to 1.5 k*², where k* = 2π/λ₀ ≈ 2.04. That is about 200 eigenvalues, found by shift-invert Lanczos.
   - The reference is the **exact finite-torus count** N_c(k) = #{q = (2πm/L_x, 2πn/L_y) : |q| ≤ k}, not Weyl's
     asymptotic formula. On the square 20 × 20 torus N_c(k*) = 137 while Weyl gives 132.5; on the 19.92 × 20.08 torus N_c(k*) is also 137.
   - Statistic: the mean of N_graph(k²)/N_c(k) over 21 equally spaced k in [0.9 k*, 1.1 k*]. Averaging over the band
-    smooths out the staircase.
+    smooths out the staircase. **All 21 ratios are saved and reported** for each graph, so that cancellations across
+    the band stay visible.
   - PASS if the statistic is within 1 ± 0.05 (about ±2.5% in k) for every panel graph. FAIL if the panel mean is outside
     that range. INCONCLUSIVE otherwise.
   - The same statistic on T is reported. T must pass as a positive control.
@@ -181,10 +190,17 @@ operator test. C3 has two parts, and both must PASS.
   Laplacian with q = p = 1 and g = 0.1, these hold at all times:
   - dI_G/dt = −I_G + 0.1 I_X;
   - d(I_G + I_X + I_Y)/dt = −0.9 I_X.
-  - At t = 300 in every run, both residuals, with the dI/dt terms summed from the ODE right-hand side, must be < 10⁻⁹
-    relative to the sum of the magnitudes of their terms. This tests conservation in the implementation.
-  - The zero sums I_G = I_X = 0 are expected **only for stationary runs**. For those, |I_S| / Σ|φ_S| is reported, and it
-    must be < 10⁻⁶. For non-stationary runs, I_S is reported together with the derivative terms, as in MG1.
+  - At t = 300 in every run, the dI/dt terms are summed from the ODE right-hand side. Each residual r must satisfy
+    **|r| ≤ 10⁻¹⁰ + 10⁻⁹·M** (draft 4: absolute plus relative), where M is the sum of the magnitudes of the residual's
+    terms. The absolute part keeps the test defined at the exact homogeneous state (M = 0) and near stationarity. This
+    tests conservation in the implementation.
+  - The zero sums I_G = I_X = 0 are expected **only for stationary runs**. For those, the target is
+    |I_S| ≤ 10⁻⁸ + 10⁻⁶·Σ_i|φ_S,i|.
+  - A pointwise right-hand side below 10⁻⁸ does not by itself guarantee the global zero-sum target, because it is summed
+    over about 24 000 nodes. A stationary run that misses the target is therefore **not** treated as an implementation
+    failure by itself. It is reported with the summed derivative terms and the I_S that the balances imply. Only a
+    balance-residual failure (the item above) is an implementation failure. For non-stationary runs, I_S is reported
+    together with the derivative terms, as in MG1.
 
 ## 6. Deferred: survival under token noise (draft 1's Part B)
 Removed by the PI's scope decision. Draft 1 proposed stochastic runs on T and D at matched noise per unit area
@@ -194,10 +210,30 @@ up as written, using Part A's stationary particles as its starting states and re
 so this stays possible without re-running.
 
 ## 7. Gate outcome
-- **PASS:** the positive controls hold (T inside the window, the box check, and C3(a) and C3(b) on T), N3 fails C3(a) as
-  predicted, and C1, C2 and C3 PASS for both D and R.
-- **FAIL:** any of C1–C3 FAILs for D or R. Each family's results are reported separately.
-- **INCONCLUSIVE:** a positive control fails, N3 passes C3(a), any criterion is INCONCLUSIVE, or a budget stop.
+**C3 combines its parts as follows:** FAIL if C3(a) or C3(b) FAILs; PASS if both PASS; INCONCLUSIVE otherwise. If N3
+passes C3(a), C3 is INCONCLUSIVE for every family, whatever its parts gave.
+
+**Precedence (draft 4; applied in this order, fixed before any result exists):**
+1. **Part 0 stop.** If b = 29 is outside T's window, or T's depth is off by more than 20% (§3), MG4 stops for a PI
+   decision. No criterion is scored, and the gate has no verdict until the PI decides.
+2. **Budget stop:** INCONCLUSIVE. All completed data are reported.
+3. **Implementation failure** (a balance residual over tolerance, §5.4, or a failed construction test, §4): the affected
+   runs are investigated before anything is scored. No criterion is scored on code that fails its own checks.
+4. **Positive-control failure in Part A** (T fails C3(a) or C3(b), or T itself is not *single particle* at all 4
+   placements): gate **INCONCLUSIVE**. The D and R criteria are still computed and reported, but they do not decide the
+   gate. A FAIL among them is reported as "FAIL against a failed comparator", not as a gate FAIL.
+5. Otherwise **FAIL dominates INCONCLUSIVE**: the gate is **FAIL** if any of C1, C2 or C3 FAILs for D or R, even when
+   another criterion is INCONCLUSIVE.
+6. Otherwise **INCONCLUSIVE** if any of C1–C3 is INCONCLUSIVE for D or R (this includes the N3 rule).
+7. Otherwise **PASS**: every one of C1, C2 and C3 PASSes for both D and R.
+
+Each family's results are reported separately, whatever the verdict.
+
+**Interpretation limits (stated before any run):**
+- C3(b) tests the coarse-grained action of the graph operator on the chosen sampled profiles (the MG1 soliton at the
+  registered placements). It does not show that the graph operator converges to ∇² in general.
+- C1's survival over the finite horizon (to t = 300) does not establish stationarity. The *stationary* label and the
+  balance checks are reported separately for that reason.
 - The h = 0.3 check, the seeded-formation runs and the plane-wave spectra are reported and enter no criterion.
 
 **Prediction (stated before any run; not a criterion).** D and R pass C1–C3. Disorder pins the particle: it drifts less
@@ -255,9 +291,8 @@ Periodic Poisson sets on a 20 × 20 torus, 3 realizations each (computed for dra
 - D1–D3 stay deferred. The h = 0.3 / 0.2 comparison here says something about D2's question in 2D, without replacing it.
 
 ## 12. Questions for the PI and the reviewer
-Draft 2's questions are settled: the scope is decided by the PI; W is deferred; the reviewer supports homogenized
-calibration, the continuum-profile survival test (with seeded formation descriptive) and C2's tolerances.
-Open for the review of draft 3:
-1. Are C1's panel counts (≥ 28 of 32 with ≥ 6 of 8 per graph; FAIL at ≤ 20 or a graph ≤ 3) and C3(b)'s 10% / 20% bounds
-   at the right strictness?
-2. Is the band-averaged count ratio over [0.9, 1.1] k* with ±5% a sound version of C3(a)?
+All are settled. The PI decided the scope (2D, noise-free only; Wolfram snapshots as MG4b). W is deferred. The reviewer
+supports homogenized calibration, the continuum-profile survival test (with seeded formation descriptive), and C2's
+tolerances (review of draft 2). In the review of draft 3 it also supports C1's panel counts, C3(b)'s 10% / 20% bounds and
+the band-averaged count for C3(a). That review said that, once its four definitions are in (draft 4), it is comfortable
+with registration. **Remaining step:** PI approval and entry in `GATES.md`.

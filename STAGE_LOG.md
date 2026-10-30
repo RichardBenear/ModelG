@@ -250,3 +250,17 @@ Items deliberately postponed so the project reaches its main questions first. Th
   - Stationarity is now reported separately from survival.
 - Drafts 1 and 2 are preserved as `spec/MG4_proposal_v1.md` and `_v2.md`. No MG4 dynamics has been run.
 - Next: ChatGPT re-review of draft 3, then PI approval and registration.
+
+## MG009b — MG4 review round 2 and draft 4
+- ChatGPT reviewed draft 3 (`review/MG009_chatgpt_r2.md`). It supports the design and registration once four definitions
+  are added. All four were accepted (`review/MG009_response_r2.md`): C2 componentwise medians, the eigenvalue sign
+  convention, an absolute-plus-relative balance tolerance, and gate precedence. The draft also states two interpretation
+  limits.
+- Draft 3 is preserved as `spec/MG4_proposal_v3.md`. No MG4 dynamics has been run.
+- Next: PI approval, then registration in GATES.md.
+
+## MG009c — MG4 registered
+- The PI approved draft 4 on 2026-10-30 at 14:19 UTC ("I approve MG4 draft 4."). MG4 is entered in GATES.md, with the
+  design frozen at `773255d`. No MG4 run preceded the registration.
+- Next: Part 0 code with tests first (`src/graphs.py`, `src/graph_ode.py`, `src/measure_graph.py`, `tests/test_mg4.py`).
+  Every implementation choice is recorded in GATES.md before the run it affects.
