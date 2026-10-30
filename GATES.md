@@ -755,6 +755,27 @@ before the run it affects. (The MG3b lesson: record choices before the run, not 
   - It also gave: the T depth −13.59 (smoothed −10.30); the box difference 3.6% between those two small tori; T's
     max |∂φ/∂t| at t = 300 of 6e-6; c_F of 1.89 (D) and 3.85 (R); a T ODE run of 86 s for 4 340 nodes on 2 cores.
   - **No criterion, threshold or rule is changed in response.** The registered Part 0 and Part A run as written.
+- **Part A driver (`src/run_mg4_partA.py`), added 2026-10-30 before any Part A run:**
+  - **Order:** T's 4 survival runs come first. They fix θ = −0.5·|mean minimum smoothed φ_X at t = 300|, written to
+    `threshold.json`. Then come the D and R survival runs, the seeded runs (T, D, R), N3, and the h = 0.3 check.
+  - **Placements:** D/R slot s, placement i: one uniform point from `seed_for(5, 0, fam, 1, 100·s + i)`.
+  - **h = 0.3 check:** its D graph is drawn from stream rep 200 at the Part 0 density constant c_F(D), with placements
+    from replicate 200·100 + i. That graph's own calibrated h is used and reported, with no acceptance test.
+  - **N3 (descriptive):** 2 runs per graph. The initial profile is the continuum profile at r = h × hop distance from
+    node 0 or 1. Its final minimum φ_X is reported. There is no detector, since N3 has no embedding.
+  - **Records:** one JSON per run, plus a compressed field file holding the final G, X, Y, and φ_X and smoothed φ_X at the
+    11 checks (float32).
+  - **Analysis:** done after the runs (`analyse`, `c3b`), from the saved fields with no re-integration.
+    - The core depth is the [0, 0.5) bin mean of φ_X around the final centre, unsmoothed and smoothed.
+    - The T reference profile is the mean over T's single-particle placements, at the same bins.
+  - **Field files:** an R run's file is a few MB. Whether all of them are committed (or only the summaries and final
+    fields) is decided with the PI before the results PR.
+- **Part A driver smoke test (disclosed; scratch, not a registered run):** one T run and one D run on the small
+  62 × 70 smoke torus, with the smoke-test graphs.
+  - Small-torus outcomes, again only a preview: T *single* (drift 0.03, λ 3.14); the D run *multiplied*. C3(b)
+    smoothed e_X was 0.032 on T and 0.276 on the small D graph (unsmoothed 0.06 and 2.6).
+  - **No criterion, threshold or rule is changed in response.** No further dynamics will be run on non-registered
+    graphs before Part A.
 
 Result:
 Replication (ChatGPT):
