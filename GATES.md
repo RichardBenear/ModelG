@@ -791,7 +791,7 @@ before the run it affects. (The MG3b lesson: record choices before the run, not 
     - On T for t = 0–20 the steps are again identical (nfev 510, nlu 47) and the largest difference is 5.5e-14.
     - A new unit test (`test_nd_order_matches_default_solver`) compares the two paths on a 900-point scratch Delaunay
       graph for t = 0–2 (identical step counts, difference < 1e-10). This is a solver-equivalence check, not a dynamics
-      outcome. The R panel graph 0 is being timed the same way, for t = 0–5.
+      outcome. On R panel graph 0 (38 595 points), t = 0–5: identical steps (nfev 800, nlu 68), largest difference 1.9e-14, wall 1967 s → 740 s (2.7 times; cloud machine, shared with the Part 0 run).
   - Part 0 evaluations already finished keep their records. The remaining window-bisection steps and all of Part A use
     the new path. Ledger rows carry the platform, as before.
 
