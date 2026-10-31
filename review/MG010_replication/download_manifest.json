@@ -1,0 +1,2222 @@
+{
+  "commit": "41ee3de73d30e80fc0aeb95350dc00070c1c6f58",
+  "files": [
+{"path":"tests/test_mg4.py","mode":"100644","type":"blob","sha":"b5306374694a61667db9bcc1c82fe47069d14f17","size":6904,"url":"https://api.github.com/repos/RichardBenear/ModelG/git/blobs/b5306374694a61667db9bcc1c82fe47069d14f17"},
+    {
+      "path": "GATES.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02df56bfb2391b01485fbbd1b8cda2a6eeec7bca",
+      "size": 76726,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/02df56bfb2391b01485fbbd1b8cda2a6eeec7bca"
+    },
+    {
+      "path": "results/MG4/balance_investigation.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b35ca65b46c3f4daa36c59981096f6fce4f67f32",
+      "size": 922,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/b35ca65b46c3f4daa36c59981096f6fce4f67f32"
+    },
+    {
+      "path": "results/MG4/evaluation.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a355fd3aa22afd168544f0c5016f71f2b19266b",
+      "size": 27505,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/7a355fd3aa22afd168544f0c5016f71f2b19266b"
+    },
+    {
+      "path": "results/MG4/part0/budget_ledger.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2d32bb204be15da47ff53a7983b61776f33290d",
+      "size": 6352,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/b2d32bb204be15da47ff53a7983b61776f33290d"
+    },
+    {
+      "path": "results/MG4/part0/continuum2d.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d6d7ee265f78566ac3fa3aa06b8e2bf27678c4e",
+      "size": 112992,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/9d6d7ee265f78566ac3fa3aa06b8e2bf27678c4e"
+    },
+    {
+      "path": "results/MG4/part0/decisions.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad79ca013701c2409a49940e2a76cb5c2a3eeecf",
+      "size": 18556,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/ad79ca013701c2409a49940e2a76cb5c2a3eeecf"
+    },
+    {
+      "path": "results/MG4/part0/nd_check_T122x142.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e727fea950de12371fa63ede98803a80b3fd025",
+      "size": 147,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/1e727fea950de12371fa63ede98803a80b3fd025"
+    },
+    {
+      "path": "results/MG4/part0/run_log.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd119e7c00f9bcb2bf53be049429849e020811dc",
+      "size": 617,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/bd119e7c00f9bcb2bf53be049429849e020811dc"
+    },
+    {
+      "path": "results/MG4/part0/steps/T_graph.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15823faa99773b3e0192727e239b7001a4551a93",
+      "size": 412,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/15823faa99773b3e0192727e239b7001a4551a93"
+    },
+    {
+      "path": "results/MG4/part0/steps/Tbox_184x212.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c02ca2f0c1229fe0f3d1a011f7b0ab89c316d44",
+      "size": 1310,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/8c02ca2f0c1229fe0f3d1a011f7b0ab89c316d44"
+    },
+    {
+      "path": "results/MG4/part0/steps/Tref_122x142.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29af38008e5553cb66e90127794a38ca0a29ca15",
+      "size": 1311,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/29af38008e5553cb66e90127794a38ca0a29ca15"
+    },
+    {
+      "path": "results/MG4/part0/steps/Tstate_122x142.npy",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a5bb63a7ec9389e0a295a8cdda175070d595a0d",
+      "size": 415904,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/5a5bb63a7ec9389e0a295a8cdda175070d595a0d"
+    },
+    {
+      "path": "results/MG4/part0/steps/Tstate_184x212.npy",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0d097b02387675dde3431c48a21e15e27cc5459",
+      "size": 936320,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/e0d097b02387675dde3431c48a21e15e27cc5459"
+    },
+    {
+      "path": "results/MG4/part0/steps/panel_D_0.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8de9275a3d202956b63d0991acd2b4e1f4e3be5b",
+      "size": 544,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/8de9275a3d202956b63d0991acd2b4e1f4e3be5b"
+    },
+    {
+      "path": "results/MG4/part0/steps/panel_D_1.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8b0cd03bdf21848bc7d5e40325109198327641b",
+      "size": 539,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/c8b0cd03bdf21848bc7d5e40325109198327641b"
+    },
+    {
+      "path": "results/MG4/part0/steps/panel_D_2.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15ad1e8ec92f7ff187844a40f58e948efa544de1",
+      "size": 543,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/15ad1e8ec92f7ff187844a40f58e948efa544de1"
+    },
+    {
+      "path": "results/MG4/part0/steps/panel_D_3.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c23e00d0c578f3ea3f24ca13522d949ffc5547ce",
+      "size": 545,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/c23e00d0c578f3ea3f24ca13522d949ffc5547ce"
+    },
+    {
+      "path": "results/MG4/part0/steps/panel_R_0.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "951d4a1a8db71ddd339c61b33a625b460f6dfc1b",
+      "size": 556,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/951d4a1a8db71ddd339c61b33a625b460f6dfc1b"
+    },
+    {
+      "path": "results/MG4/part0/steps/panel_R_1.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5870cf0d232db6bf6036d76d9aa2a9783ffec500",
+      "size": 556,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/5870cf0d232db6bf6036d76d9aa2a9783ffec500"
+    },
+    {
+      "path": "results/MG4/part0/steps/panel_R_2.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "018120ba29e67147fe381935f3df98a617ac109a",
+      "size": 556,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/018120ba29e67147fe381935f3df98a617ac109a"
+    },
+    {
+      "path": "results/MG4/part0/steps/panel_R_3.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02f1cca01b468b73a7512ed8000addf99a565801",
+      "size": 555,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/02f1cca01b468b73a7512ed8000addf99a565801"
+    },
+    {
+      "path": "results/MG4/part0/steps/pilot_D_90.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db8b0bdd3c3249c49a5c5c3bbdc14f6509264f63",
+      "size": 503,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/db8b0bdd3c3249c49a5c5c3bbdc14f6509264f63"
+    },
+    {
+      "path": "results/MG4/part0/steps/pilot_D_91.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2cc931303796a66f590f5bc6f1752f4d61c713a7",
+      "size": 506,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/2cc931303796a66f590f5bc6f1752f4d61c713a7"
+    },
+    {
+      "path": "results/MG4/part0/steps/pilot_D_92.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97445f01888322dbb39e54761ac2735678350fd4",
+      "size": 509,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/97445f01888322dbb39e54761ac2735678350fd4"
+    },
+    {
+      "path": "results/MG4/part0/steps/pilot_D_93.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4078e22edcde95ff090139af8f4311088fc0c91",
+      "size": 504,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/c4078e22edcde95ff090139af8f4311088fc0c91"
+    },
+    {
+      "path": "results/MG4/part0/steps/pilot_R_90.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bac2f9b37f0431ab415634508c6e5ccf7441f08",
+      "size": 522,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/6bac2f9b37f0431ab415634508c6e5ccf7441f08"
+    },
+    {
+      "path": "results/MG4/part0/steps/pilot_R_91.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "986fef2ea885af00de92a026dd8ef28b790ca829",
+      "size": 524,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/986fef2ea885af00de92a026dd8ef28b790ca829"
+    },
+    {
+      "path": "results/MG4/part0/steps/pilot_R_92.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8192124c36a0e2bca1a53470d64ac087bcab9f9",
+      "size": 520,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/f8192124c36a0e2bca1a53470d64ac087bcab9f9"
+    },
+    {
+      "path": "results/MG4/part0/steps/pilot_R_93.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fc7bf134ba5638beed950765e5b0e169c7978da",
+      "size": 535,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/9fc7bf134ba5638beed950765e5b0e169c7978da"
+    },
+    {
+      "path": "results/MG4/part0/steps/spec_D_0.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fecb63752bf51a57c4912ad687175904db9c02b6",
+      "size": 1321,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/fecb63752bf51a57c4912ad687175904db9c02b6"
+    },
+    {
+      "path": "results/MG4/part0/steps/spec_D_1.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ca77bc5e6691b0f0fb243271dde0957f9cd89a5",
+      "size": 1318,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/0ca77bc5e6691b0f0fb243271dde0957f9cd89a5"
+    },
+    {
+      "path": "results/MG4/part0/steps/spec_D_2.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a425f0994d639c75a1702509df074527ecac5d30",
+      "size": 1316,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/a425f0994d639c75a1702509df074527ecac5d30"
+    },
+    {
+      "path": "results/MG4/part0/steps/spec_D_3.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c682366e1f8f9118528c55f482f0aa8206b593b1",
+      "size": 1320,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/c682366e1f8f9118528c55f482f0aa8206b593b1"
+    },
+    {
+      "path": "results/MG4/part0/steps/spec_N3_0.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5c8fc73b34b0ac3316acc14fc3efbb60f64b663",
+      "size": 1184,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/c5c8fc73b34b0ac3316acc14fc3efbb60f64b663"
+    },
+    {
+      "path": "results/MG4/part0/steps/spec_N3_1.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "997ee126147d4c7198d00dfd32e50b77a11d716b",
+      "size": 1182,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/997ee126147d4c7198d00dfd32e50b77a11d716b"
+    },
+    {
+      "path": "results/MG4/part0/steps/spec_R_0.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69adfda7e7c3223b79aba59d01f77195ce933cc4",
+      "size": 1320,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/69adfda7e7c3223b79aba59d01f77195ce933cc4"
+    },
+    {
+      "path": "results/MG4/part0/steps/spec_R_1.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5e7b45c269a568a73544113c9334a358d9e43b1",
+      "size": 1330,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/f5e7b45c269a568a73544113c9334a358d9e43b1"
+    },
+    {
+      "path": "results/MG4/part0/steps/spec_R_2.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8bd5036f818b3a55029e9c7aac7e1797f850d528",
+      "size": 1334,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/8bd5036f818b3a55029e9c7aac7e1797f850d528"
+    },
+    {
+      "path": "results/MG4/part0/steps/spec_R_3.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d60f38062756941d4292c48c41b11d3cbf20eff",
+      "size": 1319,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/3d60f38062756941d4292c48c41b11d3cbf20eff"
+    },
+    {
+      "path": "results/MG4/part0/steps/spec_T_0.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a6f318a63eb157ef43a6f12576d6ccb2924e8ee",
+      "size": 1125,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/1a6f318a63eb157ef43a6f12576d6ccb2924e8ee"
+    },
+    {
+      "path": "results/MG4/part0/steps/window_b_r.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27e7171d63f3f5c35af3a0522976595ea8811fbb",
+      "size": 560,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/27e7171d63f3f5c35af3a0522976595ea8811fbb"
+    },
+    {
+      "path": "results/MG4/part0/steps/window_b_r_b29.130000.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "755cdff2a161bf28d1e1d444f2d94cefb8dc7346",
+      "size": 59,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/755cdff2a161bf28d1e1d444f2d94cefb8dc7346"
+    },
+    {
+      "path": "results/MG4/part0/steps/window_b_r_b29.195000.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c3e4f0a732a39f01f2e9adf388a02108be19cc3",
+      "size": 60,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/8c3e4f0a732a39f01f2e9adf388a02108be19cc3"
+    },
+    {
+      "path": "results/MG4/part0/steps/window_b_r_b29.197031.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03a4965c0fdbf43d2b4a967e4a7be355bb5589e6",
+      "size": 73,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/03a4965c0fdbf43d2b4a967e4a7be355bb5589e6"
+    },
+    {
+      "path": "results/MG4/part0/steps/window_b_r_b29.199063.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b71bbd24b5c0ec1212a6860bae174109c3e7048",
+      "size": 66,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/5b71bbd24b5c0ec1212a6860bae174109c3e7048"
+    },
+    {
+      "path": "results/MG4/part0/steps/window_b_r_b29.203125.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c630bbc1cc7cc974a7918b29cf084139521f884",
+      "size": 64,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/7c630bbc1cc7cc974a7918b29cf084139521f884"
+    },
+    {
+      "path": "results/MG4/part0/steps/window_b_r_b29.211250.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62f8d34facb7fffacbfdd8faa9becd8f4eb77385",
+      "size": 64,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/62f8d34facb7fffacbfdd8faa9becd8f4eb77385"
+    },
+    {
+      "path": "results/MG4/part0/steps/window_b_r_b29.227500.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a0b0a4be37873199ccfa6bb45c1da5aa6989fc8",
+      "size": 62,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/0a0b0a4be37873199ccfa6bb45c1da5aa6989fc8"
+    },
+    {
+      "path": "results/MG4/part0/steps/window_b_r_b29.260000.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8a26771d8a669d1932c3a961f6210dede2b2703",
+      "size": 73,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/d8a26771d8a669d1932c3a961f6210dede2b2703"
+    },
+    {
+      "path": "results/MG4/part0/steps/window_b_r_b29.520000.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74158abb088086bf65b2242f839f49cba699ceb1",
+      "size": 60,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/74158abb088086bf65b2242f839f49cba699ceb1"
+    },
+    {
+      "path": "results/MG4/part0/steps/window_b_s.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c15d56499f62aa8062dbcdeeb5e5d77b0a8256d",
+      "size": 592,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/2c15d56499f62aa8062dbcdeeb5e5d77b0a8256d"
+    },
+    {
+      "path": "results/MG4/part0/steps/window_b_s_b26.750000.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d878c26e976095d43dc49ae7504d7c428ee07280",
+      "size": 59,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/d878c26e976095d43dc49ae7504d7c428ee07280"
+    },
+    {
+      "path": "results/MG4/part0/steps/window_b_s_b27.125000.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "053a36a3104f50b62f996a330a8f1a45b841d502",
+      "size": 61,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/053a36a3104f50b62f996a330a8f1a45b841d502"
+    },
+    {
+      "path": "results/MG4/part0/steps/window_b_s_b27.312500.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "395d04ce08ecd093210f8f1b69d85ba635b1a6e4",
+      "size": 61,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/395d04ce08ecd093210f8f1b69d85ba635b1a6e4"
+    },
+    {
+      "path": "results/MG4/part0/steps/window_b_s_b27.324219.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49ddd510d2c8932cffc4757fd452046aa9567fa1",
+      "size": 66,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/49ddd510d2c8932cffc4757fd452046aa9567fa1"
+    },
+    {
+      "path": "results/MG4/part0/steps/window_b_s_b27.327148.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "354cc8e9b9e2e6d6662a1cb01ef03a6255f82b17",
+      "size": 68,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/354cc8e9b9e2e6d6662a1cb01ef03a6255f82b17"
+    },
+    {
+      "path": "results/MG4/part0/steps/window_b_s_b27.330078.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36cd7735d753ca8df38caffa708099bbdb8e7ec4",
+      "size": 67,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/36cd7735d753ca8df38caffa708099bbdb8e7ec4"
+    },
+    {
+      "path": "results/MG4/part0/steps/window_b_s_b27.335938.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a2680d4bd338951fe8ccfe37504bae4c76e11d3",
+      "size": 65,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/1a2680d4bd338951fe8ccfe37504bae4c76e11d3"
+    },
+    {
+      "path": "results/MG4/part0/steps/window_b_s_b27.359375.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8b931c9913b2ef1961291fb2bef1b8b252bc2fb",
+      "size": 64,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/a8b931c9913b2ef1961291fb2bef1b8b252bc2fb"
+    },
+    {
+      "path": "results/MG4/part0/steps/window_b_s_b27.406250.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0154d06863231fc9e9ccaed61b95d74fea525152",
+      "size": 63,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/0154d06863231fc9e9ccaed61b95d74fea525152"
+    },
+    {
+      "path": "results/MG4/part0/steps/window_b_s_b27.500000.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bf26f1c56ee6f94d7428db0df05144585f2309c",
+      "size": 59,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/7bf26f1c56ee6f94d7428db0df05144585f2309c"
+    },
+    {
+      "path": "results/MG4/partA/budget_ledger.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07f2f4f83bdb051ad7aae6534dac358d0f2ac3e2",
+      "size": 7996,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/07f2f4f83bdb051ad7aae6534dac358d0f2ac3e2"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D0_p0_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04f38912a35879cbcca3a6313fd376fe2b492aa0",
+      "size": 968879,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/04f38912a35879cbcca3a6313fd376fe2b492aa0"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D0_p1_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "259a7fc588415e938ea04c1cc02b3c8093058b61",
+      "size": 969503,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/259a7fc588415e938ea04c1cc02b3c8093058b61"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D0_p2_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "507bad62dbf656ce3c2341f08a8d482ede510e7f",
+      "size": 967647,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/507bad62dbf656ce3c2341f08a8d482ede510e7f"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D0_p3_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e0e6aae52bb8a4a4431ec2593229b4fa6d36f88",
+      "size": 967873,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/4e0e6aae52bb8a4a4431ec2593229b4fa6d36f88"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D0_p4_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cecfb25058fe9616de3c13b934ec83dd1ca9e470",
+      "size": 966469,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/cecfb25058fe9616de3c13b934ec83dd1ca9e470"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D0_p5_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "441931acbcb161a1920ebd5a3c27c5dcecaed605",
+      "size": 968721,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/441931acbcb161a1920ebd5a3c27c5dcecaed605"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D0_p6_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f50fc97f3595bb8f523f2a31b0738ed25de26bff",
+      "size": 966217,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/f50fc97f3595bb8f523f2a31b0738ed25de26bff"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D0_p7_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cf181388dc78ec138fc0b6db5cbb6d6336630b5",
+      "size": 968619,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/3cf181388dc78ec138fc0b6db5cbb6d6336630b5"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D1_p0_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0080429ef17720d1b33402fd9a4c381c1bba80a1",
+      "size": 967232,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/0080429ef17720d1b33402fd9a4c381c1bba80a1"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D1_p1_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba641b8a359d2be5e6f8fd76e25e77dc692b5502",
+      "size": 967564,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/ba641b8a359d2be5e6f8fd76e25e77dc692b5502"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D1_p2_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c686efdf8765c28b67a52327b7cb15f485774d57",
+      "size": 967325,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/c686efdf8765c28b67a52327b7cb15f485774d57"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D1_p3_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1cecc568e1e1491bf8c903c35562a340689243a7",
+      "size": 968069,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/1cecc568e1e1491bf8c903c35562a340689243a7"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D1_p4_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b6aa85b0228a69b19794b6f12fbc6738aae2c95",
+      "size": 968870,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/7b6aa85b0228a69b19794b6f12fbc6738aae2c95"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D1_p5_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ffe30da6712c7799e73a6b6455989892ce05b11",
+      "size": 967238,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/7ffe30da6712c7799e73a6b6455989892ce05b11"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D1_p6_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e452706232bcd017320e1caa4cc6b426503c56a",
+      "size": 967655,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/6e452706232bcd017320e1caa4cc6b426503c56a"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D1_p7_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84e8c69232807528e738e230a5fa36313e1a59ab",
+      "size": 967601,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/84e8c69232807528e738e230a5fa36313e1a59ab"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D2_p0_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fc6c637bd86f80b758f673ad903d16c82584f71",
+      "size": 968103,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/1fc6c637bd86f80b758f673ad903d16c82584f71"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D2_p1_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e829262946c619971628a589962723342936d17e",
+      "size": 966661,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/e829262946c619971628a589962723342936d17e"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D2_p2_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef9d51d4f9ccacadbe8b4b6526974e158a68aec3",
+      "size": 967265,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/ef9d51d4f9ccacadbe8b4b6526974e158a68aec3"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D2_p3_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5670b4cf5002761d193e0d3ddc65e00d5396a371",
+      "size": 965814,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/5670b4cf5002761d193e0d3ddc65e00d5396a371"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D2_p4_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06cb9dba4c1f347a2536e826830f1830419fb2ec",
+      "size": 966393,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/06cb9dba4c1f347a2536e826830f1830419fb2ec"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D2_p5_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77f8b48a9b4fbc32a9e2740f9a8e2d67e702d81c",
+      "size": 968061,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/77f8b48a9b4fbc32a9e2740f9a8e2d67e702d81c"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D2_p6_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "475c99649d54a4b508e588f79114f0dba65abfbe",
+      "size": 968399,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/475c99649d54a4b508e588f79114f0dba65abfbe"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D2_p7_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a8933ef055cd483d56295e5bb764c1188ec9a00",
+      "size": 968240,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/9a8933ef055cd483d56295e5bb764c1188ec9a00"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D3_p0_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75bc28702e1285184c9505261ac442b08161da5a",
+      "size": 966851,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/75bc28702e1285184c9505261ac442b08161da5a"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D3_p1_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45aa1aeea124dc5bd328e484739d2af5339980ed",
+      "size": 967742,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/45aa1aeea124dc5bd328e484739d2af5339980ed"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D3_p2_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1da7c3effd6d667bd5171990d7ddddbfba1636c",
+      "size": 966787,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/a1da7c3effd6d667bd5171990d7ddddbfba1636c"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D3_p3_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8363b0f5198d956679a466905f7385501d281698",
+      "size": 967614,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/8363b0f5198d956679a466905f7385501d281698"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D3_p4_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7116fa9a1fa7d9e5fb309f098f6f6558c933b740",
+      "size": 966789,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/7116fa9a1fa7d9e5fb309f098f6f6558c933b740"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D3_p5_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "514cd3c219810d5d5a79b5407a65c21636857767",
+      "size": 966657,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/514cd3c219810d5d5a79b5407a65c21636857767"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D3_p6_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0672305d23971c0eec2d4f9def5ee2e97bbd558",
+      "size": 967078,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/b0672305d23971c0eec2d4f9def5ee2e97bbd558"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/D3_p7_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cceea720c070f02e7b61e563044958d8e1944d8e",
+      "size": 965943,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/cceea720c070f02e7b61e563044958d8e1944d8e"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R0_p0_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cda0a6d96ab71799adad38eae86596dbf0b15944",
+      "size": 1978303,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/cda0a6d96ab71799adad38eae86596dbf0b15944"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R0_p1_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82e2f723c1057400eae55652f925d5af87bbcdfa",
+      "size": 1977797,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/82e2f723c1057400eae55652f925d5af87bbcdfa"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R0_p2_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ed51bdd7a756cf6ce6e92a1d701a3e3461d1887",
+      "size": 1978634,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/3ed51bdd7a756cf6ce6e92a1d701a3e3461d1887"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R0_p3_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7073f99d46d26012db9205037566bfa18cf28ec0",
+      "size": 1980489,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/7073f99d46d26012db9205037566bfa18cf28ec0"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R0_p4_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ea5f551b91eded7d572f0278771e5b41b7b2323",
+      "size": 1978848,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/1ea5f551b91eded7d572f0278771e5b41b7b2323"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R0_p5_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65812b62c4397dd4310149a76690b8a303527b92",
+      "size": 1978184,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/65812b62c4397dd4310149a76690b8a303527b92"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R0_p6_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb10ea1edf173dd478c6e0f3f95cf352f9045a61",
+      "size": 1978736,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/cb10ea1edf173dd478c6e0f3f95cf352f9045a61"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R0_p7_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "363fa597570ff750310d013d6c415c5ef8c192d7",
+      "size": 1975545,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/363fa597570ff750310d013d6c415c5ef8c192d7"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R1_p0_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8128d1c1b0befea91860e7a0ec83ad2173afde9f",
+      "size": 1975677,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/8128d1c1b0befea91860e7a0ec83ad2173afde9f"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R1_p1_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c8958f38a32acac6eb21ab430959a06a250f56a",
+      "size": 1978554,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/3c8958f38a32acac6eb21ab430959a06a250f56a"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R1_p2_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26318c65a5cecebd695bf2fc38b63cfcf1dfb058",
+      "size": 1979235,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/26318c65a5cecebd695bf2fc38b63cfcf1dfb058"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R1_p3_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d83f569301666d495f40ec66140ec4544f4a88b9",
+      "size": 1976275,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/d83f569301666d495f40ec66140ec4544f4a88b9"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R1_p4_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1ab65ba1c69036bddc14ff1350be877a6856966",
+      "size": 1976735,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/b1ab65ba1c69036bddc14ff1350be877a6856966"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R1_p5_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "244fd314a4bbec9b377dfa09e6c2ee3441a1619a",
+      "size": 1979614,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/244fd314a4bbec9b377dfa09e6c2ee3441a1619a"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R1_p6_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8f3b02d89e1d6f92fc074b19fabbfd73f072bf3",
+      "size": 1978566,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/c8f3b02d89e1d6f92fc074b19fabbfd73f072bf3"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R1_p7_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c47af6de771abb16e6181c3c8f8f4c0c406f5870",
+      "size": 1978957,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/c47af6de771abb16e6181c3c8f8f4c0c406f5870"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R2_p0_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "656dd0dc12713416e34cbb32107c9f17f3e8a8b5",
+      "size": 1979636,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/656dd0dc12713416e34cbb32107c9f17f3e8a8b5"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R2_p1_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03c58e8dc29e0e6c81a13fdb11edf03094fb6220",
+      "size": 1981164,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/03c58e8dc29e0e6c81a13fdb11edf03094fb6220"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R2_p2_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ce65196300b908945fe74907899a1fd09431b24",
+      "size": 1980610,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/1ce65196300b908945fe74907899a1fd09431b24"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R2_p3_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91cb082d45dcb1aca8709088e808d023dd698b09",
+      "size": 1975376,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/91cb082d45dcb1aca8709088e808d023dd698b09"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R2_p4_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc3e20acb685d859e6798b2856c0d32107e184e8",
+      "size": 1976876,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/bc3e20acb685d859e6798b2856c0d32107e184e8"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R2_p5_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbcf8fa03d9df36a2f19f77bbd22a913d179e700",
+      "size": 1977598,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/bbcf8fa03d9df36a2f19f77bbd22a913d179e700"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R2_p6_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "120a21aa44a73c8ea47115103e990c2e5e4cfba7",
+      "size": 1980540,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/120a21aa44a73c8ea47115103e990c2e5e4cfba7"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R2_p7_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec9b483d80303ab30a48f5c2de605bd554e8f490",
+      "size": 1979658,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/ec9b483d80303ab30a48f5c2de605bd554e8f490"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R3_p0_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32d3c22623807c8bd482a7f07fcf3d2c53bb6ede",
+      "size": 1979292,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/32d3c22623807c8bd482a7f07fcf3d2c53bb6ede"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R3_p1_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbd8299a0ffc747dffac25453f88484589367ac4",
+      "size": 1978843,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/bbd8299a0ffc747dffac25453f88484589367ac4"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R3_p2_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c85deafe023894b4e2d11e3f088a812e62289a7",
+      "size": 1978390,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/6c85deafe023894b4e2d11e3f088a812e62289a7"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R3_p3_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2ada132d60323fd56fa27182caa6cba70acc3fa",
+      "size": 1977229,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/f2ada132d60323fd56fa27182caa6cba70acc3fa"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R3_p4_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2468402a16a1253c36264948f447ad07505a1b2",
+      "size": 1977666,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/e2468402a16a1253c36264948f447ad07505a1b2"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R3_p5_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "beae177ecb59c2a8e0970236ca1f5ce890839e65",
+      "size": 1980320,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/beae177ecb59c2a8e0970236ca1f5ce890839e65"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R3_p6_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b17b2e173f86424b591093b9081941bdf345fbd",
+      "size": 1978760,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/5b17b2e173f86424b591093b9081941bdf345fbd"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/R3_p7_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9bf683cd171c4b5a4d89f626dd61db2f1a0db314",
+      "size": 1981731,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/9bf683cd171c4b5a4d89f626dd61db2f1a0db314"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/T_p0_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d528fce4b42bb0b45bb8a25c0fd2f0f80e5ca54",
+      "size": 407015,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/5d528fce4b42bb0b45bb8a25c0fd2f0f80e5ca54"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/T_p1_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ee0412d458952f631db351938af3f5fdb9998ae",
+      "size": 407853,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/8ee0412d458952f631db351938af3f5fdb9998ae"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/T_p2_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1995f591e479b09a0fc22304228e250c35695e7c",
+      "size": 653275,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/1995f591e479b09a0fc22304228e250c35695e7c"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/T_p3_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e5b822e6d8b69b0577737c625af3f054aa418b5",
+      "size": 913750,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/6e5b822e6d8b69b0577737c625af3f054aa418b5"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/h03_D_p0_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49c393a33a12f3ce0237d6e386be6abec96135bc",
+      "size": 431189,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/49c393a33a12f3ce0237d6e386be6abec96135bc"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/h03_D_p1_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c20ada38903339bd265d389f879d2af8a9d6f050",
+      "size": 430667,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/c20ada38903339bd265d389f879d2af8a9d6f050"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/h03_D_p2_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d8db7d0f33a13418d69d53bbf673fc23370df59",
+      "size": 431165,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/1d8db7d0f33a13418d69d53bbf673fc23370df59"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/h03_D_p3_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32f9f4cc9858f0c10b2444232522802f3fda35ed",
+      "size": 430821,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/32f9f4cc9858f0c10b2444232522802f3fda35ed"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/h03_D_p4_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f9f5e5765816efe4552319b2ae0ca39e0857b37",
+      "size": 430871,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/9f9f5e5765816efe4552319b2ae0ca39e0857b37"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/h03_D_p5_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c14c3c6748b58c79e4cd65f3bc55357f3da328a2",
+      "size": 431762,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/c14c3c6748b58c79e4cd65f3bc55357f3da328a2"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/h03_D_p6_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60d0c83c78a506c2df03484ddeca2cad8713897c",
+      "size": 430308,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/60d0c83c78a506c2df03484ddeca2cad8713897c"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/h03_D_p7_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f40975488d66213aa20850bb23d9d27dfc521e60",
+      "size": 430773,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/f40975488d66213aa20850bb23d9d27dfc521e60"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/h03_T_p0_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "531ee680c3b75cfce564d8203384eea0cf50bf1d",
+      "size": 51931,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/531ee680c3b75cfce564d8203384eea0cf50bf1d"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/h03_T_p1_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c19e6e1fd6259af35389ab983a1ef7b8f2e4364",
+      "size": 51370,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/4c19e6e1fd6259af35389ab983a1ef7b8f2e4364"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/h03_T_p2_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f7a062870cfc4bed7a7dc945ede65c71d8fdab8",
+      "size": 97703,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/0f7a062870cfc4bed7a7dc945ede65c71d8fdab8"
+    },
+    {
+      "path": "results/MG4/partA/fields_eval/h03_T_p3_sol.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24b7ab783704b37515b6b003f9df2bb8e691357f",
+      "size": 409041,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/24b7ab783704b37515b6b003f9df2bb8e691357f"
+    },
+    {
+      "path": "results/MG4/partA/runs/D0_p0_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df8e9add9039a721b05070923ca054ac6ea3f1fc",
+      "size": 793,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/df8e9add9039a721b05070923ca054ac6ea3f1fc"
+    },
+    {
+      "path": "results/MG4/partA/runs/D0_p1_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5083cbf0afd049b495c33e0c5f07d35a291cf79c",
+      "size": 801,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/5083cbf0afd049b495c33e0c5f07d35a291cf79c"
+    },
+    {
+      "path": "results/MG4/partA/runs/D0_p2_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "748bf1b2c7316450c353b6903a42e400842cd547",
+      "size": 794,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/748bf1b2c7316450c353b6903a42e400842cd547"
+    },
+    {
+      "path": "results/MG4/partA/runs/D0_p3_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2221cb1c09793eb30685a4a8f48c65b44f513fe1",
+      "size": 785,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/2221cb1c09793eb30685a4a8f48c65b44f513fe1"
+    },
+    {
+      "path": "results/MG4/partA/runs/D0_p4_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc3377bdffc533a554ca212de3ca86bd43abc703",
+      "size": 798,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/fc3377bdffc533a554ca212de3ca86bd43abc703"
+    },
+    {
+      "path": "results/MG4/partA/runs/D0_p5_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d7c18f3e16a2092593962ea42cb66c35956e4a1",
+      "size": 787,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/8d7c18f3e16a2092593962ea42cb66c35956e4a1"
+    },
+    {
+      "path": "results/MG4/partA/runs/D0_p6_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e3174cd8c4889cbb258d26c7b4cb2b7385b16b6",
+      "size": 801,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/6e3174cd8c4889cbb258d26c7b4cb2b7385b16b6"
+    },
+    {
+      "path": "results/MG4/partA/runs/D0_p7_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd31299c739a0f7f9c9ae3eb796d78b1443f2314",
+      "size": 790,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/cd31299c739a0f7f9c9ae3eb796d78b1443f2314"
+    },
+    {
+      "path": "results/MG4/partA/runs/D1_p0_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33714e0e6a36d37e438535be35f38208e2cbd6c8",
+      "size": 797,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/33714e0e6a36d37e438535be35f38208e2cbd6c8"
+    },
+    {
+      "path": "results/MG4/partA/runs/D1_p1_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39c8c0e48a72e2f6276595e46b45e3d4d6f95a70",
+      "size": 801,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/39c8c0e48a72e2f6276595e46b45e3d4d6f95a70"
+    },
+    {
+      "path": "results/MG4/partA/runs/D1_p2_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2548b94d3f99bd1ae96917544033099d4c64661d",
+      "size": 786,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/2548b94d3f99bd1ae96917544033099d4c64661d"
+    },
+    {
+      "path": "results/MG4/partA/runs/D1_p3_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72008f201c7c3a7323c9274304c265afdcdeee58",
+      "size": 798,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/72008f201c7c3a7323c9274304c265afdcdeee58"
+    },
+    {
+      "path": "results/MG4/partA/runs/D1_p4_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53589d2e40248fcd67a89e43cf461e2d9ef5f295",
+      "size": 799,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/53589d2e40248fcd67a89e43cf461e2d9ef5f295"
+    },
+    {
+      "path": "results/MG4/partA/runs/D1_p5_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d13b61a94d64a573436163781cdf2bb9fb726455",
+      "size": 805,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/d13b61a94d64a573436163781cdf2bb9fb726455"
+    },
+    {
+      "path": "results/MG4/partA/runs/D1_p6_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a79c632f25c1291e7274a18746e1d0949c9cf3b8",
+      "size": 803,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/a79c632f25c1291e7274a18746e1d0949c9cf3b8"
+    },
+    {
+      "path": "results/MG4/partA/runs/D1_p7_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68e4026d56bbcf897f0fda3deb93b313fb358ecb",
+      "size": 786,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/68e4026d56bbcf897f0fda3deb93b313fb358ecb"
+    },
+    {
+      "path": "results/MG4/partA/runs/D2_p0_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b8993a842ac5ff2186eb86548e1be0928f04caa",
+      "size": 795,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/5b8993a842ac5ff2186eb86548e1be0928f04caa"
+    },
+    {
+      "path": "results/MG4/partA/runs/D2_p1_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d52324fbc719be36187f3af533c81f571df1613",
+      "size": 799,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/2d52324fbc719be36187f3af533c81f571df1613"
+    },
+    {
+      "path": "results/MG4/partA/runs/D2_p2_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0c0fefb138772a2f6dcd60eee70332161ae3176",
+      "size": 799,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/b0c0fefb138772a2f6dcd60eee70332161ae3176"
+    },
+    {
+      "path": "results/MG4/partA/runs/D2_p3_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce7b43dcb5a255e03b45ceb8c97b550ffa8199d2",
+      "size": 786,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/ce7b43dcb5a255e03b45ceb8c97b550ffa8199d2"
+    },
+    {
+      "path": "results/MG4/partA/runs/D2_p4_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce629ef59ce0c5d0aea606a4116d038be628057d",
+      "size": 795,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/ce629ef59ce0c5d0aea606a4116d038be628057d"
+    },
+    {
+      "path": "results/MG4/partA/runs/D2_p5_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f5505cbde6592673f7e0231106e8f30b55b7378",
+      "size": 801,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/1f5505cbde6592673f7e0231106e8f30b55b7378"
+    },
+    {
+      "path": "results/MG4/partA/runs/D2_p6_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffe86899dfe9fa6683262cf81afbdc20fafdc57d",
+      "size": 786,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/ffe86899dfe9fa6683262cf81afbdc20fafdc57d"
+    },
+    {
+      "path": "results/MG4/partA/runs/D2_p7_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72c65c31cab0002181b2df3792c60f03b3a44118",
+      "size": 793,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/72c65c31cab0002181b2df3792c60f03b3a44118"
+    },
+    {
+      "path": "results/MG4/partA/runs/D3_p0_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9742ed9acba6df3857a8639784d3fea9f0aaaf0e",
+      "size": 783,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/9742ed9acba6df3857a8639784d3fea9f0aaaf0e"
+    },
+    {
+      "path": "results/MG4/partA/runs/D3_p1_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2eba3092f56ec304f9012dccda0a0192ced13900",
+      "size": 796,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/2eba3092f56ec304f9012dccda0a0192ced13900"
+    },
+    {
+      "path": "results/MG4/partA/runs/D3_p2_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98fd301192b185355e7b346dc1b1a42d4454c283",
+      "size": 801,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/98fd301192b185355e7b346dc1b1a42d4454c283"
+    },
+    {
+      "path": "results/MG4/partA/runs/D3_p3_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40de24474c1520fa91ade663a131e416650567c5",
+      "size": 798,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/40de24474c1520fa91ade663a131e416650567c5"
+    },
+    {
+      "path": "results/MG4/partA/runs/D3_p4_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cc3c9cabf9bb17ddebb221031ef776b59a61654",
+      "size": 796,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/3cc3c9cabf9bb17ddebb221031ef776b59a61654"
+    },
+    {
+      "path": "results/MG4/partA/runs/D3_p5_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c1061ccd7268117da35cf1439269127a807a918",
+      "size": 791,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/1c1061ccd7268117da35cf1439269127a807a918"
+    },
+    {
+      "path": "results/MG4/partA/runs/D3_p6_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b57bfc14eaaef8e5df17b0f6c5fc67ee2309901",
+      "size": 800,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/3b57bfc14eaaef8e5df17b0f6c5fc67ee2309901"
+    },
+    {
+      "path": "results/MG4/partA/runs/D3_p7_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3ebc1feed4804a2f2498cf73d4fd952c58efdb1",
+      "size": 781,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/a3ebc1feed4804a2f2498cf73d4fd952c58efdb1"
+    },
+    {
+      "path": "results/MG4/partA/runs/R0_p0_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dead3d481660c00d5fd0f0f8cfe9c171ffe7bd33",
+      "size": 799,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/dead3d481660c00d5fd0f0f8cfe9c171ffe7bd33"
+    },
+    {
+      "path": "results/MG4/partA/runs/R0_p1_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51b862f6b8f184f60dfeeac06e3c82d3847030ee",
+      "size": 800,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/51b862f6b8f184f60dfeeac06e3c82d3847030ee"
+    },
+    {
+      "path": "results/MG4/partA/runs/R0_p2_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb7c863c6f67642e564906b2c9caab2948f45394",
+      "size": 795,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/fb7c863c6f67642e564906b2c9caab2948f45394"
+    },
+    {
+      "path": "results/MG4/partA/runs/R0_p3_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "927f6839779b352cd3ef120d206345fc549594dd",
+      "size": 802,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/927f6839779b352cd3ef120d206345fc549594dd"
+    },
+    {
+      "path": "results/MG4/partA/runs/R0_p4_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "521314cfd966a5a4ed73cbe0fd65fb531e4870c7",
+      "size": 801,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/521314cfd966a5a4ed73cbe0fd65fb531e4870c7"
+    },
+    {
+      "path": "results/MG4/partA/runs/R0_p5_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89109a54bbd6bc3b274d27ff69dd98ea55b8bcff",
+      "size": 803,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/89109a54bbd6bc3b274d27ff69dd98ea55b8bcff"
+    },
+    {
+      "path": "results/MG4/partA/runs/R0_p6_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08f2894cae1dd4d16defa143407e5cb8d1f2208e",
+      "size": 803,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/08f2894cae1dd4d16defa143407e5cb8d1f2208e"
+    },
+    {
+      "path": "results/MG4/partA/runs/R0_p7_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1abe5ff0162d49330cc0962740a5a4d50600ac6",
+      "size": 791,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/f1abe5ff0162d49330cc0962740a5a4d50600ac6"
+    },
+    {
+      "path": "results/MG4/partA/runs/R1_p0_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20a7d1ea5a10006043682d96af0ac0a2028dd71d",
+      "size": 800,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/20a7d1ea5a10006043682d96af0ac0a2028dd71d"
+    },
+    {
+      "path": "results/MG4/partA/runs/R1_p1_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03e5087068be2b830b8a01154443544fad330793",
+      "size": 800,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/03e5087068be2b830b8a01154443544fad330793"
+    },
+    {
+      "path": "results/MG4/partA/runs/R1_p2_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d069253f1ade66ced8137b4c2bab4826f58e6326",
+      "size": 798,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/d069253f1ade66ced8137b4c2bab4826f58e6326"
+    },
+    {
+      "path": "results/MG4/partA/runs/R1_p3_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca5f8f8a4a11edb27f653f86e0e1571def77a8dd",
+      "size": 799,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/ca5f8f8a4a11edb27f653f86e0e1571def77a8dd"
+    },
+    {
+      "path": "results/MG4/partA/runs/R1_p4_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fe04e7ee109edfd94c4ad5d358ff6b822e0490b",
+      "size": 775,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/9fe04e7ee109edfd94c4ad5d358ff6b822e0490b"
+    },
+    {
+      "path": "results/MG4/partA/runs/R1_p5_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "555d1981a79308b14c1fc495e250658e47fc4a8f",
+      "size": 801,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/555d1981a79308b14c1fc495e250658e47fc4a8f"
+    },
+    {
+      "path": "results/MG4/partA/runs/R1_p6_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06f16b4a95df3120fd59a3602d4ee7f38e1e2344",
+      "size": 791,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/06f16b4a95df3120fd59a3602d4ee7f38e1e2344"
+    },
+    {
+      "path": "results/MG4/partA/runs/R1_p7_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a4c467418b4dbde5f3eaff0fc8a7bbc2117f2f5",
+      "size": 787,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/3a4c467418b4dbde5f3eaff0fc8a7bbc2117f2f5"
+    },
+    {
+      "path": "results/MG4/partA/runs/R2_p0_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b2803f563760ab3a858abef76df51650081a33c",
+      "size": 804,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/8b2803f563760ab3a858abef76df51650081a33c"
+    },
+    {
+      "path": "results/MG4/partA/runs/R2_p1_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b0f8bdabf170ac90832a60c87438a1158278ffb",
+      "size": 801,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/6b0f8bdabf170ac90832a60c87438a1158278ffb"
+    },
+    {
+      "path": "results/MG4/partA/runs/R2_p2_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b12ac4da2e89b045c9ffdf688742f5439a195aa",
+      "size": 802,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/0b12ac4da2e89b045c9ffdf688742f5439a195aa"
+    },
+    {
+      "path": "results/MG4/partA/runs/R2_p3_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa41bc40f3f8c201ec7fe190c0ac69c4cc7974b7",
+      "size": 791,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/fa41bc40f3f8c201ec7fe190c0ac69c4cc7974b7"
+    },
+    {
+      "path": "results/MG4/partA/runs/R2_p4_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7032b8a62e3766490e1071ad8ae09aade9f3f775",
+      "size": 803,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/7032b8a62e3766490e1071ad8ae09aade9f3f775"
+    },
+    {
+      "path": "results/MG4/partA/runs/R2_p5_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2a3aafc982111204422f990418653c8e1b0f395",
+      "size": 799,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/b2a3aafc982111204422f990418653c8e1b0f395"
+    },
+    {
+      "path": "results/MG4/partA/runs/R2_p6_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5afb96967821eaadf0a19d2b05a782f9ef14af14",
+      "size": 800,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/5afb96967821eaadf0a19d2b05a782f9ef14af14"
+    },
+    {
+      "path": "results/MG4/partA/runs/R2_p7_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30c33db5220e5d517b51327cae1329c161eb7dad",
+      "size": 800,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/30c33db5220e5d517b51327cae1329c161eb7dad"
+    },
+    {
+      "path": "results/MG4/partA/runs/R3_p0_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a99d2eb40136300d172100895d91092ac76d51fa",
+      "size": 801,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/a99d2eb40136300d172100895d91092ac76d51fa"
+    },
+    {
+      "path": "results/MG4/partA/runs/R3_p1_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fd90c721fa28be9cdd4d531576d9ff78676d77c",
+      "size": 796,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/5fd90c721fa28be9cdd4d531576d9ff78676d77c"
+    },
+    {
+      "path": "results/MG4/partA/runs/R3_p2_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fa5ee9096cbe72500003d8fc43ffb0a1dc365b8",
+      "size": 802,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/3fa5ee9096cbe72500003d8fc43ffb0a1dc365b8"
+    },
+    {
+      "path": "results/MG4/partA/runs/R3_p3_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ca1b099562abcdb5dec123b140c607d112d3664",
+      "size": 799,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/4ca1b099562abcdb5dec123b140c607d112d3664"
+    },
+    {
+      "path": "results/MG4/partA/runs/R3_p4_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53347a04c673f94d4e8049d30d861f92073a241d",
+      "size": 800,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/53347a04c673f94d4e8049d30d861f92073a241d"
+    },
+    {
+      "path": "results/MG4/partA/runs/R3_p5_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a02d8e59b61cfa215a4cc1d5ae6ea067fc414f72",
+      "size": 798,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/a02d8e59b61cfa215a4cc1d5ae6ea067fc414f72"
+    },
+    {
+      "path": "results/MG4/partA/runs/R3_p6_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1fa4bca3c8207a895c32821eadd7eec85cdd150",
+      "size": 805,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/c1fa4bca3c8207a895c32821eadd7eec85cdd150"
+    },
+    {
+      "path": "results/MG4/partA/runs/R3_p7_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e3cfe52951ac7e9d0b46eb9b434eda7e5533751",
+      "size": 801,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/1e3cfe52951ac7e9d0b46eb9b434eda7e5533751"
+    },
+    {
+      "path": "results/MG4/partA/runs/T_p0_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cbbda0109b421a075dd616b2e5b6b9505a7e4db",
+      "size": 798,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/4cbbda0109b421a075dd616b2e5b6b9505a7e4db"
+    },
+    {
+      "path": "results/MG4/partA/runs/T_p1_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9d5630e64082a334e5c831c1bd6dce7554047bb",
+      "size": 797,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/b9d5630e64082a334e5c831c1bd6dce7554047bb"
+    },
+    {
+      "path": "results/MG4/partA/runs/T_p2_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b287b239b52f9c1fbd9709becdbfa7b00bed435",
+      "size": 797,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/6b287b239b52f9c1fbd9709becdbfa7b00bed435"
+    },
+    {
+      "path": "results/MG4/partA/runs/T_p3_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "497a4aef6b3e9052aa151c3f8d62ed1616fcfd5c",
+      "size": 794,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/497a4aef6b3e9052aa151c3f8d62ed1616fcfd5c"
+    },
+    {
+      "path": "results/MG4/partA/runs/h03_D_p0_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be2a6ba6e0f170db6fdd96caa354b37ff52d07bf",
+      "size": 798,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/be2a6ba6e0f170db6fdd96caa354b37ff52d07bf"
+    },
+    {
+      "path": "results/MG4/partA/runs/h03_D_p1_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a300d2bcb5b47441f468128b5a2f7790a7a05f6",
+      "size": 801,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/0a300d2bcb5b47441f468128b5a2f7790a7a05f6"
+    },
+    {
+      "path": "results/MG4/partA/runs/h03_D_p2_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40396458ad98d7d34693a11f9e25de12f83ff3d8",
+      "size": 798,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/40396458ad98d7d34693a11f9e25de12f83ff3d8"
+    },
+    {
+      "path": "results/MG4/partA/runs/h03_D_p3_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa986adbcf3d35f828112b0e40be6559560568bd",
+      "size": 797,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/aa986adbcf3d35f828112b0e40be6559560568bd"
+    },
+    {
+      "path": "results/MG4/partA/runs/h03_D_p4_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a66c4288a6c8bc820c7fa1d1b9695a7e2d9ad3b",
+      "size": 799,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/9a66c4288a6c8bc820c7fa1d1b9695a7e2d9ad3b"
+    },
+    {
+      "path": "results/MG4/partA/runs/h03_D_p5_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38298a368dee11a8feff253c2af97abb1b32b9bf",
+      "size": 801,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/38298a368dee11a8feff253c2af97abb1b32b9bf"
+    },
+    {
+      "path": "results/MG4/partA/runs/h03_D_p6_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fd2e00b5bd2930b1e6fcbcc9a0018e62febef02",
+      "size": 798,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/5fd2e00b5bd2930b1e6fcbcc9a0018e62febef02"
+    },
+    {
+      "path": "results/MG4/partA/runs/h03_D_p7_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c64bafc54c7ead5981c1f5b6e50fef36096e08d",
+      "size": 789,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/8c64bafc54c7ead5981c1f5b6e50fef36096e08d"
+    },
+    {
+      "path": "results/MG4/partA/runs/h03_T_p0_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85031371e2216fcc9bca446c762062bce27af986",
+      "size": 796,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/85031371e2216fcc9bca446c762062bce27af986"
+    },
+    {
+      "path": "results/MG4/partA/runs/h03_T_p1_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad767f8e00e2096f721950777b5511f8125ca9ba",
+      "size": 798,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/ad767f8e00e2096f721950777b5511f8125ca9ba"
+    },
+    {
+      "path": "results/MG4/partA/runs/h03_T_p2_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21345135afff0c5fbd87bca9ca2fb6c285f2aeef",
+      "size": 800,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/21345135afff0c5fbd87bca9ca2fb6c285f2aeef"
+    },
+    {
+      "path": "results/MG4/partA/runs/h03_T_p3_sol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0aaebf96e1e3fe7b31458551acae514daa456d91",
+      "size": 793,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/0aaebf96e1e3fe7b31458551acae514daa456d91"
+    },
+    {
+      "path": "results/MG4/partA/threshold.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ece46db7ac43f36e83bb1758eaa4b6d93b0a693a",
+      "size": 137,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/ece46db7ac43f36e83bb1758eaa4b6d93b0a693a"
+    },
+    {
+      "path": "results/MG4/partA_run_log.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f10af67665a93f6b572cd2d77de885ac165efd8",
+      "size": 3710,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/2f10af67665a93f6b572cd2d77de885ac165efd8"
+    },
+    {
+      "path": "results/MG4/recompute.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8929d5eb8aaf5a37c2e1ba4aa87ef306214d3d8",
+      "size": 2615,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/e8929d5eb8aaf5a37c2e1ba4aa87ef306214d3d8"
+    },
+    {
+      "path": "results/MG4/timing/timing_RB_LibraryPC.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "256967bc2ae77fecf44afdd0ef1a77637a6156d9",
+      "size": 598,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/256967bc2ae77fecf44afdd0ef1a77637a6156d9"
+    },
+    {
+      "path": "spec/MG4_proposal.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5a01be46a4d50d611cdfba3caf6abd84aab1469",
+      "size": 24958,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/c5a01be46a4d50d611cdfba3caf6abd84aab1469"
+    },
+    {
+      "path": "src/.gitkeep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/audit_mean_map.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1cf30e2c71eac619404aea8bef570fcbff3e2151",
+      "size": 1609,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/1cf30e2c71eac619404aea8bef570fcbff3e2151"
+    },
+    {
+      "path": "src/audit_mg2_corrected.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d764876261d6ff6ab97ec9984b58cca3fbc72ec0",
+      "size": 2094,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/d764876261d6ff6ab97ec9984b58cca3fbc72ec0"
+    },
+    {
+      "path": "src/calib_mg3b.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15873de02f99432a1fa87724da61884cdb7f91a1",
+      "size": 39885,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/15873de02f99432a1fa87724da61884cdb7f91a1"
+    },
+    {
+      "path": "src/calibrate_alpha_decision.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a31392ed94466bdb09ab8ba413384fccc0b9a3e3",
+      "size": 3044,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/a31392ed94466bdb09ab8ba413384fccc0b9a3e3"
+    },
+    {
+      "path": "src/calibrate_audit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ede35cbfaeed30fd60714e35f1b5eb807f99085",
+      "size": 1656,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/1ede35cbfaeed30fd60714e35f1b5eb807f99085"
+    },
+    {
+      "path": "src/calibrate_audit_null.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "418deba73c011157db47de4e7954d31d2704356c",
+      "size": 704,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/418deba73c011157db47de4e7954d31d2704356c"
+    },
+    {
+      "path": "src/calibrate_bounds.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c16561f38dac6bacaf800027eecc9521efbb63dd",
+      "size": 6652,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/c16561f38dac6bacaf800027eecc9521efbb63dd"
+    },
+    {
+      "path": "src/calibrate_diff.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "763f9ffb679434651e292a5b473180529ae0f200",
+      "size": 2288,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/763f9ffb679434651e292a5b473180529ae0f200"
+    },
+    {
+      "path": "src/calibrate_procedure.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "975fd179f8f16eedd0a66f601c5e83fdd13beb6c",
+      "size": 7730,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/975fd179f8f16eedd0a66f601c5e83fdd13beb6c"
+    },
+    {
+      "path": "src/check_mg4_balances.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3c68f11b5aea8c88c08d8ad5d4c36ecc2ca15fa",
+      "size": 1725,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/d3c68f11b5aea8c88c08d8ad5d4c36ecc2ca15fa"
+    },
+    {
+      "path": "src/confirm.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7c087e55ea95864af9afa90a6ef5f2b35e784c2",
+      "size": 2874,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/a7c087e55ea95864af9afa90a6ef5f2b35e784c2"
+    },
+    {
+      "path": "src/confirm_controls.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36bb9fa64e5b372d8459f88817a9a94f8025f8c2",
+      "size": 3056,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/36bb9fa64e5b372d8459f88817a9a94f8025f8c2"
+    },
+    {
+      "path": "src/diag_mg2_replication.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9624dbf3f0533cbfb874fd2f5de26bb252138147",
+      "size": 2535,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/9624dbf3f0533cbfb874fd2f5de26bb252138147"
+    },
+    {
+      "path": "src/evaluate_mg1.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2196c5c39de4249e2f549fd8e2b3b0d49fc6d372",
+      "size": 6824,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/2196c5c39de4249e2f549fd8e2b3b0d49fc6d372"
+    },
+    {
+      "path": "src/evaluate_mg2.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "038c4c7c12b17f065dbc8e533457ac6a9e0b6da1",
+      "size": 11374,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/038c4c7c12b17f065dbc8e533457ac6a9e0b6da1"
+    },
+    {
+      "path": "src/evaluate_mg3.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "196d9ca0e7eace93d3e59ccb0a02a021956ccd5e",
+      "size": 11955,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/196d9ca0e7eace93d3e59ccb0a02a021956ccd5e"
+    },
+    {
+      "path": "src/evaluate_mg3b.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7085eab4f68c80cb5971639fbee3dfb2da6ef21",
+      "size": 13601,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/a7085eab4f68c80cb5971639fbee3dfb2da6ef21"
+    },
+    {
+      "path": "src/evaluate_mg4.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33b10e47dbabf4659dc27c94cb89b6f31fffceeb",
+      "size": 7251,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/33b10e47dbabf4659dc27c94cb89b6f31fffceeb"
+    },
+    {
+      "path": "src/existence_window.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab5e7bddfb0c00ddc53031b878c7a5c93322ae19",
+      "size": 1666,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/ab5e7bddfb0c00ddc53031b878c7a5c93322ae19"
+    },
+    {
+      "path": "src/graph_ode.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d44524aa5506f61b40bde23bdadc323f9e3e5fa",
+      "size": 6246,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/5d44524aa5506f61b40bde23bdadc323f9e3e5fa"
+    },
+    {
+      "path": "src/graphs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47ce4885a98395819c71a8dc88bf6fe06fd71a00",
+      "size": 8680,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/47ce4885a98395819c71a8dc88bf6fe06fd71a00"
+    },
+    {
+      "path": "src/lattice.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d221391a5dc290d2c40dd76dc5f00b98ca34ccd",
+      "size": 14705,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/7d221391a5dc290d2c40dd76dc5f00b98ca34ccd"
+    },
+    {
+      "path": "src/lattice_reference.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e6d0fafee3f57fdb045fa59592b11a219ccc3b2",
+      "size": 2347,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/8e6d0fafee3f57fdb045fa59592b11a219ccc3b2"
+    },
+    {
+      "path": "src/lattice_reference2.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14a4aa60ec306dbf39a5124e21c054c96fb25eff",
+      "size": 1476,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/14a4aa60ec306dbf39a5124e21c054c96fb25eff"
+    },
+    {
+      "path": "src/lattice_reference3.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a228e4297fe09f841f453781d7ade158efd76b1",
+      "size": 1270,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/4a228e4297fe09f841f453781d7ade158efd76b1"
+    },
+    {
+      "path": "src/lattice_reference4.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64785c077e040fe53ee62f22f8a12ce659cd08ed",
+      "size": 1565,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/64785c077e040fe53ee62f22f8a12ce659cd08ed"
+    },
+    {
+      "path": "src/linear_stability.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4bfde24629795d6ebccc1ed40e5a8fd2c194473",
+      "size": 2239,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/d4bfde24629795d6ebccc1ed40e5a8fd2c194473"
+    },
+    {
+      "path": "src/measure.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6ac1c8e268e93ef801b54504446a6f3c0a7742a",
+      "size": 9238,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/f6ac1c8e268e93ef801b54504446a6f3c0a7742a"
+    },
+    {
+      "path": "src/measure_graph.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e9b49a3dff3bc7d15047c9a3cc95c06ee4b02a7",
+      "size": 4779,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/0e9b49a3dff3bc7d15047c9a3cc95c06ee4b02a7"
+    },
+    {
+      "path": "src/mg3.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4b88ccc1c837effd8633307ce60bdab56930e99",
+      "size": 15154,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/e4b88ccc1c837effd8633307ce60bdab56930e99"
+    },
+    {
+      "path": "src/mg3b.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c5489427b1cdbb6ffcd099a132e957c083dde0d",
+      "size": 6310,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/9c5489427b1cdbb6ffcd099a132e957c083dde0d"
+    },
+    {
+      "path": "src/mg_continuum.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87375ef1f7492c6cd41cc3f8f78fcc57fca7d28f",
+      "size": 9013,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/87375ef1f7492c6cd41cc3f8f78fcc57fca7d28f"
+    },
+    {
+      "path": "src/recompute_mg4.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31dafe406245c62f0422e9ccca8c9c8b706246b1",
+      "size": 4062,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/31dafe406245c62f0422e9ccca8c9c8b706246b1"
+    },
+    {
+      "path": "src/replication_edge.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48460e4ae53bd6c539130102ecd7d3cb089588d6",
+      "size": 915,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/48460e4ae53bd6c539130102ecd7d3cb089588d6"
+    },
+    {
+      "path": "src/run_mg1.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fcee2fedd93b8d12f56ef8f1a7aa43095d6de2a3",
+      "size": 1254,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/fcee2fedd93b8d12f56ef8f1a7aa43095d6de2a3"
+    },
+    {
+      "path": "src/run_mg1_controls.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6c08534f017674854ec5b44396141952a5d4bd5",
+      "size": 2475,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/a6c08534f017674854ec5b44396141952a5d4bd5"
+    },
+    {
+      "path": "src/run_mg2.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d8ece6d1878feba0d79ae9c520cef17765606b4",
+      "size": 8725,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/7d8ece6d1878feba0d79ae9c520cef17765606b4"
+    },
+    {
+      "path": "src/run_mg3.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9ebd7ff9ff8011a548aae86905f7904daa531e8",
+      "size": 13013,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/d9ebd7ff9ff8011a548aae86905f7904daa531e8"
+    },
+    {
+      "path": "src/run_mg3b.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89ebeb266f625a52b4fc5611a2a4f0d59f6436ea",
+      "size": 11102,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/89ebeb266f625a52b4fc5611a2a4f0d59f6436ea"
+    },
+    {
+      "path": "src/run_mg4_part0.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0150e77dc70bcdebd778051149058e13d572245f",
+      "size": 11030,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/0150e77dc70bcdebd778051149058e13d572245f"
+    },
+    {
+      "path": "src/run_mg4_partA.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84e33b0c925860dbd94acd3c198577125ac84964",
+      "size": 13750,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/84e33b0c925860dbd94acd3c198577125ac84964"
+    },
+    {
+      "path": "src/runner.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1d00c25f2c19effec0eb6eaadbbfd8c398a1175",
+      "size": 4748,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/a1d00c25f2c19effec0eb6eaadbbfd8c398a1175"
+    },
+    {
+      "path": "src/ssa.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ff87f17486fdefe2652f22e65c2d38dc7ad61ec",
+      "size": 2988,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/9ff87f17486fdefe2652f22e65c2d38dc7ad61ec"
+    },
+    {
+      "path": "src/stats_mg2.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac5d015103116dfcd1c540432175647b2665dc30",
+      "size": 11499,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/ac5d015103116dfcd1c540432175647b2665dc30"
+    },
+    {
+      "path": "src/tau_selection.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60d839e8754ef39d3b94c6ee9391a7e9d1048afd",
+      "size": 2046,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/60d839e8754ef39d3b94c6ee9391a7e9d1048afd"
+    },
+    {
+      "path": "src/tau_selection_h01.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "722cbed118373d33e4ba7a86fa5266c270e7901c",
+      "size": 2057,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/722cbed118373d33e4ba7a86fa5266c270e7901c"
+    },
+    {
+      "path": "src/time_mg4.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4df8ca75d83ebf6c2f6ee18de5cdd35495007b0c",
+      "size": 2004,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/4df8ca75d83ebf6c2f6ee18de5cdd35495007b0c"
+    },
+    {
+      "path": "src/validations.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7e04ae21a2367aa21718c237e49e88b8c762244",
+      "size": 24556,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/f7e04ae21a2367aa21718c237e49e88b8c762244"
+    },
+    {
+      "path": "src/wavelength_windows.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "456627c1c3e80e6c2cfc83578e346e0e17160c3f",
+      "size": 963,
+      "url": "https://api.github.com/repos/RichardBenear/ModelG/git/blobs/456627c1c3e80e6c2cfc83578e346e0e17160c3f"
+    }
+  ]
+}
