@@ -334,3 +334,12 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - Not registered; no MG5 run made. Next: PI decisions (proposal §10), then ChatGPT review.
 - MG014a: PI accepted the three recommendations (2026-10-31 21:14 UTC): interpolating transfer rule, Part B included, no
   weighted operator. Recorded in proposal §10. Next: ChatGPT review of draft 1.
+- MG014b: ChatGPT review MG014 of draft 1 (review/MG014_chatgpt.md; full checks on the PI's PC). All 5 items accepted
+  (review/MG014_response.md). Draft 2: tick-synchronous rule (births interpolate on the tick-start mesh; one rebuild per
+  tick; tick check Δ 0.2 vs 0.1); each panel's own h (the stored states are not equilibria at h = 0.2, confirmed); matched
+  frozen controls in Part A; Part B keeps absolute concentrations (φ_Y shift −0.0642857); step and tick replay checks;
+  A1 reworded as recovery under rewriting plus transfer; full check records, jump accounting, run statuses. 24 runs,
+  about 20 core-h. Draft 1 preserved as spec/MG5_proposal_v1.md.
+- MG014c: PI decision on storage (2026-10-31 22:44 UTC): commit only check records, accounting and run records; full
+  fields stay on the PI's PC with a committed SHA-256 manifest. Proposal §7 and §11 updated. General PI preference: keep
+  the repo as small as reasonable.
