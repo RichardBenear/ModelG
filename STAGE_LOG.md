@@ -302,3 +302,6 @@ Items deliberately postponed so the project reaches its main questions first. Th
   - All 11 flagged runs are in the balance evidence.
   - The mechanism is worded as a hypothesis, and the scope of the FAIL is stated.
 - PI signed off MG4 (FAIL) 2026-10-31 13:52 UTC. MG4 CLOSED.
+
+## MG011 — MG4c design (draft 1)
+- `spec/MG4c_proposal.md` draft 1 (2026-10-31), PI request after MG4 closed: does unweighted Delaunay have a single-particle window in b? Plus one cotangent-Laplacian diagnostic at b = 29. To run on the PI's PC. Not registered; no run made. Next: ChatGPT review.
