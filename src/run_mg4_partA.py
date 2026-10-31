@@ -121,6 +121,12 @@ def ledger(key, wall):
                     platform.python_version(), np.__version__, time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())])
 
 
+def field_file(key):
+    """Saved fields of a run: the full file if present, else the committed trimmed copy (fields_eval/: final, checks_sX)."""
+    full = os.path.join(OUT, "fields", key + ".npz")
+    return full if os.path.exists(full) else os.path.join(OUT, "fields_eval", key + ".npz")
+
+
 # ------------------------------------------------------------------ classification (after the threshold is known)
 def analyse(rec, theta, dec):
     """Outcome class (§5.2), drift, radial profiles, depths, lambda. Uses the saved fields; no integration."""
@@ -128,7 +134,7 @@ def analyse(rec, theta, dec):
         return dict(cls="n/a")
     g, h = get_graph(dict(fam=rec["fam"], slot=rec["slot"], torus=rec["torus"]), dec)
     N = g["N"]
-    f = np.load(os.path.join(OUT, "fields", rec["key"] + ".npz"))
+    f = np.load(field_file(rec["key"]))
     tree = mg._tree(g)
     checks = [mg.particles(g, f["checks_sX"][k].astype(float), theta, tree) for k in range(len(CHECKS))]
     cls, track = mg.classify(g, checks)
