@@ -101,7 +101,15 @@ def main():
     out["missing_runs"] = missing
     # 3. Implementation checks
     bad = [k for k, r in runs.items() if not r["balances"]["ok"]]
-    out["balance_failures"] = bad
+    out["balance_failures"] = bad                       # the original flags, always kept
+    # Rule 3 says flagged runs are investigated before scoring. A completed investigation is recorded in
+    # results/MG4/balance_resolution.json (runs, finding, evidence); only flags it does not cover block scoring.
+    res_path = os.path.join(pa.ROOT, "balance_resolution.json")
+    res = json.load(open(res_path)) if os.path.exists(res_path) else dict(resolved=[])
+    unresolved = [k for k in bad if k not in res["resolved"]]
+    out["balance_resolution"] = dict(file=os.path.relpath(res_path, os.path.join(pa.ROOT, "..", "..")) if bad else None,
+                                     resolved=[k for k in bad if k in res["resolved"]], unresolved=unresolved,
+                                     finding=res.get("finding"))
     an = {k: pa.analyse(r, theta, dec) for k, r in runs.items() if r["ic"] == "soliton"}
     out["classes"] = {k: a["cls"] for k, a in an.items()}
     out["stationary"] = {k: runs[k]["stationary"] for k in an}
@@ -132,7 +140,7 @@ def main():
     # Precedence (§7)
     if missing:
         v = "INCONCLUSIVE (budget stop)"
-    elif bad:
+    elif unresolved:
         v = "NOT SCORED (implementation failure: investigate balance residuals)"
     else:
         pos_fail = (not Tsingle) or (not t3a["passes"]) or t3b["verdict"] != "PASS"

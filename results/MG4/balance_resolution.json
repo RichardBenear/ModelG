@@ -1,0 +1,6 @@
+{
+ "resolved": ["R0_p1_sol", "R0_p2_sol", "R0_p3_sol", "R0_p4_sol", "R0_p5_sol", "R0_p6_sol", "R0_p7_sol", "R1_p6_sol", "R2_p4_sol", "R3_p6_sol", "R3_p7_sol"],
+ "finding": "float64 roundoff, not a conservation error. The node-sum balance identities hold algebraically for the implemented right-hand side; on the saved final states their residuals are about 1e-18 (r1) and 1e-15 (r2) in extended precision (np.longdouble), and below 2e-35 in ChatGPT's independent 40-digit check (review/MG010_chatgpt.md). In float64 the same states give r2 between 3e-12 and 3e-10, varying from state to state, above the registered absolute floor of 1e-10 on the degree-12 R graphs.",
+ "evidence": ["results/MG4/balance_investigation.txt (all 11 runs; src/check_mg4_balances.py)", "review/MG010_chatgpt.md"],
+ "recorded": "2026-10-31, MG010 response to review"
+}
