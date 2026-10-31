@@ -226,7 +226,7 @@ the same detector), unwrapped along the track.
 - Between events: MG4's §5.4 node-sum balances at the end of each tick's integration (float64 check, mpmath recheck of
   any flag before any class is read, as in MG4c).
 - **At each tick (new in draft 2, review item 5):** for each species, the node sums I_before (just before the tick's
-  events), the removed sum R (effective deaths only) (deleted nodes' values) and the added sum B (effective births only) (births' interpolated values), and I_after. The
+  events), the removed sum R (effective deaths' values) and the added sum B (effective births' interpolated values), and I_after. The
   identity I_after = I_before − R + B is checked to 1e-10 (1 + |I_before| + |R| + |B|).
 - **Interpolation audit:** at every tick the driver recomputes 20 of the tick's births (or all, if fewer) with an
   independent interpolator (`scipy.interpolate.LinearNDInterpolator` on a periodically padded point set) and records the
