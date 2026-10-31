@@ -343,3 +343,11 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - MG014c: PI decision on storage (2026-10-31 22:44 UTC): commit only check records, accounting and run records; full
   fields stay on the PI's PC with a committed SHA-256 manifest. Proposal §7 and §11 updated. General PI preference: keep
   the repo as small as reasonable.
+- MG014d: ChatGPT review MG014 round 2 (review/MG014_replication/review_r2.md, committed by the PI at c7534ca) supports
+  implementation and Part 0 after two corrections. Both are accepted in draft 3 (review/MG014_response_r2.md):
+  - Event lists are not committed. A replay specification plus a hash check replaces them; the lists stay on the PI's
+    PC with the fields.
+  - An unresolved interpolation-audit flag makes a run FAILED-NUMERICAL, with an exact-rational recheck procedure.
+  Implementation details are fixed now: boundary timeline, ephemeral nodes, row ordering, strict Part 0 counts, and a
+  full-implementation timing restatement. The interpretation wording for MOBILE and A3 is tightened. Draft 2 is
+  preserved as spec/MG5_proposal_v2.md. Next: PI approval to register.
