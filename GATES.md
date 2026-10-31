@@ -697,6 +697,153 @@ re-stated here before Part A starts.
 Pre-run implementation specification: anything the code needs that the proposal leaves open is appended here, dated,
 before the run it affects. (The MG3b lesson: record choices before the run, not after.)
 
+**Part 0 implementation specification (2026-10-30, MG010; recorded before any Part 0 run; code `src/graphs.py`,
+`src/graph_ode.py`, `src/measure_graph.py`; tests `tests/test_mg4.py`, 9 pass).**
+- **Streams:** `runner.seed_for(5, 0, family, stage, replicate)` seeds a numpy `default_rng` for the point sets (stage 0)
+  and the placements (stage 1). For N3 it is passed to `networkx.random_regular_graph`; networkx is version 3.x, recorded in
+  `decisions.json`. Replicates: panel graphs 0–3, pilot graphs 90–93, replacements 50 onward in order, N3 graphs 0–1.
+  Placements: graph × 100 + i.
+- **Point counts:** pilots use D: N = round(2.39·A/h_t²) and R: N = round(c·A/h_t²) with c = 12²/(8π) (from h² = k̄r²/8;
+  design-stage values). Each pilot gives c_F = (point density)·h². The panel uses the mean c_F over the 4 pilots.
+  - R's connection radius always keeps the mean degree at 12 for the realised point density: r = √(12/(π ρ)). Its h and
+    acceptance refer to the largest component.
+- **Corrector:** the minimiser of Σ_edges (e·Δx + χ_J − χ_I)², by sparse LU with one node pinned, which gives the tensor
+  D = FᵀF/N. On T this reproduces 1.5a² exactly in the tests.
+- **Continuum profile** (initial condition and C3(b)): `mg_continuum.run(2, R=50, h=0.025, t_end=300)`, seed scale 1.
+  The stationary state at t = 300 is cached in `results/MG4/part0/continuum2d.npz`: φ_X(0) = −13.594, max |∂φ/∂t| = 5.5e-12.
+  - It is interpolated onto nodes by a cubic spline with zero slope at r = 0, and set to 0 beyond r = 50 (never reached on
+    a 20 × 20 torus).
+  - C3(b)'s continuum ∇²f is that solver's own conservative radial Laplacian, interpolated the same way.
+- **ODE:** BDF with a sparse analytic Jacobian (checked against finite differences in the tests), rtol 1e-8, atol 1e-10,
+  max step 0.5, and the 1D first-step retries. Fields are saved at the 11 checks. Stationarity is judged from max |RHS|
+  at t = 300.
+- **Measurement:** the smoother is a row-normalised sparse matrix, self weight counted once. Candidate, merge, centroid
+  and link radii are 1.0, 1.5, 0.6 and 1.0, as registered. Positions are wrapped into the torus for neighbour searches.
+- **T's threshold:** A*_s(T) is the mean, over T's 4 placements, of the minimum smoothed φ_X at t = 300, and
+  θ = −0.5·|A*_s(T)|. T placements are the node nearest the torus centre, the midpoint of its +x edge, the centroid of
+  its upper-right triangle, and one uniform random point (stage 1, replicate 0).
+- **Positive control:**
+  - Depth check: the unsmoothed minimum φ_X of the T particle at t = 300 (node placement), against −13.6, within 20%.
+  - Window: start from that state and run seed-free to t = 300 at each b.
+    - b_s: bisection on [26.0, 29.0], 10 steps (±0.003). A particle "exists" if at least one particle is detected at
+      t = 300.
+    - b_r: bisection on [29.0, 30.04], 9 steps (±0.002). "Replicating" means two or more particles at t = 300.
+    - Both edges are operational finite-time estimates, as in 1D (N5).
+  - Box check: the same on a 184 × 212 torus (30.05 × 29.98). Relative L2 of the radial φ_X profile over r < 6.
+- **Spectra:** shift-invert Lanczos at σ = −10⁻³ (the shift keeps the factorisation non-singular), growing k until the
+  cutoff 1.5 k*² is passed. Eigenvectors are kept for the plane-wave diagnostic.
+- **Smoke run (code validation, not a registered run):** one T particle on a small 62 × 70 torus (10.1 × 9.9) at h = 0.2,
+  on the 2-core cloud machine.
+  - It took 80 s for 4 340 nodes. Its centre φ_X was −13.55 at t = 300.
+  - It was not stationary at t = 300 (max |∂φ/∂t| = 6e-6), probably slow drift towards a lattice pinning site.
+  - The balances held to 4e-12.
+  - It is recorded here because it bears on the *stationary* label (§5.2), which is reported only.
+- **Timing:** Part 0's first full-size T run is timed, and the Part A projection is re-stated here before Part A.
+- **Driver (`src/run_mg4_part0.py`), added 2026-10-30 before the Part 0 run:**
+  - It is resumable by step: one JSON per step in `results/MG4/part0/steps/`, plus a ledger `budget_ledger.csv`.
+  - Replacements for a panel slot come from the family's unused reps 50, 51, … in order.
+  - N3 has the D panel's mean node count (rounded up to even) and the D panel's mean h.
+  - Spectra are computed for T, the 8 panel graphs and both N3 graphs. The window bisection uses the threshold from
+    T's node-placement reference, θ_ref = −0.5·|smoothed depth|. Part A uses the registered 4-placement mean.
+  - It applies the §3 stop rule automatically (`stop_for_PI`). If the box check fails, it records `torus_for_partA =
+    30x30`, and the panel would then need rebuilding on that torus. That would be stated here before Part A.
+- **Driver smoke test (disclosed; scratch, not committed, not a registered run).** The full driver was run once with
+  `MG4_SMOKE=1`: a 62 × 70 torus (10.1 × 9.9), box 74 × 84, and only 2 bisection steps. It exercised every step.
+  - Its numbers do not apply to the registered 122 × 142 torus. They are disclosed because one of them previews a
+    criterion: the C3(a) band-mean count ratio was 1.058–1.065 on the four small D graphs and 1.066–1.096 on the four
+    small R graphs, against 1.015 on T and 0.031 on N3.
+  - It also gave: the T depth −13.59 (smoothed −10.30); the box difference 3.6% between those two small tori; T's
+    max |∂φ/∂t| at t = 300 of 6e-6; c_F of 1.89 (D) and 3.85 (R); a T ODE run of 86 s for 4 340 nodes on 2 cores.
+  - **No criterion, threshold or rule is changed in response.** The registered Part 0 and Part A run as written.
+- **Part A driver (`src/run_mg4_partA.py`), added 2026-10-30 before any Part A run:**
+  - **Order:** T's 4 survival runs come first. They fix θ = −0.5·|mean minimum smoothed φ_X at t = 300|, written to
+    `threshold.json`. Then come the D and R survival runs, the seeded runs (T, D, R), N3, and the h = 0.3 check.
+  - **Placements:** D/R slot s, placement i: one uniform point from `seed_for(5, 0, fam, 1, 100·s + i)`.
+  - **h = 0.3 check:** its D graph is drawn from stream rep 200 at the Part 0 density constant c_F(D), with placements
+    from replicate 200·100 + i. That graph's own calibrated h is used and reported, with no acceptance test.
+  - **N3 (descriptive):** 2 runs per graph. The initial profile is the continuum profile at r = h × hop distance from
+    node 0 or 1. Its final minimum φ_X is reported. There is no detector, since N3 has no embedding.
+  - **Records:** one JSON per run, plus a compressed field file holding the final G, X, Y, and φ_X and smoothed φ_X at the
+    11 checks (float32).
+  - **Analysis:** done after the runs (`analyse`, `c3b`), from the saved fields with no re-integration.
+    - The core depth is the [0, 0.5) bin mean of φ_X around the final centre, unsmoothed and smoothed.
+    - The T reference profile is the mean over T's single-particle placements, at the same bins.
+  - **Field files:** an R run's file is a few MB. Whether all of them are committed (or only the summaries and final
+    fields) is decided with the PI before the results PR.
+- **Part A driver smoke test (disclosed; scratch, not a registered run):** one T run and one D run on the small
+  62 × 70 smoke torus, with the smoke-test graphs.
+  - Small-torus outcomes, again only a preview: T *single* (drift 0.03, λ 3.14); the D run *multiplied*. C3(b)
+    smoothed e_X was 0.032 on T and 0.276 on the small D graph (unsmoothed 0.06 and 2.6).
+  - **No criterion, threshold or rule is changed in response.** No further dynamics will be run on non-registered
+    graphs before Part A.
+- **Solver speed-up (MG010, recorded 2026-10-30 before any use in a registered run):** the cost of a run is mostly
+  SciPy's sparse LU of the BDF Newton matrix, whose default ordering (COLAMD) gives 50–90 times the Jacobian's nonzeros
+  on these graphs.
+  - From now on `graph_ode.integrate` (default `order="nd"`) renumbers the unknowns node by node in a geometric
+    nested-dissection order (`graphs.nd_order`) and keeps that order in the LU (`permc_spec="NATURAL"`).
+  - The equations, the solver (BDF), the tolerances, max_step and the first-step retries are all unchanged. Only the
+    elimination order and therefore the rounding differ. N3 has no embedding and keeps the original path.
+  - **Checks:**
+    - The full Part 0 T reference run (122 × 142, t = 0–300) was repeated with the new path. It took the same steps
+      (nfev 1634 in both; nlu 229) and its final state differs from the saved `Tstate_122x142.npy` by at most 1.4e-13
+      (field values up to 13.6). Wall time went from 1332 s to 283 s on the cloud machine
+      (`results/MG4/part0/nd_check_T122x142.json`).
+    - On T for t = 0–20 the steps are again identical (nfev 510, nlu 47) and the largest difference is 5.5e-14.
+    - A new unit test (`test_nd_order_matches_default_solver`) compares the two paths on a 900-point scratch Delaunay
+      graph for t = 0–2 (identical step counts, difference < 1e-10). This is a solver-equivalence check, not a dynamics
+      outcome. On R panel graph 0 (38 595 points), t = 0–5: identical steps (nfev 800, nlu 68), largest difference 1.9e-14, wall 1967 s → 740 s (2.7 times; cloud machine, shared with the Part 0 run).
+  - Part 0 evaluations already finished keep their records. The remaining window-bisection steps and all of Part A use
+    the new path. Ledger rows carry the platform, as before.
+
+- **Part 0 budget overrun (deviation, recorded 2026-10-30 after Part 0 finished):** Part 0 used 10.57 core-hours
+  against its 8 core-hour ceiling, which the registration makes a stop trigger checked before every batch.
+  - The total includes three estimated rows (2.04 core-h) for work lost when the cloud's 2-hour background limit
+    stopped the driver. The measured total is 8.53 core-h. Including the estimates, the ledger passed 8 at about
+    19:20 UTC, during the window bisection.
+  - Cause: the Part 0 driver never checked the ceiling (Claude's implementation error), and the cost of the 2D graph
+    ODE was underestimated in the design. Nothing in the outcome depended on it, and Part 0 scores no criterion.
+  - The Part A driver now checks its ceiling before every job is started (`run_mg4_partA.py`, `CEILING`).
+  - **PI decision, 2026-10-30 23:00 UTC (decision card in the project thread):** "Record as exception, continue." MG4 is
+    not stopped. The overrun stands as a recorded exception, as MG3's did, and goes to ChatGPT's review with the result.
+
+- **Part A budget re-statement and scope (PI decision, 2026-10-31 00:27 UTC, decision card in the project thread:
+  "Gate runs only, 80 core-h"; recorded before any Part A run):**
+  - **Measured cost** (t = 0–300, one run, new solver path unless stated):
+    - Cloud: T 283 s, D panel graph 0 1073 s, R panel graph 0 about 7 900 s. The R run was timed in segments, and the
+      cloud's 2-hour limit stopped it at t = 200 (7 194 s).
+    - PI's PC, original solver path: T 990 s, D 1 944 s, R 13 188 s (`results/MG4/timing/timing_RB_LibraryPC.json`).
+    - Projected on the PC with the new path: T about 4 min, D about 13 min, R about 1.6 h per run.
+  - **Runs (cap 80):** the gate-deciding runs only, i.e. T 4, D 32 and R 32 with the soliton initial condition. Then the
+    h = 0.3 check, which is cheap: T 4 and D 8, with its own ceiling of 3 core-h unchanged.
+  - **Ceiling:** Part A at h = 0.2 is raised from 25 to **80 core-h** (projection about 60). The driver checks it before
+    every job is started.
+  - **Not run:**
+    - The 68 seeded-formation runs (descriptive; no criterion uses them) are deferred, at a projected cost of about 60
+      core-h, mostly on R. They may be registered later as a separate study.
+    - The 4 N3 dynamics runs (descriptive) are dropped. On a random 6-regular graph the sparse LU of the Newton matrix
+      is nearly dense: measured fill at n = 1 000–4 000 is about 56% of dense, with time growing as n³. At N = 18 902
+      that is about 20 GB and hours per factorisation. N3's registered role, failing C3(a), is met by its spectra
+      alone; the outcome is scored at evaluation.
+  - **Machine:** the PI's PC (Windows), `MODELG_WORKERS=9`. The platform is recorded in every ledger row.
+  - No criterion, threshold or precedence rule changes.
+- **Evaluator test and disclosure (2026-10-31, while Part A runs on the PI's PC):** `src/evaluate_mg4.py` was tested
+  end to end on fabricated fields: the continuum soliton placed at each registered centre, with one run zeroed so
+  that it reads as decayed. No dynamics were involved.
+  - C3(a) and C3(b) do not depend on the dynamics: they use only the graphs, the placements and the continuum profile. So
+    this test computed their registered values, which are disclosed here before any Part A result is seen.
+    - C3(a) (Part 0 spectra): band means D 1.051–1.052 (panel 1.051) and R 1.059–1.068 (panel 1.064). These are outside
+      1 ± 0.05, so FAIL for both. T 1.008 passes. N3 0.008 fails, as the negative control requires.
+    - C3(b) panel medians of e_S (G, X, Y): D 0.27, 0.31, 0.30 and R 0.51, 0.52, 0.52. These are above 0.20, so FAIL for
+      both. T 0.007, 0.010, 0.009 passes.
+  - Reading (not a re-score): C3(b) compares the graph operator's local action on a smooth profile with ∇² at the
+    calibrated (homogenized) h. That local action scales with the naive second moment of the edges, not with the
+    homogenized one. So e_S is expected to be about (h_naive/h)² − 1: 0.27 on D and 0.47 on R, close to what was
+    measured. The homogenization corrector acts on the solution, not on a fixed profile. C3(b) as registered therefore
+    could not pass on graphs where h_naive differs from h. This is a design flaw, recorded as such. The verdict stands
+    as registered.
+  - Under §7, unless T fails as a positive control or an implementation check fails, MG4's verdict will be **FAIL**
+    (C3 for D and R). Part A still decides C1 and C2, which are reported in full.
+
 Result:
 Replication (ChatGPT):
 PI sign-off (design): Richard Benear, 2026-10-30 14:19 UTC, project thread ("I approve MG4 draft 4."), after ChatGPT's
