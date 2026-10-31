@@ -855,8 +855,10 @@ before the run it affects. (The MG3b lesson: record choices before the run, not 
     evaluator uses (`fields_eval/`: final and checks_sX, 96 MB, identical arrays). The full files, which also hold the
     unsmoothed checks_X, stay on the PI's machine (138 MB).
 
-Result: **FAIL** (evaluated 2026-10-31, `results/MG4/evaluation.json`). This verdict follows the rule-3 investigation
-below; the PI's and the reviewer's agreement with it is pending.
+Result: **FAIL** (evaluated 2026-10-31, `results/MG4/evaluation.json`). The evaluator first reported NOT SCORED, because
+11 runs had balance flags. Those flags are kept in the output (`balance_failures`). After the rule-3 investigation
+below, their resolution was recorded in `results/MG4/balance_resolution.json`, which the evaluator reads; it then
+scores FAIL (MG010 response to review, 2026-10-31). ChatGPT accepted FAIL (`review/MG010_chatgpt.md`).
 - **Every D and every R run multiplied.** C1 is 0/32 single on both families (0/8 on every graph), so C1 FAILs for D and R.
   - Separately written detection code (`src/recompute_mg4.py`, `results/MG4/recompute.json`) gives the same classes for
     all 72 runs.
@@ -871,23 +873,30 @@ below; the PI's and the reviewer's agreement with it is pending.
   - The float64 node-sum balance r2 exceeded 10⁻¹⁰ + 10⁻⁹·M in 11 R runs, with |r2| between 1.0e-10 and 2.6e-10.
     Every r1 passed.
   - Recomputed in extended precision (np.longdouble) on the saved final states, r1 is about 1e-18 and r2 about 1e-15 in
-    every flagged run (`src/check_mg4_balances.py`, `results/MG4/balance_investigation.txt`). In float64 the same
-    states give r2 anywhere from 3e-12 to 3e-10, varying from state to state.
-  - So the implementation conserves exactly. The residuals are float64 rounding in the summed right-hand side, whose
-    individual diffusion terms are large on the degree-12 R graphs. The registered absolute floor of 10⁻¹⁰ lies below
-    that rounding level. No run is excluded, and scoring proceeds.
+    all 11 flagged runs (`src/check_mg4_balances.py`, `results/MG4/balance_investigation.txt`, which lists all 11).
+    In float64 the same states give r2 anywhere from 3e-12 to 3e-10, varying from state to state. ChatGPT's independent
+    40-digit check of all 11 gives residuals below 2e-35.
+  - Finding: the balance identities hold algebraically for the implemented right-hand side. The flagged residuals are
+    float64 roundoff in the node sums, not a conservation error. The registered absolute floor of 10⁻¹⁰ lies below
+    that roundoff level on the degree-12 R graphs. No run is excluded, and scoring proceeds.
 - Precedence: no Part 0 stop. Both budget overruns are recorded exceptions (PI). The rule-3 investigation is cleared as
   above. The positive control passes. FAIL dominates (C1 and C3 for both D and R). **MG4: FAIL.**
 - **Prediction refuted:** D and R were predicted to pass C1–C3.
-- **Reading (descriptive, not a criterion):** at b = 29 the irregular graphs move the particle past its replication
-  edge.
-  - On T, b = 29 sits 0.2 below that edge (29.20), and above the edge T fills the torus in the same way (31–35
-    particles, Part 0 window records).
-  - The C3(a) excess of modes (+5% on D, +6% on R) means slower effective diffusion at the particle's scale. That is the
-    kind of shift that moves the window. Whether D and R have a single-particle window at lower b was not tested; a new
-    study would have to register it.
+- **Reading (descriptive, not a criterion; hypothesis, not established):** one possible explanation is that the
+  irregular graphs shift the replication boundary below b = 29.
+  - On T, b = 29 sits 0.2 below that boundary (29.20). Above it, T fills the torus in the same way (31–35 particles,
+    Part 0 window records).
+  - MG4 did not measure where the boundary lies on D or R. The C3(a) excess of modes (+5% on D, +6% on R) shows that the
+    graph spectrum differs from the continuum's near the particle's scale. On its own it does not show slower
+    particle-scale diffusion, and it does not show the mechanism.
+  - Whether D or R have a single-particle window at other b would need a new registered study.
+- **Scope of the FAIL:** MG4 rejects single-particle preservation on unweighted D and R graphs under the registered
+  conditions (b = 29, eq. 17 parameters, h-calibration as registered). It does not rule out localized solutions at other
+  parameters or on weighted graphs.
 - Cost: Part 0 10.57 core-h, Part A 90.52 + 1.04 core-h (PI's PC); both overruns recorded as exceptions.
-Replication (ChatGPT):
+Replication (ChatGPT): MG010 review 2026-10-31 (`review/MG010_chatgpt.md`). It checked all 80 runs at all 11 times with no
+classification disagreement, reproduced C3(b) and checked the 11 balance flags at 40 digits. It accepts FAIL, with three
+corrections, all applied (`review/MG010_response.md`).
 PI sign-off (design): Richard Benear, 2026-10-30 14:19 UTC, project thread ("I approve MG4 draft 4."), after ChatGPT's
 two design reviews (MG009 r1 and r2; the reviewer was comfortable with registration once draft 4's definitions were in).
 PI sign-off (result):

@@ -297,3 +297,7 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - Recomputed independently with separate detection code: same classes. The balance-check flags on 11 R runs are float64
   rounding (about 1e-15 in extended precision).
 - Next: PI sign-off, then ChatGPT review. A follow-up (D/R existence window in b) would be a new registered study.
+- ChatGPT review MG010 (2026-10-31): accepts FAIL. Corrections applied:
+  - The evaluator now keeps the balance flags and reads their recorded resolution, so it scores FAIL.
+  - All 11 flagged runs are in the balance evidence.
+  - The mechanism is worded as a hypothesis, and the scope of the FAIL is stated.
