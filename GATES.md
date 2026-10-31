@@ -843,6 +843,17 @@ before the run it affects. (The MG3b lesson: record choices before the run, not 
     as registered.
   - Under §7, unless T fails as a positive control or an implementation check fails, MG4's verdict will be **FAIL**
     (C3 for D and R). Part A still decides C1 and C2, which are reported in full.
+- **Part A budget overrun (deviation, recorded 2026-10-31 after the runs finished and before evaluation):** all 80
+  runs completed on the PI's PC (RB_LibraryPC, 9 workers), from 00:30 to about 12:00 UTC.
+  - The gate group used 90.52 core-h over 68 runs, against the 80 ceiling. The h = 0.3 group used 1.04 core-h over 12
+    runs (ceiling 3).
+  - The driver checks the ledger before it starts each job, and every job started below 80. The ledger passed 80 at
+    10:09 UTC (after R3_p2), when the last R3 runs were already running. Those runs added about 10.5 core-h.
+  - No run is missing, so this is a cost overrun, not a budget stop.
+  - **PI decision, 2026-10-31 12:23 UTC (decision card): "Record as exception, evaluate."**
+  - Data: the run records, ledger and log are committed. The field files are committed trimmed to the arrays the
+    evaluator uses (`fields_eval/`: final and checks_sX, 96 MB, identical arrays). The full files, which also hold the
+    unsmoothed checks_X, stay on the PI's machine (138 MB).
 
 Result:
 Replication (ChatGPT):
