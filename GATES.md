@@ -843,8 +843,50 @@ before the run it affects. (The MG3b lesson: record choices before the run, not 
     as registered.
   - Under §7, unless T fails as a positive control or an implementation check fails, MG4's verdict will be **FAIL**
     (C3 for D and R). Part A still decides C1 and C2, which are reported in full.
+- **Part A budget overrun (deviation, recorded 2026-10-31 after the runs finished and before evaluation):** all 80
+  runs completed on the PI's PC (RB_LibraryPC, 9 workers), from 00:30 to about 12:00 UTC.
+  - The gate group used 90.52 core-h over 68 runs, against the 80 ceiling. The h = 0.3 group used 1.04 core-h over 12
+    runs (ceiling 3).
+  - The driver checks the ledger before it starts each job, and every job started below 80. The ledger passed 80 at
+    10:09 UTC (after R3_p2), when the last R3 runs were already running. Those runs added about 10.5 core-h.
+  - No run is missing, so this is a cost overrun, not a budget stop.
+  - **PI decision, 2026-10-31 12:23 UTC (decision card): "Record as exception, evaluate."**
+  - Data: the run records, ledger and log are committed. The field files are committed trimmed to the arrays the
+    evaluator uses (`fields_eval/`: final and checks_sX, 96 MB, identical arrays). The full files, which also hold the
+    unsmoothed checks_X, stay on the PI's machine (138 MB).
 
-Result:
+Result: **FAIL** (evaluated 2026-10-31, `results/MG4/evaluation.json`). This verdict follows the rule-3 investigation
+below; the PI's and the reviewer's agreement with it is pending.
+- **Every D and every R run multiplied.** C1 is 0/32 single on both families (0/8 on every graph), so C1 FAILs for D and R.
+  - Separately written detection code (`src/recompute_mg4.py`, `results/MG4/recompute.json`) gives the same classes for
+    all 72 runs.
+  - The particle copies itself until the torus is full: 33–37 particles at t = 300 (median 35) on both families. The
+    count is already constant from t = 200 in the runs checked (D0_p0 37, D2_p5 36, R1_p3 36).
+  - The h = 0.3 D check (reported only) behaves the same: 8/8 multiplied, 34–37 particles.
+- **T, the positive control, passes:** single particle at all 4 placements, stationary (max|dφ/dt| ≤ 2.3e-9), C3(a)
+  1.008, C3(b) medians 0.007/0.010/0.009. The h = 0.3 T runs are single at 4/4.
+- C2 is INCONCLUSIVE for D and R: there are no single-particle runs to compare.
+- C3 FAILs for D and R in both parts (values disclosed above, before the Part A results). N3 fails C3(a), as required.
+- **Implementation check (precedence rule 3) — investigated before scoring.**
+  - The float64 node-sum balance r2 exceeded 10⁻¹⁰ + 10⁻⁹·M in 11 R runs, with |r2| between 1.0e-10 and 2.6e-10.
+    Every r1 passed.
+  - Recomputed in extended precision (np.longdouble) on the saved final states, r1 is about 1e-18 and r2 about 1e-15 in
+    every flagged run (`src/check_mg4_balances.py`, `results/MG4/balance_investigation.txt`). In float64 the same
+    states give r2 anywhere from 3e-12 to 3e-10, varying from state to state.
+  - So the implementation conserves exactly. The residuals are float64 rounding in the summed right-hand side, whose
+    individual diffusion terms are large on the degree-12 R graphs. The registered absolute floor of 10⁻¹⁰ lies below
+    that rounding level. No run is excluded, and scoring proceeds.
+- Precedence: no Part 0 stop. Both budget overruns are recorded exceptions (PI). The rule-3 investigation is cleared as
+  above. The positive control passes. FAIL dominates (C1 and C3 for both D and R). **MG4: FAIL.**
+- **Prediction refuted:** D and R were predicted to pass C1–C3.
+- **Reading (descriptive, not a criterion):** at b = 29 the irregular graphs move the particle past its replication
+  edge.
+  - On T, b = 29 sits 0.2 below that edge (29.20), and above the edge T fills the torus in the same way (31–35
+    particles, Part 0 window records).
+  - The C3(a) excess of modes (+5% on D, +6% on R) means slower effective diffusion at the particle's scale. That is the
+    kind of shift that moves the window. Whether D and R have a single-particle window at lower b was not tested; a new
+    study would have to register it.
+- Cost: Part 0 10.57 core-h, Part A 90.52 + 1.04 core-h (PI's PC); both overruns recorded as exceptions.
 Replication (ChatGPT):
 PI sign-off (design): Richard Benear, 2026-10-30 14:19 UTC, project thread ("I approve MG4 draft 4."), after ChatGPT's
 two design reviews (MG009 r1 and r2; the reviewer was comfortable with registration once draft 4's definitions were in).

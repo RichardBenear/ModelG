@@ -287,3 +287,13 @@ Items deliberately postponed so the project reaches its main questions first. Th
   faster and R 2.7×. A 10th test was added. Recorded in GATES.md before use.
 - **Part A scope (PI, 2026-10-31):** gate runs only (T 4, D 32, R 32) plus the h = 0.3 check, with the ceiling raised to
   80 core-h. Seeded runs are deferred and the N3 dynamics dropped (the LU is nearly dense). Part A runs on the PI's PC.
+
+## MG010 (result) — MG4 Part A evaluated: FAIL
+- Part A ran on the PI's PC (2026-10-31, 00:30–12:00 UTC, 9 workers): 80 runs, 91.6 core-h. The gate group overran its 80
+  ceiling while runs were in flight; the PI recorded it as an exception.
+- Every D and R run multiplied: the particle copies itself until 33–37 fill the 20 × 20 torus. T is single at all 4
+  placements. C1 FAILs (0/32) and C3 FAILs (disclosed before the runs). C2 is INCONCLUSIVE (no single runs).
+  **MG4: FAIL.**
+- Recomputed independently with separate detection code: same classes. The balance-check flags on 11 R runs are float64
+  rounding (about 1e-15 in extended precision).
+- Next: PI sign-off, then ChatGPT review. A follow-up (D/R existence window in b) would be a new registered study.
