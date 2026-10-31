@@ -123,6 +123,45 @@ def test_nd_order_matches_default_solver():
     assert np.abs(a.y[:, -1] - b.y[:, -1]).max() < 1e-10
 
 
+def test_cotan_operator_construction():
+    """MG4c Part 3 construction checks (proposal §4) on a small periodic Delaunay graph and on T."""
+    import graph_ode as go
+    rng = np.random.default_rng(11)
+    Lx, Ly = 6.0, 5.0
+    g = gr.delaunay(gr.poisson_points(700, Lx, Ly, rng), Lx, Ly)
+    c = gr.cotan(g)
+    assert len(c["faces"]) == 2 * g["N"]                              # Euler: F = 2V on the torus
+    assert abs(c["face_area"].sum() / (Lx * Ly) - 1) < 1e-12
+    assert abs(c["A"].sum() / (Lx * Ly) - 1) < 1e-12 and c["A"].min() > 0
+    ge = set(map(tuple, np.column_stack([g["I"], g["J"]])))
+    fe, cnt = np.unique(c["edges"], axis=0, return_counts=True)
+    assert set(map(tuple, fe)) == ge and np.all(cnt == 2)          # every graph edge in exactly two kept faces
+    assert c["W"].data.min() >= -1e-12                               # Delaunay: nonnegative cotangent weights
+    K = c["K"]
+    assert abs(K - K.T).max() < 1e-12
+    assert np.abs(c["L"] @ np.ones(g["N"])).max() < 1e-10
+    f = rng.normal(size=g["N"])
+    Lf = c["L"] @ f
+    assert abs((c["A"] * Lf).sum()) < 1e-12 * (c["A"] * np.abs(Lf)).sum()
+    # on T the cotangent operator equals MG4's L_G = (A - D)/h^2 with h^2 = 1.5 a^2
+    tor = gr.torus(0.2, 30, 34)
+    gT = gr.triangular(tor)
+    cT = gr.cotan(gT)
+    assert len(cT["faces"]) == 2 * gT["N"]
+    LT = gr.laplacian(gT) / (1.5 * tor["a"] ** 2)
+    assert abs(cT["L"] - LT).max() < 1e-12 * abs(LT).max()
+    # Jacobian with the operator against finite differences, and area-weighted balances
+    gs = gr.delaunay(gr.poisson_points(60, 3.0, 3.0, rng), 3.0, 3.0)
+    cs = gr.cotan(gs)
+    rhs, jac, _ = go.make_system(gs, None, op=cs["L"])
+    y = rng.normal(0, 0.5, 3 * gs["N"])
+    J = jac(0.0, y).toarray()
+    eps = 1e-6
+    Jn = np.column_stack([(rhs(0, y + eps * e) - rhs(0, y - eps * e)) / (2 * eps) for e in np.eye(len(y))])
+    assert np.abs(J - Jn).max() < 1e-5 * max(1.0, np.abs(J).max())
+    assert go.balances(y, rhs(0, y), gs["N"], w=cs["A"])["ok"]
+
+
 def test_measurement_on_synthetic_fields():
     import measure_graph as mg
     g = gr.triangular(gr.torus(0.2, 62, 70))

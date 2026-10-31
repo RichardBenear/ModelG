@@ -60,12 +60,13 @@ def soliton_ic(g, c, cont=None):
     return np.concatenate([interp_radial(rn, cont["r"], cont["phi"][s]) for s in range(3)])
 
 
-def make_system(g, h, P=None, seed_centre=None, seed_scale=0.0):
+def make_system(g, h, P=None, seed_centre=None, seed_scale=0.0, op=None):
+    """op: optional diffusion operator replacing (A - D_deg)/h^2 (MG4c Part 3: graphs.cotan(g)["L"]; h is then unused)."""
     P = dict(P17 if P is None else P)
     G0, X0, Y0 = steady_state(P)
     b, gg, p, q = P["b"], P["g"], P["p"], P["q"]
     N = g["N"]
-    L = (gr.laplacian(g) / h**2).tocsr()
+    L = (gr.laplacian(g) / h**2).tocsr() if op is None else sp.csr_matrix(op)
     rs = node_r(g, seed_centre)[0] if seed_scale > 0 else None
 
     def rhs(t, y):
@@ -89,14 +90,14 @@ def make_system(g, h, P=None, seed_centre=None, seed_scale=0.0):
 
 
 def integrate(g, h, y0, t_end=300.0, t_eval=None, P=None, seed_centre=None, seed_scale=0.0,
-              rtol=1e-8, atol=1e-10, order="nd"):
+              rtol=1e-8, atol=1e-10, order="nd", op=None):
     """BDF with sparse Jacobian, as lattice_ode_1d (with its first-step retries). Returns (sol, rhs).
 
     order="nd" (MG010 solver speed-up): the solver works on the same system with its unknowns renumbered node by node
     in geometric nested-dissection order (graphs.nd_order), and SciPy's sparse LU keeps that order (NATURAL) instead
     of its default COLAMD. The equations, tolerances and steps are unchanged; only rounding differs. Graphs without
     geometry (N3) keep order=None, the original path. sol.y is returned in the original numbering."""
-    rhs, jac, P = make_system(g, h, P, seed_centre, seed_scale)
+    rhs, jac, P = make_system(g, h, P, seed_centre, seed_scale, op)
     if order == "nd" and g["kind"] == "N3":
         order = None
     if order == "nd":
@@ -130,13 +131,14 @@ def integrate(g, h, y0, t_end=300.0, t_eval=None, P=None, seed_centre=None, seed
     return sol, rhs
 
 
-def balances(y, dydt, N, P=None):
+def balances(y, dydt, N, P=None, w=None):
     """§5.4 node-sum balances. Returns the two residuals and their term-magnitude sums M:
        r1 = dI_G/dt - (-q I_G + g I_X);  r2 = dI_tot/dt - (-(q-p) I_G - (1-g) I_X)."""
     P = dict(P17 if P is None else P)
     q, gg, p = P["q"], P["g"], P["p"]
-    I = [y[k * N:(k + 1) * N].sum() for k in range(3)]
-    dI = [dydt[k * N:(k + 1) * N].sum() for k in range(3)]
+    w = np.ones(N) if w is None else np.asarray(w)        # node weights: 1 (MG4), or areas A_i for the cotangent operator
+    I = [(w * y[k * N:(k + 1) * N]).sum() for k in range(3)]
+    dI = [(w * dydt[k * N:(k + 1) * N]).sum() for k in range(3)]
     r1 = dI[0] - (-q * I[0] + gg * I[1])
     M1 = abs(dI[0]) + q * abs(I[0]) + gg * abs(I[1])
     r2 = sum(dI) - (-(q - p) * I[0] - (1 - gg) * I[1])
