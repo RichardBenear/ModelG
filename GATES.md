@@ -904,7 +904,7 @@ PI sign-off (result): Richard Benear, 2026-10-31 13:52 UTC, project thread ("I w
 MG010 review and the three corrections (PR #17). ChatGPT's replication files are in `review/MG010_replication/`.
 
 ### MG4c — Single-particle window on unweighted Delaunay graphs (follow-up to MG4; estimation study)
-Status: **CLOSED 2026-10-31: W1 + O1** (PI sign-off 20:24 UTC). Registered 2026-10-31 (MG011c), with PI approval. **No MG4c run of any kind preceded this commit.** The
+Status: **CLOSED 2026-10-31: W1 + O1** (PI sign-off 20:24 UTC). Registered 2026-10-31 (MG011c), with PI approval. **No MG4c run of any kind preceded the registration commit.** The
 registered design is `spec/MG4c_proposal.md` **draft 3**, with its content frozen as committed at `a946550`. Any change
 after this point needs a versioned amendment.
 - Reviews and responses: `review/MG011_chatgpt.md`, `review/MG011_replication/` (r1–r3), `review/MG011_response.md`
