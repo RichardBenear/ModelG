@@ -1,8 +1,8 @@
-# MG4c — Is there a single-particle window on unweighted Delaunay graphs? (proposal, draft 2)
+# MG4c — Is there a single-particle window on unweighted Delaunay graphs? (proposal, draft 3)
 
-*Stage MG011a. Claude, 2026-10-31. Status: **DRAFT 2 for ChatGPT review; not registered; no MG4c run has been made.***
-*Draft 1 is preserved as `spec/MG4c_proposal_v1.md` (superseded). Review: `review/MG011_chatgpt.md`. Response:
-`review/MG011_response.md`. MG4c follows MG4 (CLOSED, FAIL) and does not re-score it. The name MG4b stays reserved for
+*Stage MG011b. Claude, 2026-10-31. Status: **DRAFT 3 for ChatGPT review; not registered; no MG4c run has been made.***
+*Drafts 1 and 2 are preserved as `spec/MG4c_proposal_v1.md` and `_v2.md` (superseded). Reviews: `review/MG011_chatgpt.md`,
+`review/MG011_replication/review_r2.md`. Responses: `review/MG011_response.md`, `review/MG011_response_r2.md`. MG4c follows MG4 (CLOSED, FAIL) and does not re-score it. The name MG4b stays reserved for
 the Wolfram hypergraph snapshots.*
 
 ## 1. Question
@@ -31,11 +31,20 @@ classed *single*. An *unresolved* run counts as not single.
 
 ## 3. Detection threshold (fixed bootstrap, no circularity)
 - At every b that is tested, one T run is made, from the centre placement (MG4's T p0).
-- **θ_b = ½ × the global minimum of T's smoothed φ_X at t = 300.** That minimum is a number read off the field, with no
-  classification. T is then classified with θ_b.
-- **If T is single at b,** the four D runs at b are classified with θ_b.
-- **If T is not single at b** (expected below about 27.33), the D runs at b are classified with the **fixed reference
-  θ_29 = −5.117354**, MG4's registered threshold. No "nearest" rule is used. Classes, once assigned, are never revised
+- **T-reference eligibility (fixed, decided before θ_b is computed).** T at b is an *eligible reference* only if
+  **both** of the following hold:
+  - (i) T is *single* when classified with the fixed threshold θ_elig = −1.0, applied to the smoothed φ_X at every
+    check;
+  - (ii) the global minimum of T's smoothed φ_X at t = 300 is ≤ −2.0.
+
+  These are absolute floors. They are about 20% of T's smoothed depth at b = 29 (−10.2), and about 10⁸ times the solver
+  tolerance. So a decaying remnant cannot qualify by being rescaled against itself.
+- **If T is eligible:** θ_b = ½ × T's smoothed minimum at t = 300, which is ≤ −1.0 by (ii). T and the four D runs at b
+  are classified with θ_b. If T, classified with θ_b, is not *single*, the reference is marked invalid and the
+  fallback below applies.
+- **If T is not eligible** (expected below about 27.33), the T reference at that b is marked *invalid*. T's own class
+  under θ_29 is reported, and the D runs at b are classified with the **fixed reference θ_29 = −5.117354**, MG4's
+  registered threshold. No "nearest" rule is used. Classes, once assigned, are never revised
   by later runs.
 - For every D run, the global minimum of its smoothed φ_X at t = 300 and its class under θ_29 are also reported. A
   shallow structure that the threshold misses therefore stays visible.
@@ -49,8 +58,8 @@ are not rerun.
 **Part 2 — refinement.** Each step tests one new b with T × 1 and the four D runs (5 runs). An edge gets at most 6
 steps. Each step halves a bracket whose two ends differ in the predicate being tracked.
 - **Case A: some grid b (Part 1, or b = 29) is all-single.**
-  - Take the contiguous block of all-single grid points that contains the highest all-single b. Other all-single
-    blocks are reported but not refined.
+  - Take the contiguous block of all-single grid points that contains the highest all-single b. **Only this block's
+    edges are refined.** Every other all-single block is reported with its points, unrefined.
   - **Upper edge:** bisect between the block's top b and the next grid b above it, on the predicate "all-single".
   - **Lower edge:** bisect between the block's bottom b and the next grid b below it, on the same predicate.
   - An edge with no grid point beyond it is reported as unbracketed: "upper edge > the top b" or "lower edge < 27.0".
@@ -58,14 +67,14 @@ steps. Each step halves a bracket whose two ends differ in the predicate being t
 - **Case B: no grid b is all-single.** The narrow-window search follows the four-run count of single runs.
   - Take the highest grid b at which **no D run is multiplied**, and the grid b just above it. Bisect between them on
     the predicate "at least one of the four D runs is multiplied".
-  - The search ends early if a step is all-single. That b then counts as an all-single point (§5).
+  - The search ends early if a step is all-single. That b counts as an all-single point (W1, §5). Its window edges are
+    **not estimated in Case B**, and they are reported as "not estimated". No switch to Case A is made, and no steps
+    are added.
   - If every grid b down to 27.0 has a multiplied run, there is no bracket. Case B then runs no refinement and reports
     "multiplied at every tested b". The scan is not extended below 27.0.
 - **Resolution:** 6 steps reduce a 0.25 bracket to 0.004. This locates an edge inside a valid bracket. **It does not
   guarantee finding a window narrower than the grid**, because Case B finds a single-particle region only if a
   bisection point lands in it.
-- A disconnected single-particle region, meaning non-adjacent all-single points, is reported with its points. Its
-  edges are not refined.
 
 **Part 3 — operator diagnostic (a diagnostic amendment to rules v1.1; not a change of MG4's rules).**
 - This part uses the **cotangent (P1 finite-element, lumped-mass) Laplacian** on the same periodic Delaunay triangulation:
@@ -90,8 +99,9 @@ steps. Each step halves a bracket whose two ends differ in the predicate being t
 **Window (Parts 1–2):**
 - **W1 — single-particle points found:** at least one b, on the grid or in refinement, is all-single. Report:
   - every all-single b;
-  - the refined edges with their brackets, or "unbracketed";
-  - depth and λ against T at the same b.
+  - the refined edges with their brackets, or "unbracketed" (Case A), or "not estimated" (Case B);
+  - depth and λ against T at the same b, **only where T is an eligible reference at that b**, and otherwise
+    "unavailable". The fixed fallback supplies a threshold, not a T shape reference.
 - **W2 — none detected:** no tested b is all-single, and no D run at any tested b is *single*.
 - **W3 — partial:** some D runs are single, but no tested b is all-single. Report the counts by b and run.
 - **INCOMPLETE:** Part 1 did not finish (run cap or ceiling). Report whatever data were completed.
@@ -99,7 +109,7 @@ steps. Each step halves a bracket whose two ends differ in the predicate being t
 
 **Operator (Part 3):**
 - **O1:** D0 p0 with L_w is *single*.
-- **O2:** it is *multiplied* or *decayed*.
+- **O2:** it is *multiplied* or *decayed*, and the two are reported separately.
 - **O3:** it is *unresolved*. This does not support either reading.
 - **O-invalid:** the T control or a construction check failed.
 
@@ -110,7 +120,8 @@ steps. Each step halves a bracket whose two ends differ in the predicate being t
   show that no window exists.
 - **O1:** for D0 p0 at b = 29, changing the operator changes the outcome. That shows the unweighted operator matters
   there. It does *not* show that every MG5 mapping needs weights.
-- **O2:** the weighted operator did not change the outcome there.
+- **O2:** the weighted operator did not recover a single-particle outcome in this diagnostic. A *decayed* result does
+  differ from the unweighted run, which *multiplied*, and is reported as such.
 - **Programme policy, not a scientific conclusion:** if the result is W2 with O2, the PI and Claude stop and reconsider
   before designing MG5.
 
@@ -125,8 +136,9 @@ steps. Each step halves a bracket whose two ends differ in the predicate being t
 - **Cost:** D runs took about 13 min each on the PI's PC in MG4, and T runs about 4 min. Projected about 10 core-h,
   with an upper bound near 18 if every refinement step is used.
 - **Ceiling:** 20 core-h, a **launch cutoff**. No job starts once the ledger reaches 20. Jobs already running finish and
-  are reported. Since at most 9 jobs (one batch) run at once, the hard maximum is about 20 + 9 × 0.25 ≈ 22.5 core-h.
-  This hard maximum is registered as part of the budget, not treated as an overrun.
+  are reported. With at most 9 jobs in flight, the **projected completion allowance** is about 20 + 9 × 0.25 ≈ 22.5
+  core-h. This is an estimate, **not an enforced maximum**: slower in-flight jobs can finish above it. The actual cost
+  is recorded. A completion above the allowance is reported as an overrun, not a stop.
 - **Run cap:** 102. A run-cap or ceiling stop before Part 1 finishes gives **INCOMPLETE**. A stop during Part 2 or Part 3
   is reported with the brackets reached so far.
 
