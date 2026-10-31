@@ -10,7 +10,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG3 | 2 | Particles nucleate spontaneously from intrinsic fluctuations at finite Ω | **FAIL** as registered (C2); C1, C3, C4, V5 PASS — see MG3 result |
 | MG3b | 2 | Follow-up to MG3: time-step check, nucleation rates with more events, calibrated uncertainty (estimation study; no pass/fail) | **ACCEPTED 2026-10-30** (estimation study, no verdict; PI sign-off): Part 1 EQUIVALENT; S = 0.064 (approximate 95% 0.047–0.082) — see MG3b result |
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale (2D frozen graphs, noise-free) | **FAIL — CLOSED 2026-10-31** (every D and R run multiplied; T control passed; ChatGPT accepted; PI signed off) |
-| MG4c | 3 | Follow-up to MG4: single-particle window in b on unweighted Delaunay graphs; cotangent-operator diagnostic (estimation study; no pass/fail) | **RESULT W1 + O1** (2026-10-31; 102 runs, 11.33 core-h); awaiting ChatGPT review and PI sign-off |
+| MG4c | 3 | Follow-up to MG4: single-particle window in b on unweighted Delaunay graphs; cotangent-operator diagnostic (estimation study; no pass/fail) | **RESULT W1 + O1** (2026-10-31; 102 runs, 11.33 core-h); ChatGPT reproduced (MG012); PI signed off 2026-10-31; **CLOSED** |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve) | PENDING |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | PENDING |
 | MG7 | 6 | Multiway branch divergence and foliation dependence | PENDING |
@@ -904,7 +904,7 @@ PI sign-off (result): Richard Benear, 2026-10-31 13:52 UTC, project thread ("I w
 MG010 review and the three corrections (PR #17). ChatGPT's replication files are in `review/MG010_replication/`.
 
 ### MG4c — Single-particle window on unweighted Delaunay graphs (follow-up to MG4; estimation study)
-Status: **PRE-REGISTERED 2026-10-31 (MG011c)**, with PI approval. **No MG4c run of any kind preceded this commit.** The
+Status: **CLOSED 2026-10-31: W1 + O1** (PI sign-off 20:24 UTC). Registered 2026-10-31 (MG011c), with PI approval. **No MG4c run of any kind preceded the registration commit.** The
 registered design is `spec/MG4c_proposal.md` **draft 3**, with its content frozen as committed at `a946550`. Any change
 after this point needs a versioned amendment.
 - Reviews and responses: `review/MG011_chatgpt.md`, `review/MG011_replication/` (r1–r3), `review/MG011_response.md`
@@ -1013,7 +1013,25 @@ control independently from the field files (`src/recompute_mg4c.py`); all agree 
   T's (27.33 < b < 29.20, MG4 Part 0) mainly at the upper edge, by about 0.47. For D0 p0 at b = 29, the unweighted
   operator matters. MG5 design may consider these b values. Both edges each rest on a single run, and the lower edge on
   an unsettled run, so the edge values are estimates within their brackets, not sharp properties of D graphs.
-Replication (ChatGPT):
+Replication (ChatGPT): **reproduced** (review MG012, 2026-10-31: `review/MG012_chatgpt.md`; files
+`review/MG012_replication/`). All 102 runs and 1,122 observations were re-analysed. W1, both brackets and the weighted
+single outcome reproduce exactly, and all balances pass. Response: `review/MG012_response.md`. Two items from the
+review are recorded here:
+- **Deviation (construction check wording).** Proposal §4 says L_w equals L_G on T "entrywise to 1e-12". The implemented
+  check used 1e-12 × max|L_G| (= 1.5e-10). The pre-run specification did not state this. The measured max entrywise
+  difference is 3.5e-12 (relative 2.4e-14). It passes the implemented check and fails a literal absolute reading.
+  - In exact arithmetic both operators are identical on T (every entry 25 or −150; mpmath check in the response). The
+    3.5e-12 is float64 rounding in the cotangent arithmetic.
+  - The registered T control (final φ_X to 1e-6) passed at 4.5e-13.
+  - Whether O1 stands with this deviation recorded is for the PI (sign-off below).
+- **Limits of interpretation.**
+  - 63 of 72 unweighted single classifications are stationary (max|dφ/dt| < 1e-8). The other 9 range from 2.2e-8 to
+    1.4e-2, the largest next to the edges.
+  - The weighted D0 p0 single is not stationary (8.3e-6).
+  - The edges are finite-time (t = 300) detector boundaries for this initial condition, not established bifurcation
+    points.
 PI sign-off (design): Richard Benear, 2026-10-31 16:25 UTC, decision card in the project thread ("Approve and
 register"), after ChatGPT's three reviews of drafts 1–3 (the round-3 reviewer supports registering draft 3 unchanged).
-PI sign-off (result):
+PI sign-off (result): Richard Benear, 2026-10-31 20:24 UTC, decision card in the project thread ("Accept O1, deviation
+recorded"), after ChatGPT review MG012. **W1 + O1 accepted, with the T-operator tolerance deviation recorded above. MG4c
+CLOSED.**
