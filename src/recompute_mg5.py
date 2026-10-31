@@ -83,7 +83,8 @@ def main():
         rec = json.load(open(path))
         if rec["status"] != "COMPLETE":
             continue
-        d = np.load(os.path.join(OUT, "checks", rec["key"] + ".npz"))
+        with np.load(os.path.join(OUT, "checks", rec["key"] + ".npz")) as z:
+            d = {k: z[k] for k in z.files}
         Lx, Ly = float(d["Lx"]), float(d["Ly"])
         lists = []
         for i in range(len(d["t"])):

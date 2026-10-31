@@ -363,3 +363,9 @@ Items deliberately postponed so the project reaches its main questions first. Th
   Part 0 solver check (ROS2 vs BDF, 50 units, ≤ 1e-3) covers the transient.
 - Pre-run implementation specification appended to GATES.md MG5. Next: PI merges; Part 0 on the PI's PC
   (`$env:MODELG_WORKERS=9; python src/run_mg5.py part0`), then Parts A and B.
+- MG015a (2026-11-01): on the PI's PC (Windows), test 10 of `tests/test_mg5.py` crashed at temporary-directory cleanup,
+  after all its assertions had passed. `run_mg5.load_checks` left the `.npz` open, and Windows will not delete an open
+  file. Rerun with cleanup errors ignored, tests 10 and 11 pass there (88 s, 2 s). Part 0 was started at 17:52 local
+  from main 7ae167a. Part 0 never reloads check files, so it does not use the affected code. Fix:
+  `load_checks` and `recompute_mg5` now copy the arrays out and close the file. All 11 tests pass in the cloud. The fix
+  does not touch any code Part 0 runs, and it is needed before the evaluator runs on Windows.
