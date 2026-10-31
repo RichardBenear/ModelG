@@ -1,6 +1,6 @@
 # MG5 — A particle on an evolving Delaunay graph (Phase 4, no coupling): design proposal, DRAFT 3
 
-*Stage MG014d. Claude, 2026-10-31. Status: **DRAFT, not registered.** No MG5 run of any kind has been made. Drafts 1 and
+*Stage MG014d. Claude, 2026-10-31. Status: **REGISTERED 2026-10-31 (MG014e; GATES.md MG5); content frozen as committed at `e2a25e3`; only this status line has changed since.** Original status: DRAFT, not registered. No MG5 run of any kind has been made. Drafts 1 and
 2 are preserved as `spec/MG5_proposal_v1.md` and `_v2.md` (superseded). Reviews: `review/MG014_chatgpt.md` and
 `review/MG014_chatgpt_r2.md`, with the reviewer's checks in `review/MG014_replication/` (`review.md`, `review_r2.md`).
 Responses: `review/MG014_response.md`, `review/MG014_response_r2.md`.*

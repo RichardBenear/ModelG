@@ -11,7 +11,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG3b | 2 | Follow-up to MG3: time-step check, nucleation rates with more events, calibrated uncertainty (estimation study; no pass/fail) | **ACCEPTED 2026-10-30** (estimation study, no verdict; PI sign-off): Part 1 EQUIVALENT; S = 0.064 (approximate 95% 0.047–0.082) — see MG3b result |
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale (2D frozen graphs, noise-free) | **FAIL — CLOSED 2026-10-31** (every D and R run multiplied; T control passed; ChatGPT accepted; PI signed off) |
 | MG4c | 3 | Follow-up to MG4: single-particle window in b on unweighted Delaunay graphs; cotangent-operator diagnostic (estimation study; no pass/fail) | **RESULT W1 + O1** (2026-10-31; 102 runs, 11.33 core-h); ChatGPT reproduced (MG012); PI signed off 2026-10-31; **CLOSED** |
-| MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve) | PENDING (design draft 1, `spec/MG5_proposal.md`, not registered) |
+| MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve): a settled particle on a rewritten 2D Delaunay graph | **REGISTERED 2026-10-31** (draft 3 frozen at `e2a25e3`); no run yet |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | PENDING |
 | MG7 | 6 | Multiway branch divergence and foliation dependence | PENDING |
 
@@ -1035,3 +1035,54 @@ register"), after ChatGPT's three reviews of drafts 1–3 (the round-3 reviewer 
 PI sign-off (result): Richard Benear, 2026-10-31 20:24 UTC, decision card in the project thread ("Accept O1, deviation
 recorded"), after ChatGPT review MG012. **W1 + O1 accepted, with the T-operator tolerance deviation recorded above. MG4c
 CLOSED.**
+
+---
+
+### MG5 — A particle on an evolving Delaunay graph (Phase 4, no coupling)
+Status: **REGISTERED 2026-10-31 (MG014e)**, with PI approval. **No MG5 run of any kind preceded this commit.** The
+computation behind the design was a re-reading of MG4c's stored fields, a solver timing and accuracy pilot on an
+unregistered graph with no outcome read, and right-hand-side evaluations of the stored MG4c states (proposal §10 and
+header, including the disclosure of one pilot script on a registered field that was stopped unread and its output
+deleted). The registered design is `spec/MG5_proposal.md` **draft 3**, with its content frozen as committed at
+`e2a25e3`. Any change after this point needs a versioned amendment.
+- Drafts 1 and 2 are preserved as superseded (`spec/MG5_proposal_v1.md`, `_v2.md`).
+- Reviews: `review/MG014_chatgpt.md`, `review/MG014_chatgpt_r2.md`, `review/MG014_replication/` (`review.md`,
+  `review_r2.md`, checks). Responses: `review/MG014_response.md`, `review/MG014_response_r2.md`. The round-2 reviewer
+  supports implementation and Part 0 once its two corrections are made; both are in draft 3.
+
+Summary of the registered design (the proposal governs where this summary is shorter):
+- **Rule (rules amendment v1.2, MG5 only):** field-blind spatial birth–death on the Delaunay triangulation. Nodes die at
+  rate ν per node and are born uniformly at rate νρ (ρ = 18 901 / A). Events are applied synchronously in ticks Δ (§3.2
+  boundary timeline). Births get barycentric interpolation of the boundary field on the pre-edit mesh. Ephemeral nodes
+  are excluded. The mesh is rebuilt once per tick.
+- **PI choices:** interpolating transfer; Part B included; unweighted operator with each panel graph's calibrated h.
+- **Solver:** ROS2, dt = 0.05, with one Jacobian and LU per tick. Δ = 1 (ν ≤ 0.02, frozen) and Δ = 0.2 (ν = 0.2).
+- **Part 0** (unregistered graph):
+  - solver check against BDF (≤ 1e-3);
+  - step check, dt 0.05 against 0.025, exact replay;
+  - tick check, Δ 0.2 against 0.1, exact replay of events;
+  - for the two replay checks, strict count agreement, plus centre ≤ 0.1 and depth ≤ 2% while single;
+  - fallback and stop rules as in proposal §6.
+- **Part A (b = 28, t = 500):** starts from MG4c's four stored b = 28 states. Frozen controls 4, plus ν ∈ {0.002, 0.02,
+  0.2} × 4. Θ = −4.457582.
+- **Part B (b = 29, t = 300):** the same states with φ_Y shifted by −0.9/14. Frozen 4 and ν = 0.2 × 4. Θ = −5.117354.
+- **Statuses:** COMPLETE / FAILED-NUMERICAL (including any unresolved balance, jump-accounting or interpolation-audit flag)
+  / INCOMPLETE, applied before classes. Classes: multiplied (split/remote) > dissolved > single > unresolved. Mobility is
+  pinned or mobile at 1.5.
+- **Outcomes:**
+  - INVALID-CONTROL; NOT SCORED / INCOMPLETE.
+  - Gate MG5 (survival): PASS / PARTIAL / FAIL, with ≥ 3/4 single per rate.
+  - Mobility: PINNED / MOBILE / MIXED.
+  - Part B: A1 / A2 / A3 / A-void, with A1 read as "recovery under rewriting plus transfer".
+- **Data (PI: keep the repo small):**
+  - Committed: replay specifications with event-list hashes, sparse check records (nodes below −1.0 with row indices),
+    per-tick accounting, run records, ledger and evaluation.
+  - On the PI's PC, in a committed SHA-256 manifest: event lists, full fields and final states.
+- **Budget:** run cap 24; 40 core-h launch cutoff, with in-flight runs finishing. Projected about 20 core-h; restated after
+  Part 0 times the complete implementation. Runs on the PI's PC.
+
+Pre-run implementation specification: appended here, dated, before the run it affects.
+
+PI sign-off (design): Richard Benear, 2026-10-31 23:17 UTC, decision card in the project thread ("Approve and
+register"), after ChatGPT's two reviews (MG014 r1 and r2) and draft 3's corrections.
+

@@ -351,3 +351,6 @@ Items deliberately postponed so the project reaches its main questions first. Th
   Implementation details are fixed now: boundary timeline, ephemeral nodes, row ordering, strict Part 0 counts, and a
   full-implementation timing restatement. The interpretation wording for MOBILE and A3 is tightened. Draft 2 is
   preserved as spec/MG5_proposal_v2.md. Next: PI approval to register.
+- MG014e: PI approved draft 3 (2026-10-31 23:17 UTC, decision card "Approve and register"). MG5 REGISTERED in GATES.md;
+  draft 3 frozen at e2a25e3. No MG5 run preceded registration. Next: implementation (tests first) and the pre-run
+  implementation specification.
