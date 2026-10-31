@@ -1,0 +1,32 @@
+{
+  "reviewed_commit": "e9c5e81cbc825512fe9cb1887d24929a862c5c38",
+  "proposal_blob": "cee43bed8f7cbae7ad728e9d5dcc473e4227c309",
+  "T_eligibility": [
+    {
+      "final_depth": 1e-30,
+      "fixed_threshold_single": false,
+      "depth_floor_pass": false,
+      "eligible": false
+    },
+    {
+      "final_depth": 1e-12,
+      "fixed_threshold_single": false,
+      "depth_floor_pass": false,
+      "eligible": false
+    },
+    {
+      "final_depth": 1.0,
+      "fixed_threshold_single": false,
+      "depth_floor_pass": false,
+      "eligible": false
+    },
+    {
+      "final_depth": 10.0,
+      "fixed_threshold_single": true,
+      "depth_floor_pass": true,
+      "eligible": true
+    }
+  ],
+  "run_cap": 102,
+  "recommendation": "Support registration of Draft 3; no outstanding design blocker"
+}
