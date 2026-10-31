@@ -1,0 +1,300 @@
+{
+  "commit": "3179342a9b559af06beabdfea98890c627a97e12",
+  "files": [
+    {
+      "path": "results/MG4/part0/decisions.json",
+      "sha": "ad79ca013701c2409a49940e2a76cb5c2a3eeecf",
+      "size": 18556
+    },
+    {
+      "path": "results/MG4c/fields/b28.000000_D0_p0.npz",
+      "sha": "42892846c20a369ffdf5c3bf5681e09f49193aea",
+      "size": 1231643
+    },
+    {
+      "path": "results/MG4c/fields/b28.000000_D0_p1.npz",
+      "sha": "649470f24b4cde0a15136703583a1f8d2866667a",
+      "size": 1231713
+    },
+    {
+      "path": "results/MG4c/fields/b28.000000_D1_p0.npz",
+      "sha": "c23ada02832839b02b494a59f21b92bcdc00d999",
+      "size": 1231857
+    },
+    {
+      "path": "results/MG4c/fields/b28.000000_D1_p1.npz",
+      "sha": "8b4ec4fb4f6893513d6205038d67f5ba30520c0d",
+      "size": 1230361
+    },
+    {
+      "path": "spec/MG5_proposal.md",
+      "sha": "9d6dd2b6800ffcbcef61923a232180c0f341c944",
+      "size": 18519
+    },
+    {
+      "path": "src/.gitkeep",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0
+    },
+    {
+      "path": "src/audit_mean_map.py",
+      "sha": "1cf30e2c71eac619404aea8bef570fcbff3e2151",
+      "size": 1609
+    },
+    {
+      "path": "src/audit_mg2_corrected.py",
+      "sha": "d764876261d6ff6ab97ec9984b58cca3fbc72ec0",
+      "size": 2094
+    },
+    {
+      "path": "src/calib_mg3b.py",
+      "sha": "15873de02f99432a1fa87724da61884cdb7f91a1",
+      "size": 39885
+    },
+    {
+      "path": "src/calibrate_alpha_decision.py",
+      "sha": "a31392ed94466bdb09ab8ba413384fccc0b9a3e3",
+      "size": 3044
+    },
+    {
+      "path": "src/calibrate_audit.py",
+      "sha": "1ede35cbfaeed30fd60714e35f1b5eb807f99085",
+      "size": 1656
+    },
+    {
+      "path": "src/calibrate_audit_null.py",
+      "sha": "418deba73c011157db47de4e7954d31d2704356c",
+      "size": 704
+    },
+    {
+      "path": "src/calibrate_bounds.py",
+      "sha": "c16561f38dac6bacaf800027eecc9521efbb63dd",
+      "size": 6652
+    },
+    {
+      "path": "src/calibrate_diff.py",
+      "sha": "763f9ffb679434651e292a5b473180529ae0f200",
+      "size": 2288
+    },
+    {
+      "path": "src/calibrate_procedure.py",
+      "sha": "975fd179f8f16eedd0a66f601c5e83fdd13beb6c",
+      "size": 7730
+    },
+    {
+      "path": "src/check_mg4_balances.py",
+      "sha": "4402e9049aca417bb8f418cf5ab86719289c08b3",
+      "size": 2270
+    },
+    {
+      "path": "src/confirm.py",
+      "sha": "a7c087e55ea95864af9afa90a6ef5f2b35e784c2",
+      "size": 2874
+    },
+    {
+      "path": "src/confirm_controls.py",
+      "sha": "36bb9fa64e5b372d8459f88817a9a94f8025f8c2",
+      "size": 3056
+    },
+    {
+      "path": "src/diag_mg2_replication.py",
+      "sha": "9624dbf3f0533cbfb874fd2f5de26bb252138147",
+      "size": 2535
+    },
+    {
+      "path": "src/evaluate_mg1.py",
+      "sha": "2196c5c39de4249e2f549fd8e2b3b0d49fc6d372",
+      "size": 6824
+    },
+    {
+      "path": "src/evaluate_mg2.py",
+      "sha": "038c4c7c12b17f065dbc8e533457ac6a9e0b6da1",
+      "size": 11374
+    },
+    {
+      "path": "src/evaluate_mg3.py",
+      "sha": "196d9ca0e7eace93d3e59ccb0a02a021956ccd5e",
+      "size": 11955
+    },
+    {
+      "path": "src/evaluate_mg3b.py",
+      "sha": "a7085eab4f68c80cb5971639fbee3dfb2da6ef21",
+      "size": 13601
+    },
+    {
+      "path": "src/evaluate_mg4.py",
+      "sha": "315bcb4b76809afca9a9d8bcb7e2a2a8b99ddefa",
+      "size": 8042
+    },
+    {
+      "path": "src/evaluate_mg4c.py",
+      "sha": "3e299430d46a35df754d4f462015ec1e02333ea8",
+      "size": 6799
+    },
+    {
+      "path": "src/existence_window.py",
+      "sha": "ab5e7bddfb0c00ddc53031b878c7a5c93322ae19",
+      "size": 1666
+    },
+    {
+      "path": "src/graph_ode.py",
+      "sha": "b6d75a897c7366d3a869d0918f487a05929bdd8c",
+      "size": 6571
+    },
+    {
+      "path": "src/graphs.py",
+      "sha": "24f81f477d0cdcdc5f74eca3ea552df586c60c13",
+      "size": 10910
+    },
+    {
+      "path": "src/lattice.py",
+      "sha": "7d221391a5dc290d2c40dd76dc5f00b98ca34ccd",
+      "size": 14705
+    },
+    {
+      "path": "src/lattice_reference.py",
+      "sha": "8e6d0fafee3f57fdb045fa59592b11a219ccc3b2",
+      "size": 2347
+    },
+    {
+      "path": "src/lattice_reference2.py",
+      "sha": "14a4aa60ec306dbf39a5124e21c054c96fb25eff",
+      "size": 1476
+    },
+    {
+      "path": "src/lattice_reference3.py",
+      "sha": "4a228e4297fe09f841f453781d7ade158efd76b1",
+      "size": 1270
+    },
+    {
+      "path": "src/lattice_reference4.py",
+      "sha": "64785c077e040fe53ee62f22f8a12ce659cd08ed",
+      "size": 1565
+    },
+    {
+      "path": "src/linear_stability.py",
+      "sha": "d4bfde24629795d6ebccc1ed40e5a8fd2c194473",
+      "size": 2239
+    },
+    {
+      "path": "src/measure.py",
+      "sha": "f6ac1c8e268e93ef801b54504446a6f3c0a7742a",
+      "size": 9238
+    },
+    {
+      "path": "src/measure_graph.py",
+      "sha": "0e9b49a3dff3bc7d15047c9a3cc95c06ee4b02a7",
+      "size": 4779
+    },
+    {
+      "path": "src/mg3.py",
+      "sha": "e4b88ccc1c837effd8633307ce60bdab56930e99",
+      "size": 15154
+    },
+    {
+      "path": "src/mg3b.py",
+      "sha": "9c5489427b1cdbb6ffcd099a132e957c083dde0d",
+      "size": 6310
+    },
+    {
+      "path": "src/mg_continuum.py",
+      "sha": "87375ef1f7492c6cd41cc3f8f78fcc57fca7d28f",
+      "size": 9013
+    },
+    {
+      "path": "src/recompute_mg4.py",
+      "sha": "31dafe406245c62f0422e9ccca8c9c8b706246b1",
+      "size": 4062
+    },
+    {
+      "path": "src/recompute_mg4c.py",
+      "sha": "bc4a257058e6b14273ffa734721c0841011e5369",
+      "size": 3256
+    },
+    {
+      "path": "src/replication_edge.py",
+      "sha": "48460e4ae53bd6c539130102ecd7d3cb089588d6",
+      "size": 915
+    },
+    {
+      "path": "src/run_mg1.py",
+      "sha": "fcee2fedd93b8d12f56ef8f1a7aa43095d6de2a3",
+      "size": 1254
+    },
+    {
+      "path": "src/run_mg1_controls.py",
+      "sha": "a6c08534f017674854ec5b44396141952a5d4bd5",
+      "size": 2475
+    },
+    {
+      "path": "src/run_mg2.py",
+      "sha": "7d8ece6d1878feba0d79ae9c520cef17765606b4",
+      "size": 8725
+    },
+    {
+      "path": "src/run_mg3.py",
+      "sha": "d9ebd7ff9ff8011a548aae86905f7904daa531e8",
+      "size": 13013
+    },
+    {
+      "path": "src/run_mg3b.py",
+      "sha": "89ebeb266f625a52b4fc5611a2a4f0d59f6436ea",
+      "size": 11102
+    },
+    {
+      "path": "src/run_mg4_part0.py",
+      "sha": "0150e77dc70bcdebd778051149058e13d572245f",
+      "size": 11030
+    },
+    {
+      "path": "src/run_mg4_partA.py",
+      "sha": "84e33b0c925860dbd94acd3c198577125ac84964",
+      "size": 13750
+    },
+    {
+      "path": "src/run_mg4c.py",
+      "sha": "f492dfa63099cdd25df068adb3e78502fbf3a2ac",
+      "size": 18888
+    },
+    {
+      "path": "src/runner.py",
+      "sha": "a1d00c25f2c19effec0eb6eaadbbfd8c398a1175",
+      "size": 4748
+    },
+    {
+      "path": "src/ssa.py",
+      "sha": "9ff87f17486fdefe2652f22e65c2d38dc7ad61ec",
+      "size": 2988
+    },
+    {
+      "path": "src/stats_mg2.py",
+      "sha": "ac5d015103116dfcd1c540432175647b2665dc30",
+      "size": 11499
+    },
+    {
+      "path": "src/tau_selection.py",
+      "sha": "60d839e8754ef39d3b94c6ee9391a7e9d1048afd",
+      "size": 2046
+    },
+    {
+      "path": "src/tau_selection_h01.py",
+      "sha": "722cbed118373d33e4ba7a86fa5266c270e7901c",
+      "size": 2057
+    },
+    {
+      "path": "src/time_mg4.py",
+      "sha": "4df8ca75d83ebf6c2f6ee18de5cdd35495007b0c",
+      "size": 2004
+    },
+    {
+      "path": "src/validations.py",
+      "sha": "f7e04ae21a2367aa21718c237e49e88b8c762244",
+      "size": 24556
+    },
+    {
+      "path": "src/wavelength_windows.py",
+      "sha": "456627c1c3e80e6c2cfc83578e346e0e17160c3f",
+      "size": 963
+    }
+  ]
+}

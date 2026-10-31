@@ -1,0 +1,98 @@
+{
+  "commit": "3179342a9b559af06beabdfea98890c627a97e12",
+  "proposal_blob": "9d6dd2b6800ffcbcef61923a232180c0f341c944",
+  "rates": [
+    {
+      "nu": 0.002,
+      "epoch": 1,
+      "epochs": 500.0,
+      "expected_births": 18901.0,
+      "expected_deaths": 18901.0,
+      "expected_events_per_epoch": 75.604,
+      "expected_events_per_run": 37802.0,
+      "full_rebuild_hours_if_one_second_per_event": 10.500555555555556
+    },
+    {
+      "nu": 0.02,
+      "epoch": 1,
+      "epochs": 500.0,
+      "expected_births": 189010.0,
+      "expected_deaths": 189010.0,
+      "expected_events_per_epoch": 756.04,
+      "expected_events_per_run": 378020.0,
+      "full_rebuild_hours_if_one_second_per_event": 105.00555555555556
+    },
+    {
+      "nu": 0.2,
+      "epoch": 0.25,
+      "epochs": 2000.0,
+      "expected_births": 1890100.0000000002,
+      "expected_deaths": 1890100.0000000002,
+      "expected_events_per_epoch": 1890.1000000000001,
+      "expected_events_per_run": 3780200.0000000005,
+      "full_rebuild_hours_if_one_second_per_event": 1050.0555555555557
+    }
+  ],
+  "birth_death_count_sd_limit": 137.48090776540573,
+  "halved_fast_epoch_steps_at_dt005": 2.5,
+  "quadratic_interpolation_example": {
+    "triangle_vertices": [
+      [
+        -1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "birth": [
+      0,
+      0.3333333333333333
+    ],
+    "vertex_values": [
+      1,
+      1,
+      1
+    ],
+    "interpolated_value": 1,
+    "actual_x2_plus_y2": 0.1111111111111111,
+    "bias": 0.8888888888888888
+  },
+  "PartB_background_shift": {
+    "X0": 15.555555555555555,
+    "Y0_28": 1.8,
+    "Y0_29": 1.8642857142857143,
+    "phiY_adjustment_to_preserve_absolute_Y": -0.0642857142857143
+  },
+  "stored_initial_state_stationarity": [
+    {
+      "key": "b28.000000_D0_p0",
+      "MG4c_h": 0.20007382779836555,
+      "max_rhs_at_MG4c_h": 6.252776074688882e-13,
+      "max_rhs_at_MG5_fixed_h": 0.04909048828693585
+    },
+    {
+      "key": "b28.000000_D0_p1",
+      "MG4c_h": 0.20007382779836555,
+      "max_rhs_at_MG4c_h": 7.958078640513122e-13,
+      "max_rhs_at_MG5_fixed_h": 0.049152351394127436
+    },
+    {
+      "key": "b28.000000_D1_p0",
+      "MG4c_h": 0.20002762164692553,
+      "max_rhs_at_MG4c_h": 8.526512829121202e-13,
+      "max_rhs_at_MG5_fixed_h": 0.018466889610976978
+    },
+    {
+      "key": "b28.000000_D1_p1",
+      "MG4c_h": 0.20002762164692553,
+      "max_rhs_at_MG4c_h": 6.821210263296962e-13,
+      "max_rhs_at_MG5_fixed_h": 0.01844583070516137
+    }
+  ]
+}

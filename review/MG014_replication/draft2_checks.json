@@ -1,0 +1,203 @@
+{
+  "commit": "a1c4b14c81cd5f8c72956b4ac7da9cc05153d491",
+  "proposal_blob": "470d5621e12fb689e1444d83d5011266afaf03d0",
+  "event_storage": [
+    {
+      "group": "A slow",
+      "runs": 4,
+      "expected_births_per_run": 18901.0,
+      "expected_events_per_run": 37802.0,
+      "expected_events_per_tick": 75.604,
+      "expected_event_bytes_per_run": 945050.0
+    },
+    {
+      "group": "A medium",
+      "runs": 4,
+      "expected_births_per_run": 189010.0,
+      "expected_events_per_run": 378020.0,
+      "expected_events_per_tick": 756.04,
+      "expected_event_bytes_per_run": 9450500.0
+    },
+    {
+      "group": "A fast",
+      "runs": 4,
+      "expected_births_per_run": 1890100.0000000002,
+      "expected_events_per_run": 3780200.0000000005,
+      "expected_events_per_tick": 1512.0800000000002,
+      "expected_event_bytes_per_run": 94505000.00000001
+    },
+    {
+      "group": "B fast",
+      "runs": 4,
+      "expected_births_per_run": 1134060.0,
+      "expected_events_per_run": 2268120.0,
+      "expected_events_per_tick": 1512.0800000000002,
+      "expected_event_bytes_per_run": 56703000.0
+    }
+  ],
+  "total_expected_events": 25856568.0,
+  "total_expected_event_bytes_schema25": 646414200.0,
+  "total_expected_event_bytes_schema21": 542987928.0,
+  "aligned_tick_step_combinations": [
+    {
+      "tick": 1.0,
+      "dt": 0.05,
+      "steps": 20
+    },
+    {
+      "tick": 1.0,
+      "dt": 0.025,
+      "steps": 40
+    },
+    {
+      "tick": 0.2,
+      "dt": 0.05,
+      "steps": 4
+    },
+    {
+      "tick": 0.2,
+      "dt": 0.025,
+      "steps": 8
+    },
+    {
+      "tick": 0.1,
+      "dt": 0.05,
+      "steps": 2
+    },
+    {
+      "tick": 0.1,
+      "dt": 0.025,
+      "steps": 4
+    },
+    {
+      "tick": 0.05,
+      "dt": 0.05,
+      "steps": 1
+    },
+    {
+      "tick": 0.05,
+      "dt": 0.025,
+      "steps": 2
+    }
+  ],
+  "batch_jump_example": {
+    "before": 10.0,
+    "after": 11.0,
+    "effective": {
+      "R": 2.0,
+      "B": 3.0
+    },
+    "all_events": {
+      "R": 9.0,
+      "B": 10.0
+    },
+    "mixed_convention_residual": 7.0
+  },
+  "sparse_record_checks": [
+    {
+      "case": "b28.000000_D0_p0",
+      "threshold": -4.457582,
+      "full_nodes": 18901,
+      "saved_nodes": 148,
+      "particle_count": 1,
+      "max_centre_coordinate_difference": 0.0
+    },
+    {
+      "case": "b28.000000_D0_p1",
+      "threshold": -4.457582,
+      "full_nodes": 18901,
+      "saved_nodes": 146,
+      "particle_count": 1,
+      "max_centre_coordinate_difference": 0.0
+    },
+    {
+      "case": "b28.000000_D1_p0",
+      "threshold": -4.457582,
+      "full_nodes": 18901,
+      "saved_nodes": 153,
+      "particle_count": 1,
+      "max_centre_coordinate_difference": 0.0
+    },
+    {
+      "case": "b28.000000_D1_p1",
+      "threshold": -4.457582,
+      "full_nodes": 18901,
+      "saved_nodes": 164,
+      "particle_count": 1,
+      "max_centre_coordinate_difference": 0.0
+    },
+    {
+      "case": "wrap_tie_multiple",
+      "threshold": -4.457582,
+      "full_nodes": 8,
+      "saved_nodes": 6,
+      "particle_count": 2,
+      "max_centre_coordinate_difference": 0.0
+    },
+    {
+      "case": "wrap_tie_multiple",
+      "threshold": -5.117354,
+      "full_nodes": 8,
+      "saved_nodes": 6,
+      "particle_count": 2,
+      "max_centre_coordinate_difference": 0.0
+    },
+    {
+      "case": "wrap_tie_multiple",
+      "threshold": -1.0,
+      "full_nodes": 8,
+      "saved_nodes": 6,
+      "particle_count": 3,
+      "max_centre_coordinate_difference": 0.0
+    },
+    {
+      "case": "no_candidate",
+      "threshold": -4.457582,
+      "full_nodes": 8,
+      "saved_nodes": 1,
+      "particle_count": 0,
+      "max_centre_coordinate_difference": 0.0
+    },
+    {
+      "case": "no_candidate",
+      "threshold": -5.117354,
+      "full_nodes": 8,
+      "saved_nodes": 1,
+      "particle_count": 0,
+      "max_centre_coordinate_difference": 0.0
+    },
+    {
+      "case": "no_candidate",
+      "threshold": -1.0,
+      "full_nodes": 8,
+      "saved_nodes": 1,
+      "particle_count": 1,
+      "max_centre_coordinate_difference": 0.0
+    },
+    {
+      "case": "empty_sparse",
+      "threshold": -4.457582,
+      "full_nodes": 8,
+      "saved_nodes": 0,
+      "particle_count": 0,
+      "max_centre_coordinate_difference": 0.0
+    },
+    {
+      "case": "empty_sparse",
+      "threshold": -5.117354,
+      "full_nodes": 8,
+      "saved_nodes": 0,
+      "particle_count": 0,
+      "max_centre_coordinate_difference": 0.0
+    },
+    {
+      "case": "empty_sparse",
+      "threshold": -1.0,
+      "full_nodes": 8,
+      "saved_nodes": 0,
+      "particle_count": 0,
+      "max_centre_coordinate_difference": 0.0
+    }
+  ],
+  "sparse_record_check_scope": "Existing MG4 detector; same float64 smoothed values; original relative row order preserved; centroids agree within 1e-12, not claimed bitwise identical. Does not independently verify smoothing, ROS2, interpolation or any MG5 outcome."
+}
