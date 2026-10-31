@@ -1083,6 +1083,64 @@ Summary of the registered design (the proposal governs where this summary is sho
 
 Pre-run implementation specification: appended here, dated, before the run it affects.
 
+**Pre-run implementation specification (MG015, 2026-11-01; committed before any Part 0 or registered MG5 run).**
+Code: `src/evolve.py` (mesh, ROS2, events, tick edits, audits, detection, classification, flag rechecks),
+`src/run_mg5.py` (engine `run_ticks`, registered driver), `src/run_mg5_part0.py` (Part 0), `src/evaluate_mg5.py`,
+`src/recompute_mg5.py` (independent). Tests: `tests/test_mg5.py`, 11 tests, all pass on the cloud container (Python 3.13,
+numpy 2.5, scipy 1.16).
+1. **Order.** `python src/run_mg5.py part0` runs first and writes `results/MG5/part0/decisions.json`. The registered
+   driver refuses to start unless that file says `proceed: true`, and takes dt and Δ_fast (Δ at ν = 0.2) from it. Part 0's
+   outcome and the restated budget are appended here before Part A starts. Parts A and B then run as one batch of 24,
+   longest (ν = 0.2) first.
+2. **Streams.** Run seeds: `seed_for(5, b_idx, rate_idx, 1, 2·slot + placement)`, with b_idx 0 (Part A) or 1 (Part B),
+   and rate_idx the index of ν in [0, 0.002, 0.02, 0.2]. The same seed drives the event list and the choice of audited
+   births. Part 0: graph `seed_for(5, 9, 0, 0, 0)` (18 901 uniform points; h from its homogenized corrector) and events
+   `seed_for(5, 9, 3, 1, 0)`. No registered study uses b_idx 9.
+3. **Start states.** MG4c's D graph is rebuilt (`run_mg4c.graph_for`). The start mesh must have identical edges (asserted).
+   Ids are MG4c's row indices; h is the panel's exact calibrated value. Part B adds S₀(28) − S₀(29) from `steady_state`
+   (φ_Y only, −0.9/14).
+4. **Tick loop (proposal §3.2).** For k = 1..K: one Jacobian and LU at the state on M_(k−1); Δ/dt ROS2 steps (exact
+   integer); failure test; float64 balances (with recheck); check if t_k is a multiple of 10; snapshot if t_k is a
+   multiple of 50 or t_end; then tick k's events (times in (t_(k−1), t_k], `searchsorted` right); then the Mesh is rebuilt
+   and a new ROS2 system is formed. There are no edits after the final boundary.
+5. **Detection.** MG4's `measure_graph.smoother` and `particles` on the current positions. The t = 0 detection on the
+   start state gives c(0); a start that is not single is classed unresolved. The sparse record keeps nodes with smoothed φ_X
+   < −1.0. `tests/test_mg5.py` checks that sparse re-detection equals full detection, including torus wrap and ties.
+6. **Classes.**
+   - Multiplied: ≥ 2 particles at two consecutive checks. *Split* vs *remote* is measured at the first check with ≥ 2
+     particles: it is the distance, from the last single-particle centre (or c(0)), of the second-nearest particle (≤
+     4.0: split).
+   - Single requires each step ≤ 2.0. Mobility uses the unwrapped track.
+   - D_p is the least-squares fit through the origin of MSD = 4 D_p τ, for lags 10–100.
+7. **Flags (all resolved in the run, before the next tick; the original flag and its recheck are kept in the run
+   record).**
+   - *Balance:* MG4's float64 test. The recheck is mpmath at 40 digits on the operator rebuilt from edges; resolved iff
+     |r| ≤ 1e-25 (1 + M).
+   - *Jump accounting:* |I_after − (I_before − R + B)| ≤ 1e-10 (1 + |I_before| + |R| + |B|) per species. The recheck uses
+     `math.fsum`; resolved iff ≤ 1e-13.
+   - *Interpolation audit:* 20 effective births per tick (all if fewer), using `LinearNDInterpolator` on the points within
+     1.0. Flag above 1e-9. The recheck is exact-rational over every effective birth of the tick; resolved iff ≤ 1e-12.
+   - Any unresolved flag, a non-finite value or |φ| > 1e3 stops the run as FAILED-NUMERICAL.
+8. **Replay specification.** The event list is generated in the worker. Its SHA-256 (columns t, type, id, x, y,
+   little-endian, in that order) is compared with a regeneration in a fresh Python subprocess. A mismatch writes an
+   INCOMPLETE record and the run does not start.
+9. **Data.**
+   - Committed: `results/MG5/runs/<key>.json` (status, flags, replay specification, driver summary, platform, code
+     revision) and `results/MG5/checks/<key>.npz` (sparse records, with offsets, and the per-tick table), plus
+     `budget_ledger.csv`, `local_manifest.csv`, `driver_log.json`, `evaluation.json`, `part0/`.
+   - PC-only, in `results/MG5/local/` (gitignored): event lists and snapshots (float32 fields and smoothed φ_X every 50
+     units; float64 at t_end), each with its SHA-256 in the manifest.
+10. **Budget.** One ledger row per finished run (wall time). Before each start, the driver stops if the ledger has
+    reached 40 core-h, or if finished plus in-flight runs have reached 24.
+11. **Evaluation.** `evaluate_mg5.py` re-detects every check from the committed sparse records with the registered θ. It
+    stops if any count sequence or class differs from the driver's record, then applies statuses, validity and outcomes
+    (proposal §8; frozen control "pinned" means max d < 0.1). `recompute_mg5.py` repeats the classification with separately
+    written detection code.
+12. **Disclosure.** While writing this code, dynamics were run only on small unregistered graphs in the tests: a 6 × 5
+    torus of 900 points for the ROS2 order test, and a 10 × 10 torus of 3 450 points, ν = 0.2 for 20 time units, for the
+    end-to-end test, which asserts only the run status, accounting and record round-trips. The registered start states
+    were loaded, and their meshes compared, without integration. No Part 0 run and no registered run has been made.
+
 PI sign-off (design): Richard Benear, 2026-10-31 23:17 UTC, decision card in the project thread ("Approve and
 register"), after ChatGPT's two reviews (MG014 r1 and r2) and draft 3's corrections.
 

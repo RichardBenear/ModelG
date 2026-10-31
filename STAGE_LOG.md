@@ -354,3 +354,12 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - MG014e: PI approved draft 3 (2026-10-31 23:17 UTC, decision card "Approve and register"). MG5 REGISTERED in GATES.md;
   draft 3 frozen at e2a25e3. No MG5 run preceded registration. Next: implementation (tests first) and the pre-run
   implementation specification.
+
+## MG015 — MG5 implementation (before any run)
+- Code: `src/evolve.py`, `src/run_mg5.py`, `src/run_mg5_part0.py`, `src/evaluate_mg5.py`, `src/recompute_mg5.py`;
+  `tests/test_mg5.py` (11 tests pass). `results/MG5/local/` is gitignored (PC-only event lists and fields).
+- Found while testing: ROS2's convergence ratio is 2.5–3.3 during the stiff initial transient from the raw continuum
+  profile, and 3.7–3.8 (second order) once it has passed. The test checks order after the transient. The registered
+  Part 0 solver check (ROS2 vs BDF, 50 units, ≤ 1e-3) covers the transient.
+- Pre-run implementation specification appended to GATES.md MG5. Next: PI merges; Part 0 on the PI's PC
+  (`$env:MODELG_WORKERS=9; python src/run_mg5.py part0`), then Parts A and B.
