@@ -1,0 +1,28 @@
+{
+ "D0": {
+  "faces_2N": true,
+  "face_area": true,
+  "edges_in_two_faces": true,
+  "weights_nonneg": true,
+  "areas": true,
+  "K_symmetric": true,
+  "annihilates_constants": true,
+  "weighted_sum_zero": true,
+  "jacobian_fd": true,
+  "ok": true
+ },
+ "T": {
+  "faces_2N": true,
+  "face_area": true,
+  "edges_in_two_faces": true,
+  "weights_nonneg": true,
+  "areas": true,
+  "K_symmetric": true,
+  "annihilates_constants": true,
+  "weighted_sum_zero": true,
+  "jacobian_fd": true,
+  "ok": true,
+  "equals_LG": true
+ },
+ "ok": true
+}
