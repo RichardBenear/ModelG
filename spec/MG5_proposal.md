@@ -1,8 +1,9 @@
-# MG5 — A particle on an evolving Delaunay graph (Phase 4, no coupling): design proposal, DRAFT 2
+# MG5 — A particle on an evolving Delaunay graph (Phase 4, no coupling): design proposal, DRAFT 3
 
-*Stage MG014b. Claude, 2026-10-31. Status: **DRAFT, not registered.** No MG5 run of any kind has been made. Draft 1 is
-preserved as `spec/MG5_proposal_v1.md` (superseded). Review: `review/MG014_chatgpt.md` (with the reviewer's checks in
-`review/MG014_replication/`, to be committed by the PI). Response: `review/MG014_response.md`.*
+*Stage MG014d. Claude, 2026-10-31. Status: **DRAFT, not registered.** No MG5 run of any kind has been made. Drafts 1 and
+2 are preserved as `spec/MG5_proposal_v1.md` and `_v2.md` (superseded). Reviews: `review/MG014_chatgpt.md` and
+`review/MG014_chatgpt_r2.md`, with the reviewer's checks in `review/MG014_replication/` (`review.md`, `review_r2.md`).
+Responses: `review/MG014_response.md`, `review/MG014_response_r2.md`.*
 
 *Computation behind this draft, all of it disclosed: (i) a re-reading of MG4c's stored fields (particle positions, §2);
 (ii) a solver timing and accuracy pilot on an **unregistered** graph, with no particle outcome read (§10, which also
@@ -59,7 +60,14 @@ the starting nodes, then N₀, N₀ + 1, … in birth order).
 
 **Event list.** For each run, the event list (times, types, birth positions, and the id of each deleted node) is generated
 in advance as an exact continuous-time process from a stream `seed_for(5, …)`, independently of the fields. A death picks
-uniformly among the nodes alive at its time in the continuous-time process. The event list is saved with the run.
+uniformly among the nodes alive at its time in the continuous-time process.
+
+**Event lists are not committed (draft 3, review r2 item 1).** Across the 16 rewriting runs the lists hold about 26
+million events, about 0.5–0.65 GB uncompressed. They are kept on the PI's PC with the full fields (§7). Instead, each run
+record commits a **replay specification**: the `seed_for` arguments, numpy's bit generator name and numpy version, the
+code revision, the event schema and ordering, the event count, and the SHA-256 hash of the canonical serialized list.
+Before a registered run starts, the driver regenerates the list in a fresh process and checks that its hash matches the
+recorded one; the evaluator repeats that check. A mismatch stops the run (INCOMPLETE) until investigated.
 
 In hypergraph terms, an insertion is a 1→3 Pachner move followed by 2↔2 flips, a deletion the reverse, with the flips
 chosen by the Delaunay (empty-circle) criterion, which reads node positions.
@@ -71,14 +79,21 @@ in. That route belongs after MG4b (graph-intrinsic detection). MG5 asks the simp
 locally rewritten but stays statistically flat.
 
 ### 3.2 Ticks: how events are applied (the registered update rule)
-Events are applied **synchronously in ticks** of length Δ (§4). At the tick boundary t_k = kΔ, all events with times in
-(t_(k−1), t_k] are applied at once:
-1. Every **birth** of the tick gets the linear (barycentric) interpolation of (φ_G, φ_X, φ_Y) from the three corners of
-   the triangle containing it **in the tick-start mesh and field** (the triangulation and field at t_k, before any event of
-   this tick).
-2. A node born and deleted within the same tick is never added.
-3. The tick's deleted nodes are removed.
-4. The Delaunay triangulation of the resulting point set is built once.
+Events are applied **synchronously in ticks** of length Δ (§4). The events with times in (t_(k−1), t_k] belong to tick k.
+At the boundary t_k = kΔ, in this order:
+1. The field has been integrated on the **pre-edit mesh** M_(k−1) (the mesh used during (t_(k−1), t_k]) up to t_k. Call
+   this the **boundary field** y(t_k⁻).
+2. If t_k is a check time, the check (§7) is measured on M_(k−1) and y(t_k⁻).
+3. Every **effective birth** of tick k gets the linear (barycentric) interpolation of (φ_G, φ_X, φ_Y) from the three corners
+   of the triangle of M_(k−1) that contains it, using y(t_k⁻).
+4. **Ephemeral nodes** (born and deleted within the same tick) are not edits: they are never added, contribute to neither
+   R nor B in the jump accounting (§7), and are counted separately. *Proposed events* are all events in the list;
+   *effective edits* are the births and deaths that remain after removing ephemeral pairs.
+5. The tick's effective deaths are removed.
+6. Rows are reordered deterministically: surviving nodes keep their previous relative order, and effective births are
+   appended in event-time order.
+7. The Delaunay triangulation M_k of the new point set is built once, and the next tick's Jacobian is evaluated at the
+   edited state on M_k.
 
 This is a deliberate definition. Interpolating each birth on the mesh as it stands after the earlier events of the same
 tick would need a local Delaunay update per event: at ν = 0.2 that is about 3.8 million events per run, and a global
@@ -86,18 +101,20 @@ rebuild per event (about 1 s) would cost about 1 000 hours per run (review item 
 tick-synchronous rule above, with Δ part of the rule. **The tick check (§6) measures how much the results depend on Δ.**
 The Δ → 0 limit is the continuous-time rule.
 
-### 3.3 Why this rule: the snapshot ensemble does not change
+### 3.3 Why this rule: snapshots stay in the same graph family
 S1 + S2 is a spatial birth–death process whose stationary law is the Poisson point process at density ρ. MG4's D graphs
 are Delaunay graphs of N₀ uniform points, i.e. (conditioned on N) samples of that law, so every later snapshot is again a
 D-type graph. N(t) is Binomial(N₀, e^(−νt)) survivors plus Poisson(N₀(1 − e^(−νt))) newcomers: mean N₀, standard
 deviation at most √N₀ ≈ 137 (0.7%). Ticking does not change which points exist at the tick boundaries.
 
-Any difference from the frozen outcome is therefore caused by rewriting plus field transfer, not by different graph
-statistics. The rule is also the natural uncoupled baseline for MG6, where the birth rate would become ν ρ f(φ_G).
+Every snapshot is therefore a Delaunay graph of independent uniform points at the same density, the family MG4c's
+window was measured on. This does not mean every finite-N distribution equals that of the particular starting graph: the
+node count N(t), for instance, starts fixed at N₀ and then fluctuates. A difference from the frozen outcome is
+attributed to rewriting plus field transfer, not to a change of graph family. The rule is also the natural uncoupled baseline for MG6, where the birth rate would become ν ρ f(φ_G).
 
 ### 3.4 Field transfer (PI decision: interpolating)
 - **Death:** the node's values are removed. No other node's values change.
-- **Birth:** the new node's values are the barycentric interpolation in the tick-start mesh (§3.2).
+- **Birth:** the new node's values are the barycentric interpolation on the pre-edit mesh and boundary field (§3.2).
 
 Consequences, stated before any run:
 - In the homogeneous state (φ = 0 everywhere) the rule changes nothing, so it cannot nucleate particles by itself.
@@ -123,7 +140,7 @@ keeps t = 0 an exact equilibrium of the frozen system. The matched frozen contro
   against about 2 s per time unit on a frozen graph. MG5 uses the fixed-step, second-order, L-stable linearly implicit
   Rosenbrock method ROS2 (Verwer et al. 1999; γ = 1 + 1/√2), which keeps second order with an approximate Jacobian.
   - Step **dt = 0.05**.
-  - The Jacobian is evaluated at the tick-start state and LU-factorised (nested-dissection order) **once per tick**, and
+  - The Jacobian is evaluated at the edited state at the start of the tick and LU-factorised (nested-dissection order) **once per tick**, and
     reused for every step in the tick.
   - On a frozen run (ν = 0) the tick structure is kept (Δ = 1), so the Jacobian is refreshed every time unit.
 - **Tick length:** Δ = 1.0 for ν ≤ 0.04, and Δ = 0.2 at ν = 0.2. So νΔ ≤ 0.04: on average at most 4% of nodes are replaced
@@ -165,10 +182,8 @@ detections. They do not count toward any gate.
    0.05).
 
 **Comparison rule for checks 2 and 3**, at every check time (every 10 units):
-- the particle counts must agree at every check;
-- while both runs are single: centre distance ≤ 0.1 and smoothed-depth difference ≤ 2%;
-- if either run reaches *multiplied* or *dissolved* (§7), the other must reach the same class, with the first
-  qualifying check no more than one check (10 units) apart.
+- the particle counts must agree at every check (so classes and first qualifying checks agree too; no timing allowance);
+- at every check where both runs have exactly one particle: centre distance ≤ 0.1 and smoothed-depth difference ≤ 2%.
 
 **Policy:**
 - Failure of check 1 or 2: dt is halved for all runs and the failed check repeated once. A second failure stops for the PI.
@@ -184,9 +199,10 @@ Smoothed φ_X on the current positions; particles with the fixed thresholds θ_2
 (Part B), both registered in MG4c/MG4.
 
 **Run status (applied before any scientific class):**
-- **COMPLETE:** reached t_end, no numerical failure, every balance and jump-accounting check passed (or a flag was resolved
-  by the recorded precision recheck, as in MG4c).
-- **FAILED-NUMERICAL:** non-finite values, max|φ| > 1e3, or an unresolved balance or jump-accounting flag.
+- **COMPLETE:** reached t_end, no numerical failure, and every balance, jump-accounting and interpolation-audit check
+  passed, or each flag was resolved by its recorded procedure below.
+- **FAILED-NUMERICAL:** non-finite values, max|φ| > 1e3, or an unresolved balance, jump-accounting or interpolation-audit
+  flag. A FAILED-NUMERICAL run is not classified or scored.
 - **INCOMPLETE:** not run or not finished (run cap, launch cutoff, crash). A crashed run is rerun after investigation and
   the crash reported, as in MG4c.
 Only COMPLETE runs are classified.
@@ -210,28 +226,42 @@ the same detector), unwrapped along the track.
 - Between events: MG4's §5.4 node-sum balances at the end of each tick's integration (float64 check, mpmath recheck of
   any flag before any class is read, as in MG4c).
 - **At each tick (new in draft 2, review item 5):** for each species, the node sums I_before (just before the tick's
-  events), the removed sum R (deleted nodes' values) and the added sum B (births' interpolated values), and I_after. The
+  events), the removed sum R (effective deaths only) (deleted nodes' values) and the added sum B (effective births only) (births' interpolated values), and I_after. The
   identity I_after = I_before − R + B is checked to 1e-10 (1 + |I_before| + |R| + |B|).
 - **Interpolation audit:** at every tick the driver recomputes 20 of the tick's births (or all, if fewer) with an
   independent interpolator (`scipy.interpolate.LinearNDInterpolator` on a periodically padded point set) and records the
-  maximum difference; above 1e-9 is a flag.
-- Counts of births, deaths and same-tick birth-deaths are recorded per tick.
+  maximum difference; above 1e-9 is a flag. Jump accounting cannot catch a wrong spatial assignment (the same wrong values
+  enter B and I_after), so this audit is a validity check in its own right (review r2 item 2).
+  - **Resolution procedure (in the run, before the next tick).** For each flagged tick, the driver recomputes **every**
+    effective birth of that tick a third way: an exhaustive point-in-triangle search over M_(k−1) in exact rational
+    arithmetic (`fractions.Fraction` on the float64 positions), with the barycentric weights also exact. If the point
+    lies on a shared edge or vertex, every containing triangle is evaluated, and their values must agree to 1e-12. The flag
+    is **resolved** iff the driver's value equals the exact value to 1e-12 (relative to 1 + |value|) for every birth of the
+    tick (the independent interpolator was then wrong). Otherwise it is **unresolved**: the run stops as FAILED-NUMERICAL.
+  - The original flag, the recheck values and the resolution are kept in the committed run record.
+- **Ordering and tie rules.** Sums are taken in the deterministic row order of §3.2 (step 6). MG4's exact-depth tie break
+  uses the current row index, which is saved with every sparse record (below).
+- Per tick: counts of proposed births and deaths, effective births and deaths, and ephemeral nodes.
 
 **Saved data (review item 5), per run:**
-- The event list.
-- At **every check**: the positions (float64) and persistent ids of all nodes with smoothed φ_X < −1.0, their smoothed
-  φ_X (float64), the node count, and the global minimum of the smoothed φ_X with its position. Detection at any threshold
+- The replay specification and event-list hash (§3.1).
+- In the run record: the torus lengths, h, b, θ, the t = 0 detection (particle list and centre on the starting state).
+- At **every check**: the positions (float64), persistent ids and **current row indices** of all nodes with smoothed φ_X
+  < −1.0, their smoothed φ_X (float64), the node count, and the global minimum of the smoothed φ_X with its position. Detection at any threshold
   θ ≤ −1.0 uses only nodes below θ (a candidate is below θ, and so is every node that enters its centroid weights), so these
   records are sufficient to recompute every class, track and mobility status exactly, without the run.
 - Every 50 time units and at t_end: the full state, positions (float64), ids and smoothed φ_X (float32), so that a
   check's records can be reconciled with the full field and the mesh rebuilt.
 - At t_end: full float64 state.
 - Per tick: the jump-accounting row and the interpolation-audit maximum.
-- **Storage (PI decision, 2026-10-31 22:44 UTC: "commit only the check records and keep full fields on my PC").** Committed:
-  the event lists, the per-check records, the per-tick accounting, run records, ledger and evaluation (estimated a few
-  MB per run). Kept on the PI's PC, outside git: the 50-unit full-field snapshots and the final float64 states (about
-  0.5 GB in all), each listed in a committed manifest with its SHA-256 checksum and size. Every registered class, track
-  and status can be recomputed from the committed files alone.
+- **Storage (PI decision, 2026-10-31 22:44 UTC: "commit only the check records and keep full fields on my PC").**
+  - Committed: replay specifications, per-check sparse records, per-tick accounting, run records, ledger and evaluation.
+    Estimate, to be **measured** in Part 0 and restated before Part A: per-check records about 150–300 nodes × 50 checks
+    (under 1 MB per run); per-tick accounting up to 2 500 ticks (about 0.3 MB per run at Δ = 0.2). Compressed `.npz`.
+  - Kept on the PI's PC, outside git: event lists, the 50-unit full-field snapshots and the final float64 states (about
+    1–1.2 GB in all), each listed in a committed manifest with its SHA-256 checksum and size.
+  - Every registered class, track and status can be recomputed from the committed files alone. Re-running the dynamics
+    needs the replay specification (committed), the starting states (MG4c, committed) and the code revision.
 
 ## 8. Outcomes (pre-registered)
 **Validity first.**
@@ -254,14 +284,17 @@ the same detector), unwrapped along the track.
 **Recovery (Part B).** Both groups of 4 must be COMPLETE, otherwise Part B is NOT SCORED.
 - **A1 (recovery under rewriting):** frozen control multiplies in ≥ 3/4 runs and ν = 0.2 is single in ≥ 3/4.
 - **A2 (no recovery):** frozen control multiplies in ≥ 3/4, and ν = 0.2 multiplies in ≥ 3/4.
-- **A3 (mixed):** frozen control multiplies in ≥ 3/4, ν = 0.2 neither.
+- **A3 (other outcome):** frozen control multiplies in ≥ 3/4, and ν = 0.2 meets neither A1 nor A2 (for example, all four
+  dissolve). The full class vector is reported.
 - **A-void:** the frozen control does not multiply in ≥ 3/4 runs. Part B then cannot test recovery; the runs are reported
   only.
 
 **How they read (limited to what was tested):**
 - **PASS:** a particle survives local rewriting of the graph that carries it, for this rule, transfer rule, b, tick and
   horizon. It does not show survival under token noise, under other rules, or under geometry-changing rules.
-- **MOBILE:** rewriting plus transfer unpins the particle, so MG6 has a particle that can respond to a gradient.
+- **MOBILE:** the particle moves under field-independent rewriting plus transfer. That makes a directed response to a G
+  gradient worth testing in MG6; it does not show that such a response exists. D_p is descriptive over the chosen lags and
+  does not show that the motion is Brownian.
 - **A1:** at b = 29, rewriting at ν = 0.2 *with interpolating transfer* gives a single particle where the frozen graph
   multiplies. Two explanations are possible and MG5 does not separate them: changing disorder acting like an averaged,
   more regular medium; or the smoothing effect of repeated interpolation on the particle's profile (§3.4). The result is
@@ -308,7 +341,10 @@ noticed it used a registered graph. Its output file was never opened and has bee
 | Part B, ν = 0.2 (Δ = 0.2, t = 300) | 4 | 1.15 h | 4.6 core-h |
 | **Total** | **24** | | **about 20 core-h** |
 
-If the tick check forces Δ = 0.1 at ν = 0.2, those 8 runs cost about twice as much (total about 33 core-h). Registered
+These figures cover only the solver, rebuild and interpolation. The complete implementation adds event generation,
+hash checks, interpolation audits, serialization and check records; Part 0 times all of it on the PI's PC, and the budget
+is restated in GATES.md before Part A starts. If the tick check forces Δ = 0.1 at ν = 0.2, those 8 runs cost about twice as
+much (total about 33 core-h). Registered
 as a **run cap of 24** plus a **40 core-h launch cutoff** (in-flight runs finish), with core-hours reported. On the PI's PC
 with 9 workers this is about 3–4 hours of wall time. The projection is restated after Part 0 measures the per-tick cost on
 the PI's PC.
@@ -319,6 +355,9 @@ the PI's PC.
 - ROS2 and the tick approach are acceptable conditionally on the implementation, controls and validation now in §§3–7.
 
 **PI decisions:** all taken (transfer rule, Part B, operator, 21:14 UTC; data storage, 22:44 UTC).
+
+**Review round 2 (MG014 r2):** supports implementation and Part 0 after two corrections (event-list storage;
+interpolation-audit failures), both made in draft 3, plus implementation details now fixed in §3.2, §6 and §7.
 
 ## 12. Not in MG5
 Token noise; combinatorial (non-geometric) rewriting and Wolfram hypergraph snapshots (MG4b); growing or shrinking space
