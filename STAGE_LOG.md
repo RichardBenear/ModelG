@@ -321,3 +321,14 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - Independent recompute (`src/recompute_mg4c.py`) agrees with every class and threshold. Next: ChatGPT review, then PI sign-off.
 - MG013a: ChatGPT review MG012 reproduces W1 + O1 and both brackets. It raised one deviation, recorded in GATES.md: the T-operator check was scaled (1e-12 × max|L|), not absolute as worded. The measured difference is 3.5e-12; the operators are identical in exact arithmetic, and the T control passed at 4.5e-13. Interpretation limits added (stationarity 63/72; the weighted single is not stationary; the edges are finite-time detector boundaries). Response: review/MG012_response.md. The PI decides whether O1 stands.
 - MG013b: PI accepted O1 with the deviation recorded and signed off W1 + O1 (2026-10-31 20:24 UTC). MG4c CLOSED. ChatGPT replication files (review/MG012_replication/) still to be committed from the PI's PC.
+
+## MG014 — MG5 design (draft 1)
+- `spec/MG5_proposal.md` draft 1 (2026-10-31), PI request after MG4c closed. Phase 4: a settled single particle (MG4c's
+  b = 28.0 final states on D0/D1) on a Delaunay graph rewritten by a field-blind birth–death rule (nodes die at rate ν,
+  are born uniformly at rate νρ; the snapshot ensemble stays MG4's D ensemble). Concentrations interpolated at births.
+  Part A: survival (PASS/PARTIAL/FAIL) and pinned/mobile at ν = 0.002, 0.02, 0.2 (12 runs, t = 500). Part B: annealing at
+  b = 29, frozen vs ν = 0.2 (8 runs). New solver: fixed-step ROS2 (BDF restarts cost about 75 s per epoch).
+- Design-stage computation: MG4c particle positions re-read (pinning shifts 0.23–0.76, unchanged t = 200–300); timing
+  and accuracy pilot on an unregistered graph only (no outcome read). One pilot script that started from MG4c's
+  registered D0 p0 field was stopped unread and its output deleted (disclosed in proposal §9).
+- Not registered; no MG5 run made. Next: PI decisions (proposal §10), then ChatGPT review.
