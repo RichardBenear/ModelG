@@ -10,6 +10,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG3 | 2 | Particles nucleate spontaneously from intrinsic fluctuations at finite Ω | **FAIL** as registered (C2); C1, C3, C4, V5 PASS — see MG3 result |
 | MG3b | 2 | Follow-up to MG3: time-step check, nucleation rates with more events, calibrated uncertainty (estimation study; no pass/fail) | **ACCEPTED 2026-10-30** (estimation study, no verdict; PI sign-off): Part 1 EQUIVALENT; S = 0.064 (approximate 95% 0.047–0.082) — see MG3b result |
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale (2D frozen graphs, noise-free) | **FAIL — CLOSED 2026-10-31** (every D and R run multiplied; T control passed; ChatGPT accepted; PI signed off) |
+| MG4c | 3 | Follow-up to MG4: single-particle window in b on unweighted Delaunay graphs; cotangent-operator diagnostic (estimation study; no pass/fail) | **PRE-REGISTERED 2026-10-31** (draft 3, PI approval); no run yet |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve) | PENDING |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | PENDING |
 | MG7 | 6 | Multiway branch divergence and foliation dependence | PENDING |
@@ -901,3 +902,48 @@ PI sign-off (design): Richard Benear, 2026-10-30 14:19 UTC, project thread ("I a
 two design reviews (MG009 r1 and r2; the reviewer was comfortable with registration once draft 4's definitions were in).
 PI sign-off (result): Richard Benear, 2026-10-31 13:52 UTC, project thread ("I will sign off on MG4"), after ChatGPT's
 MG010 review and the three corrections (PR #17). ChatGPT's replication files are in `review/MG010_replication/`.
+
+### MG4c — Single-particle window on unweighted Delaunay graphs (follow-up to MG4; estimation study)
+Status: **PRE-REGISTERED 2026-10-31 (MG011c)**, with PI approval. **No MG4c run of any kind preceded this commit.** The
+registered design is `spec/MG4c_proposal.md` **draft 3**, with its content frozen as committed at `a946550`. Any change
+after this point needs a versioned amendment.
+- Reviews and responses: `review/MG011_chatgpt.md`, `review/MG011_replication/` (r1–r3), `review/MG011_response.md`
+  and `review/MG011_response_r2.md`.
+- Drafts 1 and 2 are preserved as superseded (`spec/MG4c_proposal_v1.md`, `_v2.md`).
+- MG4c does not re-score MG4. The name MG4b stays reserved for Wolfram hypergraph snapshots.
+
+Summary of the registered design (the proposal governs where this summary is shorter):
+- **Graphs and runs:** MG4's D0 and D1 panel graphs, placements p0 and p1 ("the four D runs"), with MG4's solver,
+  initial condition (b = 29 continuum soliton), detector and classes. At each tested b, one T run supplies the
+  threshold.
+- **Threshold:** a T run is an eligible reference only if it is single under the fixed θ_elig = −1.0 and its smoothed
+  minimum at t = 300 is ≤ −2.0.
+  - If eligible: θ_b = ½ × that minimum. T must also be single under θ_b.
+  - Otherwise: the fixed θ_29 = −5.117354, with the T reference marked invalid.
+  - Each D run's class under θ_29 and its smoothed minimum are reported as well.
+- **Part 1:** b ∈ {28.75, …, 27.0} in steps of 0.25, with T × 1 and D × 4 at each b. MG4's Part A runs are the b = 29
+  point.
+- **Part 2:** at most 6 bisection steps per edge, each step T × 1 + D × 4, with these rules:
+  - Case A: only the highest all-single block's edges, on the predicate "all-single". Unbracketed edges are reported as
+    such.
+  - Case B: on "at least one multiplied"; an all-single discovery is W1, with its edges "not estimated".
+- **Part 3:** a diagnostic amendment to rules v1.1. The cotangent (lumped-mass P1) Laplacian on D0 p0 at b = 29, plus a T
+  control that must reproduce MG4's T p0 field to 1e-6. Construction checks run first, and the area-weighted balances
+  apply.
+- **Outcomes (no PASS/FAIL):** W1/W2/W3, INCOMPLETE, NOT SCORED; O1/O2/O3, O-invalid. Readings are limited as written
+  in proposal §5. Programme policy: if the result is W2 with O2, stop and reconsider before MG5.
+- **Budget:**
+  - Run cap 102 (40 + 60 + 2).
+  - 20 core-h is a launch cutoff: in-flight jobs finish. About 22.5 core-h is the projected completion allowance, an
+    estimate, not an enforced maximum.
+  - Runs on the PI's PC with `MODELG_WORKERS=9`.
+- **Balance flags:** resolved only by a recheck in genuine higher precision (mpmath at 40 digits, or exact fractions)
+  of the run's own b and operator, recorded before outcomes are read.
+
+Pre-run implementation specification: appended here, dated, before the run it affects.
+
+Result:
+Replication (ChatGPT):
+PI sign-off (design): Richard Benear, 2026-10-31 16:25 UTC, decision card in the project thread ("Approve and
+register"), after ChatGPT's three reviews of drafts 1–3 (the round-3 reviewer supports registering draft 3 unchanged).
+PI sign-off (result):
