@@ -221,6 +221,9 @@ launch cutoff** (in-flight runs finish), with core-hours reported. The projectio
 real per-epoch cost on the PI's PC, before Part A starts.
 
 ## 10. Questions for the PI and the reviewer
+**PI decisions (Richard Benear, 2026-10-31 21:14 UTC, project thread: "I accept 1), 2), and 3)."):** (1) interpolating
+transfer rule; (2) Part B included; (3) unweighted operator only, no weighted copy now. Items 4–6 remain for the reviewer.
+
 1. **[PI] Transfer rule:** interpolating (recommended) or token-conserving (§3.3).
 2. **[PI] Part B (annealing at b = 29):** include (recommended; 8 runs) or drop.
 3. **[PI] Weighted operator:** MG5 keeps the unweighted operator. Adding a cotangent-operator copy of Part B (4 more
