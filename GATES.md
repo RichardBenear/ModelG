@@ -1064,8 +1064,8 @@ Summary of the registered design (the proposal governs where this summary is sho
   - for the two replay checks, strict count agreement, plus centre ≤ 0.1 and depth ≤ 2% while single;
   - fallback and stop rules as in proposal §6.
 - **Part A (b = 28, t = 500):** starts from MG4c's four stored b = 28 states. Frozen controls 4, plus ν ∈ {0.002, 0.02,
-  0.2} × 4. Θ = −4.457582.
-- **Part B (b = 29, t = 300):** the same states with φ_Y shifted by −0.9/14. Frozen 4 and ν = 0.2 × 4. Θ = −5.117354.
+  0.2} × 4. θ = −4.457582.
+- **Part B (b = 29, t = 300):** the same states with φ_Y shifted by −0.9/14. Frozen 4 and ν = 0.2 × 4. θ = −5.117354.
 - **Statuses:** COMPLETE / FAILED-NUMERICAL (including any unresolved balance, jump-accounting or interpolation-audit flag)
   / INCOMPLETE, applied before classes. Classes: multiplied (split/remote) > dissolved > single > unresolved. Mobility is
   pinned or mobile at 1.5.
