@@ -332,3 +332,5 @@ Items deliberately postponed so the project reaches its main questions first. Th
   and accuracy pilot on an unregistered graph only (no outcome read). One pilot script that started from MG4c's
   registered D0 p0 field was stopped unread and its output deleted (disclosed in proposal §9).
 - Not registered; no MG5 run made. Next: PI decisions (proposal §10), then ChatGPT review.
+- MG014a: PI accepted the three recommendations (2026-10-31 21:14 UTC): interpolating transfer rule, Part B included, no
+  weighted operator. Recorded in proposal §10. Next: ChatGPT review of draft 1.
