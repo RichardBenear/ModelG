@@ -27,7 +27,7 @@ review, and `MG006_response.md`).
 ## Immediate next steps (updated 2026-10-30, MG007d)
 0. **MG3b: done and signed off 2026-10-30** (`results/MG3b/MG3b_evaluation.md`; review `review/MG008_*`). The PI
    decides what comes next (MG4 design, or deferred items D1–D3).
-   **MG4 design: draft 4 written 2026-10-30 (MG009b, after two ChatGPT reviews; noise-free only, PI decision)**, `spec/MG4_proposal.md`; **registered 2026-10-30 (MG009c)**. **MG4 CLOSED 2026-10-31: FAIL.** Every Delaunay and RGG run at b = 29 multiplied (33–37 particles fill the torus); the T control stayed single. Both C3 parts fail (the C3(b) design flaw is recorded). ChatGPT accepted it (MG010), and the PI signed off. Next: PI decision on the follow-up. **MG4c CLOSED 2026-10-31: W1 + O1.** **MG5 design: draft 1 written 2026-10-31 (MG014), `spec/MG5_proposal.md`; not registered.**
+   **MG4 design: draft 4 written 2026-10-30 (MG009b, after two ChatGPT reviews; noise-free only, PI decision)**, `spec/MG4_proposal.md`; **registered 2026-10-30 (MG009c)**. **MG4 CLOSED 2026-10-31: FAIL.** Every Delaunay and RGG run at b = 29 multiplied (33–37 particles fill the torus); the T control stayed single. Both C3 parts fail (the C3(b) design flaw is recorded). ChatGPT accepted it (MG010), and the PI signed off. Next: PI decision on the follow-up. **MG4c CLOSED 2026-10-31: W1 + O1.** **MG5: REGISTERED 2026-10-31 (MG014e; draft 3 frozen at `e2a25e3`).** Next: code with tests first (`src/evolve.py`, `src/run_mg5.py`, evaluator, independent recompute), pre-run specification in GATES.md, then Part 0 on the PI's PC.
 
 ### Earlier steps (2026-10-29, MG007)
 1. **Local environment: done.** Python 3.13.2, numpy 2.2.4, scipy 1.16.1, numba 0.68.0; tests pass locally (8 and 14).

@@ -11,7 +11,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG3b | 2 | Follow-up to MG3: time-step check, nucleation rates with more events, calibrated uncertainty (estimation study; no pass/fail) | **ACCEPTED 2026-10-30** (estimation study, no verdict; PI sign-off): Part 1 EQUIVALENT; S = 0.064 (approximate 95% 0.047–0.082) — see MG3b result |
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale (2D frozen graphs, noise-free) | **FAIL — CLOSED 2026-10-31** (every D and R run multiplied; T control passed; ChatGPT accepted; PI signed off) |
 | MG4c | 3 | Follow-up to MG4: single-particle window in b on unweighted Delaunay graphs; cotangent-operator diagnostic (estimation study; no pass/fail) | **RESULT W1 + O1** (2026-10-31; 102 runs, 11.33 core-h); ChatGPT reproduced (MG012); PI signed off 2026-10-31; **CLOSED** |
-| MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve) | PENDING (design draft 1, `spec/MG5_proposal.md`, not registered) |
+| MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve): a settled particle on a rewritten 2D Delaunay graph | **REGISTERED 2026-10-31** (draft 3 frozen at `e2a25e3`); no run yet |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | PENDING |
 | MG7 | 6 | Multiway branch divergence and foliation dependence | PENDING |
 
@@ -1035,3 +1035,112 @@ register"), after ChatGPT's three reviews of drafts 1–3 (the round-3 reviewer 
 PI sign-off (result): Richard Benear, 2026-10-31 20:24 UTC, decision card in the project thread ("Accept O1, deviation
 recorded"), after ChatGPT review MG012. **W1 + O1 accepted, with the T-operator tolerance deviation recorded above. MG4c
 CLOSED.**
+
+---
+
+### MG5 — A particle on an evolving Delaunay graph (Phase 4, no coupling)
+Status: **REGISTERED 2026-10-31 (MG014e)**, with PI approval. **No MG5 run of any kind preceded this commit.** The
+computation behind the design was a re-reading of MG4c's stored fields, a solver timing and accuracy pilot on an
+unregistered graph with no outcome read, and right-hand-side evaluations of the stored MG4c states (proposal §10 and
+header, including the disclosure of one pilot script on a registered field that was stopped unread and its output
+deleted). The registered design is `spec/MG5_proposal.md` **draft 3**, with its content frozen as committed at
+`e2a25e3`. Any change after this point needs a versioned amendment.
+- Drafts 1 and 2 are preserved as superseded (`spec/MG5_proposal_v1.md`, `_v2.md`).
+- Reviews: `review/MG014_chatgpt.md`, `review/MG014_chatgpt_r2.md`, `review/MG014_replication/` (`review.md`,
+  `review_r2.md`, checks). Responses: `review/MG014_response.md`, `review/MG014_response_r2.md`. The round-2 reviewer
+  supports implementation and Part 0 once its two corrections are made; both are in draft 3.
+
+Summary of the registered design (the proposal governs where this summary is shorter):
+- **Rule (rules amendment v1.2, MG5 only):** field-blind spatial birth–death on the Delaunay triangulation. Nodes die at
+  rate ν per node and are born uniformly at rate νρ (ρ = 18 901 / A). Events are applied synchronously in ticks Δ (§3.2
+  boundary timeline). Births get barycentric interpolation of the boundary field on the pre-edit mesh. Ephemeral nodes
+  are excluded. The mesh is rebuilt once per tick.
+- **PI choices:** interpolating transfer; Part B included; unweighted operator with each panel graph's calibrated h.
+- **Solver:** ROS2, dt = 0.05, with one Jacobian and LU per tick. Δ = 1 (ν ≤ 0.02, frozen) and Δ = 0.2 (ν = 0.2).
+- **Part 0** (unregistered graph):
+  - solver check against BDF (≤ 1e-3);
+  - step check, dt 0.05 against 0.025, exact replay;
+  - tick check, Δ 0.2 against 0.1, exact replay of events;
+  - for the two replay checks, strict count agreement, plus centre ≤ 0.1 and depth ≤ 2% while single;
+  - fallback and stop rules as in proposal §6.
+- **Part A (b = 28, t = 500):** starts from MG4c's four stored b = 28 states. Frozen controls 4, plus ν ∈ {0.002, 0.02,
+  0.2} × 4. θ = −4.457582.
+- **Part B (b = 29, t = 300):** the same states with φ_Y shifted by −0.9/14. Frozen 4 and ν = 0.2 × 4. θ = −5.117354.
+- **Statuses:** COMPLETE / FAILED-NUMERICAL (including any unresolved balance, jump-accounting or interpolation-audit flag)
+  / INCOMPLETE, applied before classes. Classes: multiplied (split/remote) > dissolved > single > unresolved. Mobility is
+  pinned or mobile at 1.5.
+- **Outcomes:**
+  - INVALID-CONTROL; NOT SCORED / INCOMPLETE.
+  - Gate MG5 (survival): PASS / PARTIAL / FAIL, with ≥ 3/4 single per rate.
+  - Mobility: PINNED / MOBILE / MIXED.
+  - Part B: A1 / A2 / A3 / A-void, with A1 read as "recovery under rewriting plus transfer".
+- **Data (PI: keep the repo small):**
+  - Committed: replay specifications with event-list hashes, sparse check records (nodes below −1.0 with row indices),
+    per-tick accounting, run records, ledger and evaluation.
+  - On the PI's PC, in a committed SHA-256 manifest: event lists, full fields and final states.
+- **Budget:** run cap 24; 40 core-h launch cutoff, with in-flight runs finishing. Projected about 20 core-h; restated after
+  Part 0 times the complete implementation. Runs on the PI's PC.
+
+Pre-run implementation specification: appended here, dated, before the run it affects.
+
+**Pre-run implementation specification (MG015, 2026-11-01; committed before any Part 0 or registered MG5 run).**
+Code: `src/evolve.py` (mesh, ROS2, events, tick edits, audits, detection, classification, flag rechecks),
+`src/run_mg5.py` (engine `run_ticks`, registered driver), `src/run_mg5_part0.py` (Part 0), `src/evaluate_mg5.py`,
+`src/recompute_mg5.py` (independent). Tests: `tests/test_mg5.py`, 11 tests, all pass on the cloud container (Python 3.13,
+numpy 2.5, scipy 1.16).
+1. **Order.** `python src/run_mg5.py part0` runs first and writes `results/MG5/part0/decisions.json`. The registered
+   driver refuses to start unless that file says `proceed: true`, and takes dt and Δ_fast (Δ at ν = 0.2) from it. Part 0's
+   outcome and the restated budget are appended here before Part A starts. Parts A and B then run as one batch of 24,
+   longest (ν = 0.2) first.
+2. **Streams.** Run seeds: `seed_for(5, b_idx, rate_idx, 1, 2·slot + placement)`, with b_idx 0 (Part A) or 1 (Part B),
+   and rate_idx the index of ν in [0, 0.002, 0.02, 0.2]. The same seed drives the event list and the choice of audited
+   births. Part 0: graph `seed_for(5, 9, 0, 0, 0)` (18 901 uniform points; h from its homogenized corrector) and events
+   `seed_for(5, 9, 3, 1, 0)`. No registered study uses b_idx 9.
+3. **Start states.** MG4c's D graph is rebuilt (`run_mg4c.graph_for`). The start mesh must have identical edges (asserted).
+   Ids are MG4c's row indices; h is the panel's exact calibrated value. Part B adds S₀(28) − S₀(29) from `steady_state`
+   (φ_Y only, −0.9/14).
+4. **Tick loop (proposal §3.2).** For k = 1..K: one Jacobian and LU at the state on M_(k−1); Δ/dt ROS2 steps (exact
+   integer); failure test; float64 balances (with recheck); check if t_k is a multiple of 10; snapshot if t_k is a
+   multiple of 50 or t_end; then tick k's events (times in (t_(k−1), t_k], `searchsorted` right); then the Mesh is rebuilt
+   and a new ROS2 system is formed. There are no edits after the final boundary.
+5. **Detection.** MG4's `measure_graph.smoother` and `particles` on the current positions. The t = 0 detection on the
+   start state gives c(0); a start that is not single is classed unresolved. The sparse record keeps nodes with smoothed φ_X
+   < −1.0. `tests/test_mg5.py` checks that sparse re-detection equals full detection, including torus wrap and ties.
+6. **Classes.**
+   - Multiplied: ≥ 2 particles at two consecutive checks. *Split* vs *remote* is measured at the first check with ≥ 2
+     particles: it is the distance, from the last single-particle centre (or c(0)), of the second-nearest particle (≤
+     4.0: split).
+   - Single requires each step ≤ 2.0. Mobility uses the unwrapped track.
+   - D_p is the least-squares fit through the origin of MSD = 4 D_p τ, for lags 10–100.
+7. **Flags (all resolved in the run, before the next tick; the original flag and its recheck are kept in the run
+   record).**
+   - *Balance:* MG4's float64 test. The recheck is mpmath at 40 digits on the operator rebuilt from edges; resolved iff
+     |r| ≤ 1e-25 (1 + M).
+   - *Jump accounting:* |I_after − (I_before − R + B)| ≤ 1e-10 (1 + |I_before| + |R| + |B|) per species. The recheck uses
+     `math.fsum`; resolved iff ≤ 1e-13.
+   - *Interpolation audit:* 20 effective births per tick (all if fewer), using `LinearNDInterpolator` on the points within
+     1.0. Flag above 1e-9. The recheck is exact-rational over every effective birth of the tick; resolved iff ≤ 1e-12.
+   - Any unresolved flag, a non-finite value or |φ| > 1e3 stops the run as FAILED-NUMERICAL.
+8. **Replay specification.** The event list is generated in the worker. Its SHA-256 (columns t, type, id, x, y,
+   little-endian, in that order) is compared with a regeneration in a fresh Python subprocess. A mismatch writes an
+   INCOMPLETE record and the run does not start.
+9. **Data.**
+   - Committed: `results/MG5/runs/<key>.json` (status, flags, replay specification, driver summary, platform, code
+     revision) and `results/MG5/checks/<key>.npz` (sparse records, with offsets, and the per-tick table), plus
+     `budget_ledger.csv`, `local_manifest.csv`, `driver_log.json`, `evaluation.json`, `part0/`.
+   - PC-only, in `results/MG5/local/` (gitignored): event lists and snapshots (float32 fields and smoothed φ_X every 50
+     units; float64 at t_end), each with its SHA-256 in the manifest.
+10. **Budget.** One ledger row per finished run (wall time). Before each start, the driver stops if the ledger has
+    reached 40 core-h, or if finished plus in-flight runs have reached 24.
+11. **Evaluation.** `evaluate_mg5.py` re-detects every check from the committed sparse records with the registered θ. It
+    stops if any count sequence or class differs from the driver's record, then applies statuses, validity and outcomes
+    (proposal §8; frozen control "pinned" means max d < 0.1). `recompute_mg5.py` repeats the classification with separately
+    written detection code.
+12. **Disclosure.** While writing this code, dynamics were run only on small unregistered graphs in the tests: a 6 × 5
+    torus of 900 points for the ROS2 order test, and a 10 × 10 torus of 3 450 points, ν = 0.2 for 20 time units, for the
+    end-to-end test, which asserts only the run status, accounting and record round-trips. The registered start states
+    were loaded, and their meshes compared, without integration. No Part 0 run and no registered run has been made.
+
+PI sign-off (design): Richard Benear, 2026-10-31 23:17 UTC, decision card in the project thread ("Approve and
+register"), after ChatGPT's two reviews (MG014 r1 and r2) and draft 3's corrections.
+

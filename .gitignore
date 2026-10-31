@@ -10,3 +10,6 @@ results/MG004/*.log
 # results/MG2/cells/ is committed (small; protects compute against container loss)
 results/MG2/stdout.txt
 results/MG3/partial/
+
+# MG5: event lists and full fields stay on the PI's PC (SHA-256 manifest in results/MG5/local_manifest.csv)
+results/MG5/local/
