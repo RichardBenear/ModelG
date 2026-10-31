@@ -197,7 +197,9 @@ def jobs_for(dec):
 
 # Core-hour ceilings (GATES.md MG4 budget; stop triggers checked before every job is started). The ledger's summed
 # per-run wall time is the measure. Re-stated values must be recorded in GATES.md before they are changed here.
-CEILING = {"A": 25.0, "h03": 3.0}
+CEILING = {"A": 80.0, "h03": 3.0}     # A re-stated 25 -> 80 by the PI, 2026-10-31 (GATES.md MG4)
+# Which run groups are run, in order (the T runs always come first; they set the threshold). Fixed in GATES.md.
+PARTS = ("main", "h03")      # PI decision 2026-10-31: seeded runs deferred, N3 dynamics dropped
 
 
 def spent(group):
@@ -256,7 +258,9 @@ def main():
     json.dump(dict(theta=theta, A_s_T=-2 * abs(theta), from_runs=[j["key"] for j in J["T"]]),
               open(os.path.join(OUT, "threshold.json"), "w"), indent=1)
     print("theta =", theta, flush=True)
-    for part in ("main", "seed", "N3", "h03"):
+    J["seed_TD"] = [j for j in J["seed"] if j["fam"] in ("T", "D")]
+    J["seed_R"] = [j for j in J["seed"] if j["fam"] == "R"]
+    for part in PARTS:
         run_batch(J[part], "h03" if part == "h03" else "A")
     print("Part A runs complete. Evaluate with: python src/evaluate_mg4.py", flush=True)
 

@@ -806,6 +806,27 @@ before the run it affects. (The MG3b lesson: record choices before the run, not 
   - **PI decision, 2026-10-30 23:00 UTC (decision card in the project thread):** "Record as exception, continue." MG4 is
     not stopped. The overrun stands as a recorded exception, as MG3's did, and goes to ChatGPT's review with the result.
 
+- **Part A budget re-statement and scope (PI decision, 2026-10-31 00:27 UTC, decision card in the project thread:
+  "Gate runs only, 80 core-h"; recorded before any Part A run):**
+  - **Measured cost** (t = 0–300, one run, new solver path unless stated):
+    - Cloud: T 283 s, D panel graph 0 1073 s, R panel graph 0 about 7 900 s. The R run was timed in segments, and the
+      cloud's 2-hour limit stopped it at t = 200 (7 194 s).
+    - PI's PC, original solver path: T 990 s, D 1 944 s, R 13 188 s (`results/MG4/timing/timing_RB_LibraryPC.json`).
+    - Projected on the PC with the new path: T about 4 min, D about 13 min, R about 1.6 h per run.
+  - **Runs (cap 80):** the gate-deciding runs only, i.e. T 4, D 32 and R 32 with the soliton initial condition. Then the
+    h = 0.3 check, which is cheap: T 4 and D 8, with its own ceiling of 3 core-h unchanged.
+  - **Ceiling:** Part A at h = 0.2 is raised from 25 to **80 core-h** (projection about 60). The driver checks it before
+    every job is started.
+  - **Not run:**
+    - The 68 seeded-formation runs (descriptive; no criterion uses them) are deferred, at a projected cost of about 60
+      core-h, mostly on R. They may be registered later as a separate study.
+    - The 4 N3 dynamics runs (descriptive) are dropped. On a random 6-regular graph the sparse LU of the Newton matrix
+      is nearly dense: measured fill at n = 1 000–4 000 is about 56% of dense, with time growing as n³. At N = 18 902
+      that is about 20 GB and hours per factorisation. N3's registered role, failing C3(a), is met by its spectra
+      alone; the outcome is scored at evaluation.
+  - **Machine:** the PI's PC (Windows), `MODELG_WORKERS=9`. The platform is recorded in every ledger row.
+  - No criterion, threshold or precedence rule changes.
+
 Result:
 Replication (ChatGPT):
 PI sign-off (design): Richard Benear, 2026-10-30 14:19 UTC, project thread ("I approve MG4 draft 4."), after ChatGPT's

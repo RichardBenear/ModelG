@@ -279,3 +279,11 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - Part 0 implementation choices are recorded in GATES.md (MG4) before any Part 0 run. A small-torus smoke run (code
   validation only) gave 80 s for 4 340 nodes, and the particle was not yet stationary at t = 300.
 - Next: run Part 0.
+- **Part 0 run (2026-10-30, cloud):** complete, with no stop. The 20 × 20 torus is used. T's window is b ∈ (27.33,
+  29.20), and b = 29 is inside it. T is stationary (max|dφ/dt| 6.7e-12) with depth −13.58. Box check L2 1.8e-4.
+  - Cost 10.57 core-h against the 8 ceiling (2.04 of it estimated lost work). The driver did not check the ceiling.
+    The PI recorded it as an exception and continued (GATES.md).
+- **Solver speed-up:** nested-dissection LU ordering, with the same steps and rounding-level differences. T is 4.7×
+  faster and R 2.7×. A 10th test was added. Recorded in GATES.md before use.
+- **Part A scope (PI, 2026-10-31):** gate runs only (T 4, D 32, R 32) plus the h = 0.3 check, with the ceiling raised to
+  80 core-h. Seeded runs are deferred and the N3 dynamics dropped (the LU is nearly dense). Part A runs on the PI's PC.
