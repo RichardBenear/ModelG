@@ -10,7 +10,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG3 | 2 | Particles nucleate spontaneously from intrinsic fluctuations at finite Ω | **FAIL** as registered (C2); C1, C3, C4, V5 PASS — see MG3 result |
 | MG3b | 2 | Follow-up to MG3: time-step check, nucleation rates with more events, calibrated uncertainty (estimation study; no pass/fail) | **ACCEPTED 2026-10-30** (estimation study, no verdict; PI sign-off): Part 1 EQUIVALENT; S = 0.064 (approximate 95% 0.047–0.082) — see MG3b result |
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale (2D frozen graphs, noise-free) | **FAIL — CLOSED 2026-10-31** (every D and R run multiplied; T control passed; ChatGPT accepted; PI signed off) |
-| MG4c | 3 | Follow-up to MG4: single-particle window in b on unweighted Delaunay graphs; cotangent-operator diagnostic (estimation study; no pass/fail) | **PRE-REGISTERED 2026-10-31** (draft 3, PI approval); no run yet |
+| MG4c | 3 | Follow-up to MG4: single-particle window in b on unweighted Delaunay graphs; cotangent-operator diagnostic (estimation study; no pass/fail) | **RESULT W1 + O1** (2026-10-31; 102 runs, 11.33 core-h); awaiting ChatGPT review and PI sign-off |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve) | PENDING |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | PENDING |
 | MG7 | 6 | Multiway branch divergence and foliation dependence | PENDING |
@@ -987,7 +987,32 @@ synthetic end-to-end passes of driver plus evaluator through Case A, Case B and 
     file, and its scratch folder was deleted. No other MG4c dynamics have run on a registered graph; the tests use small
     unregistered graphs or synthetic fields.
 
-Result:
+Result: **W1 (single-particle points found) and O1 (the weighted operator keeps D0 p0 single at b = 29).** Run on the
+PI's PC (Windows, Python 3.13.2, 9 workers), 2026-10-31, from main at 494403a. All 102 planned runs completed (Part 1:
+40, Part 2: 60, Part 3: 2), 11.33 core-h, below the 20 core-h cutoff. No float64 balance flags, so no recheck was needed.
+Records: `results/MG4c/` (`evaluation.json`, `driver_log.json`, `runs/`, `fields/`, `budget_ledger.csv`) and
+`results/MG4c_run_log.txt`. Claude recomputed every class, threshold, smoothed minimum, max|dφ/dt|, balance and the T
+control independently from the field files (`src/recompute_mg4c.py`); all agree with the evaluator.
+- **Window (Case A).** The four D runs are all single at 13 tested b, from 27.2656 to 28.7266. The b = 29 point
+  (MG4) is all multiplied.
+  - Upper edge bracket: [28.7266, 28.7305]. It is set by one run, D1 p1, which multiplies from 28.7305 up. D0 p0, D0 p1
+    and D1 p0 stay single through 28.75.
+  - Lower edge bracket: [27.2617, 27.2656]. It is set by one run, D1 p0, classed decayed from 27.2617 down. At 27.2617
+    that run had not settled (smoothed min −4.90 against θ −5.12; max|dφ/dt| 4.9e-2 at t = 300). At 27.0, D1 p1 also
+    decays. D0 p0 and D0 p1 stay single down to 27.0.
+  - Every D class is the same under θ_b and under θ_29.
+- **Threshold.** T is an eligible reference from 27.375 to 28.75. Below that, T decays completely (smoothed min about
+  1e-15), so the classes at 27.3125 and below use the fixed θ_29. **The lower edge is therefore conditional on the
+  fallback detector, and D keeps a single particle at b values where the T lattice does not.**
+- **Shape against T** (eligible all-single b only): smoothed depth ratio D/T 0.90–1.14, and λ ratio 0.96–1.01.
+- **Part 3.** All construction checks pass. The T control is single and matches MG4's T reference field to 4.5e-13
+  (criterion 1e-6). D0 p0 with the cotangent operator is single at b = 29, where it multiplied with the unweighted
+  operator.
+- **Reading (proposal §5, limited to what was tested).** At b ≈ 27.27–28.73, D graphs keep a single particle under
+  MG4's detector and initial condition, so b = 29 lies above D's single-particle range. That range is shifted below
+  T's (27.33 < b < 29.20, MG4 Part 0) mainly at the upper edge, by about 0.47. For D0 p0 at b = 29, the unweighted
+  operator matters. MG5 design may consider these b values. Both edges each rest on a single run, and the lower edge on
+  an unsettled run, so the edge values are estimates within their brackets, not sharp properties of D graphs.
 Replication (ChatGPT):
 PI sign-off (design): Richard Benear, 2026-10-31 16:25 UTC, decision card in the project thread ("Approve and
 register"), after ChatGPT's three reviews of drafts 1–3 (the round-3 reviewer supports registering draft 3 unchanged).

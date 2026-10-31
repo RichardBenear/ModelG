@@ -314,3 +314,8 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - The synthetic end-to-end test found a driver bug before any run: a finished but uncollected run was counted twice against the run cap, which would have refused the 102nd run. Fixed.
 - Pre-run implementation specification appended to GATES.md MG4c (MG012). It discloses a cloud trial of the Part 3 T control that was stopped before finishing, with no output read.
 - Next: PI merges; run on the PI's PC with MODELG_WORKERS=9.
+
+## MG013 — MG4c result
+- Run on the PI's PC, 2026-10-31 (started 10:42 local), from main at 494403a. All 102 runs, 11.33 core-h, no balance flags. Raw results were committed from the PC at edd989d (branch mg4c-results).
+- Evaluator: W1 + O1. The four D runs are all single from b 27.2656 to 28.7266. Edge brackets are [28.7266, 28.7305] (upper; D1 p1 multiplies) and [27.2617, 27.2656] (lower; D1 p0 decays, unsettled). T is not an eligible reference below 27.375, so the lower edge is detector-conditional. The cotangent operator keeps D0 p0 single at b = 29; the T control matches to 4.5e-13.
+- Independent recompute (`src/recompute_mg4c.py`) agrees with every class and threshold. Next: ChatGPT review, then PI sign-off.

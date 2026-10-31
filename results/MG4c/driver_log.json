@@ -1,0 +1,864 @@
+{
+ "registered": "GATES.md MG4c; spec/MG4c_proposal.md draft 3 (a946550)",
+ "part3_checks_ok": true,
+ "grid": {
+  "b29.000000": {
+   "theta": -5.117354421620525,
+   "eligible": true,
+   "source": "MG4 Part A",
+   "D": [
+    "multiplied",
+    "multiplied",
+    "multiplied",
+    "multiplied"
+   ]
+  },
+  "b28.750000": {
+   "theta": -4.998053349138237,
+   "eligible": true,
+   "T_class": "single",
+   "T_min": -9.996106698276474,
+   "D": [
+    "single",
+    "single",
+    "single",
+    "multiplied"
+   ],
+   "D_theta29": [
+    "single",
+    "single",
+    "single",
+    "multiplied"
+   ],
+   "D_min": [
+    -9.582854232884015,
+    -9.6487226267358,
+    -9.45391584234336,
+    -10.441725954581047
+   ]
+  },
+  "b28.500000": {
+   "theta": -4.840265200775234,
+   "eligible": true,
+   "T_class": "single",
+   "T_min": -9.680530401550469,
+   "D": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_theta29": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_min": [
+    -8.934388805732045,
+    -9.499966141868303,
+    -9.179776787918751,
+    -9.472005942918837
+   ]
+  },
+  "b28.250000": {
+   "theta": -4.662977127824742,
+   "eligible": true,
+   "T_class": "single",
+   "T_min": -9.325954255649483,
+   "D": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_theta29": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_min": [
+    -8.70862146386188,
+    -9.424391891680147,
+    -8.76863571089317,
+    -9.241603008160688
+   ]
+  },
+  "b28.000000": {
+   "theta": -4.457581675528346,
+   "eligible": true,
+   "T_class": "single",
+   "T_min": -8.915163351056693,
+   "D": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_theta29": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_min": [
+    -8.470788659945944,
+    -9.100845043320849,
+    -8.370807268167809,
+    -8.991138613946521
+   ]
+  },
+  "b27.750000": {
+   "theta": -4.206502457677532,
+   "eligible": true,
+   "T_class": "single",
+   "T_min": -8.413004915355064,
+   "D": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_theta29": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_min": [
+    -8.224959867939951,
+    -8.756646610579708,
+    -7.9590339678656905,
+    -8.70193918219199
+   ]
+  },
+  "b27.500000": {
+   "theta": -3.857025988052371,
+   "eligible": true,
+   "T_class": "single",
+   "T_min": -7.714051976104742,
+   "D": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_theta29": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_min": [
+    -7.954315120463057,
+    -7.992531419382992,
+    -7.44836616078199,
+    -8.374776593460364
+   ]
+  },
+  "b27.250000": {
+   "theta": -5.117354421620525,
+   "eligible": false,
+   "reason": "T decayed under theta_elig, min -0.000",
+   "T_min": -1.5435257309759367e-15,
+   "T_class_theta29": "decayed",
+   "D": [
+    "single",
+    "single",
+    "decayed",
+    "single"
+   ],
+   "D_theta29": [
+    "single",
+    "single",
+    "decayed",
+    "single"
+   ],
+   "D_min": [
+    -7.621139035037776,
+    -7.356884764230386,
+    -1.2203421691276068e-15,
+    -6.411259399833196
+   ]
+  },
+  "b27.000000": {
+   "theta": -5.117354421620525,
+   "eligible": false,
+   "reason": "T decayed under theta_elig, min -0.000",
+   "T_min": -1.5565103974773891e-15,
+   "T_class_theta29": "decayed",
+   "D": [
+    "single",
+    "single",
+    "decayed",
+    "decayed"
+   ],
+   "D_theta29": [
+    "single",
+    "single",
+    "decayed",
+    "decayed"
+   ],
+   "D_min": [
+    -7.077310774696341,
+    -6.6706049231266045,
+    -1.789101665773615e-15,
+    -1.914911621843535e-15
+   ]
+  }
+ },
+ "case": "A",
+ "edges": [
+  {
+   "bracket": [
+    28.7265625,
+    28.73046875
+   ],
+   "visits": [
+    [
+     28.625,
+     {
+      "theta": -4.921222692487467,
+      "eligible": true,
+      "T_class": "single",
+      "T_min": -9.842445384974933,
+      "D": [
+       "single",
+       "single",
+       "single",
+       "single"
+      ],
+      "D_theta29": [
+       "single",
+       "single",
+       "single",
+       "single"
+      ],
+      "D_min": [
+       -9.045947113732892,
+       -9.569976776506186,
+       -9.327347268275263,
+       -9.586097490087932
+      ]
+     }
+    ],
+    [
+     28.6875,
+     {
+      "theta": -4.960115683176853,
+      "eligible": true,
+      "T_class": "single",
+      "T_min": -9.920231366353706,
+      "D": [
+       "single",
+       "single",
+       "single",
+       "single"
+      ],
+      "D_theta29": [
+       "single",
+       "single",
+       "single",
+       "single"
+      ],
+      "D_min": [
+       -9.511776627467142,
+       -9.6100979128678,
+       -9.39266496661023,
+       -9.64583436524963
+      ]
+     }
+    ],
+    [
+     28.71875,
+     {
+      "theta": -4.979199539252383,
+      "eligible": true,
+      "T_class": "single",
+      "T_min": -9.958399078504765,
+      "D": [
+       "single",
+       "single",
+       "single",
+       "single"
+      ],
+      "D_theta29": [
+       "single",
+       "single",
+       "single",
+       "single"
+      ],
+      "D_min": [
+       -9.551046300272482,
+       -9.62955760145963,
+       -9.423748653989882,
+       -9.678154765042633
+      ]
+     }
+    ],
+    [
+     28.734375,
+     {
+      "theta": -4.988654670959729,
+      "eligible": true,
+      "T_class": "single",
+      "T_min": -9.977309341919458,
+      "D": [
+       "single",
+       "single",
+       "single",
+       "multiplied"
+      ],
+      "D_theta29": [
+       "single",
+       "single",
+       "single",
+       "multiplied"
+      ],
+      "D_min": [
+       -9.567473332280347,
+       -9.639172616361082,
+       -9.438941592266149,
+       -10.400649261232756
+      ]
+     }
+    ],
+    [
+     28.7265625,
+     {
+      "theta": -4.983934227095593,
+      "eligible": true,
+      "T_class": "single",
+      "T_min": -9.967868454191185,
+      "D": [
+       "single",
+       "single",
+       "single",
+       "single"
+      ],
+      "D_theta29": [
+       "single",
+       "single",
+       "single",
+       "single"
+      ],
+      "D_min": [
+       -9.559417771362957,
+       -9.634373779323704,
+       -9.431373071159825,
+       -9.687517172638085
+      ]
+     }
+    ],
+    [
+     28.73046875,
+     {
+      "theta": -4.986296221312748,
+      "eligible": true,
+      "T_class": "single",
+      "T_min": -9.972592442625496,
+      "D": [
+       "single",
+       "single",
+       "single",
+       "multiplied"
+      ],
+      "D_theta29": [
+       "single",
+       "single",
+       "single",
+       "multiplied"
+      ],
+      "D_min": [
+       -9.563480950504566,
+       -9.636775298565595,
+       -9.435164239849605,
+       -10.625885557200474
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "bracket": [
+    27.26171875,
+    27.265625
+   ],
+   "visits": [
+    [
+     27.375,
+     {
+      "theta": -3.5608764267081496,
+      "eligible": true,
+      "T_class": "single",
+      "T_min": -7.121752853416299,
+      "D": [
+       "single",
+       "single",
+       "single",
+       "single"
+      ],
+      "D_theta29": [
+       "single",
+       "single",
+       "single",
+       "single"
+      ],
+      "D_min": [
+       -7.798842017309483,
+       -7.652289003566964,
+       -7.110433942294868,
+       -8.174981003437528
+      ]
+     }
+    ],
+    [
+     27.3125,
+     {
+      "theta": -5.117354421620525,
+      "eligible": false,
+      "reason": "T decayed under theta_elig, min -0.000",
+      "T_min": -7.504743377224731e-17,
+      "T_class_theta29": "decayed",
+      "D": [
+       "single",
+       "single",
+       "single",
+       "single"
+      ],
+      "D_theta29": [
+       "single",
+       "single",
+       "single",
+       "single"
+      ],
+      "D_min": [
+       -7.7134657279334204,
+       -7.501695449194748,
+       -6.872914776786348,
+       -8.010132745720831
+      ]
+     }
+    ],
+    [
+     27.28125,
+     {
+      "theta": -5.117354421620525,
+      "eligible": false,
+      "reason": "T decayed under theta_elig, min -0.000",
+      "T_min": -2.132342947704669e-15,
+      "T_class_theta29": "decayed",
+      "D": [
+       "single",
+       "single",
+       "single",
+       "single"
+      ],
+      "D_theta29": [
+       "single",
+       "single",
+       "single",
+       "single"
+      ],
+      "D_min": [
+       -7.6682927945154615,
+       -7.429651924972844,
+       -6.679593509347191,
+       -6.62949602100688
+      ]
+     }
+    ],
+    [
+     27.265625,
+     {
+      "theta": -5.117354421620525,
+      "eligible": false,
+      "reason": "T decayed under theta_elig, min -0.000",
+      "T_min": -1.8378688223135735e-15,
+      "T_class_theta29": "decayed",
+      "D": [
+       "single",
+       "single",
+       "single",
+       "single"
+      ],
+      "D_theta29": [
+       "single",
+       "single",
+       "single",
+       "single"
+      ],
+      "D_min": [
+       -7.644981991827942,
+       -7.393406228281544,
+       -5.6100831999953975,
+       -6.5293016406494235
+      ]
+     }
+    ],
+    [
+     27.2578125,
+     {
+      "theta": -5.117354421620525,
+      "eligible": false,
+      "reason": "T decayed under theta_elig, min -0.000",
+      "T_min": -1.3233938973015002e-15,
+      "T_class_theta29": "decayed",
+      "D": [
+       "single",
+       "single",
+       "decayed",
+       "single"
+      ],
+      "D_theta29": [
+       "single",
+       "single",
+       "decayed",
+       "single"
+      ],
+      "D_min": [
+       -7.633129601805876,
+       -7.375183787928705,
+       -6.826530162836924e-08,
+       -6.473299820133582
+      ]
+     }
+    ],
+    [
+     27.26171875,
+     {
+      "theta": -5.117354421620525,
+      "eligible": false,
+      "reason": "T decayed under theta_elig, min -0.000",
+      "T_min": -1.4870464037863501e-15,
+      "T_class_theta29": "decayed",
+      "D": [
+       "single",
+       "single",
+       "decayed",
+       "single"
+      ],
+      "D_theta29": [
+       "single",
+       "single",
+       "decayed",
+       "single"
+      ],
+      "D_min": [
+       -7.639072734797609,
+       -7.3843041044383355,
+       -4.894940581360075,
+       -6.501927530650095
+      ]
+     }
+    ]
+   ]
+  }
+ ],
+ "refined": {
+  "b28.625000": {
+   "theta": -4.921222692487467,
+   "eligible": true,
+   "T_class": "single",
+   "T_min": -9.842445384974933,
+   "D": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_theta29": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_min": [
+    -9.045947113732892,
+    -9.569976776506186,
+    -9.327347268275263,
+    -9.586097490087932
+   ]
+  },
+  "b28.687500": {
+   "theta": -4.960115683176853,
+   "eligible": true,
+   "T_class": "single",
+   "T_min": -9.920231366353706,
+   "D": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_theta29": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_min": [
+    -9.511776627467142,
+    -9.6100979128678,
+    -9.39266496661023,
+    -9.64583436524963
+   ]
+  },
+  "b28.718750": {
+   "theta": -4.979199539252383,
+   "eligible": true,
+   "T_class": "single",
+   "T_min": -9.958399078504765,
+   "D": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_theta29": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_min": [
+    -9.551046300272482,
+    -9.62955760145963,
+    -9.423748653989882,
+    -9.678154765042633
+   ]
+  },
+  "b28.734375": {
+   "theta": -4.988654670959729,
+   "eligible": true,
+   "T_class": "single",
+   "T_min": -9.977309341919458,
+   "D": [
+    "single",
+    "single",
+    "single",
+    "multiplied"
+   ],
+   "D_theta29": [
+    "single",
+    "single",
+    "single",
+    "multiplied"
+   ],
+   "D_min": [
+    -9.567473332280347,
+    -9.639172616361082,
+    -9.438941592266149,
+    -10.400649261232756
+   ]
+  },
+  "b28.726562": {
+   "theta": -4.983934227095593,
+   "eligible": true,
+   "T_class": "single",
+   "T_min": -9.967868454191185,
+   "D": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_theta29": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_min": [
+    -9.559417771362957,
+    -9.634373779323704,
+    -9.431373071159825,
+    -9.687517172638085
+   ]
+  },
+  "b28.730469": {
+   "theta": -4.986296221312748,
+   "eligible": true,
+   "T_class": "single",
+   "T_min": -9.972592442625496,
+   "D": [
+    "single",
+    "single",
+    "single",
+    "multiplied"
+   ],
+   "D_theta29": [
+    "single",
+    "single",
+    "single",
+    "multiplied"
+   ],
+   "D_min": [
+    -9.563480950504566,
+    -9.636775298565595,
+    -9.435164239849605,
+    -10.625885557200474
+   ]
+  },
+  "b27.375000": {
+   "theta": -3.5608764267081496,
+   "eligible": true,
+   "T_class": "single",
+   "T_min": -7.121752853416299,
+   "D": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_theta29": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_min": [
+    -7.798842017309483,
+    -7.652289003566964,
+    -7.110433942294868,
+    -8.174981003437528
+   ]
+  },
+  "b27.312500": {
+   "theta": -5.117354421620525,
+   "eligible": false,
+   "reason": "T decayed under theta_elig, min -0.000",
+   "T_min": -7.504743377224731e-17,
+   "T_class_theta29": "decayed",
+   "D": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_theta29": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_min": [
+    -7.7134657279334204,
+    -7.501695449194748,
+    -6.872914776786348,
+    -8.010132745720831
+   ]
+  },
+  "b27.281250": {
+   "theta": -5.117354421620525,
+   "eligible": false,
+   "reason": "T decayed under theta_elig, min -0.000",
+   "T_min": -2.132342947704669e-15,
+   "T_class_theta29": "decayed",
+   "D": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_theta29": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_min": [
+    -7.6682927945154615,
+    -7.429651924972844,
+    -6.679593509347191,
+    -6.62949602100688
+   ]
+  },
+  "b27.265625": {
+   "theta": -5.117354421620525,
+   "eligible": false,
+   "reason": "T decayed under theta_elig, min -0.000",
+   "T_min": -1.8378688223135735e-15,
+   "T_class_theta29": "decayed",
+   "D": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_theta29": [
+    "single",
+    "single",
+    "single",
+    "single"
+   ],
+   "D_min": [
+    -7.644981991827942,
+    -7.393406228281544,
+    -5.6100831999953975,
+    -6.5293016406494235
+   ]
+  },
+  "b27.257812": {
+   "theta": -5.117354421620525,
+   "eligible": false,
+   "reason": "T decayed under theta_elig, min -0.000",
+   "T_min": -1.3233938973015002e-15,
+   "T_class_theta29": "decayed",
+   "D": [
+    "single",
+    "single",
+    "decayed",
+    "single"
+   ],
+   "D_theta29": [
+    "single",
+    "single",
+    "decayed",
+    "single"
+   ],
+   "D_min": [
+    -7.633129601805876,
+    -7.375183787928705,
+    -6.826530162836924e-08,
+    -6.473299820133582
+   ]
+  },
+  "b27.261719": {
+   "theta": -5.117354421620525,
+   "eligible": false,
+   "reason": "T decayed under theta_elig, min -0.000",
+   "T_min": -1.4870464037863501e-15,
+   "T_class_theta29": "decayed",
+   "D": [
+    "single",
+    "single",
+    "decayed",
+    "single"
+   ],
+   "D_theta29": [
+    "single",
+    "single",
+    "decayed",
+    "single"
+   ],
+   "D_min": [
+    -7.639072734797609,
+    -7.3843041044383355,
+    -4.894940581360075,
+    -6.501927530650095
+   ]
+  }
+ },
+ "status": "complete",
+ "core_h": 11.326969444444444,
+ "runs": 102,
+ "platform": "Windows-11-10.0.26200-SP0",
+ "part3": {
+  "w_b29.000000_D0_p0": "single",
+  "w_b29.000000_T_p0": "single",
+  "T_control_maxdiff_X": 4.547473508864641e-13,
+  "T_control_maxdiff_all": 4.547473508864641e-13
+ }
+}
