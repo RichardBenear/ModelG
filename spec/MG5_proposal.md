@@ -227,8 +227,11 @@ the same detector), unwrapped along the track.
   check's records can be reconciled with the full field and the mesh rebuilt.
 - At t_end: full float64 state.
 - Per tick: the jump-accounting row and the interpolation-audit maximum.
-- Estimated size about 15–25 MB per run, about 0.5 GB in all, compressed. **[PI]** Commit everything (as for MG4c's 111
-  MB), or commit the check records and accounting and keep the full-field snapshots on the PC with checksums.
+- **Storage (PI decision, 2026-10-31 22:44 UTC: "commit only the check records and keep full fields on my PC").** Committed:
+  the event lists, the per-check records, the per-tick accounting, run records, ledger and evaluation (estimated a few
+  MB per run). Kept on the PI's PC, outside git: the 50-unit full-field snapshots and the final float64 states (about
+  0.5 GB in all), each listed in a committed manifest with its SHA-256 checksum and size. Every registered class, track
+  and status can be recomputed from the committed files alone.
 
 ## 8. Outcomes (pre-registered)
 **Validity first.**
@@ -315,7 +318,7 @@ the PI's PC.
 - Four runs per rate are adequate for this fixed-panel benchmark, without claiming a general survival probability.
 - ROS2 and the tick approach are acceptable conditionally on the implementation, controls and validation now in §§3–7.
 
-**Remaining PI question:** data storage (§7, last item).
+**PI decisions:** all taken (transfer rule, Part B, operator, 21:14 UTC; data storage, 22:44 UTC).
 
 ## 12. Not in MG5
 Token noise; combinatorial (non-geometric) rewriting and Wolfram hypergraph snapshots (MG4b); growing or shrinking space

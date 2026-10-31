@@ -340,3 +340,6 @@ Items deliberately postponed so the project reaches its main questions first. Th
   frozen controls in Part A; Part B keeps absolute concentrations (φ_Y shift −0.0642857); step and tick replay checks;
   A1 reworded as recovery under rewriting plus transfer; full check records, jump accounting, run statuses. 24 runs,
   about 20 core-h. Draft 1 preserved as spec/MG5_proposal_v1.md.
+- MG014c: PI decision on storage (2026-10-31 22:44 UTC): commit only check records, accounting and run records; full
+  fields stay on the PI's PC with a committed SHA-256 manifest. Proposal §7 and §11 updated. General PI preference: keep
+  the repo as small as reasonable.
