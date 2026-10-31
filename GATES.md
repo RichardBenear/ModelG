@@ -9,7 +9,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG2 | 2 | Stochastic token rules converge to the same-lattice mean-field solution as Ω → ∞ | **FAIL** as registered (C3, C4); convergence criteria C1, C6 PASS — see MG2 result |
 | MG3 | 2 | Particles nucleate spontaneously from intrinsic fluctuations at finite Ω | **FAIL** as registered (C2); C1, C3, C4, V5 PASS — see MG3 result |
 | MG3b | 2 | Follow-up to MG3: time-step check, nucleation rates with more events, calibrated uncertainty (estimation study; no pass/fail) | **ACCEPTED 2026-10-30** (estimation study, no verdict; PI sign-off): Part 1 EQUIVALENT; S = 0.064 (approximate 95% 0.047–0.082) — see MG3b result |
-| MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale (2D frozen graphs, noise-free) | **PRE-REGISTERED 2026-10-30** (draft 4, PI approval); no run yet |
+| MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale (2D frozen graphs, noise-free) | **FAIL — CLOSED 2026-10-31** (every D and R run multiplied; T control passed; ChatGPT accepted; PI signed off) |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve) | PENDING |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | PENDING |
 | MG7 | 6 | Multiway branch divergence and foliation dependence | PENDING |
@@ -650,7 +650,7 @@ review (MG008) and the two label clarifications. MG3b is accepted as an estimati
 ---
 
 ### MG4 — Particles on frozen irregular 2D graphs (noise-free)
-Status: **PRE-REGISTERED 2026-10-30 (MG009c)**, with PI approval. **No MG4 run of any kind preceded this commit.** The only
+Status: **CLOSED 2026-10-31 — FAIL** (result below; PI sign-off). Registered 2026-10-30 (MG009c), with PI approval. **No MG4 run of any kind preceded this commit.** The only
 computation behind the design was graph statistics (degrees and edge-length moments of random point sets, with no
 reaction or diffusion). The registered design is `spec/MG4_proposal.md` **draft 4**, with its content frozen as committed
 at `773255d`. Any change after this point needs a versioned amendment. Reviews and responses: `review/MG009_chatgpt.md` and
@@ -899,4 +899,5 @@ classification disagreement, reproduced C3(b) and checked the 11 balance flags a
 corrections, all applied (`review/MG010_response.md`).
 PI sign-off (design): Richard Benear, 2026-10-30 14:19 UTC, project thread ("I approve MG4 draft 4."), after ChatGPT's
 two design reviews (MG009 r1 and r2; the reviewer was comfortable with registration once draft 4's definitions were in).
-PI sign-off (result):
+PI sign-off (result): Richard Benear, 2026-10-31 13:52 UTC, project thread ("I will sign off on MG4"), after ChatGPT's
+MG010 review and the three corrections (PR #17). ChatGPT's replication files are in `review/MG010_replication/`.

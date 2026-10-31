@@ -301,3 +301,4 @@ Items deliberately postponed so the project reaches its main questions first. Th
   - The evaluator now keeps the balance flags and reads their recorded resolution, so it scores FAIL.
   - All 11 flagged runs are in the balance evidence.
   - The mechanism is worded as a hypothesis, and the scope of the FAIL is stated.
+- PI signed off MG4 (FAIL) 2026-10-31 13:52 UTC. MG4 CLOSED.
