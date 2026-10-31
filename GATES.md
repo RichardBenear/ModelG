@@ -826,6 +826,23 @@ before the run it affects. (The MG3b lesson: record choices before the run, not 
       alone; the outcome is scored at evaluation.
   - **Machine:** the PI's PC (Windows), `MODELG_WORKERS=9`. The platform is recorded in every ledger row.
   - No criterion, threshold or precedence rule changes.
+- **Evaluator test and disclosure (2026-10-31, while Part A runs on the PI's PC):** `src/evaluate_mg4.py` was tested
+  end to end on fabricated fields: the continuum soliton placed at each registered centre, with one run zeroed so
+  that it reads as decayed. No dynamics were involved.
+  - C3(a) and C3(b) do not depend on the dynamics: they use only the graphs, the placements and the continuum profile. So
+    this test computed their registered values, which are disclosed here before any Part A result is seen.
+    - C3(a) (Part 0 spectra): band means D 1.051–1.052 (panel 1.051) and R 1.059–1.068 (panel 1.064). These are outside
+      1 ± 0.05, so FAIL for both. T 1.008 passes. N3 0.008 fails, as the negative control requires.
+    - C3(b) panel medians of e_S (G, X, Y): D 0.27, 0.31, 0.30 and R 0.51, 0.52, 0.52. These are above 0.20, so FAIL for
+      both. T 0.007, 0.010, 0.009 passes.
+  - Reading (not a re-score): C3(b) compares the graph operator's local action on a smooth profile with ∇² at the
+    calibrated (homogenized) h. That local action scales with the naive second moment of the edges, not with the
+    homogenized one. So e_S is expected to be about (h_naive/h)² − 1: 0.27 on D and 0.47 on R, close to what was
+    measured. The homogenization corrector acts on the solution, not on a fixed profile. C3(b) as registered therefore
+    could not pass on graphs where h_naive differs from h. This is a design flaw, recorded as such. The verdict stands
+    as registered.
+  - Under §7, unless T fails as a positive control or an implementation check fails, MG4's verdict will be **FAIL**
+    (C3 for D and R). Part A still decides C1 and C2, which are reported in full.
 
 Result:
 Replication (ChatGPT):
