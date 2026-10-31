@@ -307,3 +307,10 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - `spec/MG4c_proposal.md` draft 1 (2026-10-31), PI request after MG4 closed: does unweighted Delaunay have a single-particle window in b? Plus one cotangent-Laplacian diagnostic at b = 29. To run on the PI's PC. Not registered; no run made. Next: ChatGPT review.
 - MG011a: ChatGPT reviewed draft 1 (review/MG011_chatgpt.md) and accepted the study but asked for six fixes. Draft 2 addresses all six (review/MG011_response.md); draft 1 is preserved as _v1.
 - MG011b: ChatGPT round 2 on draft 2 (review/MG011_replication/review_r2.md). Draft 3 adds a fixed T-reference amplitude eligibility rule and three wording/branch fixes (review/MG011_response_r2.md).
+- MG011c: ChatGPT round 3 supports draft 3 unchanged. The PI approved it (16:25 UTC), and MG4c was REGISTERED in GATES.md (draft 3 frozen at a946550). Next: driver, operator code and tests; pre-run implementation specification in GATES.md.
+
+## MG012 — MG4c implementation (before any run)
+- Code: `src/run_mg4c.py`, `src/evaluate_mg4c.py`, `graphs.cotan`, operator and area-weight arguments in `graph_ode`. Tests: `tests/test_mg4.py` (11, incl. cotangent construction) and `tests/test_mg4c.py` (12: decision rules on constructed tables, eligibility, mpmath recheck, synthetic end-to-end passes). All pass on the cloud container (Python 3.13, mpmath 1.4.1).
+- The synthetic end-to-end test found a driver bug before any run: a finished but uncollected run was counted twice against the run cap, which would have refused the 102nd run. Fixed.
+- Pre-run implementation specification appended to GATES.md MG4c (MG012). It discloses a cloud trial of the Part 3 T control that was stopped before finishing, with no output read.
+- Next: PI merges; run on the PI's PC with MODELG_WORKERS=9.

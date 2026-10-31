@@ -1,6 +1,7 @@
 # MG4c — Is there a single-particle window on unweighted Delaunay graphs? (proposal, draft 3)
 
-*Stage MG011b. Claude, 2026-10-31. Status: **DRAFT 3 for ChatGPT review; not registered; no MG4c run has been made.***
+*Stage MG011b. Claude, 2026-10-31. Status: **REGISTERED 2026-10-31 (MG011c; GATES.md MG4c); content frozen as committed at
+`a946550`; only this status line has changed since.***
 *Drafts 1 and 2 are preserved as `spec/MG4c_proposal_v1.md` and `_v2.md` (superseded). Reviews: `review/MG011_chatgpt.md`,
 `review/MG011_replication/review_r2.md`. Responses: `review/MG011_response.md`, `review/MG011_response_r2.md`. MG4c follows MG4 (CLOSED, FAIL) and does not re-score it. The name MG4b stays reserved for
 the Wolfram hypergraph snapshots.*

@@ -146,6 +146,40 @@ def corrector(g):
                 h2_naive=naive)
 
 
+def cotan(g):
+    """MG4c Part 3 diagnostic operator: cotangent (P1 finite-element, lumped-mass) Laplacian on the periodic Delaunay
+    triangulation of g's positions (spec/MG4c_proposal.md §4). Faces come from the 3x3 tiling; a face is kept once, iff
+    its centroid lies in the central tile (origin offset slightly so that lattice-symmetric centroids never sit on the
+    tile border; a torus triangulation has exactly 2N faces, checked in the tests). Returns dict(K (CSR, symmetric, rows sum to 0), A (barycentric node areas),
+    L = diag(1/A) K, faces (F, 3) node indices, face_area, edges (E, 2) sorted node pairs of the faces' edges)."""
+    pos, Lx, Ly, n = g["pos"], g["Lx"], g["Ly"], g["N"]
+    shifts = np.array([(sx, sy) for sx in (-1, 0, 1) for sy in (-1, 0, 1)], dtype=float) * (Lx, Ly)
+    Q = np.concatenate([pos + s for s in shifts])
+    tri = Delaunay(Q).simplices
+    cen = Q[tri].mean(1) - (1.234567e-4 * Lx, 2.345678e-4 * Ly)   # tile origin offset: no centroid sits on its border
+    keep = (cen[:, 0] >= 0) & (cen[:, 0] < Lx) & (cen[:, 1] >= 0) & (cen[:, 1] < Ly)
+    tri = tri[keep]
+    P = Q[tri]                                              # (F, 3, 2) true (unwrapped) geometry
+    faces = tri % n
+    rows, cols, vals = [], [], []
+    A = np.zeros(n)
+    e1, e2 = P[:, 1] - P[:, 0], P[:, 2] - P[:, 0]
+    area = 0.5 * np.abs(e1[:, 0] * e2[:, 1] - e1[:, 1] * e2[:, 0])
+    for k in range(3):                                      # angle at vertex k is opposite edge (k+1, k+2)
+        i, j = (k + 1) % 3, (k + 2) % 3
+        u, v = P[:, i] - P[:, k], P[:, j] - P[:, k]
+        cot = (u * v).sum(1) / np.abs(u[:, 0] * v[:, 1] - u[:, 1] * v[:, 0])
+        rows += [faces[:, i], faces[:, j]]
+        cols += [faces[:, j], faces[:, i]]
+        vals += [0.5 * cot, 0.5 * cot]
+        np.add.at(A, faces[:, k], area / 3)
+    W = sp.coo_matrix((np.concatenate(vals), (np.concatenate(rows), np.concatenate(cols))), shape=(n, n)).tocsr()
+    K = (W - sp.diags(np.asarray(W.sum(1)).ravel())).tocsr()
+    ed = np.concatenate([faces[:, [0, 1]], faces[:, [1, 2]], faces[:, [0, 2]]])
+    ed = np.sort(ed, 1)
+    return dict(K=K, A=A, L=(sp.diags(1.0 / A) @ K).tocsr(), faces=faces, face_area=area, edges=ed, W=W)
+
+
 def nd_order(g, leaf=64):
     """Geometric nested-dissection node order (fill-reducing order for the sparse LU in the ODE solver; MG010).
     Recursive median bisection of the positions, alternating axes; the nodes of the lower half that touch the upper

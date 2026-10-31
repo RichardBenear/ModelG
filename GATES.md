@@ -10,6 +10,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG3 | 2 | Particles nucleate spontaneously from intrinsic fluctuations at finite Ω | **FAIL** as registered (C2); C1, C3, C4, V5 PASS — see MG3 result |
 | MG3b | 2 | Follow-up to MG3: time-step check, nucleation rates with more events, calibrated uncertainty (estimation study; no pass/fail) | **ACCEPTED 2026-10-30** (estimation study, no verdict; PI sign-off): Part 1 EQUIVALENT; S = 0.064 (approximate 95% 0.047–0.082) — see MG3b result |
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale (2D frozen graphs, noise-free) | **FAIL — CLOSED 2026-10-31** (every D and R run multiplied; T control passed; ChatGPT accepted; PI signed off) |
+| MG4c | 3 | Follow-up to MG4: single-particle window in b on unweighted Delaunay graphs; cotangent-operator diagnostic (estimation study; no pass/fail) | **PRE-REGISTERED 2026-10-31** (draft 3, PI approval); no run yet |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve) | PENDING |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | PENDING |
 | MG7 | 6 | Multiway branch divergence and foliation dependence | PENDING |
@@ -901,3 +902,93 @@ PI sign-off (design): Richard Benear, 2026-10-30 14:19 UTC, project thread ("I a
 two design reviews (MG009 r1 and r2; the reviewer was comfortable with registration once draft 4's definitions were in).
 PI sign-off (result): Richard Benear, 2026-10-31 13:52 UTC, project thread ("I will sign off on MG4"), after ChatGPT's
 MG010 review and the three corrections (PR #17). ChatGPT's replication files are in `review/MG010_replication/`.
+
+### MG4c — Single-particle window on unweighted Delaunay graphs (follow-up to MG4; estimation study)
+Status: **PRE-REGISTERED 2026-10-31 (MG011c)**, with PI approval. **No MG4c run of any kind preceded this commit.** The
+registered design is `spec/MG4c_proposal.md` **draft 3**, with its content frozen as committed at `a946550`. Any change
+after this point needs a versioned amendment.
+- Reviews and responses: `review/MG011_chatgpt.md`, `review/MG011_replication/` (r1–r3), `review/MG011_response.md`
+  and `review/MG011_response_r2.md`.
+- Drafts 1 and 2 are preserved as superseded (`spec/MG4c_proposal_v1.md`, `_v2.md`).
+- MG4c does not re-score MG4. The name MG4b stays reserved for Wolfram hypergraph snapshots.
+
+Summary of the registered design (the proposal governs where this summary is shorter):
+- **Graphs and runs:** MG4's D0 and D1 panel graphs, placements p0 and p1 ("the four D runs"), with MG4's solver,
+  initial condition (b = 29 continuum soliton), detector and classes. At each tested b, one T run supplies the
+  threshold.
+- **Threshold:** a T run is an eligible reference only if it is single under the fixed θ_elig = −1.0 and its smoothed
+  minimum at t = 300 is ≤ −2.0.
+  - If eligible: θ_b = ½ × that minimum. T must also be single under θ_b.
+  - Otherwise: the fixed θ_29 = −5.117354, with the T reference marked invalid.
+  - Each D run's class under θ_29 and its smoothed minimum are reported as well.
+- **Part 1:** b ∈ {28.75, …, 27.0} in steps of 0.25, with T × 1 and D × 4 at each b. MG4's Part A runs are the b = 29
+  point.
+- **Part 2:** at most 6 bisection steps per edge, each step T × 1 + D × 4, with these rules:
+  - Case A: only the highest all-single block's edges, on the predicate "all-single". Unbracketed edges are reported as
+    such.
+  - Case B: on "at least one multiplied"; an all-single discovery is W1, with its edges "not estimated".
+- **Part 3:** a diagnostic amendment to rules v1.1. The cotangent (lumped-mass P1) Laplacian on D0 p0 at b = 29, plus a T
+  control that must reproduce MG4's T p0 field to 1e-6. Construction checks run first, and the area-weighted balances
+  apply.
+- **Outcomes (no PASS/FAIL):** W1/W2/W3, INCOMPLETE, NOT SCORED; O1/O2/O3, O-invalid. Readings are limited as written
+  in proposal §5. Programme policy: if the result is W2 with O2, stop and reconsider before MG5.
+- **Budget:**
+  - Run cap 102 (40 + 60 + 2).
+  - 20 core-h is a launch cutoff: in-flight jobs finish. About 22.5 core-h is the projected completion allowance, an
+    estimate, not an enforced maximum.
+  - Runs on the PI's PC with `MODELG_WORKERS=9`.
+- **Balance flags:** resolved only by a recheck in genuine higher precision (mpmath at 40 digits, or exact fractions)
+  of the run's own b and operator, recorded before outcomes are read.
+
+Pre-run implementation specification: appended here, dated, before the run it affects.
+
+**Pre-run implementation specification (MG012, 2026-10-31; committed before any MG4c run on a registered graph).**
+Code: `src/run_mg4c.py` (driver), `src/evaluate_mg4c.py` (evaluator), `graphs.cotan`, the `op` and `w` arguments of
+`graph_ode.make_system`/`integrate`/`balances`; tests `tests/test_mg4.py` (cotangent construction) and
+`tests/test_mg4c.py` (decision rules on constructed class tables, threshold eligibility, the precision recheck, and
+synthetic end-to-end passes of driver plus evaluator through Case A, Case B and "multiplied at every tested b").
+1. **Order.** The Part 3 construction checks (proposal §4) run first, in the main process, on D0 and on T, and are written
+   to `results/MG4c/part3_checks.json`. If any fails, the two Part 3 runs are not started and Part 3 is O-invalid. The 40
+   Part 1 runs and the 2 Part 3 runs then run as one batch. Then the balance recheck, then the grid table, then Part 2.
+2. **Run keys and b values.** `b<b to 6 decimals>_<T|D0|D1>_p<0|1>`; Part 3 keys carry the prefix `w_`. The run itself
+   uses the exact b, which its record stores. A bisection midpoint is ½(inside + outside) rounded to 9 decimals. Six
+   steps from a 0.25 bracket keep tested values at least 0.0039 apart, so 6-decimal keys are unique.
+3. **b = 29.** The four D classes are MG4's registered classes (`results/MG4/evaluation.json`, keys `D{0,1}_p{0,1}_sol`,
+   under θ_29); T is the eligible reference there (MG4 Part A). No b = 29 run is repeated, except the Part 3 runs.
+4. **Classification.** Exactly MG4's: `measure_graph.particles` and `classify` on the smoothed φ_X at the 11 checks,
+   stored as float32 as in MG4 Part A. The smoothed minimum at t = 300 used for eligibility and θ_b is taken from the
+   float64 smoothed field before storage. The final state (G, X, Y) is stored in float64 (MG4 stored float32).
+5. **Part 3.** Both Part 3 runs are classified with θ_29 (b = 29, where MG4's T reference is eligible). The T control
+   compares its final φ_X with `results/MG4/part0/steps/Tstate_122x142.npy`, MG4 Part 0's T reference run at b = 29 from
+   the same centre node and initial condition (MG4's T p0 placement). The criterion is max |Δφ_X| ≤ 1e-6, plus class
+   single; the maximum over all three fields is reported too. That reference was integrated before the
+   nested-dissection ordering was introduced, so rounding-level differences are expected. On T, h² = 0.04 = 1.5 a² (a =
+   0.1633), so L_w equals MG4's L_G.
+6. **Balance recheck.** The float64 check is unchanged (node sums, A-weighted for L_w). A flagged run is rechecked from
+   its stored float64 final state, its own b and its own operator, rebuilt from off-diagonal weights so that its rows sum
+   to zero exactly (1/h² per edge, or the cotangent weights over A), in `mpmath` at 40 digits (exact `Fraction` if
+   `mpmath` is missing). The flag is resolved iff |r| ≤ 1e-25·(1 + M) for both identities. Every recheck is written to
+   `results/MG4c/resolution.json` before any class is read. An unresolved flag stops the driver: NOT SCORED.
+7. **Budget.** `results/MG4c/budget_ledger.csv` holds one row per finished run (integration wall time, as in MG4). Before
+   each job starts, the driver stops if the ledger has reached 20 core-h, or if the finished plus in-flight runs have
+   reached 102. In-flight jobs finish and are recorded. Classification and rechecks in the main process are not in
+   the ledger (seconds per run).
+8. **Stops and failures.** A stop during Part 2 keeps every completed step in `driver_log.json` (`refined`); the
+   evaluator reports the brackets from the recorded steps. A crashed run stops the driver without a record; it is
+   rerun after investigation, and the crash is reported.
+9. **Evaluator.** It recomputes every class from the stored fields with the registered thresholds and stops if a class
+   differs from the driver's log. Statuses are applied as in proposal §5, with *tested b* meaning every b whose five
+   runs all exist, plus b = 29. Depth and λ against T (as in MG4's `analyse`: smoothed depth at the particle centre, λ
+   from the unsmoothed φ_X profile) are computed only for all-single b at which T is an eligible reference.
+10. **Platform.** Each run record and ledger row carries the machine, OS, Python and numpy versions.
+11. **Disclosure.** While writing this specification, Claude started a cloud trial of the Part 3 T control (a registered
+    run) to check the 1e-6 match ahead of the PC run. It was stopped after about 3 minutes, before it finished, because
+    running it before this specification was committed would break rule 1. It produced no output, no record and no field
+    file, and its scratch folder was deleted. No other MG4c dynamics have run on a registered graph; the tests use small
+    unregistered graphs or synthetic fields.
+
+Result:
+Replication (ChatGPT):
+PI sign-off (design): Richard Benear, 2026-10-31 16:25 UTC, decision card in the project thread ("Approve and
+register"), after ChatGPT's three reviews of drafts 1–3 (the round-3 reviewer supports registering draft 3 unchanged).
+PI sign-off (result):
