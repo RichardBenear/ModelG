@@ -305,3 +305,4 @@ Items deliberately postponed so the project reaches its main questions first. Th
 
 ## MG011 — MG4c design (draft 1)
 - `spec/MG4c_proposal.md` draft 1 (2026-10-31), PI request after MG4 closed: does unweighted Delaunay have a single-particle window in b? Plus one cotangent-Laplacian diagnostic at b = 29. To run on the PI's PC. Not registered; no run made. Next: ChatGPT review.
+- MG011a: ChatGPT reviewed draft 1 (review/MG011_chatgpt.md) and accepted the study but asked for six fixes. Draft 2 addresses all six (review/MG011_response.md); draft 1 is preserved as _v1.
