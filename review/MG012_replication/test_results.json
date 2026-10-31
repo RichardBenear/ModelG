@@ -1,0 +1,62 @@
+[
+  {
+    "test": "test_plan_case_A_interior_block",
+    "status": "passed",
+    "seconds": 2.150004729628563e-05
+  },
+  {
+    "test": "test_plan_case_A_unbracketed_lower",
+    "status": "passed",
+    "seconds": 3.739981912076473e-05
+  },
+  {
+    "test": "test_plan_unresolved_is_not_single",
+    "status": "passed",
+    "seconds": 1.9300030544400215e-05
+  },
+  {
+    "test": "test_plan_case_B_bracket_and_none",
+    "status": "passed",
+    "seconds": 3.729993477463722e-05
+  },
+  {
+    "test": "test_bisect_case_A_edge",
+    "status": "passed",
+    "seconds": 3.9800070226192474e-05
+  },
+  {
+    "test": "test_bisect_case_B_stops_on_all_single",
+    "status": "passed",
+    "seconds": 3.439979627728462e-05
+  },
+  {
+    "test": "test_threshold_eligibility",
+    "status": "passed",
+    "seconds": 1.800013706088066e-05
+  },
+  {
+    "test": "test_keys",
+    "status": "passed",
+    "seconds": 2.1700048819184303e-05
+  },
+  {
+    "test": "test_smoke_small_graph_and_hp_recheck",
+    "status": "passed",
+    "seconds": 27.19343449990265
+  },
+  {
+    "test": "test_evaluator_statuses",
+    "status": "passed",
+    "seconds": 0.019340999890118837
+  },
+  {
+    "test": "test_pipeline_synthetic_case_A",
+    "status": "skipped",
+    "reason": "upstream fork-dependent test skips Windows"
+  },
+  {
+    "test": "test_pipeline_synthetic_case_B_and_W2",
+    "status": "skipped",
+    "reason": "upstream fork-dependent test skips Windows"
+  }
+]
