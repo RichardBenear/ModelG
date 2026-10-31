@@ -165,7 +165,8 @@ def save_checks(path, checks, ticks):
 
 
 def load_checks(path):
-    d = np.load(path)
+    with np.load(path) as z:                                 # copy out and close (Windows keeps open files locked)
+        d = {k: z[k] for k in z.files}
     recs = []
     for i in range(len(d["t"])):
         a, b = d["off"][i], d["off"][i + 1]
