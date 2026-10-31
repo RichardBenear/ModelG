@@ -1,0 +1,116 @@
+{
+  "reviewed_commit": "877e9a6858aa69ff6678c96af1cc542bf8a3208a",
+  "proposal_blob": "5ca1f4b30dffe88a2d769675b57256e3f3c9aa44",
+  "run_cap": 102,
+  "threshold_scale_examples": [
+    {
+      "final_depth": 1.0,
+      "theta": -0.5,
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "class_with_self_normalized_threshold": "single",
+      "counts_with_fixed_MG4_threshold": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "max_amplitude_at_first_check": 22026.465794806718
+    },
+    {
+      "final_depth": 1e-12,
+      "theta": -5e-13,
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "class_with_self_normalized_threshold": "single",
+      "counts_with_fixed_MG4_threshold": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "max_amplitude_at_first_check": 2.2026465794806716e-08
+    },
+    {
+      "final_depth": 1e-30,
+      "theta": -5e-31,
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "class_with_self_normalized_threshold": "single",
+      "counts_with_fixed_MG4_threshold": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "max_amplitude_at_first_check": 2.202646579480672e-26
+    }
+  ],
+  "refined_four_single_now_covered": "W1",
+  "O2_counterexample": {
+    "original": "multiplied",
+    "weighted": "decayed",
+    "same_outcome": false,
+    "single_recovered": false
+  },
+  "launch_cutoff_counterexample": {
+    "completed_at_launch": 19.9,
+    "in_flight": 9,
+    "hours_per_job": 1.0,
+    "final_hours": 28.9
+  }
+}

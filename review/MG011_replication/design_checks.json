@@ -1,0 +1,73 @@
+{
+  "runs": {
+    "coarse": 40,
+    "refinement_D": 48,
+    "refinement_T": 12,
+    "weighted": 2,
+    "draft_total": 90,
+    "corrected_max": 102
+  },
+  "refined_four_of_four_case": {
+    "W1": false,
+    "W2": false,
+    "W3": false
+  },
+  "invalid_D0_bisection_bracket": {
+    "lower_b": 28.5,
+    "lower_classes": [
+      "single",
+      "single",
+      "single",
+      "single"
+    ],
+    "upper_b": 28.75,
+    "upper_classes": [
+      "single",
+      "multiplied",
+      "single",
+      "single"
+    ],
+    "D0_changes_predicate": false,
+    "panel_changes_predicate": true
+  },
+  "lowest_grid_single": {
+    "b": 27.0,
+    "lower_neighbour_in_registered_grid": false
+  },
+  "bracket_width_after_six_steps": 0.00390625,
+  "narrow_window_missed": {
+    "actual_window": [
+      28.123,
+      28.124
+    ],
+    "samples": [
+      {
+        "b": 28.125,
+        "cls": "multiplied"
+      },
+      {
+        "b": 28.0625,
+        "cls": "decayed"
+      },
+      {
+        "b": 28.09375,
+        "cls": "decayed"
+      },
+      {
+        "b": 28.109375,
+        "cls": "decayed"
+      },
+      {
+        "b": 28.1171875,
+        "cls": "decayed"
+      },
+      {
+        "b": 28.12109375,
+        "cls": "decayed"
+      }
+    ],
+    "single_observed": false
+  },
+  "triangular_weight_over_area": 25.000000000000004,
+  "MG4_triangular_rate": 24.999999999999996
+}
