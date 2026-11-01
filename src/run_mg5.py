@@ -2,13 +2,15 @@
 specification). A settled particle on an evolving periodic Delaunay graph.
 
     $env:MODELG_WORKERS=9; python src/run_mg5.py part0       (PowerShell, PI's PC): Part 0 checks (unregistered graph)
-    $env:MODELG_WORKERS=9; python src/run_mg5.py             Parts A and B (needs results/MG5/part0/decisions.json)
+    $env:MODELG_WORKERS=5; python src/run_mg5.py             Parts A and B (MG017: 5 workers) (needs results/MG5/part0/decisions.json)
 
 Resumable at run level. Committed outputs (results/MG5/): runs/<key>.json, checks/<key>.npz, budget_ledger.csv,
 local_manifest.csv, driver_log.json. PC-only outputs (results/MG5/local/, gitignored): event lists, full-field snapshots
 and final states, listed with SHA-256 in local_manifest.csv.
 """
 import os, sys, json, time, platform, csv, hashlib, subprocess
+for _v in ("OPENBLAS_NUM_THREADS", "OMP_NUM_THREADS", "MKL_NUM_THREADS"):   # MG017: one BLAS thread per worker (set
+    os.environ.setdefault(_v, "1")                                           # before numpy loads; speed only)
 import numpy as np
 from concurrent.futures import ProcessPoolExecutor, as_completed
 sys.path.insert(0, os.path.dirname(__file__))
@@ -28,7 +30,7 @@ WORKERS = int(os.environ.get("MODELG_WORKERS", "2"))
 
 THETA_28, THETA_29 = -4.457581675528346, -5.117354421620525      # MG4c T reference at b = 28 (1/2 x -8.915163); MG4
 N0 = 18901
-RUN_CAP, CUTOFF = 24, 40.0
+RUN_CAP, CUTOFF = 24, 80.0                                     # MG017: cutoff raised from 40
 CHECK_EVERY, SNAP_EVERY = 10.0, 50.0
 DRUNS = [(0, 0), (0, 1), (1, 0), (1, 1)]
 RATES = [0.0, 0.002, 0.02, 0.2]
@@ -320,8 +322,8 @@ def main():
     go.continuum2d()
     specs = run_specs()
     todo = [s for s in specs if not os.path.exists(os.path.join(OUT, "runs", s["key"] + ".json"))]
-    # the fast runs first, so the longest jobs do not finish last
-    todo.sort(key=lambda s: -s["nu"])
+    # MG017: frozen controls first (cheap; they must not be cut off), then the longest jobs (nu = 0.2), then the rest
+    todo.sort(key=lambda s: (s["nu"] != 0.0, -s["nu"]))
     stopped = None
     with ProcessPoolExecutor(WORKERS) as ex:
         live = {}

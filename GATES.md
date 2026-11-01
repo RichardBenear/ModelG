@@ -1181,3 +1181,34 @@ the run cap stays at 24. Part 0 timed at most two runs at once; with 9 workers, 
 finished runs only, and the expensive ν = 0.2 runs are launched while most of the cheap runs are finished or in flight,
 so the cutoff is not expected to stop any run; if it does, the remaining runs are INCOMPLETE as registered. Expected wall
 time with 9 workers: about 4–5 hours (one Part A ν = 0.2 run is about 3.9 h). Committed storage: at most about 11 MB.
+
+**Budget and execution amendment 1 (MG017, recorded 2026-11-01, before the relaunch of Parts A and B).**
+What happened in the first launch (PI's PC, main `594415f`, 9 workers, started 06:23 local; an earlier start at 06:17
+died after about 9 s with no run record and no ledger row):
+- The driver stopped at about 13:55 local on a console control signal (`^C` in its output, no traceback, no Windows
+  error or out-of-memory event). The cause is unknown. No one has read a field or a check from the interrupted runs.
+- Two runs had finished, both COMPLETE: `A_nu0.02_D0_p0` and `A_nu0.02_D0_p1` (11 136 s and 11 279 s wall; ledger 6.23
+  core-h). Their records are kept (branch `mg5-interrupted-1`, commit `9c678e0`) and they are not rerun.
+- Nine runs were in flight and are lost: the eight ν = 0.2 runs (each at t = 250 of 500 or 300) and `A_nu0.02_D1_p0`
+  (t = 200). They have no ledger row. About 65 core-hours of machine time went into them, off the ledger. Their
+  snapshots are listed with SHA-256 in `results/MG5/interrupted_local_manifest.csv` and are not used. The driver resumes
+  at run level only, so these runs restart from t = 0 with the same seeds and event lists; their results are
+  unaffected.
+- **Slowdown:** runs took about 3.5 times the Part 0 rate (ν = 0.02: about 3.1 h against 0.93 h; ν = 0.2: about 98 s per
+  unit against 27.8). Part 0 timed at most two runs at once. With 9 workers, RAM was nearly full (3.2 GB of 31.7 GB
+  free; commit charge 56.9 of 61.3 GB), workers kept most of their 1.7–2.1 GB out of RAM, and each used about 0.4 of a
+  core while the machine was about 70% idle. Each worker also ran its own unrestricted OpenBLAS thread pool.
+- **Error in the MG016 statement (Claude):** MG016 said the expensive ν = 0.2 runs would launch after most cheap runs.
+  The driver did the opposite: it sorted by descending ν, so the frozen controls were last in the queue. With the 40
+  core-h launch cutoff, which counts finished runs only, the frozen controls would most likely never have started, and
+  the gate could not have been scored.
+
+Changes (execution and budget only; no criterion, threshold, rule, seed or run changes):
+1. **Order:** frozen controls first (A then B), then ν = 0.2, then ν = 0.02 and 0.002.
+2. **Workers:** 5 (`MODELG_WORKERS=5`). The driver sets `OPENBLAS_NUM_THREADS`, `OMP_NUM_THREADS` and
+   `MKL_NUM_THREADS` to 1 unless already set. These affect speed only; the registered solver is the same, and the tests
+   pass unchanged.
+3. **Launch cutoff:** 80 core-h on the ledger (was 40). The run cap stays at 24. Projection for the 22 remaining runs at
+   Part 0 rates: about 31 core-h (about 37 with the 6.23 already on the ledger), about 6–7 h of wall time with 5 workers.
+   The cutoff leaves room for some remaining contention.
+4. **Disclosure** in the final report: ledger core-hours plus the 65 off-ledger core-hours of the lost runs.
