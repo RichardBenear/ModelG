@@ -377,3 +377,15 @@ Items deliberately postponed so the project reaches its main questions first. Th
   committed check files.
 - Restated budget: 33.3 core-h (design 20), under the 40 core-h launch cutoff; run cap 24. Recorded in GATES.md before
   Parts A and B. Next: PI merges, then `$env:MODELG_WORKERS=9; python src/run_mg5.py` on the PC.
+
+## MG017 — MG5 first launch interrupted; budget and execution amendment (2026-11-01)
+- First launch (PI's PC, 9 workers, 06:23 local) stopped at about 13:55 on a console control signal, cause unknown. 2 of
+  24 runs COMPLETE and kept (`A_nu0.02_D0_p0`, `_D0_p1`; 6.23 core-h on the ledger). Nine in-flight runs were lost
+  (about 65 core-h off the ledger); they restart from t = 0 with the same seeds. Nobody read their fields or checks.
+- Runs took about 3.5 times the Part 0 rate because of memory pressure with 9 workers (RAM nearly full, page file in
+  use, about 0.4 core per worker, machine about 70% idle), plus unrestricted BLAS threads.
+- Claude's MG016 statement on run order was wrong: the driver ran ν = 0.2 first and the frozen controls last, and the
+  40 core-h cutoff would have kept the controls from starting.
+- Amendment (PI approved, 20:58 UTC): frozen controls first, 5 workers, one BLAS thread per worker, cutoff 80 core-h,
+  run cap 24. No criterion, rule, seed or run changes. Tests pass (11). Records from the interrupted launch are merged
+  from branch `mg5-interrupted-1` (commit `9c678e0`).
