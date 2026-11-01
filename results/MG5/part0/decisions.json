@@ -1,0 +1,93 @@
+{
+ "design": "GATES.md MG5 Part 0; unregistered graph seed_for(5, 9, 0, 0, 0)",
+ "h": 0.20007969381625457,
+ "N": 18901,
+ "platform": {
+  "machine": "RB_LibraryPC",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.2",
+  "numpy": "2.2.4",
+  "scipy": "1.16.1"
+ },
+ "code_revision": "7ae167acef5c3ae71cbef80648b92acf12e5ce32",
+ "solver_check": [
+  {
+   "dt": 0.05,
+   "max_diff": 0.00015208535309341187,
+   "ok": true,
+   "bdf_wall_s": 104.59852147102356,
+   "ros2_wall_s": 70.23328948020935
+  }
+ ],
+ "settle": {
+  "wall_s": 422.6305465698242,
+  "status": "COMPLETE",
+  "s_per_unit_frozen": 1.4087684885660807
+ },
+ "check_events": {
+  "n": 756401,
+  "sha256": "2e0490b2979061609199c7c730ffae458fc38032c31e00ec2fbc51f91791e313"
+ },
+ "step_check": [
+  {
+   "ok": true,
+   "failures": [],
+   "max_centre_diff": 0.0005633524078118157,
+   "dt": 0.05,
+   "delta": 0.2,
+   "wall_s": [
+    2705.0242092609406,
+    2751.290036201477
+   ],
+   "counts": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  }
+ ],
+ "tick_check": [
+  {
+   "ok": true,
+   "failures": [],
+   "max_centre_diff": 0.06025064641902707,
+   "dt": 0.05,
+   "delta": 0.2,
+   "wall_s": [
+    2776.0571324825287,
+    5012.112496852875
+   ]
+  }
+ ],
+ "timing": {
+  "s_per_tick_fast": 5.5521142649650574,
+  "s_per_unit_fast": 27.760571324825285,
+  "s_per_unit_slow_est": 6.679129055817922,
+  "s_per_unit_frozen": 1.4087684885660807,
+  "projected_core_h": {
+   "A frozen (4 x 500)": 0.7826491603144894,
+   "A nu 0.002, 0.02 (8 x 500)": 7.421254506464359,
+   "A nu 0.2 (4 x 500)": 15.422539624902937,
+   "B frozen (4 x 300)": 0.46958949618869356,
+   "B nu 0.2 (4 x 300)": 9.253523774941762
+  },
+  "projected_total_core_h": 33.34955656281224
+ },
+ "storage": {
+  "check_file_bytes_100_units_fast": 103256,
+  "upper_estimate_committed_MB": 10.738624,
+  "note": "fast-rate bytes per unit times all simulated units: an upper bound (frozen and slow runs have fewer ticks)"
+ },
+ "proceed": true,
+ "dt": 0.05,
+ "delta_fast": 0.2,
+ "part0_wall_s": 8365.687401533127
+}

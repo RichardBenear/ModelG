@@ -369,3 +369,11 @@ Items deliberately postponed so the project reaches its main questions first. Th
   from main 7ae167a. Part 0 never reloads check files, so it does not use the affected code. Fix:
   `load_checks` and `recompute_mg5` now copy the arrays out and close the file. All 11 tests pass in the cloud. The fix
   does not touch any code Part 0 runs, and it is needed before the evaluator runs on Windows.
+
+## MG016 — MG5 Part 0 (2026-10-31, PI's PC)
+- Part 0 ran from main `7ae167a`, 17:52–20:11 local (2.3 h wall). All three checks pass: solver 1.5e-4 (≤ 1e-3); step
+  check centre 5.6e-4, depth 0.09%; tick check centre 0.060, depth 1.34% (≤ 0.1 and 2%). Counts were 1 at every check in
+  all four runs. No flags. Decision: proceed with dt = 0.05, Δ = 0.2 (no changes). Recomputed independently from the
+  committed check files.
+- Restated budget: 33.3 core-h (design 20), under the 40 core-h launch cutoff; run cap 24. Recorded in GATES.md before
+  Parts A and B. Next: PI merges, then `$env:MODELG_WORKERS=9; python src/run_mg5.py` on the PC.

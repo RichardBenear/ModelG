@@ -11,7 +11,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG3b | 2 | Follow-up to MG3: time-step check, nucleation rates with more events, calibrated uncertainty (estimation study; no pass/fail) | **ACCEPTED 2026-10-30** (estimation study, no verdict; PI sign-off): Part 1 EQUIVALENT; S = 0.064 (approximate 95% 0.047–0.082) — see MG3b result |
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale (2D frozen graphs, noise-free) | **FAIL — CLOSED 2026-10-31** (every D and R run multiplied; T control passed; ChatGPT accepted; PI signed off) |
 | MG4c | 3 | Follow-up to MG4: single-particle window in b on unweighted Delaunay graphs; cotangent-operator diagnostic (estimation study; no pass/fail) | **RESULT W1 + O1** (2026-10-31; 102 runs, 11.33 core-h); ChatGPT reproduced (MG012); PI signed off 2026-10-31; **CLOSED** |
-| MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve): a settled particle on a rewritten 2D Delaunay graph | **REGISTERED 2026-10-31** (draft 3 frozen at `e2a25e3`); no run yet |
+| MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve): a settled particle on a rewritten 2D Delaunay graph | **REGISTERED 2026-10-31** (draft 3 frozen at `e2a25e3`); Part 0 passed (MG016); Parts A and B not yet run |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | PENDING |
 | MG7 | 6 | Multiway branch divergence and foliation dependence | PENDING |
 
@@ -1144,3 +1144,40 @@ numpy 2.5, scipy 1.16).
 PI sign-off (design): Richard Benear, 2026-10-31 23:17 UTC, decision card in the project thread ("Approve and
 register"), after ChatGPT's two reviews (MG014 r1 and r2) and draft 3's corrections.
 
+
+**Part 0 outcome and restated budget (MG016, recorded 2026-11-01, after Part 0 and before any Part A or B run).**
+Part 0 ran on the PI's PC (RB_LibraryPC, Windows 11 10.0.26200, Python 3.13.2, numpy 2.2.4, scipy 1.16.1) from main
+`7ae167a`, 2026-10-31 17:52–20:11 local (8 366 s wall, at most two runs in parallel). Records: `results/MG5/part0/`
+(`decisions.json`, four check files) and `results/MG5_part0_log.txt`. Unregistered graph `seed_for(5, 9, 0, 0, 0)`,
+N = 18 901, h = 0.2000797; check events `seed_for(5, 9, 3, 1, 0)`, 756 401 events, SHA-256 `2e0490b2…1e313`.
+- **Check 1 (solver):** ROS2 dt = 0.05 against BDF over 50 units, max|Δφ| = 1.52e-4 (criterion ≤ 1e-3). **Pass.**
+- **Settle:** frozen to t = 300, COMPLETE.
+- **Check 2 (step, dt 0.05 vs 0.025, ν = 0.2, Δ = 0.2, 100 units):** counts 1 at all 11 checks in both runs; largest
+  centre difference 5.6e-4 (≤ 0.1), largest relative depth difference 0.09% (≤ 2%). **Pass.**
+- **Check 3 (tick, Δ 0.2 vs 0.1, dt 0.05):** counts 1 at all 11 checks in both runs; largest centre difference 0.060
+  (≤ 0.1), largest relative depth difference 1.34% (≤ 2%). **Pass**, with less margin than check 2.
+- Flags in all four check runs: interpolation audit at most 3.6e-15, jump-accounting residual at most 8.8e-14, none
+  raised.
+- **Decision (registered policy, no PI choice needed):** proceed with dt = 0.05 and Δ = 0.2 at ν = 0.2 (Δ = 1 otherwise).
+  No parameter changes.
+- Independent recompute (Claude, cloud, from the committed check files with `recompute_mg5.detect`): the same counts,
+  centre differences and depth differences as above.
+
+**Restated budget.** Measured cost: 1.41 s per time unit frozen, 27.8 s per unit at ν = 0.2 (5.55 s per tick, Δ = 0.2),
+about 6.7 s per unit at ν = 0.002 and 0.02 (estimate). Projection:
+
+| Runs | Number | core-h |
+|---|---|---|
+| Part A frozen (t = 500) | 4 | 0.78 |
+| Part A, ν = 0.002 and 0.02 | 8 | 7.42 |
+| Part A, ν = 0.2 | 4 | 15.42 |
+| Part B frozen (t = 300) | 4 | 0.47 |
+| Part B, ν = 0.2 | 4 | 9.25 |
+| **Total** | **24** | **33.3** |
+
+This is about 1.7 times the design figure (20 core-h): the full tick (event handling, hash checks, audits, rebuild and
+records) costs about twice what the design pilot timed. It stays under the registered **40 core-h launch cutoff**, and
+the run cap stays at 24. Part 0 timed at most two runs at once; with 9 workers, per-run times may rise. The cutoff counts
+finished runs only, and the expensive ν = 0.2 runs are launched while most of the cheap runs are finished or in flight,
+so the cutoff is not expected to stop any run; if it does, the remaining runs are INCOMPLETE as registered. Expected wall
+time with 9 workers: about 4–5 hours (one Part A ν = 0.2 run is about 3.9 h). Committed storage: at most about 11 MB.
