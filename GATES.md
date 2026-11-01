@@ -11,7 +11,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG3b | 2 | Follow-up to MG3: time-step check, nucleation rates with more events, calibrated uncertainty (estimation study; no pass/fail) | **ACCEPTED 2026-10-30** (estimation study, no verdict; PI sign-off): Part 1 EQUIVALENT; S = 0.064 (approximate 95% 0.047–0.082) — see MG3b result |
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale (2D frozen graphs, noise-free) | **FAIL — CLOSED 2026-10-31** (every D and R run multiplied; T control passed; ChatGPT accepted; PI signed off) |
 | MG4c | 3 | Follow-up to MG4: single-particle window in b on unweighted Delaunay graphs; cotangent-operator diagnostic (estimation study; no pass/fail) | **RESULT W1 + O1** (2026-10-31; 102 runs, 11.33 core-h); ChatGPT reproduced (MG012); PI signed off 2026-10-31; **CLOSED** |
-| MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve): a settled particle on a rewritten 2D Delaunay graph | **REGISTERED 2026-10-31** (draft 3 frozen at `e2a25e3`); Part 0 passed (MG016); Parts A and B not yet run |
+| MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve): a settled particle on a rewritten 2D Delaunay graph | **REGISTERED 2026-10-31** (draft 3 frozen at `e2a25e3`); Part 0 passed (MG016); first launch interrupted, 2 of 24 runs done; relaunch under amendment MG017 |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | PENDING |
 | MG7 | 6 | Multiway branch divergence and foliation dependence | PENDING |
 
@@ -1182,7 +1182,7 @@ finished runs only, and the expensive ν = 0.2 runs are launched while most of t
 so the cutoff is not expected to stop any run; if it does, the remaining runs are INCOMPLETE as registered. Expected wall
 time with 9 workers: about 4–5 hours (one Part A ν = 0.2 run is about 3.9 h). Committed storage: at most about 11 MB.
 
-**Budget and execution amendment 1 (MG017, recorded 2026-11-01, before the relaunch of Parts A and B).**
+**Budget and execution amendment 1 (MG017, recorded 2026-11-01, before the relaunch of Parts A and B; approved by the PI).**
 What happened in the first launch (PI's PC, main `594415f`, 9 workers, started 06:23 local; an earlier start at 06:17
 died after about 9 s with no run record and no ledger row):
 - The driver stopped at about 13:55 local on a console control signal (`^C` in its output, no traceback, no Windows
@@ -1212,3 +1212,5 @@ Changes (execution and budget only; no criterion, threshold, rule, seed or run c
    Part 0 rates: about 31 core-h (about 37 with the 6.23 already on the ledger), about 6–7 h of wall time with 5 workers.
    The cutoff leaves room for some remaining contention.
 4. **Disclosure** in the final report: ledger core-hours plus the 65 off-ledger core-hours of the lost runs.
+
+PI sign-off (MG017): Richard Benear, 2026-11-01 20:58 UTC, decision card in the project thread ("Amend and relaunch").
