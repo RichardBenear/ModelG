@@ -1,0 +1,348 @@
+{
+  "review_commit": "92d8f2b8505526f1e6e559d450352682f574d6a3",
+  "states": [
+    {
+      "key": "b28.000000_D0_p0",
+      "torus_lengths": [
+        19.922516574636518,
+        20.08183258569795
+      ],
+      "actual_area": 400.0806425376431,
+      "length_over_005": [
+        398.45033149273036,
+        401.63665171395894
+      ],
+      "grid_examples": [
+        {
+          "rule": "floor",
+          "shape": [
+            398,
+            401
+          ],
+          "area_if_each_cell_00025": 398.995,
+          "area_error": -1.085642537643082,
+          "equivalent_count_error": -51.28898382545769
+        },
+        {
+          "rule": "round",
+          "shape": [
+            398,
+            402
+          ],
+          "area_if_each_cell_00025": 399.99,
+          "area_error": -0.0906425376430775,
+          "equivalent_count_error": -4.2822231866182126
+        },
+        {
+          "rule": "ceil",
+          "shape": [
+            399,
+            402
+          ],
+          "area_if_each_cell_00025": 400.995,
+          "area_error": 0.914357462356918,
+          "equivalent_count_error": 43.19696720738504
+        }
+      ],
+      "commensurate_midpoint_grid": {
+        "shape": [
+          398,
+          402
+        ],
+        "spacing": [
+          0.05005657430813196,
+          0.049954807427109324
+        ],
+        "cell_area": 0.00250056653002352,
+        "integrated_constant": 400.0806425376431
+      },
+      "annulus_edges": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        8.0
+      ],
+      "annulus_mean_G": [
+        -0.2207690886272012,
+        -0.09868789871782739,
+        -0.00043839383576818207,
+        0.0331627208870896,
+        0.026594059258588154,
+        0.009499209187041778,
+        -0.002190918276545174,
+        0.00040214743457838223,
+        0.0011188771280335988,
+        -7.2297929561045e-05
+      ],
+      "first_G_zero_estimate": 1.2417595239352477,
+      "eligible_falloff_annuli_from_r1": [],
+      "possible_annuli_required_by_draft": 3
+    },
+    {
+      "key": "b28.000000_D0_p1",
+      "torus_lengths": [
+        19.922516574636518,
+        20.08183258569795
+      ],
+      "actual_area": 400.0806425376431,
+      "length_over_005": [
+        398.45033149273036,
+        401.63665171395894
+      ],
+      "grid_examples": [
+        {
+          "rule": "floor",
+          "shape": [
+            398,
+            401
+          ],
+          "area_if_each_cell_00025": 398.995,
+          "area_error": -1.085642537643082,
+          "equivalent_count_error": -51.28898382545769
+        },
+        {
+          "rule": "round",
+          "shape": [
+            398,
+            402
+          ],
+          "area_if_each_cell_00025": 399.99,
+          "area_error": -0.0906425376430775,
+          "equivalent_count_error": -4.2822231866182126
+        },
+        {
+          "rule": "ceil",
+          "shape": [
+            399,
+            402
+          ],
+          "area_if_each_cell_00025": 400.995,
+          "area_error": 0.914357462356918,
+          "equivalent_count_error": 43.19696720738504
+        }
+      ],
+      "commensurate_midpoint_grid": {
+        "shape": [
+          398,
+          402
+        ],
+        "spacing": [
+          0.05005657430813196,
+          0.049954807427109324
+        ],
+        "cell_area": 0.00250056653002352,
+        "integrated_constant": 400.0806425376431
+      },
+      "annulus_edges": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        8.0
+      ],
+      "annulus_mean_G": [
+        -0.23755347713828812,
+        -0.12042346897257637,
+        -0.012382352690784708,
+        0.02941541924011818,
+        0.02838976337678052,
+        0.012819169545986771,
+        -0.0015525077547512455,
+        -0.00013399437037825708,
+        0.0013026246376820088,
+        -6.046345079036586e-05
+      ],
+      "first_G_zero_estimate": 1.3358450765188112,
+      "eligible_falloff_annuli_from_r1": [],
+      "possible_annuli_required_by_draft": 3
+    },
+    {
+      "key": "b28.000000_D1_p0",
+      "torus_lengths": [
+        19.922516574636518,
+        20.08183258569795
+      ],
+      "actual_area": 400.0806425376431,
+      "length_over_005": [
+        398.45033149273036,
+        401.63665171395894
+      ],
+      "grid_examples": [
+        {
+          "rule": "floor",
+          "shape": [
+            398,
+            401
+          ],
+          "area_if_each_cell_00025": 398.995,
+          "area_error": -1.085642537643082,
+          "equivalent_count_error": -51.28898382545769
+        },
+        {
+          "rule": "round",
+          "shape": [
+            398,
+            402
+          ],
+          "area_if_each_cell_00025": 399.99,
+          "area_error": -0.0906425376430775,
+          "equivalent_count_error": -4.2822231866182126
+        },
+        {
+          "rule": "ceil",
+          "shape": [
+            399,
+            402
+          ],
+          "area_if_each_cell_00025": 400.995,
+          "area_error": 0.914357462356918,
+          "equivalent_count_error": 43.19696720738504
+        }
+      ],
+      "commensurate_midpoint_grid": {
+        "shape": [
+          398,
+          402
+        ],
+        "spacing": [
+          0.05005657430813196,
+          0.049954807427109324
+        ],
+        "cell_area": 0.00250056653002352,
+        "integrated_constant": 400.0806425376431
+      },
+      "annulus_edges": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        8.0
+      ],
+      "annulus_mean_G": [
+        -0.21533599142209084,
+        -0.10501299701493418,
+        -0.0033067575465736236,
+        0.03270362299555165,
+        0.027075201937787736,
+        0.010192799180867677,
+        -0.0020982379838984477,
+        0.00042860057930784335,
+        0.001136622427449799,
+        -8.071736466855831e-05
+      ],
+      "first_G_zero_estimate": 1.2664056306409397,
+      "eligible_falloff_annuli_from_r1": [],
+      "possible_annuli_required_by_draft": 3
+    },
+    {
+      "key": "b28.000000_D1_p1",
+      "torus_lengths": [
+        19.922516574636518,
+        20.08183258569795
+      ],
+      "actual_area": 400.0806425376431,
+      "length_over_005": [
+        398.45033149273036,
+        401.63665171395894
+      ],
+      "grid_examples": [
+        {
+          "rule": "floor",
+          "shape": [
+            398,
+            401
+          ],
+          "area_if_each_cell_00025": 398.995,
+          "area_error": -1.085642537643082,
+          "equivalent_count_error": -51.28898382545769
+        },
+        {
+          "rule": "round",
+          "shape": [
+            398,
+            402
+          ],
+          "area_if_each_cell_00025": 399.99,
+          "area_error": -0.0906425376430775,
+          "equivalent_count_error": -4.2822231866182126
+        },
+        {
+          "rule": "ceil",
+          "shape": [
+            399,
+            402
+          ],
+          "area_if_each_cell_00025": 400.995,
+          "area_error": 0.914357462356918,
+          "equivalent_count_error": 43.19696720738504
+        }
+      ],
+      "commensurate_midpoint_grid": {
+        "shape": [
+          398,
+          402
+        ],
+        "spacing": [
+          0.05005657430813196,
+          0.049954807427109324
+        ],
+        "cell_area": 0.00250056653002352,
+        "integrated_constant": 400.0806425376431
+      },
+      "annulus_edges": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        8.0
+      ],
+      "annulus_mean_G": [
+        -0.22157643829567616,
+        -0.14090649872731426,
+        -0.02440749465596748,
+        0.031121639495780104,
+        0.03293850449322899,
+        0.017010746787567543,
+        -0.0004890481064920934,
+        -0.0004473265438209022,
+        0.0015417106610959082,
+        -4.058900284650376e-05
+      ],
+      "first_G_zero_estimate": 1.3948352083046025,
+      "eligible_falloff_annuli_from_r1": [],
+      "possible_annuli_required_by_draft": 3
+    }
+  ],
+  "ephemeral_candidates": {
+    "nu": 0.2,
+    "delta": 0.2,
+    "mean_probability_survive_to_birth_tick": 0.9802640211919199,
+    "mean_probability_ephemeral": 0.01973597880808009,
+    "note": "Uniform candidate time within a tick, independent Exp(nu) lifetime. Acceptance-rate checks must exclude ephemeral candidates or include this survival factor."
+  }
+}
