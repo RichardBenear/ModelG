@@ -1,0 +1,7 @@
+Part 0 graph: N = 18901, h = 0.199810
+check 1 acceptance: ok
+check 2 equilibration: ok
+settled: COMPLETE, 770 s
+step check dt 0.05 vs 0.025: ok; tick check Delta 0.2 vs 0.1: FAIL
+step check dt 0.05 vs 0.025: ok; tick check Delta 0.1 vs 0.05: FAIL
+Part 0: STOP (step or tick check failed twice)
