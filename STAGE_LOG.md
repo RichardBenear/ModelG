@@ -451,3 +451,16 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - MG019c: PI approved draft 3 (2026-11-02 14:45 UTC, decision card "Register draft 3"). MG6 REGISTERED in GATES.md;
   draft 3 frozen at `106b3e2`. No MG6 run preceded registration. Next: implementation (tests first), a pre-run
   implementation specification in GATES.md, then Part 0 on the PI's PC.
+
+## MG020 — MG6 implementation (before any Part 0 or registered run), 2026-11-02
+- Code:
+  - `src/mg6.py`, `src/quad6_check.py`, `src/run_mg6.py`, `src/run_mg6_part0.py`, `src/evaluate_mg6.py` and
+    `src/recompute_mg6.py`;
+  - `tests/test_mg6.py`, with 10 tests, all passing in the cloud.
+- The pre-run implementation specification is appended to GATES.md MG6.
+- Disclosure: a smoke test ran on registered start state D0_p0 with an unregistered candidate seed (κ = 4, 20 units).
+  Its values are recorded in item 12 of the specification. Nothing was changed in response.
+- MG020a (PI decision 15:36 UTC, before Part 0): 8 workers instead of 5; the Part 0 timing now runs 8 concurrent runs.
+  Speed setting only (GATES MG6 specification item 13).
+- Next: PI merges; then Part 0 on the PI's PC (`$env:MODELG_WORKERS=8; python src/run_mg6.py part0`, launched with no
+  console attached).

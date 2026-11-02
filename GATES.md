@@ -1286,12 +1286,114 @@ Summary (the proposal governs):
   - bound margin;
   - transient;
   - quadrature;
-  - timing with 5 concurrent runs.
+  - timing with 5 concurrent runs (8 since MG020a).
   Each has registered formulas, fallbacks and stops. Outcomes, and any change of dt, Δ, φ_cap, grid or window, are
   written here before any registered run.
 - **Budget:** run cap 24 and a provisional 40 core-h launch cutoff, restated after Part 0. Order: DEC, SH2, SH4, CP2,
-  CP4. 5 workers with one BLAS thread, launched with no console attached. Full accounting, including off-ledger work.
+  CP4. 5 workers (8 since MG020a) with one BLAS thread, launched with no console attached. Full accounting, including off-ledger work.
 - **Deferred:** particle-mass scaling (b-scan), falloff, a curvature reading, the shuffled null, and ν = 0.02.
 
 PI sign-off (design): Richard Benear, 2026-11-02 14:45 UTC, decision card in the project thread ("Register draft 3"),
 after ChatGPT's two reviews (MG019 r1 and r2), which support implementation and Part 0.
+
+**Pre-run implementation specification (MG020, 2026-11-02; committed before any Part 0 or registered MG6 run).**
+1. **Code.**
+   - `src/mg6.py`: the candidate process, shift, coupled state, quadrature grid and per-check measurements.
+   - `src/quad6_check.py`: the separately written in-run quadrature cross-check.
+   - `src/run_mg6.py`: the driver and tick loop `run_ticks6`.
+   - `src/run_mg6_part0.py`: Part 0.
+   - `src/evaluate_mg6.py`: the evaluator.
+   - `src/recompute_mg6.py`: the independent offline recompute.
+   - `tests/test_mg6.py`: 10 tests, all passing in the cloud.
+   - Reused from MG5 unchanged: `evolve.Mesh`, `Ros2`, `apply_tick`, the interpolation audit, the jump accounting,
+     detection, sparse records and `classify_run`.
+2. **Streams and replay.**
+   - Candidates: `gen_candidates(N0 = 18 901, ν = 0.2, t_end, Lx, Ly, seed)`. The draw order is fixed: life0 (N0), the
+     count n ~ Poisson(ν·N0·F·t_end), tb (sorted uniforms on [0, t_end]), x, y, u, ell. Candidate j has id N0 + j.
+   - SHA-256 is taken over N0 (`<i8`) followed by the six arrays (`<f8`) in that order. It is regenerated in a fresh
+     subprocess before each run, and a mismatch makes the run INCOMPLETE.
+   - Seeds: run candidates `seed_for(6, 0, 0, 1, 2·slot + pl)`; shift `seed_for(6, 0, 1, 1, 2·slot + pl)`.
+   - Part 0 seeds: graph `seed_for(6, 9, 0, 0, 0)`; check 1 `(6, 9, 3, 1, 0)`; check 2 `(6, 9, 3, 1, 2)`; checks 3–4
+     `(6, 9, 3, 1, 1)`; timing `(6, 9, 3, 1, 10 + i)` for i = 0–4.
+   - Candidate lists are kept on the PC only, under the manifest.
+3. **Tick edits.**
+   - Tick k covers (t0, t1] with t1 = k·Δ and t0 = t1 − Δ.
+   - Deaths: alive nodes whose death time lies in (t0, t1].
+   - Candidates: those with tb in (t0, t1] (searchsorted, side right). Ephemeral iff tb + ℓ ≤ t1; ephemeral candidates are
+     skipped.
+   - Acceptance: strict u < p, with p = exp(κ φ_G*)/F, and φ_G* barycentric on M_(k−1) at x (+ s, wrapped). At κ = 0,
+     p = 1/F without a field lookup.
+   - Accepted candidates get death time tb + ℓ.
+   - The edits are passed to MG5's `apply_tick` as an event array: deaths first, then accepted births in candidate order.
+   - There are no edits after the final boundary.
+   - Imposed acceptances (`forced`) exist only for Part 0 check 3.
+4. **Bound.**
+   - Before thinning, at every boundary: max nodal φ_G of the boundary field ≤ 0.4/κ (κ > 0). A failure gives
+     INVALID-BOUND, and the flag records the time, the node and its position.
+   - Candidate assertion: max p ≤ 1 + 1e-15. The per-tick max φ_G is recorded.
+5. **Checks.**
+   - Checks are taken at t = 0 and every 10 units, on M_(k−1) and the boundary field, before edits.
+   - The measurements are centred on the deepest detected particle (MG5 detector, θ_28) when there is at least one.
+     They are NaN when there is none.
+   - The evaluator uses a run's window only if every window check has exactly one particle.
+6. **Quadrature details.**
+   - P_c uses the quadrature disc area Σw in place of πR² in its background term, so DEC is exactly zero (§4.3 (iii)).
+     Σw differs from πR² by ≤ 0.1% (check (ii)).
+   - Annular densities and predictions divide by the exact annulus area. Radial φ_G means divide by the quadrature area.
+   - Cross-check (2× finer grid, point mask, its own triangulation): |a − b| ≤ 0.01·max(|a|, |b|) for M₋ and M₊, and
+     the same plus 0.5 nodes for P₀(1.5) and P_c(1.5). A miss is a flag; a second miss on re-evaluation makes the run
+     FAILED-NUMERICAL.
+7. **Statuses.** FAILED-NUMERICAL > INVALID-BOUND > INCOMPLETE > COMPLETE. The flags, rechecks and stops are as in MG5
+   (balance, jump accounting, interpolation audit), plus the bound and the quadrature cross-check.
+8. **Data.**
+   - Committed: `runs/<key>.json` and `checks/<key>.npz`. The npz holds:
+     - sparse records, centres and particle counts;
+     - every §4.2 measurement per check (`m_*`) and the cross-check values (`x_*`);
+     - the per-tick table;
+     - the packed accepted bitmap.
+   - Also committed: the ledger, `local_manifest.csv`, `driver_log.json`, `evaluation.json` and `part0/`.
+   - PC-only: `results/MG6/local/` (candidate lists, and fields every 50 units in float32, float64 at t_end).
+9. **Budget and order.** The driver launches DEC, SH2, SH4, CP2, CP4 (asserted by a test). It stops launching at 24 runs,
+   or when the ledger reaches the cutoff in `part0/decisions.json` (40 core-h unless restated). It runs 8 workers (MG020a; was 5) with one
+   BLAS thread each, launched with no console attached.
+10. **Evaluation.**
+    - Y = the mean of D₀(1.5) over the window checks (both ends included).
+    - Paired contrasts by start; t = mean/(sd/2); the conditional 95% interval uses t₀.₉₇₅,₃ = 3.182.
+    - DEMONSTRATED needs both contrasts all negative and t ≤ −2.353. The absolute sign uses the same rule on CP2's Y.
+    - observed/predicted = Y_D0/Y_P0 per run.
+    - Falloff: the arm's mean coarse radial φ_G profile is interpolated linearly between annulus midpoints to find the
+      first zero crossing. Eligible annuli have inner edge ≥ 1.0 and outer edge ≤ that crossing. The exponent is
+      UNRESOLVED unless at least 3 eligible annuli have |t| ≥ 2.353; otherwise both fits use `curve_fit` with run-level
+      SEs.
+    - The evaluator stops if re-detection from the sparse records differs from the driver.
+    - `recompute_mg6.py` repeats all of this independently, as stated in proposal §8, and exits 1 on any difference.
+11. **Part 0 details.**
+    - Checks 1–2 use the static field in fixed-field mode: no ODE, with φ_G re-evaluated at node positions after each
+      edit.
+    - The settle is MG5's frozen `run_ticks` (Δ = 1, dt = 0.05, t = 300) from the soliton at the torus centre.
+    - Checks 3 and 4 share the (Δ = 0.2, dt = 0.05) run; the forced dt/2 replay follows it.
+    - Fallbacks are as in proposal §7.
+    - The timing runs 8 concurrent coupled runs (MG020a; was 5) for 20 units from the settled state; projected core-h = 20 × t_end ×
+      mean s/unit / 3600.
+    - MG5's ROS2-against-BDF solver check is not repeated: the solver is unchanged, and MG6 §7 does not list it.
+12. **Disclosure.**
+    - The tests ran dynamics only on small unregistered graphs (10 × 10 torus, 3 450 points).
+    - One smoke test ran on a **registered start state** (D0_p0, b = 28) with an **unregistered** candidate seed (123):
+      κ = 4 CP for 20 units, plus the start of a κ = 2 shifted run, which was stopped unread. These values were seen
+      (t = 0, 10, 20):
+      - one particle at every check;
+      - D₀(1, 1.5, 2) = (6.6, 3.1, 8.3), (−51.4, −41.9, 8.3), (−52.4, −60.9, −52.7);
+      - P₀(1, 1.5, 2) = (−56.6, −56.2, −19.3), (−58.9, −77.5, −51.5), (−66.8, −99.0, −85.5);
+      - max φ_G 0.0475, max p 0.80, 440 s.
+      The registered stream differs, nothing registered was changed in response, and the run is not part of any result.
+    - In the cloud, Part 0 checks 1, 2 and the quadrature checks (i)–(iii) were exercised on the unregistered Part 0
+      graph, to test the code. Their outcomes are recorded only by the PC's Part 0.
+13. **Worker count (MG020a, PI decision 2026-11-02 15:36 UTC, before Part 0).** Richard chose 8 workers instead of 5
+    (decision card "Use 8 workers for MG6 instead of 5?"). The PC has 16 logical CPUs and 32 GB; 9 workers thrashed memory
+    in MG5, so the count stops at 8. This is a speed setting only: random streams come from `seed_for` and do not depend
+    on the worker count, and each worker keeps one BLAS thread. Proposal §7 item 8 ("5 concurrent coupled runs") is
+    therefore run with 8 concurrent runs, so that the restated budget is measured at the production worker count
+    (`N_TIMING = 8` in `run_mg6_part0.py`, seeds `seed_for(6, 9, 3, 1, 10 + i)`, i = 0–7). Contention can raise per-run
+    wall time and hence ledger core-h; the restated budget after Part 0 accounts for it. Claude watches free memory during
+    the timing; if the PC runs short of memory, or the projected wall time is no better than with 5 workers, Claude
+    reports it and the PI decides whether to drop to 6 workers before any registered run.
