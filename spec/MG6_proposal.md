@@ -1,8 +1,17 @@
-# MG6 — G-coupled spatial growth (Phase 5): design proposal, DRAFT 2
+# MG6 — G-coupled spatial growth (Phase 5): design proposal, DRAFT 3
 
-*Stage MG019a. Claude, 2026-11-02. Status: **DRAFT 2, not registered.** It revises draft 1 (preserved as
-`spec/MG6_proposal_v1.md`) after ChatGPT's review MG019 (`review/MG019_chatgpt.md`; my response
-`review/MG019_response.md`). No MG6 run of any kind has been made.*
+*Stage MG019b. Claude, 2026-11-02. Status: **DRAFT 3, not registered.** Draft 2 (MG019a, preserved as
+`spec/MG6_proposal_v2.md`) revised draft 1 (`spec/MG6_proposal_v1.md`) after ChatGPT's review MG019. This draft makes the
+corrections of round 2 (`review/MG019_chatgpt_r2.md`; my response `review/MG019_response_r2.md`):
+- a full-field bound check;
+- a quadrature that tiles the torus;
+- an explicit audit scope;
+- exact Part 0 formulas;
+- falloff stated as expected to be UNRESOLVED;
+- the statistical working model;
+- the absolute-deficit sign.
+
+No MG6 run of any kind has been made.*
 
 *PI decisions (Richard Benear, 2026-11-02 14:13 UTC, project thread): adopt ChatGPT's recommendations for all eight §9
 decisions of draft 1. They are written into this draft and listed in §10.*
@@ -65,9 +74,16 @@ This pairs the arms for the contrasts in §5.
   1.70–1.73, not 2.
 - **Dominating bound.** φ_cap = 0.10 (the start states have φ_G ≤ 0.049). F = exp(4 · 0.10) = e^0.4 ≈ 1.492 for **all** arms
   (κ = 0 included), so all arms share one stream. The κ = 0 acceptance probability is 1/F ≈ 0.67.
-- **Breach policy.** If any acceptance evaluation has f(φ_G*)/F > 1, that is φ_G* > φ_cap·4/κ, the run stops with status
-  **INVALID-BOUND**. The record keeps the tick, the position and the value. The run is not rerun with a changed bound, and
-  any breach stops the campaign for the PI.
+- **Bound check over the whole field (every boundary, before thinning).** F dominates the birth intensity only if
+  f(φ_G*(y)) ≤ F at **every** point y, not just where candidates land. Barycentric interpolation is a convex combination of
+  nodal values, so the nodal maximum bounds every interpolated value. A shift (SH arms) does not change the global
+  maximum. At each tick boundary the driver therefore checks **max over nodes of φ_G ≤ φ_lim(κ) = 0.4/κ**, that is 0.10
+  for κ = 4 and 0.20 for κ = 2; κ = 0 needs no field-dependent bound. The check uses the pre-edit mesh M_(k−1) state, the
+  field the acceptances use. The per-tick maximum is recorded.
+- **Candidate-level assertion (additional).** Every acceptance evaluation must have f(φ_G*)/F ≤ 1. It is implied by the
+  field check; a failure would mean an implementation error.
+- **Breach policy.** If either check fails, the run stops with status **INVALID-BOUND**. The record keeps the tick, the
+  location and the value. The run is not rerun with a changed bound, and any breach stops the campaign for the PI.
 
 ### 3.3 Arms and the randomized null (decisions 3 and 5)
 Five arms × four starts = **20 runs**, all at b = 28, ν = 0.2, Δ = 0.2, dt = 0.05, t_end = 200:
@@ -106,7 +122,8 @@ Around the detected particle centre c(t) (MG5 detector, θ_28), using periodic m
   - **D_c(R) = N(<R) − ρ̄(t)πR²** (redistribution relative to the current mean, ρ̄(t) = N(t)/A).
 - **Annular counts and densities:** annuli with edges {0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 4.0, 5.0, 6.0, 8.0}. Densities
   n_j = count_j / area_j, with δn_j relative to both ρ₀ and ρ̄(t).
-- **Radial φ_G:** the annulus means of φ_G on the quadrature grid (§4.3).
+- **Radial φ_G:** the annulus means of φ_G on the quadrature grid (§4.3), plus fine annuli of width 0.25 from 0 to 3
+  for the descriptive profile (§4.4).
 - **G-well integrals** (decision 4), over the whole torus by quadrature:
   - **M₋ = ∫ max(−φ_G, 0) dA** (well);
   - **M₊ = ∫ max(φ_G, 0) dA** (halo);
@@ -117,9 +134,25 @@ Around the detected particle centre c(t) (MG5 detector, θ_28), using periodic m
 - The MG5 records: sparse φ_X, centres, classes, depth, node count, and the per-tick accounting.
 
 ### 4.3 Quadrature and the prediction
-**Coordinate-area quadrature:** a fixed regular grid of spacing 0.05 on the torus (cell area dA = 0.0025). φ_G is
-barycentrically interpolated on the current mesh at each grid point. Node-equal-area weights (A/N per node) are **not** used:
-the nodes are deliberately sampled non-uniformly, and that would bias the integral.
+**Coordinate-area quadrature (tiles the actual torus).** For each start's torus (Lx, Ly), a fixed grid of
+**nx × ny = 398 × 402** cells with dx = Lx/nx, dy = Ly/ny (about 0.05006 × 0.04995) and dA = A/(nx·ny). The sample points
+are the cell midpoints ((i + ½)dx, (j + ½)dy) from the torus origin. A constant field therefore integrates exactly to
+A. At each check, φ_G is barycentrically interpolated on the current mesh at every midpoint. Node-equal-area weights (A/N
+per node) are **not** used: the nodes are deliberately sampled non-uniformly, and that would bias the integral.
+
+**Discs and annuli.** A cell lies wholly inside or wholly outside a disc of radius R about c when its farthest or
+nearest corner (minimum image) says so. Such a cell enters with weight 1 or 0. A cell the boundary cuts gets the
+fraction of an 8 × 8 sub-lattice of its points that lie inside, times dA; the field value is still the cell-midpoint
+value. Annuli are differences of discs.
+
+**Required quadrature checks** (unit tests, and Part 0 on the real grid):
+- (i) the constant field integrates to A within 1e-12 (relative);
+- (ii) ∫_disc 1 dA is within 0.1% of πR² for R ≥ 1, and within 0.5% for R = 0.5, at random centres;
+- (iii) the DEC prediction P₀ and P_c is exactly 0 (f ≡ 1);
+- (iv) refinement: P₀(1.5) and M₋ on the Part 0 coupled field change by ≤ 1% when nx and ny are doubled (and the
+  sub-lattice to 16 × 16).
+
+A failure of (i)–(iii) is an implementation error. A failure of (iv) doubles nx and ny for all runs, decided in Part 0.
 
 **Quasistatic prediction** of the coupled density, given the measured φ_G at the check:
 - P₀(R) = ∫_disc ρ₀ (f(φ_G^(eval)(x)) − 1) dA;
@@ -131,7 +164,19 @@ Here φ_G^(eval) is φ_G at x for CP arms, at x + s for SH arms, and f ≡ 1 for
 history, so the prediction is **quasistatic and approximate**. It is also built from the particle's own reshaped field, so
 agreement with it does **not** rule out feedback. The ratio observed/predicted is reported descriptively, not scored.
 
-### 4.4 Falloff (descriptive; review item 5)
+### 4.4 Falloff (descriptive; review items 5 and r2-5)
+**Expected outcome, stated before any run: UNRESOLVED.** On the four stored start states, the radial φ_G profile first
+crosses zero at about r = 1.24, 1.34, 1.27 and 1.39 (ChatGPT r2, `review/MG019_replication/draft2_checks.json`). The
+rule below starts at r = 1.0 with 0.5-wide annuli, so no complete annulus lies inside the well. Unless the coupled
+profiles differ greatly from the start states, the falloff exponent will be reported UNRESOLVED. This draft accepts this
+deliberately (for the PI to confirm at registration). The well of a single b = 28 particle is too small for a falloff fit at this resolution, and finer bins
+inside the core (r < 1.4) would measure the core shape, not a falloff. A falloff measurement is deferred with the
+particle-mass scaling (§9). The rule is kept, unchanged, so that an unexpected coupled profile is still handled by a
+rule fixed in advance. Bins are not changed after the data are seen.
+
+Descriptive output (not fitted): the fine annular profile (width 0.25, 0–3) of the paired contrast CP − SH, beside the
+radial φ_G profile and the quasistatic prediction. The halo (outside the zero crossing) is reported per annulus.
+
 ΔN(R) is cumulative, and can show a plateau, a zero crossing or cancellation. A fitted power of a cumulative count is not
 a density exponent (in 2D, dΔN/dR = 2πR·δn). The falloff analysis therefore uses **annular densities**:
 - **Quantity:** for each annulus, the run-level paired contrast δn_j(CP2) − δn_j(SH2), with the ρ₀ baseline. κ = 4 is done
@@ -155,15 +200,23 @@ run-level values per arm. Snapshots within a run are not treated as independent 
 - c_i^SH = Y_i(CP2) − Y_i(SH2);
 - c_i^DEC = Y_i(CP2) − Y_i(DEC).
 
-**Statistical assumption (registered):** the four run-level paired contrasts are independent and approximately normal. With
-n = 4, a one-sided paired t-test at α = 0.05 needs t ≤ −2.353 (df = 3).
+**Statistical working model (registered, explicitly conditional):** the four run-level paired contrasts are treated as
+independent, approximately normal, and **exchangeable with a common variance** across the four starts. The starts use
+different graphs and placements, so this is an approximation for this fixed panel, not a demonstrated property; four
+observations cannot establish it. Under this model, with n = 4, a one-sided paired t-test at α = 0.05 needs t ≤ −2.353
+(df = 3). Reported intervals and p-values are conditional on this model.
 
 **Gate MG6 (primary: density response at κ = 2):**
 - **NOT SCORED (feedback):** some run of CP2, SH2 or DEC is not single at every window check, so no centre is defined. The
   feedback outcome is then the result.
-- **DEMONSTRATED:** both contrasts (vs SH2 and vs DEC) have all four c_i < 0 and the paired t ≤ −2.353.
+- **DEMONSTRATED:** both contrasts (vs SH2 and vs DEC) have all four c_i < 0 and the paired t ≤ −2.353. This is a
+  **relative** response: lower particle-centred counts than both controls. Requiring both contrasts is a joint criterion.
 - **NOT DEMONSTRATED (inconclusive):** otherwise. This does not establish that there is no deficit. No equivalence
   criterion is registered.
+
+**Absolute sign (reported separately, not scored):** CP2's own run-level D₀(1.5), with its four values, mean and conditional
+interval. The result is called an **absolute deficit below ρ₀** only if all four are negative and the one-sided t ≤
+−2.353 under the same working model. Otherwise it is described only as a relative response.
 
 **Also reported, not scored:**
 - the same contrasts at κ = 4 (CP4 vs SH4, vs DEC) and with the D_c baseline;
@@ -210,32 +263,54 @@ runs of CP2, SH2 and DEC are COMPLETE. Otherwise it is INCOMPLETE, and the PI de
 On a Delaunay graph from `seed_for(6, 9, 0, 0, 0)` with its own calibrated h, b = 28, settled frozen to t = 300 (as MG5 Part 0).
 Each check has a quantitative criterion and a fallback rule.
 
-1. **Acceptance-rate and determinism check.** Static synthetic field φ_G = −0.25·exp(−r²/2) (no ODE), κ = 4, 20 time units.
-   - The accepted fraction must be within 4 binomial SD of the expected mean f/F over the candidates.
+1. **Acceptance-rate and determinism check.** Static synthetic field, centred at the torus centre: nodal values
+   φ_G(node) = −0.25·exp(−r²/2) (no ODE), κ = 4, ν = 0.2, Δ = 0.2, 20 time units.
+   - The denominator is the set J of candidates **evaluated**: ephemeral candidates are skipped (§3.1) and excluded.
+     About 2% of candidates are ephemeral at ν = 0.2, Δ = 0.2.
+   - Each evaluated candidate j has a recorded acceptance probability p_j = f(φ_G*(x_j))/F, from the interpolated value
+     actually used.
+   - Criterion: |A − Σ_J p_j| ≤ 4·√(Σ_J p_j(1 − p_j)), with A the number accepted.
    - Two runs with the same seed must give identical accepted bitmaps.
    - Failure means an implementation error: stop for the PI.
-2. **Density equilibration.** Same static field, κ = 4, 50 time units, graph process only. Over t ∈ [25, 50], for each of the
-   annuli inside r = 3, the time-averaged annular density must agree with ρ₀ f (exact for a static field) within 4
-   Poisson-plus-autocorrelation SDs. The SD uses the measured lag-1 autocorrelation of the annular count. Failure: stop
-   for the PI.
+2. **Density equilibration.** Same static field, κ = 4, 50 time units, graph process only, starting from the settled
+   uniform Part 0 graph (density ρ₀). For each annulus j with edges {0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0} around the field
+   centre:
+   - **Samples:** the counts N_j(t) at boundaries t = 25, 26, …, 50 (K = 26).
+   - **Finite-time expectation** (immigration–death, Poisson start):
+     m_j(t) = ∫_annulus ρ₀ [f(x) + (1 − f(x)) e^(−νt)] dA, using the §4.3 quadrature of the analytic field.
+   - **Covariance:** Cov(N_j(s), N_j(t)) = m_j(min(s, t))·e^(−ν|t − s|) (each node present at the earlier time survives with
+     probability e^(−ν|t−s|)).
+   - **Variance of the time average:** Var(N̄_j) = K⁻² Σ_s Σ_t m_j(min(s, t)) e^(−ν|t−s|).
+   - **Criterion:** |N̄_j − K⁻¹Σ_t m_j(t)| ≤ 4·√Var(N̄_j) for every j.
+   - Failure: stop for the PI.
 3. **Step check (fixed edit history).** Coupled κ = 4, ν = 0.2, Δ = 0.2, 100 units: run at dt = 0.05 and record its accepted
    edits. Replay at dt = 0.025 with **the same accepted edits imposed** (no re-evaluation of acceptance), which isolates the
    ODE step error.
    - Criterion as MG5: equal counts at every check, centre ≤ 0.1, depth ≤ 2%.
    - Failure: dt halved for all runs and the check repeated once; a second failure stops for the PI.
-4. **Tick check (fully coupled).** κ = 4, Δ = 0.2 against Δ = 0.1, both fully coupled. Acceptances may differ, so the
-   comparison has two parts:
+4. **Tick check (fully coupled).** κ = 4, Δ = 0.2 against Δ = 0.1, both fully coupled, from the settled state, 100 units.
+   Acceptances may differ, so the comparison has two parts:
    - (a) equal counts at every check, centre ≤ 0.15, depth ≤ 3%;
-   - (b) window-mean D₀(1.5) (t = 50–100) differing by at most 0.25·|P₀(1.5)|.
-   - Failure: Δ = 0.1 for all MG6 runs (about twice the cost) and the check repeated as 0.1 against 0.05; a second
-     failure stops for the PI.
-5. **Bound check.** In all Part 0 coupled runs, max φ_G* at candidate positions must stay ≤ 0.07 (70% of φ_cap). If it
-   does not, the run stops for the PI, who can raise φ_cap before registration and restate F.
-6. **Transient and dependence.** From the tick-check run at Δ = 0.2: the D₀(1.5) series over t = 0–100 and its lag-1
-   autocorrelation at 10-unit spacing are reported. If the 20-unit block means over t = 60–100 still drift by more than
-   0.25·|P₀(1.5)|, the window start moves to t = 150 and t_end to 250 (cost × 1.25). That is the only window change
-   allowed, decided before any registered run.
-7. **Timing.** 5 concurrent coupled runs for 20 units each; the budget is restated in GATES.md before the runs.
+   - (b) |D̄₀^(0.2) − D̄₀^(0.1)| ≤ 0.25·|P̄₀|.
+   **Definitions:**
+   - D̄₀ is the mean of D₀(1.5) over the six checks t = 50, 60, …, 100 of each run.
+   - P̄₀ is the mean of P₀(1.5) over the same checks of the **Δ = 0.1 run** (the finer reference), with the absolute value
+     taken **after** averaging.
+   - **Zero-reference policy:** if |P̄₀| < 10 nodes (the static prediction at κ = 4 is about 64), the check cannot be
+     scored, and Part 0 stops for the PI.
+   **Failure:** Δ = 0.1 for all MG6 runs (about twice the cost), and the check is repeated as 0.1 against 0.05, with
+   P̄₀ from the Δ = 0.05 run. A second failure stops for the PI.
+5. **Bound margin.** In every Part 0 coupled run, the per-boundary **maximum nodal φ_G** (§3.2, the full field) must stay
+   ≤ 0.7·φ_lim(κ), that is 0.07 at κ = 4. If it does not, Part 0 stops for the PI, who can raise φ_cap (and F) before
+   registration.
+6. **Transient and dependence.** From the run with the **accepted configuration** (the Δ = 0.2 tick-check run if check 4
+   passes at Δ = 0.2; otherwise the finer run of the passing pair):
+   - the D₀(1.5) series over t = 0–100, and its lag-1 autocorrelation at 10-unit spacing, are reported;
+   - block B₁ = the checks at t = 60 and 70, block B₂ = the checks at t = 90 and 100;
+   - if |mean(B₂) − mean(B₁)| > 0.25·|P̄₀| (P̄₀ as in check 4), the window start moves to t = 150 and t_end to 250 (cost
+     × 1.25). That is the only window change allowed, and it is decided before any registered run.
+7. **Quadrature checks** (§4.3 (i)–(iv)) on the Part 0 grid and coupled field.
+8. **Timing.** 5 concurrent coupled runs for 20 units each; the budget is restated in GATES.md before the runs.
 
 All Part 0 outcomes, and any change of dt, Δ, φ_cap or window, are written to `results/MG6/part0/decisions.json` and to
 GATES.md before any registered run.
@@ -260,10 +335,23 @@ ledger, driver log, local manifest, `evaluation.json` and `part0/`.
 
 **PC-only,** with SHA-256 manifest: candidate lists, full-field snapshots and final states.
 
-**Recomputation:** an independent script (separate detection, counting, quadrature, contrasts and outcome rules, as
-`recompute_mg5.py` now does) recomputes everything in §5 from the committed records. It exits nonzero on any difference.
+**Audit scope (stated explicitly; review r2 item 3).**
+- **Offline, from committed records only:** an independent script (`recompute_mg6.py`, written separately, exits
+  nonzero on any difference) rebuilds node histories from the regenerated candidate list and initial lifetimes plus the
+  accepted bitmap. From those it recomputes positions, N(t), ρ̄(t), the counts N(<R) and the annular counts. It then
+  recomputes detection from the sparse records, the classes, the two baselines D₀ and D_c, the run-level means, the
+  contrasts, the t statistics and every outcome in §5. **This covers the primary gate completely.**
+- **Quadrature (M₋, M₊, M, P₀, P_c, radial φ_G profiles):** cross-checked **during the run**. A second, separately
+  written implementation (point location by a different method, and a grid of 796 × 804 midpoints with the point-mask
+  rule) recomputes P₀(1.5), P_c(1.5), M₋ and M₊ at every check. The differences are committed with the check records.
+  The tolerance is 1% (the refinement tolerance). A larger difference is a flag, and the run stops as FAILED-NUMERICAL
+  if it persists through a re-evaluation. The committed quadrature values cannot be rebuilt offline from compact
+  records: an independent rebuild needs the PC-only fields (SHA-256 manifest) or an ODE replay. These quantities are
+  descriptive, not scored.
 
 ## 9. Not in MG6 (deferred, recorded)
+- **Falloff measurement:** expected UNRESOLVED in this campaign (§4.4); a resolved falloff needs a larger well, for
+  example in the deferred b-scan.
 - **Particle-mass scaling (roadmap Phase 5 objective; decision 4).** A b-scan (for example b = 27.5, 28, 28.5) with the
   M₋ definition is **deferred to a separately registered study**. Varying κ tests coupling strength, not scaling with the
   particle. This defers a roadmap objective, and the record says so.

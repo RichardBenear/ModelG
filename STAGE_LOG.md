@@ -434,3 +434,17 @@ Items deliberately postponed so the project reaches its main questions first. Th
   - 20 runs, cap 24, provisional 40 core-h cutoff.
 - Draft 1 is preserved as `spec/MG6_proposal_v1.md`. Not registered. No MG6 run. Next: ChatGPT reviews draft 2; then PI
   registration.
+
+## MG019b — MG6 design draft 3 after ChatGPT review MG019 round 2 (2026-11-02)
+- ChatGPT r2 (`review/MG019_chatgpt_r2.md`) keeps all eight PI decisions and asks for targeted corrections. All accepted
+  in draft 3 (`spec/MG6_proposal.md`; response `review/MG019_response_r2.md`):
+  - a full-field nodal-maximum bound check at every boundary;
+  - a 398 × 402 quadrature that tiles the actual torus, with exact or sub-lattice disc weights and four quadrature checks;
+  - the audit scope (offline recompute covers the primary gate; quadrature cross-checked in-run);
+  - exact Part 0 formulas (tolerance reference, blocks, ephemeral exclusion, Σp(1 − p) variance, immigration–death
+    covariance);
+  - falloff stated as expected to be UNRESOLVED (start-state wells cross zero at 1.24–1.39);
+  - the conditional working model;
+  - the absolute-deficit sign reported separately.
+- Draft 2 is preserved as `spec/MG6_proposal_v2.md`. Not registered; no MG6 run. Next: the PI decides registration
+  (ChatGPT r2 supports proceeding to implementation and Part 0 after these corrections).
