@@ -1,0 +1,86 @@
+[
+  {
+    "case": "missing_manifest_entry",
+    "proceed_written": true,
+    "projection": 1.1111111111111112,
+    "manifest_status": null,
+    "timing_status": "COMPLETE",
+    "timing_maximum": 0.05,
+    "settle_status": "COMPLETE",
+    "selected_grid": [
+      398,
+      402
+    ],
+    "timing_arguments_include_grid": false
+  },
+  {
+    "case": "failed_timing_run",
+    "proceed_written": true,
+    "projection": 1.1111111111111112,
+    "manifest_status": true,
+    "timing_status": "FAILED-NUMERICAL",
+    "timing_maximum": 0.05,
+    "settle_status": "COMPLETE",
+    "selected_grid": [
+      398,
+      402
+    ],
+    "timing_arguments_include_grid": false
+  },
+  {
+    "case": "timing_margin_exceeded",
+    "proceed_written": true,
+    "projection": 1.1111111111111112,
+    "manifest_status": true,
+    "timing_status": "COMPLETE",
+    "timing_maximum": 0.09,
+    "settle_status": "COMPLETE",
+    "selected_grid": [
+      398,
+      402
+    ],
+    "timing_arguments_include_grid": false
+  },
+  {
+    "case": "failed_settle",
+    "proceed_written": true,
+    "projection": 1.1111111111111112,
+    "manifest_status": true,
+    "timing_status": "COMPLETE",
+    "timing_maximum": 0.05,
+    "settle_status": "FAILED-NUMERICAL",
+    "selected_grid": [
+      398,
+      402
+    ],
+    "timing_arguments_include_grid": false
+  },
+  {
+    "case": "projection_over_80",
+    "proceed_written": true,
+    "projection": 111.11111111111111,
+    "manifest_status": true,
+    "timing_status": "COMPLETE",
+    "timing_maximum": 0.05,
+    "settle_status": "COMPLETE",
+    "selected_grid": [
+      398,
+      402
+    ],
+    "timing_arguments_include_grid": false
+  },
+  {
+    "case": "refined_grid_not_timed",
+    "proceed_written": true,
+    "projection": 1.1111111111111112,
+    "manifest_status": true,
+    "timing_status": "COMPLETE",
+    "timing_maximum": 0.05,
+    "settle_status": "COMPLETE",
+    "selected_grid": [
+      796,
+      804
+    ],
+    "timing_arguments_include_grid": false
+  }
+]
