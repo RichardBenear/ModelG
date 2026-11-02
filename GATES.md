@@ -11,7 +11,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG3b | 2 | Follow-up to MG3: time-step check, nucleation rates with more events, calibrated uncertainty (estimation study; no pass/fail) | **ACCEPTED 2026-10-30** (estimation study, no verdict; PI sign-off): Part 1 EQUIVALENT; S = 0.064 (approximate 95% 0.047–0.082) — see MG3b result |
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale (2D frozen graphs, noise-free) | **FAIL — CLOSED 2026-10-31** (every D and R run multiplied; T control passed; ChatGPT accepted; PI signed off) |
 | MG4c | 3 | Follow-up to MG4: single-particle window in b on unweighted Delaunay graphs; cotangent-operator diagnostic (estimation study; no pass/fail) | **RESULT W1 + O1** (2026-10-31; 102 runs, 11.33 core-h); ChatGPT reproduced (MG012); PI signed off 2026-10-31; **CLOSED** |
-| MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve): a settled particle on a rewritten 2D Delaunay graph | **REGISTERED 2026-10-31** (draft 3 frozen at `e2a25e3`); Part 0 passed (MG016); first launch interrupted, 2 of 24 runs done; relaunch under amendment MG017 |
+| MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve): a settled particle on a rewritten 2D Delaunay graph | **CLOSED 2026-11-02: PASS** (Part B: A1); ChatGPT MG018 accepted, PI signed off |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | PENDING |
 | MG7 | 6 | Multiway branch divergence and foliation dependence | PENDING |
 
@@ -1216,7 +1216,7 @@ Changes (execution and budget only; no criterion, threshold, rule, seed or run c
 PI sign-off (MG017): Richard Benear, 2026-11-01 20:58 UTC, decision card in the project thread ("Amend and relaunch").
 
 
-**Result (MG018, recorded 2026-11-02; DRAFT pending PI and ChatGPT review).** Relaunch on the PI's PC (RB_LibraryPC,
+**Result (MG018, recorded 2026-11-02; reviewed by ChatGPT (MG018) and signed off by the PI).** Relaunch on the PI's PC (RB_LibraryPC,
 Windows 11, Python 3.13.2, numpy 2.2.4, 5 workers), amendment MG017 order. All 24 runs COMPLETE, no flag raised in the
 status sense (evaluator ran without a mismatch). Ledger 39.96 core-h (cutoff 80, run cap 24; the cutoff did not bind),
 plus about 65 off-ledger core-h from the lost first launch (MG017 item 4). Records: `results/MG5/runs/`, `checks/`,
@@ -1234,3 +1234,23 @@ plus about 65 off-ledger core-h from the lost first launch (MG017 item 4). Recor
 - **Not shown (per §8):** survival under token noise, other rules or geometry-changing rules; that the motion is
   Brownian; a general survival probability (4 runs per rate, 2-graph panel).
 - **Core-h by group:** Part A frozen 2.54; ν = 0.002 3.64; ν = 0.02 8.19; ν = 0.2 15.08; Part B frozen 1.45; ν = 0.2 9.07.
+- **Total compute:** 39.96 core-h on the ledger plus about 65 core-h from the lost first launch, about 105 core-h, before
+  Part 0 (2.3 h wall) and setup and replay work outside the run timer.
+
+**Review MG018 (ChatGPT, 2026-11-02, `review/MG018_chatgpt.md`; response `review/MG018_response.md`).** ChatGPT
+independently reproduced, from the committed records, every class, track (≤ 1.8e-15), D_p, the gate (PASS) and Part B (A1).
+It also reproduced the Part 0 comparisons, the jump accounting over 19 984 edited ticks, and all 16 event lists (25 856 362
+events, hashes match). Recommendation: accept PASS and A1 within the registered scope. No blocking error. Three
+nonblocking items, all accepted:
+1. `recompute_mg5.py` now also checks tracks, D_p and every aggregate outcome, and exits 1 on any difference. Rerun on
+   the MG5 records: everything agrees.
+2. **Mobility labels are registered descriptive labels.** One ν = 0.02 run is mobile at 1.523 (0.023 above 1.5), and one
+   ν = 0.2 run is at 1.598. Part 0's refinement differences do not bound every production displacement. The labels stand,
+   with no change to the threshold. They do not establish a sharp transition or a monotonic mobility law.
+3. **Survival is not invariance of shape.** In the fast Part A runs, depth relative to the matched frozen control ranges
+   from about 0.78 to 1.26 across checks. Descriptive only.
+Residual limits (review): no independent re-integration of the evolving-graph ODE, no reconstruction of smoothing from
+full fields, and no check of the PC-only field files against the manifest.
+
+**MG5 CLOSED 2026-11-02: Gate PASS; Part B A1.** PI sign-off: Richard Benear, 2026-11-02 13:39 UTC, in the project
+thread ("I sign off on MG5"), after ChatGPT's review MG018 and the response.

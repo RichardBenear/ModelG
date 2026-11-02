@@ -399,3 +399,16 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - Correction (Claude): I first said the run finished 0.04 core-h under the 40 core-h cutoff. The cutoff was raised to 80
   by MG017, so there was no margin issue.
 - Open: PI sign-off; ChatGPT review of the result; MG6 design (directed response to a G gradient) is not started.
+
+## MG018a — ChatGPT review of the MG5 results (2026-11-02)
+- ChatGPT (MG018, `review/MG018_chatgpt.md`, replication in `review/MG018_replication/`) independently reproduced every
+  class, track, D_p, the gate (PASS) and Part B (A1). It also reproduced the Part 0 comparisons, the jump accounting and all
+  16 event lists. It recommends acceptance, with no blocking error.
+- All three nonblocking items are accepted (`review/MG018_response.md`):
+  - `recompute_mg5.py` now also checks tracks, D_p and the aggregate outcomes, and exits 1 on a difference. Everything
+    agrees.
+  - Mobility labels are descriptive.
+  - Survival is not invariance of shape.
+- Total compute, made explicit: 39.96 ledger + about 65 lost-launch core-h.
+- Next: PI sign-off to close MG5; MG6 draft 1 (`spec/MG6_proposal.md`) awaits PI decisions (§9) and ChatGPT review.
+- MG5 CLOSED 2026-11-02 13:39 UTC: Gate PASS, Part B A1 (PI sign-off in the project thread).
