@@ -464,3 +464,17 @@ Items deliberately postponed so the project reaches its main questions first. Th
   Speed setting only (GATES MG6 specification item 13).
 - Next: PI merges; then Part 0 on the PI's PC (`$env:MODELG_WORKERS=8; python src/run_mg6.py part0`, launched with no
   console attached).
+
+## MG020b/MG021 — MG6 Part 0 STOP and amendment 1, 2026-11-02
+- Part 0 ran on the PI's PC (08:43–11:58 local, 8 workers, code `410696d`). Checks 1–3 passed. The tick check failed
+  part (a) at Δ 0.2 vs 0.1 and again at Δ 0.1 vs 0.05; part (b) passed both times. Registered outcome: STOP. Records
+  committed (`5d351dc`). The overwritten `check_d0.1_dt0.05.npz` is identical to the run it replaced (same seed and
+  configuration; D̄₀ equal to every digit).
+- Diagnosis (unregistered): the centroid centre has estimator noise of about 0.1 (quadratic-fit comparison). At Δ 0.1
+  the part (a) failure falls within it (0.36 → 0.11); at Δ 0.2 a real separation remains (0.26–0.38).
+- PI decision (21:18 UTC, card): amend to Δ 0.1 with part (b) governing. Amendment MG021 drafted
+  (`spec/MG6_amendment_1.md`), with `part0-mg021` code to complete checks 5–8 and the 8-worker timing at Δ 0.1;
+  provisional cutoff 80 core-h. Test added (11 tests).
+- Disclosure: checks 5 and 6 were computed in the cloud from committed files while testing (bound ok, no drift).
+- Next: merge; ChatGPT reviews MG021; then `$env:MODELG_WORKERS=8; python src/run_mg6.py part0-mg021` on the PI's PC.
+

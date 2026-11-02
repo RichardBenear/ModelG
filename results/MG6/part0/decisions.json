@@ -1,0 +1,215 @@
+{
+ "design": "GATES.md MG6 Part 0; unregistered graph seed_for(6, 9, 0, 0, 0)",
+ "platform": {
+  "machine": "RB_LibraryPC",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.2",
+  "numpy": "2.2.4",
+  "scipy": "1.16.1"
+ },
+ "code_revision": "410696d27ef5de0b663dcbdcab7974de5f4d19fd",
+ "workers": 8,
+ "h": 0.1998100190523967,
+ "N": 18901,
+ "Lx": 19.922516574636518,
+ "Ly": 20.08183258569795,
+ "acceptance": {
+  "ok": true,
+  "runs": [
+   {
+    "status": "COMPLETE",
+    "n_candidates": 112797,
+    "n_evaluated": 109484,
+    "n_ephemeral_frac": 0.029371348528772878,
+    "accepted": 72415,
+    "expected": 72484.82095040423,
+    "sd": 155.87306651977582,
+    "z": -0.44793466865793186,
+    "bits_sha": "f854c63b62664355f9bcb9f275ccdda41c449f9696cd78e368f8644f7f28131a"
+   },
+   {
+    "status": "COMPLETE",
+    "n_candidates": 112797,
+    "n_evaluated": 109484,
+    "n_ephemeral_frac": 0.029371348528772878,
+    "accepted": 72415,
+    "expected": 72484.82095040423,
+    "sd": 155.87306651977582,
+    "z": -0.44793466865793186,
+    "bits_sha": "f854c63b62664355f9bcb9f275ccdda41c449f9696cd78e368f8644f7f28131a"
+   }
+  ]
+ },
+ "equilibration": {
+  "ok": true,
+  "samples": 26,
+  "annuli": [
+   {
+    "annulus": [
+     0.0,
+     0.5
+    ],
+    "observed": 13.076923076923077,
+    "expected": 14.550263061307863,
+    "sd": 2.1331179591427665,
+    "z": -0.6906978482225501
+   },
+   {
+    "annulus": [
+     0.5,
+     1.0
+    ],
+    "observed": 61.26923076923077,
+    "expected": 53.595418305911224,
+    "sd": 4.093681464622589,
+    "z": 1.874550457732553
+   },
+   {
+    "annulus": [
+     1.0,
+     1.5
+    ],
+    "observed": 124.73076923076923,
+    "expected": 118.6607891488251,
+    "sd": 6.090770250024119,
+    "z": 0.9965866110152631
+   },
+   {
+    "annulus": [
+     1.5,
+     2.0
+    ],
+    "observed": 214.1153846153846,
+    "expected": 209.5241835042135,
+    "sd": 8.093115570960427,
+    "z": 0.5672971145556316
+   },
+   {
+    "annulus": [
+     2.0,
+     2.5
+    ],
+    "observed": 320.03846153846155,
+    "expected": 307.9903679751697,
+    "sd": 9.812003268498515,
+    "z": 1.227893349971897
+   },
+   {
+    "annulus": [
+     2.5,
+     3.0
+    ],
+    "observed": 410.46153846153845,
+    "expected": 398.50532864318365,
+    "sd": 11.160984033868617,
+    "z": 1.0712505082054624
+   }
+  ],
+  "status": "COMPLETE"
+ },
+ "settle": {
+  "status": "COMPLETE",
+  "wall_s": 769.9506568908691
+ },
+ "step_check": [
+  {
+   "dt": [
+    0.05,
+    0.025
+   ],
+   "delta": 0.2,
+   "ok": true,
+   "failures": [],
+   "max_centre_diff": 0.0006008986804761668,
+   "max_depth_rel": 0.0008810154224553938
+  },
+  {
+   "dt": [
+    0.05,
+    0.025
+   ],
+   "delta": 0.1,
+   "ok": true,
+   "failures": [],
+   "max_centre_diff": 0.00043940230964371196,
+   "max_depth_rel": 0.0009282820975708087
+  }
+ ],
+ "tick_check": [
+  {
+   "delta": [
+    0.2,
+    0.1
+   ],
+   "dt": 0.05,
+   "part_a": {
+    "ok": false,
+    "failures": [
+     {
+      "check": 4,
+      "why": "centre/depth",
+      "d": 0.2671623433842799,
+      "depth_rel": 0.037609592384442656
+     },
+     {
+      "check": 5,
+      "why": "centre/depth",
+      "d": 0.404871287094982,
+      "depth_rel": 0.02666312116454137
+     },
+     {
+      "check": 6,
+      "why": "centre/depth",
+      "d": 0.5416278512997198,
+      "depth_rel": 0.009886681867255671
+     },
+     {
+      "check": 9,
+      "why": "centre/depth",
+      "d": 0.16613624435942337,
+      "depth_rel": 0.02596426384467613
+     }
+    ],
+    "max_centre_diff": 0.5416278512997198,
+    "max_depth_rel": 0.037609592384442656
+   },
+   "D0_bar": [
+    -149.4409158362516,
+    -148.10758250291826
+   ],
+   "P0_bar": -148.7261541112364,
+   "part_b_ok": true,
+   "ok": false
+  },
+  {
+   "delta": [
+    0.1,
+    0.05
+   ],
+   "dt": 0.05,
+   "part_a": {
+    "ok": false,
+    "failures": [
+     {
+      "check": 6,
+      "why": "centre/depth",
+      "d": 0.3620930687806869,
+      "depth_rel": 0.027872438172671557
+     }
+    ],
+    "max_centre_diff": 0.3620930687806869,
+    "max_depth_rel": 0.027872438172671557
+   },
+   "D0_bar": [
+    -148.10758250291826,
+    -145.77424916958492
+   ],
+   "P0_bar": -146.89117484533773,
+   "part_b_ok": true,
+   "ok": false
+  }
+ ],
+ "proceed": false,
+ "stop": "step or tick check failed twice",
+ "part0_wall_s": 11662.26950788498
+}
