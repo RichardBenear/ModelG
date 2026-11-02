@@ -1,169 +1,285 @@
-# MG6 — G-coupled spatial growth (Phase 5): design proposal, DRAFT 1
+# MG6 — G-coupled spatial growth (Phase 5): design proposal, DRAFT 2
 
-*Stage MG019. Claude, 2026-11-02. Status: **DRAFT, not registered, for PI decisions and ChatGPT review.** No MG6 run of any
-kind has been made. Every threshold below marked **[proposed]** is mine and needs PI sign-off before it is frozen. Items
-marked **[PI decision]** are open choices, not defaults.*
+*Stage MG019a. Claude, 2026-11-02. Status: **DRAFT 2, not registered.** It revises draft 1 (preserved as
+`spec/MG6_proposal_v1.md`) after ChatGPT's review MG019 (`review/MG019_chatgpt.md`; my response
+`review/MG019_response.md`). No MG6 run of any kind has been made.*
 
-*Computation behind this draft (disclosed): one descriptive calculation on MG4c's stored b = 28 start states, with no
-integration and no MG6 dynamics: `spec/MG6_design_calc.py` (§5). It reads φ_G and node positions only.*
+*PI decisions (Richard Benear, 2026-11-02 14:13 UTC, project thread): adopt ChatGPT's recommendations for all eight §9
+decisions of draft 1. They are written into this draft and listed in §10.*
 
-*A correction to my own earlier wording: in MG5 §1 and in my last message I described MG6 as testing whether a particle
-"moves down a G gradient". The registered roadmap (`InitialPlan.md`, Phase 5) is different: **measure the volume-growth
-(curvature) deficit around a particle, its falloff exponent, and whether it scales with the integrated G-deficit**, with
-a decoupled run and a randomized-coupling run as null controls. This proposal follows the roadmap. Particle motion
-under coupling is recorded as a secondary descriptive quantity only.*
+*Computation behind this draft: the static calculations on MG4c's four stored b = 28 start states only (`spec/MG6_design_calc.py`
+and ChatGPT's `review/MG019_replication/static_checks.py`). No integration and no MG6 dynamics.*
 
 ## 1. Question
-MG5 showed (Gate PASS) that a settled particle survives continual field-blind rewriting of the Delaunay graph under it
-(single in 4/4 runs at ν = 0.002, 0.02, 0.2), and is mobile at ν = 0.2. MG6 adds the coupling: **the local G value
-modulates the spatial rule**. Then:
+MG5 (CLOSED, PASS) showed that a settled particle survives continual field-blind rewriting of the Delaunay graph under it,
+and is mobile at ν = 0.2. MG6 couples the rule to the particle: **the local G value modulates the birth rate**. The
+first campaign asks one focused question:
 
-1. **Deficit:** does a settled particle carry a measurable deficit (or excess) of space, here counted as nodes, around it,
-   compared with a decoupled run and a randomized-coupling run?
-2. **Shape:** how does the deficit fall off with distance from the particle? Does it follow the φ_G profile?
-3. **Scaling:** does the deficit scale with the integrated G-deficit (§4, which depends on the definition of "mass", I2)?
-4. **Feedback (non-trivial part):** does the coupling change the particle: its survival, depth, size or motion?
+> **Does the G-dependent birth rule produce the predicted embedded node-density response around the particle, and does
+> the particle survive, or change, under that feedback?**
 
-## 2. What MG6 builds on
-- MG5 (rule v1.2 events S1/S2, tick-synchronous application, interpolating transfer, ROS2 with dt = 0.05, panel-calibrated
-  h, MG4c start states at b = 28, MG5's detection, classes, balance and jump accounting). Everything not listed in §3 is
-  unchanged from MG5.
-- MG5 §3.3 already said the decoupled rule is the natural baseline, with birth rate νρ becoming νρ f(φ_G).
+Not asked here (§9): curvature as such, a gravitational falloff law, and scaling with particle mass.
 
-## 3. The coupling (rules amendment v1.3, MG6 only)
-**What "volume" means here.** The operator L = (A − D)/h² uses a fixed edge length h per run. A region holding more nodes
-therefore represents more physical area (area ∝ node count × h²). So a **node-count excess or deficit is the
-volume-growth excess or deficit**. This is a modelling choice (the plan's "volume growth"), stated so the reader can
-challenge it.
+**What a positive result means (stated now).** With a rule that sets the local target density to ρ₀ f(φ_G), a density
+deficit in the G-well is largely built in. A demonstrated response therefore **validates that the implemented coupled
+process does what it is meant to do, with the particle present and responding**. It is not a physical discovery by itself.
+The informative parts are the feedback on the particle, the size of the response against its quasistatic prediction, and
+the contrast with the nulls.
 
-**Coupled births (thinning).** Births occur at rate ν ρ f(φ_G(x)) per unit area at position x; deaths stay at ν per node.
-With uniform deaths the local stationary density is ρ f(φ_G) when φ_G varies slowly compared with the relaxation scale
-1/ν.
+## 2. What MG6 keeps from MG5
+Rule v1.2's spatial setting, with tick-synchronous application (Δ = 0.2 at ν = 0.2) and interpolating transfer of φ to
+newborn nodes on the pre-edit mesh M_(k−1). Also: ROS2 with dt = 0.05, panel-calibrated h, MG4c's b = 28 start states, MG5's
+detection, θ_28, classes, smoothing, balance and jump accounting and interpolation audit, and the MG017 execution settings
+(5 workers, one BLAS thread). Everything not stated below is as in MG5.
 
-Implementation that keeps events reproducible: candidate births are generated at rate ν ρ f_max from a `seed_for(6, …)`
-stream, each with a uniform number u. At the tick boundary a candidate is accepted if u < f(φ_G(x)) / f_max, with φ_G(x)
-the barycentric interpolation on the pre-edit mesh (the same interpolation §3.4 of MG5 uses for the transferred value).
-Deaths are the MG5 stream. Accept decisions depend on the field, so the **committed replay specification covers the
-candidate list; the accepted set is recorded per tick and hashed.** A candidate list is still a pure function of the seed.
+## 3. The coupled birth–death process (rules amendment v1.3, MG6 only)
+### 3.1 Construction (review item 1)
+A **dominating candidate process** with independent lifetimes. Per run, with persistent integer IDs:
+- **Initial nodes:** each of the N₀ start nodes gets a lifetime ℓ ~ Exp(ν). It dies at time ℓ if ℓ < t_end.
+- **Candidates:** a Poisson process on the torus × [0, t_end] at rate ν ρ₀ F per unit area per unit time, with
+  ρ₀ = N₀/A and F = f_max (§3.2). Each candidate has a position x (uniform), a time t_b, a mark u ~ U(0, 1), a lifetime
+  ℓ ~ Exp(ν) and a fresh ID.
+- **Acceptance:** at the tick boundary that applies a candidate's birth, it is **accepted iff u < f(φ_G*(x)) / F**. Here
+  φ_G* is the boundary field barycentrically interpolated on the pre-edit mesh M_(k−1), exactly as for the transferred
+  value, and evaluated at x (or at x + s for the shifted null, §3.3). An accepted candidate becomes a node, with the
+  transferred field. It dies at t_b + ℓ if that is before t_end.
+- **Rejected candidates are ghosts.** They never enter the graph, and their deaths are ignored. Their marks and lifetimes
+  are still drawn, so the stream does not depend on acceptance.
+- **Ephemeral candidates:** a candidate born and dying within the same tick interval never exists at a boundary. As in MG5,
+  it is skipped, and no acceptance is evaluated.
+- **Tick ordering** is as in MG5: at boundary k, deaths in the interval are applied, then births. Births are accepted on
+  M_(k−1), and one Delaunay rebuild follows. Survivors keep their order; accepted births are appended in candidate order.
 
-**Coupling function [PI decision].**
-| Option | f(φ_G) | Notes |
+With f ≡ 1 (decoupled arm) the accepted births form a Poisson process at rate ν ρ₀ with uniform positions. Deaths are at
+rate ν per node. This is MG5's rule in law. It is **not** MG5's event list: hash-identical reproduction of MG5's generator
+is not claimed, and it is not needed (§3.4).
+
+**Common random numbers.** The initial lifetimes and the candidate stream depend only on the start state (slot, placement),
+not on the arm. The five arms of one start therefore share one stream, and differ only in which candidates are accepted.
+This pairs the arms for the contrasts in §5.
+
+### 3.2 Coupling function and bound (decisions 1 and 2)
+- **F1: f(φ_G) = exp(κ φ_G)**, with κ ∈ {0, 2, 4}. κ = 2 is the **primary response arm**; κ = 4 is a **stronger
+  feedback (stress) arm**. Neither the panel nor the ratio of the two responses is a small-κ linearity test. The expected
+  core birth factors are about 0.58–0.60 (κ = 2) and 0.33–0.36 (κ = 4). The predicted core-deficit ratio κ4/κ2 is about
+  1.70–1.73, not 2.
+- **Dominating bound.** φ_cap = 0.10 (the start states have φ_G ≤ 0.049). F = exp(4 · 0.10) = e^0.4 ≈ 1.492 for **all** arms
+  (κ = 0 included), so all arms share one stream. The κ = 0 acceptance probability is 1/F ≈ 0.67.
+- **Breach policy.** If any acceptance evaluation has f(φ_G*)/F > 1, that is φ_G* > φ_cap·4/κ, the run stops with status
+  **INVALID-BOUND**. The record keeps the tick, the position and the value. The run is not rerun with a changed bound, and
+  any breach stops the campaign for the PI.
+
+### 3.3 Arms and the randomized null (decisions 3 and 5)
+Five arms × four starts = **20 runs**, all at b = 28, ν = 0.2, Δ = 0.2, dt = 0.05, t_end = 200:
+
+| Arm | Coupling |
+|---|---|
+| DEC | κ = 0 (decoupled; rerun under the MG6 pipeline) |
+| SH2, SH4 | κ = 2, 4 evaluated on the **shifted** field φ_G*(x + s) |
+| CP2, CP4 | κ = 2, 4, coupled at x |
+
+**Shift s:** one fixed periodic offset per start, shared by SH2 and SH4. It is drawn from its own stream, uniform on the
+torus and conditioned on a minimum-image length of at least 6 (rejection sampling, first accepted draw). The induced
+density well then sits at least 6 from the particle at the start. The shuffled null is deferred (§9).
+
+**MG5 as an external check (not an arm).** DEC's class and descriptive D_p are compared with MG5's ν = 0.2, b = 28 runs.
+Same starts, different streams: this is a compatibility check, not independent evidence.
+
+### 3.4 Seeds
+- **Initial lifetimes and candidates:** `seed_for(6, 0, 0, 1, 2·slot + pl)`.
+- **Shift:** `seed_for(6, 0, 1, 1, 2·slot + pl)`.
+- **Part 0 graph:** `seed_for(6, 9, 0, 0, 0)`. **Part 0 streams:** `seed_for(6, 9, 3, 1, k)`.
+
+The candidate list is a pure function of its seed. It is regenerated and hash-checked in a fresh process before each run,
+as in MG5.
+
+## 4. Measurements (review items 2, 3 and 5)
+### 4.1 What is measured, and what it is called
+The primary quantity is the **embedded node-density deficit** around the particle, adopted as a **volume proxy**. Discs
+and annuli are in the embedding coordinates. It is **not** shown to be intrinsic curvature: that would need a separate
+metric/volume argument or a graph-distance measurement, which this campaign does not make (§9).
+
+### 4.2 Per-check records (every 10 time units, on the boundary state, before that boundary's edits)
+Around the detected particle centre c(t) (MG5 detector, θ_28), using periodic minimum-image distances:
+- **Cumulative counts:** N(<R) for R ∈ {1.0, **1.5**, 2.0, 3.0, 5.0, 8.0}. Two baselines:
+  - **D₀(R) = N(<R) − ρ₀πR²** (absolute change, reference density ρ₀ = N₀/A);
+  - **D_c(R) = N(<R) − ρ̄(t)πR²** (redistribution relative to the current mean, ρ̄(t) = N(t)/A).
+- **Annular counts and densities:** annuli with edges {0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 4.0, 5.0, 6.0, 8.0}. Densities
+  n_j = count_j / area_j, with δn_j relative to both ρ₀ and ρ̄(t).
+- **Radial φ_G:** the annulus means of φ_G on the quadrature grid (§4.3).
+- **G-well integrals** (decision 4), over the whole torus by quadrature:
+  - **M₋ = ∫ max(−φ_G, 0) dA** (well);
+  - **M₊ = ∫ max(φ_G, 0) dA** (halo);
+  - signed **M = ∫ φ_G dA**.
+  M₋ is an operational **G-well integral**, not an established gravitational mass. In the coupled arms ∫φ_G dA need not
+  vanish, because Σφ_G = 0 holds on the node measure and the mesh is deliberately non-uniform. All three are reported.
+- **Quasistatic predictions** (§4.3): P₀(R) and P_c(R), and the annular predictions.
+- The MG5 records: sparse φ_X, centres, classes, depth, node count, and the per-tick accounting.
+
+### 4.3 Quadrature and the prediction
+**Coordinate-area quadrature:** a fixed regular grid of spacing 0.05 on the torus (cell area dA = 0.0025). φ_G is
+barycentrically interpolated on the current mesh at each grid point. Node-equal-area weights (A/N per node) are **not** used:
+the nodes are deliberately sampled non-uniformly, and that would bias the integral.
+
+**Quasistatic prediction** of the coupled density, given the measured φ_G at the check:
+- P₀(R) = ∫_disc ρ₀ (f(φ_G^(eval)(x)) − 1) dA;
+- P_c(R) = ∫_disc ρ₀ f dA − πR² · (1/A) ∫_torus ρ₀ f dA;
+- annular versions likewise.
+
+Here φ_G^(eval) is φ_G at x for CP arms, at x + s for SH arms, and f ≡ 1 for DEC. This is the stationary target for a
+**prescribed static field**. For a field that changes, the mean density obeys ∂ₜn = ν[ρ₀ f − n] and depends on field
+history, so the prediction is **quasistatic and approximate**. It is also built from the particle's own reshaped field, so
+agreement with it does **not** rule out feedback. The ratio observed/predicted is reported descriptively, not scored.
+
+### 4.4 Falloff (descriptive; review item 5)
+ΔN(R) is cumulative, and can show a plateau, a zero crossing or cancellation. A fitted power of a cumulative count is not
+a density exponent (in 2D, dΔN/dR = 2πR·δn). The falloff analysis therefore uses **annular densities**:
+- **Quantity:** for each annulus, the run-level paired contrast δn_j(CP2) − δn_j(SH2), with the ρ₀ baseline. κ = 4 is done
+  the same way, as a second descriptive set.
+- **Fit range:** annuli from r = 1.0 outward, up to the last annulus inside the first zero crossing of the arm's mean
+  radial φ_G profile (the well), keeping the sign as measured, with no absolute values.
+- **Minimum signal:** at least 3 annuli in the range must each have a paired-contrast |t| ≥ 2.353 (n = 4, df = 3).
+  Otherwise the exponent is reported as **UNRESOLVED** and no fit is chosen.
+- **Fits:** if resolved, both an exponential A·e^(−r/λ) and a power law A·r^(−p), by least squares on run-level means with
+  run-level SEs. Both are reported, with residuals. Neither is presumed. The halo (outside the zero crossing) is reported
+  per annulus, not fitted.
+- The predicted annular profile (§4.3) is shown alongside.
+
+## 5. Outcomes and statistics (review item 4)
+**Time window:** checks at t = 100, 110, …, 200 (11 checks), provisional, subject to Part 0 (§7, item 6).
+
+**Run level first.** For each run, Y = the window mean of D₀(1.5) around its own detected centre. All inference uses the four
+run-level values per arm. Snapshots within a run are not treated as independent evidence.
+
+**Paired contrasts.** The arms of one start share a stream (§3.1), so the contrasts are paired by start i:
+- c_i^SH = Y_i(CP2) − Y_i(SH2);
+- c_i^DEC = Y_i(CP2) − Y_i(DEC).
+
+**Statistical assumption (registered):** the four run-level paired contrasts are independent and approximately normal. With
+n = 4, a one-sided paired t-test at α = 0.05 needs t ≤ −2.353 (df = 3).
+
+**Gate MG6 (primary: density response at κ = 2):**
+- **NOT SCORED (feedback):** some run of CP2, SH2 or DEC is not single at every window check, so no centre is defined. The
+  feedback outcome is then the result.
+- **DEMONSTRATED:** both contrasts (vs SH2 and vs DEC) have all four c_i < 0 and the paired t ≤ −2.353.
+- **NOT DEMONSTRATED (inconclusive):** otherwise. This does not establish that there is no deficit. No equivalence
+  criterion is registered.
+
+**Also reported, not scored:**
+- the same contrasts at κ = 4 (CP4 vs SH4, vs DEC) and with the D_c baseline;
+- each contrast's mean, its paired SD, and a 95% t interval, which is explicitly conditional on the assumption above;
+- observed/predicted at R = 1.5 per run;
+- DEC versus SH (SH2 − DEC, SH4 − DEC). A non-zero particle-centred profile in DEC or SH is **not** treated as invalidity.
+  The detected centre depends on fields that respond to the graph, so particle-centred sampling need not be spatially
+  unbiased. The paired treatment-minus-null contrast is the test.
+
+**Feedback outcome (per arm, CP2 and CP4):**
+- **SURVIVES:** at least 3 of 4 runs single (MG5's classes and rule).
+- **CHANGED:** otherwise; the classes are reported (multiplied / dissolved / unresolved).
+
+Also reported descriptively: depth relative to the paired DEC run at matched checks, mobility and D_p, and M₋ over time.
+Multiplication or dissolution under coupling is a **physical feedback result**, not "no deficit". Such runs are never
+discarded, and averages are never taken over survivors only.
+
+**Invalidity** (reserved for failures of construction or implementation):
+- INVALID-BOUND (§3.2);
+- an unresolved flag (balance, jump accounting, interpolation audit, as MG5; FAILED-NUMERICAL);
+- a candidate-list hash mismatch (INCOMPLETE);
+- a Part 0 stop.
+
+**Status precedence per run:** FAILED-NUMERICAL > INVALID-BOUND > INCOMPLETE > COMPLETE. The gate is scored only if all 12
+runs of CP2, SH2 and DEC are COMPLETE. Otherwise it is INCOMPLETE, and the PI decides.
+
+## 6. Runs, cost, budget and order (decisions 6 and 8)
+- **Rate:** ν = 0.2 only. ν = 0.02 is deferred (§9).
+- **Order:** DEC, then SH2 and SH4, then CP2, then CP4. Nulls first, so a cutoff can never remove them. The ordering is
+  tested in code (a unit test asserts the queue order) before launch.
+- **Cost estimate:**
+  - MG5 measured 3.77 ledger core-h for a ν = 0.2 run at t = 500, about 27 s per unit with 5 workers.
+  - At t = 200 that gives about 1.5 core-h per run.
+  - The candidate stream is about 1.49 times MG5's birth events, and quadrature adds about 20 checks × 160 000 point locations
+    per run, small against ROS2.
+  - **20 runs ≈ 30 ledger core-h.**
+- **Budget:** run cap 24 (20 runs + 4 slots of headroom), and a **provisional 40 core-h launch cutoff**. Both are restated
+  after Part 0's full-pipeline timing, which must time **5 concurrent runs** (MG5 lesson). The launch cutoff is not a hard
+  spending ceiling. The report gives ledger core-h plus all off-ledger work: Part 0, event generation and replay, and any
+  interrupted runs.
+- **Wall time:** about 6–7 h with 5 workers on the PI's PC, launched with no console attached (as MG5's relaunch).
+
+## 7. Part 0 (before any registered run, on an unregistered graph; review item 6)
+On a Delaunay graph from `seed_for(6, 9, 0, 0, 0)` with its own calibrated h, b = 28, settled frozen to t = 300 (as MG5 Part 0).
+Each check has a quantitative criterion and a fallback rule.
+
+1. **Acceptance-rate and determinism check.** Static synthetic field φ_G = −0.25·exp(−r²/2) (no ODE), κ = 4, 20 time units.
+   - The accepted fraction must be within 4 binomial SD of the expected mean f/F over the candidates.
+   - Two runs with the same seed must give identical accepted bitmaps.
+   - Failure means an implementation error: stop for the PI.
+2. **Density equilibration.** Same static field, κ = 4, 50 time units, graph process only. Over t ∈ [25, 50], for each of the
+   annuli inside r = 3, the time-averaged annular density must agree with ρ₀ f (exact for a static field) within 4
+   Poisson-plus-autocorrelation SDs. The SD uses the measured lag-1 autocorrelation of the annular count. Failure: stop
+   for the PI.
+3. **Step check (fixed edit history).** Coupled κ = 4, ν = 0.2, Δ = 0.2, 100 units: run at dt = 0.05 and record its accepted
+   edits. Replay at dt = 0.025 with **the same accepted edits imposed** (no re-evaluation of acceptance), which isolates the
+   ODE step error.
+   - Criterion as MG5: equal counts at every check, centre ≤ 0.1, depth ≤ 2%.
+   - Failure: dt halved for all runs and the check repeated once; a second failure stops for the PI.
+4. **Tick check (fully coupled).** κ = 4, Δ = 0.2 against Δ = 0.1, both fully coupled. Acceptances may differ, so the
+   comparison has two parts:
+   - (a) equal counts at every check, centre ≤ 0.15, depth ≤ 3%;
+   - (b) window-mean D₀(1.5) (t = 50–100) differing by at most 0.25·|P₀(1.5)|.
+   - Failure: Δ = 0.1 for all MG6 runs (about twice the cost) and the check repeated as 0.1 against 0.05; a second
+     failure stops for the PI.
+5. **Bound check.** In all Part 0 coupled runs, max φ_G* at candidate positions must stay ≤ 0.07 (70% of φ_cap). If it
+   does not, the run stops for the PI, who can raise φ_cap before registration and restate F.
+6. **Transient and dependence.** From the tick-check run at Δ = 0.2: the D₀(1.5) series over t = 0–100 and its lag-1
+   autocorrelation at 10-unit spacing are reported. If the 20-unit block means over t = 60–100 still drift by more than
+   0.25·|P₀(1.5)|, the window start moves to t = 150 and t_end to 250 (cost × 1.25). That is the only window change
+   allowed, decided before any registered run.
+7. **Timing.** 5 concurrent coupled runs for 20 units each; the budget is restated in GATES.md before the runs.
+
+All Part 0 outcomes, and any change of dt, Δ, φ_cap or window, are written to `results/MG6/part0/decisions.json` and to
+GATES.md before any registered run.
+
+## 8. Data and recomputation (review item 6)
+**Committed** (small), per run:
+- the record (status, flags, replay spec with candidate-list SHA-256, shift s, platform, code revision);
+- `checks/<key>.npz` with:
+  - MG5's sparse records;
+  - centres and classes;
+  - N(<R), annular counts and areas;
+  - ρ₀, N(t) and ρ̄(t);
+  - the radial φ_G profile;
+  - M₋, M₊ and M, with the quadrature definition (grid spacing and origin);
+  - P₀, P_c and the annular predictions;
+  - the per-tick accounting;
+- `accepted/<key>.npz`: a packed bitmap over the candidate list, in candidate order. About 1.1 M candidates per run, so
+  about 140 kB.
+
+Together with the regenerated candidate list, the bitmap reconstructs the full node history. Also committed: the budget
+ledger, driver log, local manifest, `evaluation.json` and `part0/`.
+
+**PC-only,** with SHA-256 manifest: candidate lists, full-field snapshots and final states.
+
+**Recomputation:** an independent script (separate detection, counting, quadrature, contrasts and outcome rules, as
+`recompute_mg5.py` now does) recomputes everything in §5 from the committed records. It exits nonzero on any difference.
+
+## 9. Not in MG6 (deferred, recorded)
+- **Particle-mass scaling (roadmap Phase 5 objective; decision 4).** A b-scan (for example b = 27.5, 28, 28.5) with the
+  M₋ definition is **deferred to a separately registered study**. Varying κ tests coupling strength, not scaling with the
+  particle. This defers a roadmap objective, and the record says so.
+- **Curvature:** an intrinsic interpretation (metric/volume argument or graph-distance balls).
+- **Shuffled null** (decision 3), **ν = 0.02** (decision 6).
+- Token noise, combinatorial rewriting, 3D, a weighted operator, coupling of deaths, density-dependent h, motion as a
+  gate, and multiway/frame tests (MG7).
+
+## 10. Record of the PI decisions (draft 1 §9; ChatGPT MG019 recommendations adopted)
+| # | Decision | Adopted |
 |---|---|---|
-| **F1 (recommended)** | exp(κ φ_G) | Positive everywhere, no clipping. Density deficit where φ_G < 0. f_max = exp(κ·φ_max), with φ_max from the start states plus a registered guard (a tick with φ_G > φ_max is a flag). |
-| F2 | max(0, 1 + κ φ_G) | Linear, so ∫(f − 1) = κ ∫φ_G = 0 exactly: no net volume change, a strictly local deficit with a compensating halo. Clipping is never active at the proposed κ (§5). |
-| F3 | exp(κ min(φ_G, 0)) | Well only; the halo is ignored. f ≤ 1, so f_max = 1 and the accepted stream is a **subset of MG5's stream** with the same seed (see §6 on reusing MG5 as the decoupled arm). Net volume deficit is non-zero, which sidesteps the ∫φ_G = 0 issue below. |
-
-**The ∫φ_G = 0 issue (assumption M6, I2).** With conservative diffusion the net ∫φ_G of a stationary particle is zero, so
-a coupling linear in φ_G gives zero *net* volume change. The deficit is local: in the stored states φ_G runs from about
-−0.28 (core) to about +0.05 (halo). Whether "integrated G-deficit" means the integral over the well only (φ_G < 0), the
-well depth, or something else is exactly the open definition of mass (I2). **The scaling test in §4 cannot be written
-until the PI picks this.** Options are in §4.
-
-**Strength κ [PI decision].** Proposed panel κ ∈ {2, 4} for the main arms (§5 gives the expected signals). κ = 0 is the
-decoupled arm.
-
-## 4. Measurements and outcomes (all **[proposed]**, to be frozen after PI decisions)
-**Deficit profile.** At each check (every 10 time units after settling), around the tracked particle centre c(t), count
-nodes in annuli. Excess ΔN(R) = N(<R) − ρπR² (torus-wrapped, with the mean density measured on the whole torus at that
-check). Average ΔN(R) over checks in the measurement window and over runs; report the mean and its standard error from
-the spread across runs. Radii: R ∈ {1.0, 1.5, 2.0, 3.0, 5.0, 8.0}.
-
-**Arms and null controls (per the roadmap).**
-- **Coupled:** f as chosen, κ ∈ {2, 4}.
-- **Decoupled:** κ = 0 (MG5 rule).
-- **Randomized coupling:** the same f, but evaluated on φ_G taken from a *spatially unrelated place*. Two variants **[PI
-  decision]**: (a) *shifted*: φ_G read at x + s with a random fixed offset s of at least 6 from the particle (keeps spatial
-  structure, breaks the link to the particle's position); (b) *shuffled*: node-wise permutation of φ_G values (destroys
-  structure, keeps the value distribution). I recommend (a) as the main null and (b) as a check.
-
-**Registered outcomes [proposed].**
-- **INVALID-NULL:** the decoupled or randomized arm shows |ΔN(1.5)| / se ≥ 3 at the particle. Then MG6 stops for the PI.
-- **DEFICIT PRESENT:** in the coupled arm ΔN(1.5) < 0 with |ΔN(1.5)| / se ≥ 3 at both κ, and it differs from both nulls by
-  ≥ 3 combined se.
-- **NO DEFICIT:** otherwise.
-- **Falloff (descriptive, not pass/fail):** compare ΔN(R) with the *direct prediction* ρ·∑_{nodes in R} (f(φ_G) − 1)·dA
-  computed from the run's own measured φ_G. Report the ratio observed/predicted per radius. Also fit |ΔN(R)| or the local
-  density excess against r with (i) an exponential and (ii) a power law over the stated range and report both with
-  uncertainty. **I expect an exponential-like decay** (the φ_G profile of a stationary Turing-type soliton is short-range,
-  with λ ≈ 3.1), **not a 1/r-type power law.** Gate MG6 should not presuppose a power law; if the PI wants one tested,
-  that is a separate pre-registered hypothesis.
-- **Scaling [definition awaiting PI, I2]:** the deficit amplitude in the κ = 4 arm over the κ = 2 arm is predicted to be 2
-  for F1/F2 at small κφ_G. That is a check on the *coupling*, not on the *particle*. To test scaling with the particle's own
-  integrated G-deficit, the arms must vary the particle (for instance b = 27.5, 28, 28.5 with each b's own stored state;
-  MG4c has these). **[PI decision]**: include this b-scan (3 b × arms) or defer it.
-- **Feedback (descriptive):** class (single / multiplied / dissolved), depth against the decoupled arm at matched times,
-  and mobility with D_p, exactly as MG5 measured them.
-
-**Built-in expectation, stated now (important for honesty).** With fixed h and a rule that sets the local density to
-ρ f(φ_G), the first-order deficit is **close to built in** by the coupling. The positive result "a deficit is present"
-is therefore a *validation that the implemented rule realises the intended coupling* (and that the particle's profile is
-stable under it) rather than a physical discovery. The informative parts are the feedback on the particle, whether
-the observed deficit matches the direct prediction (if the particle shifts or reshapes, it will not), the randomized-null
-contrast, and the falloff form. The write-up must say this.
-
-## 5. Signal against noise (design calculation, `spec/MG6_design_calc.py`)
-Starting states, b = 28, four runs; ρ = 47.25 per unit area. Expected node-count excess within R if density were
-ρ·exp(κφ_G), against the Poisson counting sd of one snapshot:
-
-| κ | R = 1.5 (sd 18.3) | R = 3 (sd 36.6) | R = 5 (sd 60.9) | R = 8 (sd 97.5) |
-|---|---|---|---|---|
-| 1 | −20 to −24 | +1 to +2 | 0 to +0.5 | +2 |
-| 2 | −37 to −45 | +6 to +8 | +4.5 to +5 | +8 to +9 |
-| 4 | −63 to −77 | +29 to +31 | +23 to +26 | +29 to +35 |
-
-- The deficit is concentrated within about 1.5 of the centre and **is essentially cancelled by R = 3**; at κ = 4 the halo
-  overshoots to a net positive excess (the convexity of exp).
-- One snapshot at κ = 2 is about 2σ at R = 1.5. With 4 runs × about 10 independent checks, the standard error falls to
-  about sd/√40 ≈ 3 nodes, i.e. a 12σ signal if the density follows its target. The ≥ 3σ criterion has margin.
-- The signal-to-noise at larger R is poor (excess ≪ sd), so the falloff beyond R ≈ 3 will be hard to measure at these κ.
-  A larger κ buys signal at the cost of leaving the small-κφ_G regime; **κ = 4 gives φ_G in the exponent up to about
-  −1.1** (f ≈ 0.33 at the core), which is a strong perturbation of the density at the particle, and feedback on the
-  particle must be watched.
-- This calculation assumes the local density has equilibrated. The density relaxation time is 1/ν (5 time units at
-  ν = 0.2; 50 at ν = 0.02). A moving particle also drags its target density; at ν = 0.2 its RMS displacement over 100 units is
-  about 0.6 (MSD = 4 D_p τ with D_p ~ 1e-3), small against its core size and slow against the relaxation time.
-
-## 6. Runs, cost and budget [proposed]
-- **Rate:** ν = 0.2 only for the main arms (relaxation 1/ν = 5, fastest equilibration; MG5's ν = 0.2 particle survived 4/4).
-  ν = 0.02 as a secondary arm if budget allows **[PI decision]**.
-- **Start states and horizon:** the four MG4c b = 28 states, settle then measure. Proposed t_end = 200, measurement window
-  t ∈ [100, 200] (20 relaxation times at ν = 0.2).
-- **Arms at b = 28, ν = 0.2:** coupled κ = 2, coupled κ = 4, randomized (shifted) at κ = 4, decoupled κ = 0. 4 arms × 4
-  runs = 16 runs. Optional: shuffled null (+4), κ = 2 shifted (+4).
-- **Reusing MG5 as the decoupled arm.** MG5's ν = 0.2 b = 28 runs share the starts and seeds. They are a valid decoupled arm
-  *only if* the MG6 candidate list reproduces MG5's event stream when κ = 0, which requires f_max = 1 (option F3) or a
-  design where κ = 0 reruns the MG5 stream exactly. MG5 ran to t = 500; MG6 would compare at matched times. **[PI
-  decision]**: reuse (saves 4 runs ≈ 6 core-h at t = 200) or rerun for a clean paired control (recommended: a rerun is
-  cheap enough and removes the cross-study dependence).
-- **Cost model (measured in MG5, ledger):** ν = 0.2 at t = 500 cost 15.08 core-h for 4 runs (3.77 core-h each, about 27 s per
-  time unit, the same as the Part 0 rate once the relaunch used 5 workers). At t = 200 and the MG5 ledger rate: about 1.5
-  core-h per run. **16 runs ≈ 24 core-h; with 4 optional runs ≈ 30 core-h.** The coupling adds a per-tick interpolation
-  of φ_G for accept decisions (small against the ROS2 cost). I will time it before budgeting (Part 0, §7).
-- **Run cap and cutoff:** register run caps (the programme's convention): proposed cap 24 runs, 40 core-h launch cutoff on
-  the ledger. Workers: 5, one BLAS thread each (MG017). **Order: decoupled and randomized arms first**, so the
-  null controls always run before the cutoff can bind. (The MG016 ordering error cost 65 core-h and must not repeat.)
-
-## 7. Part 0 (before any registered run, on an unregistered graph) [proposed]
-1. **Accept-rate check:** with κφ_G fixed to a known synthetic field, the accepted-birth fraction equals mean f/f_max to within
-   statistical error; the accepted candidate set is a deterministic function of the seed and field.
-2. **κ = 0 equivalence:** κ = 0 reproduces MG5's event stream and class on an MG5 Part 0 check run (hash-identical lists,
-   same counts). This anchors MG6's decoupled arm to the registered MG5 rule.
-3. **Tick check:** Δ = 0.2 against 0.1 at κ = 4: counts and the centre/depth criteria as in MG5, plus ΔN(1.5) agreeing within
-   its standard error.
-4. **Density equilibration:** on a settled start with a synthetic frozen φ_G, local density reaches ρ f within 5 relaxation times.
-5. **Flag guard:** no tick with φ_G > φ_max; jump accounting and interpolation audit as MG5.
-
-## 8. Not in MG6
-Token noise; non-geometric (combinatorial) rewriting; 3D; a weighted-operator arm; coupling of deaths; making h depend on
-local density (the operator keeps its fixed h, §3); gravitational *motion* as a gate (descriptive only); a multiway/frame
-test (MG7).
-
-## 9. Decisions needed from the PI
-1. **Coupling function:** F1 (recommended), F2 or F3.
-2. **κ panel:** {2, 4} proposed.
-3. **Randomized null:** shifted as the main null (recommended), shuffled optional.
-4. **Definition of integrated G-deficit / mass (I2)** and whether to include the b-scan (3 b) now or defer scaling.
-5. **Decoupled arm:** rerun (recommended) or reuse MG5.
-6. **Rates:** ν = 0.2 only, or add ν = 0.02.
-7. **Thresholds:** the 3σ rule, the radii, and the t_end = 200 / window 100–200.
-8. **Budget:** run cap 24, 40 core-h cutoff.
+| 1 | Coupling | F1 = exp(κ φ_G), with a registered dominating bound and a breach policy (§3.2) |
+| 2 | κ panel | {2, 4}: κ = 2 primary, κ = 4 feedback/stress; not a linearity test |
+| 3 | Randomized null | Fixed spatial shift, matched at both κ; shuffled deferred |
+| 4 | Mass / b-scan | M₋ = ∫max(−φ_G, 0) dA as an operational G-well integral, plus M₊ and the signed integral; b-scan deferred to a separate study |
+| 5 | Decoupled arm | Rerun under the MG6 pipeline with MG6 streams; MG5 as an external compatibility check |
+| 6 | Rates | ν = 0.2 only |
+| 7 | Thresholds | R = 1.5 primary, other radii descriptive; t_end = 200, window 100–200 provisional (Part 0 item 6); run-level paired contrasts replace the 3σ rule; NOT DEMONSTRATED replaces NO DEFICIT |
+| 8 | Budget | 20 runs, cap 24, provisional 40 core-h launch cutoff restated after Part 0; full accounting |

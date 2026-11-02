@@ -412,3 +412,25 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - Total compute, made explicit: 39.96 ledger + about 65 lost-launch core-h.
 - Next: PI sign-off to close MG5; MG6 draft 1 (`spec/MG6_proposal.md`) awaits PI decisions (§9) and ChatGPT review.
 - MG5 CLOSED 2026-11-02 13:39 UTC: Gate PASS, Part B A1 (PI sign-off in the project thread).
+
+## MG019a — MG6 design draft 2 after ChatGPT review MG019 (2026-11-02)
+- ChatGPT (MG019) supports the study but asked for six changes before registration:
+  - a valid coupled birth–death process;
+  - a density proxy, not curvature, with two baselines;
+  - corrected coupling arithmetic and a quasistatic prediction;
+  - a calibrated run-level paired rule in place of the 3σ rule;
+  - falloff on annular density;
+  - complete numerical and audit rules.
+- All six are accepted in draft 2 (`spec/MG6_proposal.md`; response `review/MG019_response.md`). Two errors of mine are
+  corrected: F2 clipping is active at κ = 4, and the κ4/κ2 ratio is about 1.7, not 2.
+- PI (14:13 UTC) adopted ChatGPT's recommended decisions:
+  - F1 with bound e^0.4;
+  - κ panel {2, 4};
+  - shifted null;
+  - M₋ well integral, with the b-scan deferred;
+  - DEC rerun;
+  - ν = 0.2 only;
+  - R = 1.5 and window 100–200;
+  - 20 runs, cap 24, provisional 40 core-h cutoff.
+- Draft 1 is preserved as `spec/MG6_proposal_v1.md`. Not registered. No MG6 run. Next: ChatGPT reviews draft 2; then PI
+  registration.
