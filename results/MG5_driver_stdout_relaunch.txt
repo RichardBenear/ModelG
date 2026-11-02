@@ -1,0 +1,26 @@
+# launcher start 2026-11-01T14:02:15.432129 MODELG_WORKERS=5 PYTHONUNBUFFERED=1 (pythonw via WMI, no console)
+B_nu0_D0_p0: COMPLETE, wall 1353s, class multiplied 
+A_nu0_D0_p1: COMPLETE, wall 2250s, class single pinned
+A_nu0_D0_p0: COMPLETE, wall 2251s, class single pinned
+A_nu0_D1_p0: COMPLETE, wall 2314s, class single pinned
+A_nu0_D1_p1: COMPLETE, wall 2317s, class single pinned
+B_nu0_D0_p1: COMPLETE, wall 1323s, class multiplied 
+B_nu0_D1_p0: COMPLETE, wall 1269s, class multiplied 
+B_nu0_D1_p1: COMPLETE, wall 1268s, class multiplied 
+B_nu0.2_D0_p0: COMPLETE, wall 8121s, class single mobile
+A_nu0.2_D0_p1: COMPLETE, wall 13584s, class single mobile
+A_nu0.2_D0_p0: COMPLETE, wall 13591s, class single mobile
+A_nu0.2_D1_p0: COMPLETE, wall 13535s, class single pinned
+A_nu0.2_D1_p1: COMPLETE, wall 13572s, class single mobile
+A_nu0.02_D1_p0: COMPLETE, wall 3513s, class single pinned
+B_nu0.2_D0_p1: COMPLETE, wall 8176s, class single pinned
+A_nu0.02_D1_p1: COMPLETE, wall 3545s, class single mobile
+A_nu0.002_D0_p0: COMPLETE, wall 3622s, class single pinned
+A_nu0.002_D0_p1: COMPLETE, wall 3565s, class single pinned
+B_nu0.2_D1_p0: COMPLETE, wall 8185s, class single pinned
+B_nu0.2_D1_p1: COMPLETE, wall 8186s, class single pinned
+A_nu0.002_D1_p0: COMPLETE, wall 3502s, class single pinned
+A_nu0.002_D1_p1: COMPLETE, wall 2409s, class single pinned
+MG5 driver finished: complete 39.96 core-h, 24 runs
+Evaluate with: python src/evaluate_mg5.py
+# driver exited rc=0 at 2026-11-01T21:13:27.695128
