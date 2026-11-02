@@ -317,3 +317,112 @@ def main():
                cutoff_core_h=R.CUTOFF)
     print(f"projected registered cost: {proj:.1f} core-h", flush=True)
     return finish(dec)
+
+
+# ---------------------------------------------------------------------------------------------------------------------
+# MG021 amendment (PI decision 2026-11-02 21:18 UTC, spec/MG6_amendment_1.md): Part 0 stopped on the tick check
+# (decisions.json, kept unchanged). The PI accepted Delta = 0.1, dt = 0.05 with part (b) of the tick check governing.
+# This completes checks 5-8 for that configuration and writes results/MG6/part0/decisions_mg021.json, which the
+# driver reads in place of decisions.json.
+AMEND_DELTA, AMEND_DT, AMEND_CUTOFF = 0.1, 0.05, 80.0
+AMEND_RUNS = ("d0.2_dt0.05", "d0.2_dt0.025_forced", "d0.1_dt0.05", "d0.05_dt0.05", "d0.1_dt0.025_forced")
+AMEND_ACC = "d0.1_dt0.05"                              # the accepted configuration's run (Delta 0.1, dt 0.05)
+DEC_AMEND = os.path.join(P0, "decisions_mg021.json")
+
+
+def _sha256(path):
+    import hashlib
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for blk in iter(lambda: f.read(1 << 20), b""):
+            h.update(blk)
+    return h.hexdigest()
+
+
+def amended_checks(old, final_path, manifest_sha=None):
+    """Checks 5-7 from the committed Part 0 records (no new dynamics). Pure apart from file reads; tested."""
+    tk = old["tick_check"]
+    assert old.get("stop") == "step or tick check failed twice" and len(tk) == 2, "unexpected Part 0 record"
+    assert tk[1]["delta"] == [AMEND_DELTA, AMEND_DELTA / 2] and tk[1]["part_b_ok"], "part (b) at Delta 0.1 not passed"
+    assert all(s["ok"] for s in old["step_check"]) and old["step_check"][1]["delta"] == AMEND_DELTA
+    out = {}
+    phis = {}
+    for tag in AMEND_RUNS:
+        with np.load(os.path.join(P0, f"check_{tag}.npz")) as z:
+            phis[tag] = float(np.max(z["tick_max_phiG"]))
+    lim = MARGIN * mg6.phi_lim(KAP)
+    out["bound_margin"] = dict(max_phiG_by_run=phis, max_phiG=max(phis.values()), limit=lim,
+                               ok=bool(max(phis.values()) <= lim))
+    with np.load(os.path.join(P0, f"check_{AMEND_ACC}.npz")) as z:
+        t, D0 = z["t"].tolist(), z["m_D0"][:, 1].tolist()
+    ser = dict(zip(t, D0))
+    b1, b2 = np.mean([ser[60.0], ser[70.0]]), np.mean([ser[90.0], ser[100.0]])
+    Pbar = tk[1]["P0_bar"]                                   # P0_bar of the passing comparison (Delta 0.05 run)
+    s = np.array([v for tt, v in zip(t, D0) if tt > 0])
+    drift = abs(b2 - b1) > DRIFT_TOL * abs(Pbar)
+    out["transient"] = dict(run=AMEND_ACC, series=D0, t=t, B1=float(b1), B2=float(b2), P0_bar=Pbar,
+                            lag1=float(np.corrcoef(s[:-1], s[1:])[0, 1]), drift=bool(drift),
+                            window=[150.0, 250.0] if drift else [100.0, 200.0])
+    sha = _sha256(final_path)
+    out["final_state"] = dict(path=os.path.basename(final_path), sha256=sha,
+                              matches_manifest=None if manifest_sha is None else sha == manifest_sha)
+    return out
+
+
+def main_amended():
+    os.makedirs(P0, exist_ok=True)
+    go.continuum2d()
+    old = json.load(open(os.path.join(P0, "decisions.json")))
+    dec = dict(design="spec/MG6_amendment_1.md (MG021): Part 0 checks 5-8 at Delta 0.1, dt 0.05", _t0=time.time(),
+               platform=R5.platform_info(), code_revision=R5.code_revision(), workers=R.WORKERS,
+               supersedes_outcome_of="decisions.json (STOP, kept unchanged)")
+    final_path = os.path.join(P0, f"final_{AMEND_ACC}.npz")
+    man = {}
+    mpath = os.path.join(P0, "local_manifest.csv")
+    if os.path.exists(mpath):
+        import csv
+        man = {os.path.basename(r["path"]): r["sha256"] for r in csv.DictReader(open(mpath))}
+    dec.update(amended_checks(old, final_path, man.get(os.path.basename(final_path))))
+    if dec["final_state"]["matches_manifest"] is False:
+        dec.update(proceed=False, stop="final state differs from local_manifest.csv")
+        return finish_amended(dec)
+    print("check 5 bound margin:", "ok" if dec["bound_margin"]["ok"] else "FAIL", flush=True)
+    if not dec["bound_margin"]["ok"]:
+        dec.update(proceed=False, stop="bound margin exceeded")
+        return finish_amended(dec)
+    print(f"check 6 transient: window {dec['transient']['window']}", flush=True)
+    g, h = graph()
+    Lx, Ly = g["Lx"], g["Ly"]
+    assert abs(h - old["h"]) < 1e-12 and g["N"] == old["N"], "Part 0 graph differs from the recorded one"
+    with np.load(final_path) as z:
+        final = {k: z[k] for k in z.files}
+    dec["quadrature"] = check_quadrature(Lx, Ly, final)
+    print("check 7 quadrature:", "ok" if dec["quadrature"]["ok"] else "FAIL", flush=True)
+    if not dec["quadrature"]["ok"]:
+        dec.update(proceed=False, stop="quadrature check (i)-(iii) failed: implementation error")
+        return finish_amended(dec)
+    nx, ny = (mg6.NX, mg6.NY) if dec["quadrature"]["refine_ok"] else (2 * mg6.NX, 2 * mg6.NY)
+    res, box = settle(g, h)                                  # deterministic; the same settled state as the first Part 0
+    dec["settle"] = dict(status=res["status"], wall_s=res["wall_s"])
+    print(f"settled: {res['status']}, {res['wall_s']:.0f} s", flush=True)
+    base = dict(pos=box["pos"], F=box["F"], h=h, Lx=Lx, Ly=Ly)
+    tbase = dict(base, t_end=T_TIME, delta=AMEND_DELTA, dt=AMEND_DT, cross=True)
+    with ProcessPoolExecutor(N_TIMING) as ex:
+        tr = list(ex.map(coupled_run, [dict(tbase, tag=f"timing_mg021_{i}",
+                                            seed=seed_for(mg6.GATE, B_IDX, 3, 1, 10 + i)) for i in range(N_TIMING)]))
+    spu = [r["res"]["wall_s"] / T_TIME for r in tr]
+    t_end = dec["transient"]["window"][1]
+    proj = 20 * t_end * float(np.mean(spu)) / 3600
+    dec["timing"] = dict(s_per_unit_concurrent=spu, n_concurrent=N_TIMING, projected_core_h_20_runs=proj, t_end=t_end,
+                         max_phiG=[r["res"]["max_phiG"] for r in tr])
+    dec.update(proceed=True, dt=AMEND_DT, delta=AMEND_DELTA, t_end=t_end, window=dec["transient"]["window"], nx=nx,
+               ny=ny, cutoff_core_h=AMEND_CUTOFF)
+    print(f"check 8 timing: projected registered cost {proj:.1f} core-h", flush=True)
+    return finish_amended(dec)
+
+
+def finish_amended(dec):
+    dec["part0_wall_s"] = time.time() - dec.pop("_t0", time.time())
+    json.dump(dec, open(DEC_AMEND, "w"), indent=1, default=float)
+    print("Part 0 (MG021):", "PROCEED" if dec.get("proceed") else f"STOP ({dec.get('stop')})", flush=True)
+    return dec

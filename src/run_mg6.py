@@ -2,6 +2,7 @@
 specification). G-coupled birth-death rewriting of the Delaunay graph around a settled b = 28 particle.
 
     $env:MODELG_WORKERS=8; python src/run_mg6.py part0       (PowerShell, PI's PC): Part 0 checks (unregistered graph)
+    $env:MODELG_WORKERS=8; python src/run_mg6.py part0-mg021 (MG021) Part 0 checks 5-8 at Delta 0.1 after the STOP
     $env:MODELG_WORKERS=8; python src/run_mg6.py             the 20 registered runs (needs results/MG6/part0/decisions.json)
 
 Resumable at run level. Committed outputs (results/MG6/): runs/<key>.json, checks/<key>.npz, accepted/<key>.npz,
@@ -242,7 +243,8 @@ def run_specs():
 
 
 def timing_params():
-    d = json.load(open(P0DEC))
+    amended = os.path.join(OUT, "part0", "decisions_mg021.json")      # MG021: completes the stopped Part 0
+    d = json.load(open(amended if os.path.exists(amended) else P0DEC))
     if not d.get("proceed"):
         raise SystemExit("Part 0 did not authorise the registered runs (decisions.json: proceed is not true)")
     return d
@@ -367,7 +369,10 @@ def main():
 
 
 if __name__ == "__main__":
-    if len(sys.argv) > 1 and sys.argv[1] == "part0":
+    if len(sys.argv) > 1 and sys.argv[1] == "part0-mg021":
+        import run_mg6_part0
+        run_mg6_part0.main_amended()
+    elif len(sys.argv) > 1 and sys.argv[1] == "part0":
         import run_mg6_part0
         run_mg6_part0.main()
     else:

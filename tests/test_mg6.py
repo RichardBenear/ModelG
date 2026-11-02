@@ -209,6 +209,24 @@ def test_run_order_and_scoring():
     assert f["result"] == "UNRESOLVED" and f["eligible"] == [] and 1.0 < f["first_zero_crossing"] < 1.5
 
 
+def test_mg021_amended_checks_from_committed_records():
+    """MG021: checks 5-6 from the committed Part 0 records; the final-state hash is checked against the manifest."""
+    import json, tempfile
+    import run_mg6_part0 as P
+    path = os.path.join(P.P0, "decisions.json")
+    if not os.path.exists(path):
+        return
+    old = json.load(open(path))
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".npz") as f:
+        f.write(b"not the final state")
+    o = P.amended_checks(old, f.name, "0" * 64)
+    os.unlink(f.name)
+    assert o["final_state"]["matches_manifest"] is False
+    assert set(o["bound_margin"]["max_phiG_by_run"]) == set(P.AMEND_RUNS) and abs(o["bound_margin"]["limit"] - 0.07) < 1e-12
+    assert o["transient"]["run"] == "d0.1_dt0.05" and o["transient"]["P0_bar"] == old["tick_check"][1]["P0_bar"]
+    assert o["transient"]["window"] in ([100.0, 200.0], [150.0, 250.0])
+
+
 if __name__ == "__main__":
     n = 0
     for k, f in list(globals().items()):
