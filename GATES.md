@@ -1286,11 +1286,11 @@ Summary (the proposal governs):
   - bound margin;
   - transient;
   - quadrature;
-  - timing with 5 concurrent runs.
+  - timing with 5 concurrent runs (8 since MG020a).
   Each has registered formulas, fallbacks and stops. Outcomes, and any change of dt, Δ, φ_cap, grid or window, are
   written here before any registered run.
 - **Budget:** run cap 24 and a provisional 40 core-h launch cutoff, restated after Part 0. Order: DEC, SH2, SH4, CP2,
-  CP4. 5 workers with one BLAS thread, launched with no console attached. Full accounting, including off-ledger work.
+  CP4. 5 workers (8 since MG020a) with one BLAS thread, launched with no console attached. Full accounting, including off-ledger work.
 - **Deferred:** particle-mass scaling (b-scan), falloff, a curvature reading, the shuffled null, and ν = 0.02.
 
 PI sign-off (design): Richard Benear, 2026-11-02 14:45 UTC, decision card in the project thread ("Register draft 3"),
@@ -1354,7 +1354,7 @@ after ChatGPT's two reviews (MG019 r1 and r2), which support implementation and 
    - Also committed: the ledger, `local_manifest.csv`, `driver_log.json`, `evaluation.json` and `part0/`.
    - PC-only: `results/MG6/local/` (candidate lists, and fields every 50 units in float32, float64 at t_end).
 9. **Budget and order.** The driver launches DEC, SH2, SH4, CP2, CP4 (asserted by a test). It stops launching at 24 runs,
-   or when the ledger reaches the cutoff in `part0/decisions.json` (40 core-h unless restated). It runs 5 workers with one
+   or when the ledger reaches the cutoff in `part0/decisions.json` (40 core-h unless restated). It runs 8 workers (MG020a; was 5) with one
    BLAS thread each, launched with no console attached.
 10. **Evaluation.**
     - Y = the mean of D₀(1.5) over the window checks (both ends included).
@@ -1373,7 +1373,7 @@ after ChatGPT's two reviews (MG019 r1 and r2), which support implementation and 
     - The settle is MG5's frozen `run_ticks` (Δ = 1, dt = 0.05, t = 300) from the soliton at the torus centre.
     - Checks 3 and 4 share the (Δ = 0.2, dt = 0.05) run; the forced dt/2 replay follows it.
     - Fallbacks are as in proposal §7.
-    - The timing runs 5 concurrent coupled runs for 20 units from the settled state; projected core-h = 20 × t_end ×
+    - The timing runs 8 concurrent coupled runs (MG020a; was 5) for 20 units from the settled state; projected core-h = 20 × t_end ×
       mean s/unit / 3600.
     - MG5's ROS2-against-BDF solver check is not repeated: the solver is unchanged, and MG6 §7 does not list it.
 12. **Disclosure.**
@@ -1388,3 +1388,12 @@ after ChatGPT's two reviews (MG019 r1 and r2), which support implementation and 
       The registered stream differs, nothing registered was changed in response, and the run is not part of any result.
     - In the cloud, Part 0 checks 1, 2 and the quadrature checks (i)–(iii) were exercised on the unregistered Part 0
       graph, to test the code. Their outcomes are recorded only by the PC's Part 0.
+13. **Worker count (MG020a, PI decision 2026-11-02 15:36 UTC, before Part 0).** Richard chose 8 workers instead of 5
+    (decision card "Use 8 workers for MG6 instead of 5?"). The PC has 16 logical CPUs and 32 GB; 9 workers thrashed memory
+    in MG5, so the count stops at 8. This is a speed setting only: random streams come from `seed_for` and do not depend
+    on the worker count, and each worker keeps one BLAS thread. Proposal §7 item 8 ("5 concurrent coupled runs") is
+    therefore run with 8 concurrent runs, so that the restated budget is measured at the production worker count
+    (`N_TIMING = 8` in `run_mg6_part0.py`, seeds `seed_for(6, 9, 3, 1, 10 + i)`, i = 0–7). Contention can raise per-run
+    wall time and hence ledger core-h; the restated budget after Part 0 accounts for it. Claude watches free memory during
+    the timing; if the PC runs short of memory, or the projected wall time is no better than with 5 workers, Claude
+    reports it and the PI decides whether to drop to 6 workers before any registered run.

@@ -1,7 +1,7 @@
 """MG6 Part 0 (proposal §7; GATES.md MG6 pre-run specification): checks on an UNREGISTERED Delaunay graph before any
-registered run, plus the full-pipeline timing with 5 concurrent runs used to restate the budget.
+registered run, plus the full-pipeline timing with 8 concurrent runs (MG020a) used to restate the budget.
 
-    $env:MODELG_WORKERS=5; python src/run_mg6.py part0
+    $env:MODELG_WORKERS=8; python src/run_mg6.py part0
 
 Checks (formulas in proposal §7):
 1. acceptance rate and determinism (static synthetic field, kappa = 4, 20 units);
@@ -11,7 +11,7 @@ Checks (formulas in proposal §7):
 5. bound margin: max nodal phi_G <= 0.7 * phi_lim in every coupled run;
 6. transient: blocks B1 = {60, 70}, B2 = {90, 100} of D0(1.5) in the accepted configuration's run;
 7. quadrature checks (i)-(iv);
-8. timing: 5 concurrent coupled runs of 20 units.
+8. timing: 8 concurrent coupled runs of 20 units (the production worker count, MG020a).
 Output: results/MG6/part0/decisions.json and check records (committed).
 """
 import os, sys, json, time
@@ -31,6 +31,7 @@ P0 = os.path.join(R.OUT, "part0")
 B_IDX = 9
 KAP = 4.0
 T_ACC, T_EQ, T_CHECK, T_SETTLE, T_TIME = 20.0, 50.0, 100.0, 300.0, 20.0
+N_TIMING = 8                                # concurrent timing runs = production workers (MG020a)
 CENTRE_STEP, DEPTH_STEP, CENTRE_TICK, DEPTH_TICK = 0.1, 0.02, 0.15, 0.03
 D0_TOL, P0_MIN, MARGIN, DRIFT_TOL = 0.25, 10.0, 0.7, 0.25
 EQ_EDGES = (0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0)
@@ -303,15 +304,15 @@ def main():
         return finish(dec)
     nx, ny = (mg6.NX, mg6.NY) if dec["quadrature"]["refine_ok"] else (2 * mg6.NX, 2 * mg6.NY)
 
-    # 8. timing: 5 concurrent coupled runs of 20 units at the accepted (delta, dt)
+    # 8. timing: N_TIMING (= 8, the production worker count) concurrent coupled runs of 20 units at the accepted (delta, dt)
     tbase = dict(base, t_end=T_TIME, delta=delta, dt=dt, cross=True)
-    with ProcessPoolExecutor(5) as ex:
+    with ProcessPoolExecutor(N_TIMING) as ex:
         tr = list(ex.map(coupled_run, [dict(tbase, tag=f"timing{i}", seed=seed_for(mg6.GATE, B_IDX, 3, 1, 10 + i))
-                                       for i in range(5)]))
+                                       for i in range(N_TIMING)]))
     spu = [r["res"]["wall_s"] / T_TIME for r in tr]
     t_end = dec["transient"]["window"][1]
     proj = 20 * t_end * float(np.mean(spu)) / 3600
-    dec["timing"] = dict(s_per_unit_5_concurrent=spu, projected_core_h_20_runs=proj, t_end=t_end)
+    dec["timing"] = dict(s_per_unit_concurrent=spu, n_concurrent=N_TIMING, projected_core_h_20_runs=proj, t_end=t_end)
     dec.update(proceed=True, dt=dt, delta=delta, t_end=t_end, window=dec["transient"]["window"], nx=nx, ny=ny,
                cutoff_core_h=R.CUTOFF)
     print(f"projected registered cost: {proj:.1f} core-h", flush=True)

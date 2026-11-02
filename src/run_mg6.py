@@ -1,8 +1,8 @@
 """MG6 driver (spec/MG6_proposal.md draft 3, frozen at 106b3e2; GATES.md MG6 and its pre-run implementation
 specification). G-coupled birth-death rewriting of the Delaunay graph around a settled b = 28 particle.
 
-    $env:MODELG_WORKERS=5; python src/run_mg6.py part0       (PowerShell, PI's PC): Part 0 checks (unregistered graph)
-    $env:MODELG_WORKERS=5; python src/run_mg6.py             the 20 registered runs (needs results/MG6/part0/decisions.json)
+    $env:MODELG_WORKERS=8; python src/run_mg6.py part0       (PowerShell, PI's PC): Part 0 checks (unregistered graph)
+    $env:MODELG_WORKERS=8; python src/run_mg6.py             the 20 registered runs (needs results/MG6/part0/decisions.json)
 
 Resumable at run level. Committed outputs (results/MG6/): runs/<key>.json, checks/<key>.npz, accepted/<key>.npz,
 budget_ledger.csv, local_manifest.csv, driver_log.json. PC-only (results/MG6/local/, gitignored): candidate lists,

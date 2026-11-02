@@ -460,5 +460,7 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - The pre-run implementation specification is appended to GATES.md MG6.
 - Disclosure: a smoke test ran on registered start state D0_p0 with an unregistered candidate seed (κ = 4, 20 units).
   Its values are recorded in item 12 of the specification. Nothing was changed in response.
-- Next: PI merges; then Part 0 on the PI's PC (`$env:MODELG_WORKERS=5; python src/run_mg6.py part0`, launched with no
+- MG020a (PI decision 15:36 UTC, before Part 0): 8 workers instead of 5; the Part 0 timing now runs 8 concurrent runs.
+  Speed setting only (GATES MG6 specification item 13).
+- Next: PI merges; then Part 0 on the PI's PC (`$env:MODELG_WORKERS=8; python src/run_mg6.py part0`, launched with no
   console attached).
