@@ -1,6 +1,6 @@
 # MG6 — G-coupled spatial growth (Phase 5): design proposal, DRAFT 3
 
-*Stage MG019b. Claude, 2026-11-02. Status: **DRAFT 3, not registered.** Draft 2 (MG019a, preserved as
+*Stage MG019b. Claude, 2026-11-02. Status: **REGISTERED 2026-11-02 (MG019c), draft 3 content frozen at `106b3e2`.** Draft 2 (MG019a, preserved as
 `spec/MG6_proposal_v2.md`) revised draft 1 (`spec/MG6_proposal_v1.md`) after ChatGPT's review MG019. This draft makes the
 corrections of round 2 (`review/MG019_chatgpt_r2.md`; my response `review/MG019_response_r2.md`):
 - a full-field bound check;
@@ -169,7 +169,7 @@ agreement with it does **not** rule out feedback. The ratio observed/predicted i
 crosses zero at about r = 1.24, 1.34, 1.27 and 1.39 (ChatGPT r2, `review/MG019_replication/draft2_checks.json`). The
 rule below starts at r = 1.0 with 0.5-wide annuli, so no complete annulus lies inside the well. Unless the coupled
 profiles differ greatly from the start states, the falloff exponent will be reported UNRESOLVED. This draft accepts this
-deliberately (for the PI to confirm at registration). The well of a single b = 28 particle is too small for a falloff fit at this resolution, and finer bins
+deliberately; the PI confirmed it by registering draft 3. The well of a single b = 28 particle is too small for a falloff fit at this resolution, and finer bins
 inside the core (r < 1.4) would measure the core shape, not a falloff. A falloff measurement is deferred with the
 particle-mass scaling (§9). The rule is kept, unchanged, so that an unexpected coupled profile is still handled by a
 rule fixed in advance. Bins are not changed after the data are seen.
