@@ -1,6 +1,9 @@
-"""MG5 independent recompute (proposal §9): classes, tracks and outcomes from the committed sparse check records only,
-with detection and classification written separately from measure_graph / evolve (brute-force periodic distances,
-union-find merging). Compares with results/MG5/evaluation.json.
+"""MG5 independent recompute (proposal §9): from the committed sparse check records only, with detection,
+classification, tracks, D_p and outcome rules written separately from measure_graph / evolve / evaluate_mg5
+(brute-force periodic distances, union-find merging). Compares with results/MG5/evaluation.json:
+  per run: class, mobility, max displacement, unwrapped track (1e-9) and D_p (1e-12 relative plus 1e-15 absolute, for the frozen runs' rounding-level values);
+  aggregate: Part A control validity, the gate, each rate's survival and mobility label, and the Part B outcome.
+Exits with status 1 if anything differs (MG018 review item 1).
     python src/recompute_mg5.py
 """
 import os, sys, json, glob
@@ -66,19 +69,58 @@ def classify(lists, c0, Lx, Ly):
         return dict(cls="unresolved")
     cur, u = np.array(c0, float), np.array(c0, float)
     md = 0.0
+    path = [u.copy()]
     for x in lists:
         st = np.array([wrap(x[0]["centre"][0] - cur[0], Lx), wrap(x[0]["centre"][1] - cur[1], Ly)])
         if np.hypot(*st) > STEP:
             return dict(cls="unresolved")
         cur = np.array(x[0]["centre"], float)
         u = u + st
+        path.append(u.copy())
         md = max(md, float(np.hypot(*(u - np.array(c0)))))
-    return dict(cls="single", max_d=md, mobility="mobile" if md >= MOBILE else "pinned")
+    return dict(cls="single", max_d=md, mobility="mobile" if md >= MOBILE else "pinned", track=np.array(path),
+                D_p=dp(np.array(path)))
+
+
+def dp(path, step_t=10.0, max_lag=10):
+    """Descriptive D_p: mean squared displacement at lags 1..10 checks (10-100 time units), slope through the origin
+    of MSD = 4 D_p tau by least squares."""
+    num = den = 0.0
+    for lag in range(1, max_lag + 1):
+        if lag >= len(path):
+            break
+        tau = lag * step_t
+        m = float(np.mean(np.sum((path[lag:] - path[:-lag]) ** 2, axis=1)))
+        num += tau * m
+        den += tau * tau
+    return num / (4.0 * den) if den else None
+
+
+def outcomes(res):
+    """Proposal §8 rules, from {key: (part, nu, cls dict)} with every run COMPLETE."""
+    def runs(part, nu):
+        return [r for (p, n, r) in res.values() if p == part and n == nu]
+    three = lambda xs, want: sum(x == want for x in xs) >= 3
+    ctrl = runs("A", 0.0)
+    valid = len(ctrl) == 4 and all(r["cls"] == "single" and r["max_d"] < 0.1 for r in ctrl)
+    out = dict(validity="valid" if valid else "INVALID-CONTROL", rates={})
+    for nu in (0.002, 0.02, 0.2):
+        rs = runs("A", nu)
+        surv = three([r["cls"] for r in rs], "single")
+        mob = [r["mobility"] for r in rs if r["cls"] == "single"]
+        out["rates"][f"{nu:g}"] = dict(survives=surv, mobility=None if not surv else "PINNED" if three(mob, "pinned")
+                                       else "MOBILE" if three(mob, "mobile") else "MIXED")
+    n = sum(v["survives"] for v in out["rates"].values())
+    out["gate"] = out["validity"] if not valid else "PASS" if n == 3 else "FAIL" if n == 0 else "PARTIAL"
+    fz, fa = [r["cls"] for r in runs("B", 0.0)], [r["cls"] for r in runs("B", 0.2)]
+    out["partB"] = ("A-void" if not three(fz, "multiplied") else "A1" if three(fa, "single")
+                    else "A2" if three(fa, "multiplied") else "A3")
+    return out
 
 
 def main():
     ev_ = json.load(open(os.path.join(OUT, "evaluation.json")))
-    bad = []
+    bad, res, n_complete = [], {}, 0
     for path in sorted(glob.glob(os.path.join(OUT, "runs", "*.json"))):
         rec = json.load(open(path))
         if rec["status"] != "COMPLETE":
@@ -91,14 +133,39 @@ def main():
             a, b = d["off"][i], d["off"][i + 1]
             lists.append(detect(d["pos"][a:b], d["s"][a:b], d["rows"][a:b], rec["theta"], Lx, Ly))
         r = classify(lists[1:], lists[0][0]["centre"], Lx, Ly) if len(lists[0]) == 1 else dict(cls="unresolved")
+        n_complete += 1
+        res[rec["key"]] = (rec["spec"]["part"], rec["spec"]["nu"], r)
         e = ev_["runs"][rec["key"]]["cls"]
-        same = r["cls"] == e["cls"] and (r["cls"] != "single" or (r["mobility"] == e["mobility"]
-                                                                    and abs(r["max_d"] - e["max_d"]) < 1e-9))
-        print(f"{rec['key']}: {r['cls']} {r.get('mobility', '')} {'agrees' if same else 'DIFFERS'}")
+        same = r["cls"] == e["cls"]
+        if same and r["cls"] == "single":
+            et = np.array(e["track"], float)
+            same = (r["mobility"] == e["mobility"] and abs(r["max_d"] - e["max_d"]) < 1e-9
+                    and et.shape == r["track"].shape and float(np.abs(et - r["track"]).max()) < 1e-9
+                    and (e.get("D_p") is None) == (r["D_p"] is None)
+                    and (r["D_p"] is None or abs(r["D_p"] - e["D_p"]) <= 1e-15 + 1e-12 * abs(e["D_p"])))
+        dp_txt = f" D_p {r['D_p']:.6e}" if r.get("D_p") is not None else ""
+        print(f"{rec['key']}: {r['cls']} {r.get('mobility', '')}{dp_txt} {'agrees' if same else 'DIFFERS'}")
         if not same:
             bad.append(rec["key"])
-    print("All classes agree with the evaluator." if not bad else f"DIFFER: {bad}")
+    if n_complete == 24:
+        o = outcomes(res)
+        ea, eb = ev_["partA"], ev_["partB"]
+        agg = [("validity", o["validity"], ea["validity"]), ("gate", o["gate"], ev_["gate"]),
+               ("Part B", o["partB"], eb.get("outcome"))]
+        for nu, v in o["rates"].items():
+            er = ea["rates"][nu]
+            agg += [(f"nu={nu} survives", v["survives"], er.get("survives")),
+                    (f"nu={nu} mobility", v["mobility"], er.get("mobility"))]
+        for name, mine, theirs in agg:
+            ok = mine == theirs
+            print(f"{name}: {mine} {'agrees' if ok else f'DIFFERS (evaluator: {theirs})'}")
+            if not ok:
+                bad.append(name)
+    else:
+        print(f"{n_complete} of 24 runs COMPLETE: aggregate outcomes not recomputed")
+    print("Everything agrees with the evaluator." if not bad else f"DIFFER: {bad}")
+    return 1 if bad else 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

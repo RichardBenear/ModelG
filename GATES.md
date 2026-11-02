@@ -1234,3 +1234,20 @@ plus about 65 off-ledger core-h from the lost first launch (MG017 item 4). Recor
 - **Not shown (per §8):** survival under token noise, other rules or geometry-changing rules; that the motion is
   Brownian; a general survival probability (4 runs per rate, 2-graph panel).
 - **Core-h by group:** Part A frozen 2.54; ν = 0.002 3.64; ν = 0.02 8.19; ν = 0.2 15.08; Part B frozen 1.45; ν = 0.2 9.07.
+- **Total compute:** 39.96 core-h on the ledger plus about 65 core-h from the lost first launch, about 105 core-h, before
+  Part 0 (2.3 h wall) and setup and replay work outside the run timer.
+
+**Review MG018 (ChatGPT, 2026-11-02, `review/MG018_chatgpt.md`; response `review/MG018_response.md`).** ChatGPT
+independently reproduced, from the committed records, every class, track (≤ 1.8e-15), D_p, the gate (PASS) and Part B (A1).
+It also reproduced the Part 0 comparisons, the jump accounting over 19 984 edited ticks, and all 16 event lists (25 856 362
+events, hashes match). Recommendation: accept PASS and A1 within the registered scope. No blocking error. Three
+nonblocking items, all accepted:
+1. `recompute_mg5.py` now also checks tracks, D_p and every aggregate outcome, and exits 1 on any difference. Rerun on
+   the MG5 records: everything agrees.
+2. **Mobility labels are registered descriptive labels.** One ν = 0.02 run is mobile at 1.523 (0.023 above 1.5), and one
+   ν = 0.2 run is at 1.598. Part 0's refinement differences do not bound every production displacement. The labels stand,
+   with no change to the threshold. They do not establish a sharp transition or a monotonic mobility law.
+3. **Survival is not invariance of shape.** In the fast Part A runs, depth relative to the matched frozen control ranges
+   from about 0.78 to 1.26 across checks. Descriptive only.
+Residual limits (review): no independent re-integration of the evolving-graph ODE, no reconstruction of smoothing from
+full fields, and no check of the PC-only field files against the manifest.
