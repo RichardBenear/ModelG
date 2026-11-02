@@ -12,7 +12,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale (2D frozen graphs, noise-free) | **FAIL — CLOSED 2026-10-31** (every D and R run multiplied; T control passed; ChatGPT accepted; PI signed off) |
 | MG4c | 3 | Follow-up to MG4: single-particle window in b on unweighted Delaunay graphs; cotangent-operator diagnostic (estimation study; no pass/fail) | **RESULT W1 + O1** (2026-10-31; 102 runs, 11.33 core-h); ChatGPT reproduced (MG012); PI signed off 2026-10-31; **CLOSED** |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve): a settled particle on a rewritten 2D Delaunay graph | **CLOSED 2026-11-02: PASS** (Part B: A1); ChatGPT MG018 accepted, PI signed off |
-| MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | PENDING: design draft 3 (`spec/MG6_proposal.md`, MG019b) after ChatGPT review MG019 r2; not registered |
+| MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | **REGISTERED 2026-11-02** (draft 3 frozen at `106b3e2`); no run yet |
 | MG7 | 6 | Multiway branch divergence and foliation dependence | PENDING |
 
 ## Template
@@ -1254,3 +1254,44 @@ full fields, and no check of the PC-only field files against the manifest.
 
 **MG5 CLOSED 2026-11-02: Gate PASS; Part B A1.** PI sign-off: Richard Benear, 2026-11-02 13:39 UTC, in the project
 thread ("I sign off on MG5"), after ChatGPT's review MG018 and the response.
+
+### MG6 — G-coupled spatial growth around a particle (Phase 5, first campaign)
+Status: **REGISTERED 2026-11-02 (MG019c)**, with PI approval. **No MG6 run of any kind preceded this commit.** The
+registered design is `spec/MG6_proposal.md` **draft 3**, with its content frozen as committed at `106b3e2` (only its
+status lines changed since). Drafts 1 and 2 are preserved as superseded (`spec/MG6_proposal_v1.md`, `_v2.md`). Reviews:
+ChatGPT MG019 r1 and r2 (`review/MG019_chatgpt*.md`); responses `review/MG019_response*.md`.
+
+Summary (the proposal governs):
+- **Rule (rules amendment v1.3, MG6 only):** dominating candidate birth process at rate νρ₀F, F = e^0.4, with Exp(ν)
+  lifetimes for initial nodes and candidates. Acceptance u < exp(κφ_G*)/F, using the boundary field on the pre-edit mesh.
+  Rejected candidates are ghosts; ephemeral candidates are skipped. MG5's tick-synchronous transfer is kept. All arms of
+  a start share one stream.
+- **Arms:** b = 28, ν = 0.2, Δ = 0.2, dt = 0.05, t_end = 200, four MG4c starts. DEC (κ = 0); SH2 and SH4 (shifted
+  field, |s| ≥ 6); CP2 and CP4. 20 runs.
+- **Bound:** the maximum nodal φ_G is checked against 0.4/κ at every boundary. A breach is INVALID-BOUND and stops for
+  the PI.
+- **Gate MG6 (κ = 2, relative density response):** window t = 100–200. Run-level D₀(1.5) is compared in paired contrasts
+  CP2 − SH2 and CP2 − DEC. **DEMONSTRATED** iff both contrasts have all four negative and a one-sided paired t ≤ −2.353,
+  under the stated conditional working model. Otherwise **NOT DEMONSTRATED** (inconclusive), or **NOT SCORED
+  (feedback)** if a run in CP2, SH2 or DEC is not single through the window.
+- **Feedback (CP2, CP4):** SURVIVES (≥ 3/4 single) or CHANGED.
+- **Reported separately:** the absolute sign of CP2's D₀(1.5); the κ = 4 contrasts; the D_c baseline; the quasistatic
+  predictions; M₋, M₊ and M; the annular profiles.
+- **Falloff:** expected UNRESOLVED in this campaign, stated before any run.
+- **Part 0** (unregistered graph `seed_for(6, 9, 0, 0, 0)`):
+  - acceptance-rate and determinism;
+  - density equilibration;
+  - step check with a fixed edit history;
+  - fully coupled tick check;
+  - bound margin;
+  - transient;
+  - quadrature;
+  - timing with 5 concurrent runs.
+  Each has registered formulas, fallbacks and stops. Outcomes, and any change of dt, Δ, φ_cap, grid or window, are
+  written here before any registered run.
+- **Budget:** run cap 24 and a provisional 40 core-h launch cutoff, restated after Part 0. Order: DEC, SH2, SH4, CP2,
+  CP4. 5 workers with one BLAS thread, launched with no console attached. Full accounting, including off-ledger work.
+- **Deferred:** particle-mass scaling (b-scan), falloff, a curvature reading, the shuffled null, and ν = 0.02.
+
+PI sign-off (design): Richard Benear, 2026-11-02 14:45 UTC, decision card in the project thread ("Register draft 3"),
+after ChatGPT's two reviews (MG019 r1 and r2), which support implementation and Part 0.

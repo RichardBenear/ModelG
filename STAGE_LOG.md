@@ -448,3 +448,6 @@ Items deliberately postponed so the project reaches its main questions first. Th
   - the absolute-deficit sign reported separately.
 - Draft 2 is preserved as `spec/MG6_proposal_v2.md`. Not registered; no MG6 run. Next: the PI decides registration
   (ChatGPT r2 supports proceeding to implementation and Part 0 after these corrections).
+- MG019c: PI approved draft 3 (2026-11-02 14:45 UTC, decision card "Register draft 3"). MG6 REGISTERED in GATES.md;
+  draft 3 frozen at `106b3e2`. No MG6 run preceded registration. Next: implementation (tests first), a pre-run
+  implementation specification in GATES.md, then Part 0 on the PI's PC.
