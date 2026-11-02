@@ -411,3 +411,4 @@ Items deliberately postponed so the project reaches its main questions first. Th
   - Survival is not invariance of shape.
 - Total compute, made explicit: 39.96 ledger + about 65 lost-launch core-h.
 - Next: PI sign-off to close MG5; MG6 draft 1 (`spec/MG6_proposal.md`) awaits PI decisions (§9) and ChatGPT review.
+- MG5 CLOSED 2026-11-02 13:39 UTC: Gate PASS, Part B A1 (PI sign-off in the project thread).
