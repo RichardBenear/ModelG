@@ -477,4 +477,9 @@ Items deliberately postponed so the project reaches its main questions first. Th
   provisional cutoff 80 core-h. Test added (11 tests).
 - Disclosure: checks 5 and 6 were computed in the cloud from committed files while testing (bound ok, no drift).
 - Next: merge; ChatGPT reviews MG021; then `$env:MODELG_WORKERS=8; python src/run_mg6.py part0-mg021` on the PI's PC.
+- ChatGPT review MG021 (committed by the PI): supports Δ 0.1 as a disclosed, narrow exception; independently reproduced
+  the Part 0 records, the fitted-centre diagnostic and checks 5–6 from records; asked for four guard fixes and narrower
+  wording. All accepted (`review/MG021_response.md`); amendment draft 2 (draft 1 kept as `spec/MG6_amendment_1_v1.md`);
+  `run_ticks6` now records φ_G maxima including the terminal boundary; 12 tests.
+- Next: merge; then `$env:MODELG_WORKERS=8; python src/run_mg6.py part0-mg021` on the PI's PC.
 

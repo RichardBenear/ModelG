@@ -12,7 +12,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale (2D frozen graphs, noise-free) | **FAIL — CLOSED 2026-10-31** (every D and R run multiplied; T control passed; ChatGPT accepted; PI signed off) |
 | MG4c | 3 | Follow-up to MG4: single-particle window in b on unweighted Delaunay graphs; cotangent-operator diagnostic (estimation study; no pass/fail) | **RESULT W1 + O1** (2026-10-31; 102 runs, 11.33 core-h); ChatGPT reproduced (MG012); PI signed off 2026-10-31; **CLOSED** |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve): a settled particle on a rewritten 2D Delaunay graph | **CLOSED 2026-11-02: PASS** (Part B: A1); ChatGPT MG018 accepted, PI signed off |
-| MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | **REGISTERED 2026-11-02** (draft 3 frozen at `106b3e2`). Part 0 **STOP** (tick check, 2026-11-02); amendment MG021 (Δ = 0.1, part (b) governs) drafted for review; no registered run yet |
+| MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | **REGISTERED 2026-11-02** (draft 3 frozen at `106b3e2`). Part 0 **STOP** (tick check, 2026-11-02); amendment MG021 (Δ = 0.1, part (b) governs) draft 2 after ChatGPT review MG021; no registered run yet |
 | MG7 | 6 | Multiway branch divergence and foliation dependence | PENDING |
 
 ## Template
@@ -1403,10 +1403,19 @@ after ChatGPT's two reviews (MG019 r1 and r2), which support implementation and 
 (Δ 0.2 vs 0.1: centre up to 0.54 at four checks; Δ 0.1 vs 0.05: centre 0.36 at one check; limit 0.15) and passed part (b)
 both times (|ΔD̄₀| = 1.3 and 2.3 nodes against limits of 37). Checks 5–8 were not reached. This result is not re-scored.
 
-**Amendment MG021 (`spec/MG6_amendment_1.md`; PI decision 2026-11-02 21:18 UTC; awaiting ChatGPT review; nothing run
-under it).** Δ = 0.1 and dt = 0.05 for all MG6 runs; part (b) governs the tick check for this campaign, with part (a)'s
+**Amendment MG021 (`spec/MG6_amendment_1.md`; PI decision 2026-11-02 21:18 UTC; nothing run under it). Draft 1 text,
+superseded by draft 2 below:** Δ = 0.1 and dt = 0.05 for all MG6 runs; part (b) governs the tick check for this campaign, with part (a)'s
 failure recorded as a design flaw (single-snapshot centroid noise of about 0.1 against a 0.15 tolerance; diagnostic in
 `review/MG020_centre_diagnostic.py`). Checks 5–8 are completed for Δ = 0.1 by `python src/run_mg6.py part0-mg021`, with
 the registered criteria, into `results/MG6/part0/decisions_mg021.json`; `decisions.json` is kept. Provisional cutoff
 80 core-h (was 40); run cap 24; the budget is restated here from check 8 before any registered run. Gate, arms, seeds,
 measurements and evaluation are unchanged.
+
+**Amendment MG021, draft 2 (after ChatGPT review MG021, `review/MG021_chatgpt.md`; response `review/MG021_response.md`;
+supersedes the draft 1 text above).** Δ = 0.1, dt = 0.05. Numerical validation is accepted **by exception**: only the
+instantaneous-centre clause of tick part (a) for Δ 0.1 vs 0.05 is waived; equal counts, depth ≤ 3% and part (b) remain
+required (and are met). This is not a passed tick check; motion and D_p stay descriptive. The transient (§7.6) uses the
+Δ 0.1 series with P̄₀ from the Δ 0.05 run. `part0-mg021` requires a hash-verified final state, a COMPLETE settle and
+COMPLETE timing runs on the selected grid, the bound margin over timing runs and terminal boundaries, and a projection
+≤ 80 core-h; otherwise it writes `proceed = false`. Cutoff 80 core-h, run cap 24.
+

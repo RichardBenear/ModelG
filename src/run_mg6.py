@@ -104,6 +104,7 @@ def run_ticks6(pos0, F0, h, P, theta, coupled, delta, dt, t_end, Lx, Ly, kappa, 
     checks.append(do_check(0.0, F))
     y = F.ravel()
     k_done = 0
+    mx_all = -np.inf
     for k in range(1, K + 1):
         tk = k * delta
         N = len(ids)
@@ -122,6 +123,7 @@ def run_ticks6(pos0, F0, h, P, theta, coupled, delta, dt, t_end, Lx, Ly, kappa, 
                     break
             F = y.reshape(3, N)
         mx = float(F[0].max())
+        mx_all = max(mx_all, mx)                              # every boundary, including the terminal one (MG021)
         if mx > lim:                                          # §3.2: full-field bound, before thinning
             status, note = INVALID_BOUND, f"max nodal phi_G {mx:.6f} > {lim:.4f} at t = {tk:.4f}"
             flags.append(dict(kind="bound", t=tk, max_phiG=mx, node=int(np.argmax(F[0])),
@@ -178,7 +180,8 @@ def run_ticks6(pos0, F0, h, P, theta, coupled, delta, dt, t_end, Lx, Ly, kappa, 
     res = dict(status=status, note=note, flags=flags, t_reached=k_done * delta, wall_s=time.time() - t_wall,
                N_final=int(len(ids)), max_jump_resid=float(max(ticks["jump_resid"], default=0.0)),
                max_audit=float(max(ticks["audit_max"], default=0.0)),
-               max_phiG=float(max(ticks["max_phiG"], default=-np.inf)), max_p=coupled.max_p)
+               max_phiG=float(mx_all), max_phiG_ticks=float(max(ticks["max_phiG"], default=-np.inf)),
+               max_p=coupled.max_p)
     if status == COMPLETE and k_done < K:
         res["status"] = INCOMPLETE
     return res, checks, ticks

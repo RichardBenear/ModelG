@@ -210,7 +210,7 @@ def test_run_order_and_scoring():
 
 
 def test_mg021_amended_checks_from_committed_records():
-    """MG021: checks 5-6 from the committed Part 0 records; the final-state hash is checked against the manifest."""
+    """MG021: waiver condition, checks 5-6 and final-state provenance from the committed Part 0 records."""
     import json, tempfile
     import run_mg6_part0 as P
     path = os.path.join(P.P0, "decisions.json")
@@ -219,13 +219,38 @@ def test_mg021_amended_checks_from_committed_records():
     old = json.load(open(path))
     with tempfile.NamedTemporaryFile(delete=False, suffix=".npz") as f:
         f.write(b"not the final state")
-    o = P.amended_checks(old, f.name, "0" * 64)
+    for man in (None, "0" * 64):                                   # missing row, wrong hash: both unverified
+        o = P.amended_checks(old, f.name, man)
+        assert o["final_state"]["verified"] is False
+    assert P.amended_checks(old, f.name, P._sha256(f.name))["final_state"]["verified"] is True
+    assert P.amended_checks(old, f.name + ".missing", "0" * 64)["final_state"]["verified"] is False
     os.unlink(f.name)
-    assert o["final_state"]["matches_manifest"] is False
+    w = o["waiver"]
+    assert w["ok"] and [c["check"] for c in w["centre_failures"]] == [6] and w["max_depth_rel"] <= 0.03
+    bad = json.loads(json.dumps(old))
+    bad["tick_check"][1]["part_a"]["failures"].append(dict(check=3, why="count", na=1, nb=2))
+    assert not P.waiver(bad)["ok"]
     assert set(o["bound_margin"]["max_phiG_by_run"]) == set(P.AMEND_RUNS) and abs(o["bound_margin"]["limit"] - 0.07) < 1e-12
     assert o["transient"]["run"] == "d0.1_dt0.05" and o["transient"]["P0_bar"] == old["tick_check"][1]["P0_bar"]
     assert o["transient"]["window"] in ([100.0, 200.0], [150.0, 250.0])
 
+
+def test_mg021_authorise_guards():
+    """MG021 review items B and C: incomplete settle or timing runs, a bound-margin breach in timing, or a projection
+    above the cutoff never authorise the registered runs."""
+    import run_mg6 as R
+    import run_mg6_part0 as P
+    good_s = dict(status=R.COMPLETE, t_reached=300.0)
+    good_t = [dict(status=R.COMPLETE, t_reached=20.0, max_phiG=0.05)] * 8
+    assert P.authorise({}, good_s, good_t, 60.0) == (True, None)
+    assert not P.authorise({}, dict(status=R.INCOMPLETE, t_reached=150.0), good_t, 60.0)[0]
+    assert not P.authorise({}, dict(status=R.COMPLETE, t_reached=150.0), good_t, 60.0)[0]
+    assert not P.authorise({}, good_s, good_t[:7] + [dict(status=R.FAILED, t_reached=3.0, max_phiG=0.0)], 60.0)[0]
+    assert not P.authorise({}, good_s, good_t[:7] + [dict(status=R.COMPLETE, t_reached=10.0, max_phiG=0.0)], 60.0)[0]
+    assert not P.authorise({}, good_s, good_t[:7] + [dict(status=R.COMPLETE, t_reached=20.0, max_phiG=0.08)], 60.0)[0]
+    ok, why = P.authorise({}, good_s, good_t, 111.11)
+    assert not ok and "PI decision" in why
+    assert not P.authorise({}, good_s, good_t, float("nan"))[0]
 
 if __name__ == "__main__":
     n = 0
