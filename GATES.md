@@ -12,7 +12,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale (2D frozen graphs, noise-free) | **FAIL — CLOSED 2026-10-31** (every D and R run multiplied; T control passed; ChatGPT accepted; PI signed off) |
 | MG4c | 3 | Follow-up to MG4: single-particle window in b on unweighted Delaunay graphs; cotangent-operator diagnostic (estimation study; no pass/fail) | **RESULT W1 + O1** (2026-10-31; 102 runs, 11.33 core-h); ChatGPT reproduced (MG012); PI signed off 2026-10-31; **CLOSED** |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve): a settled particle on a rewritten 2D Delaunay graph | **CLOSED 2026-11-02: PASS** (Part B: A1); ChatGPT MG018 accepted, PI signed off |
-| MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | PENDING |
+| MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | PENDING: design draft 2 (`spec/MG6_proposal.md`, MG019a) after ChatGPT review MG019; not registered |
 | MG7 | 6 | Multiway branch divergence and foliation dependence | PENDING |
 
 ## Template
