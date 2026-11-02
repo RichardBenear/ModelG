@@ -389,3 +389,13 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - Amendment (PI approved, 20:58 UTC): frozen controls first, 5 workers, one BLAS thread per worker, cutoff 80 core-h,
   run cap 24. No criterion, rule, seed or run changes. Tests pass (11). Records from the interrupted launch are merged
   from branch `mg5-interrupted-1` (commit `9c678e0`).
+
+## MG018 — MG5 results (2026-11-02, DRAFT pending PI and ChatGPT review)
+- All 24 runs COMPLETE on the PI's PC (39.96 core-h on the ledger, about 65 more off-ledger from the lost first launch).
+  Part A frozen controls valid. **Gate MG5: PASS** (single 4/4 at every rate). Mobility: PINNED, PINNED, MOBILE for
+  ν = 0.002, 0.02, 0.2. **Part B: A1** (frozen 4/4 multiplied; ν = 0.2 4/4 single), read as recovery under rewriting
+  plus transfer, not annealing.
+- Independent recompute agrees on all 24 classes. Details and caveats in GATES.md MG5 "Result (MG018)".
+- Correction (Claude): I first said the run finished 0.04 core-h under the 40 core-h cutoff. The cutoff was raised to 80
+  by MG017, so there was no margin issue.
+- Open: PI sign-off; ChatGPT review of the result; MG6 design (directed response to a G gradient) is not started.

@@ -1214,3 +1214,23 @@ Changes (execution and budget only; no criterion, threshold, rule, seed or run c
 4. **Disclosure** in the final report: ledger core-hours plus the 65 off-ledger core-hours of the lost runs.
 
 PI sign-off (MG017): Richard Benear, 2026-11-01 20:58 UTC, decision card in the project thread ("Amend and relaunch").
+
+
+**Result (MG018, recorded 2026-11-02; DRAFT pending PI and ChatGPT review).** Relaunch on the PI's PC (RB_LibraryPC,
+Windows 11, Python 3.13.2, numpy 2.2.4, 5 workers), amendment MG017 order. All 24 runs COMPLETE, no flag raised in the
+status sense (evaluator ran without a mismatch). Ledger 39.96 core-h (cutoff 80, run cap 24; the cutoff did not bind),
+plus about 65 off-ledger core-h from the lost first launch (MG017 item 4). Records: `results/MG5/runs/`, `checks/`,
+`evaluation.json`, `driver_log.json`, `local_manifest.csv`, `budget_ledger.csv`.
+- **Validity:** Part A frozen controls all single and pinned (max d ≤ 1.3e-13 < 0.1). Valid.
+- **Gate MG5 (survival): PASS.** Single in 4/4 runs at ν = 0.002, 0.02 and 0.2.
+- **Mobility:** ν = 0.002 PINNED (4 pinned; max d 0.35–1.37); ν = 0.02 PINNED (3 pinned, 1 mobile; max d 1.06–1.52);
+  ν = 0.2 MOBILE (3 mobile, 1 pinned; max d 1.14–2.85). Threshold 1.5. D_p (descriptive): 1.2e-4–5.8e-4, 6.8e-4–1.0e-3,
+  7.9e-4–2.3e-3 for the three rates. The expectation that mobility rises with ν is met in direction only; ν = 0.02
+  has one run just above 1.5 (1.52).
+- **Part B: A1.** Frozen controls multiplied in 4/4; ν = 0.2 single in 4/4. Read as "recovery under rewriting plus
+  transfer"; MG5 does not separate changing disorder from the smoothing effect of repeated interpolation (§8).
+- **Independent check:** `recompute_mg5.py` (separately written detection) agrees with the evaluator on all 24 classes
+  and mobility statuses.
+- **Not shown (per §8):** survival under token noise, other rules or geometry-changing rules; that the motion is
+  Brownian; a general survival probability (4 runs per rate, 2-graph panel).
+- **Core-h by group:** Part A frozen 2.54; ν = 0.002 3.64; ν = 0.02 8.19; ν = 0.2 15.08; Part B frozen 1.45; ν = 0.2 9.07.
