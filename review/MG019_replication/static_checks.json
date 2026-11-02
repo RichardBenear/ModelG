@@ -1,0 +1,405 @@
+{
+  "reference_commit": "3179342a9b559af06beabdfea98890c627a97e12",
+  "states": [
+    {
+      "key": "b28.000000_D0_p0",
+      "h": 0.20007382779836555,
+      "L": [
+        19.922516574636518,
+        20.08183258569795
+      ],
+      "area": 400.0806425376431,
+      "rho": 47.24297551642137,
+      "G_min": -0.27621564470589616,
+      "G_max": 0.0427242951238108,
+      "G_node_sum": -9.814371537686384e-14,
+      "node_mean_area": 0.02116716800897535,
+      "h_squared": 0.04002953656989003,
+      "minimum_kappa_for_F2_clipping": 3.6203597412621638,
+      "F2_k4_negative_linear_nodes": 13,
+      "F2_k4_raw_min": -0.10486257882358463,
+      "F2_k4_clipped_total_excess": 0.8058034193688905,
+      "well_integral_equal_area_start_estimate": 0.5881706818884793,
+      "halo_integral_equal_area_start_estimate": 0.5881706818884772,
+      "F1": {
+        "2": {
+          "min_factor": 0.5755487822579357,
+          "max_factor": 1.0892055641163358,
+          "total_excess_equal_area_start_estimate": 8.651714609279862,
+          "radii": {
+            "1": {
+              "raw_target_count_excess": -37.38816154657232,
+              "excess_after_subtracting_target_global_density": -37.456098257744024,
+              "poisson_snapshot_sd": 12.182700226801602
+            },
+            "1.5": {
+              "raw_target_count_excess": -37.41845370837919,
+              "excess_after_subtracting_target_global_density": -37.57131130851552,
+              "poisson_snapshot_sd": 18.274050340202404
+            },
+            "2": {
+              "raw_target_count_excess": -18.731317549087546,
+              "excess_after_subtracting_target_global_density": -19.003064393774356,
+              "poisson_snapshot_sd": 24.365400453603204
+            },
+            "3": {
+              "raw_target_count_excess": 8.554433626750145,
+              "excess_after_subtracting_target_global_density": 7.94300322620482,
+              "poisson_snapshot_sd": 36.54810068040481
+            },
+            "5": {
+              "raw_target_count_excess": 5.157110042238285,
+              "excess_after_subtracting_target_global_density": 3.458692262945717,
+              "poisson_snapshot_sd": 60.91350113400801
+            },
+            "8": {
+              "raw_target_count_excess": 8.2852244821911,
+              "excess_after_subtracting_target_global_density": 3.937274967202126,
+              "poisson_snapshot_sd": 97.46160181441282
+            }
+          }
+        },
+        "4": {
+          "min_factor": 0.3312564007585927,
+          "max_factor": 1.1863687609019853,
+          "total_excess_equal_area_start_estimate": 31.446984312431205,
+          "radii": {
+            "1": {
+              "raw_target_count_excess": -63.82218464038367,
+              "excess_after_subtracting_target_global_density": -64.06911889410526,
+              "poisson_snapshot_sd": 12.182700226801602
+            },
+            "1.5": {
+              "raw_target_count_excess": -63.48166906306645,
+              "excess_after_subtracting_target_global_density": -64.03727113394002,
+              "poisson_snapshot_sd": 18.274050340202404
+            },
+            "2": {
+              "raw_target_count_excess": -24.761770619782595,
+              "excess_after_subtracting_target_global_density": -25.74950763466896,
+              "poisson_snapshot_sd": 24.365400453603204
+            },
+            "3": {
+              "raw_target_count_excess": 31.188699864992216,
+              "excess_after_subtracting_target_global_density": 28.966291581497902,
+              "poisson_snapshot_sd": 36.54810068040481
+            },
+            "5": {
+              "raw_target_count_excess": 24.446389772577007,
+              "excess_after_subtracting_target_global_density": 18.273033429537243,
+              "poisson_snapshot_sd": 60.91350113400801
+            },
+            "8": {
+              "raw_target_count_excess": 30.71391381845047,
+              "excess_after_subtracting_target_global_density": 14.910121580268672,
+              "poisson_snapshot_sd": 97.46160181441282
+            }
+          }
+        }
+      },
+      "F1_k4_to_k2_R1p5_ratio": 1.6965337359424575
+    },
+    {
+      "key": "b28.000000_D0_p1",
+      "h": 0.20007382779836555,
+      "L": [
+        19.922516574636518,
+        20.08183258569795
+      ],
+      "area": 400.0806425376431,
+      "rho": 47.24297551642137,
+      "G_min": -0.2766717958921368,
+      "G_max": 0.04192238689658125,
+      "G_node_sum": -1.0041967257734541e-13,
+      "node_mean_area": 0.02116716800897535,
+      "h_squared": 0.04002953656989003,
+      "minimum_kappa_for_F2_clipping": 3.6143908227995154,
+      "F2_k4_negative_linear_nodes": 14,
+      "F2_k4_raw_min": -0.10668718356854723,
+      "F2_k4_clipped_total_excess": 0.83471542035006,
+      "well_integral_equal_area_start_estimate": 0.5942597468135907,
+      "halo_integral_equal_area_start_estimate": 0.5942597468135885,
+      "F1": {
+        "2": {
+          "min_factor": 0.5750239471789484,
+          "max_factor": 1.0874600784038198,
+          "total_excess_equal_area_start_estimate": 8.579127495011456,
+          "radii": {
+            "1": {
+              "raw_target_count_excess": -35.356290508754284,
+              "excess_after_subtracting_target_global_density": -35.42365723697584,
+              "poisson_snapshot_sd": 12.182700226801602
+            },
+            "1.5": {
+              "raw_target_count_excess": -39.393822321891726,
+              "excess_after_subtracting_target_global_density": -39.54539746039022,
+              "poisson_snapshot_sd": 18.274050340202404
+            },
+            "2": {
+              "raw_target_count_excess": -21.9702529631231,
+              "excess_after_subtracting_target_global_density": -22.239719876009318,
+              "poisson_snapshot_sd": 24.365400453603204
+            },
+            "3": {
+              "raw_target_count_excess": 8.081178238687325,
+              "excess_after_subtracting_target_global_density": 7.474877684693337,
+              "poisson_snapshot_sd": 36.54810068040481
+            },
+            "5": {
+              "raw_target_count_excess": 4.441779698870802,
+              "excess_after_subtracting_target_global_density": 2.7576114933319458,
+              "poisson_snapshot_sd": 60.91350113400801
+            },
+            "8": {
+              "raw_target_count_excess": 8.138115560331439,
+              "excess_after_subtracting_target_global_density": 3.826644954151967,
+              "poisson_snapshot_sd": 97.46160181441282
+            }
+          }
+        },
+        "4": {
+          "min_factor": 0.3306525398292581,
+          "max_factor": 1.182569422122042,
+          "total_excess_equal_area_start_estimate": 31.177200148707087,
+          "radii": {
+            "1": {
+              "raw_target_count_excess": -60.01362318166887,
+              "excess_after_subtracting_target_global_density": -60.25843898261695,
+              "poisson_snapshot_sd": 12.182700226801602
+            },
+            "1.5": {
+              "raw_target_count_excess": -67.57044041233735,
+              "excess_after_subtracting_target_global_density": -68.12127596447054,
+              "poisson_snapshot_sd": 18.274050340202404
+            },
+            "2": {
+              "raw_target_count_excess": -31.514532144463065,
+              "excess_after_subtracting_target_global_density": -32.4937953482554,
+              "poisson_snapshot_sd": 24.365400453603204
+            },
+            "3": {
+              "raw_target_count_excess": 30.10530965925557,
+              "excess_after_subtracting_target_global_density": 27.901967450722825,
+              "poisson_snapshot_sd": 36.54810068040481
+            },
+            "5": {
+              "raw_target_count_excess": 22.88865989352803,
+              "excess_after_subtracting_target_global_density": 16.768264869825952,
+              "poisson_snapshot_sd": 60.91350113400801
+            },
+            "8": {
+              "raw_target_count_excess": 30.295070557084983,
+              "excess_after_subtracting_target_global_density": 14.626859296407668,
+              "poisson_snapshot_sd": 97.46160181441282
+            }
+          }
+        }
+      },
+      "F1_k4_to_k2_R1p5_ratio": 1.7152547386798631
+    },
+    {
+      "key": "b28.000000_D1_p0",
+      "h": 0.20002762164692553,
+      "L": [
+        19.922516574636518,
+        20.08183258569795
+      ],
+      "area": 400.0806425376431,
+      "rho": 47.24297551642137,
+      "G_min": -0.26329295998608937,
+      "G_max": 0.04292477820532447,
+      "G_node_sum": -4.057865155004947e-14,
+      "node_mean_area": 0.02116716800897535,
+      "h_squared": 0.04001104942172559,
+      "minimum_kappa_for_F2_clipping": 3.7980506582964972,
+      "F2_k4_negative_linear_nodes": 6,
+      "F2_k4_raw_min": -0.05317183994435748,
+      "F2_k4_clipped_total_excess": 0.16389763971549232,
+      "well_integral_equal_area_start_estimate": 0.5868386429651332,
+      "halo_integral_equal_area_start_estimate": 0.5868386429651324,
+      "F1": {
+        "2": {
+          "min_factor": 0.5906179484296227,
+          "max_factor": 1.0896423862617248,
+          "total_excess_equal_area_start_estimate": 8.10533677313268,
+          "radii": {
+            "1": {
+              "raw_target_count_excess": -37.195782560346395,
+              "excess_after_subtracting_target_global_density": -37.25942889499491,
+              "poisson_snapshot_sd": 12.182700226801602
+            },
+            "1.5": {
+              "raw_target_count_excess": -37.978699368596686,
+              "excess_after_subtracting_target_global_density": -38.12190362155585,
+              "poisson_snapshot_sd": 18.274050340202404
+            },
+            "2": {
+              "raw_target_count_excess": -18.948321303050104,
+              "excess_after_subtracting_target_global_density": -19.202906641644176,
+              "poisson_snapshot_sd": 24.365400453603204
+            },
+            "3": {
+              "raw_target_count_excess": 8.034030032922251,
+              "excess_after_subtracting_target_global_density": 7.461213021085592,
+              "poisson_snapshot_sd": 36.54810068040481
+            },
+            "5": {
+              "raw_target_count_excess": 4.644980963966364,
+              "excess_after_subtracting_target_global_density": 3.0538225977534204,
+              "poisson_snapshot_sd": 60.91350113400801
+            },
+            "8": {
+              "raw_target_count_excess": 7.725885734925071,
+              "excess_after_subtracting_target_global_density": 3.6525203174199357,
+              "poisson_snapshot_sd": 97.46160181441282
+            }
+          }
+        },
+        "4": {
+          "min_factor": 0.3488295610072164,
+          "max_factor": 1.187320529938146,
+          "total_excess_equal_area_start_estimate": 29.69431238230582,
+          "radii": {
+            "1": {
+              "raw_target_count_excess": -64.09128015873215,
+              "excess_after_subtracting_target_global_density": -64.32445173394746,
+              "poisson_snapshot_sd": 12.182700226801602
+            },
+            "1.5": {
+              "raw_target_count_excess": -65.2573996249412,
+              "excess_after_subtracting_target_global_density": -65.78203566917563,
+              "poisson_snapshot_sd": 18.274050340202404
+            },
+            "2": {
+              "raw_target_count_excess": -25.81740986011485,
+              "excess_after_subtracting_target_global_density": -26.750096160976057,
+              "poisson_snapshot_sd": 24.365400453603204
+            },
+            "3": {
+              "raw_target_count_excess": 29.48846960862065,
+              "excess_after_subtracting_target_global_density": 27.389925431682933,
+              "poisson_snapshot_sd": 36.54810068040481
+            },
+            "5": {
+              "raw_target_count_excess": 22.762134550243537,
+              "excess_after_subtracting_target_global_density": 16.93284516986099,
+              "poisson_snapshot_sd": 60.91350113400801
+            },
+            "8": {
+              "raw_target_count_excess": 28.93532049661092,
+              "excess_after_subtracting_target_global_density": 14.012339682831591,
+              "poisson_snapshot_sd": 97.46160181441282
+            }
+          }
+        }
+      },
+      "F1_k4_to_k2_R1p5_ratio": 1.7182631503937271
+    },
+    {
+      "key": "b28.000000_D1_p1",
+      "h": 0.20002762164692553,
+      "L": [
+        19.922516574636518,
+        20.08183258569795
+      ],
+      "area": 400.0806425376431,
+      "rho": 47.24297551642137,
+      "G_min": -0.2549378818867385,
+      "G_max": 0.048965409843234456,
+      "G_node_sum": -6.106226635438361e-15,
+      "node_mean_area": 0.02116716800897535,
+      "h_squared": 0.04001104942172559,
+      "minimum_kappa_for_F2_clipping": 3.9225241560776403,
+      "F2_k4_negative_linear_nodes": 1,
+      "F2_k4_raw_min": -0.019751527546953973,
+      "F2_k4_clipped_total_excess": 0.01975152754692333,
+      "well_integral_equal_area_start_estimate": 0.6849338546368087,
+      "halo_integral_equal_area_start_estimate": 0.6849338546368086,
+      "F1": {
+        "2": {
+          "min_factor": 0.6005701867514298,
+          "max_factor": 1.1028864844365034,
+          "total_excess_equal_area_start_estimate": 9.816511916854939,
+          "radii": {
+            "1": {
+              "raw_target_count_excess": -38.37618800372999,
+              "excess_after_subtracting_target_global_density": -38.45327116757981,
+              "poisson_snapshot_sd": 12.182700226801602
+            },
+            "1.5": {
+              "raw_target_count_excess": -46.81825502179926,
+              "excess_after_subtracting_target_global_density": -46.99169214046134,
+              "poisson_snapshot_sd": 18.274050340202404
+            },
+            "2": {
+              "raw_target_count_excess": -28.693756292342258,
+              "excess_after_subtracting_target_global_density": -29.002088947741516,
+              "poisson_snapshot_sd": 24.365400453603204
+            },
+            "3": {
+              "raw_target_count_excess": 7.353672835552319,
+              "excess_after_subtracting_target_global_density": 6.65992436090399,
+              "poisson_snapshot_sd": 36.54810068040481
+            },
+            "5": {
+              "raw_target_count_excess": 4.606957700184545,
+              "excess_after_subtracting_target_global_density": 2.6798786039391875,
+              "poisson_snapshot_sd": 60.91350113400801
+            },
+            "8": {
+              "raw_target_count_excess": 9.279708721808609,
+              "excess_after_subtracting_target_global_density": 4.346386235420492,
+              "poisson_snapshot_sd": 97.46160181441282
+            }
+          }
+        },
+        "4": {
+          "min_factor": 0.36068454921464727,
+          "max_factor": 1.2163585975527098,
+          "total_excess_equal_area_start_estimate": 35.99880081468758,
+          "radii": {
+            "1": {
+              "raw_target_count_excess": -65.2152498853037,
+              "excess_after_subtracting_target_global_density": -65.49792681628475,
+              "poisson_snapshot_sd": 12.182700226801602
+            },
+            "1.5": {
+              "raw_target_count_excess": -80.83467527757014,
+              "excess_after_subtracting_target_global_density": -81.47069837227748,
+              "poisson_snapshot_sd": 18.274050340202404
+            },
+            "2": {
+              "raw_target_count_excess": -43.22063053815923,
+              "excess_after_subtracting_target_global_density": -44.3513382620834,
+              "poisson_snapshot_sd": 24.365400453603204
+            },
+            "3": {
+              "raw_target_count_excess": 30.97380316412568,
+              "excess_after_subtracting_target_global_density": 28.42971078529629,
+              "poisson_snapshot_sd": 36.54810068040481
+            },
+            "5": {
+              "raw_target_count_excess": 25.56072004106855,
+              "excess_after_subtracting_target_global_density": 18.49379676654247,
+              "poisson_snapshot_sd": 60.91350113400801
+            },
+            "8": {
+              "raw_target_count_excess": 34.925054501118794,
+              "excess_after_subtracting_target_global_density": 16.833730918332027,
+              "poisson_snapshot_sd": 97.46160181441282
+            }
+          }
+        }
+      },
+      "F1_k4_to_k2_R1p5_ratio": 1.7265631801085355
+    }
+  ],
+  "small_n_statistics": {
+    "independent_run_summaries": 4,
+    "df": 3,
+    "t_statistic": 3,
+    "one_sided_p": 0.028834442811218657,
+    "two_sided_p": 0.05766888562243731,
+    "t_critical_two_sided_95": 3.182446305284263
+  }
+}
