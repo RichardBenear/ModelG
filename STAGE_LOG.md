@@ -534,3 +534,9 @@ Items deliberately postponed so the project reaches its main questions first. Th
   ChatGPT's replication). A 0.3-unit smoke run of the driver and of Part 0 in a temporary folder completed (not kept).
 - Next: merge; Part 0 on the PI's PC (`$env:MODELG_WORKERS=8; python src/run_mg7.py part0`, about 22–25 core-h, several
   hours); then the 16 runs.
+
+## MG024a — MG7 Part 0, 2026-11-03
+- Ran on the PI's PC 07:29–10:42 local (code `ca2c513`, 8 workers), 8.63 core-h: **PROCEED**. Step check ΔD̄₀ 0.17 /
+  0.17 nodes (limit 2), tick check 0.5 / 1.0 (limit 6), bound 0.062 (limit 0.14); projection 74.2 core-h (cutoff 90).
+  Records `9b20219`; outcome in GATES.md.
+- Next: merge; launch the 16 registered runs (`$env:MODELG_WORKERS=8; python src/run_mg7.py`, about 10–11 h).
