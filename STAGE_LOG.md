@@ -502,3 +502,10 @@ Items deliberately postponed so the project reaches its main questions first. Th
   stored statistics; rounding and cost labels). Response `review/MG022_response.md`. Awaiting PI sign-off.
 - **MG6 CLOSED 2026-11-03 13:24 UTC** (PI sign-off in the project thread): DEMONSTRATED, SURVIVES, falloff UNRESOLVED.
 
+## MG023 — MG7 design (mass scaling b-scan), draft 1, 2026-11-03
+- PI asked for MG7 (b-scan, falloff, shuffled null; ν = 0.02 dropped). Draft 1 `spec/MG7_proposal.md`; static design
+  table `spec/MG7_design_calc.py` (MG4c settled states; no dynamics): P₀(1.5) at κ = 2 grows from −35 to −45 nodes and
+  M₋ by 46% from b = 27.5 to 28.5; the φ_G zero crossing stays at r ≈ 1.3–1.4, so falloff stays UNRESOLVED.
+- Correction: I had said the shuffled null needs no new runs; it does (4 runs at b = 28 if included).
+- Next: PI decisions (§10), ChatGPT review.
+
