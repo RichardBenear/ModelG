@@ -1,0 +1,21 @@
+check 1: endpoint inputs
+  b 27.5 D0_p0: parts 1, max phi_G 0.0383, P0_start -30.46
+  b 27.5 D0_p1: parts 1, max phi_G 0.0335, P0_start -34.65
+  b 27.5 D1_p0: parts 1, max phi_G 0.0357, P0_start -30.00
+  b 27.5 D1_p1: parts 1, max phi_G 0.0436, P0_start -44.88
+  b 28.5 D0_p0: parts 1, max phi_G 0.0471, P0_start -34.40
+  b 28.5 D0_p1: parts 1, max phi_G 0.0564, P0_start -52.93
+  b 28.5 D1_p0: parts 1, max phi_G 0.0519, P0_start -40.47
+  b 28.5 D1_p1: parts 1, max phi_G 0.0540, P0_start -51.31
+settled at b 27.5: COMPLETE, 1 particle(s), 832 s
+settled at b 28.5: COMPLETE, 1 particle(s), 832 s
+b27.50_d0.1_dt0.05: COMPLETE, 4038 s
+b27.50_d0.05_dt0.05: COMPLETE, 7244 s
+b28.50_d0.1_dt0.05: COMPLETE, 4030 s
+b28.50_d0.05_dt0.05: COMPLETE, 7243 s
+b27.50_d0.1_dt0.025_forced: COMPLETE, 3431 s
+b28.50_d0.1_dt0.025_forced: COMPLETE, 3437 s
+b 27.5: step ok (dD0 0.1666666666666643), tick ok (dD0 0.5)
+b 28.5: step ok (dD0 0.1666666666666714), tick ok (dD0 1.0)
+projected registered cost: 74.2 core-h
+MG7 Part 0: PROCEED

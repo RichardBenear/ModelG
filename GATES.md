@@ -1566,3 +1566,20 @@ ChatGPT review MG023 and its adoption in draft 2; no second review round.
    replication. The PC run of check 1 is the record.
 10. **Not committed:** `results/MG7/local/`, `results/MG7/superseded/`, `results/MG7/part0/settled_*.npz` (SHA-256 in
     the records).
+
+**MG7 Part 0 outcome (MG024a, 2026-11-03, PI's PC, code `ca2c513`, 8 workers; records in `results/MG7/part0/`,
+commit `9b20219`): PROCEED.** Launched 07:29 local, finished 10:42 (11 549 s wall, 8.63 core-h against the 30 cap).
+Re-checked in the cloud from the committed check records (window means recomputed from `m_D0`).
+
+| Check | Result |
+|---|---|
+| 1. Endpoint inputs | ok: 8 files match the manifest; all starts single; max nodal φ_G 0.0564; mean P₀^start(1.5) −35.00 (27.5), −44.78 (28.5) |
+| Settles (t = 300) | COMPLETE and single at both b (SHA-256 of the PC-only settled states in `decisions.json`) |
+| 2. Step check, dt 0.05 vs 0.025 (forced) | ok: \|ΔD̄₀\| 0.17 (27.5) and 0.17 (28.5), limit 2; depth ≤ 1.06%; counts equal (1 at every check); centre 0.005 / 0.0003 (recorded) |
+| 3. Tick check, Δ 0.1 vs 0.05 | ok: \|ΔD̄₀\| 0.5 (27.5) and 1.0 (28.5), limit 6; depth ≤ 1.46%; counts equal; centre 0.076 / 0.101 (recorded, not scored) |
+| 4. Bound margin | ok: max nodal φ_G 0.0621 ≤ 0.14 over the six coupled runs |
+| 5. Completion and timing | all eight Part 0 runs COMPLETE; projection 16 × 200 × 83.48 s / 3600 = **74.2 core-h** (MG6 production rate; Part 0's 40.3 s/unit at 4 concurrent runs is lower and not used) |
+
+Production configuration as registered: Δ 0.1, dt 0.05, t_end 200, window t = 100–200, grid 398 × 402, cutoff 90
+core-h, cap 22, 8 workers. The Part 0 deficits (D̄₀ ≈ −45 at 27.5 and −73 at 28.5 on the unregistered graph, CP2 alone,
+no null) are validation quantities, not MG7 data, and are not interpreted.
