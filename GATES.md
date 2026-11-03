@@ -13,7 +13,8 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG4c | 3 | Follow-up to MG4: single-particle window in b on unweighted Delaunay graphs; cotangent-operator diagnostic (estimation study; no pass/fail) | **RESULT W1 + O1** (2026-10-31; 102 runs, 11.33 core-h); ChatGPT reproduced (MG012); PI signed off 2026-10-31; **CLOSED** |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve): a settled particle on a rewritten 2D Delaunay graph | **CLOSED 2026-11-02: PASS** (Part B: A1); ChatGPT MG018 accepted, PI signed off |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | **REGISTERED 2026-11-02** (draft 3 frozen at `106b3e2`). Part 0 **STOP** (tick check, 2026-11-02); amendment MG021 (Δ = 0.1, narrow waiver) after ChatGPT review MG021; Part 0 completed; cutoff 110 core-h (PI). **CLOSED 2026-11-03: DEMONSTRATED** (CP2 − SH2 = −67.1 nodes, t = −36.2; CP2 − DEC = −66.9, t = −34.1); feedback SURVIVES (CP2, CP4); falloff UNRESOLVED; ChatGPT MG022 accepted; PI signed off |
-| MG7 | 6 | Multiway branch divergence and foliation dependence | PENDING |
+| MG7 | 5 | Mass scaling: is the coupled density deficit larger for a stronger particle (b-scan, 27.5 vs 28.5)? | **REGISTERED 2026-11-03** (draft 2 frozen at `5b44cde`); implementation and Part 0 next |
+| MG8 | 6 | Multiway branch divergence and foliation dependence (numbered MG7 in `InitialPlan.md`) | PENDING |
 
 ## Template
 
@@ -1473,3 +1474,39 @@ Richard Benear, 2026-11-03 13:24 UTC, in the project thread ("I sign off on MG6"
 corrections in its response. Scope as reviewed: the deficit is the local node count under the imposed birth rule; MG6
 establishes neither intrinsic curvature nor a long-range force.
 
+### MG7 — Mass scaling of the coupled density deficit (b-scan; Phase 5, second campaign)
+Status: **REGISTERED 2026-11-03 (MG023b)**, with PI approval. **No MG7 run of any kind preceded this commit.** The
+registered design is `spec/MG7_proposal.md` **draft 2**, with its content frozen as committed at `5b44cde` (only its
+status lines changed since). Draft 1 is preserved as superseded (`spec/MG7_proposal_v1.md`). Review: ChatGPT MG023
+(`review/MG023_chatgpt.md`, static replication `review/MG023_replication/`); response `review/MG023_response.md`. The
+multiway/foliation gate formerly listed as MG7 is renumbered MG8.
+
+Summary (the proposal governs):
+- **Everything not stated is MG6 as registered and amended (MG021),** code pinned at `c795770`: coupled candidate rule,
+  F = e^0.4, full-field bound check, Δ = 0.1, dt = 0.05, ν = 0.2, t_end = 200, checks every 10 units, MG6 §4
+  measurements and quadrature.
+- **b = 27.5 and 28.5** (new runs); MG6's recorded b = 28 CP2 and SH2 runs (`09b72c2`) are the midpoint, reported only.
+- **Start fields:** MG4c's own final array at the requested b, no shift, SHA-256-checked against a committed manifest;
+  the ODE's b asserted; b in every run key. Detector threshold fixed at θ = −4.45758 (MG4c b-specific thresholds as a
+  descriptive check).
+- **Arms:** CP2 and SH2 per endpoint, four starts: 16 runs. One candidate stream `seed_for(7, 0, 0, 1, 2·slot + pl)` and
+  one shift `seed_for(7, 0, 1, 1, 2·slot + pl)` per start, shared across both b and both arms.
+- **Gate MG7 (directional endpoint result):** c_i(b) = Y_i(CP2, b) − Y_i(SH2, b), Y = window mean (t = 100–200) of
+  D₀(1.5); Δ_i = c_i(28.5) − c_i(27.5). **LARGER AT HIGHER b** iff all four Δ_i < 0 and the one-sided paired t ≤ −2.353
+  (df = 3). Otherwise **NOT DEMONSTRATED**; **NOT SCORED (feedback)** if any endpoint CP2 or SH2 run is not single at
+  every window check; **INCOMPLETE** (precedes all others; PI decides) if any of the 16 runs is not COMPLETE.
+- **Reported, not scored:** the three contrasts c(27.5), c(28), c(28.5) with MG6's replication rule; within-start
+  trajectories; paired residuals Δ − ΔP (ΔP = change in predicted CP2 minus predicted SH2) with start-field and in-run
+  predictions, no agreement label; Fieller ratio; descriptive slope against M₋; feedback per endpoint; mobility; falloff
+  (UNRESOLVED expected, declared now); early/late window means (t = 100–140, 160–200).
+- **Part 0** (unregistered MG6 Part 0 graph settled at each endpoint; streams `seed_for(7, 9, 3, 1, ib)`): endpoint input
+  hashes, single detection and bound (STOP on failure); forced-history step check dt 0.05 vs 0.025 (equal counts, depth
+  ≤ 2%, |ΔD̄₀| ≤ 2 nodes); free-acceptance tick check Δ 0.1 vs 0.05 (equal counts, depth ≤ 3%, |ΔD̄₀| ≤ 6 nodes; centre
+  recorded, not scored); bound margin ≤ 0.14 at every boundary; every Part 0 run COMPLETE. Outcomes go to
+  `results/MG7/part0/decisions.json` and here before any registered run. Validation budget about 25 core-h, cap 30.
+- **Budget:** about 74–75 production ledger core-h; cutoff 90, run cap 22, 8 workers, order SH2 then CP2. Spare slots only
+  for reruns of runs INCOMPLETE for a non-physical reason; a physical outcome is never replaced. A projection above 90
+  needs a recorded PI decision.
+
+PI sign-off (design): Richard Benear, 2026-11-03 13:55 UTC, in the project thread ("register you plan as is"), after
+ChatGPT review MG023 and its adoption in draft 2; no second review round.

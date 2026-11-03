@@ -519,3 +519,9 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - Draft 2 `spec/MG7_proposal.md` (draft 1 kept as `spec/MG7_proposal_v1.md`): gate LARGER AT HIGHER b (directional),
   16 runs, about 74–75 core-h plus about 25 for Part 0.
 - Next: merge; ChatGPT round 2 or registration (PI decides); then implementation.
+
+## MG023b — MG7 registered, 2026-11-03
+- PI (13:55 UTC, project thread): "register you plan as is". Draft 2 registered without a second review round; content
+  frozen at `5b44cde`; GATES.md MG7 entry added. The multiway/foliation gate is renumbered MG8.
+- Next: implementation (endpoint-field loader and manifest, driver, evaluator, recompute, tests) and the pre-run
+  implementation specification in GATES.md; then Part 0 on the PI's PC.

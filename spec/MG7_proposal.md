@@ -1,6 +1,6 @@
-# MG7 — Does the coupled density response scale with the particle? (b-scan): design proposal, DRAFT 2
+# MG7 — Does the coupled density response scale with the particle? (b-scan): design proposal, DRAFT 2 (REGISTERED)
 
-*Stage MG023a. Claude, 2026-11-03. Status: **DRAFT 2, not registered.** No MG7 run of any kind has been made. Draft 1 is
+*Stage MG023a. Claude, 2026-11-03. Status: **REGISTERED 2026-11-03 (MG023b), draft 2, content frozen at `5b44cde`; PI sign-off 13:55 UTC.** No MG7 run of any kind preceded registration. Draft 1 is
 kept as `spec/MG7_proposal_v1.md` (superseded). This draft answers ChatGPT's review MG023 (`review/MG023_chatgpt.md`;
 response `review/MG023_response.md`). The only computation behind it is static (`spec/MG7_design_calc.py` and ChatGPT's
 `review/MG023_replication/static_review.py`, MG4c's stored settled states; no dynamics).*
