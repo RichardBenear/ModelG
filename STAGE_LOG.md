@@ -509,3 +509,13 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - Correction: I had said the shuffled null needs no new runs; it does (4 runs at b = 28 if included).
 - Next: PI decisions (§10), ChatGPT review.
 
+
+## MG023a — MG7 design draft 2 after ChatGPT review MG023, 2026-11-03
+- ChatGPT MG023 reproduced the static design table with the production detector and quadrature and asked for six changes
+  before registration; all adopted (`review/MG023_response.md`). Key catch: MG6's start loader always loads b = 28, so MG7
+  gets its own endpoint-field loader with hashes and b in every run key.
+- PI adopted ChatGPT's §10 recommendations (13:50 UTC): endpoints 27.5/28.5 with MG6's b = 28 midpoint, CP2 and SH2, no
+  shuffled null, endpoint step and tick checks in Part 0, window fixed, 90 core-h cutoff, cap 22, 8 workers.
+- Draft 2 `spec/MG7_proposal.md` (draft 1 kept as `spec/MG7_proposal_v1.md`): gate LARGER AT HIGHER b (directional),
+  16 runs, about 74–75 core-h plus about 25 for Part 0.
+- Next: merge; ChatGPT round 2 or registration (PI decides); then implementation.
