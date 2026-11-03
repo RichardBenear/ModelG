@@ -12,7 +12,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale (2D frozen graphs, noise-free) | **FAIL — CLOSED 2026-10-31** (every D and R run multiplied; T control passed; ChatGPT accepted; PI signed off) |
 | MG4c | 3 | Follow-up to MG4: single-particle window in b on unweighted Delaunay graphs; cotangent-operator diagnostic (estimation study; no pass/fail) | **RESULT W1 + O1** (2026-10-31; 102 runs, 11.33 core-h); ChatGPT reproduced (MG012); PI signed off 2026-10-31; **CLOSED** |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve): a settled particle on a rewritten 2D Delaunay graph | **CLOSED 2026-11-02: PASS** (Part B: A1); ChatGPT MG018 accepted, PI signed off |
-| MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | **REGISTERED 2026-11-02** (draft 3 frozen at `106b3e2`). Part 0 **STOP** (tick check, 2026-11-02); amendment MG021 (Δ = 0.1, part (b) governs) draft 2 after ChatGPT review MG021; no registered run yet |
+| MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | **REGISTERED 2026-11-02** (draft 3 frozen at `106b3e2`). Part 0 **STOP** (tick check, 2026-11-02); amendment MG021 (Δ = 0.1, narrow waiver) after ChatGPT review MG021; Part 0 completed (checks 5–8 pass); cutoff 110 core-h (PI); registered runs next |
 | MG7 | 6 | Multiway branch divergence and foliation dependence | PENDING |
 
 ## Template
@@ -1418,4 +1418,15 @@ required (and are met). This is not a passed tick check; motion and D_p stay des
 Δ 0.1 series with P̄₀ from the Δ 0.05 run. `part0-mg021` requires a hash-verified final state, a COMPLETE settle and
 COMPLETE timing runs on the selected grid, the bound margin over timing runs and terminal boundaries, and a projection
 ≤ 80 core-h; otherwise it writes `proceed = false`. Cutoff 80 core-h, run cap 24.
+
+**Part 0 completion and restated budget (MG021c/d, 2026-11-02/03).** `python src/run_mg6.py part0-mg021` ran on the PI's
+PC (code `39f3a88`, 8 workers, 15:28–16:08 local; records `results/MG6/part0/decisions_mg021.json`, timing check records,
+commit `0248e78`). Waiver condition met; final state hash-verified. Check 5: max φ_G 0.0534 (records), terminal maxima
+0.0438 and 0.0456, timing runs 0.0472–0.0490, all ≤ 0.07. Check 6: B₁ = −147.44, B₂ = −136.44, no drift; window
+t = 100–200, t_end = 200. Check 7: ok, grid 398 × 402. Settle COMPLETE (767 s). Check 8: 8 concurrent runs, all COMPLETE
+at t = 20, 81.3–82.1 s per time unit; **projected 90.73 core-h**, above the 80 core-h cutoff, so the record says
+`proceed = false` (PI decision required).
+**PI decision (2026-11-03 00:14 UTC, decision card): cutoff raised to 110 core-h.** Recorded in
+`results/MG6/part0/budget_decision_mg021.json`; the driver lifts only the budget stop, and only when the projection is
+within that cutoff. Run cap 24, 8 workers, order DEC, SH2, SH4, CP2, CP4; about 13 h of wall time.
 

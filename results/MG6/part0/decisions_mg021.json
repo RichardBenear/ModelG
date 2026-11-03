@@ -1,0 +1,197 @@
+{
+ "design": "spec/MG6_amendment_1.md (MG021, draft 2): Part 0 checks 5-8 at Delta 0.1, dt 0.05, numerical validation accepted by exception",
+ "platform": {
+  "machine": "RB_LibraryPC",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.2",
+  "numpy": "2.2.4",
+  "scipy": "1.16.1"
+ },
+ "code_revision": "39f3a88221cd5f7e9c373fcba640c44506589542",
+ "workers": 8,
+ "original_outcome": {
+  "file": "decisions.json",
+  "stop": "step or tick check failed twice",
+  "kept_unchanged": true
+ },
+ "inputs": {
+  "check_d0.2_dt0.05.npz": "abc1da1f554dc14ea5b5e8b744ed74aca37ed6ca70149fcd1e1730ae1d4def90",
+  "check_d0.2_dt0.025_forced.npz": "ee3dfc64ec720986f3773c1f637734fde37d26b2b8032348a2c2f4b894186aa1",
+  "check_d0.1_dt0.05.npz": "22ef383114777f9de7624c1cccb376cc422681fdbf2762a6499bbc534fa189f3",
+  "check_d0.05_dt0.05.npz": "1f52c09987a133cf5ccf565c2f1531da7093936f2e0d98e2110b3909ab36d58a",
+  "check_d0.1_dt0.025_forced.npz": "620c1dfd24393283a4b6a7f4b6abbeefc6a5e1f00ee31b1b00873fcfdf6125cd",
+  "decisions.json": "ed710e1afdd0958a5bae1960d3b1187663600111db58fe6b3398fd93612798cd"
+ },
+ "waiver": {
+  "ok": true,
+  "waived": "instantaneous-centre clause of tick part (a), Delta 0.1 vs 0.05",
+  "centre_failures": [
+   {
+    "check": 6,
+    "d": 0.3620930687806869,
+    "why": "centre/depth"
+   }
+  ],
+  "max_depth_rel": 0.027872438172671557,
+  "part_b_ok": true,
+  "D0_bar": [
+   -148.10758250291826,
+   -145.77424916958492
+  ],
+  "P0_bar": -146.89117484533773
+ },
+ "bound_margin": {
+  "max_phiG_by_run": {
+   "d0.2_dt0.05": 0.051324058809550835,
+   "d0.2_dt0.025_forced": 0.051435536345888294,
+   "d0.1_dt0.05": 0.05339563139330925,
+   "d0.05_dt0.05": 0.05222225624620422,
+   "d0.1_dt0.025_forced": 0.053440022059433614
+  },
+  "max_phiG": 0.053440022059433614,
+  "limit": 0.06999999999999999,
+  "ok": true,
+  "note": "the five step/tick records hold per-tick maxima before the terminal boundary; terminal maxima are added from the final states kept on the PC and from the timing runs (MG021 review item B)",
+  "terminal_max_phiG_d0.1_dt0.05": 0.04379972798700885,
+  "terminal_max_phiG_d0.2_dt0.05": 0.04560482239217408
+ },
+ "transient": {
+  "run": "d0.1_dt0.05",
+  "rule": "amended section 7.6 (MG021): the Delta 0.1 series, with P0_bar from the Delta 0.05 run",
+  "series": [
+   14.059084163748423,
+   -51.94091583625158,
+   -80.94091583625158,
+   -97.94091583625158,
+   -146.94091583625158,
+   -164.94091583625158,
+   -150.94091583625158,
+   -143.94091583625158,
+   -155.94091583625158,
+   -133.94091583625158,
+   -138.94091583625158
+  ],
+  "t": [
+   0.0,
+   10.0,
+   20.0,
+   30.0,
+   40.0,
+   50.0,
+   60.0,
+   70.0,
+   80.0,
+   90.0,
+   100.0
+  ],
+  "B1": -147.44091583625158,
+  "B2": -136.44091583625158,
+  "P0_bar": -146.89117484533773,
+  "lag1": 0.8326325542941027,
+  "drift": false,
+  "window": [
+   100.0,
+   200.0
+  ]
+ },
+ "final_state": {
+  "path": "final_d0.1_dt0.05.npz",
+  "sha256": "cb7e6fad9695faf69ceae29bffe539c91efc686abea865b5a1393e885120f648",
+  "manifest_sha256": "cb7e6fad9695faf69ceae29bffe539c91efc686abea865b5a1393e885120f648",
+  "verified": true
+ },
+ "quadrature": {
+  "ok": true,
+  "refine_ok": true,
+  "i": true,
+  "ii_worst_rel": {
+   "0.5": 0.0007779321608496987,
+   "1.0": 0.0002543220414634952,
+   "1.5": 0.0001643834783501904,
+   "2.0": 6.592549720586844e-05,
+   "3.0": 6.35072310022159e-05,
+   "5.0": 2.0012774336090877e-05,
+   "8.0": 9.182608072562112e-06
+  },
+  "iii": true,
+  "iv_rel": {
+   "P0_15": 0.00012020340008471716,
+   "M_minus": 7.182039183160453e-05
+  },
+  "P0_15": [
+   -127.18955310532887,
+   -127.20484172206739
+  ],
+  "M_minus": [
+   1.06047457291261,
+   1.060398409213256
+  ]
+ },
+ "settle": {
+  "status": "COMPLETE",
+  "t_reached": 300.0,
+  "wall_s": 767.2033033370972
+ },
+ "timing": {
+  "s_per_unit_concurrent": [
+   81.68728470802307,
+   81.51505333185196,
+   81.5436561703682,
+   82.09153896570206,
+   82.05929064750671,
+   81.55994914770126,
+   81.53854178190231,
+   81.25931580066681
+  ],
+  "n_concurrent": 8,
+  "projected_core_h_20_runs": 90.7298097991281,
+  "t_end": 200.0,
+  "grid": [
+   398,
+   402
+  ],
+  "status": [
+   "COMPLETE",
+   "COMPLETE",
+   "COMPLETE",
+   "COMPLETE",
+   "COMPLETE",
+   "COMPLETE",
+   "COMPLETE",
+   "COMPLETE"
+  ],
+  "t_reached": [
+   20.0,
+   20.0,
+   20.0,
+   20.0,
+   20.0,
+   20.0,
+   20.0,
+   20.0
+  ],
+  "max_phiG": [
+   0.047425253264252794,
+   0.04718759800849191,
+   0.04756693664701655,
+   0.048569449188506524,
+   0.048677282987199054,
+   0.04814572333842727,
+   0.04718759800849191,
+   0.04895176121787326
+  ]
+ },
+ "proceed": false,
+ "dt": 0.05,
+ "delta": 0.1,
+ "t_end": 200.0,
+ "window": [
+  100.0,
+  200.0
+ ],
+ "nx": 398,
+ "ny": 402,
+ "cutoff_core_h": 80.0,
+ "stop": "projected cost 90.7 core-h exceeds the 80 core-h cutoff: PI decision required",
+ "part0_wall_s": 2418.14830327034
+}

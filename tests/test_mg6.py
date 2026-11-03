@@ -252,6 +252,16 @@ def test_mg021_authorise_guards():
     assert not ok and "PI decision" in why
     assert not P.authorise({}, good_s, good_t, float("nan"))[0]
 
+
+def test_mg021_budget_decision_authorises_driver():
+    """MG021d: the PI's recorded budget decision lifts only the budget stop, and only up to its cutoff."""
+    import run_mg6 as R
+    d = os.path.join(R.OUT, "part0", "decisions_mg021.json")
+    if not os.path.exists(d) or not os.path.exists(os.path.join(R.OUT, "part0", "budget_decision_mg021.json")):
+        return
+    p = R.timing_params()
+    assert p["proceed"] and p["cutoff_core_h"] == 110.0 and p["delta"] == 0.1 and p["t_end"] == 200.0
+
 if __name__ == "__main__":
     n = 0
     for k, f in list(globals().items()):

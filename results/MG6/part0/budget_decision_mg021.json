@@ -1,0 +1,10 @@
+{
+ "decision": "Raise the MG6 launch cutoff to 110 core-h",
+ "pi_approved": true,
+ "by": "Richard Benear (PI), decision card in the project thread",
+ "at_utc": "2026-11-03T00:14:31Z",
+ "context": "decisions_mg021.json: checks 5-8 passed; proceed false only because the projected cost 90.73 core-h exceeded the 80 core-h cutoff (MG021 section 3.5)",
+ "cutoff_core_h": 110.0,
+ "run_cap": 24,
+ "workers": 8
+}
