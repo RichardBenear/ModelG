@@ -12,7 +12,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale (2D frozen graphs, noise-free) | **FAIL — CLOSED 2026-10-31** (every D and R run multiplied; T control passed; ChatGPT accepted; PI signed off) |
 | MG4c | 3 | Follow-up to MG4: single-particle window in b on unweighted Delaunay graphs; cotangent-operator diagnostic (estimation study; no pass/fail) | **RESULT W1 + O1** (2026-10-31; 102 runs, 11.33 core-h); ChatGPT reproduced (MG012); PI signed off 2026-10-31; **CLOSED** |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve): a settled particle on a rewritten 2D Delaunay graph | **CLOSED 2026-11-02: PASS** (Part B: A1); ChatGPT MG018 accepted, PI signed off |
-| MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | **REGISTERED 2026-11-02** (draft 3 frozen at `106b3e2`). Part 0 **STOP** (tick check, 2026-11-02); amendment MG021 (Δ = 0.1, narrow waiver) after ChatGPT review MG021; Part 0 completed (checks 5–8 pass); cutoff 110 core-h (PI); registered runs next |
+| MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | **REGISTERED 2026-11-02** (draft 3 frozen at `106b3e2`). Part 0 **STOP** (tick check, 2026-11-02); amendment MG021 (Δ = 0.1, narrow waiver) after ChatGPT review MG021; Part 0 completed; cutoff 110 core-h (PI). **RESULT 2026-11-03: DEMONSTRATED** (CP2 − SH2 = −67.1 nodes, t = −36.2; CP2 − DEC = −66.9, t = −34.1); feedback SURVIVES (CP2, CP4); falloff UNRESOLVED; awaiting ChatGPT review |
 | MG7 | 6 | Multiway branch divergence and foliation dependence | PENDING |
 
 ## Template
@@ -1429,4 +1429,27 @@ at t = 20, 81.3–82.1 s per time unit; **projected 90.73 core-h**, above the 80
 **PI decision (2026-11-03 00:14 UTC, decision card): cutoff raised to 110 core-h.** Recorded in
 `results/MG6/part0/budget_decision_mg021.json`; the driver lifts only the budget stop, and only when the projection is
 within that cutoff. Run cap 24, 8 workers, order DEC, SH2, SH4, CP2, CP4; about 13 h of wall time.
+
+**MG6 result (MG022, 2026-11-03; not yet reviewed).** 20/20 runs COMPLETE on the PI's PC (code `c795770`, 8 workers,
+Windows 11, Python 3.13.2, numpy 2.2.4), 83.09 core-h, no INVALID-BOUND or FAILED; records commit `09b72c2`.
+`evaluate_mg6.py` → `results/MG6/evaluation.json`; `recompute_mg6.py` agrees on the PC (full check, candidate hashes
+included) and in the cloud (`--cross-platform`; see below).
+- **Gate (κ = 2): DEMONSTRATED.** Paired Y = D̄₀(1.5) contrasts by start (D0p0, D0p1, D1p0, D1p1):
+  CP2 − SH2 = (−67.6, −66.6, −71.6, −62.6), mean −67.1, t = −36.2, 95% CI (−73.0, −61.2);
+  CP2 − DEC = (−67.6, −66.6, −71.6, −62.0), mean −66.9, t = −34.1, 95% CI (−73.2, −60.7). All negative, t ≤ −2.353.
+- **Absolute deficit (CP2):** Y = (−66.9, −62.3, −64.1, −54.9), t = −24.4: negative. Observed/predicted (Y_D0/Y_P0) =
+  1.01, 0.94, 1.01, 0.83.
+- **Feedback:** CP2 and CP4 SURVIVE (4/4 single each). Mobility (descriptive): CP2_D1_p0 and CP4_D1_p1 mobile, the rest
+  pinned; all 12 null-arm runs single and pinned.
+- **Descriptive:** CP4 − SH4 = −150.5 (t = −44.1); Dc contrasts agree with D₀; SH2 − DEC = +0.14 and SH4 − DEC = +0.05
+  (the shifted nulls are near-identical to DEC around the particle, as designed).
+- **Falloff:** UNRESOLVED, as pre-declared (first zero crossing of the mean φ_G profile at r = 1.65; one eligible annulus).
+- **Reading:** the G-coupled birth rule produces a node deficit around the particle that matches the static prediction
+  (P₀) within 0–17%, and the particle survives the feedback. This shows the coupled process does what it was designed to
+  do without destroying the particle; it does not test a mechanism beyond that rule.
+- **Cross-platform note:** in the cloud (Linux, numpy 2.5.3 and 2.2.4) the candidate lists regenerate with identical
+  N0, life0, tb, x, y, u but a different `ell` hash (PC per-field check, CP2_D0_p0), because numpy's exponential sampler
+  calls the C library's log on a small fraction of draws. `recompute_mg6.py --cross-platform` reports this and audits the
+  rest: rebuilt node counts, detections, classes, window means and the gate all agree for all 20 runs. On the PC the full
+  check, hashes included, passes.
 

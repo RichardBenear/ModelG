@@ -490,3 +490,11 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - PI decision (00:14 UTC): cutoff 110 core-h (`results/MG6/part0/budget_decision_mg021.json`); driver reads it. 13 tests.
 - Next: merge; launch the 20 registered runs on the PI's PC (`$env:MODELG_WORKERS=8; python src/run_mg6.py`).
 
+## MG022 — MG6 registered runs and result, 2026-11-03
+- 20/20 COMPLETE on the PI's PC (17:39–05:08 local, 8 workers), 83.09 core-h; records `09b72c2`.
+- Gate DEMONSTRATED (CP2 − SH2 −67.1, t −36.2; CP2 − DEC −66.9, t −34.1); feedback SURVIVES (CP2, CP4); absolute
+  deficit negative; falloff UNRESOLVED. Evaluator and recompute agree on the PC and in the cloud.
+- `recompute_mg6.py --cross-platform` added: the `ell` candidate array differs in the last bits between Windows and Linux
+  (numpy exponential uses libm log on a few draws); nothing else differs that matters.
+- Next: merge; ChatGPT review; PI sign-off.
+

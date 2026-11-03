@@ -9,7 +9,8 @@ from the committed records only (plus the MG4c start graphs), it
 and compares all of it with the committed records and results/MG6/evaluation.json. Exits 1 on any difference.
 Quadrature quantities (P0, Pc, M-, M+, radial phi_G) are not rebuilt here (they need the PC-only fields); they were
 cross-checked in-run.
-    python src/recompute_mg6.py
+    python src/recompute_mg6.py                     (on the records' platform: full check, hash included)
+    python src/recompute_mg6.py --cross-platform    (elsewhere: hash differences reported, everything else checked)
 """
 import os, sys, json, hashlib
 import numpy as np
@@ -109,8 +110,15 @@ def tstat(c):
     return c.mean() / (s / 2.0) if s > 0 else (-np.inf if c.mean() < 0 else np.inf)
 
 
+CROSS_PLATFORM = "--cross-platform" in sys.argv
+# MG022: on another platform the candidate hash can differ, because numpy's exponential sampler falls back to the C
+# library's log for a small fraction of draws (Windows and Linux differ in the last bit). With --cross-platform a hash
+# difference is reported and the rest of the audit runs on the regenerated lists; the node-set rebuild then shows whether
+# any difference matters. The full check (hash included) is run on the platform that produced the records.
+
+
 def main():
-    bad = []
+    bad, notes = [], []
     ev_ = json.load(open(os.path.join(OUT, "evaluation.json")))
     w0, t_end_w = ev_["window"]
     Y, Yc, single_w, status = {}, {}, {}, {}
@@ -126,8 +134,10 @@ def main():
         sp = rec["spec"]
         cand, hsh = regen(18901, nu, t_end, Lx, Ly, rec["replay"]["seed"])
         if hsh != rec["replay"]["sha256"]:
-            bad.append(f"{key}: candidate hash")
-            continue
+            if not CROSS_PLATFORM:
+                bad.append(f"{key}: candidate hash")
+                continue
+            notes.append(key)
         acc = np.unpackbits(d["accepted_bits"])[:int(d["n_candidates"])].astype(bool)
         k_of = np.ceil(cand["tb"] / delta - 1e-12)                 # birth tick index (tb in ((k-1)Delta, kDelta])
         eph = cand["tb"] + cand["ell"] <= k_of * delta
@@ -197,6 +207,8 @@ def main():
             if fb != ev_["feedback"][a]["outcome"]:
                 bad.append(f"feedback {a}")
             print(f"feedback {a}: {fb}")
+    if notes:
+        print(f"candidate hash differs on this platform for {len(notes)} run(s) (--cross-platform): {notes}")
     print("Everything agrees." if not bad else f"DIFFER: {bad}")
     return 1 if bad else 0
 
