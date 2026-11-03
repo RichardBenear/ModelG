@@ -500,4 +500,5 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - ChatGPT review MG022: strict Windows replay reproduces everything; recommends accepting DEMONSTRATED and SURVIVES, no
   rerun. Three record corrections made (κ = 4 falloff and Dc CP4 − DEC added, both falloffs UNRESOLVED; recompute compares
   stored statistics; rounding and cost labels). Response `review/MG022_response.md`. Awaiting PI sign-off.
+- **MG6 CLOSED 2026-11-03 13:24 UTC** (PI sign-off in the project thread): DEMONSTRATED, SURVIVES, falloff UNRESOLVED.
 

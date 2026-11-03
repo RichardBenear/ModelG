@@ -12,7 +12,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale (2D frozen graphs, noise-free) | **FAIL — CLOSED 2026-10-31** (every D and R run multiplied; T control passed; ChatGPT accepted; PI signed off) |
 | MG4c | 3 | Follow-up to MG4: single-particle window in b on unweighted Delaunay graphs; cotangent-operator diagnostic (estimation study; no pass/fail) | **RESULT W1 + O1** (2026-10-31; 102 runs, 11.33 core-h); ChatGPT reproduced (MG012); PI signed off 2026-10-31; **CLOSED** |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve): a settled particle on a rewritten 2D Delaunay graph | **CLOSED 2026-11-02: PASS** (Part B: A1); ChatGPT MG018 accepted, PI signed off |
-| MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | **REGISTERED 2026-11-02** (draft 3 frozen at `106b3e2`). Part 0 **STOP** (tick check, 2026-11-02); amendment MG021 (Δ = 0.1, narrow waiver) after ChatGPT review MG021; Part 0 completed; cutoff 110 core-h (PI). **RESULT 2026-11-03: DEMONSTRATED** (CP2 − SH2 = −67.1 nodes, t = −36.2; CP2 − DEC = −66.9, t = −34.1); feedback SURVIVES (CP2, CP4); falloff UNRESOLVED; awaiting ChatGPT review |
+| MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | **REGISTERED 2026-11-02** (draft 3 frozen at `106b3e2`). Part 0 **STOP** (tick check, 2026-11-02); amendment MG021 (Δ = 0.1, narrow waiver) after ChatGPT review MG021; Part 0 completed; cutoff 110 core-h (PI). **CLOSED 2026-11-03: DEMONSTRATED** (CP2 − SH2 = −67.1 nodes, t = −36.2; CP2 − DEC = −66.9, t = −34.1); feedback SURVIVES (CP2, CP4); falloff UNRESOLVED; ChatGPT MG022 accepted; PI signed off |
 | MG7 | 6 | Multiway branch divergence and foliation dependence | PENDING |
 
 ## Template
@@ -1467,4 +1467,9 @@ absolute deficit, feedback and mobility labels reproduced. Recommends accepting 
 rerun. Three record corrections, all made: the κ = 4 falloff and Dc CP4 − DEC added to the evaluator (both falloffs
 UNRESOLVED); `recompute_mg6.py` now compares the stored contrast vectors, t statistics, intervals and the absolute
 result; rounding and cost labels corrected above. Gate outcomes unchanged.
+
+**MG6 CLOSED 2026-11-03: gate DEMONSTRATED, feedback SURVIVES (κ = 2 and 4), falloff UNRESOLVED (both κ).** PI sign-off:
+Richard Benear, 2026-11-03 13:24 UTC, in the project thread ("I sign off on MG6"), after ChatGPT review MG022 and the
+corrections in its response. Scope as reviewed: the deficit is the local node count under the imposed birth rule; MG6
+establishes neither intrinsic curvature nor a long-range force.
 
