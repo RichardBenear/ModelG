@@ -139,7 +139,7 @@ def main():
     print("Gate MG6:", out["gate"])
     print("Feedback:", {k: v["outcome"] for k, v in out["feedback"].items()})
     print("Absolute deficit (CP2):", out.get("absolute_cp2", {}).get("passes"))
-    print("Falloff:", out.get("falloff", {}).get("result"))
+    print("Falloff:", out.get("falloff", {}).get("result"), "| CP4:", out.get("falloff_cp4", {}).get("result"))
     print(f"core-h (ledger) {ch:.2f}")
 
 
@@ -175,6 +175,7 @@ def score(table):
         desc["CP4_minus_SH4"] = paired(Y("CP4"), Y("SH4"))
         desc["CP4_minus_DEC"] = paired(Y("CP4"), Y("DEC"))
         desc["Dc_CP4_minus_SH4"] = paired(Y("CP4", "Y_Dc"), Y("SH4", "Y_Dc"))
+        desc["Dc_CP4_minus_DEC"] = paired(Y("CP4", "Y_Dc"), Y("DEC", "Y_Dc"))            # MG022 review item 1
     desc["Dc_CP2_minus_SH2"] = paired(Y("CP2", "Y_Dc"), Y("SH2", "Y_Dc"))
     desc["Dc_CP2_minus_DEC"] = paired(Y("CP2", "Y_Dc"), Y("DEC", "Y_Dc"))
     desc["SH2_minus_DEC"] = paired(Y("SH2"), Y("DEC"))
@@ -184,6 +185,10 @@ def score(table):
     out["descriptive"] = desc
     prof = np.mean([r["ann_phiG"] for r in arm("CP2")], axis=0)
     out["falloff"] = falloff([r["ann_dn0"] for r in arm("CP2")], [r["ann_dn0"] for r in arm("SH2")], prof, mg6.ANN)
+    if all(r["status"] == R.COMPLETE and r.get("single_in_window") for r in arm("CP4") + arm("SH4")):
+        prof4 = np.mean([r["ann_phiG"] for r in arm("CP4")], axis=0)                 # proposal 4.4: kappa = 4 too
+        out["falloff_cp4"] = falloff([r["ann_dn0"] for r in arm("CP4")], [r["ann_dn0"] for r in arm("SH4")], prof4,
+                                     mg6.ANN)
     out["fine_profile"] = dict(edges=list(mg6.FINE),
                                contrast=np.mean(np.subtract([r["fine_dn0"] for r in arm("CP2")],
                                                             [r["fine_dn0"] for r in arm("SH2")]), 0).tolist(),

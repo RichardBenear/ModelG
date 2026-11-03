@@ -497,4 +497,7 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - `recompute_mg6.py --cross-platform` added: the `ell` candidate array differs in the last bits between Windows and Linux
   (numpy exponential uses libm log on a few draws); nothing else differs that matters.
 - Next: merge; ChatGPT review; PI sign-off.
+- ChatGPT review MG022: strict Windows replay reproduces everything; recommends accepting DEMONSTRATED and SURVIVES, no
+  rerun. Three record corrections made (κ = 4 falloff and Dc CP4 − DEC added, both falloffs UNRESOLVED; recompute compares
+  stored statistics; rounding and cost labels). Response `review/MG022_response.md`. Awaiting PI sign-off.
 
