@@ -47,7 +47,7 @@ framework does alone.
 ## Conventions
 
 - **Stages** are numbered `MG000`, `MG001`, … and logged in [`STAGE_LOG.md`](STAGE_LOG.md).
-- **Gates** (`MG1`–`MG7`) are defined in [`GATES.md`](GATES.md). Each gate's
+- **Gates** (`MG1`–`MG8`) are defined in [`GATES.md`](GATES.md). Each gate's
   prediction, pass criterion and null control are written down and committed
   **before** the run that tests it.
 - Every result in `results/` is reproducible from a config in `configs/` and
@@ -84,7 +84,7 @@ See [`InitialPlan.md`](InitialPlan.md). Summary:
 | 3 | Frozen irregular graphs and hypergraph snapshots | MG4 |
 | 4 | Evolving hypergraph, no coupling | MG5 |
 | 5 | G-coupled spatial growth | MG6 |
-| 6 | Multiway / foliation diagnostics | MG7 |
+| 6 | Multiway / foliation diagnostics | MG8 (MG7 is the mass-scaling b-scan) |
 | 7 | Write-up | — |
 
 ## Setup
