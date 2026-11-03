@@ -196,6 +196,22 @@ def main():
             c = [Y[f"CP2_{s}"] - Y[f"{null}_{s}"] for s in starts]
             ok = ok and all(x < 0 for x in c) and tstat(c) <= -TCRIT
         gate = "DEMONSTRATED" if ok else "NOT DEMONSTRATED"
+        # MG022 review item 2: compare the stored contrast vectors, t statistics and intervals, and the absolute result
+        for null, name in (("SH2", "CP2_minus_SH2"), ("DEC", "CP2_minus_DEC")):
+            c = np.array([Y[f"CP2_{s}"] - Y[f"{null}_{s}"] for s in starts])
+            st = ev_["primary"][name]
+            m, sd = c.mean(), c.std(ddof=1)
+            mine = list(c) + [m, sd, tstat(c), m - 3.182 * sd / 2, m + 3.182 * sd / 2]
+            theirs = list(st["c"]) + [st["mean"], st["sd"], st["t"]] + list(st["ci95"])
+            if not np.allclose(mine, theirs, rtol=1e-9, atol=1e-9):
+                bad.append(f"primary statistics {name}")
+            print(f"{name}: c = {np.round(c, 3).tolist()}, t = {tstat(c):.4f} (stored {st['t']:.4f})")
+        a = np.array([Y[f"CP2_{s}"] for s in starts])
+        ab = ev_["absolute_cp2"]
+        if not (np.allclose(a, ab["values"], rtol=1e-9, atol=1e-9) and abs(tstat(a) - ab["t"]) < 1e-9 * (1 + abs(ab["t"]))
+                and bool(np.all(a < 0) and tstat(a) <= -TCRIT) == ab["passes"]):
+            bad.append("absolute CP2 result")
+        print(f"absolute CP2: t = {tstat(a):.4f}, passes {bool(np.all(a < 0) and tstat(a) <= -TCRIT)}")
     print(f"gate: {gate} ({'agrees' if gate == ev_['gate'] else 'DIFFERS from ' + ev_['gate']})")
     if gate != ev_["gate"]:
         bad.append("gate")

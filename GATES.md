@@ -12,7 +12,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG4 | 3 | Particles survive irregular connectivity; graph Laplacian ≈ ∇² at soliton scale (2D frozen graphs, noise-free) | **FAIL — CLOSED 2026-10-31** (every D and R run multiplied; T control passed; ChatGPT accepted; PI signed off) |
 | MG4c | 3 | Follow-up to MG4: single-particle window in b on unweighted Delaunay graphs; cotangent-operator diagnostic (estimation study; no pass/fail) | **RESULT W1 + O1** (2026-10-31; 102 runs, 11.33 core-h); ChatGPT reproduced (MG012); PI signed off 2026-10-31; **CLOSED** |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve): a settled particle on a rewritten 2D Delaunay graph | **CLOSED 2026-11-02: PASS** (Part B: A1); ChatGPT MG018 accepted, PI signed off |
-| MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | **REGISTERED 2026-11-02** (draft 3 frozen at `106b3e2`). Part 0 **STOP** (tick check, 2026-11-02); amendment MG021 (Δ = 0.1, narrow waiver) after ChatGPT review MG021; Part 0 completed; cutoff 110 core-h (PI). **RESULT 2026-11-03: DEMONSTRATED** (CP2 − SH2 = −67.1 nodes, t = −36.2; CP2 − DEC = −66.9, t = −34.1); feedback SURVIVES (CP2, CP4); falloff UNRESOLVED; awaiting ChatGPT review |
+| MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | **REGISTERED 2026-11-02** (draft 3 frozen at `106b3e2`). Part 0 **STOP** (tick check, 2026-11-02); amendment MG021 (Δ = 0.1, narrow waiver) after ChatGPT review MG021; Part 0 completed; cutoff 110 core-h (PI). **CLOSED 2026-11-03: DEMONSTRATED** (CP2 − SH2 = −67.1 nodes, t = −36.2; CP2 − DEC = −66.9, t = −34.1); feedback SURVIVES (CP2, CP4); falloff UNRESOLVED; ChatGPT MG022 accepted; PI signed off |
 | MG7 | 6 | Multiway branch divergence and foliation dependence | PENDING |
 
 ## Template
@@ -1430,20 +1430,28 @@ at t = 20, 81.3–82.1 s per time unit; **projected 90.73 core-h**, above the 80
 `results/MG6/part0/budget_decision_mg021.json`; the driver lifts only the budget stop, and only when the projection is
 within that cutoff. Run cap 24, 8 workers, order DEC, SH2, SH4, CP2, CP4; about 13 h of wall time.
 
-**MG6 result (MG022, 2026-11-03; not yet reviewed).** 20/20 runs COMPLETE on the PI's PC (code `c795770`, 8 workers,
-Windows 11, Python 3.13.2, numpy 2.2.4), 83.09 core-h, no INVALID-BOUND or FAILED; records commit `09b72c2`.
+**MG6 result (MG022, 2026-11-03; corrected after ChatGPT review MG022, see below).** 20/20 runs COMPLETE on the PI's PC (code `c795770`, 8 workers,
+Windows 11, Python 3.13.2, numpy 2.2.4), 83.09 **production ledger** core-h, no INVALID-BOUND or FAILED; records commit `09b72c2`.
 `evaluate_mg6.py` → `results/MG6/evaluation.json`; `recompute_mg6.py` agrees on the PC (full check, candidate hashes
 included) and in the cloud (`--cross-platform`; see below).
 - **Gate (κ = 2): DEMONSTRATED.** Paired Y = D̄₀(1.5) contrasts by start (D0p0, D0p1, D1p0, D1p1):
-  CP2 − SH2 = (−67.6, −66.6, −71.6, −62.6), mean −67.1, t = −36.2, 95% CI (−73.0, −61.2);
-  CP2 − DEC = (−67.6, −66.6, −71.6, −62.0), mean −66.9, t = −34.1, 95% CI (−73.2, −60.7). All negative, t ≤ −2.353.
-- **Absolute deficit (CP2):** Y = (−66.9, −62.3, −64.1, −54.9), t = −24.4: negative. Observed/predicted (Y_D0/Y_P0) =
+  CP2 − SH2 = (−67.6, −66.5, −71.5, −62.5), mean −67.1, t = −36.2, 95% CI (−73.0, −61.2);
+  CP2 − DEC = (−67.6, −66.5, −71.5, −62.0), mean −66.9, t = −34.1, 95% CI (−73.2, −60.7). All negative, t ≤ −2.353.
+  Intervals are conditional on the registered four-start model.
+- **Absolute deficit (CP2):** Y = (−66.9, −62.3, −64.1, −54.9), mean −62.05, t = −24.3: negative. Observed/predicted (Y_D0/Y_P0) =
   1.01, 0.94, 1.01, 0.83.
 - **Feedback:** CP2 and CP4 SURVIVE (4/4 single each). Mobility (descriptive): CP2_D1_p0 and CP4_D1_p1 mobile, the rest
   pinned; all 12 null-arm runs single and pinned.
-- **Descriptive:** CP4 − SH4 = −150.5 (t = −44.1); Dc contrasts agree with D₀; SH2 − DEC = +0.14 and SH4 − DEC = +0.05
+- **Descriptive:** CP4 − SH4 = −150.5 (t = −44.1); Dc contrasts agree with D₀ (Dc CP4 − DEC = −149.5, t = −43.7, added
+  after review MG022); SH2 − DEC = +0.14 and SH4 − DEC = +0.05
   (the shifted nulls are near-identical to DEC around the particle, as designed).
-- **Falloff:** UNRESOLVED, as pre-declared (first zero crossing of the mean φ_G profile at r = 1.65; one eligible annulus).
+- **Falloff:** UNRESOLVED at both κ, as pre-declared. CP2: first zero crossing of the mean φ_G profile at r = 1.65; CP4
+  (added after review MG022, as §4.4 requires): r = 1.95. In each arm only the annulus [1, 1.5] is eligible (paired
+  t = −8.31 for CP2, −23.84 for CP4); three are required.
+- **Cost:** production ledger 83.09 core-h (20 runs, cutoff 110). Off-ledger, not on the ledger and only partly measured:
+  the original Part 0 (11 662 s wall, at most 3 concurrent runs: ≤ 9.7 core-h); the MG021 completion (2 418 s wall:
+  timing about 3.6 core-h, settle 0.2, quadrature small; about 4 core-h); evaluations and replays on the PC and in the
+  cloud, and the cloud Part 0 exercises, unmeasured.
 - **Reading:** the G-coupled birth rule produces a node deficit around the particle that matches the static prediction
   (P₀) within 0–17%, and the particle survives the feedback. This shows the coupled process does what it was designed to
   do without destroying the particle; it does not test a mechanism beyond that rule.
@@ -1452,4 +1460,16 @@ included) and in the cloud (`--cross-platform`; see below).
   calls the C library's log on a small fraction of draws. `recompute_mg6.py --cross-platform` reports this and audits the
   rest: rebuilt node counts, detections, classes, window means and the gate all agree for all 20 runs. On the PC the full
   check, hashes included, passes.
+
+**Review MG022 (ChatGPT, `review/MG022_chatgpt.md`; response `review/MG022_response.md`).** Strict replay on Windows
+(numpy 2.2.4): all 20 candidate hashes match; node sets, counts and detections rebuilt at 420 checks; primary statistics,
+absolute deficit, feedback and mobility labels reproduced. Recommends accepting DEMONSTRATED and SURVIVES (both κ), no
+rerun. Three record corrections, all made: the κ = 4 falloff and Dc CP4 − DEC added to the evaluator (both falloffs
+UNRESOLVED); `recompute_mg6.py` now compares the stored contrast vectors, t statistics, intervals and the absolute
+result; rounding and cost labels corrected above. Gate outcomes unchanged.
+
+**MG6 CLOSED 2026-11-03: gate DEMONSTRATED, feedback SURVIVES (κ = 2 and 4), falloff UNRESOLVED (both κ).** PI sign-off:
+Richard Benear, 2026-11-03 13:24 UTC, in the project thread ("I sign off on MG6"), after ChatGPT review MG022 and the
+corrections in its response. Scope as reviewed: the deficit is the local node count under the imposed birth rule; MG6
+establishes neither intrinsic curvature nor a long-range force.
 
