@@ -248,6 +248,13 @@ def run_specs():
 def timing_params():
     amended = os.path.join(OUT, "part0", "decisions_mg021.json")      # MG021: completes the stopped Part 0
     d = json.load(open(amended if os.path.exists(amended) else P0DEC))
+    bpath = os.path.join(OUT, "part0", "budget_decision_mg021.json")   # MG021d: PI's budget decision
+    if os.path.exists(amended) and not d.get("proceed") and os.path.exists(bpath):
+        b = json.load(open(bpath))
+        stop = d.get("stop") or ""
+        if (stop.startswith("projected cost") and b.get("pi_approved") and
+                d["timing"]["projected_core_h_20_runs"] <= b["cutoff_core_h"]):
+            d = dict(d, proceed=True, cutoff_core_h=b["cutoff_core_h"], budget_decision=b, stop=None)
     if not d.get("proceed"):
         raise SystemExit("Part 0 did not authorise the registered runs (decisions.json: proceed is not true)")
     return d

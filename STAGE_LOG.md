@@ -483,3 +483,10 @@ Items deliberately postponed so the project reaches its main questions first. Th
   `run_ticks6` now records φ_G maxima including the terminal boundary; 12 tests.
 - Next: merge; then `$env:MODELG_WORKERS=8; python src/run_mg6.py part0-mg021` on the PI's PC.
 
+## MG021c/d — MG6 Part 0 completed; budget raised to 110 core-h, 2026-11-02/03
+- `part0-mg021` on the PI's PC: checks 5–8 all pass (details in GATES.md); projected 90.73 core-h at 81.7 s/unit with 8
+  concurrent runs, above the 80 cutoff, so `proceed = false` as designed. Records committed (`0248e78`); numbers
+  re-checked in the cloud from the committed JSON.
+- PI decision (00:14 UTC): cutoff 110 core-h (`results/MG6/part0/budget_decision_mg021.json`); driver reads it. 13 tests.
+- Next: merge; launch the 20 registered runs on the PI's PC (`$env:MODELG_WORKERS=8; python src/run_mg6.py`).
+
