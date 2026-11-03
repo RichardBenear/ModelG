@@ -1510,3 +1510,59 @@ Summary (the proposal governs):
 
 PI sign-off (design): Richard Benear, 2026-11-03 13:55 UTC, in the project thread ("register you plan as is"), after
 ChatGPT review MG023 and its adoption in draft 2; no second review round.
+
+**Pre-run implementation specification (MG024, 2026-11-03; committed before any Part 0 or registered MG7 run).**
+1. **Code.** `src/run_mg7.py` (driver, start-field loader), `src/run_mg7_part0.py` (Part 0), `src/evaluate_mg7.py`,
+   `src/recompute_mg7.py`, `tests/test_mg7.py` (8 tests). MG6's engine is reused unchanged: `run_mg6.run_ticks6`,
+   `save_checks6`, `summarize6`, `mg6.Coupled`, `mg6.Grid`, `mg6.measure`. A test checks that the reused files
+   (`mg6.py`, `run_mg6.py`, `run_mg5.py`, `evolve.py`, `quad6_check.py`, `graph_ode.py`, `lattice.py`, `graphs.py`,
+   `runner.py`, `run_mg4c.py`, `run_mg6_part0.py`) are byte-identical to the MG6 production revision `c795770`.
+2. **Start fields.** `results/MG7/endpoint_manifest.csv` (committed now) lists the SHA-256 of the eight MG4c files
+   `results/MG4c/fields/b{27.5, 28.5}_D{0,1}_p{0,1}.npz`. `start_state7(slot, pl, b)` refuses any b other than 27.5 or
+   28.5, checks the file's SHA-256 against the manifest, loads `final` (float64, 3 × 18901) with no shift, checks it equals
+   the file, and takes the graph and h from MG4c (`run_mg4c.graph_for`, independent of b). The reaction parameter is
+   built by `params_for(b)`, which asserts b. Each run record stores b, the parameter b, the file path, its SHA-256 and
+   `shift_applied = false`; the evaluator and the recompute stop if any of these disagree with the spec.
+3. **Runs.** Keys `{SH2,CP2}_b{27.50,28.50}_D{slot}_p{pl}`; launch order SH2 (27.5, then 28.5), then CP2. κ = 2, Δ = 0.1,
+   dt = 0.05, t_end = 200, checks every 10, MG6 grid 398 × 402, θ = −4.457581675528346. Candidate stream
+   `seed_for(7, 0, 0, 1, 2·slot + pl)` and shift `seed_for(7, 0, 1, 1, 2·slot + pl)`, shared across b and arms.
+4. **Launch guards.** The driver refuses to launch unless the eight endpoint files match the manifest and
+   `results/MG7/part0/decisions.json` has `proceed = true` with Δ 0.1, dt 0.05. If Part 0 stops only on the projected
+   cost, a PI decision recorded in `results/MG7/part0/budget_decision.json` (`pi_approved`, `cutoff_core_h`) lifts that
+   stop and nothing else. Cutoff 90 production ledger core-h, cap 22 (every started run counts), 8 workers, one BLAS thread.
+5. **Spare slots.** The driver never reruns a run that has a record. A non-physical INCOMPLETE (crash, interruption) is
+   rerun only after the PI moves its record aside, with the reason recorded; a physical outcome is never replaced.
+6. **No silent overwrites (MG021 lesson).** The driver moves any existing output it would replace to
+   `results/MG7/superseded/` with its SHA-256 in the name and a line in `moves.csv`. Part 0 refuses to start, or to write,
+   if an output already exists.
+7. **Part 0.** As proposal §7, in this order:
+   - check 1 on the registered start files (static: hashes, array equality, single at θ, max nodal φ_G ≤ 0.14,
+     P₀^start(1.5) and M₋ recorded with κ = 2, no shift);
+   - settle the MG6 Part 0 graph (`seed_for(6, 9, 0, 0, 0)`) frozen at each b (Δ 1, dt 0.05, t = 300), which must be
+     COMPLETE and single at t = 300;
+   - for each b, with stream `seed_for(7, 9, 3, 1, ib)` (ib 1 = 27.5, 2 = 28.5), CP2 runs of 100 units: Δ 0.1/dt 0.05
+     (A), Δ 0.05/dt 0.05 (C), then Δ 0.1/dt 0.025 with A's accepted edits imposed (B);
+   - step check A vs B: equal counts at every check, relative depth ≤ 2%, |D̄₀ difference| ≤ 2 nodes (D̄₀ = mean
+     D₀(1.5) over t = 50–100); tick check A vs C: equal counts, depth ≤ 3%, |D̄₀ difference| ≤ 6 nodes; centre
+     differences recorded, not scored;
+   - bound: max nodal φ_G ≤ 0.14 at every boundary of the six coupled runs;
+   - every Part 0 run COMPLETE;
+   - Part 0 cap 30 core-h: after A and C, if the spent wall time plus 2 × 2 × mean(A wall) exceeds 30, STOP before B;
+   - projection = 16 × 200 × max(MG6 production mean s/unit over CP2 and SH2 = 83.5, mean s/unit of the two A runs) /
+     3600. `proceed = true` only if every check passes and the projection ≤ 90; otherwise STOP with the reason
+     (a check failure: PI decides; a projection above 90: "PI decision required").
+8. **Evaluation.** `evaluate_mg7.py` re-detects every check from the sparse records (stops on any count or class
+   difference), reads MG6's b = 28 CP2 and SH2 records as the midpoint, and applies §5: INCOMPLETE first, then NOT
+   SCORED (feedback), then the gate on Δ_i = c_i(28.5) − c_i(27.5) (all four negative and one-sided t ≤ −2.353). Reported:
+   the three contrasts with MG6's replication rule, per-start trajectories, residuals e = Δ − ΔP with ΔP from the
+   start-field (t = 0 check) and in-run (window-mean) predictions of CP2 minus SH2, each with mean and conditional 95%
+   interval, a paired Fieller interval for mean Δ / mean ΔP (unbounded if the denominator's leading coefficient is ≤ 0),
+   the slope of c against window-mean M₋ over 12 CP2 runs (descriptive), feedback and mobility per endpoint, falloff
+   per endpoint (UNRESOLVED expected), single-in-window at the MG4c b-specific thresholds, and early (t = 100–140) and
+   late (160–200) window means with |P₀^start| as reference. `recompute_mg7.py` checks all scored quantities
+   independently (strict on the records' platform, `--cross-platform` elsewhere).
+9. **Check 1 computed in the cloud while writing the code (no dynamics; disclosed):** all eight files match, every start
+   is single at θ, max nodal φ_G 0.0564; mean P₀^start(1.5) −35.00 (27.5) and −44.78 (28.5), as in ChatGPT's static
+   replication. The PC run of check 1 is the record.
+10. **Not committed:** `results/MG7/local/`, `results/MG7/superseded/`, `results/MG7/part0/settled_*.npz` (SHA-256 in
+    the records).

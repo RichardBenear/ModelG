@@ -17,3 +17,8 @@ results/MG5/local/
 results/MG6/local/
 # MG6 Part 0: final states used by the quadrature check stay local
 results/MG6/part0/final_*.npz
+# MG7: candidate lists and full fields stay on the PI's PC (SHA-256 manifest in results/MG7/local_manifest.csv)
+results/MG7/local/
+results/MG7/superseded/
+# MG7 Part 0: settled unregistered states stay local (SHA-256 in decisions.json)
+results/MG7/part0/settled_*.npz

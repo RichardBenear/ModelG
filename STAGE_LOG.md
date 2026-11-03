@@ -525,3 +525,12 @@ Items deliberately postponed so the project reaches its main questions first. Th
   frozen at `5b44cde`; GATES.md MG7 entry added. The multiway/foliation gate is renumbered MG8.
 - Next: implementation (endpoint-field loader and manifest, driver, evaluator, recompute, tests) and the pre-run
   implementation specification in GATES.md; then Part 0 on the PI's PC.
+
+## MG024 — MG7 implementation and pre-run specification, 2026-11-03
+- Code: `run_mg7.py` (own start-field loader with the committed endpoint manifest; refuses any b but 27.5/28.5; no
+  shift), `run_mg7_part0.py`, `evaluate_mg7.py`, `recompute_mg7.py`; MG6's engine reused byte-identical to `c795770`
+  (tested). `tests/test_mg7.py`: 8 tests pass. Pre-run specification in GATES.md (MG7, items 1–10).
+- Check 1 computed statically in the cloud: all starts single, max φ_G 0.0564, mean P₀^start −35.00 / −44.78 (matches
+  ChatGPT's replication). A 0.3-unit smoke run of the driver and of Part 0 in a temporary folder completed (not kept).
+- Next: merge; Part 0 on the PI's PC (`$env:MODELG_WORKERS=8; python src/run_mg7.py part0`, about 22–25 core-h, several
+  hours); then the 16 runs.
