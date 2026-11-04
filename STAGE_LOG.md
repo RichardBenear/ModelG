@@ -577,3 +577,20 @@ Items deliberately postponed so the project reaches its main questions first. Th
   (not a fold); interface-envelope observable, UNRESOLVED and robustness repeats; benchmark recheck; budget 193 + 27
   reserve, cap 220, cutoff 8 core-h. Seed-threshold extension deferred.
 - No MG9 computation run. Next: PI decides on a ChatGPT round 2 or registration.
+
+## MG026b — MG9 draft 3 after ChatGPT round 2, 2026-11-04
+- ChatGPT r2 (`review/MG026_chatgpt_r2.md`; synthetic checks `review/MG026_replication/draft2_checks.*`): supports the
+  scope; three items (physical-width envelope, ordered classification, failed preparation ≠ evidence) and seven
+  implementation points.
+- All accepted into draft 3's text (`review/MG026_response_r2.md`; draft 2 kept as `spec/MG9_proposal_v2.md`):
+  λ-width boxcar envelope with synthetic validation and patch tracking; one ordered classification procedure;
+  PREP-UNRESOLVED → U, PREP-LOST/CHANGED → N with censored edges; robustness follows final edges; frozen benchmark
+  brackets (b_s keeps MG003's potential carry, b_r its seed); `mg9_ode` wrapper exposing solver success; P1 outcome order
+  incl. DEGENERATE; budget 210 + 20 reserve, cap 230, cutoff 10 core-h, six-stage stop priority.
+- No MG9 computation run (a synthetic kernel check only). Next: PI decides registration or a round 3.
+
+## MG026c — MG9 registered, 2026-11-04
+- PI chose "Register draft 3" on the decision card (16:40 UTC), without a ChatGPT round 3 (ChatGPT r2 had no remaining
+  scope objection once its items were fixed). Draft 3 content frozen at `7810b8b`; GATES.md MG9 entry added.
+- Next: implementation (code, tests with the synthetic envelope/classification validations) and the pre-run
+  implementation specification in GATES.md; ChatGPT reviews those before the first run.

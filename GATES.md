@@ -14,6 +14,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve): a settled particle on a rewritten 2D Delaunay graph | **CLOSED 2026-11-02: PASS** (Part B: A1); ChatGPT MG018 accepted, PI signed off |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | **REGISTERED 2026-11-02** (draft 3 frozen at `106b3e2`). Part 0 **STOP** (tick check, 2026-11-02); amendment MG021 (Δ = 0.1, narrow waiver) after ChatGPT review MG021; Part 0 completed; cutoff 110 core-h (PI). **CLOSED 2026-11-03: DEMONSTRATED** (CP2 − SH2 = −67.1 nodes, t = −36.2; CP2 − DEC = −66.9, t = −34.1); feedback SURVIVES (CP2, CP4); falloff UNRESOLVED; ChatGPT MG022 accepted; PI signed off |
 | MG7 | 5 | Mass scaling: is the coupled density deficit larger for a stronger particle (b-scan, 27.5 vs 28.5)? | **REGISTERED 2026-11-03** (draft 2 frozen at `5b44cde`); Part 0 PROCEED. **RESULT 2026-11-04: NOT SCORED (feedback)**: at b = 27.5 the particle dissolved in 7 of 8 runs (both arms); b = 28.5 SURVIVES (8/8 single). ChatGPT MG025 accepted; **CLOSED 2026-11-04** (PI signed off) |
+| MG9 | 2 | Local onset type of the Turing instability (P1) and finite-time front arrest against the single-particle window (P2); deterministic, 1D lattice | **REGISTERED 2026-11-04** (draft 3 frozen at `7810b8b`); no MG9 run yet |
 | MG8 | 6 | Multiway branch divergence and foliation dependence (numbered MG7 in `InitialPlan.md`) | PENDING |
 
 ## Template
@@ -1629,3 +1630,28 @@ no null) are validation quantities, not MG7 data, and are not interpreted.
 Richard Benear, 2026-11-04 14:38 UTC, in the project thread ("i sign off on MG7"), after ChatGPT review MG025 and the
 interpretation corrections in its response. Scope: b = 27.5 failed the finite-panel survival criterion under rewriting
 in both arms; no survival edge is estimated; the mass-scaling question remains open.
+
+### MG9 — Local onset type and front arrest against the particle window (deterministic; Phase 2 follow-up)
+Status: **REGISTERED 2026-11-04 (MG026c)**, PI decision card 16:40 UTC ("Register draft 3"). **No MG9 run of any kind
+preceded this commit.** The registered design is `spec/MG9_proposal.md` **draft 3**, with its content frozen as
+committed at `7810b8b` (only its status lines changed since). Drafts 1 and 2 are preserved as superseded
+(`spec/MG9_proposal_v1.md`, `_v2.md`). Reviews: ChatGPT MG026 and MG026 r2 (`review/MG026_chatgpt*.md`, static and
+synthetic checks in `review/MG026_replication/`); responses `review/MG026_response*.md`. Disclosed prior computation:
+one timing run of the b = 29 MG003 reference; ChatGPT's static scripts re-run; one synthetic envelope-kernel check.
+
+Summary (the proposal governs):
+- **P1 (local onset type):** cubic coefficient L₃ of the real cosine amplitude at the D02 mode-34 threshold (frozen
+  formula, §5), validated by the V2 fitted-growth runs. Outcomes in order: NOT EVALUATED, DEGENERATE, MIXED,
+  SUBCRITICAL / SUPERCRITICAL. Either sign is a valid finding.
+- **P2 (primary):** the front-arrest interval on D02 (grid b = 28.50–30.00, step 0.05; ordered classification §6.3;
+  refinement, robustness and preparation statuses §§6.1, 6.4) against the rechecked window benchmarks (§6.5). Outcomes
+  in order: UNRESOLVED, NO ARREST OBSERVED, OUTSIDE, COINCIDES (tolerance 0.10, both edges resolved), OVERLAPS; flags
+  CENSORED, ANOMALOUS, BENCHMARK-SENSITIVE, MESH-SENSITIVE. A positive result reads "front arrest consistent with a
+  pinning interpretation", never "snaking".
+- **Descriptive:** α, L₃ terms, sweep persistence bracket, E_pat(b), interface velocities, one Landau-style figure.
+- **Budget:** run cap 230 integrations (210 planned + 20 reserve), cutoff 10 core-h, cloud container; stop priority as
+  §9.
+- **Next:** code and tests (`src/landau_mg9.py`, `src/run_mg9.py`, `src/evaluate_mg9.py`, `tests/test_mg9.py`), with the
+  synthetic envelope and classification validations passing before any Model G run, and a pre-run implementation
+  specification appended here.
+
