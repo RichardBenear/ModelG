@@ -606,3 +606,7 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - Next: PI sign-off on amendment 1; ChatGPT review of the code and pre-run specification; then stage p1.
 - PI approved amendment 1 (decision card, 16:59 UTC). Next: ChatGPT review of the code and pre-run specification; then stage p1.
 - ChatGPT review MG027 (`review/MG027_chatgpt.md`): supports amendment 1 (envelope reproduced independently; worst edge error 0.037 λ). One wording fix accepted: cancellation at 2k is exact only for the continuous boxcar (discrete single-pass gain 1.47e-3 / 1.99e-4). Response `review/MG027_response.md`. The review covered the envelope only.
+
+## MG028 — MG9 runs, 2026-11-04
+- PI chose "Start the runs now" on the decision card (17:10 UTC), with ChatGPT's review limited to the envelope (MG027). Production code: main at f7ef9e9 plus the documentation-only 54b2a08. Stage p1 launched 17:11 UTC in the cloud (Python 3.13.18, numpy 2.5.3, scipy 1.18.1).
+- **Stage p1 (17:11–17:17 UTC, 4 integrations, 310 core-s): P1 = SUBCRITICAL.** L₃ (real cosine amplitude, original time) = 0.013653 (i, D02 mode 34), 0.014162 (ii), 0.013128 (iii), 0.012602 (iv); all positive, no cancellation (terms 0.0156, 0.0131, −0.0151 for (i)). Code check passed. V2 passed: fitted 0.013650 (A₀ = 0.1) and 0.013641 (0.2), within 0.1%; A₀ = 0.05 fit 0.013653 but below the 25% identifiability change (20%); tight-tolerance repeat 0.0136500. Independent recompute of (i) with finite-difference Taylor coefficients of the raw reaction terms: 0.013653.
