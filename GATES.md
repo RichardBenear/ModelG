@@ -15,7 +15,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | **REGISTERED 2026-11-02** (draft 3 frozen at `106b3e2`). Part 0 **STOP** (tick check, 2026-11-02); amendment MG021 (Δ = 0.1, narrow waiver) after ChatGPT review MG021; Part 0 completed; cutoff 110 core-h (PI). **CLOSED 2026-11-03: DEMONSTRATED** (CP2 − SH2 = −67.1 nodes, t = −36.2; CP2 − DEC = −66.9, t = −34.1); feedback SURVIVES (CP2, CP4); falloff UNRESOLVED; ChatGPT MG022 accepted; PI signed off |
 | MG7 | 5 | Mass scaling: is the coupled density deficit larger for a stronger particle (b-scan, 27.5 vs 28.5)? | **REGISTERED 2026-11-03** (draft 2 frozen at `5b44cde`); Part 0 PROCEED. **RESULT 2026-11-04: NOT SCORED (feedback)**: at b = 27.5 the particle dissolved in 7 of 8 runs (both arms); b = 28.5 SURVIVES (8/8 single). ChatGPT MG025 accepted; **CLOSED 2026-11-04** (PI signed off) |
 | MG9 | 2 | Local onset type of the Turing instability (P1) and finite-time front arrest against the single-particle window (P2); deterministic, 1D lattice | **CLOSED 2026-11-04: P1 SUBCRITICAL; P2 UNRESOLVED** (registered at `7810b8b`; amendment 1; PI sign-off 19:21 UTC) |
-| MG9c | 2 | Late-time fate of MG9's slow fronts (b = 29.25–29.35): settle into bounded patches or keep advancing; robustness; upper settling edge vs b_r | **DRAFT 2** (2026-11-04, `spec/MG9c_proposal.md`, after ChatGPT MG029); not registered; no MG9c run |
+| MG9c | 2 | Late-time fate of MG9's slow fronts (b = 29.25–29.35): settle into bounded patches or keep advancing; robustness; upper settling edge vs b_r | **REGISTERED 2026-11-04** (draft 2 frozen at `372336b`); no MG9c run yet |
 | MG8 | 6 | Multiway branch divergence and foliation dependence (numbered MG7 in `InitialPlan.md`) | PENDING |
 
 ## Template
@@ -1741,3 +1741,21 @@ project decision card ("Sign off and close MG9"), after ChatGPT result review MG
 (`review/MG028_response.md`). Scope: P1 is the local onset type at the Turing threshold only; P2 found no finite-time
 arrest, and the lower window edge was not testable with the registered 34-cell wavelength. The stochastic barrier S(b)
 remains deferred to a separately registered MG9b.
+
+### MG9c — Late-time fate of MG9's slow fronts (deterministic; Phase 2 follow-up to MG9)
+Status: **REGISTERED 2026-11-04 (MG029c)**, PI decision card 19:56 UTC ("Register draft 2" with the §9 defaults). **No
+MG9c run of any kind preceded this commit.** The registered design is `spec/MG9c_proposal.md` **draft 2**, content frozen
+at `372336b` (draft 1 kept as `spec/MG9c_proposal_v1.md`). Reviews: ChatGPT MG029 and MG029 r2
+(`review/MG029_chatgpt*.md`; responses `review/MG029_response*.md`). Disclosed prior knowledge: exponential fits of the
+committed MG9 tracks (proposal §0). MG9's own classifications are unchanged.
+- **Q1 (primary):** at b = 29.25, 29.30, 29.35 (D02, patches prepared from the 34-cell branch, MG9 splice), late-time
+  classification on windows from t = 1800 (T = 12,000, extension 30,000): SETTLED / ADVANCES / RECEDES / INVADES /
+  RETREATS / UNRESOLVED-*. Robustness of a SETTLED point: D01, D02L (half-width 25), ±5% amplitude perturbations;
+  PASS / FAIL / UNRESOLVED. Outcome order: UNRESOLVED, SLOW INVASION, BOUNDED, MIXED. Prediction (informed by §0):
+  BOUNDED.
+- **Q2 (if 29.35 is SETTLED-ROBUST):** three bisections between 29.35 and 29.40; interval comparison with b_r ∈
+  [29.395313, 29.396094], tolerance 0.01: NEAR b_r / BELOW / ABOVE / UNRESOLVED RELATIVE TO THE TOLERANCE.
+- **Descriptive:** b = 29.22; width trials (D02L half-width 50; D02 half-width 25 + λ/4).
+- **Cap 60 integrations; cutoff 2 core-h; cloud.** Replay of MG9's [0, 1800] tracks to 1e-6 required (REPLAY-MISMATCH
+  otherwise). Synthetic tests and a pre-run implementation specification come before any run.
+

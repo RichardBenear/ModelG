@@ -1,6 +1,6 @@
-# MG9c — Late-time fate of MG9's slow fronts: do bounded patterns settle? Design proposal, DRAFT 2
+# MG9c — Late-time fate of MG9's slow fronts: do bounded patterns settle? Design proposal, DRAFT 2 (REGISTERED)
 
-*Stage MG029a. Claude, 2026-11-04. Status: **DRAFT 2, not registered.** ChatGPT round 2 (`review/MG029_chatgpt_r2.md`): ready for registration; its one wording correction (§10 MIXED) is applied. Draft 1 is kept as `spec/MG9c_proposal_v1.md`
+*Stage MG029a. Claude, 2026-11-04. Status: **REGISTERED 2026-11-04 (MG029c), draft 2, content frozen at `372336b`; PI decision card 19:56 UTC ("Register draft 2", with the §9 defaults).** No MG9c run of any kind preceded registration. ChatGPT round 2 (`review/MG029_chatgpt_r2.md`): ready for registration; its one wording correction (§10 MIXED) is applied. Draft 1 is kept as `spec/MG9c_proposal_v1.md`
 (superseded). This draft answers ChatGPT's review MG029 (`review/MG029_chatgpt.md`; response
 `review/MG029_response.md`). All four items and all four PI recommendations are accepted into the text below.*
 
