@@ -1,0 +1,3276 @@
+{
+ "key": "front_grid_29.3000",
+ "b": 29.3,
+ "N": 500,
+ "h": 0.2,
+ "E_pat": 6.60086115019687,
+ "T": 1800.0,
+ "extended": true,
+ "label": "UNRESOLVED-SLOW",
+ "info": {
+  "dL": 2.226807047052496,
+  "dR": 2.2306084501665993,
+  "vL": 0.0003641077685780744,
+  "vR": 0.00036251819051445804,
+  "n_range": 0,
+  "residual": 0.007665875679776946
+ },
+ "complete": true,
+ "success": true,
+ "t_reached": 1800.0,
+ "residual": 0.007665875679776946,
+ "retry": null,
+ "seed_scale": 0.0,
+ "track": [
+  {
+   "t": 0.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -25.006858451266144,
+   "xR": 24.997390770046316
+  },
+  {
+   "t": 5.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -25.683650057581204,
+   "xR": 25.568893119466022
+  },
+  {
+   "t": 10.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -25.97468067795304,
+   "xR": 25.838928358950337
+  },
+  {
+   "t": 15.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.109720998617092,
+   "xR": 25.96775962567765
+  },
+  {
+   "t": 20.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.192186394700904,
+   "xR": 26.04902116806309
+  },
+  {
+   "t": 25.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.253710197240967,
+   "xR": 26.1099096595304
+  },
+  {
+   "t": 30.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.303732917794434,
+   "xR": 26.159484107109567
+  },
+  {
+   "t": 35.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.346664745807278,
+   "xR": 26.201990556754843
+  },
+  {
+   "t": 40.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.384718852133098,
+   "xR": 26.240557153666664
+  },
+  {
+   "t": 45.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.41975380922095,
+   "xR": 26.2756647855307
+  },
+  {
+   "t": 50.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.452402981139556,
+   "xR": 26.30834963615826
+  },
+  {
+   "t": 55.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.483034590485193,
+   "xR": 26.33913129421112
+  },
+  {
+   "t": 60.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.512145220967504,
+   "xR": 26.368252206588704
+  },
+  {
+   "t": 65.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.53996815159623,
+   "xR": 26.39588030183972
+  },
+  {
+   "t": 70.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.56659364376293,
+   "xR": 26.422831263734295
+  },
+  {
+   "t": 75.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.592085743284468,
+   "xR": 26.448638675823105
+  },
+  {
+   "t": 80.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.617036526622293,
+   "xR": 26.473460749402168
+  },
+  {
+   "t": 85.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.64117460962029,
+   "xR": 26.49750648137121
+  },
+  {
+   "t": 90.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.664458562444207,
+   "xR": 26.520887680002538
+  },
+  {
+   "t": 95.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.6870704400768,
+   "xR": 26.543635901982938
+  },
+  {
+   "t": 100.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.70912501122152,
+   "xR": 26.565741425381916
+  },
+  {
+   "t": 105.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.73066919871137,
+   "xR": 26.587195846497668
+  },
+  {
+   "t": 110.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.751701748856238,
+   "xR": 26.608280172367433
+  },
+  {
+   "t": 115.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.77220376008825,
+   "xR": 26.62908981368899
+  },
+  {
+   "t": 120.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.792167389059735,
+   "xR": 26.649282152569192
+  },
+  {
+   "t": 125.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.8119860910249,
+   "xR": 26.66897691377582
+  },
+  {
+   "t": 130.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.831471996107368,
+   "xR": 26.688270167246255
+  },
+  {
+   "t": 135.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.850444245773478,
+   "xR": 26.707223049454832
+  },
+  {
+   "t": 140.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.868999634981325,
+   "xR": 26.72586030468984
+  },
+  {
+   "t": 145.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.88721645197638,
+   "xR": 26.744178029603614
+  },
+  {
+   "t": 150.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.905145667957356,
+   "xR": 26.76215763673236
+  },
+  {
+   "t": 155.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.922809178422337,
+   "xR": 26.779781329385983
+  },
+  {
+   "t": 160.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.940204869286255,
+   "xR": 26.797044195257463
+  },
+  {
+   "t": 165.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.957316697489993,
+   "xR": 26.81441553098886
+  },
+  {
+   "t": 170.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.974126679725302,
+   "xR": 26.83146712404064
+  },
+  {
+   "t": 175.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -26.990625250288854,
+   "xR": 26.848156950046636
+  },
+  {
+   "t": 180.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.00705135888958,
+   "xR": 26.86454803375056
+  },
+  {
+   "t": 185.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.02343529862288,
+   "xR": 26.88069390457047
+  },
+  {
+   "t": 190.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.039476105869667,
+   "xR": 26.896632818531177
+  },
+  {
+   "t": 195.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.05522888288389,
+   "xR": 26.91238528695463
+  },
+  {
+   "t": 200.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.070744317528376,
+   "xR": 26.927955144282755
+  },
+  {
+   "t": 205.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.086062891179825,
+   "xR": 26.94333374555563
+  },
+  {
+   "t": 210.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.101211258763495,
+   "xR": 26.95850624033496
+  },
+  {
+   "t": 215.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.116201274247423,
+   "xR": 26.97345837998763
+  },
+  {
+   "t": 220.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.13103169160888,
+   "xR": 26.98818222142451
+  },
+  {
+   "t": 225.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.14569211119345,
+   "xR": 27.002775519699785
+  },
+  {
+   "t": 230.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.160168284546003,
+   "xR": 27.017522135244228
+  },
+  {
+   "t": 235.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.174447577285175,
+   "xR": 27.031997277319476
+  },
+  {
+   "t": 240.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.18852338242143,
+   "xR": 27.046240148966504
+  },
+  {
+   "t": 245.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.20248424561029,
+   "xR": 27.06028904451964
+  },
+  {
+   "t": 250.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.21661804657601,
+   "xR": 27.074177351774846
+  },
+  {
+   "t": 255.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.230506943040726,
+   "xR": 27.087930478434686
+  },
+  {
+   "t": 260.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.24418553746924,
+   "xR": 27.10156408874959
+  },
+  {
+   "t": 265.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.25768794357884,
+   "xR": 27.11508384215023
+  },
+  {
+   "t": 270.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.27104440002472,
+   "xR": 27.12848663246947
+  },
+  {
+   "t": 275.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.28427856891686,
+   "xR": 27.14176310651548
+  },
+  {
+   "t": 280.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.29740584008741,
+   "xR": 27.15490101133859
+  },
+  {
+   "t": 285.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.31043282162385,
+   "xR": 27.167888745320607
+  },
+  {
+   "t": 290.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.32335805985842,
+   "xR": 27.18071844576291
+  },
+  {
+   "t": 295.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.336173873149676,
+   "xR": 27.193388070865115
+  },
+  {
+   "t": 300.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.348869005878267,
+   "xR": 27.20611401252264
+  },
+  {
+   "t": 305.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.361431651065395,
+   "xR": 27.21888228438831
+  },
+  {
+   "t": 310.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.37385231019142,
+   "xR": 27.231463010479445
+  },
+  {
+   "t": 315.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.386125999853704,
+   "xR": 27.24388313420754
+  },
+  {
+   "t": 320.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.39825347394658,
+   "xR": 27.25616888665541
+  },
+  {
+   "t": 325.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.410601581502867,
+   "xR": 27.26834352986744
+  },
+  {
+   "t": 330.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.42282769436093,
+   "xR": 27.28042552322102
+  },
+  {
+   "t": 335.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.434889705975948,
+   "xR": 27.292427292095468
+  },
+  {
+   "t": 340.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.44681216218381,
+   "xR": 27.30435471342291
+  },
+  {
+   "t": 345.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.45861835565695,
+   "xR": 27.316207368936038
+  },
+  {
+   "t": 350.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.470328462478697,
+   "xR": 27.3279795399125
+  },
+  {
+   "t": 355.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.481958072395642,
+   "xR": 27.33966182307042
+  },
+  {
+   "t": 360.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.493517242251773,
+   "xR": 27.351243148975495
+  },
+  {
+   "t": 365.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.505010155670877,
+   "xR": 27.362712908799335
+  },
+  {
+   "t": 370.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.516435423396434,
+   "xR": 27.374062871199918
+  },
+  {
+   "t": 375.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.527786997637868,
+   "xR": 27.385288613333298
+  },
+  {
+   "t": 380.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.53905559879588,
+   "xR": 27.396390289884653
+  },
+  {
+   "t": 385.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.55023047505195,
+   "xR": 27.407639123657045
+  },
+  {
+   "t": 390.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.56130125539509,
+   "xR": 27.4188641569097
+  },
+  {
+   "t": 395.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.572259636450408,
+   "xR": 27.429945039359307
+  },
+  {
+   "t": 400.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.583100674516242,
+   "xR": 27.44090156987415
+  },
+  {
+   "t": 405.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.593823530776806,
+   "xR": 27.451753230654816
+  },
+  {
+   "t": 410.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.604595163217148,
+   "xR": 27.462517783508975
+  },
+  {
+   "t": 415.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.61545101960092,
+   "xR": 27.47321006958723
+  },
+  {
+   "t": 420.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.626165266826106,
+   "xR": 27.483841101596273
+  },
+  {
+   "t": 425.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.636755873821635,
+   "xR": 27.494417513036787
+  },
+  {
+   "t": 430.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.647241006546324,
+   "xR": 27.504941407095977
+  },
+  {
+   "t": 435.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.65763777564704,
+   "xR": 27.515410622081184
+  },
+  {
+   "t": 440.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.667961120178052,
+   "xR": 27.525819395996265
+  },
+  {
+   "t": 445.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.67822290563467,
+   "xR": 27.536159370106052
+  },
+  {
+   "t": 450.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.688431294425175,
+   "xR": 27.54642082621186
+  },
+  {
+   "t": 455.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.698590430790862,
+   "xR": 27.556594015626487
+  },
+  {
+   "t": 460.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.708700465477122,
+   "xR": 27.566670420994694
+  },
+  {
+   "t": 465.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.718757923501705,
+   "xR": 27.576643802353182
+  },
+  {
+   "t": 470.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.72875638899979,
+   "xR": 27.586510915545375
+  },
+  {
+   "t": 475.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.738687446232376,
+   "xR": 27.596271845412502
+  },
+  {
+   "t": 480.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.74854178158654,
+   "xR": 27.606148929633118
+  },
+  {
+   "t": 485.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.758310326398156,
+   "xR": 27.61603309110557
+  },
+  {
+   "t": 490.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.767985312683447,
+   "xR": 27.625792111699052
+  },
+  {
+   "t": 495.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.777561127299798,
+   "xR": 27.635440460030164
+  },
+  {
+   "t": 500.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.787034882559936,
+   "xR": 27.644992872756635
+  },
+  {
+   "t": 505.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.796406665266325,
+   "xR": 27.654463490415853
+  },
+  {
+   "t": 510.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.805890296778674,
+   "xR": 27.66386507412898
+  },
+  {
+   "t": 515.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.815382236277035,
+   "xR": 27.67320834588762
+  },
+  {
+   "t": 520.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.824753715600906,
+   "xR": 27.682501484467917
+  },
+  {
+   "t": 525.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.83401775070007,
+   "xR": 27.691749801557734
+  },
+  {
+   "t": 530.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.84318771302824,
+   "xR": 27.70095561621265
+  },
+  {
+   "t": 535.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.85227660001204,
+   "xR": 27.710118337683767
+  },
+  {
+   "t": 540.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.861296366474914,
+   "xR": 27.719234755007015
+  },
+  {
+   "t": 545.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.870257350069956,
+   "xR": 27.72829951602161
+  },
+  {
+   "t": 550.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.879167815196844,
+   "xR": 27.737305760085686
+  },
+  {
+   "t": 555.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.888033634199868,
+   "xR": 27.746245850814464
+  },
+  {
+   "t": 560.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.896858120399244,
+   "xR": 27.755112141761863
+  },
+  {
+   "t": 565.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.905642022782455,
+   "xR": 27.763897702824003
+  },
+  {
+   "t": 570.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.914383685295988,
+   "xR": 27.77259694029452
+  },
+  {
+   "t": 575.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.92307936376601,
+   "xR": 27.781206058442525
+  },
+  {
+   "t": 580.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.931723680875596,
+   "xR": 27.789723332229755
+  },
+  {
+   "t": 585.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.940310185950207,
+   "xR": 27.798149184816317
+  },
+  {
+   "t": 590.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.948831974131267,
+   "xR": 27.806727902829024
+  },
+  {
+   "t": 595.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.957282311695863,
+   "xR": 27.815262526802368
+  },
+  {
+   "t": 600.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.965655213040222,
+   "xR": 27.82368962012536
+  },
+  {
+   "t": 605.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.973945918644603,
+   "xR": 27.832018945271038
+  },
+  {
+   "t": 610.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.98215125259983,
+   "xR": 27.840260616093197
+  },
+  {
+   "t": 615.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.990269805381406,
+   "xR": 27.84842465035085
+  },
+  {
+   "t": 620.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -27.998301987135402,
+   "xR": 27.85652054082899
+  },
+  {
+   "t": 625.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.006484133439347,
+   "xR": 27.86455688709424
+  },
+  {
+   "t": 630.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.014623114405097,
+   "xR": 27.87254108618773
+  },
+  {
+   "t": 635.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.022660065205248,
+   "xR": 27.88047909351766
+  },
+  {
+   "t": 640.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.03060343323663,
+   "xR": 27.888375260017437
+  },
+  {
+   "t": 645.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.038462015387513,
+   "xR": 27.89623225037773
+  },
+  {
+   "t": 650.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.0462445915469,
+   "xR": 27.90405104553726
+  },
+  {
+   "t": 655.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.053959583838285,
+   "xR": 27.911831030091143
+  },
+  {
+   "t": 660.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.061614753859725,
+   "xR": 27.919570161519577
+  },
+  {
+   "t": 665.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.069216946278377,
+   "xR": 27.927265213219613
+  },
+  {
+   "t": 670.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.076771884493322,
+   "xR": 27.93491207773342
+  },
+  {
+   "t": 675.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.084284022498128,
+   "xR": 27.94250611114799
+  },
+  {
+   "t": 680.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.091756456095858,
+   "xR": 27.950042495406365
+  },
+  {
+   "t": 685.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.09919089572838,
+   "xR": 27.95751659315001
+  },
+  {
+   "t": 690.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.10658770190147,
+   "xR": 27.964924270305968
+  },
+  {
+   "t": 695.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.113945982240214,
+   "xR": 27.972262165020375
+  },
+  {
+   "t": 700.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.121263746411387,
+   "xR": 27.979527887284142
+  },
+  {
+   "t": 705.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.128538111725632,
+   "xR": 27.986720140718848
+  },
+  {
+   "t": 710.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.13576554859166,
+   "xR": 27.993838765447396
+  },
+  {
+   "t": 715.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.14294215153553,
+   "xR": 28.000919200082812
+  },
+  {
+   "t": 720.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.150063919083582,
+   "xR": 28.008154415950568
+  },
+  {
+   "t": 725.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.157127024760346,
+   "xR": 28.015299249017325
+  },
+  {
+   "t": 730.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.164128062169613,
+   "xR": 28.02235921010552
+  },
+  {
+   "t": 735.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.171064249607312,
+   "xR": 28.02934020536849
+  },
+  {
+   "t": 740.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.17793358355577,
+   "xR": 28.03624832881203
+  },
+  {
+   "t": 745.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.18473493517902,
+   "xR": 28.04308966170715
+  },
+  {
+   "t": 750.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.19146808889116,
+   "xR": 28.049870086391262
+  },
+  {
+   "t": 755.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.198133726554392,
+   "xR": 28.056595119694695
+  },
+  {
+   "t": 760.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.204914581794547,
+   "xR": 28.06326976944453
+  },
+  {
+   "t": 765.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.21168495126035,
+   "xR": 28.06989841623387
+  },
+  {
+   "t": 770.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.218375223361768,
+   "xR": 28.076484721843535
+  },
+  {
+   "t": 775.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.224990353225234,
+   "xR": 28.083031565232773
+  },
+  {
+   "t": 780.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.231535513223864,
+   "xR": 28.08954100672749
+  },
+  {
+   "t": 785.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.23801593679871,
+   "xR": 28.096014280763054
+  },
+  {
+   "t": 790.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.244436770688434,
+   "xR": 28.102451817131772
+  },
+  {
+   "t": 795.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.25080293985246,
+   "xR": 28.10885329008446
+  },
+  {
+   "t": 800.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.257119027992562,
+   "xR": 28.115217693771534
+  },
+  {
+   "t": 805.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.263389175524907,
+   "xR": 28.121543441407933
+  },
+  {
+   "t": 810.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.26961699612587,
+   "xR": 28.127828484366013
+  },
+  {
+   "t": 815.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.275805512535147,
+   "xR": 28.134070446145106
+  },
+  {
+   "t": 820.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.281957112050236,
+   "xR": 28.140266765161297
+  },
+  {
+   "t": 825.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.28807352198889,
+   "xR": 28.146414839597053
+  },
+  {
+   "t": 830.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.29415580526544,
+   "xR": 28.152512167309872
+  },
+  {
+   "t": 835.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.300204375995953,
+   "xR": 28.15855647411938
+  },
+  {
+   "t": 840.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.306219034712697,
+   "xR": 28.164545824635773
+  },
+  {
+   "t": 845.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.312199022253328,
+   "xR": 28.170478711081625
+  },
+  {
+   "t": 850.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.318143090762952,
+   "xR": 28.176354117170504
+  },
+  {
+   "t": 855.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.324049589480776,
+   "xR": 28.18217155583141
+  },
+  {
+   "t": 860.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.329916562235393,
+   "xR": 28.187931081242926
+  },
+  {
+   "t": 865.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.33574185285026,
+   "xR": 28.193633277105064
+  },
+  {
+   "t": 870.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.341523214142565,
+   "xR": 28.199279224183734
+  },
+  {
+   "t": 875.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.347258415887307,
+   "xR": 28.20505850127936
+  },
+  {
+   "t": 880.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.352945347146807,
+   "xR": 28.210798326441402
+  },
+  {
+   "t": 885.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.358582108699604,
+   "xR": 28.21647331883712
+  },
+  {
+   "t": 890.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.364167091955334,
+   "xR": 28.222087012747213
+  },
+  {
+   "t": 895.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.369699041630945,
+   "xR": 28.22764305002787
+  },
+  {
+   "t": 900.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.37517710050861,
+   "xR": 28.233145103476744
+  },
+  {
+   "t": 905.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.380600835693674,
+   "xR": 28.238596804583487
+  },
+  {
+   "t": 910.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.38597024683196,
+   "xR": 28.24400167711899
+  },
+  {
+   "t": 915.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.391285757647193,
+   "xR": 28.24936307751924
+  },
+  {
+   "t": 920.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.3965481928579,
+   "xR": 28.254684142625486
+  },
+  {
+   "t": 925.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.401828117378685,
+   "xR": 28.25996774505661
+  },
+  {
+   "t": 930.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.407183962564236,
+   "xR": 28.26521645630662
+  },
+  {
+   "t": 935.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.412478208335674,
+   "xR": 28.270432517545313
+  },
+  {
+   "t": 940.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.41771375808353,
+   "xR": 28.27561781806907
+  },
+  {
+   "t": 945.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.422893630818606,
+   "xR": 28.280773881329978
+  },
+  {
+   "t": 950.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.428020904088427,
+   "xR": 28.285901858481417
+  },
+  {
+   "t": 955.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.43309865953338,
+   "xR": 28.291002529377646
+  },
+  {
+   "t": 960.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.43812993219603,
+   "xR": 28.2960763109353
+  },
+  {
+   "t": 965.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.443117664331076,
+   "xR": 28.30112327271202
+  },
+  {
+   "t": 970.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.44806466418648,
+   "xR": 28.306143159445153
+  },
+  {
+   "t": 975.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.452973569987748,
+   "xR": 28.3111354201563
+  },
+  {
+   "t": 980.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.45784681919604,
+   "xR": 28.316099243245024
+  },
+  {
+   "t": 985.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.462686623002167,
+   "xR": 28.321033596793924
+  },
+  {
+   "t": 990.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.467494945958556,
+   "xR": 28.325937273099633
+  },
+  {
+   "t": 995.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.472273490626606,
+   "xR": 28.330808936250254
+  },
+  {
+   "t": 1000.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.477023687116617,
+   "xR": 28.33564717141077
+  },
+  {
+   "t": 1005.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.48174668740883,
+   "xR": 28.340450534371517
+  },
+  {
+   "t": 1010.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.48644336435673,
+   "xR": 28.34521759987617
+  },
+  {
+   "t": 1015.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.491114315278605,
+   "xR": 28.349947007282807
+  },
+  {
+   "t": 1020.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.495759870033012,
+   "xR": 28.354637502226417
+  },
+  {
+   "t": 1025.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.5003801034441,
+   "xR": 28.35928797313626
+  },
+  {
+   "t": 1030.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.50497485189176,
+   "xR": 28.36389748170522
+  },
+  {
+   "t": 1035.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.5095437338096,
+   "xR": 28.36846528669102
+  },
+  {
+   "t": 1040.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.51408617374551,
+   "xR": 28.37299086073121
+  },
+  {
+   "t": 1045.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.518601429538837,
+   "xR": 28.377473900152236
+  },
+  {
+   "t": 1050.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.523088622064964,
+   "xR": 28.381914328029126
+  },
+  {
+   "t": 1055.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.527546766899732,
+   "xR": 28.38631229098908
+  },
+  {
+   "t": 1060.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.53197480717152,
+   "xR": 28.390668150439446
+  },
+  {
+   "t": 1065.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.536371646808398,
+   "xR": 28.394982469031785
+  },
+  {
+   "t": 1070.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.540736183356266,
+   "xR": 28.399255993248303
+  },
+  {
+   "t": 1075.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.545067339547938,
+   "xR": 28.403627109583653
+  },
+  {
+   "t": 1080.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.549364092843724,
+   "xR": 28.407980068114124
+  },
+  {
+   "t": 1085.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.55362550224006,
+   "xR": 28.412286561226306
+  },
+  {
+   "t": 1090.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.55785073175141,
+   "xR": 28.416548374612805
+  },
+  {
+   "t": 1095.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.56203907010109,
+   "xR": 28.420767340169004
+  },
+  {
+   "t": 1100.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.566189946310274,
+   "xR": 28.424945312368774
+  },
+  {
+   "t": 1105.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.570302941025048,
+   "xR": 28.429084145951453
+  },
+  {
+   "t": 1110.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.574377793578897,
+   "xR": 28.43318567520332
+  },
+  {
+   "t": 1115.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.578414404929358,
+   "xR": 28.437251695020795
+  },
+  {
+   "t": 1120.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.58241283673142,
+   "xR": 28.44128394386387
+  },
+  {
+   "t": 1125.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.58637330691188,
+   "xR": 28.445284088643596
+  },
+  {
+   "t": 1130.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.59029618218279,
+   "xR": 28.44925371153877
+  },
+  {
+   "t": 1135.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.594181967980322,
+   "xR": 28.453194298701057
+  },
+  {
+   "t": 1140.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.598031296336377,
+   "xR": 28.457107230784676
+  },
+  {
+   "t": 1145.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.60191855562719,
+   "xR": 28.46099377522403
+  },
+  {
+   "t": 1150.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.605843389267225,
+   "xR": 28.464855080176932
+  },
+  {
+   "t": 1155.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.60972684556347,
+   "xR": 28.46869217005296
+  },
+  {
+   "t": 1160.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.613570324120396,
+   "xR": 28.472505942550814
+  },
+  {
+   "t": 1165.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.617375259596173,
+   "xR": 28.476297167135883
+  },
+  {
+   "t": 1170.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.62114310651385,
+   "xR": 28.480066484896817
+  },
+  {
+   "t": 1175.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.624875324860387,
+   "xR": 28.483814409726577
+  },
+  {
+   "t": 1180.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.62857336663268,
+   "xR": 28.487541330777727
+  },
+  {
+   "t": 1185.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.632238663440017,
+   "xR": 28.491247516144128
+  },
+  {
+   "t": 1190.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.635872615229594,
+   "xR": 28.494933117719384
+  },
+  {
+   "t": 1195.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.63947658016527,
+   "xR": 28.498598177176902
+  },
+  {
+   "t": 1200.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.643051865661302,
+   "xR": 28.502242633008844
+  },
+  {
+   "t": 1205.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.64659972055061,
+   "xR": 28.505866328548542
+  },
+  {
+   "t": 1210.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.650121328351023,
+   "xR": 28.509469020887394
+  },
+  {
+   "t": 1215.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.653617801582982,
+   "xR": 28.513050390581153
+  },
+  {
+   "t": 1220.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.65709017708543,
+   "xR": 28.516610052023946
+  },
+  {
+   "t": 1225.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.66053941227527,
+   "xR": 28.520147564352087
+  },
+  {
+   "t": 1230.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.663966382295698,
+   "xR": 28.523662442725175
+  },
+  {
+   "t": 1235.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.667371878001706,
+   "xR": 28.527154169819415
+  },
+  {
+   "t": 1240.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.67075660473482,
+   "xR": 28.53062220736018
+  },
+  {
+   "t": 1245.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.674121181843926,
+   "xR": 28.534066007515744
+  },
+  {
+   "t": 1250.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.67746614291336,
+   "xR": 28.53748502397544
+  },
+  {
+   "t": 1255.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.680791936663965,
+   "xR": 28.54087872254073
+  },
+  {
+   "t": 1260.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.68409892849612,
+   "xR": 28.54424659106912
+  },
+  {
+   "t": 1265.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.687387402646102,
+   "xR": 28.547588148626
+  },
+  {
+   "t": 1270.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.690657564928383,
+   "xR": 28.550902953720215
+  },
+  {
+   "t": 1275.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.69390954603595,
+   "xR": 28.55419061152198
+  },
+  {
+   "t": 1280.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.697143405369506,
+   "xR": 28.557450779987914
+  },
+  {
+   "t": 1285.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.700359135363172,
+   "xR": 28.560683174845227
+  },
+  {
+   "t": 1290.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.70355666626956,
+   "xR": 28.563887573415684
+  },
+  {
+   "t": 1295.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.70673587136501,
+   "xR": 28.567063817282072
+  },
+  {
+   "t": 1300.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.709896572525217,
+   "xR": 28.570211813832657
+  },
+  {
+   "t": 1305.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.713038546119986,
+   "xR": 28.573331536734294
+  },
+  {
+   "t": 1310.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.71616152916761,
+   "xR": 28.576423025406893
+  },
+  {
+   "t": 1315.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.719265225684435,
+   "xR": 28.579486383587184
+  },
+  {
+   "t": 1320.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.722349313159917,
+   "xR": 28.58252177708104
+  },
+  {
+   "t": 1325.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.72541344908393,
+   "xR": 28.585529430811196
+  },
+  {
+   "t": 1330.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.728457277450712,
+   "xR": 28.588509625271136
+  },
+  {
+   "t": 1335.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.73148043516235,
+   "xR": 28.59146269249647
+  },
+  {
+   "t": 1340.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.734482558256,
+   "xR": 28.594389011662845
+  },
+  {
+   "t": 1345.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.73746328788133,
+   "xR": 28.597289004413895
+  },
+  {
+   "t": 1350.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.74042227595877,
+   "xR": 28.60016975851134
+  },
+  {
+   "t": 1355.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.743359190455536,
+   "xR": 28.603132308965534
+  },
+  {
+   "t": 1360.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.746273720223275,
+   "xR": 28.606065425269374
+  },
+  {
+   "t": 1365.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.749165579350628,
+   "xR": 28.608969852823062
+  },
+  {
+   "t": 1370.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.752034510992683,
+   "xR": 28.611846347926466
+  },
+  {
+   "t": 1375.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.75488029065079,
+   "xR": 28.614695673219085
+  },
+  {
+   "t": 1380.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.757702728885747,
+   "xR": 28.617518593364597
+  },
+  {
+   "t": 1385.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.76050167345862,
+   "xR": 28.620315871006085
+  },
+  {
+   "t": 1390.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.763277010903696,
+   "xR": 28.62308826300942
+  },
+  {
+   "t": 1395.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.766028667547126,
+   "xR": 28.6258365170053
+  },
+  {
+   "t": 1400.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.768756609994178,
+   "xR": 28.628561368234358
+  },
+  {
+   "t": 1405.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.77146084511504,
+   "xR": 28.631263536694092
+  },
+  {
+   "t": 1410.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.774141419565833,
+   "xR": 28.633943724582803
+  },
+  {
+   "t": 1415.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.776798418886166,
+   "xR": 28.636602614031737
+  },
+  {
+   "t": 1420.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.77943196621866,
+   "xR": 28.63924086511452
+  },
+  {
+   "t": 1425.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.782042220697736,
+   "xR": 28.641859114120862
+  },
+  {
+   "t": 1430.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.784629375556516,
+   "xR": 28.644457972080513
+  },
+  {
+   "t": 1435.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.787193656000195,
+   "xR": 28.647038023522672
+  },
+  {
+   "t": 1440.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.78973531689346,
+   "xR": 28.649599825455688
+  },
+  {
+   "t": 1445.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.792254640307412,
+   "xR": 28.65214390655251
+  },
+  {
+   "t": 1450.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.79475193296902,
+   "xR": 28.65467076652708
+  },
+  {
+   "t": 1455.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.797227523652488,
+   "xR": 28.65718087568815
+  },
+  {
+   "t": 1460.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.799681760548808,
+   "xR": 28.659674674657342
+  },
+  {
+   "t": 1465.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.80220031468259,
+   "xR": 28.662152574239485
+  },
+  {
+   "t": 1470.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.80470779428946,
+   "xR": 28.66461495543382
+  },
+  {
+   "t": 1475.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.807191714454646,
+   "xR": 28.667062169576244
+  },
+  {
+   "t": 1480.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.809652608265225,
+   "xR": 28.669494538602798
+  },
+  {
+   "t": 1485.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.812091011201947,
+   "xR": 28.6719123554264
+  },
+  {
+   "t": 1490.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.814507458963764,
+   "xR": 28.67431588441899
+  },
+  {
+   "t": 1495.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.81690248542921,
+   "xR": 28.676705361992315
+  },
+  {
+   "t": 1500.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.819276620760107,
+   "xR": 28.67908099727091
+  },
+  {
+   "t": 1505.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.821630389650004,
+   "xR": 28.681442972851627
+  },
+  {
+   "t": 1510.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.823964309718427,
+   "xR": 28.6837914456443
+  },
+  {
+   "t": 1515.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.82627889004917,
+   "xR": 28.68612654778843
+  },
+  {
+   "t": 1520.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.828574629869934,
+   "xR": 28.688448387640864
+  },
+  {
+   "t": 1525.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.83085201736922,
+   "xR": 28.690757050829774
+  },
+  {
+   "t": 1530.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.833111528645418,
+   "xR": 28.693052601369907
+  },
+  {
+   "t": 1535.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.835353626782013,
+   "xR": 28.69533508283407
+  },
+  {
+   "t": 1540.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.83757876104307,
+   "xR": 28.697604519575844
+  },
+  {
+   "t": 1545.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.839787366181778,
+   "xR": 28.69986091799787
+  },
+  {
+   "t": 1550.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.841979861855478,
+   "xR": 28.702104267860186
+  },
+  {
+   "t": 1555.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.8441566521393,
+   "xR": 28.704334543621627
+  },
+  {
+   "t": 1560.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.846318125139675,
+   "xR": 28.706551705812025
+  },
+  {
+   "t": 1565.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.848464652679915,
+   "xR": 28.70875570242036
+  },
+  {
+   "t": 1570.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.85059659007869,
+   "xR": 28.71094647030039
+  },
+  {
+   "t": 1575.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.852714275999634,
+   "xR": 28.71312393658359
+  },
+  {
+   "t": 1580.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.85481803236158,
+   "xR": 28.71528802008796
+  },
+  {
+   "t": 1585.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.856908164323833,
+   "xR": 28.717438632722477
+  },
+  {
+   "t": 1590.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.858984960320143,
+   "xR": 28.7195756808741
+  },
+  {
+   "t": 1595.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.861048692148632,
+   "xR": 28.721699066771723
+  },
+  {
+   "t": 1600.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.863099615115207,
+   "xR": 28.72380868981922
+  },
+  {
+   "t": 1605.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.86513796821275,
+   "xR": 28.7259044478911
+  },
+  {
+   "t": 1610.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.867163974350184,
+   "xR": 28.72798623858247
+  },
+  {
+   "t": 1615.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.86917784061706,
+   "xR": 28.730053960407606
+  },
+  {
+   "t": 1620.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.871179758583946,
+   "xR": 28.7321075139408
+  },
+  {
+   "t": 1625.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.87316990463572,
+   "xR": 28.7341468028937
+  },
+  {
+   "t": 1630.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.875148440335337,
+   "xR": 28.736171735124184
+  },
+  {
+   "t": 1635.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.87711551281576,
+   "xR": 28.738182223572526
+  },
+  {
+   "t": 1640.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.879071255198838,
+   "xR": 28.740178187120538
+  },
+  {
+   "t": 1645.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.881015787035818,
+   "xR": 28.742159551373234
+  },
+  {
+   "t": 1650.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.882949214773326,
+   "xR": 28.744126249357034
+  },
+  {
+   "t": 1655.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.884871632239392,
+   "xR": 28.746078222135584
+  },
+  {
+   "t": 1660.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.886783121147385,
+   "xR": 28.748015419343037
+  },
+  {
+   "t": 1665.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.888683751617986,
+   "xR": 28.749937799633894
+  },
+  {
+   "t": 1670.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.890573582716986,
+   "xR": 28.751845331050667
+  },
+  {
+   "t": 1675.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.892452663007255,
+   "xR": 28.753737991311205
+  },
+  {
+   "t": 1680.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.894321031113197,
+   "xR": 28.755615768017545
+  },
+  {
+   "t": 1685.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.896178716295942,
+   "xR": 28.757478658790173
+  },
+  {
+   "t": 1690.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.898025739038705,
+   "xR": 28.759326671328708
+  },
+  {
+   "t": 1695.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.899862111638793,
+   "xR": 28.76115982340553
+  },
+  {
+   "t": 1700.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.90168783880411,
+   "xR": 28.762978142797472
+  },
+  {
+   "t": 1705.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.903502918256574,
+   "xR": 28.76478166715414
+  },
+  {
+   "t": 1710.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.905307341334854,
+   "xR": 28.76657044381425
+  },
+  {
+   "t": 1715.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.907101093597557,
+   "xR": 28.768344529573586
+  },
+  {
+   "t": 1720.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.908884155426005,
+   "xR": 28.770103990404856
+  },
+  {
+   "t": 1725.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.910656502621723,
+   "xR": 28.771848901139833
+  },
+  {
+   "t": 1730.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.912418106998278,
+   "xR": 28.77357934511792
+  },
+  {
+   "t": 1735.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.91416893696539,
+   "xR": 28.775295413803725
+  },
+  {
+   "t": 1740.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.915908958103063,
+   "xR": 28.776997206381346
+  },
+  {
+   "t": 1745.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.9176381337241,
+   "xR": 28.778684829326828
+  },
+  {
+   "t": 1750.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.9193564254227,
+   "xR": 28.78035839596612
+  },
+  {
+   "t": 1755.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.92106379360748,
+   "xR": 28.782018026021404
+  },
+  {
+   "t": 1760.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.92276019801722,
+   "xR": 28.783663845149697
+  },
+  {
+   "t": 1765.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.924445598217506,
+   "xR": 28.785295984477813
+  },
+  {
+   "t": 1770.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.926119954077034,
+   "xR": 28.786914580136532
+  },
+  {
+   "t": 1775.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.92778322622117,
+   "xR": 28.788519772798004
+  },
+  {
+   "t": 1780.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.929435376463168,
+   "xR": 28.790111707216806
+  },
+  {
+   "t": 1785.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.931076368210256,
+   "xR": 28.791690531780578
+  },
+  {
+   "t": 1790.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.932706166844365,
+   "xR": 28.79325639806949
+  },
+  {
+   "t": 1795.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.934324740076473,
+   "xR": 28.79480946042778
+  },
+  {
+   "t": 1800.0,
+   "n": 18,
+   "status": "ok",
+   "breakup": false,
+   "remote": false,
+   "xL": -28.935932058274016,
+   "xR": 28.796349875548515
+  }
+ ],
+ "prep": "sweep_29.30"
+}

@@ -113,6 +113,9 @@ def main():
                points={str(k): v for k, v in ed.get("points", {}).items()}, d01_points={str(k): v for k, v in d01.items()},
                benchmarks=bench, ledger=dict(n=len(R.ledger()["integrations"]),
                                              core_h=sum(r["wall_s"] for r in R.ledger()["integrations"]) / 3600))
+    import platform, scipy
+    out["platform"] = dict(python=platform.python_version(), numpy=np.__version__, scipy=scipy.__version__,
+                           system=platform.platform())
     with open(os.path.join(R.OUT, "evaluation.json"), "w") as f:
         json.dump(out, f, indent=1, default=float)
     print(json.dumps({k: out[k] for k in ("P1", "P2", "P2_flags", "mesh", "persistence_bracket")}, default=float))
