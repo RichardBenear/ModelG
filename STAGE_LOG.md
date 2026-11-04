@@ -605,3 +605,4 @@ Items deliberately postponed so the project reaches its main questions first. Th
   values. No P1, sweep, front or benchmark run made.
 - Next: PI sign-off on amendment 1; ChatGPT review of the code and pre-run specification; then stage p1.
 - PI approved amendment 1 (decision card, 16:59 UTC). Next: ChatGPT review of the code and pre-run specification; then stage p1.
+- ChatGPT review MG027 (`review/MG027_chatgpt.md`): supports amendment 1 (envelope reproduced independently; worst edge error 0.037 λ). One wording fix accepted: cancellation at 2k is exact only for the continuous boxcar (discrete single-pass gain 1.47e-3 / 1.99e-4). Response `review/MG027_response.md`. The review covered the envelope only.

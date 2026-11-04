@@ -37,8 +37,11 @@ demodulation and low-pass procedure".
 - m = K²[φ_X]; z(x) = (φ_X − m) · e^{−ikx} with k = 2π/λ and x = (j − N/2) h; **E = 2 |K²[z]|** (K² applied to the real
   and imaginary parts).
 
-For a(x) cos(kx + phase) with slowly varying a, E is the low-passed a, independent of phase. K² removes the e^{−2ikx}
-term exactly for constant a (K_λ has zeros at all multiples of 2π/λ). e^{−ikx} is periodic on every domain, because
+For a(x) cos(kx + phase) with slowly varying a, E is the low-passed a, independent of phase. For constant a, the continuous λ-boxcar has zeros at all
+multiples of 2π/λ and would remove the e^{−2ikx} term exactly. The implemented fractional-cell discretization does
+so only approximately: its single-pass gain at 2k is 1.47e-3 on D02 and D02L and 1.99e-4 on D01 (ChatGPT MG027,
+reproduced by Claude), so K² leaves about 2.2e-6 and 4.0e-8. *(Wording corrected after ChatGPT review MG027; the
+kernel is unchanged.)* e^{−ikx} is periodic on every domain, because
 kL = 2π·34 (D02, D01) or 2π·68 (D02L).
 
 Everything that uses E is unchanged: E_pat, the ½ E_pat patterned set, components, interfaces, the cell-count
