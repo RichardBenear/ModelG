@@ -616,3 +616,8 @@ Items deliberately postponed so the project reaches its main questions first. Th
   GATES.md. Descriptive: creep→invasion between 29.35 and 29.40 brackets b_r. Next: ChatGPT result review; PI sign-off.
 - ChatGPT result review MG028 (`review/MG028_chatgpt.md`): recommends accepting P1 SUBCRITICAL and P2 UNRESOLVED; independent recompute of L₃, V2 fits, all 16 front labels, 110 state hashes. One wording fix accepted ("no near-degeneracy"). Response `review/MG028_response.md`. Awaiting PI sign-off.
 - **MG9 CLOSED** (PI decision card 19:21 UTC, "Sign off and close MG9"): P1 SUBCRITICAL; P2 UNRESOLVED. S(b) deferred to MG9b.
+
+## MG029 — MG9c design (slow-front follow-up), 2026-11-04
+- ChatGPT recommended (PI relay, 19:33 UTC) a follow-up on MG9's three slow fronts; the PI asked for a draft (19:36 UTC).
+- Prior look at committed MG9 tracks only (no integration): the 29.25–29.35 interfaces relax exponentially (time constant about 715; about 0.22 left to move; exponential rms 2.5e-4 vs linear 5.8e-2); cell count constant at 18. Disclosed in the draft §0.
+- `spec/MG9c_proposal.md` DRAFT 1: late-time windows from t = 1800 (T = 12,000, extension 30,000); labels SETTLED / ADVANCES; robustness D01, D02L, ±5% perturbation; Q2 bisection of the settling edge between 29.35 and 29.40 vs b_r (tolerance 0.01, PI decision). Cap 60 integrations, cutoff 2 core-h, cloud. Not registered.
