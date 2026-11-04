@@ -615,3 +615,4 @@ Items deliberately postponed so the project reaches its main questions first. Th
   unavailable (30-cell wavelength change, then lost below 28.62). Benchmarks reproduce MG003 to 0.001. Result in
   GATES.md. Descriptive: creep→invasion between 29.35 and 29.40 brackets b_r. Next: ChatGPT result review; PI sign-off.
 - ChatGPT result review MG028 (`review/MG028_chatgpt.md`): recommends accepting P1 SUBCRITICAL and P2 UNRESOLVED; independent recompute of L₃, V2 fits, all 16 front labels, 110 state hashes. One wording fix accepted ("no near-degeneracy"). Response `review/MG028_response.md`. Awaiting PI sign-off.
+- **MG9 CLOSED** (PI decision card 19:21 UTC, "Sign off and close MG9"): P1 SUBCRITICAL; P2 UNRESOLVED. S(b) deferred to MG9b.

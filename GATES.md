@@ -14,7 +14,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve): a settled particle on a rewritten 2D Delaunay graph | **CLOSED 2026-11-02: PASS** (Part B: A1); ChatGPT MG018 accepted, PI signed off |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | **REGISTERED 2026-11-02** (draft 3 frozen at `106b3e2`). Part 0 **STOP** (tick check, 2026-11-02); amendment MG021 (Δ = 0.1, narrow waiver) after ChatGPT review MG021; Part 0 completed; cutoff 110 core-h (PI). **CLOSED 2026-11-03: DEMONSTRATED** (CP2 − SH2 = −67.1 nodes, t = −36.2; CP2 − DEC = −66.9, t = −34.1); feedback SURVIVES (CP2, CP4); falloff UNRESOLVED; ChatGPT MG022 accepted; PI signed off |
 | MG7 | 5 | Mass scaling: is the coupled density deficit larger for a stronger particle (b-scan, 27.5 vs 28.5)? | **REGISTERED 2026-11-03** (draft 2 frozen at `5b44cde`); Part 0 PROCEED. **RESULT 2026-11-04: NOT SCORED (feedback)**: at b = 27.5 the particle dissolved in 7 of 8 runs (both arms); b = 28.5 SURVIVES (8/8 single). ChatGPT MG025 accepted; **CLOSED 2026-11-04** (PI signed off) |
-| MG9 | 2 | Local onset type of the Turing instability (P1) and finite-time front arrest against the single-particle window (P2); deterministic, 1D lattice | **REGISTERED 2026-11-04** (draft 3 frozen at `7810b8b`); no MG9 run yet |
+| MG9 | 2 | Local onset type of the Turing instability (P1) and finite-time front arrest against the single-particle window (P2); deterministic, 1D lattice | **CLOSED 2026-11-04: P1 SUBCRITICAL; P2 UNRESOLVED** (registered at `7810b8b`; amendment 1; PI sign-off 19:21 UTC) |
 | MG8 | 6 | Multiway branch divergence and foliation dependence (numbered MG7 in `InitialPlan.md`) | PENDING |
 
 ## Template
@@ -1734,3 +1734,9 @@ P1 SUBCRITICAL; P2 UNRESOLVED.** 150 integrations, 0.49 core-h (cap 230, cutoff 
   front test cannot reach the lower window edge (b_s ≈ 28.93) with the registered wavelength.
 - **Deviation (after the data, record only):** `evaluate_mg9.py` now writes the platform into `evaluation.json` (pre-run
   spec item 1); no scoring change.
+
+**MG9 CLOSED 2026-11-04: P1 SUBCRITICAL; P2 UNRESOLVED.** PI sign-off: Richard Benear, 2026-11-04 19:21 UTC, on the
+project decision card ("Sign off and close MG9"), after ChatGPT result review MG028 and its response
+(`review/MG028_response.md`). Scope: P1 is the local onset type at the Turing threshold only; P2 found no finite-time
+arrest, and the lower window edge was not testable with the registered 34-cell wavelength. The stochastic barrier S(b)
+remains deferred to a separately registered MG9b.
