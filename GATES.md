@@ -1708,3 +1708,29 @@ governs; these items fix what it leaves open.
     MG003's (28.97821, 29.4119), not rechecked.
 15. **P2 inputs.** P2 is UNRESOLVED if any grid point lacks a record, or `benchmarks.json` is absent. The order of
     §6.6 is applied in `evaluate_mg9.p2_outcome`, tested on synthetic class sequences.
+
+**MG9 RESULT (MG028, 2026-11-04; cloud, Python 3.13.18, numpy 2.5.3, scipy 1.18.1; code `f7ef9e9` + docs `54b2a08`):
+P1 SUBCRITICAL; P2 UNRESOLVED.** 150 integrations, 0.49 core-h (cap 230, cutoff 10). Evaluator
+`results/MG9/evaluation.json`; records `results/MG9/runs/`, states `results/MG9/states.npz`.
+- **P1 = SUBCRITICAL.** L₃ (real cosine amplitude, original time): (i) D02 mode 34 at b = 30.04577: **+0.013653**
+  (terms +0.01563, +0.01311, −0.01508; no cancellation); (ii) +0.014162; (iii) +0.013128; (iv) +0.012602. Code check
+  passed. V2 passed: fitted L₃ = 0.013650 (A₀ = 0.1) and 0.013641 (A₀ = 0.2), within 0.1% of (i); A₀ = 0.05 was not
+  identifiable (1/A² changed 20%, below 25%) although its fit was 0.013653; tight-tolerance repeat 0.0136500.
+  Independent recompute (finite-difference Taylor coefficients of the raw reaction terms): 0.013653.
+- **Sweep (descriptive).** The 34-cell pattern PERSISTS from 30.50 down to 29.22. At 29.20 it was still changing at
+  t = 3000 (PREP-UNRESOLVED, 30 cells, residual 1.5e-5); from 29.18 to 28.62 a stationary 30-cell pattern (PREP-CHANGED);
+  PREP-LOST from 28.60. Primary persistence bracket [29.20, 29.22]; no 34-cell state regained.
+- **Benchmarks (rechecked, longer horizons):** b_s ∈ [28.928907, 28.929688], b_r ∈ [29.395313, 29.396094]; shifts
+  +0.0006 and −0.0010 from MG003; not BENCHMARK-SENSITIVE.
+- **A3 grid (D02).** 28.50–29.15: N (UNAVAILABLE-LOST at 28.50–28.60, UNAVAILABLE-CHANGED at 28.65–29.15); 29.20: U
+  (preparation unresolved); 29.25, 29.30, 29.35: U (UNRESOLVED-SLOW after extension to T = 1800: both interfaces moved
+  outward 2.22–2.24 over [100, 1800], between λ/2 and λ, decelerating to about λ/8000 per unit time, residual 7.6e-3);
+  29.40–30.00: INVADES (all 13). No ARRESTED point, so no refinement or robustness repeats were run, and the D01 comparison
+  is NOT EVALUATED.
+- **P2 = UNRESOLVED** (§6.6 rule 1/2: no A point and some U points). Independent recompute of every grid label from the
+  raw tracks agrees.
+- **Descriptive, not scored:** the change from slow creep to invasion lies between b = 29.35 and 29.40, which brackets
+  the rechecked b_r (29.3953–29.3961). Below 29.22 the 34-cell pattern does not persist under this preparation, so the
+  front test cannot reach the lower window edge (b_s ≈ 28.93) with the registered wavelength.
+- **Deviation (after the data, record only):** `evaluate_mg9.py` now writes the platform into `evaluation.json` (pre-run
+  spec item 1); no scoring change.
