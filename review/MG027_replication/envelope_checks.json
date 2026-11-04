@@ -1,0 +1,38 @@
+{
+  "domains": {
+    "N500_h0.2": {
+      "cosine_range": [
+        0.9999977041270308,
+        1.000002027015866
+      ],
+      "worst_edge_error_in_wavelengths": 0.036733536278352186,
+      "independent_vs_production_max_error": 8.881784197001252e-16,
+      "boxcar_2k_gain": 0.0014701852626786362
+    },
+    "N1000_h0.1": {
+      "cosine_range": [
+        0.9999999578174887,
+        1.0000000372301898
+      ],
+      "worst_edge_error_in_wavelengths": 0.0366483224255478,
+      "independent_vs_production_max_error": 1.1102230246251565e-15,
+      "boxcar_2k_gain": 0.00019926452101246824
+    },
+    "N1000_h0.2": {
+      "cosine_range": [
+        0.9999977041270308,
+        1.000002027015866
+      ],
+      "worst_edge_error_in_wavelengths": 0.036733536278352186,
+      "independent_vs_production_max_error": 8.881784197001252e-16,
+      "boxcar_2k_gain": 0.001470185262687043
+    }
+  },
+  "repository_synthetic_tests_passed": [
+    "test_registered_rms_envelope_fails_its_validation",
+    "test_envelope_validation_amendment_1",
+    "test_tracker_on_moving_patch",
+    "test_classification_procedure",
+    "test_kernel_weights_sum_to_lam_over_h"
+  ]
+}
