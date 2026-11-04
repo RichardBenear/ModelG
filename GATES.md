@@ -1713,7 +1713,7 @@ governs; these items fix what it leaves open.
 P1 SUBCRITICAL; P2 UNRESOLVED.** 150 integrations, 0.49 core-h (cap 230, cutoff 10). Evaluator
 `results/MG9/evaluation.json`; records `results/MG9/runs/`, states `results/MG9/states.npz`.
 - **P1 = SUBCRITICAL.** L₃ (real cosine amplitude, original time): (i) D02 mode 34 at b = 30.04577: **+0.013653**
-  (terms +0.01563, +0.01311, −0.01508; no cancellation); (ii) +0.014162; (iii) +0.013128; (iv) +0.012602. Code check
+  (terms +0.01563, +0.01311, −0.01508; no near-degeneracy: ordinary partial cancellation, far from the DEGENERATE threshold [wording corrected per ChatGPT MG028]); (ii) +0.014162; (iii) +0.013128; (iv) +0.012602. Code check
   passed. V2 passed: fitted L₃ = 0.013650 (A₀ = 0.1) and 0.013641 (A₀ = 0.2), within 0.1% of (i); A₀ = 0.05 was not
   identifiable (1/A² changed 20%, below 25%) although its fit was 0.013653; tight-tolerance repeat 0.0136500.
   Independent recompute (finite-difference Taylor coefficients of the raw reaction terms): 0.013653.
