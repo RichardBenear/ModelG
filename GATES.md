@@ -1611,5 +1611,5 @@ no null) are validation quantities, not MG7 data, and are not interpreted.
 - **Deviation (audit code, after the data):** `recompute_mg7.py` crashed on checks with no particle (no centred
   measurement is stored there, so `m_N` is NaN). Fixed to require n_parts = 0 at such checks and skip the count
   comparison; strict mode now reports a candidate-hash failure without crashing. No scoring rule changed. In the cloud
-  (`--cross-platform`; all 16 candidate hashes differ on Linux, as in MG6) everything agrees; the strict PC rerun is
-  pending.
+  (`--cross-platform`; all 16 candidate hashes differ on Linux, as in MG6) everything agrees. Strict rerun on the PI's PC (2026-11-04, main `04ad4e2`): candidate hashes match and
+  everything agrees (exit 0); `evaluation.json` unchanged by a re-evaluation.
