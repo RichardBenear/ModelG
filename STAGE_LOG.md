@@ -594,3 +594,13 @@ Items deliberately postponed so the project reaches its main questions first. Th
   scope objection once its items were fixed). Draft 3 content frozen at `7810b8b`; GATES.md MG9 entry added.
 - Next: implementation (code, tests with the synthetic envelope/classification validations) and the pre-run
   implementation specification in GATES.md; ChatGPT reviews those before the first run.
+
+## MG027 — MG9 implementation, pre-run specification and amendment 1, 2026-11-04
+- Code: `src/landau_mg9.py`, `src/run_mg9.py`, `src/evaluate_mg9.py`; `tests/test_mg9.py` (16 pass). The only Model G
+  integration in the tests is MG003's b = 29 reference (wrapper agreement with `lattice_ode_1d`, ≤ 1e-12).
+- The registered §6.2 envelope failed its own synthetic validation (edge error 0.27 λ vs λ/10). Per the registered rule
+  the study is blocked until fixed: **amendment 1** (`spec/MG9_amendment_1.md`) proposes complex demodulation with a
+  double λ-boxcar (0.036 λ). Awaiting PI sign-off.
+- Pre-run implementation specification appended to GATES.md (15 items). V1 thresholds and α reproduce ChatGPT's static
+  values. No P1, sweep, front or benchmark run made.
+- Next: PI sign-off on amendment 1; ChatGPT review of the code and pre-run specification; then stage p1.

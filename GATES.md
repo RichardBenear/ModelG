@@ -1655,3 +1655,56 @@ Summary (the proposal governs):
   synthetic envelope and classification validations passing before any Model G run, and a pre-run implementation
   specification appended here.
 
+
+**MG9 amendment 1 (MG027, 2026-11-04; PROPOSED, awaiting PI sign-off):** `spec/MG9_amendment_1.md`. The draft 3 §6.2
+envelope failed its registered synthetic validation (worst edge error 0.27 λ against λ/10); it is replaced by complex
+demodulation at k = 2π/λ with a double λ-boxcar low-pass (worst 0.036 λ). Synthetic only; no Model G MG9 run.
+
+**MG9 pre-run implementation specification (MG027, 2026-11-04; written before any MG9 run).** Code: `src/landau_mg9.py`,
+`src/run_mg9.py`, `src/evaluate_mg9.py`; tests `tests/test_mg9.py` (16 pass, cloud: Python 3.13.18, numpy 2.5.3,
+scipy 1.18.1). The production code revision is the commit that merges this specification. The proposal (as amended)
+governs; these items fix what it leaves open.
+1. **Platform.** All stages run in the cloud container, one process, stages resumable at run level. The platform and
+   package versions are recorded in `results/MG9/evaluation.json`.
+2. **Ledger.** One count per integration call. A sweep extension (to 3000) or front extension (to 1800) continues the same
+   count. Wall time per integration is summed as core-s. The cap (230) and cutoff (10 core-h) are checked before each new
+   integration, and the driver exits with code 2 on a stop.
+3. **Completeness.** `mg9_ode` returns `complete` only if `sol.success` and the time reached equals t_end (relative
+   1e-9). V2 integrates in 100-unit chunks; any incomplete chunk marks the run incomplete, and so V2 fails.
+4. **V2.** A(t) is sampled every 1 unit; the stop check applies at each sample. The fit is linear least squares on
+   y = 1/A² of the integrated form (proposal §5), over t ≥ 20 up to the stop. Usable means stop_t ≥ 40. σ₃₄ is the
+   largest real part of the eigenvalues of M(b, κ₃₄) at the problem-(i) threshold (about 1e-15 by construction). The
+   identifiability ratio uses |σ₃₄|. The tolerance repeat compares the middle amplitude's base and tight fits.
+5. **Sweep start.** A₀ = 0.5 times cos(k₃₄x) times the X-normalized leading eigenvector of M(30.50, κ₃₄). No slaved
+   terms are added.
+6. **Preparation classification.** PREP-UNRESOLVED if incomplete or the residual is above 1e-6 after the extension;
+   PREP-LOST if max |φ_X| < 0.1; PERSISTS if the cell count equals round(N h / λ) (34, or 68 on D02L); otherwise
+   PREP-CHANGED. Cell count and E_pat use the amendment 1 envelope.
+7. **Off-sweep preparation source.** The sweep value above b is the smallest sweep value greater than b. If that sweep
+   state is not PERSISTS, its status is propagated to b and nothing is settled. A stage that needs a sweep state not yet
+   run raises an error and records nothing.
+8. **Tracking.** At t = 0, the tracked patch is the component containing node N/2. Afterwards it is the component of
+   largest node overlap with the previous one. After a fill sample the previous set is the whole ring. If the tracked
+   patch has no overlap with any component while components exist, the sample is "untracked", and the run is
+   UNRESOLVED-INTERNAL. BREAKUP means at least two components each overlap the previous patch over at least λ. REMOTE
+   means a component has zero overlap. Interfaces are the linear-interpolation crossings of E = ½ E_pat between each
+   end node of the tracked component and its outside neighbour, unwrapped by the nearest-image rule. Outward
+   displacement is −(x_L − x_L(t₁)) and x_R − x_R(t₁), with t₁ the first sample at t ≥ 100.
+9. **Velocities.** Least-squares slope of the outward displacement over the samples with t ≥ T − 200.
+10. **Phase convention.** The cell minimum nearest node N/2 uses the same prominence and separation rule as the cell
+    count. The phase-shift repeat is an exact Fourier translation of all three fields by λ/2. The D01 interpolation is
+    zero-padding Fourier interpolation with the Nyquist term split.
+11. **Refinement order.** The lower edge first, then the upper, each up to two bisections. A midpoint already run is not
+    re-run. Robustness repeats then run at the final inner points. On D02L the tiled state is settled to t = 300 (one
+    count) and the patch half-width is 50.
+12. **ANOMALOUS.** Set if any point below the arrest interval is INVADES or another non-U class other than RETREATS or N,
+    or any point above is anything but INVADES or U.
+13. **Benchmarks.** b_s "exists" iff φ_X at node N/2 is below −1 at t = 600. b_r "single" iff exactly one interior
+    local minimum is below −4 at t = 800. MG003's bisection treated zero minima as single; the recheck follows the
+    registered "exactly one", and its verified endpoints make this explicit. Bisection midpoints are rounded to 1e-6.
+    The b_r benchmark uses zero initial potentials and the standard seed, as in MG003.
+14. **MESH-SENSITIVE.** Each D01 side's edge is the adjacent pair (M or N outside, A inside) among its points. Edge
+    positions are bracket midpoints, on both meshes. h = 0.2 uses the rechecked benchmark midpoints; h = 0.1 uses
+    MG003's (28.97821, 29.4119), not rechecked.
+15. **P2 inputs.** P2 is UNRESOLVED if any grid point lacks a record, or `benchmarks.json` is absent. The order of
+    §6.6 is applied in `evaluate_mg9.p2_outcome`, tested on synthetic class sequences.
