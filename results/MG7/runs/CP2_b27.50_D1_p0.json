@@ -1,0 +1,127 @@
+{
+ "key": "CP2_b27.50_D1_p0",
+ "spec": {
+  "key": "CP2_b27.50_D1_p0",
+  "arm": "CP2",
+  "b": 27.5,
+  "kappa": 2.0,
+  "shifted": false,
+  "slot": 1,
+  "pl": 0
+ },
+ "b": 27.5,
+ "P_b": 27.5,
+ "nu": 0.2,
+ "kappa": 2.0,
+ "h": 0.20002762164692553,
+ "dt": 0.05,
+ "delta": 0.1,
+ "t_end": 200.0,
+ "theta": -4.457581675528346,
+ "Lx": 19.922516574636518,
+ "Ly": 20.08183258569795,
+ "rho0": 47.24297551642137,
+ "F": 1.4918246976412703,
+ "phi_lim": 0.2,
+ "shift": null,
+ "grid": [
+  398,
+  402
+ ],
+ "start_field": {
+  "path": "MG4c/fields/b27.500000_D1_p0.npz",
+  "sha256": "237270b2126182d837fe46bbfb43a2c9946169da663aeba4c5f781a8580325fc",
+  "shift_applied": false
+ },
+ "platform": {
+  "machine": "RB_LibraryPC",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.2",
+  "numpy": "2.2.4",
+  "scipy": "1.16.1"
+ },
+ "code_revision": "25f1007a6df95fc050b48fc778d74fcf8243db17",
+ "registered": "GATES.md MG7; spec/MG7_proposal.md draft 2 (5b44cde)",
+ "replay": {
+  "seed_for": [
+   7,
+   0,
+   0,
+   1,
+   2
+  ],
+  "seed": 2712537921,
+  "bit_generator": "PCG64 (numpy.random.default_rng)",
+  "numpy": "2.2.4",
+  "schema": "N0 <i8, then life0, tb, x, y, u, ell as <f8 arrays; SHA-256 over that byte stream",
+  "n_candidates": 1125750,
+  "sha256": "e60560bb676b1f267a0c506a1486a0b300866dd8e5427c05458fe6604ec888aa",
+  "fresh_process_sha256": "e60560bb676b1f267a0c506a1486a0b300866dd8e5427c05458fe6604ec888aa"
+ },
+ "status": "COMPLETE",
+ "note": null,
+ "flags": [],
+ "t_reached": 200.0,
+ "wall_s": 16257.733416080475,
+ "N_final": 18832,
+ "max_jump_resid": 3.792254753371481e-14,
+ "max_audit": 8.881784197001252e-16,
+ "max_phiG": 0.039181854009598685,
+ "max_phiG_ticks": 0.039181854009598685,
+ "max_p": 0.7215189333585434,
+ "n_accepted": 747318,
+ "bound_margin_ok": true,
+ "summary": {
+  "n0": 1,
+  "counts": [
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "depths": [
+   [
+    -5.086443816412479
+   ],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   []
+  ],
+  "cls": {
+   "cls": "dissolved",
+   "sub": null
+  }
+ }
+}

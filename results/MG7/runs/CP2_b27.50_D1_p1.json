@@ -1,0 +1,151 @@
+{
+ "key": "CP2_b27.50_D1_p1",
+ "spec": {
+  "key": "CP2_b27.50_D1_p1",
+  "arm": "CP2",
+  "b": 27.5,
+  "kappa": 2.0,
+  "shifted": false,
+  "slot": 1,
+  "pl": 1
+ },
+ "b": 27.5,
+ "P_b": 27.5,
+ "nu": 0.2,
+ "kappa": 2.0,
+ "h": 0.20002762164692553,
+ "dt": 0.05,
+ "delta": 0.1,
+ "t_end": 200.0,
+ "theta": -4.457581675528346,
+ "Lx": 19.922516574636518,
+ "Ly": 20.08183258569795,
+ "rho0": 47.24297551642137,
+ "F": 1.4918246976412703,
+ "phi_lim": 0.2,
+ "shift": null,
+ "grid": [
+  398,
+  402
+ ],
+ "start_field": {
+  "path": "MG4c/fields/b27.500000_D1_p1.npz",
+  "sha256": "7f03affc10626220ad8dc253d32149215ee94efe64338c41b10ce1221abde372",
+  "shift_applied": false
+ },
+ "platform": {
+  "machine": "RB_LibraryPC",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.2",
+  "numpy": "2.2.4",
+  "scipy": "1.16.1"
+ },
+ "code_revision": "25f1007a6df95fc050b48fc778d74fcf8243db17",
+ "registered": "GATES.md MG7; spec/MG7_proposal.md draft 2 (5b44cde)",
+ "replay": {
+  "seed_for": [
+   7,
+   0,
+   0,
+   1,
+   3
+  ],
+  "seed": 3545663647,
+  "bit_generator": "PCG64 (numpy.random.default_rng)",
+  "numpy": "2.2.4",
+  "schema": "N0 <i8, then life0, tb, x, y, u, ell as <f8 arrays; SHA-256 over that byte stream",
+  "n_candidates": 1128110,
+  "sha256": "50cda54b91f590878ab76614d05340699c056e9ddbfe66722ed50e52d09e0f30",
+  "fresh_process_sha256": "50cda54b91f590878ab76614d05340699c056e9ddbfe66722ed50e52d09e0f30"
+ },
+ "status": "COMPLETE",
+ "note": null,
+ "flags": [],
+ "t_reached": 200.0,
+ "wall_s": 16354.796390771866,
+ "N_final": 18947,
+ "max_jump_resid": 6.878046018157804e-14,
+ "max_audit": 1.7763568394002505e-15,
+ "max_phiG": 0.04524148281348285,
+ "max_phiG_ticks": 0.04524148281348285,
+ "max_p": 0.7302258381486944,
+ "n_accepted": 748435,
+ "bound_margin_ok": true,
+ "summary": {
+  "n0": 1,
+  "counts": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "depths": [
+   [
+    -5.515533901480844
+   ],
+   [
+    -7.35953470216997
+   ],
+   [
+    -7.451563032025515
+   ],
+   [
+    -9.501668456571233
+   ],
+   [
+    -8.83467069259557
+   ],
+   [
+    -8.131286772857159
+   ],
+   [
+    -9.142103754859678
+   ],
+   [
+    -9.340324089433775
+   ],
+   [
+    -8.54616151015834
+   ],
+   [
+    -5.933259412768365
+   ],
+   [
+    -5.502370188473379
+   ],
+   [
+    -5.917179937636359
+   ],
+   [
+    -6.431780604398294
+   ],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   []
+  ],
+  "cls": {
+   "cls": "dissolved",
+   "sub": null
+  }
+ }
+}
