@@ -13,7 +13,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG4c | 3 | Follow-up to MG4: single-particle window in b on unweighted Delaunay graphs; cotangent-operator diagnostic (estimation study; no pass/fail) | **RESULT W1 + O1** (2026-10-31; 102 runs, 11.33 core-h); ChatGPT reproduced (MG012); PI signed off 2026-10-31; **CLOSED** |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve): a settled particle on a rewritten 2D Delaunay graph | **CLOSED 2026-11-02: PASS** (Part B: A1); ChatGPT MG018 accepted, PI signed off |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | **REGISTERED 2026-11-02** (draft 3 frozen at `106b3e2`). Part 0 **STOP** (tick check, 2026-11-02); amendment MG021 (Δ = 0.1, narrow waiver) after ChatGPT review MG021; Part 0 completed; cutoff 110 core-h (PI). **CLOSED 2026-11-03: DEMONSTRATED** (CP2 − SH2 = −67.1 nodes, t = −36.2; CP2 − DEC = −66.9, t = −34.1); feedback SURVIVES (CP2, CP4); falloff UNRESOLVED; ChatGPT MG022 accepted; PI signed off |
-| MG7 | 5 | Mass scaling: is the coupled density deficit larger for a stronger particle (b-scan, 27.5 vs 28.5)? | **REGISTERED 2026-11-03** (draft 2 frozen at `5b44cde`); Part 0 PROCEED. **RESULT 2026-11-04: NOT SCORED (feedback)**: at b = 27.5 the particle dissolved in 7 of 8 runs (both arms); b = 28.5 SURVIVES (8/8 single). ChatGPT MG025 recommends accepting; awaiting PI sign-off |
+| MG7 | 5 | Mass scaling: is the coupled density deficit larger for a stronger particle (b-scan, 27.5 vs 28.5)? | **REGISTERED 2026-11-03** (draft 2 frozen at `5b44cde`); Part 0 PROCEED. **RESULT 2026-11-04: NOT SCORED (feedback)**: at b = 27.5 the particle dissolved in 7 of 8 runs (both arms); b = 28.5 SURVIVES (8/8 single). ChatGPT MG025 accepted; **CLOSED 2026-11-04** (PI signed off) |
 | MG8 | 6 | Multiway branch divergence and foliation dependence (numbered MG7 in `InitialPlan.md`) | PENDING |
 
 ## Template
@@ -1624,3 +1624,8 @@ no null) are validation quantities, not MG7 data, and are not interpreted.
   comparison; strict mode now reports a candidate-hash failure without crashing. No scoring rule changed. In the cloud
   (`--cross-platform`; all 16 candidate hashes differ on Linux, as in MG6) everything agrees. Strict rerun on the PI's PC (2026-11-04, main `04ad4e2`): candidate hashes match and
   everything agrees (exit 0); `evaluation.json` unchanged by a re-evaluation.
+
+**MG7 CLOSED 2026-11-04: NOT SCORED (feedback); feedback CHANGED at b = 27.5, SURVIVES at b = 28.5.** PI sign-off:
+Richard Benear, 2026-11-04 14:38 UTC, in the project thread ("i sign off on MG7"), after ChatGPT review MG025 and the
+interpretation corrections in its response. Scope: b = 27.5 failed the finite-panel survival criterion under rewriting
+in both arms; no survival edge is estimated; the mass-scaling question remains open.

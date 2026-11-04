@@ -555,3 +555,5 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - Corrections adopted (`review/MG025_response.md`): no survival edge is claimed (b = 27.5 failed the finite-panel
   criterion; no DEC arm, so uniform rewriting is not isolated); threshold sensitivity was computed (unchanged verdicts);
   early/late means at 28.5 and the list of unavailable quantities added. Awaiting PI sign-off.
+- **MG7 CLOSED 2026-11-04 14:38 UTC** (PI sign-off in the project thread): NOT SCORED (feedback); 27.5 CHANGED, 28.5
+  SURVIVES. Mass scaling remains open.

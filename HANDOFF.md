@@ -10,7 +10,7 @@ machine (10 cores). Everything referred to here is committed. Read `CLAUDE.md` f
 | MG2 | Token rules converge to the lattice mean field as Ω → ∞ | **FAIL as registered** (C3 at Ω = 100; C4 noise-driven replication at b_mid). The core convergence tests C1 and C6 PASS; C5 PASS |
 | MG3 | Particles nucleate spontaneously from intrinsic noise | **FAIL as registered** (C2(a): 0.71, 0.71, 0.62 confirmed vs ≥ 0.80). C1, C3, C4, V5 PASS. Budget overrun 19.03/18 h recorded as an exception |
 | MG3b | Follow-up: time step, rates with more events, calibrated uncertainty | Estimation study, no verdict. Part 1 EQUIVALENT (τ/2 vs τ ratio 0.95); S = 0.064 per unit Ω, approximate 95% 0.047–0.082 (MG3b record) |
-| MG4–MG8 | Irregular graphs, evolving hypergraph, gravity-like deficit (MG6), mass scaling (MG7), multiway (MG8) | see GATES.md; MG7 REGISTERED 2026-11-03 |
+| MG4–MG8 | Irregular graphs, evolving hypergraph, gravity-like deficit (MG6), mass scaling (MG7), multiway (MG8) | see GATES.md; MG7 CLOSED 2026-11-04 (NOT SCORED, feedback) |
 
 Key physics so far, on the h = 0.2 lattice at b = 29:
 - The deterministic limit is reproduced to better than 0.1% (MG2 C1, C6).
