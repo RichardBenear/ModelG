@@ -1759,3 +1759,47 @@ committed MG9 tracks (proposal §0). MG9's own classifications are unchanged.
 - **Cap 60 integrations; cutoff 2 core-h; cloud.** Replay of MG9's [0, 1800] tracks to 1e-6 required (REPLAY-MISMATCH
   otherwise). Synthetic tests and a pre-run implementation specification come before any run.
 
+
+**MG9c pre-run implementation specification (MG029d, 2026-11-04; written before any MG9c run).** Code:
+`src/run_mg9c.py`, `src/evaluate_mg9c.py`; tests `tests/test_mg9c.py` (20 pass; no Model G integration, a fake solver
+checks segmentation, snapshots and the ledger). MG9's `run_mg9.py` and `landau_mg9.py` are imported unchanged
+(identical to production code `f7ef9e9`).
+1. **Platform.** Before the first run the versions must equal MG9's recorded ones (Python 3.13.18, numpy 2.5.3,
+   scipy 1.18.1); checked in this container. Every run record stores its platform.
+2. **Prepared states** come from `results/MG9/states.npz`: the key named in each MG9 grid record's `prep` field
+   (`prep_29.2500`, `sweep_29.30`, `prep_29.3500`), and `sweep_29.22`. Splice: `phase_convention`, then
+   `splice_patch` (half-width 25). E_pat is the envelope mean of the prepared φ_X. It equals the MG9 record to 1e-12
+   (tested).
+3. **Segmentation (replay).** Main, D01 and D02L front runs integrate in separate `mg9_ode` calls over [0, 600],
+   [600, 1800], [1800, 3600], [3600, 6000], [6000, 12,000] (extension [12,000, 15,000], [15,000, 30,000]), each
+   starting from the previous final state, with t_eval every 5 units from t_a + 5. The first two segments are exactly
+   MG9's `front_run` calls. Perturbation runs use [0, 1500], [1500, 3000], [3000, 6000]. A run counts once in the
+   ledger, extension included.
+4. **Replay check.** All 361 samples on [0, 1800] are compared with the MG9 record: identical statuses and
+   |Δx_L|, |Δx_R| ≤ 1e-6. The E_pat difference is recorded. A failure is REPLAY-MISMATCH (Q1 UNRESOLVED). Tolerances are
+   not changed after a mismatch; the cause is investigated.
+5. **Windows.** D_k is the outward displacement between the samples at the window ends. s_k = D_k / |W_k|. v is the
+   least-squares slope of outward position over samples with t ≥ T − 1000. The speed-decrease condition applies to each
+   interface separately (|s₃| < |s₂| < |s₁|, or |D₃| ≤ λ/400). The cell-count range uses samples with t ≥ W₁ start.
+6. **Rules 2–3 as MG9's code.** Fill or loss is checked from t = 0. An "untracked" sample at any time gives
+   UNRESOLVED-INTERNAL. BREAKUP/REMOTE and λ/2 reversals are checked on samples with t ≥ 100.
+7. **Robustness.** It runs only for main runs labelled SETTLED with a passed replay, plus 29.22 (descriptive; it does
+   not enter Q1).
+   - (a) D01: `fourier_resample` to N = 1000, then settle to 1000 (extension to 3000 if the residual exceeds 1e-6);
+     `prep_classify` must give PERSISTS (34 cells).
+   - (b) D02L: tile twice, integrate to 300; PERSISTS = complete, residual ≤ 1e-6, 68 cells. This preparation is shared
+     with the descriptive half-width-50 trial (d).
+   - (c) The main run's final field (its snapshot at T), multiplied by 1.05 and 0.95; E_pat of the main run; a fresh
+     tracker. PASS = SETTLED and both final interfaces within λ/10 of the main run's final interfaces.
+8. **Q2.** Midpoints are rounded to 6 decimals. Each is prepared from the nearest sweep state above (`carry_concentration`,
+   settle to 1000, extension to 3000, `prep_classify`). The final settled point gets (a)–(c). If all three midpoints
+   invade, the bracket is [29.35, first midpoint], with 29.35's robustness already established. The interval
+   comparison rounds both differences to 1e-9 before applying the inclusive ±0.01 limits.
+9. **Records.**
+   - Per-run JSON in `results/MG9c/runs/`: the full track, the initial-state SHA-256, E_pat, success, time reached,
+     residual, and snapshot names with SHA-256.
+   - Snapshots are saved as `.npy` during the run (gitignored), then packed into `results/MG9c/snapshots.npz` with
+     `snapshots_manifest.json` (committed).
+   - Settled preparation states are saved the same way.
+10. **Order and stops.** `q1` → `robust` → `q2` → `desc` → `evaluate_mg9c.py` → `pack`. The cap (60) and cutoff
+    (2 core-h) are checked before each integration; on a stop the driver exits with code 2 and the PI decides.
