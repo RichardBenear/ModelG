@@ -625,3 +625,8 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - ChatGPT round 2 (`review/MG029_chatgpt_r2.md`): draft 2 ready for registration; one nonblocking §10 MIXED wording correction, applied. Response `review/MG029_response_r2.md`. Awaiting PI registration.
 - **MG9c REGISTERED** (MG029c; PI decision card 19:56 UTC, "Register draft 2", §9 defaults). Draft 2 frozen at `372336b`. GATES.md entry added. Next: code, synthetic tests, pre-run specification; then the cloud run.
 - MG029d: code (`src/run_mg9c.py`, `src/evaluate_mg9c.py`), 20 tests (`tests/test_mg9c.py`, all pass; MG9's 16 still pass) and a 10-item pre-run specification in GATES.md. No MG9c run yet. Next: stage q1 in the cloud.
+
+## MG030 — MG9c runs, 2026-11-04
+- PI chose "Start the runs now" (decision card 20:40 UTC). Code `cee5498`, cloud (versions as MG9). 11 integrations, 0.23 core-h.
+- Replays of MG9's [0, 1800] tracks exact (max diff 0). **Q1 = UNRESOLVED:** 29.25/29.30/29.35 all UNRESOLVED-SLOW at T = 30,000, failing only the residual criterion (1.084–1.092e-5 vs 1e-5); edges otherwise stationary (|D₃| ≤ 0.009, |v| ≤ 4.5e-7, counts constant). Q2 not eligible.
+- Descriptive: 29.22 SETTLED (residual 9.45e-6), robustness ROBUSTNESS-UNRESOLVED (D01 preparation PREP-CHANGED; D02L and ±5% PASS); width trials settled, D02 hw 25 + λ/4 locks to the hw 25 edges. Late motion at all four b is a slow rigid drift (~5e-7 per unit time, decelerating) with the width frozen. Result in GATES.md. Next: ChatGPT result review; PI sign-off.

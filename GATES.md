@@ -1803,3 +1803,33 @@ checks segmentation, snapshots and the ledger). MG9's `run_mg9.py` and `landau_m
    - Settled preparation states are saved the same way.
 10. **Order and stops.** `q1` → `robust` → `q2` → `desc` → `evaluate_mg9c.py` → `pack`. The cap (60) and cutoff
     (2 core-h) are checked before each integration; on a stop the driver exits with code 2 and the PI decides.
+
+**MG9c RESULT (MG030, 2026-11-04; cloud, Python 3.13.18, numpy 2.5.3, scipy 1.18.1; code `cee5498`): Q1 UNRESOLVED;
+Q2 not eligible.** 11 integrations, 0.23 core-h (cap 60, cutoff 2). Evaluator `results/MG9c/evaluation.json`; records
+`results/MG9c/runs/`; snapshots `results/MG9c/snapshots.npz` (+ SHA-256 manifest). PI chose "Start the runs now"
+(decision card 20:40 UTC).
+- **Replay:** all three main runs reproduce MG9's [0, 1800] tracks exactly (max |Δx| = 0, 361/361 samples, E_pat
+  identical).
+- **Q1 labels:** 29.25, 29.30, 29.35 → **UNRESOLVED-SLOW** (rule 6 after the extension to T = 30,000). Each fails
+  only the residual criterion: final residual 1.084e-5, 1.092e-5, 1.085e-5 against the registered 1e-5. Every other
+  SETTLED condition holds:
+  - |D₃| over [15,000, 30,000] is 0.008–0.009, against λ/40 = 0.074;
+  - |v| over the last 1000 units is 4.3–4.5e-7, against λ/40,000 = 7.4e-5;
+  - speeds decrease for both interfaces;
+  - the cell count is constant: 18, 18, 19.
+- **So Q1 = UNRESOLVED** (§7 order 1). Robustness was not run for these points (it requires SETTLED), and Q2 is not
+  eligible.
+- **Descriptive, not scored (29.22):** SETTLED (residual 9.45e-6). Robustness was ROBUSTNESS-UNRESOLVED:
+  - D01: preparation PREP-CHANGED (the 34-cell pattern does not persist on h = 0.1 at 29.22), so the trial was UNRESOLVED;
+  - D02L, half-width 25: PASS;
+  - ±5% perturbations: PASS (edges return within 0.0023).
+  
+  Width trials: both SETTLED. The D02 half-width 25 + λ/4 start settled at the same edges as half-width 25, to
+  within 1e-4. The D02L half-width 50 start settled at ±55.7.
+- **Descriptive, not scored (shape of the late motion, from the committed tracks).** After t ≈ 6000 the patch width
+  is frozen: it changes by less than 4e-8 per unit time, at 58.1–58.3 ≈ 19.8 λ. The two interfaces move in the same
+  direction (the outward displacements have opposite signs), at about 5e-7 per unit time and slowing (from 1e-6 at
+  t ≈ 4000 to 4.7e-7 at 27,500). So the late motion is a slow rigid drift of the whole patch, not growth. Its size is
+  consistent with the final residual of about 1.1e-5. No re-scoring follows from this reading.
+- **Independent recompute** (separate script on the raw tracks and snapshots): all labels, D₃, v and cell counts agree.
+  Residuals recomputed from the 30,000 snapshots agree with the records.
