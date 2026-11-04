@@ -547,4 +547,4 @@ Items deliberately postponed so the project reaches its main questions first. Th
   8/8 single and pinned. The rewriting, not the coupling, removes the b = 27.5 particle.
 - Post hoc descriptive (not registered): CP2 − SH2 = −72.0 at 28.5 vs −67.1 at 28.0 (MG6), different streams.
 - Recompute bug (NaN at no-particle checks) fixed after the data; cloud cross-platform recompute agrees; strict PC rerun
-  pending. Next: merge; strict recompute on PC; ChatGPT review; PI sign-off.
+  (2026-11-04) agrees, hashes included. Next: merge; strict recompute on PC; ChatGPT review; PI sign-off.
