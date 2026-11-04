@@ -1,0 +1,120 @@
+{
+  "reviewed_revision": "4466be3471056b6e2a9507fe6d98498b17de61ba",
+  "fits": {
+    "29.25": {
+      "sides": {
+        "xL": {
+          "tau": 717.8722575817328,
+          "remaining_at_1800": 0.22653544960853722,
+          "exponential_rms": 0.00023224478405101437,
+          "linear_rms": 0.05825169424101341,
+          "predicted_D3": 0.0006518399834192223
+        },
+        "xR": {
+          "tau": 722.4881229567452,
+          "remaining_at_1800": 0.23024253216795643,
+          "exponential_rms": 0.00025869519565177546,
+          "linear_rms": 0.058093306216342476,
+          "predicted_D3": 0.0006877303101120447
+        }
+      },
+      "cell_counts": [
+        18
+      ],
+      "cell_count_changes": [
+        {
+          "t": 0.0,
+          "n": 18
+        }
+      ]
+    },
+    "29.3": {
+      "sides": {
+        "xL": {
+          "tau": 712.253995607884,
+          "remaining_at_1800": 0.22073239124930666,
+          "exponential_rms": 0.0002735222558342432,
+          "linear_rms": 0.058070743907466506,
+          "predicted_D3": 0.0006065056009418868
+        },
+        "xR": {
+          "tau": 716.6798715398718,
+          "remaining_at_1800": 0.2243199885921605,
+          "exponential_rms": 0.00023512750524634735,
+          "linear_rms": 0.05795342605968908,
+          "predicted_D3": 0.0006392147063714049
+        }
+      },
+      "cell_counts": [
+        18
+      ],
+      "cell_count_changes": [
+        {
+          "t": 0.0,
+          "n": 18
+        }
+      ]
+    },
+    "29.35": {
+      "sides": {
+        "xL": {
+          "tau": 708.1985949323873,
+          "remaining_at_1800": 0.2169903034081102,
+          "exponential_rms": 0.00047697951087028974,
+          "linear_rms": 0.05806135843403576,
+          "predicted_D3": 0.0005764328505364347
+        },
+        "xR": {
+          "tau": 712.959257151691,
+          "remaining_at_1800": 0.2208764606380953,
+          "exponential_rms": 0.0005197964080986386,
+          "linear_rms": 0.05793116322575532,
+          "predicted_D3": 0.0006104508039328493
+        }
+      },
+      "cell_counts": [
+        18,
+        19
+      ],
+      "cell_count_changes": [
+        {
+          "t": 0.0,
+          "n": 18
+        },
+        {
+          "t": 45.0,
+          "n": 19
+        }
+      ]
+    }
+  },
+  "q2_counterexample": {
+    "midpoints_settled": [
+      29.375,
+      29.3875,
+      29.393749999999997
+    ],
+    "bracket": [
+      29.393749999999997,
+      29.4
+    ],
+    "draft_label": "AT b_r",
+    "hypothetical_edge_above_br": 29.398,
+    "edge_inside_bracket": true,
+    "edge_above_entire_br_benchmark": true
+  },
+  "thresholds": {
+    "wavelength": 2.9411764705882355,
+    "settled_displacement": 0.07352941176470588,
+    "settled_speed": 7.352941176470589e-05,
+    "initial_window_displacement_speed": 1.2254901960784315e-05,
+    "early_stop_displacement": 0.007352941176470589
+  },
+  "opposite_motion": {
+    "DL": 0.8823529411764707,
+    "DR": -0.8823529411764707,
+    "rule3_advances": false,
+    "rule3_recedes": false,
+    "rule3_asymmetric": false
+  }
+}
