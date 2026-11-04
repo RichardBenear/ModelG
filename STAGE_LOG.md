@@ -567,3 +567,13 @@ Items deliberately postponed so the project reaches its main questions first. Th
   conditional MG9b. About 1–2 core-h, cloud. Prior knowledge that bears on P1 and D2 is disclosed in §2.
 - No MG9 computation run. One timing check of the existing b = 29 reference ODE (about 8 s per 400 time units).
 - Next: PI decisions in §10; ChatGPT design review; registration.
+
+## MG026a — MG9 draft 2 after ChatGPT review MG026, 2026-11-04
+- ChatGPT review `review/MG026_chatgpt.md` (static checks in `review/MG026_replication/`): recommended draft 2 before
+  registration; seven items. The PI adopted its recommended decisions (16:23 UTC, project thread).
+- All seven items accepted (`review/MG026_response.md`). Draft 2 `spec/MG9_proposal.md` (draft 1 kept as
+  `spec/MG9_proposal_v1.md`): P1 = local onset type (either sign valid); P2 = finite-time front arrest against the
+  operational window, never "snaking"; frozen domains, normalization, L₃ formula, V2 fit rules; persistence bracket
+  (not a fold); interface-envelope observable, UNRESOLVED and robustness repeats; benchmark recheck; budget 193 + 27
+  reserve, cap 220, cutoff 8 core-h. Seed-threshold extension deferred.
+- No MG9 computation run. Next: PI decides on a ChatGPT round 2 or registration.
