@@ -1,0 +1,28 @@
+{
+  "D02L_thresholds": {
+    "67": 30.044467872914648,
+    "68": 30.04576994462651
+  },
+  "cosine_cubic_SH": "19*c2**2/18 - 3/4",
+  "SH_boundary_c2_squared": 0.7105263157894737,
+  "envelopes": {
+    "0.2": {
+      "window_width": 3.0,
+      "min": 0.9898697149806046,
+      "max": 1.00964571969815,
+      "mean": 0.9997805971821221
+    },
+    "0.1": {
+      "window_width": 1.5,
+      "min": 0.44605271314051953,
+      "max": 1.009824135285334,
+      "mean": 0.7554936193239601
+    }
+  },
+  "reversal_example": {
+    "displacement": 2.9411764705882355,
+    "range": 5.882352941176471,
+    "passes_invasion_inequality": true,
+    "matches_stated_unresolved_reversal": true
+  }
+}
