@@ -540,3 +540,11 @@ Items deliberately postponed so the project reaches its main questions first. Th
   0.17 nodes (limit 2), tick check 0.5 / 1.0 (limit 6), bound 0.062 (limit 0.14); projection 74.2 core-h (cutoff 90).
   Records `9b20219`; outcome in GATES.md.
 - Next: merge; launch the 16 registered runs (`$env:MODELG_WORKERS=8; python src/run_mg7.py`, about 10–11 h).
+
+## MG025 — MG7 registered runs and result, 2026-11-04
+- 16/16 COMPLETE on the PI's PC (2026-11-03 12:44–21:53 local, 8 workers), 73.01 core-h; records `282726f`.
+- **Gate NOT SCORED (feedback):** at b = 27.5 the particle dissolved in 7/8 runs (SH2 4/4, CP2 3/4); b = 28.5 SURVIVES,
+  8/8 single and pinned. The rewriting, not the coupling, removes the b = 27.5 particle.
+- Post hoc descriptive (not registered): CP2 − SH2 = −72.0 at 28.5 vs −67.1 at 28.0 (MG6), different streams.
+- Recompute bug (NaN at no-particle checks) fixed after the data; cloud cross-platform recompute agrees; strict PC rerun
+  pending. Next: merge; strict recompute on PC; ChatGPT review; PI sign-off.

@@ -81,7 +81,10 @@ def main():
             alive0 = cand["life0"] > tp if t > 0 else np.ones(len(p0), bool)
             born = acc & (cand["tb"] <= tp) & (cand["tb"] + cand["ell"] > tp) if t > 0 else np.zeros(len(acc), bool)
             pos = np.concatenate([p0[alive0], np.column_stack([cand["x"][born], cand["y"][born]])])
-            if len(pos) != int(d["m_N"][i]):
+            if np.isnan(d["m_N"][i]):                       # no particle, so no centred measurement was stored
+                if lists[-1] or int(d["n_parts"][i]) != 0:
+                    bad.append(f"{key}: NaN measurement at t = {t} although a particle is present")
+            elif len(pos) != int(d["m_N"][i]):
                 ok_counts = False
             if lists[-1]:
                 c = lists[-1][0]["centre"]
@@ -113,7 +116,11 @@ def main():
         print(f"{key}: {cls_of[key]}, single in window {single_w[key]}", flush=True)
     k = lambda arm, b, s: f"{arm}_b{b:.2f}_{s}"
     allk = [k(a, b, s) for a in ("CP2", "SH2") for b in B_END for s in STARTS]
-    if any(status.get(x) != "COMPLETE" for x in allk):
+    unaudited = [x for x in allk if status.get(x) == "COMPLETE" and x not in single_w]
+    if unaudited:                                             # strict mode: a candidate hash failed, run not audited
+        gate = None
+        print(f"not audited (candidate hash): {unaudited}; gate not recomputed")
+    elif any(status.get(x) != "COMPLETE" for x in allk):
         gate = "INCOMPLETE"
     elif not all(single_w[x] for x in allk):
         gate = "NOT SCORED (feedback)"
@@ -139,12 +146,13 @@ def main():
                                list(rs["e"]) + [rs["mean"]] + list(rs["ci95"]), rtol=1e-9, atol=1e-9):
                 bad.append(f"residuals {name}")
         print(f"Delta_i = {np.round(D, 3).tolist()}, t = {A.tstat(D):.4f} (stored {st['t']:.4f})")
-    print(f"gate: {gate} ({'agrees' if gate == ev_['gate'] else 'DIFFERS from ' + ev_['gate']})")
-    if gate != ev_["gate"]:
-        bad.append("gate")
+    if gate is not None:
+        print(f"gate: {gate} ({'agrees' if gate == ev_['gate'] else 'DIFFERS from ' + ev_['gate']})")
+        if gate != ev_["gate"]:
+            bad.append("gate")
     for b in B_END:
         ks = [k("CP2", b, s) for s in STARTS]
-        if all(status.get(x) == "COMPLETE" for x in ks):
+        if all(status.get(x) == "COMPLETE" and x in cls_of for x in ks):
             fb = "SURVIVES" if sum(cls_of[x] == "single" for x in ks) >= 3 else "CHANGED"
             if fb != ev_["feedback"][f"b{b:.2f}"]["outcome"]:
                 bad.append(f"feedback b {b}")
