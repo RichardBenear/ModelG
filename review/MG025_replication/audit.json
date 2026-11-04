@@ -1,0 +1,150 @@
+{
+  "rows": {
+    "CP2_b27.50_D0_p0": {
+      "first_zero": 20.0,
+      "final_smoothed_X_min": 3.581611597621679e-31,
+      "single_window": false,
+      "alt_single_window": false
+    },
+    "CP2_b27.50_D0_p1": {
+      "first_zero": null,
+      "final_smoothed_X_min": -9.22021795133674,
+      "single_window": true,
+      "alt_single_window": true,
+      "Y": -48.85000674534248,
+      "late_minus_early": -14.399999999999977
+    },
+    "CP2_b27.50_D1_p0": {
+      "first_zero": 20.0,
+      "final_smoothed_X_min": 1.9690189355514623e-31,
+      "single_window": false,
+      "alt_single_window": false
+    },
+    "CP2_b27.50_D1_p1": {
+      "first_zero": 140.0,
+      "final_smoothed_X_min": -1.2641303147001906e-13,
+      "single_window": false,
+      "alt_single_window": false
+    },
+    "CP2_b28.50_D0_p0": {
+      "first_zero": null,
+      "final_smoothed_X_min": -10.764397553582855,
+      "single_window": true,
+      "alt_single_window": true,
+      "Y": -67.66818856352432,
+      "late_minus_early": 19.400000000000034
+    },
+    "CP2_b28.50_D0_p1": {
+      "first_zero": null,
+      "final_smoothed_X_min": -10.65727444948974,
+      "single_window": true,
+      "alt_single_window": true,
+      "Y": -78.21364310897887,
+      "late_minus_early": -6.0
+    },
+    "CP2_b28.50_D1_p0": {
+      "first_zero": null,
+      "final_smoothed_X_min": -10.580098969378287,
+      "single_window": true,
+      "alt_single_window": true,
+      "Y": -78.21364310897887,
+      "late_minus_early": 13.800000000000011
+    },
+    "CP2_b28.50_D1_p1": {
+      "first_zero": null,
+      "final_smoothed_X_min": -10.695323062017225,
+      "single_window": true,
+      "alt_single_window": true,
+      "Y": -66.8500067453425,
+      "late_minus_early": 16.400000000000034
+    },
+    "SH2_b27.50_D0_p0": {
+      "first_zero": 160.0,
+      "final_smoothed_X_min": -1.3354170345361431e-08,
+      "single_window": false,
+      "alt_single_window": false
+    },
+    "SH2_b27.50_D0_p1": {
+      "first_zero": 90.0,
+      "final_smoothed_X_min": -1.1323004882075121e-17,
+      "single_window": false,
+      "alt_single_window": false
+    },
+    "SH2_b27.50_D1_p0": {
+      "first_zero": 60.0,
+      "final_smoothed_X_min": -2.1732568941605974e-31,
+      "single_window": false,
+      "alt_single_window": false
+    },
+    "SH2_b27.50_D1_p1": {
+      "first_zero": 110.0,
+      "final_smoothed_X_min": -8.358972603824751e-16,
+      "single_window": false,
+      "alt_single_window": false
+    },
+    "SH2_b28.50_D0_p0": {
+      "first_zero": null,
+      "final_smoothed_X_min": -9.739809782620627,
+      "single_window": true,
+      "alt_single_window": true,
+      "Y": 7.4227205273847865,
+      "late_minus_early": 19.19999999999999
+    },
+    "SH2_b28.50_D0_p1": {
+      "first_zero": null,
+      "final_smoothed_X_min": -9.35486191116645,
+      "single_window": true,
+      "alt_single_window": true,
+      "Y": -7.213643108978849,
+      "late_minus_early": -15.0
+    },
+    "SH2_b28.50_D1_p0": {
+      "first_zero": null,
+      "final_smoothed_X_min": -10.324159927824493,
+      "single_window": true,
+      "alt_single_window": true,
+      "Y": -3.3954612907970314,
+      "late_minus_early": -20.600000000000023
+    },
+    "SH2_b28.50_D1_p1": {
+      "first_zero": null,
+      "final_smoothed_X_min": -9.273985455576305,
+      "single_window": true,
+      "alt_single_window": true,
+      "Y": 0.3318114364756959,
+      "late_minus_early": 5.400000000000034
+    }
+  },
+  "gate": "NOT SCORED (feedback)",
+  "contrast_b285": [
+    -75.09090909090911,
+    -71.00000000000003,
+    -74.81818181818184,
+    -67.18181818181819
+  ],
+  "mean_b285": -72.02272727272728,
+  "t_b285": -38.63198066567471,
+  "part0": {
+    "27.50": {
+      "step": {
+        "count_mean_difference": 0.1666666666666643,
+        "relative_depth_difference": 0.010618200296293024
+      },
+      "tick": {
+        "count_mean_difference": 0.5,
+        "relative_depth_difference": 0.01457076456810783
+      }
+    },
+    "28.50": {
+      "step": {
+        "count_mean_difference": 0.1666666666666714,
+        "relative_depth_difference": 0.0008016102736109949
+      },
+      "tick": {
+        "count_mean_difference": 1.0,
+        "relative_depth_difference": 0.011767382329395752
+      }
+    }
+  },
+  "core_hours": 73.00583888888889
+}
