@@ -50,6 +50,17 @@ def main():
                                                             - np.array(out["contrast_b28.00_mg6"]["c"])).tolist()
     out["M_minus_CP2"] = {"b28.50": [r285["CP2"][s]["M_minus"] for s in STARTS],
                           "b28.00": [r280["CP2"][s]["M_minus"] for s in STARTS]}
+    ev = json.load(open(os.path.join(ROOT, "MG7", "evaluation.json")))   # MG025 review: carry what the evaluator stored
+    out["threshold_sensitivity_single_in_window"] = {k: v["alt_threshold"]["single_in_window"]
+                                                     for k, v in ev["runs"].items() if "alt_threshold" in v}
+    el = {}
+    for s in STARTS:
+        c, h = ev["runs"][f"CP2_b28.50_{s}"], ev["runs"][f"SH2_b28.50_{s}"]
+        el[s] = dict(CP2_late_minus_early=c["late"] - c["early"], SH2_late_minus_early=h["late"] - h["early"],
+                     contrast_late_minus_early=(c["late"] - h["late"]) - (c["early"] - h["early"]))
+    out["early_late_b28.50"] = el
+    out["unavailable"] = ["contrast at b = 27.5", "endpoint change Delta and its t", "residuals (start-field, in-run)",
+                          "Fieller ratio", "twelve-run slope against M-", "falloff at b = 27.5"]
     json.dump(out, open(os.path.join(ROOT, "MG7", "descriptive.json"), "w"), indent=1)
     for k, v in runs.items():
         print(f"{k}: first t with no particle {v['first_t_no_particle']}, single in window {v['single_in_window']}")
