@@ -1,0 +1,148 @@
+{
+ "key": "SH2_b27.50_D1_p1",
+ "spec": {
+  "key": "SH2_b27.50_D1_p1",
+  "arm": "SH2",
+  "b": 27.5,
+  "kappa": 2.0,
+  "shifted": true,
+  "slot": 1,
+  "pl": 1
+ },
+ "b": 27.5,
+ "P_b": 27.5,
+ "nu": 0.2,
+ "kappa": 2.0,
+ "h": 0.20002762164692553,
+ "dt": 0.05,
+ "delta": 0.1,
+ "t_end": 200.0,
+ "theta": -4.457581675528346,
+ "Lx": 19.922516574636518,
+ "Ly": 20.08183258569795,
+ "rho0": 47.24297551642137,
+ "F": 1.4918246976412703,
+ "phi_lim": 0.2,
+ "shift": [
+  18.060765257313303,
+  8.258704888624022
+ ],
+ "grid": [
+  398,
+  402
+ ],
+ "start_field": {
+  "path": "MG4c/fields/b27.500000_D1_p1.npz",
+  "sha256": "7f03affc10626220ad8dc253d32149215ee94efe64338c41b10ce1221abde372",
+  "shift_applied": false
+ },
+ "platform": {
+  "machine": "RB_LibraryPC",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.2",
+  "numpy": "2.2.4",
+  "scipy": "1.16.1"
+ },
+ "code_revision": "6516dc61815b26a826ca7a6b29c0f1daa27207e9",
+ "registered": "GATES.md MG7; spec/MG7_proposal.md draft 2 (5b44cde)",
+ "replay": {
+  "seed_for": [
+   7,
+   0,
+   0,
+   1,
+   3
+  ],
+  "seed": 3545663647,
+  "bit_generator": "PCG64 (numpy.random.default_rng)",
+  "numpy": "2.2.4",
+  "schema": "N0 <i8, then life0, tb, x, y, u, ell as <f8 arrays; SHA-256 over that byte stream",
+  "n_candidates": 1128110,
+  "sha256": "50cda54b91f590878ab76614d05340699c056e9ddbfe66722ed50e52d09e0f30",
+  "fresh_process_sha256": "50cda54b91f590878ab76614d05340699c056e9ddbfe66722ed50e52d09e0f30"
+ },
+ "status": "COMPLETE",
+ "note": null,
+ "flags": [],
+ "t_reached": 200.0,
+ "wall_s": 16518.36836719513,
+ "N_final": 18947,
+ "max_jump_resid": 8.516081112700881e-14,
+ "max_audit": 3.552713678800501e-15,
+ "max_phiG": 0.045875498112543,
+ "max_phiG_ticks": 0.045875498112543,
+ "max_p": 0.7325227374975257,
+ "n_accepted": 748722,
+ "bound_margin_ok": true,
+ "summary": {
+  "n0": 1,
+  "counts": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "depths": [
+   [
+    -6.797330554160986
+   ],
+   [
+    -8.079167940534942
+   ],
+   [
+    -7.907324723343026
+   ],
+   [
+    -9.409851714000062
+   ],
+   [
+    -8.109997060963835
+   ],
+   [
+    -8.285814596468683
+   ],
+   [
+    -7.372249947797467
+   ],
+   [
+    -7.099102790579734
+   ],
+   [
+    -7.161137316587128
+   ],
+   [
+    -4.770873201175764
+   ],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   []
+  ],
+  "cls": {
+   "cls": "dissolved",
+   "sub": null
+  }
+ }
+}
