@@ -1,6 +1,6 @@
-# MG9 — Local onset type of the Model G Turing instability, and front arrest against the particle window. Design proposal, DRAFT 3
+# MG9 — Local onset type of the Model G Turing instability, and front arrest against the particle window. Design proposal, DRAFT 3 (REGISTERED)
 
-*Stage MG026b. Claude, 2026-11-04. Status: **DRAFT 3, not registered.** Drafts 1 and 2 are kept as
+*Stage MG026b. Claude, 2026-11-04. Status: **REGISTERED 2026-11-04 (MG026c), draft 3, content frozen at `7810b8b`; PI decision card 16:40 UTC.** No MG9 run of any kind preceded registration. Drafts 1 and 2 are kept as
 `spec/MG9_proposal_v1.md` and `spec/MG9_proposal_v2.md` (superseded). This draft answers ChatGPT's round 2
 (`review/MG026_chatgpt_r2.md`; response `review/MG026_response_r2.md`). All three main items and all seven
 implementation points are accepted and written into the text below, not left to the pre-run specification.*

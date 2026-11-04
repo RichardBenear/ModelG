@@ -588,3 +588,9 @@ Items deliberately postponed so the project reaches its main questions first. Th
   brackets (b_s keeps MG003's potential carry, b_r its seed); `mg9_ode` wrapper exposing solver success; P1 outcome order
   incl. DEGENERATE; budget 210 + 20 reserve, cap 230, cutoff 10 core-h, six-stage stop priority.
 - No MG9 computation run (a synthetic kernel check only). Next: PI decides registration or a round 3.
+
+## MG026c — MG9 registered, 2026-11-04
+- PI chose "Register draft 3" on the decision card (16:40 UTC), without a ChatGPT round 3 (ChatGPT r2 had no remaining
+  scope objection once its items were fixed). Draft 3 content frozen at `7810b8b`; GATES.md MG9 entry added.
+- Next: implementation (code, tests with the synthetic envelope/classification validations) and the pre-run
+  implementation specification in GATES.md; ChatGPT reviews those before the first run.
