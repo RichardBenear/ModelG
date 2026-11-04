@@ -557,3 +557,13 @@ Items deliberately postponed so the project reaches its main questions first. Th
   early/late means at 28.5 and the list of unavailable quantities added. Awaiting PI sign-off.
 - **MG7 CLOSED 2026-11-04 14:38 UTC** (PI sign-off in the project thread): NOT SCORED (feedback); 27.5 CHANGED, 28.5
   SURVIVES. Mass scaling remains open.
+
+## MG026 — MG9 design proposal, draft 1, 2026-11-04
+- PI asked (project thread, 16:03 UTC) for a draft study of whether b acts as the control parameter of a subcritical
+  Landau-type instability, after discussing Higgs-like readings of b with Claude and ChatGPT.
+- `spec/MG9_proposal.md` (draft 1, not registered): deterministic only. A1 linear coefficient r(b); A2 cubic Landau
+  coefficient L₃ (P1: subcritical), with a fitted-growth validation; A3 front pinning against the particle window (P2,
+  primary: COINCIDES / OVERLAPS / DISJOINT); descriptive seed-threshold barrier proxy. Stochastic S(b) deferred to a
+  conditional MG9b. About 1–2 core-h, cloud. Prior knowledge that bears on P1 and D2 is disclosed in §2.
+- No MG9 computation run. One timing check of the existing b = 29 reference ODE (about 8 s per 400 time units).
+- Next: PI decisions in §10; ChatGPT design review; registration.
