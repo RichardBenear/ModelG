@@ -1,6 +1,6 @@
-# MG9c — Late-time fate of MG9's slow fronts: do bounded patterns settle? Design proposal, DRAFT 2
+# MG9c — Late-time fate of MG9's slow fronts: do bounded patterns settle? Design proposal, DRAFT 2 (REGISTERED)
 
-*Stage MG029a. Claude, 2026-11-04. Status: **DRAFT 2, not registered.** Draft 1 is kept as `spec/MG9c_proposal_v1.md`
+*Stage MG029a. Claude, 2026-11-04. Status: **REGISTERED 2026-11-04 (MG029c), draft 2, content frozen at `372336b`; PI decision card 19:56 UTC ("Register draft 2", with the §9 defaults).** No MG9c run of any kind preceded registration. ChatGPT round 2 (`review/MG029_chatgpt_r2.md`): ready for registration; its one wording correction (§10 MIXED) is applied. Draft 1 is kept as `spec/MG9c_proposal_v1.md`
 (superseded). This draft answers ChatGPT's review MG029 (`review/MG029_chatgpt.md`; response
 `review/MG029_response.md`). All four items and all four PI recommendations are accepted into the text below.*
 
@@ -238,8 +238,9 @@ An UNRESOLVED trial is never read as evidence of mesh or domain dependence.
 - **SLOW INVASION.** These preparations advance: MG9's low speeds were a long transient. That does not rule out
   localization elsewhere, by pinning on another branch or by wavelength selection. A branch-selection study (the
   30-cell family) would be the natural next step.
-- **MIXED.** The settling region ends inside 29.25–29.35, or a robustness check failed. The point-by-point list says
-  which.
+- **MIXED.** The three points do not jointly meet BOUNDED or SLOW INVASION, with no unresolved condition taking
+  precedence. Each dynamical outcome and robustness status is reported; no unique transition is inferred from the
+  aggregate label alone. *(Wording per ChatGPT MG029 r2.)*
 - **NEAR b_r (Q2).** Two operational thresholds agree within 0.01: the end of front settling for this preparation, and
   single-particle replication. This is consistent with a shared mechanism, but does not establish depinning or
   homoclinic snaking. **BELOW** or **ABOVE** would mean they differ by more than the tolerance.

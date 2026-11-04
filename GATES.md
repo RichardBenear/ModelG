@@ -15,7 +15,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | **REGISTERED 2026-11-02** (draft 3 frozen at `106b3e2`). Part 0 **STOP** (tick check, 2026-11-02); amendment MG021 (Δ = 0.1, narrow waiver) after ChatGPT review MG021; Part 0 completed; cutoff 110 core-h (PI). **CLOSED 2026-11-03: DEMONSTRATED** (CP2 − SH2 = −67.1 nodes, t = −36.2; CP2 − DEC = −66.9, t = −34.1); feedback SURVIVES (CP2, CP4); falloff UNRESOLVED; ChatGPT MG022 accepted; PI signed off |
 | MG7 | 5 | Mass scaling: is the coupled density deficit larger for a stronger particle (b-scan, 27.5 vs 28.5)? | **REGISTERED 2026-11-03** (draft 2 frozen at `5b44cde`); Part 0 PROCEED. **RESULT 2026-11-04: NOT SCORED (feedback)**: at b = 27.5 the particle dissolved in 7 of 8 runs (both arms); b = 28.5 SURVIVES (8/8 single). ChatGPT MG025 accepted; **CLOSED 2026-11-04** (PI signed off) |
 | MG9 | 2 | Local onset type of the Turing instability (P1) and finite-time front arrest against the single-particle window (P2); deterministic, 1D lattice | **CLOSED 2026-11-04: P1 SUBCRITICAL; P2 UNRESOLVED** (registered at `7810b8b`; amendment 1; PI sign-off 19:21 UTC) |
-| MG9c | 2 | Late-time fate of MG9's slow fronts (b = 29.25–29.35): settle into bounded patches or keep advancing; robustness; upper settling edge vs b_r | **DRAFT 2** (2026-11-04, `spec/MG9c_proposal.md`, after ChatGPT MG029); not registered; no MG9c run |
+| MG9c | 2 | Late-time fate of MG9's slow fronts (b = 29.25–29.35): settle into bounded patches or keep advancing; robustness; upper settling edge vs b_r | **REGISTERED 2026-11-04** (draft 2 frozen at `372336b`); no MG9c run yet |
 | MG8 | 6 | Multiway branch divergence and foliation dependence (numbered MG7 in `InitialPlan.md`) | PENDING |
 
 ## Template
@@ -1741,3 +1741,95 @@ project decision card ("Sign off and close MG9"), after ChatGPT result review MG
 (`review/MG028_response.md`). Scope: P1 is the local onset type at the Turing threshold only; P2 found no finite-time
 arrest, and the lower window edge was not testable with the registered 34-cell wavelength. The stochastic barrier S(b)
 remains deferred to a separately registered MG9b.
+
+### MG9c — Late-time fate of MG9's slow fronts (deterministic; Phase 2 follow-up to MG9)
+Status: **REGISTERED 2026-11-04 (MG029c)**, PI decision card 19:56 UTC ("Register draft 2" with the §9 defaults). **No
+MG9c run of any kind preceded this commit.** The registered design is `spec/MG9c_proposal.md` **draft 2**, content frozen
+at `372336b` (draft 1 kept as `spec/MG9c_proposal_v1.md`). Reviews: ChatGPT MG029 and MG029 r2
+(`review/MG029_chatgpt*.md`; responses `review/MG029_response*.md`). Disclosed prior knowledge: exponential fits of the
+committed MG9 tracks (proposal §0). MG9's own classifications are unchanged.
+- **Q1 (primary):** at b = 29.25, 29.30, 29.35 (D02, patches prepared from the 34-cell branch, MG9 splice), late-time
+  classification on windows from t = 1800 (T = 12,000, extension 30,000): SETTLED / ADVANCES / RECEDES / INVADES /
+  RETREATS / UNRESOLVED-*. Robustness of a SETTLED point: D01, D02L (half-width 25), ±5% amplitude perturbations;
+  PASS / FAIL / UNRESOLVED. Outcome order: UNRESOLVED, SLOW INVASION, BOUNDED, MIXED. Prediction (informed by §0):
+  BOUNDED.
+- **Q2 (if 29.35 is SETTLED-ROBUST):** three bisections between 29.35 and 29.40; interval comparison with b_r ∈
+  [29.395313, 29.396094], tolerance 0.01: NEAR b_r / BELOW / ABOVE / UNRESOLVED RELATIVE TO THE TOLERANCE.
+- **Descriptive:** b = 29.22; width trials (D02L half-width 50; D02 half-width 25 + λ/4).
+- **Cap 60 integrations; cutoff 2 core-h; cloud.** Replay of MG9's [0, 1800] tracks to 1e-6 required (REPLAY-MISMATCH
+  otherwise). Synthetic tests and a pre-run implementation specification come before any run.
+
+
+**MG9c pre-run implementation specification (MG029d, 2026-11-04; written before any MG9c run).** Code:
+`src/run_mg9c.py`, `src/evaluate_mg9c.py`; tests `tests/test_mg9c.py` (20 pass; no Model G integration, a fake solver
+checks segmentation, snapshots and the ledger). MG9's `run_mg9.py` and `landau_mg9.py` are imported unchanged
+(identical to production code `f7ef9e9`).
+1. **Platform.** Before the first run the versions must equal MG9's recorded ones (Python 3.13.18, numpy 2.5.3,
+   scipy 1.18.1); checked in this container. Every run record stores its platform.
+2. **Prepared states** come from `results/MG9/states.npz`: the key named in each MG9 grid record's `prep` field
+   (`prep_29.2500`, `sweep_29.30`, `prep_29.3500`), and `sweep_29.22`. Splice: `phase_convention`, then
+   `splice_patch` (half-width 25). E_pat is the envelope mean of the prepared φ_X. It equals the MG9 record to 1e-12
+   (tested).
+3. **Segmentation (replay).** Main, D01 and D02L front runs integrate in separate `mg9_ode` calls over [0, 600],
+   [600, 1800], [1800, 3600], [3600, 6000], [6000, 12,000] (extension [12,000, 15,000], [15,000, 30,000]), each
+   starting from the previous final state, with t_eval every 5 units from t_a + 5. The first two segments are exactly
+   MG9's `front_run` calls. Perturbation runs use [0, 1500], [1500, 3000], [3000, 6000]. A run counts once in the
+   ledger, extension included.
+4. **Replay check.** All 361 samples on [0, 1800] are compared with the MG9 record: identical statuses and
+   |Δx_L|, |Δx_R| ≤ 1e-6. The E_pat difference is recorded. A failure is REPLAY-MISMATCH (Q1 UNRESOLVED). Tolerances are
+   not changed after a mismatch; the cause is investigated.
+5. **Windows.** D_k is the outward displacement between the samples at the window ends. s_k = D_k / |W_k|. v is the
+   least-squares slope of outward position over samples with t ≥ T − 1000. The speed-decrease condition applies to each
+   interface separately (|s₃| < |s₂| < |s₁|, or |D₃| ≤ λ/400). The cell-count range uses samples with t ≥ W₁ start.
+6. **Rules 2–3 as MG9's code.** Fill or loss is checked from t = 0. An "untracked" sample at any time gives
+   UNRESOLVED-INTERNAL. BREAKUP/REMOTE and λ/2 reversals are checked on samples with t ≥ 100.
+7. **Robustness.** It runs only for main runs labelled SETTLED with a passed replay, plus 29.22 (descriptive; it does
+   not enter Q1).
+   - (a) D01: `fourier_resample` to N = 1000, then settle to 1000 (extension to 3000 if the residual exceeds 1e-6);
+     `prep_classify` must give PERSISTS (34 cells).
+   - (b) D02L: tile twice, integrate to 300; PERSISTS = complete, residual ≤ 1e-6, 68 cells. This preparation is shared
+     with the descriptive half-width-50 trial (d).
+   - (c) The main run's final field (its snapshot at T), multiplied by 1.05 and 0.95; E_pat of the main run; a fresh
+     tracker. PASS = SETTLED and both final interfaces within λ/10 of the main run's final interfaces.
+8. **Q2.** Midpoints are rounded to 6 decimals. Each is prepared from the nearest sweep state above (`carry_concentration`,
+   settle to 1000, extension to 3000, `prep_classify`). The final settled point gets (a)–(c). If all three midpoints
+   invade, the bracket is [29.35, first midpoint], with 29.35's robustness already established. The interval
+   comparison rounds both differences to 1e-9 before applying the inclusive ±0.01 limits.
+9. **Records.**
+   - Per-run JSON in `results/MG9c/runs/`: the full track, the initial-state SHA-256, E_pat, success, time reached,
+     residual, and snapshot names with SHA-256.
+   - Snapshots are saved as `.npy` during the run (gitignored), then packed into `results/MG9c/snapshots.npz` with
+     `snapshots_manifest.json` (committed).
+   - Settled preparation states are saved the same way.
+10. **Order and stops.** `q1` → `robust` → `q2` → `desc` → `evaluate_mg9c.py` → `pack`. The cap (60) and cutoff
+    (2 core-h) are checked before each integration; on a stop the driver exits with code 2 and the PI decides.
+
+**MG9c RESULT (MG030, 2026-11-04; cloud, Python 3.13.18, numpy 2.5.3, scipy 1.18.1; code `cee5498`): Q1 UNRESOLVED;
+Q2 not eligible.** 11 integrations, 0.23 core-h (cap 60, cutoff 2). Evaluator `results/MG9c/evaluation.json`; records
+`results/MG9c/runs/`; snapshots `results/MG9c/snapshots.npz` (+ SHA-256 manifest). PI chose "Start the runs now"
+(decision card 20:40 UTC).
+- **Replay:** all three main runs reproduce MG9's [0, 1800] tracks exactly (max |Δx| = 0, 361/361 samples, E_pat
+  identical).
+- **Q1 labels:** 29.25, 29.30, 29.35 → **UNRESOLVED-SLOW** (rule 6 after the extension to T = 30,000). Each fails
+  only the residual criterion: final residual 1.084e-5, 1.092e-5, 1.085e-5 against the registered 1e-5. Every other
+  SETTLED condition holds:
+  - |D₃| over [15,000, 30,000] is 0.008–0.009, against λ/40 = 0.074;
+  - |v| over the last 1000 units is 4.3–4.5e-7, against λ/40,000 = 7.4e-5;
+  - speeds decrease for both interfaces;
+  - the cell count is constant: 18, 18, 19.
+- **So Q1 = UNRESOLVED** (§7 order 1). Robustness was not run for these points (it requires SETTLED), and Q2 is not
+  eligible.
+- **Descriptive, not scored (29.22):** SETTLED (residual 9.45e-6). Robustness was ROBUSTNESS-UNRESOLVED:
+  - D01: preparation PREP-CHANGED (the 34-cell pattern does not persist on h = 0.1 at 29.22), so the trial was UNRESOLVED;
+  - D02L, half-width 25: PASS;
+  - ±5% perturbations: PASS (edges return within 0.0023).
+  
+  Width trials: both SETTLED. The D02 half-width 25 + λ/4 start settled at the same edges as half-width 25, to
+  within 1e-4. The D02L half-width 50 start settled at ±55.7.
+- **Descriptive, not scored (shape of the late motion, from the committed tracks).** After t ≈ 6000 the patch width
+  is frozen: it changes by less than 4e-8 per unit time, at 58.1–58.3 ≈ 19.8 λ. The two interfaces move in the same
+  direction (the outward displacements have opposite signs), at about 5e-7 per unit time and slowing (from 1e-6 at
+  t ≈ 4000 to 4.7e-7 at 27,500). So the late motion is a slow rigid drift of the whole patch, not growth. Its size is
+  consistent with the final residual of about 1.1e-5. No re-scoring follows from this reading.
+- **Independent recompute** (separate script on the raw tracks and snapshots): all labels, D₃, v and cell counts agree.
+  Residuals recomputed from the 30,000 snapshots agree with the records.
