@@ -1793,7 +1793,7 @@ checks segmentation, snapshots and the ledger). MG9's `run_mg9.py` and `landau_m
      tracker. PASS = SETTLED and both final interfaces within λ/10 of the main run's final interfaces.
 8. **Q2.** Midpoints are rounded to 6 decimals. Each is prepared from the nearest sweep state above (`carry_concentration`,
    settle to 1000, extension to 3000, `prep_classify`). The final settled point gets (a)–(c). If all three midpoints
-   invade, the bracket is [29.35, first midpoint], with 29.35's robustness already established. The interval
+   invade, the bracket is [29.35, last midpoint] [documentation slip corrected per ChatGPT MG030; the code already did this, and Q2 was not run], with 29.35's robustness already established. The interval
    comparison rounds both differences to 1e-9 before applying the inclusive ±0.01 limits.
 9. **Records.**
    - Per-run JSON in `results/MG9c/runs/`: the full track, the initial-state SHA-256, E_pat, success, time reached,
@@ -1825,11 +1825,18 @@ Q2 not eligible.** 11 integrations, 0.23 core-h (cap 60, cutoff 2). Evaluator `r
   - ±5% perturbations: PASS (edges return within 0.0023).
   
   Width trials: both SETTLED. The D02 half-width 25 + λ/4 start settled at the same edges as half-width 25, to
-  within 1e-4. The D02L half-width 50 start settled at ±55.7.
-- **Descriptive, not scored (shape of the late motion, from the committed tracks).** After t ≈ 6000 the patch width
-  is frozen: it changes by less than 4e-8 per unit time, at 58.1–58.3 ≈ 19.8 λ. The two interfaces move in the same
+  within 1.6e-4 (0.000157 and 0.000147; the width differs by about 1e-5) [corrected per ChatGPT MG030; was "within 1e-4"]. The D02L half-width 50 start settled at ±55.7.
+- **Descriptive, not scored (shape of the late motion, from the committed tracks).** The patch width is nearly
+  constant, at 58.1–58.3 ≈ 19.8 λ: over [15,000, 30,000] its mean rate of change is 1.2–2.5e-8 per unit time in
+  absolute value (interval averages, not bounds at every sample) [corrected per ChatGPT MG030; draft said "after
+  t ≈ 6000 … frozen … less than 4e-8", which fails over [6000, 30,000], where the rates are 4.4e-8 to 1.0e-7]. The two interfaces move in the same
   direction (the outward displacements have opposite signs), at about 5e-7 per unit time and slowing (from 1e-6 at
-  t ≈ 4000 to 4.7e-7 at 27,500). So the late motion is a slow rigid drift of the whole patch, not growth. Its size is
+  t ≈ 4000 to 4.7e-7 at 27,500). So the late motion is predominantly translation of the patch, not growth. ChatGPT MG030's post-result projection of the final RHS onto translation leaves a 1.4–1.6% remainder; this is not proof of exact rigid motion. Its size is
   consistent with the final residual of about 1.1e-5. No re-scoring follows from this reading.
 - **Independent recompute** (separate script on the raw tracks and snapshots): all labels, D₃, v and cell counts agree.
   Residuals recomputed from the 30,000 snapshots agree with the records.
+- **ChatGPT result review MG030** (`review/MG030_chatgpt.md`; replication `review/MG030_replication/`): recommends
+  accepting Q1 UNRESOLVED and Q2 NOT ELIGIBLE. Every label, the 50 snapshot hashes, the residuals (to 1e-13) and the
+  ledger were reproduced independently. Two descriptive corrections and one documentation slip were accepted (marked
+  above). Response `review/MG030_response.md`. Awaiting PI sign-off.
+
