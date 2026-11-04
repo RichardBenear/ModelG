@@ -1656,7 +1656,7 @@ Summary (the proposal governs):
   specification appended here.
 
 
-**MG9 amendment 1 (MG027, 2026-11-04; PROPOSED, awaiting PI sign-off):** `spec/MG9_amendment_1.md`. The draft 3 §6.2
+**MG9 amendment 1 (MG027, 2026-11-04; ADOPTED: PI decision card 16:59 UTC, "Approve amendment 1"):** `spec/MG9_amendment_1.md`. The draft 3 §6.2
 envelope failed its registered synthetic validation (worst edge error 0.27 λ against λ/10); it is replaced by complex
 demodulation at k = 2π/λ with a double λ-boxcar low-pass (worst 0.036 λ). Synthetic only; no Model G MG9 run.
 

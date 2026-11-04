@@ -604,3 +604,4 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - Pre-run implementation specification appended to GATES.md (15 items). V1 thresholds and α reproduce ChatGPT's static
   values. No P1, sweep, front or benchmark run made.
 - Next: PI sign-off on amendment 1; ChatGPT review of the code and pre-run specification; then stage p1.
+- PI approved amendment 1 (decision card, 16:59 UTC). Next: ChatGPT review of the code and pre-run specification; then stage p1.

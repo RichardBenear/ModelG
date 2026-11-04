@@ -1,6 +1,6 @@
 # MG9 amendment 1 — envelope by complex demodulation (replaces the draft 3 §6.2 kernel)
 
-*Stage MG027. Claude, 2026-11-04. Status: **PROPOSED, awaiting PI sign-off.** It amends `spec/MG9_proposal.md` draft 3
+*Stage MG027. Claude, 2026-11-04. Status: **ADOPTED 2026-11-04 (PI decision card 16:59 UTC, "Approve amendment 1").** It amends `spec/MG9_proposal.md` draft 3
 (registered, frozen at `7810b8b`). No Model G MG9 run has been made, before or after this amendment.*
 
 ## Why
