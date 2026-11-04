@@ -13,7 +13,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG4c | 3 | Follow-up to MG4: single-particle window in b on unweighted Delaunay graphs; cotangent-operator diagnostic (estimation study; no pass/fail) | **RESULT W1 + O1** (2026-10-31; 102 runs, 11.33 core-h); ChatGPT reproduced (MG012); PI signed off 2026-10-31; **CLOSED** |
 | MG5 | 4 | Behavior of solitons on an evolving hypergraph (persist / drift / dissolve): a settled particle on a rewritten 2D Delaunay graph | **CLOSED 2026-11-02: PASS** (Part B: A1); ChatGPT MG018 accepted, PI signed off |
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | **REGISTERED 2026-11-02** (draft 3 frozen at `106b3e2`). Part 0 **STOP** (tick check, 2026-11-02); amendment MG021 (Δ = 0.1, narrow waiver) after ChatGPT review MG021; Part 0 completed; cutoff 110 core-h (PI). **CLOSED 2026-11-03: DEMONSTRATED** (CP2 − SH2 = −67.1 nodes, t = −36.2; CP2 − DEC = −66.9, t = −34.1); feedback SURVIVES (CP2, CP4); falloff UNRESOLVED; ChatGPT MG022 accepted; PI signed off |
-| MG7 | 5 | Mass scaling: is the coupled density deficit larger for a stronger particle (b-scan, 27.5 vs 28.5)? | **REGISTERED 2026-11-03** (draft 2 frozen at `5b44cde`); Part 0 PROCEED. **RESULT 2026-11-04: NOT SCORED (feedback)**: at b = 27.5 the particle dissolved in 7 of 8 runs (both arms); b = 28.5 SURVIVES (8/8 single). Awaiting ChatGPT review and PI sign-off |
+| MG7 | 5 | Mass scaling: is the coupled density deficit larger for a stronger particle (b-scan, 27.5 vs 28.5)? | **REGISTERED 2026-11-03** (draft 2 frozen at `5b44cde`); Part 0 PROCEED. **RESULT 2026-11-04: NOT SCORED (feedback)**: at b = 27.5 the particle dissolved in 7 of 8 runs (both arms); b = 28.5 SURVIVES (8/8 single). ChatGPT MG025 recommends accepting; awaiting PI sign-off |
 | MG8 | 6 | Multiway branch divergence and foliation dependence (numbered MG7 in `InitialPlan.md`) | PENDING |
 
 ## Template
@@ -1597,17 +1597,28 @@ no null) are validation quantities, not MG7 data, and are not interpreted.
   | CP2: first check with no particle | t = 20 | single throughout (mobile) | 20 | 140 |
 
 - **Feedback:** b = 27.5 **CHANGED** (CP2 1/4 single); b = 28.5 **SURVIVES** (CP2 4/4 single, all pinned). All 8
-  b = 28.5 runs are single and pinned. Because the shifted-null arm dissolved too, coupling is not needed for the loss
-  at b = 27.5: under this birth–death rewriting (ν = 0.2) the particle's lower survival edge lies above 27.5, although
-  MG4c found 27.5 inside the frozen-graph window (27.27–28.73) and MG7 Part 0's unregistered 27.5 run stayed single for
-  100 units.
-- **Not computed by the registered evaluator** (it stops at NOT SCORED): the endpoint change Δ, residuals, Fieller
-  ratio, slope, falloff and threshold sensitivity.
-- **Post hoc descriptive summary (not registered; `src/describe_mg7.py` → `results/MG7/descriptive.json`):**
-  CP2 − SH2 at b = 28.5 = (−75.1, −71.0, −74.8, −67.2), mean −72.0, t = −38.6 (all four negative). MG6 at b = 28.0:
-  mean −67.1. The per-start differences 28.5 − 28.0 are (−7.5, −4.5, −3.3, −4.6), all negative. These two endpoints
-  use different candidate streams (MG6's and MG7's), so this is not the registered shared-stream test, and it is
-  not offered as a substitute for it. Window-mean M₋ (CP2): 1.15 at 28.5 against 0.91 at 28.0.
+  b = 28.5 runs are single and pinned.
+- **Interpretation (corrected after ChatGPT review MG025):** b = 27.5 failed this finite-panel survival criterion
+  through t = 200 in both tested arms; one CP2 run survived there. No survival edge was searched for and monotonic
+  survival in b was not tested, so no new edge is estimated. The SH2 losses show that aligning the birth bias with the
+  particle is not needed for the loss; SH2 still has field-dependent births elsewhere and MG7 has no DEC arm, so uniform
+  rewriting is not isolated as the cause. The result is compatible with a narrower robust-survival region under
+  rewriting than MG4c's frozen-graph window (27.27–28.73). MG7 Part 0's unregistered 27.5 run stayed single for 100
+  units. The mass-scaling question remains open.
+- **Threshold sensitivity (registered, stored by the evaluator per run as `alt_threshold`):** at MG4c's b-specific
+  thresholds every run has the same single-in-window verdict. In the seven dissolved runs the final smoothed-X minimum
+  is at most 1.34e-8 in magnitude (ChatGPT MG025), so the loss does not depend on the threshold.
+- **Unavailable (undefined inputs):** the b = 27.5 contrast, the endpoint change Δ and its t, both residuals, the
+  Fieller ratio, the twelve-run slope against M₋, and falloff at b = 27.5. Nothing is substituted for them.
+- **Descriptive at b = 28.5** (the registered §5 items whose inputs exist; collected by `src/describe_mg7.py`, code
+  added after the data → `results/MG7/descriptive.json`): CP2 − SH2 = (−75.1, −71.0, −74.8, −67.2), mean −72.0,
+  t = −38.6 (all four negative). Within-window late − early (t = 160–200 minus 100–140) D₀ means: CP2 +19.4, −6.0, +13.8,
+  +16.4; SH2 +19.2, −15.0, −20.6, +5.4; contrast +0.2, +9.0, +34.4, +11.0 nodes. These are temporal changes over the
+  fixed window, not a gate or a drift test, and they caution against reading a few-node difference as an equilibrium
+  effect. MG6 at b = 28.0: mean −67.1; per-start 28.5 − 28.0 differences (−7.5, −4.5, −3.3, −4.6) use different
+  candidate streams and are not the registered test. Window-mean M₋ (CP2): 1.15 at 28.5 against 0.91 at 28.0.
+- **Corrections (MG025 response):** the earlier text here said the lower survival edge "lies above 27.5" and that
+  threshold sensitivity was "not computed"; both were wrong and are replaced above.
 - **Deviation (audit code, after the data):** `recompute_mg7.py` crashed on checks with no particle (no centred
   measurement is stored there, so `m_N` is NaN). Fixed to require n_parts = 0 at such checks and skip the count
   comparison; strict mode now reports a candidate-hash failure without crashing. No scoring rule changed. In the cloud

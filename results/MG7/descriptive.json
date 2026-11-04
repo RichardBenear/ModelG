@@ -511,5 +511,53 @@
    0.881404867560724,
    0.920924337228782
   ]
- }
+ },
+ "threshold_sensitivity_single_in_window": {
+  "SH2_b27.50_D0_p0": false,
+  "SH2_b27.50_D0_p1": false,
+  "SH2_b27.50_D1_p0": false,
+  "SH2_b27.50_D1_p1": false,
+  "SH2_b28.50_D0_p0": true,
+  "SH2_b28.50_D0_p1": true,
+  "SH2_b28.50_D1_p0": true,
+  "SH2_b28.50_D1_p1": true,
+  "CP2_b27.50_D0_p0": false,
+  "CP2_b27.50_D0_p1": true,
+  "CP2_b27.50_D1_p0": false,
+  "CP2_b27.50_D1_p1": false,
+  "CP2_b28.50_D0_p0": true,
+  "CP2_b28.50_D0_p1": true,
+  "CP2_b28.50_D1_p0": true,
+  "CP2_b28.50_D1_p1": true
+ },
+ "early_late_b28.50": {
+  "D0_p0": {
+   "CP2_late_minus_early": 19.39999999999999,
+   "SH2_late_minus_early": 19.2,
+   "contrast_late_minus_early": 0.19999999999998863
+  },
+  "D0_p1": {
+   "CP2_late_minus_early": -6.0,
+   "SH2_late_minus_early": -15.0,
+   "contrast_late_minus_early": 9.0
+  },
+  "D1_p0": {
+   "CP2_late_minus_early": 13.799999999999997,
+   "SH2_late_minus_early": -20.6,
+   "contrast_late_minus_early": 34.39999999999999
+  },
+  "D1_p1": {
+   "CP2_late_minus_early": 16.39999999999999,
+   "SH2_late_minus_early": 5.4,
+   "contrast_late_minus_early": 11.0
+  }
+ },
+ "unavailable": [
+  "contrast at b = 27.5",
+  "endpoint change Delta and its t",
+  "residuals (start-field, in-run)",
+  "Fieller ratio",
+  "twelve-run slope against M-",
+  "falloff at b = 27.5"
+ ]
 }

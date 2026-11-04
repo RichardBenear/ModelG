@@ -548,3 +548,10 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - Post hoc descriptive (not registered): CP2 − SH2 = −72.0 at 28.5 vs −67.1 at 28.0 (MG6), different streams.
 - Recompute bug (NaN at no-particle checks) fixed after the data; cloud cross-platform recompute agrees; strict PC rerun
   (2026-11-04) agrees, hashes included. Next: merge; strict recompute on PC; ChatGPT review; PI sign-off.
+
+## MG025b — ChatGPT review MG025 of the MG7 result, 2026-11-04
+- Strict Windows replay and an independent audit reproduce everything; ChatGPT recommends accepting NOT SCORED
+  (feedback), 27.5 CHANGED, 28.5 SURVIVES, with no new runs.
+- Corrections adopted (`review/MG025_response.md`): no survival edge is claimed (b = 27.5 failed the finite-panel
+  criterion; no DEC arm, so uniform rewriting is not isolated); threshold sensitivity was computed (unchanged verdicts);
+  early/late means at 28.5 and the list of unavailable quantities added. Awaiting PI sign-off.
