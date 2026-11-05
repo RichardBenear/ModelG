@@ -1,0 +1,47 @@
+{
+ "source_sha256": "f22ca2807eeef45ea26dd171ec4f12d5b7ef89926cd9a206a1efeda67d86a56f",
+ "y0_sha256": "eb898fe92dbf4e731ef662e0f4f57c22e9ae63d26216d659be062b6cfbc6cdc8",
+ "y0_max_change": 1.5622865856101953e-05,
+ "roundtrip": {
+  "R2a": 7.993605777301127e-15,
+  "R2b": 8.881784197001252e-15,
+  "R2c": 7.993605777301127e-15,
+  "R3": 0.0
+ },
+ "R4_back": 5.329070518200751e-15,
+ "rhs_max": {
+  "source": 1.0921734542534978e-05,
+  "R0": 0.0016546849994938384,
+  "R1": 0.0016546849994938384,
+  "R3": 0.0016546849994938384,
+  "R4": 4.850933855700617,
+  "R2a": 0.2588983282496997,
+  "R2b": 0.36680786018916933,
+  "R2c": 0.2585715636733994
+ },
+ "ok": true,
+ "platform": {
+  "python": "3.13.18",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "system": "Linux-6.18.44-fc-v236-x86_64-with-glibc2.39"
+ }
+}
+R0 complete 21s
+R1 complete 163s
+R3 complete 21s
+R2a complete 21s
+R2b complete 21s
+R2c complete 21s
+R4 complete 35s
+{
+ "reading": "MESH EFFECT SUPPORTED",
+ "components": {
+  "C1": "NUMERICS-AGREE",
+  "C3": "SYMMETRIC",
+  "C2": "ALIGNMENT-DEPENDENT",
+  "C4": "DECREASING",
+  "C5": "R4 INVALID / LOST-IDENTITY"
+ }
+}
+exit 0

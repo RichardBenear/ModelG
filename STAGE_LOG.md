@@ -650,3 +650,9 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - MG031 round 3 (ChatGPT, `review/MG031_chatgpt_r3.md`): design supported, P0–P2 accepted; asked to freeze the velocity estimator. Accepted (`review/MG031_response_r3.md`): endpoint averages written into draft 3 §3 and disclosed as a change from draft 1's least-squares v; least squares descriptive only; transient wording qualified; 16th test added. No integration.
 - MG9d REGISTERED 2026-11-05 (PI card 02:00 UTC, "Register; runs after code review"); draft 3 frozen at 69ad83e. Runs wait for ChatGPT's implementation review and a PI go.
 - ChatGPT implementation review MG032 (`review/MG032_chatgpt.md`): science and calibration pass; two operational fixes (failure provenance, strict runtime cutoff) plus cleanup, all made (`review/MG032_response.md`, prerun §E; 22 tests). PI approved starting the runs once fixed (02:12 UTC).
+
+## MG033 — MG9d runs and result, 2026-11-05
+- PI go 02:12 UTC (after the MG032 fixes). The 7 arms ran in the cloud: 0.084 core-h, all complete.
+- RESULT: MESH EFFECT SUPPORTED (on D02). C1 NUMERICS-AGREE, C3 SYMMETRIC, C2 ALIGNMENT-DEPENDENT, C4 DECREASING (ρ = 0.845), C5 R4 INVALID (item 5: shape kept changing until about t′ = 6000).
+- Descriptive: shifted arms drift at −1.41e-6, +6.0e-7 and +1.18e-6 against R0's −3.45e-7, which looks like lattice pinning. On D01 the centre is static and the residual is 2.1e-9.
+- Independent recompute from the snapshots matches. Next: ChatGPT result review, PI sign-off.

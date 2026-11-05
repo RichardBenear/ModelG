@@ -16,7 +16,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG7 | 5 | Mass scaling: is the coupled density deficit larger for a stronger particle (b-scan, 27.5 vs 28.5)? | **REGISTERED 2026-11-03** (draft 2 frozen at `5b44cde`); Part 0 PROCEED. **RESULT 2026-11-04: NOT SCORED (feedback)**: at b = 27.5 the particle dissolved in 7 of 8 runs (both arms); b = 28.5 SURVIVES (8/8 single). ChatGPT MG025 accepted; **CLOSED 2026-11-04** (PI signed off) |
 | MG9 | 2 | Local onset type of the Turing instability (P1) and finite-time front arrest against the single-particle window (P2); deterministic, 1D lattice | **CLOSED 2026-11-04: P1 SUBCRITICAL; P2 UNRESOLVED** (registered at `7810b8b`; amendment 1; PI sign-off 19:21 UTC) |
 | MG9c | 2 | Late-time fate of MG9's slow fronts (b = 29.25–29.35): settle into bounded patches or keep advancing; robustness; upper settling edge vs b_r | **CLOSED 2026-11-04: Q1 UNRESOLVED; Q2 NOT ELIGIBLE** (registered at `372336b`; ChatGPT MG030 accepted; PI sign-off 22:29 UTC) |
-| MG9d | 2 | Cause of MG9c's late drift (b = 29.30 from the t = 30,000 field): numerics, mesh alignment, reflection, finer mesh; bounded diagnostic | **REGISTERED 2026-11-05** (draft 3 frozen at `69ad83e`; PI card 02:00 UTC); awaiting ChatGPT implementation review and PI go; no MG9d run |
+| MG9d | 2 | Cause of MG9c's late drift (b = 29.30 from the t = 30,000 field): numerics, mesh alignment, reflection, finer mesh; bounded diagnostic | **RESULT 2026-11-05: MESH EFFECT SUPPORTED** (on D02; R4 INVALID so finer mesh unavailable; C4 DECREASING alongside). Registered at `69ad83e`; 7 runs, 0.08 core-h; awaiting ChatGPT result review and PI sign-off |
 | MG8 | 6 | Multiway branch divergence and foliation dependence (numbered MG7 in `InitialPlan.md`) | PENDING |
 
 ## Template
@@ -1865,3 +1865,45 @@ decisions P0–P2 (01:50 UTC) and the endpoint-average speed estimator (§3, aft
 - **Runs start only after ChatGPT's implementation review and a separate PI go.** `results/MG9d/REGISTERED`, which
   `run_mg9d.py runs` requires, is created at that go.
 - Nothing here changes MG9c's classifications or thresholds.
+
+**MG9d RESULT (MG033, 2026-11-05; cloud, Python 3.13.18, numpy 2.5.3, scipy 1.18.1; code `9407f59`): MESH EFFECT
+SUPPORTED (on D02; the finer-mesh comparison is unavailable because R4 is INVALID).** 7 integrations, 0.084 core-h
+(cap 10, cutoff 1). PI run go: thread message 02:12 UTC. Records are in `results/MG9d/runs/`; the evaluation is
+`results/MG9d/evaluation.json`; snapshots are `results/MG9d/snapshots.npz` (+ manifest); the figure is
+`results/MG9d/drift.png`. Speeds are endpoint averages of the alignment displacement d (v_f = 5e-9; resolved at 1.5e-8).
+
+| Run | a [2000, 6000] | b [6000, 10,000] | v [2000, 10,000] | Valid |
+|---|---:|---:|---:|---|
+| R0 baseline | −3.74e-7 | −3.16e-7 | −3.45e-7 | yes |
+| R1 tight solver | −3.74e-7 | −3.16e-7 | −3.45e-7 | yes |
+| R3 reflected (raw; adjusted = −raw) | +3.74e-7 | +3.16e-7 | +3.45e-7 | yes |
+| R2a +h/4 | −1.41e-6 | −1.41e-6 | −1.41e-6 | yes |
+| R2b +h/2 | +5.54e-7 | +6.54e-7 | +6.04e-7 | yes |
+| R2c +3h/4 | +1.23e-6 | +1.12e-6 | +1.18e-6 | yes |
+| R4 h = 0.1 | −2.7e-11 | −4e-13 | −1.4e-11 | **no (item 5)** |
+
+- **C1 NUMERICS-AGREE.** R1 matches R0 to about 1e-11 in every slope.
+- **C3 SYMMETRIC.** The reflection-adjusted R3 equals R0.
+- **C2 ALIGNMENT-DEPENDENT.** All three shifted arms DIFFER from R0. The speed depends on the patch's sub-grid
+  position, in size and in sign: +h/4 moves left four times faster than R0, while +h/2 and +3h/4 move right.
+- **C4 DECREASING.** R0 has ρ = b/a = 0.845, and R1 gives the same label.
+- **C5 R4 INVALID / LOST-IDENTITY.** R4 failed item 5: S_ref(T) = 5.7e-3 against a limit of 1e-3. On the finer mesh
+  the patch kept changing shape after t′ = 2000 (width 58.316 → 58.323, settling by about 6000). Its identity checks
+  passed (18 cells throughout, ΔW = 0.12 < λ/2).
+- The overall reading is rule 4, MESH EFFECT SUPPORTED, with C4 DECREASING alongside.
+
+**Independent recompute** (from the raw snapshots, by Newton iteration on the Fourier cross-correlation, not via
+`run_mg9d.align`): every displacement agrees with the record within 9e-10, and C1–C4 come out the same. All validity
+values for R0–R3 are within their limits. The smallest consistency margin is R2b's C_amp: 1.6e-4 off d against a
+band of 9.8e-4.
+
+**Descriptive only (not scored):**
+- Read together, the four D02 arms look like a lattice pinning landscape. The patch slides toward a preferred
+  sub-grid position (R0 left; +h/4 left fast; +h/2 and +3h/4 right, toward the next node), and R0 slows as it
+  approaches.
+- On D01, after its shape adjustment, R4's centre does not move (|v| ≈ 1e-11), and its final residual is 2.1e-9.
+  That is well below MG9c's 1e-5 stationarity threshold, which the D02 patches missed.
+- These observations support the mesh-effect reading but are not registered results. R4 is INVALID under the
+  registered rule. The early-transient caveat (ChatGPT MG031 r3) applied to R4: its adjustment lasted until about
+  6000, not 2000.
+- One refinement is a sensitivity statement, not a continuum limit. MG9c's classifications are unchanged.
