@@ -2,6 +2,7 @@
 Writes results/MG8/part0/decisions.json (proceed flag) and part0_report.json. Usage: python src/part0_mg8.py"""
 import os, sys, json, time, itertools, platform
 import numpy as np
+import numba as nb
 from scipy import stats
 sys.path.insert(0, os.path.dirname(__file__))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "tests"))
@@ -233,6 +234,89 @@ def brute_alignment():
     return dict(cases=out, pass_=bool(ok))
 
 
+# ------------------------------------------------------------------ supplement (review MG037 item 6)
+def _first_order(sched, N, seed):
+    """The order a production kernel draws first after seeding (the order draw comes first in every step)."""
+    o = np.zeros(N, dtype=np.int64)
+    _first_order_jit(sched, N, seed, o)
+    return o
+
+
+@nb.njit(cache=True)
+def _first_order_jit(sched, N, seed, o):
+    np.random.seed(seed)
+    mg8._order(sched, N, o)
+
+
+def production_kernel_crosscheck(nrep=500, n0=10 ** 4):
+    """Diffusion-only cross-check of the PRODUCTION kernels against the conditional maps (G only, all reactions off,
+    h = 1 so the hop probability is r = tau). (a) run_det over 20 steps vs the product of map_matrix for the realised
+    orders (seams regenerated with mg8.seam_chunk): 1e-12. (b) run_stoch, one step from n0 tokens at node 0: given the
+    order, the counts are Multinomial(n0, T_o e_0) exactly (tokens move independently); per replicate a pooled
+    chi-square p-value (cells merged to expected >= 5); pass if the KS test of the p-values against U(0,1) has
+    p > 1e-3, min p > 1e-6, and every node's aggregate z of (observed - expected) is within 4."""
+    Z = (0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0)                 # a, b, g, p, q, dx, dy
+    det, ok = [], True
+    for sched in (J, R, L):
+        for r in (0.05, 0.2):
+            N, nst, sd = 12, 20, seed_for(8, 9, 8, sched, int(r * 100))
+            rng = np.random.default_rng(sd)
+            G0 = rng.random(N) + 0.5
+            G, X, Y = G0.copy(), np.zeros(N), np.zeros(N)
+            mg8.run_det(G, X, Y, sched, *Z, 1.0, r, nst, sd)
+            seams = mg8.seam_chunk(sched, N, nst, sd)
+            v = G0.copy()
+            for s in seams:
+                if sched == J:
+                    v = mg8.map_matrix(np.arange(N), r, sync=True) @ v
+                elif sched == R:
+                    v = mg8.map_matrix(np.array([(s + k) % N for k in range(N)]), r) @ v
+                else:
+                    sp_ = N - 1 - s
+                    v = mg8.map_matrix(np.array([(sp_ - k) % N for k in range(N)]), r) @ v
+            d = float(np.max(np.abs(G - v)) / np.max(np.abs(v)))
+            p_ = d <= 1e-12 and not X.any() and not Y.any()
+            ok &= p_
+            det.append(dict(sched=mg8.NAMES[sched], r=r, max_rel=d, pass_=bool(p_)))
+    sto = []
+    for sched, N in ((J, 12), (R, 12), (P, 6)):
+        for r in (0.05, 0.2):
+            ps, dev, var = [], np.zeros(N), np.zeros(N)
+            for rep in range(nrep):
+                sd = seed_for(8, 9, 9, 10 * sched + int(r * 100), rep)
+                o = _first_order(sched, N, sd)
+                pr = mg8.map_matrix(o, r, sync=(sched == J))[:, 0]
+                nG = np.zeros(N, dtype=np.int64); nG[0] = n0
+                nX = np.zeros(N, dtype=np.int64); nY = np.zeros(N, dtype=np.int64)
+                rG, *_ = mg8.run_stoch(nG, nX, nY, sched, 1.0, *Z, 1.0, r, 1, 1, sd)
+                obs = rG[0].astype(float)
+                ex = n0 * pr
+                cells = np.array([k % N for k in range(-(N // 2), N - N // 2)])   # ring order centred on node 0
+                oc, ec = obs[cells], ex[cells]
+                if np.any(oc[ec == 0] > 0):                  # tokens on a node the order cannot reach
+                    ps.append(0.0)
+                else:                                        # unreachable nodes (exp = obs = 0) are dropped
+                    ps.append(pooled_chisq(oc[ec > 0], ec[ec > 0]))
+                dev += obs - ex; var += n0 * pr * (1 - pr)
+            z = dev / np.sqrt(np.where(var > 0, var, 1.0))
+            ks = float(stats.kstest(ps, "uniform").pvalue)
+            p_ = ks > 1e-3 and min(ps) > 1e-6 and float(np.max(np.abs(z))) <= 4.0
+            ok &= p_
+            sto.append(dict(sched=mg8.NAMES[sched], N=N, r=r, ks_p=ks, min_p=float(min(ps)),
+                            max_abs_z=float(np.max(np.abs(z))), pass_=bool(p_)))
+    return dict(deterministic=det, stochastic=sto, pass_=bool(ok))
+
+
+def main_supplement():
+    """Supplementary Part 0 check added after review MG037 (not a rerun of Part 0; decisions.json is unchanged)."""
+    t0 = time.time()
+    rep = dict(platform=platform.platform(), python=platform.python_version(), numpy=np.__version__,
+               production_kernel_crosscheck=production_kernel_crosscheck())
+    rep["wall_s"] = time.time() - t0
+    json.dump(rep, open(os.path.join(OUT, "supplement_MG037.json"), "w"), indent=1, default=float)
+    print(json.dumps(rep, indent=1, default=float))
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
     t0 = time.time()
@@ -257,4 +341,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main_supplement() if "--supplement" in sys.argv else main()

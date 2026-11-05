@@ -715,3 +715,13 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - Code: `src/mg8.py` (schedulers, deterministic maps, Part 0 operators, measurements, labels), `src/run_mg8.py` (driver), `src/evaluate_mg8.py`, `src/part0_mg8.py`; 18 tests in `tests/test_mg8.py`. Pre-run specification `spec/MG8_prerun.md` (continuations as k = 6 records run to 600; Nyquist-free alignment; segmented RNG; disclosure of short development runs).
 - Part 0 (cloud): attempt 1 STOP on check 1(b), caused by a fault in the test's tail pooling (one pooled cell with expected count 0.3), not the simulator. Pooling fixed; attempt 2 passes every check; projected production 3.9 core-h. Awaiting the PI's ruling on attempt 2 and a ChatGPT implementation review. No production run.
 - 2026-11-05 22:00 UTC: the PI accepted Part 0 attempt 2 (`decisions.json` now `proceed = true`, with the decision recorded). Production still waits for ChatGPT's implementation review and the PI's go.
+
+## MG037a — MG8 implementation review (ChatGPT MG037), 2026-11-05
+- ChatGPT reviewed the code and Part 0 at `e050fbe` (`review/MG037_chatgpt.md`): keep the design and the accepted Part 0;
+  fix six implementation items before production. All six accepted (`review/MG037_response.md`).
+- Fixed: decision windows by unit index with endpoints included and per-unit finiteness; implementation checks gate all
+  labels and stop the driver; TRACK-FAIL rescans every end of the track; atomic writes, ledger reconciliation and a
+  persisted run state used for the §6 BUDGET-SHORT rules; seam-sequence hashes and B2 block profiles stored;
+  diffusion-only cross-check of the production kernels (supplementary Part 0 check, passes). Tests 24, all pass.
+- Recorded deviation D1 (`spec/MG8_prerun.md` §7): the scored shape error uses Nyquist-free fields; the literal E_raw
+  and the removed-mode E_nyq are reported beside it. Awaiting the PI's sign-off. No production run.

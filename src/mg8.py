@@ -350,18 +350,38 @@ def nyquist_free(f):
     return np.real(np.fft.ifft(F, axis=-1))
 
 
+def nyquist_part(f):
+    """The Nyquist component that nyquist_free removes (f = nyquist_free(f) + nyquist_part(f))."""
+    return np.asarray(f, float) - nyquist_free(f)
+
+
+def nyquist_discrepancy(phiA, phiB, sigma, h):
+    """Removed-mode discrepancy reported beside E (review MG037 item 3): per species
+    ||Nyq(A) moved by the integer node shift nearest sigma - Nyq(B)|| / ||B||, and its max. An integer shift moves the
+    Nyquist mode exactly (it multiplies it by (-1)^m); a sub-grid shift of that mode is not defined on the grid."""
+    m = int(np.round(sigma / h))
+    nA, nBq = nyquist_part(phiA), nyquist_part(phiB)
+    nB = np.sqrt(np.sum(np.asarray(phiB, float) ** 2, axis=-1))
+    per = np.sqrt(np.sum((np.roll(nA, -m, axis=-1) - nBq) ** 2, axis=-1)) / nB
+    return float(np.max(per)), per
+
+
 def _err(phiA, phiB, nB, h, s):
     """max over species of ||phiA(x+s) - phiB(x)|| / ||phiB||."""
     sh = fourier_shift(phiA, h, s)
     return float(np.max(np.sqrt(np.sum((sh - phiB) ** 2, axis=-1)) / nB))
 
 
-def shape_error(phiA, phiB, h, tol=1e-10):
+def shape_error(phiA, phiB, h, tol=1e-10, filt=True):
     """Common-shift alignment (proposal §3.3, draft 4): sigma* = argmin_sigma max_s e_s(sigma); returns
     (E, sigma*, per-species e_s(sigma*)). phiA, phiB: arrays (3, N). Integer-node search, then golden section on
-    [sigma_int - h/2, sigma_int + h/2]; ties -> smallest |sigma|, then smaller sigma."""
+    [sigma_int - h/2, sigma_int + h/2]; ties -> smallest |sigma|, then smaller sigma.
+    filt = True (the scored E; recorded deviation D1, spec/MG8_prerun.md): the Nyquist mode is removed from both fields
+    first. filt = False: the registered text applied literally to the unfiltered fields (reported, not scored)."""
     N = phiA.shape[-1]
-    phiA, phiB = nyquist_free(phiA), nyquist_free(phiB)
+    phiA, phiB = np.asarray(phiA, float), np.asarray(phiB, float)
+    if filt:
+        phiA, phiB = nyquist_free(phiA), nyquist_free(phiB)
     nB = np.sqrt(np.sum(phiB ** 2, axis=-1))
     best = None
     for m in range(N):
@@ -388,6 +408,43 @@ def shape_error(phiA, phiB, h, tol=1e-10):
     sh = fourier_shift(phiA, h, sg)
     per = np.sqrt(np.sum((sh - phiB) ** 2, axis=-1)) / nB
     return float(e), float(sg), per
+
+
+def shape_report(phiA, phiB, h):
+    """E (scored, Nyquist-free), the literal unfiltered E_raw, and the removed-mode discrepancy E_nyq at sigma*."""
+    E, sg, per = shape_error(phiA, phiB, h)
+    Er, sgr, _ = shape_error(phiA, phiB, h, filt=False)
+    En, _ = nyquist_discrepancy(phiA, phiB, sg, h)
+    return dict(E=E, sigma=sg, per=[float(v) for v in per], E_raw=Er, sigma_raw=sgr, E_nyq=En)
+
+
+# ------------------------------------------------------------------ seam streams (proposal §7)
+@nb.njit(cache=True)
+def seam_chunk(sched, N, n, rng_seed):
+    """The next n order draws of a DETERMINISTIC run (whose only draws are the order draws), as the kernel consumes
+    them: R and L return the drawn seam s, J returns nothing drawn (zeros). rng_seed < 0 continues the generator."""
+    if rng_seed >= 0:
+        np.random.seed(rng_seed)
+    out = np.zeros(n, dtype=np.int64)
+    if sched == R or sched == L:
+        for k in range(n):
+            out[k] = np.random.randint(0, N)
+    return out
+
+
+def seam_sha256(sched, N, nsteps, seed, chunk=1_000_000):
+    """SHA-256 of the realised seam sequence of a deterministic run (int64 little-endian, seams as drawn; empty for J).
+    Regenerates the stream, so call it only after the run, never between segments of a run."""
+    import hashlib
+    hs = hashlib.sha256()
+    if sched not in (R, L):
+        return hs.hexdigest()
+    done, first = 0, True
+    while done < nsteps:
+        n = min(chunk, nsteps - done)
+        hs.update(seam_chunk(sched, N, n, seed if first else -1).astype("<i8").tobytes())
+        done += n; first = False
+    return hs.hexdigest()
 
 
 # ------------------------------------------------------------------ labels (proposal §4.2, §4.3)
