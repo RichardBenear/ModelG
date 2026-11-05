@@ -18,7 +18,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG9c | 2 | Late-time fate of MG9's slow fronts (b = 29.25–29.35): settle into bounded patches or keep advancing; robustness; upper settling edge vs b_r | **CLOSED 2026-11-04: Q1 UNRESOLVED; Q2 NOT ELIGIBLE** (registered at `372336b`; ChatGPT MG030 accepted; PI sign-off 22:29 UTC) |
 | MG9d | 2 | Cause of MG9c's late drift (b = 29.30 from the t = 30,000 field): numerics, mesh alignment, reflection, finer mesh; bounded diagnostic | **CLOSED 2026-11-05: MESH EFFECT SUPPORTED** (on D02; R4 INVALID so finer mesh unavailable; C4 DECREASING alongside). Registered at `69ad83e`; 7 runs, 0.08 core-h; ChatGPT MG033 accepted; PI sign-off 02:32 UTC |
 | MG9b | 2 | Stochastic barrier: under a linear model, does the activation slope S (log k per unit Ω) change with b inside the particle window? b = 29.20, 29.35 with MG3b's 29.00; lattice-conditional | **CLOSED 2026-11-05: NOT RESOLVED** (PI sign-off card 14:03 UTC, after ChatGPT MG035) (S₁ = −0.023, 95% CI −0.094 to +0.048; branch B3 calibrated; all controls PASS; 280 runs, 26.3 core-h on PC) |
-| MG8 | 6 | Multiway branch divergence and foliation dependence (numbered MG7 in `InitialPlan.md`) | PENDING |
+| MG8 | 6 | Scheduler sensitivity: does the within-step node update order (synchronous J, sweep R, random sequential P) change the particle at τ₀, and does the deterministic difference shrink as τ → 0? (multiway/foliation gate, numbered MG7 in `InitialPlan.md`) | **REGISTERED 2026-11-05** (draft 4 frozen at `3ab4ec8`) |
 
 ## Template
 
@@ -1953,3 +1953,33 @@ registration.** The registered design is `spec/MG9b_proposal.md` **draft 3**, wi
 - **CLOSED 2026-11-05 (PI decision card, 14:03 UTC): NOT RESOLVED.** ChatGPT MG035 reproduced the fit, controls and
   ledger; two wording corrections applied. The event-shape pattern (single-minimum share falls with lower Ω at both b;
   post hoc, pooled p ≈ 0.04) is archived as a hypothesis for a possible separately registered study.
+
+### MG8 — Scheduler sensitivity of the lattice approximation (multiway / foliation; Central Question 5)
+Status: **REGISTERED 2026-11-05 (MG036d)**, with PI approval (decision card, 20:02 UTC: adopt all §9 recommendations and
+register). **No MG8 run of any kind preceded this commit.** The registered design is `spec/MG8_proposal.md` **draft 4**,
+with its content frozen as committed at `3ab4ec8` (only its status line changed since). Drafts 1–3 are preserved as
+superseded (`spec/MG8_proposal_v1.md`, `_v2.md`, `_v3.md`). Reviews: ChatGPT MG036 rounds 1–3 (`review/MG036_chatgpt*.md`);
+responses `review/MG036_response*.md`. Round 3 found no remaining design issue after its one correction.
+
+Summary (the proposal governs):
+- **Setting:** MG2/MG3 1D lattice, P17, b = 29.0, h = 0.2, L = 100, τ₀ = 6.667e-4; reference soliton start.
+- **Schedulers:** J (registered synchronous kernel), R (rightward sweep, random seam each step), P (random sequential),
+  L (mirror check only). One snapshot of all species per node update; changes applied together.
+- **B1 (primary, deterministic expected counts):** J and three seam replicates of R at τ₀/2^k, k = 0–6, T = 300; L checks;
+  J and R continued to T = 600 at k = 6. 32 runs.
+- **Production step (§4.2):** FATE (SAME/CHANGED), SHAPE (INSUFFICIENT RESOLUTION / UNSETTLED / MATERIAL ≥ 1e-2 / SMALL /
+  NEGLIGIBLE < 1e-3), DRIFT (INSUFFICIENT RESOLUTION / UNSETTLED / DRIFTING ≥ 1e-6 / NOT DRIFTING AT THIS HORIZON); summary
+  SENSITIVE / PRACTICALLY INSENSITIVE / MINOR / INSUFFICIENT RESOLUTION / UNRESOLVED; SEAM-DEPENDENT if replicates disagree.
+- **Refinement (§4.3):** CONVERGES TO J / BELOW MEASUREMENT RESOLUTION (not convergence) / NOT RESOLVED BY THIS LADDER.
+- **B2 (descriptive):** J, R, P at Ω = 1000, 8 runs each with independent streams, plus one L mirror; T = 500. Fate,
+  drift difference (Welch), stochastic shape (bootstrap), conditional on eligibility.
+- **Interpretation:** the primary conclusion is the scheduler sensitivity of this lattice approximation. Central Question
+  5 stays open whatever MG8 finds.
+- **Part 0** (priced separately, cap 3 core-h): diffusion-only operator benchmark with the frozen refinement and
+  conditional-order tests; J regression; R/L mirror; clipping; synthetic validation; timing. STOP on failure.
+- **Budget:** 57 runs, cap 64; production cutoff 20 core-h (projected 5–18); PC, 8 workers; BUDGET-SHORT rules as §6.
+
+Result: pending.
+Replication (ChatGPT): pending.
+PI sign-off: registration 2026-11-05 20:02 UTC.
+

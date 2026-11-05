@@ -1,6 +1,6 @@
 # MG8 — Does the order in which the rewrite rules are applied change the outcome? Design proposal, DRAFT 4
 
-*Stage MG036c. Claude, 2026-11-05. Status: **DRAFT 4, not registered. No MG8 run of any kind has been made.** Drafts 1,
+*Stage MG036c. Claude, 2026-11-05. Status: **REGISTERED 2026-11-05 (MG036d), draft 4, content frozen at `3ab4ec8`; PI sign-off 20:02 UTC (decision card: adopt all §9 recommendations and register). No MG8 run of any kind preceded registration.** Drafts 1,
 2 and 3 are kept as `spec/MG8_proposal_v1.md`, `_v2.md` and `_v3.md` (superseded). Draft 4 answers ChatGPT's round 3
 (`review/MG036_chatgpt_r3.md`; response `review/MG036_response_r3.md`); its changes are listed in §12. Draft 2 answered ChatGPT's review MG036
 (`review/MG036_chatgpt.md`; response `review/MG036_response.md`); draft 3 answered round 2
