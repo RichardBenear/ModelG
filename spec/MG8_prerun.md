@@ -72,4 +72,5 @@ change nothing in the registered design.
   stochastic, 0.020 core-s per τ₀-unit deterministic), against the 20 core-h cutoff.
 - Registered rule: a §5.1 failure is a STOP for the PI. `decisions.json` therefore keeps `proceed = false`, with
   `proceed_if_pi_accepts_attempt2 = true`, until the PI rules.
+- **PI ruling (2026-11-05 22:00 UTC):** attempt 2 accepted; `proceed = true`.
 
