@@ -141,8 +141,9 @@ fail item 6 from edge-measurement error alone. 5e-4 is about twice the largest s
    - The ledger entry is opened with status "running" and its elapsed time is persisted at every 1000-unit segment
      boundary.
    - Each run gets a wall-clock deadline equal to the budget remaining at its start. The right-hand side raises
-     BudgetExceeded once the deadline passes, which does not change the numerics (tested bit for bit). The overshoot
-     is therefore at most one RHS evaluation.
+     BudgetExceeded once the deadline passes, which does not change the numerics (tested bit for bit). This is
+     cooperative enforcement [corrected per ChatGPT MG033]: work between RHS calls (linear algebra, Jacobian,
+     diagnostics, file writes) can overshoot, so it is not a strict wall-time guarantee.
    - A budget stop saves the partial record with stop_reason "budget", marks the ledger "budget_stop", and halts
      the stage for the PI.
    - An entry still marked "running" (or one with no elapsed time) is never treated as free. Starting halts until
