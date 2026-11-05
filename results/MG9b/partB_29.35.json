@@ -1,0 +1,46 @@
+{
+ "b": 29.35,
+ "Om_T": 250.0,
+ "screens": [
+  {
+   "Om": 235.0,
+   "clip_frac": 0.0,
+   "crowd": 0.007575757575757576,
+   "screen": "ok"
+  },
+  {
+   "Om": 220.0,
+   "clip_frac": 0.0,
+   "crowd": 0.0,
+   "screen": "ok"
+  }
+ ],
+ "cells": [
+  {
+   "Om": 250.0,
+   "runs": 64,
+   "events": 26,
+   "capped": false,
+   "budget_short": false
+  },
+  {
+   "Om": 235.0,
+   "runs": 32,
+   "events": 21,
+   "capped": false,
+   "budget_short": false
+  },
+  {
+   "Om": 220.0,
+   "runs": 32,
+   "events": 29,
+   "capped": false,
+   "budget_short": false
+  }
+ ],
+ "accepted": [
+  250.0,
+  235.0,
+  220.0
+ ]
+}

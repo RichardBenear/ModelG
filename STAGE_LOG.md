@@ -682,3 +682,9 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - ChatGPT MG034 round 3 (`review/MG034_chatgpt_r3.md`): design accepted, one correction (study-level budget truncation) plus wording. Draft 3 was already registered, so the correction is amendment 1 (`spec/MG9b_amendment_1.md`), implemented and tested (24 tests); response `review/MG034_response_r3.md`. Awaiting PI sign-off on amendment 1; no production run.
 - PI adopted amendment 1 (card, 03:27 UTC). Next: ChatGPT implementation review, then the PI go.
 - ChatGPT amendment-1 implementation review (`review/MG034_amendment1_implementation.md`): keep amendment 1; four implementation fixes before the go. All made (`review/MG034_amendment1_response.md`); 27 tests pass. No production run.
+
+## MG035 — MG9b runs and result, 2026-11-05
+- PI go 04:08 UTC. Run on the PI's PC (Windows 11, Python 3.13.2, numpy 2.2.4; code `4699a6b`; 9 workers), 04:10–12:15 UTC. 280 runs, ledger 26.28 core-h (cutoff 50, no budget stop). Records committed as `5a54f7a` (fields/ kept on the PC).
+- RESULT: NOT RESOLVED (branch B3, calibrated, no qualifiers). S₁ = −0.023, 95% CI [−0.094, +0.048]; per-b slopes 0.064 / 0.048 / 0.057; LR check p = 0.30. All controls PASS. `spec/MG9b_result.md`.
+- Deviation: two V-b3 tight-tolerance confirmations at 29.20 ran 5.4 h and 4.4 h (median 18 s), so V-b3 at 29.20 cost 10.2 core-h and the run took about 8 h; both completed and agreed. No per-job time limit was registered; recommend one for future studies.
+- Independent recomputation from raw run JSONs (`src/check_mg9b.py`) matches the evaluator. Next: ChatGPT result review, PI sign-off.
