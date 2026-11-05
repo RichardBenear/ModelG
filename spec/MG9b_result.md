@@ -10,9 +10,9 @@ sign-off.*
 NON-MONOTONE, no LATTICE-FLAGGED, CAPPED, BUDGET-SHORT or BUDGET-TRUNCATED.
 
 The trend in the activation slope is S₁ = **−0.023** per unit Ω per unit b, 95% profile CI **[−0.094, +0.048]**. The
-interval contains 0, so no change of S with b is shown over b = 29.00–29.35. The pre-registered power was 0.73 for
-S₁ = −0.10 and 0.25 for S₁ = −0.05, so a change of about the size of the point estimate could not have been detected
-by this design.
+interval contains 0, so no change of S with b is shown over b = 29.00–29.35. The design had limited power for modest trends: the ordinary calibration
+scenario gives about 0.73 at S₁ = −0.10 and 0.25 at S₁ = −0.05 (scenario-specific design properties; no direct estimate
+at −0.023). *(Wording corrected after ChatGPT MG035.)*
 
 | b | Ω cells (runs / events) | S (per unit Ω) | 95% profile CI | Lack of fit p |
 |---|---|---:|---|---:|
@@ -52,7 +52,10 @@ Trend fit S_b = S₀ + S₁(b − 29.175): S₀ = 0.0571. Linear-model check (th
   run's wall time was about 8 h against the 4–6 h estimate. V-b3 has no per-job time limit, and the registration set
   none. This did not affect any scored quantity. A time limit (with an over-limit job counted as incomplete) should be
   set in any future study that uses tight-tolerance confirmations.
-- No other deviations. All 280 run records have b_det = b and are complete.
+- No other deviations. All 280 run records have b_det = b. All 280 runs reached their planned endpoints; all 16
+  placement and 240 production records are complete for first-passage scoring. The 4 T = 20 clip pilots and 19 of the
+  20 T = 50 crowding screens carry `complete=false` under the full first-passage definition, as intended (the other
+  screen had a startup event); none entered a rate fit. *(Corrected after ChatGPT MG035.)*
 
 ## Independent recomputation
 
