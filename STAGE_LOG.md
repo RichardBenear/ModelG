@@ -657,3 +657,11 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - Descriptive: shifted arms drift at −1.41e-6, +6.0e-7 and +1.18e-6 against R0's −3.45e-7, which looks like lattice pinning. On D01 the centre is static and the residual is 2.1e-9.
 - Independent recompute from the snapshots matches. Next: ChatGPT result review, PI sign-off.
 - ChatGPT MG033 accepted the result (independent replication); wording corrections made (`review/MG033_response.md`). MG9d CLOSED 2026-11-05 (PI message 02:32 UTC: proceed to MG9b).
+
+## MG034 — MG9b design (stochastic barrier S(b)), 2026-11-05
+- PI request (02:32 UTC): proceed to MG9b. `spec/MG9b_proposal.md` DRAFT 1:
+  - Design: MG3 protocol at b = 29.20 and 29.35. A Part A Ω-placement scan per b, then three Part B cells (Ω_T, −15, −30) with MG3b batching (≥ 20 events, cap 64).
+  - Primary question: the trend S₁ = dS/db from a joint Poisson GLM with MG3b's b = 29.00 data. Labels DECREASING / INCREASING / NOT RESOLVED, with a synthetic calibration.
+  - Lattice-conditional checks V-b1 to V-b3 (reference stationarity, t = 2000 confirmation controls, confirmation solver tolerance), per MG9d/MG033.
+  - Budget about 34 core-h projected, cutoff 50, on the PI's PC.
+  - Not registered; no run.
