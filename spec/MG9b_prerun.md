@@ -5,7 +5,7 @@ production run**. For ChatGPT's implementation review. No rule of draft 3 is cha
 choices for review.*
 
 Code: `src/mg9b.py` (rules and fits), `src/run_mg9b.py` (driver), `src/evaluate_mg9b.py` (evaluation from records),
-`src/calib_mg9b.py` (synthetic calibration), `tests/test_mg9b.py` (20 tests, all pass). Changed shared code:
+`src/calib_mg9b.py` (synthetic calibration), `tests/test_mg9b.py` (24 tests after amendment 1, all pass). Changed shared code:
 `src/confirm.py` (optional `checks`, `rtol`, `atol`; completion flag) and `src/mg3.py` (records the completion flag in
 the confirmation cache). `tests/test_mg3.py` (14) and `tests/test_mg3b.py` (7) still pass.
 
@@ -102,3 +102,10 @@ Both references **pass** with wide margins:
 
 The preview found one driver bug before any record existed: V-b1 failed to save its final field when the output
 folder did not yet exist. It is fixed, and a test now runs V-b1 on a fresh folder.
+
+## E. Amendment 1 (after ChatGPT MG034 round 3; proposed, PI sign-off pending)
+
+Budget truncation is now a study-level condition (`spec/MG9b_amendment_1.md`). Code: `run_mg9b.record_truncation`
+(writes `rate_complete` / `budget_truncated` into the ledger's `budget_stop`), `evaluate_mg9b.evaluate` (study-level
+flag), `mg9b.primary` (reason "BUDGET-TRUNCATED"). Wording: SLOPE-ELIGIBLE, the bracket note, branch B2-new. Four tests
+added (24 in total). The calibration is unaffected: it does not model the budget stop, and B2-new had 0 replicates.

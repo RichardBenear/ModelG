@@ -409,6 +409,21 @@ def vb3(pool, b, Om_T):
 
 
 # ------------------------------------------------------------------------------------------------ main
+def record_truncation(rate_done):
+    """Amendment 1 (MG034 r3): study-level budget-truncation flag. rate_complete is True only if the planned
+    rate-data collection had ended for every b (Part B finished, or the b was REFERENCE-INVALID or NOT PLACED) before
+    the stop, so that only confirmation controls were cut (those stay CONTROL-INSUFFICIENT)."""
+    lg = ledger()
+    bs = lg.get("budget_stop") or dict(at="unknown", time=time.strftime("%Y-%m-%d %H:%M:%S"))
+    bs["rate_complete"] = all(b in rate_done for b in mg9b.B_NEW)
+    bs["rate_done"] = sorted(rate_done)
+    bs["budget_truncated"] = not bs["rate_complete"]
+    lg["budget_stop"] = bs
+    _dump(lg, P("ledger.json"))
+    log(f"[BUDGET] rate-data collection {'complete' if bs['rate_complete'] else 'TRUNCATED'} at the stop "
+        f"(finished b: {sorted(rate_done)})")
+
+
 def stage_vb1():
     for b in (29.35, 29.20):
         reference(b, H)                                   # main process, before any pool (shared cache)
@@ -424,20 +439,25 @@ def stage_runs():
         raise SystemExit(2)
     log(f"=== MG9b runs start {time.strftime('%Y-%m-%d %H:%M:%S')}; {WORKERS} workers; {platform_info()}")
     v1 = stage_vb1()
+    rate_done = set()                    # b values whose planned rate-data collection has ended (amendment 1)
     with Pool(WORKERS) as pool:
         try:
             for b in (29.35, 29.20):
                 if not v1[b]["pass_"]:
                     log(f"[{b:.2f}] REFERENCE-INVALID: Part A/B not run (§3)")
+                    rate_done.add(b)
                     continue
                 pa = part_a(pool, b)
                 if pa["Om_T"] is None:
                     log(f"[{b:.2f}] NOT PLACED")
+                    rate_done.add(b)
                     continue
                 pb = part_b(pool, b, pa["Om_T"])
+                rate_done.add(b)
                 vb3(pool, b, pa["Om_T"])
                 vb2(pool, b, pa, pb)
         except BudgetStop:
+            record_truncation(rate_done)
             log("=== MG9b stopped by the budget rule")
             return
     log(f"=== MG9b runs complete {time.strftime('%Y-%m-%d %H:%M:%S')}; ledger {used_s() / 3600:.2f} core-h")

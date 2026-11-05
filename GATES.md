@@ -1939,3 +1939,7 @@ registration.** The registered design is `spec/MG9b_proposal.md` **draft 3**, wi
   PC; synthetic calibration in the cloud, cap 4 core-h.
 - **Order before any production run:** code and pre-run specification; synthetic calibration (cloud); ChatGPT review
   of the calibration and implementation; then a separate PI go for the PC run.
+
+- **Amendment 1 (PROPOSED 2026-11-05, after ChatGPT MG034 r3; before any production run):** budget truncation of
+  rate-data collection at any stage makes a directional result EXPLORATORY (study-level flag), not only a BUDGET-SHORT
+  cell; a stop that cuts only controls stays CONTROL-INSUFFICIENT. `spec/MG9b_amendment_1.md`. Awaiting PI sign-off.

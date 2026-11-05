@@ -116,7 +116,7 @@ def test_primary_rules():
     p = mg9b.primary(ok_neg, False, False)
     assert p["label"] == "NEGATIVE LINEAR TREND (EXPLORATORY)" and p["confirmatory"] == "NOT RESOLVED"
     p = mg9b.primary(ok_neg, True, True)
-    assert p["exploratory"] and p["why"] == ["BUDGET-SHORT"]
+    assert p["exploratory"] and p["why"] == ["BUDGET-TRUNCATED"]
     assert mg9b.primary(dict(status="ok", ci=(0.01, math.inf)), True, False)["label"] == "POSITIVE LINEAR TREND"
     assert mg9b.primary(dict(status="ok", ci=(-math.inf, 0.1)), True, False)["label"] == "NOT RESOLVED"
 
@@ -182,12 +182,12 @@ def test_calibration_labels_are_per_branch():
 class Tmp:
     def __enter__(self):
         self.tmp = tempfile.mkdtemp()
-        self.old = (D.OUT, EV.OUT, D.simulate, D._confirm_job, D.vb1)
+        self.old = (D.OUT, EV.OUT, D.simulate, D._confirm_job, D.vb1, D.part_a, D.production, D.vb2)
         D.OUT = EV.OUT = self.tmp
         return self
 
     def __exit__(self, *a):
-        D.OUT, EV.OUT, D.simulate, D._confirm_job, D.vb1 = self.old
+        D.OUT, EV.OUT, D.simulate, D._confirm_job, D.vb1, D.part_a, D.production, D.vb2 = self.old
         shutil.rmtree(self.tmp)
 
 
@@ -305,6 +305,81 @@ def test_budget_stop_marks_cell_and_halts():
             assert False
         except SystemExit as e:
             assert e.code == 2
+
+
+# ------------------------------------------------------------------ amendment 1: study-level budget truncation
+def _fake_setup(t):
+    D.simulate = fake_simulate
+    D._confirm_job = fake_confirm
+    D.vb1 = lambda b: dict(b=b, pass_=True, result="PASS")
+    open(os.path.join(t.tmp, "GO"), "w").write("test")
+    os.makedirs(os.path.join(t.tmp, "calibration"))
+    json.dump(dict(labels={br: dict(label="calibrated") for br in ("B3", "B2-20", "B2-35")}),
+              open(os.path.join(t.tmp, "calibration", "calibration.json"), "w"))
+
+
+def test_budget_before_29_20_starts_is_study_truncation():
+    with Tmp() as t:
+        _fake_setup(t)
+        real = D.part_a
+        def pa(pool, b):
+            if b < 29.3:
+                raise D.BudgetStop("Part A 29.20")
+            return real(pool, b)
+        D.part_a = pa
+        D.stage_runs()
+        lg = json.load(open(os.path.join(t.tmp, "ledger.json")))
+        assert lg["budget_stop"]["rate_complete"] is False and lg["budget_stop"]["budget_truncated"]
+        ev = EV.evaluate()
+        assert ev["branch"] == "B2-35" and ev["budget_truncated"]
+        assert not ev["per_b"]["29.35"]["budget_short"]                     # no short cell anywhere
+        assert ev["primary"]["confirmatory"] == "NOT RESOLVED" and "BUDGET-TRUNCATED (study)" in ev["qualifiers"]
+        if ev["primary"]["label"].startswith(("NEGATIVE", "POSITIVE")):
+            assert ev["primary"]["exploratory"] and "BUDGET-TRUNCATED" in ev["primary"]["why"]
+
+
+def test_budget_before_third_cell_is_study_truncation():
+    with Tmp() as t:
+        _fake_setup(t)
+        real = D.production
+        seen = {}
+        def prod(pool, b, Om):
+            seen[b] = seen.get(b, 0) + 1
+            if b < 29.3 and seen[b] == 3:
+                raise D.BudgetStop("third cell")
+            return real(pool, b, Om)
+        D.production = prod
+        D.stage_runs()
+        ev = EV.evaluate()
+        d = ev["per_b"]["29.20"]
+        done = [c for c in d["cells"].values() if c["runs"] > 0]
+        assert len(done) == 2 and not any(c["budget_short"] for c in done) and d["identifiable"]
+        assert ev["budget_truncated"] and ev["primary"]["confirmatory"] == "NOT RESOLVED"
+
+
+def test_budget_stop_during_last_control_is_not_rate_truncation():
+    with Tmp() as t:
+        _fake_setup(t)
+        real = D.vb2
+        def v2(pool, b, pa, pb):
+            if b < 29.3:
+                raise D.BudgetStop("V-b2 29.20")
+            return real(pool, b, pa, pb)
+        D.vb2 = v2
+        D.stage_runs()
+        ev = EV.evaluate()
+        assert ev["budget_stop"]["rate_complete"] is True and not ev["budget_truncated"]
+        assert ev["per_b"]["29.20"]["vb2"] is None
+        assert any("CONTROL-INSUFFICIENT" in f for f in ev["per_b"]["29.20"]["lattice_flags"])
+        assert "BUDGET STOP AFTER RATE COLLECTION (controls only)" in ev["qualifiers"]
+        if ev["primary"]["label"].startswith(("NEGATIVE", "POSITIVE")):
+            assert not ev["primary"]["exploratory"]
+
+
+def test_branch_catch_all_without_historical():
+    assert mg9b.branch_of([29.2, 29.35]) == "B2-new"
+    f = mg9b.fit_b([(150.0, 1, 10.0), (149.0, 1, 10.0)])
+    assert f["ci_note"] and "not located within the registered search range" in f["ci_note"]
 
 
 if __name__ == "__main__":
