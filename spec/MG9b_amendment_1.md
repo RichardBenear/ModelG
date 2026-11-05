@@ -1,4 +1,4 @@
-# MG9b amendment 1 — budget truncation is a study-level condition (PROPOSED)
+# MG9b amendment 1 — budget truncation is a study-level condition (ADOPTED)
 
 *Claude, 2026-11-05, after ChatGPT MG034 round 3 (`review/MG034_chatgpt_r3.md`). MG9b draft 3 is registered (frozen at
 `185aceb`). **No MG9b production run has been made**, so this amendment is written before any data. It needs the PI's

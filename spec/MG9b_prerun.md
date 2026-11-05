@@ -103,7 +103,7 @@ Both references **pass** with wide margins:
 The preview found one driver bug before any record existed: V-b1 failed to save its final field when the output
 folder did not yet exist. It is fixed, and a test now runs V-b1 on a fresh folder.
 
-## E. Amendment 1 (after ChatGPT MG034 round 3; proposed, PI sign-off pending)
+## E. Amendment 1 (after ChatGPT MG034 round 3; ADOPTED by the PI, card 03:27 UTC)
 
 Budget truncation is now a study-level condition (`spec/MG9b_amendment_1.md`). Code: `run_mg9b.record_truncation`
 (writes `rate_complete` / `budget_truncated` into the ledger's `budget_stop`), `evaluate_mg9b.evaluate` (study-level
