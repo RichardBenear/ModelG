@@ -1,214 +1,257 @@
-# MG8 — Does the order in which the rewrite rules are applied change the outcome? Design proposal, DRAFT 1
+# MG8 — Does the order in which the rewrite rules are applied change the outcome? Design proposal, DRAFT 2
 
-*Stage MG036. Claude, 2026-11-05. Status: **DRAFT 1, not registered. No MG8 run of any kind has been made.** Requested by
-the PI (project thread, 14:09 UTC: "Let's plan MG8 now ... whether different admissible orders of applying the rewrite
-rules lead to measurably different outcomes"). The only computation behind this draft is static arithmetic on the
-registered parameters (§2.4); no dynamics were run.*
+*Stage MG036a. Claude, 2026-11-05. Status: **DRAFT 2, not registered. No MG8 run of any kind has been made.** Draft 1 is
+kept as `spec/MG8_proposal_v1.md` (superseded). This draft answers ChatGPT's review MG036 (`review/MG036_chatgpt.md`;
+response `review/MG036_response.md`). The only computation behind it is static arithmetic on the registered parameters
+and a numerical check of the one-token step distribution in §2 A4; no dynamics were run.*
 
 *Naming: MG8 is the multiway/foliation gate of the roadmap (Phase 6). `InitialPlan.md` called it MG7; it was renumbered
-MG8 when the mass-scaling study took MG7 (GATES.md, MG7 registration; STAGE_LOG MG023b). It has been held in reserve
-since, and every later proposal (MG9, MG9b, MG9c, MG9d) says so.*
+MG8 when the mass-scaling study took MG7 (GATES.md, MG7 registration; STAGE_LOG MG023b).*
 
 ## 0. What MG8 is, confirmed against the charter
-- `README.md`, Central Question 5: **"Is SQK's preferred frame a non-confluence effect? Quantify multiway branch
-  divergence and foliation dependence."**
+- `README.md`, Central Question 5: "Is SQK's preferred frame a non-confluence effect? Quantify multiway branch
+  divergence and foliation dependence."
 - `InitialPlan.md`, Phase 6: "quantify how much branches diverge across update orders. Test whether SQK's preferred frame
-  shows up as a measurable foliation dependence. This turns the 'non-confluence = absolute ether' observation into a
-  result."
-- `spec/rules_v1.1.md` §4: "Continuous-time stochastic simulation selects one weighted path through the multiway system
-  ... This is a choice of foliation and is examined in Phase 6."
+  shows up as a measurable foliation dependence."
+- `spec/rules_v1.1.md` §4: the simulation "selects one weighted path through the multiway system ... This is a choice of
+  foliation and is examined in Phase 6."
 - GATES.md row MG8: "Multiway branch divergence and foliation dependence", PENDING.
 
-So the PI's reading is right: MG8 asks whether different admissible orders of applying the rules give measurably different
-outcomes, and, behind that, whether Model G's preferred (ether) frame could come from that order dependence.
+## 1. Question and what MG8 can and cannot conclude
+> **Q: On the 1D lattice of MG2/MG3, how sensitive is the particle to the order in which nodes are updated within a time
+> step, at the production step τ₀ = 6.667e-4, and does the deterministic (expected-count) difference shrink to zero as the
+> step is refined?**
 
-## 1. Question
-> **Q (primary): On the 1D lattice of MG2/MG3, does a different admissible update order change what the particle does,
-> and if it does, does the difference survive as the time step goes to zero?**
-
-The second half matters for Central Question 5. An order effect that disappears as τ → 0 belongs to the discretisation:
-in the continuous-time limit the rules pick no frame of their own. An effect that survives refinement would be a frame
-defined by the update order itself, which is what "the preferred frame is a non-confluence effect" would require.
+**MG8 is a bounded study of scheduler sensitivity of this lattice approximation.** That is its primary conclusion
+(review item 2). It does not test coordinate-frame transformations or causal-graph invariance, and it does not establish
+stochastic equivalence of schedulers as τ → 0 (the stochastic arm is run only at τ₀). Central Question 5 stays open
+whatever MG8 finds; §4.4 states exactly what each outcome does and does not say about it.
 
 ## 2. What is known before any run (Part A: structural, no simulation)
-These are arguments, not results. They are written down so that the gate tests something they do not already settle,
-and ChatGPT can check them.
+These are arguments, not results, written down so that the study tests something they do not already settle.
 
-**A1. Model G has a preferred frame already in the continuum, before any rewriting.** The equations are
-∂ₜφ = D∇²φ + f(φ) with a medium at rest. Under a Galilean change of frame x′ = x − vt they acquire an advection term
-v·∇φ, and they are not Lorentz invariant either (first order in time, second order in space). A soliton moving at speed v
-relative to the medium is therefore not a solution of the same equations as one at rest; the rest frame of the medium is
-singled out by the mean-field equations themselves. This is the ether frame of SQK, and it needs no discreteness and no
-non-confluence. MG8 can therefore only ask whether update order adds a *second* frame, or changes the first.
+**A1. Model G already has a preferred frame in the continuum.** ∂ₜφ = D∇²φ + f(φ) describes a medium at rest. Under
+x′ = x − vt the equations acquire an advection term v·∂ₓφ, and they are not Lorentz invariant (first order in time, second
+in space). The medium's rest frame is singled out by the mean-field equations themselves, with no discreteness and no
+update order. (ChatGPT: "substantially sound".) So scheduler effects, whatever their size, are not needed to produce a
+preferred frame in Model G; MG8 does not test whether they could produce one.
 
-**A2. The token rules are confluent except at resource conflicts.** Rules R1–R5 and hopping act on token counts per
-node. Two events that are both enabled and remain enabled after the other fires give the same final counts in either
-order, because their count changes add. The only non-commuting ("critical") pairs are those where one event uses up a
-token the other needs: for example R4 (Y + 2X → 3X) needs n_X ≥ 2, and an X-consuming event at the same node can disable
-it when n_X = 2. At the homogeneous state G₀ = X₀ = 15.6, Y₀ = 1.86 (b = 29), so at Ω = 1000 a node holds about 15,600
-G, 15,600 X and 1,860 Y tokens, and conflicts need counts of 0–2. So **branches of the multiway system differ almost
-entirely by which events fire (the stochastic choice), not by the order in which the same events fire.** Two caveats:
-(i) this is state confluence, which is weaker than Wolfram's causal invariance (isomorphic causal graphs): with
-indistinguishable tokens the causal graph is not uniquely defined without a token-identity convention; (ii) it says
-nothing about what a scheduler does when its *steps* group events, which is A4 and the gate.
+**A2. Commuting pairs, narrowed (review item 6).** For a *particular pair* of token events that are both enabled and
+remain enabled after either fires, the two orders give the same counts, because count changes add (a commuting diamond).
+This does not establish global confluence: firing one event changes the propensities of later events (R4's
+n_X(n_X−1)n_Y/Ω², every first-order rate), so order changes the probabilities of what follows even far from low counts.
+A pair fails to commute outright only when one event disables the other (counts of 0–2). Nothing in MG8 measures
+stochastic order sensitivity through this route; draft 1's count-≤2 diagnostic is dropped.
 
-**A3. The spatial rewriting of MG5–MG7 is order-independent by construction.** The Delaunay graph is a function of the
-point set alone, so the order of births and deaths within a tick does not change the graph. The registered tick
-(`src/evolve.py` `apply_tick`) is synchronous: every birth is interpolated on the pre-edit mesh, so the field values do not
-depend on order either. An order effect could only appear if births were interpolated sequentially, and then only for
-edits in adjacent cavities in the same tick. The frequency of such pairs can be counted from the stored MG5 event lists
-without running any dynamics (Part A3 count, §5). MG6's tick check did find that tick *size* moves the particle centre by
-0.2–0.5 (MG021); that is a granularity effect of the synchronous tick, not an ordering effect, and it was already
-recorded as a weakness of the tick-check design.
+**A3. The registered spatial rewriting is order-free by construction.** The Delaunay graph depends only on the point set,
+and the registered tick (`src/evolve.py` `apply_tick`) interpolates every birth on the pre-edit mesh. Order within a tick
+therefore changes neither graph nor field in MG5–MG7. MG6's tick-size sensitivity (MG021) is a granularity effect, not an
+ordering effect. MG8 makes no spatial-layer measurement (decision 1).
 
-**A4. Directional orders let tokens ride the sweep (static arithmetic, the design calculation).** The registered kernel
-`tau_leap_euler_1d` is *synchronous*: every node's exits are drawn from the start-of-step counts and applied together
-(Jacobi order). In a *sequential* order, nodes are processed one at a time and a token that arrives at a node not yet
-processed is processed again in the same step. If the order sweeps left to right, a token that hops right can hop again,
-while a token that hops left cannot. Per step the mean extra displacement is h·r²/(1 − r), with r = Dτ/h² the per-step hop
-probability in one direction, so each species is advected at
+**A4. What a sequential sweep does to one token, diffusion only (corrected; review item 1).** Draft 1 claimed the sweep
+advects each species. That was wrong: it counted repeated forward hops and omitted the backward hops a token can make when
+it is processed again. Corrected calculation, for scheduler R (left-to-right sweep, §3.1), reactions and sources off,
+per-step one-direction hop probability r = Dτ/h², ignoring the seam (§3.1). A token is processed at its node; it stays
+(1 − 2r), hops left (r), or hops right (r). A token that hops left lands on a node already processed and waits. A token
+that hops right lands on a node not yet processed and is processed again, with the same three options. The one-step
+displacement k (in units of h) is therefore
 
-  v_s(τ) = h·r²/((1 − r)·τ) ≈ D²τ/h³.
+  P(−1) = r, P(0) = 1 − 2r + r², P(m) = r^m(1 − 2r) + r^(m+2) for m ≥ 1,
 
-| species | D | r at τ₀ = 6.667e-4 | v_s at τ₀ | v_s at τ₀/16 | v_s at τ₀/64 |
-|---|---|---|---|---|---|
-| G | 1 | 0.0167 | 0.085 | 0.0052 | 0.0013 |
-| X | 1 | 0.0167 | 0.085 | 0.0052 | 0.0013 |
-| Y | 12 | 0.200 | 15.0 | 0.76 | 0.19 |
+with moments (checked numerically by direct summation for r = 0.2):
 
-(h = 0.2, L = 100.) Y is advected about 175 times faster than G and X, so a directional order is a *differential flow*,
-not a uniform shift, and at the production step it is not a small perturbation: a Péclet number for Y over a particle
-width of about 2 is 2.5 at τ₀ and falls to about 0.03 at τ₀/64. Every v_s is proportional to τ, so the naive expectation is
-that the order effect vanishes linearly with τ. The gate tests that expectation; it does not assume it, because
-differential flow can destabilise a Turing pattern and pinning by the mesh (MG9d) can hide a small drift.
+- mean **0** (ChatGPT's argument: each processing sends equal expected numbers left and right);
+- variance h²[2r + 2r²/(1 − r)] against 2r h² for J, so the **effective diffusion is D/(1 − r)**, an excess of r/(1 − r);
+- third moment 6r²h³/(1 − r)² against 0 for J: an **odd, dispersive** term −κ₃∂ₓ³u in the mean map, with
+  κ₃ = h³r²/((1 − r)²τ) ≈ D²τ/h. It is the only parity-breaking term of the diffusion part, and it is the only route by
+  which R could make a symmetric particle move.
 
-**A5. What A1–A4 imply for the outcome.** The likely result is "order matters at the production step, and the effect
-vanishes as τ → 0", which would answer Central Question 5 in the negative for the token layer: the preferred frame is the
-medium's rest frame (A1), not a non-confluence effect. This expectation is disclosed now so it is not mistaken for a
-finding later. The value of the study is to measure the size of the effect at the step every earlier result used, and to
-check the scaling rather than assume it.
+| species | D | r at τ₀ | excess D at τ₀ | κ₃ at τ₀ | excess D at τ₀/16 | κ₃ at τ₀/16 | excess D at τ₀/64 | κ₃ at τ₀/64 |
+|---|---|---|---|---|---|---|---|---|
+| G, X | 1 | 0.0167 | 1.7% | 0.0034 | 0.10% | 2.1e-4 | 0.03% | 5.2e-5 |
+| Y | 12 | 0.200 | 25% | 0.75 | 1.3% | 0.031 | 0.31% | 0.0075 |
 
-## 3. Design (Part B: the gate)
-Everything not stated here is MG2/MG3 as registered: P17 parameters with b = 29.0, h = 0.2, L = 100 (N = 500, periodic),
-D_G = 1, D_X = 1, D_Y = 12, the per-token exit probabilities of `tau_leap_euler_1d`, the deterministic reference soliton
-from `results/MG003/ref_profiles.npz`, smoothing, detection, tracking (`measure.track`, x0 track only) and
-`runner.seed_for` streams.
+(h = 0.2.) **Reaction re-exposure:** a token processed twice in one step also gets a second chance to react. In J each
+token has at most one exit per step; in R about a fraction r of each species gets two. For Y at τ₀ this raises the per-step
+R4 conversion by roughly r ≈ 20%. MG9 put the single-particle window at b ∈ [28.93, 29.40], so corrections of this size
+could plausibly change the particle at τ₀. All corrections are proportional to τ at fixed h.
+**P** (random sequential) re-processes a hopped token with probability about 1/2 in either direction. By parity symmetry
+its odd moments vanish in expectation, but its variance and re-exposure are also enhanced; Part 0 computes them exactly.
+**Seam:** chains stop at the seam, which is drawn uniformly each step; the exact seam-averaged step operator is computed in
+Part 0, and the formulas above are its N → ∞ form.
 
-### 3.1 Schedulers (the admissible orders)
-All four use the same per-token exit probabilities and the same sources; they differ only in the order in which nodes are
-processed within a step and so in whether tokens that arrive during a step are processed again.
-- **J (synchronous, the registered kernel).** All exits drawn from start-of-step counts; arrivals wait for the next step.
-  This is the control and the order used by every earlier gate.
-- **R (rightward sweep).** Nodes processed in the order s, s+1, …, s−1 (mod N), with the seam s drawn uniformly each
-  step so that no fixed node is privileged. A node's exits are drawn from its counts at the moment it is processed,
-  arrivals included; R4's per-Y probability uses that moment's n_X.
-- **L (leftward sweep).** The mirror image of R. Run with R's stream and the mirrored seam and node order, L must
-  reproduce R's trajectory mirrored node for node. **L is an implementation check, not independent data.**
-- **P (random sequential).** As R, but the node order is a fresh uniform random permutation each step. P is
-  parity-symmetric in distribution, so it can have no mean drift; it is the isotropic alternative order.
+**A5. Disclosed expectation.** Material scheduler sensitivity at τ₀ is plausible (Y diffusion 25% higher under R), with
+deterministic differences shrinking about linearly in τ. A particle drift under R is possible through κ₃ but its size and
+sign are not predicted. The study measures these rather than assuming them.
 
-Deterministic versions (Ω → ∞) apply the same orders to expected counts, with R4's mean-field form X²Y. P has no single
-deterministic map and is run stochastically only.
+## 3. Design (Part B)
+Everything not stated here is MG2/MG3 as registered: P17 with b = 29.0, h = 0.2, L = 100 (N = 500, periodic),
+D_G = D_X = 1, D_Y = 12, the per-token exit probabilities and probability-sum rescaling of `tau_leap_euler_1d`, the
+reference soliton from `results/MG003/ref_profiles.npz`, smoothing and the MG2 detector (threshold −0.5|A*_s|).
+
+### 3.1 Scheduler semantics (executable specification; review item 5)
+**Node update (identical for all schedulers).** Take a snapshot (g, x, y) of the node's counts at the moment of update.
+Draw every exit of every species from that one snapshot, in a fixed sequence: G exits (R2, R1r, hop L, hop R), X exits (R2r,
+R3, R5, hop L, hop R), Y exits (R4 with probability x(x − 1)τ/Ω², hop L, hop R), then the R1 source. Then apply all of the
+node's changes at once: conversions stay at the node, and hops are added to the neighbours' current counts. Species are
+never processed one after another against changing counts.
+**Schedulers.** They differ only in when the snapshot is taken:
+- **J (synchronous; the registered kernel).** All snapshots are start-of-step counts; all changes are applied after the
+  last node. For the same stream it must reproduce `tau_leap_euler_1d` exactly.
+- **R (rightward sweep).** Draw a seam s uniformly from {0, …, N − 1}; update nodes s, s + 1, …, s − 1 (mod N) in turn, each
+  snapshot taken when the node is reached (arrivals included).
+- **L (leftward sweep; mirror check only).** Seam N − 1 − s, update order s′, s′ − 1, …; at each node the hop-L and hop-R
+  draws swap roles. Started from the mirror image of R's start with R's seed, L must reproduce R's trajectory mirrored
+  node for node, exactly (stochastic) or to 1e-12 relative (deterministic).
+- **P (random sequential).** Each step a uniform random permutation of the nodes is drawn and nodes are updated in that
+  order.
+**Random numbers.** One numba generator per run, seeded `seed_for(8, 0, 0, 0, rep)` (the same seed for every arm with the
+same rep). Per step the draws are consumed in this order: the order draw (seam for R/L, permutation for P, none for J),
+then the node updates in processing order with the fixed per-node sequence above. Because the schedulers consume draws in
+different orders, **a shared seed does not couple trajectories across arms; comparisons between arms are distributional.**
+The shared seed is bookkeeping only. Part 0 uses `seed_for(8, 9, …)`.
+**Deterministic maps (Ω → ∞).** The same orders applied to expected counts: each exit equals count × probability (with the
+same rescaling rule), and R4 uses x²y in the mean-field form. Deterministic J must equal `lattice.euler_mean_map` to 1e-12.
+Deterministic P is not defined and not run.
+**Clipping.** Every scheduler counts node-steps whose exit probabilities summed above 1 and were rescaled, per species.
 
 ### 3.2 Arms
-- **B1, deterministic ladder:** J and R at τ_k = τ₀/2^k, k = 0, 1, …, 6 (τ₀ to τ₀/64), plus L at k = 0 and k = 6 as mirror
-  checks. 16 runs. Start: the reference soliton at its registered position. T = 300.
-- **B2, stochastic at the production step:** J, R and P at τ₀, Ω = 1000, 8 runs each, plus one L mirror run on R's first
-  stream. 25 runs. Start: the reference soliton (MG2 "soliton" start, `np.rint(Ω·c)`), T = 500. Streams
-  `seed_for(8, 0, arm, 0, rep)`, shared across arms for the same rep (arms differ in order, not in seed).
-- Ω = 1000 because MG2 recorded no loss or replication events at Ω ≥ 1000, so the J control should stay single and any
-  change of fate under R is attributable to the order (decision 3).
+- **B1, deterministic ladder (primary):** J and R at τ_k = τ₀/2^k, k = 0, …, 6; L at k = 0 and k = 6 (mirror checks);
+  plus a longer-horizon continuation of R at k = 6 from T = 300 to T = 600. Start: the reference soliton, T = 300.
+  17 runs.
+- **B2, stochastic at τ₀ (descriptive):** J, R and P at Ω = 1000, 8 runs each, plus one L mirror run on R's first seed.
+  Start: the MG2 soliton start (`np.rint(Ω·c)`), T = 500. 25 runs.
 
 ### 3.3 Measurements
-Per run, every 1 time unit after t = 50:
-- **Fate:** single / lost / multiplied, by MG2/MG3 detection; first time it is not single.
-- **Centre and velocity:** sub-grid centre of the x0 track (deterministic: the parabolic minimum of φ_X on the unwrapped
-  axis); velocity v = least-squares slope of the centre over t ∈ [150, T].
-- **Shape difference (deterministic):** E(τ) = min over shift s of ‖φ_R(x + s) − φ_J(x)‖₂ / ‖φ_J‖₂ over all three
-  species, using the final fields at the same τ (shift by Fourier interpolation). E measures the distortion the order
-  causes even when the mesh pins the particle and v = 0.
-- **Settledness (deterministic):** E and v at t = T − 50 and T; NOT SETTLED if E changes by more than 1% (relative) or v
-  by more than 10% plus 1e-7.
-- **Conflict density (A2, stochastic):** fraction of node-steps in which any species count is ≤ 2 (where a resource
-  conflict is possible). Descriptive; predicted ≈ 0 at Ω = 1000.
-- **Descriptive (B2):** particle diffusion D_p (MG2 method) for J, P and R-detrended; far-field Ω·Var(X) for J and P.
+**Deterministic (B1), every unit time:**
+- **Fate:** number of detections of the smoothed φ_X; SINGLE if exactly one at every check from t = 50 to T.
+- **Centre and velocity:** parabolic sub-grid minimum of smoothed φ_X, unwrapped; v = least-squares slope over
+  [T − 150, T]; v′ = the same over [T − 200, T − 50] (settledness).
+- **Shape:** for each species, E_s(τ) = min over shift σ of ‖φ_s^R(x + σ) − φ_s^J(x)‖₂ / ‖φ_s^J‖₂ on the final fields at the
+  same τ (Fourier shift, σ optimised jointly for all three species); **E = max over species**. E′ is the same at T − 50.
+- **Floors:** E_floor(τ) = E between J's own fields at T − 50 and T (J against itself) + 1e-9; v_floor(τ) = |v_J(τ)| + 1e-8.
+- **Settled:** |E − E′| ≤ 0.01E + 1e-7 and |v − v′| ≤ 0.1|v| + 1e-7.
+**Stochastic (B2):**
+- **Fate:** MG2's persistence-qualified classification (`measure.analyze_run` events: loss, replication, birth, merge),
+  over the whole run. **TRACK-FAIL** is a separate label: the x0 track ends while some detection lies within 3 units of its
+  last position at the next snapshot (a linking failure, not a physical loss).
+- **Drift:** per run, slope of the unwrapped x0 track over [150, 500] when the run has no loss/replication/merge/TRACK-FAIL.
+- **Shape:** per run, the time-mean aligned profile over [150, 500] (`analyze_run` block profiles); E_stoch of each arm's
+  mean profile against J's, with a bootstrap 95% interval over runs (2000 resamples).
+- **Also:** D_p (MG2 method), far-field Ω·Var(X), clipping counts.
 
 ## 4. Outcomes
-**Implementation checks (any failure: STOP, PI decides).** (i) L equals R mirrored to 1e-12 relative (deterministic) and
-exactly (stochastic counts); (ii) deterministic J at τ₀ stays at the reference soliton: E against the stored reference
-≤ 1e-6 and |v| ≤ 1e-7; (iii) J at τ₀ with the new code reproduces `tau_leap_euler_1d` exactly on a shared stream (one
-short run).
+### 4.1 Implementation checks (any failure: STOP, PI decides)
+J regression (stochastic exact; deterministic 1e-12), R/L mirror (exact; 1e-12), Part 0 benchmark (§5) passed.
 
-**Gate MG8-F (does order matter at the production step?), from B1 at k = 0 and B2:**
-- **ORDER-DEPENDENT** if deterministic R at τ₀ is not single at T, or E(τ₀) ≥ 1e-3, or |v_R(τ₀)| ≥ 1e-4; **and** B2
-  agrees: at least 3 of 8 R runs are not single while at least 7 of 8 J runs are single, or the 8 R velocities (single
-  runs, at least 6) have the deterministic sign in all runs and a two-sided t with |t| ≥ 3.5.
-- **ORDER-INDEPENDENT (at this resolution)** if E(τ₀) < 1e-5 and |v_R(τ₀)| < 1e-6, and B2 R matches J in fate (fate
-  counts differ by at most one) with |mean v_R| below 2 standard errors.
-- **UNRESOLVED** otherwise (including deterministic and stochastic disagreeing).
+### 4.2 Scheduler sensitivity at τ₀ (primary; deterministic B1 at k = 0; separate labels, review item 3)
+- **FATE:** CHANGED if R is not SINGLE; SAME otherwise.
+- **SHAPE** (only if FATE SAME): MATERIAL if E ≥ 1e-2 (the 1% mean-field tolerance of MG2 C1); NEGLIGIBLE if E < 1e-3 or
+  E < 10·E_floor; SMALL otherwise. E must be settled; if not, UNSETTLED.
+- **DRIFT** (only if FATE SAME): DRIFTING if settled and |v| ≥ max(10·v_floor, 1e-6); NOT DRIFTING AT THIS HORIZON if settled
+  and below that (a pinned particle can hide a parity-breaking force, MG9d); UNSETTLED otherwise.
+- **Summary:** SENSITIVE if FATE CHANGED, SHAPE MATERIAL or DRIFTING; PRACTICALLY INSENSITIVE if FATE SAME, SHAPE NEGLIGIBLE
+  and NOT DRIFTING; MINOR if the only effect is SHAPE SMALL; UNRESOLVED if anything is UNSETTLED.
+The same labels are reported for every ladder level.
 
-**Gate MG8-C (does the effect survive τ → 0?), from B1, scored only if MG8-F is ORDER-DEPENDENT:**
-Use the levels k at which R is single and settled. Fit log E against log τ over the four smallest such levels.
-- **VANISHES** if the fitted order p ≥ 0.8 and E at the smallest level is ≤ 0.1·E at the largest single level.
-- **PERSISTS** if p ≤ 0.2 (E roughly flat as τ falls by at least a factor 8).
-- **UNRESOLVED** otherwise, or if fewer than four levels are single and settled.
-The same rule is reported for |v| as a descriptive check (it may be zero on pinned levels).
+### 4.3 Deterministic refinement (MG8-C; scored whatever 4.2 gives; review item 4)
+Eligible levels: k = 2, …, 6 (refinement span 16) at which R is SINGLE and settled and E ≥ 10·E_floor.
+- **CONVERGES TO J** if (a) at least 4 levels are eligible, spanning at least a factor 8 in τ; the least-squares slope p of
+  ln E on ln τ has a 95% t interval (df = n − 2) with lower bound ≥ 0.5; every residual is within ±0.15 in ln E; and
+  E(k_max) ≤ 0.1·E(k_min) over the eligible levels; and the longer-horizon continuation changes E at k = 6 by at most
+  0.01E + 1e-7; **or** (b) fewer than 4 levels are eligible only because E falls below 10·E_floor, E decreases
+  monotonically over k = 0, …, 6, and R is SINGLE and settled at every level.
+- **NOT RESOLVED BY THIS LADDER** otherwise, with the reason recorded (R not single at some k ≥ 2, unsettled, slope interval
+  too wide, plateau, failed residual or horizon check). A plateau is reported as such; MG8 has no label asserting a
+  non-zero limiting discrepancy.
+- Velocity at each level is descriptive. Shape convergence does not imply velocity convergence; velocities near the floor
+  are reported as "not drifting at this horizon", never as pinned.
 
-**Reported, not scored:** P vs J at τ₀ (fate, D_p, Ω·Var(X), drift, which should be zero), conflict density, the
-deterministic R velocity and shape at every level, any level where R loses or multiplies the particle, and the A3 count.
+### 4.4 Stochastic results (B2; descriptive)
+Per arm: fate counts with exact binomial 95% intervals; mean drift with its 95% t interval; E_stoch with its bootstrap
+interval; D_p; Ω·Var(X); clipping. An arm is called **equivalent to J within the margin** only when the whole interval lies
+inside the margin (drift |v| < 1e-3; E_stoch < 1e-2); an interval that straddles the margin is reported as **imprecise**,
+not as equivalence. Minimum detectable drift (planning): with D_p ≈ 1e-4 (MG2: Ω·D_p ≈ 0.1), one run's drift over 350
+units has SE ≈ 7.6e-4, so 8 runs give a 95% half-width of about 6e-4.
 
-**Mapping to Central Question 5 (decision 6; agreed before any run).**
-- ORDER-DEPENDENT + VANISHES: update order defines a frame only through the finite step. In the continuous-time limit the
-  token rules pick out no frame of their own, and Model G's preferred frame is the medium's rest frame (A1). Q5 answered
-  "no" for the token layer on the lattice.
-- ORDER-DEPENDENT + PERSISTS: the update order defines a frame that survives refinement. Q5's hypothesis is supported for
-  the token layer; a follow-up on irregular and evolving graphs would be the next study.
-- ORDER-INDEPENDENT: no measurable order dependence at the production step; Q5 answered "no" at this resolution.
-- Anything UNRESOLVED: Q5 stays open; the record says which part failed.
+### 4.5 What the outcomes say about Central Question 5 (review item 2)
+- The primary conclusion is always stated as **scheduler sensitivity of this lattice approximation**, with the 4.2 labels.
+- CONVERGES TO J says the deterministic expected-count dynamics of R approach J's as τ → 0 at fixed h. It does not show
+  stochastic equivalence, causal-graph invariance or frame invariance.
+- NOT RESOLVED BY THIS LADDER says nothing about a limiting frame.
+- Q5 remains open after MG8. A1 shows that Model G's preferred frame exists without any order dependence; any further
+  link between scheduler sensitivity and a physical frame would need a separate mathematical argument and study.
 
-## 5. Part 0 (before any registered run)
-1. **Code checks:** the three implementation checks of §4 on unregistered streams (`seed_for(8, 9, …)`), plus unit tests:
-   one-step mean of each scheduler against its expected-count map on a small ring (Ω = 10⁶, 200 replicates); the sweep
-   advection v_s of a single species with reactions off, against §2 A4, within 5%.
-2. **Timing:** one short run per arm type (deterministic at τ₀/64; stochastic R at τ₀), projected cost restated in
-   GATES.md. Projection above the cutoff: `proceed = false` until the PI decides.
-3. **A3 count:** from the committed MG5 event lists, the fraction of births per tick whose insertion cavity touches
-   another edit of the same tick (static; no dynamics).
-Outcomes go to `results/MG8/part0/decisions.json` before any registered run.
+## 5. Part 0 (before any registered run; priced separately)
+1. **Exact small-system diffusion benchmark (replaces draft 1's 5% check).** One species, reactions and sources off.
+   (a) Exact seam-averaged one-step operators T_R on a ring of N = 12, and the permutation-averaged T_P on N = 6 (all 720
+   orders), for r ∈ {0.01, 0.05, 0.2}, built from the per-token chain rules of §3.1. (b) The simulator with 10⁶ tokens per
+   node, 2000 replicate steps per case: conservation exact; mean unwrapped displacement zero within 4 standard errors;
+   variance and third moment of displacement match T within 4 standard errors; R and P mean one-step maps match T to
+   1e-12 in the deterministic version. (c) The deterministic per-unit-time operator difference
+   ‖(T_R^n − T_J^n)‖ at fixed elapsed time falls about linearly in τ (ratio 0.4–0.6 per halving, r from 0.2 to 0.0125).
+   (d) The infinite-ring formulas of A4 are compared with T_R (descriptive). Any failure in (a)–(c): STOP.
+2. **J regression and R/L mirror** on unregistered seeds (as §4.1), plus deterministic J against `euler_mean_map`.
+3. **Clipping:** per scheduler, the fraction of rescaled node-steps in a 50-unit run at τ₀ (stochastic, Ω = 1000) and in
+   the deterministic k = 0 run; reported.
+4. **Synthetic validation of the measurements:** (a) shape: profiles shifted by known sub-grid σ and given a known odd
+   deformation of norm 1e-3 and 1e-2 — E recovered within 2% and σ within 1e-3; (b) velocity: profiles moved at 1e-3 and
+   1e-5 per unit, with a wrap — v within 2%; (c) tracking and fate: synthetic detection sequences that move, wrap,
+   disappear, split, and jump beyond the link distance — classified as moving/single, loss, replication and TRACK-FAIL
+   respectively; (d) convergence labels: synthetic E ladders with p = 1 (CONVERGES), p = 0.3, a plateau, and values near
+   the floor — the §4.3 rule gives the intended label. Any failure: fix and repeat before production.
+5. **Timing** of the sequential kernels (seam and permutation included) at τ₀ (stochastic) and τ₀/64 (deterministic);
+   projected production cost restated in GATES.md. Above the cutoff: `proceed = false` until the PI decides.
+Part 0 outcomes go to `results/MG8/part0/decisions.json` before any registered run. Part 0 is priced at about 1 core-h,
+cap 3 core-h, **not counted** in the production cutoff.
 
 ## 6. Runs, cost and budget
-- **Runs:** 16 deterministic + 25 stochastic = 41, cap 48 (the spare 7 only to rerun a run interrupted for a non-physical
+- **Runs:** 17 deterministic + 25 stochastic = 42, cap 48 (spares only to rerun a run interrupted for a non-physical
   reason; a physical outcome is never replaced).
-- **Cost (estimate, to be restated by Part 0):** B2 at about 1 core-s per time unit per run (MG3 measured 0.89–1.07):
-  25 × 500 ≈ 3.5 core-h. B1: the ladder costs 127 τ₀-equivalents per scheduler; the deterministic map has no random draws,
-  so at an assumed 0.2–0.4 core-s per τ₀ time unit, 2 × 127 × 300 ≈ 4–9 core-h, plus about 0.5 for the L checks.
-  **Total about 8–13 core-h; cutoff 20 core-h.**
-- **Where:** the PI's PC, 8 workers, about 1.5–2 hours of wall time. The cloud container (2 cores, jobs killed after 2 h)
-  would need about 5–7 hours in several pieces.
-- **Order:** Part 0, then B1 (deterministic, decides most of the gate), then B2.
+- **Cost (estimate; Part 0 restates it):** stochastic at 1–2 core-s per τ₀ time unit (MG3: 0.89–1.07 for J; sequential
+  updates and order draws add overhead): 25 × 500 → 3.5–7 core-h. Deterministic: the ladder is 127 τ₀-equivalents per
+  scheduler, plus 64 × 300 for the continuation, about 95,000 τ₀ time units in all; with no random draws, at 0.03–0.3 core-s
+  each, about 1–8 core-h. **Total about 5–15 core-h; production cutoff 20 core-h.**
+- **Order:** Part 0, then B1, then B2.
+- **Budget stop:** if the cutoff is reached, the run in progress finishes, nothing new starts, and results are labelled
+  BUDGET-SHORT. A stop in B1 leaves 4.2 scored only if k = 0 completed and 4.3 NOT RESOLVED BY THIS LADDER (BUDGET-SHORT);
+  a stop in B2 leaves B2 descriptive on the completed runs.
+- **Where:** the PI's PC, 8 workers, about 1–2 hours of wall time.
 
-## 7. Data and recomputation
-Committed: per-run records (centre track, fate, E and v at checkpoints, settledness, conflict density), final
-deterministic fields for B1 (small: 3 × 500 floats each), ledger, `decisions.json`. Stochastic full fields stay on the PC
-with a SHA-256 manifest. `evaluate_mg8.py` and an independent `recompute_mg8.py` (E, v, fits and labels from the raw
-records). Platform recorded.
+## 7. Data and recomputation (review "validation" list)
+Committed: all B1 records and fields (final fields and smoothed φ_X every 10 units, float64; a few MB), per-unit detection
+lists, tracks and events for every B2 run, the B2 run-mean aligned profiles, and B2 smoothed φ_X snapshots every 5 units
+in float32 (about 5 MB compressed), the ledger and `decisions.json`. Full B2 fields stay on the PC with a SHA-256
+manifest (decision 8). `evaluate_mg8.py` and an independent `recompute_mg8.py` recompute every label and interval from the
+committed records. Platform recorded.
 
 ## 8. Not in MG8
-- The spatial layer as a dynamic test (sequential births on the evolving graph): A3 shows the registered tick is
-  order-free, so this would test a scheme no earlier study used; only the static A3 count is made (decision 1).
-- Exact Gillespie (the τ → 0 limit itself): at Ω = 1000 the event rate is about 10⁹ per time unit on this ring, so it is
-  not affordable; the τ ladder approaches it instead.
-- Causal-graph (Wolfram) invariance with token identities: needs a token-identity convention and is a separate question.
-- Other orders (red-black, tilted foliations with several slopes): R is the extreme directional case; if R's effect
-  vanishes, milder orders are bounded by it.
+- The spatial layer (A3).
+- Exact Gillespie (about 10⁹ events per time unit on this ring at Ω = 1000).
+- Stochastic refinement (B2 at smaller τ).
+- Causal-graph invariance with token identities, and coordinate-frame (boost) tests.
+- Other orders (red-black, tilted foliations). Draft 1's claim that R bounds milder orders is withdrawn (no proof).
 
 ## 9. Decisions for the PI (Claude's recommendations)
 | # | Decision | Recommendation |
 |---|---|---|
-| 1 | Which rule layer | Token rules on the 1D lattice only; spatial layer by static count (A3). Cheapest, cleanest, and the place where an order effect can actually occur |
-| 2 | Orders compared | J (control), R (directional), P (random sequential), L as mirror check only |
-| 3 | Ω for the stochastic arm | 1000 (J should stay single, so any fate change is the order's). Ω = 300 adds noise-driven losses (17 of 24 MG2 runs) that would muddy fate |
-| 4 | τ ladder | τ₀ to τ₀/64 (7 levels), deterministic only; stochastic only at τ₀ |
-| 5 | Budget | Cutoff 20 core-h, cap 48 runs, PC with 8 workers |
-| 6 | Q5 mapping | Agree the outcome-to-answer mapping of §4 before any run |
-| 7 | Review | ChatGPT design review of this draft before registration, as for MG7 and MG9b |
+| 1 | Which rule layer | Token rules on the 1D lattice only; spatial layer argued in A3, not measured |
+| 2 | Orders compared | J (control), R (directional), P (random sequential, stochastic only), L as mirror check only |
+| 3 | Ω for the stochastic arm | 1000 (J should stay single, so a fate change under R is the order's) |
+| 4 | τ ladder | τ₀ to τ₀/64 (7 levels), deterministic only, plus the T = 600 continuation at τ₀/64 |
+| 5 | Budget | Production cutoff 20 core-h, cap 48 runs; Part 0 separate (cap 3); PC with 8 workers |
+| 6 | Conclusion framing | Primary conclusion "scheduler sensitivity of this lattice approximation"; Q5 stays open (§4.5) |
+| 7 | Stochastic arm status | Descriptive with intervals and stated margins (not a gate) |
+| 8 | Committed B2 data | Per-unit detection records plus φ_X snapshots every 5 units (about 5 MB); full fields on the PC |
+| 9 | Review | ChatGPT round 2 on this draft before registration |
+
+## 10. Changes from draft 1 (review MG036)
+| Review item | Change |
+|---|---|
+| 1 (blocking) A4 advection wrong | A4 replaced by the exact one-token step distribution: zero mean, D/(1 − r), odd κ₃ term, re-exposure; Part 0 exact benchmark (§5.1) |
+| 2 (blocking) Q5 mapping | Primary conclusion is scheduler sensitivity; PERSISTS label removed; Q5 stays open (§1, §4.5); R-bounds claim withdrawn (§8) |
+| 3 Separate outcomes, equivalence | FATE / SHAPE / DRIFT labels with margins (§4.2); stochastic arm descriptive with intervals and margins (§4.4) |
+| 4 Convergence safeguards | Floors, absolute + relative settledness, span ≥ 8, slope interval, residuals, horizon continuation; "not resolved by this ladder" (§4.3) |
+| 5 Semantics and streams | One snapshot per node update; order, seed and draw sequence specified; shared seed declared non-coupling; exact mirror construction (§3.1) |
+| 6 A2, fate, tracking | A2 narrowed and the count-≤2 diagnostic dropped; fate = MG2 persistence-qualified classification; TRACK-FAIL separate; synthetic validation (§5.4) |
+| Validation list | Clipping diagnostics (§3.1, §5.3); committed snapshots (§7); fresh timing, budget-stop labels, Part 0 outside the cutoff (§5–6) |
