@@ -72,7 +72,7 @@ y₀'s SHA-256 is recorded.
 ## 3. Measurements and validity
 
 **Diagnostics** at every 50 units (201 samples), on any grid (N and h are taken from the run). Frozen per run:
-E_pat = 6.60086115019687, the exact value in `results/MG9c/runs/front_D02_29.30000.json` (`info.E_pat`), used on
+E_pat = 6.60086115019687, the exact value in `results/MG9c/runs/front_D02_29.30000.json` (field `E_pat`), used on
 both grids; rounded decimals in this document are for display only and coordinates x_j = (j − N/2) h with the periodic cut at
 x = ±50, which lies in the background.
 - **d(t'), profile-alignment displacement (primary).** The translation s minimising ‖φ_X(t') − T_s φ_X(0)‖, where
