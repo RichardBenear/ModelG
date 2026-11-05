@@ -32,3 +32,5 @@ results/MG9d/snapshots/
 # MG9b: run checkpoints and per-run confirmation fields stay local (the V-b2 sample is committed as vb2_*_fields.npz)
 results/MG9b/partial/
 results/MG9b/fields/
+# MG8: full stochastic fields stay on the PI's PC (SHA-256 in each run record)
+results/MG8/full/
