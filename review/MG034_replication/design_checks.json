@@ -1,0 +1,52 @@
+{
+  "revision": "98d63b8659260879d7c674956610032707415142",
+  "confirmation_t_end_only_probe": {
+    "t_end": 2000.0,
+    "t_eval": [
+      200.0,
+      210.0,
+      220.0,
+      230.0,
+      240.0,
+      250.0,
+      260.0,
+      270.0,
+      280.0,
+      290.0,
+      300.0
+    ]
+  },
+  "lack_of_fit_df": {
+    "two_cells": 0,
+    "three_cells": 1,
+    "four_cells": 2
+  },
+  "nonmonotone_example": {
+    "b": [
+      29.0,
+      29.2,
+      29.35
+    ],
+    "true_S": [
+      0.064,
+      0.08,
+      0.02
+    ],
+    "fitted_linear_S1": -0.12037261228788249,
+    "likelihood_ratio_against_S1_zero": 3332.1697500245646,
+    "note": "Negative fitted trend despite an increase then decrease; intended only as a model-wording counterexample."
+  },
+  "coverage_mc_se_at_0_93_R2000": 0.005705260730238366,
+  "duplicate_replacement_example": {
+    "initial": [
+      150,
+      135,
+      120
+    ],
+    "both_lower_cells_fail_replacement_each": 165,
+    "distinct_cells_after_both_replacements": [
+      150,
+      165
+    ]
+  }
+}
