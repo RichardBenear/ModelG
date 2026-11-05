@@ -86,21 +86,24 @@ def analyse(series, edges, E_pat):
         f = series[t]
         c = centres(f, E_pat)
         m = minima(f, E_pat)
-        d = []
+        d, matched = [], []
         amb = 0
         for x0 in interior0:
             j = int(np.argmin(np.abs(m - x0)))
             if abs(m[j] - x0) < LAM / 4:
                 d.append(m[j] - x0)
+                matched.append(float(m[j]))
             else:
                 amb += 1
+                matched.append(None)
         al = align(series[prev], f) if prev is not None else dict(shift=0.0, rem_of_change=None, rem_of_field=None,
                                                                     at_bound=False)
         cum += al["shift"]
         xl, xr = edges[t]
         rows.append(dict(t=t, C_edge=(xl + xr) / 2, width=xr - xl, C_amp=c["amp"]["C"], C_phi2=c["phi2"]["C"],
                          amp=c["amp"], phi2=c["phi2"], n_min=len(m),
-                         interior_min_x=[float(v) for v in m],
+                         all_min_x=[float(v) for v in m],
+                         matched_min_ref_x=[float(v) for v in interior0], matched_min_x=matched,
                          interior_min_shift_mean=float(np.mean(d)) if d else None,
                          interior_min_shift_sd=float(np.std(d)) if d else None, ambiguous_minima=amb,
                          align_step=al, align_cum=cum))
@@ -116,13 +119,14 @@ def late(rows, a=15000, b=30000):
     A = next(r for r in rows if r["t"] == a)
     B = next(r for r in rows if r["t"] == b)
     out = {k: B[k] - A[k] for k in ("C_edge", "C_amp", "C_phi2", "width")}
-    out["interior_minima"] = (B["interior_min_shift_mean"] - A["interior_min_shift_mean"]
-                              if A["interior_min_shift_mean"] is not None else None)
-    ma, mb = np.array(A["interior_min_x"]), np.array(B["interior_min_x"])
-    if len(ma) == len(mb):
-        dd = (mb - ma)[1:-1]                                      # interior minima, matched by order
-        out["interior_minima_late_sd"] = float(np.std(dd))
-        out["interior_minima_late_range"] = [float(dd.min()), float(dd.max())]
+    # one subset for all statistics: the interior minima matched to the first snapshot, present at both times
+    pairs = [(a_, b_) for a_, b_ in zip(A["matched_min_x"], B["matched_min_x"]) if a_ is not None and b_ is not None]
+    dd = np.array([b_ - a_ for a_, b_ in pairs])
+    out["interior_minima"] = float(dd.mean())
+    out["interior_minima_n"] = len(dd)
+    out["interior_minima_late_sd"] = float(dd.std())
+    out["interior_minima_late_range"] = [float(dd.min()), float(dd.max())]
+    out["interior_minima_late_max_dev"] = float(np.abs(dd - dd.mean()).max())
     out["alignment"] = B["align_cum"] - A["align_cum"]
     out["alignment_rem_of_change"] = B["align_step"]["rem_of_change"]
     return out
@@ -183,7 +187,22 @@ def main():
         import matplotlib
         matplotlib.use("Agg")
         import matplotlib.pyplot as plt
-        fig, axs = plt.subplots(1, 4, figsize=(15, 3.6), sharey=True)
+        fig, axes = plt.subplots(2, 4, figsize=(15, 7), sharey="row")
+        axs = axes[0]
+        for ax, b in zip(axes[1], BS):
+            rows = [r for r in out["runs"][b]["rows"] if r["t"] >= 15000]
+            r0 = rows[0]
+            t = [r["t"] for r in rows]
+            for k, lab in (("C_edge", "edge midpoint"), ("C_amp", "E²-weighted"), ("C_phi2", "φ_X²-weighted"),
+                           ("align_cum", "profile alignment")):
+                ax.plot(t, [r[k] - r0[k] for r in rows], marker="o", label=lab)
+            pa = [(a_, b_) for a_, b_ in zip(r0["matched_min_x"], rows[-1]["matched_min_x"])
+                  if a_ is not None and b_ is not None]
+            ax.plot(t, [0.0, float(np.mean([b_ - a_ for a_, b_ in pa]))], marker="s", label="matched interior minima")
+            ax.set_xlabel("t")
+            ax.axhline(0, color="0.8", lw=0.8)
+        axes[1][0].set_ylabel("change since t = 15000")
+        axes[1][0].legend(fontsize=7)
         for ax, b in zip(axs, BS):
             rows = out["runs"][b]["rows"]
             t = [r["t"] for r in rows]
@@ -194,7 +213,7 @@ def main():
             ax.set_title(f"b = {float(b):.2f}" + (" (descriptive)" if b == "29.22000" else ""))
             ax.set_xlabel("t")
             ax.axhline(0, color="0.8", lw=0.8)
-        axs[0].set_ylabel("change in centre since t = 1800")
+        axs[0].set_ylabel("change since t = 1800")
         axs[0].legend(fontsize=7)
         fig.suptitle("MG9c exploratory: centre changes (sparse snapshots)", fontsize=10)
         fig.tight_layout()
