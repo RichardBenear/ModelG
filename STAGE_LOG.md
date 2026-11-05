@@ -656,3 +656,4 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - RESULT: MESH EFFECT SUPPORTED (on D02). C1 NUMERICS-AGREE, C3 SYMMETRIC, C2 ALIGNMENT-DEPENDENT, C4 DECREASING (ρ = 0.845), C5 R4 INVALID (item 5: shape kept changing until about t′ = 6000).
 - Descriptive: shifted arms drift at −1.41e-6, +6.0e-7 and +1.18e-6 against R0's −3.45e-7, which looks like lattice pinning. On D01 the centre is static and the residual is 2.1e-9.
 - Independent recompute from the snapshots matches. Next: ChatGPT result review, PI sign-off.
+- ChatGPT MG033 accepted the result (independent replication); wording corrections made (`review/MG033_response.md`). MG9d CLOSED 2026-11-05 (PI message 02:32 UTC: proceed to MG9b).

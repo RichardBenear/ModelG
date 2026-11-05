@@ -16,7 +16,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG7 | 5 | Mass scaling: is the coupled density deficit larger for a stronger particle (b-scan, 27.5 vs 28.5)? | **REGISTERED 2026-11-03** (draft 2 frozen at `5b44cde`); Part 0 PROCEED. **RESULT 2026-11-04: NOT SCORED (feedback)**: at b = 27.5 the particle dissolved in 7 of 8 runs (both arms); b = 28.5 SURVIVES (8/8 single). ChatGPT MG025 accepted; **CLOSED 2026-11-04** (PI signed off) |
 | MG9 | 2 | Local onset type of the Turing instability (P1) and finite-time front arrest against the single-particle window (P2); deterministic, 1D lattice | **CLOSED 2026-11-04: P1 SUBCRITICAL; P2 UNRESOLVED** (registered at `7810b8b`; amendment 1; PI sign-off 19:21 UTC) |
 | MG9c | 2 | Late-time fate of MG9's slow fronts (b = 29.25–29.35): settle into bounded patches or keep advancing; robustness; upper settling edge vs b_r | **CLOSED 2026-11-04: Q1 UNRESOLVED; Q2 NOT ELIGIBLE** (registered at `372336b`; ChatGPT MG030 accepted; PI sign-off 22:29 UTC) |
-| MG9d | 2 | Cause of MG9c's late drift (b = 29.30 from the t = 30,000 field): numerics, mesh alignment, reflection, finer mesh; bounded diagnostic | **RESULT 2026-11-05: MESH EFFECT SUPPORTED** (on D02; R4 INVALID so finer mesh unavailable; C4 DECREASING alongside). Registered at `69ad83e`; 7 runs, 0.08 core-h; awaiting ChatGPT result review and PI sign-off |
+| MG9d | 2 | Cause of MG9c's late drift (b = 29.30 from the t = 30,000 field): numerics, mesh alignment, reflection, finer mesh; bounded diagnostic | **CLOSED 2026-11-05: MESH EFFECT SUPPORTED** (on D02; R4 INVALID so finer mesh unavailable; C4 DECREASING alongside). Registered at `69ad83e`; 7 runs, 0.08 core-h; ChatGPT MG033 accepted; PI sign-off 02:32 UTC |
 | MG8 | 6 | Multiway branch divergence and foliation dependence (numbered MG7 in `InitialPlan.md`) | PENDING |
 
 ## Template
@@ -1898,12 +1898,24 @@ values for R0–R3 are within their limits. The tightest consistency check is R2
 band of 9.8e-4.
 
 **Descriptive only (not scored):**
-- Read together, the four D02 arms look like a lattice pinning landscape. The patch slides toward a preferred
-  sub-grid position (R0 left; +h/4 left fast; +h/2 and +3h/4 right, toward the next node), and R0 slows as it
-  approaches.
-- On D01, after its shape adjustment, R4's centre does not move (|v| ≈ 1e-11), and its final residual is 2.1e-9.
-  That is well below MG9c's 1e-5 stationarity threshold, which the D02 patches missed.
+- Read together, the four D02 arms are consistent with a lattice pinning landscape. *Hypothesis, not measured
+  [corrected per ChatGPT MG033]:* the patch may slide toward a preferred sub-grid position (R0 left; +h/4 left fast;
+  +h/2 and +3h/4 right), with R0 slowing. No pinning landscape, preferred position or eventual arrest was measured, and
+  lattice-dependent transient dynamics over a finite horizon are not excluded.
+- On D01, after its shape adjustment, R4's centre does not move (|v| ≈ 1e-11, far below resolution; its digits are
+  not a resolved speed), and its final residual is 2.1e-9. That is well below MG9c's 1e-5 stationarity threshold,
+  which the D02 patches missed. R4 is INVALID by item 5 only (shape, S_ref = 5.7e-3); it is not rescored, and the
+  validity reference time is not moved after the data.
+- R0 ends at residual 7.2e-6, below MG9c's 1e-5 threshold, while its motion stays resolved [added per ChatGPT MG033].
+  This is consistent with slowing, but MG9d starts from a filtered state; it does not change MG9c's classification.
 - These observations support the mesh-effect reading but are not registered results. R4 is INVALID under the
   registered rule. The early-transient caveat (ChatGPT MG031 r3) applied to R4: its adjustment lasted until about
   6000, not 2000.
 - One refinement is a sensitivity statement, not a continuum limit. MG9c's classifications are unchanged.
+
+**MG9d CLOSED 2026-11-05: MESH EFFECT SUPPORTED (on D02; finer-mesh comparison unavailable, R4 INVALID by shape;
+C4 DECREASING alongside).** ChatGPT result review MG033 independently replicated all records and labels and found no
+result-blocking error. Response: `review/MG033_response.md`, with wording corrections marked "[corrected per ChatGPT
+MG033]". PI sign-off: Richard Benear, thread message 2026-11-05 02:32 UTC ("the run was accepted by ChatGPT ... Let's
+proceed to MG9b now"). MG9c stays closed as scored. Asymptotic pinning is left to optional, separately registered
+work. MG9b proceeds on explicitly lattice-conditional terms, with its own deterministic event-confirmation checks.
