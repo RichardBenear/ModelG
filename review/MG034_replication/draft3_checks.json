@@ -1,0 +1,53 @@
+{
+  "revision": "111a07a43ef9d5e27d0543a55132f94adcaedfd0",
+  "cases": [
+    {
+      "name": "budget_before_29_20_starts",
+      "fitted_b": [
+        29.0,
+        29.35
+      ],
+      "short_cell_in_fit": false,
+      "budget_truncated_rate_design": true,
+      "draft3_budget_fallback": false,
+      "recommended_budget_fallback": true
+    },
+    {
+      "name": "budget_after_two_completed_cells_before_third",
+      "fitted_b": [
+        29.0,
+        29.2,
+        29.35
+      ],
+      "short_cell_in_fit": false,
+      "budget_truncated_rate_design": true,
+      "draft3_budget_fallback": false,
+      "recommended_budget_fallback": true
+    },
+    {
+      "name": "budget_inside_production_cell",
+      "fitted_b": [
+        29.0,
+        29.2,
+        29.35
+      ],
+      "short_cell_in_fit": true,
+      "budget_truncated_rate_design": true,
+      "draft3_budget_fallback": true,
+      "recommended_budget_fallback": true
+    },
+    {
+      "name": "ordinary_completed_design",
+      "fitted_b": [
+        29.0,
+        29.2,
+        29.35
+      ],
+      "short_cell_in_fit": false,
+      "budget_truncated_rate_design": false,
+      "draft3_budget_fallback": false,
+      "recommended_budget_fallback": false
+    }
+  ],
+  "scope": "Logical examples only; assumes a directional interval and a calibrated nominal b branch."
+}
