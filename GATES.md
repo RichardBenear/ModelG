@@ -16,7 +16,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG7 | 5 | Mass scaling: is the coupled density deficit larger for a stronger particle (b-scan, 27.5 vs 28.5)? | **REGISTERED 2026-11-03** (draft 2 frozen at `5b44cde`); Part 0 PROCEED. **RESULT 2026-11-04: NOT SCORED (feedback)**: at b = 27.5 the particle dissolved in 7 of 8 runs (both arms); b = 28.5 SURVIVES (8/8 single). ChatGPT MG025 accepted; **CLOSED 2026-11-04** (PI signed off) |
 | MG9 | 2 | Local onset type of the Turing instability (P1) and finite-time front arrest against the single-particle window (P2); deterministic, 1D lattice | **CLOSED 2026-11-04: P1 SUBCRITICAL; P2 UNRESOLVED** (registered at `7810b8b`; amendment 1; PI sign-off 19:21 UTC) |
 | MG9c | 2 | Late-time fate of MG9's slow fronts (b = 29.25–29.35): settle into bounded patches or keep advancing; robustness; upper settling edge vs b_r | **CLOSED 2026-11-04: Q1 UNRESOLVED; Q2 NOT ELIGIBLE** (registered at `372336b`; ChatGPT MG030 accepted; PI sign-off 22:29 UTC) |
-| MG9d | 2 | Cause of MG9c's late drift (b = 29.30 from the t = 30,000 field): numerics, mesh alignment, reflection, finer mesh; bounded diagnostic | **DRAFT 3** (2026-11-05, `spec/MG9d_proposal.md`, after ChatGPT MG031 round 2); PI approved for implementation; pre-run spec `spec/MG9d_prerun.md` (MG032) PI adopted P1–P2 (01:50 UTC); estimator reconciled after ChatGPT MG031 r3 (endpoint averages); awaiting registration; not registered; no MG9d run |
+| MG9d | 2 | Cause of MG9c's late drift (b = 29.30 from the t = 30,000 field): numerics, mesh alignment, reflection, finer mesh; bounded diagnostic | **REGISTERED 2026-11-05** (draft 3 frozen at `69ad83e`; PI card 02:00 UTC); awaiting ChatGPT implementation review and PI go; no MG9d run |
 | MG8 | 6 | Multiway branch divergence and foliation dependence (numbered MG7 in `InitialPlan.md`) | PENDING |
 
 ## Template
@@ -1848,3 +1848,20 @@ stationary by the registered residual criterion (1.08–1.09e-5 vs 1e-5). An exp
 (`results/MG9c/diagnostics/`) indicates a coherent slow translation of nearly constant-width patches; its cause is
 not identified. Any moving-frame or drift-cause criterion would be a new, separately registered question.
 
+
+### MG9d — Cause of MG9c's late drift (bounded deterministic diagnostic; follow-up to MG9c)
+
+**REGISTERED 2026-11-05 (PI decision card, 02:00 UTC: "Register; runs after code review"). No MG9d integration
+preceded this registration.** The registered design is `spec/MG9d_proposal.md` **draft 3**, with content frozen at
+`69ad83e` (drafts 1 and 2 kept as `spec/MG9d_proposal_v1.md` and `_v2.md`, superseded). It includes the PI's pre-run
+decisions P0–P2 (01:50 UTC) and the endpoint-average speed estimator (§3, after ChatGPT MG031 r3).
+
+- Reviews: ChatGPT MG031 (draft 1), r2 (draft 2) and r3 (draft 3), with responses `review/MG031_response*.md`.
+- Pre-run implementation specification: `spec/MG9d_prerun.md` (MG032), on the same commit.
+- Design: seven runs from the Nyquist-filtered b = 29.30, t = 30,000 MG9c state, T = 10,000, no extension. R0
+  baseline, R1 tight solver, R2a–c sub-grid shifts, R3 reflection, R4 D01.
+- Rules: validity §3; C1–C5 and the ordered overall reading §4; INCONCLUSIVE allowed.
+- Budget: cap 10 integrations, cutoff 1 core-h, cloud.
+- **Runs start only after ChatGPT's implementation review and a separate PI go.** `results/MG9d/REGISTERED`, which
+  `run_mg9d.py runs` requires, is created at that go.
+- Nothing here changes MG9c's classifications or thresholds.
