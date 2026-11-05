@@ -90,7 +90,7 @@ best estimate of the barrier steepness S.
 
 ![Creation rate against Ω](figures/creation_rate_vs_omega.png)
 
-*Creation rate against Ω (log scale). Blue circles: MG3; orange squares: MG3b; bars: 95% intervals; dashed line: the MG3b fit. Made by `paper/make_rate_chart.py` from the recorded event counts and exposures.*
+*Creation rate against Ω (log scale). Blue circles: MG3; orange squares: MG3b; bars: 95% intervals; dashed line: the MG3b fit. Made by `paper/figures/make_rate_chart.py` from the recorded event counts and exposures.*
 
 **What it means.** Spontaneous particle creation from token noise is now a measured, reproducible effect with a
 well-defined rate law over the tested range. It does not yet show the underlying mechanism.

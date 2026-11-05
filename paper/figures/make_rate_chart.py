@@ -1,5 +1,5 @@
 """Chart for the plain-language summary: spontaneous creation rate vs Omega (MG3 and MG3b). Data from the records:
-MG3 (GATES.md, MG3 result) and MG3b (results/MG3b/MG3b_evaluation.md). Run: python paper/make_rate_chart.py"""
+MG3 (GATES.md, MG3 result) and MG3b (results/MG3b/MG3b_evaluation.md). Run: python paper/figures/make_rate_chart.py"""
 import numpy as np
 import matplotlib
 matplotlib.use("Agg")
