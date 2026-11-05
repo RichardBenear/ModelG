@@ -94,7 +94,8 @@ def _process_births(st, ref):
         if sc not in st["conf_cache"]:
             c = confirm_field(st["phi"][sc].astype(float), st["b"], H, ref["A"], ref["lam"], det_pos=pos)
             st["conf_cache"][sc] = dict(cls=c["cls"], n_persistent=c["n_persistent"], n_deep_end=c["n_deep_end"],
-                                        min_phiX_end=c["min_phiX_end"], maxdt_end=c["maxdt_end"])
+                                        min_phiX_end=c["min_phiX_end"], maxdt_end=c["maxdt_end"],
+                                        complete=c.get("complete", True))     # MG9b: solver completion recorded
             shared = False
         else:
             shared = True                                    # outcome shared (counted once, protocol §5.4)

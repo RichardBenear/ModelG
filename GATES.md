@@ -17,7 +17,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG9 | 2 | Local onset type of the Turing instability (P1) and finite-time front arrest against the single-particle window (P2); deterministic, 1D lattice | **CLOSED 2026-11-04: P1 SUBCRITICAL; P2 UNRESOLVED** (registered at `7810b8b`; amendment 1; PI sign-off 19:21 UTC) |
 | MG9c | 2 | Late-time fate of MG9's slow fronts (b = 29.25–29.35): settle into bounded patches or keep advancing; robustness; upper settling edge vs b_r | **CLOSED 2026-11-04: Q1 UNRESOLVED; Q2 NOT ELIGIBLE** (registered at `372336b`; ChatGPT MG030 accepted; PI sign-off 22:29 UTC) |
 | MG9d | 2 | Cause of MG9c's late drift (b = 29.30 from the t = 30,000 field): numerics, mesh alignment, reflection, finer mesh; bounded diagnostic | **CLOSED 2026-11-05: MESH EFFECT SUPPORTED** (on D02; R4 INVALID so finer mesh unavailable; C4 DECREASING alongside). Registered at `69ad83e`; 7 runs, 0.08 core-h; ChatGPT MG033 accepted; PI sign-off 02:32 UTC |
-| MG9b | 2 | Stochastic barrier: under a linear model, does the activation slope S (log k per unit Ω) change with b inside the particle window? b = 29.20, 29.35 with MG3b's 29.00; lattice-conditional | **DRAFT 2** (2026-11-05, `spec/MG9b_proposal.md`) after ChatGPT MG034; PI §8 decisions (02:39 UTC) kept; awaiting ChatGPT review; not registered; no MG9b run |
+| MG9b | 2 | Stochastic barrier: under a linear model, does the activation slope S (log k per unit Ω) change with b inside the particle window? b = 29.20, 29.35 with MG3b's 29.00; lattice-conditional | **REGISTERED** 2026-11-05 (PI card 03:01 UTC; draft 3 frozen at `185aceb`); next: code, calibration, ChatGPT implementation review, PI go; no MG9b run |
 | MG8 | 6 | Multiway branch divergence and foliation dependence (numbered MG7 in `InitialPlan.md`) | PENDING |
 
 ## Template
@@ -1920,3 +1920,22 @@ result-blocking error. Response: `review/MG033_response.md`, with wording correc
 MG033]". PI sign-off: Richard Benear, thread message 2026-11-05 02:32 UTC ("the run was accepted by ChatGPT ... Let's
 proceed to MG9b now"). MG9c stays closed as scored. Asymptotic pinning is left to optional, separately registered
 work. MG9b proceeds on explicitly lattice-conditional terms, with its own deterministic event-confirmation checks.
+
+
+### MG9b — Does the noise-activation slope S change with b? (stochastic; lattice-conditional)
+
+**REGISTERED 2026-11-05 (PI decision card, 03:01 UTC: "Register draft 3 after merge"). No MG9b run preceded this
+registration.** The registered design is `spec/MG9b_proposal.md` **draft 3**, with content frozen at `185aceb` (drafts
+1 and 2 kept as `spec/MG9b_proposal_v1.md` and `_v2.md`, superseded). It keeps the PI's five §8 decisions (02:39 UTC).
+
+- Reviews: ChatGPT MG034 (draft 1) and r2 (draft 2), with responses `review/MG034_response.md` and `_r2.md`.
+- Question: under a linear model in b, does S change with b? NEGATIVE / POSITIVE LINEAR TREND / NOT RESOLVED (§5),
+  with per-b slopes, the linear-model check, branch-specific calibration labels and the exploratory rule.
+- Design: MG3 protocol at τ = 6.667e-4, b = 29.20 and 29.35 plus MG3b's b = 29.00; Part A placement scan; Part B three
+  cells from Ω_T and the ordered candidates Ω_T − 15, − 30, + 15, + 30; MG3b batching (≥ 20 events, cap 64).
+- Controls V-b1 (reference validity; failure stops that b), V-b2 (late-window confirmation, completion required),
+  V-b3 (tight-tolerance confirmation).
+- Budget: run caps in §6 (534 stochastic runs plus controls), about 35 core-h projected, cutoff 50 core-h on the PI's
+  PC; synthetic calibration in the cloud, cap 4 core-h.
+- **Order before any production run:** code and pre-run specification; synthetic calibration (cloud); ChatGPT review
+  of the calibration and implementation; then a separate PI go for the PC run.

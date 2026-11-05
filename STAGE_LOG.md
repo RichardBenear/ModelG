@@ -672,3 +672,10 @@ Items deliberately postponed so the project reaches its main questions first. Th
   - V-b1 to V-b3 defined exactly (late window 1900–2000, ten unique fields, rtol/atol in the confirmation path, b_det = b). A V-b1 failure stops that b.
   - Unique replacement candidates; pilots and screens inside the 50 core-h cutoff (about 35 projected); partial analysis at a budget stop frozen.
   - Not registered; no run. Next: ChatGPT review of draft 2.
+- ChatGPT MG034 round 2 (`review/MG034_chatgpt_r2.md`): substantial improvement, short correction pass. All accepted (`review/MG034_response_r2.md`). Draft 3 (draft 2 kept as `_v2`):
+  - V-b2 requires all ten pairs to complete (else CONTROL-NUMERICAL-FAILURE) before the 9-of-10 rule; controls read as confirmation robustness, not single-particle identity.
+  - Calibration simulates MG3b's Part 1 τ/τ2 selection and keeps EQUIVALENT replicates; 4000 replicates per case; per-branch labels (≥ 400 retained replicates).
+  - BUDGET-SHORT directional results are EXPLORATORY; structural identifiability separated from fit failure (NOT RESOLVED (NUMERICAL)).
+  - Not registered; no run.
+- MG9b REGISTERED 2026-11-05 (PI card 03:01 UTC, "Register draft 3 after merge"); draft 3 frozen at 185aceb. Next: code, pre-run spec and synthetic calibration, then ChatGPT implementation review and a PI go. No MG9b run.
+- MG9b implementation (after registration; no production run): `src/mg9b.py`, `src/run_mg9b.py`, `src/evaluate_mg9b.py`, `src/calib_mg9b.py`, 20 tests; `confirm_field` gains checks/rtol/atol and a completion flag. Synthetic calibration (cloud, 0.36 core-h): B3 and B2-20 calibrated, B2-35 not supported (exploratory); B3 coverage 0.946–0.955, false-positive rates 0.021–0.028 per side; power 0.73 at S₁ = −0.10. Cloud preview of V-b1: both references pass. Pre-run spec `spec/MG9b_prerun.md`. Next: ChatGPT implementation review, then PI go.

@@ -29,3 +29,6 @@ results/MG9/states/
 # MG9c: per-snapshot .npy files are bundled into results/MG9c/snapshots.npz (committed)
 results/MG9c/snapshots/
 results/MG9d/snapshots/
+# MG9b: run checkpoints and per-run confirmation fields stay local (the V-b2 sample is committed as vb2_*_fields.npz)
+results/MG9b/partial/
+results/MG9b/fields/
