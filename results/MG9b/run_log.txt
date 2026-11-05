@@ -1,0 +1,24 @@
+=== MG9b runs start 2026-11-04 21:10:13; 9 workers; {'python': '3.13.2', 'numpy': '2.2.4', 'os': 'Windows-11-10.0.26200-SP0', 'machine': 'RB_LibraryPC', 'code_commit': '4699a6b8512bc165adf6a1b1e46dfbff53d2e19a', 'workers': 9}
+[V-b1 29.35] PASS
+[V-b1 29.20] PASS
+[A 29.35] Omega 250: 4/4 events in [50, 480], crowding 0.00
+[A 29.35] stop: 3 of 4 reached at Omega 250; Omega_T = 250.0
+[B 29.35] candidate 235: ok
+[B 29.35] candidate 220: ok
+[B 29.35] cell 250: 64 runs, 26 events
+[B 29.35] cell 235: 32 runs, 21 events
+[B 29.35] cell 220: 32 runs, 29 events
+[V-b3 29.35] PASS (33 confirmations)
+[V-b2 29.35] PASS (10/10 agree; complete True)
+[A 29.20] Omega 250: 0/4 events in [50, 480], crowding 0.00
+[A 29.20] Omega 200: 0/4 events in [50, 480], crowding 0.00
+[A 29.20] Omega 170: 3/4 events in [50, 480], crowding 0.01
+[A 29.20] stop: 3 of 4 reached at Omega 170; Omega_T = 170.0
+[B 29.20] candidate 155: ok
+[B 29.20] candidate 140: ok
+[B 29.20] cell 170: 32 runs, 28 events
+[B 29.20] cell 155: 32 runs, 22 events
+[B 29.20] cell 140: 48 runs, 25 events
+[V-b3 29.20] PASS (31 confirmations)
+[V-b2 29.20] PASS (10/10 agree; complete True)
+=== MG9b runs complete 2026-11-05 05:14:49; ledger 26.28 core-h

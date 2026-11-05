@@ -1,0 +1,59 @@
+{
+ "key": [
+  9,
+  2,
+  220,
+  3,
+  27
+ ],
+ "b": 29.35,
+ "b_det": 29.35,
+ "Om": 220.0,
+ "tau": 0.0006666666666666668,
+ "t_end": 210.0,
+ "wall": 189.3619041442871,
+ "clip_frac": 0.0,
+ "mean_dets_t_lt_50": 0.010101010101010102,
+ "startup": false,
+ "event": true,
+ "exposure": 110.0,
+ "complete": true,
+ "t_first": 160.0,
+ "first": {
+  "t_start": 160.0,
+  "track": 1,
+  "pos": -42.99749633312538,
+  "s_conf": 359,
+  "t_conf": 180.0,
+  "cls": "persistent",
+  "shared": false,
+  "near": true
+ },
+ "births": [
+  {
+   "t_start": 160.0,
+   "track": 1,
+   "pos": -42.99749633312538,
+   "s_conf": 359,
+   "t_conf": 180.0,
+   "cls": "persistent",
+   "shared": false,
+   "near": true
+  }
+ ],
+ "confirmations": [
+  {
+   "sc": 359,
+   "t_conf": 180.0,
+   "cls": "persistent",
+   "n_persistent": 2,
+   "n_deep_end": 2,
+   "min_phiX_end": -10.251030405728297,
+   "maxdt_end": 0.00023850595124486063,
+   "complete": true
+  }
+ ],
+ "cell": "b29.35_B_220",
+ "rep": 27,
+ "item": "B"
+}
