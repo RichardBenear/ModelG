@@ -702,3 +702,9 @@ Items deliberately postponed so the project reaches its main questions first. Th
   - Separate FATE / SHAPE / DRIFT labels with margins (deterministic, primary); stochastic arm descriptive with intervals; convergence rule with floors, span, slope interval, residuals and a horizon continuation.
   - Executable scheduler and stream semantics; synthetic validation; clipping diagnostics; committed snapshots; Part 0 priced outside the 20 core-h cutoff.
   - Not registered; no run. Next: PI decisions (§9), ChatGPT round 2.
+- ChatGPT MG036 round 2 (`review/MG036_chatgpt_r2.md`): substantially improved; one more revision before registration. All accepted (`review/MG036_response_r2.md`). Draft 3 (`spec/MG8_proposal.md`; draft 2 kept as `_v2`):
+  - B1 defined as random-seam expected-count trajectories, three seam replicates per level; SEAM-DEPENDENT label; seam spread gates refinement eligibility.
+  - Mutually exclusive SHAPE/DRIFT labels with INSUFFICIENT RESOLUTION; BELOW MEASUREMENT RESOLUTION (not convergence); horizon check on both branches against J at t = 600.
+  - Part 0 benchmark: conditional maps for every order, explicit averaging, basis-vector matrices, augmented cohort benchmark, frozen refinement check.
+  - Independent streams per arm, Welch drift-difference interval, specified eligibility and bootstrap; stored decision inputs; A4 claims narrowed.
+  - 57 runs (cap 64), about 5–18 core-h, cutoff 20. Not registered; no run. Next: PI decisions (§9), short ChatGPT round 3 check.
