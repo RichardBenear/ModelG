@@ -146,6 +146,8 @@ supports, but does not prove, a lower barrier nearer b_r. No continuum or Landau
 
 ## 8. Decisions for the PI
 
+**PI decision (2026-11-05 02:39 UTC, thread message): all five recommendations adopted as written.**
+
 1. **b values 29.20 and 29.35**, with MG3b's 29.00 reused. Recommended. (An alternative is 29.10 and 29.30, further
    from b_r but with a smaller expected effect.)
 2. **Three cells per b, spaced 15** (lever arm 30), instead of MG3b's four spaced 10. Recommended. It saves about 7
