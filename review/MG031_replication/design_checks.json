@@ -1,0 +1,63 @@
+{
+  "reviewed_revision": "02e3a37ee4328ef9900673f1cec9ccd91010db50",
+  "one_node_error": 6.217248937900877e-15,
+  "round_trip": {
+    "0.05": {
+      "max_error_per_field_G_X_Y": [
+        7.734095391898066e-09,
+        7.811432935156404e-06,
+        6.574555738714238e-07
+      ],
+      "max_error": 7.811432935156404e-06
+    },
+    "0.1": {
+      "max_error_per_field_G_X_Y": [
+        1.546819067277383e-08,
+        1.5622865859654667e-05,
+        1.3149111469656916e-06
+      ],
+      "max_error": 1.5622865859654667e-05
+    },
+    "0.15000000000000002": {
+      "max_error_per_field_G_X_Y": [
+        7.734095475164793e-09,
+        7.811432932082474e-06,
+        6.574555737267913e-07
+      ],
+      "max_error": 7.811432932082474e-06
+    }
+  },
+  "restart_counterexample": {
+    "description": "Smooth continuation of a fit to existing tracks; no restart artifact by construction.",
+    "fitted_tau": 26140.3011213652,
+    "fit_rms": 5.691221479443629e-06,
+    "old_window_speed": -4.800233995772342e-07,
+    "new_window_speed": -3.4727036009872745e-07,
+    "actual_old_midpoint_speed": -4.7627561608912693e-07,
+    "relative_speed_difference": 0.27655535041713575,
+    "exceeds_25_percent_plus_floor": true
+  },
+  "near_zero_counterexamples": {
+    "rho": {
+      "early_speed": 0,
+      "late_speed": 0,
+      "ratio": "undefined"
+    },
+    "fine_sign_reversal": {
+      "baseline": 1e-10,
+      "fine": -1e-10,
+      "floor": 5e-09,
+      "SIMILAR": true,
+      "REDUCED_by_opposite_sign_clause": true
+    },
+    "C1_ratio_only": {
+      "baseline_speed": -4e-07,
+      "tight_speed": -4e-07,
+      "baseline_rho": 0.8,
+      "tight_rho": 1.0,
+      "speed_agrees": true,
+      "ratio_difference": 0.2,
+      "draft_NUMERICS_SENSITIVE_condition": "not explicit"
+    }
+  }
+}
