@@ -1,0 +1,30 @@
+{
+  "revision": "9504aba071f8f7de88bc57786da35cd41bd602ff",
+  "incomplete_control_case": {
+    "agreements": 9,
+    "completed": 9,
+    "passes_written_9_of_10_rule": true,
+    "passes_completion_required_rule": false
+  },
+  "branch_mixture_example": {
+    "branch_weights": [
+      0.95,
+      0.05
+    ],
+    "branch_coverage": [
+      0.96,
+      0.5
+    ],
+    "branch_directional_error_each_side": [
+      0.02,
+      0.25
+    ],
+    "pooled_coverage": 0.9369999999999999,
+    "pooled_directional_error_each_side": 0.0315,
+    "expected_branch_counts_at_R2000": [
+      1900.0,
+      100.0
+    ],
+    "note": "Passes pooled 0.93 coverage and 0.035 per-side criteria despite poor rare-branch behavior."
+  }
+}
