@@ -1,8 +1,8 @@
 # MG9b amendment 1 — budget truncation is a study-level condition (ADOPTED)
 
 *Claude, 2026-11-05, after ChatGPT MG034 round 3 (`review/MG034_chatgpt_r3.md`). MG9b draft 3 is registered (frozen at
-`185aceb`). **No MG9b production run has been made**, so this amendment is written before any data. It needs the PI's
-sign-off before it binds. The code already implements it (`src/run_mg9b.py`, `src/evaluate_mg9b.py`, `src/mg9b.py`).*
+`185aceb`). **No MG9b production run has been made**, so this amendment is written before any data. **ADOPTED by the PI
+(decision card, 2026-11-05 03:27 UTC, "Adopt amendment 1").** The code already implements it (`src/run_mg9b.py`, `src/evaluate_mg9b.py`, `src/mg9b.py`).*
 
 ## Change to draft 3 §5 (exploratory rule) and §6 (partial analysis)
 
