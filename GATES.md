@@ -17,7 +17,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG9 | 2 | Local onset type of the Turing instability (P1) and finite-time front arrest against the single-particle window (P2); deterministic, 1D lattice | **CLOSED 2026-11-04: P1 SUBCRITICAL; P2 UNRESOLVED** (registered at `7810b8b`; amendment 1; PI sign-off 19:21 UTC) |
 | MG9c | 2 | Late-time fate of MG9's slow fronts (b = 29.25–29.35): settle into bounded patches or keep advancing; robustness; upper settling edge vs b_r | **CLOSED 2026-11-04: Q1 UNRESOLVED; Q2 NOT ELIGIBLE** (registered at `372336b`; ChatGPT MG030 accepted; PI sign-off 22:29 UTC) |
 | MG9d | 2 | Cause of MG9c's late drift (b = 29.30 from the t = 30,000 field): numerics, mesh alignment, reflection, finer mesh; bounded diagnostic | **CLOSED 2026-11-05: MESH EFFECT SUPPORTED** (on D02; R4 INVALID so finer mesh unavailable; C4 DECREASING alongside). Registered at `69ad83e`; 7 runs, 0.08 core-h; ChatGPT MG033 accepted; PI sign-off 02:32 UTC |
-| MG9b | 2 | Stochastic barrier: under a linear model, does the activation slope S (log k per unit Ω) change with b inside the particle window? b = 29.20, 29.35 with MG3b's 29.00; lattice-conditional | **REGISTERED** 2026-11-05 (PI card 03:01 UTC; draft 3 frozen at `185aceb`); next: code, calibration, ChatGPT implementation review, PI go; no MG9b run |
+| MG9b | 2 | Stochastic barrier: under a linear model, does the activation slope S (log k per unit Ω) change with b inside the particle window? b = 29.20, 29.35 with MG3b's 29.00; lattice-conditional | **RESULT: NOT RESOLVED** 2026-11-05 (S₁ = −0.023, 95% CI −0.094 to +0.048; branch B3 calibrated; all controls PASS; 280 runs, 26.3 core-h on PC); awaiting ChatGPT result review and PI sign-off |
 | MG8 | 6 | Multiway branch divergence and foliation dependence (numbered MG7 in `InitialPlan.md`) | PENDING |
 
 ## Template
@@ -1943,3 +1943,10 @@ registration.** The registered design is `spec/MG9b_proposal.md` **draft 3**, wi
 - **Amendment 1 (ADOPTED 2026-11-05, PI card 03:27 UTC, after ChatGPT MG034 r3; before any production run):** budget truncation of
   rate-data collection at any stage makes a directional result EXPLORATORY (study-level flag), not only a BUDGET-SHORT
   cell; a stop that cuts only controls stays CONTROL-INSUFFICIENT. `spec/MG9b_amendment_1.md`.
+
+- **RESULT (2026-11-05; PC run, records `5a54f7a`; `spec/MG9b_result.md`): NOT RESOLVED.** Branch B3, calibrated; no
+  qualifiers. S₁ = −0.023 per unit Ω per unit b, 95% profile CI [−0.094, +0.048]; LR linear-model check p = 0.30.
+  Per-b slopes: 0.064 (29.00, MG3b), 0.048 (29.20), 0.057 (29.35). V-b1, V-b2, V-b3 PASS at both b. 280 runs, ledger
+  26.28 core-h, no budget stop. Recorded deviation: two tight-tolerance V-b3 confirmations at 29.20 took 5.4 h and 4.4 h
+  (median 18 s); both completed and agreed; no time limit was registered. Descriptive: Ω_T at 29.35 is at the top of
+  the grid (250). Independently recomputed from the raw runs (`src/check_mg9b.py`).
