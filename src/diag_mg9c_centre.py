@@ -1,7 +1,7 @@
 """EXPLORATORY post-result diagnostic of MG9c (MG030): is the late drift a coherent translation, an amplitude
 redistribution, or a movement of the envelope threshold crossings? Following `review/MG030_amplitude_center_prompt.md`.
 No new integration; reads only results/MG9c/snapshots.npz and the run tracks. Changes no MG9c classification.
-    python src/diag_mg9c_centre.py        -> results/MG9c/diagnostics/centre.json, centre.png
+    python src/diag_mg9c_centre.py        -> results/MG9c/diagnostics/centre.json, paper/figures/mg9c_centre.png
 
 Conventions
 - x_j = (j - N/2) h on D02 (N = 500, h = 0.2), x in [-50, 50). The patch sits near x = 0 (about +-29), so the periodic
@@ -217,7 +217,7 @@ def main():
         axs[0].legend(fontsize=7)
         fig.suptitle("MG9c exploratory: centre changes (sparse snapshots)", fontsize=10)
         fig.tight_layout()
-        fig.savefig(os.path.join(OUTD, "centre.png"), dpi=110)
+        fig.savefig(os.path.join(C.ROOT, "paper", "figures", "mg9c_centre.png"), dpi=110)
     except ImportError:
         pass
     return out

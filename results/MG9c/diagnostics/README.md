@@ -1,7 +1,7 @@
 # MG9c — exploratory centre diagnostic (post-result; no integration; no classification changes)
 
 Code: `src/diag_mg9c_centre.py`. Request: `review/MG030_amplitude_center_prompt.md` (committed by the PI).
-Output: `centre.json` (all rows and validation) and `centre.png` (centre changes against t). It uses the committed
+Output: `centre.json` (all rows and validation) and `paper/figures/mg9c_centre.png` (centre changes against t; moved there 2026-11-05). It uses the committed
 snapshots only, at **t = 1800, 3600, 6000, 12,000, 15,000 and 30,000**. These sparse times are a real limit: nothing
 between them is seen. Conventions are in the code docstring. The periodic cut at x = ±50 lies in the background, where
 the E² weight there is below 2e-8 of the total, so no unwrapping is needed.
@@ -39,7 +39,7 @@ change. It is not an energy fraction or an explained variance.
 *[Corrected per ChatGPT's centre-diagnostic review (`review/MG030_centre_diagnostic_review.md`). The earlier version
 took the late mean from the t = 1800-matched subset, but the sd and range from a different subset (all minima
 except the outermost at the late times). It also said each minimum moves the same amount "to within about 1.5e-4",
-which was an sd, not a bound. `centre.png` now has a second row rebased at t = 15,000.]*
+which was an sd, not a bound. the plot now has a second row rebased at t = 15,000.]*
 
 ## Reading (exploratory)
 

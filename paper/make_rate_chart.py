@@ -49,4 +49,4 @@ ax.legend(frameon=False, fontsize=8.5, loc="lower left", labelcolor=INK)
 ax.text(0.0, -0.2, "b = 29, 1D ring, h = 0.2. Bars: 95% Poisson intervals (Garwood). Fit: MG3b's four points. Points nudged ±1 in Ω so they do not overlap.",
         transform=ax.transAxes, fontsize=7.5, color=MUTED)
 fig.tight_layout()
-fig.savefig("paper/creation_rate_vs_omega.png", facecolor=SURF)
+fig.savefig("paper/figures/creation_rate_vs_omega.png", facecolor=SURF)
