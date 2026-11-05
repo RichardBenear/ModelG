@@ -50,3 +50,31 @@ the cells differ in both b and Ω, so the two effects cannot be separated.
 
 If shape becomes a question in its own right, register it as a separate study. That study should define shape at a fixed
 delay after the event, and pick cells at matched rate, or at a matched noise level where it can be reached.
+
+## Addendum (2026-11-05, after an independent recheck; text above kept as first written)
+
+An independent recomputation rebuilt each first event from the raw births list and matched it to its confirmation by
+snapshot and time. It reproduced every cell count and interval above, with all 151 events matched exactly once. It
+also corrected two statements above.
+
+1. **"Weak evidence" understated the pooled trend.** A stratified Cochran–Armitage test over both b (each b kept
+   separate) gives z = 2.06, p = 0.04. This is still post hoc and is a hint, not a finding. The per-b tests stand as
+   reported.
+2. **Overlap is affordable at about Ω = 200, which lies between the two ranges.** The point above reasoned from
+   Ω ≈ 170, which was the wrong choice. Extrapolating the fitted per-b models gives these estimates:
+   - **29.20:** about 38% of runs have a scored event, so about 125 runs for 48 events.
+   - **29.35:** about 73% of runs are startup events and about 27% are scored, so about 175 mostly short runs.
+   - **Total:** roughly 15–30 core-h for about 80% power to detect a 55% vs 28% difference.
+   - **Caveats:** these are extrapolations of 30 and 20 Ω beyond the sampled ranges. At 29.20, Part A's 0/4 at Ω = 200
+     is compatible with the estimate but does not support it.
+
+One extra descriptive point: 29.20 at Ω = 155 and 29.35 at Ω = 220 have nearly equal fitted rates, but their
+single-minimum shares are 55% and 28% (Fisher p = 0.08). Event rate alone may not set the mix. This is one post-hoc
+pair.
+
+The t = 300 count covers all deep minima at the end of the confirmation. It cannot separate splitting from separate
+nucleation.
+
+**Revised recommendation:** still no follow-up now, because it would not change MG9b. If single-particle creation becomes
+a question for the next stage, run one separately registered two-cell study at about Ω = 200, with shape defined at a
+fixed delay after the event.
