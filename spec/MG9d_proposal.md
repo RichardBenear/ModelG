@@ -1,6 +1,7 @@
 # MG9d — What drives MG9c's late drift? A bounded diagnostic study. Design proposal, DRAFT 3
 
-*Stage MG031b. Claude, 2026-11-05. Status: **DRAFT 3, not registered. No MG9d integration has been run.** Drafts 1
+*Stage MG031b; items 5–6 of §3 and §0's residual disclosure updated by PI decisions P0–P2 of the pre-run spec
+(`spec/MG9d_prerun.md`, 01:50 UTC). Claude, 2026-11-05. Status: **DRAFT 3, not registered. No MG9d integration has been run.** Drafts 1
 and 2 are kept as `spec/MG9d_proposal_v1.md` and `spec/MG9d_proposal_v2.md` (superseded). Draft 2 answered ChatGPT's
 review MG031 (`review/MG031_chatgpt.md`; response `review/MG031_response.md`). Draft 3 makes the three decision-rule
 corrections of ChatGPT's round 2 (`review/MG031_chatgpt_r2.md`; response `review/MG031_response_r2.md`) and freezes
@@ -26,9 +27,10 @@ MG9b stays reserved for the stochastic barrier S(b).*
     grid.
   - Its power fraction is 2.8e-11 (φ_X), 1.7e-11 (φ_Y) and 6e-14 (φ_G).
 - **Filtered start, disclosed.** Because every arm starts from the Nyquist-filtered field (§2), MG9d studies the
-  declared filtered preparation, not an exact continuation of the unfiltered MG9c state. The filter changes the initial
-  residual slightly. The residual of both the unfiltered source and the filtered start is recorded and reported with
-  the results.
+  declared filtered preparation, not an exact continuation of the unfiltered MG9c state. The filter raises the initial
+  max |RHS| from 1.09e-5 to 1.65e-3 (150×; corrected from "slightly" per pre-run item P0), carried by the removed,
+  strongly damped Nyquist mode; the implied shape adjustment is 3.8e-6 relative. Both residuals are recorded and
+  reported with the results.
 - **Reflection** about the node x = 0 is the exact index map j → (N − j) mod N. Applied twice it gives the state back
   exactly.
 
@@ -102,9 +104,11 @@ The δ, v_f and per-measure recovery errors are written into the pre-run specifi
 2. The tracker status is "ok" at every sample, with no fill, loss, untracked, BREAKUP or REMOTE.
 3. The cell count stays within the start count ± 1, and |W(T) − W(0)| < λ/2. This is the identity check.
 4. No sample is ALIGNMENT-AMBIGUOUS.
-5. S(T) ≤ 1e-3. The expected translation-only change is about 1e-4.
-6. Measure consistency at T: each of C_edge, C_amp, C_phi2 and m agrees with d(T) within 10% of |d(T)| + 2e-4. The
-   absolute floor covers the 1.5e-4 minimum-location sensitivity found in the MG030 centre review.
+5. S_ref(T) = ‖φ_X(T) − T_{d(T)−d(2000)} φ_X(2000)‖ / ‖φ_X(2000)‖ ≤ 1e-3, measured from t′ = 2000 (PI decision
+   P1, 2026-11-05: the shifted and finer-mesh starts make an early shape adjustment unrelated to the late drift). S
+   from t′ = 0 is reported descriptively.
+6. Measure consistency over [2000, T]: the change of each of C_edge, C_amp, C_phi2 and m agrees with d(T) − d(2000)
+   within 10% of its magnitude + 5e-4 (PI decision P2: the static C_edge recovery error reaches 2.3e-4).
 
 Otherwise the run is INVALID, and the failed items are listed.
 

@@ -52,7 +52,10 @@ size of the shape adjustment each start state needs, as ‖Δφ_X‖ / ‖φ_X�
 | R2b | 1.0e-3 |
 | R4 | 1.8e-2 |
 
-## B. Findings and proposed changes (PI decisions)
+## B. Findings and changes (PI decisions)
+
+**PI decision (2026-11-05 01:50 UTC, decision card "Adopt P1 and P2"): P1 and P2 adopted; P0 written into draft 3 §0.**
+Draft 3 §3 items 5–6 now read as below, and the code already implements them.
 
 **P0. A disclosure correction, no rule change.** Draft 3 §0 says the filter changes the initial residual "slightly". In
 fact it raises max |RHS| from 1.09e-5 to 1.65e-3, which is 150 times higher. The cause is that the removed Nyquist
