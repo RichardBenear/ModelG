@@ -153,7 +153,7 @@ def summarize(case, res):
     R = [r for r in res if r["retained"]]
     S1 = case["S1"]
     out = dict(case=case["name"], S1_true=S1, generated=len(res), retained=len(R),
-               branch_freq={b: sum(r["branch"] == b for r in R) for b in ("B3", "B2-20", "B2-35", "B2-other", "B-none")})
+               branch_freq={b: sum(r["branch"] == b for r in R) for b in ("B3", "B2-20", "B2-35", "B2-new", "B-none")})
 
     def block(rs, n_den):
         ok = [r for r in rs if r["status"] == "ok"]
@@ -172,7 +172,7 @@ def summarize(case, res):
 
     out["pooled"] = block(R, len(R))                      # B-none counts as no directional call
     out["branches"] = {br: block([r for r in R if r["branch"] == br], sum(r["branch"] == br for r in R))
-                       for br in ("B3", "B2-20", "B2-35")}
+                       for br in ("B3", "B2-20", "B2-35", "B2-new")}
     out["no_trend_fraction"] = _prop(sum(r["status"] == "insufficient" for r in R), len(R))
     out["cells_per_b"] = {str(b): {str(k): sum(r["ncells"][b] == k for r in R) for k in range(4)} for b in mg9b.B_NEW}
     out["not_placed"] = {str(b): sum(not r["placed"][b] for r in R) for b in mg9b.B_NEW}
@@ -186,6 +186,7 @@ def labels(summ):
     """§4.3 per-branch calibration labels from the eight linear cases."""
     lin = [s for s in summ if s["S1_true"] is not None]
     lab = {}
+    lab["B2-new"] = dict(label="not calibrated", reason="unsupported branch (b = 29.00 absent; MG034 r3)")
     for br in ("B3", "B2-20", "B2-35"):
         sup0 = any(s["S1_true"] == 0 and s["branches"][br]["n"] >= mg9b.BRANCH_MIN for s in lin)
         sup1 = any(s["S1_true"] != 0 and s["branches"][br]["n"] >= mg9b.BRANCH_MIN for s in lin)

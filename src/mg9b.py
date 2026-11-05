@@ -95,7 +95,9 @@ def stop20_need(events_by_rep):
 
 
 def identifiable(cells):
-    """§2.2 structural rule: at least two distinct Omega with >= 1 post-burn-in event."""
+    """§2.2 registered slope-eligibility rule (a conservative sufficient condition for a finite slope estimate, not a
+    necessary one; MG034 r3): at least two distinct Omega with >= 1 post-burn-in event. Zero-event cells with
+    positive exposure stay in an eligible fit."""
     return len({float(Om) for Om, n, E in cells if n >= 1 and E > 0}) >= 2
 
 
@@ -173,6 +175,15 @@ def _profile_ci(prof, xhat, lhat, bracket, level=0.95):
     return lo, hi
 
 
+NOT_LOCATED = "not located within the registered search range; conservatively extended to infinity"
+
+
+def ci_note(ci):
+    """Wording for a bound outside the bracket (MG034 r3): not a proven unbounded interval, not a failure."""
+    notes = [f"{side} bound {NOT_LOCATED}" for side, v in (("lower", ci[0]), ("upper", ci[1])) if math.isinf(v)]
+    return "; ".join(notes) or None
+
+
 # ------------------------------------------------------------------------------------------------ fits
 def fit_b(cells, with_ci=True):
     """Per-b fit (§4.1). cells: list of (Omega, n, E). Returns dict(S, ci, alpha_at, deviance, df, p_lof, ok)."""
@@ -193,6 +204,7 @@ def fit_b(cells, with_ci=True):
                k_fit={f"{o:g}": float(m / (L * e)) for o, m, e in zip(p["Om"], mu, p["E"])})
     if with_ci:
         out["ci"] = _profile_ci(lambda s: _lb(p, s)[0], S, ll, SB_BRACKET)
+        out["ci_note"] = ci_note(out["ci"])
     return out
 
 
@@ -261,6 +273,7 @@ def fit_trend(by_b, with_ci=True):
             return _ll_trend(ps, d, s0, s1)[0]
         try:
             out["ci"] = _profile_ci(prof, S1, ll_hat, S1_BRACKET)
+            out["ci_note"] = ci_note(out["ci"])
         except FloatingPointError as e:
             return dict(status="numerical", b_used=bs, reason=str(e), S0=S0, S1=S1)
     if len(bs) == 3:
@@ -285,7 +298,7 @@ def branch_of(b_used):
     if s == {29.0, 29.35}:
         return "B2-35"
     if len(s) >= 2:
-        return "B2-other"                          # only possible if b = 29.00 is not identifiable
+        return "B2-new"                            # {29.20, 29.35} without b = 29.00: unsupported (MG034 r3)
     return "B-none"
 
 
@@ -298,9 +311,10 @@ def direction(ci):
     return None
 
 
-def primary(trend, branch_calibrated, budget_short):
-    """§5 primary outcome. trend: fit_trend output. branch_calibrated: bool for the branch the study ends in.
-    budget_short: any BUDGET-SHORT cell among the b values in the fit."""
+def primary(trend, branch_calibrated, budget_truncated):
+    """§5 primary outcome (with amendment 1). trend: fit_trend output. branch_calibrated: bool for the branch the
+    study ends in. budget_truncated: the study-level flag: the budget cutoff truncated the planned rate-data
+    collection at any stage (placement, screening, a whole b, an unstarted accepted cell or a production cell)."""
     if trend["status"] == "insufficient":
         return dict(label="NOT RESOLVED (insufficient)", confirmatory="NOT RESOLVED", exploratory=False)
     if trend["status"] == "numerical":
@@ -309,8 +323,9 @@ def primary(trend, branch_calibrated, budget_short):
     if dr is None:
         return dict(label="NOT RESOLVED", confirmatory="NOT RESOLVED", exploratory=False)
     lab = f"{dr} LINEAR TREND"
-    if (not branch_calibrated) or budget_short:
-        why = [w for w, c in (("branch not calibrated", not branch_calibrated), ("BUDGET-SHORT", budget_short)) if c]
+    if (not branch_calibrated) or budget_truncated:
+        why = [w for w, c in (("branch not calibrated", not branch_calibrated),
+                              ("BUDGET-TRUNCATED", budget_truncated)) if c]
         return dict(label=f"{lab} (EXPLORATORY)", confirmatory="NOT RESOLVED", exploratory=True, why=why)
     return dict(label=lab, confirmatory=lab, exploratory=False)
 

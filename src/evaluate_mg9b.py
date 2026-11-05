@@ -67,7 +67,10 @@ def evaluate():
     labels = (cal or {}).get("labels") or {}
     by_b, per_b = {29.0: historical_cells()}, {}
     per_b["29.00"] = dict(source="MG3b (used as recorded)", cells=by_b[29.0], fit=mg9b.fit_b(by_b[29.0]))
-    budget_short = False
+    lg = _load(P("ledger.json")) or {}
+    bstop = lg.get("budget_stop")
+    # amendment 1: study-level flag (any budget stop that truncated rate-data collection), not only short cells
+    budget_truncated = bool(bstop) and not bstop.get("rate_complete", False)
     for b in mg9b.B_NEW:
         key = f"{b:.2f}"
         v1, pa, pb = _load(P(f"vb1_{key}.json")), _load(P(f"partA_{key}.json")), _load(P(f"partB_{key}.json"))
@@ -86,7 +89,6 @@ def evaluate():
                 recs = runs_of(f"b{b:.2f}_B_{c['Om']:g}")
                 s = cell_stats(recs, None if c.get("budget_short") else c["runs"])
                 s.update(capped=c["capped"], budget_short=c.get("budget_short", False))
-                budget_short |= bool(c.get("budget_short")) and s["exposure"] > 0
                 stats[f"{c['Om']:g}"] = s
                 cells.append((c["Om"], s["events"], s["exposure"]))
                 recs_all += recs
@@ -96,16 +98,16 @@ def evaluate():
                      budget_short=any(s["budget_short"] for s in stats.values()))
             if d["identifiable"]:
                 by_b[b] = cells
-            d["status"] = "IDENTIFIABLE" if d["identifiable"] else "NOT IDENTIFIABLE"
+            d["status"] = "SLOPE-ELIGIBLE" if d["identifiable"] else "NOT SLOPE-ELIGIBLE"
         flags = [x for x in (d["vb2"], d["vb3"]) if x not in (None, "PASS")]
-        if d.get("status") in ("IDENTIFIABLE",) and (d["vb2"] is None or d["vb3"] is None):
+        if d.get("status") == "SLOPE-ELIGIBLE" and (d["vb2"] is None or d["vb3"] is None):
             flags.append("CONTROL-INSUFFICIENT (control not run)")
         d["lattice_flags"] = flags
         per_b[key] = d
     tr = mg9b.fit_trend(by_b)
     br = mg9b.branch_of(tr.get("b_used", []))
     cal_ok = labels.get(br, {}).get("label") == "calibrated"
-    prim = mg9b.primary(tr, cal_ok, budget_short)
+    prim = mg9b.primary(tr, cal_ok, budget_truncated)
     q = []
     if tr.get("lr") and tr["lr"]["p"] < 0.05:
         q.append("LINEAR MODEL MISFIT")
@@ -120,9 +122,14 @@ def evaluate():
             q.append(f"CAPPED ({b:.2f})")
         if d.get("budget_short"):
             q.append(f"BUDGET-SHORT ({b:.2f})")
+    if budget_truncated:
+        q.append("BUDGET-TRUNCATED (study)")
+    elif bstop:
+        q.append("BUDGET STOP AFTER RATE COLLECTION (controls only)")
     if br in ("B2-20", "B2-35"):
         q.append(f"TWO-B (missing {'29.35' if br == 'B2-20' else '29.20'})")
-    out = dict(spec="spec/MG9b_proposal.md draft 3 (frozen 185aceb)", per_b=per_b, trend=tr, branch=br,
+    out = dict(spec="spec/MG9b_proposal.md draft 3 (frozen 185aceb) with amendment 1", per_b=per_b, trend=tr, branch=br,
+               budget_stop=bstop, budget_truncated=budget_truncated,
                branch_label=labels.get(br), primary=prim, qualifiers=q,
                fitted_range=[min(tr["b_used"]), max(tr["b_used"])] if tr.get("b_used") else None,
                ledger_core_h=sum(e["wall_s"] for e in (_load(P("ledger.json")) or {"entries": []})["entries"]) / 3600)
