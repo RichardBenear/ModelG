@@ -1894,7 +1894,7 @@ SUPPORTED (on D02; the finer-mesh comparison is unavailable because R4 is INVALI
 
 **Independent recompute** (from the raw snapshots, by Newton iteration on the Fourier cross-correlation, not via
 `run_mg9d.align`): every displacement agrees with the record within 9e-10, and C1–C4 come out the same. All validity
-values for R0–R3 are within their limits. The smallest consistency margin is R2b's C_amp: 1.6e-4 off d against a
+values for R0–R3 are within their limits. The tightest consistency check is R2b's C_phi2: 1.9e-4 off d against a
 band of 9.8e-4.
 
 **Descriptive only (not scored):**
