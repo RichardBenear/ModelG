@@ -1,5 +1,5 @@
 """MG002: evaluate MG1 against pre-registered criteria. Reads results/MG002/{main,controls}.json,
-writes results/MG002/MG1_evaluation.md and results/MG002/profiles.png. No hand-entered results."""
+writes results/MG002/MG1_evaluation.md and paper/figures/mg002_profiles.png. No hand-entered results."""
 import json, sys
 import numpy as np
 sys.path.insert(0, "src")
@@ -95,4 +95,4 @@ for ax, k in zip(axs, "GXY"):
     ax.tick_params(colors="#52514e")
 axs[0].legend(frameon=False)
 fig.suptitle("Model G stationary soliton, eq. 17 parameters, t = 100 (MG002)", x=0.01, ha="left", fontsize=12)
-fig.savefig("results/MG002/profiles.png", dpi=150, facecolor="#fcfcfb")
+fig.savefig("paper/figures/mg002_profiles.png", dpi=150, facecolor="#fcfcfb")

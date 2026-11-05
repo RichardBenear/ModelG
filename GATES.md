@@ -1870,7 +1870,7 @@ decisions P0–P2 (01:50 UTC) and the endpoint-average speed estimator (§3, aft
 SUPPORTED (on D02; the finer-mesh comparison is unavailable because R4 is INVALID).** 7 integrations, 0.084 core-h
 (cap 10, cutoff 1). PI run go: thread message 02:12 UTC. Records are in `results/MG9d/runs/`; the evaluation is
 `results/MG9d/evaluation.json`; snapshots are `results/MG9d/snapshots.npz` (+ manifest); the figure is
-`results/MG9d/drift.png`. Speeds are endpoint averages of the alignment displacement d (v_f = 5e-9; resolved at 1.5e-8).
+`paper/figures/mg9d_drift.png`. Speeds are endpoint averages of the alignment displacement d (v_f = 5e-9; resolved at 1.5e-8).
 
 | Run | a [2000, 6000] | b [6000, 10,000] | v [2000, 10,000] | Valid |
 |---|---:|---:|---:|---|
