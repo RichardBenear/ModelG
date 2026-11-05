@@ -109,3 +109,9 @@ Budget truncation is now a study-level condition (`spec/MG9b_amendment_1.md`). C
 (writes `rate_complete` / `budget_truncated` into the ledger's `budget_stop`), `evaluate_mg9b.evaluate` (study-level
 flag), `mg9b.primary` (reason "BUDGET-TRUNCATED"). Wording: SLOPE-ELIGIBLE, the bracket note, branch B2-new. Four tests
 added (24 in total). The calibration is unaffected: it does not model the budget stop, and B2-new had 0 replicates.
+
+## F. Fixes after the amendment-1 implementation review (MG034)
+
+`review/MG034_amendment1_response.md`: a failed reference now counts as finished rate collection; unstarted accepted
+cells are distinguished from BUDGET-SHORT cells; tests use an in-process pool and check that the real output folder is
+untouched; event shapes are matched within each run; V-b3 with no pairs is CONTROL-INSUFFICIENT. 27 tests, all pass.
