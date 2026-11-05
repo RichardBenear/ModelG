@@ -3,7 +3,10 @@
 Usage (PI's PC):  $env:MODELG_WORKERS=8; python src/run_mg8.py
 Resumable at run level: a run whose record exists is skipped. Requires results/MG8/part0/decisions.json with
 proceed = true (Part 0, src/part0_mg8.py). Production cutoff 20 core-h (ledger of per-run wall time), cap 64 runs.
-Order: B1 k = 0, then the rest of the ladder, then B2. Exit codes: 0 done, 2 budget stop (BUDGET-SHORT), 5 no Part 0.
+Order: B1 k = 0, then the rest of the ladder, then B2. After every batch the completed mirror checks are evaluated; a
+failed one stops dispatch (proposal §4.1: STOP, PI decides). The state is persisted in results/MG8/status.json
+(running / complete / BUDGET-SHORT / STOP-IMPLEMENTATION), which the evaluator reads.
+Exit codes: 0 done, 2 budget stop (BUDGET-SHORT), 3 implementation check failed, 5 no Part 0.
 """
 import os, sys, json, time, hashlib
 import numpy as np
@@ -18,6 +21,7 @@ ROOT = os.path.join(os.path.dirname(__file__), "..")
 OUT = os.path.join(ROOT, "results", "MG8")
 RUNS, FIELDS, SNAP, FULL = (os.path.join(OUT, d) for d in ("runs", "fields", "snap", "full"))
 LEDGER = os.path.join(OUT, "ledger.json")
+STATUS = os.path.join(OUT, "status.json")
 CUTOFF_CORE_H = 20.0
 CAP = 64
 KMAX = 6
@@ -54,6 +58,20 @@ def seed(job):
     return seed_for(8, 0, a, 0, job["rep"])
 
 
+def atomic_json(obj, path, **kw):
+    """Write JSON to a temporary file in the same folder, then rename it into place (review MG037 item 5)."""
+    tmp = path + ".tmp"
+    with open(tmp, "w") as f:
+        json.dump(obj, f, **kw)
+    os.replace(tmp, path)
+
+
+def atomic_savez(path, **arrs):
+    tmp = path[:-4] + ".tmp.npz"
+    np.savez_compressed(tmp, **arrs)
+    os.replace(tmp, path)
+
+
 # ------------------------------------------------------------------ one deterministic run
 def det_run(job):
     Pm = mg8.params()
@@ -66,40 +84,46 @@ def det_run(job):
     spu = mg8.steps_per_unit(tau)
     G, X, Y = (np.ascontiguousarray(c[i], dtype=float).copy() for i in range(3))
     sd = seed(job)
-    t_rec, cen, ndet, ckpt = [], [], [], {}
+    t_rec, units, fin, cen, ndet, ckpt = [], [], [], [], [], {}
     clips = np.zeros(3, dtype=np.int64)
     t0 = time.time()
     for u in range(1, job["T"] + 1):
         clips += mg8.run_det(G, X, Y, job["sched"], Pm["a"], Pm["b"], Pm["g"], Pm["p"], Pm["q"], Pm["dx"], Pm["dy"],
                              H, tau, spu, sd if u == 1 else -1)
         phiX_s = smooth_periodic(X - S0[1], H)
-        t_rec.append(u * spu * tau)
+        t_rec.append(u * spu * tau)                         # physical time (1.00005 u); decisions use the unit u
+        units.append(u)
+        fin.append(bool(np.all(np.isfinite(G)) and np.all(np.isfinite(X)) and np.all(np.isfinite(Y))))
         cen.append(mg8.centre(phiX_s, x, H))
         ndet.append(int(len(detect(phiX_s, x, H, ref["thr"], ref["lam"]))))
         if u % CHECK_EVERY == 0:
             ckpt[u] = np.stack([G - S0[0], X - S0[1], Y - S0[2]])
-        if not np.all(np.isfinite(X)):
+        if not fin[-1]:
             break
+    seam_hash = mg8.seam_sha256(job["sched"], X.size, len(units) * spu, sd)   # after the run: regenerates the stream
     wall = time.time() - t0
-    np.savez_compressed(os.path.join(FIELDS, key(job) + ".npz"),
-                        **{f"t{u}": v for u, v in ckpt.items()})
-    return dict(job=job, key=key(job), seed=int(sd), tau=tau, steps_per_unit=spu, t=t_rec, centre=cen, n_dets=ndet,
-                clips=clips.tolist(), wall=wall, finite=bool(np.all(np.isfinite(X))), platform=sys.platform,
-                numpy=np.__version__)
+    atomic_savez(os.path.join(FIELDS, key(job) + ".npz"), **{f"t{u}": v for u, v in ckpt.items()})
+    return dict(job=job, key=key(job), seed=int(sd), tau=tau, steps_per_unit=spu, t=t_rec, unit=units,
+                finite_units=fin, centre=cen, n_dets=ndet, clips=clips.tolist(), wall=wall, finite=bool(all(fin)),
+                seam_sha256=seam_hash, platform=sys.platform, numpy=np.__version__)
 
 
 # ------------------------------------------------------------------ one stochastic run
 def track_fail(dets, pos, Ld=100.0):
-    """TRACK-FAIL (§3.3): the x0 track ends while a detection lies within 3 units of its last position."""
-    last = None
+    """TRACK-FAIL (§3.3): the x0 track ends while a detection lies within 3 units of its last position at the next
+    snapshot. Every end of the track is checked (a track can end, reconnect and end again; review MG037 item 4).
+    Returns (flag, snapshot index of the first TRACK-FAIL or None)."""
+    last, matched = None, False
     for s in range(len(pos)):
         if np.isfinite(pos[s]):
-            last = pos[s]
-        elif last is not None:
-            d = dets[s]
-            if len(d) and np.min(np.minimum(np.abs(d - last) % Ld, Ld - np.abs(d - last) % Ld)) < 3.0:
-                return True, s
-            return False, s
+            last, matched = pos[s], True
+        elif matched:
+            matched = False
+            d = np.asarray(dets[s], float)
+            if d.size:
+                dd = np.abs(d - last) % Ld
+                if np.min(np.minimum(dd, Ld - dd)) < 3.0:
+                    return True, s
     return False, None
 
 
@@ -121,7 +145,7 @@ def sto_run(job):
     out = dict(job=job, key=key(job), seed=int(sd), tau=tau, steps_per_unit=spu, wall=wall, clips=clips.tolist(),
                clip_frac=(clips / (500 * job["T"] * spu)).tolist(), platform=sys.platform, numpy=np.__version__)
     full = os.path.join(FULL, key(job) + ".npz")
-    np.savez_compressed(full, G=rG, X=rX, Y=rY, times=times)
+    atomic_savez(full, G=rG, X=rX, Y=rY, times=times)
     out["full_sha256"] = hashlib.sha256(open(full, "rb").read()).hexdigest()
     arr = np.stack([rG, rX, rY]).astype(np.int64)
     if job["sched"] == L:
@@ -146,8 +170,8 @@ def sto_run(job):
     if eligible and nb.sum() > 0:
         bl = np.nan_to_num(np.array(a["blocks"]))
         prof = (np.tensordot(nb, bl, axes=(0, 0)) / nb.sum()).tolist()
-    np.savez_compressed(os.path.join(SNAP, key(job) + ".npz"), phiX_s=phiX_s[4::5].astype(np.float32),
-                        times=times[4::5])
+    atomic_savez(os.path.join(SNAP, key(job) + ".npz"), phiX_s=phiX_s[4::5].astype(np.float32), times=times[4::5],
+                 blocks=np.asarray(a["blocks"], float), n_per_block=np.asarray(a["n_per_block"]))   # §7 block profiles
     out.update(events=a["events"], track_fail=tf, track_fail_at=tf_at, eligible=eligible, v=v, profile=prof,
                n_per_block=a["n_per_block"], positions=a["positions"], dets=[d.tolist() for d in dets],
                farvar=a["farvar"], n_dets=a["n_dets"])
@@ -156,14 +180,36 @@ def sto_run(job):
 
 def do(job):
     r = det_run(job) if job["kind"] == "det" else sto_run(job)
-    with open(os.path.join(RUNS, key(job) + ".json"), "w") as f:
-        json.dump(r, f)
+    atomic_json(r, os.path.join(RUNS, key(job) + ".json"))   # the record is the completion marker; written last
     return key(job), r["wall"]
 
 
 # ------------------------------------------------------------------ main
 def ledger():
-    return json.load(open(LEDGER)) if os.path.exists(LEDGER) else dict(runs={}, core_h=0.0)
+    """Load the ledger and reconcile it with the completed run records: a record whose cost is missing (stop between
+    the record write and the ledger update) is added from its stored wall time (review MG037 item 5)."""
+    led = json.load(open(LEDGER)) if os.path.exists(LEDGER) else dict(runs={}, core_h=0.0)
+    led.setdefault("reconciled", [])
+    if os.path.isdir(RUNS):
+        for f in sorted(os.listdir(RUNS)):
+            k_ = f[:-5]
+            if f.endswith(".json") and k_ not in led["runs"]:
+                led["runs"][k_] = float(json.load(open(os.path.join(RUNS, f)))["wall"])
+                led["reconciled"].append(k_)
+    led["core_h"] = sum(led["runs"].values()) / 3600.0
+    return led
+
+
+def set_status(state, led, **extra):
+    atomic_json(dict(state=state, core_h=led["core_h"], cutoff_core_h=CUTOFF_CORE_H, n_records=len(led["runs"]),
+                     time_utc=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), **extra), STATUS, indent=1)
+
+
+def check_failures():
+    """Completed mandatory implementation checks that FAILED (evaluate_mg8.impl_checks)."""
+    import evaluate_mg8
+    ch = evaluate_mg8.impl_checks(OUT, evaluate_mg8.load(OUT))
+    return [n for n, c in ch.items() if c["status"] == "FAIL"], ch
 
 
 def main():
@@ -174,18 +220,30 @@ def main():
         print("Part 0 decisions missing or proceed = false"); sys.exit(5)
     mg8.reference_start()                                    # cache the reference in the main process
     led = ledger()
+    atomic_json(led, LEDGER, indent=1)
+    fails, _ = check_failures()
+    if fails:
+        set_status("STOP-IMPLEMENTATION", led, failed=fails)
+        print(f"STOP: implementation check failed: {fails}"); sys.exit(3)
     todo = [j for j in jobs() if not os.path.exists(os.path.join(RUNS, key(j) + ".json"))]
     assert len(jobs()) <= CAP
     nw = int(os.environ.get("MODELG_WORKERS", "2"))
+    set_status("running", led)
     with Pool(nw) as pool:
         for i in range(0, len(todo), nw):
             if led["core_h"] >= CUTOFF_CORE_H:
+                set_status("BUDGET-SHORT", led)
                 print(f"BUDGET-SHORT: ledger {led['core_h']:.2f} core-h >= {CUTOFF_CORE_H}"); sys.exit(2)
             for k_, w in pool.imap_unordered(do, todo[i:i + nw]):
                 led["runs"][k_] = w
                 led["core_h"] = sum(led["runs"].values()) / 3600.0
-                json.dump(led, open(LEDGER, "w"), indent=1)
+                atomic_json(led, LEDGER, indent=1)
                 print(f"{k_}: {w:.0f} s; ledger {led['core_h']:.2f} core-h", flush=True)
+            fails, _ = check_failures()
+            if fails:
+                set_status("STOP-IMPLEMENTATION", led, failed=fails)
+                print(f"STOP: implementation check failed: {fails}"); sys.exit(3)
+    set_status("complete", led)
     print("done")
 
 

@@ -262,8 +262,12 @@ def test_driver_smoke():
     D.seed = lambda job: seed_for(8, 9, 7, job["sched"], job["rep"])
     r = D.det_run(dict(kind="det", sched=R, k=1, rep=0, T=50))
     assert len(r["t"]) == 50 and r["finite"] and os.path.exists(os.path.join(D.FIELDS, r["key"] + ".npz"))
+    assert r["unit"] == list(range(1, 51)) and all(r["finite_units"])
+    assert r["seam_sha256"] == mg8.seam_sha256(R, 500, 50 * r["steps_per_unit"], r["seed"])
     s = D.sto_run(dict(kind="sto", sched=P, k=0, rep=0, T=20))
     assert "eligible" in s and len(s["dets"]) == 20
+    z = np.load(os.path.join(D.SNAP, s["key"] + ".npz"))
+    assert z["blocks"].shape[0] == 7 and list(z["n_per_block"]) == s["n_per_block"]
     assert len(D.jobs()) == 55       # 57 registered runs; the two continuations are the k = 6 J and R r0 records run to 600
 
 
@@ -277,28 +281,142 @@ def test_pooled_chisq_tail_pooling():
     assert pooled_chisq(np.rint(e), e) > 0.5
 
 
-def test_evaluate_b1_synthetic():
-    """Evaluator B1 path on fabricated records: R = J shifted plus an odd deformation proportional to tau."""
-    import evaluate_mg8 as EV
-    tmp = tempfile.mkdtemp()
-    os.makedirs(os.path.join(tmp, "runs")); os.makedirs(os.path.join(tmp, "fields"))
+def _synthetic_b1(tmp, state="complete", mirror_ok=True, drop=(), zero_at=None, nan_after=None):
+    """Fabricated B1 records: R = J shifted plus an odd deformation proportional to tau; L = R mirrored.
+    zero_at = (key, unit): zero detections at that unit. nan_after = (key, unit): fields non-finite from that unit on."""
+    for d in ("runs", "fields", "part0"):
+        os.makedirs(os.path.join(tmp, d), exist_ok=True)
+    json.dump(dict(proceed=True, all_checks_pass=True), open(os.path.join(tmp, "part0", "decisions.json"), "w"))
+    json.dump(dict(state=state), open(os.path.join(tmp, "status.json"), "w"))
     phi, x = REF["phi"], REF["x"]
     odd = np.outer(np.abs(phi).max(axis=1), x * np.exp(-x ** 2 / 4))
-    def write(key, T, fields_fn, centre_v=0.0):
-        t = list(np.arange(1, T + 1) * 1.00005)
-        rec = dict(t=t, centre=[centre_v * ti for ti in t], n_dets=[1] * T, finite=True)
+
+    def write(key, T, fields_fn, sched_T):
+        if key in drop:
+            return
+        u = list(range(1, T + 1))
+        fin = [not (nan_after and nan_after[0] == key and ui >= nan_after[1]) for ui in u]
+        nd = [0 if (zero_at and zero_at[0] == key and ui == zero_at[1]) else 1 for ui in u]
+        rec = dict(job=dict(T=sched_T), t=[ui * 1.00005 for ui in u], unit=u, finite_units=fin, centre=[0.0] * T,
+                   n_dets=nd, finite=all(fin))
         json.dump(rec, open(os.path.join(tmp, "runs", key + ".json"), "w"))
-        np.savez(os.path.join(tmp, "fields", key + ".npz"), **{f"t{u}": fields_fn(u) for u in range(50, T + 1, 50)})
+        np.savez(os.path.join(tmp, "fields", key + ".npz"),
+                 **{f"t{ui}": (fields_fn(ui) if fin[ui - 1] else np.full_like(phi, np.nan)) for ui in range(50, T + 1, 50)})
     for k in range(7):
         T = 600 if k == 6 else 300
         amp = 1e-2 / 2 ** k
-        write(f"det_J_k{k}_r0", T, lambda u: phi)
+        Rf = lambda ui, a=amp: fourier_shift(phi + a * odd, H, -0.03)
+        write(f"det_J_k{k}_r0", T, lambda ui: phi, T)
         for j in range(3):
-            write(f"det_R_k{k}_r{j}", T if j == 0 else 300,
-                  lambda u, a=amp: fourier_shift(phi + a * odd, H, -0.03))
+            write(f"det_R_k{k}_r{j}", T if j == 0 else 300, Rf, T if j == 0 else 300)
+        if k in (0, 6):
+            TL = 300 if k == 0 else 50
+            Lf = (lambda ui, f=Rf: f(ui)[:, ::-1]) if mirror_ok else (lambda ui, f=Rf: f(ui)[:, ::-1] * 1.001)
+            write(f"det_L_k{k}_r0", TL, Lf, TL)
+
+
+def test_evaluate_b1_synthetic():
+    import evaluate_mg8 as EV
+    tmp = tempfile.mkdtemp()
+    _synthetic_b1(tmp)
     ev = EV.evaluate_b1(tmp, EV.load(tmp))
+    assert all(ev["checks"][n]["status"] == "PASS" for n in ("part0", "mirror_det_k0", "mirror_det_k6")), ev["checks"]
     assert ev["levels"][0]["summary"] == "SENSITIVE" and ev["levels"][0]["labels"][0]["shape"] == "MATERIAL"
+    assert ev["production"] == "SENSITIVE"
     assert ev["refinement"] == "CONVERGES TO J", ev.get("refinement_info")
+    r0 = ev["levels"][3]["reps"][0]
+    assert r0["E_raw"] is not None and r0["E_nyq"] is not None
+
+
+def test_evaluator_endpoints_included():
+    """Review MG037 item 1: a failure exactly at the decision unit (300, 600) is seen; a failure after 300 in a run
+    continued to 600 does not affect the assessment at 300; velocity windows include their end unit."""
+    import evaluate_mg8 as EV
+    t1 = tempfile.mkdtemp(); _synthetic_b1(t1, zero_at=("det_R_k0_r1", 300))
+    ev = EV.evaluate_b1(t1, EV.load(t1))
+    assert ev["levels"][0]["reps"][1]["single"] is False and ev["levels"][0]["labels"][1]["fate"] == "CHANGED"
+    t2 = tempfile.mkdtemp(); _synthetic_b1(t2, zero_at=("det_R_k6_r0", 600))
+    ev = EV.evaluate_b1(t2, EV.load(t2))
+    assert ev["levels"][6]["reps"][0]["single"] is True and ev["horizon"]["single"] is False
+    assert ev["refinement"] != "CONVERGES TO J"
+    t3 = tempfile.mkdtemp(); _synthetic_b1(t3, nan_after=("det_R_k6_r0", 450))
+    ev = EV.evaluate_b1(t3, EV.load(t3))
+    assert ev["levels"][6]["reps"][0]["single"] is True and ev["horizon"] is None or not ev["horizon"]["single"]
+    rec = dict(t=[u * 1.00005 for u in range(1, 301)], unit=list(range(1, 301)), centre=[0.0] * 299 + [1.0],
+               n_dets=[1] * 300)
+    assert EV.window_v(rec, 150, 300) > 0                      # the end unit (t = 300.015) is in the window
+    assert EV.single_through(dict(rec, n_dets=[1] * 299 + [0]), 300) is False
+
+
+def test_evaluator_gates_on_implementation_checks():
+    """Review MG037 items 2 and 5: a failed mirror check withholds every label; a missing one gives NOT FINAL;
+    BUDGET-SHORT applies the §6 partial-result rules."""
+    import evaluate_mg8 as EV
+    t1 = tempfile.mkdtemp(); _synthetic_b1(t1, mirror_ok=False)
+    ev = EV.evaluate_b1(t1, EV.load(t1))
+    assert ev["checks"]["mirror_det_k0"]["status"] == "FAIL" and ev["production"] == EV.WITHHELD
+    assert ev["refinement"] == EV.WITHHELD
+    t2 = tempfile.mkdtemp(); _synthetic_b1(t2, drop=("det_L_k6_r0",))
+    ev = EV.evaluate_b1(t2, EV.load(t2))
+    assert ev["checks"]["mirror_det_k6"]["status"] == "INCOMPLETE"
+    assert ev["refinement"].startswith("NOT SCORED") and ev["production"] == "SENSITIVE"
+    t3 = tempfile.mkdtemp(); _synthetic_b1(t3, state="BUDGET-SHORT", drop=("det_R_k5_r2",))
+    ev = EV.evaluate_b1(t3, EV.load(t3))
+    assert ev["production"] == "SENSITIVE" and ev["refinement"] == "NOT RESOLVED BY THIS LADDER (BUDGET-SHORT)"
+    t4 = tempfile.mkdtemp(); _synthetic_b1(t4, state="BUDGET-SHORT", drop=("det_R_k0_r2",))
+    ev = EV.evaluate_b1(t4, EV.load(t4))
+    assert ev["production"] == "NOT SCORED (BUDGET-SHORT)"
+    t5 = tempfile.mkdtemp(); _synthetic_b1(t5, state="running")
+    assert EV.evaluate_b1(t5, EV.load(t5))["production"].startswith("NOT FINAL")
+
+
+def test_track_fail_rescans_after_gap():
+    """Review MG037 item 4: an initial empty gap, reconnection, a gap with no nearby detection, reconnection, then an
+    over-link jump: the later TRACK-FAIL is found."""
+    import run_mg8 as D
+    nan = np.nan
+    pos = np.array([nan, nan, 0.0, 0.0, nan, 0.1, 0.1, nan, nan])
+    dets = [[], [], [0.0], [0.0], [40.0], [0.1], [0.1], [2.6], [2.6]]
+    assert D.track_fail(dets, pos) == (True, 7)
+    assert D.track_fail(dets[:7], pos[:7]) == (False, None)
+    assert D.track_fail([[0.0], [99.0]], np.array([0.5, nan])) == (True, 1)      # wrap: distance 1.5
+
+
+def test_nyquist_report():
+    """Review MG037 item 3: a difference confined to the Nyquist mode is invisible to the scored E but reported."""
+    phi = np.asarray(REF["phi"], float)
+    eps = 1e-4 * np.abs(phi).max()
+    alt = (-1.0) ** np.arange(phi.shape[1])
+    A = phi + eps * np.outer([0, 1, 0], alt)
+    r = mg8.shape_report(A, phi, H)
+    expect = eps * np.sqrt(phi.shape[1]) / np.sqrt((phi[1] ** 2).sum())
+    assert r["E"] < 1e-9 and abs(r["E_nyq"] - expect) <= 1e-6 * expect and r["E_raw"] >= 0.99 * expect
+
+
+def test_production_kernels_match_conditional_maps():
+    """Review MG037 item 6: diffusion-only cross-check of run_det and run_stoch against the conditional maps."""
+    from part0_mg8 import production_kernel_crosscheck
+    res = production_kernel_crosscheck(nrep=200, n0=2000)
+    assert res["pass_"], res
+
+
+def test_seam_hash_and_ledger_reconcile():
+    import run_mg8 as D
+    a = mg8.seam_sha256(R, 50, 2500, 7, chunk=1000)
+    b = mg8.seam_sha256(R, 50, 2500, 7, chunk=2500)
+    assert a == b and a != mg8.seam_sha256(R, 50, 2500, 8) and mg8.seam_sha256(J, 50, 10, 7) == mg8.seam_sha256(J, 9, 1, 1)
+    tmp = tempfile.mkdtemp()
+    old = (D.RUNS, D.LEDGER)
+    D.RUNS, D.LEDGER = os.path.join(tmp, "runs"), os.path.join(tmp, "ledger.json")
+    os.makedirs(D.RUNS)
+    try:
+        json.dump(dict(runs={"x": 3600.0}, core_h=1.0), open(D.LEDGER, "w"))
+        for k_, w in (("x", 3600.0), ("y", 1800.0)):
+            D.atomic_json(dict(wall=w), os.path.join(D.RUNS, k_ + ".json"))
+        led = D.ledger()
+        assert led["reconciled"] == ["y"] and abs(led["core_h"] - 1.5) < 1e-12
+    finally:
+        D.RUNS, D.LEDGER = old
 
 
 if __name__ == "__main__":
