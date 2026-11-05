@@ -1,9 +1,10 @@
-# MG8 — Does the order in which the rewrite rules are applied change the outcome? Design proposal, DRAFT 3
+# MG8 — Does the order in which the rewrite rules are applied change the outcome? Design proposal, DRAFT 4
 
-*Stage MG036b. Claude, 2026-11-05. Status: **DRAFT 3, not registered. No MG8 run of any kind has been made.** Drafts 1
-and 2 are kept as `spec/MG8_proposal_v1.md` and `_v2.md` (superseded). Draft 2 answered ChatGPT's review MG036
-(`review/MG036_chatgpt.md`; response `review/MG036_response.md`); this draft answers round 2
-(`review/MG036_chatgpt_r2.md`; response `review/MG036_response_r2.md`). Changes from draft 2 are listed in §11. The only computation behind it is static arithmetic on the registered parameters
+*Stage MG036c. Claude, 2026-11-05. Status: **REGISTERED 2026-11-05 (MG036d), draft 4, content frozen at `3ab4ec8`; PI sign-off 20:02 UTC (decision card: adopt all §9 recommendations and register). No MG8 run of any kind preceded registration.** Drafts 1,
+2 and 3 are kept as `spec/MG8_proposal_v1.md`, `_v2.md` and `_v3.md` (superseded). Draft 4 answers ChatGPT's round 3
+(`review/MG036_chatgpt_r3.md`; response `review/MG036_response_r3.md`); its changes are listed in §12. Draft 2 answered ChatGPT's review MG036
+(`review/MG036_chatgpt.md`; response `review/MG036_response.md`); draft 3 answered round 2
+(`review/MG036_chatgpt_r2.md`; response `review/MG036_response_r2.md`); its changes are listed in §11. The only computation behind it is static arithmetic on the registered parameters
 and a numerical check of the one-token step distribution in §2 A4; no dynamics were run.*
 
 *Naming: MG8 is the multiway/foliation gate of the roadmap (Phase 6). `InitialPlan.md` called it MG7; it was renumbered
@@ -116,7 +117,7 @@ expected counts (each exit = count × probability, the same rescaling rule, R4 i
 **B1 tests object (iii)**, replicated over three independent seam streams per level (§3.2). It is an expected-count
 trajectory under randomly drawn orders, not the order average; object (ii) is computed only in the diffusion-only
 benchmark of Part 0 (§5.1), which validates the update rule, not the production experiment. Seam streams at different
-levels are independent (the levels take different numbers of steps, so no sequence can be shared); seam realisation
+levels are independent by design (coupling them across levels would be possible, but is not attempted); seam realisation
 effects are measured by the replicate spread. Deterministic J must equal `lattice.euler_mean_map` to 1e-12 whenever no
 rescaling occurs. Deterministic P_π is defined (used in Part 0) but not run in B1.
 **Random numbers.** One numba generator per run. Per step the draws are consumed in this order: the order draw (seam or
@@ -139,10 +140,13 @@ permutation; none for J), then the node updates in processing order with the fix
 - **Fate:** number of detections of the smoothed φ_X; SINGLE if exactly one at every check from t = 50 to T.
 - **Centre and velocity:** parabolic sub-grid minimum of smoothed φ_X, unwrapped; v = least-squares slope over
   [T − 150, T]; v′ = the same over [T − 200, T − 50].
-- **Shape:** for each species, E_s = min over shift σ of ‖φ_s^R(x + σ) − φ_s^J(x)‖₂ / ‖φ_s^J‖₂, R and J taken **at the same
-  time and the same τ** (Fourier shift; σ optimised jointly for all three species by an integer-node search followed by
-  golden-section search on [−h/2, h/2] to 1e-10); **E = max over species**. E at T, E′ at T − 50.
-- **Per-level summary:** E_k = median of the three replicates' E; seam spread S_k = (max − min)/E_k.
+- **Shape (one common shift; review r3 item 2):** for a shift σ let e_s(σ) = ‖φ_s^R(x + σ) − φ_s^J(x)‖₂ / ‖φ_s^J‖₂ for
+  each species s, with R and J taken **at the same time and the same τ** (Fourier shift). The common shift is
+  σ* = argmin_σ max_s e_s(σ), and **E = max_s e_s(σ*)**; the per-species e_s(σ*) are reported. σ* is found by evaluating the
+  objective at every integer-node shift, taking the best (ties: smallest |σ|, then the smaller σ), then golden-section
+  search on [σ_int − h/2, σ_int + h/2] to 1e-10 (same tie rule). E at T, E′ at T − 50.
+- **Per-level summary:** E_k = median of the three replicates' E; seam spread S_k = (max − min)/max(E_k, 10·E_floor(τ_k)),
+  which is defined when E_k = 0.
 - **Floors:** E_floor(τ_k) = E between J's own fields at T − 50 and T, plus 1e-9; v_floor(τ_k) = |v_J(τ_k)| + 1e-8.
 - **Settled (per run):** |E − E′| ≤ 0.01E + 1e-7 and |v − v′| ≤ 0.1|v| + 1e-7.
 - **Horizon check (k = 6):** E₆₀₀ = E(R at t = 600, J at t = 600); passes if R is SINGLE through 600, settled at 600 (the
@@ -156,8 +160,9 @@ permutation; none for J), then the node updates in processing order with the fix
 - **Drift:** per eligible run, slope of the unwrapped x0 track over [150, 500].
 - **Shape:** `analyze_run` with t_discard = 150, T = 500, K = 7 blocks; per-run profile = the snapshot-count-weighted mean of
   its block profiles (weights n_per_block); arm profile = unweighted mean over its eligible runs; E_stoch(arm) = the E
-  definition above applied to arm profile against J's arm profile. A J split-half baseline (E between the mean profiles of
-  J runs 1–4 and 5–8) is reported as the noise reference.
+  definition above applied to arm profile against J's arm profile. A J split-half baseline is reported as the noise reference:
+  the eligible J runs in rep order are split into the first ⌈n/2⌉ and the rest, and E is computed between the two halves'
+  mean profiles; it is reported as unavailable if either half is empty.
 - **Also:** D_p (MG2 method), far-field Ω·Var(X), clipping counts.
 
 ## 4. Outcomes
@@ -228,9 +233,20 @@ Per arm: fate counts with exact binomial 95% intervals; eligible counts. Against
    (b) **Unwrapped displacement (augmented benchmark).** Propagate labelled cohorts (start node, unwrapped displacement d,
    |d| ≤ N) through each M_o to obtain A_o[j, d], the expected fraction of tokens starting at j with displacement d; average
    over orders as in (a). Then the stochastic simulator in benchmark mode, with cohort labels, runs one step from a
-   **localised** population of 10⁶ tokens at node 0 with a random order each replicate, 2000 replicates per case,
-   r ∈ {0.01, 0.05, 0.2}. Pass: conservation exact; mean displacement within 4 SE of 0; variance and third moment within
-   4 SE of Ā's; chi-square goodness of fit to Ā with p ≥ 1e-3 (cells with expected count < 5 pooled).
+   **localised** population of n = 10⁶ tokens at node 0 with a random order each replicate, 2000 replicates per case,
+   r ∈ {0.01, 0.05, 0.2}. Given its order o, a replicate's tokens are independent draws from the conditional distribution
+   A_o[0, ·]; across replicates the order varies, so tokens are **not** independent draws from Ā (review r3 item 1). The
+   tests are therefore:
+   - **Conditional (per replicate):** chi-square of the replicate's displacement counts against n·A_o[0, ·] (cells with
+     expected count < 5 pooled), giving p_i; and z-scores of the replicate's mean, variance and third moment of
+     displacement against A_o's, using the conditional standard errors (from A_o's moments, with n tokens). Pass: a
+     Kolmogorov–Smirnov test of the 2000 p_i against uniform has p ≥ 1e-3, no p_i < 1e-6, and for each moment the 2000 z
+     have mean within ±4/√2000 and standard deviation in [0.9, 1.1].
+   - **Across replicates (against the average):** the 2000 replicate summaries (mean, variance and third moment of
+     displacement) are averaged; each average must lie within 4 standard errors of Ā's corresponding moment, the standard
+     error being the across-replicate SD of that summary divided by √2000, which includes the order variability. The mean
+     must also lie within 4 such standard errors of 0.
+   - Conservation exact in every replicate.
    (c) **Refinement (frozen construction).** N = 12, elapsed time t = 1, τ ∈ {0.2, 0.1, 0.05, 0.025, 0.0125} with n = 1/τ
    steps; Δ(τ) = ‖T̄^n − T_J^n‖_F (Frobenius norm of the 12 × 12 averaged operators; N = 6 for P). Pass: Δ decreases at every
    halving, and the last two ratios Δ(τ/2)/Δ(τ) lie in [0.4, 0.6]. Descriptive: the same for one random-seam product
@@ -240,8 +256,11 @@ Per arm: fate counts with exact binomial 95% intervals; eligible counts. Against
 2. **J regression and R/L mirror** on unregistered seeds (as §4.1).
 3. **Clipping:** per scheduler, the fraction of rescaled node-steps in a 50-unit run at τ₀ (stochastic, Ω = 1000) and in a
    deterministic k = 0 run; reported.
-4. **Synthetic validation of the measurements:** (a) shape: profiles shifted by known sub-grid σ and given a known odd
-   deformation of norm 1e-3 and 1e-2 — E recovered within 2% and σ within 1e-3; (b) velocity: profiles moved at 1e-3 and
+4. **Synthetic validation of the measurements:** (a) shape: profiles shifted by a known sub-grid σ and given a known odd
+   deformation of input norm 1e-3 and 1e-2. Because an odd deformation can partly look like a shift, the reference is the
+   **aligned** error, not the input norm: E and σ* are computed by brute force on the same pair (the §3.3 objective on a
+   grid of step 1e-5·h over ±h around the true shift); the production routine must match that E within 1% and σ* within
+   1e-4·h; (b) velocity: profiles moved at 1e-3 and
    1e-5 per unit, with a wrap — v within 2%; (c) tracking and fate: synthetic detection sequences that move, wrap,
    disappear, split, and jump beyond the link distance — classified as single, loss, replication and TRACK-FAIL
    respectively; (d) labels: synthetic E ladders and floors that should give each §4.2 and §4.3 label, including
@@ -297,7 +316,7 @@ PC only: full B2 fields, with a committed SHA-256 manifest (decision 8). `evalua
 | 6 | Conclusion framing | Primary conclusion "scheduler sensitivity of this lattice approximation"; Q5 stays open (§4.5) |
 | 7 | Stochastic arm status | Descriptive with intervals and stated margins (not a gate); independent streams per arm |
 | 8 | Committed B2 data | Per-unit detection records plus φ_X snapshots every 5 units (about 5 MB); full fields on the PC |
-| 9 | Review | A short ChatGPT round 3 check of the items 1–3 fixes before registration (ChatGPT asked for items 1–3 to be resolved before registration and 4–6 frozen before the implementation review) |
+| 9 | Registration | Register draft 4 once merged. ChatGPT's round 3 said no further redesign is needed and that the next substantive review should cover the implementation and the Part 0 evidence |
 
 ## 10. Changes from draft 1 to draft 2 (review MG036)
 | Review item | Change |
@@ -319,3 +338,10 @@ PC only: full B2 fields, with a committed SHA-256 manifest (decision 8). `evalua
 | 4 Stochastic comparisons | Independent streams per arm; Welch interval for the drift difference; bootstrap resamples each arm independently; eligibility, weighting, minimum count and conditional reporting specified; J split-half baseline (§3.1, §3.3, §4.4) |
 | 5 Stored inputs | Three-species fields at every decision checkpoint for R, L and J; unit-time centres; seeds, seam hashes, alignment and bootstrap settings (§7) |
 | 6 A4 and slope claims | κ₃ called the leading odd term, not the only one; re-exposure labelled heuristic; slope interval called a regression diagnostic (§2 A4, §4.3) |
+
+## 12. Changes from draft 3 to draft 4 (review MG036 round 3)
+| Review item | Change |
+|---|---|
+| 1 Shared-order statistics in Part 0 (high) | Each replicate is tested against its own conditional-order distribution (chi-square p-values checked for uniformity; moment z-scores with conditional SEs); comparison with the averaged law uses across-replicate standard errors that include order variability (§5.1(b)) |
+| 2 Joint alignment objective | One common shift minimising the maximum species error, with explicit tie-breaking; synthetic validation against a brute-force aligned error, not the input deformation norm (§3.3, §5.4(a)) |
+| 3 Wording and edge cases | Claim that seam sequences cannot be shared across levels removed; S_k defined when E_k = 0; J split-half baseline defined for ineligible runs and reported unavailable if a half is empty (§3.1, §3.3) |
