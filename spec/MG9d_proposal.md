@@ -1,7 +1,7 @@
 # MG9d — What drives MG9c's late drift? A bounded diagnostic study. Design proposal, DRAFT 3
 
 *Stage MG031b; items 5–6 of §3 and §0's residual disclosure updated by PI decisions P0–P2 of the pre-run spec
-(`spec/MG9d_prerun.md`, 01:50 UTC). Claude, 2026-11-05. Status: **DRAFT 3, not registered. No MG9d integration has been run.** Drafts 1
+(`spec/MG9d_prerun.md`, 01:50 UTC). Claude, 2026-11-05. Status: **DRAFT 3, REGISTERED 2026-11-05 (PI card 02:00 UTC); content frozen at `69ad83e`. No MG9d integration preceded registration.** Drafts 1
 and 2 are kept as `spec/MG9d_proposal_v1.md` and `spec/MG9d_proposal_v2.md` (superseded). Draft 2 answered ChatGPT's
 review MG031 (`review/MG031_chatgpt.md`; response `review/MG031_response.md`). Draft 3 makes the three decision-rule
 corrections of ChatGPT's round 2 (`review/MG031_chatgpt_r2.md`; response `review/MG031_response_r2.md`) and freezes
