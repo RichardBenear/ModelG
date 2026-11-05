@@ -677,3 +677,4 @@ Items deliberately postponed so the project reaches its main questions first. Th
   - Calibration simulates MG3b's Part 1 τ/τ2 selection and keeps EQUIVALENT replicates; 4000 replicates per case; per-branch labels (≥ 400 retained replicates).
   - BUDGET-SHORT directional results are EXPLORATORY; structural identifiability separated from fit failure (NOT RESOLVED (NUMERICAL)).
   - Not registered; no run.
+- MG9b REGISTERED 2026-11-05 (PI card 03:01 UTC, "Register draft 3 after merge"); draft 3 frozen at 185aceb. Next: code, pre-run spec and synthetic calibration, then ChatGPT implementation review and a PI go. No MG9b run.
