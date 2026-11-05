@@ -1,0 +1,42 @@
+{
+  "later_reference_already_invalid": {
+    "at": "V-b3 29.35",
+    "rate_done": [
+      29.35
+    ],
+    "rate_complete": false,
+    "budget_truncated": true,
+    "expected_budget_truncated": false
+  },
+  "event_shapes": {
+    "expected_single": 1,
+    "forward": {
+      "events": 2,
+      "single_minimum": 0,
+      "n_persistent_hist": {
+        "2": 2
+      }
+    },
+    "reversed": {
+      "events": 2,
+      "single_minimum": 2,
+      "n_persistent_hist": {
+        "1": 2
+      }
+    }
+  },
+  "empty_tolerance_control": {
+    "n": 0,
+    "result": "PASS"
+  },
+  "fresh_worker": {
+    "simulation_function": "simulate",
+    "output_folder": "MG9b"
+  },
+  "calibration_labels_from_summary_counts": {
+    "B3": "calibrated",
+    "B2-20": "calibrated",
+    "B2-35": "not calibrated",
+    "B2-new": "not calibrated (unsupported)"
+  }
+}
