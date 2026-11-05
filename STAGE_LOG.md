@@ -665,3 +665,4 @@ Items deliberately postponed so the project reaches its main questions first. Th
   - Lattice-conditional checks V-b1 to V-b3 (reference stationarity, t = 2000 confirmation controls, confirmation solver tolerance), per MG9d/MG033.
   - Budget about 34 core-h projected, cutoff 50, on the PI's PC.
   - Not registered; no run.
+- PI adopted all §8 recommendations as written (02:39 UTC). Next: ChatGPT design review.
