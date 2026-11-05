@@ -15,7 +15,8 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG6 | 5 | G-coupled growth produces a volume-growth deficit; falloff and mass scaling | **REGISTERED 2026-11-02** (draft 3 frozen at `106b3e2`). Part 0 **STOP** (tick check, 2026-11-02); amendment MG021 (Δ = 0.1, narrow waiver) after ChatGPT review MG021; Part 0 completed; cutoff 110 core-h (PI). **CLOSED 2026-11-03: DEMONSTRATED** (CP2 − SH2 = −67.1 nodes, t = −36.2; CP2 − DEC = −66.9, t = −34.1); feedback SURVIVES (CP2, CP4); falloff UNRESOLVED; ChatGPT MG022 accepted; PI signed off |
 | MG7 | 5 | Mass scaling: is the coupled density deficit larger for a stronger particle (b-scan, 27.5 vs 28.5)? | **REGISTERED 2026-11-03** (draft 2 frozen at `5b44cde`); Part 0 PROCEED. **RESULT 2026-11-04: NOT SCORED (feedback)**: at b = 27.5 the particle dissolved in 7 of 8 runs (both arms); b = 28.5 SURVIVES (8/8 single). ChatGPT MG025 accepted; **CLOSED 2026-11-04** (PI signed off) |
 | MG9 | 2 | Local onset type of the Turing instability (P1) and finite-time front arrest against the single-particle window (P2); deterministic, 1D lattice | **CLOSED 2026-11-04: P1 SUBCRITICAL; P2 UNRESOLVED** (registered at `7810b8b`; amendment 1; PI sign-off 19:21 UTC) |
-| MG9c | 2 | Late-time fate of MG9's slow fronts (b = 29.25–29.35): settle into bounded patches or keep advancing; robustness; upper settling edge vs b_r | **REGISTERED 2026-11-04** (draft 2 frozen at `372336b`); no MG9c run yet |
+| MG9c | 2 | Late-time fate of MG9's slow fronts (b = 29.25–29.35): settle into bounded patches or keep advancing; robustness; upper settling edge vs b_r | **CLOSED 2026-11-04: Q1 UNRESOLVED; Q2 NOT ELIGIBLE** (registered at `372336b`; ChatGPT MG030 accepted; PI sign-off 22:29 UTC) |
+| MG9d | 2 | Cause of MG9c's late drift (b = 29.30 from the t = 30,000 field): numerics, mesh alignment, reflection, finer mesh; bounded diagnostic | **DRAFT 1** (2026-11-05, `spec/MG9d_proposal.md`); not registered; no MG9d run |
 | MG8 | 6 | Multiway branch divergence and foliation dependence (numbered MG7 in `InitialPlan.md`) | PENDING |
 
 ## Template
@@ -1839,4 +1840,11 @@ Q2 not eligible.** 11 integrations, 0.23 core-h (cap 60, cutoff 2). Evaluator `r
   accepting Q1 UNRESOLVED and Q2 NOT ELIGIBLE. Every label, the 50 snapshot hashes, the residuals (to 1e-13) and the
   ledger were reproduced independently. Two descriptive corrections and one documentation slip were accepted (marked
   above). Response `review/MG030_response.md`. Awaiting PI sign-off.
+
+**MG9c CLOSED 2026-11-04: Q1 UNRESOLVED; Q2 NOT ELIGIBLE.** PI sign-off: Richard Benear, 2026-11-04 22:29 UTC, on the
+project decision card ("Sign off and close MG9c"), after ChatGPT result review MG030 and its response
+(`review/MG030_response.md`). Scope: at b = 29.25, 29.30 and 29.35 the patches stopped growing, but they were not
+stationary by the registered residual criterion (1.08–1.09e-5 vs 1e-5). An exploratory post-result diagnostic
+(`results/MG9c/diagnostics/`) indicates a coherent slow translation of nearly constant-width patches; its cause is
+not identified. Any moving-frame or drift-cause criterion would be a new, separately registered question.
 
