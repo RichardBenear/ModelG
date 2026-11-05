@@ -1,8 +1,10 @@
-# MG9d — What drives MG9c's late drift? A bounded diagnostic study. Design proposal, DRAFT 2
+# MG9d — What drives MG9c's late drift? A bounded diagnostic study. Design proposal, DRAFT 3
 
-*Stage MG031a. Claude, 2026-11-05. Status: **DRAFT 2, not registered. No MG9d integration has been run.** Draft 1 is
-kept as `spec/MG9d_proposal_v1.md` (superseded). This draft answers ChatGPT's review MG031 (`review/MG031_chatgpt.md`;
-response `review/MG031_response.md`). Requested by the PI (2026-11-05 00:30 UTC). MG9c is CLOSED (Q1 UNRESOLVED,
+*Stage MG031b. Claude, 2026-11-05. Status: **DRAFT 3, not registered. No MG9d integration has been run.** Drafts 1
+and 2 are kept as `spec/MG9d_proposal_v1.md` and `spec/MG9d_proposal_v2.md` (superseded). Draft 2 answered ChatGPT's
+review MG031 (`review/MG031_chatgpt.md`; response `review/MG031_response.md`). Draft 3 makes the three decision-rule
+corrections of ChatGPT's round 2 (`review/MG031_chatgpt_r2.md`; response `review/MG031_response_r2.md`) and freezes
+E_pat at its exact recorded value. The design (runs, horizon, sampling, budget) is unchanged from draft 2. Requested by the PI (2026-11-05 00:30 UTC). MG9c is CLOSED (Q1 UNRESOLVED,
 Q2 NOT ELIGIBLE), and nothing here changes its classifications, its stationarity threshold or its runs. Naming:
 MG9b stays reserved for the stochastic barrier S(b).*
 
@@ -10,7 +12,7 @@ MG9b stays reserved for the stochastic barrier S(b).*
 
 - **Committed source state.** The MG9c field at b = 29.30, t = 30,000: `results/MG9c/snapshots.npz` key
   `front_D02_29.30000_t30000`, SHA-256 `f22ca2807eee…` (full hash in `snapshots_manifest.json`). It lives on D02
-  (h = 0.2, N = 500, L = 100). Its record gives E_pat = 6.600861 and edges x_L = −29.191, x_R = +29.011, with 18 cells.
+  (h = 0.2, N = 500, L = 100). Its record gives E_pat = 6.60086115019687 (shown rounded as 6.600861 elsewhere) and edges x_L = −29.191, x_R = +29.011, with 18 cells.
 - **Known before this draft (signed: negative means leftward).**
   - The patch translates at about −4.4e-7 per unit time at t ≈ 30,000, with nearly constant width.
   - The midpoint velocity at 29.30 has been decaying in magnitude: −8.2e-7 over 12k–15k, −7.1e-7 over 15k–20k,
@@ -23,6 +25,10 @@ MG9b stays reserved for the stochastic barrier S(b).*
     1.6e-5 at h/2, because the even-grid Nyquist coefficient cannot be translated by a fraction of h on a real
     grid.
   - Its power fraction is 2.8e-11 (φ_X), 1.7e-11 (φ_Y) and 6e-14 (φ_G).
+- **Filtered start, disclosed.** Because every arm starts from the Nyquist-filtered field (§2), MG9d studies the
+  declared filtered preparation, not an exact continuation of the unfiltered MG9c state. The filter changes the initial
+  residual slightly. The residual of both the unfiltered source and the filtered start is recorded and reported with
+  the results.
 - **Reflection** about the node x = 0 is the exact index map j → (N − j) mod N. Applied twice it gives the state back
   exactly.
 
@@ -66,7 +72,8 @@ y₀'s SHA-256 is recorded.
 ## 3. Measurements and validity
 
 **Diagnostics** at every 50 units (201 samples), on any grid (N and h are taken from the run). Frozen per run:
-E_pat = 6.600861 (the source value, used on both grids) and coordinates x_j = (j − N/2) h with the periodic cut at
+E_pat = 6.60086115019687, the exact value in `results/MG9c/runs/front_D02_29.30000.json` (`info.E_pat`), used on
+both grids; rounded decimals in this document are for display only and coordinates x_j = (j − N/2) h with the periodic cut at
 x = ±50, which lies in the background.
 - **d(t'), profile-alignment displacement (primary).** The translation s minimising ‖φ_X(t') − T_s φ_X(0)‖, where
   T_s is the Fourier shift on the run's grid.
@@ -114,23 +121,35 @@ Otherwise the run is INVALID, and the failed items are listed.
 | Comparison | Needs | Rule and labels |
 |---|---|---|
 | **C1 numerics** | R0 and R1 VALID (otherwise INCONCLUSIVE) | Compare a, b and v of R1 against R0. **NUMERICS-AGREE** if all three AGREE; **NUMERICS-SENSITIVE** if any DIFFER; otherwise INCONCLUSIVE. "AGREE" means agreement of the two tested configurations, not a bound on all numerical error. |
-| **C3 reflection** | R0 and R3 VALID | **SYMMETRIC** if \|v_R3 − v_R0\| ≤ 0.01 \|v_R0\| + v_f, using the reflection-adjusted v_R3; otherwise **ASYMMETRY-FLAG**. |
+| **C3 reflection** | R0 and R3 VALID; otherwise **C3 NOT EVALUATED** (not an observed asymmetry) | **SYMMETRIC** if \|v_R3 − v_R0\| ≤ 0.01 \|v_R0\| + v_f, using the reflection-adjusted v_R3; otherwise **ASYMMETRY-FLAG**. |
 | **C2 alignment** | R0 VALID | **ALIGNMENT-DEPENDENT** if any VALID R2 arm DIFFERs from R0. **ALIGNMENT-INDEPENDENT** if all three arms are VALID and AGREE with R0. Otherwise INCONCLUSIVE. The arms' shape-change and width histories are reported, to say whether any dependence is in translation speed or in deformation. |
-| **C4 relaxation** | R0 VALID; when C1 is NUMERICS-AGREE it is applied to R0 and must give the same label on R1, otherwise INCONCLUSIVE | Applied in this order: **NO RESOLVED MOTION** if neither a nor b is resolved; **ONSET** if a is unresolved and b is resolved; **REVERSAL** if both are resolved with opposite signs. Otherwise a is resolved and ρ = b/a ≥ 0 (b may be unresolved), and the label is **DECREASING** (ρ ≤ 0.90), **PERSISTENT** (0.95 ≤ ρ ≤ 1.05, with b resolved), **INCREASING** (ρ ≥ 1.10), or INCONCLUSIVE (otherwise). |
+| **C4 relaxation** | R0 VALID; when C1 is NUMERICS-AGREE it is applied to R0 and must give the same label on R1, otherwise INCONCLUSIVE | Applied in this order: **NO RESOLVED MOTION** if neither a nor b is resolved; **ONSET** if a is unresolved and b is resolved; **REVERSAL** if both are resolved with opposite signs; **DECREASED BELOW RESOLUTION** if a is resolved and b is unresolved (whatever b's sign; no ratio is formed). Otherwise both are resolved with the same sign, ρ = b/a > 0, and the label is **DECREASING** (ρ ≤ 0.90), **PERSISTENT** (0.95 ≤ ρ ≤ 1.05), **INCREASING** (ρ ≥ 1.10), or INCONCLUSIVE (otherwise). |
 | **C5 finer mesh** | | Applied in this order: **R4 INVALID / LOST-IDENTITY** if R4 is INVALID; **NOT EVALUATED** if v_R0 is unresolved; **REVERSED** if v_R4 is resolved with the opposite sign to v_R0; **SIMILAR** if \|v_R4 − v_R0\| ≤ 0.20 \|v_R0\| + v_f; **REDUCED** if \|v_R4\| < 0.5 \|v_R0\|; **OTHER** otherwise. Mutually exclusive by order. |
 
 **Overall reading (ordered; the first that applies; all component labels are always listed):**
-1. **INCONCLUSIVE:** R0 INVALID, C3 ASYMMETRY-FLAG (a code or solver asymmetry), or C1 INCONCLUSIVE.
+1. **INCONCLUSIVE:** R0 INVALID, C3 ASYMMETRY-FLAG (a code or solver asymmetry), C3 NOT EVALUATED (the required
+   symmetry check is unavailable), or C1 INCONCLUSIVE. Other component labels are still reported descriptively.
 2. **NUMERICAL ACCURACY UNRESOLVED:** C1 NUMERICS-SENSITIVE.
-3. **NO RESOLVED DRIFT:** v_R0 is not resolved. The drift is below the measurement floor over this horizon.
+3. **NO RESOLVED DRIFT:** a, b and v are all unresolved on R0 **and** on R1 (C4 is NO RESOLVED MOTION on both, and v
+   is unresolved on both). The drift is below the measurement floor over this horizon. A small full-window slope v
+   alone is not enough, because opposite motions in the two windows can cancel in v.
 4. **MESH EFFECT SUPPORTED:** C2 ALIGNMENT-DEPENDENT, or C5 REDUCED or REVERSED. The reading says whether the
    dependence shows in translation or in deformation, and gives C4 alongside, since relaxation can coexist.
-5. **RELAXATION SUPPORTED:** C2 ALIGNMENT-INDEPENDENT and C4 DECREASING, with C5 SIMILAR. If C5 is R4 INVALID or
+5. **RELAXATION SUPPORTED:** C2 ALIGNMENT-INDEPENDENT and C4 DECREASING or DECREASED BELOW RESOLUTION (the label is
+   carried into the reading), with C5 SIMILAR. If C5 is R4 INVALID or
    NOT EVALUATED, the reading is qualified "on D02; the finer-mesh comparison is unavailable". An invalid finer mesh
    limits C5 only; it does not erase valid D02 evidence.
 6. **MOVING STATE SUPPORTED:** C2 ALIGNMENT-INDEPENDENT and C4 PERSISTENT (a and b resolved, same sign), with C5
    SIMILAR. It is qualified as in 5 if C5 is unavailable.
 7. **INCONCLUSIVE:** anything else (for example C5 OTHER, C4 REVERSAL, ONSET or INCONCLUSIVE, or C2 INCONCLUSIVE).
+   The reading names the C4 component label, for instance "INCONCLUSIVE (C4 REVERSAL)". Valid mesh evidence (rule 4)
+   is checked before this and is never hidden by a cancelling full-window slope.
+
+**Worked cases (ChatGPT MG031 r2), to be checked in the implementation tests:**
+- a = +4e-7, b = −4e-7, v ≈ 0, with C1 NUMERICS-AGREE, C3 SYMMETRIC and no mesh effect: C4 REVERSAL; rule 3 does not
+  apply (a and b resolved); overall INCONCLUSIVE (C4 REVERSAL).
+- R3 INVALID: C3 NOT EVALUATED; overall INCONCLUSIVE, with the other component labels reported.
+- a = −4e-7, b = +1e-9 (b unresolved): C4 DECREASED BELOW RESOLUTION; no ratio is formed.
 
 **Conditional wording, as the PI asked:**
 - Alignment dependence *supports* a mesh effect.
@@ -198,3 +217,9 @@ short deterministic run. The drift studied here belongs to an existing 18-cell p
    operational choices. v_f is frozen from the static validation on the actual profiles and both grids before any run.
    Recommended.
 4. **ChatGPT reviews this revision, then the pre-run implementation, before registration and runs.** Recommended.
+   ChatGPT's round 2 said a further design cycle is unnecessary: the draft 3 corrections can be checked in the pre-run
+   implementation review (full truth tables including the worked cases, and the actual-profile calibration on both
+   grids).
+5. **C4 DECREASED BELOW RESOLUTION counts toward RELAXATION SUPPORTED** (ChatGPT offered this or INCONCLUSIVE; either is
+   defensible if frozen now). Recommended, because a resolved early drift falling below the floor is the plainest form
+   of slowing; the label is carried into the reading so it is not mistaken for a measured ratio.
