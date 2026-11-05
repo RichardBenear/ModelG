@@ -1,0 +1,10 @@
+{
+ "all_checks_pass": true,
+ "projected_core_h": 3.918534865654591,
+ "cutoff_core_h": 20.0,
+ "proceed": false,
+ "platform": "Linux-6.18.44-fc-v236-x86_64-with-glibc2.39",
+ "attempt": 2,
+ "proceed_if_pi_accepts_attempt2": true,
+ "note": "Attempt 1 (results/MG8/part0/attempt1/) failed check 1(b): one replicate in R_N12_r0.05 gave chi-square p = 1.8e-8 because the pooled tail cell itself had expected count 0.3 (< 5). The simulator moments and all other checks passed. Attempt 2 fixes only the pooling (cells merged from each tail until every pooled cell has expected >= 5) and passes all checks. Registered rule: a 5.1 failure is a STOP for the PI; proceed stays false until the PI accepts attempt 2."
+}
