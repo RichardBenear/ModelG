@@ -1,4 +1,4 @@
-"""MG9d tests (spec/MG9d_proposal.md draft 3 §5). Run: python tests/test_mg9d.py
+"""MG9d tests (spec/MG9d_proposal.md draft 3 §5; 16 tests). Run: python tests/test_mg9d.py
 No MG9d integration is performed: the end-to-end test uses a fake ODE (exact translation), and the wrapper test
 integrates MG003's b = 29 reference for 5 time units only (not an MG9d state, not ledgered)."""
 import os, sys, json, shutil, tempfile
@@ -156,6 +156,24 @@ def test_overall_order_and_worked_cases():
     assert O(_lab(C4="PERSISTENT")) == "MOVING STATE SUPPORTED"
     assert O(_lab(C5="OTHER")) == "INCONCLUSIVE (C4 DECREASING)"
     assert O(_lab(C2="INCONCLUSIVE")) == "INCONCLUSIVE (C4 DECREASING)"
+
+
+def test_endpoint_estimator_on_worked_trajectories():
+    """ChatGPT's worked cases through the chosen estimator (endpoint averages), from synthetic d(t') histories."""
+    t = np.arange(0.0, 10000.0 + 1e-9, 50.0)
+    def diag(d):
+        return [dict(t=float(ti), d=float(di)) for ti, di in zip(t, d)]
+    up_down = np.where(t <= 6000, 4e-7 * (t - 2000), 4e-7 * 4000 - 4e-7 * (t - 6000))   # reversal, v = 0
+    sp = D.speeds(diag(up_down))
+    assert np.isclose(sp["a"], 4e-7, rtol=1e-9, atol=0) and np.isclose(sp["b"], -4e-7, rtol=1e-9, atol=0) and abs(sp["v"]) < 1e-20
+    assert D.c4_label(sp["a"], sp["b"], VF) == "REVERSAL"
+    stall = np.where(t <= 6000, -4e-7 * (t - 2000), -4e-7 * 4000 + 1e-9 * (t - 6000))
+    sp = D.speeds(diag(stall))
+    assert D.c4_label(sp["a"], sp["b"], VF) == "DECREASED BELOW RESOLUTION"
+    curved = -1e-3 * (1 - np.exp(-t / 3000.0))                     # endpoint and least squares differ
+    e, q = D.speeds(diag(curved)), D.speeds_lsq(diag(curved))
+    assert np.isclose(e["v"], (curved[-1] - curved[40]) / 8000, rtol=1e-12, atol=0)
+    assert abs(e["v"] - q["v"]) > 1e-3 * abs(q["v"])
 
 
 # ------------------------------------------------------------------ end to end with a fake ODE (no integration)

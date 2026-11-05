@@ -105,15 +105,21 @@ The δ, v_f and per-measure recovery errors are written into the pre-run specifi
 3. The cell count stays within the start count ± 1, and |W(T) − W(0)| < λ/2. This is the identity check.
 4. No sample is ALIGNMENT-AMBIGUOUS.
 5. S_ref(T) = ‖φ_X(T) − T_{d(T)−d(2000)} φ_X(2000)‖ / ‖φ_X(2000)‖ ≤ 1e-3, measured from t′ = 2000 (PI decision
-   P1, 2026-11-05: the shifted and finer-mesh starts make an early shape adjustment unrelated to the late drift). S
-   from t′ = 0 is reported descriptively.
+   P1, 2026-11-05: the shifted and finer-mesh starts need a shape adjustment to their new lattice, and the first 2000
+   units are excluded to accommodate such transfer transients). S from t′ = 0 and the saved shape and width histories
+   are reported, to show whether appreciable adjustment persists after 2000.
 6. Measure consistency over [2000, T]: the change of each of C_edge, C_amp, C_phi2 and m agrees with d(T) − d(2000)
    within 10% of its magnitude + 5e-4 (PI decision P2: the static C_edge recovery error reaches 2.3e-4).
 
 Otherwise the run is INVALID, and the failed items are listed.
 
-**Speeds (primary measure d):** a = slope over [2000, 6000], b = slope over [6000, 10,000], v = slope over
-[2000, 10,000]. The first 2000 units are excluded so that any transfer transient settles.
+**Speeds (primary measure d), endpoint-average estimator:**
+a = (d(6000) − d(2000)) / 4000, b = (d(10,000) − d(6000)) / 4000, v = (d(10,000) − d(2000)) / 8000.
+The first 2000 units are excluded to accommodate transfer transients. *Pre-run change, disclosed (ChatGPT MG031
+round 3):* draft 1 used a least-squares slope for v. Draft 3 uses the endpoint average for every speed: it measures
+net transport over each fixed window, and it is the estimator the floor formula v_f = 4δ/8000 assumes (two endpoint
+errors of at most δ over 4000 units). For a curved or reversing trajectory it can differ from a least-squares fit. A
+least-squares slope over each window is reported descriptively only.
 
 ## 4. Decision rules
 

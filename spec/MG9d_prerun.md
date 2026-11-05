@@ -7,7 +7,7 @@ static computation only: maps, linear algebra and recovery of known shifts. No t
 done.*
 
 Code: `src/run_mg9d.py` (driver, diagnostics, rules), `src/evaluate_mg9d.py` (re-evaluation from the records), and
-`tests/test_mg9d.py` (15 tests, all pass, about 5 s). Static outputs: `results/MG9d/transfer.json` and
+`tests/test_mg9d.py` (16 tests, all pass, about 5 s). Static outputs: `results/MG9d/transfer.json` and
 `results/MG9d/floor.json`. `python src/run_mg9d.py runs` refuses to start unless `results/MG9d/REGISTERED` exists. That
 file is written only after registration.
 
@@ -65,7 +65,7 @@ component is the most strongly damped lattice mode. The shape adjustment it impl
 
 **P1. Measure validity items 5 and 6 from t′ = 2000, not from t′ = 0 (proposed).** The sub-grid-shifted and
 finer-mesh starts are not lattice equilibria. The shape adjustment estimated above (8.5e-4 to 1.0e-3 for R2, 1.8e-2 for
-R4) happens early and has nothing to do with the late drift. Item 5 as written, S(T) ≤ 1e-3 measured from t′ = 0, would
+R4) is expected to occur mainly as an early transfer transient. Item 5 as written, S(T) ≤ 1e-3 measured from t′ = 0, would
 probably mark R4 INVALID and could mark R2b INVALID by construction. Item 6, consistency at T from t′ = 0, has the same
 problem: the early adjustment moves C_edge and the centroids differently from d. The speed windows already start at
 2000.
@@ -75,8 +75,8 @@ Proposal:
 - Item 6 compares the changes in each measure over [2000, T] with d(T) − d(2000).
 - Identity (item 3) stays measured from t′ = 0.
 - S from t′ = 0 is still recorded and reported descriptively.
-- The alternative is to keep draft 3 as written and accept that R4 (and perhaps R2b) may come out INVALID for reasons
-  unrelated to the drift. An invalid R4 limits only C5, but an invalid R2 arm makes C2 INCONCLUSIVE.
+- The alternative is to keep draft 3 as written and accept that R4 (and perhaps R2b) may come out INVALID because of
+  the start-up adjustment rather than the late motion. An invalid R4 limits only C5, but an invalid R2 arm makes C2 INCONCLUSIVE.
 
 The code implements the proposal (`VALID_REF_T = 2000`). Draft 3's version is `validity(rec, t_ref=0)`.
 
@@ -88,9 +88,12 @@ fail item 6 from edge-measurement error alone. 5e-4 is about twice the largest s
 
 ## C. Implementation choices (for review; no rule changes)
 
-1. **Slopes are endpoint differences** of d: a = (d(6000) − d(2000))/4000, and likewise b and v. This is the estimator
-   the floor formula v_f = 4δ/8000 assumes: two endpoint errors of at most δ over 4000 units. Least-squares slopes are
-   not used for decisions.
+1. **Slopes are endpoint averages** of d: a = (d(6000) − d(2000))/4000, and likewise b and v. This is the estimator
+   the floor formula v_f = 4δ/8000 assumes: two endpoint errors of at most δ over 4000 units. **This is a
+   measurement-definition change from draft 1's least-squares v (ChatGPT MG031 r3), now written into draft 3 §3 and
+   disclosed there.** Least-squares slopes are reported descriptively only. The static linearised estimates in §A do not
+   show that every transient ends by t′ = 2000; the saved shape and width histories will show whether appreciable
+   adjustment persists.
 2. **Tracker** (item 2) is checked at every 5-unit sample, not only every 50.
 3. **Minima m(t′):** the reference is the interior minima at t′ = 0 (all but the outermost minimum on each side). They
    are matched by nearest position within λ/4. m uses the one subset matched at every sample, and the identities are
@@ -109,7 +112,7 @@ fail item 6 from edge-measurement error alone. 5e-4 is about twice the largest s
    `info.E_pat`; that is a wording slip, now corrected in the draft text.
 9. **Platform:** cloud, Python 3.13.18, numpy 2.5.3, scipy 1.18.1. It is recorded in every record.
 
-## D. Tests (`tests/test_mg9d.py`, 15)
+## D. Tests (`tests/test_mg9d.py`, 16; the 16th, added after MG031 r3, runs the worked cases through the endpoint estimator)
 
 - Wrapper bit-for-bit match.
 - Exact E_pat and the source hash.

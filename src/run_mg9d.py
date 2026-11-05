@@ -516,6 +516,17 @@ def speeds(diag):
     return dict(a=sl(WIN_A), b=sl(WIN_B), v=sl(WIN_V))
 
 
+def speeds_lsq(diag):
+    """Descriptive only (draft 3 §3): least-squares slopes of d over the same windows."""
+    def fit(w):
+        pts = [(s["t"], s["d"]) for s in diag if w[0] - 1e-6 <= s["t"] <= w[1] + 1e-6]
+        if len(pts) < 2:
+            return None
+        t, d = np.array(pts).T
+        return float(np.polyfit(t, d, 1)[0])
+    return dict(a=fit(WIN_A), b=fit(WIN_B), v=fit(WIN_V))
+
+
 # ------------------------------------------------------------------ decision rules (§4)
 def resolved(v, vf):
     return v is not None and abs(v) >= RESOLVED_VF * vf
@@ -642,7 +653,8 @@ def evaluate(recs, vf):
     reading = overall(lab, S["R0"], S["R1"], ok["R0"], ok["R1"], vf)
     S_adj = dict(S)
     S_adj["R3_reflection_adjusted"] = {k: reflect_adjust(v) for k, v in S["R3"].items()}
-    return dict(reading=reading, components=lab, validity=V, speeds_raw=S, speeds_R3_adjusted=S_adj[
+    lsq = {k: (speeds_lsq(r["diag"]) if r else None) for k, r in recs.items()}
+    return dict(reading=reading, components=lab, validity=V, speeds_raw=S, speeds_lsq_descriptive=lsq, speeds_R3_adjusted=S_adj[
         "R3_reflection_adjusted"], v_f=vf, resolved_threshold=RESOLVED_VF * vf)
 
 
