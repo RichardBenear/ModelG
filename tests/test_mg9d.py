@@ -1,7 +1,7 @@
-"""MG9d tests (spec/MG9d_proposal.md draft 3 §5; 16 tests). Run: python tests/test_mg9d.py
+"""MG9d tests (spec/MG9d_proposal.md draft 3 §5; 22 tests). Run: python tests/test_mg9d.py
 No MG9d integration is performed: the end-to-end test uses a fake ODE (exact translation), and the wrapper test
 integrates MG003's b = 29 reference for 5 time units only (not an MG9d state, not ledgered)."""
-import os, sys, json, shutil, tempfile
+import os, sys, json, shutil, tempfile, time
 import numpy as np
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
@@ -224,6 +224,143 @@ def test_end_to_end_fake_translation_and_registration_guard():
     finally:
         D.OUT, D.RUNS, D.SNAP, D.REGISTERED_FLAG = old
         shutil.rmtree(tmp)
+
+
+class _Sol:
+    def __init__(self, t, y, success, message="fail"):
+        self.t, self.y, self.success, self.message = t, y, success, message
+
+
+def test_zero_sample_solver_failure_returns_incomplete():
+    y0 = np.zeros(150)
+    for t, yy in (([], []), (np.zeros(0), np.zeros((150, 0)))):
+        calls = []
+        def solve(*a, **k):
+            calls.append(k["first_step"])
+            return _Sol(t, yy, False)
+        r = D.mg9d_ode(29.0, 50, 0.2, 5.0, y0, seed_scale=0.0, _solve=solve)
+        assert calls == [None, 1e-3, 1e-2] and not r["complete"] and r["n_samples"] == 0
+        assert r["t_reached"] == 0.0 and np.array_equal(r["y_final"], y0) and len(r["attempts"]) == 3
+
+
+def test_deadline_raises_budget_exceeded_without_changing_numerics():
+    y0 = np.zeros(150)
+    try:
+        D.mg9d_ode(29.0, 50, 0.2, 5.0, y0, seed_scale=0.0, deadline=0.0)
+        raise AssertionError("deadline ignored")
+    except D.BudgetExceeded:
+        pass
+    a = D.mg9d_ode(29.0, 50, 0.2, 2.0, y0, seed_scale=1.0)
+    b = D.mg9d_ode(29.0, 50, 0.2, 2.0, y0, seed_scale=1.0, deadline=time.time() + 600)
+    assert np.array_equal(a["y"], b["y"])
+
+
+class _Tmp:
+    def __enter__(self):
+        self.tmp = tempfile.mkdtemp()
+        self.old = (D.OUT, D.RUNS, D.SNAP, D.REGISTERED_FLAG)
+        D.OUT, D.RUNS, D.SNAP = self.tmp, os.path.join(self.tmp, "runs"), os.path.join(self.tmp, "snap")
+        D.REGISTERED_FLAG = os.path.join(self.tmp, "REGISTERED")
+        return self
+
+    def __exit__(self, *a):
+        D.OUT, D.RUNS, D.SNAP, D.REGISTERED_FLAG = self.old
+        shutil.rmtree(self.tmp)
+
+
+def _failing_ode(fail_seg, mode):
+    good = _fake_ode(-4e-7)
+    def ode(b, N, h, t_end, y, *, seed_scale, t_eval, t_start, **kw):
+        if t_start < fail_seg * D.SEG - 1e-9:
+            return good(b, N, h, t_end, y, seed_scale=seed_scale, t_eval=t_eval, t_start=t_start)
+        if mode == "raise":
+            raise np.linalg.LinAlgError("singular")
+        if mode == "budget":
+            raise D.BudgetExceeded("core-time cutoff reached inside the integration")
+        part = good(b, N, h, t_end, y, seed_scale=seed_scale, t_eval=t_eval[:40], t_start=t_start)
+        return dict(part, success=False, complete=False, t_reached=float(t_eval[39]), message="step size too small",
+                    attempts=[dict(first_step=None, success=False, message="step size too small")] * 3)
+    return ode
+
+
+def test_partial_failure_and_exception_are_saved_invalid_and_ledgered():
+    st = D.start_states()
+    for mode, reason, status in (("partial", "solver_incomplete", "failed"), ("raise", "solver_exception", "failed")):
+        with _Tmp():
+            rec = D.one_run("R0", st["R0"], D.e_pat(), ode=_failing_ode(3, mode))
+            assert not rec["complete"] and rec["stop_reason"] == reason and rec["last_saved_t"] == 3000.0
+            assert D.load_rec("R0") is not None                      # record persisted: no silent re-start
+            assert D.one_run("R0", st["R0"], D.e_pat(), ode=None)["stop_reason"] == reason
+            V = D.validity(rec)
+            assert not V["valid"] and V["failed"] == [1]
+            e = D.ledger()["integrations"]
+            assert len(e) == 1 and e[0]["status"] == status and e[0]["wall_s"] > 0
+            if mode == "partial":
+                assert rec["track"][-1]["t"] == 3200.0 and rec["error"] == "step size too small"
+            ev = D.evaluate({k: (rec if k == "R0" else None) for k in D.ORDER}, VF)
+            assert ev["reading"] == "INCONCLUSIVE"
+
+
+def test_budget_stop_leaves_partial_record_and_blocks_further_starts():
+    st = D.start_states()
+    with _Tmp():
+        try:
+            D.one_run("R1", st["R1"], D.e_pat(), ode=_failing_ode(2, "budget"))
+            raise AssertionError("budget stop not raised")
+        except D.Stop as e:
+            assert "partial record saved" in str(e)
+        rec = D.load_rec("R1")
+        assert rec["stop_reason"] == "budget" and rec["last_saved_t"] == 2000.0
+        e = D.ledger()["integrations"][0]
+        assert e["status"] == "budget_stop" and e["stop_reason"] == "budget"
+
+
+def test_near_cutoff_deadline_and_unreconciled_attempt():
+    with _Tmp():
+        D._ledger_write(dict(integrations=[dict(key="a", wall_s=3599.0, status="done")]))
+        i, remaining = D._ledger_start("b")
+        assert abs(remaining - 1.0) < 1e-9                        # the run gets at most the 1 s left
+        D._ledger_update(i, 1.5, status="budget_stop", reason="budget")
+        try:
+            D._ledger_start("c")
+            raise AssertionError("cutoff not enforced")
+        except D.Stop:
+            pass
+    with _Tmp():                                                  # an interrupted attempt is never free
+        D._ledger_write(dict(integrations=[dict(key="a", wall_s=120.0, status="running")]))
+        try:
+            D._ledger_start("b")
+            raise AssertionError("unreconciled attempt allowed a restart")
+        except D.Stop as e:
+            assert "reconciliation" in str(e)
+        assert D.ledger_used() == 120.0                           # its persisted elapsed time counts
+    with _Tmp():                                                  # an old-style entry with no elapsed time
+        D._ledger_write(dict(integrations=[dict(key="a", wall_s=None)]))
+        try:
+            D._ledger_start("b")
+            raise AssertionError("unfinished attempt treated as free")
+        except D.Stop:
+            pass
+
+
+def test_runtime_checks_do_not_overwrite_frozen_transfer_json():
+    with _Tmp() as t:
+        with open(os.path.join(t.tmp, "transfer.json"), "w") as f:
+            f.write("FROZEN")
+        open(D.REGISTERED_FLAG, "w").close()
+        D.load_rec, old = (lambda k: dict(diag=[])), D.load_rec    # stop before integrating anything
+        D.one_run, old_run = (lambda *a, **k: None), D.one_run
+        try:
+            with open(os.path.join(t.tmp, "floor.json"), "w") as f:
+                json.dump(dict(v_f=VF), f)
+            try:
+                D.stage_runs()
+            except Exception:
+                pass
+        finally:
+            D.load_rec, D.one_run = old, old_run
+        assert open(os.path.join(t.tmp, "transfer.json")).read() == "FROZEN"
+        assert os.path.exists(os.path.join(t.tmp, "transfer_runtime.json"))
 
 
 if __name__ == "__main__":

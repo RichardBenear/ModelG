@@ -45,8 +45,8 @@ WIN_A, WIN_B, WIN_V = (2000.0, 6000.0), (6000.0, 10000.0), (2000.0, 10000.0)
 # §3 validity and §4 bands (provisional operational choices, frozen at registration)
 AMBIG_TOL = 1e-3
 S_MAX = 1e-3
-CONS_REL, CONS_ABS = 0.10, 5e-4      # PROPOSED (pre-run spec item P2): draft 3 had 2e-4, below C_edge's static error
-VALID_REF_T = 2000.0                 # PROPOSED (pre-run spec item P1): draft 3 measured items 5-6 from t' = 0
+CONS_REL, CONS_ABS = 0.10, 5e-4      # ADOPTED (PI decision P2, 01:50 UTC; proposed at 2e-4 in the pre-P2 text)
+VALID_REF_T = 2000.0                 # ADOPTED (PI decision P1, 01:50 UTC; the pre-P1 text measured items 5-6 from 0)
 AGREE_REL, DIFFER_REL, DIFFER_VF = 0.05, 0.20, 3.0
 SYM_REL = 0.01
 RESOLVED_VF = 3.0
@@ -56,6 +56,10 @@ Y0_MAX_CHANGE, ROUNDTRIP_TOL, R4_BACK_TOL = 2e-5, 1e-12, 1e-12
 
 class Stop(Exception):
     pass
+
+
+class BudgetExceeded(Exception):
+    """Raised from inside the right-hand side when the wall-clock deadline (remaining core budget) is passed."""
 
 
 def e_pat():
@@ -100,20 +104,36 @@ def make_rhs_jac(b, N, h, seed_scale=0.0):
     return x, rhs, jac
 
 
-def mg9d_ode(b, N, h, t_end, y0, *, seed_scale, rtol=1e-8, atol=1e-10, max_step=0.5, t_eval=None, t_start=0.0):
-    """run_mg9.mg9_ode with max_step exposed. At max_step 0.5 it must reproduce mg9_ode bit for bit (tested)."""
-    x, rhs, jac = make_rhs_jac(b, N, h, seed_scale)
-    sol, retry = None, None
+def mg9d_ode(b, N, h, t_end, y0, *, seed_scale, rtol=1e-8, atol=1e-10, max_step=0.5, t_eval=None, t_start=0.0,
+             deadline=None, _solve=None):
+    """run_mg9.mg9_ode with max_step exposed. At max_step 0.5 it must reproduce mg9_ode bit for bit (tested).
+    deadline (time.time() value): the RHS raises BudgetExceeded once it is passed; numerics are unchanged.
+    If no output sample is returned, y_final is the input state (no endpoint is invented) and complete is False."""
+    x, rhs0, jac = make_rhs_jac(b, N, h, seed_scale)
+    if deadline is None:
+        rhs = rhs0
+    else:
+        def rhs(t, y):
+            if time.time() > deadline:
+                raise BudgetExceeded("core-time cutoff reached inside the integration")
+            return rhs0(t, y)
+    solve = _solve or solve_ivp
+    y0 = np.asarray(y0, float)
+    sol, retry, attempts = None, None, []
     for retry in (None, 1e-3, 1e-2):
-        sol = solve_ivp(rhs, (t_start, t_end), np.asarray(y0, float), method="BDF", jac=jac, rtol=rtol, atol=atol,
-                        max_step=max_step, first_step=retry, t_eval=t_eval)
+        sol = solve(rhs, (t_start, t_end), y0, method="BDF", jac=jac, rtol=rtol, atol=atol,
+                    max_step=max_step, first_step=retry, t_eval=t_eval)
+        attempts.append(dict(first_step=retry, success=bool(sol.success), message=str(getattr(sol, "message", ""))))
         if sol.success:
             break
-    t_reached = float(sol.t[-1]) if sol.t.size else t_start
-    complete = bool(sol.success) and abs(t_reached - t_end) <= 1e-9 * max(1.0, abs(t_end))
-    yf = sol.y[:, -1]
-    return dict(x=x, t=sol.t, y=sol.y, y_final=yf, residual=float(np.abs(rhs(t_end, yf)).max()),
-                success=bool(sol.success), t_reached=t_reached, complete=complete, retry=retry)
+    ts = np.asarray(sol.t, float).reshape(-1)
+    ys = np.asarray(sol.y, float).reshape(len(y0), -1) if ts.size else np.zeros((len(y0), 0))
+    t_reached = float(ts[-1]) if ts.size else t_start
+    complete = bool(sol.success) and ts.size > 0 and abs(t_reached - t_end) <= 1e-9 * max(1.0, abs(t_end))
+    yf = ys[:, -1] if ts.size else y0
+    return dict(x=x, t=ts, y=ys, y_final=yf, residual=float(np.abs(rhs0(t_reached, yf)).max()),
+                success=bool(sol.success), t_reached=t_reached, complete=complete, retry=retry, attempts=attempts,
+                message=attempts[-1]["message"], n_samples=int(ts.size))
 
 
 def rhs_max(y, N, h, b=B):
@@ -364,23 +384,35 @@ def _ledger_write(lg):
         json.dump(lg, f, indent=1)
 
 
+def ledger_used(lg=None):
+    lg = lg or ledger()
+    return sum(r.get("wall_s") or 0.0 for r in lg["integrations"])
+
+
 def _ledger_start(key):
-    """Counted at start, so an interrupted integration still counts toward the cap."""
+    """Counted at start, so an interrupted integration still counts toward the cap. An entry still marked 'running'
+    (an interrupted attempt) is never treated as free: starting stops until the PI reconciles it."""
     lg = ledger()
-    n = len(lg["integrations"])
-    used = sum(r["wall_s"] or 0.0 for r in lg["integrations"])
+    open_ = [r["key"] for r in lg["integrations"] if r.get("status") == "running" or r.get("wall_s") is None]
+    if open_:
+        raise Stop(f"unreconciled interrupted attempt(s) {open_}: PI reconciliation needed before resuming")
+    n, used = len(lg["integrations"]), ledger_used(lg)
     if n + 1 > RUN_CAP:
         raise Stop(f"run cap {RUN_CAP} reached")
     if used >= CUTOFF_CORE_S:
         raise Stop(f"cutoff {CUTOFF_CORE_S / 3600:.1f} core-h reached")
-    lg["integrations"].append(dict(key=key, wall_s=None, started=time.strftime("%Y-%m-%dT%H:%M:%S")))
+    lg["integrations"].append(dict(key=key, wall_s=0.0, status="running",
+                                   started=time.strftime("%Y-%m-%dT%H:%M:%S")))
     _ledger_write(lg)
-    return len(lg["integrations"]) - 1
+    return len(lg["integrations"]) - 1, CUTOFF_CORE_S - used
 
 
-def _ledger_finish(i, wall):
+def _ledger_update(i, wall, status="running", reason=None):
+    """Persisted at every segment boundary and at the end, so the elapsed time survives an interruption."""
     lg = ledger()
-    lg["integrations"][i]["wall_s"] = wall
+    lg["integrations"][i].update(wall_s=wall, status=status)
+    if reason:
+        lg["integrations"][i]["stop_reason"] = reason
     _ledger_write(lg)
 
 
@@ -415,8 +447,9 @@ def one_run(key, st, E_pat, ode=None):
         return rec
     ode = ode or mg9d_ode
     N, h, y = st["N"], st["h"], np.array(st["y"], float)
-    i_led = _ledger_start(key)
+    i_led, remaining = _ledger_start(key)
     t0w = time.time()
+    deadline = t0w + remaining
     tr = R.Tracker(N, h, E_pat)
     r0 = tr.sample(y[N:2 * N])
     track = [dict(t=0.0, **r0)]
@@ -424,11 +457,22 @@ def one_run(key, st, E_pat, ode=None):
     diag = [dg.sample(0.0, y[N:2 * N], (r0["xL"], r0["xR"]))]
     snaps = [dict(name=f"{key}_t0", t=0.0, sha256=sha(y))]
     save_snap(f"{key}_t0", y)
-    r, ta = None, 0.0
+    r, ta, stop_reason, status, error, seg_log = None, 0.0, None, "done", None, []
     while ta < T_END - 1e-9:
         tb = ta + SEG
         te = np.arange(ta + DT_TRACK, tb + 1e-9, DT_TRACK)
-        r = ode(B, N, h, tb, y, seed_scale=0.0, t_eval=te, t_start=ta, **st["solver"])
+        try:
+            r = ode(B, N, h, tb, y, seed_scale=0.0, t_eval=te, t_start=ta, deadline=deadline, **st["solver"])
+        except BudgetExceeded as e:
+            stop_reason, status, error = "budget", "budget_stop", str(e)
+            r = dict(complete=False, success=False, t_reached=ta, residual=None, retry=None, y_final=y)
+            break
+        except Exception as e:                                 # handled solver exception: keep provenance
+            stop_reason, status, error = "solver_exception", "failed", f"{type(e).__name__}: {e}"
+            r = dict(complete=False, success=False, t_reached=ta, residual=None, retry=None, y_final=y)
+            break
+        seg_log.append(dict(t_start=ta, t_end=tb, complete=bool(r["complete"]), t_reached=float(r["t_reached"]),
+                            attempts=r.get("attempts"), n_samples=r.get("n_samples", len(r["t"]))))
         for j, tj in enumerate(r["t"]):
             f = r["y"][N:2 * N, j]
             s = tr.sample(f)
@@ -436,20 +480,26 @@ def one_run(key, st, E_pat, ode=None):
             if abs(tj / DT_DIAG - round(tj / DT_DIAG)) < 1e-9:
                 diag.append(dg.sample(tj, f, (s["xL"], s["xR"])))
         if not r["complete"]:
+            stop_reason, status, error = "solver_incomplete", "failed", r.get("message")
             break
         y = r["y_final"]
         save_snap(f"{key}_t{int(round(tb))}", y)
         snaps.append(dict(name=f"{key}_t{int(round(tb))}", t=tb, sha256=sha(y)))
         ta = tb
+        _ledger_update(i_led, time.time() - t0w)
     wall = time.time() - t0w
-    _ledger_finish(i_led, wall)
+    _ledger_update(i_led, wall, status=status, reason=stop_reason)
     rec = dict(key=key, b=B, N=N, h=h, solver=st["solver"], shift=st.get("shift"), E_pat=E_pat,
-               init_sha256=sha(st["y"]), complete=bool(r["complete"]), success=bool(r["success"]),
-               t_reached=float(r["t_reached"]), residual=float(r["residual"]), retry=r["retry"], seed_scale=0.0,
-               wall_s=wall, ref_minima=[float(v) for v in dg.ref], snapshots=snaps, track=track, diag=diag,
-               platform=platform())
+               init_sha256=sha(st["y"]), complete=bool(r["complete"]) and stop_reason is None,
+               success=bool(r["success"]), t_reached=float(r["t_reached"]),
+               last_saved_t=snaps[-1]["t"], stop_reason=stop_reason, error=error, segments=seg_log,
+               residual=(float(r["residual"]) if r.get("residual") is not None else None), retry=r.get("retry"),
+               seed_scale=0.0, wall_s=wall, ref_minima=[float(v) for v in dg.ref], snapshots=snaps, track=track,
+               diag=diag, platform=platform())
     save_rec(key, rec)
-    print(key, "complete" if rec["complete"] else "INCOMPLETE", f"{wall:.0f}s", flush=True)
+    print(key, "complete" if rec["complete"] else f"INCOMPLETE ({stop_reason}: {error})", f"{wall:.0f}s", flush=True)
+    if stop_reason == "budget":
+        raise Stop(f"cutoff {CUTOFF_CORE_S / 3600:.1f} core-h reached during {key}; partial record saved")
     return rec
 
 
@@ -470,6 +520,9 @@ def validity(rec, t_ref=None):
     n_exp = int(round(T_END / DT_DIAG)) + 1
     if not rec["complete"] or len(diag) != n_exp:
         failed.append(1)
+        if not diag or diag[-1]["t"] < T_END - 1e-6:          # incomplete: items 2-6 cannot be evaluated
+            return dict(valid=False, failed=[1], values=dict(stop_reason=rec.get("stop_reason"),
+                                                             t_reached=rec.get("t_reached")))
     bad = [s["t"] for s in track if s["status"] != "ok" or s["breakup"] or s["remote"]]
     val["tracker_bad_samples"] = len(bad)
     if bad:
@@ -670,11 +723,11 @@ def stage_floor():
     return out
 
 
-def stage_checks(with_relax=True):
+def stage_checks(with_relax=True, name="transfer.json"):
     out = transfer_checks(with_relax)
     out["platform"] = platform()
     os.makedirs(OUT, exist_ok=True)
-    with open(os.path.join(OUT, "transfer.json"), "w") as f:
+    with open(os.path.join(OUT, name), "w") as f:
         json.dump(out, f, indent=1, default=float)
     print(json.dumps({k: v for k, v in out.items() if k not in ("start_sha256",)}, indent=1, default=float))
     return out
@@ -683,7 +736,7 @@ def stage_checks(with_relax=True):
 def stage_runs():
     if not os.path.exists(REGISTERED_FLAG):
         raise Stop("MG9d is not registered: results/MG9d/REGISTERED is missing")
-    chk = stage_checks(with_relax=False)
+    chk = stage_checks(with_relax=False, name="transfer_runtime.json")      # frozen transfer.json is kept
     if not chk["ok"]:
         raise Stop("state-transfer checks failed; nothing integrated")
     with open(os.path.join(OUT, "floor.json")) as f:
@@ -696,7 +749,8 @@ def stage_runs():
     ev = evaluate(recs, fl["v_f"])
     lg = ledger()
     ev["integrations"] = len(lg["integrations"])
-    ev["core_h"] = sum(r["wall_s"] or 0.0 for r in lg["integrations"]) / 3600.0
+    ev["core_h"] = ledger_used(lg) / 3600.0
+    ev["ledger_open"] = [r["key"] for r in lg["integrations"] if r.get("status") == "running"]
     ev["platform"] = platform()
     with open(os.path.join(OUT, "evaluation.json"), "w") as f:
         json.dump(ev, f, indent=1, default=float)

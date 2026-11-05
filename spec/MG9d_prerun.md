@@ -1,13 +1,11 @@
-# MG9d — pre-run implementation specification (stage MG032)
-
-*Claude, 2026-11-05. Status: written **before any MG9d integration**. MG9d is not yet registered. The PI approved
-draft 3 for implementation (decision card, 01:42 UTC). This document covers ChatGPT's pre-run implementation review
-and two proposed changes to validity items that need PI decisions before registration. Everything here comes from
-static computation only: maps, linear algebra and recovery of known shifts. No time-stepping of an MG9d state was
-done.*
+*Claude, 2026-11-05. Written **before any MG9d integration**. History: drafted while MG9d was unregistered (PI
+approved draft 3 for implementation by card, 01:42 UTC). P1 and P2 below were proposals at that time; the PI adopted
+both at 01:50 UTC. MG9d was REGISTERED at 02:00 UTC (draft 3 frozen at `69ad83e`). ChatGPT's implementation review
+MG032 (`review/MG032_chatgpt.md`) passed the science and calibration and asked for two operational fixes, made in
+§E (response `review/MG032_response.md`). Everything in §A–§B comes from static computation only.*
 
 Code: `src/run_mg9d.py` (driver, diagnostics, rules), `src/evaluate_mg9d.py` (re-evaluation from the records), and
-`tests/test_mg9d.py` (16 tests, all pass, about 5 s). Static outputs: `results/MG9d/transfer.json` and
+`tests/test_mg9d.py` (22 tests after §E, all pass, about 10 s). Static outputs: `results/MG9d/transfer.json` and
 `results/MG9d/floor.json`. `python src/run_mg9d.py runs` refuses to start unless `results/MG9d/REGISTERED` exists. That
 file is written only after registration.
 
@@ -129,3 +127,30 @@ fail item 6 from edge-measurement error alone. 5e-4 is about twice the largest s
 - An end-to-end run with a fake ODE (exact translation at −4e-7). It checks the registration guard, the record
   structure (201 diagnostics, 2001 track samples, 11 snapshots), speeds recovered to 1e-11, validity, and the cap
   counted at start.
+
+## E. Operational fixes after ChatGPT MG032 (no change to the registered science)
+
+1. **Solver failures are recorded, never lost.**
+   - `mg9d_ode` handles zero returned samples: complete = False, y_final = the input state (no endpoint invented),
+     and the three attempts and their messages are kept.
+   - `one_run` catches a solver exception and an incomplete segment. In both cases it saves an incomplete record with
+     stop_reason, error, last saved time, per-segment attempt history and all output up to the failure, and
+     finalises the ledger entry.
+   - A saved record is never re-run, so a failed arm stays INVALID (item 1).
+2. **The 1 core-h cutoff is enforced, including during a run.**
+   - The ledger entry is opened with status "running" and its elapsed time is persisted at every 1000-unit segment
+     boundary.
+   - Each run gets a wall-clock deadline equal to the budget remaining at its start. The right-hand side raises
+     BudgetExceeded once the deadline passes, which does not change the numerics (tested bit for bit). The overshoot
+     is therefore at most one RHS evaluation.
+   - A budget stop saves the partial record with stop_reason "budget", marks the ledger "budget_stop", and halts
+     the stage for the PI.
+   - An entry still marked "running" (or one with no elapsed time) is never treated as free. Starting halts until
+     the PI reconciles it, and its persisted elapsed time counts.
+3. **Frozen calibration preserved.** The run stage writes its re-check to `transfer_runtime.json`, so the committed
+   `transfer.json` keeps its descriptive relax_estimate fields. The stale "PROPOSED" comments now read "ADOPTED", and
+   this document's header is updated.
+4. **Tests added (16 → 22):** zero-sample failure (list and array forms); deadline behaviour with numerics unchanged;
+   failure after partial output and a solver exception (record saved, INVALID, ledger finalised, no re-start);
+   budget stop leaving a partial record; a near-cutoff start (3599 s used: the run gets 1 s) and unreconciled
+   attempts; runtime checks not overwriting `transfer.json`.
