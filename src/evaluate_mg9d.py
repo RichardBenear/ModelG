@@ -14,7 +14,8 @@ def main():
     ev = D.evaluate(recs, vf)
     lg = D.ledger()
     ev["integrations"] = len(lg["integrations"])
-    ev["core_h"] = sum(r["wall_s"] or 0.0 for r in lg["integrations"]) / 3600.0
+    ev["core_h"] = D.ledger_used(lg) / 3600.0
+    ev["ledger_open"] = [r["key"] for r in lg["integrations"] if r.get("status") == "running"]
     ev["platform"] = D.platform()
     with open(os.path.join(D.OUT, "evaluation.json"), "w") as f:
         json.dump(ev, f, indent=1, default=float)
