@@ -1,0 +1,25 @@
+{
+  "revision": "13997dca0a71869de4c5a8e8c82b9a03feb08e56",
+  "reversal_cancellation": {
+    "a": 4e-07,
+    "b": -3.999999999999998e-07,
+    "v": -5.437323032004013e-23,
+    "C4": "REVERSAL",
+    "overall_rule_3": "NO RESOLVED DRIFT despite resolved motion in both windows"
+  },
+  "invalid_reflection": {
+    "R0": "VALID",
+    "R1": "VALID",
+    "R3": "INVALID",
+    "C1": "NUMERICS-AGREE",
+    "issue": "C3 has no label for unmet prerequisites; overall rule 1 only checks ASYMMETRY-FLAG"
+  },
+  "unresolved_opposite_late_slope": {
+    "a": -4e-07,
+    "b": 1e-09,
+    "rho": -0.0025,
+    "a_resolved": true,
+    "b_resolved": false,
+    "issue": "Reaches Otherwise in C4, contradicting rho >= 0"
+  }
+}
