@@ -179,16 +179,43 @@ def test_calibration_labels_are_per_branch():
 
 
 # ------------------------------------------------------------------ driver with a fake simulator
-class Tmp:
+class SyncPool:
+    """In-process pool: fake runs never reach real worker processes (spawn on Windows would re-import the driver
+    with the real simulate() and the real output folder)."""
     def __enter__(self):
-        self.tmp = tempfile.mkdtemp()
-        self.old = (D.OUT, EV.OUT, D.simulate, D._confirm_job, D.vb1, D.part_a, D.production, D.vb2)
-        D.OUT = EV.OUT = self.tmp
         return self
 
     def __exit__(self, *a):
-        D.OUT, EV.OUT, D.simulate, D._confirm_job, D.vb1, D.part_a, D.production, D.vb2 = self.old
+        return False
+
+    def imap(self, f, it, chunksize=1):
+        return map(f, it)
+
+    def imap_unordered(self, f, it, chunksize=1):
+        return map(f, it)
+
+
+REAL_OUT = os.path.join(D.ROOT, "results", "MG9b")
+
+
+def _real_tree():
+    return sorted((os.path.relpath(os.path.join(d, f), REAL_OUT), os.path.getmtime(os.path.join(d, f)))
+                  for d, _, fs in os.walk(REAL_OUT) for f in fs)
+
+
+class Tmp:
+    def __enter__(self):
+        self.tmp = tempfile.mkdtemp()
+        self.real = _real_tree()
+        self.old = (D.OUT, EV.OUT, D.simulate, D._confirm_job, D.vb1, D.part_a, D.production, D.vb2, D.POOL_FACTORY)
+        D.OUT = EV.OUT = self.tmp
+        D.POOL_FACTORY = SyncPool
+        return self
+
+    def __exit__(self, *a):
+        D.OUT, EV.OUT, D.simulate, D._confirm_job, D.vb1, D.part_a, D.production, D.vb2, D.POOL_FACTORY = self.old
         shutil.rmtree(self.tmp)
+        assert _real_tree() == self.real, "a test touched the real results/MG9b folder"
 
 
 def fake_simulate(a):
@@ -354,7 +381,46 @@ def test_budget_before_third_cell_is_study_truncation():
         d = ev["per_b"]["29.20"]
         done = [c for c in d["cells"].values() if c["runs"] > 0]
         assert len(done) == 2 and not any(c["budget_short"] for c in done) and d["identifiable"]
+        assert len(d["unstarted_cells"]) == 1 and not d["budget_short"]      # unstarted, not short
         assert ev["budget_truncated"] and ev["primary"]["confirmatory"] == "NOT RESOLVED"
+
+
+def test_failed_reference_then_control_stop_is_not_rate_truncation():
+    """29.20 fails V-b1; 29.35 finishes Part B; the budget stops its V-b3: controls only."""
+    with Tmp() as t:
+        _fake_setup(t)
+        D.vb1 = lambda b: dict(b=b, pass_=b > 29.3, result="PASS" if b > 29.3 else "REFERENCE-INVALID")
+        old3 = D.vb3
+        def v3(pool, b, Om_T):
+            raise D.BudgetStop("V-b3 29.35")
+        D.vb3 = v3
+        try:
+            D.stage_runs()
+        finally:
+            D.vb3 = old3
+        lg = json.load(open(os.path.join(t.tmp, "ledger.json")))
+        assert lg["budget_stop"]["rate_complete"] is True and lg["budget_stop"]["budget_truncated"] is False
+        ev = EV.evaluate()
+        assert not ev["budget_truncated"] and "BUDGET STOP AFTER RATE COLLECTION (controls only)" in ev["qualifiers"]
+
+
+def test_event_shapes_invariant_to_cell_order():
+    def run(cell, nd):
+        return dict(cell=cell, rep=0, event=True, first=dict(s_conf=80),
+                    confirmations=[dict(sc=80, n_deep_end=nd, n_persistent=nd)])
+    a, b = run("b29.35_B_150", 1), run("b29.35_B_135", 2)
+    for order in ([a, b], [b, a]):
+        e = EV.event_shapes(order)
+        assert e["events"] == 2 and e["single_minimum"] == 1
+
+
+def test_vb3_with_no_confirmations_is_insufficient():
+    with Tmp() as t:
+        os.makedirs(os.path.join(t.tmp, "runs", "b29.35_B_150"))
+        json.dump(dict(rep=0, confirmations=[], event=False, complete=True),
+                  open(os.path.join(t.tmp, "runs", "b29.35_B_150", "0.json"), "w"))
+        v = D.vb3(None, 29.35, 150.0)
+        assert v["n"] == 0 and v["result"] == "CONTROL-INSUFFICIENT"
 
 
 def test_budget_stop_during_last_control_is_not_rate_truncation():

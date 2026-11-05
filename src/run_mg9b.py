@@ -33,6 +33,12 @@ class BudgetStop(Exception):
     pass
 
 
+def POOL_FACTORY():
+    """Process pool for the run stage. Tests replace this with a synchronous in-process pool so that fake runs can
+    never reach real workers or the real output folder (MG034 amendment-1 implementation review, finding 2)."""
+    return Pool(WORKERS)
+
+
 def P(*a):
     return os.path.join(OUT, *a)
 
@@ -271,8 +277,11 @@ def part_b(pool, b, Om_T):
             c = production(pool, b, Om)
         except BudgetStop:
             recs = finished(cell_name(b, "B", Om))
+            started = len(recs) > 0 or bool(glob.glob(P("partial", cell_name(b, "B", Om), "*.pkl")))
+            # MG034 amendment-1 implementation review: an accepted cell stopped before its first run is UNSTARTED,
+            # not BUDGET-SHORT (the study-level truncation flag applies either way)
             cells.append(dict(Om=Om, runs=len(recs), events=sum(int(r["event"] and r["complete"]) for r in recs),
-                              capped=False, budget_short=True))
+                              capped=False, budget_short=started, unstarted=not started))
             res["cells"] = cells; _dump(res, fn)
             raise
         cells.append(c)
@@ -403,7 +412,9 @@ def vb3(pool, b, Om_T):
                           std_complete=std.get("complete", True),
                           same=(std["cls"] == "persistent") == (tg["cls"] == "persistent")))
     ok = all(p["same"] and p["tight_complete"] and p["std_complete"] for p in pairs)
-    res = dict(b=b, cell=cell, n=len(pairs), pairs=pairs, result="PASS" if ok else "CONFIRMATION-TOLERANCE")
+    # zero compared pairs is not agreement (MG034 amendment-1 implementation review, finding 3)
+    result = "CONTROL-INSUFFICIENT" if not pairs else ("PASS" if ok else "CONFIRMATION-TOLERANCE")
+    res = dict(b=b, cell=cell, n=len(pairs), pairs=pairs, result=result)
     _dump(res, fn); log(f"[V-b3 {b:.2f}] {res['result']} ({len(pairs)} confirmations)")
     return res
 
@@ -439,8 +450,10 @@ def stage_runs():
         raise SystemExit(2)
     log(f"=== MG9b runs start {time.strftime('%Y-%m-%d %H:%M:%S')}; {WORKERS} workers; {platform_info()}")
     v1 = stage_vb1()
-    rate_done = set()                    # b values whose planned rate-data collection has ended (amendment 1)
-    with Pool(WORKERS) as pool:
+    # b values whose planned rate-data collection has ended (amendment 1). A failed reference ends it at once
+    # (MG034 amendment-1 implementation review, finding 1).
+    rate_done = {b for b in mg9b.B_NEW if not v1[b]["pass_"]}
+    with POOL_FACTORY() as pool:
         try:
             for b in (29.35, 29.20):
                 if not v1[b]["pass_"]:

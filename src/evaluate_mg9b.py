@@ -53,10 +53,15 @@ def historical_cells():
 
 
 def event_shapes(recs):
-    fe = [r for r in recs if r["event"] and r["first"] is not None]
-    conf = {(r["rep"], c["sc"]): c for r in recs for c in r["confirmations"]}
-    shapes = [conf.get((r["rep"], r["first"]["s_conf"])) for r in fe]
-    shapes = [s for s in shapes if s is not None]
+    """Each first event is matched to its OWN run's confirmation (rep and snapshot indices are local to a cell;
+    MG034 amendment-1 implementation review, finding 3). Exactly one match per event is required."""
+    shapes = []
+    for r in recs:
+        if not (r["event"] and r["first"] is not None):
+            continue
+        m = [c for c in r["confirmations"] if c["sc"] == r["first"]["s_conf"]]
+        assert len(m) == 1, f"event in {r.get('cell')} rep {r['rep']}: {len(m)} confirmation matches"
+        shapes.append(m[0])
     return dict(events=len(shapes), single_minimum=sum(1 for s in shapes if s["n_deep_end"] == 1),
                 n_persistent_hist={str(k): sum(1 for s in shapes if s["n_persistent"] == k)
                                    for k in sorted({s["n_persistent"] for s in shapes})})
@@ -86,6 +91,9 @@ def evaluate():
             d["Om_T"] = pa["Om_T"]
             cells, stats, recs_all = [], {}, []
             for c in (pb or {}).get("cells", []):
+                if c.get("unstarted"):
+                    stats[f"{c['Om']:g}"] = dict(unstarted=True, runs=0, capped=False, budget_short=False)
+                    continue
                 recs = runs_of(f"b{b:.2f}_B_{c['Om']:g}")
                 s = cell_stats(recs, None if c.get("budget_short") else c["runs"])
                 s.update(capped=c["capped"], budget_short=c.get("budget_short", False))
@@ -95,6 +103,7 @@ def evaluate():
             d.update(cells=stats, identifiable=mg9b.identifiable(cells), fit=mg9b.fit_b(cells),
                      event_shape=event_shapes(recs_all),
                      capped=any(s["capped"] for s in stats.values()),
+                     unstarted_cells=[k for k, s in stats.items() if s.get("unstarted")],
                      budget_short=any(s["budget_short"] for s in stats.values()))
             if d["identifiable"]:
                 by_b[b] = cells
