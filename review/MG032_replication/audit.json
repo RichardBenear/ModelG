@@ -1,0 +1,259 @@
+{
+  "source_sha256": "f22ca2807eeef45ea26dd171ec4f12d5b7ef89926cd9a206a1efeda67d86a56f",
+  "y0_max_change": 1.5622865850828394e-05,
+  "state_max_difference": {
+    "R0": 4.440892098500626e-15,
+    "R1": 4.440892098500626e-15,
+    "R3": 4.440892098500626e-15,
+    "R4": 8.881784197001252e-15,
+    "R2a": 7.993605777301127e-15,
+    "R2b": 7.105427357601002e-15,
+    "R2c": 7.993605777301127e-15
+  },
+  "rhs_max": {
+    "source": 1.0921734486579737e-05,
+    "R0": 0.0016546849994378832,
+    "R1": 0.0016546849994378832,
+    "R3": 0.0016546849994378832,
+    "R4": 4.850933855700859,
+    "R2a": 0.25889832824972103,
+    "R2b": 0.36680786018904854,
+    "R2c": 0.258571563673506
+  },
+  "rhs_max_difference_from_stored": 2.4158453015843406e-13,
+  "jacobian_relative_directional_error": {
+    "R0": 9.207381395795763e-11,
+    "R4": 1.4632057835355313e-10
+  },
+  "production_floor_rerun": {
+    "delta": 1.110415870364534e-09,
+    "v_f": 5e-09,
+    "max_err_per_measure": {
+      "d": 1.110415870364534e-09,
+      "C_edge": 0.00022857406645186706,
+      "C_amp": 1.0053122223574462e-09,
+      "C_phi2": 6.853319689525961e-09,
+      "m": 7.564164989187772e-05
+    },
+    "resolved_threshold": 1.5000000000000002e-08
+  },
+  "independent_alignment_max_error": 2.8449465006019636e-16,
+  "independently_generated_shift_production_max_error": 1.110415870364534e-09,
+  "shift_cases": [
+    {
+      "grid": "R0",
+      "true": 0.001,
+      "independent": 0.0009999999999999972,
+      "production": 0.0010000000000439772,
+      "ambiguous": false,
+      "matched": 16
+    },
+    {
+      "grid": "R0",
+      "true": -0.001,
+      "independent": -0.001000000000000012,
+      "production": -0.0010000000000439891,
+      "ambiguous": false,
+      "matched": 16
+    },
+    {
+      "grid": "R0",
+      "true": 0.004,
+      "independent": 0.003999999999999999,
+      "production": 0.004000000002548151,
+      "ambiguous": false,
+      "matched": 16
+    },
+    {
+      "grid": "R0",
+      "true": -0.004,
+      "independent": -0.003999999999999996,
+      "production": -0.0040000000025481675,
+      "ambiguous": false,
+      "matched": 16
+    },
+    {
+      "grid": "R0",
+      "true": 0.01,
+      "independent": 0.010000000000000009,
+      "production": 0.010000000032315706,
+      "ambiguous": false,
+      "matched": 16
+    },
+    {
+      "grid": "R0",
+      "true": -0.01,
+      "independent": -0.009999999999999992,
+      "production": -0.010000000032315715,
+      "ambiguous": false,
+      "matched": 16
+    },
+    {
+      "grid": "R0",
+      "true": 0.05,
+      "independent": 0.05000000000000029,
+      "production": 0.04999999980913081,
+      "ambiguous": false,
+      "matched": 16
+    },
+    {
+      "grid": "R0",
+      "true": -0.05,
+      "independent": -0.05000000000000027,
+      "production": -0.049999999809130835,
+      "ambiguous": false,
+      "matched": 16
+    },
+    {
+      "grid": "R0",
+      "true": 0.1,
+      "independent": 0.10000000000000023,
+      "production": 0.09999999979576635,
+      "ambiguous": false,
+      "matched": 16
+    },
+    {
+      "grid": "R0",
+      "true": -0.1,
+      "independent": -0.10000000000000023,
+      "production": -0.09999999979576635,
+      "ambiguous": false,
+      "matched": 16
+    },
+    {
+      "grid": "R0",
+      "true": 0.15,
+      "independent": 0.15,
+      "production": 0.15000000111041584,
+      "ambiguous": false,
+      "matched": 16
+    },
+    {
+      "grid": "R0",
+      "true": -0.15,
+      "independent": -0.15000000000000002,
+      "production": -0.15000000111041584,
+      "ambiguous": false,
+      "matched": 16
+    },
+    {
+      "grid": "R4",
+      "true": 0.001,
+      "independent": 0.0009999999999999937,
+      "production": 0.001000000000043984,
+      "ambiguous": false,
+      "matched": 16
+    },
+    {
+      "grid": "R4",
+      "true": -0.001,
+      "independent": -0.0009999999999999942,
+      "production": -0.0010000000000439928,
+      "ambiguous": false,
+      "matched": 16
+    },
+    {
+      "grid": "R4",
+      "true": 0.004,
+      "independent": 0.004000000000000007,
+      "production": 0.004000000002548144,
+      "ambiguous": false,
+      "matched": 16
+    },
+    {
+      "grid": "R4",
+      "true": -0.004,
+      "independent": -0.004000000000000001,
+      "production": -0.004000000002548155,
+      "ambiguous": false,
+      "matched": 16
+    },
+    {
+      "grid": "R4",
+      "true": 0.01,
+      "independent": 0.009999999999999998,
+      "production": 0.010000000032315702,
+      "ambiguous": false,
+      "matched": 16
+    },
+    {
+      "grid": "R4",
+      "true": -0.01,
+      "independent": -0.010000000000000002,
+      "production": -0.010000000032315718,
+      "ambiguous": false,
+      "matched": 16
+    },
+    {
+      "grid": "R4",
+      "true": 0.05,
+      "independent": 0.050000000000000266,
+      "production": 0.04999999980913081,
+      "ambiguous": false,
+      "matched": 16
+    },
+    {
+      "grid": "R4",
+      "true": -0.05,
+      "independent": -0.05000000000000028,
+      "production": -0.049999999809130835,
+      "ambiguous": false,
+      "matched": 16
+    },
+    {
+      "grid": "R4",
+      "true": 0.1,
+      "independent": 0.10000000000000023,
+      "production": 0.09999999979576633,
+      "ambiguous": false,
+      "matched": 16
+    },
+    {
+      "grid": "R4",
+      "true": -0.1,
+      "independent": -0.10000000000000024,
+      "production": -0.09999999979576636,
+      "ambiguous": false,
+      "matched": 16
+    },
+    {
+      "grid": "R4",
+      "true": 0.15,
+      "independent": 0.15,
+      "production": 0.15000000111041584,
+      "ambiguous": false,
+      "matched": 16
+    },
+    {
+      "grid": "R4",
+      "true": -0.15,
+      "independent": -0.15,
+      "production": -0.15000000111041586,
+      "ambiguous": false,
+      "matched": 16
+    }
+  ],
+  "empty_solver_failure": [
+    {
+      "form": "list",
+      "attempts": 3,
+      "exception": "AttributeError",
+      "message": "'list' object has no attribute 'size'"
+    },
+    {
+      "form": "array",
+      "attempts": 3,
+      "exception": "IndexError",
+      "message": "index -1 is out of bounds for axis 1 with size 0"
+    }
+  ],
+  "unresolved_prior_attempt_allows_new_start": true,
+  "3599_seconds_allows_new_start": true,
+  "platform": {
+    "python": "3.13.2",
+    "numpy": "2.2.4",
+    "scipy": "1.16.1",
+    "system": "Windows-11-10.0.26200-SP0"
+  },
+  "scope": "Static arrays, Jacobian differences, calibration, and mocked failure paths; no MG9d integration."
+}
