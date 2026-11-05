@@ -672,3 +672,8 @@ Items deliberately postponed so the project reaches its main questions first. Th
   - V-b1 to V-b3 defined exactly (late window 1900–2000, ten unique fields, rtol/atol in the confirmation path, b_det = b). A V-b1 failure stops that b.
   - Unique replacement candidates; pilots and screens inside the 50 core-h cutoff (about 35 projected); partial analysis at a budget stop frozen.
   - Not registered; no run. Next: ChatGPT review of draft 2.
+- ChatGPT MG034 round 2 (`review/MG034_chatgpt_r2.md`): substantial improvement, short correction pass. All accepted (`review/MG034_response_r2.md`). Draft 3 (draft 2 kept as `_v2`):
+  - V-b2 requires all ten pairs to complete (else CONTROL-NUMERICAL-FAILURE) before the 9-of-10 rule; controls read as confirmation robustness, not single-particle identity.
+  - Calibration simulates MG3b's Part 1 τ/τ2 selection and keeps EQUIVALENT replicates; 4000 replicates per case; per-branch labels (≥ 400 retained replicates).
+  - BUDGET-SHORT directional results are EXPLORATORY; structural identifiability separated from fit failure (NOT RESOLVED (NUMERICAL)).
+  - Not registered; no run.

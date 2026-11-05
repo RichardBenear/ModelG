@@ -1,9 +1,18 @@
-# MG9b — How does the noise-activation barrier depend on b? Design proposal, DRAFT 2
+# MG9b — How does the noise-activation barrier depend on b? Design proposal, DRAFT 3
 
-*Stage MG034. Claude, 2026-11-05. Status: **DRAFT 2, not registered. No MG9b run has been made.** Draft 1
-(`spec/MG9b_proposal_v1.md`, superseded) was reviewed by ChatGPT in MG034 (`review/MG034_chatgpt.md`); every item is
-accepted (`review/MG034_response.md`). The PI's five §8 decisions (02:39 UTC) are unchanged. Naming: MG9b has been
-reserved since MG9 for the stochastic barrier S(b). MG8 stays reserved for multiway/foliation.*
+*Stage MG034. Claude, 2026-11-05. Status: **DRAFT 3, not registered. No MG9b run has been made.** Draft 1
+(`spec/MG9b_proposal_v1.md`) and draft 2 (`spec/MG9b_proposal_v2.md`), both superseded, were reviewed by ChatGPT in
+MG034 (`review/MG034_chatgpt.md`, `review/MG034_chatgpt_r2.md`); every item is accepted (`review/MG034_response.md`,
+`review/MG034_response_r2.md`). The PI's five §8 decisions (02:39 UTC) are unchanged. Naming: MG9b has been reserved
+since MG9 for the stochastic barrier S(b). MG8 stays reserved for multiway/foliation.*
+
+**Changes from draft 2 (after MG034 round 2), in brief.** V-b2 needs all ten pairs to complete before its 9-of-10 rule
+applies (§3). Passing the V-b controls is read as confirmation robustness, not single-particle identity (§1, §3). The
+calibration now simulates the MG3b selection that produced the reused b = 29.00 data (§4.3). Calibration labels are
+per branch (which b values are available), with a minimum replicate count (§4.3, §5). A budget-short directional
+result is exploratory (§5, §6). Identifiability is defined structurally, separately from optimizer failure (§2.2,
+§4.4). Small clarifications: zero exposure for startup runs, one screen draw per screening decision, and the change in
+V-b1 from draft 1 disclosed (§3, §4.3).
 
 **Changes from draft 1, in brief.** Outcomes renamed to linear-trend labels, with per-b slopes and a linear-model check
 (§1, §5). Lack-of-fit df corrected: three cells give 1 df (§4). Calibration fully specified, including the historical
@@ -40,8 +49,10 @@ b = 29.00 data. The tested quantity is the linear trend S₁ in S(b) = S₀ + S�
   check (§4.2).
 - Descriptive only: k(b) at a common Ω, the prefactor α_b, S_b against the MG9 seed threshold, landmark sensitivities.
 - **What is measured.** The event is MG3's finite-horizon field-level confirmed event (protocol §5.4). The slope is
-  therefore for **protocol-confirmed structures**. It is read as a single-particle creation barrier at a given b only if
-  that b's V-b controls pass (§3).
+  therefore for **protocol-confirmed structures**, and that stays the primary estimand. Passing the V-b controls at a b
+  supports the robustness of confirmation there (reference validity, persistence classification at a late window and
+  at tighter tolerance). It does not show that each event is a single particle: a multi-minimum structure can pass V-b2
+  and V-b3. A single-particle reading at a b additionally depends on the reported event-shape evidence (§3).
 - Out of scope: noise laws other than MG3's tau-leap chemical Langevin model, the continuum limit, h = 0.1, τ
   independence at the new b values, and the fate of nucleated structures beyond the confirmation horizon. S is an
   empirical slope, not a proven large-deviation action, and no physical energy-barrier claim follows.
@@ -89,8 +100,11 @@ is labelled "at τ = 6.667e-4".
   batch, cap 64 runs. A started batch is completed and all its runs count. A capped cell stays in the fit, flagged
   "below target precision". Ω_T's production runs are new runs (Part A is not pooled).
 - **Order of cells within a b:** Ω_T first, then accepted candidates in list order.
-- **When an S_b exists.** At least 2 distinct production cells with positive exposure, and a finite maximum-likelihood
-  S_b. With exactly 2 cells, S_b is labelled "two-cell" (lack of fit 0 df).
+- **When S_b is identifiable (structural, decided before any fit).** At least 2 distinct production Ω at that b each
+  have at least one post-burn-in event. This guarantees a finite maximum-likelihood S_b (the log-likelihood falls to −∞
+  as |S_b| grows), so it does not depend on the optimizer. A b with production cells that fail this rule has no S_b
+  (reported with its cell counts). With exactly 2 cells, S_b is labelled "two-cell" (lack of fit 0 df). Fitting
+  failures on an identifiable design are handled in §4.4.
 - **Screening is not replacement of data.** Screening decides which candidate cells enter production. Once a cell's
   production has started, its data are kept and it is never replaced or extended beyond its cap (§6).
 
@@ -108,6 +122,9 @@ of φ_X below −0.5|A*|, linked from check to check with each step's circular d
   where c(t) is the vertex of the parabola through the deepest φ_X minimum and its two neighbours (circular distance);
   (d) the depth min φ_X at t = 2000 within 5% of A*.
 - Recorded descriptively: max |RHS| at 0 and 2000, the centre track, and the width.
+- **Change from draft 1, disclosed.** Draft 1's V-b1 was a residual-based stationarity test (residual ≤ 1e-6). V-b1 is
+  now a reference validity check on identity, depth and drift, with the residual descriptive only. A pass is not proof
+  that the reference is stationary.
 - **A failure stops that b.** Part A and Part B are not run there, and the b is reported REFERENCE-INVALID, with no
   S_b. The reference and the event rule are never replaced after outcomes are seen.
 
@@ -119,10 +136,13 @@ of φ_X below −0.5|A*|, linked from check to check with each step's circular d
   then run index, then confirmation time), then Part B (cell order, run index, time). A unique field is one
   (run, snapshot) pair; repeated detections that share one cached field count once. Only these 10 fields get the late
   continuation.
-- **Comparison:** binary, persistent against not persistent (excursion and unresolved together), between the standard
-  (200–300) and late (1900–2000) outcomes. An incomplete continuation counts as a disagreement.
-- **Pass:** at least 9 of 10 agree. Below 9: CONFIRMATION-SENSITIVE. Fewer than 10 unique fields at that b:
-  CONTROL-INSUFFICIENT. Neither is a pass. Three-class agreement is reported descriptively.
+- **Completion first.** Both members of all ten pairs (standard and late) must complete numerically. If any of the
+  20 integrations does not complete, the control is **CONTROL-NUMERICAL-FAILURE**, whatever the other pairs show. The
+  failed record is kept, and no field is substituted for it.
+- **Comparison (only when all ten pairs complete):** binary, persistent against not persistent (excursion and
+  unresolved together), between the standard (200–300) and late (1900–2000) outcomes.
+- **Pass:** all ten pairs complete and at least 9 of 10 agree. Below 9: CONFIRMATION-SENSITIVE. Fewer than 10 unique
+  fields at that b: CONTROL-INSUFFICIENT. None of these is a pass. Three-class agreement is reported descriptively.
 
 **V-b3 solver tolerance control.** `confirm_field` gains optional `rtol` and `atol` arguments passed to
 `lattice_ode_1d` (defaults unchanged, so existing calls are bit-for-bit identical; a test checks this). Every
@@ -131,11 +151,13 @@ completion are saved. **Pass:** no change between persistent and not persistent,
 Otherwise CONFIRMATION-TOLERANCE.
 
 **Event shape (descriptive).** For each confirmed event: the number of persistent structures at t = 300 and whether it
-is one deep minimum or a multi-minimum patch.
+is one deep minimum or a multi-minimum patch. Reported per b as the fraction of single-minimum events.
 
 **What a V-b2 or V-b3 flag does.** It does not stop the study, and the b stays in the trend fit. The result for that
-b is worded "a protocol-confirmed structure rate; the particle-barrier interpretation is not validated at this b"
-(qualifier LATTICE-FLAGGED). Numerical incompletion is never counted as a class or as a passed control.
+b is worded "a protocol-confirmed structure rate; confirmation robustness is not established at this b" (qualifier
+LATTICE-FLAGGED). Numerical incompletion is never counted as a class or as a passed control. **When the controls
+pass**, the wording is "confirmation robust at this b"; a single-particle reading is stated only together with the
+event-shape fractions, and only as far as they support it.
 
 ## 4. Estimation
 
@@ -160,18 +182,30 @@ b is worded "a protocol-confirmed structure rate; the particle-barrier interpret
 **Data-generating process.**
 - Run-level first-passage model: an independent startup event (event before t = 50) with probability p_s; otherwise a
   constant hazard k_b(Ω)·L after t = 50 (L = 100), censored at 480. A run's exposure is from 50 to its event or 480.
+  **A startup run has zero post-burn-in exposure and no post-burn-in event.**
 - Rates: k_b(Ω) = 3.41e-5 · exp(−S_b·(Ω − Ω0_b)) per unit length and time, with S_b = 0.064 + S₁·(b − 29.00), so b =
   29.00 always has MG3b's S.
-- **Historical b = 29.00 regenerated under its original rule** (not held fixed): cells 130, 120, 110, 100 with Ω0 =
-  120; Ω = 120 a fixed 64 runs; the others batches of 16 to ≥ 20 events, cap 64; p_s per cell 0.00, 0.14, 0.40, 0.34
-  (the observed fractions).
+- **Historical b = 29.00, regenerated with the selection that produced it** (MG034 r2 §2, first option). Each
+  replicate simulates MG3b Part 1 and Part 2:
+  - Part 1: a τ arm and a τ/2 arm at Ω = 120, 64 runs each (MG3b's calibration fixed 64, not 96), with equal true
+    rates k(120) = 3.41e-5 (no time-step effect) and p_s 0.14 (τ) and 0.16 (τ/2), the observed fractions. MG3b's
+    registered rule is applied: EQUIVALENT if the 90% CI for the rate ratio (MG3b's method a,
+    `calib_mg3b.ci_ratio_cp`) lies in [0.5, 2].
+  - **Only replicates where Part 1 is EQUIVALENT are retained**, which is the branch actually observed (64 runs,
+    EQUIVALENT, production at τ). The others are discarded before any MG9b step, and the retained count is reported
+    per case (MG3b's calibration gave P(EQUIVALENT | ratio 1) ≈ 0.85 at 64 runs).
+  - Part 2: the τ arm becomes the Ω = 120 cell; cells 130, 110, 100 use batches of 16 to ≥ 20 events, cap 64. p_s per
+    cell 0.00, 0.40, 0.34 (observed). Ω0 = 120.
 - **New b values simulated through the full §2 algorithm:** Part A placement (descending grid, 4 runs, the 3-of-4 stop,
   the 2-of-4 top rule), Part B candidates in order, batching and caps.
-- Screens (clip and crowding) cannot be generated from first-passage times. Each screen fails independently with
-  probability π_f. Otherwise calibration is conditional on screens passing and on confirmed events following the
-  first-passage model.
+- **Screens.** Clip and crowding screens cannot be generated from first-passage times. One independent draw per
+  screening decision (a Part A Ω cell, or a Part B candidate) fails the combined clip-plus-crowding screen with
+  probability π_f. This is a declared surrogate. It does not validate the real field-dependent screens, and otherwise
+  calibration is conditional on screens passing and on confirmed events following the first-passage model.
+- **Not modelled: the budget stop.** A budget-short result is therefore outside the calibration (§5).
 
-**Scenarios (2000 replicates each, fixed seed).**
+**Scenarios (4000 replicates generated per case, fixed seed; analyses use the retained replicates).** The count is
+raised from 2000 so that branches get support after the Part 1 selection.
 
 | Scenario | Ω0 at 29.20 / 29.35 | p_s (new b) | π_f | S₁ values |
 |---|---|---|---|---|
@@ -182,41 +216,66 @@ b is worded "a protocol-confirmed structure rate; the particle-barrier interpret
 
 Q is chosen so that 29.35 sits near the grid floor (often NOT PLACED or few cells) and replacements and caps occur.
 
-**Reported, per case and by available-b branch (three b, two b, fewer) where a branch has ≥ 100 replicates,** each
-with its Monte Carlo SE (about 0.006 at 0.93 with 2000 replicates): the fraction with no estimable trend; coverage of
-the true S₁; the rate of a directional call on each side; power for S₁ = −0.10 and −0.05 (scenario O); the
-linear-model check's rejection rate (all cases, including N); and the distribution of cells per b, caps and runs used.
+**Branches.** A branch is the set of b values with an identifiable S_b: **B3** = {29.00, 29.20, 29.35}, **B2-20** =
+{29.00, 29.20} (29.35 missing), **B2-35** = {29.00, 29.35} (29.20 missing), and **B-none** (fewer than two b values;
+no trend). The historical b = 29.00 is identifiable in every retained replicate in practice; if it is not, the
+replicate is counted in whichever branch its identifiable b values define.
 
-**Handling of failures.** A replicate where the design yields fewer than two b values with S_b counts as "no estimable
-trend": in power and false-positive rates it counts as no directional call. Coverage is computed over replicates with
-an estimable trend, and a fit that fails numerically there (non-finite estimate, or a profile bound that cannot be
-found) counts as **not covering**. No replicate is dropped from any denominator.
+**Reported, per case, pooled and per branch,** each proportion with its Monte Carlo SE: the retained count after the
+Part 1 selection; branch frequencies; coverage of the true S₁; the rate of a directional call on each side; the
+numerical-failure count; power for S₁ = −0.10 and −0.05 (scenario O); the linear-model check's rejection rate (B3, all
+cases including N); and the distribution of cells per b, caps and runs used. Pooled figures are descriptive only.
 
-**Calibration label.** "Calibrated" requires, in all eight linear cases, coverage ≥ 0.93 and a directional-call rate
-on each side ≤ 0.035 when S₁ = 0. This is a check on a finite grid, not a guarantee of 95% coverage. Otherwise the
-label is "not calibrated" and §5's exploratory rule applies.
+**Handling of failures.** B-none replicates count as no directional call in power and false-positive rates. Within an
+identifiable branch, a numerical fitting failure (§4.4) is counted separately and also counts as **not covering** and
+as no directional call. A profile bound that lies beyond the search bracket is **unbounded**, not a failure, and
+coverage is judged with that bound at ±∞. No replicate is dropped from any denominator.
+
+**Calibration label, per branch.** A branch is **supported** if it has at least 400 retained replicates in at least one
+S₁ = 0 case and at least one S₁ ≠ 0 case (Monte Carlo SE about 0.013 at coverage 0.93). A supported branch is
+**calibrated** if, in every linear case where it has at least 400 retained replicates, coverage ≥ 0.93 and, when
+S₁ = 0, the directional-call rate on each side ≤ 0.035. A branch that is not supported, or fails, is **not
+calibrated**. Pooled results never calibrate a branch (MG034 r2 §3 shows how a rare poor branch can hide in a pooled
+figure). The label that applies to the study is the label of the branch it actually ends in. This is a check on a
+finite grid, not a guarantee of 95% coverage.
+
+### 4.4 Fitting failures and unbounded intervals (real data)
+- Fits use a deterministic optimizer with fixed starting values; the profile search for S₁ uses a bracket of ±2 per
+  unit Ω per unit b (about 30 times MG3b's S over the range), and for each S_b ±1 per unit Ω.
+- On an identifiable design, if the maximum-likelihood fit fails to converge or gives a non-finite value, the primary
+  outcome is **NOT RESOLVED (NUMERICAL)**, with the failure recorded. The fit is not retried with other settings after
+  the data are seen.
+- A profile bound beyond its bracket is reported as unbounded on that side (for example "S₁ < +0.3, lower bound
+  unbounded") and is used as ±∞ in §5. It is not a numerical failure.
 
 ## 5. Decision rules
 
 **Primary (Q), applied in order:**
-1. **NOT RESOLVED (insufficient):** fewer than two b values have an S_b (a b that is REFERENCE-INVALID, NOT PLACED, or
-   with fewer than two production cells has none).
-2. **NEGATIVE LINEAR TREND:** the 95% CI of S₁ lies entirely below 0.
-3. **POSITIVE LINEAR TREND:** the 95% CI of S₁ lies entirely above 0.
-4. **NOT RESOLVED:** otherwise. This means the trend is unresolved, not that S is independent of b; the CI and the
+1. **NOT RESOLVED (insufficient):** fewer than two b values have an identifiable S_b (a b that is REFERENCE-INVALID,
+   NOT PLACED, or fails the §2.2 identifiability rule has none).
+2. **NOT RESOLVED (NUMERICAL):** the design is identifiable but the fit fails (§4.4).
+3. **NEGATIVE LINEAR TREND:** the 95% CI of S₁ lies entirely below 0.
+4. **POSITIVE LINEAR TREND:** the 95% CI of S₁ lies entirely above 0.
+5. **NOT RESOLVED:** otherwise. This means the trend is unresolved, not that S is independent of b; the CI and the
    §4.3 power are reported.
 
-**If calibration is "not calibrated":** a directional label from rule 2 or 3 is reported as **EXPLORATORY** (for
-example "NEGATIVE LINEAR TREND (EXPLORATORY)"), and the confirmatory primary outcome is NOT RESOLVED.
+**Exploratory rule.** A directional label from rule 3 or 4 is reported as **EXPLORATORY** (for example "NEGATIVE
+LINEAR TREND (EXPLORATORY)"), and the confirmatory primary outcome is NOT RESOLVED, if either:
+- the branch the study ends in (B3, B2-20 or B2-35) is not calibrated (§4.3); or
+- any b in the fit has a BUDGET-SHORT cell, because the budget stop is not part of the calibrated design.
+
+The branch is always named in the result, including which new b is missing.
 
 **Qualifiers (added to the label, not changing it):**
 - **LINEAR MODEL MISFIT:** the §4.2 check has p < 0.05. The headline then leads with the per-b slopes; a trend label is
   reported only as a summary of the linear fit, and no monotone or derivative statement is made.
 - **NON-MONOTONE (descriptive):** the middle S_b lies outside the range of the other two by more than its CI half-width.
-- **LATTICE-FLAGGED (b):** a V-b2 or V-b3 flag (CONFIRMATION-SENSITIVE, CONTROL-INSUFFICIENT or CONFIRMATION-TOLERANCE)
-  at that b.
-- **CAPPED (b)** / **BUDGET-SHORT (b):** a capped cell, or a cell stopped by the budget, at that b.
-- **TWO-B:** only two b values are available; the range is stated and the linear-model check is unavailable.
+- **LATTICE-FLAGGED (b):** a V-b2 or V-b3 flag (CONFIRMATION-SENSITIVE, CONTROL-INSUFFICIENT,
+  CONTROL-NUMERICAL-FAILURE or CONFIRMATION-TOLERANCE) at that b.
+- **CAPPED (b)** / **BUDGET-SHORT (b):** a capped cell, or a cell stopped by the budget, at that b (BUDGET-SHORT also
+  triggers the exploratory rule).
+- **TWO-B (missing b):** only two b values are available (branch B2-20 or B2-35); the missing b and the fitted range are
+  stated, and the linear-model check is unavailable.
 
 **Wording.** NEGATIVE LINEAR TREND reads "under a linear model, the activation slope of protocol-confirmed structures
 decreases with b over [fitted range] on the h = 0.2 lattice, at τ = 6.667e-4". It is consistent with, but does not
@@ -239,8 +298,9 @@ prove, a lower barrier nearer b_r. No continuum, Landau-exponent or physical ene
 - **Cutoff enforcement.** The ledger is persisted per run, and the cutoff is checked before each batch, pilot, screen
   and control. The deadline is cooperative, not a strict wall-time guarantee. Runs in flight finish and count.
 - **Partial analysis at a budget stop (frozen now).** All completed production runs are analysed under §4–§5 as they
-  stand. A cell stopped below its event target stays in the fit flagged BUDGET-SHORT (like a capped cell). A b without
-  two production cells has no S_b. Part A records and unfinished controls are reported as they stand, and a missing
+  stand. A cell stopped below its event target stays in the fit flagged BUDGET-SHORT (like a capped cell), and any
+  directional result is then EXPLORATORY with confirmatory Q = NOT RESOLVED (§5). A b that fails the identifiability
+  rule has no S_b. Part A records and unfinished controls are reported as they stand, and a missing
   V-b2/V-b3 control counts as CONTROL-INSUFFICIENT. The PI then decides on any continuation, which would be a separate,
   disclosed decision. Nothing completed is discarded.
 - **Order.** Calibration; V-b1 for both b; at 29.35 Part A, Part B screens, Part B production (V-b3 with its Ω_T cell);
@@ -265,8 +325,8 @@ prove, a lower barrier nearer b_r. No continuum, Landau-exponent or physical ene
 
 ## 8. Decisions for the PI
 
-**PI decision (2026-11-05 02:39 UTC, thread message): all five recommendations adopted as written.** Draft 2 keeps
-them; MG034 §5 endorsed all five.
+**PI decision (2026-11-05 02:39 UTC, thread message): all five recommendations adopted as written.** Drafts 2 and 3
+keep them; MG034 §5 and round 2 endorsed all five.
 
 1. **b values 29.20 and 29.35**, with MG3b's 29.00 reused.
 2. **Three cells per b**, from Ω_T and the candidate list Ω_T − 15, Ω_T − 30, Ω_T + 15, Ω_T + 30 (draft 2 makes the
@@ -277,5 +337,9 @@ them; MG034 §5 endorsed all five.
 5. **Review:** ChatGPT reviews this draft, then the calibration results and the implementation, before any production
    run.
 
-No new PI decision is needed for draft 2. Its one judgment call is the exploratory rule in §5 (an uncalibrated
-directional result does not count as a confirmatory trend), chosen because MG034 asked for that status to be frozen.
+No new PI decision is needed for draft 3. Its judgment calls, all made in the cautious direction MG034 asked for:
+- An uncalibrated or budget-short directional result does not count as a confirmatory trend (§5).
+- The historical data are calibrated with MG3b's Part 1 selection simulated (MG034 r2 §2, first option), rather than
+  the simpler regeneration treated as an approximation, so that a calibrated label stays attainable.
+- Calibration labels are per branch with at least 400 retained replicates (§4.3), and 4000 replicates are generated per
+  case. The cloud calibration cap stays 4 core-h.
