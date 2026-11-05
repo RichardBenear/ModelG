@@ -96,8 +96,8 @@ Review: `review/MG037_chatgpt.md`; response: `review/MG037_response.md`. No regi
   removed, every E (B1 replicates, horizon, B2 E_stoch) is reported with two companions, which do not enter any label:
   **E_raw**, the registered definition applied literally to the unfiltered fields (own σ*), whose numerical floor is about
   2e-5 to 6e-5; and **E_nyq**, the removed-mode discrepancy max_s ‖Nyq(A) moved by the integer node shift nearest σ* −
-  Nyq(B)‖ / ‖φ_B‖ (an integer shift moves that mode exactly; a sub-grid shift of it is undefined on the grid). Pending the
-  PI's sign-off before production.
+  Nyq(B)‖ / ‖φ_B‖ (an integer shift moves that mode exactly; a sub-grid shift of it is undefined on the grid). **PI
+  sign-off 2026-11-05 23:37 UTC:** D1 accepted (filtered E scored, E_raw and E_nyq reported); production go given.
 - **TRACK-FAIL scans every end of the track (item 4).** After an unmatched snapshot that does not qualify, the scan
   continues; each later end of the track (first unmatched snapshot after a matched one) is tested again.
 - **Accounting (item 5).** Run records, the ledger, `status.json` and npz files are written to a temporary file and

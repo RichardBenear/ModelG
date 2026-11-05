@@ -725,3 +725,5 @@ Items deliberately postponed so the project reaches its main questions first. Th
   diffusion-only cross-check of the production kernels (supplementary Part 0 check, passes). Tests 24, all pass.
 - Recorded deviation D1 (`spec/MG8_prerun.md` §7): the scored shape error uses Nyquist-free fields; the literal E_raw
   and the removed-mode E_nyq are reported beside it. Awaiting the PI's sign-off. No production run.
+- 2026-11-05 23:37 UTC: the PI accepted D1 and gave the production go (PR #81 merged). Production launched in the cloud
+  (Linux, 4 cores, 4 workers).
