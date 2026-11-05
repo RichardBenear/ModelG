@@ -53,9 +53,9 @@ Trend fit S_b = S₀ + S₁(b − 29.175): S₀ = 0.0571. Linear-model check (th
   none. This did not affect any scored quantity. A time limit (with an over-limit job counted as incomplete) should be
   set in any future study that uses tight-tolerance confirmations.
 - No other deviations. All 280 run records have b_det = b. All 280 runs reached their planned endpoints; all 16
-  placement and 240 production records are complete for first-passage scoring. The 4 T = 20 clip pilots and 19 of the
-  20 T = 50 crowding screens carry `complete=false` under the full first-passage definition, as intended (the other
-  screen had a startup event); none entered a rate fit. *(Corrected after ChatGPT MG035.)*
+  placement and 240 production records are complete for first-passage scoring. The 8 T = 20 clip pilots (4 in Part A, 4 in the Part B screens) and 15 of the 16
+  T = 50 crowding-screen runs carry `complete=false` under the full first-passage definition, as intended (the other
+  screen run had a startup event); none entered a rate fit. *(Corrected after ChatGPT MG035.)*
 
 ## Independent recomputation
 

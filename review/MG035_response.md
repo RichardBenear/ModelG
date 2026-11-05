@@ -8,10 +8,10 @@ Both corrections are accepted and applied to `spec/MG9b_result.md`, with the ori
 corrected. Neither changes the classification, which stays NOT RESOLVED.
 
 1. **Completeness wording.** The new text reads: "All 280 runs reached their planned endpoints; all 16 placement and
-   240 production records are complete for first-passage scoring." It also corrects a counting slip in the review. The
-   records hold 4 T = 20 clip pilots (one per Part A cell and none per Part B candidate, so not 8). They also hold 20
-   T = 50 crowding-screen runs (4 per candidate across 5 candidates, so not 16). 19 of those 20 screen runs carry
-   `complete=false`, and the remaining one had a startup event. That totals 4 + 20 + 16 + 240 = 280.
+   240 production records are complete for first-passage scoring." The review's
+   counts are correct: 8 T = 20 clip pilots (4 in Part A, 4 as the first run of each Part B screen) and 16 T = 50
+   crowding runs, 15 of which carry `complete=false`, while the remaining one had a startup event. That gives
+   8 + 16 + 16 + 240 = 280.
 2. **Power wording.** The sentence is replaced with "the design had limited power for modest trends". The calibration
    powers are now reported as scenario-specific, with no direct estimate at S₁ = −0.023.
 
