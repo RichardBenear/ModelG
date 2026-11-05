@@ -666,3 +666,9 @@ Items deliberately postponed so the project reaches its main questions first. Th
   - Budget about 34 core-h projected, cutoff 50, on the PI's PC.
   - Not registered; no run.
 - PI adopted all §8 recommendations as written (02:39 UTC). Next: ChatGPT design review.
+- ChatGPT MG034 (`review/MG034_chatgpt.md`): revise before registration; PI choices kept. All points accepted (`review/MG034_response.md`). Draft 2 (`spec/MG9b_proposal.md`; draft 1 kept as `_v1`, superseded):
+  - Outcomes NEGATIVE/POSITIVE LINEAR TREND / NOT RESOLVED, with per-b slopes and a 1-df linear-model check. Lack-of-fit df corrected (three cells give 1 df; my error).
+  - Calibration fully specified (historical b = 29.00 regenerated under MG3b's rule; ordinary, startup-stress, placement-stress and non-monotone scenarios). Not calibrated → a directional result is EXPLORATORY.
+  - V-b1 to V-b3 defined exactly (late window 1900–2000, ten unique fields, rtol/atol in the confirmation path, b_det = b). A V-b1 failure stops that b.
+  - Unique replacement candidates; pilots and screens inside the 50 core-h cutoff (about 35 projected); partial analysis at a budget stop frozen.
+  - Not registered; no run. Next: ChatGPT review of draft 2.
