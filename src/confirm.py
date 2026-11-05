@@ -25,12 +25,29 @@ def _deep_minima(f, thr):
     return np.where((f < l) & (f <= r) & (f < thr))[0]
 
 
-def confirm_field(phi, b, h, A_unsmoothed, lam, det_pos=None, t_end=300.0):
+def confirm_field(phi, b, h, A_unsmoothed, lam, det_pos=None, t_end=300.0, checks=None, rtol=None, atol=None):
+    """MG9b additions (spec/MG9b_proposal.md draft 3, §3), all optional with unchanged defaults:
+    checks: the check times (default CHECKS, 200-300); the integration runs to checks[-1] when checks is given.
+    rtol/atol: solver tolerances (default: lattice_ode_1d's 1e-8/1e-10).
+    The result also carries complete (all check times returned) and n_checks_returned. An incomplete integration is
+    classified 'incomplete', never persistent/excursion/unresolved."""
     N = phi.shape[1]
     L = N * h
     x = (np.arange(N) - N // 2) * h
     y0 = np.concatenate([phi[0], phi[1], phi[2]])
-    xx, ts, Y, mdt = lattice_ode_1d({**P17, "b": b}, N, h, t_end, seed_scale=0.0, y0=y0, t_eval=CHECKS)
+    ck = CHECKS if checks is None else np.asarray(checks, float)
+    if checks is not None:
+        t_end = float(ck[-1])
+    tol = {}
+    if rtol is not None:
+        tol["rtol"] = rtol
+    if atol is not None:
+        tol["atol"] = atol
+    xx, ts, Y, mdt = lattice_ode_1d({**P17, "b": b}, N, h, t_end, seed_scale=0.0, y0=y0, t_eval=ck, **tol)
+    complete = bool(len(ts) == len(ck))
+    if not complete:
+        return dict(cls="incomplete", n_persistent=0, n_deep_end=-1, min_phiX_end=float("nan"),
+                    maxdt_end=float("nan"), near_detection=None, complete=False, n_checks_returned=int(len(ts)))
     thr = -0.5 * abs(A_unsmoothed)
     mins = [x[_deep_minima(Y[N:2 * N, k], thr)] for k in range(Y.shape[1])]
     circ = lambda a, c: np.minimum(np.abs(a - c) % L, L - np.abs(a - c) % L)
@@ -59,4 +76,5 @@ def confirm_field(phi, b, h, A_unsmoothed, lam, det_pos=None, t_end=300.0):
     if det_pos is not None and persistent_ends:
         near = bool(min(circ(np.array(persistent_ends), det_pos)) <= 2 * lam)
     return dict(cls=cls, n_persistent=len(persistent_ends), n_deep_end=int(mins[-1].size),
-                min_phiX_end=float(yend[N:2 * N].min()), maxdt_end=mdt, near_detection=near)
+                min_phiX_end=float(yend[N:2 * N].min()), maxdt_end=mdt, near_detection=near, complete=True,
+                n_checks_returned=int(len(ts)))
