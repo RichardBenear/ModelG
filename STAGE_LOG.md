@@ -797,3 +797,8 @@ All ten jobs complete after prospective registration1451074, separate recomputat
 ## MG046 — PI closes MG10-C1 and authorizes next study (2026-11-06)
 
 Richard explicitly signed off MG10-C1 and instructed proceeding. Preserve all MG045 outcomes and original MG10 UNRESOLVED result. Next: MG10-S1, bounded finite-reactant stochastic approximation and exact small-system qualification before any full-lattice finite-supply particle claims. Scope/criteria/budgets will be registered prospectively.
+
+
+## MG047 — Finite-reactant sampler qualification registered (2026-11-06)
+
+Bounded A and joint B/X leap, independent exact SSA, integer reaction/hop ledgers, confidence-band evaluator/checker and generic owned-process controller implemented. Five sampler plus three apparatus tests PASS; analytic and synthetic raw checks and all16 timing groups independently verified. Registered16 groups x32768 short paths, 96 primary marginal comparisons with99% simultaneous bounds/.05 margin; all1024 chunk seeds fixed and unique. Forecast0.2867493 core-hours fits new1 core-hour cap with reserve. Full fields, ledgers and seeds retained; no scientific group before registration. This qualifies a prerequisite, not physical particles or all parameter regimes.

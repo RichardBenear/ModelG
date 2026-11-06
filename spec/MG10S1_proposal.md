@@ -1,6 +1,6 @@
 # MG10-S1 — Finite-reactant stochastic sampler qualification
 
-MG046, 2026-11-06. **Prospective design; no scientific ensemble has run.**
+MG046, 2026-11-06. **REGISTERED prospectively, MG047. Only declared development/qualification/timing samples preceded registration; no scientific ensemble has run.**
 Richard signed off MG10-C1 and instructed proceeding. This prerequisite to MG10-D
 qualifies an explicit fluctuation law, not a full-lattice particle survey. MG10-C1
 is CLOSED with its three outcomes; original MG10 remains UNRESOLVED, not rescored.
@@ -121,3 +121,5 @@ results/MG10S1/ and commit/push all decision inputs. A separate analysis must re
 raw arrays without importing the new sampler/evaluator, declaring shared helpers.
 PI closure is separate. Full-lattice particle runs require a later registered
 scope with persistence/identity criteria and a physically motivated fluctuation model.
+
+Before registration, a synthetic implementation sanity check uses256 independent Bernoulli families of96 marginal comparisons for true CDF distances0,.01,.10 with the fixed R and DKW band. Require observed family coverage>=.98, null qualification frequency>=.90, and zero qualifications at distance.10; report the distance.01 power descriptively. This validates implementation, not universal empirical coverage, which relies on the stated DKW/PRNG assumptions. Retain synthetic counts and keys (stage4601,case94). These checks cannot change R or margins.

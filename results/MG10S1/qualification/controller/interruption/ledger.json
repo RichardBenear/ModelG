@@ -1,0 +1,27 @@
+{
+  "records": [
+    {
+      "id": "development_stop",
+      "status": "INTERRUPTED",
+      "job": {
+        "id": "development_stop",
+        "case": 0,
+        "method": 3,
+        "stage": 4601,
+        "reps": 512,
+        "chunk": 512
+      },
+      "charged_worker_seconds": 0.0035120000247843564
+    }
+  ],
+  "ceiling": 30,
+  "prior_charge": 0,
+  "poll_seconds": 0.5,
+  "charged_worker_seconds": 0.0035120000247843564,
+  "inflight_worker_seconds": 0,
+  "pending_ids": [],
+  "active_ids": [],
+  "stop_reason": "INTERRUPTED",
+  "workers": 1,
+  "threads_per_library": 1
+}

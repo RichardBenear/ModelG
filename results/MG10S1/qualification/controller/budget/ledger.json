@@ -1,0 +1,29 @@
+{
+  "records": [
+    {
+      "status": "BUDGET-SHORT",
+      "job": {
+        "id": "development_stop",
+        "case": 0,
+        "method": 3,
+        "stage": 4601,
+        "reps": 512,
+        "chunk": 512
+      },
+      "id": "development_stop",
+      "charged_worker_seconds": 0.5061211999855004,
+      "returncode": 1,
+      "termination_reason": "BUDGET-SHORT"
+    }
+  ],
+  "ceiling": 0.05,
+  "prior_charge": 0,
+  "poll_seconds": 0.5,
+  "charged_worker_seconds": 0.5061211999855004,
+  "inflight_worker_seconds": 0,
+  "pending_ids": [],
+  "active_ids": [],
+  "stop_reason": null,
+  "workers": 1,
+  "threads_per_library": 1
+}

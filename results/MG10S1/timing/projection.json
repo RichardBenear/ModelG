@@ -1,0 +1,27 @@
+{
+  "projected_worker_seconds": 1032.2976160030812,
+  "per_job": {
+    "case0_method0": 52.32941299898084,
+    "case0_method1": 64.77332980406936,
+    "case0_method2": 63.911416204995476,
+    "case0_method3": 74.95350260508712,
+    "case1_method0": 50.443627396947704,
+    "case1_method1": 55.69811699760612,
+    "case1_method2": 65.39139060152229,
+    "case1_method3": 71.21833460254129,
+    "case2_method0": 49.34518259984907,
+    "case2_method1": 52.61460979504045,
+    "case2_method2": 60.205585802323185,
+    "case2_method3": 72.09213940275367,
+    "case3_method0": 49.4740657977527,
+    "case3_method1": 66.09861619991716,
+    "case3_method2": 77.55530739796814,
+    "case3_method3": 106.19297779572662
+  },
+  "overhead": 5.4812210000818595,
+  "ceiling": 3600,
+  "reserve": 0.25,
+  "fits": true,
+  "qualification_timing_seconds": 68.31410340004368,
+  "formula": "2x compute scaling from512 to32768 per case/method + max(5s,2x observed startup/serialization/poll overhead)"
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "command": [
+      "python",
+      "tests/test_mg10s1.py",
+      "SamplerQualification.test_joint_R3_law_and_drift"
+    ],
+    "elapsed_worker_seconds": 4.345530199992936,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "test_joint_R3_law_and_drift (__main__.SamplerQualification.test_joint_R3_law_and_drift) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 2.475s\n\nOK\n"
+  },
+  {
+    "command": [
+      "python",
+      "src/check_mg10s1.py",
+      "--development"
+    ],
+    "elapsed_worker_seconds": 1.7969944999786094,
+    "returncode": 0,
+    "stdout": "{'status': 'PASS', 'groups': 16, 'exact_integer_ledgers': True, 'analytic_and_synthetic_checks': True, 'charged_worker_seconds': 68.31410340004368}\n",
+    "stderr": ""
+  }
+]

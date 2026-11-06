@@ -1,0 +1,29 @@
+{
+  "records": [
+    {
+      "status": "TIMEOUT",
+      "job": {
+        "id": "development_stop",
+        "case": 0,
+        "method": 3,
+        "stage": 4601,
+        "reps": 512,
+        "chunk": 512
+      },
+      "id": "development_stop",
+      "charged_worker_seconds": 0.5060656999703497,
+      "returncode": 1,
+      "termination_reason": "TIMEOUT"
+    }
+  ],
+  "ceiling": 30,
+  "prior_charge": 0,
+  "poll_seconds": 0.5,
+  "charged_worker_seconds": 0.5060656999703497,
+  "inflight_worker_seconds": 0,
+  "pending_ids": [],
+  "active_ids": [],
+  "stop_reason": null,
+  "workers": 1,
+  "threads_per_library": 1
+}
