@@ -1999,6 +1999,8 @@ PI sign-off: registration 2026-11-05 20:02 UTC; deviation D1 and production go 2
 
 ### MG10 — Explicit A/B reservoirs (DRAFT; MG039, 2026-11-06)
 
+**Current status (MG043): first deterministic batch REGISTERED MG042 and completed; result UNRESOLVED; PI closure pending. Historical drafting and approval records follow.**
+
 Design: [spec/MG10_proposal.md](spec/MG10_proposal.md), Draft 1. NOT REGISTERED; no scientific or development trajectory run.
 Proposed sequence: A formal state/reaction/accounting model; B implementation qualification; C deterministic recovery of the fixed-reservoir baseline; D finite-capacity estimation; E causal supply interventions; F recomputation and PI closure.
 Only A/B/C are the first proposed scope. D/E require separately frozen arms and budgets. Numerical margins, sample sizes, run caps and compute ceiling remain to be finalized before PI registration.
@@ -2014,3 +2016,5 @@ MG041 (2026-11-06): PI explicitly waived external review and authorized proceedi
 MG042 authorization (2026-11-06): PI adopted spec/MG10_qualification_correction.md (“yes, go ahead”) and authorized continuing qualification, benchmark and conditional production. External review remains waived. The original MG041 failure is preserved. Registration will be prospective after qualification and measured projection.
 
 MG042 REGISTRATION (2026-11-06, before production): MG10-A/B/C deterministic batch REGISTERED under PI authorization; external review waived; adopted MG041 qualification correction. MG10_run_plan.md version 2 and MG10_prerun.md govern. Qualification PASS; projected 6488.182472 worker-seconds (1.802273 core-hours) <=10800 allowed with reserve, 64 fixed jobs, <=8 workers, ceiling 14400 seconds, per job 600. Durable raw retention verified. Full source/spec/reference hashes in results/MG10/registration.json. Earlier Draft 3/run-plan Draft 1 preserved. No scientific production preceded this registration.
+
+MG043 RESULT (2026-11-06): UNRESOLVED. All 64 registered trajectories completed; all accounting/oracle checks pass; separate recomputation agrees on all arm labels and batch verdict. Top capacities C=100000 and 1000000 recover for both starts, but C=1 homogeneous E2/O error 0.4996807 exceeds 0.001. Production 771.0576318 worker-seconds (0.21418268 core-hours), no timeout/budget stop. A posthoc raw-data check also identifies roundoff detections on exactly uniform depleted backgrounds; no detector or verdict is revised. Full raw arrays, ledger, evaluation and recomputation retained in results/MG10/production. Report: results/MG10/MG10_results.md; same-author internal check: review/MG043_internal_check.md. PI closure pending.

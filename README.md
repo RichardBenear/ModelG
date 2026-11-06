@@ -56,7 +56,7 @@ paper/       White-paper drafts
 
 ## Roadmap
 
-The original roadmap is preserved in [`InitialPlan.md`](InitialPlan.md). The active extension is [MG10 Draft 3](spec/MG10_proposal.md), explicit A/B reservoirs; DRAFT, not registered. Summary:
+The original roadmap is preserved in [`InitialPlan.md`](InitialPlan.md). The active extension is [MG10](spec/MG10_proposal.md), explicit A/B reservoirs. Its first registered deterministic batch completed: **UNRESOLVED**, PI closure pending. Both highest capacities recover the baseline, with a low-capacity numerical/measurement issue still open. [Results](results/MG10/MG10_results.md). Summary:
 
 | Phase | Content | Gate |
 |---|---|---|
@@ -68,7 +68,7 @@ The original roadmap is preserved in [`InitialPlan.md`](InitialPlan.md). The act
 | 5 | G-coupled spatial growth | MG6 |
 | 6 | Multiway / foliation diagnostics | MG8 (MG7 is the mass-scaling b-scan) |
 | 7 | Write-up | — |
-| Extension | Explicit A/B reservoirs, recovery of Model G and finite-supply effects | MG10 (DRAFT) |
+| Extension | Explicit A/B reservoirs, recovery of Model G and finite-supply effects | MG10 (first batch UNRESOLVED) |
 
 ## Setup
 

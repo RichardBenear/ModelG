@@ -1,0 +1,52 @@
+{
+  "scope": "POST_HOC_EXISTING_RAW_DATA_ONLY; no new run or rescoring",
+  "rows": {
+    "FINITE_H_E2_C1": {
+      "first_range_above_1e_minus6": null,
+      "max_spatial_range_by_species": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scoring_count_range": [
+        0,
+        33
+      ],
+      "exactly_uniform_snapshots_with_nonzero_counts": 69,
+      "artifact_examples": [
+        {
+          "time": 61,
+          "raw_X_spatial_range": 0.0,
+          "smoothed_X_spatial_range": 1.3322676295501878e-15,
+          "detector_count": 10
+        },
+        {
+          "time": 63,
+          "raw_X_spatial_range": 0.0,
+          "smoothed_X_spatial_range": 8.881784197001252e-16,
+          "detector_count": 15
+        },
+        {
+          "time": 69,
+          "raw_X_spatial_range": 0.0,
+          "smoothed_X_spatial_range": 1.3322676295501878e-15,
+          "detector_count": 10
+        }
+      ]
+    },
+    "FINITE_H_O_C1": {
+      "first_range_above_1e_minus6": 67,
+      "max_spatial_range_by_species": [
+        0.3402119377362638,
+        16.853877933279048,
+        1.7493228816556483
+      ],
+      "scoring_count_range": [
+        0,
+        34
+      ],
+      "exactly_uniform_snapshots_with_nonzero_counts": 0,
+      "artifact_examples": []
+    }
+  }
+}

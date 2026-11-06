@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "FINITE_S_O_C10",
+    "mode": "FINITE",
+    "start": "S",
+    "method": "O",
+    "capacity": 10,
+    "T": 300,
+    "n": 500
+  },
+  "audit": {
+    "per_site_scaled_residual": 7.222118436675035e-15,
+    "global_scaled_residual": 3.3569240765672723e-15,
+    "availability_oracle_error": 3.3306690738754696e-16,
+    "external_A_total": 0.0,
+    "external_B_total": 0.0,
+    "pass": true
+  },
+  "sha256": "cdb34c845dd7f6e943d6ae52044252115c7cd6b1f807e1607b12c686125eba92",
+  "last_checkpoint": 300.0,
+  "elapsed_worker_seconds": 12.070901300001424,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "threads_per_library": 1
+}

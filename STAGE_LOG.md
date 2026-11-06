@@ -777,3 +777,8 @@ PI: “No review needed. Go ahead.” External review is waived for this batch. 
 ## MG042 — Corrected qualification and prospective registration (2026-11-06)
 
 PI adopted MG041 correction and authorized proceeding. Deterministic reservoirs, independent sparse BDF reference, bounded owned-process driver, evaluator and separate checker implemented. Seven qualification tests PASS after eliminating identically constant ODE coordinates; failed development attempt preserved. All-capacity one-node exact cases and actual stop/resume checks PASS. Two declared T10 timing cases independently audited. Projection 1.802273 core-hours for 64 jobs, within 4 core-hour ceiling with reserve. Raw local retention verified. Registered before scientific production, with source/spec/reference hashes and unchanged recovery thresholds. See review/MG042_internal_check.md and results/MG10/registration.json.
+
+
+## MG043 — MG10 first batch complete: UNRESOLVED (2026-11-06)
+
+All 64 registered runs complete, with 0.21418268 local production core-hours and no timeout or budget stop. All ledger/availability checks pass; separate raw recomputation agrees. Both top capacities recover for both starts (soliton normalized errors about 0.825% and 0.0825%), but C=1 homogeneous numerical disagreement forces overall UNRESOLVED. Posthoc existing-data diagnostics also show FFT-roundoff detections on exactly uniform depleted backgrounds; no frozen detector or verdict changed. Full raw fields/fluxes, hashes, evaluation, recomputation and ledger retained. Report: results/MG10/MG10_results.md. Follow-up recommended on homogeneous invariance, controlled perturbations and depleted-background measurement. No additional production authorized here; PI closure pending.

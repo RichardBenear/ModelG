@@ -1,0 +1,622 @@
+{
+  "recomputation": "AGREES",
+  "verdict": "UNRESOLVED",
+  "rows": [
+    {
+      "capacity": 1,
+      "start": "H",
+      "verdict": "NUMERICALLY UNRESOLVED",
+      "primary_E2": 0.6306550298294729,
+      "primary_O": 0.6995647786820046
+    },
+    {
+      "capacity": 10,
+      "start": "H",
+      "verdict": "BASELINE NOT RECOVERED",
+      "primary_E2": 0.09479420391555908,
+      "primary_O": 0.09479420140106129
+    },
+    {
+      "capacity": 100,
+      "start": "H",
+      "verdict": "RECOVERS BASELINE",
+      "primary_E2": 0.009909833502513177,
+      "primary_O": 0.009909833475010982
+    },
+    {
+      "capacity": 1000,
+      "start": "H",
+      "verdict": "RECOVERS BASELINE",
+      "primary_E2": 0.0009954301907748406,
+      "primary_O": 0.0009954301905015035
+    },
+    {
+      "capacity": 10000,
+      "start": "H",
+      "verdict": "RECOVERS BASELINE",
+      "primary_E2": 9.95876337333509e-05,
+      "primary_O": 9.958763375715108e-05
+    },
+    {
+      "capacity": 100000,
+      "start": "H",
+      "verdict": "RECOVERS BASELINE",
+      "primary_E2": 9.959209677403079e-06,
+      "primary_O": 9.959209669368135e-06
+    },
+    {
+      "capacity": 1000000,
+      "start": "H",
+      "verdict": "RECOVERS BASELINE",
+      "primary_E2": 9.959258414531697e-07,
+      "primary_O": 9.959254302392497e-07
+    },
+    {
+      "capacity": 1,
+      "start": "S",
+      "verdict": "BASELINE NOT RECOVERED",
+      "primary_E2": 522.0081915593381,
+      "primary_O": 522.0081066256203
+    },
+    {
+      "capacity": 10,
+      "start": "S",
+      "verdict": "BASELINE NOT RECOVERED",
+      "primary_E2": 78.7326204343182,
+      "primary_O": 78.73261859400493
+    },
+    {
+      "capacity": 100,
+      "start": "S",
+      "verdict": "BASELINE NOT RECOVERED",
+      "primary_E2": 8.206386030322427,
+      "primary_O": 8.206386008699162
+    },
+    {
+      "capacity": 1000,
+      "start": "S",
+      "verdict": "BASELINE NOT RECOVERED",
+      "primary_E2": 0.8244594420630242,
+      "primary_O": 0.8244594418983728
+    },
+    {
+      "capacity": 10000,
+      "start": "S",
+      "verdict": "BASELINE NOT RECOVERED",
+      "primary_E2": 0.08249411401936516,
+      "primary_O": 0.08249411404814927
+    },
+    {
+      "capacity": 100000,
+      "start": "S",
+      "verdict": "RECOVERS BASELINE",
+      "primary_E2": 0.008249935966308505,
+      "primary_O": 0.008249935959340081
+    },
+    {
+      "capacity": 1000000,
+      "start": "S",
+      "verdict": "RECOVERS BASELINE",
+      "primary_E2": 0.0008249990472688733,
+      "primary_O": 0.0008249989015780066
+    }
+  ],
+  "accounting": [
+    {
+      "id": "CHEMOSTAT_H_E0_C1",
+      "per_site_scaled_residual": 9.99444288129773e-14,
+      "global_scaled_residual": 9.994466784037482e-14,
+      "availability_oracle_error": 0.0,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_E0_C1",
+      "per_site_scaled_residual": 3.9848600556999774e-14,
+      "global_scaled_residual": 3.987638780407112e-14,
+      "availability_oracle_error": 1.0436096431476471e-14,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_E0_C10",
+      "per_site_scaled_residual": 4.2542116755822765e-14,
+      "global_scaled_residual": 4.255610692641083e-14,
+      "availability_oracle_error": 1.887379141862766e-15,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_E0_C100",
+      "per_site_scaled_residual": 6.676592294503424e-14,
+      "global_scaled_residual": 6.680438499289253e-14,
+      "availability_oracle_error": 3.3306690738754696e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_E0_C1000",
+      "per_site_scaled_residual": 3.303309969930346e-14,
+      "global_scaled_residual": 3.303367536885276e-14,
+      "availability_oracle_error": 1.1102230246251565e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_E0_C10000",
+      "per_site_scaled_residual": 4.068826482345076e-15,
+      "global_scaled_residual": 4.068867032733729e-15,
+      "availability_oracle_error": 0.0,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_E0_C100000",
+      "per_site_scaled_residual": 3.5256072886391465e-15,
+      "global_scaled_residual": 3.5282072032345888e-15,
+      "availability_oracle_error": 0.0,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_E0_C1000000",
+      "per_site_scaled_residual": 2.2018926536906628e-15,
+      "global_scaled_residual": 2.201909279238071e-15,
+      "availability_oracle_error": 1.1102230246251565e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "CHEMOSTAT_S_E0_C1",
+      "per_site_scaled_residual": 9.772626862040436e-12,
+      "global_scaled_residual": 1.0924707283643767e-13,
+      "availability_oracle_error": 0.0,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_E0_C1",
+      "per_site_scaled_residual": 1.1100186841559481e-13,
+      "global_scaled_residual": 3.987638780407112e-14,
+      "availability_oracle_error": 1.0436096431476471e-14,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_E0_C10",
+      "per_site_scaled_residual": 8.727594601743169e-14,
+      "global_scaled_residual": 4.255610692641083e-14,
+      "availability_oracle_error": 1.887379141862766e-15,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_E0_C100",
+      "per_site_scaled_residual": 8.8830503942349e-14,
+      "global_scaled_residual": 6.680438499289253e-14,
+      "availability_oracle_error": 3.3306690738754696e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_E0_C1000",
+      "per_site_scaled_residual": 1.8100017354582682e-13,
+      "global_scaled_residual": 7.74388825245673e-15,
+      "availability_oracle_error": 1.1102230246251565e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_E0_C10000",
+      "per_site_scaled_residual": 9.356214875860236e-13,
+      "global_scaled_residual": 4.060260796327648e-15,
+      "availability_oracle_error": 0.0,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_E0_C100000",
+      "per_site_scaled_residual": 4.056355921302554e-12,
+      "global_scaled_residual": 1.5363036335551974e-15,
+      "availability_oracle_error": 0.0,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_E0_C1000000",
+      "per_site_scaled_residual": 4.466209952344535e-12,
+      "global_scaled_residual": 1.75578001587594e-15,
+      "availability_oracle_error": 1.1102230246251565e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "CHEMOSTAT_H_E1_C1",
+      "per_site_scaled_residual": 1.042289251744981e-13,
+      "global_scaled_residual": 1.0422917444871004e-13,
+      "availability_oracle_error": 0.0,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_E1_C1",
+      "per_site_scaled_residual": 5.5818078313841673e-14,
+      "global_scaled_residual": 5.58390607421833e-14,
+      "availability_oracle_error": 8.271161533457416e-15,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_E1_C10",
+      "per_site_scaled_residual": 4.818276153104787e-14,
+      "global_scaled_residual": 4.818316874314664e-14,
+      "availability_oracle_error": 1.5543122344752192e-15,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_E1_C100",
+      "per_site_scaled_residual": 4.434609777680362e-14,
+      "global_scaled_residual": 4.435728167983051e-14,
+      "availability_oracle_error": 3.3306690738754696e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_E1_C1000",
+      "per_site_scaled_residual": 2.64917288666998e-14,
+      "global_scaled_residual": 2.6521239476744303e-14,
+      "availability_oracle_error": 1.1102230246251565e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_E1_C10000",
+      "per_site_scaled_residual": 5.543328061552652e-15,
+      "global_scaled_residual": 5.544350030382906e-15,
+      "availability_oracle_error": 0.0,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_E1_C100000",
+      "per_site_scaled_residual": 9.471571796503078e-15,
+      "global_scaled_residual": 9.475762613855782e-15,
+      "availability_oracle_error": 0.0,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_E1_C1000000",
+      "per_site_scaled_residual": 3.923237453431234e-15,
+      "global_scaled_residual": 3.923266775885625e-15,
+      "availability_oracle_error": 1.1102230246251565e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "CHEMOSTAT_S_E1_C1",
+      "per_site_scaled_residual": 2.0594293810787098e-11,
+      "global_scaled_residual": 1.0922583366692784e-13,
+      "availability_oracle_error": 0.0,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_E1_C1",
+      "per_site_scaled_residual": 2.1164718868955666e-13,
+      "global_scaled_residual": 5.58390607421833e-14,
+      "availability_oracle_error": 8.271161533457416e-15,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_E1_C10",
+      "per_site_scaled_residual": 1.6107062855782044e-13,
+      "global_scaled_residual": 3.111350871090294e-14,
+      "availability_oracle_error": 1.5543122344752192e-15,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_E1_C100",
+      "per_site_scaled_residual": 1.3987003172199237e-13,
+      "global_scaled_residual": 4.435728167983051e-14,
+      "availability_oracle_error": 3.3306690738754696e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_E1_C1000",
+      "per_site_scaled_residual": 5.006814960055494e-13,
+      "global_scaled_residual": 2.6521239476744303e-14,
+      "availability_oracle_error": 1.1102230246251565e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_E1_C10000",
+      "per_site_scaled_residual": 1.5698535411073191e-12,
+      "global_scaled_residual": 2.524583505380462e-15,
+      "availability_oracle_error": 0.0,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_E1_C100000",
+      "per_site_scaled_residual": 1.2064045263665643e-11,
+      "global_scaled_residual": 1.5874700846351594e-15,
+      "availability_oracle_error": 0.0,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_E1_C1000000",
+      "per_site_scaled_residual": 1.1076532226054364e-11,
+      "global_scaled_residual": 2.2096567188856558e-15,
+      "availability_oracle_error": 1.1102230246251565e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "CHEMOSTAT_H_E2_C1",
+      "per_site_scaled_residual": 2.562866587082524e-13,
+      "global_scaled_residual": 2.562872716441987e-13,
+      "availability_oracle_error": 0.0,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_E2_C1",
+      "per_site_scaled_residual": 1.089007744791484e-13,
+      "global_scaled_residual": 1.0894574449484895e-13,
+      "availability_oracle_error": 2.808864252301646e-14,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_E2_C10",
+      "per_site_scaled_residual": 5.3539144196054144e-14,
+      "global_scaled_residual": 5.3554994633836327e-14,
+      "availability_oracle_error": 1.7763568394002505e-15,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_E2_C100",
+      "per_site_scaled_residual": 7.287675984152248e-14,
+      "global_scaled_residual": 7.287861825993309e-14,
+      "availability_oracle_error": 3.3306690738754696e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_E2_C1000",
+      "per_site_scaled_residual": 2.642935740766797e-14,
+      "global_scaled_residual": 2.64597481491002e-14,
+      "availability_oracle_error": 1.1102230246251565e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_E2_C10000",
+      "per_site_scaled_residual": 1.814066654827164e-14,
+      "global_scaled_residual": 1.8145125764912547e-14,
+      "availability_oracle_error": 0.0,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_E2_C100000",
+      "per_site_scaled_residual": 2.191570416044474e-14,
+      "global_scaled_residual": 2.1915889217185305e-14,
+      "availability_oracle_error": 0.0,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_E2_C1000000",
+      "per_site_scaled_residual": 2.8144339522385905e-14,
+      "global_scaled_residual": 2.815102715369831e-14,
+      "availability_oracle_error": 1.1102230246251565e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "CHEMOSTAT_S_E2_C1",
+      "per_site_scaled_residual": 3.664785827695154e-11,
+      "global_scaled_residual": 3.5457308777994994e-13,
+      "availability_oracle_error": 0.0,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_E2_C1",
+      "per_site_scaled_residual": 2.350978661716246e-13,
+      "global_scaled_residual": 1.0894574449484895e-13,
+      "availability_oracle_error": 2.808864252301646e-14,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_E2_C10",
+      "per_site_scaled_residual": 1.916339331032514e-13,
+      "global_scaled_residual": 5.3554994633836327e-14,
+      "availability_oracle_error": 1.7763568394002505e-15,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_E2_C100",
+      "per_site_scaled_residual": 2.373879188407541e-13,
+      "global_scaled_residual": 4.206830047095394e-14,
+      "availability_oracle_error": 3.3306690738754696e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_E2_C1000",
+      "per_site_scaled_residual": 5.694035478723274e-13,
+      "global_scaled_residual": 2.64597481491002e-14,
+      "availability_oracle_error": 1.1102230246251565e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_E2_C10000",
+      "per_site_scaled_residual": 7.416002307093346e-12,
+      "global_scaled_residual": 8.377183857772128e-15,
+      "availability_oracle_error": 0.0,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_E2_C100000",
+      "per_site_scaled_residual": 2.0338177752770694e-11,
+      "global_scaled_residual": 2.406081392341524e-15,
+      "availability_oracle_error": 0.0,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_E2_C1000000",
+      "per_site_scaled_residual": 2.1666520383850157e-11,
+      "global_scaled_residual": 2.815102715369831e-14,
+      "availability_oracle_error": 1.1102230246251565e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "CHEMOSTAT_H_O_C1",
+      "per_site_scaled_residual": 6.157099024050682e-17,
+      "global_scaled_residual": 6.157113749387288e-17,
+      "availability_oracle_error": 0.0,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_O_C1",
+      "per_site_scaled_residual": 4.695798953854673e-15,
+      "global_scaled_residual": 2.0220830975652804e-15,
+      "availability_oracle_error": 7.355227538141662e-14,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_O_C10",
+      "per_site_scaled_residual": 3.295330770564255e-15,
+      "global_scaled_residual": 1.3276055913586771e-15,
+      "availability_oracle_error": 1.9984014443252818e-15,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_O_C100",
+      "per_site_scaled_residual": 2.6589345026241793e-15,
+      "global_scaled_residual": 1.6736375342121344e-15,
+      "availability_oracle_error": 3.3306690738754696e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_O_C1000",
+      "per_site_scaled_residual": 1.998282319136207e-15,
+      "global_scaled_residual": 1.0840027286986909e-15,
+      "availability_oracle_error": 3.3306690738754696e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_O_C10000",
+      "per_site_scaled_residual": 2.1333922404340815e-15,
+      "global_scaled_residual": 2.133947303410442e-15,
+      "availability_oracle_error": 1.1102230246251565e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_O_C100000",
+      "per_site_scaled_residual": 2.6155146876060297e-15,
+      "global_scaled_residual": 2.037937092414218e-15,
+      "availability_oracle_error": 1.1102230246251565e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_H_O_C1000000",
+      "per_site_scaled_residual": 1.089788181513113e-15,
+      "global_scaled_residual": 1.0897963266393326e-15,
+      "availability_oracle_error": 1.1102230246251565e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "CHEMOSTAT_S_O_C1",
+      "per_site_scaled_residual": 1.3699505197384781e-14,
+      "global_scaled_residual": 8.385520146477392e-17,
+      "availability_oracle_error": 0.0,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_O_C1",
+      "per_site_scaled_residual": 6.367932609588648e-15,
+      "global_scaled_residual": 2.15374410055809e-15,
+      "availability_oracle_error": 6.311617894994015e-14,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_O_C10",
+      "per_site_scaled_residual": 7.222118436675035e-15,
+      "global_scaled_residual": 3.3569240765672723e-15,
+      "availability_oracle_error": 3.3306690738754696e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_O_C100",
+      "per_site_scaled_residual": 3.6840017225525255e-15,
+      "global_scaled_residual": 1.2304358704843918e-15,
+      "availability_oracle_error": 3.3306690738754696e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_O_C1000",
+      "per_site_scaled_residual": 3.657279887808779e-15,
+      "global_scaled_residual": 1.1313139410084754e-15,
+      "availability_oracle_error": 1.1102230246251565e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_O_C10000",
+      "per_site_scaled_residual": 3.0460199133471875e-15,
+      "global_scaled_residual": 1.68432434887331e-15,
+      "availability_oracle_error": 1.1102230246251565e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_O_C100000",
+      "per_site_scaled_residual": 3.3053801387262303e-15,
+      "global_scaled_residual": 1.3257998780890217e-15,
+      "availability_oracle_error": 1.1102230246251565e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "FINITE_S_O_C1000000",
+      "per_site_scaled_residual": 6.222297565570406e-15,
+      "global_scaled_residual": 9.415058482288047e-16,
+      "availability_oracle_error": 1.1102230246251565e-16,
+      "complete": true,
+      "passed": true
+    }
+  ],
+  "complete_paths": 64,
+  "charged_worker_seconds": 771.0576318000094,
+  "source_sha256": "c16b28787111a61b21eb72ec14278f357ffd31c4d10f8f9008d9a279f74a28df",
+  "shared_dependencies": "MG2 reference, detector and smoothing; no model/evaluator imports. Same-author recomputation, not external replication."
+}

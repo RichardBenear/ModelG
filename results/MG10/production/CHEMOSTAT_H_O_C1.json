@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "CHEMOSTAT_H_O_C1",
+    "mode": "CHEMOSTAT",
+    "start": "H",
+    "method": "O",
+    "capacity": 1,
+    "T": 300,
+    "n": 500
+  },
+  "audit": {
+    "per_site_scaled_residual": 6.157099024050682e-17,
+    "global_scaled_residual": 6.157113749387288e-17,
+    "availability_oracle_error": 0.0,
+    "external_A_total": 2099999.9999999995,
+    "external_B_total": 67666666.66666757,
+    "pass": true
+  },
+  "sha256": "96fe2f64fc151ea32139704c81289c812ad38a823f6dc79a38528096964d2b53",
+  "last_checkpoint": 300.0,
+  "elapsed_worker_seconds": 3.5887745999498293,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "threads_per_library": 1
+}

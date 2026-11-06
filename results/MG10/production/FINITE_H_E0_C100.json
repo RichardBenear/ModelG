@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "FINITE_H_E0_C100",
+    "mode": "FINITE",
+    "start": "H",
+    "method": "E0",
+    "capacity": 100,
+    "T": 300,
+    "n": 500
+  },
+  "audit": {
+    "per_site_scaled_residual": 6.676592294503424e-14,
+    "global_scaled_residual": 6.680438499289253e-14,
+    "availability_oracle_error": 3.3306690738754696e-16,
+    "external_A_total": 0.0,
+    "external_B_total": 0.0,
+    "pass": true
+  },
+  "sha256": "b8cff6fcdf26b4ceb640f3c27ad41ec88da1764aace3d1cd68120fcb9478650c",
+  "last_checkpoint": 300.0,
+  "elapsed_worker_seconds": 6.5448728000046685,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "threads_per_library": 1
+}
