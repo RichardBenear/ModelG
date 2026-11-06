@@ -1,0 +1,2369 @@
+{
+  "verdict": "QUALIFIED ON TESTED SMALL SYSTEMS",
+  "complete_groups": 16,
+  "planned_groups": 16,
+  "replicates_per_group": 32768,
+  "alpha": 0.01,
+  "margin": 0.05,
+  "simultaneous_band_halfwidth": 0.025382586153595843,
+  "primary": [
+    {
+      "case": 0,
+      "method": 3,
+      "time": 0.05,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.00274658203125,
+      "lower": 0.0,
+      "upper": 0.028129168184845843
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "time": 0.05,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.002838134765625,
+      "lower": 0.0,
+      "upper": 0.028220720919220843
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "time": 0.05,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.0018310546875,
+      "lower": 0.0,
+      "upper": 0.027213640841095843
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "time": 0.05,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.003631591796875,
+      "lower": 0.0,
+      "upper": 0.029014177950470843
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "time": 0.05,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.002838134765625,
+      "lower": 0.0,
+      "upper": 0.028220720919220843
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "time": 0.05,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.004150390625,
+      "lower": 0.0,
+      "upper": 0.029532976778595843
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "time": 0.05,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.00274658203125,
+      "lower": 0.0,
+      "upper": 0.028129168184845843
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "time": 0.05,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.006134033203125,
+      "lower": 0.0,
+      "upper": 0.03151661935672084
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "time": 0.1,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.005279541015625,
+      "lower": 0.0,
+      "upper": 0.030662127169220843
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "time": 0.1,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.005157470703125,
+      "lower": 0.0,
+      "upper": 0.030540056856720843
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "time": 0.1,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.005828857421875,
+      "lower": 0.0,
+      "upper": 0.031211443575470843
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "time": 0.1,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.001373291015625,
+      "lower": 0.0,
+      "upper": 0.026755877169220843
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "time": 0.1,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.005157470703125,
+      "lower": 0.0,
+      "upper": 0.030540056856720843
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "time": 0.1,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.003997802734375,
+      "lower": 0.0,
+      "upper": 0.029380388887970843
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "time": 0.1,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.005279541015625,
+      "lower": 0.0,
+      "upper": 0.030662127169220843
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "time": 0.1,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.00665283203125,
+      "lower": 0.0,
+      "upper": 0.03203541818484584
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "time": 0.25,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.00628662109375,
+      "lower": 0.0,
+      "upper": 0.03166920724734584
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "time": 0.25,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.005401611328125,
+      "lower": 0.0,
+      "upper": 0.030784197481720843
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "time": 0.25,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.004119873046875,
+      "lower": 0.0,
+      "upper": 0.029502459200470843
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "time": 0.25,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.00262451171875,
+      "lower": 0.0,
+      "upper": 0.028007097872345843
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "time": 0.25,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.005401611328125,
+      "lower": 0.0,
+      "upper": 0.030784197481720843
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "time": 0.25,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.005950927734375,
+      "lower": 0.0,
+      "upper": 0.03133351388797084
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "time": 0.25,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.00628662109375,
+      "lower": 0.0,
+      "upper": 0.03166920724734584
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "time": 0.25,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.0025634765625,
+      "lower": 0.0,
+      "upper": 0.027946062716095843
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "time": 0.05,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.00341796875,
+      "lower": 0.0,
+      "upper": 0.028800554903595843
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "time": 0.05,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "time": 0.05,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.002227783203125,
+      "lower": 0.0,
+      "upper": 0.027610369356720843
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "time": 0.05,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.0037841796875,
+      "lower": 0.0,
+      "upper": 0.029166765841095843
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "time": 0.05,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "time": 0.05,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.000244140625,
+      "lower": 0.0,
+      "upper": 0.025626726778595843
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "time": 0.05,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.00341796875,
+      "lower": 0.0,
+      "upper": 0.028800554903595843
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "time": 0.05,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.000244140625,
+      "lower": 0.0,
+      "upper": 0.025626726778595843
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "time": 0.1,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.002777099609375,
+      "lower": 0.0,
+      "upper": 0.028159685762970843
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "time": 0.1,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "time": 0.1,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.0048828125,
+      "lower": 0.0,
+      "upper": 0.030265398653595843
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "time": 0.1,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.002593994140625,
+      "lower": 0.0,
+      "upper": 0.027976580294220843
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "time": 0.1,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "time": 0.1,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 3.0517578125e-05,
+      "lower": 0.0,
+      "upper": 0.025413103731720843
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "time": 0.1,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.002777099609375,
+      "lower": 0.0,
+      "upper": 0.028159685762970843
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "time": 0.1,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 3.0517578125e-05,
+      "lower": 0.0,
+      "upper": 0.025413103731720843
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "time": 0.25,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.00579833984375,
+      "lower": 0.0,
+      "upper": 0.031180925997345843
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "time": 0.25,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "time": 0.25,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.0048828125,
+      "lower": 0.0,
+      "upper": 0.030265398653595843
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "time": 0.25,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.00262451171875,
+      "lower": 0.0,
+      "upper": 0.028007097872345843
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "time": 0.25,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "time": 0.25,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "time": 0.25,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.00579833984375,
+      "lower": 0.0,
+      "upper": 0.031180925997345843
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "time": 0.25,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "time": 0.05,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.00372314453125,
+      "lower": 0.0,
+      "upper": 0.029105730684845843
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "time": 0.05,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "time": 0.05,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.0025634765625,
+      "lower": 0.0,
+      "upper": 0.027946062716095843
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "time": 0.05,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "time": 0.05,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "time": 0.05,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.000640869140625,
+      "lower": 0.0,
+      "upper": 0.026023455294220843
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "time": 0.05,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.00372314453125,
+      "lower": 0.0,
+      "upper": 0.029105730684845843
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "time": 0.05,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.000640869140625,
+      "lower": 0.0,
+      "upper": 0.026023455294220843
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "time": 0.1,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.00396728515625,
+      "lower": 0.0,
+      "upper": 0.029349871309845843
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "time": 0.1,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "time": 0.1,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.0045166015625,
+      "lower": 0.0,
+      "upper": 0.029899187716095843
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "time": 0.1,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "time": 0.1,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "time": 0.1,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.00067138671875,
+      "lower": 0.0,
+      "upper": 0.026053972872345843
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "time": 0.1,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.00396728515625,
+      "lower": 0.0,
+      "upper": 0.029349871309845843
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "time": 0.1,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.00067138671875,
+      "lower": 0.0,
+      "upper": 0.026053972872345843
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "time": 0.25,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.0029296875,
+      "lower": 0.0,
+      "upper": 0.028312273653595843
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "time": 0.25,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "time": 0.25,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.005126953125,
+      "lower": 0.0,
+      "upper": 0.030509539278595843
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "time": 0.25,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "time": 0.25,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "time": 0.25,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 3.0517578125e-05,
+      "lower": 0.0,
+      "upper": 0.025413103731720843
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "time": 0.25,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.0029296875,
+      "lower": 0.0,
+      "upper": 0.028312273653595843
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "time": 0.25,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 3.0517578125e-05,
+      "lower": 0.0,
+      "upper": 0.025413103731720843
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "time": 0.05,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.006103515625,
+      "lower": 0.0,
+      "upper": 0.03148610177859584
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "time": 0.05,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.00628662109375,
+      "lower": 0.0,
+      "upper": 0.03166920724734584
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "time": 0.05,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.0045166015625,
+      "lower": 0.0,
+      "upper": 0.029899187716095843
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "time": 0.05,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.00244140625,
+      "lower": 0.0,
+      "upper": 0.027823992403595843
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "time": 0.05,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.00628662109375,
+      "lower": 0.0,
+      "upper": 0.03166920724734584
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "time": 0.05,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.0074462890625,
+      "lower": 0.0,
+      "upper": 0.03282887521609584
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "time": 0.05,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.0048828125,
+      "lower": 0.0,
+      "upper": 0.030265398653595843
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "time": 0.05,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.003448486328125,
+      "lower": 0.0,
+      "upper": 0.028831072481720843
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "time": 0.1,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.008148193359375,
+      "lower": 0.0,
+      "upper": 0.03353077951297084
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "time": 0.1,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.00958251953125,
+      "lower": 0.0,
+      "upper": 0.03496510568484584
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "time": 0.1,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.00836181640625,
+      "lower": 0.0,
+      "upper": 0.03374440255984584
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "time": 0.1,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.005096435546875,
+      "lower": 0.0,
+      "upper": 0.030479021700470843
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "time": 0.1,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.00958251953125,
+      "lower": 0.0,
+      "upper": 0.03496510568484584
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "time": 0.1,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.008453369140625,
+      "lower": 0.0,
+      "upper": 0.03383595529422084
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "time": 0.1,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.004302978515625,
+      "lower": 0.0,
+      "upper": 0.029685564669220843
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "time": 0.1,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.002716064453125,
+      "lower": 0.0,
+      "upper": 0.028098650606720843
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "time": 0.25,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.010772705078125,
+      "lower": 0.0,
+      "upper": 0.03615529123172084
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "time": 0.25,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.009613037109375,
+      "lower": 0.0,
+      "upper": 0.03499562326297084
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "time": 0.25,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.009918212890625,
+      "lower": 0.0,
+      "upper": 0.03530079904422084
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "time": 0.25,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.0054931640625,
+      "lower": 0.0,
+      "upper": 0.030875750216095843
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "time": 0.25,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.009613037109375,
+      "lower": 0.0,
+      "upper": 0.03499562326297084
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "time": 0.25,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.008209228515625,
+      "lower": 0.0,
+      "upper": 0.03359181466922084
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "time": 0.25,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.003753662109375,
+      "lower": 0.0,
+      "upper": 0.029136248262970843
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "time": 0.25,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.001190185546875,
+      "lower": 0.0,
+      "upper": 0.026572771700470843
+    }
+  ],
+  "coarse_descriptive": [
+    {
+      "case": 0,
+      "method": 1,
+      "time": 0.05,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.00518798828125
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 0.05,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.0108642578125
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 0.05,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.005889892578125
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 0.05,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.00860595703125
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 0.05,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.0108642578125
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 0.05,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.014556884765625
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 0.05,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.00518798828125
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 0.05,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.008453369140625
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 0.1,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.003753662109375
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 0.1,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.007598876953125
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 0.1,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.0029296875
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 0.1,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.005584716796875
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 0.1,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.007598876953125
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 0.1,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.0087890625
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 0.1,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.003753662109375
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 0.1,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.006317138671875
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 0.25,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.002899169921875
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 0.25,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.00445556640625
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 0.25,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.002227783203125
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 0.25,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.002685546875
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 0.25,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.00445556640625
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 0.25,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.004486083984375
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 0.25,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.002899169921875
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 0.25,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.0020751953125
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 0.05,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.003204345703125
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 0.05,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.00982666015625
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 0.05,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.004547119140625
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 0.05,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.003997802734375
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 0.05,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.00982666015625
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 0.05,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.0111083984375
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 0.05,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.003204345703125
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 0.05,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.00335693359375
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 0.1,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.0047607421875
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 0.1,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.002655029296875
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 0.1,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.0037841796875
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 0.1,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.002105712890625
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 0.1,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.002655029296875
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 0.1,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.004669189453125
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 0.1,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.0047607421875
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 0.1,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.004486083984375
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 0.25,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.00390625
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 0.25,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.002288818359375
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 0.25,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.00421142578125
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 0.25,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.00311279296875
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 0.25,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.002288818359375
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 0.25,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.0025634765625
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 0.25,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.00390625
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 0.25,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.00067138671875
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 0.05,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.001983642578125
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 0.05,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 0.05,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.004638671875
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 0.05,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.00341796875
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 0.05,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 0.05,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.000701904296875
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 0.05,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.001983642578125
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 0.05,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.000701904296875
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 0.1,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.007476806640625
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 0.1,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 0.1,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.009521484375
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 0.1,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.00653076171875
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 0.1,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 0.1,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 3.0517578125e-05
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 0.1,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.007476806640625
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 0.1,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 3.0517578125e-05
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 0.25,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.010101318359375
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 0.25,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 0.25,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.00457763671875
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 0.25,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.002410888671875
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 0.25,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 0.25,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 0.25,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.010101318359375
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 0.25,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 0.05,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.002532958984375
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 0.05,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 0.05,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.002655029296875
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 0.05,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.005126953125
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 0.05,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 0.05,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.000274658203125
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 0.05,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.002532958984375
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 0.05,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.000274658203125
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 0.1,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.006591796875
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 0.1,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 0.1,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.008026123046875
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 0.1,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.003936767578125
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 0.1,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 0.1,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 3.0517578125e-05
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 0.1,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.006591796875
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 0.1,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 3.0517578125e-05
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 0.25,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.00433349609375
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 0.25,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 0.25,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.0059814453125
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 0.25,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.008087158203125
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 0.25,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 0.25,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 0.25,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.00433349609375
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 0.25,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 0.05,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.004730224609375
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 0.05,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 0.05,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.00152587890625
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 0.05,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 0.05,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 0.05,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.003936767578125
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 0.05,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.004730224609375
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 0.05,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.003936767578125
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 0.1,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.003173828125
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 0.1,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 0.1,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.00250244140625
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 0.1,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 0.1,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 0.1,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.00164794921875
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 0.1,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.003173828125
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 0.1,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.00164794921875
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 0.25,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.0093994140625
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 0.25,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 0.25,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.009307861328125
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 0.25,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 0.25,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 0.25,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 3.0517578125e-05
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 0.25,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.0093994140625
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 0.25,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 3.0517578125e-05
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 0.05,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.00299072265625
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 0.05,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 0.05,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.00408935546875
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 0.05,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 0.05,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 0.05,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.003021240234375
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 0.05,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.00299072265625
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 0.05,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.003021240234375
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 0.1,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.001678466796875
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 0.1,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 0.1,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.0006103515625
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 0.1,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 0.1,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 0.1,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.000946044921875
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 0.1,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.001678466796875
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 0.1,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.000946044921875
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 0.25,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.004913330078125
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 0.25,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 0.25,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.001861572265625
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 0.25,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 0.25,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.0
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 0.25,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 6.103515625e-05
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 0.25,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.004913330078125
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 0.25,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 6.103515625e-05
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 0.05,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.002899169921875
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 0.05,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.017974853515625
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 0.05,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.0025634765625
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 0.05,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.00225830078125
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 0.05,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.017974853515625
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 0.05,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.014739990234375
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 0.05,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.00738525390625
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 0.05,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.00177001953125
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 0.1,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.01055908203125
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 0.1,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.013763427734375
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 0.1,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.00439453125
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 0.1,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.0045166015625
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 0.1,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.013763427734375
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 0.1,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.017974853515625
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 0.1,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.007049560546875
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 0.1,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.004180908203125
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 0.25,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.008056640625
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 0.25,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.0123291015625
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 0.25,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.005035400390625
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 0.25,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.00347900390625
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 0.25,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.0123291015625
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 0.25,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.011871337890625
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 0.25,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.005706787109375
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 0.25,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.001617431640625
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 0.05,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.006134033203125
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 0.05,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.01220703125
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 0.05,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.00439453125
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 0.05,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.00213623046875
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 0.05,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.01220703125
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 0.05,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.008941650390625
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 0.05,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.004058837890625
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 0.05,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.006927490234375
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 0.1,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.009124755859375
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 0.1,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.012481689453125
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 0.1,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.005157470703125
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 0.1,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.00408935546875
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 0.1,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.012481689453125
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 0.1,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.01239013671875
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 0.1,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.006317138671875
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 0.1,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.00250244140625
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 0.25,
+      "observable": "total_X",
+      "empirical_CDF_distance": 0.00628662109375
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 0.25,
+      "observable": "total_B",
+      "empirical_CDF_distance": 0.009735107421875
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 0.25,
+      "observable": "total_W",
+      "empirical_CDF_distance": 0.004974365234375
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 0.25,
+      "observable": "R1_count",
+      "empirical_CDF_distance": 0.006866455078125
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 0.25,
+      "observable": "R3_count",
+      "empirical_CDF_distance": 0.009735107421875
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 0.25,
+      "observable": "R4_count",
+      "empirical_CDF_distance": 0.008392333984375
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 0.25,
+      "observable": "node0_X",
+      "empirical_CDF_distance": 0.004425048828125
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 0.25,
+      "observable": "node0_Y",
+      "empirical_CDF_distance": 0.001495361328125
+    }
+  ],
+  "max_primary_empirical_distance": 0.010772705078125,
+  "max_primary_upper": 0.03615529123172084,
+  "audits": [
+    {
+      "max_integer_residual": 0,
+      "max_total_count_error": 0,
+      "nonnegative": true,
+      "pass_check": true,
+      "id": "case0_method0",
+      "max_probability": 0.0,
+      "adapted_steps": 0.0
+    },
+    {
+      "max_integer_residual": 0,
+      "max_total_count_error": 0,
+      "nonnegative": true,
+      "pass_check": true,
+      "id": "case0_method1",
+      "max_probability": 0.20000000000000004,
+      "adapted_steps": 10858833.0
+    },
+    {
+      "max_integer_residual": 0,
+      "max_total_count_error": 0,
+      "nonnegative": true,
+      "pass_check": true,
+      "id": "case0_method2",
+      "max_probability": 0.20000000000000004,
+      "adapted_steps": 1038424.0
+    },
+    {
+      "max_integer_residual": 0,
+      "max_total_count_error": 0,
+      "nonnegative": true,
+      "pass_check": true,
+      "id": "case0_method3",
+      "max_probability": 0.189,
+      "adapted_steps": 0.0
+    },
+    {
+      "max_integer_residual": 0,
+      "max_total_count_error": 0,
+      "nonnegative": true,
+      "pass_check": true,
+      "id": "case1_method0",
+      "max_probability": 0.0,
+      "adapted_steps": 0.0
+    },
+    {
+      "max_integer_residual": 0,
+      "max_total_count_error": 0,
+      "nonnegative": true,
+      "pass_check": true,
+      "id": "case1_method1",
+      "max_probability": 0.20000000000000004,
+      "adapted_steps": 2737154.0
+    },
+    {
+      "max_integer_residual": 0,
+      "max_total_count_error": 0,
+      "nonnegative": true,
+      "pass_check": true,
+      "id": "case1_method2",
+      "max_probability": 0.20000000000000004,
+      "adapted_steps": 31481.0
+    },
+    {
+      "max_integer_residual": 0,
+      "max_total_count_error": 0,
+      "nonnegative": true,
+      "pass_check": true,
+      "id": "case1_method3",
+      "max_probability": 0.116,
+      "adapted_steps": 0.0
+    },
+    {
+      "max_integer_residual": 0,
+      "max_total_count_error": 0,
+      "nonnegative": true,
+      "pass_check": true,
+      "id": "case2_method0",
+      "max_probability": 0.0,
+      "adapted_steps": 0.0
+    },
+    {
+      "max_integer_residual": 0,
+      "max_total_count_error": 0,
+      "nonnegative": true,
+      "pass_check": true,
+      "id": "case2_method1",
+      "max_probability": 0.132,
+      "adapted_steps": 0.0
+    },
+    {
+      "max_integer_residual": 0,
+      "max_total_count_error": 0,
+      "nonnegative": true,
+      "pass_check": true,
+      "id": "case2_method2",
+      "max_probability": 0.066,
+      "adapted_steps": 0.0
+    },
+    {
+      "max_integer_residual": 0,
+      "max_total_count_error": 0,
+      "nonnegative": true,
+      "pass_check": true,
+      "id": "case2_method3",
+      "max_probability": 0.033,
+      "adapted_steps": 0.0
+    },
+    {
+      "max_integer_residual": 0,
+      "max_total_count_error": 0,
+      "nonnegative": true,
+      "pass_check": true,
+      "id": "case3_method0",
+      "max_probability": 0.0,
+      "adapted_steps": 0.0
+    },
+    {
+      "max_integer_residual": 0,
+      "max_total_count_error": 0,
+      "nonnegative": true,
+      "pass_check": true,
+      "id": "case3_method1",
+      "max_probability": 0.20000000000000004,
+      "adapted_steps": 3384045.0
+    },
+    {
+      "max_integer_residual": 0,
+      "max_total_count_error": 0,
+      "nonnegative": true,
+      "pass_check": true,
+      "id": "case3_method2",
+      "max_probability": 0.2,
+      "adapted_steps": 1630.0
+    },
+    {
+      "max_integer_residual": 0,
+      "max_total_count_error": 0,
+      "nonnegative": true,
+      "pass_check": true,
+      "id": "case3_method3",
+      "max_probability": 0.113625,
+      "adapted_steps": 0.0
+    }
+  ]
+}

@@ -802,3 +802,8 @@ Richard explicitly signed off MG10-C1 and instructed proceeding. Preserve all MG
 ## MG047 — Finite-reactant sampler qualification registered (2026-11-06)
 
 Bounded A and joint B/X leap, independent exact SSA, integer reaction/hop ledgers, confidence-band evaluator/checker and generic owned-process controller implemented. Five sampler plus three apparatus tests PASS; analytic and synthetic raw checks and all16 timing groups independently verified. Registered16 groups x32768 short paths, 96 primary marginal comparisons with99% simultaneous bounds/.05 margin; all1024 chunk seeds fixed and unique. Forecast0.2867493 core-hours fits new1 core-hour cap with reserve. Full fields, ledgers and seeds retained; no scientific group before registration. This qualifies a prerequisite, not physical particles or all parameter regimes.
+
+
+## MG048 — MG10-S1 numerical qualification result (2026-11-06)
+
+QUALIFIED ON TESTED SMALL SYSTEMS. All524288 short trajectories in16 fixed groups complete after aeb0b39 registration. Largest simultaneous99% CDF upper .0361553 versus margin .05; all96 primary comparisons qualify. Exact integer population/reaction/hop ledgers and probability bounds pass; all1024 seeds verified. Independent raw arithmetic/CDF checker agrees. Production0.04894908 local core-hours, no timeout/cap stop/replacement. Complete raw records, environment and report retained. Full joint law, actual lattice/high-Omega noise and particle persistence are outside qualification; future stage must freeze those checks. MG10-S1 closure pending; MG10-C1 PI closure recorded MG046; original MG10 remains UNRESOLVED.

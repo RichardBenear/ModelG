@@ -1,0 +1,777 @@
+{
+  "status": "AGREES",
+  "verdict": "QUALIFIED ON TESTED SMALL SYSTEMS",
+  "complete_groups": 16,
+  "primary": [
+    {
+      "case": 0,
+      "time": 0.05,
+      "observable": "total_X",
+      "distance": 0.00274658203125,
+      "lower": 0,
+      "upper": 0.028129168184845843
+    },
+    {
+      "case": 0,
+      "time": 0.05,
+      "observable": "total_B",
+      "distance": 0.002838134765625,
+      "lower": 0,
+      "upper": 0.028220720919220843
+    },
+    {
+      "case": 0,
+      "time": 0.05,
+      "observable": "total_W",
+      "distance": 0.0018310546875,
+      "lower": 0,
+      "upper": 0.027213640841095843
+    },
+    {
+      "case": 0,
+      "time": 0.05,
+      "observable": "R1_count",
+      "distance": 0.003631591796875,
+      "lower": 0,
+      "upper": 0.029014177950470843
+    },
+    {
+      "case": 0,
+      "time": 0.05,
+      "observable": "R3_count",
+      "distance": 0.002838134765625,
+      "lower": 0,
+      "upper": 0.028220720919220843
+    },
+    {
+      "case": 0,
+      "time": 0.05,
+      "observable": "R4_count",
+      "distance": 0.004150390625,
+      "lower": 0,
+      "upper": 0.029532976778595843
+    },
+    {
+      "case": 0,
+      "time": 0.05,
+      "observable": "node0_X",
+      "distance": 0.00274658203125,
+      "lower": 0,
+      "upper": 0.028129168184845843
+    },
+    {
+      "case": 0,
+      "time": 0.05,
+      "observable": "node0_Y",
+      "distance": 0.006134033203125,
+      "lower": 0,
+      "upper": 0.03151661935672084
+    },
+    {
+      "case": 0,
+      "time": 0.1,
+      "observable": "total_X",
+      "distance": 0.005279541015625,
+      "lower": 0,
+      "upper": 0.030662127169220843
+    },
+    {
+      "case": 0,
+      "time": 0.1,
+      "observable": "total_B",
+      "distance": 0.005157470703125,
+      "lower": 0,
+      "upper": 0.030540056856720843
+    },
+    {
+      "case": 0,
+      "time": 0.1,
+      "observable": "total_W",
+      "distance": 0.005828857421875,
+      "lower": 0,
+      "upper": 0.031211443575470843
+    },
+    {
+      "case": 0,
+      "time": 0.1,
+      "observable": "R1_count",
+      "distance": 0.001373291015625,
+      "lower": 0,
+      "upper": 0.026755877169220843
+    },
+    {
+      "case": 0,
+      "time": 0.1,
+      "observable": "R3_count",
+      "distance": 0.005157470703125,
+      "lower": 0,
+      "upper": 0.030540056856720843
+    },
+    {
+      "case": 0,
+      "time": 0.1,
+      "observable": "R4_count",
+      "distance": 0.003997802734375,
+      "lower": 0,
+      "upper": 0.029380388887970843
+    },
+    {
+      "case": 0,
+      "time": 0.1,
+      "observable": "node0_X",
+      "distance": 0.005279541015625,
+      "lower": 0,
+      "upper": 0.030662127169220843
+    },
+    {
+      "case": 0,
+      "time": 0.1,
+      "observable": "node0_Y",
+      "distance": 0.00665283203125,
+      "lower": 0,
+      "upper": 0.03203541818484584
+    },
+    {
+      "case": 0,
+      "time": 0.25,
+      "observable": "total_X",
+      "distance": 0.00628662109375,
+      "lower": 0,
+      "upper": 0.03166920724734584
+    },
+    {
+      "case": 0,
+      "time": 0.25,
+      "observable": "total_B",
+      "distance": 0.005401611328125,
+      "lower": 0,
+      "upper": 0.030784197481720843
+    },
+    {
+      "case": 0,
+      "time": 0.25,
+      "observable": "total_W",
+      "distance": 0.004119873046875,
+      "lower": 0,
+      "upper": 0.029502459200470843
+    },
+    {
+      "case": 0,
+      "time": 0.25,
+      "observable": "R1_count",
+      "distance": 0.00262451171875,
+      "lower": 0,
+      "upper": 0.028007097872345843
+    },
+    {
+      "case": 0,
+      "time": 0.25,
+      "observable": "R3_count",
+      "distance": 0.005401611328125,
+      "lower": 0,
+      "upper": 0.030784197481720843
+    },
+    {
+      "case": 0,
+      "time": 0.25,
+      "observable": "R4_count",
+      "distance": 0.005950927734375,
+      "lower": 0,
+      "upper": 0.03133351388797084
+    },
+    {
+      "case": 0,
+      "time": 0.25,
+      "observable": "node0_X",
+      "distance": 0.00628662109375,
+      "lower": 0,
+      "upper": 0.03166920724734584
+    },
+    {
+      "case": 0,
+      "time": 0.25,
+      "observable": "node0_Y",
+      "distance": 0.0025634765625,
+      "lower": 0,
+      "upper": 0.027946062716095843
+    },
+    {
+      "case": 1,
+      "time": 0.05,
+      "observable": "total_X",
+      "distance": 0.00341796875,
+      "lower": 0,
+      "upper": 0.028800554903595843
+    },
+    {
+      "case": 1,
+      "time": 0.05,
+      "observable": "total_B",
+      "distance": 0.0,
+      "lower": 0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 1,
+      "time": 0.05,
+      "observable": "total_W",
+      "distance": 0.002227783203125,
+      "lower": 0,
+      "upper": 0.027610369356720843
+    },
+    {
+      "case": 1,
+      "time": 0.05,
+      "observable": "R1_count",
+      "distance": 0.0037841796875,
+      "lower": 0,
+      "upper": 0.029166765841095843
+    },
+    {
+      "case": 1,
+      "time": 0.05,
+      "observable": "R3_count",
+      "distance": 0.0,
+      "lower": 0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 1,
+      "time": 0.05,
+      "observable": "R4_count",
+      "distance": 0.000244140625,
+      "lower": 0,
+      "upper": 0.025626726778595843
+    },
+    {
+      "case": 1,
+      "time": 0.05,
+      "observable": "node0_X",
+      "distance": 0.00341796875,
+      "lower": 0,
+      "upper": 0.028800554903595843
+    },
+    {
+      "case": 1,
+      "time": 0.05,
+      "observable": "node0_Y",
+      "distance": 0.000244140625,
+      "lower": 0,
+      "upper": 0.025626726778595843
+    },
+    {
+      "case": 1,
+      "time": 0.1,
+      "observable": "total_X",
+      "distance": 0.002777099609375,
+      "lower": 0,
+      "upper": 0.028159685762970843
+    },
+    {
+      "case": 1,
+      "time": 0.1,
+      "observable": "total_B",
+      "distance": 0.0,
+      "lower": 0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 1,
+      "time": 0.1,
+      "observable": "total_W",
+      "distance": 0.0048828125,
+      "lower": 0,
+      "upper": 0.030265398653595843
+    },
+    {
+      "case": 1,
+      "time": 0.1,
+      "observable": "R1_count",
+      "distance": 0.002593994140625,
+      "lower": 0,
+      "upper": 0.027976580294220843
+    },
+    {
+      "case": 1,
+      "time": 0.1,
+      "observable": "R3_count",
+      "distance": 0.0,
+      "lower": 0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 1,
+      "time": 0.1,
+      "observable": "R4_count",
+      "distance": 3.0517578125e-05,
+      "lower": 0,
+      "upper": 0.025413103731720843
+    },
+    {
+      "case": 1,
+      "time": 0.1,
+      "observable": "node0_X",
+      "distance": 0.002777099609375,
+      "lower": 0,
+      "upper": 0.028159685762970843
+    },
+    {
+      "case": 1,
+      "time": 0.1,
+      "observable": "node0_Y",
+      "distance": 3.0517578125e-05,
+      "lower": 0,
+      "upper": 0.025413103731720843
+    },
+    {
+      "case": 1,
+      "time": 0.25,
+      "observable": "total_X",
+      "distance": 0.00579833984375,
+      "lower": 0,
+      "upper": 0.031180925997345843
+    },
+    {
+      "case": 1,
+      "time": 0.25,
+      "observable": "total_B",
+      "distance": 0.0,
+      "lower": 0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 1,
+      "time": 0.25,
+      "observable": "total_W",
+      "distance": 0.0048828125,
+      "lower": 0,
+      "upper": 0.030265398653595843
+    },
+    {
+      "case": 1,
+      "time": 0.25,
+      "observable": "R1_count",
+      "distance": 0.00262451171875,
+      "lower": 0,
+      "upper": 0.028007097872345843
+    },
+    {
+      "case": 1,
+      "time": 0.25,
+      "observable": "R3_count",
+      "distance": 0.0,
+      "lower": 0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 1,
+      "time": 0.25,
+      "observable": "R4_count",
+      "distance": 0.0,
+      "lower": 0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 1,
+      "time": 0.25,
+      "observable": "node0_X",
+      "distance": 0.00579833984375,
+      "lower": 0,
+      "upper": 0.031180925997345843
+    },
+    {
+      "case": 1,
+      "time": 0.25,
+      "observable": "node0_Y",
+      "distance": 0.0,
+      "lower": 0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 2,
+      "time": 0.05,
+      "observable": "total_X",
+      "distance": 0.00372314453125,
+      "lower": 0,
+      "upper": 0.029105730684845843
+    },
+    {
+      "case": 2,
+      "time": 0.05,
+      "observable": "total_B",
+      "distance": 0.0,
+      "lower": 0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 2,
+      "time": 0.05,
+      "observable": "total_W",
+      "distance": 0.0025634765625,
+      "lower": 0,
+      "upper": 0.027946062716095843
+    },
+    {
+      "case": 2,
+      "time": 0.05,
+      "observable": "R1_count",
+      "distance": 0.0,
+      "lower": 0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 2,
+      "time": 0.05,
+      "observable": "R3_count",
+      "distance": 0.0,
+      "lower": 0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 2,
+      "time": 0.05,
+      "observable": "R4_count",
+      "distance": 0.000640869140625,
+      "lower": 0,
+      "upper": 0.026023455294220843
+    },
+    {
+      "case": 2,
+      "time": 0.05,
+      "observable": "node0_X",
+      "distance": 0.00372314453125,
+      "lower": 0,
+      "upper": 0.029105730684845843
+    },
+    {
+      "case": 2,
+      "time": 0.05,
+      "observable": "node0_Y",
+      "distance": 0.000640869140625,
+      "lower": 0,
+      "upper": 0.026023455294220843
+    },
+    {
+      "case": 2,
+      "time": 0.1,
+      "observable": "total_X",
+      "distance": 0.00396728515625,
+      "lower": 0,
+      "upper": 0.029349871309845843
+    },
+    {
+      "case": 2,
+      "time": 0.1,
+      "observable": "total_B",
+      "distance": 0.0,
+      "lower": 0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 2,
+      "time": 0.1,
+      "observable": "total_W",
+      "distance": 0.0045166015625,
+      "lower": 0,
+      "upper": 0.029899187716095843
+    },
+    {
+      "case": 2,
+      "time": 0.1,
+      "observable": "R1_count",
+      "distance": 0.0,
+      "lower": 0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 2,
+      "time": 0.1,
+      "observable": "R3_count",
+      "distance": 0.0,
+      "lower": 0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 2,
+      "time": 0.1,
+      "observable": "R4_count",
+      "distance": 0.00067138671875,
+      "lower": 0,
+      "upper": 0.026053972872345843
+    },
+    {
+      "case": 2,
+      "time": 0.1,
+      "observable": "node0_X",
+      "distance": 0.00396728515625,
+      "lower": 0,
+      "upper": 0.029349871309845843
+    },
+    {
+      "case": 2,
+      "time": 0.1,
+      "observable": "node0_Y",
+      "distance": 0.00067138671875,
+      "lower": 0,
+      "upper": 0.026053972872345843
+    },
+    {
+      "case": 2,
+      "time": 0.25,
+      "observable": "total_X",
+      "distance": 0.0029296875,
+      "lower": 0,
+      "upper": 0.028312273653595843
+    },
+    {
+      "case": 2,
+      "time": 0.25,
+      "observable": "total_B",
+      "distance": 0.0,
+      "lower": 0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 2,
+      "time": 0.25,
+      "observable": "total_W",
+      "distance": 0.005126953125,
+      "lower": 0,
+      "upper": 0.030509539278595843
+    },
+    {
+      "case": 2,
+      "time": 0.25,
+      "observable": "R1_count",
+      "distance": 0.0,
+      "lower": 0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 2,
+      "time": 0.25,
+      "observable": "R3_count",
+      "distance": 0.0,
+      "lower": 0,
+      "upper": 0.025382586153595843
+    },
+    {
+      "case": 2,
+      "time": 0.25,
+      "observable": "R4_count",
+      "distance": 3.0517578125e-05,
+      "lower": 0,
+      "upper": 0.025413103731720843
+    },
+    {
+      "case": 2,
+      "time": 0.25,
+      "observable": "node0_X",
+      "distance": 0.0029296875,
+      "lower": 0,
+      "upper": 0.028312273653595843
+    },
+    {
+      "case": 2,
+      "time": 0.25,
+      "observable": "node0_Y",
+      "distance": 3.0517578125e-05,
+      "lower": 0,
+      "upper": 0.025413103731720843
+    },
+    {
+      "case": 3,
+      "time": 0.05,
+      "observable": "total_X",
+      "distance": 0.006103515625,
+      "lower": 0,
+      "upper": 0.03148610177859584
+    },
+    {
+      "case": 3,
+      "time": 0.05,
+      "observable": "total_B",
+      "distance": 0.00628662109375,
+      "lower": 0,
+      "upper": 0.03166920724734584
+    },
+    {
+      "case": 3,
+      "time": 0.05,
+      "observable": "total_W",
+      "distance": 0.0045166015625,
+      "lower": 0,
+      "upper": 0.029899187716095843
+    },
+    {
+      "case": 3,
+      "time": 0.05,
+      "observable": "R1_count",
+      "distance": 0.00244140625,
+      "lower": 0,
+      "upper": 0.027823992403595843
+    },
+    {
+      "case": 3,
+      "time": 0.05,
+      "observable": "R3_count",
+      "distance": 0.00628662109375,
+      "lower": 0,
+      "upper": 0.03166920724734584
+    },
+    {
+      "case": 3,
+      "time": 0.05,
+      "observable": "R4_count",
+      "distance": 0.0074462890625,
+      "lower": 0,
+      "upper": 0.03282887521609584
+    },
+    {
+      "case": 3,
+      "time": 0.05,
+      "observable": "node0_X",
+      "distance": 0.0048828125,
+      "lower": 0,
+      "upper": 0.030265398653595843
+    },
+    {
+      "case": 3,
+      "time": 0.05,
+      "observable": "node0_Y",
+      "distance": 0.003448486328125,
+      "lower": 0,
+      "upper": 0.028831072481720843
+    },
+    {
+      "case": 3,
+      "time": 0.1,
+      "observable": "total_X",
+      "distance": 0.008148193359375,
+      "lower": 0,
+      "upper": 0.03353077951297084
+    },
+    {
+      "case": 3,
+      "time": 0.1,
+      "observable": "total_B",
+      "distance": 0.00958251953125,
+      "lower": 0,
+      "upper": 0.03496510568484584
+    },
+    {
+      "case": 3,
+      "time": 0.1,
+      "observable": "total_W",
+      "distance": 0.00836181640625,
+      "lower": 0,
+      "upper": 0.03374440255984584
+    },
+    {
+      "case": 3,
+      "time": 0.1,
+      "observable": "R1_count",
+      "distance": 0.005096435546875,
+      "lower": 0,
+      "upper": 0.030479021700470843
+    },
+    {
+      "case": 3,
+      "time": 0.1,
+      "observable": "R3_count",
+      "distance": 0.00958251953125,
+      "lower": 0,
+      "upper": 0.03496510568484584
+    },
+    {
+      "case": 3,
+      "time": 0.1,
+      "observable": "R4_count",
+      "distance": 0.008453369140625,
+      "lower": 0,
+      "upper": 0.03383595529422084
+    },
+    {
+      "case": 3,
+      "time": 0.1,
+      "observable": "node0_X",
+      "distance": 0.004302978515625,
+      "lower": 0,
+      "upper": 0.029685564669220843
+    },
+    {
+      "case": 3,
+      "time": 0.1,
+      "observable": "node0_Y",
+      "distance": 0.002716064453125,
+      "lower": 0,
+      "upper": 0.028098650606720843
+    },
+    {
+      "case": 3,
+      "time": 0.25,
+      "observable": "total_X",
+      "distance": 0.010772705078125,
+      "lower": 0,
+      "upper": 0.03615529123172084
+    },
+    {
+      "case": 3,
+      "time": 0.25,
+      "observable": "total_B",
+      "distance": 0.009613037109375,
+      "lower": 0,
+      "upper": 0.03499562326297084
+    },
+    {
+      "case": 3,
+      "time": 0.25,
+      "observable": "total_W",
+      "distance": 0.009918212890625,
+      "lower": 0,
+      "upper": 0.03530079904422084
+    },
+    {
+      "case": 3,
+      "time": 0.25,
+      "observable": "R1_count",
+      "distance": 0.0054931640625,
+      "lower": 0,
+      "upper": 0.030875750216095843
+    },
+    {
+      "case": 3,
+      "time": 0.25,
+      "observable": "R3_count",
+      "distance": 0.009613037109375,
+      "lower": 0,
+      "upper": 0.03499562326297084
+    },
+    {
+      "case": 3,
+      "time": 0.25,
+      "observable": "R4_count",
+      "distance": 0.008209228515625,
+      "lower": 0,
+      "upper": 0.03359181466922084
+    },
+    {
+      "case": 3,
+      "time": 0.25,
+      "observable": "node0_X",
+      "distance": 0.003753662109375,
+      "lower": 0,
+      "upper": 0.029136248262970843
+    },
+    {
+      "case": 3,
+      "time": 0.25,
+      "observable": "node0_Y",
+      "distance": 0.001190185546875,
+      "lower": 0,
+      "upper": 0.026572771700470843
+    }
+  ],
+  "charged_worker_seconds": 176.21669849997852,
+  "dependencies": "Original seed helper only; no new sampler/evaluator imports. Integer stoichiometry and sorted empirical-CDF checking independently expressed. Same author, not external replication."
+}

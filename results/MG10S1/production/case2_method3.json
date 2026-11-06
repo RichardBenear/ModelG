@@ -1,0 +1,30 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "case2_method3",
+    "case": 2,
+    "method": 3,
+    "stage": 4603,
+    "reps": 32768,
+    "chunk": 512
+  },
+  "replicates": 32768,
+  "compute_seconds": 10.551086799707264,
+  "audit": {
+    "max_integer_residual": 0,
+    "max_total_count_error": 0,
+    "nonnegative": true,
+    "pass_check": true
+  },
+  "sha256": "79939ff51a6a6cbd037d089419377b69fd82d5cda6f67701c6dfb69f802ab8bd",
+  "total_events_or_steps": 32768000.0,
+  "adapted_steps": 0.0,
+  "max_probability": 0.033,
+  "worker_elapsed_seconds": 12.648710199980997,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "numpy": "2.2.4",
+  "scipy": "1.16.1",
+  "numba": "0.68.0",
+  "threads_per_library": 1
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "script": "src/evaluate_mg10s1.py",
+    "elapsed_worker_seconds": 2.2816959000192583,
+    "returncode": 0,
+    "stdout": "{'verdict': 'QUALIFIED ON TESTED SMALL SYSTEMS', 'complete_groups': 16, 'planned_groups': 16, 'replicates_per_group': 32768, 'alpha': 0.01, 'margin': 0.05, 'simultaneous_band_halfwidth': 0.025382586153595843, 'max_primary_empirical_distance': 0.010772705078125, 'max_primary_upper': 0.03615529123172084}\n",
+    "stderr": ""
+  },
+  {
+    "script": "src/check_mg10s1.py",
+    "elapsed_worker_seconds": 2.736881099990569,
+    "returncode": 0,
+    "stdout": "{'status': 'AGREES', 'verdict': 'QUALIFIED ON TESTED SMALL SYSTEMS', 'complete_groups': 16, 'charged_worker_seconds': 176.21669849997852, 'dependencies': 'Original seed helper only; no new sampler/evaluator imports. Integer stoichiometry and sorted empirical-CDF checking independently expressed. Same author, not external replication.'}\n",
+    "stderr": ""
+  }
+]
