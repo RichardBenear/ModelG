@@ -132,3 +132,7 @@ sampler against small-system SSA and freeze the physical fluctuation model and
 measurement rules. Geometry-derived supply and quantum entanglement are not
 established here. No additional production or historical rescoring is authorized
 by this result, and PI sign-off remains the gate-closure step.
+
+## PI closure — MG046
+
+2026-11-06: Richard explicitly signed off MG10-C1 and authorized proceeding to the next study. CLOSED with all three registered outcomes above. The earlier pending-closure statements describe the pre-sign-off record; this closure supersedes them without altering any result. Original MG10 remains UNRESOLVED.

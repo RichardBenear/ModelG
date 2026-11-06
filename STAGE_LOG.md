@@ -792,3 +792,8 @@ PI authorized the recommended next study. Independent symmetry-preserving refere
 ## MG045 — MG10-C1 results (2026-11-06)
 
 All ten jobs complete after prospective registration1451074, separate recomputation agrees. Homogeneous reference resolved, controlled amplification supported, contrast-minimum qualification passes. Uniform E2 follows reduced ODE; seeded E2/O+ both match linear mode32 response in frozen windows (worst relative error0.03295%, bound5%). All23 fixtures pass; uniform E2 yields no resolved minima at all301 checkpoints. Production0.03238218 core-hours, no cap/timeout/replacement. Complete raw fields, dense references, all250-mode responses, ledgers, fixtures and environment retained. Exact homogeneity differs from perturbed stability; no physical noise law or self-sustaining-particle claim. Original MG10 remains UNRESOLVED; PI closure pending.
+
+
+## MG046 — PI closes MG10-C1 and authorizes next study (2026-11-06)
+
+Richard explicitly signed off MG10-C1 and instructed proceeding. Preserve all MG045 outcomes and original MG10 UNRESOLVED result. Next: MG10-S1, bounded finite-reactant stochastic approximation and exact small-system qualification before any full-lattice finite-supply particle claims. Scope/criteria/budgets will be registered prospectively.
