@@ -1,3 +1,9 @@
+# Historical initial plan
+
+**Role/workflow update, 2026-11-06 (MG039):** The original plan below is preserved as historical context. Its Claude-executor / ChatGPT-reviewer assignment is superseded by [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md): ChatGPT / Codex leads planning and implementation; Richard Benear is PI; external review is optional. See [MG10 Draft 1](spec/MG10_proposal.md) for the explicit-reservoir extension. No old result is changed.
+
+---
+
 Here's the plan. I'd suggest flipping the usual setup:
 
 - **Me:** computation and the running documentation.

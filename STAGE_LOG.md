@@ -745,3 +745,12 @@ Items deliberately postponed so the project reaches its main questions first. Th
   full B2 counts discarded (retention deviation). Labels unchanged.
 - **MG8 CLOSED 2026-11-06 02:11 UTC** (PI decision card): SENSITIVE at τ₀; refinement NOT RESOLVED BY THIS LADDER; Central
   Question 5 stays open.
+
+## MG039 — Role/protocol transition and MG10 explicit-reservoir draft, 2026-11-06
+
+- PI instruction in the project chat: ChatGPT / Codex takes planning, code, validation, execution, analysis and documentation; Richard retains PI decisions; Claude or another external reviewer is optional. The PI explicitly authorized updating the role/review protocol across documents and preparing MG10.
+- Added RESEARCH_PROTOCOL.md as the active prospective authority. Updated README.md and CLAUDE.md; added tracked AGENTS.md for Codex; added a current HANDOFF.md section and a supersession notice to historical InitialPlan.md. Updated living glossary process terms and GATES.md process guidance. Historical reviews, frozen criteria and completed scientific records are unchanged.
+- Added spec/MG10_proposal.md Draft 1: explicit A/B stocks and Z/W outputs, closed-count accounting, chemostatted baseline and large-capacity limit, numerical semantics and SSA checks, staged qualification/recovery/depletion/interventions, provenance and retention.
+- Same-author static design check: review/MG039_internal_check.md. Verified reaction count balances, local documentation links, and preservation of historical handoff/initial-plan bodies; no simulation was run.
+- Archive source: RichardBenear/StochasticVacuum at 2161211ccc9d8427af98ebeefcabf7f379b83a37. Reuse remains selective and needs ModelG-specific validation; no old control PASS is a new physics result.
+- Status: MG10 DRAFT, NOT REGISTERED. No MG10 trajectory, calibration or production run. Next: static design check and numerical/budget specification for PI consideration. Role transition itself does not authorize production.

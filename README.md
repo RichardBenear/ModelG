@@ -20,34 +20,16 @@ framework does alone.
 5. **Is SQK's preferred frame a non-confluence effect?** Quantify multiway
    branch divergence and foliation dependence.
 
-## Roles
+## Roles and review
 
-| Role | Who | Responsibility |
-|---|---|---|
-| PI | Richard Benear | Direction, modeling choices, gate sign-off |
-| Computation & documentation | Claude | Code, runs, stage log, white paper |
-| Independent replication & adversarial review | ChatGPT | Re-derives gate results from the spec alone; critiques |
+Effective 2026-11-06 (MG039), Richard Benear is PI and ChatGPT / Codex is the research and implementation lead: planning, code, validation, runs, analysis and documentation. Claude or another external reviewer participates only when requested.
 
-### Review protocol (Claude ⇄ ChatGPT)
-
-1. Claude commits a stage and names the files to review in `STAGE_LOG.md`.
-2. ChatGPT reviews the repo read-only. The PI saves its review **verbatim** as
-   `review/MGxxx_chatgpt.md` (or pastes it to Claude, who saves it verbatim).
-3. Claude answers in `review/MGxxx_response.md` with a disposition for each numbered item:
-   **Accepted / Accepted with modification / Rejected**, with reasoning and the commit that
-   addresses it. Corrections are logged as a lettered sub-stage (e.g. MG001a).
-4. ChatGPT re-checks against the response file and the diff. Rounds continue as
-   `MGxxx_chatgpt_r2.md` / `MGxxx_response_r2.md` until it has no open items, or the PI rules on
-   a disagreement.
-5. No gate run starts while review items on its spec are open.
-6. Independent replication code and data from ChatGPT go in `review/MGxxx_replication/`
-   (committed by the PI from VS Code). A replication that lives only on a local machine can't be
-   re-run by anyone else.
+The authoritative active workflow is [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md). It requires prospective registration, implementation validation, separate recomputation and PI sign-off; it does not require a second AI at every stage. Same-author checks are not independent external replication. Historical reviews and frozen scientific records retain their original authorship and status.
 
 ## Conventions
 
 - **Stages** are numbered `MG000`, `MG001`, … and logged in [`STAGE_LOG.md`](STAGE_LOG.md).
-- **Gates** (`MG1`–`MG8`) are defined in [`GATES.md`](GATES.md). Each gate's
+- **Gates** (`MG1`, `MG2`, …) are defined in [`GATES.md`](GATES.md). Each gate's
   prediction, pass criterion and null control are written down and committed
   **before** the run that tests it.
 - Every result in `results/` is reproducible from a config in `configs/` and
@@ -68,13 +50,13 @@ spec/        Frozen specifications (equations, rewrite rules)
 src/         Simulation code
 configs/     Run configurations (one per run or sweep)
 results/     Outputs, organized by stage: results/MGxxx/
-review/      ChatGPT replication reports and critiques
+review/      Internal checks, optional external reviews and replication artifacts
 paper/       White-paper drafts
 ```
 
 ## Roadmap
 
-See [`InitialPlan.md`](InitialPlan.md). Summary:
+The original roadmap is preserved in [`InitialPlan.md`](InitialPlan.md). The active extension is [MG10 Draft 1](spec/MG10_proposal.md), explicit A/B reservoirs; DRAFT, not registered. Summary:
 
 | Phase | Content | Gate |
 |---|---|---|
@@ -86,6 +68,7 @@ See [`InitialPlan.md`](InitialPlan.md). Summary:
 | 5 | G-coupled spatial growth | MG6 |
 | 6 | Multiway / foliation diagnostics | MG8 (MG7 is the mass-scaling b-scan) |
 | 7 | Write-up | — |
+| Extension | Explicit A/B reservoirs, recovery of Model G and finite-supply effects | MG10 (DRAFT) |
 
 ## Setup
 

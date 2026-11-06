@@ -19,6 +19,11 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG9d | 2 | Cause of MG9c's late drift (b = 29.30 from the t = 30,000 field): numerics, mesh alignment, reflection, finer mesh; bounded diagnostic | **CLOSED 2026-11-05: MESH EFFECT SUPPORTED** (on D02; R4 INVALID so finer mesh unavailable; C4 DECREASING alongside). Registered at `69ad83e`; 7 runs, 0.08 core-h; ChatGPT MG033 accepted; PI sign-off 02:32 UTC |
 | MG9b | 2 | Stochastic barrier: under a linear model, does the activation slope S (log k per unit Ω) change with b inside the particle window? b = 29.20, 29.35 with MG3b's 29.00; lattice-conditional | **CLOSED 2026-11-05: NOT RESOLVED** (PI sign-off card 14:03 UTC, after ChatGPT MG035) (S₁ = −0.023, 95% CI −0.094 to +0.048; branch B3 calibrated; all controls PASS; 280 runs, 26.3 core-h on PC) |
 | MG8 | 6 | Scheduler sensitivity: does the within-step node update order (synchronous J, sweep R, random sequential P) change the particle at τ₀, and does the deterministic difference shrink as τ → 0? (multiway/foliation gate, numbered MG7 in `InitialPlan.md`) | **CLOSED 2026-11-06: SENSITIVE at τ₀; refinement NOT RESOLVED BY THIS LADDER** (registered 2026-11-05, draft 4 at `3ab4ec8`) |
+| MG10 | Extension | Can explicit finite A/B reservoirs recover the fixed-reservoir Model G approximation, and what changes under depletion? | **DRAFT 1 — NOT REGISTERED**; [proposal](spec/MG10_proposal.md); no MG10 run |
+
+## Active process update (MG039, 2026-11-06)
+
+[RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md) supersedes the mandatory two-AI role/review arrangement prospectively. Historical gate-specific records and their approvals are preserved; this change does not waive scientific validation, registration, blocking issues, or PI sign-off.
 
 ## Template
 
@@ -1991,3 +1996,11 @@ both mirrors, all stochastic loss classifications, the intervals and the ledger.
 discarded (retention deviation).
 PI sign-off: registration 2026-11-05 20:02 UTC; deviation D1 and production go 2026-11-05 23:37 UTC; **closure 2026-11-06 02:11 UTC** (registered results with the MG038 corrections). Central Question 5 stays open.
 
+
+### MG10 — Explicit A/B reservoirs (DRAFT; MG039, 2026-11-06)
+
+Design: [spec/MG10_proposal.md](spec/MG10_proposal.md), Draft 1. NOT REGISTERED; no scientific or development trajectory run.
+Proposed sequence: A formal state/reaction/accounting model; B implementation qualification; C deterministic recovery of the fixed-reservoir baseline; D finite-capacity estimation; E causal supply interventions; F recomputation and PI closure.
+Only A/B/C are the first proposed scope. D/E require separately frozen arms and budgets. Numerical margins, sample sizes, run caps and compute ceiling remain to be finalized before PI registration.
+Continuous-time dynamics remain the proposed model; synchronous stepping is a numerical approximation. Finite A/B, inert Z/W and explicit chemostat inputs are modeling hypotheses, not a physical derivation of the vacuum.
+Geometry-derived supply, classical correlations and an actual quantum-entanglement extension are later candidate studies, not authorized gates.

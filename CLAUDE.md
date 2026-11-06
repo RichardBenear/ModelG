@@ -9,31 +9,30 @@ rules, and testing step by step whether the rules reproduce Model G's particles 
 as a pre-registered research programme with formal gates. See `README.md` (charter), `InitialPlan.md`, `GATES.md`,
 `STAGE_LOG.md`, and `spec/GLOSSARY_AND_ASSUMPTIONS.md` for every symbol and assumption (Ω, b, h, τ, λ*, etc.).
 
-## Roles (do not blur them)
-- **PI: Richard Benear.** Signs off on gates, amendments, budgets and any decision that changes what a gate tests.
-  Ask the PI rather than deciding these yourself.
-- **Claude: computation and documentation.** Writes the code, runs it, records results, drafts amendments and
-  responses.
-- **ChatGPT: independent replication and adversarial review.** Read-only on the repo. The PI pastes its reviews in or
-  commits them. Its replication code lives in `review/MGxxx_replication/`, committed by the PI.
+## Active roles (effective 2026-11-06, MG039)
 
-## Rules of the protocol (from README; binding)
+- **PI: Richard Benear.** Scientific direction, modeling choices, registration, budgets, amendments and closure.
+- **ChatGPT / Codex: research and implementation lead.** Planning, code, validation, authorized runs, analysis, recomputation and documentation. Not restricted to read-only review.
+- **Claude / other reviewer: optional external review when requested.** No standing requirement to execute or approve each stage.
+
+Read [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md), the authoritative prospective role and review policy. Historical role descriptions in old specifications and reports do not override it.
+
+## Rules of the protocol
 1. Gate criteria, predictions and null controls are written into `GATES.md` and committed **before** the run that tests
    them. Anything a gate leaves open is written down as a pre-run implementation specification, also before the run.
 2. A registered result is never re-scored after the data are seen. Deviations, design flaws and budget overruns are
    recorded explicitly, not smoothed over. A new idea becomes a new, separately registered study.
 3. Amendments are versioned (`spec/phase2_amendment_N.md` → `spec/phase2_protocol_vX.Y.Z.md`). Earlier versions and
    records are preserved and marked superseded, never deleted.
-4. Reviews: ChatGPT's text is saved verbatim as `review/MGxxx_chatgpt*.md`; Claude's replies as `review/MGxxx_response*.md`.
-   No gate runs while review items are open.
-5. The current protocol is **v1.3.4** (`spec/phase2_protocol_v1.3.4.md`).
+4. Follow `RESEARCH_PROTOCOL.md`: internal checks and a separate recomputation path are required; external review is optional unless the PI explicitly requires it. Unresolved blocking issues stop production. Preserve historical reviews verbatim; same-author recomputation is not independent external replication.
+5. Phase 2 protocol **v1.3.4** (`spec/phase2_protocol_v1.3.4.md`) governs its historical scope. Later gates have their own frozen specifications. MG10 is currently a draft extension, not registered.
 
 ## Working conventions
 - Commit and push regularly with descriptive messages prefixed by the stage (e.g. `MG007: ...`). **Pull before you
   push.** The PI also commits from VS Code.
 - Every number in a record should be reproducible from committed files. Commit raw run records (they are small), budget
   ledgers, and any checkpoint a decision depended on. `results/*/partial/` is gitignored scratch.
-- Before stating a result, recompute it independently from the raw files (not only through the evaluator).
+- Before stating a result, recompute it from raw files through a separate analysis path (not only through the evaluator), stating shared dependencies.
 - Write for the PI in plain language: the conclusion first, then the evidence. Say plainly when something failed or
   when an earlier claim of yours was wrong.
 

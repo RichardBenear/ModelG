@@ -1,3 +1,17 @@
+# Current handoff — 2026-11-06 (MG039)
+
+- **Roles:** Richard Benear is PI; ChatGPT / Codex leads planning, implementation, validation, authorized runs, analysis and documentation. Claude/other external review is optional. [Active protocol](RESEARCH_PROTOCOL.md).
+- **Last closed gate:** MG8, SENSITIVE at the production step and NOT RESOLVED BY THIS LADDER under refinement. MG9 and its follow-ups were completed earlier; historical verdicts stand.
+- **Next gate:** [MG10 explicit A/B reservoirs](spec/MG10_proposal.md), Draft 1, NOT REGISTERED. No MG10 simulation has run. Next work: static model/accounting check and finalize qualification, recovery criteria and budget for PI registration.
+- **Archive baseline:** [StochasticVacuum](https://github.com/RichardBenear/StochasticVacuum), private, commit `2161211ccc9d8427af98ebeefcabf7f379b83a37`. Reuse selected machinery with provenance and new validation.
+- **Time semantics:** MG10 proposes the existing continuous-time model for its first extension. A fundamental-tick law remains a separate modeling decision.
+- **Q5:** MG8's frozen record remains open as scored. A possible reframing of Q5 was discussed with the PI, but no new Q5 study or rescoring is registered here.
+- **Authority:** this current handoff and RESEARCH_PROTOCOL.md supersede the operational next-step and role directions in the historical snapshot below. Frozen scientific criteria remain binding within their scopes.
+
+---
+
+## Historical handoff snapshot (preserved; not the current task list)
+
 # Handoff — state of the project and next steps (2026-10-29)
 
 Written by the Claude session that ran MG1–MG3 in the cloud, for the Claude Code session that continues on the PI's own

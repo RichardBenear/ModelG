@@ -163,7 +163,7 @@ it has heavy caveats.
 | Term | Definition |
 |---|---|
 | **Stage (MGxxx)** | One unit of work, logged in `STAGE_LOG.md`. Lettered sub-stages (MG004a…) are corrections or continuations. |
-| **Gate (MG1–MG7)** | A pre-registered pass/fail test with criteria committed before its run (`GATES.md`) |
+| **Gate (MGn, including lettered follow-ups)** | A prospectively registered scientific study with frozen outcome rules; some are estimation studies rather than pass/fail tests (`GATES.md`). Drafts are not registered. |
 | **Validation (V1–V7)** | Pre-gate checks of the tools. V7 is descriptive. |
 | **Amendment** | A PI-approved change to a frozen protocol, applied as a new version (v1.3.1, v1.3.2, …). Earlier versions and records are preserved. |
 | **PASS by exception** | A gate failing one registered criterion, accepted by the PI with the failure kept on record (MG1) |
@@ -226,3 +226,9 @@ review), **Retired**.
 - Frozen specs: `spec/` (current protocol `phase2_protocol_v1.3.2.md`; amendments `phase2_amendment_*.md`)
 - Gates: `GATES.md`. Stage history: `STAGE_LOG.md`. Reviews: `review/`.
 - Code: `src/`. Results: `results/MGxxx/`. Configs: `configs/`.
+
+## Current collaboration and reservoir extension (MG039, 2026-11-06)
+
+[RESEARCH_PROTOCOL.md](../RESEARCH_PROTOCOL.md) governs active roles: Richard Benear is PI; ChatGPT / Codex is research/implementation lead; external review is optional. Same-author recomputation is a separate check, not independent external replication.
+
+MG10 proposes explicit A/B stocks and Z/W output accounting. It is DRAFT, not an amendment to earlier frozen rules. M3 (implicit reservoirs) and M4/M8/M9 continue to describe the established baseline; the proposed extension is documented separately in [MG10_proposal.md](MG10_proposal.md). W labels the sink species to avoid confusing it with system-size Omega. Finite reservoir capacity is a separate parameter from Omega; a token ledger is not an energy or entanglement measurement.
