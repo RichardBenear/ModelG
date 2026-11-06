@@ -1,8 +1,8 @@
-# Current handoff — 2026-11-06 (MG044)
+# Current handoff — 2026-11-06 (MG045)
 
 - **Roles:** Richard Benear is PI; ChatGPT / Codex leads planning, implementation, validation, authorized runs, analysis and documentation. Claude/other external review is optional. [Active protocol](RESEARCH_PROTOCOL.md).
 - **Last closed gate:** MG8, SENSITIVE at the production step and NOT RESOLVED BY THIS LADDER under refinement. MG9 and its follow-ups were completed earlier; historical verdicts stand.
-- **Next gate:** MG10-C1 registered prospectively (MG044) under PI instruction to run the follow-up. Qualification PASS; ten fixed jobs, measured projection fits new 0.5 production core-hour ceiling with reserve. Production next, <=8 local workers. Original MG10 remains UNRESOLVED, PI closure pending. See spec/MG10C1_proposal.md and results/MG10C1/registration.json.
+- **Next gate:** MG10-C1 follow-up completed (MG045): HOMOGENEOUS REFERENCE RESOLVED; CONTROLLED AMPLIFICATION SUPPORTED; RESOLVED-MINIMUM QUALIFICATION PASS. Ten jobs complete, separate checker agrees, production 0.0323822 core-hours. See results/MG10C1/MG10C1_results.md. Original MG10 remains UNRESOLVED. PI closure/future-stage choice pending; no additional study launched.
 - **Archive baseline:** [StochasticVacuum](https://github.com/RichardBenear/StochasticVacuum), private, commit `2161211ccc9d8427af98ebeefcabf7f379b83a37`. Reuse selected machinery with provenance and new validation.
 - **Time semantics:** MG10 proposes the existing continuous-time model for its first extension. A fundamental-tick law remains a separate modeling decision.
 - **Q5:** MG8's frozen record remains open as scored. A possible reframing of Q5 was discussed with the PI, but no new Q5 study or rescoring is registered here.

@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "linear_reference",
+    "kind": "linear_reference",
+    "T": 300
+  },
+  "compute_seconds": 19.97435019997647,
+  "audit": {
+    "pass": true
+  },
+  "sha256": "ee0cd4e304521897eabc183e8685a14ef288a055c660a79c12297c7eeff5fe57",
+  "worker_elapsed_seconds": 21.84217499999795,
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "numpy": "2.2.4",
+  "scipy": "1.16.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "threads_per_library": 1
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "script": "src/evaluate_mg10c1.py",
+    "elapsed_worker_seconds": 3.350117699999828,
+    "returncode": 0,
+    "stdout": "{'status': 'COMPLETE', 'planned': 10, 'complete': 10, 'selected_mode': 32, 'selected_peak_gain': 6.33299165323937e+264, 'reduced_normalized_error': 8.17826453642344e-10, 'uniform_E2_normalized_error': 1.5568131311977967e-07, 'uniform_E2_max_range': 0.0, 'linear_peak_log_gain_error': 9.20496177059249e-06, 'reference_verdict': 'HOMOGENEOUS REFERENCE RESOLVED', 'amplification_verdict': 'CONTROLLED AMPLIFICATION SUPPORTED', 'detector_verdict': 'RESOLVED-MINIMUM QUALIFICATION PASS', 'zero_Oplus_max_active_spatial_range': [0.35976244988256134, 16.936792270160627, 1.7796782529734232]}\n",
+    "stderr": ""
+  },
+  {
+    "script": "src/check_mg10c1.py",
+    "elapsed_worker_seconds": 3.5734318000031635,
+    "returncode": 0,
+    "stdout": "{'status': 'AGREES', 'complete': 10, 'reference_verdict': 'HOMOGENEOUS REFERENCE RESOLVED', 'amplification_verdict': 'CONTROLLED AMPLIFICATION SUPPORTED', 'detector_verdict': 'RESOLVED-MINIMUM QUALIFICATION PASS', 'mode': 32, 'peak_gain': 6.33299165323937e+264, 'windows': [{'id': 'full_eps6_E2', 'eligible_count': 16, 'relative_error_max': 0.00016233483985685803}, {'id': 'full_eps6_Oplus', 'eligible_count': 16, 'relative_error_max': 7.780095672829486e-06}, {'id': 'full_eps8_E2', 'eligible_count': 26, 'relative_error_max': 0.0003295371460410159}, {'id': 'full_eps8_Oplus', 'eligible_count': 26, 'relative_error_max': 1.8985355160049836e-05}], 'charged_seconds': 116.57584340003086, 'source_sha256': '3ab8cb8b7b626c51d5ec8f982e1ec04d9587d204e722f4fdeda4076747500953', 'shared_dependencies': 'Original reference/smoothing and MG10 independent ledger helper. No new model/evaluator imports; contour-walk detector recomputation. Same author, not external replication.'}\n",
+    "stderr": ""
+  }
+]

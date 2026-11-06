@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "full_zero_E2",
+    "kind": "full",
+    "method": "E2",
+    "epsilon": 0.0,
+    "mode": 32,
+    "T": 300
+  },
+  "compute_seconds": 12.108939099998679,
+  "audit": {
+    "per_site_scaled_residual": 1.089007744791484e-13,
+    "global_scaled_residual": 1.0894574449484895e-13,
+    "availability_oracle_error": 2.808864252301646e-14,
+    "external_A_total": 0.0,
+    "external_B_total": 0.0,
+    "pass": true
+  },
+  "sha256": "ce9b31ea5b959dfff31c3048c29ad9017cb7adf957ba1e72e6fb9971c88b5263",
+  "worker_elapsed_seconds": 14.43642030004412,
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "numpy": "2.2.4",
+  "scipy": "1.16.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "threads_per_library": 1
+}

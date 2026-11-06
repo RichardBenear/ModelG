@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "linear_primary",
+    "kind": "linear_primary",
+    "T": 300
+  },
+  "compute_seconds": 8.376251799985766,
+  "audit": {
+    "pass": true
+  },
+  "sha256": "1a870badf0f2ea48c5b84abef9f30f98f475b4f28de83ce18393f3a4b5bad792",
+  "worker_elapsed_seconds": 10.220970200025477,
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "numpy": "2.2.4",
+  "scipy": "1.16.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "threads_per_library": 1
+}

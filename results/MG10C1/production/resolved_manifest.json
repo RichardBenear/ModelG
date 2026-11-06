@@ -1,0 +1,72 @@
+{
+  "jobs": [
+    {
+      "id": "reduced_primary",
+      "kind": "reduced_primary",
+      "T": 300
+    },
+    {
+      "id": "reduced_reference",
+      "kind": "reduced_reference",
+      "T": 300
+    },
+    {
+      "id": "linear_primary",
+      "kind": "linear_primary",
+      "T": 300
+    },
+    {
+      "id": "linear_reference",
+      "kind": "linear_reference",
+      "T": 300
+    },
+    {
+      "id": "full_zero_E2",
+      "kind": "full",
+      "method": "E2",
+      "epsilon": 0.0,
+      "mode": 32,
+      "T": 300
+    },
+    {
+      "id": "full_zero_Oplus",
+      "kind": "full",
+      "method": "Oplus",
+      "epsilon": 0.0,
+      "mode": 32,
+      "T": 300
+    },
+    {
+      "id": "full_eps6_E2",
+      "kind": "full",
+      "method": "E2",
+      "epsilon": 1e-06,
+      "mode": 32,
+      "T": 300
+    },
+    {
+      "id": "full_eps6_Oplus",
+      "kind": "full",
+      "method": "Oplus",
+      "epsilon": 1e-06,
+      "mode": 32,
+      "T": 300
+    },
+    {
+      "id": "full_eps8_E2",
+      "kind": "full",
+      "method": "E2",
+      "epsilon": 1e-08,
+      "mode": 32,
+      "T": 300
+    },
+    {
+      "id": "full_eps8_Oplus",
+      "kind": "full",
+      "method": "Oplus",
+      "epsilon": 1e-08,
+      "mode": 32,
+      "T": 300
+    }
+  ]
+}

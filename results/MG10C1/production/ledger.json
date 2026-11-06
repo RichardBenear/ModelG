@@ -1,0 +1,284 @@
+{
+  "records": [
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "reduced_primary",
+        "kind": "reduced_primary",
+        "T": 300
+      },
+      "compute_seconds": 0.7944126999936998,
+      "audit": {
+        "A_oracle_error": 1.7208456881689926e-15,
+        "pass": true
+      },
+      "sha256": "cc9c0413edaf84fe6f80a838c7ef389bce9c481f233de60ee5c29676b020d417",
+      "worker_elapsed_seconds": 2.6872337999520823,
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "threads_per_library": 1,
+      "id": "reduced_primary",
+      "charged_worker_seconds": 3.0480038999812678,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "reduced_reference",
+        "kind": "reduced_reference",
+        "T": 300
+      },
+      "compute_seconds": 0.49559360003331676,
+      "audit": {
+        "A_oracle_error": 1.9984014443252818e-15,
+        "pass": true
+      },
+      "sha256": "090836eb4846b4ecc70231fc87dafbead3d77455bbc539eda10f6ff1184ab44b",
+      "worker_elapsed_seconds": 2.3259311000001617,
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "threads_per_library": 1,
+      "id": "reduced_reference",
+      "charged_worker_seconds": 3.052103199996054,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "linear_primary",
+        "kind": "linear_primary",
+        "T": 300
+      },
+      "compute_seconds": 8.376251799985766,
+      "audit": {
+        "pass": true
+      },
+      "sha256": "1a870badf0f2ea48c5b84abef9f30f98f475b4f28de83ce18393f3a4b5bad792",
+      "worker_elapsed_seconds": 10.220970200025477,
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "threads_per_library": 1,
+      "id": "linear_primary",
+      "charged_worker_seconds": 10.57712910004193,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "linear_reference",
+        "kind": "linear_reference",
+        "T": 300
+      },
+      "compute_seconds": 19.97435019997647,
+      "audit": {
+        "pass": true
+      },
+      "sha256": "ee0cd4e304521897eabc183e8685a14ef288a055c660a79c12297c7eeff5fe57",
+      "worker_elapsed_seconds": 21.84217499999795,
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "threads_per_library": 1,
+      "id": "linear_reference",
+      "charged_worker_seconds": 22.12905160000082,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "full_eps6_Oplus",
+        "kind": "full",
+        "method": "Oplus",
+        "epsilon": 1e-06,
+        "mode": 32,
+        "T": 300
+      },
+      "compute_seconds": 6.893909799982794,
+      "audit": {
+        "per_site_scaled_residual": 6.265024175937635e-15,
+        "global_scaled_residual": 2.156427039552929e-15,
+        "availability_oracle_error": 5.9396931817445875e-15,
+        "external_A_total": 0.0,
+        "external_B_total": 0.0,
+        "pass": true
+      },
+      "sha256": "e7c3afc48a7197317ac728487a4b379dc729a2d075d4b2749277aa8706a1467c",
+      "worker_elapsed_seconds": 9.623917200020514,
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "threads_per_library": 1,
+      "id": "full_eps6_Oplus",
+      "charged_worker_seconds": 10.084070099983364,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "full_eps8_Oplus",
+        "kind": "full",
+        "method": "Oplus",
+        "epsilon": 1e-08,
+        "mode": 32,
+        "T": 300
+      },
+      "compute_seconds": 7.1982904999749735,
+      "audit": {
+        "per_site_scaled_residual": 5.3109063757253805e-15,
+        "global_scaled_residual": 2.1794797982966932e-15,
+        "availability_oracle_error": 5.995204332975845e-15,
+        "external_A_total": 0.0,
+        "external_B_total": 0.0,
+        "pass": true
+      },
+      "sha256": "6ddd9aa7f10ad09f41a519a9afd7c4e03c75c2b2bf833884f870e722ddd81212",
+      "worker_elapsed_seconds": 9.987302299996372,
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "threads_per_library": 1,
+      "id": "full_eps8_Oplus",
+      "charged_worker_seconds": 10.580631200049538,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "full_zero_Oplus",
+        "kind": "full",
+        "method": "Oplus",
+        "epsilon": 0.0,
+        "mode": 32,
+        "T": 300
+      },
+      "compute_seconds": 8.109135999984574,
+      "audit": {
+        "per_site_scaled_residual": 1.0203504255602451e-14,
+        "global_scaled_residual": 3.579776948900818e-15,
+        "availability_oracle_error": 6.328271240363392e-15,
+        "external_A_total": 0.0,
+        "external_B_total": 0.0,
+        "pass": true
+      },
+      "sha256": "c30e6a04898bc30eacdcd0ee31b296e7794f8be70a10cfc03be78a217711cec2",
+      "worker_elapsed_seconds": 10.905964500037953,
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "threads_per_library": 1,
+      "id": "full_zero_Oplus",
+      "charged_worker_seconds": 11.627192799991462,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "full_zero_E2",
+        "kind": "full",
+        "method": "E2",
+        "epsilon": 0.0,
+        "mode": 32,
+        "T": 300
+      },
+      "compute_seconds": 12.108939099998679,
+      "audit": {
+        "per_site_scaled_residual": 1.089007744791484e-13,
+        "global_scaled_residual": 1.0894574449484895e-13,
+        "availability_oracle_error": 2.808864252301646e-14,
+        "external_A_total": 0.0,
+        "external_B_total": 0.0,
+        "pass": true
+      },
+      "sha256": "ce9b31ea5b959dfff31c3048c29ad9017cb7adf957ba1e72e6fb9971c88b5263",
+      "worker_elapsed_seconds": 14.43642030004412,
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "threads_per_library": 1,
+      "id": "full_zero_E2",
+      "charged_worker_seconds": 15.172045100014657,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "full_eps6_E2",
+        "kind": "full",
+        "method": "E2",
+        "epsilon": 1e-06,
+        "mode": 32,
+        "T": 300
+      },
+      "compute_seconds": 12.240487199975178,
+      "audit": {
+        "per_site_scaled_residual": 1.8736610541061182e-13,
+        "global_scaled_residual": 1.0894574449484895e-13,
+        "availability_oracle_error": 2.808864252301646e-14,
+        "external_A_total": 0.0,
+        "external_B_total": 0.0,
+        "pass": true
+      },
+      "sha256": "9e1fd8e49abe0d4f964aeb2b46b2b79eb2ab0bc79c35659e61a037b39a7931c1",
+      "worker_elapsed_seconds": 14.642763399984688,
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "threads_per_library": 1,
+      "id": "full_eps6_E2",
+      "charged_worker_seconds": 15.157237999956124,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "full_eps8_E2",
+        "kind": "full",
+        "method": "E2",
+        "epsilon": 1e-08,
+        "mode": 32,
+        "T": 300
+      },
+      "compute_seconds": 12.106228600023314,
+      "audit": {
+        "per_site_scaled_residual": 1.9997882340079568e-13,
+        "global_scaled_residual": 1.0894574449484895e-13,
+        "availability_oracle_error": 2.808864252301646e-14,
+        "external_A_total": 0.0,
+        "external_B_total": 0.0,
+        "pass": true
+      },
+      "sha256": "f6a8a8991b5658dda3b510dae0b8afad8277b3e523cba47b22529de0d8da25c9",
+      "worker_elapsed_seconds": 14.510337600018829,
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "threads_per_library": 1,
+      "id": "full_eps8_E2",
+      "charged_worker_seconds": 15.148378400015645,
+      "returncode": 0
+    }
+  ],
+  "ceiling": 1800,
+  "prior_charge": 0,
+  "poll_seconds": 0.5,
+  "charged_worker_seconds": 116.57584340003086,
+  "inflight_worker_seconds": 0,
+  "pending_ids": [],
+  "active_ids": [],
+  "stop_reason": null,
+  "workers": 8,
+  "threads_per_library": 1
+}

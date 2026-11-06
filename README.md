@@ -56,7 +56,7 @@ paper/       White-paper drafts
 
 ## Roadmap
 
-The original roadmap is preserved in [`InitialPlan.md`](InitialPlan.md). The active extension is [MG10](spec/MG10_proposal.md), explicit A/B reservoirs. Its first registered deterministic batch completed: **UNRESOLVED**, PI closure pending. Both highest capacities recover the baseline, with a low-capacity numerical/measurement issue still open. [Results](results/MG10/MG10_results.md). Summary:
+The original roadmap is preserved in [`InitialPlan.md`](InitialPlan.md). The active extension is [MG10](spec/MG10_proposal.md), explicit A/B reservoirs. Its first registered deterministic batch completed: **UNRESOLVED**, PI closure pending. Both highest capacities recover the baseline, with a low-capacity numerical/measurement issue still open. [Results](results/MG10/MG10_results.md). The subsequent [MG10-C1 diagnostic study](results/MG10C1/MG10C1_results.md) supports controlled spatial amplification and qualifies a contrast-minimum detector; it does not rescore MG10. Summary:
 
 | Phase | Content | Gate |
 |---|---|---|

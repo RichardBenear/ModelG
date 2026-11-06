@@ -25,7 +25,7 @@ Read [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md), the authoritative prospective
 3. Amendments are versioned (`spec/phase2_amendment_N.md` → `spec/phase2_protocol_vX.Y.Z.md`). Earlier versions and
    records are preserved and marked superseded, never deleted.
 4. Follow `RESEARCH_PROTOCOL.md`: internal checks and a separate recomputation path are required; external review is optional unless the PI explicitly requires it. Unresolved blocking issues stop production. Preserve historical reviews verbatim; same-author recomputation is not independent external replication.
-5. Phase 2 protocol **v1.3.4** (`spec/phase2_protocol_v1.3.4.md`) governs its historical scope. Later gates have their own frozen specifications. MG10 first deterministic batch was registered as MG042 and completed as MG043: UNRESOLVED, PI closure pending. See results/MG10/MG10_results.md; further production needs its own registered scope.
+5. Phase 2 protocol **v1.3.4** (`spec/phase2_protocol_v1.3.4.md`) governs its historical scope. Later gates have their own frozen specifications. MG10 first deterministic batch was registered as MG042 and completed as MG043: UNRESOLVED, PI closure pending. See results/MG10/MG10_results.md; further production needs its own registered scope. The registered MG10-C1 follow-up completed as MG045 with reference/amplification/measurement clauses supported; see results/MG10C1/MG10C1_results.md. Original MG10 remains UNRESOLVED.
 
 ## Working conventions
 - Commit and push regularly with descriptive messages prefixed by the stage (e.g. `MG007: ...`). **Pull before you

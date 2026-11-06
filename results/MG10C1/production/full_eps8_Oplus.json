@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "full_eps8_Oplus",
+    "kind": "full",
+    "method": "Oplus",
+    "epsilon": 1e-08,
+    "mode": 32,
+    "T": 300
+  },
+  "compute_seconds": 7.1982904999749735,
+  "audit": {
+    "per_site_scaled_residual": 5.3109063757253805e-15,
+    "global_scaled_residual": 2.1794797982966932e-15,
+    "availability_oracle_error": 5.995204332975845e-15,
+    "external_A_total": 0.0,
+    "external_B_total": 0.0,
+    "pass": true
+  },
+  "sha256": "6ddd9aa7f10ad09f41a519a9afd7c4e03c75c2b2bf833884f870e722ddd81212",
+  "worker_elapsed_seconds": 9.987302299996372,
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "numpy": "2.2.4",
+  "scipy": "1.16.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "threads_per_library": 1
+}

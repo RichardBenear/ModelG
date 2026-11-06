@@ -787,3 +787,8 @@ All 64 registered runs complete, with 0.21418268 local production core-hours and
 ## MG044 — MG10-C1 qualification and prospective registration (2026-11-06)
 
 PI authorized the recommended next study. Independent symmetry-preserving references, all-mode time-dependent linear response, planned mode selection, controlled nonlinear amplitudes and a prominence-qualified minimum detector are specified in spec/MG10C1_proposal.md. Six tests and separate raw checking pass; 23 detector fixtures retained. Failed development interpolation/checker attempts preserved and charged. Six T5 timings project 0.1285662 core-hours for ten fixed jobs, below new 0.5 production core-hour ceiling with reserve; <=8 local workers. Registered before production with full hashes and durable raw retention. Original MG10 is not rescored. No external review requested with execution instruction.
+
+
+## MG045 — MG10-C1 results (2026-11-06)
+
+All ten jobs complete after prospective registration1451074, separate recomputation agrees. Homogeneous reference resolved, controlled amplification supported, contrast-minimum qualification passes. Uniform E2 follows reduced ODE; seeded E2/O+ both match linear mode32 response in frozen windows (worst relative error0.03295%, bound5%). All23 fixtures pass; uniform E2 yields no resolved minima at all301 checkpoints. Production0.03238218 core-hours, no cap/timeout/replacement. Complete raw fields, dense references, all250-mode responses, ledgers, fixtures and environment retained. Exact homogeneity differs from perturbed stability; no physical noise law or self-sustaining-particle claim. Original MG10 remains UNRESOLVED; PI closure pending.
