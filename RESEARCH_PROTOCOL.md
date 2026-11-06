@@ -44,4 +44,3 @@ Claude has no automatic implementation or approval obligation. If invited to rev
 ## Current transition
 
 MG8 remains closed with its registered labels. MG10 is a new explicit-reservoir proposal, initially DRAFT and not authorized for production by this workflow change. The StochasticVacuum archive is a separate provenance source; adapted machinery must be validated in ModelG.
-

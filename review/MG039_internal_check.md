@@ -28,4 +28,3 @@ Read active role/workflow surfaces and the published-reference rule table. Inspe
 6. Implementation validation and separate recomputation; optional external review if requested.
 
 Disposition: suitable as an unregistered design draft. Not a registration, implementation clearance or production go.
-

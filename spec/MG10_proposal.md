@@ -210,4 +210,3 @@ Numbers and scope are provisional; only MG10 is reserved by this draft.
 5. Decide whether this stage warrants optional external review.
 
 Current authorization covers the role/protocol update and preparation of this draft. It does not register MG10 or authorize scientific trajectories.
-
