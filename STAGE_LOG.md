@@ -742,4 +742,6 @@ Items deliberately postponed so the project reaches its main questions first. Th
   (`review/MG038_response.md`): J-control losses (all after t = 100; the Ω = 1000 planning assumption was insufficient for
   T = 500); "unchanged particle" withdrawn; causal reading marked provisional and the homogeneous-start diagnostic
   archived (`src/diag_mg8_homogeneous.py`, `results/MG8/diag_homogeneous.json`); seam spread 6.5e-8 to 2.8e-6, not zero;
-  full B2 counts discarded (retention deviation). Labels unchanged. Awaiting the PI's closure sign-off.
+  full B2 counts discarded (retention deviation). Labels unchanged.
+- **MG8 CLOSED 2026-11-06 02:11 UTC** (PI decision card): SENSITIVE at τ₀; refinement NOT RESOLVED BY THIS LADDER; Central
+  Question 5 stays open.
