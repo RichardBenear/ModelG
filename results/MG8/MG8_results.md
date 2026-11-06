@@ -15,7 +15,7 @@ cutoff, state `complete`. Evaluator `src/evaluate_mg8.py` → `evaluation.json`;
   k = 1 and two of three k = 2 replicates are UNSETTLED in velocity). Four levels spanning exactly a factor 8 in τ pass
   the count and span clauses, the slope (p = 1.000, diagnostic lower bound 1.000) and the residuals (≤ 4e-7), and the
   horizon check passes (E₆₀₀ = 0.21557 vs E₃₀₀ = 0.21557). The clause "E at the smallest eligible τ ≤ 0.1 × E at the
-  largest" fails: the ratio is 0.125 (exactly 1/8, because E ∝ τ). BELOW MEASUREMENT RESOLUTION does not apply (E is far
+  largest" fails: the ratio is 0.12500025 (very close to 1/8, because E falls in proportion to τ). BELOW MEASUREMENT RESOLUTION does not apply (E is far
   above the floor).
 
 | k | τ/τ₀ | E_k (median) | labels (3 replicates) | summary |
@@ -28,7 +28,7 @@ cutoff, state `complete`. Evaluator `src/evaluate_mg8.py` → `evaluation.json`;
 | 5 | 1/32 | 0.431 | MATERIAL, NOT DRIFTING ×3 | SENSITIVE |
 | 6 | 1/64 | 0.216 | MATERIAL, NOT DRIFTING ×3 | SENSITIVE |
 
-Seam spread S_k = 0 at every level (the three replicates agree to the printed digits); E_floor = 1e-9 and v_floor = 1e-8 at
+Seam spread is small but not zero: S_k runs from 6.5e-8 (k = 6) to 2.8e-6 (k = 0) (corrected after review MG038); E_floor = 1e-9 and v_floor = 1e-8 at
 every level (J is exactly stationary). E_raw equals E to 4 significant figures everywhere; E_nyq ≤ 0.023 (k = 0) and
 ≤ 4e-5 at k = 6 (deviation D1 changes nothing here).
 
@@ -42,30 +42,49 @@ every level (J is exactly stationary). E_raw equals E to 4 significant figures e
 No replication, merge or TRACK-FAIL anywhere; no clipping. With fewer than 5 eligible runs per arm, drift and stochastic
 shape comparisons are NOT ESTIMATED, as registered.
 
+The J control lost the particle too, in 7 of 8 runs. This does not contradict MG2, which observed for T = 100: every J loss
+here comes after t = 100 (at 102–292). The planning assumption that Ω = 1000 would keep J single was not sufficient for
+MG8's horizon of 500, and the B2 design therefore yielded too few eligible runs. R and P lose the particle much earlier
+(3–20 and 5–9), but the final counts (7/8 against 8/8) separate the arms very little. Earlier loss is descriptive only:
+MG8 registered no survival-time comparison. (Corrected after review MG038.)
+
 ## What drives E (descriptive, not registered)
 E is dominated by the G species (the per-species errors at k = 3 are G 1.72, X 0.036, Y 0.49), and the R − J difference is
 mostly a **uniform offset of the background**: R's median field sits below J's by 0.0324 (G, X) and 0.0466 (Y) at k = 3,
 and by 0.0041 / 0.0058 at k = 6. A check run after the evaluation (homogeneous start at J's steady state S0, no particle,
-60 units) shows the same thing directly: under R the homogeneous state itself moves to S0 − (0.2593, 0.2592, 0.3726) at
-τ₀ and to S0 − (0.0324, 0.0324, 0.0466) at τ₀/8, exactly in proportion to τ; under J it stays at S0 to 4e-15. This is
-the reaction re-exposure effect of A4 (in a sweep a node's snapshot already includes this step's arrivals from the
-neighbour processed before it), acting on the steady state. Because ‖φ_G‖ is small (0.42), a uniform G offset dominates
-the relative error. At τ₀ the offset is large enough that the particle dissolves, and the R field relaxes to the shifted
-homogeneous state; the stochastic R and P runs lose the particle within 3–20 units, consistent with the same effect.
+60 units, seam seed 123; script `src/diag_mg8_homogeneous.py`, output `diag_homogeneous.json`) shows the same thing
+directly: under R the mean of the homogeneous state moves to S0 − (0.2593, 0.2592, 0.3726) at τ₀ and to
+S0 − (0.0324, 0.0324, 0.0466) at τ₀/8, in proportion to τ; under J it stays at S0 to 4e-15. (Under R the state is not
+exactly uniform: the seam leaves a spatial range of up to 0.51 in Y at τ₀ and 0.008 at τ₀/8.) Because ‖φ_G‖ is small
+(0.42), a uniform G offset dominates the relative error.
 
-The particle itself is otherwise unchanged by the sweep at k ≥ 3: single and settled, aligned shift |σ*| ≤ 4e-4, and no
-drift (|v| ≤ 3.1e-8, under the 1e-6 threshold).
+**What this does and does not show (qualified after review MG038).** The offset is measured. Two further readings are
+plausible but not established by MG8: that the offset is what dissolves the particle at τ₀ (the stochastic R and P losses
+within 3–20 units would fit), and that it comes from reaction re-exposure (A4: in a sweep, a node's snapshot already
+includes this step's arrivals from the neighbour processed before it) rather than from the coupled scheduler effects
+together. Both are provisional.
+
+At k ≥ 3 the particle remains single and settled, with no drift resolved by the registered criterion (|v| ≤ 3.1e-8,
+under 1e-6; aligned shift |σ*| ≤ 4e-4), and background offsets dominate the measured discrepancy. That does not make the
+shape unchanged: after removing the mean difference, ChatGPT finds a remaining normalised Y discrepancy of about 2.6% at
+k = 3 and 0.3% at k = 6 (replicate 0; descriptive). At k = 6 the registered E is still 0.216, so refinement has not
+made that observable negligible.
 
 ## Reading
 At the registered production step the update order matters a great deal for this lattice approximation: a rightward
-sweep shifts the homogeneous state by an amount proportional to τ, which at τ₀ is enough to destroy the particle, while
-the synchronous kernel keeps it. As τ is refined, the deterministic difference falls exactly in proportion to τ
-(first-order convergence, slope 1.000), but under the registered rule the ladder does not resolve convergence: the
+sweep loses the particle at τ₀ in every seam replicate, while the synchronous kernel keeps it. The sweep also shifts the
+homogeneous state by an amount proportional to τ, a plausible (not demonstrated) cause. As τ is refined, the deterministic
+difference falls in proportion to τ over the measured range (slope 0.999999, descriptive), but under the registered rule the ladder does not resolve convergence: the
 eligible levels span only a factor 8, so the frozen "≤ 0.1" clause fails at 0.125. Central Question 5 stays open, as
 registered.
 
 ## Files
 `runs/` (55 records), `fields/` (B1 checkpoints), `snap/` (B2 φ_X every 5 units, block profiles), `ledger.json`,
-`status.json`, `evaluation.json`, `recompute.json`. The full B2 counts (`full/`, 34 MB, gitignored) were written in the
-cloud container and are not kept; their SHA-256 values are in the records, and the runs can be regenerated from the
-seeds.
+`status.json`, `evaluation.json`, `recompute.json`, `diag_homogeneous.json`.
+
+**Retention deviation (recorded after review MG038).** The plan (§7, decision 8) was to keep the full B2 count arrays on
+the PI's PC with a committed SHA-256 manifest. Production ran in the cloud instead, and the full counts (`full/`, 34 MB,
+gitignored) were discarded with the container. Their SHA-256 values are in the records, but a hash cannot replace the
+arrays: nobody can now rehash or reanalyse them. The saved detection lists, tracks, events, block profiles and φ_X
+snapshots support most independent checks. Regenerating the arrays from the seeds would be a separate reproducibility
+step, not done here.

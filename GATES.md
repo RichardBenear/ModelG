@@ -1984,6 +1984,10 @@ Result (MG038, 2026-11-06; `results/MG8/MG8_results.md`): all implementation che
 k = 3–6 only; slope 1.000, residuals and horizon pass, but E at the smallest eligible τ is 0.125 of the largest, above the
 0.1 limit). B2 (descriptive): losses J 7/8, R 8/8, P 8/8 (R and P within 20 units); drift and shape NOT ESTIMATED.
 55 records, 3.09 core-h, cloud. Independent recompute agrees on all 106 quantities.
-Replication (ChatGPT): pending.
+Replication (ChatGPT MG038, 2026-11-06): results accepted; recompute reproduced (106 quantities) plus 187 detection counts,
+both mirrors, all stochastic loss classifications, the intervals and the ledger. Four reporting corrections made
+(`review/MG038_response.md`): J losses all after t = 100 (MG2 horizon) and Ω = 1000 insufficient for T = 500; particle
+"unchanged" withdrawn; causal reading provisional (diagnostic archived); seam spread small, not zero; full B2 counts
+discarded (retention deviation).
 PI sign-off: registration 2026-11-05 20:02 UTC; deviation D1 and production go 2026-11-05 23:37 UTC.
 

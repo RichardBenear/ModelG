@@ -736,3 +736,10 @@ Items deliberately postponed so the project reaches its main questions first. Th
   P 8/8; drift and shape NOT ESTIMATED. Independent recompute (`src/recompute_mg8.py`) agrees on all 106 quantities.
 - Descriptive (unregistered): the sweep shifts the homogeneous steady state by an amount proportional to τ (−0.259 in G
   and X at τ₀); that offset dominates E and, at τ₀, dissolves the particle. Details in `results/MG8/MG8_results.md`.
+
+## MG038a — MG8 result review (ChatGPT MG038), 2026-11-06
+- ChatGPT accepted the registered results (`review/MG038_chatgpt.md`) and asked for four reporting corrections, all made
+  (`review/MG038_response.md`): J-control losses (all after t = 100; the Ω = 1000 planning assumption was insufficient for
+  T = 500); "unchanged particle" withdrawn; causal reading marked provisional and the homogeneous-start diagnostic
+  archived (`src/diag_mg8_homogeneous.py`, `results/MG8/diag_homogeneous.json`); seam spread 6.5e-8 to 2.8e-6, not zero;
+  full B2 counts discarded (retention deviation). Labels unchanged. Awaiting the PI's closure sign-off.
