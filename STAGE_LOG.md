@@ -727,3 +727,12 @@ Items deliberately postponed so the project reaches its main questions first. Th
   and the removed-mode E_nyq are reported beside it. Awaiting the PI's sign-off. No production run.
 - 2026-11-05 23:37 UTC: the PI accepted D1 and gave the production go (PR #81 merged). Production launched in the cloud
   (Linux, 4 cores, 4 workers).
+
+## MG038 — MG8 production and result, 2026-11-06
+- Production in the cloud (Linux, 4 workers), 2026-11-05 23:37 to 2026-11-06 00:31 UTC: 55 records, 3.09 core-h, state
+  complete. All implementation checks pass (mirrors bit-identical).
+- RESULT: production step **SENSITIVE** (R loses the particle at t ≈ 8 at τ₀, all three seams); refinement **NOT RESOLVED
+  BY THIS LADDER** (eligible k = 3–6, E ∝ τ with slope 1.000, but E_min/E_max = 0.125 > 0.1). B2: losses J 7/8, R 8/8,
+  P 8/8; drift and shape NOT ESTIMATED. Independent recompute (`src/recompute_mg8.py`) agrees on all 106 quantities.
+- Descriptive (unregistered): the sweep shifts the homogeneous steady state by an amount proportional to τ (−0.259 in G
+  and X at τ₀); that offset dominates E and, at τ₀, dissolves the particle. Details in `results/MG8/MG8_results.md`.
