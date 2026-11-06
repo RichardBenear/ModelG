@@ -19,14 +19,15 @@ def terminate(process):
     except subprocess.TimeoutExpired:process.kill();process.wait()
 
 
-def run(jobs,directory,worker_script,cwd,ceiling,workers=1,prior=0,timeout=600,forecast=None):
+def run(jobs,directory,worker_script,cwd,ceiling,workers=1,prior=0,timeout=600,forecast=None,poll_seconds=.5):
     if not 1<=workers<=8:raise ValueError("Worker limit")
+    if not 0<poll_seconds<=.5:raise ValueError("Poll interval")
     directory=Path(directory);directory.mkdir(parents=True,exist_ok=True)
     lock=directory/"driver.lock"
     with lock.open("x") as handle:handle.write(str(os.getpid()))
     file=directory/"ledger.json";active={};stop=None
     try:
-        ledger=json.loads(file.read_text(encoding="utf-8")) if file.exists() else dict(records=[],ceiling=ceiling,prior_charge=prior,poll_seconds=.5)
+        ledger=json.loads(file.read_text(encoding="utf-8")) if file.exists() else dict(records=[],ceiling=ceiling,prior_charge=prior,poll_seconds=poll_seconds)
         if ledger["ceiling"]!=ceiling or ledger["prior_charge"]!=prior:raise ValueError("Budget changed")
         ids=[j["id"] for j in jobs]
         if len(ids)!=len(set(ids)):raise ValueError("Duplicate job id")
@@ -37,8 +38,12 @@ def run(jobs,directory,worker_script,cwd,ceiling,workers=1,prior=0,timeout=600,f
                           pending_ids=[j["id"] for j in pending],active_ids=list(active),stop_reason=stop,workers=workers,threads_per_library=1)
             atomic_json(file,ledger)
         try:
+            previous_cycle=None
             while pending or active:
-                now=time.perf_counter();inflight=sum(now-a["start"] for a in active.values())
+                cycle=time.perf_counter()
+                if previous_cycle is not None:ledger["max_observed_poll_gap_seconds"]=max(ledger.get("max_observed_poll_gap_seconds",0.),cycle-previous_cycle)
+                previous_cycle=cycle
+                now=cycle;inflight=sum(now-a["start"] for a in active.values())
                 if charged()+inflight>=ceiling:stop="BUDGET-SHORT"
                 if forecast and pending and len(active)<workers and not stop:
                     prediction=sum(forecast[j["id"]] for j in pending)
@@ -64,7 +69,7 @@ def run(jobs,directory,worker_script,cwd,ceiling,workers=1,prior=0,timeout=600,f
                         if record["status"] in ("FAILED","QUALIFICATION FAILED"):stop=record["status"]
                 save()
                 if stop and not active:break
-                if active:time.sleep(.5)
+                if active:time.sleep(max(0.,poll_seconds-(time.perf_counter()-cycle)))
         except BaseException:
             stop="INTERRUPTED"
             for key,a in active.items():

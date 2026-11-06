@@ -1,0 +1,35 @@
+{
+  "status": "QUALIFICATION FAILED",
+  "job": {
+    "id": "development_partial",
+    "kind": "snapshot",
+    "case": 0,
+    "method": 0,
+    "block": 0,
+    "reps": 8,
+    "chunk": 4,
+    "offset": 0,
+    "stage": 4901,
+    "warmup": false
+  },
+  "replicates": 4,
+  "shards": [
+    {
+      "file": "development_partial_part000.npz",
+      "replicates": 4,
+      "chunk": 0,
+      "seed": 1051056821,
+      "sha256": "0dace17369088f72b572b473cafa4b2937b766985595425208451a8d96291471",
+      "population_sha256": "5193399e83243935be82f10cecd0ecaf826cff0974da95da21e6115d650e02b6"
+    }
+  ],
+  "compute_seconds": 0.26721029996406287,
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\rbene\\.codex\\.chatgpt-projects\\g-p-6ae095a6c94c819198efcd6d84f02c03\\archive_work\\ModelG_MG10\\src\\run_mg10s2.py\", line 68, in worker\n    begin=time.perf_counter();raw=sample(size,seed)\n                                  ~~~~~~^^^^^^^^^^^\n  File \"C:\\Users\\rbene\\.codex\\.chatgpt-projects\\g-p-6ae095a6c94c819198efcd6d84f02c03\\archive_work\\ModelG_MG10\\src\\run_mg10s2.py\", line 56, in sample\n    if job[\"kind\"]==\"snapshot\":return m.snapshot(case,job[\"method\"]//2,job[\"method\"]%2,reps,seed)\n                                      ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\rbene\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\mock.py\", line 1167, in __call__\n    return self._mock_call(*args, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\rbene\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\mock.py\", line 1171, in _mock_call\n    return self._execute_mock_call(*args, **kwargs)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\rbene\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\mock.py\", line 1232, in _execute_mock_call\n    result = effect(*args, **kwargs)\n  File \"C:\\Users\\rbene\\.codex\\.chatgpt-projects\\g-p-6ae095a6c94c819198efcd6d84f02c03\\archive_work\\ModelG_MG10\\tests\\test_mg10s2.py\", line 96, in interrupted\n    if count[0]==2:raise RuntimeError(\"Intentional development interruption\")\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Intentional development interruption\n",
+  "worker_elapsed_seconds": 0.42910390003817156,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "numpy": "2.2.4",
+  "scipy": "1.16.1",
+  "numba": "0.68.0",
+  "threads_per_library": 1
+}

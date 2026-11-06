@@ -1,0 +1,25 @@
+{
+  "job": {
+    "id": "development_partial",
+    "kind": "snapshot",
+    "case": 0,
+    "method": 0,
+    "block": 0,
+    "reps": 8,
+    "chunk": 4,
+    "offset": 0,
+    "stage": 4901,
+    "warmup": false
+  },
+  "replicates": 4,
+  "shards": [
+    {
+      "file": "development_partial_part000.npz",
+      "replicates": 4,
+      "chunk": 0,
+      "seed": 1051056821,
+      "sha256": "0dace17369088f72b572b473cafa4b2937b766985595425208451a8d96291471",
+      "population_sha256": "5193399e83243935be82f10cecd0ecaf826cff0974da95da21e6115d650e02b6"
+    }
+  ]
+}

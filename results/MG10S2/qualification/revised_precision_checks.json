@@ -1,0 +1,36 @@
+[
+  {
+    "args": [
+      "python",
+      "tests/test_mg10s2_analysis.py",
+      "Apparatus.test_signed_CDF_and_decisions",
+      "Apparatus.test_synthetic_families"
+    ],
+    "elapsed_worker_seconds": 1.8367749000317417,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "test_signed_CDF_and_decisions (__main__.Apparatus.test_signed_CDF_and_decisions) ... ok\ntest_synthetic_families (__main__.Apparatus.test_synthetic_families) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.168s\n\nOK\n"
+  },
+  {
+    "args": [
+      "python",
+      "src/check_mg10s2.py",
+      "--development"
+    ],
+    "elapsed_worker_seconds": 3.189176599960774,
+    "returncode": 0,
+    "stdout": "{'status': 'PASS', 'jobs': 32, 'shards': 32, 'integer_and_population_hashes': True, 'analytic_covariances': True, 'charged_worker_seconds': 92.0223313999013}\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "python",
+      "src/run_mg10s2.py",
+      "--project-only"
+    ],
+    "elapsed_worker_seconds": 0.13972109998576343,
+    "returncode": 0,
+    "stdout": "{'projected_worker_seconds': 3062.6918655252084, 'overhead': 6.110492800013162, 'ceiling': 7200, 'reserve': 0.25, 'fits': True, 'qualification_timing_seconds': 92.0223313999013, 'formula': '2x measured warm compute/measurement/serialization scaling + max(5s,2x observed startup/warm-up overhead) per fixed job'}\n",
+    "stderr": ""
+  }
+]

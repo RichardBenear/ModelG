@@ -1,0 +1,25 @@
+{
+  "job": {
+    "id": "snapshot_c2_m2_b0",
+    "kind": "snapshot",
+    "case": 2,
+    "method": 2,
+    "block": 0,
+    "reps": 64,
+    "chunk": 64,
+    "offset": 0,
+    "stage": 4902,
+    "warmup": true
+  },
+  "replicates": 64,
+  "shards": [
+    {
+      "file": "snapshot_c2_m2_b0_part000.npz",
+      "replicates": 64,
+      "chunk": 0,
+      "seed": 3358948703,
+      "sha256": "e816fdc05473939f05814630cc12c7d66fb6227576f2b049f451655c8c68ce65",
+      "population_sha256": "dea4a980354d47bdc4c1733f24324a51eb664a18d1fd014c47c6cb5f2a1e14d2"
+    }
+  ]
+}

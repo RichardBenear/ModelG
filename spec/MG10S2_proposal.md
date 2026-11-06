@@ -1,6 +1,6 @@
 # MG10-S2 — Actual-lattice spatial-noise qualification
 
-MG049, 2026-11-06. **Prospective design; no scientific S2 ensemble has run.**
+MG049, 2026-11-06. **REGISTERED prospectively, MG050. No scientific S2 ensemble has run; only declared qualification/timing/calibration data preceded registration.**
 PI signed off S1 and instructed proceeding. S1 is CLOSED with its limited small-
 system qualification. Original MG10 remains UNRESOLVED; C1 is CLOSED. This study
 tests h=.2 and Omega100/1000 before any long-horizon stochastic particle claims.
@@ -31,9 +31,9 @@ Two complementary arms:
    relevant full-ring wavelength3.125, plus its high-frequency end. It does not
    establish long-horizon, full-ring nonlinear accuracy.
 
-Each of the24 snapshot groups and8 short groups has R8192 trajectories. Snapshot
-groups run as24 jobs, chunks512; short groups have8 fixed blocks of1024 each,
-chunks256, giving64 short jobs. Total88 jobs,32 logical groups,262144 trajectories.
+Each of the24 snapshot groups and8 short groups has R16384 trajectories. Snapshot
+groups run as24 jobs, chunks512; short groups have8 fixed blocks of2048 each,
+chunks256, giving64 short jobs. Total88 jobs,32 logical groups,524288 trajectories.
 No replacement, extension or data-selected arm. Partitioning avoids a long exact-
 SSA job while preserving fixed streams and the full sample denominator.
 
@@ -68,7 +68,7 @@ observables. Two simultaneous families, with alpha=.005 each (global union <=.01
 - Short: 2 densities*3 checkpoints*2 modes*8 observables=96 comparisons, finest
   leap versus SSA. Other steps are descriptive, not additional equivalence claims.
 
-For a family of M comparisons set w=2*sqrt(log(4*M/.005)/(2*8192)). Each distance
+For a family of M comparisons set w=2*sqrt(log(4*M/.005)/(2*16384)). Each distance
 has simultaneous interval [max(0,d_hat-w),min(1,d_hat+w)]. Require every upper
 bound<=.08 in that family. The8% CDF margin and R are frozen here; they are not
 concentration, variance-percentage or particle-rate margins. This larger margin
@@ -91,7 +91,7 @@ Use seed_for(10,case,method,stage,global_chunk). Snapshot cases0..3 are
 H100,S100,H1000,S1000; method=2*delta_index+sampler (leap0,oracle1). Short cases4/5
 are H100/H1000; methodsSSA0 and three leap levels1/2/3. Stages4901 development,
 4902 timing,4903 production; block boundaries cannot change global chunk indices.
-Freeze/check all448 production chunk seeds for uniqueness before registration.
+Freeze/check all1280 production chunk seeds for uniqueness before registration.
 The oracle uses PCG64; S1 kernels retain their seeded Numba RNG. Record all streams.
 
 Before production: unchanged-S1 regression; h scaling; no safety adaptation in the
@@ -128,3 +128,13 @@ Checkpoint per completed shard; do not silently rerun an interrupted block.
 PI closure follows results. No historical result is rescored. Long-horizon particle
 tracking/persistence and physical fluctuation or reservoir derivation still require
 separate definitions and evidence; a short-time noise pass does not establish them.
+
+Source/spec integrity in S2 uses SHA-256 of UTF-8 text normalized to LF, so Git line-ending conversions do not masquerade as scientific code changes. Binary references and raw files retain byte-exact SHA-256. Older study registrations are preserved unchanged.
+
+Apparatus checks before production:256 Bernoulli families at true CDF distances0,.01,.15 for each family size192/96, with the fixed R/alpha/margin. Require observed coverage>=.98, null qualification frequency>=.70, and no qualifications at.15; inside-margin power is descriptive. This finite check validates implementation, not universal coverage or a basis to retune the design. The conservative simultaneous bands can leave even identical distributions unresolved; that outcome is retained.
+
+Production monitoring uses a .25-second target period, allowing administration within the .5-second requirement. The shared controller now schedules sleep after subtracting administration time and records the maximum observed polling gap. This prospective monitor-only change leaves the historical physical samplers and results untouched; old controller versions remain in their registration commits. Timing used the earlier, slower monitor and remains conservative.
+
+## Prospective precision correction (MG049a, before scientific data)
+
+The original candidate R8192 gives DKW halfwidths .053996/.052405, more than half the .08 margin. A data-independent precision allocation requires sampling allowance<=.04: n>=2*log(4*M/.005)/.04^2, with the largest familyM192 requiring about14928 samples. The next power of two is16384. Thus double both families before registration, keeping all physical parameters, margins, alpha, comparisons and steps unchanged. Jobs remain88; full jobs have16384 samples, short blocks2048, total524288 trajectories and1280 chunk seeds. Reuse the unchanged class timing measurements to forecast3062.691866 worker-seconds; no new scientific sample is used in the revision. Preserve Draft1 and its synthetic calibration. New calibration verifies the revised arithmetic rather than selecting a margin or favorable physical outcome. This explicit revision supersedes Draft1 sample counts and its ban on retuning that candidate; no registered result is altered.

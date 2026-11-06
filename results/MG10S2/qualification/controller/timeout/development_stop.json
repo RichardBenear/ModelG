@@ -1,0 +1,19 @@
+{
+  "status": "TIMEOUT",
+  "job": {
+    "id": "development_stop",
+    "kind": "snapshot",
+    "case": 0,
+    "method": 0,
+    "block": 0,
+    "reps": 512,
+    "chunk": 512,
+    "offset": 0,
+    "stage": 4901,
+    "warmup": false
+  },
+  "id": "development_stop",
+  "charged_worker_seconds": 0.24881630000891164,
+  "returncode": 1,
+  "termination_reason": "TIMEOUT"
+}

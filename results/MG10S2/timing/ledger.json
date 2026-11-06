@@ -1,0 +1,1198 @@
+{
+  "records": [
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "snapshot_c0_m1_b0",
+        "kind": "snapshot",
+        "case": 0,
+        "method": 1,
+        "block": 0,
+        "reps": 64,
+        "chunk": 64,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 64,
+      "shards": [
+        {
+          "file": "snapshot_c0_m1_b0_part000.npz",
+          "replicates": 64,
+          "chunk": 0,
+          "seed": 1760915455,
+          "sha256": "95294d2dd0a2643528de94831fcca5920fa063741a2997d930912430c98892c8",
+          "population_sha256": "ba8103de01946407a719f65b6f1b9732d41e7b9c572d5fd263da2b40198edec3"
+        }
+      ],
+      "compute_seconds": 0.11117290001129732,
+      "worker_elapsed_seconds": 2.2627074000192806,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "snapshot_c0_m1_b0",
+      "charged_worker_seconds": 2.5755340000032447,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "snapshot_c0_m3_b0",
+        "kind": "snapshot",
+        "case": 0,
+        "method": 3,
+        "block": 0,
+        "reps": 64,
+        "chunk": 64,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 64,
+      "shards": [
+        {
+          "file": "snapshot_c0_m3_b0_part000.npz",
+          "replicates": 64,
+          "chunk": 0,
+          "seed": 1227523314,
+          "sha256": "c8ad6e2e1a5d4bfcf0c9e7d6dd01987a37d058813e880a20db025caf5a47d0fa",
+          "population_sha256": "e8676a91fc6a14473440b79ac1347bf07da86a5c0f58034615535fb5bf2936af"
+        }
+      ],
+      "compute_seconds": 0.1014316999935545,
+      "worker_elapsed_seconds": 2.2386944000027142,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "snapshot_c0_m3_b0",
+      "charged_worker_seconds": 2.562236799974926,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "snapshot_c0_m0_b0",
+        "kind": "snapshot",
+        "case": 0,
+        "method": 0,
+        "block": 0,
+        "reps": 64,
+        "chunk": 64,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 64,
+      "shards": [
+        {
+          "file": "snapshot_c0_m0_b0_part000.npz",
+          "replicates": 64,
+          "chunk": 0,
+          "seed": 4238168256,
+          "sha256": "fe90dbbdd901944a8b720e703d8fea558189984eb412429245936d8c377fba4c",
+          "population_sha256": "6312192497283591c0794df4df53b08a38389b4ba9eb7079a5c01d2525e4633d"
+        }
+      ],
+      "compute_seconds": 0.11267560004489496,
+      "worker_elapsed_seconds": 2.5648525999858975,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "snapshot_c0_m0_b0",
+      "charged_worker_seconds": 3.138049700006377,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "snapshot_c0_m2_b0",
+        "kind": "snapshot",
+        "case": 0,
+        "method": 2,
+        "block": 0,
+        "reps": 64,
+        "chunk": 64,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 64,
+      "shards": [
+        {
+          "file": "snapshot_c0_m2_b0_part000.npz",
+          "replicates": 64,
+          "chunk": 0,
+          "seed": 4219838417,
+          "sha256": "9505b36428fc73e04d2c3ac1aa386c111625a2b144637f66e2c826e4ffb5c0b8",
+          "population_sha256": "3ebdbc3fa99d311c62f92705b74d2be4a611f3223a512ebede1f50445297525d"
+        }
+      ],
+      "compute_seconds": 0.09516620001522824,
+      "worker_elapsed_seconds": 2.6065921999979764,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "snapshot_c0_m2_b0",
+      "charged_worker_seconds": 3.1260561000090092,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "snapshot_c0_m4_b0",
+        "kind": "snapshot",
+        "case": 0,
+        "method": 4,
+        "block": 0,
+        "reps": 64,
+        "chunk": 64,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 64,
+      "shards": [
+        {
+          "file": "snapshot_c0_m4_b0_part000.npz",
+          "replicates": 64,
+          "chunk": 0,
+          "seed": 2347047877,
+          "sha256": "410995f1387947f1e9dcd64b25565d47e71d597389c8e0086a22a00a7f688bcf",
+          "population_sha256": "58e31f6719678e8b63fab776ce95c1a4f9e17d56d29f4c13765873d0c36eb1ff"
+        }
+      ],
+      "compute_seconds": 0.09716820000903681,
+      "worker_elapsed_seconds": 2.597802700009197,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "snapshot_c0_m4_b0",
+      "charged_worker_seconds": 3.1152451999951154,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "snapshot_c0_m5_b0",
+        "kind": "snapshot",
+        "case": 0,
+        "method": 5,
+        "block": 0,
+        "reps": 64,
+        "chunk": 64,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 64,
+      "shards": [
+        {
+          "file": "snapshot_c0_m5_b0_part000.npz",
+          "replicates": 64,
+          "chunk": 0,
+          "seed": 3618387353,
+          "sha256": "3ee2d631956f85dbd20b70ad0502c7d1ca4a4ab9d28834863b8e6bfa3353dfdd",
+          "population_sha256": "7328c9607391835b48f405c18457ff774d691a8eddcd1662757fc5aaea17400a"
+        }
+      ],
+      "compute_seconds": 0.09608719998504966,
+      "worker_elapsed_seconds": 2.272718899999745,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "snapshot_c0_m5_b0",
+      "charged_worker_seconds": 3.114223700016737,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "snapshot_c1_m0_b0",
+        "kind": "snapshot",
+        "case": 1,
+        "method": 0,
+        "block": 0,
+        "reps": 64,
+        "chunk": 64,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 64,
+      "shards": [
+        {
+          "file": "snapshot_c1_m0_b0_part000.npz",
+          "replicates": 64,
+          "chunk": 0,
+          "seed": 2941743182,
+          "sha256": "5918bcef0853d5229f93a65a49c2d980925adcfdbfb2d47161548674a097d817",
+          "population_sha256": "031ad38f3de0ed4f67eeaee66a539148d6f7c7134be21a12bf3b897d38232acc"
+        }
+      ],
+      "compute_seconds": 0.10768610000377521,
+      "worker_elapsed_seconds": 2.603138200007379,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "snapshot_c1_m0_b0",
+      "charged_worker_seconds": 3.1133600999601185,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "snapshot_c1_m1_b0",
+        "kind": "snapshot",
+        "case": 1,
+        "method": 1,
+        "block": 0,
+        "reps": 64,
+        "chunk": 64,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 64,
+      "shards": [
+        {
+          "file": "snapshot_c1_m1_b0_part000.npz",
+          "replicates": 64,
+          "chunk": 0,
+          "seed": 3392633520,
+          "sha256": "12b9c94e3ff908405d7d0c598e07b61cb52566a246bbb1d9616f8f64b0840cbf",
+          "population_sha256": "fe392b178ae920a9e09dd7e671897c3931f67a52e1e4c616a45fef5da3335b0e"
+        }
+      ],
+      "compute_seconds": 0.11757860000943765,
+      "worker_elapsed_seconds": 2.2866050000302494,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "snapshot_c1_m1_b0",
+      "charged_worker_seconds": 3.112268899974879,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "snapshot_c1_m2_b0",
+        "kind": "snapshot",
+        "case": 1,
+        "method": 2,
+        "block": 0,
+        "reps": 64,
+        "chunk": 64,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 64,
+      "shards": [
+        {
+          "file": "snapshot_c1_m2_b0_part000.npz",
+          "replicates": 64,
+          "chunk": 0,
+          "seed": 215729632,
+          "sha256": "46bc53b5f22be02ddc0883ea74bfd201d6d6b0062d71f4d31bd1921a386f72b9",
+          "population_sha256": "8884029fa00e0ad656027cab6331caf89149320163509f6158db1eac5c89d021"
+        }
+      ],
+      "compute_seconds": 0.10016719996929169,
+      "worker_elapsed_seconds": 2.316977099981159,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "snapshot_c1_m2_b0",
+      "charged_worker_seconds": 2.633739900018554,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "snapshot_c1_m3_b0",
+        "kind": "snapshot",
+        "case": 1,
+        "method": 3,
+        "block": 0,
+        "reps": 64,
+        "chunk": 64,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 64,
+      "shards": [
+        {
+          "file": "snapshot_c1_m3_b0_part000.npz",
+          "replicates": 64,
+          "chunk": 0,
+          "seed": 2541692728,
+          "sha256": "221264918991f448a3fe00bd080d5d222cf5ec27b13ebf74c732b53e3eb6585a",
+          "population_sha256": "b181a494edb5b972f77ac3a34a0e139537676e79a2f1f3354efa5d2c482b49b4"
+        }
+      ],
+      "compute_seconds": 0.10092759999679402,
+      "worker_elapsed_seconds": 1.990264300024137,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "snapshot_c1_m3_b0",
+      "charged_worker_seconds": 2.627600400010124,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "snapshot_c1_m5_b0",
+        "kind": "snapshot",
+        "case": 1,
+        "method": 5,
+        "block": 0,
+        "reps": 64,
+        "chunk": 64,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 64,
+      "shards": [
+        {
+          "file": "snapshot_c1_m5_b0_part000.npz",
+          "replicates": 64,
+          "chunk": 0,
+          "seed": 673047111,
+          "sha256": "97b8b247061520ec51565248f844d4b8d8c2284ea24de8031883108d0738193d",
+          "population_sha256": "5e2f900317b86bf5d4e0bcd8c5c1fb4c06b02f58323de3f720e8d33386384fdb"
+        }
+      ],
+      "compute_seconds": 0.0999599999631755,
+      "worker_elapsed_seconds": 2.139826999977231,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "snapshot_c1_m5_b0",
+      "charged_worker_seconds": 2.5934401999693364,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "snapshot_c2_m1_b0",
+        "kind": "snapshot",
+        "case": 2,
+        "method": 1,
+        "block": 0,
+        "reps": 64,
+        "chunk": 64,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 64,
+      "shards": [
+        {
+          "file": "snapshot_c2_m1_b0_part000.npz",
+          "replicates": 64,
+          "chunk": 0,
+          "seed": 166139091,
+          "sha256": "368ed0d1bb9849828ef0bbcec4a77c0b1ed7cc2d911820d06a2c45437fb52600",
+          "population_sha256": "2097f8d62d5fadafb439ee8b60ebfcdb113e2ac085210ea7f3f9aa3adb55480e"
+        }
+      ],
+      "compute_seconds": 0.14248589996714145,
+      "worker_elapsed_seconds": 2.203402500017546,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "snapshot_c2_m1_b0",
+      "charged_worker_seconds": 2.576023300003726,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "snapshot_c2_m3_b0",
+        "kind": "snapshot",
+        "case": 2,
+        "method": 3,
+        "block": 0,
+        "reps": 64,
+        "chunk": 64,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 64,
+      "shards": [
+        {
+          "file": "snapshot_c2_m3_b0_part000.npz",
+          "replicates": 64,
+          "chunk": 0,
+          "seed": 3393428779,
+          "sha256": "fa02a20bfa90370fa22f72c6063f4c141fa467c2dec9d38097351f372db9a72e",
+          "population_sha256": "d484ee5b49d2c86e820f23fba3c5a1276f8a4491a9e8fb670c402eaeb5993c67"
+        }
+      ],
+      "compute_seconds": 0.13743360002990812,
+      "worker_elapsed_seconds": 2.1913329000235535,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "snapshot_c2_m3_b0",
+      "charged_worker_seconds": 2.5682336000027135,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "snapshot_c1_m4_b0",
+        "kind": "snapshot",
+        "case": 1,
+        "method": 4,
+        "block": 0,
+        "reps": 64,
+        "chunk": 64,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 64,
+      "shards": [
+        {
+          "file": "snapshot_c1_m4_b0_part000.npz",
+          "replicates": 64,
+          "chunk": 0,
+          "seed": 563039800,
+          "sha256": "2bd91b8aacbea5fe1685aaf949474c2771d3239155d8ba5d652c3d30a5e05431",
+          "population_sha256": "a32922f89c3084f04155294833cd1437036ed5547753b930a2d6327134e14f0f"
+        }
+      ],
+      "compute_seconds": 0.0943392000044696,
+      "worker_elapsed_seconds": 2.414743700006511,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "snapshot_c1_m4_b0",
+      "charged_worker_seconds": 3.1495856000110507,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "snapshot_c2_m0_b0",
+        "kind": "snapshot",
+        "case": 2,
+        "method": 0,
+        "block": 0,
+        "reps": 64,
+        "chunk": 64,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 64,
+      "shards": [
+        {
+          "file": "snapshot_c2_m0_b0_part000.npz",
+          "replicates": 64,
+          "chunk": 0,
+          "seed": 3007064957,
+          "sha256": "6a5d248c925994e2a3c46ff30ff70542a5d222bf25317c69bc8e725f0279e75f",
+          "population_sha256": "847ad3d6b9bd259026c0adc76c0b764c274495141f067541ff37fb1734f59669"
+        }
+      ],
+      "compute_seconds": 0.14703839999856427,
+      "worker_elapsed_seconds": 2.4779338999651372,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "snapshot_c2_m0_b0",
+      "charged_worker_seconds": 3.144508199999109,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "snapshot_c2_m2_b0",
+        "kind": "snapshot",
+        "case": 2,
+        "method": 2,
+        "block": 0,
+        "reps": 64,
+        "chunk": 64,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 64,
+      "shards": [
+        {
+          "file": "snapshot_c2_m2_b0_part000.npz",
+          "replicates": 64,
+          "chunk": 0,
+          "seed": 3358948703,
+          "sha256": "e816fdc05473939f05814630cc12c7d66fb6227576f2b049f451655c8c68ce65",
+          "population_sha256": "dea4a980354d47bdc4c1733f24324a51eb664a18d1fd014c47c6cb5f2a1e14d2"
+        }
+      ],
+      "compute_seconds": 0.14463359996443614,
+      "worker_elapsed_seconds": 2.478557800000999,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "snapshot_c2_m2_b0",
+      "charged_worker_seconds": 3.1293002999736927,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "snapshot_c2_m4_b0",
+        "kind": "snapshot",
+        "case": 2,
+        "method": 4,
+        "block": 0,
+        "reps": 64,
+        "chunk": 64,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 64,
+      "shards": [
+        {
+          "file": "snapshot_c2_m4_b0_part000.npz",
+          "replicates": 64,
+          "chunk": 0,
+          "seed": 4214166839,
+          "sha256": "a414a6046b9fb43134894150e32c34c7f37917ea18cfe141fa0e08cd8fafc719",
+          "population_sha256": "cc365e75396498d47af8bd535b447cef74acdfd591d185cd79127d74c4e9bc72"
+        }
+      ],
+      "compute_seconds": 0.14170119998743758,
+      "worker_elapsed_seconds": 2.283678699983284,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "snapshot_c2_m4_b0",
+      "charged_worker_seconds": 2.6330185999977402,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "snapshot_c2_m5_b0",
+        "kind": "snapshot",
+        "case": 2,
+        "method": 5,
+        "block": 0,
+        "reps": 64,
+        "chunk": 64,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 64,
+      "shards": [
+        {
+          "file": "snapshot_c2_m5_b0_part000.npz",
+          "replicates": 64,
+          "chunk": 0,
+          "seed": 1823442243,
+          "sha256": "f5b995a0f4f7560ea34da2a03c3437f582123f37b4966d98f7a9c734a9368692",
+          "population_sha256": "388339e38c5927f8100ba0f05c5a8d7becc58ac31cec782d087039513c8cac0f"
+        }
+      ],
+      "compute_seconds": 0.1464272000011988,
+      "worker_elapsed_seconds": 1.9849204000202008,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "snapshot_c2_m5_b0",
+      "charged_worker_seconds": 2.6378673000144772,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "snapshot_c3_m1_b0",
+        "kind": "snapshot",
+        "case": 3,
+        "method": 1,
+        "block": 0,
+        "reps": 64,
+        "chunk": 64,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 64,
+      "shards": [
+        {
+          "file": "snapshot_c3_m1_b0_part000.npz",
+          "replicates": 64,
+          "chunk": 0,
+          "seed": 1800309598,
+          "sha256": "e84a23bd3a5e27d51418088330e8e58853aff3dfef2b76e62105e54fadeb2534",
+          "population_sha256": "0c97ba81a5ba5525106b7b2e9df6db183cd5f1a9c6eec910de3e4d55ccd8c7c0"
+        }
+      ],
+      "compute_seconds": 0.15178249997552484,
+      "worker_elapsed_seconds": 2.0673753999872133,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "snapshot_c3_m1_b0",
+      "charged_worker_seconds": 2.625516499974765,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "snapshot_c3_m0_b0",
+        "kind": "snapshot",
+        "case": 3,
+        "method": 0,
+        "block": 0,
+        "reps": 64,
+        "chunk": 64,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 64,
+      "shards": [
+        {
+          "file": "snapshot_c3_m0_b0_part000.npz",
+          "replicates": 64,
+          "chunk": 0,
+          "seed": 847170413,
+          "sha256": "b2bb5a69bc8795db52b896939cbf29b2f39a9a886587c8cd3de7cf85b31ab9dc",
+          "population_sha256": "1ddb92055ae931b9104d2a0259817daeb4b20c9b152f22197971f90d955a8258"
+        }
+      ],
+      "compute_seconds": 0.14796410000417382,
+      "worker_elapsed_seconds": 2.3762680999934673,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "snapshot_c3_m0_b0",
+      "charged_worker_seconds": 3.1526984999654815,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "snapshot_c3_m2_b0",
+        "kind": "snapshot",
+        "case": 3,
+        "method": 2,
+        "block": 0,
+        "reps": 64,
+        "chunk": 64,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 64,
+      "shards": [
+        {
+          "file": "snapshot_c3_m2_b0_part000.npz",
+          "replicates": 64,
+          "chunk": 0,
+          "seed": 3958849899,
+          "sha256": "a626c2c3cbc584305d4367ebde3928539ba09813059ffaf13c3fdbde05b7ad5c",
+          "population_sha256": "90d70ef95a17c1e010ddd3762e0eb80599f0ca0b98ff2155feaf7ea5ee4eefcd"
+        }
+      ],
+      "compute_seconds": 0.13345860003028065,
+      "worker_elapsed_seconds": 2.373543100024108,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "snapshot_c3_m2_b0",
+      "charged_worker_seconds": 3.142678899981547,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "snapshot_c3_m3_b0",
+        "kind": "snapshot",
+        "case": 3,
+        "method": 3,
+        "block": 0,
+        "reps": 64,
+        "chunk": 64,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 64,
+      "shards": [
+        {
+          "file": "snapshot_c3_m3_b0_part000.npz",
+          "replicates": 64,
+          "chunk": 0,
+          "seed": 1603623199,
+          "sha256": "8cb6e8f15f3947a3f8d731fc696df8e3bef93d543b5d058ebd4ca115c5af6389",
+          "population_sha256": "2ce6b909533c9eb5eb25236f31a47fd93d351791be0891c498880f533fe0d0b4"
+        }
+      ],
+      "compute_seconds": 0.13014680001651868,
+      "worker_elapsed_seconds": 2.0787547000218183,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "snapshot_c3_m3_b0",
+      "charged_worker_seconds": 2.6103116000304,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "snapshot_c3_m5_b0",
+        "kind": "snapshot",
+        "case": 3,
+        "method": 5,
+        "block": 0,
+        "reps": 64,
+        "chunk": 64,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 64,
+      "shards": [
+        {
+          "file": "snapshot_c3_m5_b0_part000.npz",
+          "replicates": 64,
+          "chunk": 0,
+          "seed": 1886831663,
+          "sha256": "dbf86fc82e20a07fa27253dd40564519f025c9c9363bd56a26417f0a0357aa19",
+          "population_sha256": "cb739ad004b8504324bf216432a325c9e320e18b57e03480644b85ff4c78f964"
+        }
+      ],
+      "compute_seconds": 0.125395999988541,
+      "worker_elapsed_seconds": 2.0658106000046246,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "snapshot_c3_m5_b0",
+      "charged_worker_seconds": 2.6030337000265718,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "snapshot_c3_m4_b0",
+        "kind": "snapshot",
+        "case": 3,
+        "method": 4,
+        "block": 0,
+        "reps": 64,
+        "chunk": 64,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 64,
+      "shards": [
+        {
+          "file": "snapshot_c3_m4_b0_part000.npz",
+          "replicates": 64,
+          "chunk": 0,
+          "seed": 818000105,
+          "sha256": "b9596eb4e1d655e5da525d917fdf3ac1fc3d755a89b3f76ff7db3f9cd244281f",
+          "population_sha256": "6db0ff0abd4d7d7db3b5734f0915ce0d185a1e734b42d8c7870e2782188385d3"
+        }
+      ],
+      "compute_seconds": 0.1317018999834545,
+      "worker_elapsed_seconds": 2.354894599993713,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "snapshot_c3_m4_b0",
+      "charged_worker_seconds": 3.149494000012055,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "short_c4_m0_b0",
+        "kind": "short",
+        "case": 4,
+        "method": 0,
+        "block": 0,
+        "reps": 8,
+        "chunk": 8,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 8,
+      "shards": [
+        {
+          "file": "short_c4_m0_b0_part000.npz",
+          "replicates": 8,
+          "chunk": 0,
+          "seed": 2541710636,
+          "sha256": "791ccd40a6abfa8db919a17a61268f9226511b8f294a6663f28919344ba4e4a3",
+          "population_sha256": null
+        }
+      ],
+      "compute_seconds": 0.02428510005120188,
+      "worker_elapsed_seconds": 1.9803823999827728,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "short_c4_m0_b0",
+      "charged_worker_seconds": 2.633363000000827,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "short_c4_m1_b0",
+        "kind": "short",
+        "case": 4,
+        "method": 1,
+        "block": 0,
+        "reps": 8,
+        "chunk": 8,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 8,
+      "shards": [
+        {
+          "file": "short_c4_m1_b0_part000.npz",
+          "replicates": 8,
+          "chunk": 0,
+          "seed": 3476542380,
+          "sha256": "f2f7e4f888124f292d1b50eddb6c6990b0ad847094b90dcd4d96953507274224",
+          "population_sha256": null
+        }
+      ],
+      "compute_seconds": 0.015676099981646985,
+      "worker_elapsed_seconds": 1.9532428999664262,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "short_c4_m1_b0",
+      "charged_worker_seconds": 2.6391031999955885,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "short_c4_m2_b0",
+        "kind": "short",
+        "case": 4,
+        "method": 2,
+        "block": 0,
+        "reps": 8,
+        "chunk": 8,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 8,
+      "shards": [
+        {
+          "file": "short_c4_m2_b0_part000.npz",
+          "replicates": 8,
+          "chunk": 0,
+          "seed": 4030755937,
+          "sha256": "98e1cd93e1577a10f30a197a27e620798d68c7478f7bea6535a5f83ecfec9d36",
+          "population_sha256": null
+        }
+      ],
+      "compute_seconds": 0.011568899964913726,
+      "worker_elapsed_seconds": 1.9897807999514043,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "short_c4_m2_b0",
+      "charged_worker_seconds": 2.6382715000072494,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "short_c4_m3_b0",
+        "kind": "short",
+        "case": 4,
+        "method": 3,
+        "block": 0,
+        "reps": 8,
+        "chunk": 8,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 8,
+      "shards": [
+        {
+          "file": "short_c4_m3_b0_part000.npz",
+          "replicates": 8,
+          "chunk": 0,
+          "seed": 459792428,
+          "sha256": "34abdb8b1cbcea651c1cfba7b6dad44f3b52688c03b20cff68145ea525a3190c",
+          "population_sha256": null
+        }
+      ],
+      "compute_seconds": 0.021146600018255413,
+      "worker_elapsed_seconds": 2.073154399986379,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "short_c4_m3_b0",
+      "charged_worker_seconds": 2.600238899991382,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "short_c5_m0_b0",
+        "kind": "short",
+        "case": 5,
+        "method": 0,
+        "block": 0,
+        "reps": 8,
+        "chunk": 8,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 8,
+      "shards": [
+        {
+          "file": "short_c5_m0_b0_part000.npz",
+          "replicates": 8,
+          "chunk": 0,
+          "seed": 1539864488,
+          "sha256": "2b53a8e036c72084a7a23a94d3b7831b63a06c9b676082ac98ee587b4ec9aaac",
+          "population_sha256": null
+        }
+      ],
+      "compute_seconds": 0.12919250002596527,
+      "worker_elapsed_seconds": 2.203466299979482,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "short_c5_m0_b0",
+      "charged_worker_seconds": 2.598130800004583,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "short_c5_m1_b0",
+        "kind": "short",
+        "case": 5,
+        "method": 1,
+        "block": 0,
+        "reps": 8,
+        "chunk": 8,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 8,
+      "shards": [
+        {
+          "file": "short_c5_m1_b0_part000.npz",
+          "replicates": 8,
+          "chunk": 0,
+          "seed": 1349683149,
+          "sha256": "97de49bbe72773aa6ebd03a9d8546423209e470447acc0145e98047c18d59b44",
+          "population_sha256": null
+        }
+      ],
+      "compute_seconds": 0.013848899980075657,
+      "worker_elapsed_seconds": 2.0639789999695495,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "short_c5_m1_b0",
+      "charged_worker_seconds": 2.596880799974315,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "short_c5_m2_b0",
+        "kind": "short",
+        "case": 5,
+        "method": 2,
+        "block": 0,
+        "reps": 8,
+        "chunk": 8,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 8,
+      "shards": [
+        {
+          "file": "short_c5_m2_b0_part000.npz",
+          "replicates": 8,
+          "chunk": 0,
+          "seed": 4153901890,
+          "sha256": "2457577216847cbd1b3f2cfebb51879489c4fdd6c420cac92ff821d2beea83e1",
+          "population_sha256": null
+        }
+      ],
+      "compute_seconds": 0.022932599997147918,
+      "worker_elapsed_seconds": 2.0574990999884903,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "short_c5_m2_b0",
+      "charged_worker_seconds": 2.596652499982156,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "short_c5_m3_b0",
+        "kind": "short",
+        "case": 5,
+        "method": 3,
+        "block": 0,
+        "reps": 8,
+        "chunk": 8,
+        "offset": 0,
+        "stage": 4902,
+        "warmup": true
+      },
+      "replicates": 8,
+      "shards": [
+        {
+          "file": "short_c5_m3_b0_part000.npz",
+          "replicates": 8,
+          "chunk": 0,
+          "seed": 3669712259,
+          "sha256": "4bab2702a454b17c31619b0a4aaf3e87c9d5e46917dac9409ee9e03de03d82c7",
+          "population_sha256": null
+        }
+      ],
+      "compute_seconds": 0.013480399968102574,
+      "worker_elapsed_seconds": 1.9613813000032678,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "numba": "0.68.0",
+      "threads_per_library": 1,
+      "id": "short_c5_m3_b0",
+      "charged_worker_seconds": 2.5986547999782488,
+      "returncode": 0
+    }
+  ],
+  "ceiling": 900,
+  "prior_charge": 2.2870108000352047,
+  "poll_seconds": 0.5,
+  "charged_worker_seconds": 92.0223313999013,
+  "inflight_worker_seconds": 0,
+  "pending_ids": [],
+  "active_ids": [],
+  "stop_reason": null,
+  "workers": 8,
+  "threads_per_library": 1
+}

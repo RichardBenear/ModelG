@@ -1,0 +1,31 @@
+{
+  "records": [
+    {
+      "id": "development_stop",
+      "status": "INTERRUPTED",
+      "job": {
+        "id": "development_stop",
+        "kind": "snapshot",
+        "case": 0,
+        "method": 0,
+        "block": 0,
+        "reps": 512,
+        "chunk": 512,
+        "offset": 0,
+        "stage": 4901,
+        "warmup": false
+      },
+      "charged_worker_seconds": 0.003648800018709153
+    }
+  ],
+  "ceiling": 30,
+  "prior_charge": 0,
+  "poll_seconds": 0.25,
+  "charged_worker_seconds": 0.003648800018709153,
+  "inflight_worker_seconds": 0,
+  "pending_ids": [],
+  "active_ids": [],
+  "stop_reason": "INTERRUPTED",
+  "workers": 1,
+  "threads_per_library": 1
+}

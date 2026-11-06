@@ -1,0 +1,25 @@
+{
+  "job": {
+    "id": "short_c4_m0_b0",
+    "kind": "short",
+    "case": 4,
+    "method": 0,
+    "block": 0,
+    "reps": 8,
+    "chunk": 8,
+    "offset": 0,
+    "stage": 4902,
+    "warmup": true
+  },
+  "replicates": 8,
+  "shards": [
+    {
+      "file": "short_c4_m0_b0_part000.npz",
+      "replicates": 8,
+      "chunk": 0,
+      "seed": 2541710636,
+      "sha256": "791ccd40a6abfa8db919a17a61268f9226511b8f294a6663f28919344ba4e4a3",
+      "population_sha256": null
+    }
+  ]
+}

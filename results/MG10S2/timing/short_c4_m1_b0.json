@@ -1,0 +1,34 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "short_c4_m1_b0",
+    "kind": "short",
+    "case": 4,
+    "method": 1,
+    "block": 0,
+    "reps": 8,
+    "chunk": 8,
+    "offset": 0,
+    "stage": 4902,
+    "warmup": true
+  },
+  "replicates": 8,
+  "shards": [
+    {
+      "file": "short_c4_m1_b0_part000.npz",
+      "replicates": 8,
+      "chunk": 0,
+      "seed": 3476542380,
+      "sha256": "f2f7e4f888124f292d1b50eddb6c6990b0ad847094b90dcd4d96953507274224",
+      "population_sha256": null
+    }
+  ],
+  "compute_seconds": 0.015676099981646985,
+  "worker_elapsed_seconds": 1.9532428999664262,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "numpy": "2.2.4",
+  "scipy": "1.16.1",
+  "numba": "0.68.0",
+  "threads_per_library": 1
+}

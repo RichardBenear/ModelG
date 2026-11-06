@@ -1,0 +1,34 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "snapshot_c3_m2_b0",
+    "kind": "snapshot",
+    "case": 3,
+    "method": 2,
+    "block": 0,
+    "reps": 64,
+    "chunk": 64,
+    "offset": 0,
+    "stage": 4902,
+    "warmup": true
+  },
+  "replicates": 64,
+  "shards": [
+    {
+      "file": "snapshot_c3_m2_b0_part000.npz",
+      "replicates": 64,
+      "chunk": 0,
+      "seed": 3958849899,
+      "sha256": "a626c2c3cbc584305d4367ebde3928539ba09813059ffaf13c3fdbde05b7ad5c",
+      "population_sha256": "90d70ef95a17c1e010ddd3762e0eb80599f0ca0b98ff2155feaf7ea5ee4eefcd"
+    }
+  ],
+  "compute_seconds": 0.13345860003028065,
+  "worker_elapsed_seconds": 2.373543100024108,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "numpy": "2.2.4",
+  "scipy": "1.16.1",
+  "numba": "0.68.0",
+  "threads_per_library": 1
+}

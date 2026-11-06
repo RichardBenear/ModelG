@@ -812,3 +812,8 @@ QUALIFIED ON TESTED SMALL SYSTEMS. All524288 short trajectories in16 fixed group
 ## MG049 — PI closes S1 and authorizes S2 (2026-11-06)
 
 Richard signed off MG10-S1 and instructed proceeding. S1 CLOSED as qualified on tested small systems. Next is actual lattice-spacing/density validation including spatial-noise observables; original MG10 not rescored. New scope/criteria/budget will be frozen before runs.
+
+
+## MG050 — S2 qualified and prospectively registered (2026-11-06)
+
+Actualh.2/Omega100,1000 full500-node H/S snapshot-law oracle and short16-node SSA comparisons implemented with spatial powers/cross-products. Eight tests and independent raw development checker PASS. Before scientific data, static confidence-width review revises candidateR8192 to16384 while preserving old draft/calibration and unchanged margins/physics. All32 class timing measurements reused to forecast0.850748 core-hours, fitting2-hour ceiling with25% reserve; qualifications102.715845 seconds under900. Fixed88 jobs,32 logical groups,524288 paths,1280 unique chunk seeds. Source/spec hashes and durable reconstructible raw retention registered before production. S1 PI closure recorded MG049; original MG10 unchanged.
