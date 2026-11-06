@@ -18,7 +18,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG9c | 2 | Late-time fate of MG9's slow fronts (b = 29.25–29.35): settle into bounded patches or keep advancing; robustness; upper settling edge vs b_r | **CLOSED 2026-11-04: Q1 UNRESOLVED; Q2 NOT ELIGIBLE** (registered at `372336b`; ChatGPT MG030 accepted; PI sign-off 22:29 UTC) |
 | MG9d | 2 | Cause of MG9c's late drift (b = 29.30 from the t = 30,000 field): numerics, mesh alignment, reflection, finer mesh; bounded diagnostic | **CLOSED 2026-11-05: MESH EFFECT SUPPORTED** (on D02; R4 INVALID so finer mesh unavailable; C4 DECREASING alongside). Registered at `69ad83e`; 7 runs, 0.08 core-h; ChatGPT MG033 accepted; PI sign-off 02:32 UTC |
 | MG9b | 2 | Stochastic barrier: under a linear model, does the activation slope S (log k per unit Ω) change with b inside the particle window? b = 29.20, 29.35 with MG3b's 29.00; lattice-conditional | **CLOSED 2026-11-05: NOT RESOLVED** (PI sign-off card 14:03 UTC, after ChatGPT MG035) (S₁ = −0.023, 95% CI −0.094 to +0.048; branch B3 calibrated; all controls PASS; 280 runs, 26.3 core-h on PC) |
-| MG8 | 6 | Scheduler sensitivity: does the within-step node update order (synchronous J, sweep R, random sequential P) change the particle at τ₀, and does the deterministic difference shrink as τ → 0? (multiway/foliation gate, numbered MG7 in `InitialPlan.md`) | **REGISTERED 2026-11-05** (draft 4 frozen at `3ab4ec8`) |
+| MG8 | 6 | Scheduler sensitivity: does the within-step node update order (synchronous J, sweep R, random sequential P) change the particle at τ₀, and does the deterministic difference shrink as τ → 0? (multiway/foliation gate, numbered MG7 in `InitialPlan.md`) | **RESULT 2026-11-06: SENSITIVE at τ₀; refinement NOT RESOLVED BY THIS LADDER** (registered 2026-11-05, draft 4 at `3ab4ec8`) |
 
 ## Template
 
@@ -1979,7 +1979,11 @@ Summary (the proposal governs):
   conditional-order tests; J regression; R/L mirror; clipping; synthetic validation; timing. STOP on failure.
 - **Budget:** 57 runs, cap 64; production cutoff 20 core-h (projected 5–18); PC, 8 workers; BUDGET-SHORT rules as §6.
 
-Result: pending.
+Result (MG038, 2026-11-06; `results/MG8/MG8_results.md`): all implementation checks PASS. **Production step: SENSITIVE**
+(all three R replicates lose the particle at t ≈ 8; J keeps it). **Refinement: NOT RESOLVED BY THIS LADDER** (eligible
+k = 3–6 only; slope 1.000, residuals and horizon pass, but E at the smallest eligible τ is 0.125 of the largest, above the
+0.1 limit). B2 (descriptive): losses J 7/8, R 8/8, P 8/8 (R and P within 20 units); drift and shape NOT ESTIMATED.
+55 records, 3.09 core-h, cloud. Independent recompute agrees on all 106 quantities.
 Replication (ChatGPT): pending.
-PI sign-off: registration 2026-11-05 20:02 UTC.
+PI sign-off: registration 2026-11-05 20:02 UTC; deviation D1 and production go 2026-11-05 23:37 UTC.
 
