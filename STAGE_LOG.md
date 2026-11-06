@@ -782,3 +782,8 @@ PI adopted MG041 correction and authorized proceeding. Deterministic reservoirs,
 ## MG043 — MG10 first batch complete: UNRESOLVED (2026-11-06)
 
 All 64 registered runs complete, with 0.21418268 local production core-hours and no timeout or budget stop. All ledger/availability checks pass; separate raw recomputation agrees. Both top capacities recover for both starts (soliton normalized errors about 0.825% and 0.0825%), but C=1 homogeneous numerical disagreement forces overall UNRESOLVED. Posthoc existing-data diagnostics also show FFT-roundoff detections on exactly uniform depleted backgrounds; no frozen detector or verdict changed. Full raw fields/fluxes, hashes, evaluation, recomputation and ledger retained. Report: results/MG10/MG10_results.md. Follow-up recommended on homogeneous invariance, controlled perturbations and depleted-background measurement. No additional production authorized here; PI closure pending.
+
+
+## MG044 — MG10-C1 qualification and prospective registration (2026-11-06)
+
+PI authorized the recommended next study. Independent symmetry-preserving references, all-mode time-dependent linear response, planned mode selection, controlled nonlinear amplitudes and a prominence-qualified minimum detector are specified in spec/MG10C1_proposal.md. Six tests and separate raw checking pass; 23 detector fixtures retained. Failed development interpolation/checker attempts preserved and charged. Six T5 timings project 0.1285662 core-hours for ten fixed jobs, below new 0.5 production core-hour ceiling with reserve; <=8 local workers. Registered before production with full hashes and durable raw retention. Original MG10 is not rescored. No external review requested with execution instruction.

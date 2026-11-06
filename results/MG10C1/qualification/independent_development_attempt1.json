@@ -1,0 +1,6 @@
+{
+  "returncode": 1,
+  "elapsed_worker_seconds": 1.6146205000113696,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\rbene\\.codex\\.chatgpt-projects\\g-p-6ae095a6c94c819198efcd6d84f02c03\\archive_work\\ModelG_MG10\\src\\check_mg10c1.py\", line 141, in <module>\n    check(p.parse_args().development)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\rbene\\.codex\\.chatgpt-projects\\g-p-6ae095a6c94c819198efcd6d84f02c03\\archive_work\\ModelG_MG10\\src\\check_mg10c1.py\", line 82, in check\n    raw,records,cost=audit_files(folder)\n                     ~~~~~~~~~~~^^^^^^^^\n  File \"C:\\Users\\rbene\\.codex\\.chatgpt-projects\\g-p-6ae095a6c94c819198efcd6d84f02c03\\archive_work\\ModelG_MG10\\src\\check_mg10c1.py\", line 66, in audit_files\n    assert np.all(z[\"response\"][0,1]==1)\n           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+}

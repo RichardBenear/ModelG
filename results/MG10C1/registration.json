@@ -1,0 +1,102 @@
+{
+  "status": "REGISTERED",
+  "stage": "MG044",
+  "authorization": "PI: go ahead with the next study. New conservative lead-allocated ceilings within that execution scope; no external review requested.",
+  "registered_utc": "2026-11-06T18:46:25Z",
+  "source_hashes": {
+    "src/mg10c1.py": "f77279bd028dc66f94ccd1eb3d10bd212ea2e06b19043cea5f0db07f64b1d8a8",
+    "src/run_mg10c1.py": "24609a6a41627d94684fefe8a290c29c32465639ba93131821980be4e70b13bc",
+    "src/evaluate_mg10c1.py": "c3a4c24a13a9f81890eaf6a920b6222970cc296a80b433418fe2d8b89ce656d7",
+    "src/check_mg10c1.py": "3ab8cb8b7b626c51d5ec8f982e1ec04d9587d204e722f4fdeda4076747500953",
+    "src/mg10_reservoir.py": "b92994e2492a063a7376cd2801d4ee499b53691a3bb82b97065e4511a97f1e03",
+    "src/check_mg10.py": "c16b28787111a61b21eb72ec14278f357ffd31c4d10f8f9008d9a279f74a28df",
+    "src/measure.py": "342399a9ca0bd61c57712558b7bc83ff554784a03f0dadc7e74e8353968a4379",
+    "src/runner.py": "15d583bdebb03cc2cd7029ea31487d8ca9f99770abf2939d8717569f0ffe84ed"
+  },
+  "spec_sha256": "f774f770958449c615300381c83c7acfd54fc145f94472100ca01c2170888c55",
+  "reference_sha256": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b",
+  "jobs": [
+    {
+      "id": "reduced_primary",
+      "kind": "reduced_primary",
+      "T": 300
+    },
+    {
+      "id": "reduced_reference",
+      "kind": "reduced_reference",
+      "T": 300
+    },
+    {
+      "id": "linear_primary",
+      "kind": "linear_primary",
+      "T": 300
+    },
+    {
+      "id": "linear_reference",
+      "kind": "linear_reference",
+      "T": 300
+    },
+    {
+      "id": "full_zero_E2",
+      "kind": "full",
+      "method": "E2",
+      "epsilon": 0.0,
+      "mode": "SELECT_FROM_PRIMARY_LINEAR",
+      "T": 300
+    },
+    {
+      "id": "full_zero_Oplus",
+      "kind": "full",
+      "method": "Oplus",
+      "epsilon": 0.0,
+      "mode": "SELECT_FROM_PRIMARY_LINEAR",
+      "T": 300
+    },
+    {
+      "id": "full_eps6_E2",
+      "kind": "full",
+      "method": "E2",
+      "epsilon": 1e-06,
+      "mode": "SELECT_FROM_PRIMARY_LINEAR",
+      "T": 300
+    },
+    {
+      "id": "full_eps6_Oplus",
+      "kind": "full",
+      "method": "Oplus",
+      "epsilon": 1e-06,
+      "mode": "SELECT_FROM_PRIMARY_LINEAR",
+      "T": 300
+    },
+    {
+      "id": "full_eps8_E2",
+      "kind": "full",
+      "method": "E2",
+      "epsilon": 1e-08,
+      "mode": "SELECT_FROM_PRIMARY_LINEAR",
+      "T": 300
+    },
+    {
+      "id": "full_eps8_Oplus",
+      "kind": "full",
+      "method": "Oplus",
+      "epsilon": 1e-08,
+      "mode": "SELECT_FROM_PRIMARY_LINEAR",
+      "T": 300
+    }
+  ],
+  "production_ceiling_seconds": 1800,
+  "qualification_ceiling_seconds": 360,
+  "qualification_charged_seconds": 34.217634499998304,
+  "projected_seconds": 462.8383139835205,
+  "max_workers": 8,
+  "threads_per_library": 1,
+  "retention": {
+    "path": "C:\\Users\\rbene\\.codex\\.chatgpt-projects\\g-p-6ae095a6c94c819198efcd6d84f02c03\\archive_work\\ModelG_MG10\\results\\MG10C1\\production",
+    "free_bytes": 319987036160,
+    "write_read_verified": true,
+    "commit_all_raw": true
+  },
+  "prior_MG10_verdict": "UNRESOLVED remains frozen",
+  "closure": "PI decision pending after results"
+}

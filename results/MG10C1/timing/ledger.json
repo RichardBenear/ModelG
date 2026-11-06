@@ -1,0 +1,164 @@
+{
+  "records": [
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "reduced_primary",
+        "kind": "reduced_primary",
+        "T": 5
+      },
+      "compute_seconds": 0.036012600001413375,
+      "audit": {
+        "A_oracle_error": 0.0,
+        "pass": true
+      },
+      "sha256": "1be4b3af797750911d1652a5decc6958afb5d1f40b5c98c76f6f4c29870ad454",
+      "worker_elapsed_seconds": 1.882802799984347,
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "threads_per_library": 1,
+      "id": "reduced_primary",
+      "charged_worker_seconds": 2.5320656999829225,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "reduced_reference",
+        "kind": "reduced_reference",
+        "T": 5
+      },
+      "compute_seconds": 0.026387999998405576,
+      "audit": {
+        "A_oracle_error": 0.0,
+        "pass": true
+      },
+      "sha256": "087852bfd12d893e6955cfae39f005aee032e081514edd5b768d79d88578a1be",
+      "worker_elapsed_seconds": 1.8608519000117667,
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "threads_per_library": 1,
+      "id": "reduced_reference",
+      "charged_worker_seconds": 2.5264753000228666,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "linear_primary",
+        "kind": "linear_primary",
+        "T": 5
+      },
+      "compute_seconds": 0.3321114999707788,
+      "audit": {
+        "pass": true
+      },
+      "sha256": "eed7f5b8f3c0167bf57ab6f6024cc19698d84c27e6feeaff8c441cdb7aa0b2d8",
+      "worker_elapsed_seconds": 2.1810170999960974,
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "threads_per_library": 1,
+      "id": "linear_primary",
+      "charged_worker_seconds": 2.528235300036613,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "linear_reference",
+        "kind": "linear_reference",
+        "T": 5
+      },
+      "compute_seconds": 1.1410297999973409,
+      "audit": {
+        "pass": true
+      },
+      "sha256": "4b0ee637a0370fdf39171cdc2cdc12b5bd071be31dae41184f13d1c8f622fed8",
+      "worker_elapsed_seconds": 2.9855133999953978,
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "threads_per_library": 1,
+      "id": "linear_reference",
+      "charged_worker_seconds": 3.5411078999750316,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "development_Oplus",
+        "kind": "full",
+        "method": "Oplus",
+        "epsilon": 1e-05,
+        "mode": 7,
+        "T": 5
+      },
+      "compute_seconds": 0.2151251999894157,
+      "audit": {
+        "per_site_scaled_residual": 1.016262074972351e-15,
+        "global_scaled_residual": 6.141083413369101e-16,
+        "availability_oracle_error": 3.219646771412954e-15,
+        "external_A_total": 0.0,
+        "external_B_total": 0.0,
+        "pass": true
+      },
+      "sha256": "e3a9ad308e6831b8ec8a2bbce41fa03ae5179cabe3be19587c4a37e60875fbbb",
+      "worker_elapsed_seconds": 2.0583514000172727,
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "threads_per_library": 1,
+      "id": "development_Oplus",
+      "charged_worker_seconds": 2.5152970000053756,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "development_E2",
+        "kind": "full",
+        "method": "E2",
+        "epsilon": 1e-05,
+        "mode": 7,
+        "T": 5
+      },
+      "compute_seconds": 0.41314939997391775,
+      "audit": {
+        "per_site_scaled_residual": 1.81428170585879e-14,
+        "global_scaled_residual": 5.5913440305557895e-15,
+        "availability_oracle_error": 1.1102230246251565e-16,
+        "external_A_total": 0.0,
+        "external_B_total": 0.0,
+        "pass": true
+      },
+      "sha256": "e3a593943fafd480eba81a41c3a048993b246b1c801df278e83fa0c565fc15b7",
+      "worker_elapsed_seconds": 2.264793899958022,
+      "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.4",
+      "scipy": "1.16.1",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "threads_per_library": 1,
+      "id": "development_E2",
+      "charged_worker_seconds": 3.032870900002308,
+      "returncode": 0
+    }
+  ],
+  "ceiling": 360,
+  "prior_charge": 10.625496599991813,
+  "poll_seconds": 0.5,
+  "charged_worker_seconds": 27.30154870001693,
+  "inflight_worker_seconds": 0,
+  "pending_ids": [],
+  "active_ids": [],
+  "stop_reason": null,
+  "workers": 2,
+  "threads_per_library": 1
+}

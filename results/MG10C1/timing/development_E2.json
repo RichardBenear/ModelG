@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "development_E2",
+    "kind": "full",
+    "method": "E2",
+    "epsilon": 1e-05,
+    "mode": 7,
+    "T": 5
+  },
+  "compute_seconds": 0.41314939997391775,
+  "audit": {
+    "per_site_scaled_residual": 1.81428170585879e-14,
+    "global_scaled_residual": 5.5913440305557895e-15,
+    "availability_oracle_error": 1.1102230246251565e-16,
+    "external_A_total": 0.0,
+    "external_B_total": 0.0,
+    "pass": true
+  },
+  "sha256": "e3a593943fafd480eba81a41c3a048993b246b1c801df278e83fa0c565fc15b7",
+  "worker_elapsed_seconds": 2.264793899958022,
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "numpy": "2.2.4",
+  "scipy": "1.16.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "threads_per_library": 1
+}

@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "development_Oplus",
+    "kind": "full",
+    "method": "Oplus",
+    "epsilon": 1e-05,
+    "mode": 7,
+    "T": 5
+  },
+  "compute_seconds": 0.2151251999894157,
+  "audit": {
+    "per_site_scaled_residual": 1.016262074972351e-15,
+    "global_scaled_residual": 6.141083413369101e-16,
+    "availability_oracle_error": 3.219646771412954e-15,
+    "external_A_total": 0.0,
+    "external_B_total": 0.0,
+    "pass": true
+  },
+  "sha256": "e3a9ad308e6831b8ec8a2bbce41fa03ae5179cabe3be19587c4a37e60875fbbb",
+  "worker_elapsed_seconds": 2.0583514000172727,
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "numpy": "2.2.4",
+  "scipy": "1.16.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "threads_per_library": 1
+}

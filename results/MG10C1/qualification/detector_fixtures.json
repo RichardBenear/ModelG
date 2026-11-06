@@ -1,0 +1,140 @@
+[
+  {
+    "name": "flat_0.0",
+    "expected": 0,
+    "actual": 0,
+    "legacy": 0
+  },
+  {
+    "name": "roundoff_0.0",
+    "expected": 0,
+    "actual": 0,
+    "legacy": 16
+  },
+  {
+    "name": "flat_0.1",
+    "expected": 0,
+    "actual": 0,
+    "legacy": 18
+  },
+  {
+    "name": "roundoff_0.1",
+    "expected": 0,
+    "actual": 0,
+    "legacy": 16
+  },
+  {
+    "name": "flat_1.0",
+    "expected": 0,
+    "actual": 0,
+    "legacy": 10
+  },
+  {
+    "name": "roundoff_1.0",
+    "expected": 0,
+    "actual": 0,
+    "legacy": 16
+  },
+  {
+    "name": "flat_5.0",
+    "expected": 0,
+    "actual": 0,
+    "legacy": 10
+  },
+  {
+    "name": "roundoff_5.0",
+    "expected": 0,
+    "actual": 0,
+    "legacy": 16
+  },
+  {
+    "name": "flat_10.0",
+    "expected": 0,
+    "actual": 0,
+    "legacy": 0
+  },
+  {
+    "name": "roundoff_10.0",
+    "expected": 0,
+    "actual": 0,
+    "legacy": 16
+  },
+  {
+    "name": "flat_15.555555555555555",
+    "expected": 0,
+    "actual": 0,
+    "legacy": 0
+  },
+  {
+    "name": "roundoff_15.555555555555555",
+    "expected": 0,
+    "actual": 0,
+    "legacy": 0
+  },
+  {
+    "name": "flat_30.0",
+    "expected": 0,
+    "actual": 0,
+    "legacy": 0
+  },
+  {
+    "name": "roundoff_30.0",
+    "expected": 0,
+    "actual": 0,
+    "legacy": 0
+  },
+  {
+    "name": "reference",
+    "expected": 1,
+    "actual": 1,
+    "legacy": 1
+  },
+  {
+    "name": "gaussian_1_shift0",
+    "expected": 1,
+    "actual": 1,
+    "legacy": 38
+  },
+  {
+    "name": "gaussian_1_shift137",
+    "expected": 1,
+    "actual": 1,
+    "legacy": 37
+  },
+  {
+    "name": "gaussian_1_shift250",
+    "expected": 1,
+    "actual": 1,
+    "legacy": 38
+  },
+  {
+    "name": "gaussian_2_shift0",
+    "expected": 2,
+    "actual": 2,
+    "legacy": 33
+  },
+  {
+    "name": "gaussian_2_shift137",
+    "expected": 2,
+    "actual": 2,
+    "legacy": 35
+  },
+  {
+    "name": "gaussian_2_shift250",
+    "expected": 2,
+    "actual": 2,
+    "legacy": 32
+  },
+  {
+    "name": "subfloor_ripple",
+    "expected": 0,
+    "actual": 0,
+    "legacy": 16
+  },
+  {
+    "name": "resolved_ripple",
+    "expected": 16,
+    "actual": 16,
+    "legacy": 16
+  }
+]

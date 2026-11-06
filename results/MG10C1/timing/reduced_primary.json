@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "reduced_primary",
+    "kind": "reduced_primary",
+    "T": 5
+  },
+  "compute_seconds": 0.036012600001413375,
+  "audit": {
+    "A_oracle_error": 0.0,
+    "pass": true
+  },
+  "sha256": "1be4b3af797750911d1652a5decc6958afb5d1f40b5c98c76f6f4c29870ad454",
+  "worker_elapsed_seconds": 1.882802799984347,
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "numpy": "2.2.4",
+  "scipy": "1.16.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "threads_per_library": 1
+}

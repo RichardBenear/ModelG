@@ -1,0 +1,21 @@
+{
+  "projected_worker_seconds": 462.8383139835205,
+  "per_job": {
+    "reduced_primary": 9.560955000226386,
+    "reduced_reference": 8.40600299986545,
+    "linear_primary": 45.09282299655024,
+    "linear_reference": 142.1630189997377,
+    "full_zero_E2": 54.81737099692691,
+    "full_zero_Oplus": 31.054466998786665,
+    "full_eps6_E2": 54.81737099692691,
+    "full_eps6_Oplus": 31.054466998786665,
+    "full_eps8_E2": 54.81737099692691,
+    "full_eps8_Oplus": 31.054466998786665
+  },
+  "overhead_allowance": 5.239443000056781,
+  "ceiling": 1800,
+  "reserve": 0.25,
+  "fits": true,
+  "qualification_timing_seconds": 27.30154870001693,
+  "formula": "2x compute-only T5->T300 linear extrapolation per solver class + max(5s,2x measured startup/serialization/poll overhead) per job"
+}
