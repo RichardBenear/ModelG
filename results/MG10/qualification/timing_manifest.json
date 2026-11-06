@@ -1,0 +1,22 @@
+{
+  "jobs": [
+    {
+      "id": "development_E2",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "E2",
+      "capacity": 1,
+      "T": 10,
+      "n": 500
+    },
+    {
+      "id": "development_O",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "O",
+      "capacity": 1,
+      "T": 10,
+      "n": 500
+    }
+  ]
+}

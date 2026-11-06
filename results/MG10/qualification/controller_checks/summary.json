@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "check": "timeout",
+      "status": "TIMEOUT",
+      "cost": 0.520732200006023
+    },
+    {
+      "check": "budget",
+      "status": "BUDGET-SHORT",
+      "cost": 0.5164065000135452
+    },
+    {
+      "check": "interruption",
+      "status": "INTERRUPTED",
+      "cost": 0.0032952000037766993
+    }
+  ],
+  "elapsed_worker_seconds": 1.1002603999804705
+}

@@ -1,0 +1,14 @@
+{
+  "returncode": 1,
+  "elapsed_worker_seconds": 14.19872620003298,
+  "stdout": "",
+  "stderr": "test_accounting_and_corrected_oracles (__main__.Qualification.test_accounting_and_corrected_oracles) ... ERROR\ntest_ideal_mean_map (__main__.Qualification.test_ideal_mean_map) ... ok\ntest_integer_ledger (__main__.Qualification.test_integer_ledger) ... ok\ntest_labels_and_invalid_records (__main__.Qualification.test_labels_and_invalid_records) ... ok\ntest_pointwise_rhs_and_jacobian (__main__.Qualification.test_pointwise_rhs_and_jacobian) ... ok\ntest_unchanged_ideal_stochastic (__main__.Qualification.test_unchanged_ideal_stochastic) ... ok\ntest_zero_stocks_and_mirror (__main__.Qualification.test_zero_stocks_and_mirror) ... ok\n\n======================================================================\nERROR: test_accounting_and_corrected_oracles (__main__.Qualification.test_accounting_and_corrected_oracles)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\rbene\\.codex\\.chatgpt-projects\\g-p-6ae095a6c94c819198efcd6d84f02c03\\archive_work\\ModelG_MG10\\tests\\test_mg10.py\", line 70, in test_accounting_and_corrected_oracles\n    times,z=m.trajectory(job)\n            ~~~~~~~~~~~~^^^^^\n  File \"C:\\Users\\rbene\\.codex\\.chatgpt-projects\\g-p-6ae095a6c94c819198efcd6d84f02c03\\archive_work\\ModelG_MG10\\src\\mg10_reservoir.py\", line 177, in trajectory\n    raise FloatingPointError(f\"Invalid ODE state at t={next_time}\")\nFloatingPointError: Invalid ODE state at t=1\n\n----------------------------------------------------------------------\nRan 7 tests in 8.676s\n\nFAILED (errors=1)\n",
+  "threads_per_library": 1,
+  "development_seed_key": [
+    10,
+    99,
+    0,
+    0,
+    0
+  ]
+}

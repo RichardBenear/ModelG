@@ -1,6 +1,6 @@
 # MG041 — Proposed correction to availability qualification
 
-2026-11-06. **PROPOSED, NOT ADOPTED. No scientific production dispatched.**
+2026-11-06. **ADOPTED by PI, 2026-11-06: “yes, go ahead”. No scientific production dispatched at adoption.**
 
 The PI authorized proceeding without external review: “No review needed. Go ahead.”
 That decision clears external review for this first batch; it does not make a failed
@@ -55,3 +55,5 @@ the two timing cases; verify durable retention; publish the cost projection;
 register the corrected design prospectively; dispatch only if all checks pass and
 the fixed matrix fits the approved ceiling with its reserve. No additional external
 review is required by the PI's current decision.
+
+Adoption record: Richard explicitly approved adopting this correction and continuing implementation, qualification, benchmarking and the authorized batch. The earlier MG041 failed qualification remains preserved under its original criterion; it is not rescored. New checks use the adopted criterion.

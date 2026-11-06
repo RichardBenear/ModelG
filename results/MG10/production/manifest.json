@@ -1,0 +1,581 @@
+{
+  "jobs": [
+    {
+      "id": "CHEMOSTAT_H_E0_C1",
+      "mode": "CHEMOSTAT",
+      "start": "H",
+      "method": "E0",
+      "capacity": 1,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_E0_C1",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "E0",
+      "capacity": 1,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_E0_C10",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "E0",
+      "capacity": 10,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_E0_C100",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "E0",
+      "capacity": 100,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_E0_C1000",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "E0",
+      "capacity": 1000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_E0_C10000",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "E0",
+      "capacity": 10000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_E0_C100000",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "E0",
+      "capacity": 100000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_E0_C1000000",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "E0",
+      "capacity": 1000000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "CHEMOSTAT_S_E0_C1",
+      "mode": "CHEMOSTAT",
+      "start": "S",
+      "method": "E0",
+      "capacity": 1,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_E0_C1",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "E0",
+      "capacity": 1,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_E0_C10",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "E0",
+      "capacity": 10,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_E0_C100",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "E0",
+      "capacity": 100,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_E0_C1000",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "E0",
+      "capacity": 1000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_E0_C10000",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "E0",
+      "capacity": 10000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_E0_C100000",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "E0",
+      "capacity": 100000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_E0_C1000000",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "E0",
+      "capacity": 1000000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "CHEMOSTAT_H_E1_C1",
+      "mode": "CHEMOSTAT",
+      "start": "H",
+      "method": "E1",
+      "capacity": 1,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_E1_C1",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "E1",
+      "capacity": 1,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_E1_C10",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "E1",
+      "capacity": 10,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_E1_C100",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "E1",
+      "capacity": 100,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_E1_C1000",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "E1",
+      "capacity": 1000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_E1_C10000",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "E1",
+      "capacity": 10000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_E1_C100000",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "E1",
+      "capacity": 100000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_E1_C1000000",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "E1",
+      "capacity": 1000000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "CHEMOSTAT_S_E1_C1",
+      "mode": "CHEMOSTAT",
+      "start": "S",
+      "method": "E1",
+      "capacity": 1,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_E1_C1",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "E1",
+      "capacity": 1,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_E1_C10",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "E1",
+      "capacity": 10,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_E1_C100",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "E1",
+      "capacity": 100,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_E1_C1000",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "E1",
+      "capacity": 1000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_E1_C10000",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "E1",
+      "capacity": 10000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_E1_C100000",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "E1",
+      "capacity": 100000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_E1_C1000000",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "E1",
+      "capacity": 1000000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "CHEMOSTAT_H_E2_C1",
+      "mode": "CHEMOSTAT",
+      "start": "H",
+      "method": "E2",
+      "capacity": 1,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_E2_C1",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "E2",
+      "capacity": 1,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_E2_C10",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "E2",
+      "capacity": 10,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_E2_C100",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "E2",
+      "capacity": 100,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_E2_C1000",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "E2",
+      "capacity": 1000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_E2_C10000",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "E2",
+      "capacity": 10000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_E2_C100000",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "E2",
+      "capacity": 100000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_E2_C1000000",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "E2",
+      "capacity": 1000000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "CHEMOSTAT_S_E2_C1",
+      "mode": "CHEMOSTAT",
+      "start": "S",
+      "method": "E2",
+      "capacity": 1,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_E2_C1",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "E2",
+      "capacity": 1,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_E2_C10",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "E2",
+      "capacity": 10,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_E2_C100",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "E2",
+      "capacity": 100,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_E2_C1000",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "E2",
+      "capacity": 1000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_E2_C10000",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "E2",
+      "capacity": 10000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_E2_C100000",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "E2",
+      "capacity": 100000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_E2_C1000000",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "E2",
+      "capacity": 1000000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "CHEMOSTAT_H_O_C1",
+      "mode": "CHEMOSTAT",
+      "start": "H",
+      "method": "O",
+      "capacity": 1,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_O_C1",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "O",
+      "capacity": 1,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_O_C10",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "O",
+      "capacity": 10,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_O_C100",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "O",
+      "capacity": 100,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_O_C1000",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "O",
+      "capacity": 1000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_O_C10000",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "O",
+      "capacity": 10000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_O_C100000",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "O",
+      "capacity": 100000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_H_O_C1000000",
+      "mode": "FINITE",
+      "start": "H",
+      "method": "O",
+      "capacity": 1000000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "CHEMOSTAT_S_O_C1",
+      "mode": "CHEMOSTAT",
+      "start": "S",
+      "method": "O",
+      "capacity": 1,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_O_C1",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "O",
+      "capacity": 1,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_O_C10",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "O",
+      "capacity": 10,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_O_C100",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "O",
+      "capacity": 100,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_O_C1000",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "O",
+      "capacity": 1000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_O_C10000",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "O",
+      "capacity": 10000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_O_C100000",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "O",
+      "capacity": 100000,
+      "T": 300,
+      "n": 500
+    },
+    {
+      "id": "FINITE_S_O_C1000000",
+      "mode": "FINITE",
+      "start": "S",
+      "method": "O",
+      "capacity": 1000000,
+      "T": 300,
+      "n": 500
+    }
+  ],
+  "count": 64
+}

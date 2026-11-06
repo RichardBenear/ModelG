@@ -1,0 +1,32 @@
+{
+  "ceiling_worker_seconds": 30,
+  "previous_charge": 0,
+  "records": [
+    {
+      "status": "TIMEOUT",
+      "job": {
+        "id": "development_stop",
+        "mode": "FINITE",
+        "start": "H",
+        "method": "E2",
+        "capacity": 1,
+        "T": 10,
+        "n": 8
+      },
+      "id": "development_stop",
+      "charged_worker_seconds": 0.520732200006023,
+      "returncode": 1,
+      "termination_reason": "TIMEOUT"
+    }
+  ],
+  "workers": 1,
+  "poll_seconds": 0.5,
+  "projection": null,
+  "threads_per_library": 1,
+  "started_utc": "2026-11-06T18:11:01Z",
+  "charged_worker_seconds": 0.520732200006023,
+  "inflight_worker_seconds": 0,
+  "pending_ids": [],
+  "active_ids": [],
+  "stop_reason": null
+}

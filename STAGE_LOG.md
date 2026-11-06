@@ -772,3 +772,8 @@ Items deliberately postponed so the project reaches its main questions first. Th
 ## MG041 — Initial MG10 qualification stopped (2026-11-06)
 
 PI: “No review needed. Go ahead.” External review is waived for this batch. Implemented the decoupled A exact-case qualification first; four of 21 Euler paths fail the drafted continuous-exponential tolerance. Two unit tests pass, separate Decimal recomputation agrees on every label. This identifies a qualification-specification error, not a scientific recovery result. No full model, timing matrix or production dispatched. Evidence in results/MG10/qualification; proposed correction in spec/MG10_qualification_correction.md. The unchanged draft remains unregistered pending PI adoption of the correction and the remaining work.
+
+
+## MG042 — Corrected qualification and prospective registration (2026-11-06)
+
+PI adopted MG041 correction and authorized proceeding. Deterministic reservoirs, independent sparse BDF reference, bounded owned-process driver, evaluator and separate checker implemented. Seven qualification tests PASS after eliminating identically constant ODE coordinates; failed development attempt preserved. All-capacity one-node exact cases and actual stop/resume checks PASS. Two declared T10 timing cases independently audited. Projection 1.802273 core-hours for 64 jobs, within 4 core-hour ceiling with reserve. Raw local retention verified. Registered before scientific production, with source/spec/reference hashes and unchanged recovery thresholds. See review/MG042_internal_check.md and results/MG10/registration.json.

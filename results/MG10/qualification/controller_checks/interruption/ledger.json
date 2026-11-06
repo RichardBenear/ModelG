@@ -1,0 +1,30 @@
+{
+  "ceiling_worker_seconds": 30,
+  "previous_charge": 0,
+  "records": [
+    {
+      "id": "development_stop",
+      "status": "INTERRUPTED",
+      "job": {
+        "id": "development_stop",
+        "mode": "FINITE",
+        "start": "H",
+        "method": "E2",
+        "capacity": 1,
+        "T": 10,
+        "n": 8
+      },
+      "charged_worker_seconds": 0.0032952000037766993
+    }
+  ],
+  "workers": 1,
+  "poll_seconds": 0.5,
+  "projection": null,
+  "threads_per_library": 1,
+  "started_utc": "2026-11-06T18:11:02Z",
+  "charged_worker_seconds": 0.0032952000037766993,
+  "inflight_worker_seconds": 0,
+  "pending_ids": [],
+  "active_ids": [],
+  "stop_reason": "INTERRUPTED"
+}

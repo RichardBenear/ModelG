@@ -1,8 +1,8 @@
-# Current handoff — 2026-11-06 (MG041)
+# Current handoff — 2026-11-06 (MG042)
 
 - **Roles:** Richard Benear is PI; ChatGPT / Codex leads planning, implementation, validation, authorized runs, analysis and documentation. Claude/other external review is optional. [Active protocol](RESEARCH_PROTOCOL.md).
 - **Last closed gate:** MG8, SENSITIVE at the production step and NOT RESOLVED BY THIS LADDER under refinement. MG9 and its follow-ups were completed earlier; historical verdicts stand.
-- **Next gate:** MG10 remains NOT REGISTERED. PI authorized proceeding without external review. MG041 exact-case availability qualification FAILED: the prescribed Euler steps cannot satisfy MG040 check 4 against the continuous exponential. No production dispatched. See review/MG041_internal_check.md and spec/MG10_qualification_correction.md (proposed, not adopted). Remaining implementation, qualification, benchmark and registration are pending. Local execution remains capped at eight workers.
+- **Next gate:** MG10-A/B/C deterministic batch REGISTERED (MG042), qualification PASS after PI adopted the MG041 oracle correction. External review waived. Fixed 64-run batch is authorized and fits measured projection with reserve; production next, <=8 local workers. See results/MG10/registration.json. MG041 original failure remains preserved.
 - **Archive baseline:** [StochasticVacuum](https://github.com/RichardBenear/StochasticVacuum), private, commit `2161211ccc9d8427af98ebeefcabf7f379b83a37`. Reuse selected machinery with provenance and new validation.
 - **Time semantics:** MG10 proposes the existing continuous-time model for its first extension. A fundamental-tick law remains a separate modeling decision.
 - **Q5:** MG8's frozen record remains open as scored. A possible reframing of Q5 was discussed with the PI, but no new Q5 study or rescoring is registered here.

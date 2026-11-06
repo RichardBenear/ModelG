@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "adopted_correction": "MG041 adopted by PI in current chat",
+  "charged_worker_seconds_upper_account": 39.17279500009931,
+  "ceiling": 900,
+  "cost_definition": "Original MG041 command and recomputation, failed/full test attempts and diagnostic, two timing jobs including overhead, independent timing check, controller tests and one-node long availability; tool wall time charged conservatively where available.",
+  "tests": "7 tests, 21 one-node full-horizon availability/ledger checks, two declared timing cases, actual timeout/global budget/interruption/resume checks, separate raw audit. Original MG041 failure preserved."
+}

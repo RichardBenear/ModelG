@@ -1,0 +1,406 @@
+{
+  "status": "PASS",
+  "scope": "ONE_NODE_DEVELOPMENT_ONLY",
+  "rows": [
+    {
+      "job": {
+        "id": "development_one_node_E0_C1",
+        "mode": "FINITE",
+        "start": "H",
+        "method": "E0",
+        "capacity": 1,
+        "T": 300,
+        "n": 1
+      },
+      "audit": {
+        "per_site_scaled_residual": 3.9848600556999774e-14,
+        "global_scaled_residual": 3.9848600556999774e-14,
+        "availability_oracle_error": 1.0436096431476471e-14,
+        "complete": true,
+        "passed": true
+      },
+      "continuous_discretization_error": 4.08755306047226e-07
+    },
+    {
+      "job": {
+        "id": "development_one_node_E0_C10",
+        "mode": "FINITE",
+        "start": "H",
+        "method": "E0",
+        "capacity": 10,
+        "T": 300,
+        "n": 1
+      },
+      "audit": {
+        "per_site_scaled_residual": 4.2542116755822765e-14,
+        "global_scaled_residual": 4.2542116755822765e-14,
+        "availability_oracle_error": 1.887379141862766e-15,
+        "complete": true,
+        "passed": true
+      },
+      "continuous_discretization_error": 1.0053748944471863e-08
+    },
+    {
+      "job": {
+        "id": "development_one_node_E0_C100",
+        "mode": "FINITE",
+        "start": "H",
+        "method": "E0",
+        "capacity": 100,
+        "T": 300,
+        "n": 1
+      },
+      "audit": {
+        "per_site_scaled_residual": 6.676592294503424e-14,
+        "global_scaled_residual": 6.676592294503424e-14,
+        "availability_oracle_error": 3.3306690738754696e-16,
+        "complete": true,
+        "passed": true
+      },
+      "continuous_discretization_error": 1.100056712388664e-10
+    },
+    {
+      "job": {
+        "id": "development_one_node_E0_C1000",
+        "mode": "FINITE",
+        "start": "H",
+        "method": "E0",
+        "capacity": 1000,
+        "T": 300,
+        "n": 1
+      },
+      "audit": {
+        "per_site_scaled_residual": 3.303309969930346e-14,
+        "global_scaled_residual": 3.303309969930346e-14,
+        "availability_oracle_error": 1.1102230246251565e-16,
+        "complete": true,
+        "passed": true
+      },
+      "continuous_discretization_error": 1.1100009800202315e-12
+    },
+    {
+      "job": {
+        "id": "development_one_node_E0_C10000",
+        "mode": "FINITE",
+        "start": "H",
+        "method": "E0",
+        "capacity": 10000,
+        "T": 300,
+        "n": 1
+      },
+      "audit": {
+        "per_site_scaled_residual": 4.068826482345076e-15,
+        "global_scaled_residual": 4.068826482345076e-15,
+        "availability_oracle_error": 0.0,
+        "complete": true,
+        "passed": true
+      },
+      "continuous_discretization_error": 1.1102230246251565e-14
+    },
+    {
+      "job": {
+        "id": "development_one_node_E0_C100000",
+        "mode": "FINITE",
+        "start": "H",
+        "method": "E0",
+        "capacity": 100000,
+        "T": 300,
+        "n": 1
+      },
+      "audit": {
+        "per_site_scaled_residual": 3.5256072886391465e-15,
+        "global_scaled_residual": 3.5256072886391465e-15,
+        "availability_oracle_error": 0.0,
+        "complete": true,
+        "passed": true
+      },
+      "continuous_discretization_error": 1.1102230246251565e-16
+    },
+    {
+      "job": {
+        "id": "development_one_node_E0_C1000000",
+        "mode": "FINITE",
+        "start": "H",
+        "method": "E0",
+        "capacity": 1000000,
+        "T": 300,
+        "n": 1
+      },
+      "audit": {
+        "per_site_scaled_residual": 2.2018926536906628e-15,
+        "global_scaled_residual": 2.2018926536906628e-15,
+        "availability_oracle_error": 1.1102230246251565e-16,
+        "complete": true,
+        "passed": true
+      },
+      "continuous_discretization_error": 1.1102230246251565e-16
+    },
+    {
+      "job": {
+        "id": "development_one_node_E1_C1",
+        "mode": "FINITE",
+        "start": "H",
+        "method": "E1",
+        "capacity": 1,
+        "T": 300,
+        "n": 1
+      },
+      "audit": {
+        "per_site_scaled_residual": 5.5818078313841673e-14,
+        "global_scaled_residual": 5.5818078313841673e-14,
+        "availability_oracle_error": 8.271161533457416e-15,
+        "complete": true,
+        "passed": true
+      },
+      "continuous_discretization_error": 2.043775536586523e-07
+    },
+    {
+      "job": {
+        "id": "development_one_node_E1_C10",
+        "mode": "FINITE",
+        "start": "H",
+        "method": "E1",
+        "capacity": 10,
+        "T": 300,
+        "n": 1
+      },
+      "audit": {
+        "per_site_scaled_residual": 4.818276153104787e-14,
+        "global_scaled_residual": 4.818276153104787e-14,
+        "availability_oracle_error": 1.5543122344752192e-15,
+        "complete": true,
+        "passed": true
+      },
+      "continuous_discretization_error": 5.026875360414351e-09
+    },
+    {
+      "job": {
+        "id": "development_one_node_E1_C100",
+        "mode": "FINITE",
+        "start": "H",
+        "method": "E1",
+        "capacity": 100,
+        "T": 300,
+        "n": 1
+      },
+      "audit": {
+        "per_site_scaled_residual": 4.434609777680362e-14,
+        "global_scaled_residual": 4.434609777680362e-14,
+        "availability_oracle_error": 3.3306690738754696e-16,
+        "complete": true,
+        "passed": true
+      },
+      "continuous_discretization_error": 5.500255806367704e-11
+    },
+    {
+      "job": {
+        "id": "development_one_node_E1_C1000",
+        "mode": "FINITE",
+        "start": "H",
+        "method": "E1",
+        "capacity": 1000,
+        "T": 300,
+        "n": 1
+      },
+      "audit": {
+        "per_site_scaled_residual": 2.64917288666998e-14,
+        "global_scaled_residual": 2.64917288666998e-14,
+        "availability_oracle_error": 1.1102230246251565e-16,
+        "complete": true,
+        "passed": true
+      },
+      "continuous_discretization_error": 5.550004900101158e-13
+    },
+    {
+      "job": {
+        "id": "development_one_node_E1_C10000",
+        "mode": "FINITE",
+        "start": "H",
+        "method": "E1",
+        "capacity": 10000,
+        "T": 300,
+        "n": 1
+      },
+      "audit": {
+        "per_site_scaled_residual": 5.543328061552652e-15,
+        "global_scaled_residual": 5.543328061552652e-15,
+        "availability_oracle_error": 0.0,
+        "complete": true,
+        "passed": true
+      },
+      "continuous_discretization_error": 5.551115123125783e-15
+    },
+    {
+      "job": {
+        "id": "development_one_node_E1_C100000",
+        "mode": "FINITE",
+        "start": "H",
+        "method": "E1",
+        "capacity": 100000,
+        "T": 300,
+        "n": 1
+      },
+      "audit": {
+        "per_site_scaled_residual": 9.471571796503078e-15,
+        "global_scaled_residual": 9.471571796503078e-15,
+        "availability_oracle_error": 0.0,
+        "complete": true,
+        "passed": true
+      },
+      "continuous_discretization_error": 1.1102230246251565e-16
+    },
+    {
+      "job": {
+        "id": "development_one_node_E1_C1000000",
+        "mode": "FINITE",
+        "start": "H",
+        "method": "E1",
+        "capacity": 1000000,
+        "T": 300,
+        "n": 1
+      },
+      "audit": {
+        "per_site_scaled_residual": 3.923237453431234e-15,
+        "global_scaled_residual": 3.923237453431234e-15,
+        "availability_oracle_error": 1.1102230246251565e-16,
+        "complete": true,
+        "passed": true
+      },
+      "continuous_discretization_error": 1.1102230246251565e-16
+    },
+    {
+      "job": {
+        "id": "development_one_node_E2_C1",
+        "mode": "FINITE",
+        "start": "H",
+        "method": "E2",
+        "capacity": 1,
+        "T": 300,
+        "n": 1
+      },
+      "audit": {
+        "per_site_scaled_residual": 1.089007744791484e-13,
+        "global_scaled_residual": 1.089007744791484e-13,
+        "availability_oracle_error": 2.808864252301646e-14,
+        "complete": true,
+        "passed": true
+      },
+      "continuous_discretization_error": 1.0218872914524724e-07
+    },
+    {
+      "job": {
+        "id": "development_one_node_E2_C10",
+        "mode": "FINITE",
+        "start": "H",
+        "method": "E2",
+        "capacity": 10,
+        "T": 300,
+        "n": 1
+      },
+      "audit": {
+        "per_site_scaled_residual": 5.3539144196054144e-14,
+        "global_scaled_residual": 5.3539144196054144e-14,
+        "availability_oracle_error": 1.7763568394002505e-15,
+        "complete": true,
+        "passed": true
+      },
+      "continuous_discretization_error": 2.513437569184873e-09
+    },
+    {
+      "job": {
+        "id": "development_one_node_E2_C100",
+        "mode": "FINITE",
+        "start": "H",
+        "method": "E2",
+        "capacity": 100,
+        "T": 300,
+        "n": 1
+      },
+      "audit": {
+        "per_site_scaled_residual": 7.287675984152248e-14,
+        "global_scaled_residual": 7.287675984152248e-14,
+        "availability_oracle_error": 3.3306690738754696e-16,
+        "complete": true,
+        "passed": true
+      },
+      "continuous_discretization_error": 2.750122352068729e-11
+    },
+    {
+      "job": {
+        "id": "development_one_node_E2_C1000",
+        "mode": "FINITE",
+        "start": "H",
+        "method": "E2",
+        "capacity": 1000,
+        "T": 300,
+        "n": 1
+      },
+      "audit": {
+        "per_site_scaled_residual": 2.642935740766797e-14,
+        "global_scaled_residual": 2.642935740766797e-14,
+        "availability_oracle_error": 1.1102230246251565e-16,
+        "complete": true,
+        "passed": true
+      },
+      "continuous_discretization_error": 2.7755575615628914e-13
+    },
+    {
+      "job": {
+        "id": "development_one_node_E2_C10000",
+        "mode": "FINITE",
+        "start": "H",
+        "method": "E2",
+        "capacity": 10000,
+        "T": 300,
+        "n": 1
+      },
+      "audit": {
+        "per_site_scaled_residual": 1.814066654827164e-14,
+        "global_scaled_residual": 1.814066654827164e-14,
+        "availability_oracle_error": 0.0,
+        "complete": true,
+        "passed": true
+      },
+      "continuous_discretization_error": 2.7755575615628914e-15
+    },
+    {
+      "job": {
+        "id": "development_one_node_E2_C100000",
+        "mode": "FINITE",
+        "start": "H",
+        "method": "E2",
+        "capacity": 100000,
+        "T": 300,
+        "n": 1
+      },
+      "audit": {
+        "per_site_scaled_residual": 2.191570416044474e-14,
+        "global_scaled_residual": 2.191570416044474e-14,
+        "availability_oracle_error": 0.0,
+        "complete": true,
+        "passed": true
+      },
+      "continuous_discretization_error": 1.1102230246251565e-16
+    },
+    {
+      "job": {
+        "id": "development_one_node_E2_C1000000",
+        "mode": "FINITE",
+        "start": "H",
+        "method": "E2",
+        "capacity": 1000000,
+        "T": 300,
+        "n": 1
+      },
+      "audit": {
+        "per_site_scaled_residual": 2.8144339522385905e-14,
+        "global_scaled_residual": 2.8144339522385905e-14,
+        "availability_oracle_error": 1.1102230246251565e-16,
+        "complete": true,
+        "passed": true
+      },
+      "continuous_discretization_error": 1.1102230246251565e-16
+    }
+  ],
+  "elapsed_worker_seconds": 1.0109843999962322
+}

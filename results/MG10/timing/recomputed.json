@@ -1,0 +1,23 @@
+{
+  "development_recomputation": "PASS",
+  "rows": [
+    {
+      "id": "development_E2",
+      "per_site_scaled_residual": 2.6535281703543497e-14,
+      "global_scaled_residual": 1.7957799594545243e-14,
+      "availability_oracle_error": 4.440892098500626e-16,
+      "complete": true,
+      "passed": true
+    },
+    {
+      "id": "development_O",
+      "per_site_scaled_residual": 1.0352493157928903e-15,
+      "global_scaled_residual": 2.064115459780955e-16,
+      "availability_oracle_error": 3.175237850427948e-14,
+      "complete": true,
+      "passed": true
+    }
+  ],
+  "elapsed_worker_seconds": 0.02477379998890683,
+  "shared_dependencies": "MG2 reference, detector/smoothing only; no model/evaluator imports"
+}

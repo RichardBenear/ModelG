@@ -1,7 +1,7 @@
 # MG10 — Explicit A/B reservoirs and their limits
 ## Draft 3 — 2026-11-06 — MG040
 
-**Status: DRAFT 3, NOT REGISTERED. PI approved decisions 1-4 on 2026-11-06; external review is decided per run/batch. No MG10 simulation, calibration or production run has been made.**
+**Status: MG10-A/B/C deterministic batch REGISTERED 2026-11-06 (MG042), under PI approval including the adopted MG041 qualification correction. External review waived. Only declared development qualification/timing preceded registration. Original Draft 3 is preserved as MG10_proposal_v3.md.**
 Author: ChatGPT / Codex, research and implementation lead. PI: Richard Benear.
 This draft proposes a model extension; it does not alter rules_v1.1 or rescore any earlier gate.
 The collaboration arrangement is [RESEARCH_PROTOCOL.md](../RESEARCH_PROTOCOL.md).
@@ -218,3 +218,7 @@ Compute preference: use the PI's local PC when a projected run could pressure as
 See [MG10_run_plan.md](MG10_run_plan.md) for frozen-candidate error normalization, 1% margins, independent numerical-reference check, exact physical-time checkpoints, the 64-trajectory deterministic matrix, local eight-worker dispatch, 4 core-hour production ceiling, 0.25 core-hour qualification/timing cap, and retention requirements. These are prospective candidate limits, not measured costs or a completed registration. The PI approved the capacity extension in this chat.
 
 Static evidence only: [MG10_design_calc.py](MG10_design_calc.py) reproduces results/MG10/design/static_design.json. The G estimate is homogeneous/quasistatic, not a soliton-error bound or simulation. Draft 2 is preserved as MG10_proposal_v2.md.
+
+## 13. MG042 prospective registration
+
+The first deterministic batch is registered under MG10_run_plan.md version 2, the adopted MG10_qualification_correction.md and MG10_prerun.md. See results/MG10/registration.json and review/MG042_internal_check.md for qualification, timing and retention evidence. Historical candidate/approval wording in sections 11-12 is superseded by this registration. D/E/stochastic FINITE work remains outside this batch.

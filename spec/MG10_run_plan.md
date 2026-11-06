@@ -1,7 +1,7 @@
 # MG10 first run plan — numerical definition and budget
-## Draft 1, 2026-11-06 — MG040
+## Registered version 2, 2026-11-06 — MG042
 
-**NOT REGISTERED. No MG10 trajectory has run.**
+**REGISTERED prospectively under PI authorization. Only declared qualification/timing data preceded registration; no scientific production has run.**
 The PI approved the model direction and extended the capacity grid to include 100,000 and 1,000,000 in the project chat. This document finalizes a candidate deterministic plan; external-review disposition and registration are recorded separately before production.
 
 ## 1. Scope and units
@@ -40,7 +40,7 @@ Mandatory qualification before batch dispatch:
 1. Exact integer stoichiometry and transfer-ledger unit cases.
 2. Pointwise active CHEMOSTAT drift equals the baseline lattice ODE for homogeneous and nonuniform synthetic states.
 3. The unchanged IDEAL stochastic regression uses only development seeds; no stochastic FINITE equivalence claim is made.
-4. Deterministic A availability agrees with exp(-t/(C*T_ref)); scaled absolute error <=1e-8 at all saved checkpoints.
+4. Adopted MG041 correction: FINITE Euler A availability agrees with (1-dt/(C*T_ref))^(t/dt), absolute error <=1e-8; FINITE ODE A availability agrees with exp(-t/(C*T_ref)), absolute error <=1e-8; CHEMOSTAT availability stays one. Report continuous/discrete error separately. Other numerical agreement and recovery thresholds are unchanged.
 5. Independently reconstructed per-species changes from cumulative reaction and diffusion fluxes agree to <=1e-8*(1+absolute integrated throughput for that species), checked per site and globally. Do not normalize away errors by a huge initial bath stock.
 6. Correct accounting of CHEMOSTAT external inputs and FINITE zero external input.
 7. Numerical invalidity and missing data, mirror/check failures where applicable, checkpoint endpoints, interruption and budget states tested with synthetic records.
@@ -89,6 +89,8 @@ Two analysis paths must recompute errors, availability, detector outcomes and la
 
 ## 7. Review and authorization
 Model direction, the extended grid and local eight-worker preference are PI-approved.
-The PI determines external review per run/batch. There is no external-review decision recorded for this first scientific batch yet.
-This remains a candidate plan until implementation qualification, measured projection, retention verification and prospective registration are recorded. Do not invent completed qualification or claim an approved measured runtime.
+The PI explicitly waived external review for this batch (“No review needed. Go ahead.”) and adopted the MG041 correction (“yes, go ahead”).
+MG042 qualification, measured projection, durable retention verification and prospective registration are recorded in results/MG10/registration.json, timing/projection.json, and review/MG042_internal_check.md. Original MG040 Draft 1 is preserved as MG10_run_plan_v1.md. The adopted correction does not rescore the original MG041 failure.
 No MG10 simulation was run while preparing this plan.
+
+MG042 implementation details are frozen in MG10_prerun.md. The status and administrative disposition here supersede the historical candidate wording above; scientific criteria change only by the explicitly adopted qualification correction.

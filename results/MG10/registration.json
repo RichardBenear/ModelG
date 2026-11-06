@@ -1,0 +1,44 @@
+{
+  "status": "REGISTERED",
+  "stage": "MG042",
+  "registered_utc": "2026-11-06T18:12:56Z",
+  "authorization": "PI approved decisions 1-4, capacity extension, waived external review, adopted MG041 correction and authorized continuation.",
+  "scope": "MG10-A/B/C deterministic only",
+  "production_started": false,
+  "source_hashes": {
+    "src/mg10_reservoir.py": "b92994e2492a063a7376cd2801d4ee499b53691a3bb82b97065e4511a97f1e03",
+    "src/run_mg10.py": "8dba8e8e15f8d2a97a88d2b6dd87b12b042563133908e8a534248e56c64f70da",
+    "src/evaluate_mg10.py": "caef3e22b0b26632b308844e7e1ddb775e087ebae55492ad8557fb60a259cbbd",
+    "src/measure.py": "342399a9ca0bd61c57712558b7bc83ff554784a03f0dadc7e74e8353968a4379",
+    "src/runner.py": "15d583bdebb03cc2cd7029ea31487d8ca9f99770abf2939d8717569f0ffe84ed",
+    "src/lattice.py": "11aa7c565dba5e8449ab727075fbc86718634f8d5ad4cbeafef89281f2ae6f04"
+  },
+  "spec_hashes": {
+    "spec\\MG10_proposal.md": "fe460a0f8c05c748782f0f0b31937d7e15983b9efaee916aca27ada1e11bdd98",
+    "spec\\MG10_run_plan.md": "9a0f5467dc2292b7d7ec32aaf8695b6ccdce1d00828c38ee47ae8e3b28dd4da3",
+    "spec\\MG10_qualification_correction.md": "5381a5753e50bd5cb1485ca26364717196e69b1c9b6061feaef8f11107f58bf8",
+    "spec\\MG10_prerun.md": "ae2bd12f112bb4ebd2f0bf9d3342b7d1c5dcbc46c0be731de626d3b9d141f8fb"
+  },
+  "reference_sha256": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b",
+  "qualification": {
+    "status": "PASS",
+    "adopted_correction": "MG041 adopted by PI in current chat",
+    "charged_worker_seconds_upper_account": 39.17279500009931,
+    "ceiling": 900,
+    "cost_definition": "Original MG041 command and recomputation, failed/full test attempts and diagnostic, two timing jobs including overhead, independent timing check, controller tests and one-node long availability; tool wall time charged conservatively where available.",
+    "tests": "7 tests, 21 one-node full-horizon availability/ledger checks, two declared timing cases, actual timeout/global budget/interruption/resume checks, separate raw audit. Original MG041 failure preserved."
+  },
+  "projection_worker_seconds": 6488.182472051121,
+  "production_ceiling_seconds": 14400,
+  "job_timeout_seconds": 600,
+  "max_workers": 8,
+  "external_review": "PI waived",
+  "retention": {
+    "path": "C:\\Users\\rbene\\.codex\\.chatgpt-projects\\g-p-6ae095a6c94c819198efcd6d84f02c03\\archive_work\\ModelG_MG10\\results\\MG10\\production",
+    "verified": true,
+    "free_bytes": 313147449344,
+    "raw_commit_policy": "All raw .npz and JSON records committed; no blob >=100 MiB",
+    "probe_sha256": "52aeea3aad0f6486bbde3414297e6e35a7dcba5f91fd6887de7fd900d9fa76d1"
+  },
+  "matrix_count": 64
+}

@@ -1,0 +1,26 @@
+{
+  "measured_T10_worker_seconds": {
+    "E2": 2.5187869000365026,
+    "O": 2.0173129999893717
+  },
+  "per_T300_job_seconds": {
+    "E0": 42.78180350054754,
+    "E1": 80.56360700109508,
+    "E2": 156.12721400219016,
+    "O": 126.0387799993623
+  },
+  "total_projected_worker_seconds": 6488.182472051121,
+  "production_ceiling": 14400,
+  "reserve_fraction": 0.25,
+  "fits_with_reserve": true,
+  "qualification_charged_worker_seconds": 32.280886000099315,
+  "model": "2x linear-in-horizon extrapolation from finite C=1 S; Euler step-count scaling; +5 s/job. Same upper estimate for every start/capacity, capacity does not multiply work.",
+  "source_hashes": {
+    "src/mg10_reservoir.py": "b92994e2492a063a7376cd2801d4ee499b53691a3bb82b97065e4511a97f1e03",
+    "src/run_mg10.py": "8dba8e8e15f8d2a97a88d2b6dd87b12b042563133908e8a534248e56c64f70da",
+    "src/evaluate_mg10.py": "caef3e22b0b26632b308844e7e1ddb775e087ebae55492ad8557fb60a259cbbd",
+    "src/measure.py": "342399a9ca0bd61c57712558b7bc83ff554784a03f0dadc7e74e8353968a4379",
+    "src/runner.py": "15d583bdebb03cc2cd7029ea31487d8ca9f99770abf2939d8717569f0ffe84ed",
+    "src/lattice.py": "11aa7c565dba5e8449ab727075fbc86718634f8d5ad4cbeafef89281f2ae6f04"
+  }
+}
