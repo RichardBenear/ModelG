@@ -1,0 +1,81 @@
+{
+  "kind": "STATIC_ARITHMETIC_NOT_A_SIMULATION",
+  "reference_key": "h0.2_b29.0",
+  "reference_sha256": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b",
+  "reference_perturbation_rms": [
+    0.018792677145730054,
+    0.8914354104500671,
+    0.09462319420088232
+  ],
+  "steady_concentrations": [
+    15.555555555555555,
+    15.555555555555555,
+    1.8642857142857143
+  ],
+  "T_ref": 300,
+  "rows": [
+    {
+      "capacity": 1,
+      "A_fraction_consumed_at_Tref": 0.6321205588285577,
+      "homogeneous_quasistatic_G_discrepancy": 9.832986470666452,
+      "G_error_normalized_by_reference_pattern": 523.235002358386,
+      "initial_A_per_Omega": 4200,
+      "initial_B_per_Omega": 135333.3333333333
+    },
+    {
+      "capacity": 10,
+      "A_fraction_consumed_at_Tref": 0.09516258196404043,
+      "homogeneous_quasistatic_G_discrepancy": 1.48030683055174,
+      "G_error_normalized_by_reference_pattern": 78.77040716830946,
+      "initial_A_per_Omega": 42000,
+      "initial_B_per_Omega": 1353333.3333333335
+    },
+    {
+      "capacity": 100,
+      "A_fraction_consumed_at_Tref": 0.009950166250831947,
+      "homogeneous_quasistatic_G_discrepancy": 0.15478036390183028,
+      "G_error_normalized_by_reference_pattern": 8.23620619359166,
+      "initial_A_per_Omega": 420000,
+      "initial_B_per_Omega": 13533333.333333332
+    },
+    {
+      "capacity": 1000,
+      "A_fraction_consumed_at_Tref": 0.0009995001666250082,
+      "homogeneous_quasistatic_G_discrepancy": 0.01554778036972235,
+      "G_error_normalized_by_reference_pattern": 0.827331851079824,
+      "initial_A_per_Omega": 4200000,
+      "initial_B_per_Omega": 135333333.33333334
+    },
+    {
+      "capacity": 10000,
+      "A_fraction_consumed_at_Tref": 9.99950001666625e-05,
+      "homogeneous_quasistatic_G_discrepancy": 0.0015554777803703055,
+      "G_error_normalized_by_reference_pattern": 0.08277042000499278,
+      "initial_A_per_Omega": 42000000,
+      "initial_B_per_Omega": 1353333333.3333333
+    },
+    {
+      "capacity": 100000,
+      "A_fraction_consumed_at_Tref": 9.999950000166668e-06,
+      "homogeneous_quasistatic_G_discrepancy": 0.00015555477778037038,
+      "G_error_normalized_by_reference_pattern": 0.008277414472355499,
+      "initial_A_per_Omega": 420000000,
+      "initial_B_per_Omega": 13533333333.333334
+    },
+    {
+      "capacity": 1000000,
+      "A_fraction_consumed_at_Tref": 9.999995000001665e-07,
+      "homogeneous_quasistatic_G_discrepancy": 1.5555547777780366e-05,
+      "G_error_normalized_by_reference_pattern": 0.0008277451720770287,
+      "initial_A_per_Omega": 4200000000,
+      "initial_B_per_Omega": 135333333333.33333
+    }
+  ],
+  "approximate_capacity_for_one_percent_G": 82774.55859496839,
+  "caveat": "A(t)/A0=exp(-t/(C*T_ref)) is exact for deterministic P17 A depletion. G discrepancy uses the homogeneous quasistatic response G=a*r_A/(q-g*p), not a solved finite-bath trajectory or a rigorous soliton-error bound.",
+  "original_grid_primary_runs": 12,
+  "extended_grid_primary_runs": 16,
+  "original_grid_with_three_Euler_steps_and_one_ODE_reference": 48,
+  "extended_grid_with_three_Euler_steps_and_one_ODE_reference": 64,
+  "conservative_raw_field_bytes": 539392000
+}

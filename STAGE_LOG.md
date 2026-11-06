@@ -761,3 +761,10 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - Prefer the local PC for runs projected to pressure assistant/service usage limits. Authorized maximum: eight worker processes, leaving capacity for background activity; numerical-library threads should be one per worker.
 - Updated active protocol, AGENTS.md, CLAUDE.md, handoff, README and GATES guidance. Preserved MG10 Draft 1 as spec/MG10_proposal_v1.md; Draft 2 records the approval without inventing unspecified numerical caps.
 - No MG10 trajectory or production run; registration awaits completion of numerical criteria, run caps, cost projection and run-level review disposition. Do not request approval again for unchanged decisions already approved.
+
+## MG040 — MG10 numerical candidate and static capacity audit, 2026-11-06
+
+- PI authorized finalizing numerical criteria and budgets. Static calculation (spec/MG10_design_calc.py; results/MG10/design/static_design.json), not dynamics: deterministic A availability is exp(-t/(C*T_ref)); a homogeneous quasistatic G-response estimate gives 8.28% pattern-normalized discrepancy at C=10000. Approximate C for 1% is 82775; this is not a rigorous soliton bound.
+- PI explicitly approved extending the capacity grid to 100000 and 1000000. Capacity changes stored values, not lattice size or individual-token loops.
+- Added spec/MG10_run_plan.md: primary unshifted error normalization; physical checkpoints; 1% recovery margin; 0.1% numerical-reference discrepancy limit; full fixed deterministic matrix of 64 trajectories; local <=8 workers, 4 core-hour production ceiling, 0.25 qualification/timing cap and 600-second job timeout; no automatic extensions.
+- Draft 3 preserves Draft 2. No model trajectory, production, qualification or timing run; only static arithmetic on an existing committed reference. Firm runtime projection awaits implementation benchmarking. External review remains Richard's per-run/batch decision.

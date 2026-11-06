@@ -1,7 +1,7 @@
 # MG10 — Explicit A/B reservoirs and their limits
-## Draft 2 — 2026-11-06 — MG039b
+## Draft 3 — 2026-11-06 — MG040
 
-**Status: DRAFT 2, NOT REGISTERED. PI approved decisions 1-4 on 2026-11-06; external review is decided per run/batch. No MG10 simulation, calibration or production run has been made.**
+**Status: DRAFT 3, NOT REGISTERED. PI approved decisions 1-4 on 2026-11-06; external review is decided per run/batch. No MG10 simulation, calibration or production run has been made.**
 Author: ChatGPT / Codex, research and implementation lead. PI: Richard Benear.
 This draft proposes a model extension; it does not alter rules_v1.1 or rescore any earlier gate.
 The collaboration arrangement is [RESEARCH_PROTOCOL.md](../RESEARCH_PROTOCOL.md).
@@ -46,7 +46,7 @@ Proposed dimensionless capacity coordinates, for reference horizon T_ref=300:
   B_i^0 = round(C_B * Omega * b * X0 * T_ref)
 where X0=140/9, a=14 and b=29. Store the realized integers and coefficients.
 C_A=C_B=1 provides roughly one reference horizon's homogeneous forward throughput initially; capacities are not themselves energies.
-Vary C_A and C_B independently of Omega. Proposed deterministic screen: C_A=C_B in {1,10,100,1000,10000}, plus a chemostatted control. This grid and its costs must be finalized before registration, using static depletion estimates only.
+Vary C_A and C_B independently of Omega. Proposed deterministic screen: C_A=C_B in {1,10,100,1000,10000,100000,1000000}, plus a chemostatted control. The PI approved the extension to 100000 and 1000000 after the static G-error estimate; exact run criteria and ceilings are in MG10_run_plan.md. No dynamics informed the extension.
 
 For deterministic dynamics use A=n_A/Omega, etc.; A0=A_i^0/Omega and B0=B_i^0/Omega. Capacity and Omega limits are distinct.
 
@@ -131,7 +131,7 @@ Required checks:
 Blocking failure: no scientific production; diagnose and record.
 
 ### MG10-C: recovery of Model G
-Primary proposed experiment: deterministic T=300, homogeneous and reference-soliton starts, CHEMOSTAT and the common-capacity grid. Proposed grid gives 12 trajectories before refinement repeats; no stochastic sample-size claim yet.
+Primary proposed experiment: deterministic T=300, homogeneous and reference-soliton starts, CHEMOSTAT and the common-capacity grid. Approved extended grid gives 16 mode/start pairs before solver/refinement repeats; no stochastic sample-size claim yet.
 Each finite run is compared with its same-solver/same-time control and a tightly solved ODE reference.
 Record all-species active-field discrepancies, homogeneous background offsets, particle-centered discrepancies, detection count and bath availability.
 Do not subtract a background offset from the primary error merely to obtain agreement; report background-corrected error separately.
@@ -212,3 +212,9 @@ Numbers and scope are provisional; only MG10 is reserved by this draft.
 The PI's approval of decisions 1-4 is recorded and must not be repeatedly requested for unchanged scope. It does not fill in unspecified numerical limits or itself freeze this draft as a registered protocol. Complete the remaining implementation and numerical specification, cost projection and run-level review disposition before scientific execution. Draft 1 is preserved as MG10_proposal_v1.md.
 
 Compute preference: use the PI's local PC when a projected run could pressure assistant/service usage limits; at most eight parallel workers, numerical-library threads capped at one per worker. Report wall/core-hour estimates separately from assistant usage and do not infer remaining account quota.
+
+## 12. Final numerical candidate (MG040)
+
+See [MG10_run_plan.md](MG10_run_plan.md) for frozen-candidate error normalization, 1% margins, independent numerical-reference check, exact physical-time checkpoints, the 64-trajectory deterministic matrix, local eight-worker dispatch, 4 core-hour production ceiling, 0.25 core-hour qualification/timing cap, and retention requirements. These are prospective candidate limits, not measured costs or a completed registration. The PI approved the capacity extension in this chat.
+
+Static evidence only: [MG10_design_calc.py](MG10_design_calc.py) reproduces results/MG10/design/static_design.json. The G estimate is homogeneous/quasistatic, not a soliton-error bound or simulation. Draft 2 is preserved as MG10_proposal_v2.md.

@@ -2,7 +2,7 @@
 
 - **Roles:** Richard Benear is PI; ChatGPT / Codex leads planning, implementation, validation, authorized runs, analysis and documentation. Claude/other external review is optional. [Active protocol](RESEARCH_PROTOCOL.md).
 - **Last closed gate:** MG8, SENSITIVE at the production step and NOT RESOLVED BY THIS LADDER under refinement. MG9 and its follow-ups were completed earlier; historical verdicts stand.
-- **Next gate:** [MG10 explicit A/B reservoirs](spec/MG10_proposal.md), Draft 2, NOT REGISTERED. PI approved decisions 1-4 (MG039b); no MG10 simulation has run. Finalize numerical criteria, run caps and cost projection. Costly runs should use the local PC with at most eight workers. Richard determines external review per run/batch.
+- **Next gate:** [MG10 explicit A/B reservoirs](spec/MG10_proposal.md), Draft 3, NOT REGISTERED. PI approved decisions 1-4 (MG039b); no MG10 simulation has run. Numerical candidate and run caps are in spec/MG10_run_plan.md; implementation qualification, measured projection and run-level review disposition remain. Costly runs should use the local PC with at most eight workers. Richard determines external review per run/batch.
 - **Archive baseline:** [StochasticVacuum](https://github.com/RichardBenear/StochasticVacuum), private, commit `2161211ccc9d8427af98ebeefcabf7f379b83a37`. Reuse selected machinery with provenance and new validation.
 - **Time semantics:** MG10 proposes the existing continuous-time model for its first extension. A fundamental-tick law remains a separate modeling decision.
 - **Q5:** MG8's frozen record remains open as scored. A possible reframing of Q5 was discussed with the PI, but no new Q5 study or rescoring is registered here.

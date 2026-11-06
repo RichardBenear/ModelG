@@ -56,7 +56,7 @@ paper/       White-paper drafts
 
 ## Roadmap
 
-The original roadmap is preserved in [`InitialPlan.md`](InitialPlan.md). The active extension is [MG10 Draft 2](spec/MG10_proposal.md), explicit A/B reservoirs; DRAFT, not registered. Summary:
+The original roadmap is preserved in [`InitialPlan.md`](InitialPlan.md). The active extension is [MG10 Draft 3](spec/MG10_proposal.md), explicit A/B reservoirs; DRAFT, not registered. Summary:
 
 | Phase | Content | Gate |
 |---|---|---|
