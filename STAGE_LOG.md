@@ -807,3 +807,8 @@ Bounded A and joint B/X leap, independent exact SSA, integer reaction/hop ledger
 ## MG048 — MG10-S1 numerical qualification result (2026-11-06)
 
 QUALIFIED ON TESTED SMALL SYSTEMS. All524288 short trajectories in16 fixed groups complete after aeb0b39 registration. Largest simultaneous99% CDF upper .0361553 versus margin .05; all96 primary comparisons qualify. Exact integer population/reaction/hop ledgers and probability bounds pass; all1024 seeds verified. Independent raw arithmetic/CDF checker agrees. Production0.04894908 local core-hours, no timeout/cap stop/replacement. Complete raw records, environment and report retained. Full joint law, actual lattice/high-Omega noise and particle persistence are outside qualification; future stage must freeze those checks. MG10-S1 closure pending; MG10-C1 PI closure recorded MG046; original MG10 remains UNRESOLVED.
+
+
+## MG049 — PI closes S1 and authorizes S2 (2026-11-06)
+
+Richard signed off MG10-S1 and instructed proceeding. S1 CLOSED as qualified on tested small systems. Next is actual lattice-spacing/density validation including spatial-noise observables; original MG10 not rescored. New scope/criteria/budget will be frozen before runs.

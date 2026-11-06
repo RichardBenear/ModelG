@@ -128,3 +128,7 @@ particle persistence/identity criteria. Do not use mere contrast minima or spars
 solver roundoff as physical particles/noise. MG10-E interventions do not automatically
 follow from this limited sampler qualification; earlier gate outcomes remain frozen.
 No further production is launched here. PI sign-off remains the closure step.
+
+## PI closure — MG049
+
+2026-11-06: Richard signed off S1 and instructed proceeding. CLOSED as QUALIFIED ON TESTED SMALL SYSTEMS, with the scope limits above. This supersedes the report's earlier pending-closure wording, without changing its result or rescoring MG10.
