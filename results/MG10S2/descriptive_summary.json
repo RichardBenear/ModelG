@@ -1,0 +1,915 @@
+{
+  "scope": "POSTHOC_DESCRIPTION_ONLY; no new criterion or trajectory",
+  "case_bounds": [
+    {
+      "case": 0,
+      "label": "H, Omega100",
+      "distance": 0.0150146484375,
+      "lower": 0.0,
+      "upper": 0.053195491088865406
+    },
+    {
+      "case": 1,
+      "label": "S, Omega100",
+      "distance": 0.01556396484375,
+      "lower": 0.0,
+      "upper": 0.053744807495115406
+    },
+    {
+      "case": 2,
+      "label": "H, Omega1000",
+      "distance": 0.0191650390625,
+      "lower": 0.0,
+      "upper": 0.057345881713865406
+    },
+    {
+      "case": 3,
+      "label": "S, Omega1000",
+      "distance": 0.01580810546875,
+      "lower": 0.0,
+      "upper": 0.053988948120115406
+    },
+    {
+      "case": 4,
+      "label": "SSA, Omega100",
+      "distance": 0.013671875,
+      "lower": 0.0,
+      "upper": 0.050728103256918934
+    },
+    {
+      "case": 5,
+      "label": "SSA, Omega1000",
+      "distance": 0.01336669921875,
+      "lower": 0.0,
+      "upper": 0.050422927475668934
+    }
+  ],
+  "moments": [
+    {
+      "case": 0,
+      "method": 0,
+      "mode": 32,
+      "empirical_diagonal": [
+        155.64442472838235,
+        1025.4485012531866,
+        1042.4377806834007
+      ],
+      "exact_snapshot_diagonal": [
+        155.17067873451492,
+        1035.3741438921968,
+        1051.1049564717923
+      ],
+      "max_relative_diagonal_difference": 0.009586527437992192,
+      "max_normalized_cross_difference": 0.008710706007910565,
+      "snapshot_vs_instantaneous_normalized_difference": 0.026145466825730355
+    },
+    {
+      "case": 0,
+      "method": 0,
+      "mode": 250,
+      "empirical_diagonal": [
+        3086.2972631835714,
+        3904.484978027346,
+        4748.801513671875
+      ],
+      "exact_snapshot_diagonal": [
+        3116.661372955548,
+        3982.4234144664756,
+        4718.535595799784
+      ],
+      "max_relative_diagonal_difference": 0.019570605213903608,
+      "max_normalized_cross_difference": 0.007907197591577377,
+      "snapshot_vs_instantaneous_normalized_difference": 0.12054283421921087
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "mode": 32,
+      "empirical_diagonal": [
+        156.04437610170507,
+        1014.6243186883198,
+        1036.4374731913695
+      ],
+      "exact_snapshot_diagonal": [
+        155.17067873451492,
+        1035.3741438921968,
+        1051.1049564717923
+      ],
+      "max_relative_diagonal_difference": 0.020040895676488375,
+      "max_normalized_cross_difference": 0.017429473282750973,
+      "snapshot_vs_instantaneous_normalized_difference": 0.026145466825730355
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "mode": 250,
+      "empirical_diagonal": [
+        3116.0315991210887,
+        4000.496513671866,
+        4725.081196289057
+      ],
+      "exact_snapshot_diagonal": [
+        3116.661372955548,
+        3982.4234144664756,
+        4718.535595799784
+      ],
+      "max_relative_diagonal_difference": 0.004538216388478048,
+      "max_normalized_cross_difference": 0.011996997465443991,
+      "snapshot_vs_instantaneous_normalized_difference": 0.12054283421921087
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "mode": 32,
+      "empirical_diagonal": [
+        156.02409275292385,
+        1038.073425492663,
+        1067.1327184104036
+      ],
+      "exact_snapshot_diagonal": [
+        155.20296211660647,
+        1045.9476346954611,
+        1065.2146765756006
+      ],
+      "max_relative_diagonal_difference": 0.007528301553156355,
+      "max_normalized_cross_difference": 0.003542408160132629,
+      "snapshot_vs_instantaneous_normalized_difference": 0.013072733412849166
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "mode": 250,
+      "empirical_diagonal": [
+        3165.1764550781227,
+        3986.3114941406134,
+        5062.50779296874
+      ],
+      "exact_snapshot_diagonal": [
+        3129.88868647786,
+        4013.412647233131,
+        5041.908737899938
+      ],
+      "max_relative_diagonal_difference": 0.011274448434130332,
+      "max_normalized_cross_difference": 0.015930257408935885,
+      "snapshot_vs_instantaneous_normalized_difference": 0.06027141710959247
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "mode": 32,
+      "empirical_diagonal": [
+        155.64094658941863,
+        1039.2756719035103,
+        1064.4818962576985
+      ],
+      "exact_snapshot_diagonal": [
+        155.20296211660647,
+        1045.9476346954611,
+        1065.2146765756006
+      ],
+      "max_relative_diagonal_difference": 0.006378868855985732,
+      "max_normalized_cross_difference": 0.004642569191371222,
+      "snapshot_vs_instantaneous_normalized_difference": 0.013072733412849166
+    },
+    {
+      "case": 0,
+      "method": 3,
+      "mode": 250,
+      "empirical_diagonal": [
+        3140.0023242187426,
+        3982.601264648419,
+        5053.253305664071
+      ],
+      "exact_snapshot_diagonal": [
+        3129.88868647786,
+        4013.412647233131,
+        5041.908737899938
+      ],
+      "max_relative_diagonal_difference": 0.007677103077340745,
+      "max_normalized_cross_difference": 0.00800821314798141,
+      "snapshot_vs_instantaneous_normalized_difference": 0.06027141710959247
+    },
+    {
+      "case": 0,
+      "method": 4,
+      "mode": 32,
+      "empirical_diagonal": [
+        155.51104175498548,
+        1050.5193534248056,
+        1076.4063493327183
+      ],
+      "exact_snapshot_diagonal": [
+        155.21910380765752,
+        1051.2343800970916,
+        1072.2695366274904
+      ],
+      "max_relative_diagonal_difference": 0.003857997046376018,
+      "max_normalized_cross_difference": 0.004748014226710073,
+      "snapshot_vs_instantaneous_normalized_difference": 0.006536366706421845
+    },
+    {
+      "case": 0,
+      "method": 4,
+      "mode": 250,
+      "empirical_diagonal": [
+        3095.3220117187543,
+        3992.3556738281295,
+        5255.827470703117
+      ],
+      "exact_snapshot_diagonal": [
+        3136.50234323896,
+        4028.9072636165793,
+        5203.5953089499
+      ],
+      "max_relative_diagonal_difference": 0.013129380122726129,
+      "max_normalized_cross_difference": 0.019304098947274428,
+      "snapshot_vs_instantaneous_normalized_difference": 0.03013570855480488
+    },
+    {
+      "case": 0,
+      "method": 5,
+      "mode": 32,
+      "empirical_diagonal": [
+        153.9828795817274,
+        1055.9190872241982,
+        1070.2351638902308
+      ],
+      "exact_snapshot_diagonal": [
+        155.21910380765752,
+        1051.2343800970916,
+        1072.2695366274904
+      ],
+      "max_relative_diagonal_difference": 0.0079643819324071,
+      "max_normalized_cross_difference": 0.0022423734097085962,
+      "snapshot_vs_instantaneous_normalized_difference": 0.006536366706421845
+    },
+    {
+      "case": 0,
+      "method": 5,
+      "mode": 250,
+      "empirical_diagonal": [
+        3175.0804687500113,
+        3973.6930957031173,
+        5140.080849609353
+      ],
+      "exact_snapshot_diagonal": [
+        3136.50234323896,
+        4028.9072636165793,
+        5203.5953089499
+      ],
+      "max_relative_diagonal_difference": 0.013704502064884608,
+      "max_normalized_cross_difference": 0.011075710892643163,
+      "snapshot_vs_instantaneous_normalized_difference": 0.03013570855480488
+    },
+    {
+      "case": 1,
+      "method": 0,
+      "mode": 32,
+      "empirical_diagonal": [
+        156.03436182053773,
+        1021.3231656103322,
+        1043.9291818470724
+      ],
+      "exact_snapshot_diagonal": [
+        155.16227388255137,
+        1035.2729817102738,
+        1051.399037739233
+      ],
+      "max_relative_diagonal_difference": 0.013474529275260765,
+      "max_normalized_cross_difference": 0.01147119655314474,
+      "snapshot_vs_instantaneous_normalized_difference": 0.026312643986034456
+    },
+    {
+      "case": 1,
+      "method": 0,
+      "mode": 250,
+      "empirical_diagonal": [
+        3119.4103880139605,
+        3986.2780677406545,
+        4737.988531434499
+      ],
+      "exact_snapshot_diagonal": [
+        3116.477867111371,
+        3982.0381537044864,
+        4727.073523587287
+      ],
+      "max_relative_diagonal_difference": 0.002309041268926343,
+      "max_normalized_cross_difference": 0.0104947701557438,
+      "snapshot_vs_instantaneous_normalized_difference": 0.12054976546834158
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "mode": 32,
+      "empirical_diagonal": [
+        157.18117481788462,
+        1036.0560565311182,
+        1053.3524794570021
+      ],
+      "exact_snapshot_diagonal": [
+        155.16227388255137,
+        1035.2729817102738,
+        1051.399037739233
+      ],
+      "max_relative_diagonal_difference": 0.013011545170196703,
+      "max_normalized_cross_difference": 0.006789589725571609,
+      "snapshot_vs_instantaneous_normalized_difference": 0.026312643986034456
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "mode": 250,
+      "empirical_diagonal": [
+        3099.3894311750923,
+        4058.010536995168,
+        4714.308228659856
+      ],
+      "exact_snapshot_diagonal": [
+        3116.477867111371,
+        3982.0381537044864,
+        4727.073523587287
+      ],
+      "max_relative_diagonal_difference": 0.019078768298592154,
+      "max_normalized_cross_difference": 0.013294768581123028,
+      "snapshot_vs_instantaneous_normalized_difference": 0.12054976546834158
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "mode": 32,
+      "empirical_diagonal": [
+        156.11253980467345,
+        1046.1373361570857,
+        1057.4130110000674
+      ],
+      "exact_snapshot_diagonal": [
+        155.1945553556041,
+        1045.9411316770504,
+        1065.6053886774662
+      ],
+      "max_relative_diagonal_difference": 0.007688003236889057,
+      "max_normalized_cross_difference": 0.0031430937468327623,
+      "snapshot_vs_instantaneous_normalized_difference": 0.013156321993008806
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "mode": 250,
+      "empirical_diagonal": [
+        3160.8872528459747,
+        3956.8648174877967,
+        5050.9284284808045
+      ],
+      "exact_snapshot_diagonal": [
+        3129.704398555781,
+        4013.1200775361594,
+        5051.052972477703
+      ],
+      "max_relative_diagonal_difference": 0.014017836237509358,
+      "max_normalized_cross_difference": 0.007444223343432696,
+      "snapshot_vs_instantaneous_normalized_difference": 0.06027488273415243
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "mode": 32,
+      "empirical_diagonal": [
+        153.72820334667338,
+        1046.0207084674096,
+        1064.6760769123553
+      ],
+      "exact_snapshot_diagonal": [
+        155.1945553556041,
+        1045.9411316770504,
+        1065.6053886774662
+      ],
+      "max_relative_diagonal_difference": 0.0094484758538778,
+      "max_normalized_cross_difference": 0.003012724314335587,
+      "snapshot_vs_instantaneous_normalized_difference": 0.013156321993008806
+    },
+    {
+      "case": 1,
+      "method": 3,
+      "mode": 250,
+      "empirical_diagonal": [
+        3175.635244961685,
+        4022.833170612563,
+        5051.071173925495
+      ],
+      "exact_snapshot_diagonal": [
+        3129.704398555781,
+        4013.1200775361594,
+        5051.052972477703
+      ],
+      "max_relative_diagonal_difference": 0.014675777823330243,
+      "max_normalized_cross_difference": 0.005347311513417796,
+      "snapshot_vs_instantaneous_normalized_difference": 0.06027488273415243
+    },
+    {
+      "case": 1,
+      "method": 4,
+      "mode": 32,
+      "empirical_diagonal": [
+        154.9398841376516,
+        1058.7912884259601,
+        1068.5146512866847
+      ],
+      "exact_snapshot_diagonal": [
+        155.21069609213495,
+        1051.2752066604337,
+        1072.7085641465778
+      ],
+      "max_relative_diagonal_difference": 0.00714949017907751,
+      "max_normalized_cross_difference": 0.002416362737429101,
+      "snapshot_vs_instantaneous_normalized_difference": 0.0065781609965005075
+    },
+    {
+      "case": 1,
+      "method": 4,
+      "mode": 250,
+      "empirical_diagonal": [
+        3162.7208757212074,
+        4017.8665693319895,
+        5245.381936195112
+      ],
+      "exact_snapshot_diagonal": [
+        3136.317664277918,
+        4028.661039452095,
+        5213.0426969227665
+      ],
+      "max_relative_diagonal_difference": 0.008418538639761237,
+      "max_normalized_cross_difference": 0.007098553137890768,
+      "snapshot_vs_instantaneous_normalized_difference": 0.030137441367084846
+    },
+    {
+      "case": 1,
+      "method": 5,
+      "mode": 32,
+      "empirical_diagonal": [
+        156.07030809783822,
+        1056.8210868524395,
+        1079.1871399128217
+      ],
+      "exact_snapshot_diagonal": [
+        155.21069609213495,
+        1051.2752066604337,
+        1072.7085641465778
+      ],
+      "max_relative_diagonal_difference": 0.006039455619894418,
+      "max_normalized_cross_difference": 0.011592252675419867,
+      "snapshot_vs_instantaneous_normalized_difference": 0.0065781609965005075
+    },
+    {
+      "case": 1,
+      "method": 5,
+      "mode": 250,
+      "empirical_diagonal": [
+        3151.837448235346,
+        4058.9465830803897,
+        5229.464975729883
+      ],
+      "exact_snapshot_diagonal": [
+        3136.317664277918,
+        4028.661039452095,
+        5213.0426969227665
+      ],
+      "max_relative_diagonal_difference": 0.007517520916183533,
+      "max_normalized_cross_difference": 0.0020156524169660105,
+      "snapshot_vs_instantaneous_normalized_difference": 0.030137441367084846
+    },
+    {
+      "case": 2,
+      "method": 0,
+      "mode": 32,
+      "empirical_diagonal": [
+        155.30780298901792,
+        1038.9023949474865,
+        1056.9631401407082
+      ],
+      "exact_snapshot_diagonal": [
+        155.1343880695976,
+        1036.174509124059,
+        1052.310475100683
+      ],
+      "max_relative_diagonal_difference": 0.004421380524203139,
+      "max_normalized_cross_difference": 0.0035967045475308766,
+      "snapshot_vs_instantaneous_normalized_difference": 0.026168787479246412
+    },
+    {
+      "case": 2,
+      "method": 0,
+      "mode": 250,
+      "empirical_diagonal": [
+        3171.261714111347,
+        3940.680560302741,
+        4705.922930419907
+      ],
+      "exact_snapshot_diagonal": [
+        3115.8637736288715,
+        3982.4661834848625,
+        4727.616908903467
+      ],
+      "max_relative_diagonal_difference": 0.017779320441200334,
+      "max_normalized_cross_difference": 0.013808751200615648,
+      "snapshot_vs_instantaneous_normalized_difference": 0.12056816380898959
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "mode": 32,
+      "empirical_diagonal": [
+        156.80048272536987,
+        1038.0120132010536,
+        1062.5444093864305
+      ],
+      "exact_snapshot_diagonal": [
+        155.1343880695976,
+        1036.174509124059,
+        1052.310475100683
+      ],
+      "max_relative_diagonal_difference": 0.010739686258502615,
+      "max_normalized_cross_difference": 0.011290386098740751,
+      "snapshot_vs_instantaneous_normalized_difference": 0.026168787479246412
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "mode": 250,
+      "empirical_diagonal": [
+        3129.7884169921886,
+        4013.2642229004027,
+        4658.103606445332
+      ],
+      "exact_snapshot_diagonal": [
+        3115.8637736288715,
+        3982.4661834848625,
+        4727.616908903467
+      ],
+      "max_relative_diagonal_difference": 0.01470366651900705,
+      "max_normalized_cross_difference": 0.010671579301084758,
+      "snapshot_vs_instantaneous_normalized_difference": 0.12056816380898959
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "mode": 32,
+      "empirical_diagonal": [
+        155.74124566423228,
+        1064.904660898218,
+        1092.3585450582214
+      ],
+      "exact_snapshot_diagonal": [
+        155.1666631536229,
+        1046.7683002408517,
+        1066.4493160163615
+      ],
+      "max_relative_diagonal_difference": 0.024294852697399373,
+      "max_normalized_cross_difference": 0.019606801954456653,
+      "snapshot_vs_instantaneous_normalized_difference": 0.013084393739617629
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "mode": 250,
+      "empirical_diagonal": [
+        3118.3567587890707,
+        4015.980256347667,
+        4964.787502441424
+      ],
+      "exact_snapshot_diagonal": [
+        3129.0876868143664,
+        4013.4704683023733,
+        5051.689831011687
+      ],
+      "max_relative_diagonal_difference": 0.017202625552499278,
+      "max_normalized_cross_difference": 0.009824459759850766,
+      "snapshot_vs_instantaneous_normalized_difference": 0.06028408190449344
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "mode": 32,
+      "empirical_diagonal": [
+        155.5638264780381,
+        1032.412500117577,
+        1057.6049935842645
+      ],
+      "exact_snapshot_diagonal": [
+        155.1666631536229,
+        1046.7683002408517,
+        1066.4493160163615
+      ],
+      "max_relative_diagonal_difference": 0.013714400904165145,
+      "max_normalized_cross_difference": 0.009369288451866306,
+      "snapshot_vs_instantaneous_normalized_difference": 0.013084393739617629
+    },
+    {
+      "case": 2,
+      "method": 3,
+      "mode": 250,
+      "empirical_diagonal": [
+        3111.632787597658,
+        3985.4149746093835,
+        5021.4790766601245
+      ],
+      "exact_snapshot_diagonal": [
+        3129.0876868143664,
+        4013.4704683023733,
+        5051.689831011687
+      ],
+      "max_relative_diagonal_difference": 0.006990332659618836,
+      "max_normalized_cross_difference": 0.007097267044396438,
+      "snapshot_vs_instantaneous_normalized_difference": 0.06028408190449344
+    },
+    {
+      "case": 2,
+      "method": 4,
+      "mode": 32,
+      "empirical_diagonal": [
+        154.80367316617802,
+        1050.5451769333388,
+        1065.7157706494004
+      ],
+      "exact_snapshot_diagonal": [
+        155.18280069563804,
+        1052.0651957992698,
+        1073.5187364741867
+      ],
+      "max_relative_diagonal_difference": 0.007268588390374961,
+      "max_normalized_cross_difference": 0.004895687726324841,
+      "snapshot_vs_instantaneous_normalized_difference": 0.006542196869816284
+    },
+    {
+      "case": 2,
+      "method": 4,
+      "mode": 250,
+      "empirical_diagonal": [
+        3126.2202070312696,
+        4031.779057617191,
+        5232.684269531241
+      ],
+      "exact_snapshot_diagonal": [
+        3135.699643407264,
+        4028.972610711223,
+        5213.726292065884
+      ],
+      "max_relative_diagonal_difference": 0.0036361666116240896,
+      "max_normalized_cross_difference": 0.01317013947316194,
+      "snapshot_vs_instantaneous_normalized_difference": 0.03014204095222904
+    },
+    {
+      "case": 2,
+      "method": 5,
+      "mode": 32,
+      "empirical_diagonal": [
+        154.29347759143923,
+        1047.433089866412,
+        1062.4635949580716
+      ],
+      "exact_snapshot_diagonal": [
+        155.18280069563804,
+        1052.0651957992698,
+        1073.5187364741867
+      ],
+      "max_relative_diagonal_difference": 0.010298042447236715,
+      "max_normalized_cross_difference": 0.0077146672115067545,
+      "snapshot_vs_instantaneous_normalized_difference": 0.006542196869816284
+    },
+    {
+      "case": 2,
+      "method": 5,
+      "mode": 250,
+      "empirical_diagonal": [
+        3145.576743164068,
+        3994.7509218750142,
+        5241.109335937531
+      ],
+      "exact_snapshot_diagonal": [
+        3135.699643407264,
+        4028.972610711223,
+        5213.726292065884
+      ],
+      "max_relative_diagonal_difference": 0.008493899597437958,
+      "max_normalized_cross_difference": 0.008151032407194624,
+      "snapshot_vs_instantaneous_normalized_difference": 0.03014204095222904
+    },
+    {
+      "case": 3,
+      "method": 0,
+      "mode": 32,
+      "empirical_diagonal": [
+        155.81771914861883,
+        1033.4713762928104,
+        1053.3637963056428
+      ],
+      "exact_snapshot_diagonal": [
+        155.13334498579445,
+        1035.9903193568236,
+        1052.4258678656315
+      ],
+      "max_relative_diagonal_difference": 0.004411521990240405,
+      "max_normalized_cross_difference": 0.0015215167844219463,
+      "snapshot_vs_instantaneous_normalized_difference": 0.02633612841770039
+    },
+    {
+      "case": 3,
+      "method": 0,
+      "mode": 250,
+      "empirical_diagonal": [
+        3127.54991043851,
+        4013.0952445378966,
+        4712.9213988330785
+      ],
+      "exact_snapshot_diagonal": [
+        3115.841033248205,
+        3982.2437351088442,
+        4734.178053921301
+      ],
+      "max_relative_diagonal_difference": 0.007747267992929403,
+      "max_normalized_cross_difference": 0.0072821612540326,
+      "snapshot_vs_instantaneous_normalized_difference": 0.12057504687640411
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "mode": 32,
+      "empirical_diagonal": [
+        153.90678035964152,
+        1028.9198728570673,
+        1058.1729816050972
+      ],
+      "exact_snapshot_diagonal": [
+        155.13334498579445,
+        1035.9903193568236,
+        1052.4258678656315
+      ],
+      "max_relative_diagonal_difference": 0.007906518268301712,
+      "max_normalized_cross_difference": 0.0025026782943190174,
+      "snapshot_vs_instantaneous_normalized_difference": 0.02633612841770039
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "mode": 250,
+      "empirical_diagonal": [
+        3136.9499179606482,
+        4032.382062743921,
+        4677.900176750043
+      ],
+      "exact_snapshot_diagonal": [
+        3115.841033248205,
+        3982.2437351088442,
+        4734.178053921301
+      ],
+      "max_relative_diagonal_difference": 0.012590471847074479,
+      "max_normalized_cross_difference": 0.017491197238526067,
+      "snapshot_vs_instantaneous_normalized_difference": 0.12057504687640411
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "mode": 32,
+      "empirical_diagonal": [
+        155.06709505229756,
+        1044.6774554487238,
+        1054.0311223184005
+      ],
+      "exact_snapshot_diagonal": [
+        155.16561983325042,
+        1046.6778401165761,
+        1066.6591282418096
+      ],
+      "max_relative_diagonal_difference": 0.011838839221508397,
+      "max_normalized_cross_difference": 0.010837378426983516,
+      "snapshot_vs_instantaneous_normalized_difference": 0.01316806420885114
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "mode": 250,
+      "empirical_diagonal": [
+        3127.5193881733003,
+        4104.79837351665,
+        4975.0573219895405
+      ],
+      "exact_snapshot_diagonal": [
+        3129.0648495240507,
+        4013.3414845320485,
+        5058.721801938284
+      ],
+      "max_relative_diagonal_difference": 0.02278821509136175,
+      "max_normalized_cross_difference": 0.010268582018634061,
+      "snapshot_vs_instantaneous_normalized_difference": 0.06028752343820433
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "mode": 32,
+      "empirical_diagonal": [
+        155.0675381332819,
+        1053.8622926309029,
+        1073.4965031437685
+      ],
+      "exact_snapshot_diagonal": [
+        155.16561983325042,
+        1046.6778401165761,
+        1066.6591282418096
+      ],
+      "max_relative_diagonal_difference": 0.006864053330417827,
+      "max_normalized_cross_difference": 0.00812552153224283,
+      "snapshot_vs_instantaneous_normalized_difference": 0.01316806420885114
+    },
+    {
+      "case": 3,
+      "method": 3,
+      "mode": 250,
+      "empirical_diagonal": [
+        3144.763288437658,
+        4056.947617494713,
+        5126.674319428897
+      ],
+      "exact_snapshot_diagonal": [
+        3129.0648495240507,
+        4013.3414845320485,
+        5058.721801938284
+      ],
+      "max_relative_diagonal_difference": 0.013432744505652893,
+      "max_normalized_cross_difference": 0.011773245184814441,
+      "snapshot_vs_instantaneous_normalized_difference": 0.06028752343820433
+    },
+    {
+      "case": 3,
+      "method": 4,
+      "mode": 32,
+      "empirical_diagonal": [
+        153.7106250994237,
+        1038.134200430896,
+        1058.9087512699216
+      ],
+      "exact_snapshot_diagonal": [
+        155.1817572569826,
+        1052.021600496477,
+        1073.7757584298981
+      ],
+      "max_relative_diagonal_difference": 0.013845541811928637,
+      "max_normalized_cross_difference": 0.01505048090707713,
+      "snapshot_vs_instantaneous_normalized_difference": 0.006584032104427043
+    },
+    {
+      "case": 3,
+      "method": 4,
+      "mode": 250,
+      "empirical_diagonal": [
+        3094.849110440343,
+        4050.646247094368,
+        5248.641005120002
+      ],
+      "exact_snapshot_diagonal": [
+        3135.6767576621,
+        4028.890359243757,
+        5220.993675946843
+      ],
+      "max_relative_diagonal_difference": 0.013020362230256623,
+      "max_normalized_cross_difference": 0.01636534786597372,
+      "snapshot_vs_instantaneous_normalized_difference": 0.03014376171909203
+    },
+    {
+      "case": 3,
+      "method": 5,
+      "mode": 32,
+      "empirical_diagonal": [
+        155.69899650415175,
+        1057.3429052097665,
+        1064.1503166306247
+      ],
+      "exact_snapshot_diagonal": [
+        155.1817572569826,
+        1052.021600496477,
+        1073.7757584298981
+      ],
+      "max_relative_diagonal_difference": 0.008964107937534337,
+      "max_normalized_cross_difference": 0.0035592570819546437,
+      "snapshot_vs_instantaneous_normalized_difference": 0.006584032104427043
+    },
+    {
+      "case": 3,
+      "method": 5,
+      "mode": 250,
+      "empirical_diagonal": [
+        3159.8880855314787,
+        4044.241640070632,
+        5192.419928627106
+      ],
+      "exact_snapshot_diagonal": [
+        3135.6767576621,
+        4028.890359243757,
+        5220.993675946843
+      ],
+      "max_relative_diagonal_difference": 0.007721244803125113,
+      "max_normalized_cross_difference": 0.005557806006362288,
+      "snapshot_vs_instantaneous_normalized_difference": 0.03014376171909203
+    }
+  ],
+  "max_descriptive_diagonal_difference": 0.024294852697399373,
+  "max_descriptive_cross_difference": 0.019606801954456653
+}

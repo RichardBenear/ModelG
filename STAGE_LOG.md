@@ -817,3 +817,8 @@ Richard signed off MG10-S1 and instructed proceeding. S1 CLOSED as qualified on 
 ## MG050 — S2 qualified and prospectively registered (2026-11-06)
 
 Actualh.2/Omega100,1000 full500-node H/S snapshot-law oracle and short16-node SSA comparisons implemented with spatial powers/cross-products. Eight tests and independent raw development checker PASS. Before scientific data, static confidence-width review revises candidateR8192 to16384 while preserving old draft/calibration and unchanged margins/physics. All32 class timing measurements reused to forecast0.850748 core-hours, fitting2-hour ceiling with25% reserve; qualifications102.715845 seconds under900. Fixed88 jobs,32 logical groups,524288 paths,1280 unique chunk seeds. Source/spec hashes and durable reconstructible raw retention registered before production. S1 PI closure recorded MG049; original MG10 unchanged.
+
+
+## MG051 — Actual-lattice spatial-noise qualification result (2026-11-06)
+
+QUALIFIED WITHIN REGISTERED S2 SCOPE. All88 fixed jobs/32 groups/524288 trajectories complete after77eafbf. Full500-node H/S snapshot laws and short16-node SSA spatial laws at h.2/Omega100,1000 qualify under frozen margins; maximum upper bounds.0573459/.0507281 versus.08. Separate checker verifies every one of1280 raw shards and288 comparisons, exact integer states/hashes, conditional means/noise matrices and seeds. Production0.362493 core-hours, no timeout/cap/replacement; observed monitor gap<=.251052. Full1.73GB archive committed/uploaded in raw-data batches. Long-horizon particle behavior remains for a separately designed study; original MG10 not rescored. S2 PI closure pending.

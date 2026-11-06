@@ -1,0 +1,16 @@
+[
+  {
+    "script": "src/evaluate_mg10s2.py",
+    "elapsed_worker_seconds": 1.8632077999645844,
+    "returncode": 0,
+    "stdout": "{'verdict': 'QUALIFIED WITHIN REGISTERED S2 SCOPE', 'snapshot_verdict': 'QUALIFIED ON TESTED SNAPSHOT LAWS', 'short_verdict': 'QUALIFIED ON TESTED SHORT-TIME SPATIAL LAWS', 'complete_logical_groups': 32, 'planned_logical_groups': 32, 'missing_jobs': [], 'alpha_per_family': 0.005, 'margin': 0.08, 'snapshot_halfwidth': 0.038180842651365406, 'short_halfwidth': 0.037056228256918934, 'snapshot_max_upper': 0.057345881713865406, 'short_max_upper': 0.050728103256918934}\n",
+    "stderr": ""
+  },
+  {
+    "script": "src/check_mg10s2.py",
+    "elapsed_worker_seconds": 109.58754560002126,
+    "returncode": 0,
+    "stdout": "{'status': 'AGREES', 'verdict': 'QUALIFIED WITHIN REGISTERED S2 SCOPE', 'snapshot_verdict': 'QUALIFIED ON TESTED SNAPSHOT LAWS', 'short_verdict': 'QUALIFIED ON TESTED SHORT-TIME SPATIAL LAWS', 'jobs': 88, 'shards': 1280, 'charged_worker_seconds': 1304.9744223000598, 'comparisons_checked': 288, 'dependencies': 'Shared canonical spectral transform/rounding and original seed helper; independent reconstruction/means/covariance enumeration/CDF merging. No sampler/evaluator import. Same author, not external replication.'}\n",
+    "stderr": ""
+  }
+]

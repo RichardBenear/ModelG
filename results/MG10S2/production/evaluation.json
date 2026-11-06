@@ -1,0 +1,4436 @@
+{
+  "verdict": "QUALIFIED WITHIN REGISTERED S2 SCOPE",
+  "snapshot_verdict": "QUALIFIED ON TESTED SNAPSHOT LAWS",
+  "short_verdict": "QUALIFIED ON TESTED SHORT-TIME SPATIAL LAWS",
+  "complete_logical_groups": 32,
+  "planned_logical_groups": 32,
+  "missing_jobs": [],
+  "alpha_per_family": 0.005,
+  "margin": 0.08,
+  "snapshot_halfwidth": 0.038180842651365406,
+  "short_halfwidth": 0.037056228256918934,
+  "snapshot": [
+    {
+      "case": 0,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "power_G",
+      "distance": 0.00750732421875,
+      "lower": 0.0,
+      "upper": 0.045688166870115406
+    },
+    {
+      "case": 0,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "power_X",
+      "distance": 0.00909423828125,
+      "lower": 0.0,
+      "upper": 0.047275080932615406
+    },
+    {
+      "case": 0,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "power_Y",
+      "distance": 0.00726318359375,
+      "lower": 0.0,
+      "upper": 0.045444026245115406
+    },
+    {
+      "case": 0,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "cross_GX",
+      "distance": 0.00750732421875,
+      "lower": 0.0,
+      "upper": 0.045688166870115406
+    },
+    {
+      "case": 0,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "cross_GY",
+      "distance": 0.012939453125,
+      "lower": 0.0,
+      "upper": 0.051120295776365406
+    },
+    {
+      "case": 0,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "cross_XY",
+      "distance": 0.0050048828125,
+      "lower": 0.0,
+      "upper": 0.043185725463865406
+    },
+    {
+      "case": 0,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "real_X",
+      "distance": 0.0074462890625,
+      "lower": 0.0,
+      "upper": 0.045627131713865406
+    },
+    {
+      "case": 0,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "imag_X",
+      "distance": 0.00823974609375,
+      "lower": 0.0,
+      "upper": 0.046420588745115406
+    },
+    {
+      "case": 0,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "power_G",
+      "distance": 0.00885009765625,
+      "lower": 0.0,
+      "upper": 0.047030940307615406
+    },
+    {
+      "case": 0,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "power_X",
+      "distance": 0.01348876953125,
+      "lower": 0.0,
+      "upper": 0.051669612182615406
+    },
+    {
+      "case": 0,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "power_Y",
+      "distance": 0.0118408203125,
+      "lower": 0.0,
+      "upper": 0.050021662963865406
+    },
+    {
+      "case": 0,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "cross_GX",
+      "distance": 0.01422119140625,
+      "lower": 0.0,
+      "upper": 0.052402034057615406
+    },
+    {
+      "case": 0,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "cross_GY",
+      "distance": 0.0069580078125,
+      "lower": 0.0,
+      "upper": 0.045138850463865406
+    },
+    {
+      "case": 0,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "cross_XY",
+      "distance": 0.00927734375,
+      "lower": 0.0,
+      "upper": 0.047458186401365406
+    },
+    {
+      "case": 0,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "real_X",
+      "distance": 0.00775146484375,
+      "lower": 0.0,
+      "upper": 0.045932307495115406
+    },
+    {
+      "case": 0,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "imag_X",
+      "distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.038180842651365406
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "power_G",
+      "distance": 0.01165771484375,
+      "lower": 0.0,
+      "upper": 0.049838557495115406
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "power_X",
+      "distance": 0.01190185546875,
+      "lower": 0.0,
+      "upper": 0.050082698120115406
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "power_Y",
+      "distance": 0.0101318359375,
+      "lower": 0.0,
+      "upper": 0.048312678588865406
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "cross_GX",
+      "distance": 0.00732421875,
+      "lower": 0.0,
+      "upper": 0.045505061401365406
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "cross_GY",
+      "distance": 0.00567626953125,
+      "lower": 0.0,
+      "upper": 0.043857112182615406
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "cross_XY",
+      "distance": 0.0079345703125,
+      "lower": 0.0,
+      "upper": 0.046115412963865406
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "real_X",
+      "distance": 0.01031494140625,
+      "lower": 0.0,
+      "upper": 0.048495784057615406
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "imag_X",
+      "distance": 0.006591796875,
+      "lower": 0.0,
+      "upper": 0.044772639526365406
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "power_G",
+      "distance": 0.00836181640625,
+      "lower": 0.0,
+      "upper": 0.046542659057615406
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "power_X",
+      "distance": 0.00897216796875,
+      "lower": 0.0,
+      "upper": 0.047153010620115406
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "power_Y",
+      "distance": 0.010009765625,
+      "lower": 0.0,
+      "upper": 0.048190608276365406
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "cross_GX",
+      "distance": 0.00823974609375,
+      "lower": 0.0,
+      "upper": 0.046420588745115406
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "cross_GY",
+      "distance": 0.0067138671875,
+      "lower": 0.0,
+      "upper": 0.044894709838865406
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "cross_XY",
+      "distance": 0.0093994140625,
+      "lower": 0.0,
+      "upper": 0.047580256713865406
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "real_X",
+      "distance": 0.0135498046875,
+      "lower": 0.0,
+      "upper": 0.051730647338865406
+    },
+    {
+      "case": 0,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "imag_X",
+      "distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.038180842651365406
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "power_G",
+      "distance": 0.00836181640625,
+      "lower": 0.0,
+      "upper": 0.046542659057615406
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "power_X",
+      "distance": 0.00946044921875,
+      "lower": 0.0,
+      "upper": 0.047641291870115406
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "power_Y",
+      "distance": 0.0115966796875,
+      "lower": 0.0,
+      "upper": 0.049777522338865406
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "cross_GX",
+      "distance": 0.0084228515625,
+      "lower": 0.0,
+      "upper": 0.046603694213865406
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "cross_GY",
+      "distance": 0.0054931640625,
+      "lower": 0.0,
+      "upper": 0.043674006713865406
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "cross_XY",
+      "distance": 0.01153564453125,
+      "lower": 0.0,
+      "upper": 0.049716487182615406
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "real_X",
+      "distance": 0.0150146484375,
+      "lower": 0.0,
+      "upper": 0.053195491088865406
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "imag_X",
+      "distance": 0.013427734375,
+      "lower": 0.0,
+      "upper": 0.051608577026365406
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "power_G",
+      "distance": 0.00823974609375,
+      "lower": 0.0,
+      "upper": 0.046420588745115406
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "power_X",
+      "distance": 0.0048828125,
+      "lower": 0.0,
+      "upper": 0.043063655151365406
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "power_Y",
+      "distance": 0.01019287109375,
+      "lower": 0.0,
+      "upper": 0.048373713745115406
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "cross_GX",
+      "distance": 0.0120849609375,
+      "lower": 0.0,
+      "upper": 0.050265803588865406
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "cross_GY",
+      "distance": 0.006591796875,
+      "lower": 0.0,
+      "upper": 0.044772639526365406
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "cross_XY",
+      "distance": 0.0135498046875,
+      "lower": 0.0,
+      "upper": 0.051730647338865406
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "real_X",
+      "distance": 0.005859375,
+      "lower": 0.0,
+      "upper": 0.044040217651365406
+    },
+    {
+      "case": 0,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "imag_X",
+      "distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.038180842651365406
+    },
+    {
+      "case": 1,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "power_G",
+      "distance": 0.00897216796875,
+      "lower": 0.0,
+      "upper": 0.047153010620115406
+    },
+    {
+      "case": 1,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "power_X",
+      "distance": 0.01031494140625,
+      "lower": 0.0,
+      "upper": 0.048495784057615406
+    },
+    {
+      "case": 1,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "power_Y",
+      "distance": 0.01043701171875,
+      "lower": 0.0,
+      "upper": 0.048617854370115406
+    },
+    {
+      "case": 1,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "cross_GX",
+      "distance": 0.0091552734375,
+      "lower": 0.0,
+      "upper": 0.047336116088865406
+    },
+    {
+      "case": 1,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "cross_GY",
+      "distance": 0.014892578125,
+      "lower": 0.0,
+      "upper": 0.053073420776365406
+    },
+    {
+      "case": 1,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "cross_XY",
+      "distance": 0.009521484375,
+      "lower": 0.0,
+      "upper": 0.047702327026365406
+    },
+    {
+      "case": 1,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "real_X",
+      "distance": 0.00689697265625,
+      "lower": 0.0,
+      "upper": 0.045077815307615406
+    },
+    {
+      "case": 1,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "imag_X",
+      "distance": 0.01007080078125,
+      "lower": 0.0,
+      "upper": 0.048251643432615406
+    },
+    {
+      "case": 1,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "power_G",
+      "distance": 0.00946044921875,
+      "lower": 0.0,
+      "upper": 0.047641291870115406
+    },
+    {
+      "case": 1,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "power_X",
+      "distance": 0.01483154296875,
+      "lower": 0.0,
+      "upper": 0.053012385620115406
+    },
+    {
+      "case": 1,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "power_Y",
+      "distance": 0.00628662109375,
+      "lower": 0.0,
+      "upper": 0.044467463745115406
+    },
+    {
+      "case": 1,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "cross_GX",
+      "distance": 0.01544189453125,
+      "lower": 0.0,
+      "upper": 0.053622737182615406
+    },
+    {
+      "case": 1,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "cross_GY",
+      "distance": 0.00921630859375,
+      "lower": 0.0,
+      "upper": 0.047397151245115406
+    },
+    {
+      "case": 1,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "cross_XY",
+      "distance": 0.00933837890625,
+      "lower": 0.0,
+      "upper": 0.047519221557615406
+    },
+    {
+      "case": 1,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "real_X",
+      "distance": 0.01446533203125,
+      "lower": 0.0,
+      "upper": 0.052646174682615406
+    },
+    {
+      "case": 1,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "imag_X",
+      "distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.038180842651365406
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "power_G",
+      "distance": 0.01556396484375,
+      "lower": 0.0,
+      "upper": 0.053744807495115406
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "power_X",
+      "distance": 0.0081787109375,
+      "lower": 0.0,
+      "upper": 0.046359553588865406
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "power_Y",
+      "distance": 0.00823974609375,
+      "lower": 0.0,
+      "upper": 0.046420588745115406
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "cross_GX",
+      "distance": 0.0084228515625,
+      "lower": 0.0,
+      "upper": 0.046603694213865406
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "cross_GY",
+      "distance": 0.00592041015625,
+      "lower": 0.0,
+      "upper": 0.044101252807615406
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "cross_XY",
+      "distance": 0.007080078125,
+      "lower": 0.0,
+      "upper": 0.045260920776365406
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "real_X",
+      "distance": 0.0091552734375,
+      "lower": 0.0,
+      "upper": 0.047336116088865406
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "imag_X",
+      "distance": 0.01177978515625,
+      "lower": 0.0,
+      "upper": 0.049960627807615406
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "power_G",
+      "distance": 0.00592041015625,
+      "lower": 0.0,
+      "upper": 0.044101252807615406
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "power_X",
+      "distance": 0.00689697265625,
+      "lower": 0.0,
+      "upper": 0.045077815307615406
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "power_Y",
+      "distance": 0.00994873046875,
+      "lower": 0.0,
+      "upper": 0.048129573120115406
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "cross_GX",
+      "distance": 0.01031494140625,
+      "lower": 0.0,
+      "upper": 0.048495784057615406
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "cross_GY",
+      "distance": 0.0067138671875,
+      "lower": 0.0,
+      "upper": 0.044894709838865406
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "cross_XY",
+      "distance": 0.01080322265625,
+      "lower": 0.0,
+      "upper": 0.048984065307615406
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "real_X",
+      "distance": 0.01324462890625,
+      "lower": 0.0,
+      "upper": 0.051425471557615406
+    },
+    {
+      "case": 1,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "imag_X",
+      "distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.038180842651365406
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "power_G",
+      "distance": 0.0101318359375,
+      "lower": 0.0,
+      "upper": 0.048312678588865406
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "power_X",
+      "distance": 0.00799560546875,
+      "lower": 0.0,
+      "upper": 0.046176448120115406
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "power_Y",
+      "distance": 0.0128173828125,
+      "lower": 0.0,
+      "upper": 0.050998225463865406
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "cross_GX",
+      "distance": 0.0089111328125,
+      "lower": 0.0,
+      "upper": 0.047091975463865406
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "cross_GY",
+      "distance": 0.00994873046875,
+      "lower": 0.0,
+      "upper": 0.048129573120115406
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "cross_XY",
+      "distance": 0.00885009765625,
+      "lower": 0.0,
+      "upper": 0.047030940307615406
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "real_X",
+      "distance": 0.00634765625,
+      "lower": 0.0,
+      "upper": 0.044528498901365406
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "imag_X",
+      "distance": 0.0113525390625,
+      "lower": 0.0,
+      "upper": 0.049533381713865406
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "power_G",
+      "distance": 0.00537109375,
+      "lower": 0.0,
+      "upper": 0.043551936401365406
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "power_X",
+      "distance": 0.00872802734375,
+      "lower": 0.0,
+      "upper": 0.046908869995115406
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "power_Y",
+      "distance": 0.0087890625,
+      "lower": 0.0,
+      "upper": 0.046969905151365406
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "cross_GX",
+      "distance": 0.009521484375,
+      "lower": 0.0,
+      "upper": 0.047702327026365406
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "cross_GY",
+      "distance": 0.00921630859375,
+      "lower": 0.0,
+      "upper": 0.047397151245115406
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "cross_XY",
+      "distance": 0.0115966796875,
+      "lower": 0.0,
+      "upper": 0.049777522338865406
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "real_X",
+      "distance": 0.01123046875,
+      "lower": 0.0,
+      "upper": 0.049411311401365406
+    },
+    {
+      "case": 1,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "imag_X",
+      "distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.038180842651365406
+    },
+    {
+      "case": 2,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "power_G",
+      "distance": 0.009521484375,
+      "lower": 0.0,
+      "upper": 0.047702327026365406
+    },
+    {
+      "case": 2,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "power_X",
+      "distance": 0.0087890625,
+      "lower": 0.0,
+      "upper": 0.046969905151365406
+    },
+    {
+      "case": 2,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "power_Y",
+      "distance": 0.0084228515625,
+      "lower": 0.0,
+      "upper": 0.046603694213865406
+    },
+    {
+      "case": 2,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "cross_GX",
+      "distance": 0.01544189453125,
+      "lower": 0.0,
+      "upper": 0.053622737182615406
+    },
+    {
+      "case": 2,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "cross_GY",
+      "distance": 0.01312255859375,
+      "lower": 0.0,
+      "upper": 0.051303401245115406
+    },
+    {
+      "case": 2,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "cross_XY",
+      "distance": 0.00860595703125,
+      "lower": 0.0,
+      "upper": 0.046786799682615406
+    },
+    {
+      "case": 2,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "real_X",
+      "distance": 0.0068359375,
+      "lower": 0.0,
+      "upper": 0.045016780151365406
+    },
+    {
+      "case": 2,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "imag_X",
+      "distance": 0.005615234375,
+      "lower": 0.0,
+      "upper": 0.043796077026365406
+    },
+    {
+      "case": 2,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "power_G",
+      "distance": 0.01031494140625,
+      "lower": 0.0,
+      "upper": 0.048495784057615406
+    },
+    {
+      "case": 2,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "power_X",
+      "distance": 0.01080322265625,
+      "lower": 0.0,
+      "upper": 0.048984065307615406
+    },
+    {
+      "case": 2,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "power_Y",
+      "distance": 0.0072021484375,
+      "lower": 0.0,
+      "upper": 0.045382991088865406
+    },
+    {
+      "case": 2,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "cross_GX",
+      "distance": 0.006591796875,
+      "lower": 0.0,
+      "upper": 0.044772639526365406
+    },
+    {
+      "case": 2,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "cross_GY",
+      "distance": 0.0076904296875,
+      "lower": 0.0,
+      "upper": 0.045871272338865406
+    },
+    {
+      "case": 2,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "cross_XY",
+      "distance": 0.00848388671875,
+      "lower": 0.0,
+      "upper": 0.046664729370115406
+    },
+    {
+      "case": 2,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "real_X",
+      "distance": 0.00970458984375,
+      "lower": 0.0,
+      "upper": 0.047885432495115406
+    },
+    {
+      "case": 2,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "imag_X",
+      "distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.038180842651365406
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "power_G",
+      "distance": 0.004638671875,
+      "lower": 0.0,
+      "upper": 0.042819514526365406
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "power_X",
+      "distance": 0.01434326171875,
+      "lower": 0.0,
+      "upper": 0.052524104370115406
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "power_Y",
+      "distance": 0.0191650390625,
+      "lower": 0.0,
+      "upper": 0.057345881713865406
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "cross_GX",
+      "distance": 0.01361083984375,
+      "lower": 0.0,
+      "upper": 0.051791682495115406
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "cross_GY",
+      "distance": 0.0091552734375,
+      "lower": 0.0,
+      "upper": 0.047336116088865406
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "cross_XY",
+      "distance": 0.0169677734375,
+      "lower": 0.0,
+      "upper": 0.055148616088865406
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "real_X",
+      "distance": 0.0064697265625,
+      "lower": 0.0,
+      "upper": 0.044650569213865406
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "imag_X",
+      "distance": 0.00897216796875,
+      "lower": 0.0,
+      "upper": 0.047153010620115406
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "power_G",
+      "distance": 0.00799560546875,
+      "lower": 0.0,
+      "upper": 0.046176448120115406
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "power_X",
+      "distance": 0.0068359375,
+      "lower": 0.0,
+      "upper": 0.045016780151365406
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "power_Y",
+      "distance": 0.00518798828125,
+      "lower": 0.0,
+      "upper": 0.043368830932615406
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "cross_GX",
+      "distance": 0.0098876953125,
+      "lower": 0.0,
+      "upper": 0.048068537963865406
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "cross_GY",
+      "distance": 0.00811767578125,
+      "lower": 0.0,
+      "upper": 0.046298518432615406
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "cross_XY",
+      "distance": 0.00604248046875,
+      "lower": 0.0,
+      "upper": 0.044223323120115406
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "real_X",
+      "distance": 0.0087890625,
+      "lower": 0.0,
+      "upper": 0.046969905151365406
+    },
+    {
+      "case": 2,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "imag_X",
+      "distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.038180842651365406
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "power_G",
+      "distance": 0.01116943359375,
+      "lower": 0.0,
+      "upper": 0.049350276245115406
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "power_X",
+      "distance": 0.00775146484375,
+      "lower": 0.0,
+      "upper": 0.045932307495115406
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "power_Y",
+      "distance": 0.00787353515625,
+      "lower": 0.0,
+      "upper": 0.046054377807615406
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "cross_GX",
+      "distance": 0.00579833984375,
+      "lower": 0.0,
+      "upper": 0.043979182495115406
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "cross_GY",
+      "distance": 0.00860595703125,
+      "lower": 0.0,
+      "upper": 0.046786799682615406
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "cross_XY",
+      "distance": 0.00482177734375,
+      "lower": 0.0,
+      "upper": 0.043002619995115406
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "real_X",
+      "distance": 0.0089111328125,
+      "lower": 0.0,
+      "upper": 0.047091975463865406
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "imag_X",
+      "distance": 0.00677490234375,
+      "lower": 0.0,
+      "upper": 0.044955744995115406
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "power_G",
+      "distance": 0.0091552734375,
+      "lower": 0.0,
+      "upper": 0.047336116088865406
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "power_X",
+      "distance": 0.0086669921875,
+      "lower": 0.0,
+      "upper": 0.046847834838865406
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "power_Y",
+      "distance": 0.00714111328125,
+      "lower": 0.0,
+      "upper": 0.045321955932615406
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "cross_GX",
+      "distance": 0.0078125,
+      "lower": 0.0,
+      "upper": 0.045993342651365406
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "cross_GY",
+      "distance": 0.0076904296875,
+      "lower": 0.0,
+      "upper": 0.045871272338865406
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "cross_XY",
+      "distance": 0.007568359375,
+      "lower": 0.0,
+      "upper": 0.045749202026365406
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "real_X",
+      "distance": 0.01129150390625,
+      "lower": 0.0,
+      "upper": 0.049472346557615406
+    },
+    {
+      "case": 2,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "imag_X",
+      "distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.038180842651365406
+    },
+    {
+      "case": 3,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "power_G",
+      "distance": 0.0133056640625,
+      "lower": 0.0,
+      "upper": 0.051486506713865406
+    },
+    {
+      "case": 3,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "power_X",
+      "distance": 0.008544921875,
+      "lower": 0.0,
+      "upper": 0.046725764526365406
+    },
+    {
+      "case": 3,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "power_Y",
+      "distance": 0.0084228515625,
+      "lower": 0.0,
+      "upper": 0.046603694213865406
+    },
+    {
+      "case": 3,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "cross_GX",
+      "distance": 0.0072021484375,
+      "lower": 0.0,
+      "upper": 0.045382991088865406
+    },
+    {
+      "case": 3,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "cross_GY",
+      "distance": 0.01007080078125,
+      "lower": 0.0,
+      "upper": 0.048251643432615406
+    },
+    {
+      "case": 3,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "cross_XY",
+      "distance": 0.00726318359375,
+      "lower": 0.0,
+      "upper": 0.045444026245115406
+    },
+    {
+      "case": 3,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "real_X",
+      "distance": 0.00787353515625,
+      "lower": 0.0,
+      "upper": 0.046054377807615406
+    },
+    {
+      "case": 3,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 32,
+      "observable": "imag_X",
+      "distance": 0.008544921875,
+      "lower": 0.0,
+      "upper": 0.046725764526365406
+    },
+    {
+      "case": 3,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "power_G",
+      "distance": 0.00909423828125,
+      "lower": 0.0,
+      "upper": 0.047275080932615406
+    },
+    {
+      "case": 3,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "power_X",
+      "distance": 0.01007080078125,
+      "lower": 0.0,
+      "upper": 0.048251643432615406
+    },
+    {
+      "case": 3,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "power_Y",
+      "distance": 0.0052490234375,
+      "lower": 0.0,
+      "upper": 0.043429866088865406
+    },
+    {
+      "case": 3,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "cross_GX",
+      "distance": 0.00738525390625,
+      "lower": 0.0,
+      "upper": 0.045566096557615406
+    },
+    {
+      "case": 3,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "cross_GY",
+      "distance": 0.00732421875,
+      "lower": 0.0,
+      "upper": 0.045505061401365406
+    },
+    {
+      "case": 3,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "cross_XY",
+      "distance": 0.0108642578125,
+      "lower": 0.0,
+      "upper": 0.049045100463865406
+    },
+    {
+      "case": 3,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "real_X",
+      "distance": 0.0106201171875,
+      "lower": 0.0,
+      "upper": 0.048800959838865406
+    },
+    {
+      "case": 3,
+      "method": 0,
+      "time": 0.00016666666666666666,
+      "mode": 250,
+      "observable": "imag_X",
+      "distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.038180842651365406
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "power_G",
+      "distance": 0.00885009765625,
+      "lower": 0.0,
+      "upper": 0.047030940307615406
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "power_X",
+      "distance": 0.008544921875,
+      "lower": 0.0,
+      "upper": 0.046725764526365406
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "power_Y",
+      "distance": 0.01177978515625,
+      "lower": 0.0,
+      "upper": 0.049960627807615406
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "cross_GX",
+      "distance": 0.01275634765625,
+      "lower": 0.0,
+      "upper": 0.050937190307615406
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "cross_GY",
+      "distance": 0.0096435546875,
+      "lower": 0.0,
+      "upper": 0.047824397338865406
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "cross_XY",
+      "distance": 0.009765625,
+      "lower": 0.0,
+      "upper": 0.047946467651365406
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "real_X",
+      "distance": 0.01287841796875,
+      "lower": 0.0,
+      "upper": 0.051059260620115406
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 32,
+      "observable": "imag_X",
+      "distance": 0.01470947265625,
+      "lower": 0.0,
+      "upper": 0.052890315307615406
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "power_G",
+      "distance": 0.00848388671875,
+      "lower": 0.0,
+      "upper": 0.046664729370115406
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "power_X",
+      "distance": 0.00701904296875,
+      "lower": 0.0,
+      "upper": 0.045199885620115406
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "power_Y",
+      "distance": 0.0103759765625,
+      "lower": 0.0,
+      "upper": 0.048556819213865406
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "cross_GX",
+      "distance": 0.01123046875,
+      "lower": 0.0,
+      "upper": 0.049411311401365406
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "cross_GY",
+      "distance": 0.0130615234375,
+      "lower": 0.0,
+      "upper": 0.051242366088865406
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "cross_XY",
+      "distance": 0.00982666015625,
+      "lower": 0.0,
+      "upper": 0.048007502807615406
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "real_X",
+      "distance": 0.005859375,
+      "lower": 0.0,
+      "upper": 0.044040217651365406
+    },
+    {
+      "case": 3,
+      "method": 1,
+      "time": 8.333333333333333e-05,
+      "mode": 250,
+      "observable": "imag_X",
+      "distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.038180842651365406
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "power_G",
+      "distance": 0.01275634765625,
+      "lower": 0.0,
+      "upper": 0.050937190307615406
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "power_X",
+      "distance": 0.01580810546875,
+      "lower": 0.0,
+      "upper": 0.053988948120115406
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "power_Y",
+      "distance": 0.00836181640625,
+      "lower": 0.0,
+      "upper": 0.046542659057615406
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "cross_GX",
+      "distance": 0.0145263671875,
+      "lower": 0.0,
+      "upper": 0.052707209838865406
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "cross_GY",
+      "distance": 0.014892578125,
+      "lower": 0.0,
+      "upper": 0.053073420776365406
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "cross_XY",
+      "distance": 0.010986328125,
+      "lower": 0.0,
+      "upper": 0.049167170776365406
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "real_X",
+      "distance": 0.01092529296875,
+      "lower": 0.0,
+      "upper": 0.049106135620115406
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 32,
+      "observable": "imag_X",
+      "distance": 0.0142822265625,
+      "lower": 0.0,
+      "upper": 0.052463069213865406
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "power_G",
+      "distance": 0.00531005859375,
+      "lower": 0.0,
+      "upper": 0.043490901245115406
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "power_X",
+      "distance": 0.0115966796875,
+      "lower": 0.0,
+      "upper": 0.049777522338865406
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "power_Y",
+      "distance": 0.0062255859375,
+      "lower": 0.0,
+      "upper": 0.044406428588865406
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "cross_GX",
+      "distance": 0.01348876953125,
+      "lower": 0.0,
+      "upper": 0.051669612182615406
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "cross_GY",
+      "distance": 0.01129150390625,
+      "lower": 0.0,
+      "upper": 0.049472346557615406
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "cross_XY",
+      "distance": 0.00823974609375,
+      "lower": 0.0,
+      "upper": 0.046420588745115406
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "real_X",
+      "distance": 0.00811767578125,
+      "lower": 0.0,
+      "upper": 0.046298518432615406
+    },
+    {
+      "case": 3,
+      "method": 2,
+      "time": 4.1666666666666665e-05,
+      "mode": 250,
+      "observable": "imag_X",
+      "distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.038180842651365406
+    }
+  ],
+  "short": [
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "power_G",
+      "distance": 0.01031494140625,
+      "lower": 0.0,
+      "upper": 0.047371169663168934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "power_X",
+      "distance": 0.0125732421875,
+      "lower": 0.0,
+      "upper": 0.049629470444418934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "power_Y",
+      "distance": 0.0076904296875,
+      "lower": 0.0,
+      "upper": 0.044746657944418934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "cross_GX",
+      "distance": 0.0101318359375,
+      "lower": 0.0,
+      "upper": 0.047188064194418934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "cross_GY",
+      "distance": 0.00946044921875,
+      "lower": 0.0,
+      "upper": 0.046516677475668934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "cross_XY",
+      "distance": 0.0069580078125,
+      "lower": 0.0,
+      "upper": 0.044014236069418934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "real_X",
+      "distance": 0.013671875,
+      "lower": 0.0,
+      "upper": 0.050728103256918934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "imag_X",
+      "distance": 0.006591796875,
+      "lower": 0.0,
+      "upper": 0.043648025131918934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "power_G",
+      "distance": 0.0050048828125,
+      "lower": 0.0,
+      "upper": 0.042061111069418934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "power_X",
+      "distance": 0.00579833984375,
+      "lower": 0.0,
+      "upper": 0.042854568100668934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "power_Y",
+      "distance": 0.0106201171875,
+      "lower": 0.0,
+      "upper": 0.047676345444418934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "cross_GX",
+      "distance": 0.01318359375,
+      "lower": 0.0,
+      "upper": 0.050239822006918934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "cross_GY",
+      "distance": 0.00750732421875,
+      "lower": 0.0,
+      "upper": 0.044563552475668934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "cross_XY",
+      "distance": 0.00787353515625,
+      "lower": 0.0,
+      "upper": 0.044929763413168934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "real_X",
+      "distance": 0.010498046875,
+      "lower": 0.0,
+      "upper": 0.047554275131918934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "imag_X",
+      "distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.037056228256918934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "power_G",
+      "distance": 0.00738525390625,
+      "lower": 0.0,
+      "upper": 0.044441482163168934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "power_X",
+      "distance": 0.0057373046875,
+      "lower": 0.0,
+      "upper": 0.042793532944418934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "power_Y",
+      "distance": 0.0108642578125,
+      "lower": 0.0,
+      "upper": 0.047920486069418934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "cross_GX",
+      "distance": 0.008056640625,
+      "lower": 0.0,
+      "upper": 0.045112868881918934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "cross_GY",
+      "distance": 0.00738525390625,
+      "lower": 0.0,
+      "upper": 0.044441482163168934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "cross_XY",
+      "distance": 0.01116943359375,
+      "lower": 0.0,
+      "upper": 0.048225661850668934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "real_X",
+      "distance": 0.00762939453125,
+      "lower": 0.0,
+      "upper": 0.044685622788168934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "imag_X",
+      "distance": 0.00653076171875,
+      "lower": 0.0,
+      "upper": 0.043586989975668934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "power_G",
+      "distance": 0.0068359375,
+      "lower": 0.0,
+      "upper": 0.043892165756918934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "power_X",
+      "distance": 0.00933837890625,
+      "lower": 0.0,
+      "upper": 0.046394607163168934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "power_Y",
+      "distance": 0.0093994140625,
+      "lower": 0.0,
+      "upper": 0.046455642319418934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "cross_GX",
+      "distance": 0.00848388671875,
+      "lower": 0.0,
+      "upper": 0.045540114975668934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "cross_GY",
+      "distance": 0.01104736328125,
+      "lower": 0.0,
+      "upper": 0.048103591538168934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "cross_XY",
+      "distance": 0.00457763671875,
+      "lower": 0.0,
+      "upper": 0.041633864975668934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "real_X",
+      "distance": 0.0115966796875,
+      "lower": 0.0,
+      "upper": 0.048652907944418934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "imag_X",
+      "distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.037056228256918934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "power_G",
+      "distance": 0.013427734375,
+      "lower": 0.0,
+      "upper": 0.050483962631918934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "power_X",
+      "distance": 0.0096435546875,
+      "lower": 0.0,
+      "upper": 0.046699782944418934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "power_Y",
+      "distance": 0.006591796875,
+      "lower": 0.0,
+      "upper": 0.043648025131918934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "cross_GX",
+      "distance": 0.01025390625,
+      "lower": 0.0,
+      "upper": 0.047310134506918934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "cross_GY",
+      "distance": 0.00994873046875,
+      "lower": 0.0,
+      "upper": 0.047004958725668934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "cross_XY",
+      "distance": 0.00787353515625,
+      "lower": 0.0,
+      "upper": 0.044929763413168934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "real_X",
+      "distance": 0.01165771484375,
+      "lower": 0.0,
+      "upper": 0.048713943100668934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "imag_X",
+      "distance": 0.00970458984375,
+      "lower": 0.0,
+      "upper": 0.046760818100668934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "power_G",
+      "distance": 0.00439453125,
+      "lower": 0.0,
+      "upper": 0.041450759506918934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "power_X",
+      "distance": 0.00872802734375,
+      "lower": 0.0,
+      "upper": 0.045784255600668934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "power_Y",
+      "distance": 0.0098876953125,
+      "lower": 0.0,
+      "upper": 0.046943923569418934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "cross_GX",
+      "distance": 0.00714111328125,
+      "lower": 0.0,
+      "upper": 0.044197341538168934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "cross_GY",
+      "distance": 0.00823974609375,
+      "lower": 0.0,
+      "upper": 0.045295974350668934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "cross_XY",
+      "distance": 0.01025390625,
+      "lower": 0.0,
+      "upper": 0.047310134506918934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "real_X",
+      "distance": 0.0059814453125,
+      "lower": 0.0,
+      "upper": 0.043037673569418934
+    },
+    {
+      "case": 4,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "imag_X",
+      "distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.037056228256918934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "power_G",
+      "distance": 0.0123291015625,
+      "lower": 0.0,
+      "upper": 0.049385329819418934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "power_X",
+      "distance": 0.00738525390625,
+      "lower": 0.0,
+      "upper": 0.044441482163168934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "power_Y",
+      "distance": 0.01336669921875,
+      "lower": 0.0,
+      "upper": 0.050422927475668934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "cross_GX",
+      "distance": 0.00701904296875,
+      "lower": 0.0,
+      "upper": 0.044075271225668934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "cross_GY",
+      "distance": 0.0091552734375,
+      "lower": 0.0,
+      "upper": 0.046211501694418934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "cross_XY",
+      "distance": 0.00885009765625,
+      "lower": 0.0,
+      "upper": 0.045906325913168934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "real_X",
+      "distance": 0.00604248046875,
+      "lower": 0.0,
+      "upper": 0.043098708725668934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "imag_X",
+      "distance": 0.00848388671875,
+      "lower": 0.0,
+      "upper": 0.045540114975668934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "power_G",
+      "distance": 0.01055908203125,
+      "lower": 0.0,
+      "upper": 0.047615310288168934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "power_X",
+      "distance": 0.0103759765625,
+      "lower": 0.0,
+      "upper": 0.047432204819418934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "power_Y",
+      "distance": 0.00732421875,
+      "lower": 0.0,
+      "upper": 0.044380447006918934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "cross_GX",
+      "distance": 0.0087890625,
+      "lower": 0.0,
+      "upper": 0.045845290756918934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "cross_GY",
+      "distance": 0.01043701171875,
+      "lower": 0.0,
+      "upper": 0.047493239975668934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "cross_XY",
+      "distance": 0.0078125,
+      "lower": 0.0,
+      "upper": 0.044868728256918934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "real_X",
+      "distance": 0.00946044921875,
+      "lower": 0.0,
+      "upper": 0.046516677475668934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "imag_X",
+      "distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.037056228256918934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "power_G",
+      "distance": 0.0069580078125,
+      "lower": 0.0,
+      "upper": 0.044014236069418934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "power_X",
+      "distance": 0.00897216796875,
+      "lower": 0.0,
+      "upper": 0.046028396225668934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "power_Y",
+      "distance": 0.00994873046875,
+      "lower": 0.0,
+      "upper": 0.047004958725668934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "cross_GX",
+      "distance": 0.007568359375,
+      "lower": 0.0,
+      "upper": 0.044624587631918934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "cross_GY",
+      "distance": 0.00994873046875,
+      "lower": 0.0,
+      "upper": 0.047004958725668934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "cross_XY",
+      "distance": 0.00958251953125,
+      "lower": 0.0,
+      "upper": 0.046638747788168934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "real_X",
+      "distance": 0.008544921875,
+      "lower": 0.0,
+      "upper": 0.045601150131918934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "imag_X",
+      "distance": 0.00567626953125,
+      "lower": 0.0,
+      "upper": 0.042732497788168934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "power_G",
+      "distance": 0.0091552734375,
+      "lower": 0.0,
+      "upper": 0.046211501694418934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "power_X",
+      "distance": 0.0120849609375,
+      "lower": 0.0,
+      "upper": 0.049141189194418934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "power_Y",
+      "distance": 0.00909423828125,
+      "lower": 0.0,
+      "upper": 0.046150466538168934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "cross_GX",
+      "distance": 0.00653076171875,
+      "lower": 0.0,
+      "upper": 0.043586989975668934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "cross_GY",
+      "distance": 0.010986328125,
+      "lower": 0.0,
+      "upper": 0.048042556381918934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "cross_XY",
+      "distance": 0.00762939453125,
+      "lower": 0.0,
+      "upper": 0.044685622788168934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "real_X",
+      "distance": 0.0067138671875,
+      "lower": 0.0,
+      "upper": 0.043770095444418934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "imag_X",
+      "distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.037056228256918934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "power_G",
+      "distance": 0.005859375,
+      "lower": 0.0,
+      "upper": 0.042915603256918934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "power_X",
+      "distance": 0.01092529296875,
+      "lower": 0.0,
+      "upper": 0.047981521225668934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "power_Y",
+      "distance": 0.00567626953125,
+      "lower": 0.0,
+      "upper": 0.042732497788168934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "cross_GX",
+      "distance": 0.00653076171875,
+      "lower": 0.0,
+      "upper": 0.043586989975668934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "cross_GY",
+      "distance": 0.00555419921875,
+      "lower": 0.0,
+      "upper": 0.042610427475668934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "cross_XY",
+      "distance": 0.00689697265625,
+      "lower": 0.0,
+      "upper": 0.043953200913168934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "real_X",
+      "distance": 0.0064697265625,
+      "lower": 0.0,
+      "upper": 0.043525954819418934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "imag_X",
+      "distance": 0.01177978515625,
+      "lower": 0.0,
+      "upper": 0.048836013413168934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "power_G",
+      "distance": 0.0096435546875,
+      "lower": 0.0,
+      "upper": 0.046699782944418934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "power_X",
+      "distance": 0.0045166015625,
+      "lower": 0.0,
+      "upper": 0.041572829819418934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "power_Y",
+      "distance": 0.005859375,
+      "lower": 0.0,
+      "upper": 0.042915603256918934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "cross_GX",
+      "distance": 0.00701904296875,
+      "lower": 0.0,
+      "upper": 0.044075271225668934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "cross_GY",
+      "distance": 0.0050048828125,
+      "lower": 0.0,
+      "upper": 0.042061111069418934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "cross_XY",
+      "distance": 0.01104736328125,
+      "lower": 0.0,
+      "upper": 0.048103591538168934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "real_X",
+      "distance": 0.00762939453125,
+      "lower": 0.0,
+      "upper": 0.044685622788168934
+    },
+    {
+      "case": 5,
+      "method": 3,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "imag_X",
+      "distance": 0.0,
+      "lower": 0.0,
+      "upper": 0.037056228256918934
+    }
+  ],
+  "coarse_descriptive": [
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "power_G",
+      "distance": 0.0101318359375
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "power_X",
+      "distance": 0.01123046875
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "power_Y",
+      "distance": 0.0079345703125
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "cross_GX",
+      "distance": 0.0091552734375
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "cross_GY",
+      "distance": 0.0115966796875
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "cross_XY",
+      "distance": 0.00775146484375
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "real_X",
+      "distance": 0.0069580078125
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "imag_X",
+      "distance": 0.00482177734375
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "power_G",
+      "distance": 0.00457763671875
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "power_X",
+      "distance": 0.0054931640625
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "power_Y",
+      "distance": 0.026123046875
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "cross_GX",
+      "distance": 0.015380859375
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "cross_GY",
+      "distance": 0.0125732421875
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "cross_XY",
+      "distance": 0.0118408203125
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "real_X",
+      "distance": 0.01031494140625
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "imag_X",
+      "distance": 0.0
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "power_G",
+      "distance": 0.01361083984375
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "power_X",
+      "distance": 0.0101318359375
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "power_Y",
+      "distance": 0.01287841796875
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "cross_GX",
+      "distance": 0.0118408203125
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "cross_GY",
+      "distance": 0.008544921875
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "cross_XY",
+      "distance": 0.01129150390625
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "real_X",
+      "distance": 0.0093994140625
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "imag_X",
+      "distance": 0.00823974609375
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "power_G",
+      "distance": 0.0069580078125
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "power_X",
+      "distance": 0.0118408203125
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "power_Y",
+      "distance": 0.0223388671875
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "cross_GX",
+      "distance": 0.007080078125
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "cross_GY",
+      "distance": 0.01153564453125
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "cross_XY",
+      "distance": 0.0125732421875
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "real_X",
+      "distance": 0.0146484375
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "imag_X",
+      "distance": 0.0
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "power_G",
+      "distance": 0.01226806640625
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "power_X",
+      "distance": 0.00616455078125
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "power_Y",
+      "distance": 0.0057373046875
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "cross_GX",
+      "distance": 0.01263427734375
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "cross_GY",
+      "distance": 0.0120849609375
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "cross_XY",
+      "distance": 0.00592041015625
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "real_X",
+      "distance": 0.00775146484375
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "imag_X",
+      "distance": 0.00787353515625
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "power_G",
+      "distance": 0.00555419921875
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "power_X",
+      "distance": 0.01019287109375
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "power_Y",
+      "distance": 0.01934814453125
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "cross_GX",
+      "distance": 0.01385498046875
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "cross_GY",
+      "distance": 0.01043701171875
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "cross_XY",
+      "distance": 0.01190185546875
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "real_X",
+      "distance": 0.0126953125
+    },
+    {
+      "case": 4,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "imag_X",
+      "distance": 0.0
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "power_G",
+      "distance": 0.00701904296875
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "power_X",
+      "distance": 0.0076904296875
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "power_Y",
+      "distance": 0.008056640625
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "cross_GX",
+      "distance": 0.01397705078125
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "cross_GY",
+      "distance": 0.01409912109375
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "cross_XY",
+      "distance": 0.0050048828125
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "real_X",
+      "distance": 0.0062255859375
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "imag_X",
+      "distance": 0.00775146484375
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "power_G",
+      "distance": 0.00604248046875
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "power_X",
+      "distance": 0.0054931640625
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "power_Y",
+      "distance": 0.01580810546875
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "cross_GX",
+      "distance": 0.0166015625
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "cross_GY",
+      "distance": 0.0078125
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "cross_XY",
+      "distance": 0.0074462890625
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "real_X",
+      "distance": 0.00689697265625
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "imag_X",
+      "distance": 0.0
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "power_G",
+      "distance": 0.0078125
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "power_X",
+      "distance": 0.0103759765625
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "power_Y",
+      "distance": 0.0108642578125
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "cross_GX",
+      "distance": 0.01092529296875
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "cross_GY",
+      "distance": 0.01275634765625
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "cross_XY",
+      "distance": 0.0107421875
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "real_X",
+      "distance": 0.0084228515625
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "imag_X",
+      "distance": 0.0074462890625
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "power_G",
+      "distance": 0.00579833984375
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "power_X",
+      "distance": 0.013916015625
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "power_Y",
+      "distance": 0.006103515625
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "cross_GX",
+      "distance": 0.00848388671875
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "cross_GY",
+      "distance": 0.00616455078125
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "cross_XY",
+      "distance": 0.01055908203125
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "real_X",
+      "distance": 0.01251220703125
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "imag_X",
+      "distance": 0.0
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "power_G",
+      "distance": 0.0072021484375
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "power_X",
+      "distance": 0.00689697265625
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "power_Y",
+      "distance": 0.00958251953125
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "cross_GX",
+      "distance": 0.00787353515625
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "cross_GY",
+      "distance": 0.00860595703125
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "cross_XY",
+      "distance": 0.00787353515625
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "real_X",
+      "distance": 0.00762939453125
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "imag_X",
+      "distance": 0.009033203125
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "power_G",
+      "distance": 0.00689697265625
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "power_X",
+      "distance": 0.0086669921875
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "power_Y",
+      "distance": 0.01214599609375
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "cross_GX",
+      "distance": 0.00848388671875
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "cross_GY",
+      "distance": 0.0125732421875
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "cross_XY",
+      "distance": 0.007080078125
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "real_X",
+      "distance": 0.00750732421875
+    },
+    {
+      "case": 4,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "imag_X",
+      "distance": 0.0
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "power_G",
+      "distance": 0.0084228515625
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "power_X",
+      "distance": 0.00677490234375
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "power_Y",
+      "distance": 0.00726318359375
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "cross_GX",
+      "distance": 0.00738525390625
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "cross_GY",
+      "distance": 0.00830078125
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "cross_XY",
+      "distance": 0.00714111328125
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "real_X",
+      "distance": 0.0079345703125
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "imag_X",
+      "distance": 0.0086669921875
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "power_G",
+      "distance": 0.01690673828125
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "power_X",
+      "distance": 0.01171875
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "power_Y",
+      "distance": 0.01727294921875
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "cross_GX",
+      "distance": 0.0145263671875
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "cross_GY",
+      "distance": 0.01171875
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "cross_XY",
+      "distance": 0.009033203125
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "real_X",
+      "distance": 0.01019287109375
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "imag_X",
+      "distance": 0.0
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "power_G",
+      "distance": 0.01007080078125
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "power_X",
+      "distance": 0.0062255859375
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "power_Y",
+      "distance": 0.00799560546875
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "cross_GX",
+      "distance": 0.01226806640625
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "cross_GY",
+      "distance": 0.0059814453125
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "cross_XY",
+      "distance": 0.008544921875
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "real_X",
+      "distance": 0.00848388671875
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "imag_X",
+      "distance": 0.0069580078125
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "power_G",
+      "distance": 0.00738525390625
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "power_X",
+      "distance": 0.01727294921875
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "power_Y",
+      "distance": 0.0172119140625
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "cross_GX",
+      "distance": 0.017333984375
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "cross_GY",
+      "distance": 0.01055908203125
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "cross_XY",
+      "distance": 0.0179443359375
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "real_X",
+      "distance": 0.01055908203125
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "imag_X",
+      "distance": 0.0
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "power_G",
+      "distance": 0.0069580078125
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "power_X",
+      "distance": 0.0103759765625
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "power_Y",
+      "distance": 0.00811767578125
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "cross_GX",
+      "distance": 0.007080078125
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "cross_GY",
+      "distance": 0.0091552734375
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "cross_XY",
+      "distance": 0.0069580078125
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "real_X",
+      "distance": 0.00634765625
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "imag_X",
+      "distance": 0.0050048828125
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "power_G",
+      "distance": 0.01708984375
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "power_X",
+      "distance": 0.00811767578125
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "power_Y",
+      "distance": 0.00714111328125
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "cross_GX",
+      "distance": 0.013427734375
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "cross_GY",
+      "distance": 0.00927734375
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "cross_XY",
+      "distance": 0.0140380859375
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "real_X",
+      "distance": 0.0086669921875
+    },
+    {
+      "case": 5,
+      "method": 1,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "imag_X",
+      "distance": 0.0
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "power_G",
+      "distance": 0.01287841796875
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "power_X",
+      "distance": 0.0074462890625
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "power_Y",
+      "distance": 0.01226806640625
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "cross_GX",
+      "distance": 0.00726318359375
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "cross_GY",
+      "distance": 0.00604248046875
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "cross_XY",
+      "distance": 0.0084228515625
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "real_X",
+      "distance": 0.00714111328125
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 1,
+      "observable": "imag_X",
+      "distance": 0.00543212890625
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "power_G",
+      "distance": 0.00860595703125
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "power_X",
+      "distance": 0.0106201171875
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "power_Y",
+      "distance": 0.01123046875
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "cross_GX",
+      "distance": 0.009033203125
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "cross_GY",
+      "distance": 0.00567626953125
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "cross_XY",
+      "distance": 0.0074462890625
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "real_X",
+      "distance": 0.00714111328125
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.000125,
+      "mode": 8,
+      "observable": "imag_X",
+      "distance": 0.0
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "power_G",
+      "distance": 0.009765625
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "power_X",
+      "distance": 0.009033203125
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "power_Y",
+      "distance": 0.0072021484375
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "cross_GX",
+      "distance": 0.0096435546875
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "cross_GY",
+      "distance": 0.007568359375
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "cross_XY",
+      "distance": 0.0123291015625
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "real_X",
+      "distance": 0.00823974609375
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 1,
+      "observable": "imag_X",
+      "distance": 0.00811767578125
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "power_G",
+      "distance": 0.008056640625
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "power_X",
+      "distance": 0.01214599609375
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "power_Y",
+      "distance": 0.01287841796875
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "cross_GX",
+      "distance": 0.01513671875
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "cross_GY",
+      "distance": 0.00830078125
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "cross_XY",
+      "distance": 0.01263427734375
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "real_X",
+      "distance": 0.00750732421875
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.00025,
+      "mode": 8,
+      "observable": "imag_X",
+      "distance": 0.0
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "power_G",
+      "distance": 0.01385498046875
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "power_X",
+      "distance": 0.0120849609375
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "power_Y",
+      "distance": 0.00787353515625
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "cross_GX",
+      "distance": 0.00726318359375
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "cross_GY",
+      "distance": 0.00726318359375
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "cross_XY",
+      "distance": 0.01055908203125
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "real_X",
+      "distance": 0.0078125
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 1,
+      "observable": "imag_X",
+      "distance": 0.01446533203125
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "power_G",
+      "distance": 0.01336669921875
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "power_X",
+      "distance": 0.0062255859375
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "power_Y",
+      "distance": 0.00531005859375
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "cross_GX",
+      "distance": 0.00823974609375
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "cross_GY",
+      "distance": 0.00775146484375
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "cross_XY",
+      "distance": 0.0089111328125
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "real_X",
+      "distance": 0.011962890625
+    },
+    {
+      "case": 5,
+      "method": 2,
+      "time": 0.0005,
+      "mode": 8,
+      "observable": "imag_X",
+      "distance": 0.0
+    }
+  ],
+  "snapshot_max_upper": 0.057345881713865406,
+  "short_max_upper": 0.050728103256918934
+}

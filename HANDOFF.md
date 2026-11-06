@@ -1,8 +1,8 @@
-# Current handoff — 2026-11-06 (MG050)
+# Current handoff — 2026-11-06 (MG051)
 
 - **Roles:** Richard Benear is PI; ChatGPT / Codex leads planning, implementation, validation, authorized runs, analysis and documentation. Claude/other external review is optional. [Active protocol](RESEARCH_PROTOCOL.md).
 - **Last closed gate:** MG10-S1, PI sign-off MG049, QUALIFIED ON TESTED SMALL SYSTEMS. MG10-C1 remains CLOSED; original MG10 remains UNRESOLVED.
-- **Next gate:** MG10-S2 actual-lattice spatial-noise qualification REGISTERED MG050. Qualification/checks PASS; static precision correction doubles unregistered candidate to R16384, all prior versions retained. Forecast fits7200 worker-second cap; run88 fixed jobs locally <=8 workers. No scientific ensemble yet. See spec/MG10S2_proposal.md and results/MG10S2/registration.json.
+- **Next gate:** S2 completed (MG051): QUALIFIED WITHIN REGISTERED S2 SCOPE; both snapshot/short spatial-law families qualify. All88 jobs/32 groups/524288 trajectories complete; independent checker verifies1280 shards and288 primary bounds. Production0.362493 core-hours, no timeout/budget stop. PI closure pending. Full archive retained/uploaded in data batches. See results/MG10S2/MG10S2_results.md. Next design can address stochastic recovery/finite-capacity effects with long-horizon refinement and persistence criteria; no further production registered.
 - **Archive baseline:** [StochasticVacuum](https://github.com/RichardBenear/StochasticVacuum), private, commit `2161211ccc9d8427af98ebeefcabf7f379b83a37`. Reuse selected machinery with provenance and new validation.
 - **Time semantics:** MG10 proposes the existing continuous-time model for its first extension. A fundamental-tick law remains a separate modeling decision.
 - **Q5:** MG8's frozen record remains open as scored. A possible reframing of Q5 was discussed with the PI, but no new Q5 study or rescoring is registered here.

@@ -1,0 +1,81 @@
+{
+  "job": {
+    "id": "short_c4_m3_b7",
+    "kind": "short",
+    "case": 4,
+    "method": 3,
+    "block": 7,
+    "reps": 2048,
+    "chunk": 256,
+    "offset": 56,
+    "stage": 4903,
+    "warmup": false
+  },
+  "replicates": 2048,
+  "shards": [
+    {
+      "file": "short_c4_m3_b7_part056.npz",
+      "replicates": 256,
+      "chunk": 56,
+      "seed": 547755833,
+      "sha256": "18fad940e77201c3482c493e0eff2ccb5345ae99d63aae29c2c5d36dcc7fe0d9",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c4_m3_b7_part057.npz",
+      "replicates": 256,
+      "chunk": 57,
+      "seed": 1226263526,
+      "sha256": "a7f3e2f9182294edfcad9d6a7706825cb015e5f38bb71dc60333c65280a23d27",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c4_m3_b7_part058.npz",
+      "replicates": 256,
+      "chunk": 58,
+      "seed": 2533354769,
+      "sha256": "2485295e85c6c65b045d97e7f13b29359b85abb164f1eda6040034da5f45ab49",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c4_m3_b7_part059.npz",
+      "replicates": 256,
+      "chunk": 59,
+      "seed": 4033331919,
+      "sha256": "e4f44568fb95da85ed01a554ca8c823d71095f7c829ee6e29e1e28df4d128af3",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c4_m3_b7_part060.npz",
+      "replicates": 256,
+      "chunk": 60,
+      "seed": 1870953185,
+      "sha256": "6b572f1ddb0102a470c659385209657c6890515468ccfac6c81dec658dec4a33",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c4_m3_b7_part061.npz",
+      "replicates": 256,
+      "chunk": 61,
+      "seed": 1541595880,
+      "sha256": "7b8eb0483be923e7318af09322a4db4cd1841b00178815de01e1c915e9322e3e",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c4_m3_b7_part062.npz",
+      "replicates": 256,
+      "chunk": 62,
+      "seed": 1256149316,
+      "sha256": "b6804ff4a823c00c37bce1a4f9afc9c2e7903aec7098d645c1347345b33dafa2",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c4_m3_b7_part063.npz",
+      "replicates": 256,
+      "chunk": 63,
+      "seed": 3254920362,
+      "sha256": "f6643d2d2cb26c4cbe671b3908c9df9a86b1f8388ab39adeafcef7edefe2b8b5",
+      "population_sha256": null
+    }
+  ]
+}

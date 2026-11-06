@@ -1,0 +1,81 @@
+{
+  "job": {
+    "id": "short_c5_m3_b0",
+    "kind": "short",
+    "case": 5,
+    "method": 3,
+    "block": 0,
+    "reps": 2048,
+    "chunk": 256,
+    "offset": 0,
+    "stage": 4903,
+    "warmup": false
+  },
+  "replicates": 2048,
+  "shards": [
+    {
+      "file": "short_c5_m3_b0_part000.npz",
+      "replicates": 256,
+      "chunk": 0,
+      "seed": 1908010464,
+      "sha256": "72c5f206d2b708c03a960adde103170397f41019f68cae3a204d501b9bba407a",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c5_m3_b0_part001.npz",
+      "replicates": 256,
+      "chunk": 1,
+      "seed": 3860299924,
+      "sha256": "e6f33018972685b87e6077f4eeda8810221fac0f5b69f4d0a7fec022541d551d",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c5_m3_b0_part002.npz",
+      "replicates": 256,
+      "chunk": 2,
+      "seed": 4294249728,
+      "sha256": "98a97641642ffb58f8f106a8cb47adde32afe8ca14a9867ad464fc064c8fe559",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c5_m3_b0_part003.npz",
+      "replicates": 256,
+      "chunk": 3,
+      "seed": 3730116336,
+      "sha256": "9ed32ea796a77f151a4d0920c047902c781c3c45c35b96fb5b10274c9a7cba3b",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c5_m3_b0_part004.npz",
+      "replicates": 256,
+      "chunk": 4,
+      "seed": 3192945072,
+      "sha256": "24666d786a5f4b0c6dc0927cd3dc5b733d28138318ae3fdc7b9c08b975ab3195",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c5_m3_b0_part005.npz",
+      "replicates": 256,
+      "chunk": 5,
+      "seed": 311661180,
+      "sha256": "7aa10687bb37281253a5242f5a8e9c2e18d5b530f66971a7c3abfd9a909f07b2",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c5_m3_b0_part006.npz",
+      "replicates": 256,
+      "chunk": 6,
+      "seed": 1260345176,
+      "sha256": "9dda2911bdc78353e91b7c866cf1d148918912881933450e5b980b2b6489add8",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c5_m3_b0_part007.npz",
+      "replicates": 256,
+      "chunk": 7,
+      "seed": 2680297815,
+      "sha256": "5408ba0c68e93b0a816a06f9ada88c517996bb9b79916953e1a0053dc6aff235",
+      "population_sha256": null
+    }
+  ]
+}

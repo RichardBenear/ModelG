@@ -1,0 +1,90 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "short_c5_m2_b1",
+    "kind": "short",
+    "case": 5,
+    "method": 2,
+    "block": 1,
+    "reps": 2048,
+    "chunk": 256,
+    "offset": 8,
+    "stage": 4903,
+    "warmup": false
+  },
+  "replicates": 2048,
+  "shards": [
+    {
+      "file": "short_c5_m2_b1_part008.npz",
+      "replicates": 256,
+      "chunk": 8,
+      "seed": 765775862,
+      "sha256": "be5da58557dd9895da8566861a4d9461b40a0fa24ee411cd87c76f077d1db644",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c5_m2_b1_part009.npz",
+      "replicates": 256,
+      "chunk": 9,
+      "seed": 2630453185,
+      "sha256": "5fd35d0b9c7099f3145ee6564ad78ecca8dc5b391986a604f1531ba22bb250e3",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c5_m2_b1_part010.npz",
+      "replicates": 256,
+      "chunk": 10,
+      "seed": 2623895707,
+      "sha256": "c485eb6bdba1681501ee59ae6e5a1711386c6b55ec4819fa1dce6c00f80ba298",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c5_m2_b1_part011.npz",
+      "replicates": 256,
+      "chunk": 11,
+      "seed": 2365084778,
+      "sha256": "461e393e18e24d681b80bcadd7278f132b650774ada0b2d732ca4da4881c59a8",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c5_m2_b1_part012.npz",
+      "replicates": 256,
+      "chunk": 12,
+      "seed": 2119258275,
+      "sha256": "61a470c42233ab5dcee65a6a098525e6e047fb4f8947fb33599c442c32276969",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c5_m2_b1_part013.npz",
+      "replicates": 256,
+      "chunk": 13,
+      "seed": 1399758807,
+      "sha256": "cc5837ac9681d8ec252656ef2b947c6341fed42ea11beff7e71225cc872fcd5f",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c5_m2_b1_part014.npz",
+      "replicates": 256,
+      "chunk": 14,
+      "seed": 759851865,
+      "sha256": "de794091d03af5b3235a82111305ae03e3044066748b5bfa7e63b48fdccbfd5c",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c5_m2_b1_part015.npz",
+      "replicates": 256,
+      "chunk": 15,
+      "seed": 3720454383,
+      "sha256": "b7ad249da2654f02039dccb291ababfece3bbe35cb1ecf4930a3cb237b611dac",
+      "population_sha256": null
+    }
+  ],
+  "compute_seconds": 1.2487836999353021,
+  "worker_elapsed_seconds": 3.0773322000168264,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "numpy": "2.2.4",
+  "scipy": "1.16.1",
+  "numba": "0.68.0",
+  "threads_per_library": 1
+}

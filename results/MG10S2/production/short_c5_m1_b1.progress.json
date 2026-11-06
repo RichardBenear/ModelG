@@ -1,0 +1,81 @@
+{
+  "job": {
+    "id": "short_c5_m1_b1",
+    "kind": "short",
+    "case": 5,
+    "method": 1,
+    "block": 1,
+    "reps": 2048,
+    "chunk": 256,
+    "offset": 8,
+    "stage": 4903,
+    "warmup": false
+  },
+  "replicates": 2048,
+  "shards": [
+    {
+      "file": "short_c5_m1_b1_part008.npz",
+      "replicates": 256,
+      "chunk": 8,
+      "seed": 726696451,
+      "sha256": "4aa6f4e2836b5dd1f4fa13dd9fae8db662f2be4624aeb375a3619e990a4720cf",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c5_m1_b1_part009.npz",
+      "replicates": 256,
+      "chunk": 9,
+      "seed": 2957711679,
+      "sha256": "827e086be8045bca169d746bc7d61734a5d652954caddec3216b38e189bbb538",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c5_m1_b1_part010.npz",
+      "replicates": 256,
+      "chunk": 10,
+      "seed": 1536058602,
+      "sha256": "683edb858b54586be2a66424a3018979417811813663df8a04d09f4bf10f6475",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c5_m1_b1_part011.npz",
+      "replicates": 256,
+      "chunk": 11,
+      "seed": 1912032251,
+      "sha256": "9d4764e843cb67187fa16fea9a4fc04e0c6f485f926adeb15b21ac3954987970",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c5_m1_b1_part012.npz",
+      "replicates": 256,
+      "chunk": 12,
+      "seed": 999892138,
+      "sha256": "d70050d5b5b73ae2476f933713c87fcc2214ccd645225dea60dcf348f6ae9bde",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c5_m1_b1_part013.npz",
+      "replicates": 256,
+      "chunk": 13,
+      "seed": 421173491,
+      "sha256": "2dfce9d497432f2e68756a159af66f8f996ef7f147a37df31f1a01f456c8af13",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c5_m1_b1_part014.npz",
+      "replicates": 256,
+      "chunk": 14,
+      "seed": 3248940930,
+      "sha256": "8c414c9ba7fde8a1c2825115e544e9b75f629b3392372bc621541755fef0d697",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c5_m1_b1_part015.npz",
+      "replicates": 256,
+      "chunk": 15,
+      "seed": 3963744625,
+      "sha256": "13290a1acfd0c4f35274519feef1a0846025b20d1103a3b8e571aeb6ed06d5de",
+      "population_sha256": null
+    }
+  ]
+}

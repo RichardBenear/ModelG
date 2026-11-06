@@ -1,0 +1,81 @@
+{
+  "job": {
+    "id": "short_c4_m3_b2",
+    "kind": "short",
+    "case": 4,
+    "method": 3,
+    "block": 2,
+    "reps": 2048,
+    "chunk": 256,
+    "offset": 16,
+    "stage": 4903,
+    "warmup": false
+  },
+  "replicates": 2048,
+  "shards": [
+    {
+      "file": "short_c4_m3_b2_part016.npz",
+      "replicates": 256,
+      "chunk": 16,
+      "seed": 2535171922,
+      "sha256": "adb8f300bf5a39c56ef20cbebb7cff3311e92e4a0e55316ff1897fd2706882cf",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c4_m3_b2_part017.npz",
+      "replicates": 256,
+      "chunk": 17,
+      "seed": 2354296549,
+      "sha256": "c5aa7ee61a8d8a6df39c1ab484ada9e489d72f93eaff44c2781d7a68f406c2e3",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c4_m3_b2_part018.npz",
+      "replicates": 256,
+      "chunk": 18,
+      "seed": 1173100500,
+      "sha256": "59ecd3706e6c3643c39d2626a7f5a187b1d36b56086a85f250c3b789f0e22e9e",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c4_m3_b2_part019.npz",
+      "replicates": 256,
+      "chunk": 19,
+      "seed": 1453287044,
+      "sha256": "e66a7d2f8999b7008a8edc0e5ae56b38dbe5f51791f3eb040703899b63409cf3",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c4_m3_b2_part020.npz",
+      "replicates": 256,
+      "chunk": 20,
+      "seed": 1868673897,
+      "sha256": "0f5ae8d4d151d674f1b1b271ddcc7a7d6cbf61bf4c952877ccaa6e9a96d25686",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c4_m3_b2_part021.npz",
+      "replicates": 256,
+      "chunk": 21,
+      "seed": 4233322290,
+      "sha256": "e82e2db2de7429db87b48e44da008e101bf74babd3456c0cfe4edd10fa66737c",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c4_m3_b2_part022.npz",
+      "replicates": 256,
+      "chunk": 22,
+      "seed": 4198193062,
+      "sha256": "c5b96221534e82525a299908744c01ea08ed3b05a727f25b736e4b3d87c24e97",
+      "population_sha256": null
+    },
+    {
+      "file": "short_c4_m3_b2_part023.npz",
+      "replicates": 256,
+      "chunk": 23,
+      "seed": 1359480028,
+      "sha256": "4f17535a0f88f07416715d31a2670942becf3c7086220205fde8fa6a1533c522",
+      "population_sha256": null
+    }
+  ]
+}
