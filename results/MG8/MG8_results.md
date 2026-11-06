@@ -54,7 +54,7 @@ the relative error. At τ₀ the offset is large enough that the particle dissol
 homogeneous state; the stochastic R and P runs lose the particle within 3–20 units, consistent with the same effect.
 
 The particle itself is otherwise unchanged by the sweep at k ≥ 3: single and settled, aligned shift |σ*| ≤ 4e-4, and no
-drift (|v| ≤ 3e-8, under the 1e-6 threshold).
+drift (|v| ≤ 3.1e-8, under the 1e-6 threshold).
 
 ## Reading
 At the registered production step the update order matters a great deal for this lattice approximation: a rightward
