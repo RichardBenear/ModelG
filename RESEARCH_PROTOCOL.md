@@ -44,3 +44,11 @@ Claude has no automatic implementation or approval obligation. If invited to rev
 ## Current transition
 
 MG8 remains closed with its registered labels. MG10 is a new explicit-reservoir proposal, initially DRAFT and not authorized for production by this workflow change. The StochasticVacuum archive is a separate provenance source; adapted machinery must be validated in ModelG.
+
+## Compute location and external review (PI instruction, MG039b, 2026-11-06)
+
+- Prefer the PI's local PC when a run's projected resource requirements could put excessive pressure on the user's assistant/service usage limits. Present compute-time estimates separately from assistant usage; do not represent core-hours as a direct measure of subscription usage or invent remaining quota.
+- Local execution may use at most **8 worker processes**, leaving approximately two cores' capacity for background activity on the PI's ten-core PC. Limit numerical-library threads to one per worker to avoid oversubscription; document actual settings.
+- Use the existing MODELG_WORKERS interface with MODELG_WORKERS=8 for newly planned local runs, subject to lower memory/thermal limits if needed. No permission to consume more than eight workers is implied.
+- Richard decides whether external review is needed **per run or run batch**. Record each decision with the run plan. Do not turn this into an automatic Claude-review requirement or claim review clearance without a recorded decision.
+- MG10 decisions 1-4 in Draft 1 are PI-approved. Preserve that approval; do not ask again about unchanged choices. Final numerical definitions, run caps and a measured cost projection must still be recorded before registration; this instruction supplies no new numerical core-hour ceiling.

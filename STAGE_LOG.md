@@ -754,3 +754,10 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - Same-author static design check: review/MG039_internal_check.md. Verified reaction count balances, local documentation links, and preservation of historical handoff/initial-plan bodies; no simulation was run.
 - Archive source: RichardBenear/StochasticVacuum at 2161211ccc9d8427af98ebeefcabf7f379b83a37. Reuse remains selective and needs ModelG-specific validation; no old control PASS is a new physics result.
 - Status: MG10 DRAFT, NOT REGISTERED. No MG10 trajectory, calibration or production run. Next: static design check and numerical/budget specification for PI consideration. Role transition itself does not authorize production.
+
+## MG039b — MG10 decisions and local-compute preference, 2026-11-06
+
+- PI approved MG10 Draft 1 decisions 1, 2, 3 and 4. External review remains Richard's per-run/batch decision.
+- Prefer the local PC for runs projected to pressure assistant/service usage limits. Authorized maximum: eight worker processes, leaving capacity for background activity; numerical-library threads should be one per worker.
+- Updated active protocol, AGENTS.md, CLAUDE.md, handoff, README and GATES guidance. Preserved MG10 Draft 1 as spec/MG10_proposal_v1.md; Draft 2 records the approval without inventing unspecified numerical caps.
+- No MG10 trajectory or production run; registration awaits completion of numerical criteria, run caps, cost projection and run-level review disposition. Do not request approval again for unchanged decisions already approved.

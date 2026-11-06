@@ -19,7 +19,7 @@ committed **before** the run that tests it. Status: PENDING / PASS / FAIL / REVI
 | MG9d | 2 | Cause of MG9c's late drift (b = 29.30 from the t = 30,000 field): numerics, mesh alignment, reflection, finer mesh; bounded diagnostic | **CLOSED 2026-11-05: MESH EFFECT SUPPORTED** (on D02; R4 INVALID so finer mesh unavailable; C4 DECREASING alongside). Registered at `69ad83e`; 7 runs, 0.08 core-h; ChatGPT MG033 accepted; PI sign-off 02:32 UTC |
 | MG9b | 2 | Stochastic barrier: under a linear model, does the activation slope S (log k per unit Ω) change with b inside the particle window? b = 29.20, 29.35 with MG3b's 29.00; lattice-conditional | **CLOSED 2026-11-05: NOT RESOLVED** (PI sign-off card 14:03 UTC, after ChatGPT MG035) (S₁ = −0.023, 95% CI −0.094 to +0.048; branch B3 calibrated; all controls PASS; 280 runs, 26.3 core-h on PC) |
 | MG8 | 6 | Scheduler sensitivity: does the within-step node update order (synchronous J, sweep R, random sequential P) change the particle at τ₀, and does the deterministic difference shrink as τ → 0? (multiway/foliation gate, numbered MG7 in `InitialPlan.md`) | **CLOSED 2026-11-06: SENSITIVE at τ₀; refinement NOT RESOLVED BY THIS LADDER** (registered 2026-11-05, draft 4 at `3ab4ec8`) |
-| MG10 | Extension | Can explicit finite A/B reservoirs recover the fixed-reservoir Model G approximation, and what changes under depletion? | **DRAFT 1 — NOT REGISTERED**; [proposal](spec/MG10_proposal.md); no MG10 run |
+| MG10 | Extension | Can explicit finite A/B reservoirs recover the fixed-reservoir Model G approximation, and what changes under depletion? | **DRAFT 2 — NOT REGISTERED**; PI approved decisions 1-4; external review per run/batch; [proposal](spec/MG10_proposal.md); no MG10 run |
 
 ## Active process update (MG039, 2026-11-06)
 
@@ -2004,3 +2004,5 @@ Proposed sequence: A formal state/reaction/accounting model; B implementation qu
 Only A/B/C are the first proposed scope. D/E require separately frozen arms and budgets. Numerical margins, sample sizes, run caps and compute ceiling remain to be finalized before PI registration.
 Continuous-time dynamics remain the proposed model; synchronous stepping is a numerical approximation. Finite A/B, inert Z/W and explicit chemostat inputs are modeling hypotheses, not a physical derivation of the vacuum.
 Geometry-derived supply, classical correlations and an actual quantum-entanglement extension are later candidate studies, not authorized gates.
+
+MG039b authorization, 2026-11-06: Richard approved MG10 Draft 1 decisions 1-4; the working proposal is now Draft 2, preserving Draft 1. Numerical limits still to be finalized before registration are not retroactively invented. Prefer local PC execution when runs could pressure assistant usage, with at most eight workers and one numerical-library thread per worker. Richard determines external review per run/batch. No MG10 run has occurred.

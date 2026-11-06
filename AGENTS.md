@@ -38,9 +38,9 @@ Read [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md), the authoritative prospective
 
 ## Compute
 - Drivers are resumable at run level and use a process pool. Set the worker count with the environment variable
-  `MODELG_WORKERS` (default 2). On the PI's 10-core machine use 9.
-  - PowerShell: `$env:MODELG_WORKERS=9; python src/run_mg3.py`
-  - cmd: `set MODELG_WORKERS=9 && python src/run_mg3.py`
+  `MODELG_WORKERS` (default 2). On the PI's 10-core machine use at most 8 workers, leaving capacity for background activity (MG039b). Set numerical-library threads to one per worker.
+  - PowerShell: `$env:MODELG_WORKERS=8; python src/run_mg3.py`
+  - cmd: `set MODELG_WORKERS=8 && python src/run_mg3.py`
 - Cost model (measured on the 2-core cloud container, Linux): about 1.07 core-s per simulated time unit per run at
   τ = 6.667e-4, about 2.4 at τ/2, plus about 7 s per deterministic confirmation. Measure it once on the local machine
   before budgeting.

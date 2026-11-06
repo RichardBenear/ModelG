@@ -1,7 +1,7 @@
 # MG10 — Explicit A/B reservoirs and their limits
-## Draft 1 — 2026-11-06 — MG039
+## Draft 2 — 2026-11-06 — MG039b
 
-**Status: DRAFT, NOT REGISTERED. No MG10 simulation, calibration or production run has been made.**
+**Status: DRAFT 2, NOT REGISTERED. PI approved decisions 1-4 on 2026-11-06; external review is decided per run/batch. No MG10 simulation, calibration or production run has been made.**
 Author: ChatGPT / Codex, research and implementation lead. PI: Richard Benear.
 This draft proposes a model extension; it does not alter rules_v1.1 or rescore any earlier gate.
 The collaboration arrangement is [RESEARCH_PROTOCOL.md](../RESEARCH_PROTOCOL.md).
@@ -27,7 +27,7 @@ MG8 showed that numerical scheduler changes can alter the homogeneous state and 
 | Outputs | Explicit Z and W counters, W = LaViolette's sink species | Avoid confusion with Omega, the system-size parameter |
 | External review | Optional; internal checks and separate recomputation required | Current PI-approved collaboration arrangement |
 
-These are proposed modeling choices for PI review, not claimed consequences of SQK or StochasticVacuum.
+The PI approved decisions 1-4 of Draft 1 on 2026-11-06. These remain explicit modeling assumptions, not claimed consequences of SQK or StochasticVacuum. Final numerical definitions and cost limits are recorded before registration; unchanged choices do not need renewed approval.
 
 ## 3. State and normalization
 
@@ -201,12 +201,14 @@ MG12 candidate: compare correlated and decorrelated classical environments with 
 MG13 candidate: only after an explicit quantum state/process is defined, distinguish entanglement from classical correlations.
 Numbers and scope are provisional; only MG10 is reserved by this draft.
 
-## 11. PI decisions before registration
+## 11. PI decisions and recorded authorization
 
-1. Adopt or revise the local well-mixed, non-replenished compartment model and count bookkeeping.
-2. Accept continuous-time dynamics for this first extension, keeping fundamental-tick alternatives separate.
-3. Approve the final capacity grid, deterministic recovery margins and comparison horizon.
-4. Approve numerical/SSA qualification, run caps, retention and compute budget.
-5. Decide whether this stage warrants optional external review.
+1. **APPROVED:** local well-mixed, non-replenished compartment model and count bookkeeping.
+2. **APPROVED:** continuous-time dynamics for this first extension; fundamental-tick alternatives stay separate.
+3. **APPROVED:** proposed capacity/recovery/horizon direction, including the draft grid and T_ref=300. Complete the exact norms, absolute tolerances and error allowances before registration; bring material changes back to the PI.
+4. **APPROVED:** numerical/SSA qualification, capped execution, retention and compute-budget planning. The numerical run cap and core-hour ceiling were not yet specified in Draft 1; finalize and record them prospectively. Prefer local PC execution for costly runs, with at most eight workers.
+5. **PI DECISION PER RUN/BATCH:** Richard will determine when external review is needed. Record the decision in each run plan; no mandatory external-review role is reinstated.
 
-Current authorization covers the role/protocol update and preparation of this draft. It does not register MG10 or authorize scientific trajectories.
+The PI's approval of decisions 1-4 is recorded and must not be repeatedly requested for unchanged scope. It does not fill in unspecified numerical limits or itself freeze this draft as a registered protocol. Complete the remaining implementation and numerical specification, cost projection and run-level review disposition before scientific execution. Draft 1 is preserved as MG10_proposal_v1.md.
+
+Compute preference: use the PI's local PC when a projected run could pressure assistant/service usage limits; at most eight parallel workers, numerical-library threads capped at one per worker. Report wall/core-hour estimates separately from assistant usage and do not infer remaining account quota.
