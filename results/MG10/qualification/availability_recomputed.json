@@ -1,0 +1,156 @@
+{
+  "recomputation": "AGREES",
+  "rows_checked": 21,
+  "failures": 4,
+  "shared_dependencies": "Raw float64 checkpoints and NumPy array reductions; no qualification-code imports. Decimal oracles are separate.",
+  "review_status": "Same-author recomputation, not external replication.",
+  "rows": [
+    {
+      "method": "E0",
+      "capacity": 1,
+      "pass": false,
+      "decimal_exact_max_error": 4.087553067133598e-07,
+      "decimal_discrete_max_error": 1.3322676295501878e-14
+    },
+    {
+      "method": "E0",
+      "capacity": 10,
+      "pass": false,
+      "decimal_exact_max_error": 1.0053795462816595e-08,
+      "decimal_discrete_max_error": 4.796163466380676e-14
+    },
+    {
+      "method": "E0",
+      "capacity": 100,
+      "pass": true,
+      "decimal_exact_max_error": 1.0999512412013246e-10,
+      "decimal_discrete_max_error": 1.2545520178264269e-14
+    },
+    {
+      "method": "E0",
+      "capacity": 1000,
+      "pass": true,
+      "decimal_exact_max_error": 1.120215031846783e-12,
+      "decimal_discrete_max_error": 1.1879386363489175e-14
+    },
+    {
+      "method": "E0",
+      "capacity": 10000,
+      "pass": true,
+      "decimal_exact_max_error": 2.7755575615628914e-14,
+      "decimal_discrete_max_error": 2.7755575615628914e-14
+    },
+    {
+      "method": "E0",
+      "capacity": 100000,
+      "pass": true,
+      "decimal_exact_max_error": 3.0884184099022605e-12,
+      "decimal_discrete_max_error": 3.0884184099022605e-12
+    },
+    {
+      "method": "E0",
+      "capacity": 1000000,
+      "pass": true,
+      "decimal_exact_max_error": 5.827560656257447e-13,
+      "decimal_discrete_max_error": 5.827560656257447e-13
+    },
+    {
+      "method": "E1",
+      "capacity": 1,
+      "pass": false,
+      "decimal_exact_max_error": 2.0437757142222068e-07,
+      "decimal_discrete_max_error": 1.8096635301390052e-14
+    },
+    {
+      "method": "E1",
+      "capacity": 10,
+      "pass": true,
+      "decimal_exact_max_error": 5.026885907533085e-09,
+      "decimal_discrete_max_error": 2.1871393585115584e-14
+    },
+    {
+      "method": "E1",
+      "capacity": 100,
+      "pass": true,
+      "decimal_exact_max_error": 5.5000892729140105e-11,
+      "decimal_discrete_max_error": 1.0103029524088925e-14
+    },
+    {
+      "method": "E1",
+      "capacity": 1000,
+      "pass": true,
+      "decimal_exact_max_error": 5.451195050909519e-13,
+      "decimal_discrete_max_error": 1.2878587085651816e-14
+    },
+    {
+      "method": "E1",
+      "capacity": 10000,
+      "pass": true,
+      "decimal_exact_max_error": 1.219024881038422e-13,
+      "decimal_discrete_max_error": 1.163513729807164e-13
+    },
+    {
+      "method": "E1",
+      "capacity": 100000,
+      "pass": true,
+      "decimal_exact_max_error": 1.2410406036167387e-11,
+      "decimal_discrete_max_error": 1.2410406036167387e-11
+    },
+    {
+      "method": "E1",
+      "capacity": 1000000,
+      "pass": true,
+      "decimal_exact_max_error": 5.827560656257447e-13,
+      "decimal_discrete_max_error": 5.827560656257447e-13
+    },
+    {
+      "method": "E2",
+      "capacity": 1,
+      "pass": false,
+      "decimal_exact_max_error": 1.0218874230139008e-07,
+      "decimal_discrete_max_error": 3.7969627442180354e-14
+    },
+    {
+      "method": "E2",
+      "capacity": 10,
+      "pass": true,
+      "decimal_exact_max_error": 2.5134316850028426e-09,
+      "decimal_discrete_max_error": 2.942091015256665e-14
+    },
+    {
+      "method": "E2",
+      "capacity": 100,
+      "pass": true,
+      "decimal_exact_max_error": 2.749067640195335e-11,
+      "decimal_discrete_max_error": 1.532107773982716e-14
+    },
+    {
+      "method": "E2",
+      "capacity": 1000,
+      "pass": true,
+      "decimal_exact_max_error": 2.7711166694643907e-13,
+      "decimal_discrete_max_error": 3.3306690738754696e-15
+    },
+    {
+      "method": "E2",
+      "capacity": 10000,
+      "pass": true,
+      "decimal_exact_max_error": 4.1588954502458364e-13,
+      "decimal_discrete_max_error": 4.1588954502458364e-13
+    },
+    {
+      "method": "E2",
+      "capacity": 100000,
+      "pass": true,
+      "decimal_exact_max_error": 4.9823922765313e-11,
+      "decimal_discrete_max_error": 4.9823922765313e-11
+    },
+    {
+      "method": "E2",
+      "capacity": 1000000,
+      "pass": true,
+      "decimal_exact_max_error": 5.827560656257447e-13,
+      "decimal_discrete_max_error": 5.827560656257447e-13
+    }
+  ]
+}

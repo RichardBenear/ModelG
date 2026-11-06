@@ -1,0 +1,212 @@
+{
+  "stage": "MG041",
+  "scope": "DEVELOPMENT_QUALIFICATION_ONLY",
+  "verdict": "QUALIFICATION FAILED",
+  "criterion": "MG040 run plan section 3, mandatory check 4",
+  "absolute_tolerance": 1e-08,
+  "T_ref": 300,
+  "production_dispatched": false,
+  "external_review": "PI: No review needed. Go ahead.",
+  "elapsed_worker_seconds": 3.49591410002904,
+  "workers": 1,
+  "qualification_ceiling_seconds": 900,
+  "budget_exceeded": false,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "numpy": "2.2.4",
+  "raw_sha256": "9d1a7da82a400d6404bf61e36b4a83c18fa5982aaa0498109468d12de346c0cc",
+  "source_sha256": "f2e076b12b8219e9a701c9846e097cf9606630c0c7e461ac77575725edfee026",
+  "run_plan_sha256": "8bde356ea701cd98c8581506bfe19e83e72cfa2bbf49952c92b8bfc180763f04",
+  "rows": [
+    {
+      "method": "E0",
+      "capacity": 1,
+      "steps_per_unit": 1500,
+      "max_scaled_absolute_error": 4.087553067133598e-07,
+      "worst_checkpoint": 300,
+      "discrete_oracle_max_error": 1.3322676295501878e-14,
+      "pass": false
+    },
+    {
+      "method": "E0",
+      "capacity": 10,
+      "steps_per_unit": 1500,
+      "max_scaled_absolute_error": 1.0053795351794292e-08,
+      "worst_checkpoint": 300,
+      "discrete_oracle_max_error": 4.796163466380676e-14,
+      "pass": false
+    },
+    {
+      "method": "E0",
+      "capacity": 100,
+      "steps_per_unit": 1500,
+      "max_scaled_absolute_error": 1.0999512412013246e-10,
+      "worst_checkpoint": 300,
+      "discrete_oracle_max_error": 1.2545520178264269e-14,
+      "pass": true
+    },
+    {
+      "method": "E0",
+      "capacity": 1000,
+      "steps_per_unit": 1500,
+      "max_scaled_absolute_error": 1.120215031846783e-12,
+      "worst_checkpoint": 300,
+      "discrete_oracle_max_error": 1.1879386363489175e-14,
+      "pass": true
+    },
+    {
+      "method": "E0",
+      "capacity": 10000,
+      "steps_per_unit": 1500,
+      "max_scaled_absolute_error": 2.7755575615628914e-14,
+      "worst_checkpoint": 2,
+      "discrete_oracle_max_error": 2.7755575615628914e-14,
+      "pass": true
+    },
+    {
+      "method": "E0",
+      "capacity": 100000,
+      "steps_per_unit": 1500,
+      "max_scaled_absolute_error": 3.0884184099022605e-12,
+      "worst_checkpoint": 222,
+      "discrete_oracle_max_error": 3.0884184099022605e-12,
+      "pass": true
+    },
+    {
+      "method": "E0",
+      "capacity": 1000000,
+      "steps_per_unit": 1500,
+      "max_scaled_absolute_error": 5.827560656257447e-13,
+      "worst_checkpoint": 300,
+      "discrete_oracle_max_error": 5.827560656257447e-13,
+      "pass": true
+    },
+    {
+      "method": "E1",
+      "capacity": 1,
+      "steps_per_unit": 3000,
+      "max_scaled_absolute_error": 2.0437757142222068e-07,
+      "worst_checkpoint": 300,
+      "discrete_oracle_max_error": 1.8096635301390052e-14,
+      "pass": false
+    },
+    {
+      "method": "E1",
+      "capacity": 10,
+      "steps_per_unit": 3000,
+      "max_scaled_absolute_error": 5.026885796510783e-09,
+      "worst_checkpoint": 300,
+      "discrete_oracle_max_error": 2.1871393585115584e-14,
+      "pass": true
+    },
+    {
+      "method": "E1",
+      "capacity": 100,
+      "steps_per_unit": 3000,
+      "max_scaled_absolute_error": 5.5000892729140105e-11,
+      "worst_checkpoint": 300,
+      "discrete_oracle_max_error": 1.0103029524088925e-14,
+      "pass": true
+    },
+    {
+      "method": "E1",
+      "capacity": 1000,
+      "steps_per_unit": 3000,
+      "max_scaled_absolute_error": 5.451195050909519e-13,
+      "worst_checkpoint": 300,
+      "discrete_oracle_max_error": 1.2878587085651816e-14,
+      "pass": true
+    },
+    {
+      "method": "E1",
+      "capacity": 10000,
+      "steps_per_unit": 3000,
+      "max_scaled_absolute_error": 1.219024881038422e-13,
+      "worst_checkpoint": 298,
+      "discrete_oracle_max_error": 1.163513729807164e-13,
+      "pass": true
+    },
+    {
+      "method": "E1",
+      "capacity": 100000,
+      "steps_per_unit": 3000,
+      "max_scaled_absolute_error": 1.2410406036167387e-11,
+      "worst_checkpoint": 147,
+      "discrete_oracle_max_error": 1.2410406036167387e-11,
+      "pass": true
+    },
+    {
+      "method": "E1",
+      "capacity": 1000000,
+      "steps_per_unit": 3000,
+      "max_scaled_absolute_error": 5.827560656257447e-13,
+      "worst_checkpoint": 300,
+      "discrete_oracle_max_error": 5.827560656257447e-13,
+      "pass": true
+    },
+    {
+      "method": "E2",
+      "capacity": 1,
+      "steps_per_unit": 6000,
+      "max_scaled_absolute_error": 1.0218874230139008e-07,
+      "worst_checkpoint": 300,
+      "discrete_oracle_max_error": 3.7969627442180354e-14,
+      "pass": false
+    },
+    {
+      "method": "E2",
+      "capacity": 10,
+      "steps_per_unit": 6000,
+      "max_scaled_absolute_error": 2.51343157398054e-09,
+      "worst_checkpoint": 300,
+      "discrete_oracle_max_error": 2.942091015256665e-14,
+      "pass": true
+    },
+    {
+      "method": "E2",
+      "capacity": 100,
+      "steps_per_unit": 6000,
+      "max_scaled_absolute_error": 2.749067640195335e-11,
+      "worst_checkpoint": 300,
+      "discrete_oracle_max_error": 1.532107773982716e-14,
+      "pass": true
+    },
+    {
+      "method": "E2",
+      "capacity": 1000,
+      "steps_per_unit": 6000,
+      "max_scaled_absolute_error": 2.7711166694643907e-13,
+      "worst_checkpoint": 298,
+      "discrete_oracle_max_error": 3.3306690738754696e-15,
+      "pass": true
+    },
+    {
+      "method": "E2",
+      "capacity": 10000,
+      "steps_per_unit": 6000,
+      "max_scaled_absolute_error": 4.1588954502458364e-13,
+      "worst_checkpoint": 3,
+      "discrete_oracle_max_error": 4.1588954502458364e-13,
+      "pass": true
+    },
+    {
+      "method": "E2",
+      "capacity": 100000,
+      "steps_per_unit": 6000,
+      "max_scaled_absolute_error": 4.9823922765313e-11,
+      "worst_checkpoint": 297,
+      "discrete_oracle_max_error": 4.9823922765313e-11,
+      "pass": true
+    },
+    {
+      "method": "E2",
+      "capacity": 1000000,
+      "steps_per_unit": 6000,
+      "max_scaled_absolute_error": 5.827560656257447e-13,
+      "worst_checkpoint": 300,
+      "discrete_oracle_max_error": 5.827560656257447e-13,
+      "pass": true
+    }
+  ],
+  "unattempted": "Other qualification checks, full implementation, timing matrix and production."
+}

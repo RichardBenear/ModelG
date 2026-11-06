@@ -768,3 +768,7 @@ Items deliberately postponed so the project reaches its main questions first. Th
 - PI explicitly approved extending the capacity grid to 100000 and 1000000. Capacity changes stored values, not lattice size or individual-token loops.
 - Added spec/MG10_run_plan.md: primary unshifted error normalization; physical checkpoints; 1% recovery margin; 0.1% numerical-reference discrepancy limit; full fixed deterministic matrix of 64 trajectories; local <=8 workers, 4 core-hour production ceiling, 0.25 qualification/timing cap and 600-second job timeout; no automatic extensions.
 - Draft 3 preserves Draft 2. No model trajectory, production, qualification or timing run; only static arithmetic on an existing committed reference. Firm runtime projection awaits implementation benchmarking. External review remains Richard's per-run/batch decision.
+
+## MG041 — Initial MG10 qualification stopped (2026-11-06)
+
+PI: “No review needed. Go ahead.” External review is waived for this batch. Implemented the decoupled A exact-case qualification first; four of 21 Euler paths fail the drafted continuous-exponential tolerance. Two unit tests pass, separate Decimal recomputation agrees on every label. This identifies a qualification-specification error, not a scientific recovery result. No full model, timing matrix or production dispatched. Evidence in results/MG10/qualification; proposed correction in spec/MG10_qualification_correction.md. The unchanged draft remains unregistered pending PI adoption of the correction and the remaining work.
