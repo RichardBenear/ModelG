@@ -887,3 +887,5 @@ P2 draft and candidate1024-path/128-job matrix prepared. Frozen P1 matcher plus 
 ## MG062 — PI approves and P2 is prospectively registered
 
 Approved plan:1024 fresh individually seeded short model paths,128 jobs, four primary H endpoint match-cap tests and descriptive S/GXY observability. Preparation and full synthetic complete/incomplete pipeline passed independent verification. New4-core-hour cap, expected~16minutes/8workers; source/spec/reference/seeds and actual initial-state definitions frozen before production. Prior P1/D2 remain closed and unchanged. Full raw archives/progress and automatic report/recomputation retained; PI closure later.
+
+MG062 P2 PRODUCTION LAUNCH: 2026-11-07T20:18:48.488238+00:00; registrationeaef80d pushed before scientific samples. Eight local owned workers active; saved complete paths/integer checks verified. Exact1024/128 denominator unchanged,4-hour cap/180seconds job; no result yet. Automatic report and separate audit follow any stop; full production upload and PI closure later.

@@ -1,0 +1,14 @@
+{
+  "status": "RUNNING; scientific P2 result not yet available",
+  "started_utc": "2026-11-07T20:18:48.488238+00:00",
+  "registration_commit": "eaef80d",
+  "registration_sha256": "8a098b1d24f382e96bb56e08ae536fd36e47228e0f320dc1f005f0635984c9ab",
+  "planned_paths": 1024,
+  "planned_jobs": 128,
+  "workers_verified": 8,
+  "saved_complete_paths_at_verification": 109,
+  "ceiling_worker_seconds": 14400,
+  "job_timeout_seconds": 180,
+  "automatic_postprocessing": "evaluate_mg10p2.py then check_mg10p2.py",
+  "retention": "Live atomic complete-path prefixes local; full final archive upload after inspection"
+}
