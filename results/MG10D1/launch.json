@@ -1,0 +1,22 @@
+{
+  "status": "RUNNING; no scientific result yet",
+  "started_utc": "2026-11-07T00:46:02.469149+00:00",
+  "registration_commit": "b21fb85",
+  "registration_sha256": "ed7ad4cdae60e287894402c497cdd1239f2f65a29b3a18c70e87fbe596d5b11e",
+  "planned_jobs": 80,
+  "observed_active_workers": 8,
+  "checkpoint_progress_at_launch_verification": {
+    "a0_s0_k0_r0": 2,
+    "a0_s1_k0_r0": 2,
+    "a1_s0_k0_r0": 2,
+    "a1_s1_k0_r0": 2,
+    "a2_s0_k0_r0": 2,
+    "a2_s1_k0_r0": 2,
+    "a3_s0_k0_r0": 2,
+    "a4_s0_k0_r0": 2
+  },
+  "production_ceiling_worker_seconds": 216000,
+  "job_timeout_seconds": 3600,
+  "automatic_postprocessing": "evaluate_mg10d1.py then check_mg10d1.py; status in run_state.json",
+  "retention_status": "Live checkpoint archives on local PC; full production upload after inspection, not yet uploaded"
+}

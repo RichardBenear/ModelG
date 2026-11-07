@@ -834,3 +834,5 @@ MG052 preparation complete: Draft2, qualified controls and cost forecast ready f
 ## MG053 — PI approves and D1 is prospectively registered
 
 Richard approved the run and60-core-hour cap. Completed checkpoint/controller and end-to-end synthetic reporting qualification. Eighty fixed trajectories, T60, local8workers with one library thread; measured forecast41.682623core-hours with slowdown/startup allowance. Registration and source/spec/reference/seed freeze written before production. No scientific outcome inspected. Full checkpoint retention and automatic incomplete-safe evaluation/independent audit prepared.
+
+MG053 PRODUCTION LAUNCH: started2026-11-07T00:46:02.469149+00:00; registration b21fb85 pushed before launch. Eight owned workers active; all first-wave paths saved their first physical-time checkpoint with accounting/safety checks. Full80-path denominator unchanged. No result/verdict yet. Automatic report and independent check run after batch stops; full raw upload and PI closure remain pending.
