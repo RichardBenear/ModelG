@@ -1,0 +1,112 @@
+{
+  "passed": true,
+  "status": "DEVELOPMENT QUALIFICATION PASS; NO SCIENTIFIC PRODUCTION",
+  "tests": [
+    {
+      "name": "episodes_continuous",
+      "passed": true
+    },
+    {
+      "name": "episodes_wrap",
+      "passed": true
+    },
+    {
+      "name": "episodes_temporary_gap",
+      "passed": true
+    },
+    {
+      "name": "episodes_late20",
+      "passed": true
+    },
+    {
+      "name": "episodes_late_short",
+      "passed": true
+    },
+    {
+      "name": "episodes_motion_split",
+      "passed": true
+    },
+    {
+      "name": "episodes_ambiguity",
+      "passed": true
+    },
+    {
+      "name": "episodes_sampling_gap",
+      "passed": true
+    },
+    {
+      "name": "average_clean",
+      "passed": true
+    },
+    {
+      "name": "average_fractional_motion",
+      "passed": true
+    },
+    {
+      "name": "average_constant_disturbance",
+      "passed": true
+    },
+    {
+      "name": "average_alternating_disturbance",
+      "passed": true
+    },
+    {
+      "name": "initial_seed_not_reacquired_despite_later_episode20",
+      "passed": true
+    },
+    {
+      "name": "partial_path_rejected_as_full_estimate",
+      "passed": true
+    },
+    {
+      "name": "stream_s0_k0",
+      "passed": true,
+      "seed": 3640194464
+    },
+    {
+      "name": "stream_s0_k1",
+      "passed": true,
+      "seed": 2439727026
+    },
+    {
+      "name": "stream_s1_k0",
+      "passed": true,
+      "seed": 717773255
+    },
+    {
+      "name": "stream_s1_k1",
+      "passed": true,
+      "seed": 225736776
+    }
+  ],
+  "raw_checks": [
+    {
+      "file": "results\\MG10P3\\preparation\\qualification\\stream_s0_k0.npz",
+      "sha256": "bc083f5cb2679cef8892f272e2a3ea3da1c8a7f533d2c6d79d2e89fd44be354c",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P3\\preparation\\qualification\\stream_s0_k1.npz",
+      "sha256": "e03b8c3ebb4a0d0df3b095cdb1d006c6de6cb9754dbf00c7fb50bc441ed572c9",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P3\\preparation\\qualification\\stream_s1_k0.npz",
+      "sha256": "a3b5cbc4dc012c7cb0af36e9f17fdc451cdb4f6fc9ad5a5c27ebcb41bc257d3b",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P3\\preparation\\qualification\\stream_s1_k1.npz",
+      "sha256": "152ecc70f0655c2349685598217ed8d3ae15210f114d04a1555f8f867ed04b74",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    }
+  ]
+}

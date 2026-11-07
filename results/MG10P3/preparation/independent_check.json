@@ -1,0 +1,125 @@
+{
+  "status": "P3 PREPARATION AND SEPARATE RECOMPUTATION PASS; SCIENTIFIC PRODUCTION NOT REGISTERED",
+  "passed": true,
+  "episode_cases": 8,
+  "averaging_cases": 4,
+  "direct_interpolation": "Periodic even-N real Dirichlet kernel, independent of FFT shift",
+  "raw_checks": [
+    {
+      "file": "results\\MG10P3\\preparation\\qualification\\stream_s0_k0.npz",
+      "sha256": "bc083f5cb2679cef8892f272e2a3ea3da1c8a7f533d2c6d79d2e89fd44be354c",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P3\\preparation\\qualification\\stream_s0_k1.npz",
+      "sha256": "e03b8c3ebb4a0d0df3b095cdb1d006c6de6cb9754dbf00c7fb50bc441ed572c9",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P3\\preparation\\qualification\\stream_s1_k0.npz",
+      "sha256": "a3b5cbc4dc012c7cb0af36e9f17fdc451cdb4f6fc9ad5a5c27ebcb41bc257d3b",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P3\\preparation\\qualification\\stream_s1_k1.npz",
+      "sha256": "152ecc70f0655c2349685598217ed8d3ae15210f114d04a1555f8f867ed04b74",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P3\\preparation\\timing\\timing_s0_k0_r0.npz",
+      "sha256": "2424ff4370b2046fd836aec115200f529e7e4224094e563962cb5988955dc40d",
+      "replicas": 1,
+      "checkpoints": 5,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P3\\preparation\\timing\\timing_s0_k0_r1.npz",
+      "sha256": "b952afa2ca8cc4c542e6efe28ff408b262b3946506d65d001a50f45353ba79bc",
+      "replicas": 1,
+      "checkpoints": 5,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P3\\preparation\\timing\\timing_s0_k1_r0.npz",
+      "sha256": "b8ae53d6672e9442e4a2679d7341a3cc2c9f1464f91f2379c7e99d36be8e8cdd",
+      "replicas": 1,
+      "checkpoints": 5,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P3\\preparation\\timing\\timing_s0_k1_r1.npz",
+      "sha256": "c0fb1d272937d82f263ab1c26e8d52bc26ac31f9ce63f256f0fd6ffdba370014",
+      "replicas": 1,
+      "checkpoints": 5,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P3\\preparation\\timing\\timing_s1_k0_r0.npz",
+      "sha256": "ec044aeb7fe1034157b6cff9762b74ff40817743aa86c7d7ceba8a04744e7739",
+      "replicas": 1,
+      "checkpoints": 5,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P3\\preparation\\timing\\timing_s1_k0_r1.npz",
+      "sha256": "8899d4ac9b889f89debf2d48925c11bc646ec757cbe2971e8cf01a89261dd9f6",
+      "replicas": 1,
+      "checkpoints": 5,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P3\\preparation\\timing\\timing_s1_k1_r0.npz",
+      "sha256": "c2cc50ec72417244ba3b3c161245c62ef954d2240ab13d170ccaaeb6ed96797c",
+      "replicas": 1,
+      "checkpoints": 5,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P3\\preparation\\timing\\timing_s1_k1_r1.npz",
+      "sha256": "9e03407745ca59e5acc43089f0ae3fc5534915cd494d319dce39fed523f0461c",
+      "replicas": 1,
+      "checkpoints": 5,
+      "integer_reconstruction": true
+    }
+  ],
+  "timing_seconds_by_class": {
+    "s0_k0": [
+      19.91778819996398,
+      19.9649862999795
+    ],
+    "s0_k1": [
+      29.791444700036664,
+      29.891439999977592
+    ],
+    "s1_k0": [
+      20.190901699999813,
+      20.04360719997203
+    ],
+    "s1_k1": [
+      30.100909499975387,
+      29.98045309999725
+    ]
+  },
+  "forecast_seconds_per_path": {
+    "s0_k0": 638.1683515616169,
+    "s0_k1": 947.5450734377227,
+    "s1_k0": 643.66420156206,
+    "s1_k1": 953.7712906245724
+  },
+  "forecast_total_seconds": 50930.38267497555,
+  "forecast_core_hours": 14.147328520826543,
+  "eight_worker_wall_hours": 1.7684160651033178,
+  "production_candidate_ceiling_core_hours": 24,
+  "within_75_percent_reserve": true,
+  "controlled_development_seconds": 228.9096556000295,
+  "total_preparation_allowance_seconds": 234.67931090004276,
+  "dependencies": "Same author; shares constants/reference/NumPy and earlier explicit reconstruction. Independent candidate-start episode scan, dense smoothing/direct trigonometric interpolation/averaging. Not external replication."
+}

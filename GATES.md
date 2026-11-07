@@ -2084,3 +2084,6 @@ MG063 P2 RESULT: SHORT-HORIZON UNSEEDED MATCH CAP SUPPORTED ON TESTED CONDITIONS
 
 
 MG064 PI CLOSURE (2026-11-07): Richard: “I sign off of P2.” MG10-P2 CLOSED as SHORT-HORIZON UNSEEDED MATCH CAP SUPPORTED ON TESTED CONDITIONS. All1024 paths, independent4096-frame/raw/metric/exact-bound audit and verified128-file raw archive retained. Four primary H groups0/128 with simultaneous upper3.3655%; seeded retention descriptive. All short-time, prescribed-state, noise/observability and physical-lineage/survival limitations preserved. No prior outcome rescored; no next production registered or launched.
+
+
+MG065 P3 PREPARATION: Draft64-path FULL baseline temporal estimation, H/S,two steps,R16,T25/quarter grid;20-unit initial-S visibility and any-H episode frequencies descriptive, no inherited5% cap or physical survival label. Fixed/all-path vs conditional X-aligned0..20 averages distinguish movement/selection and temporal correlation. All18 preparation assertions PASS; independent8 episode/4 averaging cases and12 raw archives agree; no failed qualification/old-result rescoring. Forecast14.147329core-hours/~1.768hours on8; proposed NEW24-hour cap awaiting PI approval. No scientific production registered or started.

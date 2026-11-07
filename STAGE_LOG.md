@@ -901,3 +901,8 @@ MG063 RETENTION: all128 raw P2 chunks/1024 paths (54412800bytes) published at9ce
 ## MG064 — PI closes MG10-P2 (2026-11-07)
 
 Richard: “I sign off of P2.” P2 CLOSED with its registered short-horizon unseeded-match-cap outcome. Complete1024-path data, independent audit and verified full archive accepted within scope; no physical survival/stationarity/coupled-field equivalence implied. Earlier labels preserved; next scientific production remains unregistered.
+
+
+## MG065 — Prepare temporal persistence and coupled averaging
+
+P3 draft/preparation complete:64 H/S/two-step full-maintained paths toT25,20-unit sampled visibility and conditional/unconditional coupled-field averages. Episode/alignment/noise-correlation/no-reacquisition/partial-path/stream checks pass with separate direct interpolation/episode/raw reconstruction. Timing/initial-state provenance retained; new24-core-hour candidate requires PI approval. No scientific run or prior-study rescoring.
