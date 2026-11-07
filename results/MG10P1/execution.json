@@ -1,0 +1,52 @@
+{
+  "fixtures": {
+    "records": [
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "fixtures",
+          "kind": "fixtures"
+        },
+        "id": "fixtures",
+        "charged_worker_seconds": 1.0119013999938034,
+        "returncode": 0
+      }
+    ],
+    "ceiling": 300,
+    "prior_charge": 0,
+    "poll_seconds": 0.25,
+    "charged_worker_seconds": 1.0119013999938034,
+    "inflight_worker_seconds": 0,
+    "pending_ids": [],
+    "active_ids": [],
+    "stop_reason": null,
+    "workers": 1,
+    "threads_per_library": 1,
+    "max_observed_poll_gap_seconds": 0.25056020001647994
+  },
+  "oracle": {
+    "records": [
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "oracle",
+          "kind": "oracle"
+        },
+        "id": "oracle",
+        "charged_worker_seconds": 1.0042955999961123,
+        "returncode": 0
+      }
+    ],
+    "ceiling": 300,
+    "prior_charge": 1.0119013999938034,
+    "poll_seconds": 0.25,
+    "charged_worker_seconds": 2.0161969999899156,
+    "inflight_worker_seconds": 0,
+    "pending_ids": [],
+    "active_ids": [],
+    "stop_reason": null,
+    "workers": 1,
+    "threads_per_library": 1,
+    "max_observed_poll_gap_seconds": 0.2505032999906689
+  }
+}

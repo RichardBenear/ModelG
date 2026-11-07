@@ -865,3 +865,8 @@ Richard: “I approve closure for D2.” D2 CLOSED as COMPLETE DESCRIPTIVE PILOT
 ## MG058 — Register single-motif measurement qualification
 
 PI instructed next step after D2 closure. P1 qualifies localization/reference matching and conservative sampled continuity on synthetic controls, before any particle/supply-intervention claim. Scope:68 frames,15 sequences,7 invalid-input assertions,300seconds total, one local worker. Constants/source/expectations frozen before generation/evaluation; independent dense/direct oracle. No new model trajectories, old-result rescoring or automatic next production.
+
+
+## MG059 — Single-motif measurement qualification result
+
+All90 registered fixture/API assertions pass, independent dense/direct oracle agrees on511 raw frame assessments and continuity classifications. QUALIFIED ON REGISTERED SYNTHETIC FIXTURES, 2.016197000ownedseconds versus300 cap. No expensive simulation or old-result rescoring. X-only/fixed-reference/noise/lineage limitations preserved; actual model-informed generalization remains a separate study. Raw arrays and decisions prepared for upload/verification; PI closure pending.
