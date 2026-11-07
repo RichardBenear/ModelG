@@ -1,0 +1,5647 @@
+{
+  "records": [
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k0_b0",
+        "condition": 1,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "seeds": [
+          4110018147,
+          2707001628,
+          1418708577,
+          892226907,
+          2699056786,
+          522955786,
+          673594099,
+          3503260016
+        ]
+      },
+      "raw": "c1_s0_k0_b0.npz",
+      "raw_sha256": "e8985b0102193ad5710e223b474c3b687713efaeaaa9da7b90ef95d988910c0f",
+      "paths": 8,
+      "compute_seconds": 34.796598999993876,
+      "elapsed_seconds": 35.95579620002536,
+      "finished": "2026-11-07T20:19:26.895773+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k0_b0",
+      "charged_worker_seconds": 38.54977370001143,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k0_b0",
+        "condition": 1,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "seeds": [
+          3351232333,
+          2360599408,
+          1058193965,
+          2355086861,
+          2970278058,
+          1823292542,
+          389689352,
+          3709652331
+        ]
+      },
+      "raw": "c1_s1_k0_b0.npz",
+      "raw_sha256": "2520d37420ef1b1f6350d8ab7c8e3a71b7cfc77d6bb8e48edeafcf1f3e9a00a4",
+      "paths": 8,
+      "compute_seconds": 34.86100719997194,
+      "elapsed_seconds": 36.03581549995579,
+      "finished": "2026-11-07T20:19:26.990393+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k0_b0",
+      "charged_worker_seconds": 38.79338280000957,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k0_b0",
+        "condition": 0,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "seeds": [
+          2298712073,
+          1056078138,
+          1641223990,
+          2407506227,
+          205519506,
+          4214229635,
+          2929790559,
+          3704394760
+        ]
+      },
+      "raw": "c0_s1_k0_b0.npz",
+      "raw_sha256": "2db6798953f64683f78e8028b0c32ee48d970e096836be9f6605f13ec8717164",
+      "paths": 8,
+      "compute_seconds": 36.724590999947395,
+      "elapsed_seconds": 37.887076599989086,
+      "finished": "2026-11-07T20:19:28.822563+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k0_b0",
+      "charged_worker_seconds": 40.554625699995086,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k0_b0",
+        "condition": 0,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "seeds": [
+          1408101832,
+          3196622169,
+          770601770,
+          2667116495,
+          2337837568,
+          132765433,
+          2753423025,
+          2450795786
+        ]
+      },
+      "raw": "c0_s0_k0_b0.npz",
+      "raw_sha256": "28b58ed96fea23ff8700cd3b5c497ed60d2bde73c5a15dfcfa17d7319a94e373",
+      "paths": 8,
+      "compute_seconds": 37.05070599995088,
+      "elapsed_seconds": 38.177540500008035,
+      "finished": "2026-11-07T20:19:29.121387+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k0_b0",
+      "charged_worker_seconds": 40.828570000012405,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k1_b0",
+        "condition": 1,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "seeds": [
+          2202485866,
+          3755458278,
+          3507686486,
+          3122591214,
+          2226345904,
+          316195380,
+          3556550166,
+          1870475746
+        ]
+      },
+      "raw": "c1_s0_k1_b0.npz",
+      "raw_sha256": "f48fde255fa5070d2da2a5d3e2bb839f1d43d497f68c4d3c7e80fc095131811c",
+      "paths": 8,
+      "compute_seconds": 54.51341200002935,
+      "elapsed_seconds": 55.60366720001912,
+      "finished": "2026-11-07T20:19:46.605295+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k1_b0",
+      "charged_worker_seconds": 58.30016579997027,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k1_b0",
+        "condition": 1,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "seeds": [
+          3266386203,
+          447442976,
+          1694130595,
+          2950432449,
+          1375863595,
+          1888896951,
+          3004257160,
+          1159020809
+        ]
+      },
+      "raw": "c1_s1_k1_b0.npz",
+      "raw_sha256": "4529d79e77918ae80faf920bfe24f89df7f25241bd3b1621879b73ead09b19fa",
+      "paths": 8,
+      "compute_seconds": 55.289562699908856,
+      "elapsed_seconds": 56.38338710000971,
+      "finished": "2026-11-07T20:19:47.388779+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k1_b0",
+      "charged_worker_seconds": 59.03730919997906,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k1_b0",
+        "condition": 0,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "seeds": [
+          408970582,
+          1153119920,
+          2321346372,
+          3274256616,
+          3831472665,
+          85456272,
+          3723938881,
+          138560254
+        ]
+      },
+      "raw": "c0_s0_k1_b0.npz",
+      "raw_sha256": "6e596f69d5ba5f32f4cb7cb1db3bbdd512bede65a9157b6a2f6d5f8c630e36b6",
+      "paths": 8,
+      "compute_seconds": 55.717099600005895,
+      "elapsed_seconds": 56.823378500004765,
+      "finished": "2026-11-07T20:19:47.815705+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k1_b0",
+      "charged_worker_seconds": 59.56381790002342,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k1_b0",
+        "condition": 0,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "seeds": [
+          3266305274,
+          1433010663,
+          78022774,
+          1983311564,
+          1126247791,
+          3758022549,
+          1941674452,
+          1141179707
+        ]
+      },
+      "raw": "c0_s1_k1_b0.npz",
+      "raw_sha256": "f789f97dcdab186a95fc71e2da6b688c9e750533c2cb835b60d93c2e5905a79a",
+      "paths": 8,
+      "compute_seconds": 55.99749340006383,
+      "elapsed_seconds": 57.12217310001142,
+      "finished": "2026-11-07T20:19:48.088974+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k1_b0",
+      "charged_worker_seconds": 59.803287699993234,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k0_b1",
+        "condition": 1,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "seeds": [
+          3495248189,
+          3245168538,
+          3116733098,
+          3898443228,
+          3201540450,
+          389825583,
+          3352985566,
+          1400538993
+        ]
+      },
+      "raw": "c1_s0_k0_b1.npz",
+      "raw_sha256": "229a7e02ea5641276e5d0814ee8d4321590e9b0c1b3526c19ebfdbc501cfce94",
+      "paths": 8,
+      "compute_seconds": 34.21035080001457,
+      "elapsed_seconds": 34.9268009000225,
+      "finished": "2026-11-07T20:20:04.819827+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k0_b1",
+      "charged_worker_seconds": 37.56277110002702,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k0_b1",
+        "condition": 0,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "seeds": [
+          3578143606,
+          2845723075,
+          3111236004,
+          1414934864,
+          3022789394,
+          2718286715,
+          1708075001,
+          1962758383
+        ]
+      },
+      "raw": "c0_s0_k0_b1.npz",
+      "raw_sha256": "7e1f725d61651ecfd2e892ad81b2860f9ebada08ba5651ab5e3cc6cf8338cdd5",
+      "paths": 8,
+      "compute_seconds": 36.66232330002822,
+      "elapsed_seconds": 37.40860610001255,
+      "finished": "2026-11-07T20:20:07.000571+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k0_b1",
+      "charged_worker_seconds": 40.06709359999513,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k0_b1",
+        "condition": 1,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "seeds": [
+          2762182548,
+          1988420811,
+          1444875269,
+          338634835,
+          3128050317,
+          1284794749,
+          581364756,
+          2576917241
+        ]
+      },
+      "raw": "c1_s1_k0_b1.npz",
+      "raw_sha256": "32b600a34fd8de02744d648196e2b21f59d227eea39e3756e8f8e603324fa8d4",
+      "paths": 8,
+      "compute_seconds": 34.65197389997775,
+      "elapsed_seconds": 35.44805769994855,
+      "finished": "2026-11-07T20:20:07.314750+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k0_b1",
+      "charged_worker_seconds": 38.071456300036516,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k0_b1",
+        "condition": 0,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "seeds": [
+          2395518311,
+          1328346746,
+          1266253589,
+          2361673589,
+          3649771693,
+          3371398231,
+          1138241352,
+          1471285092
+        ]
+      },
+      "raw": "c0_s1_k0_b1.npz",
+      "raw_sha256": "b4b4feff87e531c875c3f923cb845edc2edb06044c62e010e19ae4dfae18ebdd",
+      "paths": 8,
+      "compute_seconds": 36.668595399940386,
+      "elapsed_seconds": 37.44618670002092,
+      "finished": "2026-11-07T20:20:09.105003+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k0_b1",
+      "charged_worker_seconds": 40.0657165000448,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k0_b2",
+        "condition": 1,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "seeds": [
+          1609550060,
+          1521479693,
+          2904199989,
+          4108023527,
+          580959162,
+          3574365108,
+          1911594019,
+          1356396130
+        ]
+      },
+      "raw": "c1_s0_k0_b2.npz",
+      "raw_sha256": "671e9ced02404afa03532b9bebc798b325690d18c3040adcf76d34f3fac71a05",
+      "paths": 8,
+      "compute_seconds": 34.42331930005457,
+      "elapsed_seconds": 35.18841349997092,
+      "finished": "2026-11-07T20:20:45.003499+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k0_b2",
+      "charged_worker_seconds": 37.563167899963446,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k1_b1",
+        "condition": 1,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "seeds": [
+          3579576265,
+          2241380100,
+          3197009537,
+          425943093,
+          3367296713,
+          1110923007,
+          4019414262,
+          3333191692
+        ]
+      },
+      "raw": "c1_s0_k1_b1.npz",
+      "raw_sha256": "95dd67331f62bb6cb74a77e234ec1cd4ec371d90bf812d774b3c9a2564cce0b3",
+      "paths": 8,
+      "compute_seconds": 54.488162499968894,
+      "elapsed_seconds": 55.21330400003353,
+      "finished": "2026-11-07T20:20:45.288676+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k1_b1",
+      "charged_worker_seconds": 57.610719999996945,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k0_b2",
+        "condition": 0,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "seeds": [
+          4116933960,
+          1775316163,
+          1286006698,
+          1671500706,
+          2515492700,
+          431454543,
+          4237813375,
+          4170223115
+        ]
+      },
+      "raw": "c0_s0_k0_b2.npz",
+      "raw_sha256": "7c23edb31a92911c016d4ecf6cd20fa06c47acb052b0a8eef580cba4eeefa340",
+      "paths": 8,
+      "compute_seconds": 36.8201494999812,
+      "elapsed_seconds": 37.53486339998199,
+      "finished": "2026-11-07T20:20:45.184508+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k0_b2",
+      "charged_worker_seconds": 40.09186370001407,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k1_b1",
+        "condition": 0,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "seeds": [
+          786222362,
+          2417232685,
+          3192907324,
+          3819336785,
+          2919102394,
+          3289805263,
+          4033864044,
+          778142363
+        ]
+      },
+      "raw": "c0_s0_k1_b1.npz",
+      "raw_sha256": "b8ae32c7dbcf389c7d40a1c84a0240c40eb6304b6804c8f4701fe60f52ce1dd2",
+      "paths": 8,
+      "compute_seconds": 55.37599050003337,
+      "elapsed_seconds": 56.118560799979605,
+      "finished": "2026-11-07T20:20:45.435935+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k1_b1",
+      "charged_worker_seconds": 58.6267512999475,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k1_b1",
+        "condition": 1,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "seeds": [
+          3848108028,
+          2953216627,
+          2453784835,
+          3914192245,
+          3244706632,
+          2355287196,
+          2454354232,
+          446263779
+        ]
+      },
+      "raw": "c1_s1_k1_b1.npz",
+      "raw_sha256": "e92fba4249f1dd9d73e725cc016931bfdca4cf9c84d40b72a4c3edbb7fd00b84",
+      "paths": 8,
+      "compute_seconds": 54.766966700030025,
+      "elapsed_seconds": 55.5003837000113,
+      "finished": "2026-11-07T20:20:46.329943+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k1_b1",
+      "charged_worker_seconds": 58.09919829998398,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k1_b1",
+        "condition": 0,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "seeds": [
+          4277887957,
+          493814120,
+          1429461113,
+          3302444677,
+          827275674,
+          3782857718,
+          471632346,
+          2014237655
+        ]
+      },
+      "raw": "c0_s1_k1_b1.npz",
+      "raw_sha256": "f31ed728f50b557799ee6b47c1628a2a90c59739b0c236858f5cf88707d9af7d",
+      "paths": 8,
+      "compute_seconds": 55.92543940007454,
+      "elapsed_seconds": 56.672443600022234,
+      "finished": "2026-11-07T20:20:47.249752+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k1_b1",
+      "charged_worker_seconds": 59.099604599992745,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k0_b2",
+        "condition": 1,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "seeds": [
+          2800377895,
+          3743471587,
+          1073241932,
+          432119585,
+          209790029,
+          3033972130,
+          1225981999,
+          31709502
+        ]
+      },
+      "raw": "c1_s1_k0_b2.npz",
+      "raw_sha256": "249d55eb2d046dc2506319ed521af1451994aa37f102722dd7f2f2238e7082de",
+      "paths": 8,
+      "compute_seconds": 34.9365272000432,
+      "elapsed_seconds": 35.68367840000428,
+      "finished": "2026-11-07T20:20:47.653979+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k0_b2",
+      "charged_worker_seconds": 38.3183480000007,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k0_b2",
+        "condition": 0,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "seeds": [
+          3180443404,
+          254376676,
+          240374987,
+          232941949,
+          418244177,
+          2356131738,
+          833289473,
+          1673648053
+        ]
+      },
+      "raw": "c0_s1_k0_b2.npz",
+      "raw_sha256": "27d3a1c38c19dd417d760e84c1efa8e82305f7ab31516f1d321c9725034d66ad",
+      "paths": 8,
+      "compute_seconds": 36.99615699989954,
+      "elapsed_seconds": 37.802253899979405,
+      "finished": "2026-11-07T20:20:47.898281+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k0_b2",
+      "charged_worker_seconds": 40.32577900000615,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k0_b3",
+        "condition": 1,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "seeds": [
+          1851961790,
+          3196224922,
+          1982652710,
+          2279652592,
+          956088202,
+          2155988605,
+          1053323554,
+          1259908049
+        ]
+      },
+      "raw": "c1_s0_k0_b3.npz",
+      "raw_sha256": "48d6188c5795e24c3becd730f23eba82026e4cd820d106272b8b78306a7c995f",
+      "paths": 8,
+      "compute_seconds": 34.14494939998258,
+      "elapsed_seconds": 34.85797700000694,
+      "finished": "2026-11-07T20:21:24.758803+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k0_b3",
+      "charged_worker_seconds": 37.31275290000485,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k0_b3",
+        "condition": 1,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "seeds": [
+          580351557,
+          4278507095,
+          2018443462,
+          338774130,
+          2913818256,
+          3182869792,
+          1783181643,
+          1326638355
+        ]
+      },
+      "raw": "c1_s1_k0_b3.npz",
+      "raw_sha256": "6e2ce3643f37d88e3f9b1c9b1b5fdaa00609ab58cc3878aafe31b1d5b6287612",
+      "paths": 8,
+      "compute_seconds": 34.533758199890144,
+      "elapsed_seconds": 35.33057869999902,
+      "finished": "2026-11-07T20:21:25.979853+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k0_b3",
+      "charged_worker_seconds": 37.8188375000027,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k0_b3",
+        "condition": 0,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "seeds": [
+          1371900908,
+          2132792555,
+          2200133791,
+          1434141201,
+          817114754,
+          2904523113,
+          2411784255,
+          2539972753
+        ]
+      },
+      "raw": "c0_s0_k0_b3.npz",
+      "raw_sha256": "eeaac13849df726ccfe939b8dbf717820c912f560448a78b47742756e5e52f23",
+      "paths": 8,
+      "compute_seconds": 36.619136700057425,
+      "elapsed_seconds": 37.346535700024106,
+      "finished": "2026-11-07T20:21:26.442863+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k0_b3",
+      "charged_worker_seconds": 39.816198399988934,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k0_b3",
+        "condition": 0,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "seeds": [
+          3114264234,
+          556787206,
+          32597311,
+          1130730704,
+          3029967792,
+          753948690,
+          2150790331,
+          1684864706
+        ]
+      },
+      "raw": "c0_s1_k0_b3.npz",
+      "raw_sha256": "08645b972c66146e3991ffab03119c4197a3baabaee9ef355dd1f7ccf6bd224d",
+      "paths": 8,
+      "compute_seconds": 36.28892580000684,
+      "elapsed_seconds": 37.049636199953966,
+      "finished": "2026-11-07T20:21:27.387399+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k0_b3",
+      "charged_worker_seconds": 39.565577399975155,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k1_b2",
+        "condition": 1,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "seeds": [
+          3678708062,
+          2751546766,
+          797830938,
+          1909344267,
+          612697322,
+          3040402489,
+          2850841931,
+          1922866788
+        ]
+      },
+      "raw": "c1_s0_k1_b2.npz",
+      "raw_sha256": "4774f5a7457c3ba457a7090692d45242fcc939c788df2bed1c4d3072b4cbb07a",
+      "paths": 8,
+      "compute_seconds": 53.837609000038356,
+      "elapsed_seconds": 54.569484299980104,
+      "finished": "2026-11-07T20:21:42.424265+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k1_b2",
+      "charged_worker_seconds": 57.09134520002408,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k1_b2",
+        "condition": 1,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "seeds": [
+          2201464056,
+          3764997177,
+          59491804,
+          4047008044,
+          1558236838,
+          71919173,
+          1762088752,
+          4069653643
+        ]
+      },
+      "raw": "c1_s1_k1_b2.npz",
+      "raw_sha256": "05a2788aac6740b2f749644ea5a252db7707190c4a3588336545562f3f27260e",
+      "paths": 8,
+      "compute_seconds": 54.39341899997089,
+      "elapsed_seconds": 55.072546000010334,
+      "finished": "2026-11-07T20:21:43.178451+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k1_b2",
+      "charged_worker_seconds": 57.58918539999286,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k1_b2",
+        "condition": 0,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "seeds": [
+          4171427941,
+          450538609,
+          648869014,
+          2731352826,
+          3059672004,
+          484324053,
+          732975190,
+          3217103626
+        ]
+      },
+      "raw": "c0_s0_k1_b2.npz",
+      "raw_sha256": "93d0192c2d84f62cc6ea28052a1ab69b61df5e23b83b4b3b5b82ba679c8f7d4e",
+      "paths": 8,
+      "compute_seconds": 55.630079800088424,
+      "elapsed_seconds": 56.369699500035495,
+      "finished": "2026-11-07T20:21:43.901663+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k1_b2",
+      "charged_worker_seconds": 58.84421079995809,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k1_b2",
+        "condition": 0,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "seeds": [
+          3296879143,
+          2077088177,
+          1789137532,
+          329179206,
+          915451701,
+          2545899965,
+          4149371991,
+          2200743736
+        ]
+      },
+      "raw": "c0_s1_k1_b2.npz",
+      "raw_sha256": "db266183fadba77b08e231b929322d3ee0d5609416a95090d567ba0787aa0284",
+      "paths": 8,
+      "compute_seconds": 55.87385719991289,
+      "elapsed_seconds": 56.61376810004003,
+      "finished": "2026-11-07T20:21:44.482044+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k1_b2",
+      "charged_worker_seconds": 59.08682059997227,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k0_b4",
+        "condition": 1,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "seeds": [
+          2748899927,
+          768081343,
+          174809947,
+          1114963818,
+          81234602,
+          907265741,
+          3696677724,
+          2874192496
+        ]
+      },
+      "raw": "c1_s0_k0_b4.npz",
+      "raw_sha256": "9be1e2dc638609b6db0edc03814855bda6b4611282ec33f2b2408bddf24e438d",
+      "paths": 8,
+      "compute_seconds": 34.338772899936885,
+      "elapsed_seconds": 35.06421129999217,
+      "finished": "2026-11-07T20:22:21.167389+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k0_b4",
+      "charged_worker_seconds": 37.55799139995361,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k0_b4",
+        "condition": 0,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "seeds": [
+          114544254,
+          4186429160,
+          795640803,
+          1621658732,
+          3979494138,
+          24029758,
+          3761188200,
+          2708930593
+        ]
+      },
+      "raw": "c0_s0_k0_b4.npz",
+      "raw_sha256": "f7b7bfd981befe860f52e4bbc321cbcd014e6854da3c38f0a54a08340927fd8a",
+      "paths": 8,
+      "compute_seconds": 36.531035099877045,
+      "elapsed_seconds": 37.30157509999117,
+      "finished": "2026-11-07T20:22:22.642906+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k0_b4",
+      "charged_worker_seconds": 39.81051739997929,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k0_b4",
+        "condition": 1,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "seeds": [
+          849516621,
+          988808425,
+          47063629,
+          1534168443,
+          4028436908,
+          996087958,
+          1459524129,
+          2499405738
+        ]
+      },
+      "raw": "c1_s1_k0_b4.npz",
+      "raw_sha256": "ffa055d82b54a32fc71b72b8ad32531473fd9a6d337d77de95d9a45decc78663",
+      "paths": 8,
+      "compute_seconds": 34.42074319993844,
+      "elapsed_seconds": 35.177637799992226,
+      "finished": "2026-11-07T20:22:22.772654+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k0_b4",
+      "charged_worker_seconds": 38.07779609999852,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k1_b3",
+        "condition": 1,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "seeds": [
+          4288912007,
+          3981321694,
+          2407857849,
+          4229390024,
+          3525332839,
+          437821294,
+          3848667738,
+          2882025813
+        ]
+      },
+      "raw": "c1_s0_k1_b3.npz",
+      "raw_sha256": "aeb7c07001cdc4eb8c276fa4acf50f98959fadecaf69be3d406be8f241c901e9",
+      "paths": 8,
+      "compute_seconds": 54.30634679994546,
+      "elapsed_seconds": 55.052164200053085,
+      "finished": "2026-11-07T20:22:23.914111+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k1_b3",
+      "charged_worker_seconds": 57.5884134999942,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k1_b3",
+        "condition": 0,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "seeds": [
+          1771705604,
+          1564917086,
+          3292105536,
+          1601373805,
+          2315508078,
+          1640124160,
+          3607105661,
+          3348008179
+        ]
+      },
+      "raw": "c0_s0_k1_b3.npz",
+      "raw_sha256": "519bf246918f9109a58f722df6cef2e059fb3d91caf4bf7e3ea349a7b4735e10",
+      "paths": 8,
+      "compute_seconds": 56.14248919993406,
+      "elapsed_seconds": 56.89463260001503,
+      "finished": "2026-11-07T20:22:24.462902+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k1_b3",
+      "charged_worker_seconds": 59.58792590000667,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k0_b4",
+        "condition": 0,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "seeds": [
+          2764434103,
+          4074211120,
+          1386008867,
+          1915118657,
+          2098191507,
+          330669522,
+          1431765172,
+          1345761566
+        ]
+      },
+      "raw": "c0_s1_k0_b4.npz",
+      "raw_sha256": "208147baff546dcd5f27cd1d860fc4226fa819049cdd009f7a6fc3a9c0d0ea41",
+      "paths": 8,
+      "compute_seconds": 36.995648699929006,
+      "elapsed_seconds": 37.79642170004081,
+      "finished": "2026-11-07T20:22:24.787509+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k0_b4",
+      "charged_worker_seconds": 40.567533800029196,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k1_b3",
+        "condition": 1,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "seeds": [
+          2662475683,
+          4282985585,
+          3343336909,
+          3366651163,
+          3006280511,
+          1992847533,
+          1206630883,
+          3269563828
+        ]
+      },
+      "raw": "c1_s1_k1_b3.npz",
+      "raw_sha256": "518b5ff12097a653037810ad77eb573adbaa358ca070357fdc9bb853a3f7aa1f",
+      "paths": 8,
+      "compute_seconds": 54.75545520003652,
+      "elapsed_seconds": 55.60116299998481,
+      "finished": "2026-11-07T20:22:26.075540+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k1_b3",
+      "charged_worker_seconds": 58.34064499998931,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k1_b3",
+        "condition": 0,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "seeds": [
+          2193676862,
+          3952576816,
+          4142356489,
+          233854371,
+          1608715200,
+          691921617,
+          3890179953,
+          3986781738
+        ]
+      },
+      "raw": "c0_s1_k1_b3.npz",
+      "raw_sha256": "ded00856866cfc60a58d10e21a1e2a1c27507d1ef350dae57fd8fd0a652c943c",
+      "paths": 8,
+      "compute_seconds": 56.576309100026265,
+      "elapsed_seconds": 57.43474529997911,
+      "finished": "2026-11-07T20:22:26.835505+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k1_b3",
+      "charged_worker_seconds": 60.100934999994934,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k0_b5",
+        "condition": 1,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47
+        ],
+        "seeds": [
+          2358422525,
+          3036195428,
+          1518984509,
+          3101595355,
+          226632076,
+          3253236930,
+          355973112,
+          2213586574
+        ]
+      },
+      "raw": "c1_s0_k0_b5.npz",
+      "raw_sha256": "38094877c14c55808b593da50103fe6cdc9c91d356695640d66ee1df48638157",
+      "paths": 8,
+      "compute_seconds": 37.49344599992037,
+      "elapsed_seconds": 38.304344700009096,
+      "finished": "2026-11-07T20:23:05.990653+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k0_b5",
+      "charged_worker_seconds": 40.82258780003758,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k0_b5",
+        "condition": 1,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47
+        ],
+        "seeds": [
+          3119776761,
+          2129059870,
+          2691413681,
+          1002086327,
+          2260605059,
+          609855929,
+          2737084807,
+          3676559432
+        ]
+      },
+      "raw": "c1_s1_k0_b5.npz",
+      "raw_sha256": "8e37f2c62c9c997d585790b4715910adf56628b0c11af86bc6b59be4eb272722",
+      "paths": 8,
+      "compute_seconds": 37.48863070009975,
+      "elapsed_seconds": 38.19918100000359,
+      "finished": "2026-11-07T20:23:07.720976+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k0_b5",
+      "charged_worker_seconds": 40.572329899994656,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k0_b5",
+        "condition": 0,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47
+        ],
+        "seeds": [
+          912406224,
+          2956344906,
+          884975740,
+          973310886,
+          3633672302,
+          877826553,
+          3612820047,
+          2962975130
+        ]
+      },
+      "raw": "c0_s0_k0_b5.npz",
+      "raw_sha256": "2a88678df3a48293bbf13bb295a5033a0f8d258eab3a3c6e595933d2bc22d3d1",
+      "paths": 8,
+      "compute_seconds": 39.7926446000929,
+      "elapsed_seconds": 40.592537500022445,
+      "finished": "2026-11-07T20:23:08.065924+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k0_b5",
+      "charged_worker_seconds": 43.32557200000156,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k0_b5",
+        "condition": 0,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47
+        ],
+        "seeds": [
+          1037238773,
+          3361899534,
+          1187646573,
+          280018573,
+          3967369035,
+          2494460822,
+          1493779137,
+          4002570393
+        ]
+      },
+      "raw": "c0_s1_k0_b5.npz",
+      "raw_sha256": "4666a135af4d038e6e2ca3e8eb6fcfbf296dd1a3e618a1ae9bc3564319f0a67c",
+      "paths": 8,
+      "compute_seconds": 39.96760529995663,
+      "elapsed_seconds": 40.748906299995724,
+      "finished": "2026-11-07T20:23:09.656842+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k0_b5",
+      "charged_worker_seconds": 43.33207870001206,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k1_b4",
+        "condition": 1,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "seeds": [
+          2462507802,
+          2539804458,
+          712061857,
+          3028297652,
+          3442521520,
+          978357358,
+          2381028190,
+          1099523564
+        ]
+      },
+      "raw": "c1_s0_k1_b4.npz",
+      "raw_sha256": "134dd677ac43934e941d641f9213b03b01a8b53a445855607d7b8fd57ff46982",
+      "paths": 8,
+      "compute_seconds": 60.36185589997331,
+      "elapsed_seconds": 61.18204960000003,
+      "finished": "2026-11-07T20:23:26.663844+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k1_b4",
+      "charged_worker_seconds": 63.85254639998311,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k1_b4",
+        "condition": 0,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "seeds": [
+          427313765,
+          463644246,
+          2153529844,
+          709445561,
+          357555803,
+          3740539342,
+          3883241617,
+          4157547020
+        ]
+      },
+      "raw": "c0_s0_k1_b4.npz",
+      "raw_sha256": "9f081f28c380b04145c04eb3dc2f3f6d2e6866d812a8f8bfcf8a7f7784015cc8",
+      "paths": 8,
+      "compute_seconds": 62.00671180000063,
+      "elapsed_seconds": 62.771143799996935,
+      "finished": "2026-11-07T20:23:26.853669+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k1_b4",
+      "charged_worker_seconds": 65.61549779999768,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k1_b4",
+        "condition": 1,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "seeds": [
+          3527455789,
+          3602073061,
+          3924357493,
+          2410905986,
+          147771033,
+          2092787455,
+          3064297761,
+          3686470607
+        ]
+      },
+      "raw": "c1_s1_k1_b4.npz",
+      "raw_sha256": "b55b160b313ed18daa8e1333230ad19b96120f2ceddcf72c203337a0708b466c",
+      "paths": 8,
+      "compute_seconds": 60.505286999978125,
+      "elapsed_seconds": 61.296463100006804,
+      "finished": "2026-11-07T20:23:27.974840+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k1_b4",
+      "charged_worker_seconds": 63.856483299983665,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k1_b4",
+        "condition": 0,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "seeds": [
+          3739308350,
+          3732363307,
+          1985860205,
+          4007900489,
+          3646389014,
+          744827463,
+          743685807,
+          2132639232
+        ]
+      },
+      "raw": "c0_s1_k1_b4.npz",
+      "raw_sha256": "9c65d738da1c9c663d16ee60775ed546e1f60b1a982074d9234881375a75e0e3",
+      "paths": 8,
+      "compute_seconds": 62.130004100035876,
+      "elapsed_seconds": 62.969679299974814,
+      "finished": "2026-11-07T20:23:28.630915+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k1_b4",
+      "charged_worker_seconds": 65.6102155999979,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k0_b6",
+        "condition": 1,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55
+        ],
+        "seeds": [
+          3823035726,
+          1947717708,
+          306101271,
+          2037362439,
+          1211585308,
+          3572235219,
+          1419121730,
+          2314629176
+        ]
+      },
+      "raw": "c1_s0_k0_b6.npz",
+      "raw_sha256": "940049af87d8df71d5ef3a0974c3f7ba8004c9d697acd3638a20cbf4f09ffef6",
+      "paths": 8,
+      "compute_seconds": 37.43375950003974,
+      "elapsed_seconds": 38.142474699998274,
+      "finished": "2026-11-07T20:24:07.452231+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k0_b6",
+      "charged_worker_seconds": 40.31887249997817,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k0_b6",
+        "condition": 1,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55
+        ],
+        "seeds": [
+          2077061611,
+          1856877710,
+          3848472501,
+          542733670,
+          919829538,
+          2308981166,
+          288687032,
+          3081789001
+        ]
+      },
+      "raw": "c1_s1_k0_b6.npz",
+      "raw_sha256": "fd083149924bcaf76c45e683f53fbbbd99714a4bd5e01a5d0062d92616d851ab",
+      "paths": 8,
+      "compute_seconds": 37.253381600021385,
+      "elapsed_seconds": 37.9634517999948,
+      "finished": "2026-11-07T20:24:08.956247+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k0_b6",
+      "charged_worker_seconds": 40.08170169999357,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k0_b6",
+        "condition": 0,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55
+        ],
+        "seeds": [
+          2169962440,
+          377165038,
+          399611697,
+          137654750,
+          1649702893,
+          2643887708,
+          3975037335,
+          2295708386
+        ]
+      },
+      "raw": "c0_s0_k0_b6.npz",
+      "raw_sha256": "6bddd13c481d2133aac08ad0c49250a6cf63837ef49b12090b991aa1c17acd0a",
+      "paths": 8,
+      "compute_seconds": 40.02750299999025,
+      "elapsed_seconds": 40.76117680000607,
+      "finished": "2026-11-07T20:24:09.833468+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k0_b6",
+      "charged_worker_seconds": 42.82380379998358,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k1_b5",
+        "condition": 0,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47
+        ],
+        "seeds": [
+          4033100827,
+          192329721,
+          1478920878,
+          4005651982,
+          747087879,
+          2039928991,
+          2603831683,
+          807490329
+        ]
+      },
+      "raw": "c0_s0_k1_b5.npz",
+      "raw_sha256": "b939b1ffc0b68115c1f66088cce8961b937da318661cbcf5267fd712313dc057",
+      "paths": 8,
+      "compute_seconds": 61.42877920001047,
+      "elapsed_seconds": 62.150665100023616,
+      "finished": "2026-11-07T20:24:10.374047+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k1_b5",
+      "charged_worker_seconds": 64.34842990001198,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k0_b6",
+        "condition": 0,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55
+        ],
+        "seeds": [
+          3621188685,
+          305503923,
+          2192548587,
+          1102055809,
+          2914513338,
+          2953168649,
+          3315337388,
+          1644231675
+        ]
+      },
+      "raw": "c0_s1_k0_b6.npz",
+      "raw_sha256": "b19dc9a2972513bd950cb98d79e9b45e9fe687fa5ea3cb5440549bbf65eb2b1d",
+      "paths": 8,
+      "compute_seconds": 39.72747709992109,
+      "elapsed_seconds": 40.47252989996923,
+      "finished": "2026-11-07T20:24:10.784164+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k0_b6",
+      "charged_worker_seconds": 42.58059939998202,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k1_b5",
+        "condition": 1,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47
+        ],
+        "seeds": [
+          4153722361,
+          1902135745,
+          4229164004,
+          1651349727,
+          1116485695,
+          3788845700,
+          3879661940,
+          1877099271
+        ]
+      },
+      "raw": "c1_s0_k1_b5.npz",
+      "raw_sha256": "c354b3a0aea88a9479d18feaef754dbbe7ce0de1a9681e4db4c1fc694fab248c",
+      "paths": 8,
+      "compute_seconds": 60.35819669987541,
+      "elapsed_seconds": 61.064180199988186,
+      "finished": "2026-11-07T20:24:11.036063+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k1_b5",
+      "charged_worker_seconds": 63.11323329998413,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k1_b5",
+        "condition": 0,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47
+        ],
+        "seeds": [
+          139312411,
+          2458280605,
+          2196339999,
+          3098471863,
+          2523719367,
+          3045875377,
+          3349718948,
+          3252049874
+        ]
+      },
+      "raw": "c0_s1_k1_b5.npz",
+      "raw_sha256": "2506e1075704ce63647c610a6f21560280c1d864d51b7e53cc8eb79ceecadd9e",
+      "paths": 8,
+      "compute_seconds": 61.79555670003174,
+      "elapsed_seconds": 62.54770019999705,
+      "finished": "2026-11-07T20:24:13.018615+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k1_b5",
+      "charged_worker_seconds": 64.60799970000517,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k1_b5",
+        "condition": 1,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47
+        ],
+        "seeds": [
+          1815355483,
+          3154818010,
+          3321985728,
+          3326651953,
+          3397807122,
+          3504087905,
+          791427253,
+          3650067153
+        ]
+      },
+      "raw": "c1_s1_k1_b5.npz",
+      "raw_sha256": "6a49eabc9b383d0bbb03489a84bd0ae2436ce3b19571d7109a41fc7d6900df24",
+      "paths": 8,
+      "compute_seconds": 60.69914519996382,
+      "elapsed_seconds": 61.390367900021374,
+      "finished": "2026-11-07T20:24:13.296534+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k1_b5",
+      "charged_worker_seconds": 63.361205699970014,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k0_b7",
+        "condition": 1,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63
+        ],
+        "seeds": [
+          155615952,
+          865874926,
+          566507040,
+          3034642300,
+          2263005776,
+          1317831631,
+          3249973224,
+          1120684839
+        ]
+      },
+      "raw": "c1_s0_k0_b7.npz",
+      "raw_sha256": "ce1c73228d7a1764f987697003ab1b511b334a1e7fe29dfb4fef322f321f2355",
+      "paths": 8,
+      "compute_seconds": 36.448428700037766,
+      "elapsed_seconds": 37.182891300006304,
+      "finished": "2026-11-07T20:24:50.719500+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k0_b7",
+      "charged_worker_seconds": 39.56383810000261,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k0_b7",
+        "condition": 0,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63
+        ],
+        "seeds": [
+          2764454530,
+          728661015,
+          43963698,
+          784640527,
+          947995215,
+          2541684859,
+          1860841892,
+          1196360434
+        ]
+      },
+      "raw": "c0_s0_k0_b7.npz",
+      "raw_sha256": "fd78cdf1bb410ffacf9bbe0a9c41b1e06799e5c13893238f0ee776de00d8d40d",
+      "paths": 8,
+      "compute_seconds": 38.59915999992518,
+      "elapsed_seconds": 39.31195870001102,
+      "finished": "2026-11-07T20:24:52.618577+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k0_b7",
+      "charged_worker_seconds": 41.56297870003618,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k0_b7",
+        "condition": 1,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63
+        ],
+        "seeds": [
+          1079192017,
+          2408667427,
+          1883714459,
+          2138634983,
+          1219880776,
+          953804161,
+          1297090675,
+          866719774
+        ]
+      },
+      "raw": "c1_s1_k0_b7.npz",
+      "raw_sha256": "930b7f3d7a0b0fcbb8cac01839049d303c08d1791673b3f173e6e0809d189ccc",
+      "paths": 8,
+      "compute_seconds": 36.58394559996668,
+      "elapsed_seconds": 37.28861340001458,
+      "finished": "2026-11-07T20:24:52.907132+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k0_b7",
+      "charged_worker_seconds": 39.32164369995007,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k0_b7",
+        "condition": 0,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63
+        ],
+        "seeds": [
+          2481781414,
+          2286548217,
+          3974672889,
+          1114424436,
+          3980111141,
+          1843365552,
+          1617837883,
+          3840534667
+        ]
+      },
+      "raw": "c0_s1_k0_b7.npz",
+      "raw_sha256": "7ce9921c19624f9061e6a4eb6517a9bc80c0727e9dce5a6ff5c886947205b4cc",
+      "paths": 8,
+      "compute_seconds": 38.8029974999954,
+      "elapsed_seconds": 39.53616180003155,
+      "finished": "2026-11-07T20:24:54.933114+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k0_b7",
+      "charged_worker_seconds": 41.818662200006656,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k1_b6",
+        "condition": 0,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55
+        ],
+        "seeds": [
+          1253957908,
+          526542911,
+          2619380740,
+          2760206242,
+          4051676955,
+          2360992735,
+          188179809,
+          329464470
+        ]
+      },
+      "raw": "c0_s0_k1_b6.npz",
+      "raw_sha256": "cb8ad1bbded103b5b61bdd58d6164becae7eb06e37147cef560215cc058388a2",
+      "paths": 8,
+      "compute_seconds": 60.72851420001825,
+      "elapsed_seconds": 61.4664775999845,
+      "finished": "2026-11-07T20:25:11.295824+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k1_b6",
+      "charged_worker_seconds": 63.60427349997917,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k1_b6",
+        "condition": 1,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55
+        ],
+        "seeds": [
+          1514293373,
+          71057067,
+          532382892,
+          607868351,
+          2081691338,
+          318455511,
+          4072609126,
+          3031960764
+        ]
+      },
+      "raw": "c1_s0_k1_b6.npz",
+      "raw_sha256": "a2283c700f7fc13025e8094dee26256941071a814dbc393ab1679f4158a85753",
+      "paths": 8,
+      "compute_seconds": 59.659340199956205,
+      "elapsed_seconds": 60.42078819999006,
+      "finished": "2026-11-07T20:25:11.917291+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k1_b6",
+      "charged_worker_seconds": 62.60212609998416,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k1_b6",
+        "condition": 1,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55
+        ],
+        "seeds": [
+          573400754,
+          3586747445,
+          331941062,
+          2923904038,
+          1126412717,
+          3500672549,
+          2486284914,
+          3122911539
+        ]
+      },
+      "raw": "c1_s1_k1_b6.npz",
+      "raw_sha256": "8431a1848ec8e73e1722973f76eae13013e7adbcee273106327a4d186883af15",
+      "paths": 8,
+      "compute_seconds": 59.907385700033046,
+      "elapsed_seconds": 60.65158209996298,
+      "finished": "2026-11-07T20:25:13.746390+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k1_b6",
+      "charged_worker_seconds": 63.10235830000602,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k1_b6",
+        "condition": 0,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55
+        ],
+        "seeds": [
+          2266799649,
+          1961368724,
+          3031660527,
+          3301660788,
+          2729920046,
+          2934079615,
+          2849631123,
+          1640611446
+        ]
+      },
+      "raw": "c0_s1_k1_b6.npz",
+      "raw_sha256": "9b7760a8262f03171fd0229a2a2b10619636fc4b33319e81934f571ffd14eca7",
+      "paths": 8,
+      "compute_seconds": 61.041115599975456,
+      "elapsed_seconds": 61.82606300001498,
+      "finished": "2026-11-07T20:25:14.160393+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k1_b6",
+      "charged_worker_seconds": 64.10621719999472,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k0_b8",
+        "condition": 1,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71
+        ],
+        "seeds": [
+          1500138611,
+          380028403,
+          3248274582,
+          727025642,
+          2845752973,
+          1079359945,
+          1102734479,
+          3920435463
+        ]
+      },
+      "raw": "c1_s0_k0_b8.npz",
+      "raw_sha256": "8ba33a2c851ba0a8a389ff9e674f167ab8d55207e3d02cc0625f1bc1fa279601",
+      "paths": 8,
+      "compute_seconds": 37.22926069999812,
+      "elapsed_seconds": 37.938285500044,
+      "finished": "2026-11-07T20:25:52.144327+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k0_b8",
+      "charged_worker_seconds": 40.076046300004236,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k0_b8",
+        "condition": 0,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71
+        ],
+        "seeds": [
+          1160017799,
+          4014681650,
+          2004267669,
+          3006294181,
+          2975869163,
+          2739402949,
+          625383621,
+          184375058
+        ]
+      },
+      "raw": "c0_s0_k0_b8.npz",
+      "raw_sha256": "e221e89fd6999ef4e9fd457d88037bc6613fc9c0ab809d06544fdc3c49ba7a1d",
+      "paths": 8,
+      "compute_seconds": 39.23874030006118,
+      "elapsed_seconds": 40.004141099983826,
+      "finished": "2026-11-07T20:25:53.705850+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k0_b8",
+      "charged_worker_seconds": 42.068969499960076,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k0_b8",
+        "condition": 1,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71
+        ],
+        "seeds": [
+          1270095771,
+          3824370851,
+          3111273998,
+          1870454640,
+          1840392819,
+          2313924714,
+          2763261499,
+          2591588873
+        ]
+      },
+      "raw": "c1_s1_k0_b8.npz",
+      "raw_sha256": "b4dc81142e9b0e27923ad9f10f3f62f25656ad6fb67c73410e617adfe3558169",
+      "paths": 8,
+      "compute_seconds": 37.36797499994282,
+      "elapsed_seconds": 38.08430790004786,
+      "finished": "2026-11-07T20:25:54.523667+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k0_b8",
+      "charged_worker_seconds": 40.3098284000298,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k1_b7",
+        "condition": 0,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63
+        ],
+        "seeds": [
+          3628705751,
+          1788117372,
+          3585624884,
+          332937591,
+          1115483411,
+          3805881523,
+          3812234474,
+          986233870
+        ]
+      },
+      "raw": "c0_s0_k1_b7.npz",
+      "raw_sha256": "61784487d3e8e5f2ab0c61bfe92ad6ba4fb5aff8f52f482f41ec70643788e488",
+      "paths": 8,
+      "compute_seconds": 61.39975789998425,
+      "elapsed_seconds": 62.119758900022134,
+      "finished": "2026-11-07T20:25:55.268224+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k1_b7",
+      "charged_worker_seconds": 64.10803070000838,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k1_b7",
+        "condition": 1,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63
+        ],
+        "seeds": [
+          3038752755,
+          2081727754,
+          1094851140,
+          2512057359,
+          403057219,
+          2134431711,
+          16704865,
+          841030063
+        ]
+      },
+      "raw": "c1_s0_k1_b7.npz",
+      "raw_sha256": "d02520aa0e725d77f05c911450560344410666fab49fd9a1d4eebea70ca3f05e",
+      "paths": 8,
+      "compute_seconds": 60.002906500012614,
+      "elapsed_seconds": 60.7355623000185,
+      "finished": "2026-11-07T20:25:55.626349+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k1_b7",
+      "charged_worker_seconds": 62.85974579997128,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k0_b8",
+        "condition": 0,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71
+        ],
+        "seeds": [
+          945891008,
+          537503976,
+          307866855,
+          465345324,
+          3598610106,
+          1437093227,
+          561873688,
+          2988183536
+        ]
+      },
+      "raw": "c0_s1_k0_b8.npz",
+      "raw_sha256": "926ac411f1a8a521d886c542d99b96198ea291e78f82e14bddbfb2218987d5b4",
+      "paths": 8,
+      "compute_seconds": 39.386355499969795,
+      "elapsed_seconds": 40.102104799996596,
+      "finished": "2026-11-07T20:25:56.265665+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k0_b8",
+      "charged_worker_seconds": 42.3192238000338,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k1_b7",
+        "condition": 0,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63
+        ],
+        "seeds": [
+          2589323256,
+          700594011,
+          635518620,
+          619357459,
+          54211697,
+          274378637,
+          3262258119,
+          1676337289
+        ]
+      },
+      "raw": "c0_s1_k1_b7.npz",
+      "raw_sha256": "3c44b92d66cc96797c2d63ceca73d76da16de9492198fec6af5bd0d55dba6a16",
+      "paths": 8,
+      "compute_seconds": 61.787520200014114,
+      "elapsed_seconds": 62.53653390001273,
+      "finished": "2026-11-07T20:25:57.697313+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k1_b7",
+      "charged_worker_seconds": 64.60659860004671,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k1_b7",
+        "condition": 1,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63
+        ],
+        "seeds": [
+          1031111327,
+          1017360181,
+          1450518770,
+          3821310106,
+          2810282772,
+          613152637,
+          1992830105,
+          467288231
+        ]
+      },
+      "raw": "c1_s1_k1_b7.npz",
+      "raw_sha256": "7da995e4f10c5566e21b388d4965eb81eeb96f3a4aa24d0f27ef0f75e593d773",
+      "paths": 8,
+      "compute_seconds": 60.825222299899906,
+      "elapsed_seconds": 61.553850000025705,
+      "finished": "2026-11-07T20:25:58.917231+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k1_b7",
+      "charged_worker_seconds": 63.60440869996091,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k0_b9",
+        "condition": 1,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79
+        ],
+        "seeds": [
+          1651404116,
+          1347523485,
+          2457260915,
+          656034063,
+          1420281226,
+          1627333515,
+          1004906041,
+          2021730996
+        ]
+      },
+      "raw": "c1_s0_k0_b9.npz",
+      "raw_sha256": "b7d56e06e87d2ba361692128ab012102774af5d59cf6a47d52ec850cf4cf2cc6",
+      "paths": 8,
+      "compute_seconds": 36.61191180004971,
+      "elapsed_seconds": 37.31900590000441,
+      "finished": "2026-11-07T20:26:36.142711+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k0_b9",
+      "charged_worker_seconds": 39.56612040003529,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k0_b9",
+        "condition": 0,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79
+        ],
+        "seeds": [
+          3077538169,
+          3938362716,
+          3858395226,
+          4198892141,
+          2239089127,
+          1865843354,
+          1950939751,
+          2201954782
+        ]
+      },
+      "raw": "c0_s0_k0_b9.npz",
+      "raw_sha256": "e79be448561f2248b231a2a73d5a6c6dc2bf7649ad0c002062039060317f0594",
+      "paths": 8,
+      "compute_seconds": 38.551708999904804,
+      "elapsed_seconds": 39.28212360001635,
+      "finished": "2026-11-07T20:26:37.390304+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k0_b9",
+      "charged_worker_seconds": 41.57769399997778,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k0_b9",
+        "condition": 1,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79
+        ],
+        "seeds": [
+          2596838954,
+          1939887222,
+          2812192090,
+          2917674542,
+          3021103476,
+          2084782601,
+          2889952208,
+          3860506034
+        ]
+      },
+      "raw": "c1_s1_k0_b9.npz",
+      "raw_sha256": "54a508746f61ea47bc2014a5993d7bb771c711cd3627e537bd7f10119b23efb8",
+      "paths": 8,
+      "compute_seconds": 36.54442080005538,
+      "elapsed_seconds": 37.21933519997401,
+      "finished": "2026-11-07T20:26:38.410021+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k0_b9",
+      "charged_worker_seconds": 39.326073400035966,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k0_b9",
+        "condition": 0,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79
+        ],
+        "seeds": [
+          1794258281,
+          4116360869,
+          202639199,
+          3679578009,
+          3584498635,
+          71110734,
+          3166589581,
+          3840881535
+        ]
+      },
+      "raw": "c0_s1_k0_b9.npz",
+      "raw_sha256": "008fbc0605948faf99d6543a71d1d412cde6cc8d892f3d30d75cfb0772bd4359",
+      "paths": 8,
+      "compute_seconds": 38.476224199926946,
+      "elapsed_seconds": 39.18332139996346,
+      "finished": "2026-11-07T20:26:39.217004+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k0_b9",
+      "charged_worker_seconds": 41.325596900016535,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k1_b8",
+        "condition": 0,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71
+        ],
+        "seeds": [
+          1231230245,
+          2281507442,
+          1160918170,
+          967667675,
+          2722140372,
+          4283603430,
+          2721147162,
+          4054501932
+        ]
+      },
+      "raw": "c0_s0_k1_b8.npz",
+      "raw_sha256": "e832a60fd4b73ce8f91111ac9e5a5fbf043d0742d86f7840bc4ecea37d4b1a46",
+      "paths": 8,
+      "compute_seconds": 60.46532329998445,
+      "elapsed_seconds": 61.19968069996685,
+      "finished": "2026-11-07T20:26:55.651264+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k1_b8",
+      "charged_worker_seconds": 63.09933460003231,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k1_b8",
+        "condition": 1,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71
+        ],
+        "seeds": [
+          1668256610,
+          3373264271,
+          2146698165,
+          1774500502,
+          1191275055,
+          3400089371,
+          3778260903,
+          1152033418
+        ]
+      },
+      "raw": "c1_s0_k1_b8.npz",
+      "raw_sha256": "f54ca208db8be85578889038cea8ae23351509c8316ae7ea26c8d88cb36487f5",
+      "paths": 8,
+      "compute_seconds": 59.16290990001289,
+      "elapsed_seconds": 59.87095110001974,
+      "finished": "2026-11-07T20:26:55.885942+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k1_b8",
+      "charged_worker_seconds": 61.85945139999967,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k1_b8",
+        "condition": 1,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71
+        ],
+        "seeds": [
+          2341627714,
+          3313659355,
+          2930385959,
+          2396669171,
+          1046036510,
+          1536961267,
+          2113377333,
+          1037412651
+        ]
+      },
+      "raw": "c1_s1_k1_b8.npz",
+      "raw_sha256": "089327908256aad7847fee58fbef9a61a4fe2391dee6fc6bd5d8f11dbfb36fd7",
+      "paths": 8,
+      "compute_seconds": 59.699557900079526,
+      "elapsed_seconds": 60.43373570003314,
+      "finished": "2026-11-07T20:26:58.013543+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k1_b8",
+      "charged_worker_seconds": 62.60298839997267,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k1_b8",
+        "condition": 0,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71
+        ],
+        "seeds": [
+          2189302851,
+          960490780,
+          2132446147,
+          2606831320,
+          407033498,
+          270687889,
+          606122863,
+          1972730270
+        ]
+      },
+      "raw": "c0_s1_k1_b8.npz",
+      "raw_sha256": "92bf4d0327b330c1e77939f29c3014c3e1826c5b8ee5e574d713a484b1d74f95",
+      "paths": 8,
+      "compute_seconds": 60.9842375999433,
+      "elapsed_seconds": 61.726009299978614,
+      "finished": "2026-11-07T20:26:58.792084+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k1_b8",
+      "charged_worker_seconds": 63.853120899992064,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k0_b10",
+        "condition": 1,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87
+        ],
+        "seeds": [
+          1473440295,
+          2865544816,
+          3601379499,
+          2185000948,
+          2411491672,
+          2772371001,
+          2183773517,
+          1987201023
+        ]
+      },
+      "raw": "c1_s0_k0_b10.npz",
+      "raw_sha256": "1bc31a0f3bc1c1273337373bf8fd752bfdd26371bb1d0c22b4f231925fe16c54",
+      "paths": 8,
+      "compute_seconds": 36.89090709993616,
+      "elapsed_seconds": 37.59019650000846,
+      "finished": "2026-11-07T20:27:35.657377+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k0_b10",
+      "charged_worker_seconds": 39.564257199992426,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k0_b10",
+        "condition": 0,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87
+        ],
+        "seeds": [
+          599968000,
+          969868783,
+          3362567191,
+          749479110,
+          2029842268,
+          2835578078,
+          1138691539,
+          3513144604
+        ]
+      },
+      "raw": "c0_s0_k0_b10.npz",
+      "raw_sha256": "999636245cfaa5af9a96d2361caa6f57e59fdd27b9bf363e91bf5171ccdaf778",
+      "paths": 8,
+      "compute_seconds": 39.60701729997527,
+      "elapsed_seconds": 40.34068650001427,
+      "finished": "2026-11-07T20:27:38.161860+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k0_b10",
+      "charged_worker_seconds": 42.32611880003242,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k0_b10",
+        "condition": 1,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87
+        ],
+        "seeds": [
+          2054491188,
+          1895886608,
+          4246020397,
+          4262945797,
+          1615438356,
+          1823771689,
+          1012746677,
+          3807196304
+        ]
+      },
+      "raw": "c1_s1_k0_b10.npz",
+      "raw_sha256": "653cc38bdb0b3239278805c8a6dd33ee6c04f6fd0a401a1bec3522b67b9a85c5",
+      "paths": 8,
+      "compute_seconds": 36.772558800003026,
+      "elapsed_seconds": 37.48638390004635,
+      "finished": "2026-11-07T20:27:38.570964+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k0_b10",
+      "charged_worker_seconds": 39.56483779998962,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k1_b9",
+        "condition": 0,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79
+        ],
+        "seeds": [
+          1373256572,
+          2830835231,
+          1601469161,
+          2849029474,
+          3775401618,
+          2078340944,
+          3493476370,
+          2079498738
+        ]
+      },
+      "raw": "c0_s0_k1_b9.npz",
+      "raw_sha256": "446ff90bf9e4a307a12942f341770dc15908f9bbdbd6678ba3b7b2c9cb75be14",
+      "paths": 8,
+      "compute_seconds": 60.45050979993539,
+      "elapsed_seconds": 61.16314799996326,
+      "finished": "2026-11-07T20:27:39.729406+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k1_b9",
+      "charged_worker_seconds": 63.35147729999153,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k1_b9",
+        "condition": 1,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79
+        ],
+        "seeds": [
+          3522144912,
+          2280666793,
+          1360779106,
+          2528483916,
+          2442621455,
+          158575416,
+          4156355827,
+          3768615828
+        ]
+      },
+      "raw": "c1_s0_k1_b9.npz",
+      "raw_sha256": "659b4a47cadc593dc567ac69164230afd682c9113273a91f9e7b72f4ccf19acf",
+      "paths": 8,
+      "compute_seconds": 59.350901400030125,
+      "elapsed_seconds": 60.0779782999889,
+      "finished": "2026-11-07T20:27:39.913204+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k1_b9",
+      "charged_worker_seconds": 62.10684779996518,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k0_b10",
+        "condition": 0,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87
+        ],
+        "seeds": [
+          4143190211,
+          198496622,
+          1402770526,
+          1652155134,
+          962088957,
+          1927982098,
+          466903255,
+          2443290017
+        ]
+      },
+      "raw": "c0_s1_k0_b10.npz",
+      "raw_sha256": "eb8355670a955b0406a0a8b7e5b6129f98715344d2da688c25a3337ba89a8017",
+      "paths": 8,
+      "compute_seconds": 39.36301829991862,
+      "elapsed_seconds": 40.09229340002639,
+      "finished": "2026-11-07T20:27:40.425086+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k0_b10",
+      "charged_worker_seconds": 42.31898840004578,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k1_b9",
+        "condition": 0,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79
+        ],
+        "seeds": [
+          3324922979,
+          2235457937,
+          1571394472,
+          1060345962,
+          2042704007,
+          2255026767,
+          3727110249,
+          827748380
+        ]
+      },
+      "raw": "c0_s1_k1_b9.npz",
+      "raw_sha256": "5dbc712f4e31bde17c4084ec45aa9cab459a577eb18d5278addbc328b57f7c7c",
+      "paths": 8,
+      "compute_seconds": 61.296503800025675,
+      "elapsed_seconds": 62.02114969998365,
+      "finished": "2026-11-07T20:27:42.883310+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k1_b9",
+      "charged_worker_seconds": 64.10095069999807,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k1_b9",
+        "condition": 1,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79
+        ],
+        "seeds": [
+          1672827779,
+          3340400008,
+          2544402532,
+          1938494432,
+          705840839,
+          405943380,
+          1179901721,
+          1162147528
+        ]
+      },
+      "raw": "c1_s1_k1_b9.npz",
+      "raw_sha256": "69cce41b8497ec484e4b19ab2af3646560e9af14c60bdb80bfdc5af8e8f47448",
+      "paths": 8,
+      "compute_seconds": 60.459171199880075,
+      "elapsed_seconds": 61.160714700003155,
+      "finished": "2026-11-07T20:27:42.736831+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k1_b9",
+      "charged_worker_seconds": 63.36350760003552,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k0_b11",
+        "condition": 1,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95
+        ],
+        "seeds": [
+          2086800658,
+          3515002212,
+          2420182559,
+          4293149477,
+          2201903109,
+          2659645132,
+          1020547465,
+          1273697311
+        ]
+      },
+      "raw": "c1_s0_k0_b11.npz",
+      "raw_sha256": "4560094434b3308ea69320f261214ef74c46ef001785accdf26a95ad95ee425c",
+      "paths": 8,
+      "compute_seconds": 36.49704270000802,
+      "elapsed_seconds": 37.189918100018986,
+      "finished": "2026-11-07T20:28:20.206780+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k0_b11",
+      "charged_worker_seconds": 39.31268029997591,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k0_b11",
+        "condition": 0,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95
+        ],
+        "seeds": [
+          4209407889,
+          2804830428,
+          66364038,
+          3244965475,
+          3972935913,
+          671215568,
+          2434889943,
+          1156875125
+        ]
+      },
+      "raw": "c0_s0_k0_b11.npz",
+      "raw_sha256": "4b0cc32b969e7294face297ee6568c8ad19b08b5775712b77475b4e552a8c74a",
+      "paths": 8,
+      "compute_seconds": 38.99375089991372,
+      "elapsed_seconds": 39.725311999965925,
+      "finished": "2026-11-07T20:28:22.024805+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k0_b11",
+      "charged_worker_seconds": 42.05326389998663,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k0_b11",
+        "condition": 1,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95
+        ],
+        "seeds": [
+          1984247370,
+          1721450333,
+          2454143006,
+          761095764,
+          1529439900,
+          1368464683,
+          121559523,
+          531438739
+        ]
+      },
+      "raw": "c1_s1_k0_b11.npz",
+      "raw_sha256": "b3acc99ac2f5375222406a0c8719169fb8d8fb6f7087d1ef1f9cfd3500d2b8bc",
+      "paths": 8,
+      "compute_seconds": 36.761082100041676,
+      "elapsed_seconds": 37.4828718000208,
+      "finished": "2026-11-07T20:28:22.679933+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k0_b11",
+      "charged_worker_seconds": 39.55806940002367,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k0_b11",
+        "condition": 0,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95
+        ],
+        "seeds": [
+          226876392,
+          1527742923,
+          2065026940,
+          2456635373,
+          3588738727,
+          984838372,
+          1402568838,
+          4117194179
+        ]
+      },
+      "raw": "c0_s1_k0_b11.npz",
+      "raw_sha256": "83539755448f79122d40121812b28a19d47ff5caf74104c3b2a2ba333613ab9e",
+      "paths": 8,
+      "compute_seconds": 39.16630920005264,
+      "elapsed_seconds": 39.91093369998271,
+      "finished": "2026-11-07T20:28:25.108336+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k0_b11",
+      "charged_worker_seconds": 42.06846349994885,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k1_b10",
+        "condition": 0,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87
+        ],
+        "seeds": [
+          2274776268,
+          3312767618,
+          716368425,
+          2882092171,
+          2304762825,
+          2137290776,
+          3308756359,
+          905124159
+        ]
+      },
+      "raw": "c0_s0_k1_b10.npz",
+      "raw_sha256": "f6540c924e8ec6896e765e49a716afcafa5b59b3e8581f6e62dbc3b24fca894f",
+      "paths": 8,
+      "compute_seconds": 61.17978939996101,
+      "elapsed_seconds": 61.903986699995585,
+      "finished": "2026-11-07T20:28:39.777527+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k1_b10",
+      "charged_worker_seconds": 63.854729699960444,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k1_b10",
+        "condition": 1,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87
+        ],
+        "seeds": [
+          3265400724,
+          1585747483,
+          584370052,
+          2252091182,
+          1977454207,
+          1181256798,
+          427461268,
+          424092254
+        ]
+      },
+      "raw": "c1_s0_k1_b10.npz",
+      "raw_sha256": "a4f3ffaa27b0b1f350428fa49d9704e3ec0b6f025d1e3601904eb4d6db030675",
+      "paths": 8,
+      "compute_seconds": 59.126915799919516,
+      "elapsed_seconds": 59.8605420999811,
+      "finished": "2026-11-07T20:28:40.274625+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k1_b10",
+      "charged_worker_seconds": 61.84908060001908,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k1_b10",
+        "condition": 0,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87
+        ],
+        "seeds": [
+          1357432763,
+          2085038809,
+          3807116076,
+          4073223500,
+          3869691501,
+          3901741282,
+          836812865,
+          1524291156
+        ]
+      },
+      "raw": "c0_s1_k1_b10.npz",
+      "raw_sha256": "9cf525ee560246a43b28ee436844368cb9f985a8a7b1536406afed031ac02a30",
+      "paths": 8,
+      "compute_seconds": 60.94320519990288,
+      "elapsed_seconds": 61.69756369997049,
+      "finished": "2026-11-07T20:28:42.646270+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k1_b10",
+      "charged_worker_seconds": 63.85857639997266,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k1_b10",
+        "condition": 1,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87
+        ],
+        "seeds": [
+          2420856324,
+          2690685794,
+          2821498107,
+          1755156369,
+          1440370984,
+          784070586,
+          2643554287,
+          977933513
+        ]
+      },
+      "raw": "c1_s1_k1_b10.npz",
+      "raw_sha256": "f47399b1c44690a8be6fd42cc16ab018c1b75afea906828013ba8dddd4cdb2c4",
+      "paths": 8,
+      "compute_seconds": 59.720041100052185,
+      "elapsed_seconds": 60.44074890000047,
+      "finished": "2026-11-07T20:28:42.739885+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k1_b10",
+      "charged_worker_seconds": 62.61296089994721,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k0_b12",
+        "condition": 1,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103
+        ],
+        "seeds": [
+          435493780,
+          1190226782,
+          226249204,
+          838632529,
+          1651521481,
+          1185209291,
+          1757496330,
+          844085265
+        ]
+      },
+      "raw": "c1_s0_k0_b12.npz",
+      "raw_sha256": "f1e98ad85f5bc7eff2e2a797c0a374e776ac90aad924a0189ce6c7a9326c8d0f",
+      "paths": 8,
+      "compute_seconds": 36.999713099969085,
+      "elapsed_seconds": 37.69199939997634,
+      "finished": "2026-11-07T20:29:20.183191+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k0_b12",
+      "charged_worker_seconds": 39.81657319999067,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k0_b12",
+        "condition": 0,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103
+        ],
+        "seeds": [
+          845253607,
+          3949855404,
+          1001721631,
+          1725727905,
+          604329752,
+          1580245897,
+          2744002566,
+          528516890
+        ]
+      },
+      "raw": "c0_s0_k0_b12.npz",
+      "raw_sha256": "1046d59bdf8dd828328664fdbddaca186be3141bc5ebd57e19c3b211ac8e4f85",
+      "paths": 8,
+      "compute_seconds": 39.092241499980446,
+      "elapsed_seconds": 39.82496150000952,
+      "finished": "2026-11-07T20:29:21.856018+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k0_b12",
+      "charged_worker_seconds": 41.81445559998974,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k0_b12",
+        "condition": 1,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103
+        ],
+        "seeds": [
+          3639301315,
+          4118507118,
+          87435140,
+          3820302033,
+          2508323864,
+          3103704386,
+          1991080714,
+          3638894918
+        ]
+      },
+      "raw": "c1_s1_k0_b12.npz",
+      "raw_sha256": "07292c2e89fc6c31b8dcce9101648e27080b9482d063f2e8b5740c0235a4666f",
+      "paths": 8,
+      "compute_seconds": 36.96054549998371,
+      "elapsed_seconds": 37.68902380001964,
+      "finished": "2026-11-07T20:29:22.730540+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k0_b12",
+      "charged_worker_seconds": 39.7962749999715,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k1_b11",
+        "condition": 0,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95
+        ],
+        "seeds": [
+          2210424663,
+          3476106078,
+          2065787206,
+          4079793094,
+          4109623282,
+          3089817066,
+          3243439403,
+          1196301759
+        ]
+      },
+      "raw": "c0_s0_k1_b11.npz",
+      "raw_sha256": "f491a6b1c605705057f73b40d98e5041832d62e5c5a513e9a45f11fbb826c845",
+      "paths": 8,
+      "compute_seconds": 60.3546631000936,
+      "elapsed_seconds": 61.0825191999902,
+      "finished": "2026-11-07T20:29:23.540088+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k1_b11",
+      "charged_worker_seconds": 63.10358090000227,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k1_b11",
+        "condition": 1,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95
+        ],
+        "seeds": [
+          1785845767,
+          1551444567,
+          2011874305,
+          148007316,
+          1378017224,
+          240051540,
+          1784940714,
+          1273678417
+        ]
+      },
+      "raw": "c1_s0_k1_b11.npz",
+      "raw_sha256": "2b3677d22714b9e0a63ed652bdd461cadbec78b2834b110343181c3db0c6bd2a",
+      "paths": 8,
+      "compute_seconds": 59.74867180001456,
+      "elapsed_seconds": 60.4600955999922,
+      "finished": "2026-11-07T20:29:24.958016+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k1_b11",
+      "charged_worker_seconds": 62.60317630000645,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k0_b12",
+        "condition": 0,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103
+        ],
+        "seeds": [
+          3624807484,
+          1965199916,
+          4215693559,
+          1116346672,
+          1494291850,
+          4119949173,
+          1596691334,
+          2744457886
+        ]
+      },
+      "raw": "c0_s1_k0_b12.npz",
+      "raw_sha256": "a81bce266a7b614b1016c213b7085ed633b85cb53014891b7efd1f061f36b7dc",
+      "paths": 8,
+      "compute_seconds": 39.51344409992453,
+      "elapsed_seconds": 40.234465899993666,
+      "finished": "2026-11-07T20:29:25.276396+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k0_b12",
+      "charged_worker_seconds": 42.325745000038296,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k1_b11",
+        "condition": 0,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95
+        ],
+        "seeds": [
+          1634701792,
+          3770183275,
+          2003519514,
+          2106534264,
+          3103136597,
+          3514287670,
+          3197667761,
+          262307343
+        ]
+      },
+      "raw": "c0_s1_k1_b11.npz",
+      "raw_sha256": "a56efa4b9510c2eddaf74c8e29c3232d7bd73a16681268a1db4bdab076d1c26a",
+      "paths": 8,
+      "compute_seconds": 61.88632379990304,
+      "elapsed_seconds": 62.62212770001497,
+      "finished": "2026-11-07T20:29:27.594054+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k1_b11",
+      "charged_worker_seconds": 64.60680760000832,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k1_b11",
+        "condition": 1,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95
+        ],
+        "seeds": [
+          1458912829,
+          809229244,
+          3973826507,
+          2805535546,
+          3810114841,
+          3238055983,
+          3228106336,
+          1388061497
+        ]
+      },
+      "raw": "c1_s1_k1_b11.npz",
+      "raw_sha256": "acb9d8c1391d89f98591bedcc4b8a1aafda5017ec0b18dff328a64788975b9ca",
+      "paths": 8,
+      "compute_seconds": 60.218679600046016,
+      "elapsed_seconds": 60.92020870000124,
+      "finished": "2026-11-07T20:29:28.327872+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k1_b11",
+      "charged_worker_seconds": 62.8541490000207,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k0_b13",
+        "condition": 1,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111
+        ],
+        "seeds": [
+          112765384,
+          220432923,
+          4013081675,
+          681420155,
+          3799067278,
+          51265237,
+          2336528806,
+          285261339
+        ]
+      },
+      "raw": "c1_s0_k0_b13.npz",
+      "raw_sha256": "813a21518d361df66c28f723d23d7a28a3fb1c1da1ae9bc894f4b54f4bb8e52b",
+      "paths": 8,
+      "compute_seconds": 36.68769760010764,
+      "elapsed_seconds": 37.399849999987055,
+      "finished": "2026-11-07T20:30:04.972005+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k0_b13",
+      "charged_worker_seconds": 39.56505089998245,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k0_b13",
+        "condition": 0,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111
+        ],
+        "seeds": [
+          497966217,
+          1716904289,
+          4224411802,
+          2122790971,
+          602999966,
+          1290453005,
+          2049936548,
+          3287079226
+        ]
+      },
+      "raw": "c0_s0_k0_b13.npz",
+      "raw_sha256": "7b01d686c648bf5d507ea8988a9467610c92353b551bb53c5e51c9235491327d",
+      "paths": 8,
+      "compute_seconds": 38.81514900003094,
+      "elapsed_seconds": 39.547953100001905,
+      "finished": "2026-11-07T20:30:06.888479+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k0_b13",
+      "charged_worker_seconds": 41.56046130001778,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k0_b13",
+        "condition": 1,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111
+        ],
+        "seeds": [
+          2492174051,
+          3487849719,
+          1813125183,
+          3894162465,
+          2213518232,
+          1023988543,
+          2705329142,
+          1482542886
+        ]
+      },
+      "raw": "c1_s1_k0_b13.npz",
+      "raw_sha256": "a3dc202c43e1ef7d31b476d24d71758847f65291de70269d84f7b25f7708da84",
+      "paths": 8,
+      "compute_seconds": 37.207609999983106,
+      "elapsed_seconds": 37.91475980001269,
+      "finished": "2026-11-07T20:30:08.447452+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k0_b13",
+      "charged_worker_seconds": 40.06392240000423,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k0_b13",
+        "condition": 0,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111
+        ],
+        "seeds": [
+          3941689528,
+          2444076598,
+          2813604523,
+          2994809988,
+          2643618673,
+          3323122297,
+          1185111183,
+          2903170512
+        ]
+      },
+      "raw": "c0_s1_k0_b13.npz",
+      "raw_sha256": "07c3b191058fa302815342f1f4dd69e3323385cb2bb57a7f0de75da483459b3e",
+      "paths": 8,
+      "compute_seconds": 39.03209739999147,
+      "elapsed_seconds": 39.74962720001349,
+      "finished": "2026-11-07T20:30:09.567381+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k0_b13",
+      "charged_worker_seconds": 41.81737060000887,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k1_b12",
+        "condition": 1,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103
+        ],
+        "seeds": [
+          731548812,
+          2233892016,
+          3906894465,
+          694631951,
+          4007181776,
+          195932012,
+          4149161490,
+          2467176382
+        ]
+      },
+      "raw": "c1_s0_k1_b12.npz",
+      "raw_sha256": "c8f157905d3fe43b8b15ee099dc7e1c82e45bd0a72cb1f25b219d55f9e0f6699",
+      "paths": 8,
+      "compute_seconds": 59.155041499994695,
+      "elapsed_seconds": 59.86170480004512,
+      "finished": "2026-11-07T20:30:23.921455+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k1_b12",
+      "charged_worker_seconds": 61.85070110001834,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k1_b12",
+        "condition": 0,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103
+        ],
+        "seeds": [
+          1460043301,
+          2402482439,
+          2863753904,
+          3655763151,
+          3724849156,
+          1863499645,
+          2859187952,
+          2081920263
+        ]
+      },
+      "raw": "c0_s0_k1_b12.npz",
+      "raw_sha256": "ccc3c164e01e0258e62546ef20991c78260ecb5a87b7246bcc508a6f7b189fd4",
+      "paths": 8,
+      "compute_seconds": 60.88103960006265,
+      "elapsed_seconds": 61.58595839998452,
+      "finished": "2026-11-07T20:30:24.144704+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k1_b12",
+      "charged_worker_seconds": 63.611395100015216,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k1_b12",
+        "condition": 1,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103
+        ],
+        "seeds": [
+          1577978576,
+          1014393420,
+          1917071058,
+          2346678079,
+          174101705,
+          4248491031,
+          3383169707,
+          2247281951
+        ]
+      },
+      "raw": "c1_s1_k1_b12.npz",
+      "raw_sha256": "b10dbc4a61d0656bdd192a83906a19fe0c392ac1c9b358a45de2d344602537d9",
+      "paths": 8,
+      "compute_seconds": 60.016875500034075,
+      "elapsed_seconds": 60.75331239996012,
+      "finished": "2026-11-07T20:30:26.594341+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k1_b12",
+      "charged_worker_seconds": 62.854479099973105,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k1_b12",
+        "condition": 0,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103
+        ],
+        "seeds": [
+          3771027128,
+          3638313770,
+          3971760773,
+          76599384,
+          586901242,
+          679812951,
+          1317587392,
+          3573693876
+        ]
+      },
+      "raw": "c0_s1_k1_b12.npz",
+      "raw_sha256": "70058908e6ab9e54d1e2ed5e746627b20b86195f885a6e9a4e7640f223797ba1",
+      "paths": 8,
+      "compute_seconds": 60.96287350007333,
+      "elapsed_seconds": 61.695241599984,
+      "finished": "2026-11-07T20:30:26.802660+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k1_b12",
+      "charged_worker_seconds": 63.860225400014315,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k0_b14",
+        "condition": 1,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ],
+        "seeds": [
+          3681641692,
+          2395324529,
+          3604490950,
+          3633301317,
+          1311274824,
+          1407920900,
+          2304347763,
+          3532416671
+        ]
+      },
+      "raw": "c1_s0_k0_b14.npz",
+      "raw_sha256": "e8ab7ecb8c841eef8f775f60583e54f039251b57ca7af7990db20c77efd97942",
+      "paths": 8,
+      "compute_seconds": 36.96669839997776,
+      "elapsed_seconds": 37.67558949999511,
+      "finished": "2026-11-07T20:31:04.095931+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k0_b14",
+      "charged_worker_seconds": 39.8180506999488,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k0_b14",
+        "condition": 0,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ],
+        "seeds": [
+          4065739185,
+          510474756,
+          3333001892,
+          1830941770,
+          3822761721,
+          2979483689,
+          3526359057,
+          4018902995
+        ]
+      },
+      "raw": "c0_s0_k0_b14.npz",
+      "raw_sha256": "48314d99e4c77bd8e8269baea2fbe5e51b0acdb2875a06e889746d2069b2b48c",
+      "paths": 8,
+      "compute_seconds": 38.92705509997904,
+      "elapsed_seconds": 39.62264219997451,
+      "finished": "2026-11-07T20:31:05.797147+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k0_b14",
+      "charged_worker_seconds": 41.82229099998949,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k0_b14",
+        "condition": 1,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ],
+        "seeds": [
+          760589628,
+          2343663076,
+          1632109106,
+          1456813643,
+          2232107411,
+          2124731380,
+          3795560744,
+          993204673
+        ]
+      },
+      "raw": "c1_s1_k0_b14.npz",
+      "raw_sha256": "f555260298cfdc1caa1a333f1c4d173ee77da390d892fceddf852ca310077830",
+      "paths": 8,
+      "compute_seconds": 36.536747300066054,
+      "elapsed_seconds": 37.238888400024734,
+      "finished": "2026-11-07T20:31:06.400874+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k0_b14",
+      "charged_worker_seconds": 39.318170799990185,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k1_b13",
+        "condition": 0,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111
+        ],
+        "seeds": [
+          2020880572,
+          451851059,
+          867380949,
+          229053087,
+          1942956149,
+          1265398506,
+          2521991772,
+          2304682552
+        ]
+      },
+      "raw": "c0_s0_k1_b13.npz",
+      "raw_sha256": "a5b39030b3f946802631ab46640902f81d6926747023d6b36616b40b53b8b24c",
+      "paths": 8,
+      "compute_seconds": 60.581296600052156,
+      "elapsed_seconds": 61.327337399998214,
+      "finished": "2026-11-07T20:31:08.665760+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k1_b13",
+      "charged_worker_seconds": 63.362513899977785,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k1_b13",
+        "condition": 1,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111
+        ],
+        "seeds": [
+          3877093444,
+          2440203564,
+          3092793073,
+          616345407,
+          49831029,
+          3320633347,
+          2752241273,
+          100472810
+        ]
+      },
+      "raw": "c1_s0_k1_b13.npz",
+      "raw_sha256": "d291042d44dd87f2b63c9f1ac2882564a36f7e1a77958b5eb100e2158c96ff08",
+      "paths": 8,
+      "compute_seconds": 58.95389160007471,
+      "elapsed_seconds": 59.65806569997221,
+      "finished": "2026-11-07T20:31:08.773423+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k1_b13",
+      "charged_worker_seconds": 61.864488299994264,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k0_b14",
+        "condition": 0,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ],
+        "seeds": [
+          341401072,
+          3750020105,
+          1785790863,
+          1406901336,
+          2444695530,
+          2629745029,
+          4009388433,
+          363489371
+        ]
+      },
+      "raw": "c0_s1_k0_b14.npz",
+      "raw_sha256": "945b709ffa2451e265b2df15208a769d7ffdbd8b611efc1d21ef5e0fcf7e6f2a",
+      "paths": 8,
+      "compute_seconds": 39.10771459998796,
+      "elapsed_seconds": 39.85132000001613,
+      "finished": "2026-11-07T20:31:08.767586+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k0_b14",
+      "charged_worker_seconds": 42.0885456999531,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k1_b13",
+        "condition": 1,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111
+        ],
+        "seeds": [
+          2718586956,
+          523686553,
+          866877981,
+          3869756761,
+          638882579,
+          1272230719,
+          2170140884,
+          2619827718
+        ]
+      },
+      "raw": "c1_s1_k1_b13.npz",
+      "raw_sha256": "b0ee6c0f65216f4a7c2c40fa7267800c362e02e17251e02ac2e8022b70ece26c",
+      "paths": 8,
+      "compute_seconds": 60.10460449993843,
+      "elapsed_seconds": 60.789503999985754,
+      "finished": "2026-11-07T20:31:12.649301+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k1_b13",
+      "charged_worker_seconds": 62.859545600018464,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k1_b13",
+        "condition": 0,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111
+        ],
+        "seeds": [
+          3522907216,
+          4076482463,
+          361152059,
+          3240632814,
+          1306244266,
+          1343811914,
+          605577480,
+          1045374473
+        ]
+      },
+      "raw": "c0_s1_k1_b13.npz",
+      "raw_sha256": "0664fd82e1342399d80bf922f738dfae268ebe49a9b65ef0b9436395c09abfdb",
+      "paths": 8,
+      "compute_seconds": 61.40354350005509,
+      "elapsed_seconds": 62.150942200038116,
+      "finished": "2026-11-07T20:31:13.043759+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k1_b13",
+      "charged_worker_seconds": 64.11598589998903,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k0_b15",
+        "condition": 1,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127
+        ],
+        "seeds": [
+          1070881876,
+          2449588723,
+          1413287345,
+          1478182628,
+          2557507337,
+          2270955462,
+          1193167397,
+          101039027
+        ]
+      },
+      "raw": "c1_s0_k0_b15.npz",
+      "raw_sha256": "d8021384f0f8bbb402092127faea29ecb1a5f12a10de5d17143701338bbf8654",
+      "paths": 8,
+      "compute_seconds": 36.9289075001725,
+      "elapsed_seconds": 37.607944400049746,
+      "finished": "2026-11-07T20:31:49.005355+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k0_b15",
+      "charged_worker_seconds": 39.80899519997183,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k0_b15",
+        "condition": 0,
+        "start": 0,
+        "step": 0,
+        "replicates": [
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127
+        ],
+        "seeds": [
+          1205520349,
+          2706877567,
+          3131626543,
+          2566185345,
+          405893795,
+          3533143263,
+          1335499443,
+          1672443785
+        ]
+      },
+      "raw": "c0_s0_k0_b15.npz",
+      "raw_sha256": "49817d705cffe9bc01000660c1bcb90ca00184b24360e61081be1d207ea5872d",
+      "paths": 8,
+      "compute_seconds": 39.36911900003906,
+      "elapsed_seconds": 40.10637610004051,
+      "finished": "2026-11-07T20:31:51.489009+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k0_b15",
+      "charged_worker_seconds": 42.32656080002198,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k0_b15",
+        "condition": 1,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127
+        ],
+        "seeds": [
+          1225222903,
+          2498951754,
+          1941551252,
+          1906750958,
+          408699513,
+          467987673,
+          3778512790,
+          1529008717
+        ]
+      },
+      "raw": "c1_s1_k0_b15.npz",
+      "raw_sha256": "06dc9a20ca0f4c5bfdde18e49c3b4dd87065c7bff4bc2f1dd1ad3670da2ea09a",
+      "paths": 8,
+      "compute_seconds": 37.21677280002041,
+      "elapsed_seconds": 37.908220100041945,
+      "finished": "2026-11-07T20:31:53.219658+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k0_b15",
+      "charged_worker_seconds": 40.06429459998617,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k0_b15",
+        "condition": 0,
+        "start": 1,
+        "step": 0,
+        "replicates": [
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127
+        ],
+        "seeds": [
+          3484560978,
+          19774875,
+          647505667,
+          592454191,
+          2733470418,
+          313417150,
+          1202005994,
+          3105707255
+        ]
+      },
+      "raw": "c0_s1_k0_b15.npz",
+      "raw_sha256": "cfa5f6127a53c6dabe889cad6e093a92f026ce6d8d385bc3ffc57aa01a342e14",
+      "paths": 8,
+      "compute_seconds": 39.44309130002512,
+      "elapsed_seconds": 40.17502460000105,
+      "finished": "2026-11-07T20:31:55.226119+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k0_b15",
+      "charged_worker_seconds": 42.318815999955405,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k1_b14",
+        "condition": 0,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ],
+        "seeds": [
+          531311088,
+          866893795,
+          1841459712,
+          3995448293,
+          1933028896,
+          1899108130,
+          1963656139,
+          4065790829
+        ]
+      },
+      "raw": "c0_s0_k1_b14.npz",
+      "raw_sha256": "52ceea6144099762d1f19d0264a1095518b47dc84fbe59532b750948fbe3f4f4",
+      "paths": 8,
+      "compute_seconds": 60.897764599940274,
+      "elapsed_seconds": 61.635353299963754,
+      "finished": "2026-11-07T20:32:08.119985+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k1_b14",
+      "charged_worker_seconds": 63.60930619999999,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k1_b14",
+        "condition": 1,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ],
+        "seeds": [
+          2321851645,
+          3439996321,
+          3078457418,
+          3746494788,
+          588937762,
+          3651672224,
+          3166238214,
+          1477941292
+        ]
+      },
+      "raw": "c1_s0_k1_b14.npz",
+      "raw_sha256": "6102b0d59da4c73f5652f6ee30d3a3a5500ee83318696b2cd10c842418c137f5",
+      "paths": 8,
+      "compute_seconds": 59.43423810007516,
+      "elapsed_seconds": 60.13213959999848,
+      "finished": "2026-11-07T20:32:08.440307+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k1_b14",
+      "charged_worker_seconds": 62.35417700000107,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k1_b14",
+        "condition": 0,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ],
+        "seeds": [
+          44369144,
+          136758896,
+          1976265605,
+          3501259809,
+          1365315585,
+          1094553275,
+          2285987955,
+          1425029355
+        ]
+      },
+      "raw": "c0_s1_k1_b14.npz",
+      "raw_sha256": "d1bbc1ab5110961068843b2dd4e8470bef3c8ec634c9d679e501dfbc034659a7",
+      "paths": 8,
+      "compute_seconds": 60.93059310008539,
+      "elapsed_seconds": 61.650539900001604,
+      "finished": "2026-11-07T20:32:10.475356+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k1_b14",
+      "charged_worker_seconds": 63.86706730001606,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k1_b14",
+        "condition": 1,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ],
+        "seeds": [
+          1721951123,
+          2180263012,
+          4224747913,
+          1767142982,
+          2604830188,
+          2284171010,
+          1837312167,
+          404194868
+        ]
+      },
+      "raw": "c1_s1_k1_b14.npz",
+      "raw_sha256": "60e182694d4e36bb0d591cc31ea2941a8b2b6ff4931b91ee1368838d15601d18",
+      "paths": 8,
+      "compute_seconds": 59.87732740008505,
+      "elapsed_seconds": 60.58984060003422,
+      "finished": "2026-11-07T20:32:11.686535+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k1_b14",
+      "charged_worker_seconds": 62.855017800000496,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s0_k1_b15",
+        "condition": 0,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127
+        ],
+        "seeds": [
+          227626262,
+          1431582859,
+          3785854376,
+          4033609218,
+          3786331966,
+          2468815433,
+          889521807,
+          1443248302
+        ]
+      },
+      "raw": "c0_s0_k1_b15.npz",
+      "raw_sha256": "7b4eb4bba480f150c2aecf3e99bef6fd6dd8388a46b1d7082f2673302f3c3d6d",
+      "paths": 8,
+      "compute_seconds": 53.571393099962734,
+      "elapsed_seconds": 54.23764330003178,
+      "finished": "2026-11-07T20:32:45.504171+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s0_k1_b15",
+      "charged_worker_seconds": 56.34497050003847,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s0_k1_b15",
+        "condition": 1,
+        "start": 0,
+        "step": 1,
+        "replicates": [
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127
+        ],
+        "seeds": [
+          3426090905,
+          3322175550,
+          1810100761,
+          2581585230,
+          1449083798,
+          2797523999,
+          2013784361,
+          3221478947
+        ]
+      },
+      "raw": "c1_s0_k1_b15.npz",
+      "raw_sha256": "fb0262fbf7cb9f6696349d65b3365fef3342eedde4d079571e7dece642ce15ca",
+      "paths": 8,
+      "compute_seconds": 51.3572519000154,
+      "elapsed_seconds": 52.012959800020326,
+      "finished": "2026-11-07T20:32:45.846648+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s0_k1_b15",
+      "charged_worker_seconds": 54.085476999985985,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_s1_k1_b15",
+        "condition": 0,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127
+        ],
+        "seeds": [
+          3789140543,
+          2645012155,
+          385480985,
+          3347670021,
+          2065860993,
+          3547847378,
+          2187695416,
+          3210668264
+        ]
+      },
+      "raw": "c0_s1_k1_b15.npz",
+      "raw_sha256": "3348040e0e6088f9e8ff5ac3b1ec7b79130b8896feefa934bcba5e711386a8c3",
+      "paths": 8,
+      "compute_seconds": 52.95338399999309,
+      "elapsed_seconds": 53.61697680002544,
+      "finished": "2026-11-07T20:32:49.188058+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c0_s1_k1_b15",
+      "charged_worker_seconds": 55.593177799950354,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_s1_k1_b15",
+        "condition": 1,
+        "start": 1,
+        "step": 1,
+        "replicates": [
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127
+        ],
+        "seeds": [
+          3545676305,
+          2807984936,
+          163398728,
+          3801691752,
+          1377503216,
+          2000476499,
+          3091348579,
+          1414186759
+        ]
+      },
+      "raw": "c1_s1_k1_b15.npz",
+      "raw_sha256": "6fbb3c65276daf8ef245b7bc86e7db0f637a86933ec0a520c893078b7fbb2458",
+      "paths": 8,
+      "compute_seconds": 51.31671140011167,
+      "elapsed_seconds": 51.952797000005376,
+      "finished": "2026-11-07T20:32:49.455969+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "c1_s1_k1_b15",
+      "charged_worker_seconds": 53.844902999990154,
+      "returncode": 0
+    }
+  ],
+  "ceiling": 14400,
+  "prior_charge": 0,
+  "poll_seconds": 0.25,
+  "charged_worker_seconds": 6533.050110399548,
+  "inflight_worker_seconds": 0,
+  "pending_ids": [],
+  "active_ids": [],
+  "stop_reason": null,
+  "workers": 8,
+  "threads_per_library": 1,
+  "max_observed_poll_gap_seconds": 0.2569666000199504
+}

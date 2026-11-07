@@ -1,0 +1,41 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "c1_s1_k0_b0",
+    "condition": 1,
+    "start": 1,
+    "step": 0,
+    "replicates": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "seeds": [
+      3351232333,
+      2360599408,
+      1058193965,
+      2355086861,
+      2970278058,
+      1823292542,
+      389689352,
+      3709652331
+    ]
+  },
+  "raw": "c1_s1_k0_b0.npz",
+  "raw_sha256": "2520d37420ef1b1f6350d8ab7c8e3a71b7cfc77d6bb8e48edeafcf1f3e9a00a4",
+  "paths": 8,
+  "compute_seconds": 34.86100719997194,
+  "elapsed_seconds": 36.03581549995579,
+  "finished": "2026-11-07T20:19:26.990393+00:00",
+  "ledger": {
+    "max_integer_residual": 0,
+    "max_total_input_residual": 0,
+    "nonnegative": true,
+    "pass_check": true
+  }
+}
