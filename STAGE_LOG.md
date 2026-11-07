@@ -860,3 +860,8 @@ MG056 RETENTION: all32 D2 raw archives (45614898bytes) published at3c1573b68b5f5
 ## MG057 — PI closes MG10-D2 (2026-11-07)
 
 Richard: “I approve closure for D2.” D2 CLOSED as COMPLETE DESCRIPTIVE PILOT. Registered result, independent checks and verified full retention accepted within their scope; all numerical/statistical/particle-interpretation limitations preserved. No rescoring of earlier studies and no new production registration or execution.
+
+
+## MG058 — Register single-motif measurement qualification
+
+PI instructed next step after D2 closure. P1 qualifies localization/reference matching and conservative sampled continuity on synthetic controls, before any particle/supply-intervention claim. Scope:68 frames,15 sequences,7 invalid-input assertions,300seconds total, one local worker. Constants/source/expectations frozen before generation/evaluation; independent dense/direct oracle. No new model trajectories, old-result rescoring or automatic next production.

@@ -1,8 +1,8 @@
-# Current handoff — 2026-11-07 (MG057)
+# Current handoff — 2026-11-07 (MG058)
 
 - **Roles:** Richard Benear is PI; ChatGPT / Codex leads planning, implementation, validation, authorized runs, analysis and documentation. Claude/other external review is optional. [Active protocol](RESEARCH_PROTOCOL.md).
 - **Last closed gate:** MG10-D2, PI closure MG057 (2026-11-07): Richard: “I approve closure for D2.” CLOSED as COMPLETE DESCRIPTIVE PILOT;32/32 paths, independent raw/source/seed/integer/192-summary check PASS, full archive verified. Source correction removes the old0.30% deficit; residual offsets and stochastic/particle-equivalence limitations remain recorded. Earlier original MG10 remains UNRESOLVED; no earlier result rescored.
-- **Next stage:** No new scientific production registered or launched. Future design must distinguish powered field recovery from localization/identity/persistence qualification; D2 closure does not establish either equivalence or particle survival. See results/MG10D2/MG10D2_results.md.
+- **Active stage:** MG10-P1 single-reference X-motif instrument qualification REGISTERED MG058;68 frame/15 sequence/7 API assertions, independent dense-convolution/direct-score oracle;300second total ceiling, one local worker/threads1. Commit/push before evaluation. No stochastic production or D1/D2 rescoring; measurement of sampled field continuity, not physical particle identity. See spec/MG10P1_proposal.md.
 - **Archive baseline:** [StochasticVacuum](https://github.com/RichardBenear/StochasticVacuum), private, commit `2161211ccc9d8427af98ebeefcabf7f379b83a37`. Reuse selected machinery with provenance and new validation.
 - **Time semantics:** MG10 proposes the existing continuous-time model for its first extension. A fundamental-tick law remains a separate modeling decision.
 - **Q5:** MG8's frozen record remains open as scored. A possible reframing of Q5 was discussed with the PI, but no new Q5 study or rescoring is registered here.

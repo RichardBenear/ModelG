@@ -1,0 +1,756 @@
+{
+  "status": "REGISTERED BEFORE FIXTURE GENERATION/EVALUATION",
+  "stage": "MG058",
+  "authorization": "proceed to next step after D2 closure; measurement qualification only",
+  "source_hashes": {
+    "src/mg10p1.py": "ba9aa61c92d813fc48f56cc1683e457596f0152637daede07638f1308aaad45c",
+    "src/run_mg10p1.py": "cb83792301b832f246d28ab7f8a6f2a612c5f690a30b1b013c3020e14c799fef",
+    "src/check_mg10p1.py": "f6392f45a586c7cd91de6773858b6b1cac4798e267981583669610bbf02caecb",
+    "src/mg10d1_pool.py": "ada3b015c0bd2ec05edd89f6a32671fe7ca6a2854894ae0fcfd1199d9c83f86c",
+    "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+    "spec/MG10P1_proposal.md": "e523a0ae02df6ffa8b322a86c1c12c8f111e0c82a2d090407b1a43e902ec893b",
+    "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+  },
+  "frames": [
+    {
+      "kind": "reference",
+      "position": -49.8,
+      "background": 15.555555555555555,
+      "amplitude": 1.0,
+      "expected": "match",
+      "id": "f000"
+    },
+    {
+      "kind": "reference",
+      "position": -25.0,
+      "background": 15.555555555555555,
+      "amplitude": 1.0,
+      "expected": "match",
+      "id": "f001"
+    },
+    {
+      "kind": "reference",
+      "position": -0.1,
+      "background": 15.555555555555555,
+      "amplitude": 1.0,
+      "expected": "match",
+      "id": "f002"
+    },
+    {
+      "kind": "reference",
+      "position": 0.0,
+      "background": 15.555555555555555,
+      "amplitude": 1.0,
+      "expected": "match",
+      "id": "f003"
+    },
+    {
+      "kind": "reference",
+      "position": 0.1,
+      "background": 15.555555555555555,
+      "amplitude": 1.0,
+      "expected": "match",
+      "id": "f004"
+    },
+    {
+      "kind": "reference",
+      "position": 12.4,
+      "background": 15.555555555555555,
+      "amplitude": 1.0,
+      "expected": "match",
+      "id": "f005"
+    },
+    {
+      "kind": "reference",
+      "position": 49.8,
+      "background": 15.555555555555555,
+      "amplitude": 1.0,
+      "expected": "match",
+      "id": "f006"
+    },
+    {
+      "kind": "reference",
+      "position": 0.0,
+      "background": 12.0,
+      "amplitude": 1.0,
+      "expected": "match",
+      "id": "f007"
+    },
+    {
+      "kind": "reference",
+      "position": 0.0,
+      "background": 15.555555555555555,
+      "amplitude": 1.0,
+      "expected": "match",
+      "id": "f008"
+    },
+    {
+      "kind": "reference",
+      "position": 0.0,
+      "background": 30.0,
+      "amplitude": 1.0,
+      "expected": "match",
+      "id": "f009"
+    },
+    {
+      "kind": "reference",
+      "position": 0.0,
+      "background": 1000.0,
+      "amplitude": 1.0,
+      "expected": "match",
+      "id": "f010"
+    },
+    {
+      "kind": "reference",
+      "position": 0.0,
+      "background": 30.0,
+      "amplitude": 0.51,
+      "expected": "match",
+      "id": "f011"
+    },
+    {
+      "kind": "reference",
+      "position": 0.0,
+      "background": 30.0,
+      "amplitude": 1.0,
+      "expected": "match",
+      "id": "f012"
+    },
+    {
+      "kind": "reference",
+      "position": 0.0,
+      "background": 30.0,
+      "amplitude": 1.49,
+      "expected": "match",
+      "id": "f013"
+    },
+    {
+      "kind": "noise_reference",
+      "position": -1.6,
+      "background": 20.0,
+      "amplitude": 1.0,
+      "sigma": 0.15,
+      "seed": 2839818779,
+      "expected": "match",
+      "id": "f014"
+    },
+    {
+      "kind": "noise_reference",
+      "position": -1.4000000000000001,
+      "background": 20.0,
+      "amplitude": 1.0,
+      "sigma": 0.3,
+      "seed": 561298909,
+      "expected": "match",
+      "id": "f015"
+    },
+    {
+      "kind": "noise_reference",
+      "position": -1.2000000000000002,
+      "background": 20.0,
+      "amplitude": 1.0,
+      "sigma": 0.15,
+      "seed": 2548507687,
+      "expected": "match",
+      "id": "f016"
+    },
+    {
+      "kind": "noise_reference",
+      "position": -1.0,
+      "background": 20.0,
+      "amplitude": 1.0,
+      "sigma": 0.3,
+      "seed": 305430679,
+      "expected": "match",
+      "id": "f017"
+    },
+    {
+      "kind": "noise_reference",
+      "position": -0.8,
+      "background": 20.0,
+      "amplitude": 1.0,
+      "sigma": 0.15,
+      "seed": 8706105,
+      "expected": "match",
+      "id": "f018"
+    },
+    {
+      "kind": "noise_reference",
+      "position": -0.6000000000000001,
+      "background": 20.0,
+      "amplitude": 1.0,
+      "sigma": 0.3,
+      "seed": 3340905336,
+      "expected": "match",
+      "id": "f019"
+    },
+    {
+      "kind": "noise_reference",
+      "position": -0.4,
+      "background": 20.0,
+      "amplitude": 1.0,
+      "sigma": 0.15,
+      "seed": 971516274,
+      "expected": "match",
+      "id": "f020"
+    },
+    {
+      "kind": "noise_reference",
+      "position": -0.2,
+      "background": 20.0,
+      "amplitude": 1.0,
+      "sigma": 0.3,
+      "seed": 2807793068,
+      "expected": "match",
+      "id": "f021"
+    },
+    {
+      "kind": "noise_reference",
+      "position": 0.0,
+      "background": 20.0,
+      "amplitude": 1.0,
+      "sigma": 0.15,
+      "seed": 3466956646,
+      "expected": "match",
+      "id": "f022"
+    },
+    {
+      "kind": "noise_reference",
+      "position": 0.2,
+      "background": 20.0,
+      "amplitude": 1.0,
+      "sigma": 0.3,
+      "seed": 2182858151,
+      "expected": "match",
+      "id": "f023"
+    },
+    {
+      "kind": "noise_reference",
+      "position": 0.4,
+      "background": 20.0,
+      "amplitude": 1.0,
+      "sigma": 0.15,
+      "seed": 3630691142,
+      "expected": "match",
+      "id": "f024"
+    },
+    {
+      "kind": "noise_reference",
+      "position": 0.6000000000000001,
+      "background": 20.0,
+      "amplitude": 1.0,
+      "sigma": 0.3,
+      "seed": 2038092653,
+      "expected": "match",
+      "id": "f025"
+    },
+    {
+      "kind": "noise_reference",
+      "position": 0.8,
+      "background": 20.0,
+      "amplitude": 1.0,
+      "sigma": 0.15,
+      "seed": 3375192785,
+      "expected": "match",
+      "id": "f026"
+    },
+    {
+      "kind": "noise_reference",
+      "position": 1.0,
+      "background": 20.0,
+      "amplitude": 1.0,
+      "sigma": 0.3,
+      "seed": 834374008,
+      "expected": "match",
+      "id": "f027"
+    },
+    {
+      "kind": "noise_reference",
+      "position": 1.2000000000000002,
+      "background": 20.0,
+      "amplitude": 1.0,
+      "sigma": 0.15,
+      "seed": 3202748451,
+      "expected": "match",
+      "id": "f028"
+    },
+    {
+      "kind": "noise_reference",
+      "position": 1.4000000000000001,
+      "background": 20.0,
+      "amplitude": 1.0,
+      "sigma": 0.3,
+      "seed": 3338239900,
+      "expected": "match",
+      "id": "f029"
+    },
+    {
+      "kind": "flat",
+      "background": 0.0,
+      "expected": "FLAT",
+      "id": "f030"
+    },
+    {
+      "kind": "flat",
+      "background": 1.0,
+      "expected": "FLAT",
+      "id": "f031"
+    },
+    {
+      "kind": "flat",
+      "background": 10.0,
+      "expected": "FLAT",
+      "id": "f032"
+    },
+    {
+      "kind": "flat",
+      "background": 15.555555555555555,
+      "expected": "FLAT",
+      "id": "f033"
+    },
+    {
+      "kind": "flat",
+      "background": 1000.0,
+      "expected": "FLAT",
+      "id": "f034"
+    },
+    {
+      "kind": "noise",
+      "background": 20.0,
+      "sigma": 0.3,
+      "seed": 997663575,
+      "expected": "not_match",
+      "id": "f035"
+    },
+    {
+      "kind": "noise",
+      "background": 20.0,
+      "sigma": 0.3,
+      "seed": 57416301,
+      "expected": "not_match",
+      "id": "f036"
+    },
+    {
+      "kind": "noise",
+      "background": 20.0,
+      "sigma": 0.3,
+      "seed": 677862530,
+      "expected": "not_match",
+      "id": "f037"
+    },
+    {
+      "kind": "noise",
+      "background": 20.0,
+      "sigma": 0.3,
+      "seed": 2285288403,
+      "expected": "not_match",
+      "id": "f038"
+    },
+    {
+      "kind": "noise",
+      "background": 20.0,
+      "sigma": 0.3,
+      "seed": 1633877637,
+      "expected": "not_match",
+      "id": "f039"
+    },
+    {
+      "kind": "noise",
+      "background": 20.0,
+      "sigma": 0.3,
+      "seed": 405161993,
+      "expected": "not_match",
+      "id": "f040"
+    },
+    {
+      "kind": "noise",
+      "background": 20.0,
+      "sigma": 0.3,
+      "seed": 883010244,
+      "expected": "not_match",
+      "id": "f041"
+    },
+    {
+      "kind": "noise",
+      "background": 20.0,
+      "sigma": 0.3,
+      "seed": 998746165,
+      "expected": "not_match",
+      "id": "f042"
+    },
+    {
+      "kind": "noise",
+      "background": 20.0,
+      "sigma": 0.3,
+      "seed": 1318067467,
+      "expected": "not_match",
+      "id": "f043"
+    },
+    {
+      "kind": "noise",
+      "background": 20.0,
+      "sigma": 0.3,
+      "seed": 746564923,
+      "expected": "not_match",
+      "id": "f044"
+    },
+    {
+      "kind": "noise",
+      "background": 20.0,
+      "sigma": 0.3,
+      "seed": 3091010488,
+      "expected": "not_match",
+      "id": "f045"
+    },
+    {
+      "kind": "noise",
+      "background": 20.0,
+      "sigma": 0.3,
+      "seed": 3049844367,
+      "expected": "not_match",
+      "id": "f046"
+    },
+    {
+      "kind": "noise",
+      "background": 20.0,
+      "sigma": 0.3,
+      "seed": 558035503,
+      "expected": "not_match",
+      "id": "f047"
+    },
+    {
+      "kind": "noise",
+      "background": 20.0,
+      "sigma": 0.3,
+      "seed": 969437040,
+      "expected": "not_match",
+      "id": "f048"
+    },
+    {
+      "kind": "noise",
+      "background": 20.0,
+      "sigma": 0.3,
+      "seed": 2144082433,
+      "expected": "not_match",
+      "id": "f049"
+    },
+    {
+      "kind": "noise",
+      "background": 20.0,
+      "sigma": 0.3,
+      "seed": 487803815,
+      "expected": "not_match",
+      "id": "f050"
+    },
+    {
+      "kind": "wave",
+      "mode": 1,
+      "amplitude": 3.0,
+      "expected": "not_match",
+      "id": "f051"
+    },
+    {
+      "kind": "wave",
+      "mode": 1,
+      "amplitude": 10.0,
+      "expected": "not_match",
+      "id": "f052"
+    },
+    {
+      "kind": "wave",
+      "mode": 8,
+      "amplitude": 3.0,
+      "expected": "not_match",
+      "id": "f053"
+    },
+    {
+      "kind": "wave",
+      "mode": 8,
+      "amplitude": 10.0,
+      "expected": "not_match",
+      "id": "f054"
+    },
+    {
+      "kind": "wave",
+      "mode": 32,
+      "amplitude": 3.0,
+      "expected": "not_match",
+      "id": "f055"
+    },
+    {
+      "kind": "wave",
+      "mode": 32,
+      "amplitude": 10.0,
+      "expected": "not_match",
+      "id": "f056"
+    },
+    {
+      "kind": "wave",
+      "mode": 100,
+      "amplitude": 3.0,
+      "expected": "not_match",
+      "id": "f057"
+    },
+    {
+      "kind": "wave",
+      "mode": 100,
+      "amplitude": 10.0,
+      "expected": "not_match",
+      "id": "f058"
+    },
+    {
+      "kind": "well",
+      "width": 3.0,
+      "expected": "not_match",
+      "id": "f059"
+    },
+    {
+      "kind": "well",
+      "width": 6.0,
+      "expected": "not_match",
+      "id": "f060"
+    },
+    {
+      "kind": "well",
+      "width": 10.0,
+      "expected": "not_match",
+      "id": "f061"
+    },
+    {
+      "kind": "multiple",
+      "positions": [
+        -15.0,
+        15.0
+      ],
+      "expected": "not_match",
+      "id": "f062"
+    },
+    {
+      "kind": "multiple",
+      "positions": [
+        -30.0,
+        0.0,
+        30.0
+      ],
+      "expected": "not_match",
+      "id": "f063"
+    },
+    {
+      "kind": "reference",
+      "position": 0.0,
+      "background": 30.0,
+      "amplitude": 0.4,
+      "expected": "not_match",
+      "id": "f064"
+    },
+    {
+      "kind": "reference",
+      "position": 0.0,
+      "background": 30.0,
+      "amplitude": 1.6,
+      "expected": "not_match",
+      "id": "f065"
+    },
+    {
+      "kind": "reference",
+      "position": 0.0,
+      "background": 30.0,
+      "amplitude": 0.5,
+      "expected": "BORDERLINE",
+      "id": "f066"
+    },
+    {
+      "kind": "reference",
+      "position": 0.0,
+      "background": 30.0,
+      "amplitude": 1.5,
+      "expected": "BORDERLINE",
+      "id": "f067"
+    }
+  ],
+  "sequences": [
+    {
+      "kind": "stationary",
+      "end": 30,
+      "x0": 0.0,
+      "status": "CONTINUOUS",
+      "duration": 30.0,
+      "persistent": true,
+      "reason": null,
+      "id": "t000"
+    },
+    {
+      "kind": "moving",
+      "end": 30,
+      "x0": 0.0,
+      "status": "CONTINUOUS",
+      "duration": 30.0,
+      "persistent": true,
+      "reason": null,
+      "id": "t001"
+    },
+    {
+      "kind": "wrap",
+      "end": 30,
+      "x0": 49.0,
+      "status": "CONTINUOUS",
+      "duration": 30.0,
+      "persistent": true,
+      "reason": null,
+      "id": "t002"
+    },
+    {
+      "kind": "subcell",
+      "end": 30,
+      "x0": 0.0,
+      "status": "CONTINUOUS",
+      "duration": 30.0,
+      "persistent": true,
+      "reason": null,
+      "id": "t003"
+    },
+    {
+      "kind": "stationary",
+      "end": 20,
+      "x0": 0.0,
+      "status": "CONTINUOUS",
+      "duration": 20.0,
+      "persistent": true,
+      "reason": null,
+      "id": "t004"
+    },
+    {
+      "kind": "stationary",
+      "end": 19,
+      "x0": 0.0,
+      "status": "CONTINUOUS",
+      "duration": 19.0,
+      "persistent": false,
+      "reason": null,
+      "id": "t005"
+    },
+    {
+      "kind": "permanent_gap",
+      "end": 30,
+      "x0": 0.0,
+      "status": "CENSORED",
+      "duration": 9.0,
+      "persistent": false,
+      "reason": "FLAT",
+      "id": "t006"
+    },
+    {
+      "kind": "temporary_gap",
+      "end": 30,
+      "x0": 0.0,
+      "status": "CENSORED",
+      "duration": 9.0,
+      "persistent": false,
+      "reason": "FLAT",
+      "id": "t007"
+    },
+    {
+      "kind": "jump",
+      "end": 30,
+      "x0": 0.0,
+      "status": "CENSORED",
+      "duration": 9.0,
+      "persistent": false,
+      "reason": "MOTION_AMBIGUITY",
+      "id": "t008"
+    },
+    {
+      "kind": "sampling_gap",
+      "end": 30,
+      "x0": 0.0,
+      "status": "CENSORED",
+      "duration": 2.0,
+      "persistent": false,
+      "reason": "SAMPLING_GAP",
+      "id": "t009"
+    },
+    {
+      "kind": "multiple_onset",
+      "end": 30,
+      "x0": 0.0,
+      "status": "CENSORED",
+      "duration": 9.0,
+      "persistent": false,
+      "reason": "AMBIGUOUS_MATCH",
+      "id": "t010"
+    },
+    {
+      "kind": "merger",
+      "end": 30,
+      "x0": 0.0,
+      "status": "CENSORED",
+      "duration": 9.0,
+      "persistent": false,
+      "reason": "AMBIGUOUS_MATCH",
+      "id": "t011"
+    },
+    {
+      "kind": "late_gap",
+      "end": 30,
+      "x0": 0.0,
+      "status": "CENSORED",
+      "duration": 24.0,
+      "persistent": true,
+      "reason": "FLAT",
+      "id": "t012"
+    },
+    {
+      "kind": "wrong_initial",
+      "end": 30,
+      "x0": 0.0,
+      "status": "INITIAL_UNRESOLVED",
+      "duration": null,
+      "persistent": false,
+      "reason": null,
+      "id": "t013"
+    },
+    {
+      "kind": "indistinguishable_replacement",
+      "end": 30,
+      "x0": 0.0,
+      "status": "CONTINUOUS",
+      "duration": 30.0,
+      "persistent": true,
+      "reason": null,
+      "id": "t014"
+    }
+  ],
+  "invalid_checks": 7,
+  "parameters": {
+    "N": 500,
+    "h": 0.2,
+    "L": 100.0,
+    "sigma": 0.4,
+    "amp_min": 0.5,
+    "amp_max": 1.5,
+    "error_max": 0.5,
+    "energy_min": 0.8,
+    "ambiguity_radius": 2.0,
+    "ambiguity_ratio": 0.9,
+    "border": 1e-10,
+    "max_speed": 1.5,
+    "max_gap": 1.0,
+    "persist": 20.0
+  },
+  "static_reference": {
+    "rms": 0.6077346339774861,
+    "energy_within10": 0.9999835183135617
+  },
+  "ceiling_seconds": 300,
+  "fixture_timeout_seconds": 240,
+  "oracle_timeout_seconds": 60,
+  "workers": 1,
+  "threads_per_library": 1,
+  "environment": {
+    "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.2.4"
+  },
+  "retention": "All synthetic frame/sequence arrays, exact cases/seeds/expected labels, classifications, hashes, oracle and controller ledgers retained in results/MG10P1 and uploaded",
+  "scientific_scope": "No stochastic trajectories or D1/D2 rescoring; sampled single-reference field continuity, not physical particle lineage/survival"
+}

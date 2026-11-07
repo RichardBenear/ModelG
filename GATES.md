@@ -2063,3 +2063,6 @@ MG056 D2 RESULT: COMPLETE DESCRIPTIVE PILOT32/32, production13.373943core-hours 
 
 
 MG057 PI CLOSURE (2026-11-07): Richard: “I approve closure for D2.” MG10-D2 CLOSED as COMPLETE DESCRIPTIVE PILOT under its registered scope. All32 paths and independent raw/source/seed/integer/192-summary checks completed; full archive uploaded and verified. Residual source offsets, n4 uncertainty, numerical shape sensitivity and unqualified particle identity/persistence remain explicit. Closure is not stochastic equivalence or a particle-survival verdict. Original D1 and earlier outcomes remain unchanged; no new production registered or launched by closure.
+
+
+MG058 REGISTRATION: MG10-P1 single-reference X-motif measurement qualification, authorized next step after D2 closure. Frozen68 frame fixtures,15 temporal fixtures,7 invalid-API assertions; independently recompute by dense Gaussian convolution/direct template dots and separate conservative tracking. Prospective criteria in spec/MG10P1_proposal.md; all raw synthetic inputs/expectations/seeds retained. One worker/threads1;300-second total owned budget,240 fixture/60 oracle timeouts. No stochastic production or D1/D2 rescoring; qualified sampled field continuity would not establish particle lineage/survival. Registration source/reference/matrix hashes pushed before execution.
