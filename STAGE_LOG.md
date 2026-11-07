@@ -906,3 +906,8 @@ Richard: “I sign off of P2.” P2 CLOSED with its registered short-horizon uns
 ## MG065 — Prepare temporal persistence and coupled averaging
 
 P3 draft/preparation complete:64 H/S/two-step full-maintained paths toT25,20-unit sampled visibility and conditional/unconditional coupled-field averages. Episode/alignment/noise-correlation/no-reacquisition/partial-path/stream checks pass with separate direct interpolation/episode/raw reconstruction. Timing/initial-state provenance retained; new24-core-hour candidate requires PI approval. No scientific run or prior-study rescoring.
+
+
+## MG066 — PI approves and P3 is prospectively registered
+
+Approved P3 protocol/24-hour cap. Full and partial synthetic pipeline, actual quarter-stream equivalence to held development data and separate direct temporal/average/statistical audits pass.64 fresh individually seeded baseline paths, H/S/two steps,R16,T25/101frames; fixed0..20 averages all completed paths, conditional aligned S with initial20 continuity only. Exact registration/source/reference/streams/budgets/retention frozen; push before science. Automatic report/audit after stop and full upload/PI closure later. Earlier results unchanged.

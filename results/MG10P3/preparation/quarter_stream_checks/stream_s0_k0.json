@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "stream_s0_k0",
+    "start": 0,
+    "step": 0
+  },
+  "bit_identical_to": "results\\MG10P3\\preparation\\timing\\timing_s0_k0_r0.npz",
+  "reference_sha256": "2424ff4370b2046fd836aec115200f529e7e4224094e563962cb5988955dc40d",
+  "raw": {
+    "file": "results\\MG10P3\\preparation\\quarter_stream_checks\\stream_s0_k0.npz",
+    "sha256": "715bbf737d5b3cbe1a2073dc84f1ca259e95f4cd302de7ba86413b4fe703a6ea",
+    "replicas": 1,
+    "checkpoints": 5,
+    "integer_reconstruction": true
+  }
+}

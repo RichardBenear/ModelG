@@ -1,0 +1,111 @@
+{
+  "passed": true,
+  "status": "P3 STREAM/COMPLETE/PARTIAL SYNTHETIC PIPELINE PASS; NO SCIENTIFIC PRODUCTION",
+  "elapsed_seconds": 66.04720159998396,
+  "total_preparation_allowance_seconds": 377.2969470000244,
+  "quarter_stream_ledger": {
+    "records": [
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "stream_s0_k0",
+          "start": 0,
+          "step": 0
+        },
+        "bit_identical_to": "results\\MG10P3\\preparation\\timing\\timing_s0_k0_r0.npz",
+        "reference_sha256": "2424ff4370b2046fd836aec115200f529e7e4224094e563962cb5988955dc40d",
+        "raw": {
+          "file": "results\\MG10P3\\preparation\\quarter_stream_checks\\stream_s0_k0.npz",
+          "sha256": "715bbf737d5b3cbe1a2073dc84f1ca259e95f4cd302de7ba86413b4fe703a6ea",
+          "replicas": 1,
+          "checkpoints": 5,
+          "integer_reconstruction": true
+        },
+        "id": "stream_s0_k0",
+        "charged_worker_seconds": 20.78449529997306,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "stream_s1_k0",
+          "start": 1,
+          "step": 0
+        },
+        "bit_identical_to": "results\\MG10P3\\preparation\\timing\\timing_s1_k0_r0.npz",
+        "reference_sha256": "ec044aeb7fe1034157b6cff9762b74ff40817743aa86c7d7ceba8a04744e7739",
+        "raw": {
+          "file": "results\\MG10P3\\preparation\\quarter_stream_checks\\stream_s1_k0.npz",
+          "sha256": "e9ed71ee8bb2c35b7b8a9f0847f383ccc044a0aeb4ca3aab3e8a47d38cf1fbb9",
+          "replicas": 1,
+          "checkpoints": 5,
+          "integer_reconstruction": true
+        },
+        "id": "stream_s1_k0",
+        "charged_worker_seconds": 21.27108470001258,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "stream_s0_k1",
+          "start": 0,
+          "step": 1
+        },
+        "bit_identical_to": "results\\MG10P3\\preparation\\timing\\timing_s0_k1_r0.npz",
+        "reference_sha256": "b8ae53d6672e9442e4a2679d7341a3cc2c9f1464f91f2379c7e99d36be8e8cdd",
+        "raw": {
+          "file": "results\\MG10P3\\preparation\\quarter_stream_checks\\stream_s0_k1.npz",
+          "sha256": "75069c1431d004a2dddd42eca53de4ab3b60f1d4ea98656d13e2928051953885",
+          "replicas": 1,
+          "checkpoints": 5,
+          "integer_reconstruction": true
+        },
+        "id": "stream_s0_k1",
+        "charged_worker_seconds": 29.553145699959714,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "stream_s1_k1",
+          "start": 1,
+          "step": 1
+        },
+        "bit_identical_to": "results\\MG10P3\\preparation\\timing\\timing_s1_k1_r0.npz",
+        "reference_sha256": "c2cc50ec72417244ba3b3c161245c62ef954d2240ab13d170ccaaeb6ed96797c",
+        "raw": {
+          "file": "results\\MG10P3\\preparation\\quarter_stream_checks\\stream_s1_k1.npz",
+          "sha256": "6059f7e1e27b439b819ca0b28a60fc77b3320ab599b7a9c30c6a14f5aefa823d",
+          "replicas": 1,
+          "checkpoints": 5,
+          "integer_reconstruction": true
+        },
+        "id": "stream_s1_k1",
+        "charged_worker_seconds": 29.553271399985533,
+        "returncode": 0
+      }
+    ],
+    "ceiling": 900,
+    "prior_charge": 234.67931090004276,
+    "poll_seconds": 0.25,
+    "charged_worker_seconds": 335.84130799997365,
+    "inflight_worker_seconds": 0,
+    "pending_ids": [],
+    "active_ids": [],
+    "stop_reason": null,
+    "workers": 4,
+    "threads_per_library": 1,
+    "max_observed_poll_gap_seconds": 0.25234999996609986
+  },
+  "checks": [
+    "Four T1 quarter-grid streams bit-identical to held development chunks",
+    "64 full paths and6464 direct instrument frames",
+    "S temporary gap does not regain initial event; late20.25censor still eligible",
+    "H onset5 qualifies20; onset5.25 does not",
+    "Conditional15/16 aligned versus16/16 fixed and moving X-only alignment",
+    "Direct Dirichlet profiles/gains/signed metrics, exactn16 intervals and masked missing gains",
+    "63-path case excludes24.75prefix despite available20window; full backups retained"
+  ],
+  "synthetic_scope": "Only algebraic arrays with production seed labels; no production RNG draws. All original expected/development inputs retained."
+}
