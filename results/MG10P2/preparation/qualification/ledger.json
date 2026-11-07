@@ -1,0 +1,25 @@
+{
+  "records": [
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "qualification",
+        "kind": "qualification"
+      },
+      "id": "qualification",
+      "charged_worker_seconds": 1.9955330999800935,
+      "returncode": 0
+    }
+  ],
+  "ceiling": 900,
+  "prior_charge": 37.799189700046554,
+  "poll_seconds": 0.25,
+  "charged_worker_seconds": 39.79472280002665,
+  "inflight_worker_seconds": 0,
+  "pending_ids": [],
+  "active_ids": [],
+  "stop_reason": null,
+  "workers": 1,
+  "threads_per_library": 1,
+  "max_observed_poll_gap_seconds": 0.2505445999559015
+}

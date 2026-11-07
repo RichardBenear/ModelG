@@ -877,3 +877,8 @@ MG059 RETENTION: all16 raw P1 input archives (280039bytes) uploaded at111936587c
 ## MG060 — PI closes MG10-P1 (2026-11-07)
 
 Richard approved P1 closure. CLOSED as QUALIFIED ON REGISTERED SYNTHETIC FIXTURES, preserving90 passed assertions,511 separately recomputed frame assessments and verified full archive. All scope/identity/noise limitations retained. No old-result rescoring or new production authorization inferred from closure.
+
+
+## MG061 — Prepare model-noise observability calibration
+
+P2 draft and candidate1024-path/128-job matrix prepared. Frozen P1 matcher plus per-field G/X/Y noise/projections; four primary H match-frequency caps, seeded retention descriptive. First preparation metadata collision preserved/corrected before repeat, unchanged model/statistical criteria. Independent preparation/state/metric/CP checks pass, no scientific production. Reviewable approval packet and measured forecast ready; PI protocol/budget decision required before final production registration.

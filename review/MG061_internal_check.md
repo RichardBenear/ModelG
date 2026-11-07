@@ -1,0 +1,9 @@
+# MG061 — P2 draft/preparation check
+
+The next-stage instruction authorizes preparation. Scientific production remains DRAFT pending PI decision on new state population, probability criterion, denominator and4-hour ceiling. No inherited approval is invented.
+
+Reference observability is unequal: G smoothed RMS.01465 versusX.60773 andY.06796. Therefore do not impose a rigid all-field residual threshold without noise calibration. P2 instead reports signed projections/residuals and unseeded match frequencies with a prespecified family of4 exact upper bounds. H match frequency is not a physical false-particle probability; S retention is not known particle survival. Prescribed depleted initial conditions are not actual depleted trajectories or stationary solitons; finite-time deformation remains physical/model output rather than automatic detector failure. Time.25 cannot score20-unit persistence.
+
+Prepared fixture/measurement/state/CP checks and independent raw/dense/CDF inversion pass. No new stochastic kernel. P1/D2 sources unchanged. Metadata collision in first preparation was caught and preserved; corrected summary filename versioned before repeat. Same development seed/data replay is documented, not new independent evidence or threshold selection. Exact1024 candidate seeds are unique and checked against earlier/development values. No endpoint classifications from timing data determine criteria or enter production.
+
+The forecast passes the proposed75% reserve check; short timing cannot bound later cost, so whole-batch stops and explicit incomplete denominator are mandatory. Need final production driver/checker qualification, source/reference hashes and prospective registration after PI protocol/budget approval, before production. All raw checkpoint/event/input data retained, not hashes alone. Prior closed studies remain unchanged. Same-author independent computation is not external replication.

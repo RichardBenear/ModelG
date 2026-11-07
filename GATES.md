@@ -2072,3 +2072,6 @@ MG059 P1 RESULT: QUALIFIED ON REGISTERED SYNTHETIC FIXTURES. All90 assertions (6
 
 
 MG060 PI CLOSURE (2026-11-07): Richard: “I approve,” in response to the MG10-P1 closure request. MG10-P1 CLOSED as QUALIFIED ON REGISTERED SYNTHETIC FIXTURES. All90 assertions and independent511-frame dense/direct recomputation completed; all16 raw archives uploaded and retention verified. X-only, fixed-reference, sampled-continuity and noise/lineage limitations remain explicit; closure is not a physical particle/survival or real-noise false-positive verdict. Earlier outcomes preserved. No next production registered or launched.
+
+
+MG061 P2 PREPARATION: New model-noise observability/calibration draft prepared, scientific production NOT REGISTERED.1024 candidate paths/8 cells atT.25,128 percell, two prepared supply states, H/S and two steps. Proposed5% H reference-match cap via4 simultaneous95% exact upper bounds; S retention/coupled-field observability descriptive. State/projection/CP and independent8-path timing-ledger checks PASS after preserved metadata-only preparation correction. Forecast2.168291core-hours/~16.26minutes on8, candidate4-hour cap with reserve. New population/criterion/budget require PI decision and final production freeze; no scientific run/old rescoring.
