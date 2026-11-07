@@ -1,0 +1,18 @@
+{
+  "status": "DEVELOPMENT ONLY; no scientific production",
+  "purpose": "Timing unchanged qualified finite kernel before selecting long-horizon design",
+  "cases": [
+    "C1 seeded Omega1000",
+    "C1e6 seeded Omega1000"
+  ],
+  "horizon": 0.1,
+  "steps": [
+    4.1666666666666665e-05,
+    2.0833333333333333e-05
+  ],
+  "reps": 1,
+  "seed_keys": "seed_for(10,case,step,520,0)",
+  "qualification_timing_ceiling_seconds": 900,
+  "threads_per_worker": 1,
+  "worker_count": 1
+}

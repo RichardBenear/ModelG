@@ -822,3 +822,8 @@ Actualh.2/Omega100,1000 full500-node H/S snapshot-law oracle and short16-node SS
 ## MG051 — Actual-lattice spatial-noise qualification result (2026-11-06)
 
 QUALIFIED WITHIN REGISTERED S2 SCOPE. All88 fixed jobs/32 groups/524288 trajectories complete after77eafbf. Full500-node H/S snapshot laws and short16-node SSA spatial laws at h.2/Omega100,1000 qualify under frozen margins; maximum upper bounds.0573459/.0507281 versus.08. Separate checker verifies every one of1280 raw shards and288 comparisons, exact integer states/hashes, conditional means/noise matrices and seeds. Production0.362493 core-hours, no timeout/cap/replacement; observed monitor gap<=.251052. Full1.73GB archive committed/uploaded in raw-data batches. Long-horizon particle behavior remains for a separately designed study; original MG10 not rescored. S2 PI closure pending.
+
+
+## MG052 — S2 closure and finite-supply pilot preparation (2026-11-06)
+
+PI signed off S2 and instructed proceeding. S2 CLOSED within its registered scope, without rescoring. Preparing MG10-D1: long-horizon seeded/homogeneous finite-supply controls, explicit chemostat input ledgers, and numerical refinement. Development timing is disclosed separately; production remains unregistered pending a concrete numerical plan and budget.

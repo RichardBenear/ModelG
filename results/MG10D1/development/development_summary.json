@@ -1,0 +1,1182 @@
+{
+  "qualification_ledger": {
+    "records": [
+      {
+        "status": "DEVELOPMENT ONLY",
+        "tests": [
+          {
+            "name": "finite_bit_regression_0",
+            "passed": true,
+            "seed": 4197072426
+          },
+          {
+            "name": "finite_bit_regression_1",
+            "passed": true,
+            "seed": 3327254769
+          },
+          {
+            "name": "finite_bit_regression_2",
+            "passed": true,
+            "seed": 282194691
+          },
+          {
+            "name": "finite_bit_regression_3",
+            "passed": true,
+            "seed": 3460473661
+          },
+          {
+            "name": "full_arm0_start0",
+            "passed": true,
+            "seed": 1844346722,
+            "ledger": {
+              "max_integer_residual": 0,
+              "max_total_input_residual": 0,
+              "nonnegative": true,
+              "pass_check": true
+            }
+          },
+          {
+            "name": "full_arm0_start1",
+            "passed": true,
+            "seed": 104968546,
+            "ledger": {
+              "max_integer_residual": 0,
+              "max_total_input_residual": 0,
+              "nonnegative": true,
+              "pass_check": true
+            }
+          },
+          {
+            "name": "full_arm1_start0",
+            "passed": true,
+            "seed": 1473328201,
+            "ledger": {
+              "max_integer_residual": 0,
+              "max_total_input_residual": 0,
+              "nonnegative": true,
+              "pass_check": true
+            }
+          },
+          {
+            "name": "full_arm1_start1",
+            "passed": true,
+            "seed": 1743614822,
+            "ledger": {
+              "max_integer_residual": 0,
+              "max_total_input_residual": 0,
+              "nonnegative": true,
+              "pass_check": true
+            }
+          },
+          {
+            "name": "full_arm2_start0",
+            "passed": true,
+            "seed": 2777499324,
+            "ledger": {
+              "max_integer_residual": 0,
+              "max_total_input_residual": 0,
+              "nonnegative": true,
+              "pass_check": true
+            }
+          },
+          {
+            "name": "full_arm2_start1",
+            "passed": true,
+            "seed": 126708381,
+            "ledger": {
+              "max_integer_residual": 0,
+              "max_total_input_residual": 0,
+              "nonnegative": true,
+              "pass_check": true
+            }
+          },
+          {
+            "name": "full_arm3_start0",
+            "passed": true,
+            "seed": 1014720311,
+            "ledger": {
+              "max_integer_residual": 0,
+              "max_total_input_residual": 0,
+              "nonnegative": true,
+              "pass_check": true
+            }
+          },
+          {
+            "name": "full_arm3_start1",
+            "passed": true,
+            "seed": 187191219,
+            "ledger": {
+              "max_integer_residual": 0,
+              "max_total_input_residual": 0,
+              "nonnegative": true,
+              "pass_check": true
+            }
+          },
+          {
+            "name": "full_arm4_start0",
+            "passed": true,
+            "seed": 3357052408,
+            "ledger": {
+              "max_integer_residual": 0,
+              "max_total_input_residual": 0,
+              "nonnegative": true,
+              "pass_check": true
+            }
+          },
+          {
+            "name": "full_arm4_start1",
+            "passed": true,
+            "seed": 968037171,
+            "ledger": {
+              "max_integer_residual": 0,
+              "max_total_input_residual": 0,
+              "nonnegative": true,
+              "pass_check": true
+            }
+          },
+          {
+            "name": "maintained_A_poisson",
+            "passed": true,
+            "seed": 196057720,
+            "cdf_distance": 0.0006273092527631086,
+            "dkw_upper": 0.011396736689483692,
+            "margin": 0.05,
+            "alpha": 0.001
+          },
+          {
+            "name": "maintained_B_binomial",
+            "passed": true,
+            "seed": 3352247931,
+            "cdf_distance": 0.0004011425741301533,
+            "dkw_upper": 0.011170570010850736,
+            "margin": 0.05,
+            "alpha": 0.001
+          },
+          {
+            "name": "invalid_input_0",
+            "passed": true
+          },
+          {
+            "name": "invalid_input_1",
+            "passed": true
+          },
+          {
+            "name": "invalid_input_2",
+            "passed": true
+          },
+          {
+            "name": "invalid_input_3",
+            "passed": true
+          }
+        ],
+        "raw": [
+          {
+            "path": "finite_0.npz",
+            "sha256": "60267371cfe1c8c9293bc142b676313d65071faf13b006ec4b95e34df01bbc82"
+          },
+          {
+            "path": "finite_1.npz",
+            "sha256": "7ad25b73f1fc89f54c63f4659ee60292b4d961c2d631bfc052f18c50ff0b1d48"
+          },
+          {
+            "path": "finite_2.npz",
+            "sha256": "31e4674b4d750cdf7b1c8a2dc145add126e8081155cc7c52de36297b4f1f6362"
+          },
+          {
+            "path": "finite_3.npz",
+            "sha256": "ae3931ffaee63ae1eb50c1c5f56d07bc6302492f9186ec7d0f9cc31a90f29c2d"
+          },
+          {
+            "path": "full_a0_s0.npz",
+            "sha256": "9af211df48fe1efdd6d9822bc772bf63af0f43e29828ba9ca4cea7cb28a34b9f"
+          },
+          {
+            "path": "full_a0_s1.npz",
+            "sha256": "39b99fc50302774331a6c95a771b7e44222e3aabe484955148c69465c7116328"
+          },
+          {
+            "path": "full_a1_s0.npz",
+            "sha256": "5044e1dd287be59a05acfb4eef7af6d99a70251a5145843dee289c4a110dbd53"
+          },
+          {
+            "path": "full_a1_s1.npz",
+            "sha256": "7f66c571474f7206e486b1b0d8b01b7ea85f0e46403cc35b766be57ef7e59944"
+          },
+          {
+            "path": "full_a2_s0.npz",
+            "sha256": "92966d505a99586ce5930f21d0681c623cbbeee466148bfe9ff5cbea3d9169a9"
+          },
+          {
+            "path": "full_a2_s1.npz",
+            "sha256": "8ac7d2a0049b28e5e12ee64d3c80de5692254fbce84c3ad4fe9520144e14563c"
+          },
+          {
+            "path": "full_a3_s0.npz",
+            "sha256": "f26c0a4f9bb5ecd439dc971171e308c64200ef03af9ff6fa2b96c2a3f2a3d594"
+          },
+          {
+            "path": "full_a3_s1.npz",
+            "sha256": "6be8fcba59180c7f4b6726ab94c6039f487ce66a76589eaad06eea864d2ac721"
+          },
+          {
+            "path": "full_a4_s0.npz",
+            "sha256": "2ea0f8b8637b32fcf7e8ec8223f2a550932e3d5329efb7b7302172581b553828"
+          },
+          {
+            "path": "full_a4_s1.npz",
+            "sha256": "917012b772b24944b86f543d86ce3003bd275d9996d82db8ac0cdb3e5a4af193"
+          },
+          {
+            "path": "isolated_channel0.npz",
+            "sha256": "121a39d17cb80dd50e5aedf5f484c13a2969bfaa2ba68accbf5f327ae76569d4"
+          },
+          {
+            "path": "isolated_channel3.npz",
+            "sha256": "817338b397f172e1b020db89b0128002f1f9d8b39d2f1aa73225e67c237313bd"
+          }
+        ],
+        "passed": true,
+        "source_hashes": {
+          "src/mg10d1.py": "92b95a6839fe712ed68bb3a545f6972fd3f186f6f1896272f18e2a4964056ce9",
+          "src/prepare_mg10d1.py": "1d093089f8b2938d6fc67ee73e1eafc40d20c41a0eecc546636c4cff66cfb890",
+          "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+          "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+          "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+          "src/bounded_pool.py": "d02eb76681d24bbc81c2ea404fdb6d9e45cb022f20288ff747e14e1bd8fc2c9d",
+          "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+          "spec/MG10D1_proposal.md": "0a6a8a7fd10e144286635a6b79266818bb0b22bc5cbdc00ea5a163d822ec779f",
+          "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+        },
+        "id": "qualification",
+        "charged_worker_seconds": 10.526235800003633,
+        "returncode": 0
+      }
+    ],
+    "ceiling": 900,
+    "prior_charge": 22.9191950999666,
+    "poll_seconds": 0.25,
+    "charged_worker_seconds": 33.44543089997023,
+    "inflight_worker_seconds": 0,
+    "pending_ids": [],
+    "active_ids": [],
+    "stop_reason": null,
+    "workers": 1,
+    "threads_per_library": 1,
+    "max_observed_poll_gap_seconds": 0.25060709996614605
+  },
+  "timing_ledger": {
+    "records": [
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a0_s0_k0",
+          "kind": "timing",
+          "arm": 0,
+          "start": 0,
+          "step": 0
+        },
+        "tau": 4.1666666666666665e-05,
+        "seed": 2605747771,
+        "horizon": 0.1,
+        "compute_seconds": 1.9591413000016473,
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "raw": {
+          "path": "timing_a0_s0_k0.npz",
+          "sha256": "7e1acf2b559681991e4ed7ec11975d69e744e7f366d1182108ead7bdaa4ad2c2"
+        },
+        "stats": [
+          [
+            2401.0,
+            0.0,
+            0.036012762749999996
+          ]
+        ],
+        "source_hashes": {
+          "src/mg10d1.py": "92b95a6839fe712ed68bb3a545f6972fd3f186f6f1896272f18e2a4964056ce9",
+          "src/prepare_mg10d1.py": "1d093089f8b2938d6fc67ee73e1eafc40d20c41a0eecc546636c4cff66cfb890",
+          "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+          "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+          "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+          "src/bounded_pool.py": "d02eb76681d24bbc81c2ea404fdb6d9e45cb022f20288ff747e14e1bd8fc2c9d",
+          "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+          "spec/MG10D1_proposal.md": "0a6a8a7fd10e144286635a6b79266818bb0b22bc5cbdc00ea5a163d822ec779f",
+          "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+        },
+        "id": "timing_a0_s0_k0",
+        "charged_worker_seconds": 4.75907939998433,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a0_s1_k0",
+          "kind": "timing",
+          "arm": 0,
+          "start": 1,
+          "step": 0
+        },
+        "tau": 4.1666666666666665e-05,
+        "seed": 1604988570,
+        "horizon": 0.1,
+        "compute_seconds": 1.9660933999693953,
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "raw": {
+          "path": "timing_a0_s1_k0.npz",
+          "sha256": "7aed898883051e67ee84ac1077f95d4508b11b7d7c5c70705fddaaf55a29d48f"
+        },
+        "stats": [
+          [
+            2401.0,
+            0.0,
+            0.041288008833333334
+          ]
+        ],
+        "source_hashes": {
+          "src/mg10d1.py": "92b95a6839fe712ed68bb3a545f6972fd3f186f6f1896272f18e2a4964056ce9",
+          "src/prepare_mg10d1.py": "1d093089f8b2938d6fc67ee73e1eafc40d20c41a0eecc546636c4cff66cfb890",
+          "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+          "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+          "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+          "src/bounded_pool.py": "d02eb76681d24bbc81c2ea404fdb6d9e45cb022f20288ff747e14e1bd8fc2c9d",
+          "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+          "spec/MG10D1_proposal.md": "0a6a8a7fd10e144286635a6b79266818bb0b22bc5cbdc00ea5a163d822ec779f",
+          "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+        },
+        "id": "timing_a0_s1_k0",
+        "charged_worker_seconds": 4.7526663999888115,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a1_s0_k0",
+          "kind": "timing",
+          "arm": 1,
+          "start": 0,
+          "step": 0
+        },
+        "tau": 4.1666666666666665e-05,
+        "seed": 4176878024,
+        "horizon": 0.1,
+        "compute_seconds": 1.956555999990087,
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "raw": {
+          "path": "timing_a1_s0_k0.npz",
+          "sha256": "d70abf7404f42428615b55673f6d86b9741c788501d04e045a1660dc6c896fd6"
+        },
+        "stats": [
+          [
+            2401.0,
+            0.0,
+            0.036271677333333335
+          ]
+        ],
+        "source_hashes": {
+          "src/mg10d1.py": "92b95a6839fe712ed68bb3a545f6972fd3f186f6f1896272f18e2a4964056ce9",
+          "src/prepare_mg10d1.py": "1d093089f8b2938d6fc67ee73e1eafc40d20c41a0eecc546636c4cff66cfb890",
+          "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+          "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+          "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+          "src/bounded_pool.py": "d02eb76681d24bbc81c2ea404fdb6d9e45cb022f20288ff747e14e1bd8fc2c9d",
+          "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+          "spec/MG10D1_proposal.md": "0a6a8a7fd10e144286635a6b79266818bb0b22bc5cbdc00ea5a163d822ec779f",
+          "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+        },
+        "id": "timing_a1_s0_k0",
+        "charged_worker_seconds": 4.749818599957507,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a1_s1_k0",
+          "kind": "timing",
+          "arm": 1,
+          "start": 1,
+          "step": 0
+        },
+        "tau": 4.1666666666666665e-05,
+        "seed": 688668790,
+        "horizon": 0.1,
+        "compute_seconds": 1.9872440999606624,
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "raw": {
+          "path": "timing_a1_s1_k0.npz",
+          "sha256": "f239abac2101b779f65aa96caec71d622dd16b1b8757e8af0231de882334eef9"
+        },
+        "stats": [
+          [
+            2401.0,
+            0.0,
+            0.04143166758333333
+          ]
+        ],
+        "source_hashes": {
+          "src/mg10d1.py": "92b95a6839fe712ed68bb3a545f6972fd3f186f6f1896272f18e2a4964056ce9",
+          "src/prepare_mg10d1.py": "1d093089f8b2938d6fc67ee73e1eafc40d20c41a0eecc546636c4cff66cfb890",
+          "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+          "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+          "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+          "src/bounded_pool.py": "d02eb76681d24bbc81c2ea404fdb6d9e45cb022f20288ff747e14e1bd8fc2c9d",
+          "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+          "spec/MG10D1_proposal.md": "0a6a8a7fd10e144286635a6b79266818bb0b22bc5cbdc00ea5a163d822ec779f",
+          "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+        },
+        "id": "timing_a1_s1_k0",
+        "charged_worker_seconds": 4.740111000020988,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a0_s0_k1",
+          "kind": "timing",
+          "arm": 0,
+          "start": 0,
+          "step": 1
+        },
+        "tau": 2.0833333333333333e-05,
+        "seed": 4053262601,
+        "horizon": 0.1,
+        "compute_seconds": 3.0293138999841176,
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "raw": {
+          "path": "timing_a0_s0_k1.npz",
+          "sha256": "a9783f422567b944d9a231b152c0b0bbfbc9a8424c582f829bb21042ff6f3812"
+        },
+        "stats": [
+          [
+            4801.0,
+            0.0,
+            0.018012479625
+          ]
+        ],
+        "source_hashes": {
+          "src/mg10d1.py": "92b95a6839fe712ed68bb3a545f6972fd3f186f6f1896272f18e2a4964056ce9",
+          "src/prepare_mg10d1.py": "1d093089f8b2938d6fc67ee73e1eafc40d20c41a0eecc546636c4cff66cfb890",
+          "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+          "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+          "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+          "src/bounded_pool.py": "d02eb76681d24bbc81c2ea404fdb6d9e45cb022f20288ff747e14e1bd8fc2c9d",
+          "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+          "spec/MG10D1_proposal.md": "0a6a8a7fd10e144286635a6b79266818bb0b22bc5cbdc00ea5a163d822ec779f",
+          "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+        },
+        "id": "timing_a0_s0_k1",
+        "charged_worker_seconds": 6.003110300051048,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a0_s1_k1",
+          "kind": "timing",
+          "arm": 0,
+          "start": 1,
+          "step": 1
+        },
+        "tau": 2.0833333333333333e-05,
+        "seed": 3097359408,
+        "horizon": 0.1,
+        "compute_seconds": 3.048285999975633,
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "raw": {
+          "path": "timing_a0_s1_k1.npz",
+          "sha256": "89fc68aabd565eed003c03ab9911db5490ae0397c711a42a479aff40de5f34bb"
+        },
+        "stats": [
+          [
+            4801.0,
+            0.0,
+            0.020719143875
+          ]
+        ],
+        "source_hashes": {
+          "src/mg10d1.py": "92b95a6839fe712ed68bb3a545f6972fd3f186f6f1896272f18e2a4964056ce9",
+          "src/prepare_mg10d1.py": "1d093089f8b2938d6fc67ee73e1eafc40d20c41a0eecc546636c4cff66cfb890",
+          "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+          "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+          "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+          "src/bounded_pool.py": "d02eb76681d24bbc81c2ea404fdb6d9e45cb022f20288ff747e14e1bd8fc2c9d",
+          "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+          "spec/MG10D1_proposal.md": "0a6a8a7fd10e144286635a6b79266818bb0b22bc5cbdc00ea5a163d822ec779f",
+          "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+        },
+        "id": "timing_a0_s1_k1",
+        "charged_worker_seconds": 5.997831400018185,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a1_s0_k1",
+          "kind": "timing",
+          "arm": 1,
+          "start": 0,
+          "step": 1
+        },
+        "tau": 2.0833333333333333e-05,
+        "seed": 3137819350,
+        "horizon": 0.1,
+        "compute_seconds": 3.0685918999952264,
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "raw": {
+          "path": "timing_a1_s0_k1.npz",
+          "sha256": "5c8843d6ddbaf072bc290c286926ac603e69f63d3f9436f2cd13ce9d882dc341"
+        },
+        "stats": [
+          [
+            4801.0,
+            0.0,
+            0.017994194999999998
+          ]
+        ],
+        "source_hashes": {
+          "src/mg10d1.py": "92b95a6839fe712ed68bb3a545f6972fd3f186f6f1896272f18e2a4964056ce9",
+          "src/prepare_mg10d1.py": "1d093089f8b2938d6fc67ee73e1eafc40d20c41a0eecc546636c4cff66cfb890",
+          "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+          "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+          "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+          "src/bounded_pool.py": "d02eb76681d24bbc81c2ea404fdb6d9e45cb022f20288ff747e14e1bd8fc2c9d",
+          "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+          "spec/MG10D1_proposal.md": "0a6a8a7fd10e144286635a6b79266818bb0b22bc5cbdc00ea5a163d822ec779f",
+          "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+        },
+        "id": "timing_a1_s0_k1",
+        "charged_worker_seconds": 6.001589999999851,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a1_s1_k1",
+          "kind": "timing",
+          "arm": 1,
+          "start": 1,
+          "step": 1
+        },
+        "tau": 2.0833333333333333e-05,
+        "seed": 3568394187,
+        "horizon": 0.1,
+        "compute_seconds": 3.0952275000163354,
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "raw": {
+          "path": "timing_a1_s1_k1.npz",
+          "sha256": "d7f4ce479ff86ef593fe792e12ebc40cfdb0970b6ab47df0b0bed28b360fa0f6"
+        },
+        "stats": [
+          [
+            4801.0,
+            0.0,
+            0.02092399525
+          ]
+        ],
+        "source_hashes": {
+          "src/mg10d1.py": "92b95a6839fe712ed68bb3a545f6972fd3f186f6f1896272f18e2a4964056ce9",
+          "src/prepare_mg10d1.py": "1d093089f8b2938d6fc67ee73e1eafc40d20c41a0eecc546636c4cff66cfb890",
+          "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+          "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+          "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+          "src/bounded_pool.py": "d02eb76681d24bbc81c2ea404fdb6d9e45cb022f20288ff747e14e1bd8fc2c9d",
+          "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+          "spec/MG10D1_proposal.md": "0a6a8a7fd10e144286635a6b79266818bb0b22bc5cbdc00ea5a163d822ec779f",
+          "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+        },
+        "id": "timing_a1_s1_k1",
+        "charged_worker_seconds": 5.990922999975737,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a2_s0_k0",
+          "kind": "timing",
+          "arm": 2,
+          "start": 0,
+          "step": 0
+        },
+        "tau": 4.1666666666666665e-05,
+        "seed": 1755705371,
+        "horizon": 0.1,
+        "compute_seconds": 2.025966499990318,
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "raw": {
+          "path": "timing_a2_s0_k0.npz",
+          "sha256": "29c33e32c786454712dc9a31dc1b9651533a05449aa36a98299036d743509c90"
+        },
+        "stats": [
+          [
+            2401.0,
+            0.0,
+            0.03623196425
+          ]
+        ],
+        "source_hashes": {
+          "src/mg10d1.py": "92b95a6839fe712ed68bb3a545f6972fd3f186f6f1896272f18e2a4964056ce9",
+          "src/prepare_mg10d1.py": "1d093089f8b2938d6fc67ee73e1eafc40d20c41a0eecc546636c4cff66cfb890",
+          "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+          "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+          "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+          "src/bounded_pool.py": "d02eb76681d24bbc81c2ea404fdb6d9e45cb022f20288ff747e14e1bd8fc2c9d",
+          "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+          "spec/MG10D1_proposal.md": "0a6a8a7fd10e144286635a6b79266818bb0b22bc5cbdc00ea5a163d822ec779f",
+          "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+        },
+        "id": "timing_a2_s0_k0",
+        "charged_worker_seconds": 4.756224000011571,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a2_s1_k0",
+          "kind": "timing",
+          "arm": 2,
+          "start": 1,
+          "step": 0
+        },
+        "tau": 4.1666666666666665e-05,
+        "seed": 1239726764,
+        "horizon": 0.1,
+        "compute_seconds": 2.024238099984359,
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "raw": {
+          "path": "timing_a2_s1_k0.npz",
+          "sha256": "db027d99df1961dbc02930ea6ce23c56fa50d95347c181d4fb49256f2e3162a2"
+        },
+        "stats": [
+          [
+            2401.0,
+            0.0,
+            0.041572633
+          ]
+        ],
+        "source_hashes": {
+          "src/mg10d1.py": "92b95a6839fe712ed68bb3a545f6972fd3f186f6f1896272f18e2a4964056ce9",
+          "src/prepare_mg10d1.py": "1d093089f8b2938d6fc67ee73e1eafc40d20c41a0eecc546636c4cff66cfb890",
+          "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+          "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+          "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+          "src/bounded_pool.py": "d02eb76681d24bbc81c2ea404fdb6d9e45cb022f20288ff747e14e1bd8fc2c9d",
+          "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+          "spec/MG10D1_proposal.md": "0a6a8a7fd10e144286635a6b79266818bb0b22bc5cbdc00ea5a163d822ec779f",
+          "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+        },
+        "id": "timing_a2_s1_k0",
+        "charged_worker_seconds": 4.752907200017944,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a2_s0_k1",
+          "kind": "timing",
+          "arm": 2,
+          "start": 0,
+          "step": 1
+        },
+        "tau": 2.0833333333333333e-05,
+        "seed": 3291196818,
+        "horizon": 0.1,
+        "compute_seconds": 3.1655768000055104,
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "raw": {
+          "path": "timing_a2_s0_k1.npz",
+          "sha256": "dcebd5402f4ca89a0b854e8cf9b8a17849aa461b1fb168ac0133f6943fe04c6a"
+        },
+        "stats": [
+          [
+            4801.0,
+            0.0,
+            0.01799148875
+          ]
+        ],
+        "source_hashes": {
+          "src/mg10d1.py": "92b95a6839fe712ed68bb3a545f6972fd3f186f6f1896272f18e2a4964056ce9",
+          "src/prepare_mg10d1.py": "1d093089f8b2938d6fc67ee73e1eafc40d20c41a0eecc546636c4cff66cfb890",
+          "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+          "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+          "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+          "src/bounded_pool.py": "d02eb76681d24bbc81c2ea404fdb6d9e45cb022f20288ff747e14e1bd8fc2c9d",
+          "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+          "spec/MG10D1_proposal.md": "0a6a8a7fd10e144286635a6b79266818bb0b22bc5cbdc00ea5a163d822ec779f",
+          "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+        },
+        "id": "timing_a2_s0_k1",
+        "charged_worker_seconds": 5.75545489997603,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a2_s1_k1",
+          "kind": "timing",
+          "arm": 2,
+          "start": 1,
+          "step": 1
+        },
+        "tau": 2.0833333333333333e-05,
+        "seed": 2451728206,
+        "horizon": 0.1,
+        "compute_seconds": 3.1801579000311904,
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "raw": {
+          "path": "timing_a2_s1_k1.npz",
+          "sha256": "9a4cb55868ff80b00b716c989e063ff03e9e55e558210fe6cbde9c6ec8023453"
+        },
+        "stats": [
+          [
+            4801.0,
+            0.0,
+            0.020686073041666666
+          ]
+        ],
+        "source_hashes": {
+          "src/mg10d1.py": "92b95a6839fe712ed68bb3a545f6972fd3f186f6f1896272f18e2a4964056ce9",
+          "src/prepare_mg10d1.py": "1d093089f8b2938d6fc67ee73e1eafc40d20c41a0eecc546636c4cff66cfb890",
+          "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+          "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+          "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+          "src/bounded_pool.py": "d02eb76681d24bbc81c2ea404fdb6d9e45cb022f20288ff747e14e1bd8fc2c9d",
+          "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+          "spec/MG10D1_proposal.md": "0a6a8a7fd10e144286635a6b79266818bb0b22bc5cbdc00ea5a163d822ec779f",
+          "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+        },
+        "id": "timing_a2_s1_k1",
+        "charged_worker_seconds": 5.753987800038885,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a3_s0_k0",
+          "kind": "timing",
+          "arm": 3,
+          "start": 0,
+          "step": 0
+        },
+        "tau": 4.1666666666666665e-05,
+        "seed": 2750632253,
+        "horizon": 0.1,
+        "compute_seconds": 1.992419600021094,
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "raw": {
+          "path": "timing_a3_s0_k0.npz",
+          "sha256": "9f8de7acf5a0e6d9cfa084102ddc6c12a7a917a6af8837d5d20e93750d0b07ee"
+        },
+        "stats": [
+          [
+            2401.0,
+            0.0,
+            0.035966748
+          ]
+        ],
+        "source_hashes": {
+          "src/mg10d1.py": "92b95a6839fe712ed68bb3a545f6972fd3f186f6f1896272f18e2a4964056ce9",
+          "src/prepare_mg10d1.py": "1d093089f8b2938d6fc67ee73e1eafc40d20c41a0eecc546636c4cff66cfb890",
+          "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+          "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+          "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+          "src/bounded_pool.py": "d02eb76681d24bbc81c2ea404fdb6d9e45cb022f20288ff747e14e1bd8fc2c9d",
+          "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+          "spec/MG10D1_proposal.md": "0a6a8a7fd10e144286635a6b79266818bb0b22bc5cbdc00ea5a163d822ec779f",
+          "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+        },
+        "id": "timing_a3_s0_k0",
+        "charged_worker_seconds": 4.772529100009706,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a3_s1_k0",
+          "kind": "timing",
+          "arm": 3,
+          "start": 1,
+          "step": 0
+        },
+        "tau": 4.1666666666666665e-05,
+        "seed": 330088403,
+        "horizon": 0.1,
+        "compute_seconds": 1.9894669999484904,
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "raw": {
+          "path": "timing_a3_s1_k0.npz",
+          "sha256": "665f922fac9d57743b9dcd9525d28df46c99fe376902b7b4463020690f1ec52b"
+        },
+        "stats": [
+          [
+            2401.0,
+            0.0,
+            0.041639178
+          ]
+        ],
+        "source_hashes": {
+          "src/mg10d1.py": "92b95a6839fe712ed68bb3a545f6972fd3f186f6f1896272f18e2a4964056ce9",
+          "src/prepare_mg10d1.py": "1d093089f8b2938d6fc67ee73e1eafc40d20c41a0eecc546636c4cff66cfb890",
+          "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+          "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+          "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+          "src/bounded_pool.py": "d02eb76681d24bbc81c2ea404fdb6d9e45cb022f20288ff747e14e1bd8fc2c9d",
+          "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+          "spec/MG10D1_proposal.md": "0a6a8a7fd10e144286635a6b79266818bb0b22bc5cbdc00ea5a163d822ec779f",
+          "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+        },
+        "id": "timing_a3_s1_k0",
+        "charged_worker_seconds": 4.765547099988908,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a3_s0_k1",
+          "kind": "timing",
+          "arm": 3,
+          "start": 0,
+          "step": 1
+        },
+        "tau": 2.0833333333333333e-05,
+        "seed": 898702958,
+        "horizon": 0.1,
+        "compute_seconds": 3.0624316999455914,
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "raw": {
+          "path": "timing_a3_s0_k1.npz",
+          "sha256": "c423f2239650f4bd28da06bf92ad9708023e41d08dc2b297346b60a8bb51931f"
+        },
+        "stats": [
+          [
+            4801.0,
+            0.0,
+            0.017982698041666665
+          ]
+        ],
+        "source_hashes": {
+          "src/mg10d1.py": "92b95a6839fe712ed68bb3a545f6972fd3f186f6f1896272f18e2a4964056ce9",
+          "src/prepare_mg10d1.py": "1d093089f8b2938d6fc67ee73e1eafc40d20c41a0eecc546636c4cff66cfb890",
+          "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+          "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+          "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+          "src/bounded_pool.py": "d02eb76681d24bbc81c2ea404fdb6d9e45cb022f20288ff747e14e1bd8fc2c9d",
+          "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+          "spec/MG10D1_proposal.md": "0a6a8a7fd10e144286635a6b79266818bb0b22bc5cbdc00ea5a163d822ec779f",
+          "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+        },
+        "id": "timing_a3_s0_k1",
+        "charged_worker_seconds": 5.757615500013344,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a3_s1_k1",
+          "kind": "timing",
+          "arm": 3,
+          "start": 1,
+          "step": 1
+        },
+        "tau": 2.0833333333333333e-05,
+        "seed": 3588882228,
+        "horizon": 0.1,
+        "compute_seconds": 3.17816650000168,
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "raw": {
+          "path": "timing_a3_s1_k1.npz",
+          "sha256": "7427eb00b596a4d7e9467a3e033703172f7e5754ca1f5ab5f2fa37097fd1047a"
+        },
+        "stats": [
+          [
+            4801.0,
+            0.0,
+            0.020671212916666667
+          ]
+        ],
+        "source_hashes": {
+          "src/mg10d1.py": "92b95a6839fe712ed68bb3a545f6972fd3f186f6f1896272f18e2a4964056ce9",
+          "src/prepare_mg10d1.py": "1d093089f8b2938d6fc67ee73e1eafc40d20c41a0eecc546636c4cff66cfb890",
+          "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+          "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+          "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+          "src/bounded_pool.py": "d02eb76681d24bbc81c2ea404fdb6d9e45cb022f20288ff747e14e1bd8fc2c9d",
+          "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+          "spec/MG10D1_proposal.md": "0a6a8a7fd10e144286635a6b79266818bb0b22bc5cbdc00ea5a163d822ec779f",
+          "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+        },
+        "id": "timing_a3_s1_k1",
+        "charged_worker_seconds": 5.7527612000121735,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a4_s0_k0",
+          "kind": "timing",
+          "arm": 4,
+          "start": 0,
+          "step": 0
+        },
+        "tau": 4.1666666666666665e-05,
+        "seed": 3789494390,
+        "horizon": 0.1,
+        "compute_seconds": 1.8998245999682695,
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "raw": {
+          "path": "timing_a4_s0_k0.npz",
+          "sha256": "446e07b409aaa7e53d8d9602035660c4fa6180e6aaf990df0a7e3e4d42378ee4"
+        },
+        "stats": [
+          [
+            2401.0,
+            0.0,
+            0.035970804249999995
+          ]
+        ],
+        "source_hashes": {
+          "src/mg10d1.py": "92b95a6839fe712ed68bb3a545f6972fd3f186f6f1896272f18e2a4964056ce9",
+          "src/prepare_mg10d1.py": "1d093089f8b2938d6fc67ee73e1eafc40d20c41a0eecc546636c4cff66cfb890",
+          "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+          "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+          "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+          "src/bounded_pool.py": "d02eb76681d24bbc81c2ea404fdb6d9e45cb022f20288ff747e14e1bd8fc2c9d",
+          "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+          "spec/MG10D1_proposal.md": "0a6a8a7fd10e144286635a6b79266818bb0b22bc5cbdc00ea5a163d822ec779f",
+          "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+        },
+        "id": "timing_a4_s0_k0",
+        "charged_worker_seconds": 4.256309700023849,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a4_s0_k1",
+          "kind": "timing",
+          "arm": 4,
+          "start": 0,
+          "step": 1
+        },
+        "tau": 2.0833333333333333e-05,
+        "seed": 1628417138,
+        "horizon": 0.1,
+        "compute_seconds": 2.7866452999878675,
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "raw": {
+          "path": "timing_a4_s0_k1.npz",
+          "sha256": "3ce3a7d28479323e0d11aeeb3e7ea8fb24fdab5bb31e5cbee16c0b45f6e62eb7"
+        },
+        "stats": [
+          [
+            4801.0,
+            0.0,
+            0.018009091291666664
+          ]
+        ],
+        "source_hashes": {
+          "src/mg10d1.py": "92b95a6839fe712ed68bb3a545f6972fd3f186f6f1896272f18e2a4964056ce9",
+          "src/prepare_mg10d1.py": "1d093089f8b2938d6fc67ee73e1eafc40d20c41a0eecc546636c4cff66cfb890",
+          "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+          "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+          "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+          "src/bounded_pool.py": "d02eb76681d24bbc81c2ea404fdb6d9e45cb022f20288ff747e14e1bd8fc2c9d",
+          "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+          "spec/MG10D1_proposal.md": "0a6a8a7fd10e144286635a6b79266818bb0b22bc5cbdc00ea5a163d822ec779f",
+          "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+        },
+        "id": "timing_a4_s0_k1",
+        "charged_worker_seconds": 5.0037303999997675,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a4_s1_k0",
+          "kind": "timing",
+          "arm": 4,
+          "start": 1,
+          "step": 0
+        },
+        "tau": 4.1666666666666665e-05,
+        "seed": 1630286665,
+        "horizon": 0.1,
+        "compute_seconds": 1.8080964999971911,
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "raw": {
+          "path": "timing_a4_s1_k0.npz",
+          "sha256": "e69b8cc3c536223f1c47f761e45a0a088944aedebc9ec34beb889f0586df2de3"
+        },
+        "stats": [
+          [
+            2401.0,
+            0.0,
+            0.0414995875
+          ]
+        ],
+        "source_hashes": {
+          "src/mg10d1.py": "92b95a6839fe712ed68bb3a545f6972fd3f186f6f1896272f18e2a4964056ce9",
+          "src/prepare_mg10d1.py": "1d093089f8b2938d6fc67ee73e1eafc40d20c41a0eecc546636c4cff66cfb890",
+          "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+          "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+          "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+          "src/bounded_pool.py": "d02eb76681d24bbc81c2ea404fdb6d9e45cb022f20288ff747e14e1bd8fc2c9d",
+          "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+          "spec/MG10D1_proposal.md": "0a6a8a7fd10e144286635a6b79266818bb0b22bc5cbdc00ea5a163d822ec779f",
+          "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+        },
+        "id": "timing_a4_s1_k0",
+        "charged_worker_seconds": 4.022647199977655,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a4_s1_k1",
+          "kind": "timing",
+          "arm": 4,
+          "start": 1,
+          "step": 1
+        },
+        "tau": 2.0833333333333333e-05,
+        "seed": 2677083071,
+        "horizon": 0.1,
+        "compute_seconds": 2.6623700999771245,
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "raw": {
+          "path": "timing_a4_s1_k1.npz",
+          "sha256": "101d3ca299688fdf24998631bcf4fc9679d63a58b9a21f14264b9e34ab51981f"
+        },
+        "stats": [
+          [
+            4801.0,
+            0.0,
+            0.020795459791666665
+          ]
+        ],
+        "source_hashes": {
+          "src/mg10d1.py": "92b95a6839fe712ed68bb3a545f6972fd3f186f6f1896272f18e2a4964056ce9",
+          "src/prepare_mg10d1.py": "1d093089f8b2938d6fc67ee73e1eafc40d20c41a0eecc546636c4cff66cfb890",
+          "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+          "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+          "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+          "src/bounded_pool.py": "d02eb76681d24bbc81c2ea404fdb6d9e45cb022f20288ff747e14e1bd8fc2c9d",
+          "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+          "spec/MG10D1_proposal.md": "0a6a8a7fd10e144286635a6b79266818bb0b22bc5cbdc00ea5a163d822ec779f",
+          "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+        },
+        "id": "timing_a4_s1_k1",
+        "charged_worker_seconds": 4.750666700012516,
+        "returncode": 0
+      }
+    ],
+    "ceiling": 900,
+    "prior_charge": 33.44543089997023,
+    "poll_seconds": 0.25,
+    "charged_worker_seconds": 136.54094180004904,
+    "inflight_worker_seconds": 0,
+    "pending_ids": [],
+    "active_ids": [],
+    "stop_reason": null,
+    "workers": 8,
+    "threads_per_library": 1,
+    "max_observed_poll_gap_seconds": 0.2505966000026092
+  }
+}

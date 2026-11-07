@@ -1,0 +1,42 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "timing_a1_s1_k0",
+    "kind": "timing",
+    "arm": 1,
+    "start": 1,
+    "step": 0
+  },
+  "tau": 4.1666666666666665e-05,
+  "seed": 688668790,
+  "horizon": 0.1,
+  "compute_seconds": 1.9872440999606624,
+  "ledger": {
+    "max_integer_residual": 0,
+    "max_total_input_residual": 0,
+    "nonnegative": true,
+    "pass_check": true
+  },
+  "raw": {
+    "path": "timing_a1_s1_k0.npz",
+    "sha256": "f239abac2101b779f65aa96caec71d622dd16b1b8757e8af0231de882334eef9"
+  },
+  "stats": [
+    [
+      2401.0,
+      0.0,
+      0.04143166758333333
+    ]
+  ],
+  "source_hashes": {
+    "src/mg10d1.py": "92b95a6839fe712ed68bb3a545f6972fd3f186f6f1896272f18e2a4964056ce9",
+    "src/prepare_mg10d1.py": "1d093089f8b2938d6fc67ee73e1eafc40d20c41a0eecc546636c4cff66cfb890",
+    "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+    "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+    "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+    "src/bounded_pool.py": "d02eb76681d24bbc81c2ea404fdb6d9e45cb022f20288ff747e14e1bd8fc2c9d",
+    "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+    "spec/MG10D1_proposal.md": "0a6a8a7fd10e144286635a6b79266818bb0b22bc5cbdc00ea5a163d822ec779f",
+    "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+  }
+}
