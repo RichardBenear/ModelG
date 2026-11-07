@@ -20,3 +20,8 @@ This is an X-only, fixed-reference instrument. Different G/Y states or an unregi
 Full synthetic arrays and decision inputs are retained for upload/retention verification. D2 remains PI CLOSED; no D1/D2 outcome or array has been rescored. P1 PI closure is pending.
 
 MG059 retention verified: all16 raw fixture archives (280039bytes), exact cases/expectations/seeds, classification outputs and independent audit published at111936587ce404f0e87c5ca55f7ad89dddf1aff3. SHA256 and Git blob sizes match. PI closure remains pending.
+
+
+## PI closure — MG060, 2026-11-07
+
+Richard: “I approve,” responding to the P1 closure request. **MG10-P1 is CLOSED as QUALIFIED ON REGISTERED SYNTHETIC FIXTURES.** All90 assertions,511 independently recomputed frame assessments and complete verified raw archive are retained. The X-only/fixed-reference/sampled-continuity limitations above remain binding; this is not a physical-particle, lineage, survival or actual-model-noise calibration verdict. Earlier D1/D2 outcomes remain unchanged. No next scientific production is registered by this closure.
