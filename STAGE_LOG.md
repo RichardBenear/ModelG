@@ -846,3 +846,5 @@ All80 trajectories complete in4.40981elapsedhours,33.333427worker-core-hours ver
 ## MG055 — Source-law check, stable correction and registered comparison
 
 Confirmed legacy fine-step zero-event probability differs from stable finite-binomial law. Revised geometric-spacing finite source qualified; independent80-digit histogram/CDF and source/state reconstruction agree. Original and NumPy diagnostics/threshold outcomes retained without relabeling. New32-job CHEMO/HIGH comparison registered with fresh streams and full checkpoint retention; estimated~1.94hours on8workers. Uses24-core-hour subcap within remaining60-hour approval; no larger budget assumed. Production registration commit/push must precede launch.
+
+MG055 CORRECTED PRODUCTION START: 2026-11-07T13:37:34.306685+00:00, registrationff12250 pushed before launch. Eight active owned workers and checkpoint saves verified. Thirty-two fresh trajectories,24-hour subcap within prior60-hour approval; no corrected result yet. Process live: do not start another driver. Automatic report/independent audit after stop.

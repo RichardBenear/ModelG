@@ -1,0 +1,22 @@
+{
+  "status": "RUNNING; corrected scientific results not yet available",
+  "started_utc": "2026-11-07T13:37:34.306685+00:00",
+  "registration_commit": "ff12250",
+  "registration_sha256": "cb2f12aa45230deeed20e8d2be62ab092073d3e9215bf90227a095f56ad56505",
+  "planned_paths": 32,
+  "workers_verified": 8,
+  "checkpoint_progress_at_launch": {
+    "a0_s0_k0_r0": 1,
+    "a0_s0_k1_r0": 1,
+    "a0_s1_k0_r0": 1,
+    "a0_s1_k1_r0": 1,
+    "a1_s0_k0_r0": 1,
+    "a1_s0_k1_r0": 1,
+    "a1_s1_k0_r0": 1,
+    "a1_s1_k1_r0": 1
+  },
+  "production_ceiling_seconds": 86400,
+  "aggregate_prior_D1_plus_new_worst_core_hours": 57.58342704119452,
+  "automatic_analysis": "evaluate_mg10d2.py then check_mg10d2.py",
+  "archive_status": "D1 fully archived; D2 live checkpoints local until final inspection/upload"
+}
