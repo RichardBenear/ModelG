@@ -1,0 +1,555 @@
+{
+  "status": "DRAFT PRODUCTION; DEVELOPMENT ONLY",
+  "source_hashes": {
+    "src/mg10p3.py": "dd4c804286f336019ad84b97d4211acc67bbc8811efdd3aedbd12be7825aa7fa",
+    "src/prepare_mg10p3.py": "b25224865f31bd6ea82c3218bb3fa885535cf40c684aa8b895d894b3f25740b2",
+    "src/check_mg10p3_preparation.py": "9f41d70e23635af87b2ec613e7217dcc4f3ed96bcb42c194f9f63a02e0f76176",
+    "spec/MG10P3_proposal.md": "5662f45942f95cd67ba552b9253a821561a3b976ae0467ad1f009de3428746fa",
+    "src/mg10p1.py": "ba9aa61c92d813fc48f56cc1683e457596f0152637daede07638f1308aaad45c",
+    "src/mg10p2.py": "38b001ec9a54765540d723d26d38d6de4dd77850d301c5c55da151cb19697c69",
+    "src/mg10d2.py": "d8b3cb7aebf23d3a93d3256b0fa122efd016eddbe0b0951f98ec6cded0c77d2b",
+    "src/mg10d2_stream.py": "e5658307c4c0999d5933e7255a587001014689fb8717b38726229305d962b3bd",
+    "src/mg10d2_source.py": "311f1326fb3fbcf5c9a62f04804b57c28718bb9bb081b37327625e39b08ff174",
+    "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+    "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+    "src/mg10d1_pool.py": "ada3b015c0bd2ec05edd89f6a32671fe7ca6a2854894ae0fcfd1199d9c83f86c",
+    "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+    "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+  },
+  "candidate_jobs": [
+    {
+      "id": "s0_k0_r0",
+      "start": 0,
+      "step": 0,
+      "replicate": 0,
+      "seed": 3931711194,
+      "warmup_seed": 722008050
+    },
+    {
+      "id": "s1_k0_r0",
+      "start": 1,
+      "step": 0,
+      "replicate": 0,
+      "seed": 2097673990,
+      "warmup_seed": 422770698
+    },
+    {
+      "id": "s0_k1_r0",
+      "start": 0,
+      "step": 1,
+      "replicate": 0,
+      "seed": 189398297,
+      "warmup_seed": 2503983380
+    },
+    {
+      "id": "s1_k1_r0",
+      "start": 1,
+      "step": 1,
+      "replicate": 0,
+      "seed": 3882889863,
+      "warmup_seed": 84589366
+    },
+    {
+      "id": "s0_k0_r1",
+      "start": 0,
+      "step": 0,
+      "replicate": 1,
+      "seed": 229600260,
+      "warmup_seed": 4143352038
+    },
+    {
+      "id": "s1_k0_r1",
+      "start": 1,
+      "step": 0,
+      "replicate": 1,
+      "seed": 589675163,
+      "warmup_seed": 2014421604
+    },
+    {
+      "id": "s0_k1_r1",
+      "start": 0,
+      "step": 1,
+      "replicate": 1,
+      "seed": 2990310057,
+      "warmup_seed": 448962510
+    },
+    {
+      "id": "s1_k1_r1",
+      "start": 1,
+      "step": 1,
+      "replicate": 1,
+      "seed": 1079537965,
+      "warmup_seed": 3738784213
+    },
+    {
+      "id": "s0_k0_r2",
+      "start": 0,
+      "step": 0,
+      "replicate": 2,
+      "seed": 461368993,
+      "warmup_seed": 909016603
+    },
+    {
+      "id": "s1_k0_r2",
+      "start": 1,
+      "step": 0,
+      "replicate": 2,
+      "seed": 3337191797,
+      "warmup_seed": 535036883
+    },
+    {
+      "id": "s0_k1_r2",
+      "start": 0,
+      "step": 1,
+      "replicate": 2,
+      "seed": 823722364,
+      "warmup_seed": 2726465100
+    },
+    {
+      "id": "s1_k1_r2",
+      "start": 1,
+      "step": 1,
+      "replicate": 2,
+      "seed": 2771564134,
+      "warmup_seed": 387574916
+    },
+    {
+      "id": "s0_k0_r3",
+      "start": 0,
+      "step": 0,
+      "replicate": 3,
+      "seed": 3140058870,
+      "warmup_seed": 1988089047
+    },
+    {
+      "id": "s1_k0_r3",
+      "start": 1,
+      "step": 0,
+      "replicate": 3,
+      "seed": 1851311567,
+      "warmup_seed": 899848634
+    },
+    {
+      "id": "s0_k1_r3",
+      "start": 0,
+      "step": 1,
+      "replicate": 3,
+      "seed": 1722747834,
+      "warmup_seed": 1740951590
+    },
+    {
+      "id": "s1_k1_r3",
+      "start": 1,
+      "step": 1,
+      "replicate": 3,
+      "seed": 2818443889,
+      "warmup_seed": 3660672032
+    },
+    {
+      "id": "s0_k0_r4",
+      "start": 0,
+      "step": 0,
+      "replicate": 4,
+      "seed": 1442816146,
+      "warmup_seed": 2545517419
+    },
+    {
+      "id": "s1_k0_r4",
+      "start": 1,
+      "step": 0,
+      "replicate": 4,
+      "seed": 2843992013,
+      "warmup_seed": 896925523
+    },
+    {
+      "id": "s0_k1_r4",
+      "start": 0,
+      "step": 1,
+      "replicate": 4,
+      "seed": 3537906517,
+      "warmup_seed": 3084146510
+    },
+    {
+      "id": "s1_k1_r4",
+      "start": 1,
+      "step": 1,
+      "replicate": 4,
+      "seed": 2088632699,
+      "warmup_seed": 106931139
+    },
+    {
+      "id": "s0_k0_r5",
+      "start": 0,
+      "step": 0,
+      "replicate": 5,
+      "seed": 3357046289,
+      "warmup_seed": 3728410029
+    },
+    {
+      "id": "s1_k0_r5",
+      "start": 1,
+      "step": 0,
+      "replicate": 5,
+      "seed": 2569385995,
+      "warmup_seed": 2951409820
+    },
+    {
+      "id": "s0_k1_r5",
+      "start": 0,
+      "step": 1,
+      "replicate": 5,
+      "seed": 210199351,
+      "warmup_seed": 2579209314
+    },
+    {
+      "id": "s1_k1_r5",
+      "start": 1,
+      "step": 1,
+      "replicate": 5,
+      "seed": 4141168887,
+      "warmup_seed": 2228760755
+    },
+    {
+      "id": "s0_k0_r6",
+      "start": 0,
+      "step": 0,
+      "replicate": 6,
+      "seed": 4198124055,
+      "warmup_seed": 3372875309
+    },
+    {
+      "id": "s1_k0_r6",
+      "start": 1,
+      "step": 0,
+      "replicate": 6,
+      "seed": 912088565,
+      "warmup_seed": 1906699828
+    },
+    {
+      "id": "s0_k1_r6",
+      "start": 0,
+      "step": 1,
+      "replicate": 6,
+      "seed": 2899570759,
+      "warmup_seed": 3573624764
+    },
+    {
+      "id": "s1_k1_r6",
+      "start": 1,
+      "step": 1,
+      "replicate": 6,
+      "seed": 1167970461,
+      "warmup_seed": 4271707706
+    },
+    {
+      "id": "s0_k0_r7",
+      "start": 0,
+      "step": 0,
+      "replicate": 7,
+      "seed": 551101880,
+      "warmup_seed": 2329112893
+    },
+    {
+      "id": "s1_k0_r7",
+      "start": 1,
+      "step": 0,
+      "replicate": 7,
+      "seed": 233122380,
+      "warmup_seed": 556733553
+    },
+    {
+      "id": "s0_k1_r7",
+      "start": 0,
+      "step": 1,
+      "replicate": 7,
+      "seed": 2437780856,
+      "warmup_seed": 3300203385
+    },
+    {
+      "id": "s1_k1_r7",
+      "start": 1,
+      "step": 1,
+      "replicate": 7,
+      "seed": 3109017526,
+      "warmup_seed": 3908710090
+    },
+    {
+      "id": "s0_k0_r8",
+      "start": 0,
+      "step": 0,
+      "replicate": 8,
+      "seed": 3932113077,
+      "warmup_seed": 2898432977
+    },
+    {
+      "id": "s1_k0_r8",
+      "start": 1,
+      "step": 0,
+      "replicate": 8,
+      "seed": 1095438357,
+      "warmup_seed": 1947080361
+    },
+    {
+      "id": "s0_k1_r8",
+      "start": 0,
+      "step": 1,
+      "replicate": 8,
+      "seed": 672161552,
+      "warmup_seed": 2198775111
+    },
+    {
+      "id": "s1_k1_r8",
+      "start": 1,
+      "step": 1,
+      "replicate": 8,
+      "seed": 1180684588,
+      "warmup_seed": 1184053739
+    },
+    {
+      "id": "s0_k0_r9",
+      "start": 0,
+      "step": 0,
+      "replicate": 9,
+      "seed": 4051495327,
+      "warmup_seed": 1630517802
+    },
+    {
+      "id": "s1_k0_r9",
+      "start": 1,
+      "step": 0,
+      "replicate": 9,
+      "seed": 1807440591,
+      "warmup_seed": 2061353632
+    },
+    {
+      "id": "s0_k1_r9",
+      "start": 0,
+      "step": 1,
+      "replicate": 9,
+      "seed": 1854069558,
+      "warmup_seed": 4056478453
+    },
+    {
+      "id": "s1_k1_r9",
+      "start": 1,
+      "step": 1,
+      "replicate": 9,
+      "seed": 2014660842,
+      "warmup_seed": 789429801
+    },
+    {
+      "id": "s0_k0_r10",
+      "start": 0,
+      "step": 0,
+      "replicate": 10,
+      "seed": 1338704139,
+      "warmup_seed": 3714850565
+    },
+    {
+      "id": "s1_k0_r10",
+      "start": 1,
+      "step": 0,
+      "replicate": 10,
+      "seed": 112840444,
+      "warmup_seed": 2321588828
+    },
+    {
+      "id": "s0_k1_r10",
+      "start": 0,
+      "step": 1,
+      "replicate": 10,
+      "seed": 3800028223,
+      "warmup_seed": 3779110000
+    },
+    {
+      "id": "s1_k1_r10",
+      "start": 1,
+      "step": 1,
+      "replicate": 10,
+      "seed": 3433297141,
+      "warmup_seed": 2595520377
+    },
+    {
+      "id": "s0_k0_r11",
+      "start": 0,
+      "step": 0,
+      "replicate": 11,
+      "seed": 1277532168,
+      "warmup_seed": 3439232986
+    },
+    {
+      "id": "s1_k0_r11",
+      "start": 1,
+      "step": 0,
+      "replicate": 11,
+      "seed": 3904748148,
+      "warmup_seed": 4123109230
+    },
+    {
+      "id": "s0_k1_r11",
+      "start": 0,
+      "step": 1,
+      "replicate": 11,
+      "seed": 2598733138,
+      "warmup_seed": 3642511753
+    },
+    {
+      "id": "s1_k1_r11",
+      "start": 1,
+      "step": 1,
+      "replicate": 11,
+      "seed": 1439100419,
+      "warmup_seed": 2565997884
+    },
+    {
+      "id": "s0_k0_r12",
+      "start": 0,
+      "step": 0,
+      "replicate": 12,
+      "seed": 1310300513,
+      "warmup_seed": 2985741463
+    },
+    {
+      "id": "s1_k0_r12",
+      "start": 1,
+      "step": 0,
+      "replicate": 12,
+      "seed": 2672506897,
+      "warmup_seed": 1514602596
+    },
+    {
+      "id": "s0_k1_r12",
+      "start": 0,
+      "step": 1,
+      "replicate": 12,
+      "seed": 604857108,
+      "warmup_seed": 466501900
+    },
+    {
+      "id": "s1_k1_r12",
+      "start": 1,
+      "step": 1,
+      "replicate": 12,
+      "seed": 84763864,
+      "warmup_seed": 821413067
+    },
+    {
+      "id": "s0_k0_r13",
+      "start": 0,
+      "step": 0,
+      "replicate": 13,
+      "seed": 393454644,
+      "warmup_seed": 4228298310
+    },
+    {
+      "id": "s1_k0_r13",
+      "start": 1,
+      "step": 0,
+      "replicate": 13,
+      "seed": 479104114,
+      "warmup_seed": 3530065979
+    },
+    {
+      "id": "s0_k1_r13",
+      "start": 0,
+      "step": 1,
+      "replicate": 13,
+      "seed": 2428546181,
+      "warmup_seed": 3859607614
+    },
+    {
+      "id": "s1_k1_r13",
+      "start": 1,
+      "step": 1,
+      "replicate": 13,
+      "seed": 554733434,
+      "warmup_seed": 1611307161
+    },
+    {
+      "id": "s0_k0_r14",
+      "start": 0,
+      "step": 0,
+      "replicate": 14,
+      "seed": 2522744978,
+      "warmup_seed": 2702788556
+    },
+    {
+      "id": "s1_k0_r14",
+      "start": 1,
+      "step": 0,
+      "replicate": 14,
+      "seed": 3782618047,
+      "warmup_seed": 3231504092
+    },
+    {
+      "id": "s0_k1_r14",
+      "start": 0,
+      "step": 1,
+      "replicate": 14,
+      "seed": 905719114,
+      "warmup_seed": 2402255426
+    },
+    {
+      "id": "s1_k1_r14",
+      "start": 1,
+      "step": 1,
+      "replicate": 14,
+      "seed": 3298932717,
+      "warmup_seed": 2442296693
+    },
+    {
+      "id": "s0_k0_r15",
+      "start": 0,
+      "step": 0,
+      "replicate": 15,
+      "seed": 2372941516,
+      "warmup_seed": 2769021518
+    },
+    {
+      "id": "s1_k0_r15",
+      "start": 1,
+      "step": 0,
+      "replicate": 15,
+      "seed": 449608216,
+      "warmup_seed": 1866257185
+    },
+    {
+      "id": "s0_k1_r15",
+      "start": 0,
+      "step": 1,
+      "replicate": 15,
+      "seed": 2913704618,
+      "warmup_seed": 1779451048
+    },
+    {
+      "id": "s1_k1_r15",
+      "start": 1,
+      "step": 1,
+      "replicate": 15,
+      "seed": 663186127,
+      "warmup_seed": 1349725008
+    }
+  ],
+  "paths": 64,
+  "R": 16,
+  "groups": 4,
+  "horizon": 25,
+  "checkpoint_interval": 0.25,
+  "window": [
+    0,
+    20
+  ],
+  "production_candidate_ceiling_seconds": 86400,
+  "per_path_timeout_seconds": 1800,
+  "development_ceiling_seconds": 900,
+  "workers_max": 8,
+  "threads_per_library": 1,
+  "timing": "Two T1 paths per H/S/step class, full maintained conditions, stages6502; no endpoint matcher selection/inference",
+  "environment": {
+    "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.2.4",
+    "scipy": "1.16.1",
+    "numba": "0.68.0"
+  }
+}
