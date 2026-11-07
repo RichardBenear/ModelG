@@ -18,3 +18,5 @@ All68 frame,15 temporal and7 invalid-API assertions pass. Separate dense-convolu
 This is an X-only, fixed-reference instrument. Different G/Y states or an unregistered reference-like impostor can pass an X-profile criterion. A real finite-bath motif can change shape as its background/effective rates change; failure of this reference match is therefore not physical death. No actual Model G noise false-positive calibration, coupled-field/dynamical confirmation, multi-particle lineage, or intervening-time continuity has been established. Before causal supply/particle claims, design a separate model-informed/noise/generalization study with frozen scope and budget; no such production is registered here.
 
 Full synthetic arrays and decision inputs are retained for upload/retention verification. D2 remains PI CLOSED; no D1/D2 outcome or array has been rescored. P1 PI closure is pending.
+
+MG059 retention verified: all16 raw fixture archives (280039bytes), exact cases/expectations/seeds, classification outputs and independent audit published at111936587ce404f0e87c5ca55f7ad89dddf1aff3. SHA256 and Git blob sizes match. PI closure remains pending.

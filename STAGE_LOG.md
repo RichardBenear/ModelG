@@ -870,3 +870,5 @@ PI instructed next step after D2 closure. P1 qualifies localization/reference ma
 ## MG059 — Single-motif measurement qualification result
 
 All90 registered fixture/API assertions pass, independent dense/direct oracle agrees on511 raw frame assessments and continuity classifications. QUALIFIED ON REGISTERED SYNTHETIC FIXTURES, 2.016197000ownedseconds versus300 cap. No expensive simulation or old-result rescoring. X-only/fixed-reference/noise/lineage limitations preserved; actual model-informed generalization remains a separate study. Raw arrays and decisions prepared for upload/verification; PI closure pending.
+
+MG059 RETENTION: all16 raw P1 input archives (280039bytes) uploaded at111936587ce404f0e87c5ca55f7ad89dddf1aff3; source matrix/expectations/seeds and classifications retained. LocalSHA256 matches and committed blob sizes verified against pushed archive. P1 PI closure pending.
