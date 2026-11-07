@@ -1,8 +1,8 @@
-# Current handoff — 2026-11-06 (MG053)
+# Current handoff — 2026-11-07 (MG054)
 
 - **Roles:** Richard Benear is PI; ChatGPT / Codex leads planning, implementation, validation, authorized runs, analysis and documentation. Claude/other external review is optional. [Active protocol](RESEARCH_PROTOCOL.md).
 - **Last closed gate:** MG10-S2, PI sign-off MG052, QUALIFIED WITHIN REGISTERED S2 SCOPE. S1 and MG10-C1 remain CLOSED; original MG10 remains UNRESOLVED.
-- **Active gate:** MG10-D1 REGISTERED MG053 under PI run approval.80 fixed T60 trajectories; forecast41.6826core-hours, approved60-hour cap; local8workers/threads1,3600seconds/job. Checkpoint/controller and synthetic full reporting qualification PASS. Registration b21fb85 was pushed before production launch; launch.json records initial8-worker/checkpoint verification. Process is live; do not start another driver. Production status: results/MG10D1/run_state.json and production/ledger.json; report/check generated automatically when batch stops. No automatic reruns. Full raw upload and PI result closure remain subsequent steps. See spec/MG10D1_prerun.md.
+- **Active gate:** D1 COMPLETE DESCRIPTIVE PILOT MG054:80/80,33.333427core-hours; independent integer/raw/480-summary audit PASS. No process remains active. Posthoc HIGH fine-step A-source deficit~0.3% makes recovery interpretation unresolved. Original verdict/data preserved. PI acknowledged status and authorized investigation/archive/next steps. Next is prospective source-law diagnostic and qualified corrected follow-up, not an automatic D1 rerun. See results/MG10D1/posthoc_source_check.json.
 - **Archive baseline:** [StochasticVacuum](https://github.com/RichardBenear/StochasticVacuum), private, commit `2161211ccc9d8427af98ebeefcabf7f379b83a37`. Reuse selected machinery with provenance and new validation.
 - **Time semantics:** MG10 proposes the existing continuous-time model for its first extension. A fundamental-tick law remains a separate modeling decision.
 - **Q5:** MG8's frozen record remains open as scored. A possible reframing of Q5 was discussed with the PI, but no new Q5 study or rescoring is registered here.

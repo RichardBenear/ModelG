@@ -1,0 +1,52 @@
+{
+  "status": "POSTHOC NUMERICAL DISCREPANCY; original registered verdict unchanged",
+  "basis": "A consumption is an autonomous linear-death marginal; analytic expected rate uses stable expm1, not active field assumptions",
+  "rows": [
+    {
+      "start": 0,
+      "step": 0,
+      "expected_source_rate": 13.999998600000092,
+      "observed_source_rate": 13.999946725,
+      "percent_difference": -0.00037053575200340916,
+      "approx_ci95": [
+        13.999391892208193,
+        14.000501557791807
+      ]
+    },
+    {
+      "start": 0,
+      "step": 1,
+      "expected_source_rate": 13.999998600000092,
+      "observed_source_rate": 13.957979025,
+      "percent_difference": -0.3001398514432152,
+      "approx_ci95": [
+        13.956995046735678,
+        13.958963003264321
+      ]
+    },
+    {
+      "start": 1,
+      "step": 0,
+      "expected_source_rate": 13.999998600000092,
+      "observed_source_rate": 14.00033645,
+      "percent_difference": 0.0024132145263866533,
+      "approx_ci95": [
+        13.998887519032188,
+        14.001785380967812
+      ]
+    },
+    {
+      "start": 1,
+      "step": 1,
+      "expected_source_rate": 13.999998600000092,
+      "observed_source_rate": 13.957436258333333,
+      "percent_difference": -0.30401675659280647,
+      "approx_ci95": [
+        13.955590268556547,
+        13.959282248110119
+      ]
+    }
+  ],
+  "interpretation": "HIGH fine-step source bias suspected; source sampler qualification/correction must precede recovery claims",
+  "pi_instruction": "looks ok, proceed with the next steps"
+}

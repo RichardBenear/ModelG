@@ -1,0 +1,50 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "a2_s0_k0_r2",
+    "arm": 2,
+    "start": 0,
+    "step": 0,
+    "replicate": 2,
+    "seed": 1307497041,
+    "horizon": 60,
+    "tau": 4.1666666666666665e-05
+  },
+  "raw": "a2_s0_k0_r2.npz",
+  "raw_sha256": "b79094a7386f48666964fa76c582b46dfffb74ad5384fe7313c796ead56a46a3",
+  "checkpoints": 61,
+  "ledger": {
+    "max_integer_residual": 0,
+    "max_total_input_residual": 0,
+    "nonnegative": true,
+    "pass_check": true
+  },
+  "stats": [
+    [
+      1440012.0,
+      0.0,
+      0.04402197175
+    ]
+  ],
+  "simulation_seconds": 1160.5479725999758,
+  "elapsed_seconds": 1169.482959099987,
+  "finished": "2026-11-07T03:03:55.794251+00:00",
+  "source_hashes": {
+    "src/mg10d1.py": "2246b78a0785b87e7b7cf3614892991f10b9ff5b4d77b7d5d02e4249d6595785",
+    "src/run_mg10d1.py": "99fa41da6bab57fdff5949228e98cd47580a76d16566489748ad86b59569e829",
+    "src/mg10d1_stream.py": "96082e24cc36d9fbf579e455e4b4b4f0eab32ca97a53d5e8024c6cc26c0a14eb",
+    "src/mg10d1_pool.py": "ada3b015c0bd2ec05edd89f6a32671fe7ca6a2854894ae0fcfd1199d9c83f86c",
+    "src/bounded_pool.py": "d02eb76681d24bbc81c2ea404fdb6d9e45cb022f20288ff747e14e1bd8fc2c9d",
+    "src/evaluate_mg10d1.py": "ac2ed8e7140a4e5eb9edb01b792362f34850e7c8f623ff24578f130c7bfd61a0",
+    "src/check_mg10d1.py": "d61f25785fdb7bffe8a20dc3532dc6e51be1c66ad5e8a985a3856d9cbffaf975",
+    "src/qualify_mg10d1_driver.py": "69e54551b3a4e0d037e0a040e2f003cb837636206236e320e05e734f91d9c29c",
+    "src/qualify_mg10d1_pipeline.py": "70b635f2580cb6636d77e5e43059789df79caff50ddf972db37502e4fac7d5b9",
+    "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+    "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+    "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+    "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+    "spec/MG10D1_proposal.md": "6296a25f391269f002b2add4fd493e13640d7cdbee8a0271a318673e7b6223cc",
+    "spec/MG10D1_prerun.md": "6ef6d72a13e2f1e5d790861447c47de07c691a4d858405ad140ba7542bab033e",
+    "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+  }
+}
