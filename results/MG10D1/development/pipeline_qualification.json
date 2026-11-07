@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "status": "SYNTHETIC PIPELINE QUALIFICATION PASS; not scientific evidence",
+  "tests": [
+    "80-path raw reconstruction and complete report",
+    "Known endpoint/time-average means with nonzero intervals",
+    "26 supply/step contrasts",
+    "79/80 incomplete report and independent check",
+    "Plot generation, source/reference/seed and raw hash checks"
+  ],
+  "elapsed_seconds": 15.849526299978606,
+  "combined_development_seconds_with_startup_allowance": 175.03748600004474,
+  "final_fixture_state": "Deliberately incomplete79/80 to test missing-denominator handling; no scientific trajectories generated"
+}

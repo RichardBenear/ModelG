@@ -1,6 +1,6 @@
 # MG10-D1 — Finite-supply estimation pilot (MG052, Draft 2)
 
-Status: DRAFT, not registered; no scientific production. PI closed S2 and authorized the next step on 2026-11-06. This draft makes that step reviewable. Source qualification and development timing are not scientific production.
+Status: PI-approved for execution (MG053); registration and source freeze in MG10D1_prerun.md/registration.json precede scientific production. Draft2 wording below is preserved as historical context. PI closed S2 and authorized the next step on 2026-11-06. This draft makes that step reviewable. Source qualification and development timing are not scientific production.
 
 ## Question and scope
 
@@ -55,3 +55,7 @@ Timing20 classes on the local PC projects33.2572098 core-hours for80 T60 paths, 
 Draft1's48-core-hour ceiling fails its reserve rule (41.57>36). Preserve that failed forecast and Draft1. Draft2 proposes60 core-hours, where41.57<=45 (75% reserve threshold); the same80 jobs, physics, horizon and measurements are retained. No scientific result motivates this change. This new ceiling is a candidate awaiting PI approval, not an inherited approval. If authorized, also freeze final controller/evaluator/checker and exact source hashes before production. Max3600seconds/job; cap60core-hours; <=8workers/one library thread. About7.5hours at sustained full occupancy would consume the aggregate cap; scheduling, early stops and system load can change elapsed time.
 
 External review is optional; it has not been requested or represented as waived for this new long-horizon batch. PI can request it when approving the concrete run plan. This stage can complete descriptive estimates while still leaving quantitative stochastic recovery, numerical equivalence and particle persistence unresolved.
+
+## MG053 PI run approval
+
+Richard: “I approve of the run.” This approves the presented80-path/T60,60-core-hour pilot. No external review was requested with this execution instruction; it is optional and no independent-review clearance is claimed. Final registration and checkpoint/controller/report qualification are recorded in MG10D1_prerun.md. Earlier candidate/pending-approval text above describes the proposal's prior state, superseded by this approval and prospective registration. No outcome criteria, physics, horizon, denominator or capacities change.

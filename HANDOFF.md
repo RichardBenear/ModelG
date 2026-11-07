@@ -1,8 +1,8 @@
-# Current handoff — 2026-11-06 (MG052)
+# Current handoff — 2026-11-06 (MG053)
 
 - **Roles:** Richard Benear is PI; ChatGPT / Codex leads planning, implementation, validation, authorized runs, analysis and documentation. Claude/other external review is optional. [Active protocol](RESEARCH_PROTOCOL.md).
 - **Last closed gate:** MG10-S2, PI sign-off MG052, QUALIFIED WITHIN REGISTERED S2 SCOPE. S1 and MG10-C1 remain CLOSED; original MG10 remains UNRESOLVED.
-- **Next gate:** MG10-D1 finite-supply estimation pilot is DRAFT (MG052). Twenty control checks, three synthetic measurement checks and separate raw reconstruction pass; measured forecast41.57core-hours including25% allowance, about5.2hours on8workers. Draft2 proposes60core-hour ceiling, pending PI approval (48-hour Draft1 fails reserve rule and is preserved). No D1 scientific production is registered or authorized by an invented numeric budget. See spec/MG10D1_proposal.md. S2 results and frozen criteria are unchanged.
+- **Active gate:** MG10-D1 REGISTERED MG053 under PI run approval.80 fixed T60 trajectories; forecast41.6826core-hours, approved60-hour cap; local8workers/threads1,3600seconds/job. Checkpoint/controller and synthetic full reporting qualification PASS. Registration commit/push precedes launch. Production status: results/MG10D1/run_state.json and production/ledger.json; report/check generated automatically when batch stops. No automatic reruns. Full raw upload and PI result closure remain subsequent steps. See spec/MG10D1_prerun.md.
 - **Archive baseline:** [StochasticVacuum](https://github.com/RichardBenear/StochasticVacuum), private, commit `2161211ccc9d8427af98ebeefcabf7f379b83a37`. Reuse selected machinery with provenance and new validation.
 - **Time semantics:** MG10 proposes the existing continuous-time model for its first extension. A fundamental-tick law remains a separate modeling decision.
 - **Q5:** MG8's frozen record remains open as scored. A possible reframing of Q5 was discussed with the PI, but no new Q5 study or rescoring is registered here.

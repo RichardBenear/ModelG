@@ -829,3 +829,8 @@ QUALIFIED WITHIN REGISTERED S2 SCOPE. All88 fixed jobs/32 groups/524288 trajecto
 PI signed off S2 and instructed proceeding. S2 CLOSED within its registered scope, without rescoring. Preparing MG10-D1: long-horizon seeded/homogeneous finite-supply controls, explicit chemostat input ledgers, and numerical refinement. Development timing is disclosed separately; production remains unregistered pending a concrete numerical plan and budget.
 
 MG052 preparation complete: Draft2, qualified controls and cost forecast ready for PI budget/scope decision. Twenty implementation checks and three synthetic measurement checks pass. Flat-field RMS roundoff found/fixed prospectively without changing sampled dynamics; failed fixture evidence retained. Independent raw reconstruction agrees. Forecast41.57core-hours with25% allowance; candidate60-hour cap,8workers,3600seconds/job. Original48-hour candidate fails reserve. No production.
+
+
+## MG053 — PI approves and D1 is prospectively registered
+
+Richard approved the run and60-core-hour cap. Completed checkpoint/controller and end-to-end synthetic reporting qualification. Eighty fixed trajectories, T60, local8workers with one library thread; measured forecast41.682623core-hours with slowdown/startup allowance. Registration and source/spec/reference/seed freeze written before production. No scientific outcome inspected. Full checkpoint retention and automatic incomplete-safe evaluation/independent audit prepared.

@@ -1,0 +1,238 @@
+{
+  "passed": true,
+  "status": "DRIVER QUALIFICATION PASS; DEVELOPMENT ONLY",
+  "tests": [
+    {
+      "name": "streaming_bit_identity_small0",
+      "passed": true,
+      "seed": 3364238930,
+      "adaptive_steps": 0.0
+    },
+    {
+      "name": "streaming_bit_identity_small1",
+      "passed": true,
+      "seed": 2551678889,
+      "adaptive_steps": 0.0
+    },
+    {
+      "name": "streaming_bit_identity_small2",
+      "passed": true,
+      "seed": 2159173038,
+      "adaptive_steps": 0.0
+    },
+    {
+      "name": "streaming_bit_identity_small3",
+      "passed": true,
+      "seed": 692221470,
+      "adaptive_steps": 0.0
+    },
+    {
+      "name": "streaming_bit_identity_full_a0_s0",
+      "passed": true,
+      "seed": 3998991793,
+      "adaptive_steps": 0.0
+    },
+    {
+      "name": "streaming_bit_identity_full_a0_s1",
+      "passed": true,
+      "seed": 2937465874,
+      "adaptive_steps": 0.0
+    },
+    {
+      "name": "streaming_bit_identity_full_a1_s0",
+      "passed": true,
+      "seed": 3746785618,
+      "adaptive_steps": 0.0
+    },
+    {
+      "name": "streaming_bit_identity_full_a1_s1",
+      "passed": true,
+      "seed": 3094800645,
+      "adaptive_steps": 0.0
+    },
+    {
+      "name": "streaming_bit_identity_full_a2_s0",
+      "passed": true,
+      "seed": 2219708930,
+      "adaptive_steps": 0.0
+    },
+    {
+      "name": "streaming_bit_identity_full_a2_s1",
+      "passed": true,
+      "seed": 1115404373,
+      "adaptive_steps": 0.0
+    },
+    {
+      "name": "streaming_bit_identity_full_a3_s0",
+      "passed": true,
+      "seed": 99359245,
+      "adaptive_steps": 0.0
+    },
+    {
+      "name": "streaming_bit_identity_full_a3_s1",
+      "passed": true,
+      "seed": 3334797306,
+      "adaptive_steps": 0.0
+    },
+    {
+      "name": "streaming_bit_identity_full_a4_s0",
+      "passed": true,
+      "seed": 2298534948,
+      "adaptive_steps": 0.0
+    },
+    {
+      "name": "streaming_bit_identity_full_a4_s1",
+      "passed": true,
+      "seed": 2579835250,
+      "adaptive_steps": 0.0
+    },
+    {
+      "name": "streaming_bit_identity_adaptive",
+      "passed": true,
+      "seed": 2506514623,
+      "adaptive_steps": 10.0
+    },
+    {
+      "name": "controller_fail",
+      "passed": true,
+      "charge": 0.20333310001296923,
+      "stop_reason": "FAILED"
+    },
+    {
+      "name": "controller_bad_exit",
+      "passed": true,
+      "charge": 0.21625689999200404,
+      "stop_reason": "FAILED: NONZERO EXIT"
+    },
+    {
+      "name": "controller_timeout",
+      "passed": true,
+      "charge": 0.5944086000090465,
+      "stop_reason": "TIMEOUT"
+    },
+    {
+      "name": "controller_budget",
+      "passed": true,
+      "charge": 0.6014704999979585,
+      "stop_reason": "BUDGET-SHORT"
+    },
+    {
+      "name": "descriptive_statistics_known_values_missing_denominators",
+      "passed": true
+    },
+    {
+      "name": "plot_backend_available",
+      "passed": true
+    }
+  ],
+  "raw": [
+    {
+      "file": "results\\MG10D1\\development\\driver_checks\\small0.npz",
+      "sha256": "5baba40cb8bdaa1fde0051f2d59fd0bfa4db146b0de8f46eea527c37cfdb7709",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D1\\development\\driver_checks\\small1.npz",
+      "sha256": "354cd0edbac509cc6b5e103b67324cf628b67b763c591584326d032a235b7292",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D1\\development\\driver_checks\\small2.npz",
+      "sha256": "ee6189beaf7f3c94a56921a056c834aec53c64de2884cbedeb0894d8fb0dcadc",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D1\\development\\driver_checks\\small3.npz",
+      "sha256": "0fc43d7b0197fd455628a8681481cbe89899043cef90bdcf81a9c7beb92b381f",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D1\\development\\driver_checks\\full_a0_s0.npz",
+      "sha256": "113c2e4cb8abba164f0ae3bd453536f4541adcb168bd62ddf6ca40d570fb9896",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D1\\development\\driver_checks\\full_a0_s1.npz",
+      "sha256": "ffefb6f2e58e543f876388e5ac4eaa00996f4f5a5fffa4ca23fcb0872c76399f",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D1\\development\\driver_checks\\full_a1_s0.npz",
+      "sha256": "3c7fb8dfddd49f8edbfb04b256a056050445cc78960839e86437b57b71a57285",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D1\\development\\driver_checks\\full_a1_s1.npz",
+      "sha256": "5e3a35553bc341c1d9dd6e619a9dc24abca09b34ef13d9ffe24f6972b6321359",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D1\\development\\driver_checks\\full_a2_s0.npz",
+      "sha256": "1beaf58fe0802c09b8bcf5a504fa850d5b98b539450891a6b731c63f9b1c4282",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D1\\development\\driver_checks\\full_a2_s1.npz",
+      "sha256": "2e72e3acb94e55e48da1f0c785ffae63df26259148427dde7af612c46790a437",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D1\\development\\driver_checks\\full_a3_s0.npz",
+      "sha256": "4f2f1be19b3fa0dd1b2ee0ef78d9742585eb51260c8c586606b528a6be33d056",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D1\\development\\driver_checks\\full_a3_s1.npz",
+      "sha256": "51c92a15277a9c262f52c62f96d759224210ca2a247bd1016813e786b4c22d32",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D1\\development\\driver_checks\\full_a4_s0.npz",
+      "sha256": "f8e1e9a0dc76f3e687b3f4aa979ef33f1e4fcf797d1233ff92c98674b3bca9b9",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D1\\development\\driver_checks\\full_a4_s1.npz",
+      "sha256": "645ae7707edfd60cf18edb3dd888757072f538a03b0a6b30c95f908a3692a630",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D1\\development\\driver_checks\\adaptive.npz",
+      "sha256": "6cd650e0b847a7006c0034a2a4a50ee323a8ef1a60656f095f80dd5826a6248b",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    }
+  ],
+  "elapsed_seconds": 12.647017500014044,
+  "prior_development_charge": 136.54094180004904,
+  "total_development_charge_with_5s_startup_allowance": 154.18795970006613
+}
