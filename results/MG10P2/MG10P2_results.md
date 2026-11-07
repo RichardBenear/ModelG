@@ -56,3 +56,8 @@ G reference contrast/mean unseeded smoothed contrast is.375-.418, versus X7.12-7
 Depleted S projected X amplitudes about1.051-1.052 andY1.087-1.088 show short shape/amplitude evolution while the X matcher still accepts. Thus match retention alone is not exact shape stationarity. Both numerical steps support the registered cap; this is not proof of continuous-time trajectory-law convergence. No P1/D2 thresholds/outcomes rescored. Future temporal/generalization criteria need separate prospective design; no new production registered by these results.
 
 MG063 retention verified: all128 raw archives/1024 complete paths (54412800bytes) and decision inputs published at9ce8e610538581276e285a15601fef861aca3596; SHA256 and Git-blob sizes match. PI closure pending.
+
+
+## PI closure — MG064, 2026-11-07
+
+Richard: “I sign off of P2.” **MG10-P2 is CLOSED as SHORT-HORIZON UNSEEDED MATCH CAP SUPPORTED ON TESTED CONDITIONS.** All1024 paths, independent raw/instrument/statistical audit and verified full archive are retained. This closure preserves all short-time/prescribed-state/observability limitations above; it is not a physical-particle survival, stationary-noise or coupled-field equivalence verdict. Earlier studies remain unchanged. No next scientific production is registered by this closure.

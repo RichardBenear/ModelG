@@ -2081,3 +2081,6 @@ MG062 P2 AUTHORIZATION/REGISTRATION: Richard: “I approve the plan. Proceed.”
 
 
 MG063 P2 RESULT: SHORT-HORIZON UNSEEDED MATCH CAP SUPPORTED ON TESTED CONDITIONS.1024/1024 paths,128/128jobs; four H cells0/128 each, simultaneous>=95% one-sided upper.0336552 below.05; S128/128 each descriptive. Independent raw/source/seed/state/integer/4096-instrument-frame and40 metric-summary-array audit PASS. No failure/timeout/cap. Elapsed14.223561minutes, production1.814736core-hours under4. G global contrast-noise proxy<1 does not prevent known-phase ensemble projection; all observability limits retained. No physical particle/survival/stationarity or CTMC equivalence claim. Full raw archive upload follows; PI closure pending.
+
+
+MG064 PI CLOSURE (2026-11-07): Richard: “I sign off of P2.” MG10-P2 CLOSED as SHORT-HORIZON UNSEEDED MATCH CAP SUPPORTED ON TESTED CONDITIONS. All1024 paths, independent4096-frame/raw/metric/exact-bound audit and verified128-file raw archive retained. Four primary H groups0/128 with simultaneous upper3.3655%; seeded retention descriptive. All short-time, prescribed-state, noise/observability and physical-lineage/survival limitations preserved. No prior outcome rescored; no next production registered or launched.
