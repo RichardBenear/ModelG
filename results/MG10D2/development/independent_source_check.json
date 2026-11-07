@@ -1,0 +1,188 @@
+{
+  "status": "INDEPENDENT SOURCE QUALIFICATION CHECK PASS",
+  "passed": true,
+  "source_comparisons": [
+    {
+      "id": "source_c0_m0",
+      "mean": 0.5831647515296936,
+      "expected_mean": 0.5833333333333333,
+      "lower": 0,
+      "upper": 0.0005959799410251933,
+      "passed": true
+    },
+    {
+      "id": "source_c0_m1",
+      "mean": 0.5835004448890686,
+      "expected_mean": 0.5833333333333333,
+      "lower": 0,
+      "upper": 0.0006181142659558937,
+      "passed": true
+    },
+    {
+      "id": "source_c0_m2",
+      "mean": 0.5832090973854065,
+      "expected_mean": 0.5833333333333333,
+      "lower": 0,
+      "upper": 0.0005930593134311991,
+      "passed": true
+    },
+    {
+      "id": "source_c1_m0",
+      "mean": 0.2909729480743408,
+      "expected_mean": 0.29166666666666663,
+      "lower": 0,
+      "upper": 0.0006925327269649785,
+      "passed": true
+    },
+    {
+      "id": "source_c1_m1",
+      "mean": 0.29154062271118164,
+      "expected_mean": 0.29166666666666663,
+      "lower": 0,
+      "upper": 0.0005448776878969831,
+      "passed": true
+    },
+    {
+      "id": "source_c1_m2",
+      "mean": 0.2909260392189026,
+      "expected_mean": 0.29166666666666663,
+      "lower": 0,
+      "upper": 0.0006927115408993047,
+      "passed": true
+    },
+    {
+      "id": "supplement_0",
+      "mean": 0.5983238220214844,
+      "expected_mean": 0.6000000000000001,
+      "lower": 0,
+      "upper": 0.005258190143594531,
+      "passed": true
+    },
+    {
+      "id": "supplement_1",
+      "mean": 12.00637435913086,
+      "expected_mean": 12.0,
+      "lower": 0,
+      "upper": 0.004959261198392083,
+      "passed": true
+    },
+    {
+      "id": "supplement_2",
+      "mean": 30.00481414794922,
+      "expected_mean": 30.0,
+      "lower": 0,
+      "upper": 0.004777849589498682,
+      "passed": true
+    },
+    {
+      "id": "supplement_3",
+      "mean": 0.14659500122070312,
+      "expected_mean": 0.14583333333333334,
+      "lower": 0,
+      "upper": 0.0047136181383916715,
+      "passed": true
+    }
+  ],
+  "raw_checks": [
+    {
+      "file": "results\\MG10D2\\development\\diagnostic\\stream_a0_s0.npz",
+      "sha256": "0ba627bc8bfacce0599fd78b512517b933ba9cc2ce4c9be549e2c33890feacc0",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D2\\development\\diagnostic\\stream_a0_s1.npz",
+      "sha256": "15ced586a4f659e5f9a15a70ad29a5faef4b3bbefdb589805f9ee1c2d9e4d6da",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D2\\development\\diagnostic\\stream_a1_s0.npz",
+      "sha256": "cbf2839626826c7b154cd4e8db89e1a281394477f9767796550cb900837f9984",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D2\\development\\diagnostic\\stream_a1_s1.npz",
+      "sha256": "8f53cd92f1a4fb2d3f485f4c1b1a10c26bfedd71b5d9684b40cc57bdd979f1bc",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D2\\development\\timing\\timing_a0_s0_k0.npz",
+      "sha256": "97b8af69dde3f804b213b00dfefe8bc8ab5d821feea9f2f718eac4308920e311",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D2\\development\\timing\\timing_a0_s0_k1.npz",
+      "sha256": "bed183364029ff6a83657cee95c0e300c5e04cde148dceadcf0e675ce7b42075",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D2\\development\\timing\\timing_a0_s1_k0.npz",
+      "sha256": "85ddc3160f828d9449fbb4f5d4d18e2dac24bb606f6865bdfe6435704c94a8ab",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D2\\development\\timing\\timing_a0_s1_k1.npz",
+      "sha256": "5b7d39a013a4f26a90efd2d887c4b7a2bdb9e85d074326e7bc506e2b584c303e",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D2\\development\\timing\\timing_a1_s0_k0.npz",
+      "sha256": "094da3ed52a685551996b43393b5073104fda8bfc89e92f2bdfafe7d983d859d",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D2\\development\\timing\\timing_a1_s0_k1.npz",
+      "sha256": "8f5bab111bdea548191227d6675571bb57127b864d4847b882ca07f34101d44a",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D2\\development\\timing\\timing_a1_s1_k0.npz",
+      "sha256": "d17a19e09ffb098a5b771c1b947c3e068d615ce3d3516dbacb0ba85bd79c371c",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10D2\\development\\timing\\timing_a1_s1_k1.npz",
+      "sha256": "07098a7b9dcaaa0983cf4cba135ee5e3b7d70f9017a49f95450adae46a1de401",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    }
+  ],
+  "law_reference": "80-digit Decimal finite-binomial PMF/CDF from exact binary float p, independent of sampler and diagnostic float recurrence; shared NumPy for raw arrays",
+  "forecast_by_class_seconds": {
+    "a0_s0_k0": 1396.3310000352794,
+    "a0_s0_k1": 1998.645575013943,
+    "a0_s1_k0": 1402.2534499916947,
+    "a0_s1_k1": 2051.354074991541,
+    "a1_s0_k0": 1388.0934500001604,
+    "a1_s0_k1": 2117.0312749699224,
+    "a1_s1_k0": 1413.7198249908397,
+    "a1_s1_k1": 2160.7772749802098
+  },
+  "forecast_seconds": 55712.82369989436,
+  "forecast_core_hours": 15.475784361081766,
+  "within_24_hour_75_percent_reserve": true,
+  "qualification_charged_seconds": 60.6983849000535,
+  "legacy_resolved_cdf_discrepancies": []
+}

@@ -1,0 +1,25 @@
+{
+  "records": [
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "diagnostic",
+        "kind": "diagnostic"
+      },
+      "id": "diagnostic",
+      "charged_worker_seconds": 19.539689800003543,
+      "returncode": 0
+    }
+  ],
+  "ceiling": 900,
+  "prior_charge": 0,
+  "poll_seconds": 0.25,
+  "charged_worker_seconds": 19.539689800003543,
+  "inflight_worker_seconds": 0,
+  "pending_ids": [],
+  "active_ids": [],
+  "stop_reason": null,
+  "workers": 1,
+  "threads_per_library": 1,
+  "max_observed_poll_gap_seconds": 0.2507738000131212
+}

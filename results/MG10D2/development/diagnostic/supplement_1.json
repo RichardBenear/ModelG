@@ -1,0 +1,24 @@
+{
+  "job": {
+    "id": "supplement_1",
+    "n": 40,
+    "p": 0.3,
+    "reps": 262144,
+    "method": 3,
+    "seed": 381307885
+  },
+  "raw": "supplement_1.npz",
+  "sha256": "529020dbb3199966a962a941b8f4e619723168e37b7ca4821425d631bc5d080f",
+  "cdf_distance": 0.0011516936133906253,
+  "epsilon": 0.0038075675850007913,
+  "upper": 0.0049592611983914165,
+  "lower": 0,
+  "margin": 0.02,
+  "passed": true,
+  "mean": 12.00637435913086,
+  "expected_mean": 12.0,
+  "variance": 8.412652391227311,
+  "expected_variance": 8.399999999999999,
+  "scipy_max_cdf_difference": 9.992007221626409e-16,
+  "elapsed_seconds": 0.2774667000048794
+}

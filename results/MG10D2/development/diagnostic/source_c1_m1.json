@@ -1,0 +1,25 @@
+{
+  "job": {
+    "id": "source_c1_m1",
+    "case": 1,
+    "method": 1,
+    "n": 4200000000000,
+    "p": 6.944444444444444e-14,
+    "reps": 16777216,
+    "seed": 272424265
+  },
+  "raw": "source_c1_m1.npz",
+  "sha256": "dc37af926aafe3ed1816e552f500c74a53166bf0df52a4d59dbbc887330b6713",
+  "cdf_distance": 8.520306861359295e-05,
+  "epsilon": 0.0004596746192833902,
+  "upper": 0.0005448776878969831,
+  "lower": 0,
+  "margin": 0.0008,
+  "passed": true,
+  "mean": 0.29154062271118164,
+  "expected_mean": 0.29166666666666663,
+  "variance": 0.2914397027832365,
+  "expected_variance": 0.29166666666664637,
+  "scipy_max_cdf_difference": 1.1102230246251565e-16,
+  "elapsed_seconds": 0.7374952000100166
+}

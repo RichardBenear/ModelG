@@ -1,0 +1,11 @@
+# MG055 — corrected comparison registration check
+
+PI authorized next steps after D1 status. No external review requested; same-author checks only. Original D1 archived at01af744 with80/80 blob sizes/SHA256 verified. Its HIGH fine-source caution and original verdict are preserved.
+
+Source diagnostic was committed/pushed before any scalar sampling. Revised source uses finite-binomial geometric spacings, not Poisson approximation, preserving bounds. Exact analytic/80-digit Decimal law is the oracle; NumPy comparison also shows the fine-case mean deficit and is not assumed correct. Both original and revised CDF tests meet the frozen .0008 margin, so no false legacy-FAIL label. Direct compiled P(0) mismatch and D1 accumulated source deficit establish the numerical concern; see separate response.
+
+Primary/supplemental qualification,12 identical low-stock regressions,4 corrected stream regressions, source/state reconstruction and synthetic complete/incomplete reporting PASS. Existing controller reused unchanged. New synthetic metadata narrative typo corrected with original retained; actual31/32 denominator was always checked. Qualification elapsed-based charge74.223633seconds below900. No scientific corrected trajectories preceded registration.
+
+Exact32-job CHEMO/HIGH H/S two-step R4 matrix;32 unique fresh seeds, no collision with2426 collected prior/development seeds. Source/spec/reference hashes and environment frozen. Forecast15.475784core-hours <=18 reserve threshold, new24-hour cap. Worst old charge+new900-second qualification ceiling+24-hour cap = 57.583427core-hours <60 already approved. Local8workers/one library thread,3600seconds/job; no retry/denominator adaptation. Atomic61-checkpoint archives and full event/external records retained; available disk308870033408bytes. Registration push precedes launch.
+
+Four paths/group yield descriptive estimates, not powered1% recovery, full trajectory-law equivalence or particles. Small-n approximate t intervals are not guaranteed simultaneous coverage. No physical interpretation of finite-stock source rounding error. D1 capacity1 patterns remain separate context. After automatic report/check, inspect corrected source-rate behavior and archived complete data before interpretation/PI closure. Any new failure stops the batch and remains in its denominator.

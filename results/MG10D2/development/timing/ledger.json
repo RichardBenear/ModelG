@@ -1,0 +1,151 @@
+{
+  "records": [
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "timing_a0_s0_k0",
+        "kind": "timing",
+        "arm": 0,
+        "start": 0,
+        "step": 0
+      },
+      "seed": 1802560030,
+      "compute_seconds": 1.8551080000470392,
+      "raw": "timing_a0_s0_k0.npz",
+      "sha256": "97b8af69dde3f804b213b00dfefe8bc8ab5d821feea9f2f718eac4308920e311",
+      "id": "timing_a0_s0_k0",
+      "charged_worker_seconds": 4.756645400018897,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "timing_a0_s1_k0",
+        "kind": "timing",
+        "arm": 0,
+        "start": 1,
+        "step": 0
+      },
+      "seed": 2152471102,
+      "compute_seconds": 1.8630045999889262,
+      "raw": "timing_a0_s1_k0.npz",
+      "sha256": "85ddc3160f828d9449fbb4f5d4d18e2dac24bb606f6865bdfe6435704c94a8ab",
+      "id": "timing_a0_s1_k0",
+      "charged_worker_seconds": 4.74516470002709,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "timing_a1_s0_k0",
+        "kind": "timing",
+        "arm": 1,
+        "start": 0,
+        "step": 0
+      },
+      "seed": 922502726,
+      "compute_seconds": 1.8441246000002138,
+      "raw": "timing_a1_s0_k0.npz",
+      "sha256": "094da3ed52a685551996b43393b5073104fda8bfc89e92f2bdfafe7d983d859d",
+      "id": "timing_a1_s0_k0",
+      "charged_worker_seconds": 4.73111599998083,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "timing_a1_s1_k0",
+        "kind": "timing",
+        "arm": 1,
+        "start": 1,
+        "step": 0
+      },
+      "seed": 779195648,
+      "compute_seconds": 1.8782930999877863,
+      "raw": "timing_a1_s1_k0.npz",
+      "sha256": "d17a19e09ffb098a5b771c1b947c3e068d615ce3d3516dbacb0ba85bd79c371c",
+      "id": "timing_a1_s1_k0",
+      "charged_worker_seconds": 4.71630519995233,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "timing_a0_s0_k1",
+        "kind": "timing",
+        "arm": 0,
+        "start": 0,
+        "step": 1
+      },
+      "seed": 2302791108,
+      "compute_seconds": 2.6581941000185907,
+      "raw": "timing_a0_s0_k1.npz",
+      "sha256": "bed183364029ff6a83657cee95c0e300c5e04cde148dceadcf0e675ce7b42075",
+      "id": "timing_a0_s0_k1",
+      "charged_worker_seconds": 5.508536999986973,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "timing_a0_s1_k1",
+        "kind": "timing",
+        "arm": 0,
+        "start": 1,
+        "step": 1
+      },
+      "seed": 2407041914,
+      "compute_seconds": 2.7284720999887213,
+      "raw": "timing_a0_s1_k1.npz",
+      "sha256": "5b7d39a013a4f26a90efd2d887c4b7a2bdb9e85d074326e7bc506e2b584c303e",
+      "id": "timing_a0_s1_k1",
+      "charged_worker_seconds": 5.510111700044945,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "timing_a1_s0_k1",
+        "kind": "timing",
+        "arm": 1,
+        "start": 0,
+        "step": 1
+      },
+      "seed": 4232014627,
+      "compute_seconds": 2.8160416999598965,
+      "raw": "timing_a1_s0_k1.npz",
+      "sha256": "8f5bab111bdea548191227d6675571bb57127b864d4847b882ca07f34101d44a",
+      "id": "timing_a1_s0_k1",
+      "charged_worker_seconds": 5.495192000002135,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "timing_a1_s1_k1",
+        "kind": "timing",
+        "arm": 1,
+        "start": 1,
+        "step": 1
+      },
+      "seed": 493662237,
+      "compute_seconds": 2.874369699973613,
+      "raw": "timing_a1_s1_k1.npz",
+      "sha256": "07098a7b9dcaaa0983cf4cba135ee5e3b7d70f9017a49f95450adae46a1de401",
+      "id": "timing_a1_s1_k1",
+      "charged_worker_seconds": 5.695623100036755,
+      "returncode": 0
+    }
+  ],
+  "ceiling": 900,
+  "prior_charge": 19.539689800003543,
+  "poll_seconds": 0.25,
+  "charged_worker_seconds": 60.6983849000535,
+  "inflight_worker_seconds": 0,
+  "pending_ids": [],
+  "active_ids": [],
+  "stop_reason": null,
+  "workers": 8,
+  "threads_per_library": 1,
+  "max_observed_poll_gap_seconds": 0.2506077000289224
+}

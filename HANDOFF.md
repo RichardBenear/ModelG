@@ -1,8 +1,8 @@
-# Current handoff — 2026-11-07 (MG054)
+# Current handoff — 2026-11-07 (MG055)
 
 - **Roles:** Richard Benear is PI; ChatGPT / Codex leads planning, implementation, validation, authorized runs, analysis and documentation. Claude/other external review is optional. [Active protocol](RESEARCH_PROTOCOL.md).
 - **Last closed gate:** MG10-S2, PI sign-off MG052, QUALIFIED WITHIN REGISTERED S2 SCOPE. S1 and MG10-C1 remain CLOSED; original MG10 remains UNRESOLVED.
-- **Active gate:** D1 COMPLETE DESCRIPTIVE PILOT MG054:80/80,33.333427core-hours; independent integer/raw/480-summary audit PASS. No process remains active. Posthoc HIGH fine-step A-source deficit~0.3% makes recovery interpretation unresolved. Original verdict/data preserved. PI acknowledged status and authorized investigation/archive/next steps. Next is prospective source-law diagnostic and qualified corrected follow-up, not an automatic D1 rerun. See results/MG10D1/posthoc_source_check.json.
+- **Active gate:** MG10-D2 numerical correction and32-path CHEMO/HIGH comparison REGISTERED MG055. Stable geometric finite-binomial source qualified against exact/80-digit law; original D1 remains fully archived with fine-source caveat. New24-core-hour cap fits remaining60-hour authority, forecast15.4758core-hours (~1.94hours/8workers). H/S, two steps, R4, T60. Registration commit/push precedes production. Status: results/MG10D2/run_state.json / production/ledger.json; report and independent check automatic at stop. No automatic retries; full production upload/PI closure later.
 - **Archive baseline:** [StochasticVacuum](https://github.com/RichardBenear/StochasticVacuum), private, commit `2161211ccc9d8427af98ebeefcabf7f379b83a37`. Reuse selected machinery with provenance and new validation.
 - **Time semantics:** MG10 proposes the existing continuous-time model for its first extension. A fundamental-tick law remains a separate modeling decision.
 - **Q5:** MG8's frozen record remains open as scored. A possible reframing of Q5 was discussed with the PI, but no new Q5 study or rescoring is registered here.
