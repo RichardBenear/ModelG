@@ -1,0 +1,110 @@
+{
+  "status": "POSTRUN DESCRIPTIVE SOURCE CHECK; frozen outcome unchanged",
+  "rows": [
+    {
+      "group": "a0_s0_k0",
+      "arm": "CHEMO",
+      "start": "H",
+      "step": 0,
+      "source_rate": 13.999960975,
+      "expected_source_rate": 14,
+      "relative_percent_difference": -0.00027874999999344396,
+      "source_approx_ci95": [
+        13.998499570019197,
+        14.001422379980802
+      ]
+    },
+    {
+      "group": "a0_s0_k1",
+      "arm": "CHEMO",
+      "start": "H",
+      "step": 1,
+      "source_rate": 13.999714058333334,
+      "expected_source_rate": 14,
+      "relative_percent_difference": -0.0020424404761909543,
+      "source_approx_ci95": [
+        13.99902589816297,
+        14.000402218503698
+      ]
+    },
+    {
+      "group": "a0_s1_k0",
+      "arm": "CHEMO",
+      "start": "S",
+      "step": 0,
+      "source_rate": 13.999915975,
+      "expected_source_rate": 14,
+      "relative_percent_difference": -0.0006001785714304653,
+      "source_approx_ci95": [
+        13.999060849738477,
+        14.000771100261524
+      ]
+    },
+    {
+      "group": "a0_s1_k1",
+      "arm": "CHEMO",
+      "start": "S",
+      "step": 1,
+      "source_rate": 13.999851808333334,
+      "expected_source_rate": 14,
+      "relative_percent_difference": -0.0010585119047612501,
+      "source_approx_ci95": [
+        13.999170808666152,
+        14.000532808000514
+      ]
+    },
+    {
+      "group": "a1_s0_k0",
+      "arm": "HIGH",
+      "start": "H",
+      "step": 0,
+      "source_rate": 14.000433566666667,
+      "expected_source_rate": 13.999998600000092,
+      "relative_percent_difference": 0.0031069050719478852,
+      "source_approx_ci95": [
+        13.999530499154512,
+        14.001336634178822
+      ]
+    },
+    {
+      "group": "a1_s0_k1",
+      "arm": "HIGH",
+      "start": "H",
+      "step": 1,
+      "source_rate": 14.000712491666667,
+      "expected_source_rate": 13.999998600000092,
+      "relative_percent_difference": 0.005099226699734061,
+      "source_approx_ci95": [
+        14.000130828344526,
+        14.001294154988807
+      ]
+    },
+    {
+      "group": "a1_s1_k0",
+      "arm": "HIGH",
+      "start": "S",
+      "step": 0,
+      "source_rate": 14.00001035,
+      "expected_source_rate": 13.999998600000092,
+      "relative_percent_difference": 8.392857917538521e-05,
+      "source_approx_ci95": [
+        13.99835703522356,
+        14.00166366477644
+      ]
+    },
+    {
+      "group": "a1_s1_k1",
+      "arm": "HIGH",
+      "start": "S",
+      "step": 1,
+      "source_rate": 14.000869225,
+      "expected_source_rate": 13.999998600000092,
+      "relative_percent_difference": 0.00621875062121191,
+      "source_approx_ci95": [
+        13.999060615332665,
+        14.002677834667335
+      ]
+    }
+  ],
+  "interpretation": "Old0.30% fine-source deficit absent; new HIGH fine means are0.0051-0.0062% above expectation. Approximate non-simultaneous intervals do not all cover expectation; residual offsets remain reported, not converted into an equivalence claim. Scalar source qualification and trajectory accounting remain distinct."
+}

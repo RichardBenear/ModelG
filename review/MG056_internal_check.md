@@ -1,0 +1,7 @@
+# MG056 — completed corrected comparison inspection
+
+Same-author check, not external review/replication. All32/32 complete; independent raw/source/seed/integer reconstruction and192 summary checks PASS. No failure/timeout/budget stop. Production13.373943core-hours; elapsed1.850166hours. All32 raw spatial/event/external-input checkpoint archives retained; full upload/retention verification follows. Original D1 preserved, not rescored.
+
+The0.3% deficit is absent after the stable finite-binomial source correction. Corrected HIGH fine rate offsets+0.0051%/+0.0062% are reported rather than hidden; approximate95% group intervals do not all cover expectation. No posthoc equivalence threshold, rerun, sample extension or verdict revision. Matching approximate mean fields is not particle-level identity/persistence. Four independent paths/group do not power tight stochastic equivalence. Fine HIGH mean-X offsets relative to CHEMO under0.06% describe only these samples; contrasts and interval limitations are explicit. Seeded contrast varies across steps/streams, so numerical shape sensitivity remains unresolved.
+
+Before a particle-survival study, qualify localization/original identity, motion/merger ambiguity and persistence on translated/noisy/depleted/extended/multiple-motif fixtures. A powered field-equivalence study is a separate question requiring prespecified margins/sample-size coverage. No further production is registered by this result. PI result closure remains a separate decision.

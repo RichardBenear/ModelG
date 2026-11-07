@@ -1,0 +1,53 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "a1_s1_k1_r0",
+    "arm": 1,
+    "start": 1,
+    "step": 1,
+    "replicate": 0,
+    "seed": 3593475378,
+    "horizon": 60,
+    "tau": 2.0833333333333333e-05
+  },
+  "raw": "a1_s1_k1_r0.npz",
+  "raw_sha256": "dcd9705d7f99a3d4459a162b4c6b2b402060f36afceb559b2d3da3a6436e64b7",
+  "checkpoints": 61,
+  "ledger": {
+    "max_integer_residual": 0,
+    "max_total_input_residual": 0,
+    "nonnegative": true,
+    "pass_check": true
+  },
+  "stats": [
+    [
+      2880034.0,
+      0.0,
+      0.021287268875
+    ]
+  ],
+  "simulation_seconds": 1886.7485874001286,
+  "elapsed_seconds": 1895.359397000051,
+  "finished": "2026-11-07T14:09:11.022247+00:00",
+  "source_hashes": {
+    "src/mg10d2.py": "d8b3cb7aebf23d3a93d3256b0fa122efd016eddbe0b0951f98ec6cded0c77d2b",
+    "src/mg10d2_source.py": "311f1326fb3fbcf5c9a62f04804b57c28718bb9bb081b37327625e39b08ff174",
+    "src/mg10d2_stream.py": "e5658307c4c0999d5933e7255a587001014689fb8717b38726229305d962b3bd",
+    "src/run_mg10d2.py": "a6f7509e8f2f73c70847ce11b670fb105966b614a73105b59ed78a0d5910150f",
+    "src/evaluate_mg10d2.py": "10d3824892cd75d97cc2f92063d9e44b5a1847ca7695671b27996ac3a374a916",
+    "src/check_mg10d2.py": "90c927928399a8b4c537df5bdcbba95a68cc8cd6968d20af6f50446605dbc95a",
+    "src/qualify_mg10d2.py": "2e729e0cb121b9d37474298cce8451d99e188873db22f450eba62d0c085db985",
+    "src/check_mg10d2_source.py": "566807aa82231740744198e7d20c29fc70fcd70c386baade5394928f588d15ee",
+    "src/qualify_mg10d2_pipeline.py": "cb7f31ca94c96f79ce1b89cc77f39a11f0038e78456a98e6b9dc7af2844662f7",
+    "src/mg10d1_pool.py": "ada3b015c0bd2ec05edd89f6a32671fe7ca6a2854894ae0fcfd1199d9c83f86c",
+    "src/bounded_pool.py": "d02eb76681d24bbc81c2ea404fdb6d9e45cb022f20288ff747e14e1bd8fc2c9d",
+    "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+    "src/mg10d1.py": "2246b78a0785b87e7b7cf3614892991f10b9ff5b4d77b7d5d02e4249d6595785",
+    "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+    "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+    "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+    "spec/MG10D2_proposal.md": "92b99e99da3dc44e9d2c0571c879c40af1e3e9826b2c88fc3c05374c5da46f41",
+    "spec/MG10D2_prerun.md": "38faaaa5c90e8a28814c07c6ae419da68602b0ac1e50196a3a35d590c159449a",
+    "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+  }
+}
