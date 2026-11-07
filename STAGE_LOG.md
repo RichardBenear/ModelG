@@ -853,3 +853,5 @@ MG055 CORRECTED PRODUCTION START: 2026-11-07T13:37:34.306685+00:00, registration
 ## MG056 — Corrected D2 complete and inspected
 
 32/32 paths, no failures/timeouts/cap; independent192-summary/raw audit PASS. Stable finite-binomial source avoids old deficit; small remaining mean offsets and seeded contrast variation retained with explicit limits, no stochastic/particle equivalence declaration. Full raw archives and report prepared for publication. No next production registered; PI closure separate.
+
+MG056 RETENTION: all32 D2 raw archives (45614898bytes) published at3c1573b68b5f51e002edd346fb15c8fadf227b68; localSHA256 matches raw manifest and committed blob sizes, origin/main points to archive commit. Original D1 preserved. PI closure pending.
