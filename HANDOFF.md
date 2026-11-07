@@ -1,8 +1,8 @@
-# Current handoff — 2026-11-07 (MG056)
+# Current handoff — 2026-11-07 (MG057)
 
 - **Roles:** Richard Benear is PI; ChatGPT / Codex leads planning, implementation, validation, authorized runs, analysis and documentation. Claude/other external review is optional. [Active protocol](RESEARCH_PROTOCOL.md).
-- **Last closed gate:** MG10-S2, PI sign-off MG052, QUALIFIED WITHIN REGISTERED S2 SCOPE. S1 and MG10-C1 remain CLOSED; original MG10 remains UNRESOLVED.
-- **Active gate:** MG10-D2 COMPLETE DESCRIPTIVE PILOT MG056:32/32,13.373943core-hours, no failures/timeouts/cap; independent raw/source/seed/integer/192-summary check PASS. Process finished. Old0.30% source deficit absent; corrected fine offsets+0.0051%/+0.0062% disclosed, not equivalence. Mean-X background differences under0.06% descriptive; particle identity/persistence and numerical shape equivalence unresolved. All32 raw archives published and SHA256/Git-blob retention verified; PI closure pending. No next production registered. See results/MG10D2/MG10D2_results.md.
+- **Last closed gate:** MG10-D2, PI closure MG057 (2026-11-07): Richard: “I approve closure for D2.” CLOSED as COMPLETE DESCRIPTIVE PILOT;32/32 paths, independent raw/source/seed/integer/192-summary check PASS, full archive verified. Source correction removes the old0.30% deficit; residual offsets and stochastic/particle-equivalence limitations remain recorded. Earlier original MG10 remains UNRESOLVED; no earlier result rescored.
+- **Next stage:** No new scientific production registered or launched. Future design must distinguish powered field recovery from localization/identity/persistence qualification; D2 closure does not establish either equivalence or particle survival. See results/MG10D2/MG10D2_results.md.
 - **Archive baseline:** [StochasticVacuum](https://github.com/RichardBenear/StochasticVacuum), private, commit `2161211ccc9d8427af98ebeefcabf7f379b83a37`. Reuse selected machinery with provenance and new validation.
 - **Time semantics:** MG10 proposes the existing continuous-time model for its first extension. A fundamental-tick law remains a separate modeling decision.
 - **Q5:** MG8's frozen record remains open as scored. A possible reframing of Q5 was discussed with the PI, but no new Q5 study or rescoring is registered here.

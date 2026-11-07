@@ -38,3 +38,8 @@ The old HIGH fine-step source deficit0.300-0.304% is absent. Corrected HIGH fine
 Fine-step HIGH-minus-CHEMO mean-X offsets are-0.0017335 (H) and+0.0089710 (S), under0.06% of background. This is a descriptive improvement over D1's biased HIGH background; it is not a powered1% stochastic recovery verdict. Seeded contrast varies noticeably across independent samples and numerical steps (HIGH RMS X .515628 coarse/.916886 fine; CHEMO .985613/.747266). With four paths/group this study does not establish particle-shape/persistence equivalence or resolve long-time numerical sensitivity. No minima are promoted to particles. T60 does not answer T300/T500 behavior.
 
 Original D1 data/labels are preserved with their caveat; no pooling/replacement. Next scientific design must distinguish a powered field-recovery claim from localization/identity/persistence qualification before interpreting noisy motifs as particles. PI closure remains pending.
+
+
+## PI closure — MG057, 2026-11-07
+
+Richard: “I approve closure for D2.” **MG10-D2 is CLOSED as COMPLETE DESCRIPTIVE PILOT.** All32 trajectories, independent raw/summary audit and full verified archive are retained. This closure preserves the registered scope and all limitations above; it does not declare stochastic equivalence, particle identity/persistence or long-horizon survival. Original D1 and earlier frozen outcomes remain unchanged. No next production is registered by this closure.
