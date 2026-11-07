@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "timing_c1_s0_k1",
+    "kind": "timing",
+    "condition": 1,
+    "start": 0,
+    "step": 1
+  },
+  "seed": 4278019452,
+  "compute_seconds": 0.6383814999717288,
+  "raw": "timing_c1_s0_k1.npz",
+  "sha256": "7a1a2eba291fe805850886116dac5278c881cc405b4511aef31d45803eda8cd9",
+  "ledger": {
+    "max_integer_residual": 0,
+    "max_total_input_residual": 0,
+    "nonnegative": true,
+    "pass_check": true
+  }
+}

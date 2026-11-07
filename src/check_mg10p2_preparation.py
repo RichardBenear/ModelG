@@ -17,7 +17,7 @@ def main():
     for name,expected in plan["source_hashes"].items():
         p=ROOT/name;data=p.read_bytes() if name.endswith(".npz") else p.read_text(encoding="utf-8").replace("\r\n","\n").encode()
         assert hashlib.sha256(data).hexdigest()==expected,name
-    q=json.loads((BASE/"qualification/qualification.json").read_text(encoding="utf-8"));assert q["passed"]
+    q=json.loads((BASE/"qualification/qualification_results.json").read_text(encoding="utf-8"));assert q["passed"]
     with np.load(ROOT/"results/MG003/ref_profiles.npz") as raw:profile=raw["h0.2_b29.0"][1:]
     k=2*np.pi*np.fft.fftfreq(500,d=.2);kernel=np.fft.ifft(np.exp(-.5*(.4*k)**2)).real
     convolution=kernel[(np.arange(500)[:,None]-np.arange(500)[None,:])%500]

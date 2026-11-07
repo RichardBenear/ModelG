@@ -1,0 +1,7 @@
+# MG061 — Preparation metadata correction before scientific production
+
+The separate preparation checker failed with KeyError: passed. Root cause: the qualification function wrote qualification.json, then the worker wrote a controller completion record using that same filename. Assertions/metric inputs and binomial-bound outputs were produced, but the detailed test summary was overwritten. Treat the first preparation as FAILED/INCOMPLETE validation, not passed. No scientific production or P2 inference occurred.
+
+Preserve all first-attempt source in commit9eec143 and raw/metadata/error in results/MG10P2/preparation_v1. Correct only the summary destination to qualification_results.json and its checker path. Fresh preparation plan/source hashes precede a repeat. Repeating the eight development timing cases is disclosed, not replacing scientific data. Reuse the same development seeds, never production streams; criteria/initial states/sampler/metrics are unchanged. Charge prior controlled worker time plus7seconds for the failed checker/startup allowance into the new900-second development cap. No silent automatic retry or outcome tuning.
+
+The scope remains DRAFT and requires PI approval of the new1024-path,5% unseeded-match-cap protocol and proposed4-hour production ceiling before registration/production. The correction is authorized routine implementation work under the PI next-stage instruction, not a claim of approval for new scientific data.

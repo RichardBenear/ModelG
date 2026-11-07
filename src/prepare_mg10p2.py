@@ -78,7 +78,7 @@ def qualify(directory):
         try:model.fixture(c,s);raise AssertionError("Invalid state accepted")
         except ValueError:pass
     tests.append(dict(name="state_domain_rejection",passed=True))
-    atomic_json(directory/"qualification.json",dict(passed=True,status="PREPARATION CHECKS PASS; no scientific production",tests=tests))
+    atomic_json(directory/"qualification_results.json",dict(passed=True,status="PREPARATION CHECKS PASS; no scientific production",tests=tests))
 
 
 def worker(job,directory):
@@ -105,7 +105,9 @@ def worker(job,directory):
 
 def execute():
     if (BASE/"qualification/ledger.json").exists():raise ValueError("Already attempted; no automatic retry")
-    q=run([dict(id="qualification",kind="qualification")],BASE/"qualification",Path(__file__).resolve(),ROOT,900,workers=1,timeout=300,poll_seconds=.25)
+    previous=BASE.parent/"preparation_v1/timing/ledger.json"
+    prior=json.loads(previous.read_text(encoding="utf-8"))["charged_worker_seconds"]+7 if previous.exists() else 0
+    q=run([dict(id="qualification",kind="qualification")],BASE/"qualification",Path(__file__).resolve(),ROOT,900,workers=1,prior=prior,timeout=300,poll_seconds=.25)
     if q["stop_reason"]:raise ValueError("Blocking preparation failure")
     matrix=[dict(id=f"timing_c{c}_s{s}_k{k}",kind="timing",condition=c,start=s,step=k) for c in range(2) for s in range(2) for k in range(2)]
     t=run(matrix,BASE/"timing",Path(__file__).resolve(),ROOT,900,workers=8,prior=q["charged_worker_seconds"],timeout=60,poll_seconds=.25)

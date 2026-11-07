@@ -1,0 +1,226 @@
+{
+  "qualification": {
+    "records": [
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "qualification",
+          "kind": "qualification"
+        },
+        "id": "qualification",
+        "charged_worker_seconds": 2.01183310005581,
+        "returncode": 0
+      }
+    ],
+    "ceiling": 900,
+    "prior_charge": 0,
+    "poll_seconds": 0.25,
+    "charged_worker_seconds": 2.01183310005581,
+    "inflight_worker_seconds": 0,
+    "pending_ids": [],
+    "active_ids": [],
+    "stop_reason": null,
+    "workers": 1,
+    "threads_per_library": 1,
+    "max_observed_poll_gap_seconds": 0.25074420002056286
+  },
+  "timing": {
+    "records": [
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_c0_s0_k0",
+          "kind": "timing",
+          "condition": 0,
+          "start": 0,
+          "step": 0
+        },
+        "seed": 3991134901,
+        "compute_seconds": 0.44458360003773123,
+        "raw": "timing_c0_s0_k0.npz",
+        "sha256": "00a83c13f74f249b1c7a21132d99caf594d004646b61a1e58d25ae3a7b494820",
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "id": "timing_c0_s0_k0",
+        "charged_worker_seconds": 3.49330239999108,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_c0_s1_k0",
+          "kind": "timing",
+          "condition": 0,
+          "start": 1,
+          "step": 0
+        },
+        "seed": 1203195637,
+        "compute_seconds": 0.4838836999842897,
+        "raw": "timing_c0_s1_k0.npz",
+        "sha256": "0cec8b99f8d9fb7710d1bd37319a7c27492e171122428a93faddee0277f26299",
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "id": "timing_c0_s1_k0",
+        "charged_worker_seconds": 3.4869333999813534,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_c1_s0_k0",
+          "kind": "timing",
+          "condition": 1,
+          "start": 0,
+          "step": 0
+        },
+        "seed": 3538012036,
+        "compute_seconds": 0.4328741999925114,
+        "raw": "timing_c1_s0_k0.npz",
+        "sha256": "6f475e3b5d739bc332a211a6f9e7732412006ca3f88f1c8b67a8b21afa20f191",
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "id": "timing_c1_s0_k0",
+        "charged_worker_seconds": 3.47211969998898,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_c1_s1_k0",
+          "kind": "timing",
+          "condition": 1,
+          "start": 1,
+          "step": 0
+        },
+        "seed": 3461291114,
+        "compute_seconds": 0.42600839998340234,
+        "raw": "timing_c1_s1_k0.npz",
+        "sha256": "04da74756f7b2e90de4312249ec22f804c969058dd1a126da2597e1d8135b287",
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "id": "timing_c1_s1_k0",
+        "charged_worker_seconds": 3.4652210000203922,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_c0_s0_k1",
+          "kind": "timing",
+          "condition": 0,
+          "start": 0,
+          "step": 1
+        },
+        "seed": 3727439298,
+        "compute_seconds": 0.7023718999698758,
+        "raw": "timing_c0_s0_k1.npz",
+        "sha256": "53b5b1114caa4a9602c57a5387a057c97ff9e9d2ab0adfdc2d69cbc2134c6ca5",
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "id": "timing_c0_s0_k1",
+        "charged_worker_seconds": 3.7368845000164583,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_c0_s1_k1",
+          "kind": "timing",
+          "condition": 0,
+          "start": 1,
+          "step": 1
+        },
+        "seed": 2179432019,
+        "compute_seconds": 0.6820979999611154,
+        "raw": "timing_c0_s1_k1.npz",
+        "sha256": "92d4504a07c252334c036f43896235a10e3268a20ea84c27f4c39ab48181cbfd",
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "id": "timing_c0_s1_k1",
+        "charged_worker_seconds": 3.7200215000193566,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_c1_s0_k1",
+          "kind": "timing",
+          "condition": 1,
+          "start": 0,
+          "step": 1
+        },
+        "seed": 4278019452,
+        "compute_seconds": 0.6383814999717288,
+        "raw": "timing_c1_s0_k1.npz",
+        "sha256": "7a1a2eba291fe805850886116dac5278c881cc405b4511aef31d45803eda8cd9",
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "id": "timing_c1_s0_k1",
+        "charged_worker_seconds": 3.7114296999643557,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_c1_s1_k1",
+          "kind": "timing",
+          "condition": 1,
+          "start": 1,
+          "step": 1
+        },
+        "seed": 1891398043,
+        "compute_seconds": 0.6816640000324696,
+        "raw": "timing_c1_s1_k1.npz",
+        "sha256": "c21192885097422f8a721f25c2a544130ba361cc763a06bdc99af9f349e58330",
+        "ledger": {
+          "max_integer_residual": 0,
+          "max_total_input_residual": 0,
+          "nonnegative": true,
+          "pass_check": true
+        },
+        "id": "timing_c1_s1_k1",
+        "charged_worker_seconds": 3.701444400008768,
+        "returncode": 0
+      }
+    ],
+    "ceiling": 900,
+    "prior_charge": 2.01183310005581,
+    "poll_seconds": 0.25,
+    "charged_worker_seconds": 30.799189700046554,
+    "inflight_worker_seconds": 0,
+    "pending_ids": [],
+    "active_ids": [],
+    "stop_reason": null,
+    "workers": 8,
+    "threads_per_library": 1,
+    "max_observed_poll_gap_seconds": 0.25060780002968386
+  }
+}
