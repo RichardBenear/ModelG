@@ -1,0 +1,18 @@
+{
+  "status": "SYNTHETIC MEASUREMENTS PASS",
+  "checks": [
+    {
+      "name": "flat_original",
+      "passed": true
+    },
+    {
+      "name": "flat_depleted_below_old_threshold",
+      "passed": true
+    },
+    {
+      "name": "known_alternating_field_supply_and_channel_totals",
+      "passed": true
+    }
+  ],
+  "scope": "Field mean/RMS and stock/channel summaries only; no particle localization or identity qualification"
+}

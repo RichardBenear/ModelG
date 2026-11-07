@@ -827,3 +827,5 @@ QUALIFIED WITHIN REGISTERED S2 SCOPE. All88 fixed jobs/32 groups/524288 trajecto
 ## MG052 — S2 closure and finite-supply pilot preparation (2026-11-06)
 
 PI signed off S2 and instructed proceeding. S2 CLOSED within its registered scope, without rescoring. Preparing MG10-D1: long-horizon seeded/homogeneous finite-supply controls, explicit chemostat input ledgers, and numerical refinement. Development timing is disclosed separately; production remains unregistered pending a concrete numerical plan and budget.
+
+MG052 preparation complete: Draft2, qualified controls and cost forecast ready for PI budget/scope decision. Twenty implementation checks and three synthetic measurement checks pass. Flat-field RMS roundoff found/fixed prospectively without changing sampled dynamics; failed fixture evidence retained. Independent raw reconstruction agrees. Forecast41.57core-hours with25% allowance; candidate60-hour cap,8workers,3600seconds/job. Original48-hour candidate fails reserve. No production.

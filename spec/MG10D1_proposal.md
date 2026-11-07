@@ -1,4 +1,4 @@
-# MG10-D1 — Finite-supply estimation pilot (MG052, Draft 1)
+# MG10-D1 — Finite-supply estimation pilot (MG052, Draft 2)
 
 Status: DRAFT, not registered; no scientific production. PI closed S2 and authorized the next step on 2026-11-06. This draft makes that step reviewable. Source qualification and development timing are not scientific production.
 
@@ -36,7 +36,7 @@ Development stream stage520 is disjoint from S2. Record configurations, all raw 
 
 ## Budget and retention candidate
 
-Measure all 20 arm/start/step classes before finalizing the forecast. Candidate 48 core-hour production ceiling, eight workers, per-job timeout 3600 seconds, no automatic rerun. Require projected total including a 25% slow-down allowance <=75% of ceiling. Short benchmarks cannot guarantee later-time cost, so retain incomplete results and stop at cap/timeout. The PI has not approved this new numerical ceiling; bring the concrete forecast and candidate back before registration.
+Measure all 20 arm/start/step classes before finalizing the forecast. Candidate 60 core-hour production ceiling, eight workers, per-job timeout 3600 seconds, no automatic rerun. Require projected total including a 25% slow-down allowance <=75% of ceiling. Short benchmarks cannot guarantee later-time cost, so retain incomplete results and stop at cap/timeout. The PI has not approved this new numerical ceiling; bring the concrete forecast and candidate back before registration.
 
 Checkpoint raw upper bound: 80*61*22*500*8 = 429440000 bytes before compression, plus initial states, stats and metadata. Retain all decision inputs in results/MG10D1/production, losslessly compressed per path, committed in manageable data batches. Check repository reachability and retained-file hashes before/after uploads; hashes without data are not retention. No sole temporary-file archive. No long run starts before source/spec/reference hashes, exact stream matrix, environment, bounded controller, independent checker, retention and PI budget approval are registered and pushed.
 
@@ -45,3 +45,13 @@ Production seed candidate: seed_for(10, 2*arm+start, step, 5203, replicate); arm
 ## Outcome vocabulary
 
 COMPLETE DESCRIPTIVE PILOT only if all80 jobs and exact accounting complete; BUDGET-SHORT / INCOMPLETE otherwise. Any implementation failure is QUALIFICATION FAILED or invalid output, with no physical conclusion. Numerical sensitivity can remain UNRESOLVED even when a pilot completes. Original MG10 and S1/S2 verdicts stay unchanged. PI closure is separate.
+
+## MG052 prospective development disposition and Draft2 budget amendment
+
+No scientific production occurred. The20 checks and independent36-archive raw audit pass; three additional synthetic measurement fixtures now pass. The first synthetic flat-field assertion caught roundoff-level nonzero RMS after uncentered averaging (largest1.78e-15); preserved in development/measurement_initial_failure.json. Centering on a lattice sample before mean reduction makes constant-field contrast exactly zero. Only measurements changed; qualified sampler, fixture, validation and ledger source text is identical to the prior development commit, verified in source_and_stream_audit.json. The original source and tests remain in git history. Frozen S1/S2 files are untouched.
+
+Timing20 classes on the local PC projects33.2572098 core-hours for80 T60 paths, or41.5715122 with25% slowdown allowance. About5.20 hours on eight workers, excluding small driver/analysis overhead. These are extrapolations fromT.1, not guaranteed wall times or bounds. Development charged136.540942 worker-seconds, under900. Qualification/source/stream records and raw archives are retained locally and in the repository; the short raw archive is about1MB, not another multi-GB upload.
+
+Draft1's48-core-hour ceiling fails its reserve rule (41.57>36). Preserve that failed forecast and Draft1. Draft2 proposes60 core-hours, where41.57<=45 (75% reserve threshold); the same80 jobs, physics, horizon and measurements are retained. No scientific result motivates this change. This new ceiling is a candidate awaiting PI approval, not an inherited approval. If authorized, also freeze final controller/evaluator/checker and exact source hashes before production. Max3600seconds/job; cap60core-hours; <=8workers/one library thread. About7.5hours at sustained full occupancy would consume the aggregate cap; scheduling, early stops and system load can change elapsed time.
+
+External review is optional; it has not been requested or represented as waived for this new long-horizon batch. PI can request it when approving the concrete run plan. This stage can complete descriptive estimates while still leaving quantitative stochastic recovery, numerical equivalence and particle persistence unresolved.

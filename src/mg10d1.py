@@ -120,7 +120,9 @@ def ledger(data,initial):
 
 def measurements(data,case):
     active=data[:,:,:3]/case["omega"]
-    means=active.mean(axis=-1)
-    rms=np.sqrt(np.mean((active-means[:,:,:,None])**2,axis=-1))
+    offset=active-active[:,:,:,:1]
+    offset_mean=offset.mean(axis=-1)
+    means=active[:,:,:,0]+offset_mean
+    rms=np.sqrt(np.mean((offset-offset_mean[:,:,:,None])**2,axis=-1))
     ratios=data[:,:,3:5]/np.stack([case["a0"],case["b0"]])[None,None]
     return dict(field_mean=means,field_rms=rms,availability_mean=ratios.mean(axis=-1),availability_min=ratios.min(axis=-1),availability_max=ratios.max(axis=-1),availability_sd=ratios.std(axis=-1),reaction_totals=data[:,:,7:14].sum(axis=-1),external_totals=data[:,:,20:22].sum(axis=-1))

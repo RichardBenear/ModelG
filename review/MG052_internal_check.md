@@ -13,3 +13,7 @@ Risks: late fields may cost more than the short benchmark; HIGH's huge stocks mu
 The candidate omits individual-particle claims rather than transfer an unqualified detector. A later persistence stage needs identity/motion/merger/localization fixture qualification. Long-horizon step differences remain descriptive and can leave numerical sensitivity unresolved. Exact external-input ledgers prevent maintained and closed arms being misrepresented as equally closed systems.
 
 Before production: PI approval of concrete new budget/scope and run-level review disposition; final registered stream/source/spec hashes; bounded production driver and decision evaluator; verified durable retention. This development-only driver deliberately has no scientific-production command. No new production is represented as approved, registered or completed.
+
+## Prospective disposition
+
+Draft2 proposes60core-hours with the same80 paths/T60:41.5715<=45 reserve threshold. This is not approved or registered. Synthetic summary checks initially found roundoff-level contrast on exactly flat fields; measurement centering corrected it, three fixtures now pass, failure retained. Qualified sampler/fixture/ledger source preceding measurements is byte-identical after LF normalization to the first MG052 commit; source_and_stream_audit records this. All80 candidate seeds are unique. Final source hashes and production controller/evaluator remain to be frozen after the PI budget decision, before any long-horizon run.

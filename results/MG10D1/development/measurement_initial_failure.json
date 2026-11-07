@@ -1,0 +1,17 @@
+{
+  "status": "DEVELOPMENT MEASUREMENT CHECK FAILED; no production",
+  "check": "Exactly uniform fields should have zero spatial contrast",
+  "observed_rms": [
+    [
+      [
+        1.7763568394002505e-15,
+        1.7763568394002505e-15,
+        4.440892098500626e-16
+      ]
+    ]
+  ],
+  "cause": "Floating mean reduction before centering leaves a roundoff residual on constant fields",
+  "initial_source_commit": "git HEAD before measurement-only correction",
+  "source_sha256": "da393f5147a711acb1539062b8298bb9e0596230f50335cfb01f376927f87b87",
+  "disposition": "Center on a sampled lattice value before averaging; keep population/reaction kernels unchanged; repeat synthetic checks"
+}

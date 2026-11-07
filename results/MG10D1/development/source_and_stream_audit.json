@@ -1,0 +1,598 @@
+{
+  "qualified_source_commit": "1a8279942515e826be1224a32893ad760524ba3c",
+  "source_audit_before_spec_revision": {
+    "src/mg10d1.py": {
+      "whole_file_matches": false,
+      "qualified_core_unchanged": true,
+      "change": "Measurement-only roundoff correction, separately checked on synthetic inputs"
+    },
+    "src/prepare_mg10d1.py": {
+      "matches": true
+    },
+    "src/check_mg10d1_development.py": {
+      "matches": true
+    },
+    "src/mg10s1.py": {
+      "matches": true
+    },
+    "src/mg10s2.py": {
+      "matches": true
+    },
+    "src/bounded_pool.py": {
+      "matches": true
+    },
+    "src/runner.py": {
+      "matches": true
+    },
+    "spec/MG10D1_proposal.md": {
+      "matches": true
+    },
+    "results/MG003/ref_profiles.npz": {
+      "matches": true
+    }
+  },
+  "production_candidate_seeds": [
+    {
+      "arm": 0,
+      "start": 0,
+      "step": 0,
+      "replicate": 0,
+      "seed": 362684820
+    },
+    {
+      "arm": 0,
+      "start": 0,
+      "step": 0,
+      "replicate": 1,
+      "seed": 2549358614
+    },
+    {
+      "arm": 0,
+      "start": 0,
+      "step": 0,
+      "replicate": 2,
+      "seed": 557712506
+    },
+    {
+      "arm": 0,
+      "start": 0,
+      "step": 0,
+      "replicate": 3,
+      "seed": 1455839686
+    },
+    {
+      "arm": 0,
+      "start": 0,
+      "step": 1,
+      "replicate": 0,
+      "seed": 632440602
+    },
+    {
+      "arm": 0,
+      "start": 0,
+      "step": 1,
+      "replicate": 1,
+      "seed": 3170157628
+    },
+    {
+      "arm": 0,
+      "start": 0,
+      "step": 1,
+      "replicate": 2,
+      "seed": 1902033423
+    },
+    {
+      "arm": 0,
+      "start": 0,
+      "step": 1,
+      "replicate": 3,
+      "seed": 3093607304
+    },
+    {
+      "arm": 0,
+      "start": 1,
+      "step": 0,
+      "replicate": 0,
+      "seed": 3545530188
+    },
+    {
+      "arm": 0,
+      "start": 1,
+      "step": 0,
+      "replicate": 1,
+      "seed": 83289447
+    },
+    {
+      "arm": 0,
+      "start": 1,
+      "step": 0,
+      "replicate": 2,
+      "seed": 2681066173
+    },
+    {
+      "arm": 0,
+      "start": 1,
+      "step": 0,
+      "replicate": 3,
+      "seed": 654874066
+    },
+    {
+      "arm": 0,
+      "start": 1,
+      "step": 1,
+      "replicate": 0,
+      "seed": 2371358197
+    },
+    {
+      "arm": 0,
+      "start": 1,
+      "step": 1,
+      "replicate": 1,
+      "seed": 1093939735
+    },
+    {
+      "arm": 0,
+      "start": 1,
+      "step": 1,
+      "replicate": 2,
+      "seed": 1644898796
+    },
+    {
+      "arm": 0,
+      "start": 1,
+      "step": 1,
+      "replicate": 3,
+      "seed": 3977254801
+    },
+    {
+      "arm": 1,
+      "start": 0,
+      "step": 0,
+      "replicate": 0,
+      "seed": 4249495490
+    },
+    {
+      "arm": 1,
+      "start": 0,
+      "step": 0,
+      "replicate": 1,
+      "seed": 3027274763
+    },
+    {
+      "arm": 1,
+      "start": 0,
+      "step": 0,
+      "replicate": 2,
+      "seed": 2893545614
+    },
+    {
+      "arm": 1,
+      "start": 0,
+      "step": 0,
+      "replicate": 3,
+      "seed": 3927944536
+    },
+    {
+      "arm": 1,
+      "start": 0,
+      "step": 1,
+      "replicate": 0,
+      "seed": 1320643417
+    },
+    {
+      "arm": 1,
+      "start": 0,
+      "step": 1,
+      "replicate": 1,
+      "seed": 2534185854
+    },
+    {
+      "arm": 1,
+      "start": 0,
+      "step": 1,
+      "replicate": 2,
+      "seed": 486992899
+    },
+    {
+      "arm": 1,
+      "start": 0,
+      "step": 1,
+      "replicate": 3,
+      "seed": 2877820103
+    },
+    {
+      "arm": 1,
+      "start": 1,
+      "step": 0,
+      "replicate": 0,
+      "seed": 243546500
+    },
+    {
+      "arm": 1,
+      "start": 1,
+      "step": 0,
+      "replicate": 1,
+      "seed": 4027908969
+    },
+    {
+      "arm": 1,
+      "start": 1,
+      "step": 0,
+      "replicate": 2,
+      "seed": 1751090171
+    },
+    {
+      "arm": 1,
+      "start": 1,
+      "step": 0,
+      "replicate": 3,
+      "seed": 2401873316
+    },
+    {
+      "arm": 1,
+      "start": 1,
+      "step": 1,
+      "replicate": 0,
+      "seed": 1633092478
+    },
+    {
+      "arm": 1,
+      "start": 1,
+      "step": 1,
+      "replicate": 1,
+      "seed": 523957749
+    },
+    {
+      "arm": 1,
+      "start": 1,
+      "step": 1,
+      "replicate": 2,
+      "seed": 1357743576
+    },
+    {
+      "arm": 1,
+      "start": 1,
+      "step": 1,
+      "replicate": 3,
+      "seed": 1637822524
+    },
+    {
+      "arm": 2,
+      "start": 0,
+      "step": 0,
+      "replicate": 0,
+      "seed": 87384260
+    },
+    {
+      "arm": 2,
+      "start": 0,
+      "step": 0,
+      "replicate": 1,
+      "seed": 1682799610
+    },
+    {
+      "arm": 2,
+      "start": 0,
+      "step": 0,
+      "replicate": 2,
+      "seed": 1307497041
+    },
+    {
+      "arm": 2,
+      "start": 0,
+      "step": 0,
+      "replicate": 3,
+      "seed": 3902043267
+    },
+    {
+      "arm": 2,
+      "start": 0,
+      "step": 1,
+      "replicate": 0,
+      "seed": 4184988466
+    },
+    {
+      "arm": 2,
+      "start": 0,
+      "step": 1,
+      "replicate": 1,
+      "seed": 3035219802
+    },
+    {
+      "arm": 2,
+      "start": 0,
+      "step": 1,
+      "replicate": 2,
+      "seed": 4077215839
+    },
+    {
+      "arm": 2,
+      "start": 0,
+      "step": 1,
+      "replicate": 3,
+      "seed": 2194472037
+    },
+    {
+      "arm": 2,
+      "start": 1,
+      "step": 0,
+      "replicate": 0,
+      "seed": 1889971228
+    },
+    {
+      "arm": 2,
+      "start": 1,
+      "step": 0,
+      "replicate": 1,
+      "seed": 2358915495
+    },
+    {
+      "arm": 2,
+      "start": 1,
+      "step": 0,
+      "replicate": 2,
+      "seed": 3800330102
+    },
+    {
+      "arm": 2,
+      "start": 1,
+      "step": 0,
+      "replicate": 3,
+      "seed": 3129114747
+    },
+    {
+      "arm": 2,
+      "start": 1,
+      "step": 1,
+      "replicate": 0,
+      "seed": 1399430964
+    },
+    {
+      "arm": 2,
+      "start": 1,
+      "step": 1,
+      "replicate": 1,
+      "seed": 1520552659
+    },
+    {
+      "arm": 2,
+      "start": 1,
+      "step": 1,
+      "replicate": 2,
+      "seed": 3581800959
+    },
+    {
+      "arm": 2,
+      "start": 1,
+      "step": 1,
+      "replicate": 3,
+      "seed": 343152973
+    },
+    {
+      "arm": 3,
+      "start": 0,
+      "step": 0,
+      "replicate": 0,
+      "seed": 3377214164
+    },
+    {
+      "arm": 3,
+      "start": 0,
+      "step": 0,
+      "replicate": 1,
+      "seed": 64771824
+    },
+    {
+      "arm": 3,
+      "start": 0,
+      "step": 0,
+      "replicate": 2,
+      "seed": 1010065909
+    },
+    {
+      "arm": 3,
+      "start": 0,
+      "step": 0,
+      "replicate": 3,
+      "seed": 2828631301
+    },
+    {
+      "arm": 3,
+      "start": 0,
+      "step": 1,
+      "replicate": 0,
+      "seed": 2493408900
+    },
+    {
+      "arm": 3,
+      "start": 0,
+      "step": 1,
+      "replicate": 1,
+      "seed": 2021704177
+    },
+    {
+      "arm": 3,
+      "start": 0,
+      "step": 1,
+      "replicate": 2,
+      "seed": 2755775133
+    },
+    {
+      "arm": 3,
+      "start": 0,
+      "step": 1,
+      "replicate": 3,
+      "seed": 2116198246
+    },
+    {
+      "arm": 3,
+      "start": 1,
+      "step": 0,
+      "replicate": 0,
+      "seed": 1144235917
+    },
+    {
+      "arm": 3,
+      "start": 1,
+      "step": 0,
+      "replicate": 1,
+      "seed": 833982115
+    },
+    {
+      "arm": 3,
+      "start": 1,
+      "step": 0,
+      "replicate": 2,
+      "seed": 2957980561
+    },
+    {
+      "arm": 3,
+      "start": 1,
+      "step": 0,
+      "replicate": 3,
+      "seed": 2244285482
+    },
+    {
+      "arm": 3,
+      "start": 1,
+      "step": 1,
+      "replicate": 0,
+      "seed": 82875693
+    },
+    {
+      "arm": 3,
+      "start": 1,
+      "step": 1,
+      "replicate": 1,
+      "seed": 1555755003
+    },
+    {
+      "arm": 3,
+      "start": 1,
+      "step": 1,
+      "replicate": 2,
+      "seed": 3512147375
+    },
+    {
+      "arm": 3,
+      "start": 1,
+      "step": 1,
+      "replicate": 3,
+      "seed": 1397934867
+    },
+    {
+      "arm": 4,
+      "start": 0,
+      "step": 0,
+      "replicate": 0,
+      "seed": 3570836349
+    },
+    {
+      "arm": 4,
+      "start": 0,
+      "step": 0,
+      "replicate": 1,
+      "seed": 2825422543
+    },
+    {
+      "arm": 4,
+      "start": 0,
+      "step": 0,
+      "replicate": 2,
+      "seed": 2108432304
+    },
+    {
+      "arm": 4,
+      "start": 0,
+      "step": 0,
+      "replicate": 3,
+      "seed": 3258203324
+    },
+    {
+      "arm": 4,
+      "start": 0,
+      "step": 1,
+      "replicate": 0,
+      "seed": 3945093978
+    },
+    {
+      "arm": 4,
+      "start": 0,
+      "step": 1,
+      "replicate": 1,
+      "seed": 3075331144
+    },
+    {
+      "arm": 4,
+      "start": 0,
+      "step": 1,
+      "replicate": 2,
+      "seed": 1686823457
+    },
+    {
+      "arm": 4,
+      "start": 0,
+      "step": 1,
+      "replicate": 3,
+      "seed": 2062681408
+    },
+    {
+      "arm": 4,
+      "start": 1,
+      "step": 0,
+      "replicate": 0,
+      "seed": 1091649464
+    },
+    {
+      "arm": 4,
+      "start": 1,
+      "step": 0,
+      "replicate": 1,
+      "seed": 3834107475
+    },
+    {
+      "arm": 4,
+      "start": 1,
+      "step": 0,
+      "replicate": 2,
+      "seed": 382257758
+    },
+    {
+      "arm": 4,
+      "start": 1,
+      "step": 0,
+      "replicate": 3,
+      "seed": 402306366
+    },
+    {
+      "arm": 4,
+      "start": 1,
+      "step": 1,
+      "replicate": 0,
+      "seed": 2164768655
+    },
+    {
+      "arm": 4,
+      "start": 1,
+      "step": 1,
+      "replicate": 1,
+      "seed": 712654214
+    },
+    {
+      "arm": 4,
+      "start": 1,
+      "step": 1,
+      "replicate": 2,
+      "seed": 2895704308
+    },
+    {
+      "arm": 4,
+      "start": 1,
+      "step": 1,
+      "replicate": 3,
+      "seed": 3165530257
+    }
+  ],
+  "unique_candidate_seeds": 80,
+  "status": "CANDIDATE; no production"
+}
