@@ -1,0 +1,95 @@
+{
+  "status": "REGISTERED BEFORE SOURCE DIAGNOSTIC",
+  "stage": "MG055",
+  "source_hashes": {
+    "src/mg10d2_source.py": "311f1326fb3fbcf5c9a62f04804b57c28718bb9bb081b37327625e39b08ff174",
+    "src/mg10d2.py": "d8b3cb7aebf23d3a93d3256b0fa122efd016eddbe0b0951f98ec6cded0c77d2b",
+    "src/mg10d2_stream.py": "e5658307c4c0999d5933e7255a587001014689fb8717b38726229305d962b3bd",
+    "src/qualify_mg10d2.py": "2e729e0cb121b9d37474298cce8451d99e188873db22f450eba62d0c085db985",
+    "src/check_mg10d2_source.py": "566807aa82231740744198e7d20c29fc70fcd70c386baade5394928f588d15ee",
+    "spec/MG10D2_proposal.md": "92b99e99da3dc44e9d2c0571c879c40af1e3e9826b2c88fc3c05374c5da46f41",
+    "src/mg10d1.py": "2246b78a0785b87e7b7cf3614892991f10b9ff5b4d77b7d5d02e4249d6595785",
+    "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+    "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+    "src/mg10d1_pool.py": "ada3b015c0bd2ec05edd89f6a32671fe7ca6a2854894ae0fcfd1199d9c83f86c",
+    "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad"
+  },
+  "jobs": [
+    {
+      "id": "source_c0_m0",
+      "case": 0,
+      "method": 0,
+      "n": 4200000000000,
+      "p": 1.3888888888888887e-13,
+      "reps": 16777216,
+      "seed": 1966401006
+    },
+    {
+      "id": "source_c0_m1",
+      "case": 0,
+      "method": 1,
+      "n": 4200000000000,
+      "p": 1.3888888888888887e-13,
+      "reps": 16777216,
+      "seed": 52304868
+    },
+    {
+      "id": "source_c0_m2",
+      "case": 0,
+      "method": 2,
+      "n": 4200000000000,
+      "p": 1.3888888888888887e-13,
+      "reps": 16777216,
+      "seed": 1148502382
+    },
+    {
+      "id": "source_c1_m0",
+      "case": 1,
+      "method": 0,
+      "n": 4200000000000,
+      "p": 6.944444444444444e-14,
+      "reps": 16777216,
+      "seed": 828574521
+    },
+    {
+      "id": "source_c1_m1",
+      "case": 1,
+      "method": 1,
+      "n": 4200000000000,
+      "p": 6.944444444444444e-14,
+      "reps": 16777216,
+      "seed": 272424265
+    },
+    {
+      "id": "source_c1_m2",
+      "case": 1,
+      "method": 2,
+      "n": 4200000000000,
+      "p": 6.944444444444444e-14,
+      "reps": 16777216,
+      "seed": 1510175516
+    }
+  ],
+  "dkw_family_alpha": 0.01,
+  "primary_comparisons": 6,
+  "revised_cdf_upper_margin": 0.0008,
+  "supplement_alpha": 0.001,
+  "supplement_margin": 0.02,
+  "diagnostic_ceiling_seconds": 900,
+  "production_candidate_ceiling_seconds": 86400,
+  "prior_D1_charge_seconds": 120000.33734830027,
+  "combined_worst_seconds": 207300.33734830027,
+  "pi_authorization": "looks ok, proceed with the next steps; allocation remains within prior approved216000worker-seconds",
+  "environment": {
+    "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.2.4",
+    "scipy": "1.16.1",
+    "numba": "0.68.0"
+  },
+  "vendor_source": {
+    "path": "C:\\Users\\rbene\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\numba\\np\\random\\legacy.py",
+    "sha256": "e31e7603f3395d7d8a44264196fec92e231df65ea094c40627655a77893427fe",
+    "relevant_expression": "q=1-p; qn=q**n"
+  }
+}
