@@ -1,0 +1,22 @@
+{
+  "status": "RUNNING; no P3 scientific result yet",
+  "started_utc": "2026-11-07T21:37:04.563159+00:00",
+  "registration_commit": "d0e9fcc",
+  "registration_sha256": "cff2068d31b797846aba68d001e85b9473459c564350f38557326ef5f2cde1bc",
+  "planned_paths": 64,
+  "workers_verified": 8,
+  "last_saved_time_at_verification": {
+    "s0_k0_r0": 2.75,
+    "s0_k0_r1": 2.75,
+    "s0_k1_r0": 1.75,
+    "s0_k1_r1": 1.75,
+    "s1_k0_r0": 2.75,
+    "s1_k0_r1": 2.75,
+    "s1_k1_r0": 1.75,
+    "s1_k1_r1": 1.75
+  },
+  "ceiling_worker_seconds": 86400,
+  "per_path_timeout_seconds": 1800,
+  "automatic_postprocessing": "evaluate_mg10p3.py then check_mg10p3.py",
+  "retention": "Live full/partial quarter-checkpoint archives local; full final upload after inspection"
+}
