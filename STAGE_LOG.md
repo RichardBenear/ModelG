@@ -894,3 +894,5 @@ MG062 P2 PRODUCTION LAUNCH: 2026-11-07T20:18:48.488238+00:00; registrationeaef80
 ## MG063 — P2 completed and independently recomputed
 
 All1024 paths and128jobs complete;4 H match-frequency caps supported with0/128 each, upper3.3655%; seeded128/128 each descriptive. Independent4096 instrument frames, raw integer/source/state/seed and metric/exact-bound audit PASS. G global contrast is weaker than model spatial noise but planted known-phase ensemble projections remain informative; no blanket G-unobservable statement. No old-result rescoring/threshold adaptation. Full raw archive prepared; PI closure separate.
+
+MG063 RETENTION: all128 raw P2 chunks/1024 paths (54412800bytes) published at9ce8e610538581276e285a15601fef861aca3596; localSHA256 matches and committed blob sizes verified against origin/main. Complete raw/event/input/metadata/evaluation/audit archive retained. PI closure pending.
