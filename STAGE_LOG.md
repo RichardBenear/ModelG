@@ -882,3 +882,8 @@ Richard approved P1 closure. CLOSED as QUALIFIED ON REGISTERED SYNTHETIC FIXTURE
 ## MG061 — Prepare model-noise observability calibration
 
 P2 draft and candidate1024-path/128-job matrix prepared. Frozen P1 matcher plus per-field G/X/Y noise/projections; four primary H match-frequency caps, seeded retention descriptive. First preparation metadata collision preserved/corrected before repeat, unchanged model/statistical criteria. Independent preparation/state/metric/CP checks pass, no scientific production. Reviewable approval packet and measured forecast ready; PI protocol/budget decision required before final production registration.
+
+
+## MG062 — PI approves and P2 is prospectively registered
+
+Approved plan:1024 fresh individually seeded short model paths,128 jobs, four primary H endpoint match-cap tests and descriptive S/GXY observability. Preparation and full synthetic complete/incomplete pipeline passed independent verification. New4-core-hour cap, expected~16minutes/8workers; source/spec/reference/seeds and actual initial-state definitions frozen before production. Prior P1/D2 remain closed and unchanged. Full raw archives/progress and automatic report/recomputation retained; PI closure later.

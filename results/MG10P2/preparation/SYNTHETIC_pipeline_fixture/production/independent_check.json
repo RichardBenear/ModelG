@@ -1,0 +1,938 @@
+{
+  "status": "INDEPENDENT RAW, INSTRUMENT AND STATISTICAL CHECK PASS",
+  "verdict": "INCOMPLETE",
+  "complete_paths": 1023,
+  "raw_archives": [
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k0_b0.npz",
+      "sha256": "b653602f5a4c043a64ad460c54c60fce2f50ec03fb3ae707961bd9acad907fe4",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k0_b0.npz",
+      "sha256": "a2314b32680597fd87dcf8288a6adaf6cee59f8ae3df5cb04d2908dcd0e17938",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k0_b0.npz",
+      "sha256": "b55dbd5712309e3a6db8302fedacbafa1ac67f6126be19291f666e4c864f243c",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k0_b0.npz",
+      "sha256": "6b306b70f0836f1804a81023f299f1c814a07d036fe332777ecaa9891925c157",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k1_b0.npz",
+      "sha256": "2551416e00274fc7fac49b26cef81ef07bc27eaf30d1604f4187a2cd1eda7471",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k1_b0.npz",
+      "sha256": "5859ff0a6766b568ec34b8e8f39342d70bb8c133faecaac7ecfbe8ab0abe377d",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k1_b0.npz",
+      "sha256": "00a703d7fc39ed1dd3dd9fcece9291369833ef62f9ff2942e3d14377519ff9a2",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k1_b0.npz",
+      "sha256": "4b571dc3c35af11574c121d5d51e8e7e065d39e64a222c1091a6e1d8766aacef",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k0_b1.npz",
+      "sha256": "11f47e38a43dd4a2f49df7c2c037f5c2e5e20bd9f25834d0e23b3a23263ca030",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k0_b1.npz",
+      "sha256": "0afa244e6f9f10f9161d3e087abc49c3f213f6ae7298762bf9bfd3e5634ab806",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k0_b1.npz",
+      "sha256": "1241154cd797399582f05f87cb790b642eef364bccb2afa16033909ba7ba664d",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k0_b1.npz",
+      "sha256": "55a06f855732ac7561e905d1b76ce0ffd38ee9c9e4bf4ada03163c2a8e8c3699",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k1_b1.npz",
+      "sha256": "d51da58445cb57eeb52dfc879c6f8106efa5941e6774bb2dc903b7476aceea63",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k1_b1.npz",
+      "sha256": "4158e3740ed5d16d51c20bd984ef159d42795549343be20f36437a10f0cdeef8",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k1_b1.npz",
+      "sha256": "10f2800ff57cec06d1ffdefe0050ba9336db1ed3eadcecacf7751f36b0a57a24",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k1_b1.npz",
+      "sha256": "2990d512373282972576538d2792c4b89e629087dc4e52a4f87f09df699a989e",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k0_b2.npz",
+      "sha256": "768b6fa9f8e4511fd936c11e59d60adb94aa2c30fc23e4c7d8a9f84185875e04",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k0_b2.npz",
+      "sha256": "901189a6e3236a018f94686e56c46f17c2c48a0338008cd8d5a73fcc58cacca0",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k0_b2.npz",
+      "sha256": "6e36900fa4037300cd74cc285c6097cf6457c07c92e588336a1defee7c8e781e",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k0_b2.npz",
+      "sha256": "1b31119db6ebe5d8d3aa7121585b1b8722674b2bc4659a270a77cace0abc54b5",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k1_b2.npz",
+      "sha256": "ada445affada9e62a5da51d11da658d4317cda29b4d37933114d0e86d40aa8da",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k1_b2.npz",
+      "sha256": "3e398fa344c7196fcb1c7e6b4856a9ab2fbc82d2dc83ac8bedd6012d4841d016",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k1_b2.npz",
+      "sha256": "2fa2e0f0bfa6fb1d744e60e8b647cf0fa0e1c2eff3705baab97788461e01ce5e",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k1_b2.npz",
+      "sha256": "37c18cf9ced63f33baeaebcf944335968ffb32598a644f49749ba3b485dd68ad",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k0_b3.npz",
+      "sha256": "6888f61935bd234836ab8bada0884071e6138f7a4a839e632ae3d955c275fdd3",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k0_b3.npz",
+      "sha256": "1349543849ed43aacffb643eea846040c5ac8b2bcedc82e9a8d71ce53a979bde",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k0_b3.npz",
+      "sha256": "c2d97c98b9a9e1f608b76a69e5a134e08a74ed4321cd9c927ff1ec2e2c64b73c",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k0_b3.npz",
+      "sha256": "c83522e7891ad1b4c4a9504ac7ae0918e3cd3831b12c4ca23ed92325995f9d7a",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k1_b3.npz",
+      "sha256": "bd328edca195d63d1fb0bea5b462631738d47a911aa79d8ef52d00f044f2c1e6",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k1_b3.npz",
+      "sha256": "8b1453fee2933278981b9aade3181509d6a251c2ad41038c141507e6d7fbe940",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k1_b3.npz",
+      "sha256": "3b30a1b4ef739c48ed6255cd43921b96c3ec8044fd154bb9cda1a62c7a9990f1",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k1_b3.npz",
+      "sha256": "7aa57dfaf4c93c7057fba53b8b9b283bf901acae6fc5b85a8826374f7c3a7ae1",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k0_b4.npz",
+      "sha256": "f3c98c0c394116d9ae23a38929ed76386699ac185f557ef0cfebc8ab35ee8b9c",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k0_b4.npz",
+      "sha256": "0cb708820fdc09c62fe093c42a7a9a426d56ca093632d68d42c90f251310119b",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k0_b4.npz",
+      "sha256": "41e8513a3c39a9b63d235f5dd5948e8f24971d06576720acead47b78ce26b8da",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k0_b4.npz",
+      "sha256": "75d1076e7f7418065e8294d72591c459428ce30e3749cef3f9363d12551b8bd1",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k1_b4.npz",
+      "sha256": "ea0766c7efd5712a56866e03c0370820285725db3a816f73b8dfe6ae667f7cdf",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k1_b4.npz",
+      "sha256": "3b1a51952848c6960a8d6dc898d0a205fdaf3efda105512fc88e99292f4bf4e6",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k1_b4.npz",
+      "sha256": "c4c3ac5dc45cc96189142d6612b5434fd14d342a7141d44021261cb4a28b8a6c",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k1_b4.npz",
+      "sha256": "a06a037315846aba00f4a4ac56b40b27dc61cfc87cc32d5d8b68aa7fdad93f6f",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k0_b5.npz",
+      "sha256": "355fef965a08b6be0c0333a92cfb33bb56b19df4e308db9791d883b522bdacaa",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k0_b5.npz",
+      "sha256": "3d41ea4ebe02d4e9a8cd8f48a178d91c96b4305002a5a23cda944f203f55e86d",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k0_b5.npz",
+      "sha256": "bb6ec73688b99fa3f007cf95c0bdf5ac2c674c1eb3c23c373577c9b92b98d228",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k0_b5.npz",
+      "sha256": "5b3a2928334b804989c966d68f9edf7072a6c880118b4fbd9d91f82e2cbff12e",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k1_b5.npz",
+      "sha256": "32019e5c6159999de5ba5124a1b2d4a59deb176031862f1731b26d1b1bd9f5dc",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k1_b5.npz",
+      "sha256": "92fd492d6e1665bb5e7fa5556741868be7f0baf8fb2dd46da660c91f791ae187",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k1_b5.npz",
+      "sha256": "a276a8e66c7a5cef1695275973f5391002bbe57c29bfd39806e9f8cdf47b46d8",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k1_b5.npz",
+      "sha256": "e32f39ad1a1d45155cb02377fa88c4300bbae8eb2f40da50d249efa9fcdfc98f",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k0_b6.npz",
+      "sha256": "c56880f43910338ce8f07de8c1bdd3a9524c5a4bcae2fb3b3012dd8865eb6119",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k0_b6.npz",
+      "sha256": "5c9b95fa6026eb4a7907b52bafe14e4e47d5904d3f2c53287b3600a0da7fc25c",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k0_b6.npz",
+      "sha256": "88a9538756f6e8efbaca009219e2a068e792014876cfe6a5ff20ef70eed5eaa6",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k0_b6.npz",
+      "sha256": "ac4314f96e73b53cd21d4c621197075ec6ca939c347e251ba995ce516cb304e7",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k1_b6.npz",
+      "sha256": "dc112abe5ad1e10445fb58dd79f8bb6cc093a7c95e538400c1770d04bdb02b8d",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k1_b6.npz",
+      "sha256": "3b8c664eb7d01102a844897370c158deb27828a89867829e0a2122730ff15492",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k1_b6.npz",
+      "sha256": "e14127fd9aa131e140268f94ec8c0593277de37a2896aa55a9558b0c06514e71",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k1_b6.npz",
+      "sha256": "e66c4a0774008e989a56562d0cd7ae3ee7362e0867b22e4a8d9b104d9aafe8d1",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k0_b7.npz",
+      "sha256": "00c732fefbd402c471894081fc8e715938228c22f2bb4012b67f73ad700deaa7",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k0_b7.npz",
+      "sha256": "e031ed7a38f6e4050a2a4b101284aff33bcc35036168264dfaefecdb09edc4fc",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k0_b7.npz",
+      "sha256": "c42e2e129a9226b09061bdedceea4d2e4af5239831e9bf6d8072be4e3e287da2",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k0_b7.npz",
+      "sha256": "3838d47ddf4d64baacebb4959b9cb0dabe81add29892bb40718ac2a5b9fca617",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k1_b7.npz",
+      "sha256": "12f0857f66107b19618582d1942087d6b01f894f045e6967445c7ba73d0b8afe",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k1_b7.npz",
+      "sha256": "b78be28333d34c15d0e096298b7b3863e5870036cea5e0ca0e23f1c0119a1ddf",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k1_b7.npz",
+      "sha256": "d29f387fe84ef04de72ca79101d30f4491785899e115e7b5227eb563c0498164",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k1_b7.npz",
+      "sha256": "c764bb012c840d005050a1657228dbd7e0d4fc2633c22c9e3fb497c83e754a12",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k0_b8.npz",
+      "sha256": "53a743837cc31c78537b7a4ed32f3b1035f7cadb44f5e108239c4c8c87c0dec1",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k0_b8.npz",
+      "sha256": "f1ee8af9e1f291fa61ac0062384f7a1f0fa980394139bd3b32c88ebc454d6f00",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k0_b8.npz",
+      "sha256": "2799fa613b3a29ab091572afe5bde2c0fed030148696b51ddeca6a0ebe040b5b",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k0_b8.npz",
+      "sha256": "79024d0db5daf377f75609ebae5e3b708d881366acf46578f2b4817b853ee62e",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k1_b8.npz",
+      "sha256": "c4e8a028721db310317daecc2ba16256c0a1f4057bf5150e69869471322c0513",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k1_b8.npz",
+      "sha256": "2360694c6dff88b440bdbaa45f2c21ff43f27b0ab1f7e84d5bce3cae36cba293",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k1_b8.npz",
+      "sha256": "2f1387cafd7c301e9e70ff55c660c87a5c8fbb49d6d2a68496e66c975d791199",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k1_b8.npz",
+      "sha256": "32627b25df836d0eff97ecda1d5eb69d4453345465476b83fa57d620626e7961",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k0_b9.npz",
+      "sha256": "7a9fa78637bb52bb7d3060b224862fb49e862397331ead30ea503e5c902f4b34",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k0_b9.npz",
+      "sha256": "fbe61e0a209e5cd52b7d48edf8039cd7a459776456176c7fd71099f545c782ca",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k0_b9.npz",
+      "sha256": "2487d996aaa74f613f075649551a9e1cc617d342a826794c7cb2d41828a7aaa2",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k0_b9.npz",
+      "sha256": "baa960f4d0947f234dfba80cee70cc410e47b5a7866febb60bf81cdc03e760e2",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k1_b9.npz",
+      "sha256": "d73b89f21ed98c1aadda79085d85271786cedc574f84ee15af027dd40a832a5c",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k1_b9.npz",
+      "sha256": "ceb2aad7889a41bd14497348b4dce9feeb71df7257993089d9e9c427cbef175e",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k1_b9.npz",
+      "sha256": "51aea6277e0dd13bc86d29a4190c48e06e5ed7f4199431eacc4f613a461b9c76",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k1_b9.npz",
+      "sha256": "3d943f728aeaf31772832fa1968c990991e26b9cc667e880b3c7ed984cb69f2c",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k0_b10.npz",
+      "sha256": "a51c70cdb66a5d97b590a4e46c0ca9d61b0c8599f174288928cb430454134088",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k0_b10.npz",
+      "sha256": "4c2194e242b672e78855b6b20664b1aa20b5dd34244577dce0f76d767a2c063a",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k0_b10.npz",
+      "sha256": "b960a2ed24b442c572ff39c772f1b4e88f6b9b031c94627bd6741014f5aaf312",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k0_b10.npz",
+      "sha256": "e77e347ba7bd5647b42e2cceb1fe50cc9db359d41f82488de2f9889a9fe256db",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k1_b10.npz",
+      "sha256": "4c2260c71f556509d568683861af4fe16bb48cb0096c8a8864b4142c1b0b3620",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k1_b10.npz",
+      "sha256": "53a9660e3599803464a64be4b59f5385aba6ea98ee81ca2cd30612ee7649dc44",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k1_b10.npz",
+      "sha256": "7574feee63058592d5e4c156b4827fb8579e425b282b38a3daa9f41bf32b8556",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k1_b10.npz",
+      "sha256": "ac7a3c3e0860fd46a961cbc1c320451b585f2a445cc5af1746d94415a1dc34ac",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k0_b11.npz",
+      "sha256": "f5e0af564029ca4ea117d295d671f3a6f942245117b09633a85bc4a970525c01",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k0_b11.npz",
+      "sha256": "8a79d2c003ad5a1e8c20f7e3e277601bcec9d8809bba6ad04d3626ea2f6343a0",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k0_b11.npz",
+      "sha256": "d0447ec1b4625afa9569fde08612d95f561307b7b2b49c582d680e305d1d77fa",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k0_b11.npz",
+      "sha256": "3bff7d1db8707ad059ca3ce38e8692135e207c403c21e2ca9fc30e9e87208b9c",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k1_b11.npz",
+      "sha256": "81cb95f65c1764912a9b713c1566a00d692cfa2b0fcdaba3a169c70bea337798",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k1_b11.npz",
+      "sha256": "ea9e1bbb948277cf01f09e22c9d67075f7fee240f46e33338e2d0eb78f95a3c2",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k1_b11.npz",
+      "sha256": "c6aa3c429a9554571b393cb18f6533624543383425582e229dce8ffc782e813f",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k1_b11.npz",
+      "sha256": "17142b1f353eba3cc00365cf8a8a9b21a630d3c43aa6bdfa8fb5bbe2c89ab1da",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k0_b12.npz",
+      "sha256": "ff4033a00a66fa70f36f8b74b60ccec9767460d3ce82f389fef6e09a68071b09",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k0_b12.npz",
+      "sha256": "1149caa695ebdb59326c39366c2955ab4ad5d46a2117d01d9cec74061a7e0a03",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k0_b12.npz",
+      "sha256": "a2438560cea389dbe3ba0b8c52b95919ee699df0f81e8eefd3f0b9699cb38ae3",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k0_b12.npz",
+      "sha256": "a65b7267003be8a65155b724ec1212a7a896bd32ef3524226305763c456fb0c9",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k1_b12.npz",
+      "sha256": "33fa8f4646ee07996ccfe8e6484af83af2e8417818034f416f836726fa966901",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k1_b12.npz",
+      "sha256": "39179046b0aa3e9602da00acc3a55c6f2c11fd2b8e2e75311af0c9bf1f688f84",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k1_b12.npz",
+      "sha256": "b58ca15f5e58467527daae3476d411f2bc75db9faa4354d3ed1fb5e0a48c593c",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k1_b12.npz",
+      "sha256": "74b450761641728e91ad7fb92d60357ca192167074ce9c98cda335364f183c9d",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k0_b13.npz",
+      "sha256": "b99c23815edb89a99c8288ba0846eafd0fac318a5af193f29bc03bb68d221732",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k0_b13.npz",
+      "sha256": "7beac6b794de1f8744ade22c0677f4561b4877b47ad42a7334fa159ed044d280",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k0_b13.npz",
+      "sha256": "fd4e352a81586c482aa2238983e8652aefc4f537797805adb81b6c56218931c1",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k0_b13.npz",
+      "sha256": "d1d3f3f75d595009284efd40eb5d76057c858ad9077f468edfadf98c88754d4c",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k1_b13.npz",
+      "sha256": "524ce1f9570fbd3525b86f33a14f6e9250fe53db66408b4b0bb6f3d4195f68b5",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k1_b13.npz",
+      "sha256": "a733bfdc4052efca9bf11f24dee6af658f1d7efde33397801e6f788da1cf5d75",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k1_b13.npz",
+      "sha256": "75fc9d45a8404f322ea917f1daa9a522210b4ff4e0a76ada403c123a1b0a69c1",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k1_b13.npz",
+      "sha256": "76b1937400cae2e390a7813a4f57f45534160758c6785ca8cdb9cf2decb878b9",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k0_b14.npz",
+      "sha256": "747755a37b7f1e7dd84af19b9d5c5a39101c2b01975c456ad324cf0db4b0439e",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k0_b14.npz",
+      "sha256": "b174b000066ab764f999559f2abaf41420c8730fad0451b64504edc54d1e8eb0",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k0_b14.npz",
+      "sha256": "3a41720212abd4d0ff227cdccdabfb4dd0b5af653bc77395d22cad97be073f19",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k0_b14.npz",
+      "sha256": "4ac8f06659d74dde1a84d65daf2585069583fe9991c0c6a48d017c0d3f43c98a",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k1_b14.npz",
+      "sha256": "ae87e956b681e16049075bcc4f97de04a9b691edba32a639cb76d4a1448b1cd5",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k1_b14.npz",
+      "sha256": "80cbc73985d2140c26d02a2ae42bd624d96f521148aaaab8eca026cd2f024118",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k1_b14.npz",
+      "sha256": "8b71850f77ba0319afd4c357a9d90750ee3cbca3f0128f53cb1ed79be5ac2386",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k1_b14.npz",
+      "sha256": "d688682ea3bd9709b5a1cf6f4a24d2447e78354ec1a3f5978141af8bf5e3bbac",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k0_b15.npz",
+      "sha256": "5f0fb62a2e0f36b40a27b49d1aa62d726d50b3fc84dd6ef3645c56b676a7cb7c",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k0_b15.npz",
+      "sha256": "e3d3bf7addedfa497296c3737f5b07133a7947a77a9bf85a897366cc6beab13e",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k0_b15.npz",
+      "sha256": "805b8b1746fdc0492589216fed915ac22be7d5c4153d319454e19304c707660f",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k0_b15.npz",
+      "sha256": "62c471d17f455a98b88e9552abb483236e77843e0365495c15699fafe636a684",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s0_k1_b15.npz",
+      "sha256": "24ae7c498a79ff0346d83fff17b890fd0aa112585399713bca1c0f8ea1b49e56",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s0_k1_b15.npz",
+      "sha256": "bf20c640a905fa931fc57f20b224b81a92dd3080bcdd6b2c9ef9d1d16296750f",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c0_s1_k1_b15.npz",
+      "sha256": "25a2b900704e88bec9af7b996a9fd90061508a2c9548527542c0f12abc22a025",
+      "replicas": 8,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10P2\\preparation\\SYNTHETIC_pipeline_fixture\\production\\c1_s1_k1_b15.npz",
+      "sha256": "8a5857a2841b75f8813a900443e3e691a71cba8051bffc6dbe266d138accb6f3",
+      "replicas": 7,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    }
+  ],
+  "instrument_frame_comparisons": 4092,
+  "scalar_metric_summaries": 40,
+  "primary": [
+    {
+      "group": "c0_s0_k0",
+      "n": 128,
+      "matches": 2,
+      "upper": 0.06195636195230654,
+      "cap_met": null
+    },
+    {
+      "group": "c0_s0_k1",
+      "n": 128,
+      "matches": 2,
+      "upper": 0.06195636195230654,
+      "cap_met": null
+    },
+    {
+      "group": "c1_s0_k0",
+      "n": 128,
+      "matches": 2,
+      "upper": 0.06195636195230654,
+      "cap_met": null
+    },
+    {
+      "group": "c1_s0_k1",
+      "n": 128,
+      "matches": 2,
+      "upper": 0.06195636195230654,
+      "cap_met": null
+    }
+  ],
+  "charged_worker_seconds": 0,
+  "ceiling_overshoot_seconds": 0,
+  "dependencies": "Same author; shares reference/constants/NumPy/SciPy and earlier explicit integer reconstruction. Dense convolution/direct dots and separate classification/metric/statistical/CP-CDF-inversion paths, not P1/P2 measurement functions. Not external replication."
+}

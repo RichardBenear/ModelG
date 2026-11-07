@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "status": "FULL SYNTHETIC P2 PIPELINE QUALIFICATION PASS; NO STOCHASTIC PRODUCTION",
+  "elapsed_seconds": 19.321037899993826,
+  "total_preparation_allowance_seconds": 93.9344975000131,
+  "checks": [
+    "1024 algebraic paths/128jobs reconstructed;4096 direct instrument frames",
+    "Exact primary cap failure with2/128 matches per H group",
+    "Seeded retention125/128 and binomial-CDF-inverted intervals",
+    "Signed GXY projections/residuals/means/ranges/t summaries and reference/noise proxies",
+    "1023-path partial prefix retained; incomplete family not scored",
+    "Both descriptive plots/reports and complete-case backups retained"
+  ],
+  "data_scope": "All fixture paths are algebraic arrays with fixed seed labels only; no RNG draws or scientific trajectories. Complete and deliberately incomplete phases retained."
+}
