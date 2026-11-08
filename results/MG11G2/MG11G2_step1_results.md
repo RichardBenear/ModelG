@@ -47,3 +47,6 @@ All original/follow-up population, reaction, directed-hop and import arrays, ind
 ## Recommended next use
 
 Prepare a small deterministic pattern-response study with the active lattice and reaction laws fixed, matched environmental stocks/rates/contact roles, maintained/isolated-environment controls and explicit depletion measurements. Its graph choices, horizon, observables, numerical refinements and measured local budget should be specified and approved before production. Choose mixing scales based on the relevant nonlinear demand, not the G1 probe scale. Do not treat a fixed-template classification loss alone as particle death, given the earlier MG10 background-response findings.
+
+
+Retention verified: all22 original/follow-up raw/reference archives (50258bytes) published at1e10a7d6f46f5dfc494477ee7f4669fb02715bed; every blob matches its manifest SHA256/local bytes. Original MG087 source/data hashes unchanged, all pre-existing source files unchanged from signed-off G1 baseline. See retention_verified.json.
