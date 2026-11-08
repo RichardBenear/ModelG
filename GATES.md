@@ -2149,3 +2149,8 @@ PI: “i approve all of them. Go ahead witht he run.” Approved MG083 design/cr
 
 
 MG084 final qualification PASS: four held writer replays and complete/missing-B/missing-A/prefix/empty/valid-accounting law-failure audits passed in 66.623406 seconds (<300), no failures/retries. Full synthetic262144/prefix258176 algebraic paths are not scientific data. Exact approved registration saved in results/MG11G1/registration.json; source/job hashes frozen. Publish registration before production.
+
+
+## MG085 — MG11-G1 results (2026-11-08), PI closure pending
+
+COMPLETE CONNECTIVITY-SUPPLY ESTIMATION.64/64jobs,262144scientific paths+64excluded warmups. Primary B T4 bipartite-prism+.015182495 (1.518250percentage points), registered interval[.007453630,.022909648] above0; analytical prediction+.011529941.16/16endpoint CDF criteria supported, maxupper.015339591<.03. Separate128raw/state/source/seed/generator/CDF/beta/ledger audit PASS. No failures/timeouts/stops/retries/amendments. 353.770201worker-seconds=0.098270core-hours<1cap; end-to-end61.825802seconds. No active workers. Supports selected classical connectivity-dependent supply, not particles/native vacuum/energy/entanglement. Full raw/results publication approved, post-push verification follows; report results/MG11G1/MG11G1_results.md. PI closure separate.

@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "r1_g1_c1",
+    "resource": 1,
+    "network": 1,
+    "chunk": 1,
+    "reps": 4096,
+    "seed": 1434336454,
+    "warmup_seed": 2037647559
+  },
+  "reps": 4096,
+  "compute_seconds": 0.01723030023276806,
+  "io_seconds": 2.0149742998182774,
+  "elapsed_seconds": 2.181939300033264,
+  "sha256": "4f4257edb71a344c441d46a5b77176d0d449a3c4df8ff2beec6f19bbd1e90a7a",
+  "raw": "r1_g1_c1.npz",
+  "raw_check": {
+    "file": "results\\MG11G1\\production\\r1_g1_c1.npz",
+    "sha256": "4f4257edb71a344c441d46a5b77176d0d449a3c4df8ff2beec6f19bbd1e90a7a",
+    "replicas": 4096,
+    "checkpoints": 5,
+    "integer_reconstruction": true,
+    "closed_total": true
+  }
+}
