@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "source_hashes": {
+    "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+    "src/mg10p1.py": "ba9aa61c92d813fc48f56cc1683e457596f0152637daede07638f1308aaad45c",
+    "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+    "src/mg11n1_oracle.py": "c17dbb97854ef2d8f3c7bd5062067d8a128058f84b18dc7c0ece2b59f626a8a4",
+    "src/mg10p2.py": "38b001ec9a54765540d723d26d38d6de4dd77850d301c5c55da151cb19697c69",
+    "src/mg11n1_cases.py": "b7e97330df0558be4e9ecf18fde5ff1d60284af091fb47b917fa557ab967fef8",
+    "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b",
+    "src/mg11n1.py": "d3e06a1297263b1b7fa3696877599457b3df9e67c5f70cab5deed032f347c614",
+    "src/mg10_reservoir.py": "bddf8ba09bacaa5ed884a2794646d6a307eb58bac09010058e47998ee96aa31b",
+    "src/check_mg11n1.py": "c86a983a79cb7e7b322bea37c91dbcd696a318faa67e2b0f0f889a52bf6756d3",
+    "src/check_mg11n1_preparation.py": "f5f3bad46a3b783ee139f4170ddb9520117b847f1a3386d4d0538f558f333df2",
+    "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+    "spec/MG11N1_prerun.md": "c4a130fc2f67bf78440523025a0f621db89512761e038cc807f83f7bb58b3587",
+    "spec/MG11N1_proposal.md": "5608f8bace9487b4a08aba1de290c09018adf6b26ba67f8dc0b35320515d8dbe",
+    "src/qualify_mg11n1_pipeline.py": "5fb91d56a0e553566aedbfd1ba2616fe5195ac99a29b24affbe7cab9d0f40f39",
+    "src/prepare_mg11n1.py": "2cbef5bec54ede0cb4133265013fb6c785b5ef7d8111a3e946d603e292cce424",
+    "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+    "src/mg10d2.py": "d8b3cb7aebf23d3a93d3256b0fa122efd016eddbe0b0951f98ec6cded0c77d2b",
+    "src/mg11n1_stream.py": "74a89942747e9c1c7837397b124f010c69f6abe53d1f937e842b75fbde3cd752",
+    "src/mg10d1_pool.py": "ada3b015c0bd2ec05edd89f6a32671fe7ca6a2854894ae0fcfd1199d9c83f86c",
+    "src/run_mg11n1.py": "f87f5b7b87277fcde6f31e5b99ce829331ae718f96ba89afd43c2ebf461e85ee",
+    "src/evaluate_mg11n1.py": "54b944661f0bd54e31ec22e30cc9328f2ffb14a8a5e61e7b7ad0752fc8735170"
+  },
+  "elapsed_seconds": 18.769081500009634,
+  "held_stream_writer_replays": 5,
+  "synthetic_pass_fail_missing_prefix_empty": true,
+  "synthetic_full_paths": 131072,
+  "synthetic_prefix_paths": 127104,
+  "scope": "Held development seeds only; manufactured categorical transitions rounded deterministically and routed through valid edges, full-tiny static states, deliberate valid-accounting law failure. Algebraic pipeline fixtures are not scientific samples. Same author/shared laws/reference/libraries, not external replication."
+}

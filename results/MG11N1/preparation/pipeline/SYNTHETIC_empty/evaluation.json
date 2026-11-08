@@ -1,0 +1,428 @@
+{
+  "status": "INCOMPLETE N1 QUALIFICATION",
+  "complete": false,
+  "scientific_pass": false,
+  "jobs_complete": 0,
+  "paths_available": 0,
+  "expected_paths": 131072,
+  "records": {},
+  "groups": {
+    "(0, 0)": {
+      "n": 0,
+      "complete": false
+    },
+    "(1, 0)": {
+      "n": 0,
+      "complete": false
+    },
+    "(2, 0)": {
+      "n": 0,
+      "complete": false
+    },
+    "(3, 0)": {
+      "n": 0,
+      "complete": false
+    },
+    "(3, 1)": {
+      "n": 0,
+      "complete": false
+    }
+  },
+  "analytic_family_complete": false,
+  "two_sample_family_complete": false,
+  "analytic": [
+    {
+      "cell": 0,
+      "time": 0.25,
+      "n": 0,
+      "distance": null,
+      "epsilon": null,
+      "upper": null,
+      "margin": 0.03,
+      "passed": null,
+      "reference": [
+        0.005866247241566975,
+        0.06729479843393181,
+        0.8361307204080747,
+        0.0005705874189111477,
+        0.006545507504778548,
+        0.08132723528074892,
+        1.4611905274465011e-05,
+        0.00016762082805056987,
+        0.0020826709786629246
+      ]
+    },
+    {
+      "cell": 0,
+      "time": 0.5,
+      "n": 0,
+      "distance": null,
+      "epsilon": null,
+      "upper": null,
+      "margin": 0.03,
+      "passed": null,
+      "reference": [
+        0.018283420167337257,
+        0.10601620951787091,
+        0.7103392386286518,
+        0.003442129554301293,
+        0.019959150130366858,
+        0.13373207334761233,
+        0.00018023595579279186,
+        0.0010450961951920816,
+        0.007002446502874676
+      ]
+    },
+    {
+      "cell": 1,
+      "time": 0.25,
+      "n": 0,
+      "distance": null,
+      "epsilon": null,
+      "upper": null,
+      "margin": 0.03,
+      "passed": null,
+      "reference": [
+        0.7633739618067232,
+        0.07611657056415402,
+        0.0019826278067089326,
+        0.1532373542046562,
+        0.005219398017550175,
+        7.008760020742487e-05
+      ]
+    },
+    {
+      "cell": 1,
+      "time": 0.5,
+      "n": 0,
+      "distance": null,
+      "epsilon": null,
+      "upper": null,
+      "margin": 0.03,
+      "passed": null,
+      "reference": [
+        0.5885374686919602,
+        0.11636664040702524,
+        0.006307503688951993,
+        0.270771199304996,
+        0.017543834499764002,
+        0.0004733534073024041
+      ]
+    },
+    {
+      "cell": 2,
+      "time": 0.5,
+      "n": 0,
+      "distance": null,
+      "epsilon": null,
+      "upper": null,
+      "margin": 0.03,
+      "passed": null,
+      "reference": [
+        0.019254960076116698,
+        0.12679304817482415,
+        0.8510654302720976,
+        0.0028865614769615537
+      ]
+    },
+    {
+      "cell": 2,
+      "time": 1.0,
+      "n": 0,
+      "distance": null,
+      "epsilon": null,
+      "upper": null,
+      "margin": 0.03,
+      "passed": null,
+      "reference": [
+        0.05022321490239692,
+        0.1922127963615849,
+        0.7407595971572268,
+        0.01680439157879138
+      ]
+    }
+  ],
+  "two_sample": [
+    {
+      "time": 0.05,
+      "species": 0,
+      "node": 0,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.05,
+      "species": 0,
+      "node": 1,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.05,
+      "species": 1,
+      "node": 0,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.05,
+      "species": 1,
+      "node": 1,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.05,
+      "species": 2,
+      "node": 0,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.05,
+      "species": 2,
+      "node": 1,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.05,
+      "species": 3,
+      "node": 0,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.05,
+      "species": 3,
+      "node": 1,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.05,
+      "species": 4,
+      "node": 0,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.05,
+      "species": 4,
+      "node": 1,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.05,
+      "species": 5,
+      "node": 0,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.05,
+      "species": 5,
+      "node": 1,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.05,
+      "species": 6,
+      "node": 0,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.05,
+      "species": 6,
+      "node": 1,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.1,
+      "species": 0,
+      "node": 0,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.1,
+      "species": 0,
+      "node": 1,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.1,
+      "species": 1,
+      "node": 0,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.1,
+      "species": 1,
+      "node": 1,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.1,
+      "species": 2,
+      "node": 0,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.1,
+      "species": 2,
+      "node": 1,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.1,
+      "species": 3,
+      "node": 0,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.1,
+      "species": 3,
+      "node": 1,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.1,
+      "species": 4,
+      "node": 0,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.1,
+      "species": 4,
+      "node": 1,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.1,
+      "species": 5,
+      "node": 0,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.1,
+      "species": 5,
+      "node": 1,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.1,
+      "species": 6,
+      "node": 0,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    },
+    {
+      "time": 0.1,
+      "species": 6,
+      "node": 1,
+      "distance": null,
+      "epsilon_each": null,
+      "upper": null,
+      "margin": 0.08,
+      "passed": null
+    }
+  ],
+  "formal_passed": true
+}

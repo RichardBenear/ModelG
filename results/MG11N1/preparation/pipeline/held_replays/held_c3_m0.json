@@ -1,0 +1,24 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "held_c3_m0",
+    "cell": 3,
+    "engine": 0,
+    "reps": 256,
+    "seed": 1368488227,
+    "warmup_seed": 3552013932
+  },
+  "raw": "held_c3_m0.npz",
+  "sha256": "b49558bab554917d893b30ff8ea37216290938d136b10cb63eadaa35a77c1a65",
+  "replicas": 256,
+  "compute_seconds": 0.0007590001914650202,
+  "raw_check": {
+    "file": "results\\MG11N1\\preparation\\pipeline\\held_replays\\held_c3_m0.npz",
+    "sha256": "b49558bab554917d893b30ff8ea37216290938d136b10cb63eadaa35a77c1a65",
+    "replicas": 256,
+    "checkpoints": 3,
+    "integer_reconstruction": true,
+    "closed_total": true
+  },
+  "finished": "2026-11-08T20:35:22.230415+00:00"
+}
