@@ -1,0 +1,150 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "serial_s1_k0",
+        "start": 1,
+        "step": 0
+      },
+      "old_wall": 3.9179923000046983,
+      "new_wall": 3.8687497000209987,
+      "old_cpu": 3.875,
+      "new_cpu": 3.828125,
+      "ratio_new_old": 0.9874316751506529,
+      "byte_identical": true,
+      "sha256": "b56e98d46d651603dd77475745ab2f452a27fa5acbca5050e1001fe959060f9d"
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "parallel_s0_k0_r0",
+        "start": 0,
+        "step": 0,
+        "rep": 0
+      },
+      "old_wall": 5.038131699897349,
+      "new_wall": 4.944320400012657,
+      "old_cpu": 5.03125,
+      "new_cpu": 4.9375,
+      "ratio_new_old": 0.9813797444225995,
+      "byte_identical": true,
+      "sha256": "1c8cac239417c03eff1fb8375d25f480a04f2db61cda2382f7678d4a07fe42a5"
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "parallel_s1_k0_r0",
+        "start": 1,
+        "step": 0,
+        "rep": 0
+      },
+      "old_wall": 4.980691400007345,
+      "new_wall": 4.933424000046216,
+      "old_cpu": 4.953125,
+      "new_cpu": 4.921875,
+      "ratio_new_old": 0.9905098717898766,
+      "byte_identical": true,
+      "sha256": "b56e98d46d651603dd77475745ab2f452a27fa5acbca5050e1001fe959060f9d"
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "parallel_s0_k1_r0",
+        "start": 0,
+        "step": 1,
+        "rep": 0
+      },
+      "old_wall": 7.556394300074317,
+      "new_wall": 7.1418969999067485,
+      "old_cpu": 7.484375,
+      "new_cpu": 7.078125,
+      "ratio_new_old": 0.9451461525553938,
+      "byte_identical": true,
+      "sha256": "b11c7d164655a52746927af5cc2b9aa3a8abe115e6380dd188bb3ba7fb0accd4"
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "parallel_s1_k1_r0",
+        "start": 1,
+        "step": 1,
+        "rep": 0
+      },
+      "old_wall": 7.534381400095299,
+      "new_wall": 7.312868000008166,
+      "old_cpu": 7.53125,
+      "new_cpu": 7.25,
+      "ratio_new_old": 0.970599656650733,
+      "byte_identical": true,
+      "sha256": "6f988d2abec1502f3d1ae84575bb04345e287e1e2e45ecf799c6663b7eb96fc3"
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "parallel_s0_k0_r1",
+        "start": 0,
+        "step": 0,
+        "rep": 1
+      },
+      "old_wall": 4.934393599978648,
+      "new_wall": 5.018263899954036,
+      "old_cpu": 4.921875,
+      "new_cpu": 4.953125,
+      "ratio_new_old": 1.0169970834867634,
+      "byte_identical": true,
+      "sha256": "1c8cac239417c03eff1fb8375d25f480a04f2db61cda2382f7678d4a07fe42a5"
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "parallel_s1_k0_r1",
+        "start": 1,
+        "step": 0,
+        "rep": 1
+      },
+      "old_wall": 4.911616099998355,
+      "new_wall": 4.9955604999559,
+      "old_cpu": 4.875,
+      "new_cpu": 4.984375,
+      "ratio_new_old": 1.0170909937276191,
+      "byte_identical": true,
+      "sha256": "b56e98d46d651603dd77475745ab2f452a27fa5acbca5050e1001fe959060f9d"
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "parallel_s0_k1_r1",
+        "start": 0,
+        "step": 1,
+        "rep": 1
+      },
+      "old_wall": 7.872603100026026,
+      "new_wall": 7.33399139996618,
+      "old_cpu": 7.84375,
+      "new_cpu": 7.203125,
+      "ratio_new_old": 0.9315840398383521,
+      "byte_identical": true,
+      "sha256": "b11c7d164655a52746927af5cc2b9aa3a8abe115e6380dd188bb3ba7fb0accd4"
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "parallel_s1_k1_r1",
+        "start": 1,
+        "step": 1,
+        "rep": 1
+      },
+      "old_wall": 7.854045500047505,
+      "new_wall": 7.4145654999883845,
+      "old_cpu": 7.859375,
+      "new_cpu": 7.359375,
+      "ratio_new_old": 0.9440441234957879,
+      "byte_identical": true,
+      "sha256": "6f988d2abec1502f3d1ae84575bb04345e287e1e2e45ecf799c6663b7eb96fc3"
+    }
+  ],
+  "charged_seconds": 137.00625460001174,
+  "scope": "Held all-one development seed replay, exact old/new data/stats equality; wall vs process CPU measured, no production paths or new scientific RNG streams used"
+}

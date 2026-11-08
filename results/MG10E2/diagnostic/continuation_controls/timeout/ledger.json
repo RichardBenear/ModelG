@@ -1,0 +1,27 @@
+{
+  "records": [
+    {
+      "status": "TIMEOUT",
+      "job": {
+        "id": "timeout",
+        "delay": 2.0
+      },
+      "id": "timeout",
+      "charged_worker_seconds": 0.3554708000738174,
+      "returncode": 1,
+      "termination_reason": "TIMEOUT"
+    }
+  ],
+  "ceiling": 30,
+  "prior_charge": 0,
+  "poll_seconds": 0.05,
+  "charged_worker_seconds": 0.3554708000738174,
+  "inflight_worker_seconds": 0,
+  "pending_ids": [],
+  "active_ids": [],
+  "stop_reason": "TIMEOUT",
+  "admission_pause": null,
+  "workers": 1,
+  "threads_per_library": 1,
+  "max_observed_poll_gap_seconds": 0.050619899993762374
+}

@@ -1,0 +1,38 @@
+{
+  "records": [
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "fast",
+        "delay": 1.0
+      },
+      "id": "fast",
+      "charged_worker_seconds": 1.3691644000355154,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "inflight",
+        "delay": 2.0
+      },
+      "id": "inflight",
+      "charged_worker_seconds": 2.3653277000412345,
+      "returncode": 0
+    }
+  ],
+  "ceiling": 30,
+  "prior_charge": 0,
+  "poll_seconds": 0.05,
+  "charged_worker_seconds": 3.73449210007675,
+  "inflight_worker_seconds": 0,
+  "pending_ids": [
+    "undispatched"
+  ],
+  "active_ids": [],
+  "stop_reason": "ADMISSION STOP: FORECAST; INFLIGHT DRAINED",
+  "admission_pause": "ADMISSION STOP: FORECAST; INFLIGHT DRAINED",
+  "workers": 2,
+  "threads_per_library": 1,
+  "max_observed_poll_gap_seconds": 0.05067929998040199
+}

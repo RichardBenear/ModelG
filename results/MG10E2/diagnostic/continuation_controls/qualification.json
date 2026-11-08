@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "admission_drains_complete_jobs": true,
+  "hard_cap_terminates": true,
+  "timeout_terminates": true,
+  "failure_stops": true,
+  "exact_prefix_proof": {
+    "original_prefix_sha256": "22298eb6ccded10840809e002afdff636cf902b15d3750f352464d45e9b9a483",
+    "verified_frames": 3,
+    "exact_replay": true
+  },
+  "mismatch_rejected_before_save": true,
+  "elapsed_seconds": 9.49461070005782,
+  "scope": "Synthetic controller workers and held-development stream; no scientific restart"
+}

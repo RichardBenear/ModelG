@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\rbene\.codex\.chatgpt-projects\g-p-6ae095a6c94c819198efcd6d84f02c03\archive_work\ModelG_MG10\src\qualify_mg10e2c1_controls.py", line 50, in <module>
+    if job.get('fail'):raise RuntimeError('Deliberate synthetic failure')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Deliberate synthetic failure

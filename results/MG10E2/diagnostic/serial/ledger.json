@@ -1,0 +1,33 @@
+{
+  "records": [
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "serial_s1_k0",
+        "start": 1,
+        "step": 0
+      },
+      "old_wall": 3.9179923000046983,
+      "new_wall": 3.8687497000209987,
+      "old_cpu": 3.875,
+      "new_cpu": 3.828125,
+      "ratio_new_old": 0.9874316751506529,
+      "byte_identical": true,
+      "sha256": "b56e98d46d651603dd77475745ab2f452a27fa5acbca5050e1001fe959060f9d",
+      "id": "serial_s1_k0",
+      "charged_worker_seconds": 10.27237340004649,
+      "returncode": 0
+    }
+  ],
+  "ceiling": 300,
+  "prior_charge": 0,
+  "poll_seconds": 0.25,
+  "charged_worker_seconds": 10.27237340004649,
+  "inflight_worker_seconds": 0,
+  "pending_ids": [],
+  "active_ids": [],
+  "stop_reason": null,
+  "workers": 1,
+  "threads_per_library": 1,
+  "max_observed_poll_gap_seconds": 0.2506450000219047
+}

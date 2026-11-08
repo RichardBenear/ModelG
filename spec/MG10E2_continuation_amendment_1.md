@@ -1,0 +1,23 @@
+# MG075 — Proposed E2-C1 continuation amendment1
+
+Status: DRAFT, PI approval pending. Richard authorized diagnosis/amendment preparation, not a new numerical ceiling. Original MG074 E2 remains INCOMPLETE RESTORATION ESTIMATION. Scientific endpoints/seed matrix/denominators/source law/time steps/arms/windows/inference unchanged. No original record overwritten or rescored. Public E2 results/full raw retention already approved.
+
+## What changes and why
+
+The original forecast policy was followed but prematurely terminated7 active jobs at post23.75..24.75 when another branch finished. It had spent5.452379core-hours, not exhausted40. First-wave simulation throughput was much lower than the short-state forecast; nine held short all-one old/E2 replay pairs are bit-identical, similar timing, and consume nearly all wall time as process CPU. This does not identify the production hardware/power/scheduling cause, nor prove all state-dependent cost effects absent. Zero adaptive reductions exclude timestep explosion. Completed branch computation dominated elapsed (~95.5%), so storage was not the main cause.
+
+New continuation epoch E2-C1: reuse32 complete parents and1 complete branch by verified copy/reference, all original hashes retained. Replay7 interrupted branches from original parent/seed on the original quarter grid. An atomic-write prefix guard must reproduce every saved snapshot/counter and metadata bit-for-bit, and final saved stats exactly; verify original prefix hash unchanged. Do not reseed from a state checkpoint: no original RNG state was saved. Stop whole continuation on any mismatch. Run120 unstarted jobs at their original registered seeds. Full127 future trajectories and replay work are charged. No path chosen/replaced because of its response. Original32+128 scientific matrix remains the analysis denominator; all reused/new files resolved by explicit provenance manifest. Original incomplete report remains; combined continuation gets its own report/audit/PI closure.
+
+## Revised budget, not an authorization
+
+Maximum of all8 first-wave charged-seconds/last-time ratios54.150942seconds/model-unit. Each remaining coarse job forecast25*maximum*1.25+15=1707.216928seconds; fine job2times base cost before the25% allowance plus15=3399.433856seconds. The factor2 reflects twice as many nominal numerical steps, not observed fine-branch qualification. No fine scientific branch was run. All127 full jobs including7 replays forecast90.310676core-hours. Add original5.452379=95.763055aggregate core-hours. About11.288834remaining hours at8workers before imbalance, a conservative estimate not a late-state bound. No claim the forecast is guaranteed.
+
+Proposed NEW AGGREGATE cap144core-hours (518400worker-seconds), inclusive of original19628.563985worker-seconds. This supersedes40 only after explicit PI approval; it is not144 additional hours. Forecast95.763055<=108(75% cap). At most8 local workers/librarythreads1, .25second owned polling. New per-job timeout5400seconds, including full replay; no automatic retry. Original charge carried into continuation controller; reusable data cost is never erased. No further parents rerun. Require4GBfree and retain all original/new partial/full checkpoint/progress/error/manifest/source/environment/ledger files. These are local simulation CPU costs, not assistant-credit estimates.
+
+## Forecast dispatch and hard stopping
+
+New versioned controller, historical controller unchanged. If remaining forecast exceeds75% remaining budget, latch an admission stop and dispatch no new jobs; allow already active jobs to finish, subject to hard aggregate cap, per-job timeout, worker failure and prefix mismatch, which still terminate the batch. Stop after active jobs drain; preserve all outputs. No automatic admission restart/retry. Synthetic tests prove admission drain plus hard/timeout/failure termination. Exact-prefix guard tested through actual atomic writer on held development data and rejects a deliberately corrupted input before save. Same author/shared frozen event kernel/reference/library dependencies; not external replication.
+
+## Before any continuation science
+
+PI approves new144aggregate cap,5400/job timeout and dispatch-drain amendment. Freeze/qualify final continuation driver, resolved parent/reused-branch manifest, source/registration guards, aggregate ledger/evaluator/separate checker and complete/incomplete mixed-epoch pipeline. Commit/push all hashes/source/spec/registration and original provenance before launching. No original scientific path replayed during current diagnosis. Public results/full raw archive retention remains authorized; verify new published hashes afterward. Scientific closure separate. No new stage automatic.
