@@ -2,7 +2,7 @@
 
 E2-C1 shows that restoring local A supply produces a modest return of the seed-associated reference-like X signal compared with leaving supply shut off, with both numerical steps supporting the same positive direction. The return falls well short of the unchanged-supply baseline in the registered fixed-origin observable, and most of the large raw signal after restoration also appears in unseeded controls. This strengthens the picture of patterns interacting with their resource environment while showing why background controls matter. It does not establish full recovery, survival of the same particle, or quantum memory; movement and deformation remain relevant, and the original stopped E2 record is preserved separately.
 
-Status: **COMPLETE RESTORATION ESTIMATION**; separate audit PASS; PI closure pending. Original E2 remains INCOMPLETE as recorded, not rescored.
+Status: **CLOSED — COMPLETE RESTORATION ESTIMATION**; separate audit PASS; PI sign-off2026-11-08 (MG078): “i sign off”. Original E2 remains INCOMPLETE as recorded, not rescored.
 
 ## Registered primary result
 
@@ -36,4 +36,4 @@ The full evaluation retains common-X-position fits, coupled-field residuals, pos
 
 Continuation elapsed174.610150minutes (~2hours55minutes), finished November8 at12:02 Mountain. Continuation charge22.911451core-hours; original5.452379 included, aggregate**28.363830core-hours** versus144ceiling. The conservative~11h17forecast was much longer than observed; throughput recovered relative to the earlier stopped batch, but its precise hardware/environment cause remains unproven. No scientific law, numerical step, seed, endpoint or denominator changed to obtain speed or outcome.
 
-Full160 raw archives356072369bytes plus metadata/evaluation/audit retained; public publication explicitly approved, remote verification recorded separately. Original E2 source/registration/incomplete report/40 raw archives remain unchanged. Public archive verification and PI closure follow; no next study automatically authorized.
+Full160 raw archives356072369bytes plus metadata/evaluation/audit retained; public publication explicitly approved, remote verification recorded separately. Original E2 source/registration/incomplete report/40 raw archives remain unchanged. Public archive verification is complete; PI closure recorded as MG078. No next study automatically authorized.
