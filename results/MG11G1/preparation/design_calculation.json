@@ -1,0 +1,31 @@
+{
+  "scope": "Analytical pre-Monte-Carlo design, not observed outcomes. Graphs/T4/rates fixed before calculation; R65536 selected afterward for primary precision.",
+  "predictions": {
+    "0": {
+      "probabilities": [
+        0.10727976365264187,
+        0.11077896612488998
+      ],
+      "bipartite_minus_prism": 0.0034992024722481085
+    },
+    "1": {
+      "probabilities": [
+        0.2578978475936651,
+        0.26942778887430674
+      ],
+      "bipartite_minus_prism": 0.011529941280641665
+    }
+  },
+  "primary_design_rounded_counts": [
+    16902,
+    17657
+  ],
+  "primary_design_interval": {
+    "mean": 0.0115203857421875,
+    "ci": [
+      0.003789810847045494,
+      0.019249661478977664
+    ],
+    "scope": "At least95% joint two-group coverage from two97.5% two-sided exact binomial intervals; B primaryT4 only, no full secondary family coverage"
+  }
+}
