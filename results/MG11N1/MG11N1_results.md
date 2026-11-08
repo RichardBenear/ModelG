@@ -2,7 +2,7 @@
 
 MG11-N1 qualifies the new fixed environmental-network machinery within its registered small-system scope: resources move between reservoir nodes and reach local reactions with the expected endpoint probabilities, while every transfer and reaction preserves the complete token ledger. All analytical comparisons and the comparison with a separately written simulator passed. Together with the declared disconnected, continuum and linear mixing/capacity checks, this gives the project a tested foundation for studying how environmental connectivity affects supply. It does not yet show persistent particles on the network, full nonlinear fast-mixing recovery, emergent vacuum geometry, physical energy or quantum entanglement.
 
-Status: **QUALIFIED WITHIN REGISTERED N1 SCOPE**; separate audit PASS; PI closure pending. Registered criteria/denominators unchanged.
+Status: **CLOSED — QUALIFIED WITHIN REGISTERED N1 SCOPE**; separate audit PASS; PI sign-off2026-11-08 (MG082): “i sign off on MG11-N1”. Registered criteria/denominators unchanged.
 
 ## Registered distribution results
 
@@ -27,4 +27,4 @@ Separate audit reconstructed every population from reaction/active-hop/environme
 
 Production started2026-11-08T20:37:55.413779+00:00, finished2026-11-08T20:38:14.182665+00:00 (November8~13:38 Mountain). Elapsed through automatic audit**18.769seconds**. Owned production charge**105.096124worker-seconds = 0.029193core-hours**, below1-core-hour ceiling. Eight workers maximum, numerical threads1, no stop. This was deliberately a tiny-system qualification, not an hours-long particle experiment.
 
-All64raw archives(main32+warm32),195MBuncompressed main array bound, full configuration/edge/state/event/counter/seed/source/environment records, progress/ledger/probability tables and independent audit retained. Public publication explicitly PI-approved; published blob/hash verification recorded separately. Earlier MG10 results and stopped-run records unchanged. PI scientific closure remains separate; no next production automatically authorized.
+All64raw archives(main32+warm32),195MBuncompressed main array bound, full configuration/edge/state/event/counter/seed/source/environment records, progress/ledger/probability tables and independent audit retained. Public publication explicitly PI-approved; published blob/hash verification recorded separately. Earlier MG10 results and stopped-run records unchanged. PI scientific closure recorded as MG082; no next production authorized.
