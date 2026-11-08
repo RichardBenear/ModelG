@@ -930,3 +930,8 @@ Inserted the exact one-paragraph summary Richard approved into P3 results. His c
 ## MG069 — Prepare controlled resource-location intervention (2026-11-07)
 
 Prepared MG10-E1 draft and froze/pushed preparation source at26a5627 before qualification. Source-rate gate, not deleted stock/edge: local and remote51-node A shutoffs, uniform.898 and unchanged control, with matched H backgrounds.32 fixed-T5 parents,128 forks,T20,8 balanced blocks/step and two steps; fixed-origin X primary interaction. Qualification/separate raw/statistical/fork audits PASS, all preparation data retained. Measured22.642613core-hour forecast/~2.83hours on8 fits proposed NEW36-core-hour cap; PI decision required. No scientific production or favorable-effect estimate. Final production implementation/pipeline audit and registration follow approval; P3 remains closed and unchanged.
+
+
+## MG070 — PI approves E1 and authorizes production
+
+Richard: “I approve the E1 study. Proceed running it.” Approved MG069 intervention design and36-core-hour cap unchanged. Final streamed driver, full/prefix/missing balanced-block analysis and separate raw/projection/statistical checker prepared; held-development replay and algebraic pipeline qualification precedes exact frozen registration/push/production. No new scientific samples yet. External review not requested.
