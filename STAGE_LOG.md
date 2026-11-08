@@ -944,3 +944,5 @@ MG070 E1 PRODUCTION START: 2026-11-08T03:04:22.395260+00:00; registration1249d0a
 ## MG071 — E1 complete, resource-location interaction supported (2026-11-08)
 
 32 parents/128 branches complete, separate160 raw/field/fork/statistical checks pass. Both steps show negative registered seed-by-location primary intervals; all16 block contrasts negative. Report begins with required project-level contribution/limits paragraph. Local A delivery matters for seeded reference-field response beyond unseeded forcing, without particle death/physical-source/entanglement claims. Production19.808474core-hours under36; no errors/retry/criteria amendment. All full raw decision inputs retained; publish/verify archive next. PI closure separate.
+
+MG071 PUBLICATION BLOCK: local commit334caca contains complete results and160 raw archives (290504596bytes). Pull was current. Auto-review rejected push to public origin/main, stating run approval did not clearly authorize public exposure of full possibly unpublished dataset. No push retry/workaround; PI permission requested. Local audit/data complete and preserved, remote publication/verification pending.
