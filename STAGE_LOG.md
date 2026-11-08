@@ -1002,3 +1002,8 @@ MG078 PI CLOSURE (2026-11-08): Richard: “i sign off”, following completed E2
 ## MG079 — Build fixed Environmental Network qualification
 
 MG079 ENVIRONMENTAL NETWORK DEVELOPMENT: PI authorized building test. MG11-N1 DRAFT fixed symmetric/equal-volume A/B graph and finite closed contacts built, no active-lattice change/replenishment. Exact small-system SSA and continuum/linear limits;8grouped assertions/15physical raw plus deterministic direct checks PASS, source2cf1358 frozen before development, no failure/retry/tuning. Planned32jobs/131072paths,3analytic endpoint laws+independent full-tiny SSA population laws, frozen DKW margins/families.64prospective+15dev streams distinct/disjoint. Development19.686674worker-seconds, total allowance24.906960<900. Forecast.090118core-hours/~1minute8workers, proposed NEW1hour cap and public results/full raw retention pending PI;195035136byte array bound. No scientific production/old rescore or particle/full-lattice stochastic/native-vacuum/entanglement claim; final production/pooling/incomplete audit registration remains after approval.
+
+
+## MG080 — PI approves Environmental Network qualification
+
+Richard: “yes, i approve of all those items”, confirming fixed network model,criteria,1-core-hour local cap and public results/full raw archive. Scientific matrix/thresholds/seeds unchanged from MG079. Final atomic128pathstream/writer, pooling, sortedCDF/joint-generator audit and pass/fail/missing/prefix/empty algebraic pipeline qualification prepared before registration/sampling. No scientific N1 sample drawn yet. External review not requested.
