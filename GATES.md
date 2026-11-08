@@ -2146,3 +2146,6 @@ MG083 GEOMETRY-SUPPLY TEST DEVELOPMENT: PI authorized writing tests after N1clos
 ## MG084 — MG11-G1 approval and prospective execution (2026-11-08)
 
 PI: “i approve all of them. Go ahead witht he run.” Approved MG083 design/criteria, one core-hour production cap and public full raw/results publication. Frozen spec/MG11G1_proposal.md plus spec/MG11G1_prerun.md govern. Final pipeline qualification (300-second separate allowance, held streams/algebraic fixtures only) precedes registration and scientific draws. 64jobs/262144paths, max8workers/thread1, no retry. Primary B T4 contrast and sixteen endpoint-law criteria unchanged. Commit/push source and qualification plan before tests; exact registration pushed before production. Scientific closure remains PI decision.
+
+
+MG084 final qualification PASS: four held writer replays and complete/missing-B/missing-A/prefix/empty/valid-accounting law-failure audits passed in 66.623406 seconds (<300), no failures/retries. Full synthetic262144/prefix258176 algebraic paths are not scientific data. Exact approved registration saved in results/MG11G1/registration.json; source/job hashes frozen. Publish registration before production.

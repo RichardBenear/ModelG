@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "source_hashes": {
+    "src/qualify_mg11g1_pipeline.py": "e01a54b3d2fcc42b193ab0630e74d1311d791d9d795df2b298ca1be44eb3513f",
+    "src/check_mg11n1_preparation.py": "f5f3bad46a3b783ee139f4170ddb9520117b847f1a3386d4d0538f558f333df2",
+    "spec/MG11G1_prerun.md": "df633fbbca4e09c8c7bfe43431891b5d22e15f906c5be6b0d9ae3b16d30dd175",
+    "src/mg11n1.py": "d3e06a1297263b1b7fa3696877599457b3df9e67c5f70cab5deed032f347c614",
+    "src/evaluate_mg11g1.py": "a394b523fd7174437d0a4247c67a85f736365e194c6681de0afa3a67851c72e1",
+    "spec/MG11G1_proposal.md": "552a05b5c782c41f20e02db295e98c01cdebaa6a75ee84ec71a40e10ef32bd3c",
+    "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+    "src/run_mg11g1.py": "4ce935208a3311f1c8b97daa87fa5c0841bce623c8588ff6e454728a084bc115",
+    "src/mg10d1_pool.py": "ada3b015c0bd2ec05edd89f6a32671fe7ca6a2854894ae0fcfd1199d9c83f86c",
+    "src/prepare_mg11g1.py": "e1950972088a3508e6eb8873dad554c58639dff094e847145cc3cecc69c0ed26",
+    "src/check_mg11g1.py": "4dc141a2d27bd87ec35d66d3d9c58e28d6480d0786b05f52b11920e666e327ef",
+    "src/mg11g1_sample.py": "53b56a2cc3dd870c2950586c541cb23ac6f0b3fc59a71c7ea08e6483d87d277f",
+    "src/mg11g1.py": "12b60d112de13bc89e0f7a320e1fbe2f127423395c9667e2ce266ae24b135479",
+    "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+    "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+    "src/mg11n1_stream.py": "74a89942747e9c1c7837397b124f010c69f6abe53d1f937e842b75fbde3cd752",
+    "src/check_mg11g1_preparation.py": "0b6bebdfab83fb1c06080c6adb912c016e8f289e0879dd11c60aba0c4fe8af47"
+  },
+  "elapsed_seconds": 66.62340599996969,
+  "held_stream_replays": 4,
+  "synthetic_full_paths": 262144,
+  "synthetic_prefix_paths": 258176,
+  "complete_missing_B_missing_A_prefix_empty_law_failure": true,
+  "scope": "Held development replays and deterministic rounded Markov transitions routed through valid graph edges; not scientific samples, not external replication. Chunkwise physical-array processing."
+}
