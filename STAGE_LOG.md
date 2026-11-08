@@ -913,3 +913,8 @@ P3 draft/preparation complete:64 H/S/two-step full-maintained paths toT25,20-uni
 Approved P3 protocol/24-hour cap. Full and partial synthetic pipeline, actual quarter-stream equivalence to held development data and separate direct temporal/average/statistical audits pass.64 fresh individually seeded baseline paths, H/S/two steps,R16,T25/101frames; fixed0..20 averages all completed paths, conditional aligned S with initial20 continuity only. Exact registration/source/reference/streams/budgets/retention frozen; push before science. Automatic report/audit after stop and full upload/PI closure later. Earlier results unchanged.
 
 MG066 P3 PRODUCTION START: 2026-11-07T21:37:04.563159+00:00; registrationd0e9fcc pushed before science. Eight owned local workers and quarter checkpoints verified, no controller stop.64 fixed paths,T25,24-hour aggregate cap/1800seconds path, no duplicate/restart. Automatic report/audit after stop; full archive/PI closure later.
+
+
+## MG067 — P3 complete and independently inspected
+
+64/64 complete, initial S20-unit events32/32 total and Hany20 events0/32 total, inference per-step R16 only. One fine S censors at22.75 after reaching20. Independent6464 frames/96 temporal averages/raw/statistical audit PASS. Temporal residual averaging improves G visibility~4.4-4.5, without sqrt81 or physical survival/lineage claims; all aligned eligibility/uncertainties retained. Full archive prepared for publication/verification. PI closure separate; no next production registered.

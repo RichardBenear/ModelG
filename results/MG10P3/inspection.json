@@ -1,0 +1,57 @@
+{
+  "status": "INSPECTED COMPLETE TEMPORAL ESTIMATION; no criteria change",
+  "elapsed_minutes": 90.29615531666667,
+  "production_core_hours": 11.460091495527724,
+  "seeded_events20": 32,
+  "seeded_n": 32,
+  "unseeded_events20": 0,
+  "unseeded_n": 32,
+  "later_censored_initial_signals": [
+    {
+      "path": "s1_k1_r3",
+      "matched_through": 22.5,
+      "first_unresolved": 22.75,
+      "reason": "NO_REFERENCE_MATCH",
+      "event20": true
+    }
+  ],
+  "aligned_group_metrics": {
+    "s1_k0": {
+      "n": 16,
+      "projection": [
+        0.9788117883843093,
+        0.990865496871052,
+        0.9888213891021
+      ],
+      "residual_rms": [
+        0.010377495641444603,
+        0.09163394703360347,
+        0.00959777895595753
+      ],
+      "gain": [
+        4.405010806092143,
+        1.980498644411528,
+        2.58196976326471
+      ]
+    },
+    "s1_k1": {
+      "n": 16,
+      "projection": [
+        0.978572474855324,
+        0.987021501707953,
+        0.9844193212905988
+      ],
+      "residual_rms": [
+        0.010161433011369986,
+        0.09454454426826031,
+        0.009732514664530312
+      ],
+      "gain": [
+        4.5014487610690335,
+        1.949068022629933,
+        2.5626559869493564
+      ]
+    }
+  },
+  "interpretation": "Counts across steps are totals only; inference remains per-cell exact intervals. Observed reference-field persistence, not physical-particle survival. Gain is an empirical residual ratio, not effective independent sample count."
+}

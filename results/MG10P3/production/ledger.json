@@ -1,0 +1,1679 @@
+{
+  "records": [
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k0_r1",
+        "start": 0,
+        "step": 0,
+        "replicate": 1,
+        "seed": 229600260,
+        "warmup_seed": 4143352038
+      },
+      "raw": "s0_k0_r1.npz",
+      "raw_sha256": "5852851cf0dd1fcb08a8d02129d521c6eeb4289db211e24b6efeaf454009597a",
+      "checkpoints": 101,
+      "simulation_seconds": 488.54329539998434,
+      "elapsed_seconds": 509.4669072999968,
+      "finished": "2026-11-07T21:45:36.575680+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k0_r1",
+      "charged_worker_seconds": 512.2062916000141,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k0_r0",
+        "start": 0,
+        "step": 0,
+        "replicate": 0,
+        "seed": 3931711194,
+        "warmup_seed": 722008050
+      },
+      "raw": "s0_k0_r0.npz",
+      "raw_sha256": "2095fad2efd14eb9a5c6149e15f121527fa0e16f54047dca4e602331672e2132",
+      "checkpoints": 101,
+      "simulation_seconds": 490.14006560039707,
+      "elapsed_seconds": 511.15173769998364,
+      "finished": "2026-11-07T21:45:38.166180+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k0_r0",
+      "charged_worker_seconds": 513.7431844999664,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k0_r1",
+        "start": 1,
+        "step": 0,
+        "replicate": 1,
+        "seed": 589675163,
+        "warmup_seed": 2014421604
+      },
+      "raw": "s1_k0_r1.npz",
+      "raw_sha256": "e154dbd94cc71d8c619f73388aff79439cb05fc328578b2d9fb1e262eb7fe26f",
+      "checkpoints": 101,
+      "simulation_seconds": 490.42508139961865,
+      "elapsed_seconds": 511.80299120000564,
+      "finished": "2026-11-07T21:45:38.904849+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k0_r1",
+      "charged_worker_seconds": 514.7049657999887,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k0_r0",
+        "start": 1,
+        "step": 0,
+        "replicate": 0,
+        "seed": 2097673990,
+        "warmup_seed": 422770698
+      },
+      "raw": "s1_k0_r0.npz",
+      "raw_sha256": "0abcae1af74d52b5f3c65c7b17bdd4d14023b29f6fca033401bbbd45fcccfa92",
+      "checkpoints": 101,
+      "simulation_seconds": 491.9678066998604,
+      "elapsed_seconds": 512.8992306999862,
+      "finished": "2026-11-07T21:45:39.927947+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k0_r0",
+      "charged_worker_seconds": 515.7375478999456,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k1_r1",
+        "start": 0,
+        "step": 1,
+        "replicate": 1,
+        "seed": 2990310057,
+        "warmup_seed": 448962510
+      },
+      "raw": "s0_k1_r1.npz",
+      "raw_sha256": "2af556d4c298e1b53a723264a201a886be7b3ac1e42578dcf769ef9414aba36b",
+      "checkpoints": 101,
+      "simulation_seconds": 760.7111419001012,
+      "elapsed_seconds": 781.5571046000114,
+      "finished": "2026-11-07T21:50:08.661139+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k1_r1",
+      "charged_worker_seconds": 784.3474081999739,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k1_r0",
+        "start": 0,
+        "step": 1,
+        "replicate": 0,
+        "seed": 189398297,
+        "warmup_seed": 2503983380
+      },
+      "raw": "s0_k1_r0.npz",
+      "raw_sha256": "93f7d03521f149347912b1c2bf40f9e9dfa252cbe3b40871fb1b882ee5337015",
+      "checkpoints": 101,
+      "simulation_seconds": 761.0193143999786,
+      "elapsed_seconds": 781.7646785000106,
+      "finished": "2026-11-07T21:50:08.835974+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k1_r0",
+      "charged_worker_seconds": 784.6373888999806,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k1_r0",
+        "start": 1,
+        "step": 1,
+        "replicate": 0,
+        "seed": 3882889863,
+        "warmup_seed": 84589366
+      },
+      "raw": "s1_k1_r0.npz",
+      "raw_sha256": "096b663b7abf2679cdb4e505e21572af1809d4173eb5eddecb71fe0eb629c637",
+      "checkpoints": 101,
+      "simulation_seconds": 766.0470661997679,
+      "elapsed_seconds": 787.3305705999956,
+      "finished": "2026-11-07T21:50:14.425054+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k1_r0",
+      "charged_worker_seconds": 790.1262942999601,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k1_r1",
+        "start": 1,
+        "step": 1,
+        "replicate": 1,
+        "seed": 1079537965,
+        "warmup_seed": 3738784213
+      },
+      "raw": "s1_k1_r1.npz",
+      "raw_sha256": "785bcb1f740f318ec3dee278c83795e15665f66bec34fc0d27437f2ae3a0e060",
+      "checkpoints": 101,
+      "simulation_seconds": 769.1603354000836,
+      "elapsed_seconds": 790.3453095000004,
+      "finished": "2026-11-07T21:50:17.441198+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k1_r1",
+      "charged_worker_seconds": 793.1042666999856,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k0_r2",
+        "start": 0,
+        "step": 0,
+        "replicate": 2,
+        "seed": 461368993,
+        "warmup_seed": 909016603
+      },
+      "raw": "s0_k0_r2.npz",
+      "raw_sha256": "1ef34e377c13a57dc85e18689481f366fa8b67cde4f2c7127c7478f9868e2ddd",
+      "checkpoints": 101,
+      "simulation_seconds": 485.3560212999,
+      "elapsed_seconds": 506.00609780004015,
+      "finished": "2026-11-07T21:54:04.849315+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k0_r2",
+      "charged_worker_seconds": 508.00458779995097,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k0_r2",
+        "start": 1,
+        "step": 0,
+        "replicate": 2,
+        "seed": 3337191797,
+        "warmup_seed": 535036883
+      },
+      "raw": "s1_k0_r2.npz",
+      "raw_sha256": "d6ae0ec2fa502677773a43af2c130e970eedb41553fc36c53bda46cb1d7ae2a6",
+      "checkpoints": 101,
+      "simulation_seconds": 486.1349152000621,
+      "elapsed_seconds": 507.36478850001004,
+      "finished": "2026-11-07T21:54:07.854211+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k0_r2",
+      "charged_worker_seconds": 509.5036780000082,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k0_r3",
+        "start": 0,
+        "step": 0,
+        "replicate": 3,
+        "seed": 3140058870,
+        "warmup_seed": 1988089047
+      },
+      "raw": "s0_k0_r3.npz",
+      "raw_sha256": "a30b81cf149d89986382904f0e3a79c5963e88b487c47f4cad634e8ff034db09",
+      "checkpoints": 101,
+      "simulation_seconds": 486.94602099980693,
+      "elapsed_seconds": 507.6429976999643,
+      "finished": "2026-11-07T21:58:38.640346+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k0_r3",
+      "charged_worker_seconds": 509.76397420000285,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k0_r3",
+        "start": 1,
+        "step": 0,
+        "replicate": 3,
+        "seed": 1851311567,
+        "warmup_seed": 899848634
+      },
+      "raw": "s1_k0_r3.npz",
+      "raw_sha256": "adada3c84c24db23a6c00c9c1a845da818cc121028cc4cb9dc7424c290a39b29",
+      "checkpoints": 101,
+      "simulation_seconds": 487.23640070011606,
+      "elapsed_seconds": 508.4355293000117,
+      "finished": "2026-11-07T21:58:39.661425+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k0_r3",
+      "charged_worker_seconds": 510.51640780002344,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k1_r2",
+        "start": 0,
+        "step": 1,
+        "replicate": 2,
+        "seed": 823722364,
+        "warmup_seed": 2726465100
+      },
+      "raw": "s0_k1_r2.npz",
+      "raw_sha256": "305dfbdf481191c3577e85763e5d81254479b1fe24cb0be34c92caf690c8d726",
+      "checkpoints": 101,
+      "simulation_seconds": 759.7850002998603,
+      "elapsed_seconds": 780.6435499999789,
+      "finished": "2026-11-07T21:58:42.147536+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k1_r2",
+      "charged_worker_seconds": 782.9226810000255,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k1_r2",
+        "start": 1,
+        "step": 1,
+        "replicate": 2,
+        "seed": 2771564134,
+        "warmup_seed": 387574916
+      },
+      "raw": "s1_k1_r2.npz",
+      "raw_sha256": "6e02c090b7e1b1d60ed3e98b44a53cd0d799b55e137847b28b558781909ada13",
+      "checkpoints": 101,
+      "simulation_seconds": 763.8695759001421,
+      "elapsed_seconds": 785.0686775000067,
+      "finished": "2026-11-07T21:58:47.515298+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k1_r2",
+      "charged_worker_seconds": 787.1797064000275,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k0_r4",
+        "start": 0,
+        "step": 0,
+        "replicate": 4,
+        "seed": 1442816146,
+        "warmup_seed": 2545517419
+      },
+      "raw": "s0_k0_r4.npz",
+      "raw_sha256": "741b360d11c38b17f9589288bc9ceb5e56be808171738fcc522ae5d86385185e",
+      "checkpoints": 101,
+      "simulation_seconds": 484.88559450022876,
+      "elapsed_seconds": 505.3813322999631,
+      "finished": "2026-11-07T22:02:32.481909+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k0_r4",
+      "charged_worker_seconds": 507.5011860000086,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k0_r4",
+        "start": 1,
+        "step": 0,
+        "replicate": 4,
+        "seed": 2843992013,
+        "warmup_seed": 896925523
+      },
+      "raw": "s1_k0_r4.npz",
+      "raw_sha256": "3a01c71fb99d8e0caf8508db356c4514fe51357a343ae6fc075d5cf3b3896675",
+      "checkpoints": 101,
+      "simulation_seconds": 487.8615404999,
+      "elapsed_seconds": 509.2213026000536,
+      "finished": "2026-11-07T22:02:39.376991+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k0_r4",
+      "charged_worker_seconds": 511.25325589999557,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k1_r3",
+        "start": 0,
+        "step": 1,
+        "replicate": 3,
+        "seed": 1722747834,
+        "warmup_seed": 1740951590
+      },
+      "raw": "s0_k1_r3.npz",
+      "raw_sha256": "5c640365cf3a9b0de05ec860798cfa4583969c82969cb344e511076d252a0d19",
+      "checkpoints": 101,
+      "simulation_seconds": 759.5400560003472,
+      "elapsed_seconds": 780.2151111999992,
+      "finished": "2026-11-07T22:03:16.924774+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k1_r3",
+      "charged_worker_seconds": 782.1548560000374,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k1_r3",
+        "start": 1,
+        "step": 1,
+        "replicate": 3,
+        "seed": 2818443889,
+        "warmup_seed": 3660672032
+      },
+      "raw": "s1_k1_r3.npz",
+      "raw_sha256": "27974315908488986dc90c8425fe7b02b49f567de2952da4844a2bee2b9e3c14",
+      "checkpoints": 101,
+      "simulation_seconds": 766.4933836996206,
+      "elapsed_seconds": 787.8690818999894,
+      "finished": "2026-11-07T22:03:27.594521+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k1_r3",
+      "charged_worker_seconds": 789.9224790000007,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k0_r5",
+        "start": 0,
+        "step": 0,
+        "replicate": 5,
+        "seed": 3357046289,
+        "warmup_seed": 3728410029
+      },
+      "raw": "s0_k0_r5.npz",
+      "raw_sha256": "f8d379b244c416abf1fb9aedb3f37d1263ed5c0d6d1905ead19ef958b39e3c74",
+      "checkpoints": 101,
+      "simulation_seconds": 486.2198081004317,
+      "elapsed_seconds": 506.9559241000097,
+      "finished": "2026-11-07T22:07:11.435854+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k0_r5",
+      "charged_worker_seconds": 508.9841471000109,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k0_r5",
+        "start": 1,
+        "step": 0,
+        "replicate": 5,
+        "seed": 2569385995,
+        "warmup_seed": 2951409820
+      },
+      "raw": "s1_k0_r5.npz",
+      "raw_sha256": "1657a197a9c7eb91cb2959a18738dfd581aed35885e733a24e045822a05ed0a4",
+      "checkpoints": 101,
+      "simulation_seconds": 488.1474477999145,
+      "elapsed_seconds": 509.2383166999789,
+      "finished": "2026-11-07T22:07:18.974697+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k0_r5",
+      "charged_worker_seconds": 511.23642090003705,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k1_r4",
+        "start": 0,
+        "step": 1,
+        "replicate": 4,
+        "seed": 3537906517,
+        "warmup_seed": 3084146510
+      },
+      "raw": "s0_k1_r4.npz",
+      "raw_sha256": "ef466a41c8a0729db0da753b6288f084a5e0562c1cb299f01252a4d1eb5b5a3a",
+      "checkpoints": 101,
+      "simulation_seconds": 759.2299185001175,
+      "elapsed_seconds": 780.2529821000062,
+      "finished": "2026-11-07T22:11:41.274211+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k1_r4",
+      "charged_worker_seconds": 782.3915638999897,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k0_r6",
+        "start": 0,
+        "step": 0,
+        "replicate": 6,
+        "seed": 4198124055,
+        "warmup_seed": 3372875309
+      },
+      "raw": "s0_k0_r6.npz",
+      "raw_sha256": "edc2b43a09b12d4714b1b17a8a1b806915cb7974874e88ff42152e94925978c7",
+      "checkpoints": 101,
+      "simulation_seconds": 485.30951489979634,
+      "elapsed_seconds": 506.1015659000259,
+      "finished": "2026-11-07T22:11:45.225543+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k0_r6",
+      "charged_worker_seconds": 507.99119310005335,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k1_r4",
+        "start": 1,
+        "step": 1,
+        "replicate": 4,
+        "seed": 2088632699,
+        "warmup_seed": 106931139
+      },
+      "raw": "s1_k1_r4.npz",
+      "raw_sha256": "d6d0772cad520724f8fdd43f2b53d6594fc49b54d759d27383c884da77223573",
+      "checkpoints": 101,
+      "simulation_seconds": 765.921279500064,
+      "elapsed_seconds": 787.1905096999835,
+      "finished": "2026-11-07T22:11:49.192732+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k1_r4",
+      "charged_worker_seconds": 789.1496836000006,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k0_r6",
+        "start": 1,
+        "step": 0,
+        "replicate": 6,
+        "seed": 912088565,
+        "warmup_seed": 1906699828
+      },
+      "raw": "s1_k0_r6.npz",
+      "raw_sha256": "b0cb4d2d3670ee779ceff08dad668cb9070abcda927c0d703e6e4fada2fad7a7",
+      "checkpoints": 101,
+      "simulation_seconds": 487.9161960997735,
+      "elapsed_seconds": 509.037119399989,
+      "finished": "2026-11-07T22:11:58.953980+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k0_r6",
+      "charged_worker_seconds": 510.9926197999739,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k1_r5",
+        "start": 0,
+        "step": 1,
+        "replicate": 5,
+        "seed": 210199351,
+        "warmup_seed": 2579209314
+      },
+      "raw": "s0_k1_r5.npz",
+      "raw_sha256": "53a1a481b1e0d5c8863ccd4999959be1dc65133231163c5e4c242330587ad4a6",
+      "checkpoints": 101,
+      "simulation_seconds": 761.6048202001257,
+      "elapsed_seconds": 782.5259287999943,
+      "finished": "2026-11-07T22:15:37.399741+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k1_r5",
+      "charged_worker_seconds": 784.6430486000027,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k1_r5",
+        "start": 1,
+        "step": 1,
+        "replicate": 5,
+        "seed": 4141168887,
+        "warmup_seed": 2228760755
+      },
+      "raw": "s1_k1_r5.npz",
+      "raw_sha256": "d129d8325a2e2404ec584ed27f97dcd1efb7f19a12aae95177a68820d5af4df5",
+      "checkpoints": 101,
+      "simulation_seconds": 766.2561957002035,
+      "elapsed_seconds": 787.5117624999839,
+      "finished": "2026-11-07T22:15:49.178462+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k1_r5",
+      "charged_worker_seconds": 789.6662031000014,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k0_r7",
+        "start": 0,
+        "step": 0,
+        "replicate": 7,
+        "seed": 551101880,
+        "warmup_seed": 2329112893
+      },
+      "raw": "s0_k0_r7.npz",
+      "raw_sha256": "b3ee8d700a78077c8c0572d1bb9246af76be076bef526dc397ca9c089cdd46d7",
+      "checkpoints": 101,
+      "simulation_seconds": 489.57799070031615,
+      "elapsed_seconds": 510.5367207999807,
+      "finished": "2026-11-07T22:20:14.188475+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k0_r7",
+      "charged_worker_seconds": 512.4862174000009,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k1_r6",
+        "start": 0,
+        "step": 1,
+        "replicate": 6,
+        "seed": 2899570759,
+        "warmup_seed": 3573624764
+      },
+      "raw": "s0_k1_r6.npz",
+      "raw_sha256": "5cd7856868960d4468360ac41356e92caff0061d049012ef41a8bb9097ea7857",
+      "checkpoints": 101,
+      "simulation_seconds": 766.3681339996401,
+      "elapsed_seconds": 787.5468929999624,
+      "finished": "2026-11-07T22:20:21.291266+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k1_r6",
+      "charged_worker_seconds": 789.6507176000159,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k0_r7",
+        "start": 1,
+        "step": 0,
+        "replicate": 7,
+        "seed": 233122380,
+        "warmup_seed": 556733553
+      },
+      "raw": "s1_k0_r7.npz",
+      "raw_sha256": "04f6ef220f1ad93df02029c74b45291ba45f92b111089b61ea51c7901025c71c",
+      "checkpoints": 101,
+      "simulation_seconds": 492.8545944999787,
+      "elapsed_seconds": 514.3425850000349,
+      "finished": "2026-11-07T22:20:21.716069+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k0_r7",
+      "charged_worker_seconds": 516.2480746999499,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k1_r6",
+        "start": 1,
+        "step": 1,
+        "replicate": 6,
+        "seed": 1167970461,
+        "warmup_seed": 4271707706
+      },
+      "raw": "s1_k1_r6.npz",
+      "raw_sha256": "ca30959c74df7ff78b729a76e92c6cf389015594a295c3130f4d37c8bfd723fb",
+      "checkpoints": 101,
+      "simulation_seconds": 771.1022970993072,
+      "elapsed_seconds": 792.519077999983,
+      "finished": "2026-11-07T22:20:33.763212+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k1_r6",
+      "charged_worker_seconds": 794.4066396999988,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k0_r8",
+        "start": 0,
+        "step": 0,
+        "replicate": 8,
+        "seed": 3932113077,
+        "warmup_seed": 2898432977
+      },
+      "raw": "s0_k0_r8.npz",
+      "raw_sha256": "af03400925a65073f8b4b4d40a461cb8b77e89d183bfba6ffb4f282c82fddee7",
+      "checkpoints": 101,
+      "simulation_seconds": 494.3028349003871,
+      "elapsed_seconds": 515.5049882999738,
+      "finished": "2026-11-07T22:24:15.501810+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k0_r8",
+      "charged_worker_seconds": 517.7350148999831,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k0_r8",
+        "start": 1,
+        "step": 0,
+        "replicate": 8,
+        "seed": 1095438357,
+        "warmup_seed": 1947080361
+      },
+      "raw": "s1_k0_r8.npz",
+      "raw_sha256": "aa735e8d5d0e03db2af574f1b5855df0aea8d0448b2bb91c9002eea59933a572",
+      "checkpoints": 101,
+      "simulation_seconds": 496.13857509964146,
+      "elapsed_seconds": 517.4605646000127,
+      "finished": "2026-11-07T22:24:29.118706+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k0_r8",
+      "charged_worker_seconds": 519.7284906000132,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k1_r7",
+        "start": 0,
+        "step": 1,
+        "replicate": 7,
+        "seed": 2437780856,
+        "warmup_seed": 3300203385
+      },
+      "raw": "s0_k1_r7.npz",
+      "raw_sha256": "fd310010bd9bb6d4c20fd0455e3d0a69dce9d1e7d4d951f2a62d79d1eeef5ed2",
+      "checkpoints": 101,
+      "simulation_seconds": 768.9022068999475,
+      "elapsed_seconds": 789.744368500018,
+      "finished": "2026-11-07T22:25:01.159972+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k1_r7",
+      "charged_worker_seconds": 791.8855657000095,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k1_r7",
+        "start": 1,
+        "step": 1,
+        "replicate": 7,
+        "seed": 3109017526,
+        "warmup_seed": 3908710090
+      },
+      "raw": "s1_k1_r7.npz",
+      "raw_sha256": "8fc8136189b6e4f3306e68e7e9c7cb9ce493f306cb40df08d43932d01e847cf4",
+      "checkpoints": 101,
+      "simulation_seconds": 772.6721145999618,
+      "elapsed_seconds": 794.4285959000117,
+      "finished": "2026-11-07T22:25:15.601121+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k1_r7",
+      "charged_worker_seconds": 796.3942450000322,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k0_r9",
+        "start": 0,
+        "step": 0,
+        "replicate": 9,
+        "seed": 4051495327,
+        "warmup_seed": 1630517802
+      },
+      "raw": "s0_k0_r9.npz",
+      "raw_sha256": "9698d3057ff7e33beec4a8710b9d9e6ad9a71c3fb68172669d2bbc3c3e9588b6",
+      "checkpoints": 101,
+      "simulation_seconds": 488.70206160011,
+      "elapsed_seconds": 509.6471351000364,
+      "finished": "2026-11-07T22:28:54.055983+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k0_r9",
+      "charged_worker_seconds": 512.2379727999796,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k0_r9",
+        "start": 1,
+        "step": 0,
+        "replicate": 9,
+        "seed": 1807440591,
+        "warmup_seed": 2061353632
+      },
+      "raw": "s1_k0_r9.npz",
+      "raw_sha256": "a98dffdf9cf24e52b5b1dd5f39c6b177219f43e94cf38cb13dc9cb458be23b20",
+      "checkpoints": 101,
+      "simulation_seconds": 489.6101370000979,
+      "elapsed_seconds": 510.82228880003095,
+      "finished": "2026-11-07T22:29:06.752554+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k0_r9",
+      "charged_worker_seconds": 512.7400058000349,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k1_r8",
+        "start": 0,
+        "step": 1,
+        "replicate": 8,
+        "seed": 672161552,
+        "warmup_seed": 2198775111
+      },
+      "raw": "s0_k1_r8.npz",
+      "raw_sha256": "537089e0269de9c529c9fb812dbc1f59c4249adf79f941258c61fb71d2845259",
+      "checkpoints": 101,
+      "simulation_seconds": 762.3656481998623,
+      "elapsed_seconds": 783.1889241000172,
+      "finished": "2026-11-07T22:33:19.620427+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k1_r8",
+      "charged_worker_seconds": 785.1411255999701,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k0_r10",
+        "start": 0,
+        "step": 0,
+        "replicate": 10,
+        "seed": 1338704139,
+        "warmup_seed": 3714850565
+      },
+      "raw": "s0_k0_r10.npz",
+      "raw_sha256": "3a210d242fe13417ad753fe8d4805c9146a27ed3a80ac30ec2c78af21c2b019d",
+      "checkpoints": 101,
+      "simulation_seconds": 484.8885671001044,
+      "elapsed_seconds": 505.6619705000194,
+      "finished": "2026-11-07T22:33:29.196708+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k0_r10",
+      "charged_worker_seconds": 507.74937629996566,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k1_r8",
+        "start": 1,
+        "step": 1,
+        "replicate": 8,
+        "seed": 1180684588,
+        "warmup_seed": 1184053739
+      },
+      "raw": "s1_k1_r8.npz",
+      "raw_sha256": "d012d56ca3808bfd7499f31e4fdc5defc76074da93c0f02a26bf0b04284eb6a4",
+      "checkpoints": 101,
+      "simulation_seconds": 765.2637442002306,
+      "elapsed_seconds": 786.5396172999754,
+      "finished": "2026-11-07T22:33:30.710246+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k1_r8",
+      "charged_worker_seconds": 789.1441911999718,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k0_r10",
+        "start": 1,
+        "step": 0,
+        "replicate": 10,
+        "seed": 112840444,
+        "warmup_seed": 2321588828
+      },
+      "raw": "s1_k0_r10.npz",
+      "raw_sha256": "732130fc432229b2f43f465cf00976fd34625818b5db1fd021fafc59694cdd06",
+      "checkpoints": 101,
+      "simulation_seconds": 485.5867349000764,
+      "elapsed_seconds": 506.6000706999912,
+      "finished": "2026-11-07T22:33:44.404144+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k0_r10",
+      "charged_worker_seconds": 508.4970573000028,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k1_r9",
+        "start": 0,
+        "step": 1,
+        "replicate": 9,
+        "seed": 1854069558,
+        "warmup_seed": 4056478453
+      },
+      "raw": "s0_k1_r9.npz",
+      "raw_sha256": "78699acbaf86a0517c5285161620c5f15b642d6182d8a5968c9762433f0f0115",
+      "checkpoints": 101,
+      "simulation_seconds": 757.2212316001533,
+      "elapsed_seconds": 777.9242742999922,
+      "finished": "2026-11-07T22:37:15.696586+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k1_r9",
+      "charged_worker_seconds": 779.8907324000029,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k1_r9",
+        "start": 1,
+        "step": 1,
+        "replicate": 9,
+        "seed": 2014660842,
+        "warmup_seed": 789429801
+      },
+      "raw": "s1_k1_r9.npz",
+      "raw_sha256": "9b5686718586784efe941368dde64445f7e9ba8ec7ff5dc4e47c2038eb8aba87",
+      "checkpoints": 101,
+      "simulation_seconds": 761.5968120999751,
+      "elapsed_seconds": 782.6554384000483,
+      "finished": "2026-11-07T22:37:34.149704+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k1_r9",
+      "charged_worker_seconds": 784.6585795999854,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k0_r11",
+        "start": 0,
+        "step": 0,
+        "replicate": 11,
+        "seed": 1277532168,
+        "warmup_seed": 3439232986
+      },
+      "raw": "s0_k0_r11.npz",
+      "raw_sha256": "4d237a484e854dd94b88c44872136642ef7ca0f4dd18a95f214f8ff5bbb4f88f",
+      "checkpoints": 101,
+      "simulation_seconds": 484.1652392997057,
+      "elapsed_seconds": 504.9818345999811,
+      "finished": "2026-11-07T22:41:46.769429+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k0_r11",
+      "charged_worker_seconds": 506.98804589995416,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k1_r10",
+        "start": 0,
+        "step": 1,
+        "replicate": 10,
+        "seed": 3800028223,
+        "warmup_seed": 3779110000
+      },
+      "raw": "s0_k1_r10.npz",
+      "raw_sha256": "ab9c390e1fa6f80c53b69204285e5113517c4a8e58bd4e3616b0dcec5a7628ef",
+      "checkpoints": 101,
+      "simulation_seconds": 756.7690969000105,
+      "elapsed_seconds": 777.5745929999975,
+      "finished": "2026-11-07T22:41:53.961949+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k1_r10",
+      "charged_worker_seconds": 779.6347957999678,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k0_r11",
+        "start": 1,
+        "step": 0,
+        "replicate": 11,
+        "seed": 3904748148,
+        "warmup_seed": 4123109230
+      },
+      "raw": "s1_k0_r11.npz",
+      "raw_sha256": "bad781594fdc7241e266ff8df851b7f5af3ebcb42b53a4658e2e6addeb8612de",
+      "checkpoints": 101,
+      "simulation_seconds": 485.6252423002734,
+      "elapsed_seconds": 506.7209075000137,
+      "finished": "2026-11-07T22:41:58.273719+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k0_r11",
+      "charged_worker_seconds": 508.745803400001,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k1_r10",
+        "start": 1,
+        "step": 1,
+        "replicate": 10,
+        "seed": 3433297141,
+        "warmup_seed": 2595520377
+      },
+      "raw": "s1_k1_r10.npz",
+      "raw_sha256": "1794c7c8902d81a817b95bb313873ee64c064c9132e886561d04e56aa1db0f86",
+      "checkpoints": 101,
+      "simulation_seconds": 762.1600449999678,
+      "elapsed_seconds": 783.1235488999519,
+      "finished": "2026-11-07T22:42:12.060873+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k1_r10",
+      "charged_worker_seconds": 785.1532886999776,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k0_r12",
+        "start": 0,
+        "step": 0,
+        "replicate": 12,
+        "seed": 1310300513,
+        "warmup_seed": 2985741463
+      },
+      "raw": "s0_k0_r12.npz",
+      "raw_sha256": "9c26c5d5c03700043881d185f16eb0c7ec7b86b92e2d9f583a049e4d987a0a5e",
+      "checkpoints": 101,
+      "simulation_seconds": 484.2633558001835,
+      "elapsed_seconds": 504.86097839998547,
+      "finished": "2026-11-07T22:45:42.826844+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k0_r12",
+      "charged_worker_seconds": 506.989841899951,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k0_r12",
+        "start": 1,
+        "step": 0,
+        "replicate": 12,
+        "seed": 2672506897,
+        "warmup_seed": 1514602596
+      },
+      "raw": "s1_k0_r12.npz",
+      "raw_sha256": "8761b9b756f2d523c95497eb74f4520b1a1716b1e07ed94c778b0a9ba0754835",
+      "checkpoints": 101,
+      "simulation_seconds": 486.57066549977753,
+      "elapsed_seconds": 507.9613343999954,
+      "finished": "2026-11-07T22:46:04.352193+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k0_r12",
+      "charged_worker_seconds": 509.99983320001047,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k1_r11",
+        "start": 0,
+        "step": 1,
+        "replicate": 11,
+        "seed": 2598733138,
+        "warmup_seed": 3642511753
+      },
+      "raw": "s0_k1_r11.npz",
+      "raw_sha256": "accad82f3459bdacfa0488fcfa9eb9b580a86cf1031db2aee1d59134807dd3be",
+      "checkpoints": 101,
+      "simulation_seconds": 757.9171663000598,
+      "elapsed_seconds": 778.6666558000143,
+      "finished": "2026-11-07T22:46:31.753702+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k1_r11",
+      "charged_worker_seconds": 780.6472557000234,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k1_r11",
+        "start": 1,
+        "step": 1,
+        "replicate": 11,
+        "seed": 1439100419,
+        "warmup_seed": 2565997884
+      },
+      "raw": "s1_k1_r11.npz",
+      "raw_sha256": "026ccd17a491c8c1a2c65e2c1fe6134f5d76adf3150b8e94814c7168eb323ea5",
+      "checkpoints": 101,
+      "simulation_seconds": 763.2257146000047,
+      "elapsed_seconds": 784.4502309000236,
+      "finished": "2026-11-07T22:46:51.034948+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k1_r11",
+      "charged_worker_seconds": 786.402028499986,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k0_r13",
+        "start": 0,
+        "step": 0,
+        "replicate": 13,
+        "seed": 393454644,
+        "warmup_seed": 4228298310
+      },
+      "raw": "s0_k0_r13.npz",
+      "raw_sha256": "365d41ef04054460bfbceb2715f9fa01a8a9b4c10abbd2e00c5f2ff27d8479cc",
+      "checkpoints": 101,
+      "simulation_seconds": 485.03499730018666,
+      "elapsed_seconds": 505.8910010999534,
+      "finished": "2026-11-07T22:50:26.426432+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k0_r13",
+      "charged_worker_seconds": 507.7556477999897,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k0_r13",
+        "start": 1,
+        "step": 0,
+        "replicate": 13,
+        "seed": 479104114,
+        "warmup_seed": 3530065979
+      },
+      "raw": "s1_k0_r13.npz",
+      "raw_sha256": "242e9269cc7d81789020f3268a2257c278922ea337d23b5ef6a270dc7d11b651",
+      "checkpoints": 101,
+      "simulation_seconds": 487.6109828998451,
+      "elapsed_seconds": 508.59389349998673,
+      "finished": "2026-11-07T22:50:42.876668+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k0_r13",
+      "charged_worker_seconds": 510.5111079000053,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k1_r12",
+        "start": 0,
+        "step": 1,
+        "replicate": 12,
+        "seed": 604857108,
+        "warmup_seed": 466501900
+      },
+      "raw": "s0_k1_r12.npz",
+      "raw_sha256": "c6f04b283aa436ba930ac1c4f5f68383c514ecac907624bfaf479698f425585a",
+      "checkpoints": 101,
+      "simulation_seconds": 758.66670050018,
+      "elapsed_seconds": 779.3779746000073,
+      "finished": "2026-11-07T22:54:48.390466+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k1_r12",
+      "charged_worker_seconds": 781.4047645999817,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k0_r14",
+        "start": 0,
+        "step": 0,
+        "replicate": 14,
+        "seed": 2522744978,
+        "warmup_seed": 2702788556
+      },
+      "raw": "s0_k0_r14.npz",
+      "raw_sha256": "d603b028132ddcfd1a5c078c162f35798a95a51d105a433746beddb71cd2cb12",
+      "checkpoints": 101,
+      "simulation_seconds": 484.531857999973,
+      "elapsed_seconds": 505.19016350002494,
+      "finished": "2026-11-07T22:54:59.135418+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k0_r14",
+      "charged_worker_seconds": 507.24995560001116,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k1_r12",
+        "start": 1,
+        "step": 1,
+        "replicate": 12,
+        "seed": 84763864,
+        "warmup_seed": 821413067
+      },
+      "raw": "s1_k1_r12.npz",
+      "raw_sha256": "7fbf312cc4290f4346aa910d95b54f8f03578c6d596e56f13e4b6d02db01acd9",
+      "checkpoints": 101,
+      "simulation_seconds": 762.4053370998008,
+      "elapsed_seconds": 783.5644486999954,
+      "finished": "2026-11-07T22:54:59.860763+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k1_r12",
+      "charged_worker_seconds": 785.6506137999822,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k0_r14",
+        "start": 1,
+        "step": 0,
+        "replicate": 14,
+        "seed": 3782618047,
+        "warmup_seed": 3231504092
+      },
+      "raw": "s1_k0_r14.npz",
+      "raw_sha256": "c43a10b6e652198cb6fb8b2665a596ac49b977e79090069896a45900532e2a47",
+      "checkpoints": 101,
+      "simulation_seconds": 486.70700339978794,
+      "elapsed_seconds": 507.751039099996,
+      "finished": "2026-11-07T22:55:20.990572+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k0_r14",
+      "charged_worker_seconds": 509.74951039999723,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k1_r13",
+        "start": 0,
+        "step": 1,
+        "replicate": 13,
+        "seed": 2428546181,
+        "warmup_seed": 3859607614
+      },
+      "raw": "s0_k1_r13.npz",
+      "raw_sha256": "61baa8b9eff97d27c5a1dac67a5eda302f766118c6cc6357d98fb37f3f6a50ed",
+      "checkpoints": 101,
+      "simulation_seconds": 758.9615475000464,
+      "elapsed_seconds": 779.6447736999835,
+      "finished": "2026-11-07T22:58:44.758913+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k1_r13",
+      "charged_worker_seconds": 781.657114200003,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k1_r13",
+        "start": 1,
+        "step": 1,
+        "replicate": 13,
+        "seed": 554733434,
+        "warmup_seed": 1611307161
+      },
+      "raw": "s1_k1_r13.npz",
+      "raw_sha256": "729c6542e40a656e16939e2badc33a81ecf73634e8653915558a63251524fb09",
+      "checkpoints": 101,
+      "simulation_seconds": 760.295659200463,
+      "elapsed_seconds": 781.4119314000127,
+      "finished": "2026-11-07T22:59:08.064858+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k1_r13",
+      "charged_worker_seconds": 783.4066937000025,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k0_r15",
+        "start": 0,
+        "step": 0,
+        "replicate": 15,
+        "seed": 2372941516,
+        "warmup_seed": 2769021518
+      },
+      "raw": "s0_k0_r15.npz",
+      "raw_sha256": "b80d01707d9a653aab2b7fc9a03ec4a6ab321f2dd008739e312234d960b7c8ce",
+      "checkpoints": 101,
+      "simulation_seconds": 471.3237451997702,
+      "elapsed_seconds": 491.39135550003266,
+      "finished": "2026-11-07T23:03:02.103158+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k0_r15",
+      "charged_worker_seconds": 493.49347760004457,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k1_r14",
+        "start": 0,
+        "step": 1,
+        "replicate": 14,
+        "seed": 905719114,
+        "warmup_seed": 2402255426
+      },
+      "raw": "s0_k1_r14.npz",
+      "raw_sha256": "d6e7c0e6e32197648ecd6302a2cc176c520bed4f13f911b71f9a668c52a7f884",
+      "checkpoints": 101,
+      "simulation_seconds": 738.0096260997816,
+      "elapsed_seconds": 758.2407544000307,
+      "finished": "2026-11-07T23:03:06.835674+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k1_r14",
+      "charged_worker_seconds": 760.3800588999875,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k0_r15",
+        "start": 1,
+        "step": 0,
+        "replicate": 15,
+        "seed": 449608216,
+        "warmup_seed": 1866257185
+      },
+      "raw": "s1_k0_r15.npz",
+      "raw_sha256": "b45ecc627b80c90026b9e2ba5c65fdc1fcd6841d219dc37f9c575cdcae583f2c",
+      "checkpoints": 101,
+      "simulation_seconds": 472.42765959951794,
+      "elapsed_seconds": 492.7428240000154,
+      "finished": "2026-11-07T23:03:14.259313+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k0_r15",
+      "charged_worker_seconds": 494.74352990003536,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k1_r14",
+        "start": 1,
+        "step": 1,
+        "replicate": 14,
+        "seed": 3298932717,
+        "warmup_seed": 2442296693
+      },
+      "raw": "s1_k1_r14.npz",
+      "raw_sha256": "9d524dc40fde773229793a8f39c3e73f4e1e0948a4f8dc908d23407cc2602cff",
+      "checkpoints": 101,
+      "simulation_seconds": 740.2190295999171,
+      "elapsed_seconds": 760.7358068000176,
+      "finished": "2026-11-07T23:03:25.827510+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k1_r14",
+      "charged_worker_seconds": 762.6325059000519,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s0_k1_r15",
+        "start": 0,
+        "step": 1,
+        "replicate": 15,
+        "seed": 2913704618,
+        "warmup_seed": 1779451048
+      },
+      "raw": "s0_k1_r15.npz",
+      "raw_sha256": "9ce7aee5d2e98eefd3ce24b7dbf71eee74c35e743859b8a452a187841f205ca9",
+      "checkpoints": 101,
+      "simulation_seconds": 681.5660524998675,
+      "elapsed_seconds": 699.8585869999952,
+      "finished": "2026-11-07T23:06:42.082674+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s0_k1_r15",
+      "charged_worker_seconds": 701.826469099964,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "s1_k1_r15",
+        "start": 1,
+        "step": 1,
+        "replicate": 15,
+        "seed": 663186127,
+        "warmup_seed": 1349725008
+      },
+      "raw": "s1_k1_r15.npz",
+      "raw_sha256": "0c2df0a661da870dd9b5b7b50d93afacfd6c4d186a103630b0572720629cbf1c",
+      "checkpoints": 101,
+      "simulation_seconds": 679.9611189001589,
+      "elapsed_seconds": 698.430803700001,
+      "finished": "2026-11-07T23:07:01.665577+00:00",
+      "ledger": {
+        "max_integer_residual": 0,
+        "max_total_input_residual": 0,
+        "nonnegative": true,
+        "pass_check": true
+      },
+      "id": "s1_k1_r15",
+      "charged_worker_seconds": 700.3279946999974,
+      "returncode": 0
+    }
+  ],
+  "ceiling": 86400,
+  "prior_charge": 0,
+  "poll_seconds": 0.25,
+  "charged_worker_seconds": 41256.32938389981,
+  "inflight_worker_seconds": 0,
+  "pending_ids": [],
+  "active_ids": [],
+  "stop_reason": null,
+  "workers": 8,
+  "threads_per_library": 1,
+  "max_observed_poll_gap_seconds": 0.2662543000187725
+}

@@ -1,0 +1,9 @@
+# MG067 — P3 completed temporal-estimation inspection
+
+Frozen outcome COMPLETE TEMPORAL ESTIMATION. All64/64 jobs/paths, no nonzero/failure/timeout/cap. Independent raw/source/seed/state/integer6464-frame/direct-average/statistical audit PASS;96 temporal averages. Elapsed90.296155minutes, production11.460091core-hours under24. Full64 raw101-frame input archives retained for upload/verification; complete source/config/stream/ledger and metric profiles/series preserved.
+
+S16/16 both steps meet initial20-unit criterion; H0/16 both steps any20 episode. Keep per-cell descriptive exact intervals [.7941,1]/[0,.2059]; no pooling for tighter bounds or inherited5% claim. No favorable-fraction gate or posthoc rescue. Fine s1_k1_r3 censors at first nonmatch22.75, last matched22.5, after satisfying20. Not death; no initial identity reacquisition. All32 S qualify for aligned averages, no S omission in this dataset.
+
+Empirical residual reductions roughlyG4.4-4.5,X2,Y2.6 improve visibility but are not effective sample counts or proof of pure stochastic noise. Signed averaged projections close to1 support descriptive reference-profile consistency, not powered equivalence/new classification; mean per-path G residual still~.010 vs.01465 templateRMS. Both fixed/all-complete and conditional-aligned results retained. No independent G/Y phase fit. Temporal correlation/systematic shape deviations and X-selection/cross-field correlations remain interpretive limits, with no unconditional physical coherence verdict.
+
+Quarter-sampled field continuity is not unobserved/token lineage or infinite physical survival. No depletion intervention, native vacuum or quantum conclusion; previous studies untouched. Same-author separate numerical paths share libraries/reference/earlier reconstruction, not external replication. Full archive upload/hash/Git verification and PI result closure remain separate; no next scientific run registered.
