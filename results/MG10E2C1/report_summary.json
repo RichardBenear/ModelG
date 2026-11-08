@@ -1,0 +1,91 @@
+{
+  "status": "COMPLETE RESTORATION ESTIMATION",
+  "audit_passed": true,
+  "primary": {
+    "0": {
+      "n": 8,
+      "mean": 0.10277085326497623,
+      "ci_nominal": [
+        0.025840444238346194,
+        0.17970126229160627
+      ],
+      "scope": "97.5% t interval per step, nominal95% two-step family under t approximation; n8 pilot"
+    },
+    "1": {
+      "n": 8,
+      "mean": 0.14072833658187267,
+      "ci_nominal": [
+        0.06395452518414593,
+        0.2175021479795994
+      ],
+      "scope": "97.5% t interval per step, nominal95% two-step family under t approximation; n8 pilot"
+    }
+  },
+  "descriptive_arms": [
+    {
+      "arm": "Unchanged",
+      "values": [
+        {
+          "unseeded": 0.013714972006638858,
+          "seeded": 0.9684725288485483,
+          "seed_excess": 0.9547575568419094
+        },
+        {
+          "unseeded": 0.016753552173016186,
+          "seeded": 0.950903105772317,
+          "seed_excess": 0.9341495535993007
+        }
+      ]
+    },
+    {
+      "arm": "Continuous local off",
+      "values": [
+        {
+          "unseeded": -0.08963601865745899,
+          "seeded": -0.08242027588607978,
+          "seed_excess": 0.007215742771379208
+        },
+        {
+          "unseeded": -0.08975324788804237,
+          "seeded": -0.0825577945421727,
+          "seed_excess": 0.007195453345869671
+        }
+      ]
+    },
+    {
+      "arm": "Local off then restored",
+      "values": [
+        {
+          "unseeded": 1.0994037355630004,
+          "seeded": 1.209390331599356,
+          "seed_excess": 0.10998659603635552
+        },
+        {
+          "unseeded": 1.0778094095104316,
+          "seeded": 1.225733199438174,
+          "seed_excess": 0.14792378992774236
+        }
+      ]
+    },
+    {
+      "arm": "Remote off then restored",
+      "values": [
+        {
+          "unseeded": 0.014061600509241092,
+          "seeded": 0.7402947678857136,
+          "seed_excess": 0.7262331673764725
+        },
+        {
+          "unseeded": -0.006798054428446074,
+          "seeded": 0.9919658456501148,
+          "seed_excess": 0.9987639000785609
+        }
+      ]
+    }
+  ],
+  "elapsed_minutes": 174.6101503,
+  "aggregate_core_hours": 28.36382977238876,
+  "continuation_core_hours": 22.911450887722182,
+  "verified_complete_replays": 7,
+  "original_E2_preserved": true
+}
