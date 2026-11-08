@@ -1,5 +1,5 @@
 {
-  "status": "DEVELOPMENT INPUTS RETAINED; PUBLICATION PENDING",
+  "status": "ALL21 DEVELOPMENT INPUT ARCHIVES PUBLISHED AND VERIFIED",
   "files": [
     {
       "path": "results\\MG11G1\\preparation\\qualification\\equivalence_r0_g0.npz",
@@ -107,5 +107,7 @@
       "sha256": "3ed3a52befd72063b43780772e16fc7e801ac3209afd1c5d50b0617b7f905182"
     }
   ],
-  "scope": "Only disclosed development/null/warm/equivalence and deterministic reference inputs; no G1scientific production"
+  "scope": "Only disclosed development/null/warm/equivalence and deterministic reference inputs; no G1scientific production",
+  "published_commit": "04fba5b7aa4e0afef84c5e98a0d58fc772309da8",
+  "verification": "All21 published raw/reference inputs match local SHA256; development only, no G1scientific production"
 }
