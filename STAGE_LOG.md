@@ -960,3 +960,8 @@ MG072 PI CLOSURE (2026-11-08): Richard: “I sign off”, following verified pub
 ## MG073 — Develop E2 reversible supply study (2026-11-08)
 
 MG073 E2 DEVELOPMENT: Richard authorized developing E2. DRAFT reversible local A shutoff/restoration design,32 fresh fixed-T5 parents/128 T25 forks, pulse ends post5, four arms/H-S/two steps/n8 balanced blocks. Primary local-restore versus continuous-off seed interaction; secondary movement/shape/history diagnostics, no physical revival/quantum memory claim. Frozen preparation048d705 preceded8 short qualification/16 timing paths.11 assertions/7 field fixtures and24 raw/dense/statistical audits PASS, no failure/retry/tuning. Controlled157.545613seconds, total allowance162.907576<900. Forecast29.558218core-hours/~3h42 on8, proposed NEW40core-hour cap below30 reserve; PI final design/budget/public production retention pending. No science or old rescoring; full production implementation/raw-pipeline qualification and registration remains after approval.
+
+
+## MG074 — PI approves E2 protocol, budget and public retention (2026-11-08)
+
+Richard: “I approve”, answering the request for E2 design,40-core-hour local cap and public publication of results/full raw archive. Approved numerical design unchanged. Final atomic-writer held replays and complete/missing/prefix/empty raw-file audits prepared before exact registration/push/production. No E2 scientific sample yet; external review not requested.
