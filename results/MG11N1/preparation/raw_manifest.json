@@ -1,5 +1,5 @@
 {
-  "status": "DEVELOPMENT RAW RETAINED; PUBLICATION PENDING",
+  "status": "ALL16 DEVELOPMENT INPUT ARCHIVES PUBLISHED AND VERIFIED",
   "files": [
     {
       "path": "results\\MG11N1\\preparation\\qualification\\continuum_inputs.npz",
@@ -82,5 +82,7 @@
       "sha256": "5a35affc6170e895529a56c6548985ea5328871cee6215566f029cd215812cf8"
     }
   ],
-  "scope": "Only disclosed development, warmups and deterministic inputs; no N1 scientific production"
+  "scope": "Only disclosed development, warmups and deterministic inputs; no N1 scientific production",
+  "published_commit": "5dc59578bc43fe0d5765790ef0a47c090d07a698",
+  "verification": "Each published raw/input blob matches local audited SHA256; development only, no N1 scientific production"
 }
