@@ -1,0 +1,912 @@
+{
+  "records": [
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_m0_r0",
+        "cell": 0,
+        "engine": 0,
+        "chunk": 0,
+        "reps": 4096,
+        "seed": 1488582331,
+        "warmup_seed": 1832264893
+      },
+      "raw": "c0_m0_r0.npz",
+      "sha256": "918926690da62e96dff55c3a8eec2edf34fe7e1f74ace640cae527aba8664f0c",
+      "replicas": 4096,
+      "compute_seconds": 0.0057197000132873654,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c0_m0_r0.npz",
+        "sha256": "918926690da62e96dff55c3a8eec2edf34fe7e1f74ace640cae527aba8664f0c",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:37:58.285655+00:00",
+      "id": "c0_m0_r0",
+      "charged_worker_seconds": 3.2561530999373645,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_m0_r1",
+        "cell": 0,
+        "engine": 0,
+        "chunk": 1,
+        "reps": 4096,
+        "seed": 658425919,
+        "warmup_seed": 2889826773
+      },
+      "raw": "c0_m0_r1.npz",
+      "sha256": "07ccd1371a204ec2c782d1ea25575890aee0f13eb24467b3f8bfc8a15659c167",
+      "replicas": 4096,
+      "compute_seconds": 0.0052890999941155314,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c0_m0_r1.npz",
+        "sha256": "07ccd1371a204ec2c782d1ea25575890aee0f13eb24467b3f8bfc8a15659c167",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:37:58.307175+00:00",
+      "id": "c0_m0_r1",
+      "charged_worker_seconds": 3.2541028999257833,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_m0_r2",
+        "cell": 0,
+        "engine": 0,
+        "chunk": 2,
+        "reps": 4096,
+        "seed": 1556972202,
+        "warmup_seed": 3544542345
+      },
+      "raw": "c0_m0_r2.npz",
+      "sha256": "5bf6c76cba3ea945788f44b5003d0005cbda4dccf7b08654ecae47bf6a119e1b",
+      "replicas": 4096,
+      "compute_seconds": 0.007056799833662808,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c0_m0_r2.npz",
+        "sha256": "5bf6c76cba3ea945788f44b5003d0005cbda4dccf7b08654ecae47bf6a119e1b",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:37:58.343225+00:00",
+      "id": "c0_m0_r2",
+      "charged_worker_seconds": 3.255324599915184,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_m0_r3",
+        "cell": 0,
+        "engine": 0,
+        "chunk": 3,
+        "reps": 4096,
+        "seed": 693372125,
+        "warmup_seed": 1116945020
+      },
+      "raw": "c0_m0_r3.npz",
+      "sha256": "a5dc84974d6aac9e835b41bdcb0749899bee30a24179da9b4bb018f21684342c",
+      "replicas": 4096,
+      "compute_seconds": 0.005817799596115947,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c0_m0_r3.npz",
+        "sha256": "a5dc84974d6aac9e835b41bdcb0749899bee30a24179da9b4bb018f21684342c",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:37:58.316818+00:00",
+      "id": "c0_m0_r3",
+      "charged_worker_seconds": 3.249242900055833,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_m0_r4",
+        "cell": 0,
+        "engine": 0,
+        "chunk": 4,
+        "reps": 4096,
+        "seed": 1218131817,
+        "warmup_seed": 1019884495
+      },
+      "raw": "c0_m0_r4.npz",
+      "sha256": "5022db40f18024f905ada30c5ccdfcc143673060fce5737f87a33b893fce4f76",
+      "replicas": 4096,
+      "compute_seconds": 0.005817600060254335,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c0_m0_r4.npz",
+        "sha256": "5022db40f18024f905ada30c5ccdfcc143673060fce5737f87a33b893fce4f76",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:37:58.343125+00:00",
+      "id": "c0_m0_r4",
+      "charged_worker_seconds": 3.2452308000065386,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_m0_r5",
+        "cell": 0,
+        "engine": 0,
+        "chunk": 5,
+        "reps": 4096,
+        "seed": 59039615,
+        "warmup_seed": 2645833016
+      },
+      "raw": "c0_m0_r5.npz",
+      "sha256": "d583336259194130676f8141b2a32743f9bd619b515cb85090c649a9bae062b6",
+      "replicas": 4096,
+      "compute_seconds": 0.0061107000801712275,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c0_m0_r5.npz",
+        "sha256": "d583336259194130676f8141b2a32743f9bd619b515cb85090c649a9bae062b6",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:37:58.360067+00:00",
+      "id": "c0_m0_r5",
+      "charged_worker_seconds": 3.2427970999851823,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_m0_r6",
+        "cell": 0,
+        "engine": 0,
+        "chunk": 6,
+        "reps": 4096,
+        "seed": 3392665653,
+        "warmup_seed": 1348199888
+      },
+      "raw": "c0_m0_r6.npz",
+      "sha256": "2905f73e975db2340897ae16aede1421b5a4bd2fc4656be96a7030fb1b864877",
+      "replicas": 4096,
+      "compute_seconds": 0.006029299809597433,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c0_m0_r6.npz",
+        "sha256": "2905f73e975db2340897ae16aede1421b5a4bd2fc4656be96a7030fb1b864877",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:37:58.353650+00:00",
+      "id": "c0_m0_r6",
+      "charged_worker_seconds": 3.2416048999875784,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_m0_r7",
+        "cell": 0,
+        "engine": 0,
+        "chunk": 7,
+        "reps": 4096,
+        "seed": 2753785427,
+        "warmup_seed": 766337690
+      },
+      "raw": "c0_m0_r7.npz",
+      "sha256": "2a6326edbade3e7b4ef093bebee7e7fccf528d3d581d5b3b23917bf06ac40e0c",
+      "replicas": 4096,
+      "compute_seconds": 0.005607599741779268,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c0_m0_r7.npz",
+        "sha256": "2a6326edbade3e7b4ef093bebee7e7fccf528d3d581d5b3b23917bf06ac40e0c",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:37:58.320421+00:00",
+      "id": "c0_m0_r7",
+      "charged_worker_seconds": 3.2436217999784276,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_m0_r0",
+        "cell": 1,
+        "engine": 0,
+        "chunk": 0,
+        "reps": 4096,
+        "seed": 2843672313,
+        "warmup_seed": 613539152
+      },
+      "raw": "c1_m0_r0.npz",
+      "sha256": "e6c683eca64c9a773bdef90c9196e5bb0a6158f5ec310d03c3580ac1b4ed2cdb",
+      "replicas": 4096,
+      "compute_seconds": 0.005603100173175335,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c1_m0_r0.npz",
+        "sha256": "e6c683eca64c9a773bdef90c9196e5bb0a6158f5ec310d03c3580ac1b4ed2cdb",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:38:01.571888+00:00",
+      "id": "c1_m0_r0",
+      "charged_worker_seconds": 3.2509654999012128,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_m0_r1",
+        "cell": 1,
+        "engine": 0,
+        "chunk": 1,
+        "reps": 4096,
+        "seed": 1744196485,
+        "warmup_seed": 4057978133
+      },
+      "raw": "c1_m0_r1.npz",
+      "sha256": "290946282bf6193ee9243f1308dc8504b6ef98373ce1a3d8bfe4c6c4f880f83e",
+      "replicas": 4096,
+      "compute_seconds": 0.0055531003745272756,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c1_m0_r1.npz",
+        "sha256": "290946282bf6193ee9243f1308dc8504b6ef98373ce1a3d8bfe4c6c4f880f83e",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:38:01.592928+00:00",
+      "id": "c1_m0_r1",
+      "charged_worker_seconds": 3.254839099943638,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_m0_r2",
+        "cell": 1,
+        "engine": 0,
+        "chunk": 2,
+        "reps": 4096,
+        "seed": 2733861896,
+        "warmup_seed": 4075795555
+      },
+      "raw": "c1_m0_r2.npz",
+      "sha256": "e7d1b2d75b118f0364c048f1aca0be3ffdd7cd7222c563d0d29aec4b4d3d4db1",
+      "replicas": 4096,
+      "compute_seconds": 0.006799199967645109,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c1_m0_r2.npz",
+        "sha256": "e7d1b2d75b118f0364c048f1aca0be3ffdd7cd7222c563d0d29aec4b4d3d4db1",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:38:01.632723+00:00",
+      "id": "c1_m0_r2",
+      "charged_worker_seconds": 3.253772999974899,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_m0_r3",
+        "cell": 1,
+        "engine": 0,
+        "chunk": 3,
+        "reps": 4096,
+        "seed": 1167399233,
+        "warmup_seed": 1350204501
+      },
+      "raw": "c1_m0_r3.npz",
+      "sha256": "c2b18a5b7e7919a7dac5e0f67756e6617dacc280daf8d4c13d16e5931ab53b22",
+      "replicas": 4096,
+      "compute_seconds": 0.0057203000178560615,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c1_m0_r3.npz",
+        "sha256": "c2b18a5b7e7919a7dac5e0f67756e6617dacc280daf8d4c13d16e5931ab53b22",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:38:01.604601+00:00",
+      "id": "c1_m0_r3",
+      "charged_worker_seconds": 3.2561644999077544,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_m0_r4",
+        "cell": 1,
+        "engine": 0,
+        "chunk": 4,
+        "reps": 4096,
+        "seed": 369150360,
+        "warmup_seed": 1392273039
+      },
+      "raw": "c1_m0_r4.npz",
+      "sha256": "c018b66a63e61f563cfd2c1c3045ebb5bdae45da54e6559319fcf780fcd04231",
+      "replicas": 4096,
+      "compute_seconds": 0.005979799898341298,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c1_m0_r4.npz",
+        "sha256": "c018b66a63e61f563cfd2c1c3045ebb5bdae45da54e6559319fcf780fcd04231",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:38:01.592088+00:00",
+      "id": "c1_m0_r4",
+      "charged_worker_seconds": 3.258151000016369,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_m0_r5",
+        "cell": 1,
+        "engine": 0,
+        "chunk": 5,
+        "reps": 4096,
+        "seed": 4128276539,
+        "warmup_seed": 1613134756
+      },
+      "raw": "c1_m0_r5.npz",
+      "sha256": "957946adadeecc9b6ca557f08afb9b71ca2b4360ce5c02702dfd00edd0828ed2",
+      "replicas": 4096,
+      "compute_seconds": 0.006647999864071608,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c1_m0_r5.npz",
+        "sha256": "957946adadeecc9b6ca557f08afb9b71ca2b4360ce5c02702dfd00edd0828ed2",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:38:01.668240+00:00",
+      "id": "c1_m0_r5",
+      "charged_worker_seconds": 3.2597940999548882,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_m0_r6",
+        "cell": 1,
+        "engine": 0,
+        "chunk": 6,
+        "reps": 4096,
+        "seed": 2223619359,
+        "warmup_seed": 2280708438
+      },
+      "raw": "c1_m0_r6.npz",
+      "sha256": "508c03674885567226676b2e18d60952ba162e8986d0eddfa8211a8b6732a17c",
+      "replicas": 4096,
+      "compute_seconds": 0.005879899836145341,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c1_m0_r6.npz",
+        "sha256": "508c03674885567226676b2e18d60952ba162e8986d0eddfa8211a8b6732a17c",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:38:01.668240+00:00",
+      "id": "c1_m0_r6",
+      "charged_worker_seconds": 3.262966200010851,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_m0_r7",
+        "cell": 1,
+        "engine": 0,
+        "chunk": 7,
+        "reps": 4096,
+        "seed": 1137502290,
+        "warmup_seed": 988784929
+      },
+      "raw": "c1_m0_r7.npz",
+      "sha256": "87172efa428846cb564d9bef0cfb8878fd5ade5064adf08bc63a7ff4c466910c",
+      "replicas": 4096,
+      "compute_seconds": 0.007102299947291613,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c1_m0_r7.npz",
+        "sha256": "87172efa428846cb564d9bef0cfb8878fd5ade5064adf08bc63a7ff4c466910c",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:38:01.654986+00:00",
+      "id": "c1_m0_r7",
+      "charged_worker_seconds": 3.263018000056036,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c2_m0_r0",
+        "cell": 2,
+        "engine": 0,
+        "chunk": 0,
+        "reps": 4096,
+        "seed": 3320571442,
+        "warmup_seed": 281253235
+      },
+      "raw": "c2_m0_r0.npz",
+      "sha256": "2a039efa4986aaaa43bf55b279d3cbf86b7ef2f8b63f83db9b78ae3ad509f442",
+      "replicas": 4096,
+      "compute_seconds": 0.005881700082682073,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c2_m0_r0.npz",
+        "sha256": "2a039efa4986aaaa43bf55b279d3cbf86b7ef2f8b63f83db9b78ae3ad509f442",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:38:04.915892+00:00",
+      "id": "c2_m0_r0",
+      "charged_worker_seconds": 3.260903300018981,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c2_m0_r1",
+        "cell": 2,
+        "engine": 0,
+        "chunk": 1,
+        "reps": 4096,
+        "seed": 2959671584,
+        "warmup_seed": 4052026638
+      },
+      "raw": "c2_m0_r1.npz",
+      "sha256": "9a3ec71f81c4407ba701b024f0af10016dc39a01158c3f8241bbb9b9b11e33df",
+      "replicas": 4096,
+      "compute_seconds": 0.007019999902695417,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c2_m0_r1.npz",
+        "sha256": "9a3ec71f81c4407ba701b024f0af10016dc39a01158c3f8241bbb9b9b11e33df",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:38:04.947495+00:00",
+      "id": "c2_m0_r1",
+      "charged_worker_seconds": 3.263067099964246,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c2_m0_r2",
+        "cell": 2,
+        "engine": 0,
+        "chunk": 2,
+        "reps": 4096,
+        "seed": 3304377362,
+        "warmup_seed": 7490589
+      },
+      "raw": "c2_m0_r2.npz",
+      "sha256": "d9179ddf2c94cc4987dbeab866653031250d99494ca5bfae5d04e9a3090f8527",
+      "replicas": 4096,
+      "compute_seconds": 0.005489799892529845,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c2_m0_r2.npz",
+        "sha256": "d9179ddf2c94cc4987dbeab866653031250d99494ca5bfae5d04e9a3090f8527",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:38:05.007610+00:00",
+      "id": "c2_m0_r2",
+      "charged_worker_seconds": 3.264227799954824,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c2_m0_r3",
+        "cell": 2,
+        "engine": 0,
+        "chunk": 3,
+        "reps": 4096,
+        "seed": 2928111241,
+        "warmup_seed": 2236103551
+      },
+      "raw": "c2_m0_r3.npz",
+      "sha256": "c04f65d7a2d56b0b8f73ead94d138158462ea63b46c43731df237519e20e13cb",
+      "replicas": 4096,
+      "compute_seconds": 0.0060440999222919345,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c2_m0_r3.npz",
+        "sha256": "c04f65d7a2d56b0b8f73ead94d138158462ea63b46c43731df237519e20e13cb",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:38:05.015031+00:00",
+      "id": "c2_m0_r3",
+      "charged_worker_seconds": 3.266497500007972,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c2_m0_r4",
+        "cell": 2,
+        "engine": 0,
+        "chunk": 4,
+        "reps": 4096,
+        "seed": 3860565488,
+        "warmup_seed": 804611287
+      },
+      "raw": "c2_m0_r4.npz",
+      "sha256": "abd4bb72656cf497f20d4c6dd4c8706a7a2b0a55e65c41e87984567069a5f873",
+      "replicas": 4096,
+      "compute_seconds": 0.005992100341245532,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c2_m0_r4.npz",
+        "sha256": "abd4bb72656cf497f20d4c6dd4c8706a7a2b0a55e65c41e87984567069a5f873",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:38:04.996966+00:00",
+      "id": "c2_m0_r4",
+      "charged_worker_seconds": 3.267382299993187,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c2_m0_r5",
+        "cell": 2,
+        "engine": 0,
+        "chunk": 5,
+        "reps": 4096,
+        "seed": 2012545857,
+        "warmup_seed": 1253521143
+      },
+      "raw": "c2_m0_r5.npz",
+      "sha256": "56928f87150642f94e1fa5f17758c92bc776e737b2df9b278eff3a5065ee7341",
+      "replicas": 4096,
+      "compute_seconds": 0.006402500439435244,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c2_m0_r5.npz",
+        "sha256": "56928f87150642f94e1fa5f17758c92bc776e737b2df9b278eff3a5065ee7341",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:38:05.026498+00:00",
+      "id": "c2_m0_r5",
+      "charged_worker_seconds": 3.267071699956432,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c2_m0_r6",
+        "cell": 2,
+        "engine": 0,
+        "chunk": 6,
+        "reps": 4096,
+        "seed": 3247314760,
+        "warmup_seed": 3560558052
+      },
+      "raw": "c2_m0_r6.npz",
+      "sha256": "efa06b0b8833448e526f41c292e4f972f8d6a00e2718f203ff2bfac920d5a0db",
+      "replicas": 4096,
+      "compute_seconds": 0.0060854998882859945,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c2_m0_r6.npz",
+        "sha256": "efa06b0b8833448e526f41c292e4f972f8d6a00e2718f203ff2bfac920d5a0db",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:38:04.992504+00:00",
+      "id": "c2_m0_r6",
+      "charged_worker_seconds": 3.266476699966006,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c2_m0_r7",
+        "cell": 2,
+        "engine": 0,
+        "chunk": 7,
+        "reps": 4096,
+        "seed": 2269223983,
+        "warmup_seed": 4174890678
+      },
+      "raw": "c2_m0_r7.npz",
+      "sha256": "945426b4a0d4058efca5a36e207d8f6506c634a5d0c6c86acc8226caea501585",
+      "replicas": 4096,
+      "compute_seconds": 0.006240700604394078,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c2_m0_r7.npz",
+        "sha256": "945426b4a0d4058efca5a36e207d8f6506c634a5d0c6c86acc8226caea501585",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:38:05.001637+00:00",
+      "id": "c2_m0_r7",
+      "charged_worker_seconds": 3.2673800999764353,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c3_m0_r0",
+        "cell": 3,
+        "engine": 0,
+        "chunk": 0,
+        "reps": 4096,
+        "seed": 1420228171,
+        "warmup_seed": 2371580895
+      },
+      "raw": "c3_m0_r0.npz",
+      "sha256": "d92426a03e12425552d6f182df25ddf5f6ce58486a724522eb088bbca1259e73",
+      "replicas": 4096,
+      "compute_seconds": 0.015141899813897908,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c3_m0_r0.npz",
+        "sha256": "d92426a03e12425552d6f182df25ddf5f6ce58486a724522eb088bbca1259e73",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:38:08.416924+00:00",
+      "id": "c3_m0_r0",
+      "charged_worker_seconds": 3.253383999923244,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c3_m0_r1",
+        "cell": 3,
+        "engine": 0,
+        "chunk": 1,
+        "reps": 4096,
+        "seed": 433129096,
+        "warmup_seed": 2568199697
+      },
+      "raw": "c3_m0_r1.npz",
+      "sha256": "d17659c4427441cebc9d037c3f013701999e7d098c4fb01601045ad741acc540",
+      "replicas": 4096,
+      "compute_seconds": 0.010550000239163637,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c3_m0_r1.npz",
+        "sha256": "d17659c4427441cebc9d037c3f013701999e7d098c4fb01601045ad741acc540",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:38:08.424521+00:00",
+      "id": "c3_m0_r1",
+      "charged_worker_seconds": 3.2518213000148535,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c3_m0_r2",
+        "cell": 3,
+        "engine": 0,
+        "chunk": 2,
+        "reps": 4096,
+        "seed": 659694866,
+        "warmup_seed": 2966853183
+      },
+      "raw": "c3_m0_r2.npz",
+      "sha256": "81fa3099f45235de29c6482499db3b7982594df7dfe1061f34bd7f8165d6c1aa",
+      "replicas": 4096,
+      "compute_seconds": 0.009903900208882987,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c3_m0_r2.npz",
+        "sha256": "81fa3099f45235de29c6482499db3b7982594df7dfe1061f34bd7f8165d6c1aa",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:38:08.443444+00:00",
+      "id": "c3_m0_r2",
+      "charged_worker_seconds": 3.253142600064166,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c3_m0_r3",
+        "cell": 3,
+        "engine": 0,
+        "chunk": 3,
+        "reps": 4096,
+        "seed": 4219118572,
+        "warmup_seed": 422990729
+      },
+      "raw": "c3_m0_r3.npz",
+      "sha256": "72d586cc0a0742627390c48a12dc7696ef0d65bce1cf32663d4ea3489c4f086f",
+      "replicas": 4096,
+      "compute_seconds": 0.015313700307160616,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c3_m0_r3.npz",
+        "sha256": "72d586cc0a0742627390c48a12dc7696ef0d65bce1cf32663d4ea3489c4f086f",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:38:08.437686+00:00",
+      "id": "c3_m0_r3",
+      "charged_worker_seconds": 3.253243100014515,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c3_m1_r0",
+        "cell": 3,
+        "engine": 1,
+        "chunk": 0,
+        "reps": 4096,
+        "seed": 1104019765,
+        "warmup_seed": 2159679176
+      },
+      "raw": "c3_m1_r0.npz",
+      "sha256": "5526c21fb109bce72fb8eef61cb40783b9398c9d218ce1813499ceeffe4d4654",
+      "replicas": 4096,
+      "compute_seconds": 0.6186250001192093,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c3_m1_r0.npz",
+        "sha256": "5526c21fb109bce72fb8eef61cb40783b9398c9d218ce1813499ceeffe4d4654",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:38:08.721800+00:00",
+      "id": "c3_m1_r0",
+      "charged_worker_seconds": 3.475516299949959,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c3_m1_r1",
+        "cell": 3,
+        "engine": 1,
+        "chunk": 1,
+        "reps": 4096,
+        "seed": 3569222210,
+        "warmup_seed": 3723428676
+      },
+      "raw": "c3_m1_r1.npz",
+      "sha256": "b9c127062b9ef0bf3784271a95acd72cb334ac36c3e2fb6342858b568fc32da0",
+      "replicas": 4096,
+      "compute_seconds": 0.5823969995835796,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c3_m1_r1.npz",
+        "sha256": "b9c127062b9ef0bf3784271a95acd72cb334ac36c3e2fb6342858b568fc32da0",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:38:08.743866+00:00",
+      "id": "c3_m1_r1",
+      "charged_worker_seconds": 3.4772637999849394,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c3_m1_r2",
+        "cell": 3,
+        "engine": 1,
+        "chunk": 2,
+        "reps": 4096,
+        "seed": 3961551456,
+        "warmup_seed": 3625587443
+      },
+      "raw": "c3_m1_r2.npz",
+      "sha256": "21d89966763300bdb6ed9bccf984106afbfbbb1e01ff6d73784bf9aaf724031f",
+      "replicas": 4096,
+      "compute_seconds": 0.5875377998454496,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c3_m1_r2.npz",
+        "sha256": "21d89966763300bdb6ed9bccf984106afbfbbb1e01ff6d73784bf9aaf724031f",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:38:08.711907+00:00",
+      "id": "c3_m1_r2",
+      "charged_worker_seconds": 3.4801573998993263,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c3_m1_r3",
+        "cell": 3,
+        "engine": 1,
+        "chunk": 3,
+        "reps": 4096,
+        "seed": 447743965,
+        "warmup_seed": 3767657749
+      },
+      "raw": "c3_m1_r3.npz",
+      "sha256": "0df31dbbdeb9ef9815b8899ac369daaabb2001a0e05c2c463497fe11c0e910b7",
+      "replicas": 4096,
+      "compute_seconds": 0.6041393002960831,
+      "raw_check": {
+        "file": "results\\MG11N1\\production\\c3_m1_r3.npz",
+        "sha256": "0df31dbbdeb9ef9815b8899ac369daaabb2001a0e05c2c463497fe11c0e910b7",
+        "replicas": 4096,
+        "checkpoints": 3,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "finished": "2026-11-08T20:38:08.710246+00:00",
+      "id": "c3_m1_r3",
+      "charged_worker_seconds": 3.4808397999731824,
+      "returncode": 0
+    }
+  ],
+  "ceiling": 3600,
+  "prior_charge": 0,
+  "poll_seconds": 0.25,
+  "charged_worker_seconds": 105.09612429921981,
+  "inflight_worker_seconds": 0,
+  "pending_ids": [],
+  "active_ids": [],
+  "stop_reason": null,
+  "admission_pause": null,
+  "workers": 8,
+  "threads_per_library": 1,
+  "max_observed_poll_gap_seconds": 0.25056070007849485
+}
