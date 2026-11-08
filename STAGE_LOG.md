@@ -920,3 +920,8 @@ MG066 P3 PRODUCTION START: 2026-11-07T21:37:04.563159+00:00; registrationd0e9fcc
 64/64 complete, initial S20-unit events32/32 total and Hany20 events0/32 total, inference per-step R16 only. One fine S censors at22.75 after reaching20. Independent6464 frames/96 temporal averages/raw/statistical audit PASS. Temporal residual averaging improves G visibility~4.4-4.5, without sqrt81 or physical survival/lineage claims; all aligned eligibility/uncertainties retained. Full archive prepared for publication/verification. PI closure separate; no next production registered.
 
 MG067 RETENTION: all64 complete P3 raw archives (146550116bytes),101 frames/path and full decision profiles/series published atef3b43aecefb2f244da456b47aaec7c0f3386d4b; SHA256 matches and committed blob sizes verified against origin/main. Original studies preserved; PI closure pending.
+
+
+## MG068 — Add approved project summary and close P3 (2026-11-07)
+
+Inserted the exact one-paragraph summary Richard approved into P3 results. His conditional P3 approval is satisfied; P3 CLOSED as COMPLETE TEMPORAL ESTIMATION. Recorded the standing one-paragraph project-contribution/limits summary requirement in protocol, agent instructions and handoff. No scientific criteria/data or old outcomes changed; no next production registered.

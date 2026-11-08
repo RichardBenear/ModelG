@@ -24,6 +24,10 @@ Claude has no automatic implementation or approval obligation. If invited to rev
 6. **Recompute.** Re-derive important quantities from committed raw decision inputs using a separate analysis path. State shared dependencies and limits. Same-author recomputation is not independent external replication.
 7. **Report and close.** Present the frozen verdict, evidence, uncertainty, deviations and interpretation limits. The PI signs off on closure. External review can be requested for major claims or disputed assumptions without being mandatory for every stage.
 
+## Stage result summaries (PI instruction, MG068)
+
+Every new stage result report must include a one-paragraph, plain-language project-level summary near the beginning. Explain what the stage established, how it changes the overall project picture, and the main limits or unresolved questions. Distinguish model evidence from physical claims and estimation from proof. Use the same accessible style when presenting stage results to Richard. Ground the paragraph in the frozen findings and independent checks; it is interpretation, not a new scoring rule or a rescore. Richard requested this convention when approving P3; the approved paragraph is included in its result. Earlier frozen reports are not automatically rewritten.
+
 ## Review records
 
 - New lead checks: review/MGxxx_internal_check.md; corrections and dispositions: review/MGxxx_response.md.

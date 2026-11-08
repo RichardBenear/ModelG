@@ -1,6 +1,10 @@
 # MG10-P3 sampled temporal persistence and coupled-field averaging
 
-**COMPLETE TEMPORAL ESTIMATION**. PI closure pending.
+**COMPLETE TEMPORAL ESTIMATION**. PI CLOSED — MG068.
+
+## Project-level summary
+
+P3 strengthens the case that our rules support persistent, organized Model G patterns rather than just momentary noise: every seeded trajectory retained its reference-like pattern for at least 20 model-time units, while no unseeded trajectory produced an equally persistent match during the tested window. Temporal averaging also made the weak G-field structure clearer, with coupled-field profiles broadly consistent with the reference. This gives us a credible baseline for testing how such patterns depend on their surroundings and resource supply. It establishes persistence within the maintained-reservoir model; it does not yet establish real physical particles, indefinite stability, or reservoirs emerging naturally from the vacuum’s structure.
 
 Completed64/64 registered paths; production11.460091core-hours under24. Stop reason: None.
 
@@ -42,3 +46,8 @@ X-aligned mean empirical residual-reduction ratios G/X/Y are coarse[4.40501,1.98
 Both finite step sizes show the registered descriptive behavior; no stochastic equivalence/CTMC-limit proof, indefinite survival, depleted-state/intervention result or physical token lineage follows. All actual profiles/projection series, uncertainty/eligibility and raw inputs retained. Earlier P1/P2/D2 results unchanged; no next production registered. Full archive publication/hash verification follows.
 
 MG067 retention verified: all64 complete raw archives (146550116bytes) and profiles/decision series uploaded atef3b43aecefb2f244da456b47aaec7c0f3386d4b; SHA256 and Git blob sizes match. PI closure pending.
+
+
+## PI closure and summary requirement — MG068, 2026-11-07
+
+Richard requested the previously supplied one-paragraph project-level summary in this result and every stage result, and stated: “I approve P3 once you do that.” The exact requested paragraph has been added above; the condition is satisfied. **MG10-P3 is CLOSED as COMPLETE TEMPORAL ESTIMATION.** Registered findings, uncertainty, late censoring, sampled-field/physical-survival limits and full verified archive remain unchanged. The new report-summary convention is recorded in RESEARCH_PROTOCOL.md and AGENTS.md for future stages. No scientific criterion, raw input or prior-stage outcome is rescored; no next production is registered by this closure.

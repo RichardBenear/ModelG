@@ -33,6 +33,7 @@ Read [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md), the authoritative prospective
 - Every number in a record should be reproducible from committed files. Commit raw run records (they are small), budget
   ledgers, and any checkpoint a decision depended on. `results/*/partial/` is gitignored scratch.
 - Before stating a result, recompute it from raw files through a separate analysis path (not only through the evaluator), stating shared dependencies.
+- Every new stage result report must begin with a one-paragraph, plain-language project-level summary of what it established, its contribution to the overall project and its main limits (PI instruction MG068; see RESEARCH_PROTOCOL.md). Include this high-level interpretation when presenting results to the PI; do not change frozen scoring.
 - Write for the PI in plain language: the conclusion first, then the evidence. Say plainly when something failed or
   when an earlier claim of yours was wrong.
 
