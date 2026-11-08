@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "equivalence_r1_g1",
+    "resource": 1,
+    "network": 1,
+    "reps": 32,
+    "seed": 4273819402,
+    "warmup_seed": 3559496807
+  },
+  "reps": 32,
+  "compute_seconds": 0.0002118998672813177,
+  "io_seconds": 0.009422700037248433,
+  "elapsed_seconds": 0.02670160005800426,
+  "sha256": "71aac0dcc5f15e8348135ebcbc2c5e698b4d81552012da039a8d6cfc30cf51b5",
+  "raw": "equivalence_r1_g1.npz",
+  "raw_check": {
+    "file": "results\\MG11G1\\preparation\\qualification\\equivalence_r1_g1.npz",
+    "sha256": "71aac0dcc5f15e8348135ebcbc2c5e698b4d81552012da039a8d6cfc30cf51b5",
+    "replicas": 32,
+    "checkpoints": 5,
+    "integer_reconstruction": true,
+    "closed_total": true
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "records": [
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "timing_r0_g0",
+        "kind": "timing",
+        "resource": 0,
+        "network": 0,
+        "reps": 1024,
+        "seed": 887281118,
+        "warmup_seed": 3049821837
+      },
+      "reps": 1024,
+      "compute_seconds": 0.002823500079102814,
+      "io_seconds": 0.14612719998694956,
+      "elapsed_seconds": 0.19179620000068098,
+      "sha256": "6ae2b1600b1fe749ef4631fa3b62e6e6153693c833213f76661536e381079226",
+      "raw": "timing_r0_g0.npz",
+      "raw_check": {
+        "file": "results\\MG11G1\\preparation\\timing\\timing_r0_g0.npz",
+        "sha256": "6ae2b1600b1fe749ef4631fa3b62e6e6153693c833213f76661536e381079226",
+        "replicas": 1024,
+        "checkpoints": 5,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "id": "timing_r0_g0",
+      "charged_worker_seconds": 2.7557946000015363,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "timing_r0_g1",
+        "kind": "timing",
+        "resource": 0,
+        "network": 1,
+        "reps": 1024,
+        "seed": 1960272594,
+        "warmup_seed": 2637298442
+      },
+      "reps": 1024,
+      "compute_seconds": 0.002705400111153722,
+      "io_seconds": 0.14051189995370805,
+      "elapsed_seconds": 0.19005999993532896,
+      "sha256": "514192a3653361a3959cb3b235193d96d39cd2df68e1858ff22e077bec4cfc1b",
+      "raw": "timing_r0_g1.npz",
+      "raw_check": {
+        "file": "results\\MG11G1\\preparation\\timing\\timing_r0_g1.npz",
+        "sha256": "514192a3653361a3959cb3b235193d96d39cd2df68e1858ff22e077bec4cfc1b",
+        "replicas": 1024,
+        "checkpoints": 5,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "id": "timing_r0_g1",
+      "charged_worker_seconds": 2.7569389999844134,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "timing_r1_g0",
+        "kind": "timing",
+        "resource": 1,
+        "network": 0,
+        "reps": 1024,
+        "seed": 166985566,
+        "warmup_seed": 967524559
+      },
+      "reps": 1024,
+      "compute_seconds": 0.0031396999256685376,
+      "io_seconds": 0.14055269991513342,
+      "elapsed_seconds": 0.18880390003323555,
+      "sha256": "bd7968b5c038cdc408f22d0521cd23c822594ec250446293b901b7132590815e",
+      "raw": "timing_r1_g0.npz",
+      "raw_check": {
+        "file": "results\\MG11G1\\preparation\\timing\\timing_r1_g0.npz",
+        "sha256": "bd7968b5c038cdc408f22d0521cd23c822594ec250446293b901b7132590815e",
+        "replicas": 1024,
+        "checkpoints": 5,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "id": "timing_r1_g0",
+      "charged_worker_seconds": 2.7515693999594077,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "timing_r1_g1",
+        "kind": "timing",
+        "resource": 1,
+        "network": 1,
+        "reps": 1024,
+        "seed": 2106383163,
+        "warmup_seed": 1910563310
+      },
+      "reps": 1024,
+      "compute_seconds": 0.0030219999607652426,
+      "io_seconds": 0.1472692001843825,
+      "elapsed_seconds": 0.19420859997626394,
+      "sha256": "ebed5b69f2eac7a3f3faa90367f6c8a0eb3ec48c59c147add29e79cc59e19afb",
+      "raw": "timing_r1_g1.npz",
+      "raw_check": {
+        "file": "results\\MG11G1\\preparation\\timing\\timing_r1_g1.npz",
+        "sha256": "ebed5b69f2eac7a3f3faa90367f6c8a0eb3ec48c59c147add29e79cc59e19afb",
+        "replicas": 1024,
+        "checkpoints": 5,
+        "integer_reconstruction": true,
+        "closed_total": true
+      },
+      "id": "timing_r1_g1",
+      "charged_worker_seconds": 2.7438482999568805,
+      "returncode": 0
+    }
+  ],
+  "ceiling": 900,
+  "prior_charge": 2.751829499960877,
+  "poll_seconds": 0.25,
+  "charged_worker_seconds": 13.759980799863115,
+  "inflight_worker_seconds": 0,
+  "pending_ids": [],
+  "active_ids": [],
+  "stop_reason": null,
+  "workers": 4,
+  "threads_per_library": 1,
+  "max_observed_poll_gap_seconds": 0.2506145000224933
+}
