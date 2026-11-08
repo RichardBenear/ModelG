@@ -1,5 +1,5 @@
 {
-  "status": "DEVELOPMENT RAW RETAINED LOCALLY; PUBLICATION PENDING PUSH",
+  "status": "ALL26 DEVELOPMENT ARCHIVES PUBLISHED AND VERIFIED",
   "files": [
     {
       "path": "results\\MG10E2\\preparation\\qualification\\contrast_inputs.npz",
@@ -134,5 +134,7 @@
   ],
   "count": 26,
   "bytes": 1293277,
-  "scope": "Only disclosed development and synthetic decision inputs, no E2 production"
+  "scope": "Only disclosed development and synthetic decision inputs, no E2 production",
+  "published_commit": "4ea6cae4e1b15ad124555fdb267e18c21cdcb3eb",
+  "verification": "Published origin/main blobs match all26 local development/SYNTHETIC SHA256 values; no E2 production data"
 }
