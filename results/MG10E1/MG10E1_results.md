@@ -2,7 +2,7 @@
 
 E1 shows that the persistent Model G pattern depends on where its A resource is supplied: removing A input near the seeded pattern reduced its reference-like X signal much more than removing the same expected input far away, even after subtracting the response of an unseeded background. Both numerical steps agreed, and every paired block showed the same direction. This moves the project beyond persistence under maintained supply to evidence for a localized interaction between a pattern and its resource environment. It does not establish physical particle death, identify the physical origin of A/B, or connect the reservoirs to quantum entanglement; movement and deformation can also change the measured signal.
 
-Status: **COMPLETE INTERVENTION ESTIMATION**; separate audit PASS; PI closure pending. Registered criteria/data unchanged.
+Status: **CLOSED — COMPLETE INTERVENTION ESTIMATION**; separate audit PASS; PI sign-off2026-11-08 (MG072): “I sign off”. Registered criteria/data unchanged.
 
 ## Primary registered result
 

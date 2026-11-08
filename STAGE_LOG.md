@@ -950,3 +950,8 @@ MG071 PUBLICATION BLOCK: local commit334caca contains complete results and160 ra
 MG071 PUBLICATION AUTHORIZATION (2026-11-08): Richard: “i approve publishing the results of E1,” answering the explicit request to publish E1 results and full raw archive to the public ModelG repository. Approved public publication of local result/archive commit334caca and supporting records; previous automatic-review block resolved by explicit PI permission. Scientific closure remains pending. Publish then verify all160 raw files against origin/main.
 
 MG071 RETENTION VERIFIED: explicit PI publication approval applied; results/full160 raw archives (290504596bytes) published at18adea684d2025e2f7433044ba9ec67d165cc5d1. Every origin/main raw blob matches audited SHA256 and local bytes. Earlier approval rejection preserved, resolved by explicit authorization. Scientific closure pending.
+
+
+## MG072 — PI closes MG10-E1 (2026-11-08)
+
+MG072 PI CLOSURE (2026-11-08): Richard: “I sign off”, following verified publication of E1 results/full archive. MG10-E1 CLOSED as COMPLETE INTERVENTION ESTIMATION.32/32 parents and128/128 branches complete, separate160-file raw/fork/projection/statistical audit PASS; all160 published archives match audited hashes. Registered direction-consistent model-pilot resource-location interaction retained; small-n approximate intervals, fixed-origin measurement, finite horizon and physical-mortality/reservoir-origin/entanglement limits unchanged. No criteria/data rescore, no new scientific production authorized.
