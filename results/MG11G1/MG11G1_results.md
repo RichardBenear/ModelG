@@ -34,3 +34,5 @@ Approved registration/source/criteria were published at de17fbe before the first
 ## What remains open
 
 This isolates a contrast between two selected fixed graph topologies. Equal degree, volume, distance and rate remove those simple explanations, but the experiment does not identify triangles alone as the cause or establish a universal geometry law. No Euclidean edge lengths or curvature are modeled. A later separately specified study would need to test whether topology-dependent supply affects the full nonlinear Model G pattern and its persistence, including depletion/feedback controls. Emergent environmental structure and a connection to entanglement remain additional modeling and evidential steps.
+
+Public retention verified: all128raw archives (9205383bytes) published at6df002421f1e607c39f92e4d58553b268630da63 match their audited SHA256 and local bytes; all159preparation/qualification binary inputs and fixtures also match published blobs. See retention_verified.json. PI closure pending.

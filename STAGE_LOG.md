@@ -1039,3 +1039,6 @@ MG084 final qualification PASS: four held writer replays and complete/missing-B/
 ## MG085 — MG11-G1 results (2026-11-08), PI closure pending
 
 COMPLETE CONNECTIVITY-SUPPLY ESTIMATION.64/64jobs,262144scientific paths+64excluded warmups. Primary B T4 bipartite-prism+.015182495 (1.518250percentage points), registered interval[.007453630,.022909648] above0; analytical prediction+.011529941.16/16endpoint CDF criteria supported, maxupper.015339591<.03. Separate128raw/state/source/seed/generator/CDF/beta/ledger audit PASS. No failures/timeouts/stops/retries/amendments. 353.770201worker-seconds=0.098270core-hours<1cap; end-to-end61.825802seconds. No active workers. Supports selected classical connectivity-dependent supply, not particles/native vacuum/energy/entanglement. Full raw/results publication approved, post-push verification follows; report results/MG11G1/MG11G1_results.md. PI closure separate.
+
+
+MG085 retention verified: all128 production main/warm raw archives (9205383bytes) published at6df002421f1e607c39f92e4d58553b268630da63; every origin/main blob matches audited SHA256 and local bytes. All159 preparation/qualification binary inputs/fixtures also match published blobs. See results/MG11G1/retention_verified.json. No active scientific workers; PI scientific closure pending.
