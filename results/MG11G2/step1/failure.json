@@ -1,0 +1,4 @@
+{
+  "status": "FAILED; preserve/version before correction, no automatic retry",
+  "error": "Traceback (most recent call last):\n  File \"C:\\Users\\rbene\\.codex\\.chatgpt-projects\\g-p-6ae095a6c94c819198efcd6d84f02c03\\archive_work\\ModelG_MG10\\src\\qualify_mg11g2_step1.py\", line 93, in <module>\n    try:execute()\n        ~~~~~~~^^\n  File \"C:\\Users\\rbene\\.codex\\.chatgpt-projects\\g-p-6ae095a6c94c819198efcd6d84f02c03\\archive_work\\ModelG_MG10\\src\\qualify_mg11g2_step1.py\", line 68, in execute\n    assert np.all(np.diff(mixing)<0) and mixing[-1]<=.005;assert np.all(np.diff(capacity)<0) and capacity[-1]<=.001\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+}

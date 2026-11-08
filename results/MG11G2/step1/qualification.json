@@ -1,0 +1,24 @@
+{
+  "passed": false,
+  "status": "SEPARATE AUDIT PENDING",
+  "formal": {
+    "closed_derivative_ledger_error": 9.301650359041311e-14,
+    "zero_network_derivative_ledger_error": 9.301650359041311e-14,
+    "legacy_nonlinear_drift_error": 5.684341886080802e-14,
+    "chemostat_drift_and_imports": true,
+    "boundary_minimum": 0.0,
+    "zero_resource_consumption": true,
+    "invalid_inputs_rejected": 5
+  },
+  "mixing_errors": [
+    0.7065595021890594,
+    0.3400475891166124,
+    0.050157394972244876,
+    0.005213697869783119
+  ],
+  "capacity_errors": [
+    0.0033353285290649505,
+    0.00033407797556126914,
+    3.341336519742936e-05
+  ]
+}

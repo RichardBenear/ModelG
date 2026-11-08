@@ -1,0 +1,43 @@
+{
+  "stage": "MG087a",
+  "scope": "Step1 build qualification follow-up only; original .005 limit and failed range remain unchanged",
+  "source_hashes": {
+    "src/mg11g2.py": "69df9ec5f5b7cd9c4ec5e6deb5f5acdd1e79a5f05dd2cb24056aac96454ed003",
+    "src/mg11g2_cases.py": "71edc152b57c4259c2b24a472b80b12c61b6ea248918a6a0f25bc3dc5e2f3dcb",
+    "src/qualify_mg11g2_step1.py": "9c6a9bb40135cc88112676e126ea7db3bfa0a045f74e5f671f109df91c05df0d",
+    "src/check_mg11g2_step1.py": "6715809d5125630ed4864ba5fdc4554fff4a5720dae71176d37f3cfb82ab0f05",
+    "spec/MG11G2_step1.md": "9a2bebe4f5433e9588abc3fc0deee98aca401fb1a96771c8f8e7369647125def",
+    "src/mg11n1.py": "d3e06a1297263b1b7fa3696877599457b3df9e67c5f70cab5deed032f347c614",
+    "src/mg10_reservoir.py": "bddf8ba09bacaa5ed884a2794646d6a307eb58bac09010058e47998ee96aa31b",
+    "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+    "src/mg10d1_pool.py": "ada3b015c0bd2ec05edd89f6a32671fe7ca6a2854894ae0fcfd1199d9c83f86c",
+    "src/mg11g2_step1_followup.py": "6e6f9c787ffa9b97667624599b53239e4ee755d45da69bf93ca830d0a8f76554",
+    "spec/MG11G2_step1_mixing_extension.md": "18e78d438c370a6d2cf4bbd4ab068b7eac64f3ce667a26c2c505c2b17324c598"
+  },
+  "original_hashes": {
+    "results/MG11G2/step1/attempt.json": "4f848bfd2605e9ee48ae74bcea8b26049c5fbe5172c3081271a78051022dfd73",
+    "results/MG11G2/step1/capacity_c1.npz": "2260b5269ef9933398b3dab8475cd3d6e268572d6dc06e84fc6a424dc2f7b1d3",
+    "results/MG11G2/step1/capacity_c10.npz": "143bd2291cb567cab015ada6b70a7bc3ca3b5ea3f9b98a4cf12412b6977e67c4",
+    "results/MG11G2/step1/capacity_c100.npz": "3b816500484b9673180dd7dac3c3a72f6797c98eb97061c725c4ef469bce343a",
+    "results/MG11G2/step1/failure.json": "987f153583ec1b64ceb0ce85c680420a4abab661e65e45746385d33cdbd525e2",
+    "results/MG11G2/step1/maintained.npz": "6bc455c76390224e13f3567ca7a655d898f5b1b7986332f39be4501e2c781f27",
+    "results/MG11G2/step1/MG11G2_step1_failure.md": "051211083890d132575cbe9d0d07af2daaa4d2d5d916f0d8a417c189511387a1",
+    "results/MG11G2/step1/mixed_reference_primary.npz": "43f788efd7c9b01ae9cef7fc04f370600f9af0736352b7dc96e4533a052e1f0e",
+    "results/MG11G2/step1/mixing_k1.npz": "042249ade69d7217950a64105f78149f19efad50f896710b5a3f2e9ffe9343a1",
+    "results/MG11G2/step1/mixing_k10.npz": "fab5d05480b41746898429a1ebd6f9d614cab7e8b83387870fd8714aabf18e4c",
+    "results/MG11G2/step1/mixing_k100.npz": "913af03207b3ce23bd3d453d4fa274853cf56e358830372b9b81a2e4c6fd21ca",
+    "results/MG11G2/step1/mixing_k1000.npz": "4e2d3571d7498d404c38f070cf1a69d24c0fcef8cb43746e50a6dd2bb8d11556",
+    "results/MG11G2/step1/plan.json": "55be730ba43720c80ac0d426c899416e915b1a5cedad01d751ccc5d8477556fa",
+    "results/MG11G2/step1/qualification.json": "3386f42c138d2114796cbc26289b3c983e949ffb2a5d4d2680edae3602aec710",
+    "results/MG11G2/step1/zero_network.npz": "ac4f9339ef4e66673299f526063128674125361a46bc6d3ddafcade75df65ba5"
+  },
+  "original_result": "FAILED: kappa1000 error.00521369787 exceeds.005",
+  "additional_kappa": [
+    10000.0,
+    10000.0
+  ],
+  "elapsed_cap_seconds": 300,
+  "workers": 1,
+  "threads_per_library": 1,
+  "random_draws": 0
+}
