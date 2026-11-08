@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "name": "per_leap_schedule_and_identity_a0_k0",
+      "passed": true
+    },
+    {
+      "name": "per_leap_schedule_and_identity_a0_k1",
+      "passed": true
+    },
+    {
+      "name": "per_leap_schedule_and_identity_a1_k0",
+      "passed": true
+    },
+    {
+      "name": "per_leap_schedule_and_identity_a1_k1",
+      "passed": true
+    },
+    {
+      "name": "per_leap_schedule_and_identity_a2_k0",
+      "passed": true
+    },
+    {
+      "name": "per_leap_schedule_and_identity_a2_k1",
+      "passed": true
+    },
+    {
+      "name": "per_leap_schedule_and_identity_a3_k0",
+      "passed": true
+    },
+    {
+      "name": "per_leap_schedule_and_identity_a3_k1",
+      "passed": true
+    },
+    {
+      "name": "invalid_schedule_rejection",
+      "passed": true
+    },
+    {
+      "name": "translation_amplitude_background_deformation_and_tie",
+      "passed": true
+    },
+    {
+      "name": "integral_background_cancellation_balanced_missing_and_prefix",
+      "passed": true
+    }
+  ],
+  "raw_checks": [
+    {
+      "file": "results\\MG10E2\\preparation\\qualification\\schedule_a0_k0.npz",
+      "sha256": "793aea5504336d7b26bbbe985b0f2952ccf811f857c587612342e1ebfd8d232b",
+      "replicas": 1,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\qualification\\schedule_a0_k1.npz",
+      "sha256": "94038bd630751848df57e02eac170f30696f3536d6054096c6a76756ede07c8d",
+      "replicas": 1,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\qualification\\schedule_a1_k0.npz",
+      "sha256": "176b0c356a3f74cbf0343587ecc2a5f1333aad716e866710d02540737c332b76",
+      "replicas": 1,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\qualification\\schedule_a1_k1.npz",
+      "sha256": "adf45b62bc6af9b669372c1baafae87eb3780b68f9afb4fee2e6052c92ba9f83",
+      "replicas": 1,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\qualification\\schedule_a2_k0.npz",
+      "sha256": "47bcd62c36505bedcd5888135b9a90e0a2b51cbd8b7c946ff6e5822aead7b564",
+      "replicas": 1,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\qualification\\schedule_a2_k1.npz",
+      "sha256": "d459cad6f1bd093288c2688fd2164c9d9634ae9f4ff2f5796c3d6e9067f6a644",
+      "replicas": 1,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\qualification\\schedule_a3_k0.npz",
+      "sha256": "c2814d92adcb93de735df121ec92a1ae2ddd00b8fad08cc45a38cf5ec4ca30b6",
+      "replicas": 1,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\qualification\\schedule_a3_k1.npz",
+      "sha256": "2b116364e04dde5d0709de8bec2212542539aa35dd819a069e9db96471acc81d",
+      "replicas": 1,
+      "checkpoints": 4,
+      "integer_reconstruction": true
+    }
+  ],
+  "status": "DEVELOPMENT ONLY; NO E2 SCIENCE"
+}

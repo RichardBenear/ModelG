@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "timing_a1_s1_k0",
+    "kind": "timing",
+    "arm": 1,
+    "start": 1,
+    "step": 0
+  },
+  "seed": 1614037656,
+  "raw": "timing_a1_s1_k0.npz",
+  "sha256": "952d168c942eeb5389de967f18ed24aff6a4022d7efed81a6f6749cab84daba4",
+  "compute_seconds": 4.8152888000477105,
+  "raw_check": {
+    "file": "results\\MG10E2\\preparation\\timing\\timing_a1_s1_k0.npz",
+    "sha256": "952d168c942eeb5389de967f18ed24aff6a4022d7efed81a6f6749cab84daba4",
+    "replicas": 1,
+    "checkpoints": 3,
+    "integer_reconstruction": true
+  }
+}
