@@ -1,0 +1,181 @@
+{
+  "passed": true,
+  "source_hashes": {
+    "src/run_mg10e2.py": "7ce6c3834e9ab7dddb56f076b2a51ef22440a0c91a3af46880a1a5a1f4d8dd48",
+    "src/evaluate_mg10e2.py": "cb2be8e10c1e42ab5685d8ecb34e1909d96780431981c550dfc344ed8c6ce624",
+    "src/check_mg10e2.py": "cc01b3bf5cea4754469e2349316b31a39b5182b0390f40bbb8df5a8c15f944f7",
+    "src/qualify_mg10e2_pipeline.py": "a13a80ccaf7bab117ad505b22825824569731301306bf9c9d23f2d3a011bf156",
+    "src/mg10e2.py": "2feb7330a2fa3b60775dec3f24e75e4a9183284159657b52e5cc3e3b1b7a1f76",
+    "src/prepare_mg10e2.py": "d388013626f7d8aaca1351c5fc86be3ab50e13b5cc78ca4e9046875c9585b9a0",
+    "src/check_mg10e2_preparation.py": "bb8dac6e4b66b190f292ea0a9c289992b7efbe9bc55f7fd5a9c41ba0fc3c0176",
+    "src/mg10e1.py": "4e6f77fdaec7059743879082d730495b60da659272130d6efa38645aeaa35f6f",
+    "src/mg10e1_stream.py": "8cbeb61bdd123b8280211f5f34cb9ab424f36dd35a6246a3090e3133b3ad09a4",
+    "src/mg10d2.py": "d8b3cb7aebf23d3a93d3256b0fa122efd016eddbe0b0951f98ec6cded0c77d2b",
+    "src/mg10d2_source.py": "311f1326fb3fbcf5c9a62f04804b57c28718bb9bb081b37327625e39b08ff174",
+    "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+    "src/mg10s2.py": "c6d0caefc418536648b7b9c140e5d7b6f1b6d0588b8dc2edd621f208547e72be",
+    "src/mg10p2.py": "38b001ec9a54765540d723d26d38d6de4dd77850d301c5c55da151cb19697c69",
+    "src/mg10p1.py": "ba9aa61c92d813fc48f56cc1683e457596f0152637daede07638f1308aaad45c",
+    "src/check_mg10d1_development.py": "c0fd7b403c61a224da30da76a559b4f42ef8d3754118d43bcb9f20b68ac79f36",
+    "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+    "src/mg10d1_pool.py": "ada3b015c0bd2ec05edd89f6a32671fe7ca6a2854894ae0fcfd1199d9c83f86c",
+    "spec/MG10E2_proposal.md": "4fa9ecdc05ad95ea0e0dd82779301488281de3c19e2804ec67cbec5a2b065bc5",
+    "spec/MG10E2_prerun.md": "3d81d73bbd7e3d027b82e3d1f4f9aa0a91fb002807a682a075620587f88ab7ae",
+    "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+  },
+  "held_development_writer_replays": 20,
+  "raw_replay_checks": [
+    {
+      "file": "results\\MG10E2\\preparation\\writer_replays\\replay_a0_s0_k0.npz",
+      "sha256": "2c4c02a30f02bb0d59851e11dacce1c55ba4408d472fd51f38c20f98a3b11585",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\writer_replays\\replay_a1_s0_k0.npz",
+      "sha256": "5ac8087b85546a42a8061095f30fce3c0afb47cbb9abac2c959631e7f8611c52",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\writer_replays\\replay_a2_s0_k0.npz",
+      "sha256": "6157a1f12cc0290a740059219c50179f787205f95cc13295b2c845672ec54764",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\writer_replays\\replay_a3_s0_k0.npz",
+      "sha256": "37f7c7ee11e55f64ba956f29243bce8d668acea4352adbfb5e9df2cdd73e2c9b",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\writer_replays\\replay_a0_s0_k1.npz",
+      "sha256": "c7767eb7d2042fa0258c920834d829c41201115dfc51b4cc96c3b1e03eb44aa2",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\writer_replays\\replay_a1_s0_k1.npz",
+      "sha256": "55d68058448aa1c492f074ed315f837306ac331cb55afe5185463b5bb53df2ae",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\writer_replays\\replay_a2_s0_k1.npz",
+      "sha256": "86b3259d60b34f51bbb7aac9e616244022557b31c6de78a79c2418a30f978bb7",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\writer_replays\\replay_a3_s0_k1.npz",
+      "sha256": "617f7f782d90f814e0af11f0e3fe23f5122547c0d02fef4bb6d27310678235a0",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\writer_replays\\replay_a0_s1_k0.npz",
+      "sha256": "7f0a7a8c99c32006801a37ed40fb36311c13782900707de3a27759297dbcf348",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\writer_replays\\replay_a1_s1_k0.npz",
+      "sha256": "bd72c6fff4339bc872c3b3f648be42cc6f14085e84cbbddeb34acaeda1f382b2",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\writer_replays\\replay_a2_s1_k0.npz",
+      "sha256": "22298eb6ccded10840809e002afdff636cf902b15d3750f352464d45e9b9a483",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\writer_replays\\replay_a3_s1_k0.npz",
+      "sha256": "2d8727dbc450e8d257ecf011165ac58af38f25640d4977953a4d6b2038046897",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\writer_replays\\replay_a0_s1_k1.npz",
+      "sha256": "8478ad9cb050ed9858cb54b8f36cf8d2969fa22a9be000de01914382bbd2167e",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\writer_replays\\replay_a1_s1_k1.npz",
+      "sha256": "067f7439f76bf289626746c520d4bcffeb47810825bf346acc43011cf08808a6",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\writer_replays\\replay_a2_s1_k1.npz",
+      "sha256": "4f6b8bc303f49a7350f1560174c11c7fd615faa21ddf679173033e705981ab4a",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\writer_replays\\replay_a3_s1_k1.npz",
+      "sha256": "3ba0356f10013dcc5242a62336db366f11621b865823d9f8b7b1cbb28e571800",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\writer_replays\\parent_replay_s0_k0.npz",
+      "sha256": "119bfee29a8827e5d4940d418a16e8347985d91e10d4f39b525c305c2a1feb23",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\writer_replays\\parent_replay_s0_k1.npz",
+      "sha256": "4b77bbd720bebcfc901794f0d481f635dc224ae67650994ac6bc5e3076d8e8d1",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\writer_replays\\parent_replay_s1_k0.npz",
+      "sha256": "9b473f678c644f00ffbd568105d149aebcffffcd51d569254268106be9720273",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E2\\preparation\\writer_replays\\parent_replay_s1_k1.npz",
+      "sha256": "53fd0557edde5f385c8cbfb453196fc05306d5233c5ac3c5fed93156a334cec3",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    }
+  ],
+  "synthetic_full_counts": [
+    32,
+    128
+  ],
+  "synthetic_missing_prefix_primary_counts": [
+    7,
+    8
+  ],
+  "empty_parent_stop_audited": true,
+  "additional_seconds": 173.33181430003606,
+  "total_preparation_allowance_seconds": 336.23939030000474,
+  "scope": "Held development stream replays through actual atomic writer; full/missing/prefix/empty algebraic raw-file pipeline and dense movement/statistical audit. No E2 scientific trajectory or new production seed used."
+}
