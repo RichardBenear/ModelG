@@ -1047,3 +1047,8 @@ MG085 retention verified: all128 production main/warm raw archives (9205383bytes
 ## MG086 — MG11-G1 PI closure (2026-11-08)
 
 Richard: “i sign off on MG11-G1.” CLOSED as COMPLETE CONNECTIVITY-SUPPLY ESTIMATION, with the registered positive B contrast supported. Accepted MG085 results,16/16 endpoint-law checks,128-archive separate audit and verified full public retention. Frozen design, counts, estimates and criteria unchanged. Scope remains selected fixed classical network delivery probes; particle persistence, emergent vacuum, physical energy and entanglement not established. No next production run authorized by this closure.
+
+
+## MG087 — MG11-G2 Step1 build and deterministic qualification (2026-11-08)
+
+PI authorized: “yes, I like that approach. Go ahead and build the Step 1.” Reuse frozen N1 full nonlinear continuum law, add explicit reaction/active/environment/import ledgers, qualify zero-transport legacy mapping, maintained supplies, nonlinear shared-finite-bath fast mixing, and finite-capacity recovery. Fixed small nonuniform fields,9coupled trajectories plus separately assembled Radau references; no stochastic draws, particle starts or geometry-effect production. Criteria/configurations and300-second single-process qualification ceiling in spec/MG11G2_step1.md. Commit/push source/plan before integration. No retries/criterion tuning; retain failures. Historical kernels frozen. External review not requested; same-author separate recomputation mandatory. Downstream pattern-response design/budget remains separate.
