@@ -1,0 +1,92 @@
+{
+  "audit_passed": true,
+  "original_qualification_passed": false,
+  "original_failed_criterion": "Highest registered mixing rate does not reach fixed .005 tolerance",
+  "raw_checks": [
+    {
+      "job": "zero_network",
+      "sha256": "ac4f9339ef4e66673299f526063128674125361a46bc6d3ddafcade75df65ba5",
+      "reference_error": 2.1071119249427284e-07,
+      "ledger_error": 2.0256523731115356e-13,
+      "balance_error": 2.7803396112081375e-16,
+      "minimum": 0.0
+    },
+    {
+      "job": "maintained",
+      "sha256": "6bc455c76390224e13f3567ca7a655d898f5b1b7986332f39be4501e2c781f27",
+      "reference_error": 2.0667613398472895e-07,
+      "ledger_error": 2.1310226310850503e-13,
+      "balance_error": 1.2869931403443918e-16,
+      "minimum": 0.0
+    },
+    {
+      "job": "capacity_c1",
+      "sha256": "2260b5269ef9933398b3dab8475cd3d6e268572d6dc06e84fc6a424dc2f7b1d3",
+      "reference_error": 2.1070832190162037e-07,
+      "ledger_error": 2.368105711525459e-13,
+      "balance_error": 1.112135844483255e-15,
+      "minimum": 0.0
+    },
+    {
+      "job": "capacity_c10",
+      "sha256": "143bd2291cb567cab015ada6b70a7bc3ca3b5ea3f9b98a4cf12412b6977e67c4",
+      "reference_error": 2.0909266140733962e-07,
+      "ledger_error": 1.3716300822414432e-13,
+      "balance_error": 3.3371894088835665e-16,
+      "minimum": 0.0
+    },
+    {
+      "job": "capacity_c100",
+      "sha256": "3b816500484b9673180dd7dac3c3a72f6797c98eb97061c725c4ef469bce343a",
+      "reference_error": 2.0534869804578193e-07,
+      "ledger_error": 2.0529033018977894e-13,
+      "balance_error": 5.33962818653231e-16,
+      "minimum": 0.0
+    },
+    {
+      "job": "mixing_k1",
+      "sha256": "042249ade69d7217950a64105f78149f19efad50f896710b5a3f2e9ffe9343a1",
+      "reference_error": 1.3755679617588612e-07,
+      "ledger_error": 3.361070102791963e-14,
+      "balance_error": 1.247386852332851e-16,
+      "minimum": 0.0
+    },
+    {
+      "job": "mixing_k10",
+      "sha256": "fab5d05480b41746898429a1ebd6f9d614cab7e8b83387870fd8714aabf18e4c",
+      "reference_error": 5.1509900345081405e-08,
+      "ledger_error": 3.332664005872843e-14,
+      "balance_error": 2.494773704665702e-16,
+      "minimum": 0.0
+    },
+    {
+      "job": "mixing_k100",
+      "sha256": "913af03207b3ce23bd3d453d4fa274853cf56e358830372b9b81a2e4c6fd21ca",
+      "reference_error": 5.1904152087445254e-08,
+      "ledger_error": 5.146881185136287e-14,
+      "balance_error": 4.989547409331404e-16,
+      "minimum": 0.0
+    },
+    {
+      "job": "mixing_k1000",
+      "sha256": "4e2d3571d7498d404c38f070cf1a69d24c0fcef8cb43746e50a6dd2bb8d11556",
+      "reference_error": 1.7051676337587196e-07,
+      "ledger_error": 1.7526896600728036e-13,
+      "balance_error": 1.372125537566136e-15,
+      "minimum": 0.0
+    }
+  ],
+  "mixing_errors": [
+    0.7065595018011507,
+    0.3400475894061842,
+    0.05015739526181662,
+    0.005213698159354863
+  ],
+  "capacity_errors": [
+    0.0033353289303164305,
+    0.00033407837681274905,
+    3.341376644890925e-05
+  ],
+  "elapsed_seconds": 4.649994499981403,
+  "dependencies": "Same author/shared fixture constants/NumPy/SciPy; separate population equations, directed incidence and Radau references. No external replication; original result remains failed."
+}

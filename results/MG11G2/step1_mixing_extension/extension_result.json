@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "original_qualification_passed": false,
+  "kappa": [
+    10000.0,
+    10000.0
+  ],
+  "mixing_error": 0.0005243519354436899,
+  "independent_mixing_error": 0.0005243475848843105,
+  "unchanged_margin": 0.005,
+  "raw_check": {
+    "reference_error": 1.7489592352148975e-07,
+    "ledger_error": 8.706368959110478e-13,
+    "balance_error": 8.731707966329957e-15,
+    "minimum": 0.0
+  },
+  "sha256": "07a67a5c83426b3e913c61c6731d08045d44baef5e57518a0409f7a2e1e86842",
+  "elapsed_seconds": 0.6850799999665469,
+  "scope": "One additional prospectively frozen rate; original registered range FAILED and not rescored. Small deterministic fixture only, no pattern/stochastic production."
+}
