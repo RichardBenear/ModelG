@@ -1,0 +1,282 @@
+{
+  "passed": true,
+  "status": "E1 PREPARATION PASS; PRODUCTION NOT APPROVED OR EXECUTED",
+  "raw_checks": [
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\small0.npz",
+      "sha256": "8abd0d3c819805575bd6d95d875a73f46b20069460bb0483a0dd2a900c6f5db8",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\small1.npz",
+      "sha256": "0da41541bd7beddc1c190bdb35e5c48cea46a66d4c20169490335891e85bd0df",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\small2.npz",
+      "sha256": "ac5c84660af2d25bafa3726f7bd717f6cfe9777e32cdb0153b0da0291af807dd",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\small3.npz",
+      "sha256": "f252abe0ff010bf73b74d9c570bc11279c059176289ac2e624938d3a7674b408",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\full_s0.npz",
+      "sha256": "75129387eddb839ad7f16098749a2d774f8c159492e66ecc8157a98a7ded1ab5",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\prepared_like_s0.npz",
+      "sha256": "ea7647f2025c5cda97085527b3dbf43377495dacfb2b7d07a284c725a1b454a8",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\full_s1.npz",
+      "sha256": "88fbf472612bbff5d9e295fd491f33958cc7f72ea57f5d22a5cfe7d99ecdba2e",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\prepared_like_s1.npz",
+      "sha256": "928d1408f19c18b2072f64e0b58828ed193e256d6a6322866979ceeed735c5d5",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\mask_a0.npz",
+      "sha256": "bbfcba5754d934465a20a93f0bb83249be9aad417c6ae2f98408305ed36e3b70",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\mask_a1.npz",
+      "sha256": "89a267e3e9ad6f6cfd629ba2d3c35113287f6f8ca197b0b63517f9030f3014da",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\mask_a2.npz",
+      "sha256": "1380ab4a49cf212563ce34f4a094a52977078e624b415c75f1e869dabe7fc552",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\mask_a3.npz",
+      "sha256": "a98d9bab8f5678d9c0d7796f88b959ad2edf6d607f60a95277356a87809877e7",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\source_alpha0.npz",
+      "sha256": "ac616ee931c5883f8ba1695bedec90e598fc524b0383ebc340430b60b828038c",
+      "replicas": 32768,
+      "checkpoints": 1,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\source_alpha1.npz",
+      "sha256": "4bc51ebcaa13b340d566afd30f3eb8f91739621a797ef54c09f6d95f20fcbfea",
+      "replicas": 32768,
+      "checkpoints": 1,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\source_alpha2.npz",
+      "sha256": "a3e1bc6d557c26a76ee75438c13ae462166ae6bf74d678be055a3c1a9ff46e21",
+      "replicas": 32768,
+      "checkpoints": 1,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\devparents\\parent_s0_k0.npz",
+      "sha256": "75d7d5c31628e3bdde005adca0374f052d3962de1f37afa4a38ac9010cd403fa",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\timing\\timing_a0_s0_k0.npz",
+      "sha256": "d8921f73615cc9422074c44f35dd6b05b2e7b2b73ab998b52bd9af79c91c758d",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\timing\\timing_a1_s0_k0.npz",
+      "sha256": "f068c318f6fd0b67b8485599bfdcd03d04ada2cceafafc8bac4215c33197fdbf",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\timing\\timing_a2_s0_k0.npz",
+      "sha256": "c588ef87d585078201bc0eb7de502e77f0fd409daae855978c00918600b72348",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\timing\\timing_a3_s0_k0.npz",
+      "sha256": "b72c3d8bb6b1e847adb63eacc6816a54643c9884d5ad30e130e25332a5330067",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\devparents\\parent_s0_k1.npz",
+      "sha256": "ed78a75ed1e21c00438472524dc34fc46c66b9bf30885f4acf92f8326f3726ea",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\timing\\timing_a0_s0_k1.npz",
+      "sha256": "fda9924b1878431ca94e6379af23b569a09b808295e0302fee676fbb6d8509e4",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\timing\\timing_a1_s0_k1.npz",
+      "sha256": "9b1a7520687d8fba561d76fdfaff7c1dc54e3790e32175ca027d3d7f9f282183",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\timing\\timing_a2_s0_k1.npz",
+      "sha256": "1823311bd723aa728d3272779c1918454e5c30ece7683cd61c8312c0fc9c029c",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\timing\\timing_a3_s0_k1.npz",
+      "sha256": "c8b65216788671b51b2e12c30d0efd7008a8b1c0716fe8833a1215c6bdbbf99c",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\devparents\\parent_s1_k0.npz",
+      "sha256": "32cc72ebada7b62be1dde4db7394367013dac878d10c20e6c2b3d3937e6dc32d",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\timing\\timing_a0_s1_k0.npz",
+      "sha256": "0cd5b4145b64a5f0afeb5945598253a9c95c50ba212084d5f2c1698d5e529c8a",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\timing\\timing_a1_s1_k0.npz",
+      "sha256": "33a51ba62cdf9c672db5fd37a0cebaec272d00b5cc4f053a324cbcda244c7433",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\timing\\timing_a2_s1_k0.npz",
+      "sha256": "b9101a828984a15e3bcf8c0430d426105bad9d94d8c2215735f221aa7c2ea4e8",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\timing\\timing_a3_s1_k0.npz",
+      "sha256": "ff3ef5eaf5810de730f15ecceaf0b11562b45f870ddb4b769731cb03100424d7",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\devparents\\parent_s1_k1.npz",
+      "sha256": "b5f21b0e3d024de054116e253e4815db338e20de9635094c30e2ae5f6c51980e",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\timing\\timing_a0_s1_k1.npz",
+      "sha256": "4b75d800334af7dce174ab43c57204cece494917b84f52bed4dd9174d2ed782f",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\timing\\timing_a1_s1_k1.npz",
+      "sha256": "c4c82caaaf1c50fdaac3783380f17b6634acdf500bd529a9d1b01c45f9ca4844",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\timing\\timing_a2_s1_k1.npz",
+      "sha256": "20addf6da041a18032593b3f6317d26f2d24c957b3a4818f93b3831501bbdb98",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\timing\\timing_a3_s1_k1.npz",
+      "sha256": "c7857f4fee9b422029f6c82c19f2843f69d42e90e72b659146253916c5d71fec",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    }
+  ],
+  "parent_forecast_seconds": {
+    "s0_k0": 139.63367031232337,
+    "s0_k1": 201.50901468754455,
+    "s1_k0": 140.732840312412,
+    "s1_k1": 202.7542581249145
+  },
+  "branch_forecast_seconds": {
+    "a0_s0_k0": 481.86132999602705,
+    "a1_s0_k0": 488.83674000157043,
+    "a2_s0_k0": 469.1245600034017,
+    "a3_s0_k0": 474.33004999533296,
+    "a0_s0_k1": 728.3339599997271,
+    "a1_s0_k1": 716.5939000004437,
+    "a2_s0_k1": 705.3546300018206,
+    "a3_s0_k1": 671.7424499953631,
+    "a0_s1_k0": 483.75410999637097,
+    "a1_s1_k0": 484.5644299965352,
+    "a2_s1_k0": 475.31511000473984,
+    "a3_s1_k0": 471.2975600012578,
+    "a0_s1_k1": 731.81377000059,
+    "a1_s1_k1": 725.5364899965934,
+    "a2_s1_k1": 720.7340700004715,
+    "a3_s1_k1": 675.3530500025954
+  },
+  "forecast_total_seconds": 81513.40794744028,
+  "forecast_core_hours": 22.64261331873341,
+  "eight_worker_wall_hours": 2.8303266648416763,
+  "within_75_percent_reserve": true,
+  "controlled_development_seconds": 185.64699070010101,
+  "total_preparation_allowance_seconds": 191.07141250011045,
+  "dependencies": "Same author; shared reference/constants and earlier explicit stoichiometric reconstruction. Separate Poisson recurrence, empirical CDF, explicit trapezoidal weights, contrast arithmetic, fsum variance and Student CDF inversion. Not external replication."
+}

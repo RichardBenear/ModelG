@@ -1,0 +1,185 @@
+{
+  "passed": true,
+  "status": "PREPARATION QUALIFICATION PASS; E1 SCIENCE NOT RUN",
+  "tests": [
+    {
+      "name": "all_one_untouched_identity_small0",
+      "passed": true,
+      "seed": 56513474
+    },
+    {
+      "name": "all_one_untouched_identity_small1",
+      "passed": true,
+      "seed": 1773447652
+    },
+    {
+      "name": "all_one_untouched_identity_small2",
+      "passed": true,
+      "seed": 2144070238
+    },
+    {
+      "name": "all_one_untouched_identity_small3",
+      "passed": true,
+      "seed": 2229570781
+    },
+    {
+      "name": "all_one_untouched_identity_full_s0",
+      "passed": true,
+      "seed": 1311010709
+    },
+    {
+      "name": "all_one_untouched_identity_prepared_like_s0",
+      "passed": true,
+      "seed": 2839239881
+    },
+    {
+      "name": "all_one_untouched_identity_full_s1",
+      "passed": true,
+      "seed": 1392700340
+    },
+    {
+      "name": "all_one_untouched_identity_prepared_like_s1",
+      "passed": true,
+      "seed": 531274050
+    },
+    {
+      "name": "spatial_mask_dose_off_events_a0",
+      "passed": true,
+      "seed": 3428980241
+    },
+    {
+      "name": "spatial_mask_dose_off_events_a1",
+      "passed": true,
+      "seed": 1044236715
+    },
+    {
+      "name": "spatial_mask_dose_off_events_a2",
+      "passed": true,
+      "seed": 21475209
+    },
+    {
+      "name": "spatial_mask_dose_off_events_a3",
+      "passed": true,
+      "seed": 3338932186
+    },
+    {
+      "name": "fork_preserves_all_species_denominators_without_alias",
+      "passed": true
+    },
+    {
+      "name": "activity_domain_rejection",
+      "passed": true
+    },
+    {
+      "name": "late_integral_paired_background_cancellation_nominal_interval",
+      "passed": true
+    }
+  ],
+  "raw_checks": [
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\small0.npz",
+      "sha256": "8abd0d3c819805575bd6d95d875a73f46b20069460bb0483a0dd2a900c6f5db8",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\small1.npz",
+      "sha256": "0da41541bd7beddc1c190bdb35e5c48cea46a66d4c20169490335891e85bd0df",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\small2.npz",
+      "sha256": "ac5c84660af2d25bafa3726f7bd717f6cfe9777e32cdb0153b0da0291af807dd",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\small3.npz",
+      "sha256": "f252abe0ff010bf73b74d9c570bc11279c059176289ac2e624938d3a7674b408",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\full_s0.npz",
+      "sha256": "75129387eddb839ad7f16098749a2d774f8c159492e66ecc8157a98a7ded1ab5",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\prepared_like_s0.npz",
+      "sha256": "ea7647f2025c5cda97085527b3dbf43377495dacfb2b7d07a284c725a1b454a8",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\full_s1.npz",
+      "sha256": "88fbf472612bbff5d9e295fd491f33958cc7f72ea57f5d22a5cfe7d99ecdba2e",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\prepared_like_s1.npz",
+      "sha256": "928d1408f19c18b2072f64e0b58828ed193e256d6a6322866979ceeed735c5d5",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\mask_a0.npz",
+      "sha256": "bbfcba5754d934465a20a93f0bb83249be9aad417c6ae2f98408305ed36e3b70",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\mask_a1.npz",
+      "sha256": "89a267e3e9ad6f6cfd629ba2d3c35113287f6f8ca197b0b63517f9030f3014da",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\mask_a2.npz",
+      "sha256": "1380ab4a49cf212563ce34f4a094a52977078e624b415c75f1e869dabe7fc552",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\mask_a3.npz",
+      "sha256": "a98d9bab8f5678d9c0d7796f88b959ad2edf6d607f60a95277356a87809877e7",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\source_alpha0.npz",
+      "sha256": "ac616ee931c5883f8ba1695bedec90e598fc524b0383ebc340430b60b828038c",
+      "replicas": 32768,
+      "checkpoints": 1,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\source_alpha1.npz",
+      "sha256": "4bc51ebcaa13b340d566afd30f3eb8f91739621a797ef54c09f6d95f20fcbfea",
+      "replicas": 32768,
+      "checkpoints": 1,
+      "integer_reconstruction": true
+    },
+    {
+      "file": "results\\MG10E1\\preparation\\qualification\\source_alpha2.npz",
+      "sha256": "a3e1bc6d557c26a76ee75438c13ae462166ae6bf74d678be055a3c1a9ff46e21",
+      "replicas": 32768,
+      "checkpoints": 1,
+      "integer_reconstruction": true
+    }
+  ]
+}

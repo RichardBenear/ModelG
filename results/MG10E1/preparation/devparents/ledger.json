@@ -1,0 +1,79 @@
+{
+  "records": [
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "parent_s0_k0",
+        "kind": "parent",
+        "start": 0,
+        "step": 0
+      },
+      "seed": 3004406713,
+      "compute_seconds": 4.29340460000094,
+      "raw": "parent_s0_k0.npz",
+      "sha256": "75d7d5c31628e3bdde005adca0374f052d3962de1f37afa4a38ac9010cd403fa",
+      "id": "parent_s0_k0",
+      "charged_worker_seconds": 7.011116000008769,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "parent_s1_k0",
+        "kind": "parent",
+        "start": 1,
+        "step": 0
+      },
+      "seed": 4243279177,
+      "compute_seconds": 4.305066800036002,
+      "raw": "parent_s1_k0.npz",
+      "sha256": "32cc72ebada7b62be1dde4db7394367013dac878d10c20e6c2b3d3937e6dc32d",
+      "id": "parent_s1_k0",
+      "charged_worker_seconds": 7.001413299993146,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "parent_s0_k1",
+        "kind": "parent",
+        "start": 0,
+        "step": 1
+      },
+      "seed": 988950819,
+      "compute_seconds": 6.36941260000458,
+      "raw": "parent_s0_k1.npz",
+      "sha256": "ed78a75ed1e21c00438472524dc34fc46c66b9bf30885f4acf92f8326f3726ea",
+      "id": "parent_s0_k1",
+      "charged_worker_seconds": 9.004524699994363,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "parent_s1_k1",
+        "kind": "parent",
+        "start": 1,
+        "step": 1
+      },
+      "seed": 848921057,
+      "compute_seconds": 6.42183299997123,
+      "raw": "parent_s1_k1.npz",
+      "sha256": "b5f21b0e3d024de054116e253e4815db338e20de9635094c30e2ae5f6c51980e",
+      "id": "parent_s1_k1",
+      "charged_worker_seconds": 8.989463600039016,
+      "returncode": 0
+    }
+  ],
+  "ceiling": 900,
+  "prior_charge": 10.26280060003046,
+  "poll_seconds": 0.25,
+  "charged_worker_seconds": 42.269318200065754,
+  "inflight_worker_seconds": 0,
+  "pending_ids": [],
+  "active_ids": [],
+  "stop_reason": null,
+  "workers": 4,
+  "threads_per_library": 1,
+  "max_observed_poll_gap_seconds": 0.2509342000121251
+}

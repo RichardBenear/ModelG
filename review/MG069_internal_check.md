@@ -1,0 +1,14 @@
+# MG069 internal design and preparation check
+
+Disposition: preparation qualified; new scientific protocol/budget awaiting PI approval. No production run.
+
+- All-one control identity: frozen D2/new gated source differ only in per-node R1e multipliers and corresponding finite-source safety calculation. Eight representative same-seed states/stats reproduce exactly, including nonzero physical Z/W. Collapsing untouched/sham is an identity choice, not extra independent evidence.
+- Forced background: local shutdown changes fields even without a seed. Matching H interventions and primary seed-by-location interaction address this confounder; nonlinear responses remain part of the estimand. Generic localized excitations may behave similarly; no particle specificity claim.
+- Dose/location: local/remote/uniform share expected A delivery, not realized counts, B consumption or energy. Remote communication through transport is possible and not assumed null. Patches fixed prospectively, not centered on favorable outcomes.
+- Parent selection/conditioning: fixed T5 preparation, no future or matcher filtering, all seven species and denominators retained. Short development parents are excluded from production. Independent future noise, pairing only by parent/block. Primary complete-balanced-block accounting; missingness explicit.
+- Measurement: fixed-origin signed projection can fall with movement or deformation, not only lost excitation. Report physical-coordinate profiles, means and secondary diagnostics. Matcher failure is not death. Accepted P2/P3 projection instrument reused; final streaming/evaluator direct projection and incomplete-pipeline qualification remains mandatory before production.
+- Inference: n8 blocks per step gives approximate intervals, uncertain power and sensitivity to nonnormality. No zero-effect/equivalence conclusion from non-significance. Two numerical steps are consistency checks, not continuum/CTMC proof. Completion independent of desired effect.
+- Runtime/retention: measured forecast22.642613core-hours below27 reserve; candidate cap36 NEW core-hours. Short-time extrapolation uncertainty disclosed; whole-batch cap/timeout stops, no replacement. Aggregate phase charge and full raw retention required. Controlled preparation185.646991seconds and separate allowance191.071413 <900.
+- Separate check:35 physical raw archives, Poisson recurrence/explicit CDF, raw mutation reconstruction, fork identity, trapezoidal sums, manual contrasts and Student-CDF inversion agree. Shared libraries/constants and same author disclosed.320 candidate and55 development seeds disjoint from2726 prior recorded values; no collision.
+
+No blocking preparation issue found. Approval plus prospective final production implementation/pipeline qualification/registration remains required; optional external review has not been claimed.

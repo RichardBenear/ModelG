@@ -1,0 +1,393 @@
+{
+  "qualification": {
+    "records": [
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "qualification",
+          "kind": "qualification"
+        },
+        "id": "qualification",
+        "charged_worker_seconds": 10.26280060003046,
+        "returncode": 0
+      }
+    ],
+    "ceiling": 900,
+    "prior_charge": 0,
+    "poll_seconds": 0.25,
+    "charged_worker_seconds": 10.26280060003046,
+    "inflight_worker_seconds": 0,
+    "pending_ids": [],
+    "active_ids": [],
+    "stop_reason": null,
+    "workers": 1,
+    "threads_per_library": 1,
+    "max_observed_poll_gap_seconds": 0.2505742000066675
+  },
+  "parents": {
+    "records": [
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "parent_s0_k0",
+          "kind": "parent",
+          "start": 0,
+          "step": 0
+        },
+        "seed": 3004406713,
+        "compute_seconds": 4.29340460000094,
+        "raw": "parent_s0_k0.npz",
+        "sha256": "75d7d5c31628e3bdde005adca0374f052d3962de1f37afa4a38ac9010cd403fa",
+        "id": "parent_s0_k0",
+        "charged_worker_seconds": 7.011116000008769,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "parent_s1_k0",
+          "kind": "parent",
+          "start": 1,
+          "step": 0
+        },
+        "seed": 4243279177,
+        "compute_seconds": 4.305066800036002,
+        "raw": "parent_s1_k0.npz",
+        "sha256": "32cc72ebada7b62be1dde4db7394367013dac878d10c20e6c2b3d3937e6dc32d",
+        "id": "parent_s1_k0",
+        "charged_worker_seconds": 7.001413299993146,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "parent_s0_k1",
+          "kind": "parent",
+          "start": 0,
+          "step": 1
+        },
+        "seed": 988950819,
+        "compute_seconds": 6.36941260000458,
+        "raw": "parent_s0_k1.npz",
+        "sha256": "ed78a75ed1e21c00438472524dc34fc46c66b9bf30885f4acf92f8326f3726ea",
+        "id": "parent_s0_k1",
+        "charged_worker_seconds": 9.004524699994363,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "parent_s1_k1",
+          "kind": "parent",
+          "start": 1,
+          "step": 1
+        },
+        "seed": 848921057,
+        "compute_seconds": 6.42183299997123,
+        "raw": "parent_s1_k1.npz",
+        "sha256": "b5f21b0e3d024de054116e253e4815db338e20de9635094c30e2ae5f6c51980e",
+        "id": "parent_s1_k1",
+        "charged_worker_seconds": 8.989463600039016,
+        "returncode": 0
+      }
+    ],
+    "ceiling": 900,
+    "prior_charge": 10.26280060003046,
+    "poll_seconds": 0.25,
+    "charged_worker_seconds": 42.269318200065754,
+    "inflight_worker_seconds": 0,
+    "pending_ids": [],
+    "active_ids": [],
+    "stop_reason": null,
+    "workers": 4,
+    "threads_per_library": 1,
+    "max_observed_poll_gap_seconds": 0.2509342000121251
+  },
+  "timing": {
+    "records": [
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a0_s0_k0",
+          "kind": "timing",
+          "arm": 0,
+          "start": 0,
+          "step": 0
+        },
+        "seed": 1857336140,
+        "compute_seconds": 4.6686132999602705,
+        "raw": "timing_a0_s0_k0.npz",
+        "sha256": "d8921f73615cc9422074c44f35dd6b05b2e7b2b73ab998b52bd9af79c91c758d",
+        "id": "timing_a0_s0_k0",
+        "charged_worker_seconds": 8.01190119999228,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a0_s1_k0",
+          "kind": "timing",
+          "arm": 0,
+          "start": 1,
+          "step": 0
+        },
+        "seed": 986275056,
+        "compute_seconds": 4.68754109996371,
+        "raw": "timing_a0_s1_k0.npz",
+        "sha256": "0cd5b4145b64a5f0afeb5945598253a9c95c50ba212084d5f2c1698d5e529c8a",
+        "id": "timing_a0_s1_k0",
+        "charged_worker_seconds": 8.005967399978545,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a1_s0_k0",
+          "kind": "timing",
+          "arm": 1,
+          "start": 0,
+          "step": 0
+        },
+        "seed": 4058117057,
+        "compute_seconds": 4.738367400015704,
+        "raw": "timing_a1_s0_k0.npz",
+        "sha256": "f068c318f6fd0b67b8485599bfdcd03d04ada2cceafafc8bac4215c33197fdbf",
+        "id": "timing_a1_s0_k0",
+        "charged_worker_seconds": 7.997368400043342,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a1_s1_k0",
+          "kind": "timing",
+          "arm": 1,
+          "start": 1,
+          "step": 0
+        },
+        "seed": 4012172062,
+        "compute_seconds": 4.695644299965352,
+        "raw": "timing_a1_s1_k0.npz",
+        "sha256": "33a51ba62cdf9c672db5fd37a0cebaec272d00b5cc4f053a324cbcda244c7433",
+        "id": "timing_a1_s1_k0",
+        "charged_worker_seconds": 7.996981100004632,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a1_s0_k1",
+          "kind": "timing",
+          "arm": 1,
+          "start": 0,
+          "step": 1
+        },
+        "seed": 3040499021,
+        "compute_seconds": 7.015939000004437,
+        "raw": "timing_a1_s0_k1.npz",
+        "sha256": "9b1a7520687d8fba561d76fdfaff7c1dc54e3790e32175ca027d3d7f9f282183",
+        "id": "timing_a1_s0_k1",
+        "charged_worker_seconds": 10.231397499970626,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a0_s0_k1",
+          "kind": "timing",
+          "arm": 0,
+          "start": 0,
+          "step": 1
+        },
+        "seed": 1086529095,
+        "compute_seconds": 7.133339599997271,
+        "raw": "timing_a0_s0_k1.npz",
+        "sha256": "fda9924b1878431ca94e6379af23b569a09b808295e0302fee676fbb6d8509e4",
+        "id": "timing_a0_s0_k1",
+        "charged_worker_seconds": 10.516176000004634,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a0_s1_k1",
+          "kind": "timing",
+          "arm": 0,
+          "start": 1,
+          "step": 1
+        },
+        "seed": 3416583233,
+        "compute_seconds": 7.1681377000059,
+        "raw": "timing_a0_s1_k1.npz",
+        "sha256": "4b75d800334af7dce174ab43c57204cece494917b84f52bed4dd9174d2ed782f",
+        "id": "timing_a0_s1_k1",
+        "charged_worker_seconds": 10.510638499981724,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a1_s1_k1",
+          "kind": "timing",
+          "arm": 1,
+          "start": 1,
+          "step": 1
+        },
+        "seed": 4023828221,
+        "compute_seconds": 7.1053648999659345,
+        "raw": "timing_a1_s1_k1.npz",
+        "sha256": "c4c82caaaf1c50fdaac3783380f17b6634acdf500bd529a9d1b01c45f9ca4844",
+        "id": "timing_a1_s1_k1",
+        "charged_worker_seconds": 10.489639599982183,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a2_s0_k0",
+          "kind": "timing",
+          "arm": 2,
+          "start": 0,
+          "step": 0
+        },
+        "seed": 1426402289,
+        "compute_seconds": 4.541245600034017,
+        "raw": "timing_a2_s0_k0.npz",
+        "sha256": "c588ef87d585078201bc0eb7de502e77f0fd409daae855978c00918600b72348",
+        "id": "timing_a2_s0_k0",
+        "charged_worker_seconds": 7.514300899987575,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a2_s1_k0",
+          "kind": "timing",
+          "arm": 2,
+          "start": 1,
+          "step": 0
+        },
+        "seed": 4233223300,
+        "compute_seconds": 4.603151100047398,
+        "raw": "timing_a2_s1_k0.npz",
+        "sha256": "b9101a828984a15e3bcf8c0430d426105bad9d94d8c2215735f221aa7c2ea4e8",
+        "id": "timing_a2_s1_k0",
+        "charged_worker_seconds": 7.749688100011554,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a3_s0_k0",
+          "kind": "timing",
+          "arm": 3,
+          "start": 0,
+          "step": 0
+        },
+        "seed": 2153566534,
+        "compute_seconds": 4.59330049995333,
+        "raw": "timing_a3_s0_k0.npz",
+        "sha256": "b72c3d8bb6b1e847adb63eacc6816a54643c9884d5ad30e130e25332a5330067",
+        "id": "timing_a3_s0_k0",
+        "charged_worker_seconds": 7.514943400048651,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a2_s0_k1",
+          "kind": "timing",
+          "arm": 2,
+          "start": 0,
+          "step": 1
+        },
+        "seed": 1041241556,
+        "compute_seconds": 6.903546300018206,
+        "raw": "timing_a2_s0_k1.npz",
+        "sha256": "1823311bd723aa728d3272779c1918454e5c30ece7683cd61c8312c0fc9c029c",
+        "id": "timing_a2_s0_k1",
+        "charged_worker_seconds": 10.016182099992875,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a2_s1_k1",
+          "kind": "timing",
+          "arm": 2,
+          "start": 1,
+          "step": 1
+        },
+        "seed": 1880159610,
+        "compute_seconds": 7.0573407000047155,
+        "raw": "timing_a2_s1_k1.npz",
+        "sha256": "20addf6da041a18032593b3f6317d26f2d24c957b3a4818f93b3831501bbdb98",
+        "id": "timing_a2_s1_k1",
+        "charged_worker_seconds": 10.011264200031292,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a3_s1_k0",
+          "kind": "timing",
+          "arm": 3,
+          "start": 1,
+          "step": 0
+        },
+        "seed": 1856397142,
+        "compute_seconds": 4.562975600012578,
+        "raw": "timing_a3_s1_k0.npz",
+        "sha256": "ff3ef5eaf5810de730f15ecceaf0b11562b45f870ddb4b769731cb03100424d7",
+        "id": "timing_a3_s1_k0",
+        "charged_worker_seconds": 7.530051000008825,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a3_s0_k1",
+          "kind": "timing",
+          "arm": 3,
+          "start": 0,
+          "step": 1
+        },
+        "seed": 565162181,
+        "compute_seconds": 6.567424499953631,
+        "raw": "timing_a3_s0_k1.npz",
+        "sha256": "c8b65216788671b51b2e12c30d0efd7008a8b1c0716fe8833a1215c6bdbbf99c",
+        "id": "timing_a3_s0_k1",
+        "charged_worker_seconds": 9.519344400032423,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_a3_s1_k1",
+          "kind": "timing",
+          "arm": 3,
+          "start": 1,
+          "step": 1
+        },
+        "seed": 1822035901,
+        "compute_seconds": 6.603530500025954,
+        "raw": "timing_a3_s1_k1.npz",
+        "sha256": "c7857f4fee9b422029f6c82c19f2843f69d42e90e72b659146253916c5d71fec",
+        "id": "timing_a3_s1_k1",
+        "charged_worker_seconds": 9.761828699964099,
+        "returncode": 0
+      }
+    ],
+    "ceiling": 900,
+    "prior_charge": 42.269318200065754,
+    "poll_seconds": 0.25,
+    "charged_worker_seconds": 185.64699070010101,
+    "inflight_worker_seconds": 0,
+    "pending_ids": [],
+    "active_ids": [],
+    "stop_reason": null,
+    "workers": 8,
+    "threads_per_library": 1,
+    "max_observed_poll_gap_seconds": 0.250965700019151
+  }
+}
