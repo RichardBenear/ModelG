@@ -2157,3 +2157,8 @@ COMPLETE CONNECTIVITY-SUPPLY ESTIMATION.64/64jobs,262144scientific paths+64exclu
 
 
 MG085 retention verified: all128 production main/warm raw archives (9205383bytes) published at6df002421f1e607c39f92e4d58553b268630da63; every origin/main blob matches audited SHA256 and local bytes. All159 preparation/qualification binary inputs/fixtures also match published blobs. See results/MG11G1/retention_verified.json. No active scientific workers; PI scientific closure pending.
+
+
+## MG086 — MG11-G1 PI closure (2026-11-08)
+
+Richard: “i sign off on MG11-G1.” CLOSED as COMPLETE CONNECTIVITY-SUPPLY ESTIMATION, with the registered positive B contrast supported. Accepted MG085 results,16/16 endpoint-law checks,128-archive separate audit and verified full public retention. Frozen design, counts, estimates and criteria unchanged. Scope remains selected fixed classical network delivery probes; particle persistence, emergent vacuum, physical energy and entanglement not established. No next production run authorized by this closure.

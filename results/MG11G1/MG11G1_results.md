@@ -36,3 +36,8 @@ Approved registration/source/criteria were published at de17fbe before the first
 This isolates a contrast between two selected fixed graph topologies. Equal degree, volume, distance and rate remove those simple explanations, but the experiment does not identify triangles alone as the cause or establish a universal geometry law. No Euclidean edge lengths or curvature are modeled. A later separately specified study would need to test whether topology-dependent supply affects the full nonlinear Model G pattern and its persistence, including depletion/feedback controls. Emergent environmental structure and a connection to entanglement remain additional modeling and evidential steps.
 
 Public retention verified: all128raw archives (9205383bytes) published at6df002421f1e607c39f92e4d58553b268630da63 match their audited SHA256 and local bytes; all159preparation/qualification binary inputs and fixtures also match published blobs. See retention_verified.json. PI closure pending.
+
+
+## MG086 — MG11-G1 PI closure (2026-11-08)
+
+Richard: “i sign off on MG11-G1.” CLOSED as COMPLETE CONNECTIVITY-SUPPLY ESTIMATION, with the registered positive B contrast supported. Accepted MG085 results,16/16 endpoint-law checks,128-archive separate audit and verified full public retention. Frozen design, counts, estimates and criteria unchanged. Scope remains selected fixed classical network delivery probes; particle persistence, emergent vacuum, physical energy and entanglement not established. No next production run authorized by this closure.
