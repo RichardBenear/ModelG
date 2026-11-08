@@ -1,0 +1,46 @@
+{
+  "status": "COMPLETE INTERVENTION ESTIMATION",
+  "audit_passed": true,
+  "raw_records": 160,
+  "secondary_seed_excess_X": {
+    "Unchanged": [
+      0.9124655934420349,
+      0.9954483406457919
+    ],
+    "Local A off": [
+      0.024165995439509258,
+      0.017110683371907756
+    ],
+    "Remote A off": [
+      0.8581154344448305,
+      0.8739523670668402
+    ],
+    "Uniform reduction": [
+      2.1466146610280155,
+      2.2508579337132577
+    ]
+  },
+  "primary": {
+    "0": {
+      "n": 8,
+      "mean": -0.8339494390053213,
+      "ci_nominal": [
+        -1.1028722265832989,
+        -0.5650266514273437
+      ],
+      "scope": "97.5% t interval per step, nominal95% two-step family under t approximation; n8 pilot"
+    },
+    "1": {
+      "n": 8,
+      "mean": -0.8568416836949324,
+      "ci_nominal": [
+        -1.0017980159907123,
+        -0.7118853513991527
+      ],
+      "scope": "97.5% t interval per step, nominal95% two-step family under t approximation; n8 pilot"
+    }
+  },
+  "elapsed_through_audit_minutes": 153.18804498333333,
+  "production_core_hours": 19.808474260388902,
+  "scope": "Descriptive aggregation from audited per-branch late projections; frozen primary unchanged"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "a0_s1_k1_b3",
+    "parent": "parent_s1_k1_b3",
+    "arm": 0,
+    "start": 1,
+    "step": 1,
+    "block": 3,
+    "seed": 1242740844,
+    "warmup_seed": 1018724802,
+    "kind": "branch"
+  },
+  "raw": "a0_s1_k1_b3.npz",
+  "raw_sha256": "9bb5f85b96e7b846775ead02a121a5741fcde3cf065d7409be1101004e661b6c",
+  "parent_sha256": "28168e456b3703d3da7bda458b3131c88d81d694064dc8e73bdad7ad6081bbf0",
+  "checkpoints": 81,
+  "simulation_seconds": 634.6430985999759,
+  "elapsed_seconds": 650.538364899985,
+  "finished": "2026-11-08T04:24:32.369614+00:00"
+}
