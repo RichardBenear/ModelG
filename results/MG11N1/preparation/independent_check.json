@@ -1,0 +1,208 @@
+{
+  "passed": true,
+  "status": "N1 DEVELOPMENT PASS; PRODUCTION NOT REGISTERED",
+  "raw_checks": [
+    {
+      "file": "results\\MG11N1\\preparation\\qualification\\disconnected_0.npz",
+      "sha256": "02e885e188db266cd5565ebda4b3059c8836ab183c7820bc59c9006c4de7eedd",
+      "replicas": 8,
+      "checkpoints": 3,
+      "integer_reconstruction": true,
+      "closed_total": true
+    },
+    {
+      "file": "results\\MG11N1\\preparation\\qualification\\disconnected_1.npz",
+      "sha256": "d2063791586d946c193a12547a2bb32d8b7bf49cf759d3c684caa1cb839a593b",
+      "replicas": 8,
+      "checkpoints": 3,
+      "integer_reconstruction": true,
+      "closed_total": true
+    },
+    {
+      "file": "results\\MG11N1\\preparation\\qualification\\disconnected_2.npz",
+      "sha256": "e6ed88c02196eebc4051ad0cfa26b96f98cedb19169fc97d8d6ba266260e5c3c",
+      "replicas": 8,
+      "checkpoints": 3,
+      "integer_reconstruction": true,
+      "closed_total": true
+    },
+    {
+      "file": "results\\MG11N1\\preparation\\qualification\\disconnected_3.npz",
+      "sha256": "5cad05867c2f624992acc0a292854ba9162ce0ae05da31d7209847b130fbb6de",
+      "replicas": 8,
+      "checkpoints": 3,
+      "integer_reconstruction": true,
+      "closed_total": true
+    },
+    {
+      "file": "results\\MG11N1\\preparation\\qualification\\full500_smoke.npz",
+      "sha256": "915ca4cdc8a39a61bf56cea7f5b3e47132fe65e3766803d74fd575f9634c2ae5",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true,
+      "closed_total": true
+    },
+    {
+      "file": "results\\MG11N1\\preparation\\timing\\timing_c0_m0.npz",
+      "sha256": "357b27be46a716cff716675362b74a904b261dc89bef2b361b99fab39cd688b1",
+      "replicas": 256,
+      "checkpoints": 3,
+      "integer_reconstruction": true,
+      "closed_total": true
+    },
+    {
+      "file": "results\\MG11N1\\preparation\\timing\\timing_c0_m0_warm.npz",
+      "sha256": "93964e839f4870fba67ad5fcfcedb748c59633612c630295b6294b59ef0b5e5a",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true,
+      "closed_total": true
+    },
+    {
+      "file": "results\\MG11N1\\preparation\\timing\\timing_c1_m0.npz",
+      "sha256": "4a66bb66a7860edc0dc2cde6b0705827fb06a38a961e06e6717c2d67976a21a1",
+      "replicas": 256,
+      "checkpoints": 3,
+      "integer_reconstruction": true,
+      "closed_total": true
+    },
+    {
+      "file": "results\\MG11N1\\preparation\\timing\\timing_c1_m0_warm.npz",
+      "sha256": "ba7b4ad80b42f388f6b2a4b70129cbda3742e389932c74cf49f7f9ef374d0cd2",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true,
+      "closed_total": true
+    },
+    {
+      "file": "results\\MG11N1\\preparation\\timing\\timing_c2_m0.npz",
+      "sha256": "ca1b32f552d6849fca4b094ea2cb69216cd710cd75177da6674a554b9a8f0b93",
+      "replicas": 256,
+      "checkpoints": 3,
+      "integer_reconstruction": true,
+      "closed_total": true
+    },
+    {
+      "file": "results\\MG11N1\\preparation\\timing\\timing_c2_m0_warm.npz",
+      "sha256": "d69c5130a8f4bb85e445c0aff3eac7d2551795d8fb1fa5980f30579958e58091",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true,
+      "closed_total": true
+    },
+    {
+      "file": "results\\MG11N1\\preparation\\timing\\timing_c3_m0.npz",
+      "sha256": "30a75afc66f68ef95f2ce95b4d730980752ebdb3398e1acd1d257a4dff29bcfe",
+      "replicas": 256,
+      "checkpoints": 3,
+      "integer_reconstruction": true,
+      "closed_total": true
+    },
+    {
+      "file": "results\\MG11N1\\preparation\\timing\\timing_c3_m0_warm.npz",
+      "sha256": "be32e26a9f12257041fc42862426d28dac32fb0a37d7b7dd7d8b21ece64b1e94",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true,
+      "closed_total": true
+    },
+    {
+      "file": "results\\MG11N1\\preparation\\timing\\timing_c3_m1.npz",
+      "sha256": "97ffb89c9e02eb06af6d3382281d2c0e29028f50de865b00d26e39bd118e51f9",
+      "replicas": 128,
+      "checkpoints": 3,
+      "integer_reconstruction": true,
+      "closed_total": true
+    },
+    {
+      "file": "results\\MG11N1\\preparation\\timing\\timing_c3_m1_warm.npz",
+      "sha256": "5a35affc6170e895529a56c6548985ea5328871cee6215566f029cd215812cf8",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_reconstruction": true,
+      "closed_total": true
+    }
+  ],
+  "formal_assertions": 8,
+  "development_cdf_descriptive": [
+    {
+      "cell": 0,
+      "time": 0.25,
+      "distance": 0.023143603502484456,
+      "scope": "Development descriptive only; not scored using production criteria"
+    },
+    {
+      "cell": 0,
+      "time": 0.5,
+      "distance": 0.011483707301932933,
+      "scope": "Development descriptive only; not scored using production criteria"
+    },
+    {
+      "cell": 1,
+      "time": 0.25,
+      "distance": 0.03290521180672312,
+      "scope": "Development descriptive only; not scored using production criteria"
+    },
+    {
+      "cell": 1,
+      "time": 0.5,
+      "distance": 0.01431871869196022,
+      "scope": "Development descriptive only; not scored using production criteria"
+    },
+    {
+      "cell": 2,
+      "time": 0.5,
+      "distance": 0.029733241749059197,
+      "scope": "Development descriptive only; not scored using production criteria"
+    },
+    {
+      "cell": 2,
+      "time": 1.0,
+      "distance": 0.027095238736018212,
+      "scope": "Development descriptive only; not scored using production criteria"
+    }
+  ],
+  "forecast_seconds_per_job": {
+    "c0_m0_r0": 10.0128160007298,
+    "c0_m0_r1": 10.0128160007298,
+    "c0_m0_r2": 10.0128160007298,
+    "c0_m0_r3": 10.0128160007298,
+    "c0_m0_r4": 10.0128160007298,
+    "c0_m0_r5": 10.0128160007298,
+    "c0_m0_r6": 10.0128160007298,
+    "c0_m0_r7": 10.0128160007298,
+    "c1_m0_r0": 10.017100799828768,
+    "c1_m0_r1": 10.017100799828768,
+    "c1_m0_r2": 10.017100799828768,
+    "c1_m0_r3": 10.017100799828768,
+    "c1_m0_r4": 10.017100799828768,
+    "c1_m0_r5": 10.017100799828768,
+    "c1_m0_r6": 10.017100799828768,
+    "c1_m0_r7": 10.017100799828768,
+    "c2_m0_r0": 10.01718720048666,
+    "c2_m0_r1": 10.01718720048666,
+    "c2_m0_r2": 10.01718720048666,
+    "c2_m0_r3": 10.01718720048666,
+    "c2_m0_r4": 10.01718720048666,
+    "c2_m0_r5": 10.01718720048666,
+    "c2_m0_r6": 10.01718720048666,
+    "c2_m0_r7": 10.01718720048666,
+    "c3_m0_r0": 10.02024320140481,
+    "c3_m0_r1": 10.02024320140481,
+    "c3_m0_r2": 10.02024320140481,
+    "c3_m0_r3": 10.02024320140481,
+    "c3_m1_r0": 10.991699196398258,
+    "c3_m1_r1": 10.991699196398258,
+    "c3_m1_r2": 10.991699196398258,
+    "c3_m1_r3": 10.991699196398258
+  },
+  "forecast_worker_seconds": 324.4246015995741,
+  "forecast_core_hours": 0.09011794488877058,
+  "eight_worker_wall_minutes": 0.6758845866657793,
+  "within_75_percent_reserve": true,
+  "candidate_ceiling_core_hours": 1,
+  "raw_array_bound_bytes": 195035136,
+  "controlled_development_seconds": 19.686673599877395,
+  "total_preparation_allowance_seconds": 24.90696009993553,
+  "dependencies": "Same author; shared laws/constants/NumPy/SciPy and qualified legacy disconnected clock. Separate explicit reaction/edge reconstruction, joint-state generators with expm_multiply, scalar continuum arithmetic and50-digit capacity reference. No external replication or nonlinear particle/full-lattice stochastic qualification."
+}

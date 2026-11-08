@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "timing_c3_m0",
+    "kind": "timing",
+    "cell": 3,
+    "engine": 0
+  },
+  "reps": 256,
+  "compute_seconds": 0.000632600043900311,
+  "seed": 1368488227,
+  "raw": "timing_c3_m0.npz",
+  "sha256": "30a75afc66f68ef95f2ce95b4d730980752ebdb3398e1acd1d257a4dff29bcfe",
+  "raw_check": {
+    "file": "results\\MG11N1\\preparation\\timing\\timing_c3_m0.npz",
+    "sha256": "30a75afc66f68ef95f2ce95b4d730980752ebdb3398e1acd1d257a4dff29bcfe",
+    "replicas": 256,
+    "checkpoints": 3,
+    "integer_reconstruction": true,
+    "closed_total": true
+  }
+}

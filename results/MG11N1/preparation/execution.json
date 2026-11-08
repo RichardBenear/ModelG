@@ -1,0 +1,167 @@
+{
+  "qualification": {
+    "records": [
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "qualification",
+          "kind": "qualification"
+        },
+        "id": "qualification",
+        "charged_worker_seconds": 7.764561199932359,
+        "returncode": 0
+      }
+    ],
+    "ceiling": 900,
+    "prior_charge": 0,
+    "poll_seconds": 0.25,
+    "charged_worker_seconds": 7.764561199932359,
+    "inflight_worker_seconds": 0,
+    "pending_ids": [],
+    "active_ids": [],
+    "stop_reason": null,
+    "workers": 1,
+    "threads_per_library": 1,
+    "max_observed_poll_gap_seconds": 0.250635200063698
+  },
+  "timing": {
+    "records": [
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_c3_m1",
+          "kind": "timing",
+          "cell": 3,
+          "engine": 1
+        },
+        "reps": 128,
+        "compute_seconds": 0.015495299943722785,
+        "seed": 3122342593,
+        "raw": "timing_c3_m1.npz",
+        "sha256": "97ffb89c9e02eb06af6d3382281d2c0e29028f50de865b00d26e39bd118e51f9",
+        "raw_check": {
+          "file": "results\\MG11N1\\preparation\\timing\\timing_c3_m1.npz",
+          "sha256": "97ffb89c9e02eb06af6d3382281d2c0e29028f50de865b00d26e39bd118e51f9",
+          "replicas": 128,
+          "checkpoints": 3,
+          "integer_reconstruction": true,
+          "closed_total": true
+        },
+        "id": "timing_c3_m1",
+        "charged_worker_seconds": 1.954829099937342,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_c0_m0",
+          "kind": "timing",
+          "cell": 0,
+          "engine": 0
+        },
+        "reps": 256,
+        "compute_seconds": 0.0004005000228062272,
+        "seed": 3910905835,
+        "raw": "timing_c0_m0.npz",
+        "sha256": "357b27be46a716cff716675362b74a904b261dc89bef2b361b99fab39cd688b1",
+        "raw_check": {
+          "file": "results\\MG11N1\\preparation\\timing\\timing_c0_m0.npz",
+          "sha256": "357b27be46a716cff716675362b74a904b261dc89bef2b361b99fab39cd688b1",
+          "replicas": 256,
+          "checkpoints": 3,
+          "integer_reconstruction": true,
+          "closed_total": true
+        },
+        "id": "timing_c0_m0",
+        "charged_worker_seconds": 2.499019799986854,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_c1_m0",
+          "kind": "timing",
+          "cell": 1,
+          "engine": 0
+        },
+        "reps": 256,
+        "compute_seconds": 0.000534399994648993,
+        "seed": 4013469321,
+        "raw": "timing_c1_m0.npz",
+        "sha256": "4a66bb66a7860edc0dc2cde6b0705827fb06a38a961e06e6717c2d67976a21a1",
+        "raw_check": {
+          "file": "results\\MG11N1\\preparation\\timing\\timing_c1_m0.npz",
+          "sha256": "4a66bb66a7860edc0dc2cde6b0705827fb06a38a961e06e6717c2d67976a21a1",
+          "replicas": 256,
+          "checkpoints": 3,
+          "integer_reconstruction": true,
+          "closed_total": true
+        },
+        "id": "timing_c1_m0",
+        "charged_worker_seconds": 2.4919173000380397,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_c2_m0",
+          "kind": "timing",
+          "cell": 2,
+          "engine": 0
+        },
+        "reps": 256,
+        "compute_seconds": 0.0005371000152081251,
+        "seed": 669576696,
+        "raw": "timing_c2_m0.npz",
+        "sha256": "ca1b32f552d6849fca4b094ea2cb69216cd710cd75177da6674a554b9a8f0b93",
+        "raw_check": {
+          "file": "results\\MG11N1\\preparation\\timing\\timing_c2_m0.npz",
+          "sha256": "ca1b32f552d6849fca4b094ea2cb69216cd710cd75177da6674a554b9a8f0b93",
+          "replicas": 256,
+          "checkpoints": 3,
+          "integer_reconstruction": true,
+          "closed_total": true
+        },
+        "id": "timing_c2_m0",
+        "charged_worker_seconds": 2.486944400006905,
+        "returncode": 0
+      },
+      {
+        "status": "COMPLETE",
+        "job": {
+          "id": "timing_c3_m0",
+          "kind": "timing",
+          "cell": 3,
+          "engine": 0
+        },
+        "reps": 256,
+        "compute_seconds": 0.000632600043900311,
+        "seed": 1368488227,
+        "raw": "timing_c3_m0.npz",
+        "sha256": "30a75afc66f68ef95f2ce95b4d730980752ebdb3398e1acd1d257a4dff29bcfe",
+        "raw_check": {
+          "file": "results\\MG11N1\\preparation\\timing\\timing_c3_m0.npz",
+          "sha256": "30a75afc66f68ef95f2ce95b4d730980752ebdb3398e1acd1d257a4dff29bcfe",
+          "replicas": 256,
+          "checkpoints": 3,
+          "integer_reconstruction": true,
+          "closed_total": true
+        },
+        "id": "timing_c3_m0",
+        "charged_worker_seconds": 2.4894017999758944,
+        "returncode": 0
+      }
+    ],
+    "ceiling": 900,
+    "prior_charge": 7.764561199932359,
+    "poll_seconds": 0.25,
+    "charged_worker_seconds": 19.686673599877395,
+    "inflight_worker_seconds": 0,
+    "pending_ids": [],
+    "active_ids": [],
+    "stop_reason": null,
+    "workers": 5,
+    "threads_per_library": 1,
+    "max_observed_poll_gap_seconds": 0.25050019996706396
+  }
+}

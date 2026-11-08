@@ -1,0 +1,80 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "name": "legacy_finite_identity_0",
+      "passed": true
+    },
+    {
+      "name": "legacy_finite_identity_1",
+      "passed": true
+    },
+    {
+      "name": "legacy_finite_identity_2",
+      "passed": true
+    },
+    {
+      "name": "legacy_finite_identity_3",
+      "passed": true
+    },
+    {
+      "name": "graph_domain_duplicate_symmetry_rate_rejection",
+      "passed": true
+    },
+    {
+      "name": "zero_hop_continuum_finite_reference",
+      "passed": true
+    },
+    {
+      "name": "linear_component_fast_mixing_capacity_limits",
+      "passed": true
+    },
+    {
+      "name": "full500_dimensions_and_ledger_only",
+      "passed": true
+    }
+  ],
+  "raw_checks": [
+    {
+      "file": "results\\MG11N1\\preparation\\qualification\\disconnected_0.npz",
+      "sha256": "02e885e188db266cd5565ebda4b3059c8836ab183c7820bc59c9006c4de7eedd",
+      "replicas": 8,
+      "checkpoints": 3,
+      "integer_reconstruction": true,
+      "closed_total": true
+    },
+    {
+      "file": "results\\MG11N1\\preparation\\qualification\\disconnected_1.npz",
+      "sha256": "d2063791586d946c193a12547a2bb32d8b7bf49cf759d3c684caa1cb839a593b",
+      "replicas": 8,
+      "checkpoints": 3,
+      "integer_reconstruction": true,
+      "closed_total": true
+    },
+    {
+      "file": "results\\MG11N1\\preparation\\qualification\\disconnected_2.npz",
+      "sha256": "e6ed88c02196eebc4051ad0cfa26b96f98cedb19169fc97d8d6ba266260e5c3c",
+      "replicas": 8,
+      "checkpoints": 3,
+      "integer_reconstruction": true,
+      "closed_total": true
+    },
+    {
+      "file": "results\\MG11N1\\preparation\\qualification\\disconnected_3.npz",
+      "sha256": "5cad05867c2f624992acc0a292854ba9162ce0ae05da31d7209847b130fbb6de",
+      "replicas": 8,
+      "checkpoints": 3,
+      "integer_reconstruction": true,
+      "closed_total": true
+    },
+    {
+      "file": "results\\MG11N1\\preparation\\qualification\\full500_smoke.npz",
+      "sha256": "915ca4cdc8a39a61bf56cea7f5b3e47132fe65e3766803d74fd575f9634c2ae5",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_reconstruction": true,
+      "closed_total": true
+    }
+  ],
+  "scope": "Development formal/limiting-case checks, not production distribution verdict"
+}
