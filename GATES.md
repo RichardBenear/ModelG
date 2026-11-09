@@ -2294,3 +2294,6 @@ Version2 preparation passed65.564962seconds;60integer audits; all full-lattice h
 
 ### MG100b — final readiness and public preparation retention
 Supplement passed10.795452seconds;16Radau comparisons maxscaled8.75568313537e-11<2e-6;6invalid/corrupt cases rejected; parents identical across arms/settings. Total accounted86.360414seconds<900. Full preparation/donors/template179binary files21278679bytes verified published bytes/SHA256 atb7cdc1a; qualified source hashes unchanged. See results/MG11G5/retention_verified.json and MG11G5_preparation.md. Proposed80job/24core-hour/full-public-raw production remains unregistered pending PI concrete approval; no workers or scientific outcomes.
+
+## MG101 — MG11-G5 registered (PI approval 2026-11-08)
+Richard: “I approve of those.” Approves concrete MG100b package:64stochastic branches+16controls, Omega1000/post15, four balanced blocks per numerical setting, fixed primary/refinement criteria,24core-hour cap/3600perjob, max8local workers/library-thread1 and full public scientific raw/results. No external review requested. Registration source/donor/seed/qualification hashes frozen at results/MG11G5/registration.json. Commit/push before launch; no retries or replacements; PI closure later.

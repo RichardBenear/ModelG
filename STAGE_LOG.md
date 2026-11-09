@@ -1172,3 +1172,6 @@ G4 closure recorded; draft and implementation of conditional stochastic full-lat
 
 ### MG100b — conditional stochastic pilot READY
 All preparation and separate short drift references passed; original pre-draw inverse-t comparison failure preserved. Source/seed/donors frozen; accounted86.360414seconds<900. Forecast16.234798core-hours/~2h local8workers; proposed24cap/full public raw retention require concrete PI approval. No registration/production. Readiness report results/MG11G5/MG11G5_preparation.md.
+
+### MG101 — G5 approved and registered
+PI approved presented design/criteria,24core-hour cap/max8local workers and full public raw/results. Publish registration before launching80jobs. No automatic retry; results/audit and PI closure separate.
