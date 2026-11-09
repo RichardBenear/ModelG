@@ -2288,3 +2288,6 @@ PI closed G4 (MG099) and requested next step. Draft spec/MG11G5_pilot.md; fixed 
 
 ### MG100a — development-only numerical check correction
 Original preparation stopped before integrations/draws: t.ppf vs CDF-root quantile difference3.93543e-11 (relative9.42272e-12) exceeded comparison1e-12. Original source/plan/failure retained. Version2 checks both cutoffs by independent probability residual<1e-12; scientific confidence levels/margins unchanged. New source/plan before draws, remaining890seconds (10reserved for original); no production approval.
+
+### MG100b — passed short preparation; supplementary readiness checks
+Version2 preparation passed65.564962seconds;60integer audits; all full-lattice held replays exact, complete/prefix/missing/empty reporting passed. Forecast58445.273998worker-seconds (16.234798core-hours/~121.76minutes ideal8workers), below18core-hour reserve of candidate24cap. Supplement separately freezes16Radau population reference checks post.01, same-parent/invalid-stream/corrupt-ledger/corrupt-primary tests and secondary stock/continuity reporting. At most300seconds out of original remaining development allowance, no new RNG/late science; source/plan pushed before integrations. Full pilot still unregistered.

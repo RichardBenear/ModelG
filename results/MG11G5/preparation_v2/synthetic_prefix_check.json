@@ -1,0 +1,590 @@
+{
+  "passed": true,
+  "integer_checks": [
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b0_o0_s0_a0.npz",
+      "sha256": "cab0f44f4230309738fa7d91bd6d87f9d6019d1e1c8f31289268f24b7b6e7e9e",
+      "replicas": 1,
+      "checkpoints": 5,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b0_o0_s0_a1.npz",
+      "sha256": "09b361f2a17b629d34bbe28fac9a32aa5a3421fb38ed222f5e5edf6f0263bd56",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b0_o0_s1_a0.npz",
+      "sha256": "0969341be85b30013b0736c727f4d4c24bbf41d4e99cc3e46cc6479769cf5405",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b0_o0_s1_a1.npz",
+      "sha256": "f8e73c626889b0e840ffd7bdc77b20a9cebbce3dff1359940c4177cf45c121c9",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b0_o1_s0_a0.npz",
+      "sha256": "762420305342756776149349318a98742f3c506ea8defd411ee5ba0d93371e1d",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b0_o1_s0_a1.npz",
+      "sha256": "f995ffb1560b9b7beb48e6e5e97b59953f3e98442e18a16593effa4bb9617253",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b0_o1_s1_a0.npz",
+      "sha256": "98ed4759fc18b5a58d0b4d41ae46bbcba0d683879285a0e7a51c4c338a740144",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b0_o1_s1_a1.npz",
+      "sha256": "1657c37c58f91a04660405912ab2098477527b8e142102d627851755b84925e6",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b1_o0_s0_a0.npz",
+      "sha256": "cd79c5877ff6642d07a1b2bc059b4e5f934c255b9e29d99316b20a3696a43d20",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b1_o0_s0_a1.npz",
+      "sha256": "d53a685799acca66b37ef46e95c2458f955636499443d7c011cbf82f7e5ed602",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b1_o0_s1_a0.npz",
+      "sha256": "b99aefa025f19ec43d986bc4e6b70a39059c2148fe10d84327eb64e43a6f92da",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b1_o0_s1_a1.npz",
+      "sha256": "8874922feb9e3b656708a02d113459d0f80f7f32ed730b3db75c19cde2f493f4",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b1_o1_s0_a0.npz",
+      "sha256": "ddf91bb9de8611ba69d73622599cc3d2d04dd6f2cb1b0c237610229ce1fe2d06",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b1_o1_s0_a1.npz",
+      "sha256": "0dad33affd63f56844343f46ef082d3ed243edebfff84a8b212c01471afe6ddd",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b1_o1_s1_a0.npz",
+      "sha256": "e8ed6b3af6e88cb0b55e14c4f2995c4c279a2d99f6fa8b794e681a7d9d5d1931",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b1_o1_s1_a1.npz",
+      "sha256": "af24e8429d1b4ff9a97c7da3bc6f687057ec7c1bc598a531bf965d9d777c0ca6",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b2_o0_s0_a0.npz",
+      "sha256": "80ad09e06b7c8fdd8521e4bfa6ab31f9a68792140272a99e06e67be84efa8bd6",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b2_o0_s0_a1.npz",
+      "sha256": "3c60e18d52f4dae430ebf95134f6c11cb85cef15880530a8d6848d90434063e8",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b2_o0_s1_a0.npz",
+      "sha256": "916b59096e086c8029fcebad51b8ca5ee5ff08b7a7482bd0623f42c70bb5f2bc",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b2_o0_s1_a1.npz",
+      "sha256": "abfe39b077fa8d3cc9d91c44adffb37ea2070456cd1eb88d7fb4826ce42e862c",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b2_o1_s0_a0.npz",
+      "sha256": "35070f5f96c98401c7cc29bf1ead869d126b8f462adc9d1cd248534ada47af64",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b2_o1_s0_a1.npz",
+      "sha256": "9cd522f89ead90b34fc354b608091b7868347635d6c19f5d32d50cb05e3661ae",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b2_o1_s1_a0.npz",
+      "sha256": "b49d9b5d4f663fc9b2d0a3e1b1d8c3ab3f0660d0b063c414a2c709e4bb58e92a",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b2_o1_s1_a1.npz",
+      "sha256": "6471385aead4d0cb5cfd6ebca685f09a9f8a1eb5f282cc6e2c14a5210cdaad4c",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b3_o0_s0_a0.npz",
+      "sha256": "f2e6ede69ce301e9fb6273fa0a642e95d81a53e9bed28bde5b48768b74ad16fb",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b3_o0_s0_a1.npz",
+      "sha256": "1df7164a704d33e92f1162e8fbd73c2d117c3e42a03d6212b55ccb2385f9c3a6",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b3_o0_s1_a0.npz",
+      "sha256": "7917c06c42850d515bda53d695d44df4114238c99b87a22ef8a1cf88d9458e9d",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b3_o0_s1_a1.npz",
+      "sha256": "0683a7288167dd9dd26768a7f40ffb25a198bb7e8cff4f46277e37c715527e0d",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b3_o1_s0_a0.npz",
+      "sha256": "2967b256711c0852dd9867530a9506620262b38eee4c23c6076fbf2aadf54ee5",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b3_o1_s0_a1.npz",
+      "sha256": "c7877ffb34ee1ce9627d5ed20fe7c6880975d92aa05d62ffcb25dbb28f38944b",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b3_o1_s1_a0.npz",
+      "sha256": "4aa8d921b1e9ae212140489619368dae5a51e2735689fec13f7140228ff3397e",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v0_b3_o1_s1_a1.npz",
+      "sha256": "4a21c080eae3b90bdb89837b89e270afe5d7c32110f3e73c81ec48e5bcce335b",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b0_o0_s0_a0.npz",
+      "sha256": "58ddde74a3ee78310b5726ffeb85889b5e89bf2683cf329a7ee1f1d457d78d66",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b0_o0_s0_a1.npz",
+      "sha256": "a502fe0cc72bcd19c097866ab42e1836a49c0f5a90f4f91cb80b0b0ed7996597",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b0_o0_s1_a0.npz",
+      "sha256": "fd861d69c32894cf1c1371a45b8d3158e7437bc6530649076410cd10bf58ffb5",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b0_o0_s1_a1.npz",
+      "sha256": "5eee4a478c14eb67347686c38f5424618a4d3ba1628e1089238786deeeb85fd0",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b0_o1_s0_a0.npz",
+      "sha256": "0d45fedb00ff5c5d1cf8739e7dc30a5bb3d376bfd79ff792fe5fd8cc63c2305a",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b0_o1_s0_a1.npz",
+      "sha256": "28c766ddda5c334f6eebdc99aeaf0eb289a0b6603c9f19d7ce4b8893599ec6b4",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b0_o1_s1_a0.npz",
+      "sha256": "d53484f1f7385cbd83dcf7c64dab852ec252d3f3981ecf8c91c11bda4dc76c03",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b0_o1_s1_a1.npz",
+      "sha256": "77ed28d36d04b696db5d35edfda10897d9e9eb2cbfc9be2be68ad3535ec78ea1",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b1_o0_s0_a0.npz",
+      "sha256": "a80be6e3d44c876113a26eb10fe16598f2cfc6e9d72b1ea4dc6bed037a951df0",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b1_o0_s0_a1.npz",
+      "sha256": "c65afdf8a74f7d4b4632941ef3cbfa2ded8061be94bbf1d2fad5eb828c903898",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b1_o0_s1_a0.npz",
+      "sha256": "2916595f22d6c6f0564d3dc88bee040ea5c6e50ff949b8e8cd2a217fde2db517",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b1_o0_s1_a1.npz",
+      "sha256": "54a6adf7c744d984a95f4e148b6f3c33508aad76cd43cf20bff33f284b9dc314",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b1_o1_s0_a0.npz",
+      "sha256": "2ec24d05b25db4999ea6a28debc33eb11bbbefec250f1d94c127ea77945b52e9",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b1_o1_s0_a1.npz",
+      "sha256": "5e2ea89bfbefc39ac9a8099b8449ede4a82ea79a90a286de7bf3be62f44b8cf0",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b1_o1_s1_a0.npz",
+      "sha256": "5fb966e435181c1f5d830384b1d5d04d84ea5a1e865c2b5a284b2aa8c4fadbb6",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b1_o1_s1_a1.npz",
+      "sha256": "9a9764fd5d5c617dafa10a05a2df13646d81bb70c2fc4f2b8e072bf8e7132098",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b2_o0_s0_a0.npz",
+      "sha256": "756158897f1d763720d0e198ff8b0d9725ff167ced9060dc156d3b0330e71044",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b2_o0_s0_a1.npz",
+      "sha256": "8fdb118a5f6363b83b95ecc7ec1c3b5fb09e767fc0690484db36158764f9c1f9",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b2_o0_s1_a0.npz",
+      "sha256": "0ddbe69a7a886326b124efb3a68322a5104fc7c33f7e52252d4a0a35f548386a",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b2_o0_s1_a1.npz",
+      "sha256": "a4f927a866b7bf16c0b1c8918f6c3ccc933c5f977db039987a339ce30d6a11c5",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b2_o1_s0_a0.npz",
+      "sha256": "a6def93f15ff17983a58314d9007de8c9b2e64de995d184fb4434d93ef18b81a",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b2_o1_s0_a1.npz",
+      "sha256": "9727ee2df1f7d8935edbe79457c34edfa5c475a7548c71eac6effd732993cbf6",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b2_o1_s1_a0.npz",
+      "sha256": "32033de964c618085d9b9d6370d37f1052a7e4cf05d54b639bb86e2d1e518647",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b2_o1_s1_a1.npz",
+      "sha256": "c5879ddd9a1592077cd4aa8b0a778798f2e5881d46b28a644059dc41ead34b77",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b3_o0_s0_a0.npz",
+      "sha256": "53b71b421d737f2bab6cfc9fc4402449c9d61d1b027004c624fce1988dbd9162",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b3_o0_s0_a1.npz",
+      "sha256": "4925ff0cf64bcf229ff47b0bbcb53ab6e89d0f969082c76facb354bef7c5ca0d",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b3_o0_s1_a0.npz",
+      "sha256": "089c76c9ef81801d614d05305f4421ffde352dd8fe4af29cafcc0ec904e37d47",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b3_o0_s1_a1.npz",
+      "sha256": "b889da2778a654a05e9f0567cc068c5b99990320081676f6b82d57e4064bb0a2",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b3_o1_s0_a0.npz",
+      "sha256": "924172ad976ad3146b646b01c1dbab3110dd7afb2ab7349dad328509ee96ee7c",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b3_o1_s0_a1.npz",
+      "sha256": "3936ccc7696072b48533d7ce006ed84b0dd59effc42529bad40f61fee3c8a31f",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b3_o1_s1_a0.npz",
+      "sha256": "de3602cf50c46080d86ee462b196ba280a41e80f4c7c6d72cae28e1f16d73e41",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G5/preparation_v2/synthetic/p_v1_b3_o1_s1_a1.npz",
+      "sha256": "56d46976f2cbe1e49eb488acd73f33571d2fd58d326c42940efa2adfb87c28da",
+      "replicas": 1,
+      "checkpoints": 61,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    }
+  ],
+  "independent_intervals": [
+    {
+      "mean": -1.747005518461984e-32,
+      "lower": -1.747005518461984e-32,
+      "upper": -1.747005518461984e-32
+    }
+  ],
+  "complete": false,
+  "shared_dependencies": "same raw data, donors, template and accounting module; separate dense projection, block algebra and CDF-root intervals; same author, not external replication"
+}
