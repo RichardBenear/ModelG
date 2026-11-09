@@ -1,5 +1,5 @@
 {
-  "status": "ALL28 SCIENTIFIC RAW ARCHIVES AUDITED LOCALLY; public verification follows",
+  "status": "ALL28 PUBLIC SCIENTIFIC RAW ARCHIVES PUBLISHED AND VERIFIED",
   "files": [
     {
       "path": "results/MG11G2/pattern_response_v2/production/c0_s0_v0.npz",
@@ -145,5 +145,6 @@
   "total_bytes": 42096175,
   "jobs": 28,
   "checkpoints_per_job": 101,
-  "deterministic": true
+  "deterministic": true,
+  "published_commit": "cbecb8ac013b9cfd6f6548f4496110b27cab2b04"
 }
