@@ -2320,3 +2320,9 @@ PI: “go ahead with the formal qualification.” Spec MG12H1_qualification.md f
 
 ## MG108 — H1 formal qualification result
 QUALIFIED WITHIN REGISTERED SMALL-SYSTEM ENDPOINT SCOPE:16/16joint-count endpoint TVbounds supported; maxobserved.012989243465,maxupper.069686320645<.10, nominal99.9%family confidence conditional on sampling/reference.16jobs/262144paths/121036accepted-event saved replay complete, audit PASS.304.760835seconds<900cap, one localworker/thread1; no failure/stop/retry. Exact+preselectedfinest.005formal, coarserdescriptive. No full temporal/identity/particle/geometry/physical qualification. Report results/MG12H1/qualification/MG12H1_qualification_results.md; full raw/trace/reference publication and verification, PI closure pending.
+
+## MG109 — H1 closed; H2 development authorized
+Richard signs off on qualification and directs next phase. CLOSED as QUALIFIED WITHIN REGISTERED SMALL-SYSTEM ENDPOINT SCOPE, accepts MG108raw/audit/retention; no rescore. H2fixed higher-arity connectivity and 2D/3Dtransport/dimension calibration build next. No particle/evolving-substrate production authorized.
+
+## MG110 — H2fixed multi-incident transport development
+Following MG109PI authorization, freeze spec/MG12H2_development.md, typed cell matcher and independent matrix/reference plan before numerical work. Arity-normalized per-cell exit, provenance-preserving overlap channels, no new cooperative kinetics. Sixfixtures including2D/3Dknown grids,3072tiny paths,300seconds/singleworker development. Linear transport pairwise equivalence is an explicit required control. No emergent dimension/particle/scientific production claim.

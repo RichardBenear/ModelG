@@ -54,3 +54,7 @@ All 16 count archives, 16 eligible-event trace JSONL files and 4 reference proba
 The next bounded design can extend fixed connectivity beyond the ring and test explicitly higher-arity substrate relations, while retaining the same reaction/causal contract. Known 2D/3D fixtures can validate transport and dimension measurements; arbitrary relational substrates need not have a single dimension. Evolving-topology rules and substrate-generated supply remain later gates. Before particle-scale work, combinatorial matching costs require an optimized representation proven equivalent to the identity-rich reference, plus a separate large-population and longer-horizon qualification. Keep G5 closed with its unresolved stochastic response; this result does not rescore it.
 
 Publication verified at commit8201081: all retained files match published binary bytes, JSON values or line-ending-normalized trace/text content, with audited local hashes checked. Registered source hashes remain unchanged. See retention_verified.json. PI closure remains pending.
+
+## MG109 — PI closure
+
+Richard signed off on the qualification and authorized the next phase. H1 is CLOSED with its registered small-system endpoint scope unchanged. See MG12H1_closure.md. Earlier pending statements describe the original report publication.

@@ -1200,3 +1200,9 @@ User authorizes formal qualification;16jobs/262144paths,16joint-count endpoint T
 
 ### MG108 — H1 formal qualification passed
 16/16registered joint-count TVbounds supported (maxupper.069686320645<.10), all262144paths/121036accepted-event saved audit PASS.304.760835seconds<900; one worker/thread1, no failure/retry. Scope four tiny fixed-substrate endpoints; PI closure pending. Report/figure/full raw/traces published and verified separately.
+
+### MG109 — PI closes H1; H2next
+Qualification accepted unchanged. H2development authorized: higher-arity fixed relations, normalization, reference graph equivalence and known-dimensional benchmarks.
+
+### MG110 — H2build/development frozen
+Fixed arity2/3/4Active/A/Bcells, normalized exits and preserved channel provenance; independent incidence matrices, finite count references, grid mode checks and dimension calibration. Source/seed/fixture push before RNG/matrixintegration.300second development cap; no particle study.
