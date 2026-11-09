@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "timing_c0_e0",
+    "kind": "timing",
+    "cell": 0,
+    "engine": 0,
+    "reps": 128,
+    "seed": 297242281,
+    "warmup_seed": 3866502511
+  },
+  "reps": 128,
+  "compute_seconds": 0.0023317999439314008,
+  "io_seconds": 0.006189999985508621,
+  "elapsed_seconds": 0.039688299992121756,
+  "sha256": "e46fe518787c37d27bb8116c71eae3079e402763dc011c4f90663a9827f5f9ea",
+  "raw_check": {
+    "file": "results/MG11G4/preparation/timing/timing_c0_e0.npz",
+    "sha256": "e46fe518787c37d27bb8116c71eae3079e402763dc011c4f90663a9827f5f9ea",
+    "replicas": 128,
+    "checkpoints": 3,
+    "integer_ledger": true,
+    "closed_total": true,
+    "nonnegative": true
+  }
+}

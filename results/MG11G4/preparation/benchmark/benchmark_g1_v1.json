@@ -1,0 +1,17 @@
+{
+  "job": {
+    "id": "benchmark_g1_v1",
+    "kind": "benchmark",
+    "cell": 1,
+    "engine": 1,
+    "reps": 2,
+    "tau": 2.0833333333333333e-05,
+    "seed": 2378061396,
+    "warmup_seed": 2472221985
+  },
+  "warm_seconds": 0.08444639993831515,
+  "main_compute_seconds": 0.16734120005276054,
+  "seconds_per_path": 0.08367060002638027,
+  "linear_T25_seconds_per_path": 1045.8825003297534,
+  "scope": "Microbenchmark only: no long-horizon cost or accuracy guarantee"
+}

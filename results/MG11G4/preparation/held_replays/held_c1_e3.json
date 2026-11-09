@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "held_c1_e3",
+    "kind": "timing",
+    "cell": 1,
+    "engine": 3,
+    "reps": 32,
+    "seed": 3828449104,
+    "warmup_seed": 3284382107
+  },
+  "reps": 32,
+  "compute_seconds": 0.0206074999878183,
+  "io_seconds": 0.009985600016079843,
+  "elapsed_seconds": 0.05909730005078018,
+  "sha256": "f0af341d4002a31477259a42666bf156af7eea993c0742e13983e27e77117161",
+  "raw_check": {
+    "file": "results/MG11G4/preparation/held_replays/held_c1_e3.npz",
+    "sha256": "f0af341d4002a31477259a42666bf156af7eea993c0742e13983e27e77117161",
+    "replicas": 32,
+    "checkpoints": 3,
+    "integer_ledger": true,
+    "closed_total": true,
+    "nonnegative": true
+  }
+}

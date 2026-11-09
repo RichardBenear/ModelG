@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "source_hashes": {
+    "src/mg11g4.py": "649426e4974dc25504788ad700abc633a12c7fb19ce80085ecd603e8220bc64f",
+    "src/mg11g4_cases.py": "0ef829f017b9ba1a1afbf198da4ceb2b14aeabb5e18b1c436a2c5cd8deb459bd",
+    "src/mg11g4_oracle.py": "d2641fb6a6104e54b2231fa643ba32d57e41382823f60fe1291702648cccde8f",
+    "src/mg11g4_io.py": "93e1a5323b4116478af7d37b748f2f2659c42e66217cf41d23d47369d43f6531",
+    "src/evaluate_mg11g4.py": "c1a8ad7363e6b288fcc455287817a7e790931eff19a30063bffffca3df40899e",
+    "src/check_mg11g4.py": "90724889c04d68b6b3cd1f4e3466d6263f5a421739d70f111aa78d8523fc4236",
+    "src/run_mg11g4.py": "4ae25a005e510b224466bd00f39077d325d1afc1196ecb13fe031cfd2e732d60",
+    "src/prepare_mg11g4.py": "c34bea218553320f459462c59dc3d02655ec64abef0106633384245b00976e24",
+    "spec/MG11G4_step1.md": "191d30f4cfb4cd8b29432a4634265eb0536102007092fe09d5f1ae35311ca45d",
+    "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+    "src/mg10d2_source.py": "311f1326fb3fbcf5c9a62f04804b57c28718bb9bb081b37327625e39b08ff174",
+    "src/mg11n1.py": "d3e06a1297263b1b7fa3696877599457b3df9e67c5f70cab5deed032f347c614",
+    "src/mg11n1_oracle.py": "c17dbb97854ef2d8f3c7bd5062067d8a128058f84b18dc7c0ece2b59f626a8a4",
+    "src/mg11g2_pattern_v2.py": "c704898e977bac1797cdef29f75c2cb9c836f32520fe1c04617f0a3bceb9e603",
+    "src/mg11g2.py": "69df9ec5f5b7cd9c4ec5e6deb5f5acdd1e79a5f05dd2cb24056aac96454ed003",
+    "src/mg10p1.py": "ba9aa61c92d813fc48f56cc1683e457596f0152637daede07638f1308aaad45c",
+    "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+    "src/mg10d1_pool.py": "ada3b015c0bd2ec05edd89f6a32671fe7ca6a2854894ae0fcfd1199d9c83f86c",
+    "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+    "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+  },
+  "complete_missing_prefix_empty_wrong_statistic_invalid_ledger": true,
+  "formal_comparisons": 196,
+  "scope": "Manufactured zero-event balanced fields, not scientific samples"
+}

@@ -1,0 +1,283 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "invalid_cases_rejected": 12,
+      "conditional_mean_algebra": true
+    },
+    {
+      "id": "legacy_c0_e0",
+      "passed": true
+    },
+    {
+      "id": "legacy_c0_e1",
+      "passed": true
+    },
+    {
+      "id": "legacy_c1_e0",
+      "passed": true
+    },
+    {
+      "id": "legacy_c1_e1",
+      "passed": true
+    },
+    {
+      "id": "legacy_c2_e0",
+      "passed": true
+    },
+    {
+      "id": "legacy_c2_e1",
+      "passed": true
+    },
+    {
+      "id": "legacy_c3_e0",
+      "passed": true
+    },
+    {
+      "id": "legacy_c3_e1",
+      "passed": true
+    },
+    {
+      "id": "common_c1",
+      "passed": true
+    },
+    {
+      "id": "common_c2",
+      "passed": true
+    },
+    {
+      "id": "single_large0",
+      "passed": true
+    },
+    {
+      "id": "single_large1",
+      "passed": true
+    }
+  ],
+  "raw_checks": [
+    {
+      "file": "results/MG11G4/preparation/formal/legacy_c0_e0.npz",
+      "sha256": "9b89a49e88dac83e321a3691356de5cfdfe411755cc4c9b0ca43f65c5543d4ec",
+      "replicas": 8,
+      "checkpoints": 3,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G4/preparation/formal/legacy_c0_e0_warm.npz",
+      "sha256": "d9111a1339fcdebbc7de72b209501aa89903081a40f4b65264a0c654acb54d59",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G4/preparation/formal/legacy_c0_e1.npz",
+      "sha256": "1910fd7241c9d5ec6d5d8d142853cfced41ec6ffe07302ef9d3d532f1330867f",
+      "replicas": 8,
+      "checkpoints": 3,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G4/preparation/formal/legacy_c0_e1_warm.npz",
+      "sha256": "4eeb3ba2fd86b652a50b5b24c70abd4de57170739d401b959b3fe8ebcb0c506d",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G4/preparation/formal/legacy_c1_e0.npz",
+      "sha256": "cde43a93b58bd4c3ceb51cb0909c9d32c16acd2b61ac67c7b174095053cb8d94",
+      "replicas": 8,
+      "checkpoints": 3,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G4/preparation/formal/legacy_c1_e0_warm.npz",
+      "sha256": "61f3f116ce8a9814cae4ae79cf88da72dba40e62e344faeb88b3cb365147169b",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G4/preparation/formal/legacy_c1_e1.npz",
+      "sha256": "7bf6df44242d84bc64f05c886d633b16da93afc307b1f511aff9c5392aebcf80",
+      "replicas": 8,
+      "checkpoints": 3,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G4/preparation/formal/legacy_c1_e1_warm.npz",
+      "sha256": "f1aad0e1f9c97f8278acf233f5b48cbe13681d9df61a8a57bff8f6061868decf",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G4/preparation/formal/legacy_c2_e0.npz",
+      "sha256": "df4ceb67ccf910091fda10c6a7206acef43cc051956217ff2b8efd6544dc3e23",
+      "replicas": 8,
+      "checkpoints": 3,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G4/preparation/formal/legacy_c2_e0_warm.npz",
+      "sha256": "676b4588e45b2f436dd752fc3c46376ff3a14fe4c9a3eb09d990129fd461e667",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G4/preparation/formal/legacy_c2_e1.npz",
+      "sha256": "1a0792c35424c6e7acc190d180c51ccbbf00bf7f039ffbcbcc2973efcced99cd",
+      "replicas": 8,
+      "checkpoints": 3,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G4/preparation/formal/legacy_c2_e1_warm.npz",
+      "sha256": "f0089eff87644005e0831096b6c0d3d07bb0d08f1dd1575f49be35bd3e432e2c",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G4/preparation/formal/legacy_c3_e0.npz",
+      "sha256": "eb24dc9c8a17f9cdcd2b40293fb08cd4d1da0e7bf83c29991ce864a38aa9c168",
+      "replicas": 8,
+      "checkpoints": 3,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G4/preparation/formal/legacy_c3_e0_warm.npz",
+      "sha256": "203e29432348393af85ba9910ef9ba4aec01379b204685a86b9449755355be84",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G4/preparation/formal/legacy_c3_e1.npz",
+      "sha256": "fffcb1b229ff6d32064d1f5054d84ab54b73d48d38a906ac57af87f5bc9a8d84",
+      "replicas": 8,
+      "checkpoints": 3,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G4/preparation/formal/legacy_c3_e1_warm.npz",
+      "sha256": "845199d305097dab5dc7599cbfc047e77ef24a9e2f92c55ed43e4c1f2982f64b",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G4/preparation/formal/common_c1.npz",
+      "sha256": "3dea96c41791126110513d80ec3a96b8711ccf96eb953144bdfa4e27b71c73a1",
+      "replicas": 8,
+      "checkpoints": 3,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G4/preparation/formal/common_c1_warm.npz",
+      "sha256": "fb4fd8ab454e0dd04ed8411c74113a0288a13ee967bd4bd94f2f2b8be3345a21",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G4/preparation/formal/common_c2.npz",
+      "sha256": "497057cc2860d1ddc617b4bbe928619082104141c5e459494e98a2584ece2841",
+      "replicas": 8,
+      "checkpoints": 3,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G4/preparation/formal/common_c2_warm.npz",
+      "sha256": "97790c1c3799f38f52a5ae5db40266c608edce6e992cc31fb6004e47ddf39c45",
+      "replicas": 1,
+      "checkpoints": 3,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G4/preparation/formal/single_large0.npz",
+      "sha256": "d183d548fa9319170ac58c456ede9f0cca4af0e71d293660bd5835119fb0a3dd",
+      "replicas": 4096,
+      "checkpoints": 2,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G4/preparation/formal/single_large0_warm.npz",
+      "sha256": "39bc019c42b5adc9dee31cc9869cb87fe0dd0335760bc7059890f7036c1bd478",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G4/preparation/formal/single_large1.npz",
+      "sha256": "bda2e69760583bd1e3e6928b6f80be06e209d2762b949dfbd8dc7e40af7b4bd7",
+      "replicas": 4096,
+      "checkpoints": 2,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    },
+    {
+      "file": "results/MG11G4/preparation/formal/single_large1_warm.npz",
+      "sha256": "84ee1a2bf471f57a3bda769708173486cfabab7cc3e5249cd706596615dd05e4",
+      "replicas": 1,
+      "checkpoints": 2,
+      "integer_ledger": true,
+      "closed_total": true,
+      "nonnegative": true
+    }
+  ],
+  "large_binomial": {
+    "distance": 0.01684408939048576,
+    "epsilon": 0.031819133103492415,
+    "upper": 0.04866322249397818,
+    "margin": 0.08,
+    "alpha": 0.0005,
+    "passed": true
+  }
+}
