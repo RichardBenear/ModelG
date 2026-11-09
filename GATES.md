@@ -2306,3 +2306,6 @@ Richard signed off on G5: CLOSED as COMPLETE PILOT; STOCHASTIC RESPONSE AND STEP
 
 ## MG104 — MG12 relational hypergraph roadmap DRAFT (2026-11-09)
 PI requested a plan/questions. Six-stage H0semantics/H1exact translation/H2fixed incidence/H3pattern bridge/H4evolving relations/H5substrate supply-emergence plan in spec/MG12_hypergraph_roadmap.md. Five PI direction questions pending; no numerical experiment or production registered. Explicitly acknowledges prior MG5–MG7 evolving2D Delaunay hypergraphs; recent fixed1D G5 is not the entire project history. Closed outcomes unchanged.
+
+## MG105 — MG12 directions approved; H0 causal/species contract
+2026-11-09 Richard: “I agree to your recommendations on all 5. Proceed.” Approves MG12 direction/G5deferral, named species bridge, one-use catalysts, relational dimension approach, and finite resources before supply/quantum emergence. Contract spec/MG12H0_contract.md defines exact reference and strict snapshot matching, with finite-tick differences explicit. Static schema check source frozen before exhaustive<=7token enumeration; no RNG/integration/production. H1numerical seed/budget/sample specification still prospective.

@@ -1184,3 +1184,6 @@ PI closes G5 with its unresolved scientific outcome preserved and reaffirms G5-s
 
 ### MG104 — hypergraph roadmap drafted
 PI requested plan and questions: MG12 draft with six gated stages and five scientific choices. Distinguishes explicit rewrite translation from emergent kinetics, topology from dimension, quantum hypothesis from classical implementation. Corrects overly broad recent chat descriptions by referencing prior MG5 evolving2D Delaunay hypergraphs. No simulations, production approval or rescore.
+
+### MG105 — PI accepts5MG12directions; H0 contract
+Explicit typed entities/reactions, unordered catalyst pairs and factor2, strict catalyst reservation, frozen-match exponential proposal/greedy conflict semantics, finite-count generator correspondence and limitations specified. Static<=7token algebra/relabel tests only; source/spec published before checks. No scientific numerical run.
