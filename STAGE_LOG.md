@@ -1147,3 +1147,8 @@ Development PASS without revisions/retries in39.310529seconds<900:8zero-hop lega
 
 
 MG096 preparation retention verified: all321binary inputs (320newdevelopment/reference/fixture archives+1existing cached seed profile,3730358bytes) published atcdc73e5ff23d7a64b932228ac09072cb41ebda13, every blob SHA256/local-byte match verified. One intentionally corrupt ledger is labeled and retained as a rejection fixture, not a failed scientific path. Metadata JSON equal after Git line-ending normalization, qualified sources unchanged. Formal R16384qualification and full pattern pilot not run. See retention_verified.json.
+
+
+## MG097 — G4 Step1 formal stochastic qualification registered
+
+PI: “i approve all. proceed.” Approves concrete120job/245760main-path matrix,196fixed marginal CDFcriteria,2core-hour/7200worker-second cap and full public scientific results/raw retention. Exact frozen source/spec/seeds/preparation/pipeline hashes recorded in results/MG11G4/registration.json, with versions/environment.120separate warmups excluded. Max8localworkers/librarythreads1,180seconds/job,.25poll, forecast admission/drain/no retry; measured.522849core-hours within5400reserve. Publish registration before any9603scientific draws. Optional external review not requested. No pattern pilot or fundamental-tick/physical/quantum claim authorized. PI scientific closure later.
