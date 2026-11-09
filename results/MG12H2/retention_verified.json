@@ -1,0 +1,221 @@
+{
+  "published_commit": "c040b49a769598c38caab55ca2e97f50c641e3a0",
+  "all_files_verified": true,
+  "source_hashes_unchanged": true,
+  "files": 35,
+  "binary_files": 18,
+  "local_bytes": 686776,
+  "records": [
+    {
+      "file": "results/MG12H2/development/attempt.json",
+      "sha256": "1f80f3d206fefa04bbf86864adb8db77eeab126ac77526e1fa9b4a3923063077",
+      "bytes": 30,
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/development/c0_m0.npz",
+      "sha256": "d79d4ef38135e7f3b778e7a80a01b8bd73b2283b5849a6515489a65ec31e8b24",
+      "bytes": 2760,
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/development/c0_m0_traces.json",
+      "sha256": "a9ad784b0d6173de59031820b477fbe8b0fdb037bcf59768a67ef8230c70f0a2",
+      "bytes": 37260,
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/development/c0_m1.npz",
+      "sha256": "a2839fc0c9dc747802fedadb36a84083c0b379a851478c11ca59bade7f5d1ea2",
+      "bytes": 2745,
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/development/c0_m1_traces.json",
+      "sha256": "0391ccc76922626bc6542f695c80d2c37e838fea5174d633c8762d2ddee0c005",
+      "bytes": 37287,
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/development/c0_reference.npz",
+      "sha256": "de9a9efc7a0a513b567016a215ea39141e5c5612a62a8c9904f618b4ca26071b",
+      "bytes": 694,
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/development/c1_m0.npz",
+      "sha256": "3251aa2331d24a2adb676d03fcf74e7635776a406a0f2221a41890288cabe2a5",
+      "bytes": 2658,
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/development/c1_m0_traces.json",
+      "sha256": "dfb1981a02dacc21fc0b112d6181ec532eafcc5405f3c0789d0880fbe890b865",
+      "bytes": 26448,
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/development/c1_m1.npz",
+      "sha256": "710c1456b9a421b8a01129b3167712bfd149bcd6e948c1bb155aac5e205e35fe",
+      "bytes": 2646,
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/development/c1_m1_traces.json",
+      "sha256": "20be9f01332230f0e53e1b4579b074ce06a3b8b23e24a2f75409660007d7413a",
+      "bytes": 24310,
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/development/c1_reference.npz",
+      "sha256": "0074d4afe50a862fee64cfeebc7fdd6ce9d80628a16f1c4a33769bf831e8bc3b",
+      "bytes": 663,
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/development/c2_m0.npz",
+      "sha256": "e622ce57d52f6c247304b464f29d128b47cb28e24f756641f138d3d1193fadf1",
+      "bytes": 2699,
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/development/c2_m0_traces.json",
+      "sha256": "a08df85e62f1cad64aec0a98f54fe2bcbd2418d4480618df6039c09a8129472d",
+      "bytes": 30467,
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/development/c2_m1.npz",
+      "sha256": "85163f415bfaf4d45e632d1965d39357f58d6242d5fb8199ca698278dd86eb81",
+      "bytes": 2697,
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/development/c2_m1_traces.json",
+      "sha256": "409fa3d7db69edd3d3baf1765eae4ff92dfb03a36ca0d55398dd0a19d026cc12",
+      "bytes": 30445,
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/development/c2_reference.npz",
+      "sha256": "272d7778cd8b7a4399fdf767036e51b3394ea8fb930372b4d3ae839f8f764d97",
+      "bytes": 700,
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/development/c3_m0.npz",
+      "sha256": "942df74a072be4ee4e563a771373f925abbaf0de0b294c5ff061765651e321c4",
+      "bytes": 3488,
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/development/c3_m0_traces.json",
+      "sha256": "abb28cf4134ec2856a08f264138408b3a83c3a009e09db8c3a5afa50bedf45a0",
+      "bytes": 52743,
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/development/c3_m1.npz",
+      "sha256": "1ed781da81e51881734fac6042b72fb72c0c5c6f72012cfc7992c9d3fac384f9",
+      "bytes": 3490,
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/development/c3_m1_traces.json",
+      "sha256": "6a600774913faf7f9b12d518c0b329770c7f36961eee1bd687c39ed2184b4134",
+      "bytes": 54354,
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/development/c3_reference.npz",
+      "sha256": "1868a2b4aaf0f9dd7e4e3e3bb2d35f81a31285464e9b52d75e4fabd7a46ece0e",
+      "bytes": 773,
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/development/c4_m0.npz",
+      "sha256": "a24b61d57fce51a33b96307d1c3a1d7620804ebaccda46dd1c822f0087474544",
+      "bytes": 4520,
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/development/c4_m0_traces.json",
+      "sha256": "3cec34876bdfcd124a8424aed8ffd026f9fce8d74c70049008f8ca362be2eb08",
+      "bytes": 89534,
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/development/c4_m1.npz",
+      "sha256": "ba7e6dfb6120a3492939b24b7828295ca9d0e9d349069868cfa866de032153c3",
+      "bytes": 4535,
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/development/c4_m1_traces.json",
+      "sha256": "7f58cac29cec653e2254270a2b2c936dbe66fbf4dd62757c56a229e0f3e21417",
+      "bytes": 94309,
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/development/c4_reference.npz",
+      "sha256": "1b724f8d555a5fab41debf7ffbd1c19bfe5a452d3e49804b5398f5f7dc7d0b62",
+      "bytes": 1093,
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/development/c5_m0.npz",
+      "sha256": "abce8857c06a030612662186fa262b8cd5be27fe0c438bd117efc59a8e0c7137",
+      "bytes": 3328,
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/development/c5_m0_traces.json",
+      "sha256": "5901b579d830ec5099464cdc8bbf2225f46c258aea63de61ce4128b5400becc7",
+      "bytes": 35672,
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/development/c5_m1.npz",
+      "sha256": "232dffe0a61f60abdfd0f1a9fb310ca1805c9dcab2035727dccccd53dc0acbcf",
+      "bytes": 3305,
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/development/c5_m1_traces.json",
+      "sha256": "f57a1efdcbbc4871e432d01fb740635c7d10b11a8bd9fdc2391c1a809985c44d",
+      "bytes": 28242,
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/development/c5_reference.npz",
+      "sha256": "2fd2151412f9524c84530344b97c24447fe21b99269e1ddf28cf19504da426c9",
+      "bytes": 1045,
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/development/plan.json",
+      "sha256": "0712584ca9adf558204c7b3c6602e228790091b929f6f9f8f6124d4bd754f4d2",
+      "bytes": 89803,
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/development/results.json",
+      "sha256": "760cff8db5f48e0369fee47ff5247bda8216d05697159a4ab814b3f6a2ebdaf9",
+      "bytes": 3608,
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/MG12H2_development_results.md",
+      "sha256": "88ff2ab2d5cb74f5c9c947cca6fa88097979d11925274be3a8ae57aa149f79d7",
+      "bytes": 7137,
+      "comparison": "text LF normalized"
+    },
+    {
+      "file": "results/MG12H2/saved_evidence_check.json",
+      "sha256": "eb0e633f6a5259692103ee6d4d69b6020ce4777e8c904bcdf2c6d16fd534c1ec",
+      "bytes": 1288,
+      "comparison": "JSON semantic"
+    }
+  ],
+  "note": "Source hashes normalize LF. Local text hashes refer to working bytes; Git JSON compared semantically and prose normalized only for line endings. Bounded development, not formal H2statistical qualification."
+}
