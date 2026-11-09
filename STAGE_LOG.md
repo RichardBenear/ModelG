@@ -1194,3 +1194,6 @@ MG105 static outcome:101exact rational/schema checks and5164bijective relabeling
 User authorizes engine development. Freeze incidence and independent-count sources, fixture/seed manifest and300second bounded development before RNG/integration. Four tiny fixtures, exact master generator vs explicit match transitions, exactCDF smoke checks, strict-tick descriptive distributions and full causal trace replay. No formal production or large-system scaling claim.
 
 MG106 engine development passed:183reachable generator states agree,4096paths/16held replays/9adversarial cases and separate saved trace replay pass;4.022072seconds. Retain all raw/reference/traces/source and no formal tick-accuracy inference. Next concrete small-system qualification plan before production.
+
+### MG107 — formal qualification registered
+User authorizes formal qualification;16jobs/262144paths,16joint-count endpoint TVbounds<=.10 at nominal99.9%family confidence,900seconds/oneworker cap. Published registration before RNG/reference integration. Draft registration preflight list-call typo corrected before any sampling/integration; no scientific criteria changed. All original development sources frozen.
