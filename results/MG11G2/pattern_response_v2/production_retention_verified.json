@@ -7,5 +7,5 @@
   "verification": "Every published origin/main scientific raw blob matches its audited SHA256 and local bytes; published figure byte-identical. Published text metadata JSON is semantically identical and byte-identical after line-ending normalization. Registered source/preparation/pipeline hashes and original failed-version inputs unchanged.",
   "text_hash_note": "First check rejected byte comparison of local CRLF JSON vs Git LF JSON; no scientific raw mismatch. Metadata checked after normalization/JSON parsing. Registration preparation/pipeline byte hashes use original local CRLF representation; reconstruct CRLF from committed LF to reproduce these text-file hashes.",
   "scientific_status": "COMPLETE DETERMINISTIC PATTERN-RESPONSE ESTIMATION; RESOLVED CONNECTIVITY CONTRAST",
-  "scientific_closure": "Pending PI sign-off; no next production authorized"
+  "scientific_closure": "PI CLOSED MG091, 2026-11-08 local: I sign off. Go ahead with the next stage."
 }

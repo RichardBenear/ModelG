@@ -1096,3 +1096,8 @@ COMPLETE DETERMINISTIC PATTERN-RESPONSE ESTIMATION; RESOLVED CONNECTIVITY CONTRA
 
 
 MG090 scientific retention verified: all28raw archives (42096175bytes) published atcbecb8ac013b9cfd6f6548f4496110b27cab2b04; every origin/main binary blob matches its audited SHA256/local bytes, including byte-identical figure. Text metadata matches after Git line-ending normalization and JSON parsing (initial raw byte comparison of text correctly exposed CRLF/LF difference, no scientific raw mismatch). Registered sources/preparation/pipeline and original failed-version input hashes unchanged. See production_retention_verified.json, including text-hash reproduction note. No active scientific workers; PI closure pending.
+
+
+## MG091 — PI closure of MG11-G2 Pattern-Response (2026-11-08 local)
+
+Richard: “I sign off. Go ahead with the next stage.” CLOSED as COMPLETE DETERMINISTIC PATTERN-RESPONSE ESTIMATION, RESOLVED CONNECTIVITY CONTRAST under registered criteria. Accepts MG090 numerical/raw audit and verified full public archive, with the explicit limit that higher projection did not establish longer reference-pattern persistence. Original preparation and Step1 failures remain preserved, not rescored. Next-stage preparation authorized; its concrete modeling choices/criteria/measured budget will be recorded before production. No stochastic result inferred.
