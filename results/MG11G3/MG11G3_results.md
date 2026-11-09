@@ -64,3 +64,8 @@ The project now has an explicit within-model intervention showing ongoing enviro
 
 
 MG094 scientific retention verified: all24new branch archives (31326153bytes) and8registered closed donor archives published at40ee106f6a6b6c51c8d591ceea07a5a7334ecedc, every binary blob matches audited/registered SHA256 and local bytes. Figure byte-identical; metadata JSON equal after Git line-ending normalization; source/qualification/donor hashes unchanged. See production_retention_verified.json. No active scientific workers; PI closure pending.
+
+
+## MG095 — MG11-G3 PI closure (2026-11-08 local)
+
+Richard: “I sign off on G3. What's the next step?” CLOSED as COMPLETE B-TRANSPORT SWITCH ESTIMATION; RESOLVED ONGOING B-TRANSPORT CONTRAST under the frozen criteria. Accepts MG09424branch/12refinement/8sham/separate raw audit and verified scientific/donor retention. Conditional deterministic scope only; no better physical-particle persistence, stochastic robustness, hidden-state memory or quantum claim. Source/data/criteria unchanged. Next-stage recommendation requested, not production authorization.
