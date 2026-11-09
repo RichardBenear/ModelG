@@ -36,3 +36,6 @@ Requested cap **7200worker-seconds (2core-hours)**, max8localworkers/librarythre
 Requested public retention: all complete/partial raw trajectories, stocks, directed transfer/import ledgers, source/configs/progress/failures/budgets, evaluation/audit and readable results. Development already follows public repository maintenance; raw_manifest.json/retention_verified.json identify and verify original/corrected inputs and synthetic fixtures.
 
 The active RESEARCH_PROTOCOL.md workflow3 requires: “The PI approves modeling choices, criteria and budget.” Approval of this concrete design,2core-hour cap and public full scientific raw/results retention is the remaining execution gate. External review not requested; no stochastic follow-on automatically approved.
+
+
+Readiness retention verified: all103 original/corrected development binary inputs/fixtures (12448415bytes) published at7d8c3b98459cb1f3b6b7651ed5f828110acd347b, every blob matches manifest SHA256/local bytes. Original failed-version hashes unchanged; corrected source/pipeline hashes valid. Full T25scientific run remains unregistered/unstarted pending final concrete PI execution approval.

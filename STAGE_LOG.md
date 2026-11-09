@@ -1080,3 +1080,6 @@ Original28short actual-writer paths retained; separate Radau comparison failed I
 ### MG088b Pattern-Response readiness (2026-11-08)
 
 Corrected development PASS:28T.25actual-writer paths,14separate short Radau references,28raw ledgers,56Jacobian columns,graph/reference/legacy/rotation/measurement and complete/missing/prefix/empty/wrong-primary/invariance pipelines. Max normalized population discrepancy1.10796506192e-07<=2e-6; no threshold changes. Original failure/source/raw preserved and original hashes unchanged. New preparation29.717779seconds+30reserved<900. Forecast0.462538core-hours/~3.47minutes8workers, within75%reserve of proposed2core-hour cap. Concrete28job/T25design/criteria/cap/full public scientific raw retention pending PI approval per RESEARCH_PROTOCOL workflow3. No production registration/draw. Review packet results/MG11G2/pattern_response_v2/MG11G2_pattern_preparation.md; spec_v2.
+
+
+Readiness retention verified: all103 original/corrected development binary inputs/fixtures (12448415bytes) published at7d8c3b98459cb1f3b6b7651ed5f828110acd347b, every blob matches manifest SHA256/local bytes. Original failed-version hashes unchanged; corrected source/pipeline hashes valid. Full T25scientific run remains unregistered/unstarted pending final concrete PI execution approval.
