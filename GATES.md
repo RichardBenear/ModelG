@@ -2267,3 +2267,8 @@ MG096 preparation retention verified: all321binary inputs (320newdevelopment/ref
 ## MG097 — G4 Step1 formal stochastic qualification registered
 
 PI: “i approve all. proceed.” Approves concrete120job/245760main-path matrix,196fixed marginal CDFcriteria,2core-hour/7200worker-second cap and full public scientific results/raw retention. Exact frozen source/spec/seeds/preparation/pipeline hashes recorded in results/MG11G4/registration.json, with versions/environment.120separate warmups excluded. Max8localworkers/librarythreads1,180seconds/job,.25poll, forecast admission/drain/no retry; measured.522849core-hours within5400reserve. Publish registration before any9603scientific draws. Optional external review not requested. No pattern pilot or fundamental-tick/physical/quantum claim authorized. PI scientific closure later.
+
+
+## MG098 — MG11-G4 Step1 stochastic qualification results (2026-11-08 local)
+
+QUALIFIED WITHIN REGISTERED SMALL-SYSTEM STOCHASTIC SCOPE.120/120jobs,245760main paths+120excluded warmups;196/196formal marginal CDFbounds and240raw separate audit PASS. Largest observedD.015197753906, upper.056927491867<.08, epsilon_each.020864868980; nominal99.95%for stated196bounds (not full joint/temporal/large-lattice law). Finest maximumtau.00025fixed before sampling, coarse/medium descriptive only. No failure/timeout/forecast/capstop/retry/seedreplacement/amendment. 0.186389931core-hours<2cap, elapsed94.206208seconds through audit, finishedNov8~19:27Mountain, no workers. No full pattern pilot. Full public scientific raw/results approved, publication/hash verification follows. Report results/MG11G4/MG11G4_results.md. PI scientific closure separate.
