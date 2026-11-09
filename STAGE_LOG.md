@@ -1197,3 +1197,6 @@ MG106 engine development passed:183reachable generator states agree,4096paths/16
 
 ### MG107 — formal qualification registered
 User authorizes formal qualification;16jobs/262144paths,16joint-count endpoint TVbounds<=.10 at nominal99.9%family confidence,900seconds/oneworker cap. Published registration before RNG/reference integration. Draft registration preflight list-call typo corrected before any sampling/integration; no scientific criteria changed. All original development sources frozen.
+
+### MG108 — H1 formal qualification passed
+16/16registered joint-count TVbounds supported (maxupper.069686320645<.10), all262144paths/121036accepted-event saved audit PASS.304.760835seconds<900; one worker/thread1, no failure/retry. Scope four tiny fixed-substrate endpoints; PI closure pending. Report/figure/full raw/traces published and verified separately.
