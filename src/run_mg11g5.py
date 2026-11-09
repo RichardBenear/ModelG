@@ -9,7 +9,7 @@ from mg10e2c1_pool import run
 BASE=ROOT/'results/MG11G5'
 def read(p):return json.loads(Path(p).read_text(encoding='utf-8'))
 def worker(j,directory):
-    from prepare_mg11g5 import hashes
+    from prepare_mg11g5_v2 import hashes
     r=read(BASE/'registration.json')
     if hashes()!=r['source_hashes'] or j not in r['jobs']:raise ValueError('Unregistered source/job')
     directory=Path(directory);start=time.perf_counter();path=directory/(j['id']+'.npz');deadline=start+3550
@@ -27,12 +27,12 @@ def worker(j,directory):
         _,timing=streamed(case,ga,gb,k,OBS,j['seed'],tau,deadline,checkpoint);check=check_raw(path);check_raw(directory/(j['id']+'_warm.npz'))
     atomic_json(path.with_suffix('.json'),dict(status='COMPLETE',job=j,elapsed_seconds=time.perf_counter()-start,sha256=digest(path),check=check,**timing))
 def register(approval):
-    from prepare_mg11g5 import hashes
-    q=read(BASE/'preparation/results.json')
+    from prepare_mg11g5_v2 import hashes
+    q=read(BASE/'preparation_v2/results.json')
     if not approval or (BASE/'registration.json').exists() or not q['passed'] or hashes()!=q['source_hashes'] or q['forecast_worker_seconds']>64800 or shutil.disk_usage(ROOT).free<4*1024**3:raise ValueError('Approval/qualification/budget/storage block')
-    atomic_json(BASE/'registration.json',dict(stage='MG101',pi_authorization=approval,publication_authorized=True,registered=datetime.now(timezone.utc).isoformat(),source_hashes=hashes(),jobs=jobs(),forecast=q['forecast'],ceiling=86400,timeout=3600,workers=8,preparation_sha256=digest(BASE/'preparation/results.json')))
+    atomic_json(BASE/'registration.json',dict(stage='MG101',pi_authorization=approval,publication_authorized=True,registered=datetime.now(timezone.utc).isoformat(),source_hashes=hashes(),jobs=jobs(),forecast=q['forecast'],ceiling=86400,timeout=3600,workers=8,preparation_sha256=digest(BASE/'preparation_v2/results.json')))
 def production():
-    from prepare_mg11g5 import hashes
+    from prepare_mg11g5_v2 import hashes
     r=read(BASE/'registration.json')
     if hashes()!=r['source_hashes'] or (BASE/'production/ledger.json').exists():raise ValueError('Changed source or already attempted')
     subprocess.run(['git','ls-files','--error-unmatch','results/MG11G5/registration.json'],cwd=ROOT,check=True,stdout=subprocess.DEVNULL)

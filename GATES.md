@@ -2285,3 +2285,6 @@ Richard: “I sign off on G4. Proceed to next step”. CLOSED as QUALIFIED WITHI
 ## MG100 — MG11-G5 conditional stochastic pilot preparation (2026-11-08)
 
 PI closed G4 (MG099) and requested next step. Draft spec/MG11G5_pilot.md; fixed donor/seed/source plan before short development. One process/thread1,900elapsed-second ceiling; no post15 scientific production. Proposed64stochastic+16deterministic jobs,24core-hour cap/max8workers and full public raw retention await concrete measured approval. G4 remains closed and unchanged.
+
+### MG100a — development-only numerical check correction
+Original preparation stopped before integrations/draws: t.ppf vs CDF-root quantile difference3.93543e-11 (relative9.42272e-12) exceeded comparison1e-12. Original source/plan/failure retained. Version2 checks both cutoffs by independent probability residual<1e-12; scientific confidence levels/margins unchanged. New source/plan before draws, remaining890seconds (10reserved for original); no production approval.
