@@ -1211,3 +1211,6 @@ MG110 initial H2results passed:63states/3072paths/866accepted events plus saved 
 
 ### MG111 — H2formal qualification registered
 User authorizes H2qualification.12jobs/98304paths/24joint-count endpoint bounds, sixfixed cells/grid/resource fixtures;900seconds one-worker cap. Source/seeds published before numerical work; no automatic retry or particle run.
+
+### MG112 — H2formal transport qualification passed
+24/24joint-count endpoint bounds maxupper.060613097308<.10; all98304paths/26720accepted-event saved audit pass,317.248430seconds<900. Scope fixed transport-only cells and known-grid benchmarks; no particle result. Report/figure/full evidence published and verified separately; PI closure pending.

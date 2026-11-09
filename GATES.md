@@ -2331,3 +2331,6 @@ MG110 development PASS:63generator states,3072paths,866accepted-event saved rere
 
 ## MG111 — H2formal fixed-cell transport qualification registered
 PI: “go ahead with H2”. Spec MG12H2_qualification.md fixes12jobs/98304paths, exact+strict.005, sixunchanged fixtures/two endpoints,24joint-countTVupper bounds<=.10 with alpha.001. Independent incidence/expm/eigen/analytic references; full saved-cell causal/config/seed audit. Chemistry off; no particle/evolvinggeometry/newphysics claim. One localworker/library-thread1,900second aggregatecap/~476.89second measuredforecast; full public raw/traces, no retries. Push frozen registration/source/config/seed list before sampling; PI closure later.
+
+## MG112 — H2formal fixed-cell transport qualification result
+QUALIFIED WITHIN REGISTERED FIXED-CELL TRANSPORT SCOPE:24/24joint-count endpoint TVbounds supported; maxobserved.018686252810,maxupper.060613097308<.10, nominal99.9%family coverage conditional on sampling/reference.12jobs/98304paths/26720accepted-event saved audit PASS.317.248430seconds<900cap; one localworker/thread1, no failure/stop/retry. Sixfixed transport-only fixtures, no mixed chemistry/particle/evolvingtopology/physicaldimension claim. Full raw/trace/reference/report retained and publication verified separately; PI closure pending. Report results/MG12H2/qualification/MG12H2_qualification_results.md.
