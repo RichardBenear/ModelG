@@ -1189,3 +1189,6 @@ PI requested plan and questions: MG12 draft with six gated stages and five scien
 Explicit typed entities/reactions, unordered catalyst pairs and factor2, strict catalyst reservation, frozen-match exponential proposal/greedy conflict semantics, finite-count generator correspondence and limitations specified. Static<=7token algebra/relabel tests only; source/spec published before checks. No scientific numerical run.
 
 MG105 static outcome:101exact rational/schema checks and5164bijective relabelings passed; catalyst conflict/new-product snapshot examples passed. No temporal/transport engine qualification or numerical sampling claimed. H0initial report results/MG12H0/MG12H0_specification_results.md; next explicit engine development.
+
+### MG106 — explicit hypergraph engine build/development
+User authorizes engine development. Freeze incidence and independent-count sources, fixture/seed manifest and300second bounded development before RNG/integration. Four tiny fixtures, exact master generator vs explicit match transitions, exactCDF smoke checks, strict-tick descriptive distributions and full causal trace replay. No formal production or large-system scaling claim.
