@@ -67,3 +67,5 @@ No production failures, retries, seed replacements, criterion changes or budget 
 Contract/specification: spec/MG12H0_contract.md and spec/MG12H1_development.md. Engine: src/mg12h1.py. Independent count/master reference: src/mg12h1_reference.py. Development plan/runner: src/prepare_mg12h1.py. Saved evidence checker: src/check_mg12h1_saved.py.
 
 All source/plan/reference arrays, development path counts/seeds, eligible-event traces, per-job timing/statistical diagnostics and check summaries are retained in development/. Main summary: development/results.json; separate check: saved_evidence_check.json. The development runner rejects an existing attempt rather than automatically rerunning; read-only saved checks can be repeated. Published-byte verification is recorded separately in retention_verified.json; text hashes distinguish local bytes from Git line-ending normalization.
+
+Retention verified: all59development files, including20binary path/reference archives, published ataf197eb have matching local binary bytes or semantically identical JSON. Qualified source hashes remain unchanged. See retention_verified.json.
