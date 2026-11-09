@@ -1,0 +1,9 @@
+# MG088 prospective internal check
+
+The question is connectivity-dependent response of a prescribed seed, not proof of particle survival. Active lattice/reaction law fixed; environmental degree, stock, edge weights, contacts and outgoing hazard matched. Edge lengths/costs are not modeled; selected embeddings conditional. Matched H controls and full mean shifts retained; spatially uniform H subspace is mathematically invariant, not physically stabilized noise. Test reduction against separate equations. Initial reference is a deviation added to S0, not an absolute field or rounded count state.
+
+C1 primary and C100secondary fixed without looking at production. Maintained and isolated controls separate depletion effects. Actual resource use may vary as a mediator; equal initial stock is not equal realized uptake. Fast mixing never equated with replenishment; no rate copied as universal from Step1.
+
+Two BDFsettings are deterministic refinements, not independent samples. No confidence intervals. Register a practical .01template-unit floor and five-times refinement difference operational guard; not a rigorous numerical bound. Completion independent of effect resolution. Maintained sampled continuity20 required for reference-pattern interpretation; failures/motion do not mean physical death. All missing/partial/wrong-estimate paths tested and retained.
+
+Actual writer timing separates compute and prefix I/O;450prefix-volume multiplier avoids naive linear scaling of repeated compression. Single-process900second disclosed development, candidate7200worker-second production limit with75%reserve. Final measured design/criteria/budget/retention return to PI before production per active protocol. Independent short Radau population path, sparse Jacobian dependency checks and full raw incidence/dense-projection/contrast audit required; same author/shared libraries/classifier disclosed. Historical sources unchanged.

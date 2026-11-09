@@ -1065,3 +1065,8 @@ Build complete, coupling qualified on tested small deterministic systems with or
 
 
 Retention verified: all22 original/follow-up raw/reference archives (50258bytes) published at1e10a7d6f46f5dfc494477ee7f4669fb02715bed; every blob matches its manifest SHA256/local bytes. Original MG087 source/data hashes unchanged, all pre-existing source files unchanged from signed-off G1 baseline. See retention_verified.json.
+
+
+## MG088 — deterministic Pattern-Response preparation (2026-11-08)
+
+Richard: “Go ahead with the Pattern-Response study.” Prepare concrete matched-environment design/implementation/qualification/timing now; final numerical criteria/budget/public scientific retention approval under RESEARCH_PROTOCOL.md before production. Step1 combined MG087/MG087a supports progression without rescoring its failed original mixing range. Fixed N500 active ring; equal-stock/degree/hop-rate LOCAL vs CROSS_RING environmental graphs; isolated/maintained controls; C1/C100; H/S; two BDF settings (28jobs). T25scientific primary C1late20..25seed-excess X contrast, deterministic numerical refinement guard, no CI/particle-death claim. Development28actual-writer T.25paths plus14separate population references/algebraic complete-missing-prefix-empty/wrong-primary tests,900elapsed ceiling/thread1, source/plan push BEFORE integrations. Candidate production cap2core-hours, forecast must fit1.5core-hour reserve; max8workers. Full spec spec/MG11G2_pattern_response.md. No scientific production registered yet.

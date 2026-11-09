@@ -1,0 +1,231 @@
+{
+  "stage": "MG088",
+  "status": "PROSPECTIVE DEVELOPMENT ONLY",
+  "pi_request": "Go ahead with the Pattern-Response study.",
+  "jobs": [
+    {
+      "id": "c0_s0_v0",
+      "config": "MAINTAINED",
+      "condition": 0,
+      "start": 0,
+      "setting": 0
+    },
+    {
+      "id": "c0_s0_v1",
+      "config": "MAINTAINED",
+      "condition": 0,
+      "start": 0,
+      "setting": 1
+    },
+    {
+      "id": "c0_s1_v0",
+      "config": "MAINTAINED",
+      "condition": 0,
+      "start": 1,
+      "setting": 0
+    },
+    {
+      "id": "c0_s1_v1",
+      "config": "MAINTAINED",
+      "condition": 0,
+      "start": 1,
+      "setting": 1
+    },
+    {
+      "id": "c1_s0_v0",
+      "config": "ISOLATED_C1",
+      "condition": 1,
+      "start": 0,
+      "setting": 0
+    },
+    {
+      "id": "c1_s0_v1",
+      "config": "ISOLATED_C1",
+      "condition": 1,
+      "start": 0,
+      "setting": 1
+    },
+    {
+      "id": "c1_s1_v0",
+      "config": "ISOLATED_C1",
+      "condition": 1,
+      "start": 1,
+      "setting": 0
+    },
+    {
+      "id": "c1_s1_v1",
+      "config": "ISOLATED_C1",
+      "condition": 1,
+      "start": 1,
+      "setting": 1
+    },
+    {
+      "id": "c2_s0_v0",
+      "config": "LOCAL_C1",
+      "condition": 2,
+      "start": 0,
+      "setting": 0
+    },
+    {
+      "id": "c2_s0_v1",
+      "config": "LOCAL_C1",
+      "condition": 2,
+      "start": 0,
+      "setting": 1
+    },
+    {
+      "id": "c2_s1_v0",
+      "config": "LOCAL_C1",
+      "condition": 2,
+      "start": 1,
+      "setting": 0
+    },
+    {
+      "id": "c2_s1_v1",
+      "config": "LOCAL_C1",
+      "condition": 2,
+      "start": 1,
+      "setting": 1
+    },
+    {
+      "id": "c3_s0_v0",
+      "config": "CROSS_RING_C1",
+      "condition": 3,
+      "start": 0,
+      "setting": 0
+    },
+    {
+      "id": "c3_s0_v1",
+      "config": "CROSS_RING_C1",
+      "condition": 3,
+      "start": 0,
+      "setting": 1
+    },
+    {
+      "id": "c3_s1_v0",
+      "config": "CROSS_RING_C1",
+      "condition": 3,
+      "start": 1,
+      "setting": 0
+    },
+    {
+      "id": "c3_s1_v1",
+      "config": "CROSS_RING_C1",
+      "condition": 3,
+      "start": 1,
+      "setting": 1
+    },
+    {
+      "id": "c4_s0_v0",
+      "config": "ISOLATED_C100",
+      "condition": 4,
+      "start": 0,
+      "setting": 0
+    },
+    {
+      "id": "c4_s0_v1",
+      "config": "ISOLATED_C100",
+      "condition": 4,
+      "start": 0,
+      "setting": 1
+    },
+    {
+      "id": "c4_s1_v0",
+      "config": "ISOLATED_C100",
+      "condition": 4,
+      "start": 1,
+      "setting": 0
+    },
+    {
+      "id": "c4_s1_v1",
+      "config": "ISOLATED_C100",
+      "condition": 4,
+      "start": 1,
+      "setting": 1
+    },
+    {
+      "id": "c5_s0_v0",
+      "config": "LOCAL_C100",
+      "condition": 5,
+      "start": 0,
+      "setting": 0
+    },
+    {
+      "id": "c5_s0_v1",
+      "config": "LOCAL_C100",
+      "condition": 5,
+      "start": 0,
+      "setting": 1
+    },
+    {
+      "id": "c5_s1_v0",
+      "config": "LOCAL_C100",
+      "condition": 5,
+      "start": 1,
+      "setting": 0
+    },
+    {
+      "id": "c5_s1_v1",
+      "config": "LOCAL_C100",
+      "condition": 5,
+      "start": 1,
+      "setting": 1
+    },
+    {
+      "id": "c6_s0_v0",
+      "config": "CROSS_RING_C100",
+      "condition": 6,
+      "start": 0,
+      "setting": 0
+    },
+    {
+      "id": "c6_s0_v1",
+      "config": "CROSS_RING_C100",
+      "condition": 6,
+      "start": 0,
+      "setting": 1
+    },
+    {
+      "id": "c6_s1_v0",
+      "config": "CROSS_RING_C100",
+      "condition": 6,
+      "start": 1,
+      "setting": 0
+    },
+    {
+      "id": "c6_s1_v1",
+      "config": "CROSS_RING_C100",
+      "condition": 6,
+      "start": 1,
+      "setting": 1
+    }
+  ],
+  "short_times": [
+    0.0,
+    0.125,
+    0.25
+  ],
+  "source_hashes": {
+    "src/mg11g2_pattern.py": "4fa0f643b9d0358d7f55f519ee3839730133ab0ac06116ebfdba965d96333014",
+    "src/mg11g2_pattern_oracle.py": "5fb0fd110595af0a5e38e8fc30f6a5cc7be72c9c65fd8274df760667e54bfe09",
+    "src/prepare_mg11g2_pattern.py": "3a2cb72de2aa67918bd96cc3385e7591f3002c709a1b63a87cc3f65096594e71",
+    "src/evaluate_mg11g2_pattern.py": "d6b763bf47e23da61354367b82476632ce903d051343d48c8796dd90242a8b26",
+    "src/check_mg11g2_pattern.py": "87a5beae800f2a02710a475959e3a14b5949b6f6d47e07249d9854da88b425fe",
+    "src/run_mg11g2_pattern.py": "a48816af9a2dd995dcda5d9344d8a56b76936a6083dd9356f4fc237d590810a7",
+    "spec/MG11G2_pattern_response.md": "c4e34ca69a874e0e37d65e360277f684d4828b2462947283e4d654f5384b4bc3",
+    "src/mg11g2.py": "69df9ec5f5b7cd9c4ec5e6deb5f5acdd1e79a5f05dd2cb24056aac96454ed003",
+    "src/mg11n1.py": "d3e06a1297263b1b7fa3696877599457b3df9e67c5f70cab5deed032f347c614",
+    "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+    "src/mg10_reservoir.py": "bddf8ba09bacaa5ed884a2794646d6a307eb58bac09010058e47998ee96aa31b",
+    "src/mg10p1.py": "ba9aa61c92d813fc48f56cc1683e457596f0152637daede07638f1308aaad45c",
+    "src/mg10d1_pool.py": "ada3b015c0bd2ec05edd89f6a32671fe7ca6a2854894ae0fcfd1199d9c83f86c",
+    "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70"
+  },
+  "reference_sha256": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b",
+  "ceiling_elapsed_seconds": 900,
+  "job_timeout_seconds": 120,
+  "workers": 1,
+  "threads_per_library": 1,
+  "random_draws": 0,
+  "production_candidate_worker_seconds": 7200
+}
