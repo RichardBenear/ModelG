@@ -1132,3 +1132,10 @@ MG094 scientific retention verified: all24new branch archives (31326153bytes) an
 ## MG095 — MG11-G3 PI closure (2026-11-08 local)
 
 Richard: “I sign off on G3. What's the next step?” CLOSED as COMPLETE B-TRANSPORT SWITCH ESTIMATION; RESOLVED ONGOING B-TRANSPORT CONTRAST under the frozen criteria. Accepts MG09424branch/12refinement/8sham/separate raw audit and verified scientific/donor retention. Conditional deterministic scope only; no better physical-particle persistence, stochastic robustness, hidden-state memory or quantum claim. Source/data/criteria unchanged. Next-stage recommendation requested, not production authorization.
+
+
+## MG096 — MG11-G4 Step1 stochastic coupling build/development
+
+PI: “yes, go ahead with step 1.” New bounded common-snapshot finite-resource network leap plus two-graph exact Numba/Python references, frozen old sources untouched. Joint B/X reservations and conditional transport exits avoid duplicated consumption/hopping; arrivals/products wait next numerical step, no fundamental-tick or new R4catalyst law. CSRtransport O(N+E), int64 domain/count/step guards. Prospective source/spec/seed/development plan pushed BEFORE any draws.900elapsed single-process/thread1 development: zero-hop/same-graph byte regressions, one-step arrival/conflict and1e8binomial probes,15actual-writer128path timings,3held stream replays, four.002N500benchmarks, synthetic complete/missing/prefix/empty/wrong-CDF/bad-ledger audits.
+
+Candidate full numerical qualification:3fixtures*5methods*R16384=245760paths,120jobs+120excluded warmups.196formal finest-vs-exact/exact-vs-independent endpoint CDFbounds margin.08/alpha.0005; coarse/medium descriptive. Candidate2core-hour/8worker cap subject to measured75%reserve, concrete PI design/budget/public retention approval before that larger batch. No full pattern pilot. Protocol spec/MG11G4_step1.md. No source/threshold tuning/retry; preserve/version failures.
