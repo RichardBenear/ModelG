@@ -1208,3 +1208,6 @@ Qualification accepted unchanged. H2development authorized: higher-arity fixed r
 Fixed arity2/3/4Active/A/Bcells, normalized exits and preserved channel provenance; independent incidence matrices, finite count references, grid mode checks and dimension calibration. Source/seed/fixture push before RNG/matrixintegration.300second development cap; no particle study.
 
 MG110 initial H2results passed:63states/3072paths/866accepted events plus saved reread and known-dimension calibration.9.310173seconds. No particle/evolving-topology result; formal transport qualification next.
+
+### MG111 — H2formal qualification registered
+User authorizes H2qualification.12jobs/98304paths/24joint-count endpoint bounds, sixfixed cells/grid/resource fixtures;900seconds one-worker cap. Source/seeds published before numerical work; no automatic retry or particle run.

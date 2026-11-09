@@ -1,0 +1,21 @@
+# MG12-H2 formal fixed-cell transport qualification — MG111
+
+PI instruction, 2026-11-09: “go ahead with H2”, following the development report's recommendation of formal qualification. Freeze this specification/source/config/seeds before sampling. Closed H1 and H2 development files stay unchanged. Scope is fixed-cell transport, chemistry disabled, not particle dynamics or evolving geometry.
+
+## Registered matrix
+
+Six unchanged development fixtures: binary ring, ternary cell, overlapping ternary/quaternary cells, known 3x3 periodic2D grid, known 3x3x3 periodic3D grid, separate A/B resource cells. At most2tokens/27sites. Exact and strict max tick.005, both fixed before development.8192independent paths/fixture/method,12jobs=98304paths. Observation times0,.05,.1, clipping ticks at boundaries. No warmups, adaptive replication, favorable filtering, numerical-step selection or retries. Every path retains counts and all eligible accepted/rejected proposal traces.
+
+Two endpoints x6fixtures x2methods=24formal **joint-count endpoint total-variation** comparisons against independently assembled incidence-matrix dynamics. Set margin.10, family alpha.001. For Sreference support states and R8192, epsilon=sqrt((S*ln2+ln(24/.001))/(2R)); each observedTV+epsilon must be<=.10. The multinomial L1 bound plus24way union bound supplies nominal99.9%simultaneous coverage, conditional on fixed sampling/PRNG and computed-reference fidelity. This is an endpoint count law bound, not a full temporal/identity law or percent error on every rate. Completion/audit success is independent of the scientific verdict. Fixed-support state order does not affect total variation.
+
+Reference matrices are built by incidence-block algebra, without primary engine matching. Check exponentials against symmetric eigendecomposition within1e-11. Also check analytic ring/ternary-cell transition probabilities, tensor-product3cycle probabilities for known2D/3Dgrids, and independent A/B matrix products within1e-11. Check row sums/symmetry/constant-field preservation within1e-12. Do not clip/renormalize to hide numerical failures. These are numerical fidelity checks, not rigorous floating-point certificates.
+
+Retain development evidence of all63fixture generator states, rate normalization, distinct overlap channels, relabeling/corresponding marks, shared-cell/disjoint-token behavior and known-dimension calibration. Recheck sources/config. Saved-data audit reconstructs observations independently from literal cell-provenanced rewrites, reserves each token once per tick, checks role/read-only incidence and count/identity conservation, verifies every seed/checksum/denominator, and recomputes distributions and bounds via a second histogram formula. Missing/prefix jobs cannot qualify. A statistical failure is reported without altering criteria.
+
+## Budget and retention
+
+One local worker/library threads1;900elapsed-second aggregate cap includes reference construction, sampling, IO and automatic saved-data analysis. Development3072paths took9.310173seconds. Linear x32 estimate297.93seconds;1.5safety+30startup/analysis allowance gives476.89seconds(~7.95min). This extrapolation is not a guarantee or a particle-scale estimate. Max100000steps/path, deadline checks between paths/during auditing. Preserve512path count prefixes plus flushed per-path JSONL; no automatic restart/continuation. Require1GiBfree disk.
+
+Seed stage11100 with deterministic uint32collision resolution against prior/new plans. Commit/push every seed/config/source before random draws or matrix exponentials. Retain complete raw/reference/trace/config/budget/report in the public repository under this requested qualification workflow; verify published binary bytes and text normalization. External review not requested; PI scientific closure later. No pattern/evolving-substrate/quantum experiment is authorized by this qualification.
+
+Passing supports the chosen **pairwise-equivalent linear** higher-arity transport representation on these small fixed substrates. It does not demonstrate irreducible higher-order dynamics, emergent dimension, a mixed chemistry/transport extension's accuracy, arbitrary site volumes, physical time calibration or large populations.
