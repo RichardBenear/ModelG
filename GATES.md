@@ -2280,3 +2280,8 @@ MG098 scientific retention verified: all240main/warm archives (15146501bytes) pu
 ## MG099 — MG11-G4 Step1 PI closure
 
 Richard: “I sign off on G4. Proceed to next step”. CLOSED as QUALIFIED WITHIN REGISTERED SMALL-SYSTEM STOCHASTIC SCOPE. Accepts MG098120jobs/245760main paths,196marginal CDFbounds,240raw audit and verified public archive. Scope stays fixed small short endpoint laws, not full500node pattern accuracy or physical/quantum claims. Source/data/criteria unchanged. Next-stage pattern-pilot preparation authorized; its concrete model/statistics/measured budget/public retention approval remains before production under protocol.
+
+
+## MG100 — MG11-G5 conditional stochastic pilot preparation (2026-11-08)
+
+PI closed G4 (MG099) and requested next step. Draft spec/MG11G5_pilot.md; fixed donor/seed/source plan before short development. One process/thread1,900elapsed-second ceiling; no post15 scientific production. Proposed64stochastic+16deterministic jobs,24core-hour cap/max8workers and full public raw retention await concrete measured approval. G4 remains closed and unchanged.
