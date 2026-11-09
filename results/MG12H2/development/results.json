@@ -1,0 +1,138 @@
+{
+  "passed": true,
+  "source_hashes": {
+    "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+    "src/prepare_mg12h2.py": "6bfdf5593dd76d848ff405247cad034f171d6f0a5591f73dc513be4e2a9b73dd",
+    "spec/MG12H2_development.md": "eded7d268381a0ec8ff4e3307fa4d8b4b9a4354370f90391b8d64d916654c343",
+    "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+    "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad"
+  },
+  "generator_states": 63,
+  "checks": [
+    {
+      "cell": 0,
+      "states": 4,
+      "pairwise_initial_exit": 2.0,
+      "grid_dimension": null
+    },
+    {
+      "cell": 1,
+      "states": 3,
+      "pairwise_initial_exit": 1.0,
+      "grid_dimension": null
+    },
+    {
+      "cell": 2,
+      "states": 4,
+      "pairwise_initial_exit": 1.5999999999999999,
+      "grid_dimension": null
+    },
+    {
+      "cell": 3,
+      "states": 9,
+      "pairwise_initial_exit": 4.0,
+      "grid_dimension": 2
+    },
+    {
+      "cell": 4,
+      "states": 27,
+      "pairwise_initial_exit": 6.0,
+      "grid_dimension": 3
+    },
+    {
+      "cell": 5,
+      "states": 16,
+      "pairwise_initial_exit": 1.8,
+      "grid_dimension": null
+    }
+  ],
+  "dimensions": [
+    {
+      "known_dimension": 1,
+      "ball_r4": 9,
+      "ball_r8": 17,
+      "finite_scale_slope": 0.9175378398080271
+    },
+    {
+      "known_dimension": 2,
+      "ball_r4": 41,
+      "ball_r8": 145,
+      "finite_scale_slope": 1.822357085396851
+    },
+    {
+      "known_dimension": 3,
+      "ball_r4": 129,
+      "ball_r8": 833,
+      "finite_scale_slope": 2.6909454299422935
+    }
+  ],
+  "overlap_channels_preserved": true,
+  "invalid_rejected": 4,
+  "paths": 3072,
+  "accepted_events_audited": 866,
+  "jobs": [
+    {
+      "id": "c0_m0",
+      "elapsed_seconds": 0.06321890000253916,
+      "CDF_distance": 0.03397663804790074
+    },
+    {
+      "id": "c0_m1",
+      "elapsed_seconds": 0.7716884999535978,
+      "CDF_distance": 0.018351638047900742
+    },
+    {
+      "id": "c1_m0",
+      "elapsed_seconds": 0.054040499962866306,
+      "CDF_distance": 0.03604490095003854
+    },
+    {
+      "id": "c1_m1",
+      "elapsed_seconds": 0.6739109000191092,
+      "CDF_distance": 0.02778807547501927
+    },
+    {
+      "id": "c2_m0",
+      "elapsed_seconds": 0.05850149993784726,
+      "CDF_distance": 0.018802741434449377
+    },
+    {
+      "id": "c2_m1",
+      "elapsed_seconds": 0.8812167999567464,
+      "CDF_distance": 0.018802741434449377
+    },
+    {
+      "id": "c3_m0",
+      "elapsed_seconds": 0.08702720003202558,
+      "CDF_distance": 0.06456645826703977
+    },
+    {
+      "id": "c3_m1",
+      "elapsed_seconds": 1.3970653000287712,
+      "CDF_distance": 0.04112895826703977
+    },
+    {
+      "id": "c4_m0",
+      "elapsed_seconds": 0.22334859997499734,
+      "CDF_distance": 0.039224805860228806
+    },
+    {
+      "id": "c4_m1",
+      "elapsed_seconds": 3.8765671000583097,
+      "CDF_distance": 0.08777729173296034
+    },
+    {
+      "id": "c5_m0",
+      "elapsed_seconds": 0.07075099996291101,
+      "CDF_distance": 0.030044331100124055
+    },
+    {
+      "id": "c5_m1",
+      "elapsed_seconds": 1.0469955999869853,
+      "CDF_distance": 0.02100199357074714
+    }
+  ],
+  "exact_DKW_epsilon": 0.1176767025365479,
+  "elapsed_seconds": 9.310173099976964,
+  "scope": "development only; pairwise-equivalent transport, known-dimension calibration, no particle or emergent-space result"
+}

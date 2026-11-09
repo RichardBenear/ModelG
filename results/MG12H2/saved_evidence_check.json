@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "paths": 3072,
+  "accepted_events_replayed": 866,
+  "distances": [
+    {
+      "id": "c0_m0",
+      "CDF_distance": 0.03397663804790074
+    },
+    {
+      "id": "c0_m1",
+      "CDF_distance": 0.018351638047900742
+    },
+    {
+      "id": "c1_m0",
+      "CDF_distance": 0.03604490095003854
+    },
+    {
+      "id": "c1_m1",
+      "CDF_distance": 0.02778807547501927
+    },
+    {
+      "id": "c2_m0",
+      "CDF_distance": 0.018802741434449377
+    },
+    {
+      "id": "c2_m1",
+      "CDF_distance": 0.018802741434449377
+    },
+    {
+      "id": "c3_m0",
+      "CDF_distance": 0.06456645826703977
+    },
+    {
+      "id": "c3_m1",
+      "CDF_distance": 0.04112895826703977
+    },
+    {
+      "id": "c4_m0",
+      "CDF_distance": 0.039224805860228806
+    },
+    {
+      "id": "c4_m1",
+      "CDF_distance": 0.08777729173296034
+    },
+    {
+      "id": "c5_m0",
+      "CDF_distance": 0.030044331100124055
+    },
+    {
+      "id": "c5_m1",
+      "CDF_distance": 0.02100199357074714
+    }
+  ],
+  "source_hashes_unchanged": true,
+  "shared": "same saved data, fixture/hash helpers and reference arrays; separate literal cell-role/observation replay and sorted CDF arithmetic, same author not external replication"
+}
