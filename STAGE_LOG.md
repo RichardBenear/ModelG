@@ -1175,3 +1175,6 @@ All preparation and separate short drift references passed; original pre-draw in
 
 ### MG101 — G5 approved and registered
 PI approved presented design/criteria,24core-hour cap/max8local workers and full public raw/results. Publish registration before launching80jobs. No automatic retry; results/audit and PI closure separate.
+
+### MG102 — G5 result/report
+Completed80jobs with144retained raw/control/warm archives and passed separate recomputation/config/accounting audit. Scientific result UNRESOLVED on both positive response and step agreement; no implementation failure.11.301880core-hours/~85.5min; no stop/retry. Full approved public archive/report published and verified separately. PI closure pending.

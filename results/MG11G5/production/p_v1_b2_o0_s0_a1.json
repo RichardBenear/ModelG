@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "origin": 0,
+    "start": 0,
+    "arm": 1,
+    "id": "p_v1_b2_o0_s0_a1",
+    "kind": "stochastic",
+    "setting": 1,
+    "block": 2,
+    "seed": 394459947,
+    "warmup_seed": 938380056
+  },
+  "elapsed_seconds": 803.4352199999848,
+  "sha256": "cf94a167d646fb7173571bc589c83602a6934ef5dd4d0535688f7b0ae60596bb",
+  "check": {
+    "file": "results/MG11G5/production/p_v1_b2_o0_s0_a1.npz",
+    "sha256": "cf94a167d646fb7173571bc589c83602a6934ef5dd4d0535688f7b0ae60596bb",
+    "replicas": 1,
+    "checkpoints": 61,
+    "integer_ledger": true,
+    "closed_total": true,
+    "nonnegative": true
+  },
+  "compute_seconds": 800.2301199999638,
+  "io_seconds": 2.752390500041656
+}

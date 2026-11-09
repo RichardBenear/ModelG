@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "origin": 0,
+    "start": 0,
+    "arm": 0,
+    "id": "d_o0_s0_a0_f1",
+    "kind": "deterministic",
+    "finite": 1
+  },
+  "elapsed_seconds": 2.2469471000367776,
+  "sha256": "d80ad9b338afb76fe15117ceb1af730dfca8b047b167fe06767625b70732fea3",
+  "check": {
+    "local_residual": 4.605596173358578e-12,
+    "total_residual": 1.03351046841796e-13,
+    "minimum": 0.0,
+    "minimum_ledger_increment": 0.0,
+    "passed": true
+  }
+}
