@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "c4_s1_v1",
+    "config": "ISOLATED_C100",
+    "condition": 4,
+    "start": 1,
+    "setting": 1
+  },
+  "scope": "SCIENTIFIC PRODUCTION",
+  "checkpoints": 101,
+  "elapsed_seconds": 3.7833930000197142,
+  "io_seconds": 2.5574751001549885,
+  "non_io_seconds": 1.2259178998647258,
+  "atomic_writes": 26,
+  "sha256": "2bc7bb1aeb078f135d724ab463698eebeb1e894a0825d89ca21171dae0541b63",
+  "homogeneous_reduction": false,
+  "nfev": 1110,
+  "njev": 1,
+  "raw_check": {
+    "local_residual": 2.682700175817208e-11,
+    "total_residual": 2.7338902888324356e-16,
+    "minimum": 0.0,
+    "minimum_ledger_increment": 0.0,
+    "passed": true
+  }
+}

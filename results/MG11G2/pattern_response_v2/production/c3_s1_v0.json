@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "c3_s1_v0",
+    "config": "CROSS_RING_C1",
+    "condition": 3,
+    "start": 1,
+    "setting": 0
+  },
+  "scope": "SCIENTIFIC PRODUCTION",
+  "checkpoints": 101,
+  "elapsed_seconds": 4.475527000031434,
+  "io_seconds": 2.6461487002670765,
+  "non_io_seconds": 1.8293782997643575,
+  "atomic_writes": 26,
+  "sha256": "145d11d51d977deb006436fb5e75a6162335beabfaa4f6361c27f3b6215dd69e",
+  "homogeneous_reduction": false,
+  "nfev": 896,
+  "njev": 11,
+  "raw_check": {
+    "local_residual": 2.0561979947204823e-11,
+    "total_residual": 6.406056449713475e-16,
+    "minimum": 0.0,
+    "minimum_ledger_increment": 0.0,
+    "passed": true
+  }
+}

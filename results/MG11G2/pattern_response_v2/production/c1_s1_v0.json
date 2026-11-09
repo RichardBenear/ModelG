@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "c1_s1_v0",
+    "config": "ISOLATED_C1",
+    "condition": 1,
+    "start": 1,
+    "setting": 0
+  },
+  "scope": "SCIENTIFIC PRODUCTION",
+  "checkpoints": 101,
+  "elapsed_seconds": 3.9816092000110075,
+  "io_seconds": 2.5015356997027993,
+  "non_io_seconds": 1.4800735003082082,
+  "atomic_writes": 26,
+  "sha256": "8e767e8f86c52e48148340297baaae7795ed3ac2aba42827ce7de4d03e00cbb7",
+  "homogeneous_reduction": false,
+  "nfev": 919,
+  "njev": 11,
+  "raw_check": {
+    "local_residual": 1.9968053897707234e-11,
+    "total_residual": 8.541408599617965e-16,
+    "minimum": 0.0,
+    "minimum_ledger_increment": 0.0,
+    "passed": true
+  }
+}

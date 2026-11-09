@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "c6_s0_v1",
+    "config": "CROSS_RING_C100",
+    "condition": 6,
+    "start": 0,
+    "setting": 1
+  },
+  "scope": "SCIENTIFIC PRODUCTION",
+  "checkpoints": 101,
+  "elapsed_seconds": 1.1068663999903947,
+  "io_seconds": 0.6912398999556899,
+  "non_io_seconds": 0.4156265000347048,
+  "atomic_writes": 26,
+  "sha256": "3009515d7cb9a13bbe27da63594ad4350bfdc86fd3deae8d2341b2b7fe277cc6",
+  "homogeneous_reduction": true,
+  "nfev": 1132,
+  "njev": 3,
+  "raw_check": {
+    "local_residual": 9.05062317130555e-12,
+    "total_residual": 2.050417717069968e-15,
+    "minimum": 0.0,
+    "minimum_ledger_increment": 0.0,
+    "passed": true
+  }
+}
