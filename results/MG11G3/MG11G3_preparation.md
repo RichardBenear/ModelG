@@ -36,3 +36,6 @@ Requested hard cap **3600worker-seconds (1core-hour)**, max8localworkers/library
 Requested public retention: all complete/partial branches, exact parent provenance, fields/stocks/flux ledgers, source/config/progress/errors/cost, analysis/audit/report. Existing donors remain publicly retained with exact SHA256; no duplicate resimulation. All development/reference/synthetic inputs published per repository maintenance; raw_manifest.json/retention_verified.json record verification. Environment recorded in preparation/environment.json.
 
 The concrete design,1core-hour cap and full public scientific results/raw retention are the remaining PI execution approval under RESEARCH_PROTOCOL.md workflow3: “The PI approves modeling choices, criteria and budget.” No external review requested; scientific closure and any stochastic follow-on remain separate.
+
+
+MG092 readiness retention verified: all81binary decision inputs (73newdevelopment/reference/fixture files+8reused closed donors;28442222bytes) published at070b30d94f629674e17e63837e992cfd73f53ba2; every published blob matches manifest SHA256/local bytes. Plans/results/pipeline/environment JSON semantically match after Git line-ending normalization; source/donor hashes unchanged. No full scientific branch run. See retention_verified.json.

@@ -10,3 +10,6 @@ Primary equal-origin average, deterministic base/fine guard and1%template floor 
 ### MG092 B-switch readiness
 
 All development checks PASS, no revision/retry:24post.25writer paths/24separate Radau refs,8short shams, exact forks/store preservation,56Jacobian columns, B-OFF/A-invariance/two-graph ledgers and full/failed-sham/missing/prefix/empty/wrong-primary/estimand fixtures. Donor8hashes unchanged. Max population discrepancy4.00834599193e-09, short sham3.20905702011e-10<2e-6. Elapsed36.283009seconds<900. Forecast0.307928core-hours/~2.31minutes8workers, within reserve of proposed1core-hour cap. Concrete24post15branch design/criteria/cap/public scientific raw retention awaiting PI execution approval per workflow3. No full scientific branch registered/run. Review results/MG11G3/MG11G3_preparation.md.
+
+
+MG092 readiness retention verified: all81binary decision inputs (73newdevelopment/reference/fixture files+8reused closed donors;28442222bytes) published at070b30d94f629674e17e63837e992cfd73f53ba2; every published blob matches manifest SHA256/local bytes. Plans/results/pipeline/environment JSON semantically match after Git line-ending normalization; source/donor hashes unchanged. No full scientific branch run. See retention_verified.json.
