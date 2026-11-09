@@ -1181,3 +1181,6 @@ Completed80jobs with144retained raw/control/warm archives and passed separate re
 
 ### MG103 — G5 signed off
 PI closes G5 with its unresolved scientific outcome preserved and reaffirms G5-style plain-language summaries for future test reports. Closure recorded; no additional production authorized.
+
+### MG104 — hypergraph roadmap drafted
+PI requested plan and questions: MG12 draft with six gated stages and five scientific choices. Distinguishes explicit rewrite translation from emergent kinetics, topology from dimension, quantum hypothesis from classical implementation. Corrects overly broad recent chat descriptions by referencing prior MG5 evolving2D Delaunay hypergraphs. No simulations, production approval or rescore.

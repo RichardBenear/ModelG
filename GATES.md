@@ -2303,3 +2303,6 @@ Richard: “I approve of those.” Approves concrete MG100b package:64stochastic
 
 ## MG103 — G5 PI closure and summary convention reaffirmed (2026-11-09)
 Richard signed off on G5: CLOSED as COMPLETE PILOT; STOCHASTIC RESPONSE AND STEP AGREEMENT UNRESOLVED. Accepts MG102 report/80jobs/144audited archives/verified public retention; no rescore or new run. Explicitly requests the same plain-language project-level summary for future tests, reinforcing MG068. See results/MG11G5/MG11G5_closure.md.
+
+## MG104 — MG12 relational hypergraph roadmap DRAFT (2026-11-09)
+PI requested a plan/questions. Six-stage H0semantics/H1exact translation/H2fixed incidence/H3pattern bridge/H4evolving relations/H5substrate supply-emergence plan in spec/MG12_hypergraph_roadmap.md. Five PI direction questions pending; no numerical experiment or production registered. Explicitly acknowledges prior MG5–MG7 evolving2D Delaunay hypergraphs; recent fixed1D G5 is not the entire project history. Closed outcomes unchanged.
