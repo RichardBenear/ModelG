@@ -1,0 +1,415 @@
+{
+  "published_commit": "3a3305a4e288c6ce3c8293b205664910fff95dd5",
+  "all_files_verified": true,
+  "registered_source_hashes_unchanged": true,
+  "files": 67,
+  "binary_files": 19,
+  "trace_files": 12,
+  "local_bytes": 12235182,
+  "records": [
+    {
+      "file": "results/MG12H2/qualification/c0_m0.json",
+      "local_bytes": 228,
+      "local_sha256": "cc88fbd1fb4fa3ef12a455b3d04abf0b937f5f8587af5fd71b983b128e5494b1",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c0_m0.npz",
+      "local_bytes": 64650,
+      "local_sha256": "ae7931f567b00dc6827dca1885a658c8b34a81aae2700cb6803f311ef5c1dc24",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/qualification/c0_m0_progress.json",
+      "local_bytes": 49,
+      "local_sha256": "6b41ec16fc8df56626eea055554c3e27a18581d503fd9883d3953ec2067cd3a9",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c0_m0_traces.jsonl",
+      "local_bytes": 650016,
+      "local_sha256": "2c132df44e627ab8b56329cfffd9e9df39e7707faf6c606bf1795170fa946b9d",
+      "comparison": "text normalized LF"
+    },
+    {
+      "file": "results/MG12H2/qualification/c0_m1.json",
+      "local_bytes": 228,
+      "local_sha256": "c9a4578e8b2d018bb65679b788b23231ed5d1f786a3d0fceb8b69112a9c79af6",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c0_m1.npz",
+      "local_bytes": 64943,
+      "local_sha256": "ae06d162911d1b2a74ca60d4154f77db3e0580a45fdda9bd483fd71137c62ed3",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/qualification/c0_m1_progress.json",
+      "local_bytes": 49,
+      "local_sha256": "6b41ec16fc8df56626eea055554c3e27a18581d503fd9883d3953ec2067cd3a9",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c0_m1_traces.jsonl",
+      "local_bytes": 664702,
+      "local_sha256": "b3b153798038c311b45a401ceb81dddb548cd6ab749aa556f1981e4c2b74e7be",
+      "comparison": "text normalized LF"
+    },
+    {
+      "file": "results/MG12H2/qualification/c0_reference.json",
+      "local_bytes": 116,
+      "local_sha256": "6d713cf3d6160a3c5306792722f00b09c1a60f34cd8022ce214ea8791d9ce338",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c0_reference.npz",
+      "local_bytes": 886,
+      "local_sha256": "fd15797dfbed743ebedbe4bf5f223ad793d3222d5b6c60ad0670f265645431d0",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/qualification/c1_m0.json",
+      "local_bytes": 227,
+      "local_sha256": "ec00f1b07d56dcbb993c86da7fa41bc6429d1df9731311319db68831013902ec",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c1_m0.npz",
+      "local_bytes": 60958,
+      "local_sha256": "56e874e5df5f8a9eea3d6440f4ba1e98f8042ad44d405882cb5997e5a521c1e6",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/qualification/c1_m0_progress.json",
+      "local_bytes": 49,
+      "local_sha256": "6b41ec16fc8df56626eea055554c3e27a18581d503fd9883d3953ec2067cd3a9",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c1_m0_traces.jsonl",
+      "local_bytes": 529526,
+      "local_sha256": "ef39ce2aea27d574f6c3002351c2043961e9365427a83c431fdbce2bd5543a05",
+      "comparison": "text normalized LF"
+    },
+    {
+      "file": "results/MG12H2/qualification/c1_m1.json",
+      "local_bytes": 227,
+      "local_sha256": "22766033be3b2ee634ab6926666162f440d366f58092b2d59c4338be561d915b",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c1_m1.npz",
+      "local_bytes": 60942,
+      "local_sha256": "8fafe322e058361f17fa9fb187072de431e8585d44d24e9b9e0684f90797165b",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/qualification/c1_m1_progress.json",
+      "local_bytes": 49,
+      "local_sha256": "6b41ec16fc8df56626eea055554c3e27a18581d503fd9883d3953ec2067cd3a9",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c1_m1_traces.jsonl",
+      "local_bytes": 531110,
+      "local_sha256": "d855772c981c16999674fdd1985aa20258773bf84761e8878eb7572c55b68e40",
+      "comparison": "text normalized LF"
+    },
+    {
+      "file": "results/MG12H2/qualification/c1_reference.json",
+      "local_bytes": 116,
+      "local_sha256": "d6d01c77ffcabb5d122a827cecd49a8105bb002d7cf04c6abb470fc764e0da8e",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c1_reference.npz",
+      "local_bytes": 855,
+      "local_sha256": "99a3528a0854436d4ca419cb4609b5abd31f89fb5e2f8097e3db229eacd7c3af",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/qualification/c2_m0.json",
+      "local_bytes": 228,
+      "local_sha256": "b2372e97dc52d6df1758451661087868f50c496185f694cdbfcd8a7dbf93fc1f",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c2_m0.npz",
+      "local_bytes": 63669,
+      "local_sha256": "ddc93dafc3c6798fb617083cdf23530c621992e2accd04948ac0f34d101db3ec",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/qualification/c2_m0_progress.json",
+      "local_bytes": 49,
+      "local_sha256": "6b41ec16fc8df56626eea055554c3e27a18581d503fd9883d3953ec2067cd3a9",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c2_m0_traces.jsonl",
+      "local_bytes": 607739,
+      "local_sha256": "3bcac28a3b448492747711680af9dd5621c2db868d98bab7be958eab3fedb888",
+      "comparison": "text normalized LF"
+    },
+    {
+      "file": "results/MG12H2/qualification/c2_m1.json",
+      "local_bytes": 228,
+      "local_sha256": "d9135c30e025d268d8c022db3b7c8eb0acd8c37dd75b90f9d4e402d9fa1a709d",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c2_m1.npz",
+      "local_bytes": 63569,
+      "local_sha256": "1fcbe546a9ebf2ab06f3e47a060d5b3f8628e81b9ed3c5732ae42f299c549245",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/qualification/c2_m1_progress.json",
+      "local_bytes": 49,
+      "local_sha256": "6b41ec16fc8df56626eea055554c3e27a18581d503fd9883d3953ec2067cd3a9",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c2_m1_traces.jsonl",
+      "local_bytes": 605017,
+      "local_sha256": "507ac34a3f7ae34e3ae99d4fa0cb99789dccac0504c0c3fcd75d5004559d9748",
+      "comparison": "text normalized LF"
+    },
+    {
+      "file": "results/MG12H2/qualification/c2_reference.json",
+      "local_bytes": 98,
+      "local_sha256": "4bb4fd7d37af24018027aa5e84e12a70f29b54246fc9bcaecef30163db8f88c1",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c2_reference.npz",
+      "local_bytes": 892,
+      "local_sha256": "1941da9e28f52dbc88da33ed69f1b09465a4a5b9eefc79550cf58e368386166e",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/qualification/c3_m0.json",
+      "local_bytes": 228,
+      "local_sha256": "be67a36ec5d132ba3ee836dbb53a02f1abc694a63d132bc9489447deac1de180",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c3_m0.npz",
+      "local_bytes": 89838,
+      "local_sha256": "37600b0aa5a9c1e03a68ec83015e4776c09127637ea9a412a4a47215ef4784e6",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/qualification/c3_m0_progress.json",
+      "local_bytes": 49,
+      "local_sha256": "6b41ec16fc8df56626eea055554c3e27a18581d503fd9883d3953ec2067cd3a9",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c3_m0_traces.jsonl",
+      "local_bytes": 915818,
+      "local_sha256": "29ddaf6822c971d61d63c3f9aaa47a765d2568239e4ddf282eee02b8abdd3075",
+      "comparison": "text normalized LF"
+    },
+    {
+      "file": "results/MG12H2/qualification/c3_m1.json",
+      "local_bytes": 227,
+      "local_sha256": "c28bc036c990be63f7b7acd2259d532725a09eac7ca2b17fdf00040c46699ff7",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c3_m1.npz",
+      "local_bytes": 89870,
+      "local_sha256": "156412821bc865e7aae785994b70e60ce5ae9332a4fb6abfcea2a36331cfaf2d",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/qualification/c3_m1_progress.json",
+      "local_bytes": 49,
+      "local_sha256": "6b41ec16fc8df56626eea055554c3e27a18581d503fd9883d3953ec2067cd3a9",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c3_m1_traces.jsonl",
+      "local_bytes": 913934,
+      "local_sha256": "6603a185db9ecc98656c068e0fb52d0e16963b00675d960a86207a3c5cfe1c23",
+      "comparison": "text normalized LF"
+    },
+    {
+      "file": "results/MG12H2/qualification/c3_reference.json",
+      "local_bytes": 116,
+      "local_sha256": "c3db519610f95afb0c8701210238ba45f5f1101a14df806a04e9f4f7f17a2166",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c3_reference.npz",
+      "local_bytes": 965,
+      "local_sha256": "bd58e59016adbb4ba3c72bfa1a8dc228b5910dcdbd365b3fba61998113fcbaa5",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/qualification/c4_m0.json",
+      "local_bytes": 227,
+      "local_sha256": "4eab7bb0d68bcb2667b7ba155f134f6f0844b1bf444e7a005cf9b41307e7b05a",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c4_m0.npz",
+      "local_bytes": 122074,
+      "local_sha256": "e9b3ce4ca67adbfefc767dddebec328c3df647e98a49d7e1c39669db08acf3a6",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/qualification/c4_m0_progress.json",
+      "local_bytes": 49,
+      "local_sha256": "6b41ec16fc8df56626eea055554c3e27a18581d503fd9883d3953ec2067cd3a9",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c4_m0_traces.jsonl",
+      "local_bytes": 1217210,
+      "local_sha256": "e00b34a301aa9d110f7867893276836380e92359a7753b95d14d9469acfae18d",
+      "comparison": "text normalized LF"
+    },
+    {
+      "file": "results/MG12H2/qualification/c4_m1.json",
+      "local_bytes": 228,
+      "local_sha256": "5974576055856409d885a2cf120d3cc80ba4aec0e44805bc3e41a3d845ba5c44",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c4_m1.npz",
+      "local_bytes": 121933,
+      "local_sha256": "91709f4d8097325e01b5ee05f8a062790189765426f37d3919909bf94f926d16",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/qualification/c4_m1_progress.json",
+      "local_bytes": 49,
+      "local_sha256": "6b41ec16fc8df56626eea055554c3e27a18581d503fd9883d3953ec2067cd3a9",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c4_m1_traces.jsonl",
+      "local_bytes": 1179326,
+      "local_sha256": "95899f9be88226ebb2bad848e578df4a704024db060f682f28951ed30378ec94",
+      "comparison": "text normalized LF"
+    },
+    {
+      "file": "results/MG12H2/qualification/c4_reference.json",
+      "local_bytes": 117,
+      "local_sha256": "857f88d9467ff7667703c24fa6e7f0d9a0b613790d446058b10855adf0f51837",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c4_reference.npz",
+      "local_bytes": 1285,
+      "local_sha256": "8814f8c41ece0a24e6c572a2ccea357125bdfa3f6cd08deb4a5e7836d185e848",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/qualification/c5_m0.json",
+      "local_bytes": 228,
+      "local_sha256": "28a3a036dfae8a02dfdd01027b34e817e990d951cd28d0173a89e6dd153968e1",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c5_m0.npz",
+      "local_bytes": 83554,
+      "local_sha256": "e6f060ccad1beb76b66c4557b9d50d5443da47df5bab7063bf798dfd09b739eb",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/qualification/c5_m0_progress.json",
+      "local_bytes": 49,
+      "local_sha256": "6b41ec16fc8df56626eea055554c3e27a18581d503fd9883d3953ec2067cd3a9",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c5_m0_traces.jsonl",
+      "local_bytes": 642388,
+      "local_sha256": "0df65da4b7be4f3b636e13bbe84453a2d93f5cf4410ba8805948f6f1f71de9a6",
+      "comparison": "text normalized LF"
+    },
+    {
+      "file": "results/MG12H2/qualification/c5_m1.json",
+      "local_bytes": 228,
+      "local_sha256": "6abefa3155d31fb8e9dcc50112b6012990bbd4faf6b565b1e677203c31d8987d",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c5_m1.npz",
+      "local_bytes": 83499,
+      "local_sha256": "39ef3e1c5d947b2d64f23004889b1a584d9024b8c3f202d0c07b502b96458ba0",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/qualification/c5_m1_progress.json",
+      "local_bytes": 49,
+      "local_sha256": "6b41ec16fc8df56626eea055554c3e27a18581d503fd9883d3953ec2067cd3a9",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c5_m1_traces.jsonl",
+      "local_bytes": 639836,
+      "local_sha256": "b8f7b36f25e5f64db1d5b2896b303dce64b5dd24240754eb6243725e7e745dd4",
+      "comparison": "text normalized LF"
+    },
+    {
+      "file": "results/MG12H2/qualification/c5_reference.json",
+      "local_bytes": 116,
+      "local_sha256": "8cfe792084a5f4cc140531fd7e15970cabe78730c25d18b4da3f803d28dbc1c7",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/c5_reference.npz",
+      "local_bytes": 1237,
+      "local_sha256": "11133ba648118af7f3e9cde873d0bc3897cf0e632f30f00383f3248e14dbcfdf",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/qualification/evaluation.json",
+      "local_bytes": 7513,
+      "local_sha256": "bf5c718df6d744b6c634d13231365f5c15f24cbb7abe9fec3206e9a7b7725ecc",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/ledger.json",
+      "local_bytes": 3219,
+      "local_sha256": "5fb2ad90f7a880f8755e7d4c2f2bfebf2fdad727d75f4b306c0a7fe5a485d89a",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/MG12H2_qualification_results.md",
+      "local_bytes": 8932,
+      "local_sha256": "6735138477030025b658379905d5eb54a80595c23eca351c8914da85b99dccaf",
+      "comparison": "text normalized LF"
+    },
+    {
+      "file": "results/MG12H2/qualification/MG12H2_qualification_summary.png",
+      "local_bytes": 68070,
+      "local_sha256": "27e7514a4c0ed34689b8ac25a286addd673920bce5a0b98e4f2f9c6a3288a09d",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H2/qualification/raw_manifest.json",
+      "local_bytes": 4484,
+      "local_sha256": "0a5de83655407a14121af3a9e8033bf33fbf63b36b57f39ca6c1d6a1cbae90e0",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/registration.json",
+      "local_bytes": 2066497,
+      "local_sha256": "a7764528f182ab1eb4792d5c47a67e5f7a0d2b7b61f155da9e84dbdc6e9d6974",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H2/qualification/run_state.json",
+      "local_bytes": 227,
+      "local_sha256": "fa04fac2537fc882746bbd62af8a9d3ab42174a49679150215e0fa51cd4f3b7c",
+      "comparison": "JSON semantic"
+    }
+  ],
+  "scientific_closure": "PI pending",
+  "note": "Count/reference/figure binary bytes match. JSON semantic equality. JSONL/prose normalize only CRLF/LF. Audited local text hashes require original working bytes (Windows CRLF), while Git may store LF. No scientific rescoring."
+}
