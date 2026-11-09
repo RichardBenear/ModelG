@@ -1,0 +1,4 @@
+{
+  "status": "FAILED; preserve/version, no automatic retry",
+  "error": "Traceback (most recent call last):\n  File \"C:\\Users\\rbene\\.codex\\.chatgpt-projects\\g-p-6ae095a6c94c819198efcd6d84f02c03\\archive_work\\ModelG_MG10\\src\\prepare_mg11g2_pattern.py\", line 112, in <module>\n    try:execute()\n        ~~~~~~~^^\n  File \"C:\\Users\\rbene\\.codex\\.chatgpt-projects\\g-p-6ae095a6c94c819198efcd6d84f02c03\\archive_work\\ModelG_MG10\\src\\prepare_mg11g2_pattern.py\", line 102, in execute\n    error=float(np.max(abs(pop-reference_pop)/np.maximum(1,case['initial'].max(axis=1))[None,:,None]));assert error<=2e-6;v=incidence_check(state,case,g);assert v['passed'];rawchecks.append(dict(file=path.relative_to(ROOT).as_posix(),sha256=digest(path),**v));comparisons.append(dict(job=id,error=error))\n                                                                                                              ^^^^^^^^^^^\nAssertionError\n"
+}

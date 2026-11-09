@@ -1,0 +1,23 @@
+{
+  "graphs": {
+    "LOCAL": {
+      "nodes": 500,
+      "directed_edges": 1500,
+      "degree": 3,
+      "connected": true,
+      "bipartite": true,
+      "outgoing_hazard": 1.0
+    },
+    "CROSS_RING": {
+      "nodes": 500,
+      "directed_edges": 1500,
+      "degree": 3,
+      "connected": true,
+      "bipartite": false,
+      "outgoing_hazard": 1.0
+    }
+  },
+  "derivative_reference_error": 4.0996227530124474e-14,
+  "jacobian_columns_checked": 56,
+  "ledger_rotation_legacy_reference_projection_trapezoid": true
+}

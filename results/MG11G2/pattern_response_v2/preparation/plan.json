@@ -1,0 +1,326 @@
+{
+  "stage": "MG088",
+  "status": "PROSPECTIVE DEVELOPMENT ONLY",
+  "pi_request": "Go ahead with the Pattern-Response study.",
+  "jobs": [
+    {
+      "id": "c0_s0_v0",
+      "config": "MAINTAINED",
+      "condition": 0,
+      "start": 0,
+      "setting": 0
+    },
+    {
+      "id": "c0_s0_v1",
+      "config": "MAINTAINED",
+      "condition": 0,
+      "start": 0,
+      "setting": 1
+    },
+    {
+      "id": "c0_s1_v0",
+      "config": "MAINTAINED",
+      "condition": 0,
+      "start": 1,
+      "setting": 0
+    },
+    {
+      "id": "c0_s1_v1",
+      "config": "MAINTAINED",
+      "condition": 0,
+      "start": 1,
+      "setting": 1
+    },
+    {
+      "id": "c1_s0_v0",
+      "config": "ISOLATED_C1",
+      "condition": 1,
+      "start": 0,
+      "setting": 0
+    },
+    {
+      "id": "c1_s0_v1",
+      "config": "ISOLATED_C1",
+      "condition": 1,
+      "start": 0,
+      "setting": 1
+    },
+    {
+      "id": "c1_s1_v0",
+      "config": "ISOLATED_C1",
+      "condition": 1,
+      "start": 1,
+      "setting": 0
+    },
+    {
+      "id": "c1_s1_v1",
+      "config": "ISOLATED_C1",
+      "condition": 1,
+      "start": 1,
+      "setting": 1
+    },
+    {
+      "id": "c2_s0_v0",
+      "config": "LOCAL_C1",
+      "condition": 2,
+      "start": 0,
+      "setting": 0
+    },
+    {
+      "id": "c2_s0_v1",
+      "config": "LOCAL_C1",
+      "condition": 2,
+      "start": 0,
+      "setting": 1
+    },
+    {
+      "id": "c2_s1_v0",
+      "config": "LOCAL_C1",
+      "condition": 2,
+      "start": 1,
+      "setting": 0
+    },
+    {
+      "id": "c2_s1_v1",
+      "config": "LOCAL_C1",
+      "condition": 2,
+      "start": 1,
+      "setting": 1
+    },
+    {
+      "id": "c3_s0_v0",
+      "config": "CROSS_RING_C1",
+      "condition": 3,
+      "start": 0,
+      "setting": 0
+    },
+    {
+      "id": "c3_s0_v1",
+      "config": "CROSS_RING_C1",
+      "condition": 3,
+      "start": 0,
+      "setting": 1
+    },
+    {
+      "id": "c3_s1_v0",
+      "config": "CROSS_RING_C1",
+      "condition": 3,
+      "start": 1,
+      "setting": 0
+    },
+    {
+      "id": "c3_s1_v1",
+      "config": "CROSS_RING_C1",
+      "condition": 3,
+      "start": 1,
+      "setting": 1
+    },
+    {
+      "id": "c4_s0_v0",
+      "config": "ISOLATED_C100",
+      "condition": 4,
+      "start": 0,
+      "setting": 0
+    },
+    {
+      "id": "c4_s0_v1",
+      "config": "ISOLATED_C100",
+      "condition": 4,
+      "start": 0,
+      "setting": 1
+    },
+    {
+      "id": "c4_s1_v0",
+      "config": "ISOLATED_C100",
+      "condition": 4,
+      "start": 1,
+      "setting": 0
+    },
+    {
+      "id": "c4_s1_v1",
+      "config": "ISOLATED_C100",
+      "condition": 4,
+      "start": 1,
+      "setting": 1
+    },
+    {
+      "id": "c5_s0_v0",
+      "config": "LOCAL_C100",
+      "condition": 5,
+      "start": 0,
+      "setting": 0
+    },
+    {
+      "id": "c5_s0_v1",
+      "config": "LOCAL_C100",
+      "condition": 5,
+      "start": 0,
+      "setting": 1
+    },
+    {
+      "id": "c5_s1_v0",
+      "config": "LOCAL_C100",
+      "condition": 5,
+      "start": 1,
+      "setting": 0
+    },
+    {
+      "id": "c5_s1_v1",
+      "config": "LOCAL_C100",
+      "condition": 5,
+      "start": 1,
+      "setting": 1
+    },
+    {
+      "id": "c6_s0_v0",
+      "config": "CROSS_RING_C100",
+      "condition": 6,
+      "start": 0,
+      "setting": 0
+    },
+    {
+      "id": "c6_s0_v1",
+      "config": "CROSS_RING_C100",
+      "condition": 6,
+      "start": 0,
+      "setting": 1
+    },
+    {
+      "id": "c6_s1_v0",
+      "config": "CROSS_RING_C100",
+      "condition": 6,
+      "start": 1,
+      "setting": 0
+    },
+    {
+      "id": "c6_s1_v1",
+      "config": "CROSS_RING_C100",
+      "condition": 6,
+      "start": 1,
+      "setting": 1
+    }
+  ],
+  "short_times": [
+    0.0,
+    0.125,
+    0.25
+  ],
+  "source_hashes": {
+    "src/mg11g2_pattern_v2.py": "c704898e977bac1797cdef29f75c2cb9c836f32520fe1c04617f0a3bceb9e603",
+    "src/mg11g2_pattern_v2_oracle.py": "20c133502918e33960d32b9b52f021cb2a6b3556d6fdcbaf0e64ef56039b733b",
+    "src/prepare_mg11g2_pattern_v2.py": "fde7fbb01852eb553b508de5c23c595da8b188e69c120536caf58d979796a7b8",
+    "src/evaluate_mg11g2_pattern_v2.py": "738f842065d5434bafc579b62443f4f5a2f0c824d9376144f9477e18b5cde71c",
+    "src/check_mg11g2_pattern_v2.py": "f81f7d5e2e6b734b2b2ff6e628cc2325f9186d6b76c8004c6bc8adb355678b94",
+    "src/run_mg11g2_pattern_v2.py": "9cf78ae60826af6c819a3aadaeb26f51a7887603b9c54a3ea40ed57ecdcbfb27",
+    "spec/MG11G2_pattern_response_v2.md": "60634e4b2c5f3d155a85b548ec370171d4214a2e7bbd928349037ade9c0ea1e1",
+    "src/mg11g2.py": "69df9ec5f5b7cd9c4ec5e6deb5f5acdd1e79a5f05dd2cb24056aac96454ed003",
+    "src/mg11n1.py": "d3e06a1297263b1b7fa3696877599457b3df9e67c5f70cab5deed032f347c614",
+    "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+    "src/mg10_reservoir.py": "bddf8ba09bacaa5ed884a2794646d6a307eb58bac09010058e47998ee96aa31b",
+    "src/mg10p1.py": "ba9aa61c92d813fc48f56cc1683e457596f0152637daede07638f1308aaad45c",
+    "src/mg10d1_pool.py": "ada3b015c0bd2ec05edd89f6a32671fe7ca6a2854894ae0fcfd1199d9c83f86c",
+    "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70"
+  },
+  "original_v1_hashes": {
+    "results/MG11G2/pattern_response/preparation/attempt.json": "0178a5a0bf23904e30e525f02b160145837c7def00e179c199fbb4bc6cef4e5e",
+    "results/MG11G2/pattern_response/preparation/failure.json": "7f0ed774439effa22b34f8c5feaaca8edf688947452f6f28c33fcaa380217e00",
+    "results/MG11G2/pattern_response/preparation/formal.json": "074e9a0bf62470f0a5ddc56afd1d51a78e2bf13c55e5e54619c58b4006e32e92",
+    "results/MG11G2/pattern_response/preparation/plan.json": "7618523e7bc55b9fefd44369f6c496c8703ef05319ec01727ea554366b3b523a",
+    "results/MG11G2/pattern_response/preparation/reference_c0_s0.npz": "2e23282a9b9056f22dfc404fb99070b562673d24fbf46d782d23f05ee2c89ba8",
+    "results/MG11G2/pattern_response/preparation/reference_c0_s1.npz": "4a31eec5ebd40f1af735cb745826ccafacd0cd0ab303258f8b505d351a0e5088",
+    "results/MG11G2/pattern_response/preparation/reference_c1_s0.npz": "ac695d1f37689c3c51bb452d84d82825a3490e162f80a7ebb371eaac9b155957",
+    "results/MG11G2/pattern_response/preparation/reference_c1_s1.npz": "01daa8eb8391b7cfe086959c23521d51aee46e650828e79c46b807a920339205",
+    "results/MG11G2/pattern_response/preparation/timing/c0_s0_v0.json": "e6df0915634b2da23c733374b9dda5ce10c33eb648cf2566a79c153c07c4de82",
+    "results/MG11G2/pattern_response/preparation/timing/c0_s0_v0.npz": "065047467f99c4ea588d382197928925c39bea35d3ec4f2a5b7a63de62a53f38",
+    "results/MG11G2/pattern_response/preparation/timing/c0_s0_v0_progress.json": "012b9d9f10c069069db495ed0ce48412fc0be717999f61a8dd0d20cb298e0d92",
+    "results/MG11G2/pattern_response/preparation/timing/c0_s0_v1.json": "add570b397d71a64204a26f7beae855c0ce18ea1dd343f0ef8ef63018d715298",
+    "results/MG11G2/pattern_response/preparation/timing/c0_s0_v1.npz": "8c2577c4a16675da38e57a2a72c7001ed1c0af5c67e4e932eeefc6a996c86eac",
+    "results/MG11G2/pattern_response/preparation/timing/c0_s0_v1_progress.json": "9725a9861e9b1bef152ce2036d8c80b85adeadf6d1242d18e617bf238ee72d82",
+    "results/MG11G2/pattern_response/preparation/timing/c0_s1_v0.json": "addf086ebef3cff2636158ed4c85ece1a6af91f762467e612c69a505f5647cef",
+    "results/MG11G2/pattern_response/preparation/timing/c0_s1_v0.npz": "830c35352f725dc383ddf6f5fdab69d9f461930553f18b70615dbbbe72d7a574",
+    "results/MG11G2/pattern_response/preparation/timing/c0_s1_v0_progress.json": "0cfddaf097677d5ac0efb81ab5b8a314113c9deffeb3c4d034ed4b823844ef53",
+    "results/MG11G2/pattern_response/preparation/timing/c0_s1_v1.json": "4b40261fa2cbdff8e94d466589297688e861b3f0f791658e2d28850ca65f8340",
+    "results/MG11G2/pattern_response/preparation/timing/c0_s1_v1.npz": "711b941703196ebf5ef1ffaf7a4b9034e59dea27885b97b31e272e05135908a2",
+    "results/MG11G2/pattern_response/preparation/timing/c0_s1_v1_progress.json": "45924031420ac10c99ed9e9db53b2725d338d2a577a602171592a0b487a44f8b",
+    "results/MG11G2/pattern_response/preparation/timing/c1_s0_v0.json": "590504092bfd9c4d1a383390609186cc11c97837f1df93f813d34242b602d331",
+    "results/MG11G2/pattern_response/preparation/timing/c1_s0_v0.npz": "abaf99c921d0f65c5db4c66556df08ca33b176b5a77edf84dca7234887fa7370",
+    "results/MG11G2/pattern_response/preparation/timing/c1_s0_v0_progress.json": "d0c99fcffb7d42a9a2d4edee00061beaf2d9325f2df678dad00e487bec26dc5e",
+    "results/MG11G2/pattern_response/preparation/timing/c1_s0_v1.json": "f8510b2e79124a3dca5c1b74128d5a7a9dcd43bf3329a26453f508a575c048f0",
+    "results/MG11G2/pattern_response/preparation/timing/c1_s0_v1.npz": "66fcadce577aef81ab53c65b0c02b31d7053de6d01af51df024fbb4b1e4d75b5",
+    "results/MG11G2/pattern_response/preparation/timing/c1_s0_v1_progress.json": "6355515f98626e1fb1c43e98247fabda9e0789d2a5ac27c63a343be84bd1613e",
+    "results/MG11G2/pattern_response/preparation/timing/c1_s1_v0.json": "1f0748a10681c70f67a055257cc3cf29e9b4d4ea99ca35c9f0214fe8197ef756",
+    "results/MG11G2/pattern_response/preparation/timing/c1_s1_v0.npz": "a61f5e62dd3418fea698924dc6cedc1ffc22ee65a20e0d00f3742e5b5ce3d044",
+    "results/MG11G2/pattern_response/preparation/timing/c1_s1_v0_progress.json": "15774e66cf073706a23bf800943b4a3a9c6f23c32950d57e12371250f24b4a30",
+    "results/MG11G2/pattern_response/preparation/timing/c1_s1_v1.json": "70bcb9198be00b470d5816d0c3caf7ab2b3ce543769159e2bab0ae51466a831a",
+    "results/MG11G2/pattern_response/preparation/timing/c1_s1_v1.npz": "dd90c6a5bc6622a98b096530f78982f662665136bfae2931ab3d3f5127b432f0",
+    "results/MG11G2/pattern_response/preparation/timing/c1_s1_v1_progress.json": "7179b9cf499232f231f7ce829a3d115b4d7f292398fd95a406060354641c4202",
+    "results/MG11G2/pattern_response/preparation/timing/c2_s0_v0.json": "5226b1b82c46a7bd32b88f7214578adcfc4e00713c632fa4bed4bdefa6d0b06b",
+    "results/MG11G2/pattern_response/preparation/timing/c2_s0_v0.npz": "b3630722306fe09bb1eaf8350028e7f3529844e0766d7f63f5ffed0fa3561171",
+    "results/MG11G2/pattern_response/preparation/timing/c2_s0_v0_progress.json": "b76005b012176de6c303235b237df91251eb99ba9e5771993de26f606534ad30",
+    "results/MG11G2/pattern_response/preparation/timing/c2_s0_v1.json": "506add84f2756e8f24a6b4a1e5ff6ca8065fc7a2ab89e3bbce0db42d80b6661a",
+    "results/MG11G2/pattern_response/preparation/timing/c2_s0_v1.npz": "4274e8b1089983c893d54369ae02465ddf6dce78cc0cf7daee72bf5c74882c21",
+    "results/MG11G2/pattern_response/preparation/timing/c2_s0_v1_progress.json": "fd43e1104f635a1f1b25da504a2512163c5d9097cf03bf77387797b23c82a0fb",
+    "results/MG11G2/pattern_response/preparation/timing/c2_s1_v0.json": "c7c0b099941ab350802ce4f3c43325b71a82d935c06efe1f22416ae392dde824",
+    "results/MG11G2/pattern_response/preparation/timing/c2_s1_v0.npz": "8948429e7f44b54e8432aa9ca5869078ce6d1fa8760159edc7f60d16db8ad08c",
+    "results/MG11G2/pattern_response/preparation/timing/c2_s1_v0_progress.json": "0423252aea65df453ae0d444b64bf5b4bb3e534d3e312ed55ee82a97db015fd5",
+    "results/MG11G2/pattern_response/preparation/timing/c2_s1_v1.json": "0d64d28b1de3118a03c9b6986d830af20d6fa3df1ed4cf313ab4bf92998aded0",
+    "results/MG11G2/pattern_response/preparation/timing/c2_s1_v1.npz": "ba334a45131e66891655f1dbed3034d0dc4b3c969cffaa2f6f401bc5bf33a096",
+    "results/MG11G2/pattern_response/preparation/timing/c2_s1_v1_progress.json": "77bde7cd069f87ba2dcb96040b8bfc4ee8525eaf8ceb301e055d6f360d972f37",
+    "results/MG11G2/pattern_response/preparation/timing/c3_s0_v0.json": "37de1ea9e2a48b715b59a9ed418edc4db4c40b0553aa1a8b3c83b94cdf5bdc1c",
+    "results/MG11G2/pattern_response/preparation/timing/c3_s0_v0.npz": "fa60a4972ba27ba5f8b25bb656185300349b5c32db3beb98bbf46ad50bda1980",
+    "results/MG11G2/pattern_response/preparation/timing/c3_s0_v0_progress.json": "2d309a4c884d03458d7c4b9eea3bb992d9628d045891898016e3f4048fe0d7d7",
+    "results/MG11G2/pattern_response/preparation/timing/c3_s0_v1.json": "ecd3c3e38cf5a66edf3106b0378e16500b2e4bbcc3c32c001c1737a5a4c53fbf",
+    "results/MG11G2/pattern_response/preparation/timing/c3_s0_v1.npz": "3df41167160cd93d0c6a78cc577d0a7ea40aa74889763ab740f4ec58e1130173",
+    "results/MG11G2/pattern_response/preparation/timing/c3_s0_v1_progress.json": "245ce2a6582a1161709a459262ff8b10da882c1f84f680f7b61591e8932412ad",
+    "results/MG11G2/pattern_response/preparation/timing/c3_s1_v0.json": "1c33146985ae8db3ebe113bbb88033dedf793a6265abb4d1b5eeb124cc80267c",
+    "results/MG11G2/pattern_response/preparation/timing/c3_s1_v0.npz": "6eb0804cea34a32922d1df8e1fee5fc24b031f38cc6eae8af2ebaf96a05829cd",
+    "results/MG11G2/pattern_response/preparation/timing/c3_s1_v0_progress.json": "08b5ce292ed4f1bcc83e20190e4a8c2dd66abe928336822aab8970bd4b3fb5f9",
+    "results/MG11G2/pattern_response/preparation/timing/c3_s1_v1.json": "d059cbbc5c8ec52cf421979df112511d9ff2bccd6a664c36eb039c0442109604",
+    "results/MG11G2/pattern_response/preparation/timing/c3_s1_v1.npz": "fbaaf3aab39f2436d230e61c850a0d82e92544307fc512aa1484cf8f1ab43a29",
+    "results/MG11G2/pattern_response/preparation/timing/c3_s1_v1_progress.json": "e4ff082d12c0e8cd93d6dd0c835dd929ace5aea840d625acad603f265201e200",
+    "results/MG11G2/pattern_response/preparation/timing/c4_s0_v0.json": "46ca02e3301a516224c8ef41ecc371137d03cee4411a5dfb19bd9369cf753a66",
+    "results/MG11G2/pattern_response/preparation/timing/c4_s0_v0.npz": "a757f903b1c218176546bd9266f8235c71161a9a0045eb1198d2d8a5a5c7a6bf",
+    "results/MG11G2/pattern_response/preparation/timing/c4_s0_v0_progress.json": "a3d84972ad2affff2bb96557968da42ba651d1bcf91af5e6e314d562ed643272",
+    "results/MG11G2/pattern_response/preparation/timing/c4_s0_v1.json": "0ccb9711141a74059c124d671b8e0d6c252c30a293e0ca5b9df2bc8903dde69c",
+    "results/MG11G2/pattern_response/preparation/timing/c4_s0_v1.npz": "a5535f39dc73eeef982afcde341add5fbd2042720a3d4847adfe3257c57d9a94",
+    "results/MG11G2/pattern_response/preparation/timing/c4_s0_v1_progress.json": "a9d51c228534e2402b69dcae9f0fbf1a16d0418a84a3120530279f3d5f74c233",
+    "results/MG11G2/pattern_response/preparation/timing/c4_s1_v0.json": "9634e7d435ec4e4199c940e3d6d339bd45c4a5a5c3c9ab5bb924041129670217",
+    "results/MG11G2/pattern_response/preparation/timing/c4_s1_v0.npz": "6b8ca19dca5e2bca7abce178d24306b2654d748d4f8d2f813b4b45a8ea1b773e",
+    "results/MG11G2/pattern_response/preparation/timing/c4_s1_v0_progress.json": "e8a9a8c1e9c746b7bd95a49e0af88af73543312e2e6577524c4b9321710536e1",
+    "results/MG11G2/pattern_response/preparation/timing/c4_s1_v1.json": "99431638f357595a0ede766605d6d0e94a2af2adade87ddac0b08a4b48f8f81b",
+    "results/MG11G2/pattern_response/preparation/timing/c4_s1_v1.npz": "365794775faaaa46eddf5e08364d78c7e46ed7da2b6ef0ccd7e1eaa6dded669a",
+    "results/MG11G2/pattern_response/preparation/timing/c4_s1_v1_progress.json": "20adc46b8777a0404634e3189ba998dee82541555a59cfff2def5d3db4e189c0",
+    "results/MG11G2/pattern_response/preparation/timing/c5_s0_v0.json": "65ec168601c3d5c9e8aeeaa5de917e911ab78eec4452c608b8b6337ce0a40298",
+    "results/MG11G2/pattern_response/preparation/timing/c5_s0_v0.npz": "9083d5470baf2e2fa607fa338dc3ea6236391534e98428763c84183f1c24d97d",
+    "results/MG11G2/pattern_response/preparation/timing/c5_s0_v0_progress.json": "ba9afb8dab8994b655c484114fd3fd3428f6962899d655332166899367fd79ab",
+    "results/MG11G2/pattern_response/preparation/timing/c5_s0_v1.json": "a9315058232249b82434731060d1efd33cf511ec67084fe7041fc892fbcee189",
+    "results/MG11G2/pattern_response/preparation/timing/c5_s0_v1.npz": "a666b95988c18026fa6725b3189204a3ab8d3b65a598869f2102ec4b1d692d9d",
+    "results/MG11G2/pattern_response/preparation/timing/c5_s0_v1_progress.json": "107f56926addc1cad4d7b02aadc3f41fb909cf849adac093f79e2d40b2bbcdce",
+    "results/MG11G2/pattern_response/preparation/timing/c5_s1_v0.json": "209aa9ab086436f13fc6f43f5f9083fc556bcf52d9233687e70c9e20def1fbe9",
+    "results/MG11G2/pattern_response/preparation/timing/c5_s1_v0.npz": "9e9ec0b8150bcef4c09bcdc22e4cbbd1b1bfe9cf88ec928ee32d30e98c9b51b0",
+    "results/MG11G2/pattern_response/preparation/timing/c5_s1_v0_progress.json": "923ed432815e771f6b2844e73c87520f8a990ad5124ff4b0eae0ee7915ab5328",
+    "results/MG11G2/pattern_response/preparation/timing/c5_s1_v1.json": "7fc4726422ef19f97eef2d2a71a5aa09cb9e70f47e9affa5abba9a6a2a2b4157",
+    "results/MG11G2/pattern_response/preparation/timing/c5_s1_v1.npz": "631756fa205fa06ca48050e5cade56fbed62917c2afbc6634d955a5d71f93ace",
+    "results/MG11G2/pattern_response/preparation/timing/c5_s1_v1_progress.json": "27d4120634fe010ca4f27c49ad850e2b9f295e97180c1dd9040d7745578a7def",
+    "results/MG11G2/pattern_response/preparation/timing/c6_s0_v0.json": "cd066083e9aeae47384a24a6db45879bb742435703c284e08c9248cd72e63319",
+    "results/MG11G2/pattern_response/preparation/timing/c6_s0_v0.npz": "5deb48fb564831facf3147ebcce6ca5d6befa404bc77f7c81605db1c038ac3bf",
+    "results/MG11G2/pattern_response/preparation/timing/c6_s0_v0_progress.json": "c8dd7404f30f728df71521af64c3b82efd2ed51641e61bf50e20a12efac9c459",
+    "results/MG11G2/pattern_response/preparation/timing/c6_s0_v1.json": "9734889347aeb05d5af226972884672a817ce7d0ff1529f3dae9dcc08d5edd2e",
+    "results/MG11G2/pattern_response/preparation/timing/c6_s0_v1.npz": "8ca5e36f07838868e00795421252960a672280ba1929af135c3f6fe4bb70759f",
+    "results/MG11G2/pattern_response/preparation/timing/c6_s0_v1_progress.json": "86e5a21f1585875706d02098086c52eeb27e111da367b136d1302e772f6ebec2",
+    "results/MG11G2/pattern_response/preparation/timing/c6_s1_v0.json": "1de52fbdd2f1ab6505c631ae1b5e6cc846a72fb22b2a533716715cee02b9f227",
+    "results/MG11G2/pattern_response/preparation/timing/c6_s1_v0.npz": "37d7d5368d6d5139d666ee38f6a0bf4f2e20a897d06c9a2d6339ea1484a15074",
+    "results/MG11G2/pattern_response/preparation/timing/c6_s1_v0_progress.json": "1b46cd142377d626a474c44dc4ead91d15096b6eee4de19b64cf11554411a8e6",
+    "results/MG11G2/pattern_response/preparation/timing/c6_s1_v1.json": "b1a268e74619225584de2c3d2c4364697e0bc074eebb3f8b49edd3d8e9e5ba25",
+    "results/MG11G2/pattern_response/preparation/timing/c6_s1_v1.npz": "e908511189291ba13e2014fc304c319a136fab120d5f443d198fa084a3f2ac74",
+    "results/MG11G2/pattern_response/preparation/timing/c6_s1_v1_progress.json": "a20d6bcffa82b4012d96a13598a2e578d9870862a040c7b1e344c263feef7dfe"
+  },
+  "reference_sha256": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b",
+  "ceiling_elapsed_seconds": 870,
+  "prior_development_reserved_seconds": 30,
+  "job_timeout_seconds": 120,
+  "workers": 1,
+  "threads_per_library": 1,
+  "random_draws": 0,
+  "production_candidate_worker_seconds": 7200
+}
