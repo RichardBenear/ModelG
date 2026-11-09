@@ -2216,3 +2216,8 @@ MG090 scientific retention verified: all28raw archives (42096175bytes) published
 ## MG091 — PI closure of MG11-G2 Pattern-Response (2026-11-08 local)
 
 Richard: “I sign off. Go ahead with the next stage.” CLOSED as COMPLETE DETERMINISTIC PATTERN-RESPONSE ESTIMATION, RESOLVED CONNECTIVITY CONTRAST under registered criteria. Accepts MG090 numerical/raw audit and verified full public archive, with the explicit limit that higher projection did not establish longer reference-pattern persistence. Original preparation and Step1 failures remain preserved, not rescored. Next-stage preparation authorized; its concrete modeling choices/criteria/measured budget will be recorded before production. No stochastic result inferred.
+
+
+## MG092 — B-only transport switch preparation (2026-11-08 local)
+
+PI authorized next stage after MG091 closure. Prepare conditional mechanism experiment: exact C1G2parents atT10 (8donors, both origins/H/S/settings) each fork LOCAL/CROSS_RING/OFF Btransport only; Agraph/reactions/stocks/output stores unchanged, post counters reset explicitly.24postT15branches, same finalabsolute25, primary equal-origin average late20..25cross-local seed-excessX; deterministic refinement/sham guards, no CI/quantum-memory claim. Development24shortpost.25writer branches+24separate Radau references, graph/fork/ledger/Jacobian/sham/OFF and synthetic full/failed-sham/missing/prefix/empty/wrong-primary tests,900elapsed/thread1. Source/spec/plan/donor hashes pushed before any integrations. Candidate1core-hour cap/max8workers, concrete measured design/criteria/budget/public retention return to PI before science under RESEARCH_PROTOCOL workflow3. No previous outcomes rescored.

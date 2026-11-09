@@ -1,0 +1,7 @@
+# MG092 prospective mechanism-study check
+
+Switch only B transport, holding exact seven-species prepared state, A graph/rate, reaction law and denominators fixed within parent. Retain Z/W, reset only post counters. Distinguish ongoing transport intervention from historical state differences; two origins are conditional deterministic histories, not random replicates or quantum memory. Time10 informed by closed G2 data, not future G3 outcomes. No resource reset, injections or assumed physical energy.
+
+Test shams against original continuation, not byte-identical adaptive paths. Source adapter adds B incidence after frozen law with B hopping disabled. Separate A/B edge arrays, correct directed counters, nonuniform state/Jacobian and boundary checks mandatory. Uniform H evolution is exact invariant subspace, not suppression of registered noise. All parents retained regardless of classifier. Combined past/post timeline avoids falsely demanding20-unit persistence in a15-unit post window.
+
+Primary equal-origin average, deterministic base/fine guard and1%template floor fixed; individual-origin and OFF/sham responses secondary. Sham/numerical/missing failures block interpretation. Actual uptake changes remain mediators; this does not isolate them from spatial redistribution. No stochastic/particle-death/quantum claim. All donor/source/raw/progress/failure/cost records retained; prospective900second development and measured new1core-hour candidate cap; PI final execution approval separate.
