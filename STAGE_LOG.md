@@ -1169,3 +1169,6 @@ Richard: “I sign off on G4. Proceed to next step”. CLOSED as QUALIFIED WITHI
 
 ### MG100 — next-stage preparation authorized
 G4 closure recorded; draft and implementation of conditional stochastic full-lattice G5 pilot. Source/donor/seed push before bounded short validation. Scientific production and budget not registered.
+
+### MG100b — conditional stochastic pilot READY
+All preparation and separate short drift references passed; original pre-draw inverse-t comparison failure preserved. Source/seed/donors frozen; accounted86.360414seconds<900. Forecast16.234798core-hours/~2h local8workers; proposed24cap/full public raw retention require concrete PI approval. No registration/production. Readiness report results/MG11G5/MG11G5_preparation.md.
