@@ -88,3 +88,6 @@ No experiment has a cost estimate yet. H0 must specify pilot fixtures and a capp
 5. **Resource/quantum scope:** retain finite A/B and spent Z/W during translation, reserving shared-substrate recycling and any explicitly quantum extension for H5 or later? Recommended: yes; this makes changes in kinetics, geometry and supply separately interpretable.
 
 These are scientific direction questions, not a request to approve unmeasured production budgets. Answers determine H0; concrete later run approvals remain separate. No work beyond planning is implied by this draft.
+
+## MG105 — PI decisions recorded, 2026-11-09
+Richard: “I agree to your recommendations on all 5. Proceed.” All five recommended direction choices are adopted. H0 contract: MG12H0_contract.md; initial static evidence: ../results/MG12H0/MG12H0_specification_results.md. Original questions above are retained as the prospective decision record. This approval enables the staged program; it does not supply an unmeasured production budget or change closed G5 scoring.
