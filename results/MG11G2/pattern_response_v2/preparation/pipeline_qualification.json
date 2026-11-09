@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "source_hashes": {
+    "src/mg11g2_pattern_v2.py": "c704898e977bac1797cdef29f75c2cb9c836f32520fe1c04617f0a3bceb9e603",
+    "src/mg11g2_pattern_v2_oracle.py": "20c133502918e33960d32b9b52f021cb2a6b3556d6fdcbaf0e64ef56039b733b",
+    "src/prepare_mg11g2_pattern_v2.py": "fde7fbb01852eb553b508de5c23c595da8b188e69c120536caf58d979796a7b8",
+    "src/evaluate_mg11g2_pattern_v2.py": "738f842065d5434bafc579b62443f4f5a2f0c824d9376144f9477e18b5cde71c",
+    "src/check_mg11g2_pattern_v2.py": "f81f7d5e2e6b734b2b2ff6e628cc2325f9186d6b76c8004c6bc8adb355678b94",
+    "src/run_mg11g2_pattern_v2.py": "9cf78ae60826af6c819a3aadaeb26f51a7887603b9c54a3ea40ed57ecdcbfb27",
+    "spec/MG11G2_pattern_response_v2.md": "60634e4b2c5f3d155a85b548ec370171d4214a2e7bbd928349037ade9c0ea1e1",
+    "src/mg11g2.py": "69df9ec5f5b7cd9c4ec5e6deb5f5acdd1e79a5f05dd2cb24056aac96454ed003",
+    "src/mg11n1.py": "d3e06a1297263b1b7fa3696877599457b3df9e67c5f70cab5deed032f347c614",
+    "src/mg10s1.py": "14acc177219be0b78defde2669668d39bd06d07278963ccf9a8fa9554f8231bd",
+    "src/mg10_reservoir.py": "bddf8ba09bacaa5ed884a2794646d6a307eb58bac09010058e47998ee96aa31b",
+    "src/mg10p1.py": "ba9aa61c92d813fc48f56cc1683e457596f0152637daede07638f1308aaad45c",
+    "src/mg10d1_pool.py": "ada3b015c0bd2ec05edd89f6a32671fe7ca6a2854894ae0fcfd1199d9c83f86c",
+    "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70"
+  },
+  "complete_missing_prefix_empty_wrong_primary": true,
+  "synthetic_scope": "Constant-population, zero-ledger algebraic fixtures; not ODE samples",
+  "estimand_background_invariance": true
+}

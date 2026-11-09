@@ -2190,3 +2190,8 @@ Richard: “Go ahead with the Pattern-Response study.” Prepare concrete matche
 ### MG088 original preparation failure and MG088b numerical correction
 
 Original28short actual-writer paths retained; separate Radau comparison failed ISOLATED_C1 S base accumulated Z2.36016656e-6>2e-6 (fine2.15533333e-8). No T25scientific run. Original source/plan/spec/raw/failure frozen. Versioned all six new pattern files as_v2, outputs pattern_response_v2; tighten base rtol/atol1e-9/1e-11 andfine1e-11/1e-13, no model/observable/threshold changes. Reserve30seconds for original failed development, remaining870seconds <=900aggregate allowance. All original hashes frozen in v2plan; publish before corrected qualification. No third automatic revision. Candidate production remains unregistered pending concrete measured criteria/budget/retention approval.
+
+
+### MG088b Pattern-Response readiness (2026-11-08)
+
+Corrected development PASS:28T.25actual-writer paths,14separate short Radau references,28raw ledgers,56Jacobian columns,graph/reference/legacy/rotation/measurement and complete/missing/prefix/empty/wrong-primary/invariance pipelines. Max normalized population discrepancy1.10796506192e-07<=2e-6; no threshold changes. Original failure/source/raw preserved and original hashes unchanged. New preparation29.717779seconds+30reserved<900. Forecast0.462538core-hours/~3.47minutes8workers, within75%reserve of proposed2core-hour cap. Concrete28job/T25design/criteria/cap/full public scientific raw retention pending PI approval per RESEARCH_PROTOCOL workflow3. No production registration/draw. Review packet results/MG11G2/pattern_response_v2/MG11G2_pattern_preparation.md; spec_v2.
