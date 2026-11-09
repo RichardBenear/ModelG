@@ -1083,3 +1083,8 @@ Corrected development PASS:28T.25actual-writer paths,14separate short Radau refe
 
 
 Readiness retention verified: all103 original/corrected development binary inputs/fixtures (12448415bytes) published at7d8c3b98459cb1f3b6b7651ed5f828110acd347b, every blob matches manifest SHA256/local bytes. Original failed-version hashes unchanged; corrected source/pipeline hashes valid. Full T25scientific run remains unregistered/unstarted pending final concrete PI execution approval.
+
+
+## MG089 — Pattern-Response registered for production (2026-11-08)
+
+Richard: “Looks good. Approved and continue.” Approves the concrete MG088b 28-job design, frozen numerical/response criteria,2core-hour/7200worker-second cap, max8localworkers/thread1 and full public scientific raw/results archive. No external review requested. registration.json records exact jobs/source/reference/preparation/pipeline hashes and environment. Forecast.462538core-hours/~3.47minutes8workers plus analysis, within75%reserve. Timeout600/job, admission-drain controller,.25poll,no retries; publish registration before first T25integration. Original coarse development failure and Step1 mixing-range failure remain frozen. Result PI closure separate; no stochastic follow-on authorized.

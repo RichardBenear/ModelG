@@ -1,0 +1,3 @@
+# MG089 registration check
+
+PI approved concrete MG088b review packet,28jobs/fixed criteria,2core-hour cap and full public scientific raw/results retention. Qualified corrected source and pipeline hashes match registration; reference hash fixed. Original coarse failure retained. No threshold/model/observable changes after development. Budget forecast1665.138005seconds<5400reserve, cap7200;8workers/librarythreads1,600/job,.25poll, admission-drain controller/no retry. Registration push before scientific integration. Separate full raw/graph/state/ledger/dense-metric/refinement audit follows; significance/effect is not completion. Same-author/shared dependencies disclosed; closure remains PI.
