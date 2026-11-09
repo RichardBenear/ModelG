@@ -1,0 +1,3 @@
+# MG093 registration check
+
+Concrete MG092 protocol,24branches/fixed inference,1core-hour cap and full public results/raw approved by PI. Qualified source/donor hashes match registration, measured forecast1108.541892seconds<2700reserve. All eight donors already public/verified; preserve physical output stores and exact stocks, reset only post counters. Source/spec/plan were pushed before development; production registration pushed before science. Max8workers/thread1,300/job,.25poll,no retries/cap expansion. Full separate donor/branch/two-graph ledger/dense-metric/sham/refinement audit follows. Conditional deterministic contrasts, no statistical replication/physical-death/quantum-memory claim. PI closure separate.

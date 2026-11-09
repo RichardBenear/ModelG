@@ -2229,3 +2229,8 @@ All development checks PASS, no revision/retry:24post.25writer paths/24separate 
 
 
 MG092 readiness retention verified: all81binary decision inputs (73newdevelopment/reference/fixture files+8reused closed donors;28442222bytes) published at070b30d94f629674e17e63837e992cfd73f53ba2; every published blob matches manifest SHA256/local bytes. Plans/results/pipeline/environment JSON semantically match after Git line-ending normalization; source/donor hashes unchanged. No full scientific branch run. See retention_verified.json.
+
+
+## MG093 — B-transport switch study registered (2026-11-08 local)
+
+PI: “approved”, in reply to concrete24branch design,1core-hour cap and full public results/raw archive approval question. Fixed MG092 source/model/criteria/donor hashes;24postT15branches from8savedT10parents, BLOCAL/CROSS/OFF only, A/reactions/stores held fixed within donor. Max8workers/thread1,3600worker-second ceiling,300/job,.25poll, forecast admission/drain,no retries. Forecast.307928core-hours within75%reserve. Publication authorized; push registration before first scientific branch. External review not requested. Scientific closure/any next study separate.
