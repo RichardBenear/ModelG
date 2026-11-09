@@ -1178,3 +1178,6 @@ PI approved presented design/criteria,24core-hour cap/max8local workers and full
 
 ### MG102 — G5 result/report
 Completed80jobs with144retained raw/control/warm archives and passed separate recomputation/config/accounting audit. Scientific result UNRESOLVED on both positive response and step agreement; no implementation failure.11.301880core-hours/~85.5min; no stop/retry. Full approved public archive/report published and verified separately. PI closure pending.
+
+### MG103 — G5 signed off
+PI closes G5 with its unresolved scientific outcome preserved and reaffirms G5-style plain-language summaries for future test reports. Closure recorded; no additional production authorized.

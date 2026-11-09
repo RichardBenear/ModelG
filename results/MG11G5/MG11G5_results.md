@@ -95,3 +95,7 @@ A follow-up could use more independent balanced blocks and a prospectively justi
 **No new scientific run is launched or approved by this report. G5 remains pending PI closure.**
 
 Publication verified: all144raw/control/warmup archives (163,665,471bytes) published at717cabaad556467abd6142b6e7be6866009df137 match the audited SHA256 and local bytes. Figure is byte-identical; key metadata are semantically equal after line-ending normalization. Registered sources/donors/qualifications remain unchanged. See production_retention_verified.json. PI closure remains pending.
+
+## MG103 — PI closure, 2026-11-09
+
+Richard signed off on G5 and reaffirmed the plain-language summary convention for future tests. G5 is now CLOSED as COMPLETE PILOT; STOCHASTIC RESPONSE AND STEP AGREEMENT UNRESOLVED. This records acceptance of the report and verified archive, with no change to data, scoring or scientific interpretation. See MG11G5_closure.md. Earlier pending-closure statements above describe the report at publication.

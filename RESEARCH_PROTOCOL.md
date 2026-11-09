@@ -26,7 +26,7 @@ Claude has no automatic implementation or approval obligation. If invited to rev
 
 ## Stage result summaries (PI instruction, MG068)
 
-Every new stage result report must include a one-paragraph, plain-language project-level summary near the beginning. Explain what the stage established, how it changes the overall project picture, and the main limits or unresolved questions. Distinguish model evidence from physical claims and estimation from proof. Use the same accessible style when presenting stage results to Richard. Ground the paragraph in the frozen findings and independent checks; it is interpretation, not a new scoring rule or a rescore. Richard requested this convention when approving P3; the approved paragraph is included in its result. Earlier frozen reports are not automatically rewritten.
+Every new stage result report must include a one-paragraph, plain-language project-level summary near the beginning. Explain what the stage established, how it changes the overall project picture, and the main limits or unresolved questions. Distinguish model evidence from physical claims and estimation from proof. Use the same accessible style when presenting stage results to Richard. Ground the paragraph in the frozen findings and independent checks; it is interpretation, not a new scoring rule or a rescore. Richard requested this convention when approving P3; the approved paragraph is included in its result. Earlier frozen reports are not automatically rewritten. Richard reaffirmed this requirement at G5 closure (MG103, 2026-11-09), explicitly requesting the G5 plain-language summary style for future tests.
 
 ## Review records
 
