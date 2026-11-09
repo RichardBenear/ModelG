@@ -1119,3 +1119,8 @@ MG092 readiness retention verified: all81binary decision inputs (73newdevelopmen
 ## MG093 — B-transport switch study registered (2026-11-08 local)
 
 PI: “approved”, in reply to concrete24branch design,1core-hour cap and full public results/raw archive approval question. Fixed MG092 source/model/criteria/donor hashes;24postT15branches from8savedT10parents, BLOCAL/CROSS/OFF only, A/reactions/stores held fixed within donor. Max8workers/thread1,3600worker-second ceiling,300/job,.25poll, forecast admission/drain,no retries. Forecast.307928core-hours within75%reserve. Publication authorized; push registration before first scientific branch. External review not requested. Scientific closure/any next study separate.
+
+
+## MG094 — MG11-G3 B-switch results (2026-11-08 local), PI closure pending
+
+COMPLETE B-TRANSPORT SWITCH ESTIMATION; RESOLVED ONGOING B-TRANSPORT CONTRAST.24/24branches/61frames,24raw audit,12refinements/8shams PASS. Primary equal-origin X+.033337305924fine/+.033337293927base, refinement1.19968889e-8, fixed threshold.01. Origin-specificX+.011288177799/+.055386434048descriptive. Maximum active refinement8.91622542e-8 and sham8.46935690e-8<1e-4. OFF increases Xprojection+.153782145729/+.090054386698vs sham but not preserved reference. Cross-prepared→LOCALmatches19vs crosssham16.75; all finite records lose reference before late20..25, no physical lifetime/quantum claim. No failures/stops/timeouts/retries/amendments. 0.027857858core-hours<1cap,24.617782seconds through audit, finishedNov8~18:29Mountain. Full public scientific raw/results approved, publication/verification follows;8donors unchanged. Report results/MG11G3/MG11G3_results.md. PI closure separate; no next science authorized.

@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "o1_s0_v1_a2",
+    "origin": 1,
+    "start": 0,
+    "setting": 1,
+    "arm": 2
+  },
+  "scope": "SCIENTIFIC PRODUCTION",
+  "checkpoints": 61,
+  "elapsed_seconds": 0.6749310999875888,
+  "io_seconds": 0.3299686999525875,
+  "non_io_seconds": 0.34496240003500134,
+  "atomic_writes": 16,
+  "sha256": "aa7b37b9df8c57f50842dd0a36bbf6eb5219de48ae06b0ca97ccd093a46436da",
+  "parent_sha256": "38ea79866a53120d182974c3f002cd8e8183b19ba20ce07481e64d0f55e5e234",
+  "raw_check": {
+    "local_residual": 2.83294039668008e-12,
+    "total_residual": 6.406056588911279e-16,
+    "minimum": 0.0,
+    "minimum_ledger_increment": 0.0,
+    "passed": true
+  }
+}

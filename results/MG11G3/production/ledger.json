@@ -1,0 +1,688 @@
+{
+  "records": [
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o0_s0_v0_a0",
+        "origin": 0,
+        "start": 0,
+        "setting": 0,
+        "arm": 0
+      },
+      "scope": "SCIENTIFIC PRODUCTION",
+      "checkpoints": 61,
+      "elapsed_seconds": 0.7149031000444666,
+      "io_seconds": 0.3798964001471177,
+      "non_io_seconds": 0.3350066998973489,
+      "atomic_writes": 16,
+      "sha256": "584a0f797837997d69e795410cc451a42cca889de50f3cdabaf84c7292307632",
+      "parent_sha256": "31f148cd608d0f46487027fb2ce0f4723d390b5695f429e05a42f7973b8672bb",
+      "raw_check": {
+        "local_residual": 2.658535479335889e-12,
+        "total_residual": 4.270704392607524e-16,
+        "minimum": 0.0,
+        "minimum_ledger_increment": 0.0,
+        "passed": true
+      },
+      "id": "o0_s0_v0_a0",
+      "charged_worker_seconds": 3.0080502999480814,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o0_s0_v0_a1",
+        "origin": 0,
+        "start": 0,
+        "setting": 0,
+        "arm": 1
+      },
+      "scope": "SCIENTIFIC PRODUCTION",
+      "checkpoints": 61,
+      "elapsed_seconds": 0.7020563000114635,
+      "io_seconds": 0.3801813001045957,
+      "non_io_seconds": 0.32187499990686774,
+      "atomic_writes": 16,
+      "sha256": "2c53c719f08857a15324195408ddcc9be3e565a435e1184289ad0ce6d9c418d7",
+      "parent_sha256": "31f148cd608d0f46487027fb2ce0f4723d390b5695f429e05a42f7973b8672bb",
+      "raw_check": {
+        "local_residual": 2.658535479335889e-12,
+        "total_residual": 4.270704392607524e-16,
+        "minimum": 0.0,
+        "minimum_ledger_increment": 0.0,
+        "passed": true
+      },
+      "id": "o0_s0_v0_a1",
+      "charged_worker_seconds": 3.0061495000263676,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o0_s0_v0_a2",
+        "origin": 0,
+        "start": 0,
+        "setting": 0,
+        "arm": 2
+      },
+      "scope": "SCIENTIFIC PRODUCTION",
+      "checkpoints": 61,
+      "elapsed_seconds": 0.6839170000748709,
+      "io_seconds": 0.3527431000256911,
+      "non_io_seconds": 0.3311739000491798,
+      "atomic_writes": 16,
+      "sha256": "16c9e35894b542884d291bf095d1012731f3578d6076a784b749120b5b62162b",
+      "parent_sha256": "31f148cd608d0f46487027fb2ce0f4723d390b5695f429e05a42f7973b8672bb",
+      "raw_check": {
+        "local_residual": 2.658535479335889e-12,
+        "total_residual": 4.270704392607524e-16,
+        "minimum": 0.0,
+        "minimum_ledger_increment": 0.0,
+        "passed": true
+      },
+      "id": "o0_s0_v0_a2",
+      "charged_worker_seconds": 3.001247000065632,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o0_s0_v1_a0",
+        "origin": 0,
+        "start": 0,
+        "setting": 1,
+        "arm": 0
+      },
+      "scope": "SCIENTIFIC PRODUCTION",
+      "checkpoints": 61,
+      "elapsed_seconds": 0.788157100090757,
+      "io_seconds": 0.38596749980933964,
+      "non_io_seconds": 0.40218960028141737,
+      "atomic_writes": 16,
+      "sha256": "a1db1a637f9c522554780523f2617d4850141f547a8d788d492bf124c2599f7c",
+      "parent_sha256": "e67a5acc2e4546de45f03aabef7f3abc162da19825e6414117da3119b99b53c4",
+      "raw_check": {
+        "local_residual": 2.83294039668008e-12,
+        "total_residual": 6.406056588911279e-16,
+        "minimum": 0.0,
+        "minimum_ledger_increment": 0.0,
+        "passed": true
+      },
+      "id": "o0_s0_v1_a0",
+      "charged_worker_seconds": 3.2528483000351116,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o0_s0_v1_a1",
+        "origin": 0,
+        "start": 0,
+        "setting": 1,
+        "arm": 1
+      },
+      "scope": "SCIENTIFIC PRODUCTION",
+      "checkpoints": 61,
+      "elapsed_seconds": 0.7682713000103831,
+      "io_seconds": 0.3649855002295226,
+      "non_io_seconds": 0.40328579978086054,
+      "atomic_writes": 16,
+      "sha256": "bb7f197330cbf2606e4e54b44f2768d7702770f5e7f54726a93110d6323803f7",
+      "parent_sha256": "e67a5acc2e4546de45f03aabef7f3abc162da19825e6414117da3119b99b53c4",
+      "raw_check": {
+        "local_residual": 2.83294039668008e-12,
+        "total_residual": 6.406056588911279e-16,
+        "minimum": 0.0,
+        "minimum_ledger_increment": 0.0,
+        "passed": true
+      },
+      "id": "o0_s0_v1_a1",
+      "charged_worker_seconds": 3.2555748999584466,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o0_s0_v1_a2",
+        "origin": 0,
+        "start": 0,
+        "setting": 1,
+        "arm": 2
+      },
+      "scope": "SCIENTIFIC PRODUCTION",
+      "checkpoints": 61,
+      "elapsed_seconds": 0.7845402000239119,
+      "io_seconds": 0.3815014000283554,
+      "non_io_seconds": 0.4030387999955565,
+      "atomic_writes": 16,
+      "sha256": "86b28276d33f13fff5b954f558b7420d84034a5ff494c1c5f3965a206ea39d0e",
+      "parent_sha256": "e67a5acc2e4546de45f03aabef7f3abc162da19825e6414117da3119b99b53c4",
+      "raw_check": {
+        "local_residual": 2.83294039668008e-12,
+        "total_residual": 6.406056588911279e-16,
+        "minimum": 0.0,
+        "minimum_ledger_increment": 0.0,
+        "passed": true
+      },
+      "id": "o0_s0_v1_a2",
+      "charged_worker_seconds": 3.2538723000325263,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o0_s1_v0_a0",
+        "origin": 0,
+        "start": 1,
+        "setting": 0,
+        "arm": 0
+      },
+      "scope": "SCIENTIFIC PRODUCTION",
+      "checkpoints": 61,
+      "elapsed_seconds": 3.048846499994397,
+      "io_seconds": 1.7435220998013392,
+      "non_io_seconds": 1.305324400193058,
+      "atomic_writes": 16,
+      "sha256": "5627167b715c1f1ce13f73522f75601eccee8edf1c9eebb103c097b8feb5b54d",
+      "parent_sha256": "786e49aae7c54f9a591f48ddda42fdd72fc24b615ec0b568b562b530f18e3457",
+      "raw_check": {
+        "local_residual": 8.958623414300482e-12,
+        "total_residual": 4.270704299808981e-16,
+        "minimum": 0.0,
+        "minimum_ledger_increment": 0.0,
+        "passed": true
+      },
+      "id": "o0_s1_v0_a0",
+      "charged_worker_seconds": 5.455596800078638,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o0_s1_v0_a1",
+        "origin": 0,
+        "start": 1,
+        "setting": 0,
+        "arm": 1
+      },
+      "scope": "SCIENTIFIC PRODUCTION",
+      "checkpoints": 61,
+      "elapsed_seconds": 3.490840299986303,
+      "io_seconds": 1.7007069997489452,
+      "non_io_seconds": 1.7901333002373576,
+      "atomic_writes": 16,
+      "sha256": "a781ae8b7b804dc14f50a8b8d7b0fe38ead01e76789cd70423859c51cd6ae9e9",
+      "parent_sha256": "786e49aae7c54f9a591f48ddda42fdd72fc24b615ec0b568b562b530f18e3457",
+      "raw_check": {
+        "local_residual": 8.677930414714343e-12,
+        "total_residual": 2.1353521499044905e-16,
+        "minimum": 0.0,
+        "minimum_ledger_increment": 0.0,
+        "passed": true
+      },
+      "id": "o0_s1_v0_a1",
+      "charged_worker_seconds": 5.94709829997737,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o1_s0_v0_a0",
+        "origin": 1,
+        "start": 0,
+        "setting": 0,
+        "arm": 0
+      },
+      "scope": "SCIENTIFIC PRODUCTION",
+      "checkpoints": 61,
+      "elapsed_seconds": 0.6538684000261128,
+      "io_seconds": 0.35519949975423515,
+      "non_io_seconds": 0.29866890027187765,
+      "atomic_writes": 16,
+      "sha256": "3d1dfafe597a662b433519bf23bff1719c8e0dcd54632de9367660d4053e3794",
+      "parent_sha256": "a41d1036f203d9e5106135e6674740aaba0e5d0cefbb2c6f5dfe28129db53e33",
+      "raw_check": {
+        "local_residual": 2.658535479335889e-12,
+        "total_residual": 4.270704392607524e-16,
+        "minimum": 0.0,
+        "minimum_ledger_increment": 0.0,
+        "passed": true
+      },
+      "id": "o1_s0_v0_a0",
+      "charged_worker_seconds": 2.9978088000789285,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o1_s0_v0_a1",
+        "origin": 1,
+        "start": 0,
+        "setting": 0,
+        "arm": 1
+      },
+      "scope": "SCIENTIFIC PRODUCTION",
+      "checkpoints": 61,
+      "elapsed_seconds": 0.6419415000127628,
+      "io_seconds": 0.3577563997823745,
+      "non_io_seconds": 0.28418510023038834,
+      "atomic_writes": 16,
+      "sha256": "ec3d26e41f75e2fc7e422df5b4460aa025fd1a9370ccbf55c3e70f87fc5b2695",
+      "parent_sha256": "a41d1036f203d9e5106135e6674740aaba0e5d0cefbb2c6f5dfe28129db53e33",
+      "raw_check": {
+        "local_residual": 2.658535479335889e-12,
+        "total_residual": 4.270704392607524e-16,
+        "minimum": 0.0,
+        "minimum_ledger_increment": 0.0,
+        "passed": true
+      },
+      "id": "o1_s0_v0_a1",
+      "charged_worker_seconds": 2.9981854000361636,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o0_s1_v0_a2",
+        "origin": 0,
+        "start": 1,
+        "setting": 0,
+        "arm": 2
+      },
+      "scope": "SCIENTIFIC PRODUCTION",
+      "checkpoints": 61,
+      "elapsed_seconds": 3.047043099999428,
+      "io_seconds": 1.5911424001678824,
+      "non_io_seconds": 1.4559006998315454,
+      "atomic_writes": 16,
+      "sha256": "b4df3472aeac6047cb92860a9e11fd51e0a8069ca07902217b479bc1e558204c",
+      "parent_sha256": "786e49aae7c54f9a591f48ddda42fdd72fc24b615ec0b568b562b530f18e3457",
+      "raw_check": {
+        "local_residual": 8.93536897567306e-12,
+        "total_residual": 4.270704299808981e-16,
+        "minimum": 0.0,
+        "minimum_ledger_increment": 0.0,
+        "passed": true
+      },
+      "id": "o0_s1_v0_a2",
+      "charged_worker_seconds": 5.257490699994378,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o1_s0_v0_a2",
+        "origin": 1,
+        "start": 0,
+        "setting": 0,
+        "arm": 2
+      },
+      "scope": "SCIENTIFIC PRODUCTION",
+      "checkpoints": 61,
+      "elapsed_seconds": 0.6386581000406295,
+      "io_seconds": 0.34318370011169463,
+      "non_io_seconds": 0.29547439992893487,
+      "atomic_writes": 16,
+      "sha256": "6a01954b2c31a9648517ca72a896401412e9e8d511ace08fbcd69d372a8b2207",
+      "parent_sha256": "a41d1036f203d9e5106135e6674740aaba0e5d0cefbb2c6f5dfe28129db53e33",
+      "raw_check": {
+        "local_residual": 2.658535479335889e-12,
+        "total_residual": 4.270704392607524e-16,
+        "minimum": 0.0,
+        "minimum_ledger_increment": 0.0,
+        "passed": true
+      },
+      "id": "o1_s0_v0_a2",
+      "charged_worker_seconds": 2.7589038000442088,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o0_s1_v1_a0",
+        "origin": 0,
+        "start": 1,
+        "setting": 1,
+        "arm": 0
+      },
+      "scope": "SCIENTIFIC PRODUCTION",
+      "checkpoints": 61,
+      "elapsed_seconds": 3.6314998000161722,
+      "io_seconds": 1.7073286003433168,
+      "non_io_seconds": 1.9241711996728554,
+      "atomic_writes": 16,
+      "sha256": "7274f961b459f62ab47d2091a5c5c068db19d4212b3ce861104bfdd66859d0f6",
+      "parent_sha256": "476cc06584bc10a606a68125cf031a8d852718aa63404ca988b3b4f50eaf5a72",
+      "raw_check": {
+        "local_residual": 1.1643542141249199e-11,
+        "total_residual": 2.1353521499044905e-16,
+        "minimum": 0.0,
+        "minimum_ledger_increment": 0.0,
+        "passed": true
+      },
+      "id": "o0_s1_v1_a0",
+      "charged_worker_seconds": 5.750282200053334,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o1_s0_v1_a0",
+        "origin": 1,
+        "start": 0,
+        "setting": 1,
+        "arm": 0
+      },
+      "scope": "SCIENTIFIC PRODUCTION",
+      "checkpoints": 61,
+      "elapsed_seconds": 0.6664783000014722,
+      "io_seconds": 0.324519400135614,
+      "non_io_seconds": 0.34195889986585826,
+      "atomic_writes": 16,
+      "sha256": "677f6e45e366b8ad73a6ed329cc5cf2f6d7fee1934cad490d5ce3b18a6cc54ea",
+      "parent_sha256": "38ea79866a53120d182974c3f002cd8e8183b19ba20ce07481e64d0f55e5e234",
+      "raw_check": {
+        "local_residual": 2.83294039668008e-12,
+        "total_residual": 6.406056588911279e-16,
+        "minimum": 0.0,
+        "minimum_ledger_increment": 0.0,
+        "passed": true
+      },
+      "id": "o1_s0_v1_a0",
+      "charged_worker_seconds": 2.7626894999993965,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o0_s1_v1_a2",
+        "origin": 0,
+        "start": 1,
+        "setting": 1,
+        "arm": 2
+      },
+      "scope": "SCIENTIFIC PRODUCTION",
+      "checkpoints": 61,
+      "elapsed_seconds": 3.659198799985461,
+      "io_seconds": 1.5822974998736754,
+      "non_io_seconds": 2.0769013001117855,
+      "atomic_writes": 16,
+      "sha256": "b534dd59858290f43385c584e911cb22112a7232070626f675fd51d12528e607",
+      "parent_sha256": "476cc06584bc10a606a68125cf031a8d852718aa63404ca988b3b4f50eaf5a72",
+      "raw_check": {
+        "local_residual": 1.4517030514440554e-11,
+        "total_residual": 2.1353521499044905e-16,
+        "minimum": 0.0,
+        "minimum_ledger_increment": 0.0,
+        "passed": true
+      },
+      "id": "o0_s1_v1_a2",
+      "charged_worker_seconds": 5.777834099950269,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o1_s0_v1_a1",
+        "origin": 1,
+        "start": 0,
+        "setting": 1,
+        "arm": 1
+      },
+      "scope": "SCIENTIFIC PRODUCTION",
+      "checkpoints": 61,
+      "elapsed_seconds": 0.6635074999649078,
+      "io_seconds": 0.32707230013329536,
+      "non_io_seconds": 0.3364351998316124,
+      "atomic_writes": 16,
+      "sha256": "f2b8e765dfdf45acf1974bde5bc435ca3a368ca405df056dd3980ac6ab670b86",
+      "parent_sha256": "38ea79866a53120d182974c3f002cd8e8183b19ba20ce07481e64d0f55e5e234",
+      "raw_check": {
+        "local_residual": 2.83294039668008e-12,
+        "total_residual": 6.406056588911279e-16,
+        "minimum": 0.0,
+        "minimum_ledger_increment": 0.0,
+        "passed": true
+      },
+      "id": "o1_s0_v1_a1",
+      "charged_worker_seconds": 2.761998699977994,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o1_s0_v1_a2",
+        "origin": 1,
+        "start": 0,
+        "setting": 1,
+        "arm": 2
+      },
+      "scope": "SCIENTIFIC PRODUCTION",
+      "checkpoints": 61,
+      "elapsed_seconds": 0.6749310999875888,
+      "io_seconds": 0.3299686999525875,
+      "non_io_seconds": 0.34496240003500134,
+      "atomic_writes": 16,
+      "sha256": "aa7b37b9df8c57f50842dd0a36bbf6eb5219de48ae06b0ca97ccd093a46436da",
+      "parent_sha256": "38ea79866a53120d182974c3f002cd8e8183b19ba20ce07481e64d0f55e5e234",
+      "raw_check": {
+        "local_residual": 2.83294039668008e-12,
+        "total_residual": 6.406056588911279e-16,
+        "minimum": 0.0,
+        "minimum_ledger_increment": 0.0,
+        "passed": true
+      },
+      "id": "o1_s0_v1_a2",
+      "charged_worker_seconds": 2.762653399957344,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o0_s1_v1_a1",
+        "origin": 0,
+        "start": 1,
+        "setting": 1,
+        "arm": 1
+      },
+      "scope": "SCIENTIFIC PRODUCTION",
+      "checkpoints": 61,
+      "elapsed_seconds": 4.263303099898621,
+      "io_seconds": 1.6888347001513466,
+      "non_io_seconds": 2.574468399747275,
+      "atomic_writes": 16,
+      "sha256": "279eee77061e96131d4e28d7ebca46e756074cec9202d55437a1671858ddf02f",
+      "parent_sha256": "476cc06584bc10a606a68125cf031a8d852718aa63404ca988b3b4f50eaf5a72",
+      "raw_check": {
+        "local_residual": 1.8104623940508373e-11,
+        "total_residual": 2.1353521499044905e-16,
+        "minimum": 0.0,
+        "minimum_ledger_increment": 0.0,
+        "passed": true
+      },
+      "id": "o0_s1_v1_a1",
+      "charged_worker_seconds": 6.495749699999578,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o1_s1_v0_a1",
+        "origin": 1,
+        "start": 1,
+        "setting": 0,
+        "arm": 1
+      },
+      "scope": "SCIENTIFIC PRODUCTION",
+      "checkpoints": 61,
+      "elapsed_seconds": 2.490550799993798,
+      "io_seconds": 1.1591247998876497,
+      "non_io_seconds": 1.3314260001061484,
+      "atomic_writes": 16,
+      "sha256": "2fee4df7f9c26bef41ff2a559cd6d8e1626ea8dc3304b88d0fd037b0c9d48120",
+      "parent_sha256": "145d11d51d977deb006436fb5e75a6162335beabfaa4f6361c27f3b6215dd69e",
+      "raw_check": {
+        "local_residual": 1.0030595728855987e-11,
+        "total_residual": 2.1353521499044905e-16,
+        "minimum": 0.0,
+        "minimum_ledger_increment": 0.0,
+        "passed": true
+      },
+      "id": "o1_s1_v0_a1",
+      "charged_worker_seconds": 4.750732199987397,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o1_s1_v0_a0",
+        "origin": 1,
+        "start": 1,
+        "setting": 0,
+        "arm": 0
+      },
+      "scope": "SCIENTIFIC PRODUCTION",
+      "checkpoints": 61,
+      "elapsed_seconds": 2.86392989999149,
+      "io_seconds": 1.5990379002178088,
+      "non_io_seconds": 1.2648919997736812,
+      "atomic_writes": 16,
+      "sha256": "9c1f5c0fdc4e06b5fe301b57559dba0c7b044960efd5a258201c821ac9c2b995",
+      "parent_sha256": "145d11d51d977deb006436fb5e75a6162335beabfaa4f6361c27f3b6215dd69e",
+      "raw_check": {
+        "local_residual": 7.82084716098977e-12,
+        "total_residual": 2.1353521499044905e-16,
+        "minimum": 0.0,
+        "minimum_ledger_increment": 0.0,
+        "passed": true
+      },
+      "id": "o1_s1_v0_a0",
+      "charged_worker_seconds": 5.00642400002107,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o1_s1_v0_a2",
+        "origin": 1,
+        "start": 1,
+        "setting": 0,
+        "arm": 2
+      },
+      "scope": "SCIENTIFIC PRODUCTION",
+      "checkpoints": 61,
+      "elapsed_seconds": 2.432209699996747,
+      "io_seconds": 1.0725634001428261,
+      "non_io_seconds": 1.359646299853921,
+      "atomic_writes": 16,
+      "sha256": "2fea7f1af91e61f8c68fc0d4060505dfbe6f1a21bd9b072d11becdbe1843851f",
+      "parent_sha256": "145d11d51d977deb006436fb5e75a6162335beabfaa4f6361c27f3b6215dd69e",
+      "raw_check": {
+        "local_residual": 8.95144053774146e-12,
+        "total_residual": 2.1353521499044905e-16,
+        "minimum": 0.0,
+        "minimum_ledger_increment": 0.0,
+        "passed": true
+      },
+      "id": "o1_s1_v0_a2",
+      "charged_worker_seconds": 4.512606299947947,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o1_s1_v1_a1",
+        "origin": 1,
+        "start": 1,
+        "setting": 1,
+        "arm": 1
+      },
+      "scope": "SCIENTIFIC PRODUCTION",
+      "checkpoints": 61,
+      "elapsed_seconds": 2.9697864000918344,
+      "io_seconds": 1.0874290998326614,
+      "non_io_seconds": 1.882357300259173,
+      "atomic_writes": 16,
+      "sha256": "98cdfbc9a30bec3d4b141795daaa4883b90afe05b4f3c6308c461293d91a0c65",
+      "parent_sha256": "98a00d9ad76c6a5c3e4a91bbc735478015e370bf152ad0c984cafd7609d788c0",
+      "raw_check": {
+        "local_residual": 1.4956400122300652e-11,
+        "total_residual": 4.2707042998089815e-16,
+        "minimum": 0.0,
+        "minimum_ledger_increment": 0.0,
+        "passed": true
+      },
+      "id": "o1_s1_v1_a1",
+      "charged_worker_seconds": 5.008962800027803,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o1_s1_v1_a0",
+        "origin": 1,
+        "start": 1,
+        "setting": 1,
+        "arm": 0
+      },
+      "scope": "SCIENTIFIC PRODUCTION",
+      "checkpoints": 61,
+      "elapsed_seconds": 3.3336392999626696,
+      "io_seconds": 1.5293183001922444,
+      "non_io_seconds": 1.8043209997704253,
+      "atomic_writes": 16,
+      "sha256": "716938564aa0f69fb31ac91d0ee6d23d7a16592dec045fa353a5f7dc416088f8",
+      "parent_sha256": "98a00d9ad76c6a5c3e4a91bbc735478015e370bf152ad0c984cafd7609d788c0",
+      "raw_check": {
+        "local_residual": 1.1651421930253321e-11,
+        "total_residual": 4.2707042998089815e-16,
+        "minimum": 0.0,
+        "minimum_ledger_increment": 0.0,
+        "passed": true
+      },
+      "id": "o1_s1_v1_a0",
+      "charged_worker_seconds": 5.493170200032182,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o1_s1_v1_a2",
+        "origin": 1,
+        "start": 1,
+        "setting": 1,
+        "arm": 2
+      },
+      "scope": "SCIENTIFIC PRODUCTION",
+      "checkpoints": 61,
+      "elapsed_seconds": 2.9212932999944314,
+      "io_seconds": 1.0280974002089351,
+      "non_io_seconds": 1.8931958997854963,
+      "atomic_writes": 16,
+      "sha256": "b9e56843d4f29557a3b91450b289581d53ccc4c7368188701092b2fde3cc4cd7",
+      "parent_sha256": "98a00d9ad76c6a5c3e4a91bbc735478015e370bf152ad0c984cafd7609d788c0",
+      "raw_check": {
+        "local_residual": 1.5390708872840252e-11,
+        "total_residual": 4.2707042998089815e-16,
+        "minimum": 0.0,
+        "minimum_ledger_increment": 0.0,
+        "passed": true
+      },
+      "id": "o1_s1_v1_a2",
+      "charged_worker_seconds": 5.0123594999313354,
+      "returncode": 0
+    }
+  ],
+  "ceiling": 3600,
+  "prior_charge": 0,
+  "poll_seconds": 0.25,
+  "charged_worker_seconds": 100.2882887001615,
+  "inflight_worker_seconds": 0,
+  "pending_ids": [],
+  "active_ids": [],
+  "stop_reason": null,
+  "admission_pause": null,
+  "workers": 8,
+  "threads_per_library": 1,
+  "max_observed_poll_gap_seconds": 0.25057490007020533
+}
