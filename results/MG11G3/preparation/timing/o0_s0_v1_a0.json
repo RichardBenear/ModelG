@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "o0_s0_v1_a0",
+    "origin": 0,
+    "start": 0,
+    "setting": 1,
+    "arm": 0
+  },
+  "scope": "DISCLOSED POSTT.25 DEVELOPMENT, NOT SCIENCE",
+  "checkpoints": 3,
+  "elapsed_seconds": 0.057155400048941374,
+  "io_seconds": 0.01163039996754378,
+  "non_io_seconds": 0.04552500008139759,
+  "atomic_writes": 2,
+  "sha256": "5a20f212bbf4dd77856516d0f02808fbbdf5bd26451d83325cacd1a4296f1ed1",
+  "parent_sha256": "e67a5acc2e4546de45f03aabef7f3abc162da19825e6414117da3119b99b53c4",
+  "raw_check": {
+    "local_residual": 2.9987090319672285e-15,
+    "total_residual": 2.1353521963037596e-16,
+    "minimum": 0.0,
+    "minimum_ledger_increment": 0.0,
+    "passed": true
+  }
+}
