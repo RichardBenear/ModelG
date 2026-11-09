@@ -2275,3 +2275,8 @@ QUALIFIED WITHIN REGISTERED SMALL-SYSTEM STOCHASTIC SCOPE.120/120jobs,245760main
 
 
 MG098 scientific retention verified: all240main/warm archives (15146501bytes) published at8054121ac74b70bbb5a782bedc3c8a8c70e943de; every blob matches audited SHA256/local bytes. Figure byte-identical; metadata semantically equal after Git line-ending normalization, registered source/preparation/pipeline/reference hashes unchanged. See production_retention_verified.json and its text-hash reproduction note. No active scientific workers; PI closure pending, no pattern pilot authorized.
+
+
+## MG099 — MG11-G4 Step1 PI closure
+
+Richard: “I sign off on G4. Proceed to next step”. CLOSED as QUALIFIED WITHIN REGISTERED SMALL-SYSTEM STOCHASTIC SCOPE. Accepts MG098120jobs/245760main paths,196marginal CDFbounds,240raw audit and verified public archive. Scope stays fixed small short endpoint laws, not full500node pattern accuracy or physical/quantum claims. Source/data/criteria unchanged. Next-stage pattern-pilot preparation authorized; its concrete model/statistics/measured budget/public retention approval remains before production under protocol.
