@@ -1,3 +1,7 @@
+# Current handoff — MG132, 2026-11-10
+
+Efficiency qualification PASSED; PI closure pending.131072paths/32chunks/8bounds allpass;maxupper.0801649<.10.77979events saved-audited; separate histogram recomputation pass; source/reference unchanged.2799.83charged seconds<4500. Full raw/report publishing; no next production. Report results/MG12H3/efficiency/qualification/MG12H3_efficiency_qualification_results.md. Next recommend actual-ring feasibility before particle design.
+
 # Current handoff — MG131, 2026-11-10
 
 Efficiency qualification APPROVED/REGISTERED. PI approves MG130 fixed criteria and4500second budget/max8workers/fullpublicraw. Entry src/run_mg12h3_efficiency_qualification.py --run; push registration before launch. No retry, PI closure later.

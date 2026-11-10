@@ -1278,3 +1278,7 @@ Driver/scripted guards and128developmentpaths/84identity-audited events passed,6
 
 ## MG131 — efficiency qualification approved/registered
 PI “I approve” (2026-11-10) accepts MG130:131072paths/32chunks/eight TV bounds <=.10/family alpha.001;4500charged seconds (4200worker+300parent),max8localworkers/thread1,600seconds/job/fullpublicraw. Publish registration before samples; preserve failures, no retries; PI closure later.
+
+
+## MG132 — exchangeable strict-tick qualification passed
+131072paths/32chunks complete,8/8bounds pass;maxupper.0801649<.10.77979accepted-event audits and saved frames pass; separate saved-array bound recomputation pass; frozen hashes unchanged.2799.83charged seconds<4500,max8workers/thread1,no failures/retries. Scope small fixed-fixture count endpoints only. PI closure pending; no next production.

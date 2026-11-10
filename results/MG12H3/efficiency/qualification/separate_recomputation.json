@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "paths": 131072,
+  "chunks": 32,
+  "accepted_events_from_metadata": 77979,
+  "comparisons": [
+    {
+      "cell": 0,
+      "time": 0.05,
+      "observed": 0.0031457571499751654,
+      "upper": 0.03312321496421735,
+      "passed": true
+    },
+    {
+      "cell": 0,
+      "time": 0.1,
+      "observed": 0.004993645406175408,
+      "upper": 0.03497110322041759,
+      "passed": true
+    },
+    {
+      "cell": 1,
+      "time": 0.05,
+      "observed": 0.005657296844142637,
+      "upper": 0.028414512376302117,
+      "passed": true
+    },
+    {
+      "cell": 1,
+      "time": 0.1,
+      "observed": 0.008236810656682357,
+      "upper": 0.03099402618884184,
+      "passed": true
+    },
+    {
+      "cell": 2,
+      "time": 0.05,
+      "observed": 0.003740135097895418,
+      "upper": 0.061273688141131794,
+      "passed": true
+    },
+    {
+      "cell": 2,
+      "time": 0.1,
+      "observed": 0.0038007070799058935,
+      "upper": 0.06133426012314227,
+      "passed": true
+    },
+    {
+      "cell": 3,
+      "time": 0.05,
+      "observed": 0.00615557545929853,
+      "upper": 0.07894642660046794,
+      "passed": true
+    },
+    {
+      "cell": 3,
+      "time": 0.1,
+      "observed": 0.007374056209207224,
+      "upper": 0.08016490735037664,
+      "passed": true
+    }
+  ],
+  "shared_dependencies": "Saved reference probabilities and raw arrays. Separate histogram/bound calculation, same author; not external replication."
+}
