@@ -1256,3 +1256,5 @@ Accepts MG122 and directs next H3work. Preserve originalfailure and distinguish 
 
 ### MG124 — prospective mixed-law qualification preparation
 Commit sources/seeds before short actual-writer timing/reference checks; formal262144paths in64chunks plannedonly. Joint-count TVfamily requires32768paths due488-state conservative bound; no sample/step selection after outcomes. Preparation90seconds/thread1, fullproductionapprovalpending.
+
+MG124preparation passed1024paths/reference/arithmetic/rawfailure guards in10.227712seconds. Formal262144path forecast5052.292659workerseconds (~11–16min8workers includingparentallowance), proposed3coreh cap/fullpublicarchive awaitsPI. No formalrunregistered. Readiness report published.
