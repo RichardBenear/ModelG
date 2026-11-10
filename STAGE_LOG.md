@@ -1298,3 +1298,7 @@ MG135 development checks passed:896states,2003localupdates,20scripted cross-engi
 PI requests combining batches and testing. Frozen bounded180second one-worker/thread1 exploratory batch:8x10000forced numericalstress updates,4x256tiny stochasticpaths,8actualring ticks.001,20secondsperactualtick inclaudit. Seeds/source/inputhashes frozen before draws; no retries. No formal0.10endpoint qualification or particle claim; later production needs concretebudgetapproval.
 
 MG136 results:developmentchecksPASSED in66.9214s<180;80000stressupdates/1024exploratorypaths/8actualticks complete.3033132actualevents retained; separate savedaggregation passed. Tinymaxobserveddistance.158463; no formal0.10qualificationverdict. No retries or scientificparameters changed; longrunnotstarted. Report results/MG12H3/sparse_combined/MG12H3_sparse_combined_results.md.
+
+
+## MG137 — sparse combined formal qualification preparation
+PI requests endpoint and long-history stress qualification. Freeze131072freshendpointpaths/8TVbounds<=.10/familyalpha.001 plus8x1000000forcedstressupdates,relative1e-10/absolute1e-6ratecriteria and exactintegerchecks. Actualwriter preparation128paths+8x10000stressupdates under60seconds/oneworker/thread1; source/seeds before draws. Formal batch notregistered; concrete measuredbudgetapproval needed. Candidate7200chargedseconds/max8workers/fullpublicraw.
