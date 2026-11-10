@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "actual": [
+    {
+      "case": "o0_a0_Omega1",
+      "events": 68690,
+      "passed": true
+    },
+    {
+      "case": "o0_a0_Omega10",
+      "events": 689567,
+      "passed": true
+    },
+    {
+      "case": "o0_a1_Omega1",
+      "events": 68775,
+      "passed": true
+    },
+    {
+      "case": "o0_a1_Omega10",
+      "events": 690075,
+      "passed": true
+    },
+    {
+      "case": "o1_a0_Omega1",
+      "events": 68451,
+      "passed": true
+    },
+    {
+      "case": "o1_a0_Omega10",
+      "events": 689773,
+      "passed": true
+    },
+    {
+      "case": "o1_a1_Omega1",
+      "events": 69191,
+      "passed": true
+    },
+    {
+      "case": "o1_a1_Omega10",
+      "events": 688610,
+      "passed": true
+    }
+  ],
+  "tiny": [
+    {
+      "fixture": 0,
+      "paths": 256,
+      "observed_TV": [
+        0.03790080546957682,
+        0.059506756037562544
+      ],
+      "passed": true
+    },
+    {
+      "fixture": 1,
+      "paths": 256,
+      "observed_TV": [
+        0.0396539996645924,
+        0.04037533593583156
+      ],
+      "passed": true
+    },
+    {
+      "fixture": 2,
+      "paths": 256,
+      "observed_TV": [
+        0.027538353081064854,
+        0.07195558075468259
+      ],
+      "passed": true
+    },
+    {
+      "fixture": 3,
+      "paths": 256,
+      "observed_TV": [
+        0.13698782694319583,
+        0.1584634177327944
+      ],
+      "passed": true
+    }
+  ],
+  "source_hashes_unchanged": true,
+  "shared": "Same compact model compilation, saved inputs. Independent aggregate reservation/increment arithmetic and categorical frequency calculation; same author, not external replication."
+}

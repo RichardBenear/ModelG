@@ -1,3 +1,7 @@
+# Current handoff — MG136, 2026-11-10
+
+Combined development tests complete:66.9214seconds<180;80000forcedstressupdates pass;1024exploratory paths/605events passreplay;8actualticks/3033132events pass. Independentaggregatecount/frame recomputation passed; frozenhashes unchanged. Low-scaleactualtick1.1904–1.34629s;highscale11.9396–12.4297s inclraw/audit. NOTformalendpointqualification; tinymaxTV.158463, no statisticalpassclaimed. Report results/MG12H3/sparse_combined/MG12H3_sparse_combined_results.md. No next production; formalqualification/longhistory stress and throughput planning pending.
+
 # Current handoff — MG135, 2026-11-10
 
 Compact sparse prototype implemented;896state/2003localupdate checks,20cross-engine scripted ticks and8ring-rate checks PASS. Eight forced1000update microbenchmarks complete; no RNG/integrations, not formal stochastic qualification. Source src/mg12h3_sparse.py; report results/MG12H3/sparse_development/MG12H3_sparse_development_results.md. Next prepare combined sparse endpoint qualification/numerical stress/actual-ring capped timing packet with measured budget; no new production registered.
