@@ -56,3 +56,7 @@ MG8 remains closed with its registered labels. MG10 is a new explicit-reservoir 
 - Use the existing MODELG_WORKERS interface with MODELG_WORKERS=8 for newly planned local runs, subject to lower memory/thermal limits if needed. No permission to consume more than eight workers is implied.
 - Richard decides whether external review is needed **per run or run batch**. Record each decision with the run plan. Do not turn this into an automatic Claude-review requirement or claim review clearance without a recorded decision.
 - MG10 decisions 1-4 in Draft 1 are PI-approved. Preserve that approval; do not ask again about unchanged choices. Final numerical definitions, run caps and a measured cost projection must still be recorded before registration; this instruction supplies no new numerical core-hour ceiling.
+
+
+## PI batching preference, 2026-11-10
+Group independent short studies into prospectively approved batches estimated up to three hours on at most eight local workers (24 core-hours). Preserve per-test criteria, seeds, raw records and verdicts. Retain decision boundaries where earlier results determine later designs; prerequisite failures block dependent tests. This preference does not authorize unregistered production or change existing caps.

@@ -2376,3 +2376,7 @@ After MG123closure, user directs nextsteps. Freeze4mixed fixtures/finest.001, fo
 
 ## MG125 — mixed finite-tick qualification approved/registered (2026-11-10)
 Richard: “I approve.” Approves the MG124 readiness packet: four frozen mixed fixtures, exact and strict .001,32768paths per condition/262144 total/64jobs;16joint-count TV upper bounds <=.10 with family alpha .001. Total charge10800seconds (10500worker+300parent),max8local workers/thread1,600seconds/job,full public raw retention. Registration/source/seeds published before production; preserve failures/no retries, PI closure later.
+
+
+## MG126 — mixed qualification passed; PI closure pending
+262144paths/64chunks/16bounds passed;maxupper.084024683645<.10;155932events audited; separate saved-count recomputation passed.569.367seconds wall,4359.552364charged seconds<10800. Report results/MG12H3/mixed_qualification/MG12H3_mixed_results.md. No next production started.

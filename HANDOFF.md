@@ -1,3 +1,7 @@
+
+
+## MG126 — mixed qualification passed; PI closure pending
+262144paths/64chunks/16bounds passed;maxupper.084024683645<.10;155932events audited; separate saved-count recomputation passed.569.367seconds wall,4359.552364charged seconds<10800. Report results/MG12H3/mixed_qualification/MG12H3_mixed_results.md. No next production started.
 # Current handoff — 2026-11-10 (MG125)
 
 - **MG125 APPROVED/REGISTERED:** PI “I approve.” authorizes frozen mixed-law qualification:262144 paths/64jobs/16TV bounds,10800charged seconds total (10500workers+300parent),max8local workers/thread1,600sec/job/full public raw. Push registration before launch; no retry or automatic closure.
