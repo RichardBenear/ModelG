@@ -1302,3 +1302,5 @@ MG136 results:developmentchecksPASSED in66.9214s<180;80000stressupdates/1024expl
 
 ## MG137 — sparse combined formal qualification preparation
 PI requests endpoint and long-history stress qualification. Freeze131072freshendpointpaths/8TVbounds<=.10/familyalpha.001 plus8x1000000forcedstressupdates,relative1e-10/absolute1e-6ratecriteria and exactintegerchecks. Actualwriter preparation128paths+8x10000stressupdates under60seconds/oneworker/thread1; source/seeds before draws. Formal batch notregistered; concrete measuredbudgetapproval needed. Candidate7200chargedseconds/max8workers/fullpublicraw.
+
+MG137a:preserve pre-RNG oracle failure; correct independent selection normalization, sparse engine unchanged. V2actual-writer128paths/80000stressupdates plusrawguards passed2.79915seconds. Formal131072paths+8millionupdatesready;forecast1917.29worker-seconds,proposed7200total/max8workers, budgetapprovalpending. Noformalregistration/draws.

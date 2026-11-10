@@ -1,3 +1,7 @@
+# Current handoff — MG137a, 2026-11-10
+
+Sparse endpoint+long-update qualification READY; formalbudgetapproval pending.131072freshendpointpaths/32jobs+8millionforcedstressupdates/8jobs. Forecast1917.29worker-seconds;proposed7200total(6600worker+600parent),max8workers/thread1,600/job. Preparationv2 passed128paths/80000stressupdates/guards in2.79915s. Original pre-RNG preparation oracle failure preserved; corrected reference selection normalization, sparseengine unchanged. Source157a0d6 beforev2draws. Plan_v2.json andreadiness bound; no formalregistration/paths. Report results/MG12H3/sparse_qualification/MG12H3_sparse_qualification_readiness.md.
+
 # Current handoff — MG136, 2026-11-10
 
 Combined development tests complete:66.9214seconds<180;80000forcedstressupdates pass;1024exploratory paths/605events passreplay;8actualticks/3033132events pass. Independentaggregatecount/frame recomputation passed; frozenhashes unchanged. Low-scaleactualtick1.1904–1.34629s;highscale11.9396–12.4297s inclraw/audit. NOTformalendpointqualification; tinymaxTV.158463, no statisticalpassclaimed. Report results/MG12H3/sparse_combined/MG12H3_sparse_combined_results.md. No next production; formalqualification/longhistory stress and throughput planning pending.
