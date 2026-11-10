@@ -1286,3 +1286,7 @@ PI “I approve” (2026-11-10) accepts MG130:131072paths/32chunks/eight TV boun
 
 ## MG133/MG134 — efficiency closed; actual-ring inventory
 PI signs off MG132 and directs next stages. CLOSED tiny count-law qualification only. Deterministic8case prepared-ring feasibility inventory,Omega1/10,seeded2origins x2arms;60seconds one-localworker/thread1,no RNG/integration. Freeze source before work; no particle production or stock/tick modifications.
+
+
+## MG135 — compact local-hazard engine exploration
+PI authorizes engine optimization. New compact channels/local dependency updates/Fenwick selection alongside frozen qualified engines. Deterministic896state equivalence and local-update checks; forced1000updates x8actualring inputs under60second one-worker cap,thread1,no RNG/integration or production. Source/spec published before microbenchmark. Formal stochastic qualification separate.
