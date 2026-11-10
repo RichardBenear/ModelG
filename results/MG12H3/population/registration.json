@@ -1,0 +1,242 @@
+{
+  "stage": "MG116",
+  "authorization": "Richard Benear: I approve the run. Approves the presented24job deterministic population-limit pattern-reference experiment, frozen criteria,3600elapsed-second cap/one localworker/thread1,full public raw/results retention and advancing this deterministic reference check in parallel with pending finite-tick mixed-law qualification. No external review requested.",
+  "registered": "2026-11-10T02:01:40.032013+00:00",
+  "source_hashes": {
+    "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b",
+    "results/MG11G2/pattern_response_v2/production/c0_s0_v1.npz": "23ad343ca9ec81f45e279fd2b12e9c97072093123a9c13e5c238648eaf3491e1",
+    "results/MG11G2/pattern_response_v2/production/c0_s1_v1.npz": "562eddf617d3dd1f69daf03f87b5a00a030117fcc779bb6079f6c985a187d99c",
+    "results/MG11G2/pattern_response_v2/production/c1_s0_v1.npz": "f0de83f88da756f5cf0828c60b7c8558ea1dbbb3f24396932c4868b6b61b3c3f",
+    "results/MG11G2/pattern_response_v2/production/c1_s1_v1.npz": "5f8542c4a6299521b37ced2ad59093e4a522d59f1348e06a50cd613a1fc6e155",
+    "results/MG11G2/pattern_response_v2/production/c2_s0_v1.npz": "e67a5acc2e4546de45f03aabef7f3abc162da19825e6414117da3119b99b53c4",
+    "results/MG11G2/pattern_response_v2/production/c2_s1_v1.npz": "476cc06584bc10a606a68125cf031a8d852718aa63404ca988b3b4f50eaf5a72",
+    "results/MG11G2/pattern_response_v2/production/c3_s0_v1.npz": "38ea79866a53120d182974c3f002cd8e8183b19ba20ce07481e64d0f55e5e234",
+    "results/MG11G2/pattern_response_v2/production/c3_s1_v1.npz": "98a00d9ad76c6a5c3e4a91bbc735478015e370bf152ad0c984cafd7609d788c0",
+    "results/MG11G3/production/o0_s0_v1_a0.npz": "a1db1a637f9c522554780523f2617d4850141f547a8d788d492bf124c2599f7c",
+    "results/MG11G3/production/o0_s0_v1_a1.npz": "bb7f197330cbf2606e4e54b44f2768d7702770f5e7f54726a93110d6323803f7",
+    "results/MG11G3/production/o0_s1_v1_a0.npz": "7274f961b459f62ab47d2091a5c5c068db19d4212b3ce861104bfdd66859d0f6",
+    "results/MG11G3/production/o0_s1_v1_a1.npz": "279eee77061e96131d4e28d7ebca46e756074cec9202d55437a1671858ddf02f",
+    "results/MG11G3/production/o1_s0_v1_a0.npz": "677f6e45e366b8ad73a6ed329cc5cf2f6d7fee1934cad490d5ce3b18a6cc54ea",
+    "results/MG11G3/production/o1_s0_v1_a1.npz": "f2b8e765dfdf45acf1974bde5bc435ca3a368ca405df056dd3980ac6ab670b86",
+    "results/MG11G3/production/o1_s1_v1_a0.npz": "716938564aa0f69fb31ac91d0ee6d23d7a16592dec045fa353a5f7dc416088f8",
+    "results/MG11G3/production/o1_s1_v1_a1.npz": "98cdfbc9a30bec3d4b141795daaa4883b90afe05b4f3c6308c461293d91a0c65",
+    "spec/MG12H3_pattern_bridge.md": "b2371d1a68910d4c635cc1adb7432940f36136b712233bc424b833eff916b9bc",
+    "src/check_mg12h3_population.py": "24224ea65fdcf1f6ffb418220828d8ec398214db48d29bdef71166c2c7dc1108",
+    "src/mg10p1.py": "ba9aa61c92d813fc48f56cc1683e457596f0152637daede07638f1308aaad45c",
+    "src/mg11g2.py": "69df9ec5f5b7cd9c4ec5e6deb5f5acdd1e79a5f05dd2cb24056aac96454ed003",
+    "src/mg11g2_pattern_v2.py": "c704898e977bac1797cdef29f75c2cb9c836f32520fe1c04617f0a3bceb9e603",
+    "src/mg11g2_pattern_v2_oracle.py": "20c133502918e33960d32b9b52f021cb2a6b3556d6fdcbaf0e64ef56039b733b",
+    "src/mg11g3.py": "82b82754983843483314a7ed2121174e618123e6117c911842647763460feb50",
+    "src/mg11n1.py": "d3e06a1297263b1b7fa3696877599457b3df9e67c5f70cab5deed032f347c614",
+    "src/mg12h3_population.py": "1e9941598fc78b74f4cbe3a5de349ffe4201e81059885e36db65fb3dc18e119b",
+    "src/prepare_mg12h3_population.py": "cc6f06770134caf25ed287af72126e5da5baae25d8a2aabb4eb8802f72c77c41",
+    "src/run_mg12h3_population.py": "bc0a9195c861c11df97fe661d0875938e00443e9ffa0e06462e8d4d866cfcadb"
+  },
+  "jobs": [
+    {
+      "id": "f_o0_s0_a0_v0",
+      "kind": "FINITE",
+      "origin": 0,
+      "start": 0,
+      "arm": 0,
+      "setting": 0,
+      "duration": 15.0
+    },
+    {
+      "id": "f_o0_s0_a0_v1",
+      "kind": "FINITE",
+      "origin": 0,
+      "start": 0,
+      "arm": 0,
+      "setting": 1,
+      "duration": 15.0
+    },
+    {
+      "id": "f_o0_s0_a1_v0",
+      "kind": "FINITE",
+      "origin": 0,
+      "start": 0,
+      "arm": 1,
+      "setting": 0,
+      "duration": 15.0
+    },
+    {
+      "id": "f_o0_s0_a1_v1",
+      "kind": "FINITE",
+      "origin": 0,
+      "start": 0,
+      "arm": 1,
+      "setting": 1,
+      "duration": 15.0
+    },
+    {
+      "id": "f_o0_s1_a0_v0",
+      "kind": "FINITE",
+      "origin": 0,
+      "start": 1,
+      "arm": 0,
+      "setting": 0,
+      "duration": 15.0
+    },
+    {
+      "id": "f_o0_s1_a0_v1",
+      "kind": "FINITE",
+      "origin": 0,
+      "start": 1,
+      "arm": 0,
+      "setting": 1,
+      "duration": 15.0
+    },
+    {
+      "id": "f_o0_s1_a1_v0",
+      "kind": "FINITE",
+      "origin": 0,
+      "start": 1,
+      "arm": 1,
+      "setting": 0,
+      "duration": 15.0
+    },
+    {
+      "id": "f_o0_s1_a1_v1",
+      "kind": "FINITE",
+      "origin": 0,
+      "start": 1,
+      "arm": 1,
+      "setting": 1,
+      "duration": 15.0
+    },
+    {
+      "id": "f_o1_s0_a0_v0",
+      "kind": "FINITE",
+      "origin": 1,
+      "start": 0,
+      "arm": 0,
+      "setting": 0,
+      "duration": 15.0
+    },
+    {
+      "id": "f_o1_s0_a0_v1",
+      "kind": "FINITE",
+      "origin": 1,
+      "start": 0,
+      "arm": 0,
+      "setting": 1,
+      "duration": 15.0
+    },
+    {
+      "id": "f_o1_s0_a1_v0",
+      "kind": "FINITE",
+      "origin": 1,
+      "start": 0,
+      "arm": 1,
+      "setting": 0,
+      "duration": 15.0
+    },
+    {
+      "id": "f_o1_s0_a1_v1",
+      "kind": "FINITE",
+      "origin": 1,
+      "start": 0,
+      "arm": 1,
+      "setting": 1,
+      "duration": 15.0
+    },
+    {
+      "id": "f_o1_s1_a0_v0",
+      "kind": "FINITE",
+      "origin": 1,
+      "start": 1,
+      "arm": 0,
+      "setting": 0,
+      "duration": 15.0
+    },
+    {
+      "id": "f_o1_s1_a0_v1",
+      "kind": "FINITE",
+      "origin": 1,
+      "start": 1,
+      "arm": 0,
+      "setting": 1,
+      "duration": 15.0
+    },
+    {
+      "id": "f_o1_s1_a1_v0",
+      "kind": "FINITE",
+      "origin": 1,
+      "start": 1,
+      "arm": 1,
+      "setting": 0,
+      "duration": 15.0
+    },
+    {
+      "id": "f_o1_s1_a1_v1",
+      "kind": "FINITE",
+      "origin": 1,
+      "start": 1,
+      "arm": 1,
+      "setting": 1,
+      "duration": 15.0
+    },
+    {
+      "id": "MAINTAINED_s0_v0",
+      "kind": "MAINTAINED",
+      "start": 0,
+      "setting": 0,
+      "duration": 25.0
+    },
+    {
+      "id": "MAINTAINED_s0_v1",
+      "kind": "MAINTAINED",
+      "start": 0,
+      "setting": 1,
+      "duration": 25.0
+    },
+    {
+      "id": "MAINTAINED_s1_v0",
+      "kind": "MAINTAINED",
+      "start": 1,
+      "setting": 0,
+      "duration": 25.0
+    },
+    {
+      "id": "MAINTAINED_s1_v1",
+      "kind": "MAINTAINED",
+      "start": 1,
+      "setting": 1,
+      "duration": 25.0
+    },
+    {
+      "id": "ISOLATED_C1_s0_v0",
+      "kind": "ISOLATED_C1",
+      "start": 0,
+      "setting": 0,
+      "duration": 25.0
+    },
+    {
+      "id": "ISOLATED_C1_s0_v1",
+      "kind": "ISOLATED_C1",
+      "start": 0,
+      "setting": 1,
+      "duration": 25.0
+    },
+    {
+      "id": "ISOLATED_C1_s1_v0",
+      "kind": "ISOLATED_C1",
+      "start": 1,
+      "setting": 0,
+      "duration": 25.0
+    },
+    {
+      "id": "ISOLATED_C1_s1_v1",
+      "kind": "ISOLATED_C1",
+      "start": 1,
+      "setting": 1,
+      "duration": 25.0
+    }
+  ],
+  "elapsed_cap": 3600,
+  "workers": 1,
+  "threads_per_library": 1,
+  "public_retention": true,
+  "preparation_sha256": "49467393e732a38f3852eecd99b04cbb6bd685a3ab1719de994f6b2c5753dd1a"
+}

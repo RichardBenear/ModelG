@@ -1225,3 +1225,6 @@ Combined all-enabled reaction and multi-site transport generator/sample checks p
 New incidence population-limit RHS with explicit open-control import accounting; compare24T1prefixes to closed fine references, static RHS, negative/balance and incomplete-output guards, separately measured solver/prefixIO cost. Source/reference plan pushed before integrations; no full latewindow study before concrete approval.
 
 MG114/H3a passed896states/1536paths, ring drift identity,13.505212seconds. MG115population-limit preparation24T1jobs passed5.523560seconds, maxscaledref7.372343e-7. Full24job T15/T25 reference run ready with forecast293.645497seconds and candidate3600cap/full public retention, concrete PI approval pending. No new full late trajectories or strict-tick particle claim.
+
+### MG116 — H3b reference run approved/registered
+PI approves24deterministic prepared/control runs, frozen1e-5field/refinement/interaction criteria,3600seconds/oneworker cap and full public raw-results. Publication of registration precedes integrations; no retries, PI closure later.
