@@ -1,3 +1,7 @@
+# Current handoff — MG131, 2026-11-10
+
+Efficiency qualification APPROVED/REGISTERED. PI approves MG130 fixed criteria and4500second budget/max8workers/fullpublicraw. Entry src/run_mg12h3_efficiency_qualification.py --run; push registration before launch. No retry, PI closure later.
+
 # Current handoff — MG130, 2026-11-10
 
 MG129 development passed128paths/84events,7scripted checks,896state algebra. MG130 qualification READY:131072paths/32chunks/8bounds, forecast3003.79worker-seconds, candidate4500chargedseconds/max8workers. Formal approval pending; no registration/formal paths. Entry src/run_mg12h3_efficiency_qualification.py; report results/MG12H3/efficiency/MG12H3_efficiency_readiness.md.

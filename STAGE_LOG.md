@@ -1274,3 +1274,7 @@ PI signs off MG126 and directs next H3. Tiny mixed-law qualification CLOSED; no 
 
 ## MG129/MG130 — efficiency development passed; qualification ready
 Driver/scripted guards and128developmentpaths/84identity-audited events passed,60secondcap. Prospective qualification131072paths/32chunks/8TVbounds <=.10/familyalpha.001, candidate4500seconds total/max8localworkers, forecast3003.79worker seconds. Held raw guards pass; no formal run registered or launched. Report results/MG12H3/efficiency/MG12H3_efficiency_readiness.md.
+
+
+## MG131 — efficiency qualification approved/registered
+PI “I approve” (2026-11-10) accepts MG130:131072paths/32chunks/eight TV bounds <=.10/family alpha.001;4500charged seconds (4200worker+300parent),max8localworkers/thread1,600seconds/job/fullpublicraw. Publish registration before samples; preserve failures, no retries; PI closure later.
