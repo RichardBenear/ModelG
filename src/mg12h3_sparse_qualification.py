@@ -52,7 +52,7 @@ def stress(job,directory,deadline):
    u=((step+1)*.6180339887498949)%1;index=work.tree.select(u);work.accept(index);ids.append(index)
    if (step+1)%1000==0:
     fresh=np.array([c.rate(work.available) for c in model.channels]);np.testing.assert_allclose(work.tree.values,fresh,rtol=1e-10,atol=1e-6);total=math.fsum(fresh);np.testing.assert_allclose(work.tree.total(),total,rtol=1e-10,atol=1e-6);cum=np.cumsum(fresh)
-    for probe in (1e-9,.5,1-1e-9):assert work.tree.select(probe)==int(np.searchsorted(cum,probe*work.tree.total(),side='right'))
+    for probe in (1e-9,.5,1-1e-9):assert work.tree.select(probe)==int(np.searchsorted(cum,probe*total,side='right'))
     assert work.available.min()>=0 and work.output.min()>=0 and work.output.sum()==pop.sum();rows.append(dict(updates=step+1,total=total,tree_total=work.tree.total(),maximum_leaf_error=float(abs(fresh-work.tree.values).max())))
  finally:
   np.savez_compressed(directory/(job['id']+'.npz'),initial=pop,final=work.output.reshape(pop.shape),available=work.available.reshape(pop.shape),channel_ids=np.asarray(ids,np.int32),job=json.dumps(job));atomic_json(directory/(job['id']+'_checkpoints.json'),dict(records=rows))
@@ -68,7 +68,7 @@ def stress_check(job,directory):
 
 def controls():
  tree=Tree([1e9,.1,0.,3.]);tree.update(0,0.);np.testing.assert_allclose(tree.total(),3.1,rtol=1e-10,atol=1e-6)
- for u in (0.,.01,.5,1-1e-9):assert tree.select(u)==int(np.searchsorted(np.cumsum(tree.values),u*tree.total(),side='right'))
+ for u in (0.,.01,.5,1-1e-9):assert tree.select(u)==int(np.searchsorted(np.cumsum(tree.values),u*math.fsum(tree.values),side='right'))
  tree=Tree([1.]);tree.update(0,0.);assert tree.total()==0
  try:tree.select(.5);raise RuntimeError('Exhausted selected')
  except ValueError:pass
