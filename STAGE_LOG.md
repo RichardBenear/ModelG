@@ -1234,3 +1234,6 @@ Stopped after22validated jobs when coarser seeded isolatedZerror.000104192675 ex
 
 ### MG118 — tighter-tolerance check registered
 User authorizes separate three-integration diagnostic, including independent Radau equations, unchanged1e-5threshold/physics.300seconds cap; publish before integrations. Originalfailedrun and unstartedjob remain untouched, no retrospectivepass.
+
+### MG119 — tolerance diagnostic passed
+All3reference and3intersolver checks passed same1e-5threshold. TightestBDF/Radauagree4.675894e-8; bothabout3.8e-6fromarchivedreference, consistentwithfinitearchiveerror.17.832830seconds, originalstoppedstudyuntouched; prospectivecompletionplanneeded. Full report/raw published/verified separately.

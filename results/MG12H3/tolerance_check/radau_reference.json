@@ -1,0 +1,18 @@
+{
+  "method": {
+    "id": "radau_reference",
+    "solver": "Radau",
+    "rtol": 1e-12,
+    "atol": 1e-14,
+    "max_step": 0.025
+  },
+  "status": "COMPLETE",
+  "elapsed_seconds": 7.583129500038922,
+  "check": {
+    "passed": true,
+    "reference_error": 3.844541424768977e-06,
+    "balance": 8.541408599617965e-16,
+    "minimum": 0.0
+  },
+  "sha256": "f38896e2851252091cfd2019e4f3424b54ecea021c9f7941ca8cea8e73905739"
+}

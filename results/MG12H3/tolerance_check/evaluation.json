@@ -1,0 +1,113 @@
+{
+  "complete": true,
+  "supported": true,
+  "verdict": "TOLERANCE EXPLANATION SUPPORTED IN TESTED ISOLATED CONTROL",
+  "methods": [
+    {
+      "method": {
+        "id": "bdf_tight",
+        "solver": "BDF",
+        "rtol": 1e-11,
+        "atol": 1e-13,
+        "max_step": 0.05
+      },
+      "reference_error": 3.201666913810186e-07,
+      "balance": 8.541408599617965e-16,
+      "minimum": 0.0,
+      "passed": true,
+      "species_errors": [
+        7.47571430610469e-12,
+        3.1689167072653494e-10,
+        2.335381945365051e-10,
+        3.031649005909761e-15,
+        2.368700546051922e-12,
+        3.201666913810186e-07,
+        1.062414867192274e-08
+      ],
+      "max_location": {
+        "time": 23.75,
+        "species": "Z",
+        "site": 266
+      }
+    },
+    {
+      "method": {
+        "id": "bdf_tighter",
+        "solver": "BDF",
+        "rtol": 1e-12,
+        "atol": 1e-14,
+        "max_step": 0.025
+      },
+      "reference_error": 3.82682446797844e-06,
+      "balance": 4.2707042998089825e-16,
+      "minimum": 0.0,
+      "passed": true,
+      "species_errors": [
+        3.915457497938281e-11,
+        1.6877787067649469e-09,
+        1.3548317137777263e-09,
+        1.9489172180848463e-15,
+        2.8276987766085444e-11,
+        3.82682446797844e-06,
+        1.2749740108120022e-07
+      ],
+      "max_location": {
+        "time": 25.0,
+        "species": "Z",
+        "site": 282
+      }
+    },
+    {
+      "method": {
+        "id": "radau_reference",
+        "solver": "Radau",
+        "rtol": 1e-12,
+        "atol": 1e-14,
+        "max_step": 0.025
+      },
+      "reference_error": 3.844541424768977e-06,
+      "balance": 6.406056449713475e-16,
+      "minimum": 0.0,
+      "passed": true,
+      "species_errors": [
+        4.005524702082239e-11,
+        1.7272966271749403e-09,
+        1.3873065868689468e-09,
+        1.2992781453898975e-15,
+        2.8410105532484838e-11,
+        3.844541424768977e-06,
+        1.2808936844521668e-07
+      ],
+      "max_location": {
+        "time": 25.0,
+        "species": "Z",
+        "site": 218
+      }
+    }
+  ],
+  "pairs": [
+    {
+      "left": "bdf_tight",
+      "right": "bdf_tighter",
+      "error": 4.144932972849347e-06,
+      "passed": true
+    },
+    {
+      "left": "bdf_tight",
+      "right": "radau_reference",
+      "error": 4.162651748629287e-06,
+      "passed": true
+    },
+    {
+      "left": "bdf_tighter",
+      "right": "radau_reference",
+      "error": 4.6758941607549787e-08,
+      "passed": true
+    }
+  ],
+  "original_failed_error": 0.00010419267528050113,
+  "margin": 1e-05,
+  "source_original_hashes_unchanged": true,
+  "original_study_status": "failed/incomplete, unchanged; original fine isolated job remains unstarted",
+  "shared_dependencies": "same physical initial fields/model and SciPy; independent Radau equations/sparsity, separate saved-array error/balance arithmetic, same author not external replication"
+}

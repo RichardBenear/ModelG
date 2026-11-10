@@ -1,0 +1,60 @@
+{
+  "records": [
+    {
+      "method": {
+        "id": "bdf_tight",
+        "solver": "BDF",
+        "rtol": 1e-11,
+        "atol": 1e-13,
+        "max_step": 0.05
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 4.88933390006423,
+      "check": {
+        "passed": true,
+        "reference_error": 3.201666913810186e-07,
+        "balance": 1.0676760749522457e-15,
+        "minimum": 0.0
+      },
+      "sha256": "2127a46e12014b1bf05c07e5d9f41f1a6781d4c9a3b0d378f877f17bbd87f2d7"
+    },
+    {
+      "method": {
+        "id": "bdf_tighter",
+        "solver": "BDF",
+        "rtol": 1e-12,
+        "atol": 1e-14,
+        "max_step": 0.025
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 5.124143699998967,
+      "check": {
+        "passed": true,
+        "reference_error": 3.82682446797844e-06,
+        "balance": 6.406056449713475e-16,
+        "minimum": 0.0
+      },
+      "sha256": "2346e59ab10b7bc2b7431ad9955e27c15db364f960cdfb06dfaf3137de4a5af3"
+    },
+    {
+      "method": {
+        "id": "radau_reference",
+        "solver": "Radau",
+        "rtol": 1e-12,
+        "atol": 1e-14,
+        "max_step": 0.025
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 7.583129500038922,
+      "check": {
+        "passed": true,
+        "reference_error": 3.844541424768977e-06,
+        "balance": 8.541408599617965e-16,
+        "minimum": 0.0
+      },
+      "sha256": "f38896e2851252091cfd2019e4f3424b54ecea021c9f7941ca8cea8e73905739"
+    }
+  ],
+  "elapsed_seconds": 17.67574540001806,
+  "elapsed_cap": 300
+}
