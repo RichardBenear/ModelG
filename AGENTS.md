@@ -63,3 +63,7 @@ Read [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md), the authoritative prospective
 - `mg3.py`: segmented simulation with online detection and confirmation; first-passage statistics; Stage-B selection.
 - Drivers and evaluators: `run_mg2.py`/`evaluate_mg2.py`, `run_mg3.py`/`evaluate_mg3.py`, `validations.py`.
 - Tests: `python tests/test_track.py` (8) and `python tests/test_mg3.py` (14; one test takes about a minute).
+
+
+### PI numerical presentation preference (2026-11-10)
+Use at most six significant digits in plain-language reports and summaries, unless additional digits are needed to resolve a comparison or outcome. Preserve full precision in raw records, calculations, machine-readable outputs and frozen scoring; presentation rounding must not change decisions.

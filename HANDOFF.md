@@ -1,3 +1,7 @@
+# Current handoff — MG128, 2026-11-10
+
+MG127: PI CLOSED MG126 mixed-law qualification. Next MG128 exchangeable-token efficiency development; spec/MG12H3_efficiency_development.md. Algebra prototype and deterministic saved-support reservation checks prepared; no new stochastic run or budget registered. Report numbers use six significant digits unless needed for outcome comparisons.
+
 
 
 ## MG126 — mixed qualification passed; PI closure pending

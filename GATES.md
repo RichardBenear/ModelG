@@ -2380,3 +2380,7 @@ Richard: “I approve.” Approves the MG124 readiness packet: four frozen mixed
 
 ## MG126 — mixed qualification passed; PI closure pending
 262144paths/64chunks/16bounds passed;maxupper.084024683645<.10;155932events audited; separate saved-count recomputation passed.569.367seconds wall,4359.552364charged seconds<10800. Report results/MG12H3/mixed_qualification/MG12H3_mixed_results.md. No next production started.
+
+
+## MG127 — mixed qualification closed; MG128 efficiency development
+PI signs off MG126 and directs next H3. Tiny mixed-law qualification CLOSED; no particle claim. Six-significant-digit prose preference recorded. Next: exchangeable-token strict-tick efficiency implementation, proving reservation equivalence before stochastic production. No new particle run registered.

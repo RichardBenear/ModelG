@@ -60,3 +60,7 @@ MG8 remains closed with its registered labels. MG10 is a new explicit-reservoir 
 
 ## PI batching preference, 2026-11-10
 Group independent short studies into prospectively approved batches estimated up to three hours on at most eight local workers (24 core-hours). Preserve per-test criteria, seeds, raw records and verdicts. Retain decision boundaries where earlier results determine later designs; prerequisite failures block dependent tests. This preference does not authorize unregistered production or change existing caps.
+
+
+### PI numerical presentation preference (2026-11-10)
+Use at most six significant digits in plain-language reports and summaries, unless additional digits are needed to resolve a comparison or outcome. Preserve full precision in raw records, calculations, machine-readable outputs and frozen scoring; presentation rounding must not change decisions.
