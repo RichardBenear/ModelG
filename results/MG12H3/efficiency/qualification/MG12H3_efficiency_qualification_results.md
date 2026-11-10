@@ -36,3 +36,5 @@ The full public archive contains count arrays, accepted-event traces, chunk meta
 This qualifies count distributions at two endpoints on four small fixed substrates. It does not qualify token lineage, rejected-proposal histories or individual cell provenance, demonstrate a particle on a large lattice, establish substrate independence, or connect reservoirs to physical vacuum/quantum behavior. No controlled full-scale speedup benchmark was part of this result.
 
 The next useful step is a measured feasibility study on the actual prepared ring state and populations, with short horizons and hard caps. That should establish memory/runtime costs, strict-tick resolution requirements and sensible stochastic precision before choosing a particle-scale run. Independent benchmark and validation cases can share one batch, but particle-run design depends on their results. No next production has started.
+
+Publication verification passed: all 149 qualification files match published commit `9f4348d`, including every binary archive byte for byte. See [verification record](production_retention_verified.json).
