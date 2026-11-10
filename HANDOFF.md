@@ -1,3 +1,7 @@
+# Current handoff — MG134, 2026-11-10
+
+MG133 PI CLOSED MG132. MG134 eight actual-ring inventories complete; separate rate/edge recomputation passed.500sites,about69.8million tokens atOmega1,9000channels,densechange/reservationpayload480.652MiB plusdestinationoverhead; Btransportdominatesactivity. No random draws/integrations. Long particle run inadvisable on denseexecutor. Next compact/local hazard development before boundedactualtick timings, then prospectively budget particle study. Report results/MG12H3/ring_feasibility/MG12H3_ring_feasibility_results.md.
+
 # Current handoff — MG132, 2026-11-10
 
 Efficiency qualification PASSED; PI closure pending.131072paths/32chunks/8bounds allpass;maxupper.0801649<.10.77979events saved-audited; separate histogram recomputation pass; source/reference unchanged.2799.83charged seconds<4500. Full raw/report publishing; no next production. Report results/MG12H3/efficiency/qualification/MG12H3_efficiency_qualification_results.md. Next recommend actual-ring feasibility before particle design.

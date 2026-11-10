@@ -1,0 +1,331 @@
+{
+  "complete": true,
+  "elapsed_seconds": 0.295929400017485,
+  "records": [
+    {
+      "id": "o0_a0_Omega1",
+      "origin": 0,
+      "arm": 0,
+      "omega": 1,
+      "sites": 500,
+      "counts_by_species": [
+        7500,
+        7510,
+        1001,
+        2031000,
+        65471034,
+        2195853,
+        69445
+      ],
+      "total_tokens": 69783343,
+      "quantization_error": 0.4964804481128908,
+      "channels": 9000,
+      "reaction_rates": [
+        6769.999999999996,
+        7500.0,
+        751.0,
+        210711.42450000002,
+        210492.0,
+        6759.0
+      ],
+      "transport_rates": [
+        375000.0,
+        375500.0,
+        600600.0,
+        2031000.0,
+        65471034.00000109
+      ],
+      "initial_rate": 69296117.42450109,
+      "initial_activity_per_tick": 69296.11742450109,
+      "destination_payload_bytes": 252000000,
+      "count_channel_arrays_bytes": 504000000,
+      "transport_conservative": true
+    },
+    {
+      "id": "o0_a0_Omega10",
+      "origin": 0,
+      "arm": 0,
+      "omega": 10,
+      "sites": 500,
+      "counts_by_species": [
+        75502,
+        75943,
+        9462,
+        20311500,
+        654709308,
+        21957262,
+        692901
+      ],
+      "total_tokens": 697831878,
+      "quantization_error": 0.0499430471973028,
+      "channels": 9000,
+      "reaction_rates": [
+        67705.00000000001,
+        75502.0,
+        7594.299999999999,
+        2130765.292971429,
+        2163854.0999999996,
+        68348.69999999998
+      ],
+      "transport_rates": [
+        3775100.0,
+        3797150.0,
+        5677200.0,
+        20311500.0,
+        654709308.0000068
+      ],
+      "initial_rate": 692784027.3929782,
+      "initial_activity_per_tick": 692784.0273929782,
+      "destination_payload_bytes": 252000000,
+      "count_channel_arrays_bytes": 504000000,
+      "transport_conservative": true
+    },
+    {
+      "id": "o0_a1_Omega1",
+      "origin": 0,
+      "arm": 1,
+      "omega": 1,
+      "sites": 500,
+      "counts_by_species": [
+        7500,
+        7510,
+        1001,
+        2031000,
+        65471034,
+        2195853,
+        69445
+      ],
+      "total_tokens": 69783343,
+      "quantization_error": 0.4964804481128908,
+      "channels": 9000,
+      "reaction_rates": [
+        6769.999999999996,
+        7500.0,
+        751.0,
+        210711.42450000002,
+        210492.0,
+        6759.0
+      ],
+      "transport_rates": [
+        375000.0,
+        375500.0,
+        600600.0,
+        2031000.0,
+        65471034.00000109
+      ],
+      "initial_rate": 69296117.42450109,
+      "initial_activity_per_tick": 69296.11742450109,
+      "destination_payload_bytes": 252000000,
+      "count_channel_arrays_bytes": 504000000,
+      "transport_conservative": true
+    },
+    {
+      "id": "o0_a1_Omega10",
+      "origin": 0,
+      "arm": 1,
+      "omega": 10,
+      "sites": 500,
+      "counts_by_species": [
+        75502,
+        75943,
+        9462,
+        20311500,
+        654709308,
+        21957262,
+        692901
+      ],
+      "total_tokens": 697831878,
+      "quantization_error": 0.0499430471973028,
+      "channels": 9000,
+      "reaction_rates": [
+        67705.00000000001,
+        75502.0,
+        7594.299999999999,
+        2130765.292971429,
+        2163854.0999999996,
+        68348.69999999998
+      ],
+      "transport_rates": [
+        3775100.0,
+        3797150.0,
+        5677200.0,
+        20311500.0,
+        654709308.0000068
+      ],
+      "initial_rate": 692784027.3929782,
+      "initial_activity_per_tick": 692784.0273929782,
+      "destination_payload_bytes": 252000000,
+      "count_channel_arrays_bytes": 504000000,
+      "transport_conservative": true
+    },
+    {
+      "id": "o1_a0_Omega1",
+      "origin": 1,
+      "arm": 0,
+      "omega": 1,
+      "sites": 500,
+      "counts_by_species": [
+        7500,
+        7517,
+        1001,
+        2031000,
+        65470993,
+        2195785,
+        69412
+      ],
+      "total_tokens": 69783208,
+      "quantization_error": 0.49934551140177064,
+      "channels": 9000,
+      "reaction_rates": [
+        6769.999999999996,
+        7500.0,
+        751.7,
+        210904.96650000004,
+        210924.0,
+        6765.3
+      ],
+      "transport_rates": [
+        375000.0,
+        375850.0,
+        600600.0,
+        2031000.0,
+        65470993.00000081
+      ],
+      "initial_rate": 69297058.9665008,
+      "initial_activity_per_tick": 69297.0589665008,
+      "destination_payload_bytes": 252000000,
+      "count_channel_arrays_bytes": 504000000,
+      "transport_conservative": true
+    },
+    {
+      "id": "o1_a0_Omega10",
+      "origin": 1,
+      "arm": 0,
+      "omega": 10,
+      "sites": 500,
+      "counts_by_species": [
+        75502,
+        75907,
+        9420,
+        20311500,
+        654709380,
+        21957261,
+        692833
+      ],
+      "total_tokens": 697831803,
+      "quantization_error": 0.04998900802823414,
+      "channels": 9000,
+      "reaction_rates": [
+        67705.00000000001,
+        75502.0,
+        7590.7,
+        2129729.123164286,
+        2151953.16,
+        68316.3
+      ],
+      "transport_rates": [
+        3775100.0,
+        3795350.0,
+        5652000.0,
+        20311500.0,
+        654709379.9999982
+      ],
+      "initial_rate": 692744126.2831625,
+      "initial_activity_per_tick": 692744.1262831625,
+      "destination_payload_bytes": 252000000,
+      "count_channel_arrays_bytes": 504000000,
+      "transport_conservative": true
+    },
+    {
+      "id": "o1_a1_Omega1",
+      "origin": 1,
+      "arm": 1,
+      "omega": 1,
+      "sites": 500,
+      "counts_by_species": [
+        7500,
+        7517,
+        1001,
+        2031000,
+        65470993,
+        2195785,
+        69412
+      ],
+      "total_tokens": 69783208,
+      "quantization_error": 0.49934551140177064,
+      "channels": 9000,
+      "reaction_rates": [
+        6769.999999999996,
+        7500.0,
+        751.7,
+        210904.96650000004,
+        210924.0,
+        6765.3
+      ],
+      "transport_rates": [
+        375000.0,
+        375850.0,
+        600600.0,
+        2031000.0,
+        65470993.00000081
+      ],
+      "initial_rate": 69297058.9665008,
+      "initial_activity_per_tick": 69297.0589665008,
+      "destination_payload_bytes": 252000000,
+      "count_channel_arrays_bytes": 504000000,
+      "transport_conservative": true
+    },
+    {
+      "id": "o1_a1_Omega10",
+      "origin": 1,
+      "arm": 1,
+      "omega": 10,
+      "sites": 500,
+      "counts_by_species": [
+        75502,
+        75907,
+        9420,
+        20311500,
+        654709380,
+        21957261,
+        692833
+      ],
+      "total_tokens": 697831803,
+      "quantization_error": 0.04998900802823414,
+      "channels": 9000,
+      "reaction_rates": [
+        67705.00000000001,
+        75502.0,
+        7590.7,
+        2129729.123164286,
+        2151953.16,
+        68316.3
+      ],
+      "transport_rates": [
+        3775100.0,
+        3795350.0,
+        5652000.0,
+        20311500.0,
+        654709379.9999982
+      ],
+      "initial_rate": 692744126.2831625,
+      "initial_activity_per_tick": 692744.1262831625,
+      "destination_payload_bytes": 252000000,
+      "count_channel_arrays_bytes": 504000000,
+      "transport_conservative": true
+    }
+  ],
+  "source_hashes": {
+    "results/MG11G2/pattern_response_v2/production/c2_s1_v1.npz": "476cc06584bc10a606a68125cf031a8d852718aa63404ca988b3b4f50eaf5a72",
+    "results/MG11G2/pattern_response_v2/production/c3_s1_v1.npz": "98a00d9ad76c6a5c3e4a91bbc735478015e370bf152ad0c984cafd7609d788c0",
+    "src/prepare_mg12h3_ring_feasibility.py": "16a222984f35dc7d66dcd2af03a53a62e16dba3ba0474c6002e3c6faf85250d0",
+    "src/mg12h3_population.py": "1e9941598fc78b74f4cbe3a5de349ffe4201e81059885e36db65fb3dc18e119b",
+    "src/mg11g3.py": "82b82754983843483314a7ed2121174e618123e6117c911842647763460feb50",
+    "src/mg11g2_pattern_v2.py": "c704898e977bac1797cdef29f75c2cb9c836f32520fe1c04617f0a3bceb9e603",
+    "src/mg12h3_exchangeable.py": "2595df293a2d8cd8d29f1ddcabcd4a35da7f13d0146259ee2120f7cd6c1f4fd3",
+    "src/mg12h1_reference.py": "ade8c8ff0001c3b37e79529349ec4f2b52bf82ad3f3a98c315184d7357dc3738",
+    "spec/MG12H3_ring_feasibility.md": "cdc05b880e6f7e7a25c3a6f622698fb1edcc2f73d55ce6d8a2ced37c94e63d2e"
+  },
+  "random_draws": 0,
+  "integrations": 0
+}
