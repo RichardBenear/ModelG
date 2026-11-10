@@ -1,0 +1,641 @@
+{
+  "published_commit": "0f3611723c17feedb8a00f9b1a3882001df31dfc",
+  "all_files_verified": true,
+  "source_reference_hashes_unchanged": true,
+  "files": 105,
+  "binary_files": 81,
+  "local_bytes": 38756781,
+  "records": [
+    {
+      "file": "results/MG003/ref_profiles.npz",
+      "bytes": 259054,
+      "local_sha256": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG11G2/pattern_response_v2/production/c0_s0_v1.npz",
+      "bytes": 26370,
+      "local_sha256": "23ad343ca9ec81f45e279fd2b12e9c97072093123a9c13e5c238648eaf3491e1",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG11G2/pattern_response_v2/production/c0_s1_v1.npz",
+      "bytes": 2538155,
+      "local_sha256": "562eddf617d3dd1f69daf03f87b5a00a030117fcc779bb6079f6c985a187d99c",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG11G2/pattern_response_v2/production/c1_s0_v1.npz",
+      "bytes": 30779,
+      "local_sha256": "f0de83f88da756f5cf0828c60b7c8558ea1dbbb3f24396932c4868b6b61b3c3f",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG11G2/pattern_response_v2/production/c1_s1_v1.npz",
+      "bytes": 2626944,
+      "local_sha256": "5f8542c4a6299521b37ced2ad59093e4a522d59f1348e06a50cd613a1fc6e155",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG11G2/pattern_response_v2/production/c2_s0_v1.npz",
+      "bytes": 38165,
+      "local_sha256": "e67a5acc2e4546de45f03aabef7f3abc162da19825e6414117da3119b99b53c4",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG11G2/pattern_response_v2/production/c2_s1_v1.npz",
+      "bytes": 3579879,
+      "local_sha256": "476cc06584bc10a606a68125cf031a8d852718aa63404ca988b3b4f50eaf5a72",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG11G2/pattern_response_v2/production/c3_s0_v1.npz",
+      "bytes": 38873,
+      "local_sha256": "38ea79866a53120d182974c3f002cd8e8183b19ba20ce07481e64d0f55e5e234",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG11G2/pattern_response_v2/production/c3_s1_v1.npz",
+      "bytes": 3225084,
+      "local_sha256": "98a00d9ad76c6a5c3e4a91bbc735478015e370bf152ad0c984cafd7609d788c0",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG11G3/production/o0_s0_v1_a0.npz",
+      "bytes": 28710,
+      "local_sha256": "a1db1a637f9c522554780523f2617d4850141f547a8d788d492bf124c2599f7c",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG11G3/production/o0_s0_v1_a1.npz",
+      "bytes": 29414,
+      "local_sha256": "bb7f197330cbf2606e4e54b44f2768d7702770f5e7f54726a93110d6323803f7",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG11G3/production/o0_s1_v1_a0.npz",
+      "bytes": 2576351,
+      "local_sha256": "7274f961b459f62ab47d2091a5c5c068db19d4212b3ce861104bfdd66859d0f6",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG11G3/production/o0_s1_v1_a1.npz",
+      "bytes": 2977263,
+      "local_sha256": "279eee77061e96131d4e28d7ebca46e756074cec9202d55437a1671858ddf02f",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG11G3/production/o1_s0_v1_a0.npz",
+      "bytes": 29414,
+      "local_sha256": "677f6e45e366b8ad73a6ed329cc5cf2f6d7fee1934cad490d5ce3b18a6cc54ea",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG11G3/production/o1_s0_v1_a1.npz",
+      "bytes": 30113,
+      "local_sha256": "f2b8e765dfdf45acf1974bde5bc435ca3a368ca405df056dd3980ac6ab670b86",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG11G3/production/o1_s1_v1_a0.npz",
+      "bytes": 3028465,
+      "local_sha256": "716938564aa0f69fb31ac91d0ee6d23d7a16592dec045fa353a5f7dc416088f8",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG11G3/production/o1_s1_v1_a1.npz",
+      "bytes": 2319579,
+      "local_sha256": "98cdfbc9a30bec3d4b141795daaa4883b90afe05b4f3c6308c461293d91a0c65",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/MG12H3_bridge_readiness.md",
+      "bytes": 10216,
+      "local_sha256": "9ca2bf23ca64ddbdde236a1ab78e73df2615a238304e68d6155d168c20bd14e7",
+      "comparison": "text LF normalized"
+    },
+    {
+      "file": "results/MG12H3/bridge/attempt.json",
+      "bytes": 30,
+      "local_sha256": "1f80f3d206fefa04bbf86864adb8db77eeab126ac77526e1fa9b4a3923063077",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/bridge/c0_m0.npz",
+      "bytes": 1915,
+      "local_sha256": "038c1a420dc2240765ccb1d56b3cc2af1b8ca56683849ac52cd5a6c5edcfaa43",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/bridge/c0_m0_traces.json",
+      "bytes": 30289,
+      "local_sha256": "ecf3b84f41c0e3e9ff2d22dcaed8d846966089a6a810b71fcd628cd358b65d3f",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/bridge/c0_m1.npz",
+      "bytes": 1900,
+      "local_sha256": "2409e20afaa8b2a0c712c1d9a5ed5fa478471591c1e76938d78ada5cc3dca36d",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/bridge/c0_m1_traces.json",
+      "bytes": 27390,
+      "local_sha256": "c5fe5eb7ef07324acc9961c4853f1377ca7c47f8cb627f3380fb14bc09a44cfe",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/bridge/c0_m2.npz",
+      "bytes": 1896,
+      "local_sha256": "256d0eb9bddfb71470182e6dcb07414d55a1b77d44c592e61da4bd9ea93b77e9",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/bridge/c0_m2_traces.json",
+      "bytes": 25496,
+      "local_sha256": "c6af38e42b68e92180fed968509bf3a910143aeaf6b9e8885d8f3032be71f2c4",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/bridge/c0_reference.npz",
+      "bytes": 1006,
+      "local_sha256": "e9ed38914f3f59dd956a7809788aa6cc0099a647beb206e677c9464ac1a8ba00",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/bridge/c1_m0.npz",
+      "bytes": 1937,
+      "local_sha256": "dff9a9fac4b6ca06954edaf08c19fc5ed65371ad67a62229cce88a976277a3dc",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/bridge/c1_m0_traces.json",
+      "bytes": 54580,
+      "local_sha256": "9dc39d74f58cb2d14d79f51f72f8270d0ecae2652ac0f1913bbf4719eab6222c",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/bridge/c1_m1.npz",
+      "bytes": 1914,
+      "local_sha256": "b189cede9c1a446e2dd8c48cf252a6a0e6a7585065c852c3bad0b1a4aa78c310",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/bridge/c1_m1_traces.json",
+      "bytes": 52034,
+      "local_sha256": "613aeb8597500e3f3436bd9f2db4354e22992b205b500b68ee6cc97d04647e5b",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/bridge/c1_m2.npz",
+      "bytes": 1923,
+      "local_sha256": "500ff0cd29daa3e2e59da345b87910228ef5d1de7eb88e64c8abc7723813e8a8",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/bridge/c1_m2_traces.json",
+      "bytes": 46720,
+      "local_sha256": "dad0385331787e90654898517801bcefcd1101d2274209a6cbd190475fbf4d31",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/bridge/c1_reference.npz",
+      "bytes": 737,
+      "local_sha256": "a0ddb17ffccc04943bc2d5513d72d8044fb1dfaa5f7ced1cc24c29e59e4ea9a4",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/bridge/c2_m0.npz",
+      "bytes": 1838,
+      "local_sha256": "b1d34e0d52c8751c214aee40934eb28d485ecf2b3d5229df9627c3160f9cba09",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/bridge/c2_m0_traces.json",
+      "bytes": 32672,
+      "local_sha256": "1859ca50c6f02bf77ac4db3fd0e49d3d1e840a76e5c676d6c516aa851d7d2530",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/bridge/c2_m1.npz",
+      "bytes": 1806,
+      "local_sha256": "891c45ffb2a14a8fa5e9a911a1c36db74c313514438f9bf5af414f813b30279f",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/bridge/c2_m1_traces.json",
+      "bytes": 30950,
+      "local_sha256": "02bb9f3438081d5ca56a489fa83ca0d8829059a89c4bc59dfb5830777a898d71",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/bridge/c2_m2.npz",
+      "bytes": 1803,
+      "local_sha256": "d176f544174b7b31437a1200faf7a7d97d31550b382496a0e2a4240c56aef600",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/bridge/c2_m2_traces.json",
+      "bytes": 26435,
+      "local_sha256": "3a9aedd7b528510a09b69f76e1c1089fd1789d22aa79260af44fd4f8a1eae2a4",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/bridge/c2_reference.npz",
+      "bytes": 4024,
+      "local_sha256": "b83a08e37c834dfd21d0cc4d30e410bb0ae1a2c7b2e8ed777d16e854b3a27d72",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/bridge/c3_m0.npz",
+      "bytes": 1776,
+      "local_sha256": "9f2feae7346ae1f24cf49faae98a86ae201923cf8de6e9fb3c6f5ee7bc2032fa",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/bridge/c3_m0_traces.json",
+      "bytes": 65724,
+      "local_sha256": "598dfe417401ad13b44bf2054aa98700a7302ae1ba5bb7611b1699130d18047f",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/bridge/c3_m1.npz",
+      "bytes": 1791,
+      "local_sha256": "600904a019e429efe71a71135b7c86bf5c298459e9dc7d5034e50fec734e2d41",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/bridge/c3_m1_traces.json",
+      "bytes": 63319,
+      "local_sha256": "f8b3a4bb814b6be9b1a32e383d30db96ac53375b13e1ab5e422b892c7ffecfdd",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/bridge/c3_m2.npz",
+      "bytes": 1809,
+      "local_sha256": "ee1cde33d646f0d878a83bcc6daed3cb6b234cd31c3159d69f27098cc7256a4a",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/bridge/c3_m2_traces.json",
+      "bytes": 69517,
+      "local_sha256": "11e7fe60902f981612afab58faf04f7011ccfe7f5ce561b62136634ffcf79c63",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/bridge/c3_reference.npz",
+      "bytes": 6032,
+      "local_sha256": "4348819fad6f590f49fc0c40f5003313e18daedb64cb751c2e306daf469d5d42",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/bridge/plan.json",
+      "bytes": 40228,
+      "local_sha256": "ff4bc7a120a64317e164e2f95b9d401bba336cb3de67e22fbd96320630118c19",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/bridge/results.json",
+      "bytes": 4039,
+      "local_sha256": "985e954cb6822636ecea2c90eb47669c77100e14e8df971e069068f73d6ba858",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/ISOLATED_C1_s0_v0.npz",
+      "bytes": 2145,
+      "local_sha256": "8ff4ebb94ebd02b89f9810e3ce95b2759699d8c033df73a6b1ff4fc46161ab97",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/ISOLATED_C1_s0_v1.npz",
+      "bytes": 3867,
+      "local_sha256": "1f8a3d07c37e0c454194e264bed35f4072641fbc7a2d127ec94c01bc08c21b18",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/ISOLATED_C1_s1_v0.npz",
+      "bytes": 56649,
+      "local_sha256": "c1cf8511177a94e36af1ec2a31b3934b21deb267ef9433c6ff5ad726c9d7795f",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/ISOLATED_C1_s1_v1.npz",
+      "bytes": 56737,
+      "local_sha256": "064faea2f90f88ead29493a6ed4b580376fda28646a534822210c561cb2d7798",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/MAINTAINED_s0_v0.npz",
+      "bytes": 1202,
+      "local_sha256": "edbdf986d54f625b45037aacf838234e4cb5f5efeda672fcb0e65fb1e4160f3f",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/MAINTAINED_s0_v1.npz",
+      "bytes": 1207,
+      "local_sha256": "2b7d53ccb66ee485788daa520d8502c62570b71b54e8ff0ddb67a97a7a736b4e",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/MAINTAINED_s1_v0.npz",
+      "bytes": 49784,
+      "local_sha256": "cc01f24634be779bde92fb99585b52aca333264712fd7028510fdc723b30e11d",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/MAINTAINED_s1_v1.npz",
+      "bytes": 49649,
+      "local_sha256": "011e40f181317f9bcb9662ee762ae55eeebdd7e4297408c007b94559b6161ead",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/attempt.json",
+      "bytes": 30,
+      "local_sha256": "1f80f3d206fefa04bbf86864adb8db77eeab126ac77526e1fa9b4a3923063077",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/f_o0_s0_a0_v0.npz",
+      "bytes": 1664,
+      "local_sha256": "a1b13496d9bb7d712fcf820445681a8f7eb0d2e3244fa6edb0002539bfc828e3",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/f_o0_s0_a0_v1.npz",
+      "bytes": 1878,
+      "local_sha256": "f9783580469734c0bdc2005ad120ca99f4024acde3b50021da61bb79d6ea2435",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/f_o0_s0_a1_v0.npz",
+      "bytes": 1816,
+      "local_sha256": "e7fa52f1419a8a2ad4af1f6cfcb8c4d011bf20f0db6c7022e05eb4c252d161c6",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/f_o0_s0_a1_v1.npz",
+      "bytes": 2096,
+      "local_sha256": "1b5f49271b0c5e2c26e17587cb6cf93276cdc1ea134e28b8520eabf18be4c85f",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/f_o0_s1_a0_v0.npz",
+      "bytes": 82427,
+      "local_sha256": "03323d4584ab15417215e62779ebd3435701e68f85059013b0be6ff697981d49",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/f_o0_s1_a0_v1.npz",
+      "bytes": 82371,
+      "local_sha256": "d9442d5b9be70e196193afeb4eac801f64fcd2512c5243bc4eb67be19ef812a5",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/f_o0_s1_a1_v0.npz",
+      "bytes": 90034,
+      "local_sha256": "cdf7cc342f914032cb5da3f18db0b1d969c2f2150054d34f8ff07d9447947481",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/f_o0_s1_a1_v1.npz",
+      "bytes": 90030,
+      "local_sha256": "3d3e90a8dd12507d0dba71bd2426e0fdf9445b38fa18be55205a77da4fd31468",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/f_o1_s0_a0_v0.npz",
+      "bytes": 1731,
+      "local_sha256": "397741dfb125f0e86aeb5a70f519e422f712222703bde297c57f935377b066e1",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/f_o1_s0_a0_v1.npz",
+      "bytes": 1737,
+      "local_sha256": "a4ae0b85a2cbb2e53b8b783bb2e7dcb92393e22b327c4949c09f386d86f0d4d1",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/f_o1_s0_a1_v0.npz",
+      "bytes": 1638,
+      "local_sha256": "8f637d52c97dc042e0c0f5c9f3230a8418d4e314367fef561141475f05de6ca3",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/f_o1_s0_a1_v1.npz",
+      "bytes": 2111,
+      "local_sha256": "833278a8f024e4a747822f0991059e164ca86827aaedb66f0486e1a293b4ff80",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/f_o1_s1_a0_v0.npz",
+      "bytes": 92395,
+      "local_sha256": "7facbfdca3e5beccfc182bb440bfbf5523e4207f300184e4a2ba5904941a00d0",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/f_o1_s1_a0_v1.npz",
+      "bytes": 92398,
+      "local_sha256": "1a1c3a9939fd354e4d45429c94771137c1ac0006944a2609587435debb5dd6e4",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/f_o1_s1_a1_v0.npz",
+      "bytes": 73553,
+      "local_sha256": "b981a7b5092df12c986d531b3368ae8a48141f8d79ff3960eddb563cb00304ee",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/f_o1_s1_a1_v1.npz",
+      "bytes": 73633,
+      "local_sha256": "2d9a7f5e007f9d891c7a9cc72c77bac341bcd3bd8259ac335503140988206d13",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_full_evaluation.json",
+      "bytes": 202124,
+      "local_sha256": "e3481d0a87f271ecdf2ffc52e3f36f6aef80afd9a6a816eab7b10ebb5aa6fbd9",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_pipeline_results.json",
+      "bytes": 485,
+      "local_sha256": "978ccbc0a8da157fd4e14594dab03a7da0dc636e4a4b35489a7751ee9f336085",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_reference_pipeline/ISOLATED_C1_s0_v0.npz",
+      "bytes": 13365,
+      "local_sha256": "5ea779385f6900863ac4b20e8fe85df69b36cd1198a52054d889f5604183115b",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_reference_pipeline/ISOLATED_C1_s0_v1.npz",
+      "bytes": 13367,
+      "local_sha256": "1bcd079f8d66d94f045494bc23516a483d844548f45aaba6d86fc4b6449e954c",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_reference_pipeline/ISOLATED_C1_s1_v0.npz",
+      "bytes": 1313701,
+      "local_sha256": "e6eb89d0cc522e00f0040b8c85664678b432dc2821bb8a00dfea18629640cc57",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_reference_pipeline/ISOLATED_C1_s1_v1.npz",
+      "bytes": 1313699,
+      "local_sha256": "ae7407a12216ddb296f756b6a31c4554a132f1c5e969b15e547fba1a50203353",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_reference_pipeline/MAINTAINED_s0_v0.npz",
+      "bytes": 10102,
+      "local_sha256": "1e3eabf504ea709f93d8129105d724b253c11c33b939db33e20b47dcf3da0b84",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_reference_pipeline/MAINTAINED_s0_v1.npz",
+      "bytes": 10104,
+      "local_sha256": "9092ad758d1f0534ae471d3309900b203f1b1e2ee34b446ec2843cf86f901ce8",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_reference_pipeline/MAINTAINED_s1_v0.npz",
+      "bytes": 1084711,
+      "local_sha256": "468d270350a690c5e4f748e3e82e1489318f5529b2795044e4b1866cbd4d0be0",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_reference_pipeline/MAINTAINED_s1_v1.npz",
+      "bytes": 1084710,
+      "local_sha256": "97ba900c324b13427fb68620722a1940ab4ecaa411ef5d80b63c903e0f19c33a",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_reference_pipeline/f_o0_s0_a0_v0.npz",
+      "bytes": 8333,
+      "local_sha256": "43ae74cdc8e07919fad700aa70975711f266628cacac4c426f873140cbf679cb",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_reference_pipeline/f_o0_s0_a0_v1.npz",
+      "bytes": 8336,
+      "local_sha256": "74c6aff17fe954134c6b6c6100c57b6e11c4afe67f9b348ae111103b971b4bc4",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_reference_pipeline/f_o0_s0_a1_v0.npz",
+      "bytes": 8337,
+      "local_sha256": "cd3bd6a8b5b6bf1e32f3231fb5503220320527fd49202a4bc8936606d8517c0b",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_reference_pipeline/f_o0_s0_a1_v1.npz",
+      "bytes": 8336,
+      "local_sha256": "1926d776205a674e93694e941259350a2e9e96f2d5a0677e835e2d2edce02050",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_reference_pipeline/f_o0_s1_a0_v0.npz",
+      "bytes": 1030516,
+      "local_sha256": "40814901e06be1de29ded21185fccf1c9336a8d9ad0d6e6abb280d8fb3a692ae",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_reference_pipeline/f_o0_s1_a0_v1.npz",
+      "bytes": 1030516,
+      "local_sha256": "ecd168a9dd8414f934a91f600971ab10bf64c30a7c94b312fcc552ba362232bd",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_reference_pipeline/f_o0_s1_a1_v0.npz",
+      "bytes": 1191400,
+      "local_sha256": "f349bebba072ad8a4d401aded02276835aeb9d50ad116bb84c7e6a8339982ac8",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_reference_pipeline/f_o0_s1_a1_v1.npz",
+      "bytes": 1191399,
+      "local_sha256": "249cf080bbf280a030517ff3956835e90ceaf7535c9dfccebf09e79317c9711b",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_reference_pipeline/f_o1_s0_a0_v0.npz",
+      "bytes": 8336,
+      "local_sha256": "5df2ba26dc7f68eec6c779eebe5ac553ba4e3b5f17e0e61cde5aaa747cdd94d2",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_reference_pipeline/f_o1_s0_a0_v1.npz",
+      "bytes": 8337,
+      "local_sha256": "e7ca60134dcea793555a09e4ecf212b14b0b029766bbb7c13441eece87b342f9",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_reference_pipeline/f_o1_s0_a1_v0.npz",
+      "bytes": 8335,
+      "local_sha256": "67f6fc6b1f140805c123d7021131f8a77bb843203a623a9d116571cae0d5fb5e",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_reference_pipeline/f_o1_s0_a1_v1.npz",
+      "bytes": 8336,
+      "local_sha256": "4305162da27e3955be47d9b2865a50b4ff50b02906162d655b14778724b622ac",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_reference_pipeline/f_o1_s1_a0_v0.npz",
+      "bytes": 1207139,
+      "local_sha256": "177f273a2a77231c12ad8390bb27b6435a2e94bbf765c25f28cbdd6d70bb6bc3",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_reference_pipeline/f_o1_s1_a0_v1.npz",
+      "bytes": 1207139,
+      "local_sha256": "2a9ff9d1b63a0ab315b4bc2ae2037433979bf2d0c7f9199aa0f6de68745e387a",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_reference_pipeline/f_o1_s1_a1_v0.npz",
+      "bytes": 918223,
+      "local_sha256": "71a1cb130d533f7df0d53582aaef4a378b57daf33be7020d949dcfdae48baf4b",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/held_reference_pipeline/f_o1_s1_a1_v1.npz",
+      "bytes": 918221,
+      "local_sha256": "1dcb8fca64a4f4ca7d3b18229518b7351abf00b070da0a77483199952f9baf5a",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/missing_evaluation.json",
+      "bytes": 294,
+      "local_sha256": "a161535713d69a03dde5f2541a950e53d3f26d2d21930a95de696363c7bcd61b",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/plan.json",
+      "bytes": 7455,
+      "local_sha256": "86116654dba6f9fe6cdd69b559f27195056ac508c7c684b41bc21a7841432293",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/prefix_evaluation.json",
+      "bytes": 11737,
+      "local_sha256": "2047556722d205130d45c3cfd03d9a262d76375d90b37fc37e605ffb34b4e84b",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/population/preparation/results.json",
+      "bytes": 19236,
+      "local_sha256": "49467393e732a38f3852eecd99b04cbb6bd685a3ab1719de994f6b2c5753dd1a",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/saved_evidence_check.json",
+      "bytes": 1312,
+      "local_sha256": "c0a6464cb2b406927d5a02797f5f555af8ad893bdd8aba4ab56559d40ea3af17",
+      "comparison": "JSON semantic"
+    }
+  ],
+  "notes": "Includes held archived reference pipeline, clearly not new production. All binary inputs match published bytes; JSON compared semantically and local text hashes require original line endings. Full population-limit trajectory registration has not been created."
+}

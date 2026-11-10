@@ -75,6 +75,8 @@ The forecast separately scales numerical work and repeated-prefix IO, including 
 
 The execution and evaluation code is built: src/run_mg12h3_population.py registers only with approval and passing unchanged preparation, refuses an existing attempt, saves prefixes during integration, checks each case and compares paired settings/independent projections. Concrete production registration has **not** been created. The start of H3 authorized development; this packet makes the new mathematical-limit pattern experiment, criteria and budget reviewable before launch under RESEARCH_PROTOCOL.md workflow3.
 
+This proposed scheduling choice advances deterministic-limit reference recovery in parallel with the still-pending formal mixed finite-tick qualification. It does not waive that qualification for stochastic particle runs. Approval of this packet adopts that limited ordering change explicitly.
+
 ## What success would and would not establish
 
 A pass would recover the earlier ring pattern trajectories and G3 geometry interaction in the incidence-derived deterministic limit. It would establish that the translation retains known mathematical-limit behavior on those prescribed substrates. Sampled reference continuity would be reported descriptively, including the maintained seeded control; larger projection after loss of matching would not be called a longer-lived particle.
@@ -82,3 +84,5 @@ A pass would recover the earlier ring pattern trajectories and G3 geometry inter
 It would not establish a particle in the strict finite-tick hypergraph process, stochastic robustness of G3/G5, a pattern on a new higher-arity/3D substrate, emergent geometry or physical vacuum supply. Formal mixed-law accuracy, efficient exchangeable-token sampling with catalyst reservations, population/tick limits and a sufficiently precise stochastic pattern study remain further H3 work. G5 remains closed and unresolved.
 
 Read spec/MG12H3_bridge_development.md, spec/MG12H3_pattern_bridge.md, bridge/results.json, saved_evidence_check.json and population/preparation/results.json for reproducible inputs. Full preparation/raw-reference retention verification is recorded in retention_verified.json. No full reference run or new scientific closure is implied by this readiness report.
+
+Preparation/reference retention verified at 0f36117: every retained binary and metadata/report input matches published bytes/values under the documented line-ending normalization. Source/reference hashes unchanged. See retention_verified.json. Full deterministic trajectory run remains unregistered.
