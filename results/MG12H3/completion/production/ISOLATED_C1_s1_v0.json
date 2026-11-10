@@ -1,0 +1,31 @@
+{
+  "entry": {
+    "job": {
+      "id": "ISOLATED_C1_s1_v0",
+      "kind": "ISOLATED_C1",
+      "start": 1,
+      "setting": 0,
+      "duration": 25.0
+    },
+    "origin": "fresh_corrected_replay",
+    "path": "results/MG12H3/completion/production/ISOLATED_C1_s1_v0.npz",
+    "method": {
+      "id": "bdf_tight",
+      "solver": "BDF",
+      "rtol": 1e-11,
+      "atol": 1e-13,
+      "max_step": 0.05
+    },
+    "diagnostic_reference": "results/MG12H3/tolerance_check/bdf_tight.npz",
+    "source_sha256": null
+  },
+  "status": "COMPLETE",
+  "check": {
+    "passed": true,
+    "reference_error": 3.201666913810186e-07,
+    "balance": 1.0676760749522457e-15,
+    "minimum": 0.0
+  },
+  "elapsed_seconds": 4.966564500005916,
+  "sha256": "dd65a9f719ba3824b0a9e879eb04d39668eb28dcc62c6705f96f5c88b15ceb4d"
+}

@@ -1,0 +1,158 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "id": "f_o0_s0_a0_v0",
+      "reference_error": 7.284974127045925e-10,
+      "balance": 8.541408785215038e-16,
+      "origin": "reused_validated_MG116"
+    },
+    {
+      "id": "f_o0_s0_a0_v1",
+      "reference_error": 1.6145129958027515e-11,
+      "balance": 6.406056588911279e-16,
+      "origin": "reused_validated_MG116"
+    },
+    {
+      "id": "f_o0_s0_a1_v0",
+      "reference_error": 7.284978229720798e-10,
+      "balance": 1.0676760981518799e-15,
+      "origin": "reused_validated_MG116"
+    },
+    {
+      "id": "f_o0_s0_a1_v1",
+      "reference_error": 1.614430156720885e-11,
+      "balance": 1.2812113177822557e-15,
+      "origin": "reused_validated_MG116"
+    },
+    {
+      "id": "f_o0_s1_a0_v0",
+      "reference_error": 8.709757316806174e-08,
+      "balance": 2.1353521499044905e-16,
+      "origin": "reused_validated_MG116"
+    },
+    {
+      "id": "f_o0_s1_a0_v1",
+      "reference_error": 7.346850524341456e-10,
+      "balance": 2.1353521499044905e-16,
+      "origin": "reused_validated_MG116"
+    },
+    {
+      "id": "f_o0_s1_a1_v0",
+      "reference_error": 2.5669176182220556e-08,
+      "balance": 2.1353521499044905e-16,
+      "origin": "reused_validated_MG116"
+    },
+    {
+      "id": "f_o0_s1_a1_v1",
+      "reference_error": 3.4789216331022304e-10,
+      "balance": 2.1353521499044905e-16,
+      "origin": "reused_validated_MG116"
+    },
+    {
+      "id": "f_o1_s0_a0_v0",
+      "reference_error": 7.284974127045925e-10,
+      "balance": 6.406056588911279e-16,
+      "origin": "reused_validated_MG116"
+    },
+    {
+      "id": "f_o1_s0_a0_v1",
+      "reference_error": 1.6145129958027515e-11,
+      "balance": 6.406056588911279e-16,
+      "origin": "reused_validated_MG116"
+    },
+    {
+      "id": "f_o1_s0_a1_v0",
+      "reference_error": 7.284976178383361e-10,
+      "balance": 4.270704392607519e-16,
+      "origin": "reused_validated_MG116"
+    },
+    {
+      "id": "f_o1_s0_a1_v1",
+      "reference_error": 1.614450866491352e-11,
+      "balance": 1.0676760981518799e-15,
+      "origin": "reused_validated_MG116"
+    },
+    {
+      "id": "f_o1_s1_a0_v0",
+      "reference_error": 2.694951145872945e-08,
+      "balance": 4.2707042998089815e-16,
+      "origin": "reused_validated_MG116"
+    },
+    {
+      "id": "f_o1_s1_a0_v1",
+      "reference_error": 7.353008449784639e-10,
+      "balance": 4.2707042998089815e-16,
+      "origin": "reused_validated_MG116"
+    },
+    {
+      "id": "f_o1_s1_a1_v0",
+      "reference_error": 8.74759572302553e-08,
+      "balance": 4.2707042998089815e-16,
+      "origin": "reused_validated_MG116"
+    },
+    {
+      "id": "f_o1_s1_a1_v1",
+      "reference_error": 1.5505323787160857e-09,
+      "balance": 4.2707042998089815e-16,
+      "origin": "reused_validated_MG116"
+    },
+    {
+      "id": "MAINTAINED_s0_v0",
+      "reference_error": 7.821654435247183e-11,
+      "balance": 2.8026497576486867e-16,
+      "origin": "reused_validated_MG116"
+    },
+    {
+      "id": "MAINTAINED_s0_v1",
+      "reference_error": 1.8189894035458565e-12,
+      "balance": 2.7359200015141944e-16,
+      "origin": "reused_validated_MG116"
+    },
+    {
+      "id": "MAINTAINED_s1_v0",
+      "reference_error": 1.837179297581315e-10,
+      "balance": 4.037150158413179e-16,
+      "origin": "reused_validated_MG116"
+    },
+    {
+      "id": "MAINTAINED_s1_v1",
+      "reference_error": 2.510205376893282e-10,
+      "balance": 4.037150158413179e-16,
+      "origin": "reused_validated_MG116"
+    },
+    {
+      "id": "ISOLATED_C1_s0_v0",
+      "reference_error": 4.1476562273601303e-07,
+      "balance": 8.541408785215046e-16,
+      "origin": "reused_validated_MG116"
+    },
+    {
+      "id": "ISOLATED_C1_s0_v1",
+      "reference_error": 9.395080269314349e-10,
+      "balance": 2.562422635564514e-15,
+      "origin": "reused_validated_MG116"
+    },
+    {
+      "id": "ISOLATED_C1_s1_v0",
+      "reference_error": 3.201666913810186e-07,
+      "balance": 8.541408599617965e-16,
+      "origin": "fresh_corrected_replay"
+    },
+    {
+      "id": "ISOLATED_C1_s1_v1",
+      "reference_error": 3.82682446797844e-06,
+      "balance": 4.2707042998089825e-16,
+      "origin": "fresh_corrected_replay"
+    }
+  ],
+  "slots": 24,
+  "reused": 22,
+  "fresh": 2,
+  "pairs": 12,
+  "new_interaction": 0.033337306141685064,
+  "closed_reference": 0.033337305923648475,
+  "original_fine_job_still_unstarted": true,
+  "source_original_diagnostic_reference_hashes_unchanged": true,
+  "shared": "same fields/fixtures and frozen dense projection, separate specieswise error and balance/pair summation; original/fresh metadata and byte-exact diagnostic replay checked; same author not external replication"
+}

@@ -1247,3 +1247,6 @@ MG120b final saved-only validation passes with complete original/donor/diagnosti
 
 ### MG121 — completion run registered
 PI approves22reuse+2fresh corrected matrix/criteria,300secondcap/oneworker/fullpublicretention. Registration published before fresh replays; oldfailedrununchanged. No independent stochastic replication or new physics claim.
+
+### MG122 — corrected H3b completion passed
+24slots22reuse+2fresh complete; allreference/refinement/balance/positivity and replay guards passed, separateaudit24slots.13.247616seconds<300. Originalfailurepreserved, no globalH3/stochasticclaim. Fullreport/rawmanifestandverificationpublished; PI closurepending.
