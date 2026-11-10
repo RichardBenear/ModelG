@@ -2366,3 +2366,9 @@ PI: “I approve. Go ahead.” Approves reviewed24slot completion matrix:22valid
 
 ## MG122 — corrected deterministic completion matrix passed
 24/24slots complete and supported:22validated originalreuses+2fresh isolatedtight/tighter replays, case-specific levels explicit. Maxreference3.826824e-6<1e-5, max12pairrefinement4.144933e-6<1e-5; freshdiagnosticreplayarraysexact; fineinteraction+.033337306142 vsclosed+.033337305924,error2.180365e-10. Globalbalance/positivity/source/original/diagnostic/reference hash and separate24slot auditPASS.13.247616seconds<300oneworker cap, no failure/retry. OriginalMG117failed/incompleteuntouched, oldfinejobstillunstarted. This completes correctedpopulation-limitreferencebridge, not allH3/stochasticparticles/geometry. Report results/MG12H3/completion/MG12H3_completion_results.md, fullfresh/reuseprovenancepublicverified; PI closurepending.
+
+## MG123 — corrected deterministic reference bridge closed
+PIsignoff accepts MG12224slot correctedmatrix/12pairs,22reuse+2fresh, verifiedraw/provenance/audit. CLOSED correctedreferenceexperiment only; originalMG117failed/incompleteunchanged; wholeH3ongoing. User directs nextsteps: mixed finite-tick qualification preparation then efficiencybridge, no unmeasuredproductionbudget implied.
+
+## MG124 — mixed finite-tick qualification preparation
+After MG123closure, user directs nextsteps. Freeze4mixed fixtures/finest.001, formalR32768perfixture/method,total262144paths/64chunks,16joint-countTVbounds margin.10/alpha.001. Source/fixture/reference/seed plan before1024short timing paths and matrix-reference integrations. Preparation90seconds singleworker; synthetic complete score and missing/prefix/seed/method/trace corruption guards. Full batch NOTRUN; measuredbudgetpacket/PI approval needed. Candidate3core-hours total10800charged seconds,10500worker ceiling+300parentreserve,max8localworkers/thread1,600/job. No particle/efficiency/geometry claim.

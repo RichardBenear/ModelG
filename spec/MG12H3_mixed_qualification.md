@@ -1,0 +1,25 @@
+# H3c combined reaction/transport finite-tick qualification — MG124 draft
+
+Following corrected deterministic bridge closure MG123, prepare the remaining finite-tick mixed-law qualification. Existing engines, fixtures, original failures and deterministic results remain frozen. Planning/short preparation only; formal sampling requires concrete PI budget/criteria approval.
+
+## Fixed target
+
+Use unchanged four MG114fixtures, all P17reaction channels enabled with binary/ternary overlapping transport and finite resources, at most4tokens/3sites. There are72,36,300and488reachable count states. Exact incidence SSA and strict max tick.001 are compared with the independent count-generator semigroup at T.05and.1; initialT0retained. Finest.001was fixed in the earlier development plan. No new coarser-step samples, parameter search or outcome-driven step selection.
+
+32768independent fixed paths per fixture/method,262144paths total; eight4096path chunks per condition,64worker jobs. Each seed is registered separately. No discarded warmups or repeated seed streams. Retain count frames, raw eligible accepted/rejected relation traces, per-path seed and canonical metadata. Every chemical event reserves catalysts/consumed participants and every move reserves its token. Products/arrivals wait for later ticks; shared read-only incidence does not lock a whole site.
+
+Two endpoints x4fixtures x2methods=16formal **joint-count categorical TV** comparisons. Limit.10 and family alpha.001, unchanged convention from prior qualifications. For fixture support S and R32768, epsilon=sqrt((S ln2+ln(16/.001))/(2R)); each observedTV+epsilon must be<=.10. The largest S488needs this replication because its conservative confidence allowance would already exceed.10 at R16384, before observed error. A pass has nominal99.9%simultaneous coverage conditional on fixed sampling/PRNG/computed-reference fidelity, not confidence in physics or a full identity/temporal-law guarantee. No adaptive R or retries. Missing chunks suppress all formal verdicts; incomplete data stay descriptive.
+
+Rebuild the independent finite count generators before formal workers, verify all state supports and T.1probabilities against frozen MG114reference files within1e-11, cross-check sparse exponential with dense matrix exponential within1e-11, row sums<=1e-10 and probability min>=-1e-12. No clipping/renormalization. The count oracle does not call the primary matcher/executors. Saved-data audit independently replays chemical/cell roles, snapshot reservations, counts and canonical seed/metadata, then recomputes frequencies and TV bounds by alternate arithmetic. Same-author analysis with shared model/inputs, not external replication.
+
+## Preparation and pipeline
+
+Freeze source, fixture/reference hashes and seeds before any new integrations/draws. One-worker/thread1 preparation cap90elapsed seconds: eight128path actual-writer timing jobs (exact/strict across fourfixtures),1024preparation paths. Development seeds use stage12401; formal seeds12400, deterministic collision resolution against prior/new uint32values, recorded before sampling. Small timing outputs are not formal data and cannot select R/tick/criteria.
+
+Test complete-chunk metadata and replay; prefix/missing job handling; wrong seed/method/trace and missing chunks must not produce a formal qualified result. Synthetic categorical tables exactly equal to reference probabilities can exercise all16complete score branches without pretending they are sampled trajectories; label these as algebra-only. The actual writer/checker must use the same4096chunk schema, with128registered timing paths for preparation. CLI workers receive only compact id/cell/method/chunk metadata; seed arrays stay in registration to avoid Windows command-length limits.
+
+## Proposed local production budget
+
+At most8local workers/library-thread1,600seconds/job, no retry. Candidate total10800charged seconds (3core-hours): worker controller ceiling10500seconds plus at most300seconds parent reference/analysis allowance. Budget controller polls.25seconds; forecast admission requires total predicted outstanding worker cost<=75%ofremaining worker budget and drains active jobs on forecast stop. Preserve512path count prefixes and flushed trace JSONL. Require2GiBfree disk. Forecast from actual-writer128path timings: each formalchunk2*timing*(4096/128)+2seconds startup, plus parent allowance reported separately. Registration blocked if worker forecast>7875seconds. Wall time estimate uses8workers and longest job, with explicit load/IO caveats.
+
+All raw/reference/seed/config/budget/partial/failure/results are publicly retained when approved; original inputs stay hash-unchanged. Scientific closure later; external review optional at Richard's discretion. A pass would qualify only tiny fixed mixed-law endpoint counts at this tick/horizon/population, not full-lattice patterns, high-count catalyst availability, emergent space or quantum supply. Efficiency proof and larger-population/tick qualification must precede stochastic particle work.

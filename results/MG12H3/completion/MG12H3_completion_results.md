@@ -51,3 +51,7 @@ This completes the corrected **deterministic population-limit reference experime
 After PI acceptance of this corrected completion, the next useful H3 work is that mixed reaction/transport finite-tick qualification and efficiency bridge. New higher-arity or known-dimensional pattern substrates, spontaneously formed particles, evolving topology and substrate-generated supply require further separate tests. No next run is authorized by this report.
 
 Publication verified at 00a587e: all 24 matrix raw files (22 reused, two new;14,355,714 bytes total,2,607,985 new bytes) match their audited hashes and published binary bytes. Key metadata are semantically equal, the figure is byte-identical, and all registered original/donor/diagnostic/reference/source inputs remain unchanged. See production_retention_verified.json. PI closure remains pending.
+
+## MG123 — PI closure
+
+Richard signed off on the corrected completion and directed the next steps. This corrected deterministic reference bridge is CLOSED with its registered criteria supported. Original MG117 remains failed/incomplete, unchanged. H3 as a whole remains ongoing. See MG12H3_completion_closure.md.

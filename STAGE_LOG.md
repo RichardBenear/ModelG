@@ -1250,3 +1250,9 @@ PI approves22reuse+2fresh corrected matrix/criteria,300secondcap/oneworker/fullp
 
 ### MG122 — corrected H3b completion passed
 24slots22reuse+2fresh complete; allreference/refinement/balance/positivity and replay guards passed, separateaudit24slots.13.247616seconds<300. Originalfailurepreserved, no globalH3/stochasticclaim. Fullreport/rawmanifestandverificationpublished; PI closurepending.
+
+### MG123 — corrected bridge PI closure
+Accepts MG122 and directs next H3work. Preserve originalfailure and distinguish deterministic closure from pending stochastic/mixed-law/efficiency qualifications.
+
+### MG124 — prospective mixed-law qualification preparation
+Commit sources/seeds before short actual-writer timing/reference checks; formal262144paths in64chunks plannedonly. Joint-count TVfamily requires32768paths due488-state conservative bound; no sample/step selection after outcomes. Preparation90seconds/thread1, fullproductionapprovalpending.
