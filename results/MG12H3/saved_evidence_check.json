@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "paths": 1536,
+  "accepted_events_replayed": 919,
+  "endpoint_checks": [
+    {
+      "id": "c0_m0",
+      "CDF_distance": 0.0445992712765475
+    },
+    {
+      "id": "c0_m1",
+      "CDF_distance": 0.01937643635686004
+    },
+    {
+      "id": "c0_m2",
+      "CDF_distance": 0.024701825756370477
+    },
+    {
+      "id": "c1_m0",
+      "CDF_distance": 0.04597914956348298
+    },
+    {
+      "id": "c1_m1",
+      "CDF_distance": 0.04023466195030134
+    },
+    {
+      "id": "c1_m2",
+      "CDF_distance": 0.03409207111288637
+    },
+    {
+      "id": "c2_m0",
+      "CDF_distance": 0.07873484950846055
+    },
+    {
+      "id": "c2_m1",
+      "CDF_distance": 0.04748484950846055
+    },
+    {
+      "id": "c2_m2",
+      "CDF_distance": 0.0245839875853594
+    },
+    {
+      "id": "c3_m0",
+      "CDF_distance": 0.042188222093588745
+    },
+    {
+      "id": "c3_m1",
+      "CDF_distance": 0.06543661588396105
+    },
+    {
+      "id": "c3_m2",
+      "CDF_distance": 0.06403334194387345
+    }
+  ],
+  "source_hashes_unchanged": true,
+  "shared": "same raw data/fixtures and literal-role audit used during sampling; saved reload and sorted CDF arithmetic separate from primary dynamics and count oracle, same author not external replication"
+}

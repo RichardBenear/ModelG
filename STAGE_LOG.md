@@ -1220,3 +1220,6 @@ User accepts qualification unchanged and directs H3. Controlled mixed reaction/t
 
 ### MG114 — H3a bridge frozen
 Combined all-enabled reaction and multi-site transport generator/sample checks plus8site ring finite-count/continuum drift identity. Fourfixtures/1536paths,300seconds development; source/seeds published before draws/integration. No particle or large-count identity expansion.
+
+### MG115 — H3b reference-bridge preparation
+New incidence population-limit RHS with explicit open-control import accounting; compare24T1prefixes to closed fine references, static RHS, negative/balance and incomplete-output guards, separately measured solver/prefixIO cost. Source/reference plan pushed before integrations; no full latewindow study before concrete approval.

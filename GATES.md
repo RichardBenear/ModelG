@@ -2340,3 +2340,6 @@ Richard: “I sign off. Then proceed to doing H3.” H2closed under fixed-cell t
 
 ## MG114 — H3a mixed kinetics/ring-limit bridge development
 After MG113H2closure, user authorizes H3. Freeze spec/MG12H3_bridge_development.md and source/seed/config plan before RNG/reference integration. Fourtiny all-enabled-P17 mixed reaction/cell fixtures, exact+strict.005/.001 x128paths=1536development paths, exhaustive generator cap8192states, ring conditional-drift Omega1/10/100/1000 algebra vs frozen continuum with finite-count correction.300second single-worker/thread1 cap; no retries/particle run or formal mixed-law qualification.
+
+## MG115 — H3b deterministic pattern-reference preparation
+H3a development passed896reachable mixed generator states/1536paths plus8site conditional drift recovery at Omega1/10/100/1000. Next freeze incidence-derived population-limit solver,24canonical prepared/control jobs, archived fine reference hashes and shortT1validation/timing. Preparation300seconds/thread1; full15/25unit trajectories NOTRUN and require concrete readiness approval. No finite-tick stochastic particle claim. Proposed full cap3600seconds, exact forecast after timing.

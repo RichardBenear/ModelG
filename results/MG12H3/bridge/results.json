@@ -1,0 +1,130 @@
+{
+  "passed": true,
+  "source_hashes": {
+    "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+    "src/check_mg12h3_bridge.py": "2458aa780c070065030b0eca2820d88ca12e49e02e2ceb9c409788ef8ff3dc58",
+    "spec/MG12H3_bridge_development.md": "f477e4cca9f8067cb9943fd5d7aaff3c3a326142713f88c84864735f22d525f8",
+    "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+    "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+    "src/mg12h1_reference.py": "ade8c8ff0001c3b37e79529349ec4f2b52bf82ad3f3a98c315184d7357dc3738",
+    "src/mg11g2.py": "69df9ec5f5b7cd9c4ec5e6deb5f5acdd1e79a5f05dd2cb24056aac96454ed003",
+    "src/mg11n1.py": "d3e06a1297263b1b7fa3696877599457b3df9e67c5f70cab5deed032f347c614",
+    "src/mg11g2_pattern_v2.py": "c704898e977bac1797cdef29f75c2cb9c836f32520fe1c04617f0a3bceb9e603",
+    "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad"
+  },
+  "generator": [
+    {
+      "cell": 0,
+      "states": 72,
+      "max_row_sum": 6.106226635438361e-16
+    },
+    {
+      "cell": 1,
+      "states": 36,
+      "max_row_sum": 4.440892098500626e-16
+    },
+    {
+      "cell": 2,
+      "states": 300,
+      "max_row_sum": 1.0547118733938987e-15
+    },
+    {
+      "cell": 3,
+      "states": 488,
+      "max_row_sum": 2.4424906541753444e-15
+    }
+  ],
+  "ring_drift": [
+    {
+      "omega": 1,
+      "max_continuum_difference": 2.000000000000007,
+      "max_corrected_residual": 7.105427357601002e-15,
+      "global_drift": -2.531308496145357e-14
+    },
+    {
+      "omega": 10,
+      "max_continuum_difference": 0.20000000000000995,
+      "max_corrected_residual": 9.936496070395151e-15,
+      "global_drift": -2.531308496145357e-14
+    },
+    {
+      "omega": 100,
+      "max_continuum_difference": 0.020000000000010232,
+      "max_corrected_residual": 1.0231399061311208e-14,
+      "global_drift": -2.531308496145357e-14
+    },
+    {
+      "omega": 1000,
+      "max_continuum_difference": 0.0020000000000095497,
+      "max_corrected_residual": 9.549652735252323e-15,
+      "global_drift": -2.531308496145357e-14
+    }
+  ],
+  "jobs": [
+    {
+      "id": "c0_m0",
+      "CDF_distance": 0.0445992712765475,
+      "elapsed_seconds": 0.040328399976715446
+    },
+    {
+      "id": "c0_m1",
+      "CDF_distance": 0.01937643635686004,
+      "elapsed_seconds": 0.5277160999830812
+    },
+    {
+      "id": "c0_m2",
+      "CDF_distance": 0.024701825756370477,
+      "elapsed_seconds": 2.3265187999932095
+    },
+    {
+      "id": "c1_m0",
+      "CDF_distance": 0.04597914956348298,
+      "elapsed_seconds": 0.04537579999305308
+    },
+    {
+      "id": "c1_m1",
+      "CDF_distance": 0.04023466195030134,
+      "elapsed_seconds": 0.485274099977687
+    },
+    {
+      "id": "c1_m2",
+      "CDF_distance": 0.03409207111288637,
+      "elapsed_seconds": 2.174568700022064
+    },
+    {
+      "id": "c2_m0",
+      "CDF_distance": 0.07873484950846055,
+      "elapsed_seconds": 0.039008499938063323
+    },
+    {
+      "id": "c2_m1",
+      "CDF_distance": 0.04748484950846055,
+      "elapsed_seconds": 0.720759499934502
+    },
+    {
+      "id": "c2_m2",
+      "CDF_distance": 0.0245839875853594,
+      "elapsed_seconds": 3.242751600104384
+    },
+    {
+      "id": "c3_m0",
+      "CDF_distance": 0.042188222093588745,
+      "elapsed_seconds": 0.05068980006035417
+    },
+    {
+      "id": "c3_m1",
+      "CDF_distance": 0.06543661588396105,
+      "elapsed_seconds": 0.575568399974145
+    },
+    {
+      "id": "c3_m2",
+      "CDF_distance": 0.06403334194387345,
+      "elapsed_seconds": 2.4687024999875575
+    }
+  ],
+  "paths": 1536,
+  "accepted_events_audited": 919,
+  "exact_DKW_epsilon": 0.1615913505148182,
+  "elapsed_seconds": 13.505212099989876,
+  "scope": "development: combined generator/ring conditional drift only, no particle trajectory or formal strict-tick accuracy"
+}
