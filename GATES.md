@@ -2358,3 +2358,5 @@ Three predeclared T25isolated seeded solves complete and pass unchanged1e-5refer
 
 ## MG120 — H3b completion plan/preparation DRAFT
 User requests “go ahead with the next plan”. New mixed-provenance24slot study: reuse22validated immutableMG116records, two fresh isolatedseeded BDFtight/tighter replays, case-specific numerical levels explicit; oldfailedtrajectory/oldunstartedjob preserved. Same1e-5criteria, new1e-10held-replay consistencycheck, no stochastic claim. Forecast50.026955seconds fromdiagnostic timings, candidate300secondoneworker cap/fullpublicretention. Saved-evidence pipeline prep only; no fresh integrations or production registration until concrete PI approval.
+
+MG120a prospective provenance hardening before fresh integration/registration: preserve saved-only preparationv1; additionally hash all diagnostic raw/metadata targets, bind exactplan bytes to preparation and verify canonical24slot/effective reused methods at registration/launch. No physics/criteria/settings change; repeat saved-evidence pipeline only.

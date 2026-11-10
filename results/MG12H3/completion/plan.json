@@ -1,5 +1,5 @@
 {
-  "stage": "MG120",
+  "stage": "MG120a",
   "scope": "planning/saved-evidence preparation only; fresh integrations await PI",
   "source_original_hashes": {
     "results/MG11G2/pattern_response_v2/production/c1_s1_v1.npz": "5f8542c4a6299521b37ced2ad59093e4a522d59f1348e06a50cd613a1fc6e155",
@@ -40,11 +40,21 @@
     "src/mg12h3_population.py": "1e9941598fc78b74f4cbe3a5de349ffe4201e81059885e36db65fb3dc18e119b",
     "src/prepare_mg12h3_population.py": "cc6f06770134caf25ed287af72126e5da5baae25d8a2aabb4eb8802f72c77c41",
     "src/run_mg12h3_tolerance.py": "fba47cfb8e93bcdc25db836978053641e41090076671f09961d6bb185e43a3e6",
-    "src/mg12h3_completion.py": "18c62a916c221bb1685710430a955f662a8317eab5ce6dafb52c957458a31820",
-    "src/prepare_mg12h3_completion.py": "1dbcf67ea52da7560ec724854d19575f63756829ba0531512e4072e3c0c56c7e",
-    "src/run_mg12h3_completion.py": "ebf42dda1023b6761a49b13b92cd90a572c403affa5c9b0e3bec256bb98492a3",
+    "src/mg12h3_completion.py": "8cbae059f1bb9fdf66e766c48d2aa2a09d432615d6df991c8030417b2a9ef103",
+    "src/prepare_mg12h3_completion.py": "d6743e57e8a941cb5aa4fc3d62bffdb6f3e39c8e19b6b0b791c356e06aee299c",
+    "src/run_mg12h3_completion.py": "1fc8281aa57d1a4bcbb19a70f70ea4f82e30ae2df569bc0aab59d7f0c7e78b09",
     "src/check_mg12h3_completion.py": "bf40afaf6c6c4c21eee141abdf595fd3d01241b850edeeba42f4afe05b997862",
-    "spec/MG12H3_completion_plan.md": "3632113cbec63fe405ba798e8b5709113cc85e55e3c2001060b81b697516c152"
+    "spec/MG12H3_completion_plan.md": "5f7bbda963c5cd7be8c7ec767f4fe6b312c5096a4b3bc524f9a9a12d930c0d52",
+    "results/MG12H3/tolerance_check/bdf_tight.npz": "2127a46e12014b1bf05c07e5d9f41f1a6781d4c9a3b0d378f877f17bbd87f2d7",
+    "results/MG12H3/tolerance_check/bdf_tight.json": "2e7b8e327d8fa4e93c74941f56dc0a8937c130944737a83ee9ab53e3eda126b8",
+    "results/MG12H3/tolerance_check/bdf_tighter.npz": "2346e59ab10b7bc2b7431ad9955e27c15db364f960cdfb06dfaf3137de4a5af3",
+    "results/MG12H3/tolerance_check/bdf_tighter.json": "0f0a58999d75dad05db6a41ee1585f073223b514bde9366dabb9bfc389257c14",
+    "results/MG12H3/tolerance_check/radau_reference.npz": "f38896e2851252091cfd2019e4f3424b54ecea021c9f7941ca8cea8e73905739",
+    "results/MG12H3/tolerance_check/radau_reference.json": "d232d5b6d64ce528b8717b4816c135c3884fe22b236025dcf3e071e2efb98d5f",
+    "results/MG12H3/tolerance_check/registration.json": "71b0c083c59cc2717af00586302611f90e1e14e49661a1bb5ceb08168ac32948",
+    "results/MG12H3/tolerance_check/ledger.json": "36f1dafcce19945f491f1121ffad1c126892a2b666db71cc20941e566c4dd072",
+    "results/MG12H3/tolerance_check/evaluation.json": "f602723c88112e0664b22d23d66dc1cb7060e02d8d4c4985521a4e95e29b2b1a",
+    "results/MG12H3/tolerance_check/raw_manifest.json": "517b03c2317a04bfa56eee8e97758a01ceb47b0575196c8246192074b5a2c95e"
   },
   "entries": [
     {

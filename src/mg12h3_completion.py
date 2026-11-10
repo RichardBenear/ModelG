@@ -13,12 +13,18 @@ def matrix():
             assert job['id'] in complete and complete[job['id']]['status']=='COMPLETE';method=dict(id='original_base' if job['setting']==0 else 'original_fine',solver='BDF',**SETTINGS[job['setting']]);path=OLD/'production'/(job['id']+'.npz');diagnostic=None
         entries.append(dict(job=job,origin='fresh_corrected_replay' if fresh else 'reused_validated_MG116',path=path.relative_to(ROOT).as_posix(),method=method,diagnostic_reference=diagnostic.relative_to(ROOT).as_posix() if diagnostic else None,source_sha256=hashlib.sha256(path.read_bytes()).hexdigest() if not fresh else None))
     assert sum(e['origin']=='reused_validated_MG116' for e in entries)==22;return entries
-def completion_hashes():return dict(diagnostic_hashes(),**{name:hashlib.sha256((ROOT/name).read_text(encoding='utf-8').replace('\r\n','\n').encode()).hexdigest() for name in FILES})
+def completion_hashes():
+    result=dict(diagnostic_hashes(),**{name:hashlib.sha256((ROOT/name).read_text(encoding='utf-8').replace('\r\n','\n').encode()).hexdigest() for name in FILES})
+    diagnostic_inputs=[DIAG/(m['id']+suffix) for m in METHODS for suffix in ('.npz','.json')]+[DIAG/name for name in ('registration.json','ledger.json','evaluation.json','raw_manifest.json')]
+    for path in diagnostic_inputs:
+        result[path.relative_to(ROOT).as_posix()]=hashlib.sha256(path.read_bytes() if path.suffix=='.npz' else path.read_text(encoding='utf-8').replace('\r\n','\n').encode()).hexdigest()
+    return result
 def verify_reuse(entries):
     validated={r['job']['id']:r for r in read(OLD/'ledger.json')['records']}
     for e in entries:
         if e['origin']!='reused_validated_MG116':continue
         p=ROOT/e['path'];assert hashlib.sha256(p.read_bytes()).hexdigest()==e['source_sha256'];assert validated[e['job']['id']]['status']=='COMPLETE' and validated[e['job']['id']]['check']['passed']
+        expected=dict(id='original_base' if e['job']['setting']==0 else 'original_fine',solver='BDF',**SETTINGS[e['job']['setting']]);assert e['method']==expected
         with np.load(p) as z:assert json.loads(str(z['job_json']))==e['job']
     return True
 def save_new(path,entry,times,state):
