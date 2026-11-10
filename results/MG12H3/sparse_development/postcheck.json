@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "scripted_cross_engine_ticks": [
+    {
+      "fixture": 0,
+      "ticks": 5,
+      "passed": true
+    },
+    {
+      "fixture": 1,
+      "ticks": 5,
+      "passed": true
+    },
+    {
+      "fixture": 2,
+      "ticks": 5,
+      "passed": true
+    },
+    {
+      "fixture": 3,
+      "ticks": 5,
+      "passed": true
+    }
+  ],
+  "memory_estimates": [
+    {
+      "case": "o0_a0_Omega1",
+      "estimated_python_object_bytes": 6592407,
+      "initial_rate_verified": true
+    },
+    {
+      "case": "o0_a0_Omega10",
+      "estimated_python_object_bytes": 6592383,
+      "initial_rate_verified": true
+    },
+    {
+      "case": "o0_a1_Omega1",
+      "estimated_python_object_bytes": 6592359,
+      "initial_rate_verified": true
+    },
+    {
+      "case": "o0_a1_Omega10",
+      "estimated_python_object_bytes": 6592335,
+      "initial_rate_verified": true
+    },
+    {
+      "case": "o1_a0_Omega1",
+      "estimated_python_object_bytes": 6592319,
+      "initial_rate_verified": true
+    },
+    {
+      "case": "o1_a0_Omega10",
+      "estimated_python_object_bytes": 6592303,
+      "initial_rate_verified": true
+    },
+    {
+      "case": "o1_a1_Omega1",
+      "estimated_python_object_bytes": 6592295,
+      "initial_rate_verified": true
+    },
+    {
+      "case": "o1_a1_Omega10",
+      "estimated_python_object_bytes": 6592287,
+      "initial_rate_verified": true
+    }
+  ],
+  "source_hashes": {
+    "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+    "src/check_mg12h3_sparse.py": "fdb99b4792c3d12eef252c6f0bbe08e300703b1f02bb316766b0b999326ae64f",
+    "src/check_mg12h3_sparse_post.py": "2dffe70abf5015adc045d1d4e6d5534b788d1cfcaffebc1233e6705a64c510d8",
+    "spec/MG12H3_sparse_development.md": "54852d3885cafff69d2c6fce90d51fdf6c07828de06b557f89ad9aafac8d490d"
+  },
+  "random_draws": 0,
+  "limits": "Python object size traversal is an estimate, not process peak RSS. Deterministic injected clocks, not sampled trajectories or statistical qualification."
+}

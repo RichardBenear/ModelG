@@ -1,0 +1,88 @@
+{
+  "complete": true,
+  "elapsed_seconds": 0.4411780999507755,
+  "records": [
+    {
+      "case": "o0_a0_Omega1",
+      "channels": 9000,
+      "setup_seconds": 0.031059899949468672,
+      "forced_updates": 1000,
+      "update_seconds": 0.013807800016365945,
+      "updates_per_second": 72422.83338509624,
+      "array_payload_bytes": 200008,
+      "maximum_dependency_channels": 6
+    },
+    {
+      "case": "o0_a0_Omega10",
+      "channels": 9000,
+      "setup_seconds": 0.04792529996484518,
+      "forced_updates": 1000,
+      "update_seconds": 0.014478400000371039,
+      "updates_per_second": 69068.40534688729,
+      "array_payload_bytes": 200008,
+      "maximum_dependency_channels": 6
+    },
+    {
+      "case": "o0_a1_Omega1",
+      "channels": 9000,
+      "setup_seconds": 0.02890609996393323,
+      "forced_updates": 1000,
+      "update_seconds": 0.01485330006107688,
+      "updates_per_second": 67325.1059285137,
+      "array_payload_bytes": 200008,
+      "maximum_dependency_channels": 6
+    },
+    {
+      "case": "o0_a1_Omega10",
+      "channels": 9000,
+      "setup_seconds": 0.029862600029446185,
+      "forced_updates": 1000,
+      "update_seconds": 0.0134840999962762,
+      "updates_per_second": 74161.41976670022,
+      "array_payload_bytes": 200008,
+      "maximum_dependency_channels": 6
+    },
+    {
+      "case": "o1_a0_Omega1",
+      "channels": 9000,
+      "setup_seconds": 0.029272999963723123,
+      "forced_updates": 1000,
+      "update_seconds": 0.013601499958895147,
+      "updates_per_second": 73521.30301967301,
+      "array_payload_bytes": 200008,
+      "maximum_dependency_channels": 6
+    },
+    {
+      "case": "o1_a0_Omega10",
+      "channels": 9000,
+      "setup_seconds": 0.04476329998578876,
+      "forced_updates": 1000,
+      "update_seconds": 0.013780399924144149,
+      "updates_per_second": 72566.83445361666,
+      "array_payload_bytes": 200008,
+      "maximum_dependency_channels": 6
+    },
+    {
+      "case": "o1_a1_Omega1",
+      "channels": 9000,
+      "setup_seconds": 0.02947199996560812,
+      "forced_updates": 1000,
+      "update_seconds": 0.013036899967119098,
+      "updates_per_second": 76705.3519258521,
+      "array_payload_bytes": 200008,
+      "maximum_dependency_channels": 6
+    },
+    {
+      "case": "o1_a1_Omega10",
+      "channels": 9000,
+      "setup_seconds": 0.027961999992839992,
+      "forced_updates": 1000,
+      "update_seconds": 0.013421399984508753,
+      "updates_per_second": 74507.87556843697,
+      "array_payload_bytes": 200008,
+      "maximum_dependency_channels": 6
+    }
+  ],
+  "random_draws": 0,
+  "warning": "Forced selections, not a simulated trajectory; no actual event throughput or particle runtime inference. Array payload excludes Python objects."
+}
