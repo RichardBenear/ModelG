@@ -1231,3 +1231,6 @@ PI approves24deterministic prepared/control runs, frozen1e-5field/refinement/int
 
 ### MG117 — H3b numerical reference failure, incomplete
 Stopped after22validated jobs when coarser seeded isolatedZerror.000104192675 exceeded1e-5.23fulltrajectories retained, fineisolatedseedednotstarted; no retry. Activefields/positivity/balancepassed; finiteinteractioncomponentreproduced within2.18e-10, globalqualificationfailed. Separate allraw/reportaudit done. Failurehandler left staleRUNNINGand omittedfailedjobcharge; snapshotpreserved/statuscorrected; totalwall~45.716seconds reconstructed. PI disposition/anyfollowup separate.
+
+### MG118 — tighter-tolerance check registered
+User authorizes separate three-integration diagnostic, including independent Radau equations, unchanged1e-5threshold/physics.300seconds cap; publish before integrations. Originalfailedrun and unstartedjob remain untouched, no retrospectivepass.
