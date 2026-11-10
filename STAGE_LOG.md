@@ -1292,3 +1292,7 @@ PI signs off MG132 and directs next stages. CLOSED tiny count-law qualification 
 PI authorizes engine optimization. New compact channels/local dependency updates/Fenwick selection alongside frozen qualified engines. Deterministic896state equivalence and local-update checks; forced1000updates x8actualring inputs under60second one-worker cap,thread1,no RNG/integration or production. Source/spec published before microbenchmark. Formal stochastic qualification separate.
 
 MG135 development checks passed:896states,2003localupdates,20scripted cross-engine ticks,eight actual-ratechecks and8x1000forcedupdates; no random sampling/integrations or formal stochastic qualification. Report results/MG12H3/sparse_development/MG12H3_sparse_development_results.md.
+
+
+## MG136 — combined sparse development test batch
+PI requests combining batches and testing. Frozen bounded180second one-worker/thread1 exploratory batch:8x10000forced numericalstress updates,4x256tiny stochasticpaths,8actualring ticks.001,20secondsperactualtick inclaudit. Seeds/source/inputhashes frozen before draws; no retries. No formal0.10endpoint qualification or particle claim; later production needs concretebudgetapproval.
