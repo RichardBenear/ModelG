@@ -1237,3 +1237,6 @@ User authorizes separate three-integration diagnostic, including independent Rad
 
 ### MG119 — tolerance diagnostic passed
 All3reference and3intersolver checks passed same1e-5threshold. TightestBDF/Radauagree4.675894e-8; bothabout3.8e-6fromarchivedreference, consistentwithfinitearchiveerror.17.832830seconds, originalstoppedstudyuntouched; prospectivecompletionplanneeded. Full report/raw published/verified separately.
+
+### MG120 — completion plan/preparation
+Freeze corrected24slot provenance manifest and execution/analysis before saved-only pipeline tests. Reuse22original validated records, plan2fresh tighter isolatedcontrols. Preserve originalfailure, unchangedthresholds/physics, case-specificnumerics disclosed. ~50secondforecast/300cap draft, no integration yet.
