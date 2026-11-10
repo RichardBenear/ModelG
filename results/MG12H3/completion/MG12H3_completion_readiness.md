@@ -34,9 +34,11 @@ Existing original and diagnostic costs remain in their ledgers; reuse does not t
 
 The complete saved-evidence pipeline evaluated the22validated originals plus the two **held diagnostic** paths under explicit provenance. It found24complete slots,12available refinement pairs and the expected closed-reference interaction. Largest held reference error was **3.82682446798e-06**; largest held pair difference was **4.14493297285e-06**. These are known validation outputs, not new predictions or production results.
 
-A deliberately missing corrected slot suppressed completion. A tampered reused checksum and altered solver-method metadata were rejected. Original/reference/source hashes remained unchanged. Preparation took **7.261133 seconds**, using saved data only. No new integration, trajectory or random draw was produced.
+A deliberately missing corrected slot suppressed completion. A tampered reused checksum and altered solver-method metadata were rejected. Original/reference/source hashes remained unchanged. Final provenance-hardened preparation took **7.540086 seconds**, using saved data only. The earlier saved-only preparation is preserved in preparation_v1/. No new integration, trajectory or random draw was produced.
 
 The implementation is built and ready: src/run_mg12h3_completion.py refuses launch without approval and passing preparation, rejects an existing attempt, saves quarter-unit prefixes, checks the two fresh replays and re-evaluates all24slots through their provenance. The original engine and stopped run are never overwritten. The complete plan/spec is spec/MG12H3_completion_plan.md; machine-readable slots and hashes are in plan.json.
+
+The final preparation additionally pins all diagnostic raw/metadata targets, binds its exact plan bytes and verifies the canonical24slot manifest and effective reused methods at registration/launch. The saved-only pipeline passed again under those stronger provenance checks; no criteria, physics, solver settings or integrations changed.
 
 ## Approval and next step
 
