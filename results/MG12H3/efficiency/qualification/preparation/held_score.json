@@ -1,0 +1,73 @@
+{
+  "pipeline_exercised": true,
+  "not_formal_result": true,
+  "score": {
+    "qualified": false,
+    "comparisons": [
+      {
+        "cell": 0,
+        "time": 0.05,
+        "observed": 0.12136790242337474,
+        "epsilon": 0.9592786500557499,
+        "upper": 1.0806465524791247,
+        "passed": false
+      },
+      {
+        "cell": 0,
+        "time": 0.1,
+        "observed": 0.09263000680499944,
+        "epsilon": 0.9592786500557499,
+        "upper": 1.0519086568607494,
+        "passed": false
+      },
+      {
+        "cell": 1,
+        "time": 0.05,
+        "observed": 0.1936903504075405,
+        "epsilon": 0.7282308970291034,
+        "upper": 0.9219212474366438,
+        "passed": false
+      },
+      {
+        "cell": 1,
+        "time": 0.1,
+        "observed": 0.22811874856455044,
+        "epsilon": 0.7282308970291034,
+        "upper": 0.9563496455936538,
+        "passed": false
+      },
+      {
+        "cell": 2,
+        "time": 0.05,
+        "observed": 0.13905330043556124,
+        "epsilon": 1.841073697383564,
+        "upper": 1.9801269978191252,
+        "passed": false
+      },
+      {
+        "cell": 2,
+        "time": 0.1,
+        "observed": 0.15110633309005314,
+        "epsilon": 1.841073697383564,
+        "upper": 1.992180030473617,
+        "passed": false
+      },
+      {
+        "cell": 3,
+        "time": 0.05,
+        "observed": 0.17975212373589083,
+        "epsilon": 2.329307236517421,
+        "upper": 2.509059360253312,
+        "passed": false
+      },
+      {
+        "cell": 3,
+        "time": 0.1,
+        "observed": 0.33215326306233983,
+        "epsilon": 2.329307236517421,
+        "upper": 2.661460499579761,
+        "passed": false
+      }
+    ]
+  }
+}
