@@ -1,0 +1,6493 @@
+{
+  "verdict": "REGISTERED NUMERICAL REFERENCE CRITERION FAILED; STUDY INCOMPLETE",
+  "qualified": false,
+  "validated_complete": 22,
+  "retained_full_trajectories": 23,
+  "failed": 1,
+  "not_started": 1,
+  "details": [
+    {
+      "job": {
+        "id": "f_o0_s0_a0_v0",
+        "kind": "FINITE",
+        "origin": 0,
+        "start": 0,
+        "arm": 0,
+        "setting": 0,
+        "duration": 15.0
+      },
+      "status": "VALIDATED COMPLETE",
+      "frames": 61,
+      "max_reference_error": 7.284974127045925e-10,
+      "independent_balance": 8.541408785215038e-16,
+      "minimum": 0.0,
+      "max_location": {
+        "time": 0.25,
+        "species": "W",
+        "site": 0,
+        "new": 141.96109186692794,
+        "reference": 141.96109196786279
+      },
+      "species_errors": [
+        2.5983462834496294e-10,
+        6.883124057786175e-10,
+        6.942179336709924e-10,
+        2.2407092706787054e-11,
+        2.2780328698337183e-11,
+        6.792154426239873e-10,
+        7.284974127045925e-10
+      ]
+    },
+    {
+      "job": {
+        "id": "f_o0_s0_a0_v1",
+        "kind": "FINITE",
+        "origin": 0,
+        "start": 0,
+        "arm": 0,
+        "setting": 1,
+        "duration": 15.0
+      },
+      "status": "VALIDATED COMPLETE",
+      "frames": 61,
+      "max_reference_error": 1.6145129958027515e-11,
+      "independent_balance": 6.406056588911279e-16,
+      "minimum": 0.0,
+      "max_location": {
+        "time": 0.25,
+        "species": "Z",
+        "site": 0,
+        "new": 4497.859236792667,
+        "reference": 4497.85923686357
+      },
+      "species_errors": [
+        1.0159279586511922e-12,
+        3.3286585891779808e-12,
+        3.879010055391528e-12,
+        3.1187350576328894e-13,
+        5.419945217983464e-13,
+        1.6145129958027515e-11,
+        9.109784421775129e-12
+      ],
+      "reference_continuity": {
+        "status": "INITIAL_UNRESOLVED",
+        "matched_through": null,
+        "visible_duration": null,
+        "persistent_reference_signal": false,
+        "censor_reason": null,
+        "observations": [
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          }
+        ],
+        "identity_scope": "Sampled field continuity only; not token/particle lineage or physical survival"
+      }
+    },
+    {
+      "job": {
+        "id": "f_o0_s0_a1_v0",
+        "kind": "FINITE",
+        "origin": 0,
+        "start": 0,
+        "arm": 1,
+        "setting": 0,
+        "duration": 15.0
+      },
+      "status": "VALIDATED COMPLETE",
+      "frames": 61,
+      "max_reference_error": 7.284978229720798e-10,
+      "independent_balance": 1.0676760981518799e-15,
+      "minimum": 0.0,
+      "max_location": {
+        "time": 0.25,
+        "species": "W",
+        "site": 0,
+        "new": 141.9610918669279,
+        "reference": 141.96109196786279
+      },
+      "species_errors": [
+        2.598347459292174e-10,
+        6.883121713908001e-10,
+        6.942176937742699e-10,
+        2.240731659300799e-11,
+        2.2780328698337183e-11,
+        6.792154426239873e-10,
+        7.284978229720798e-10
+      ]
+    },
+    {
+      "job": {
+        "id": "f_o0_s0_a1_v1",
+        "kind": "FINITE",
+        "origin": 0,
+        "start": 0,
+        "arm": 1,
+        "setting": 1,
+        "duration": 15.0
+      },
+      "status": "VALIDATED COMPLETE",
+      "frames": 61,
+      "max_reference_error": 1.614430156720885e-11,
+      "independent_balance": 1.2812113177822557e-15,
+      "minimum": 0.0,
+      "max_location": {
+        "time": 0.25,
+        "species": "Z",
+        "site": 0,
+        "new": 4497.85923679267,
+        "reference": 4497.85923686357
+      },
+      "species_errors": [
+        1.0155752058877717e-12,
+        3.3284242013605547e-12,
+        3.878650210307692e-12,
+        3.1176156265282113e-13,
+        5.418833890278321e-13,
+        1.614430156720885e-11,
+        9.10957928803148e-12
+      ],
+      "reference_continuity": {
+        "status": "INITIAL_UNRESOLVED",
+        "matched_through": null,
+        "visible_duration": null,
+        "persistent_reference_signal": false,
+        "censor_reason": null,
+        "observations": [
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          }
+        ],
+        "identity_scope": "Sampled field continuity only; not token/particle lineage or physical survival"
+      }
+    },
+    {
+      "job": {
+        "id": "f_o0_s1_a0_v0",
+        "kind": "FINITE",
+        "origin": 0,
+        "start": 1,
+        "arm": 0,
+        "setting": 0,
+        "duration": 15.0
+      },
+      "status": "VALIDATED COMPLETE",
+      "frames": 61,
+      "max_reference_error": 8.709757316806174e-08,
+      "independent_balance": 2.1353521499044905e-16,
+      "minimum": 0.0,
+      "max_location": {
+        "time": 10.25,
+        "species": "X",
+        "site": 234,
+        "new": 7.368789674547391,
+        "reference": 7.368791387881888
+      },
+      "species_errors": [
+        2.019611593375481e-09,
+        8.709757316806174e-08,
+        6.362917300836768e-08,
+        2.63896927479e-11,
+        8.751154132217232e-10,
+        6.518235981397988e-08,
+        6.801122275664921e-08
+      ]
+    },
+    {
+      "job": {
+        "id": "f_o0_s1_a0_v1",
+        "kind": "FINITE",
+        "origin": 0,
+        "start": 1,
+        "arm": 0,
+        "setting": 1,
+        "duration": 15.0
+      },
+      "status": "VALIDATED COMPLETE",
+      "frames": 61,
+      "max_reference_error": 7.346850524341456e-10,
+      "independent_balance": 2.1353521499044905e-16,
+      "minimum": 0.0,
+      "max_location": {
+        "time": 9.25,
+        "species": "X",
+        "site": 234,
+        "new": 8.63094905047407,
+        "reference": 8.630949064926382
+      },
+      "species_errors": [
+        1.665389884401796e-11,
+        7.346850524341456e-10,
+        5.708653133389493e-10,
+        2.8668630590803463e-13,
+        7.473459380977988e-12,
+        5.595474106604116e-10,
+        5.799684761653536e-10
+      ],
+      "reference_continuity": {
+        "status": "CENSORED",
+        "matched_through": 19.0,
+        "visible_duration": 9.0,
+        "persistent_reference_signal": false,
+        "censor_reason": "NO_REFERENCE_MATCH",
+        "observations": [
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00026980651377783715,
+            "amplitude": 1.177124002999837,
+            "error": 0.0670113878842406,
+            "local_energy": 0.9999659989567328
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00028175326329460404,
+            "amplitude": 1.1837412431131331,
+            "error": 0.07111632611059146,
+            "local_energy": 0.9999643248846833
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00029379129488660283,
+            "amplitude": 1.1903223142329773,
+            "error": 0.07535844650496193,
+            "local_energy": 0.9999625161290192
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0003059070767221783,
+            "amplitude": 1.1968718906833937,
+            "error": 0.07974213946313885,
+            "local_energy": 0.9999605622954365
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0003180872272494639,
+            "amplitude": 1.2033955701726387,
+            "error": 0.08427245222860213,
+            "local_energy": 0.9999584521468562
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0003303185191469993,
+            "amplitude": 1.2098998025588554,
+            "error": 0.0889551264415956,
+            "local_energy": 0.9999561735396979
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.000342587877291578,
+            "amplitude": 1.2163918349209861,
+            "error": 0.09379664002112693,
+            "local_energy": 0.9999537133571886
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00035488237110570253,
+            "amplitude": 1.2228796727971774,
+            "error": 0.09880425437838038,
+            "local_energy": 0.9999510574400357
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0003671892017749201,
+            "amplitude": 1.2293720578393612,
+            "error": 0.10398606822954286,
+            "local_energy": 0.9999481905148949
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0003794956847116282,
+            "amplitude": 1.235878461987974,
+            "error": 0.10935107922655887,
+            "local_energy": 0.99994509612135
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00039178922745719547,
+            "amplitude": 1.2424090983292126,
+            "error": 0.11490925466810264,
+            "local_energy": 0.999941756538386
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00040405730327108813,
+            "amplitude": 1.2489749489496027,
+            "error": 0.12067161272864474,
+            "local_energy": 0.9999381527116713
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00041628742042831846,
+            "amplitude": 1.255587810231155,
+            "error": 0.12665031550703285,
+            "local_energy": 0.999934264183487
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00042846708737442896,
+            "amplitude": 1.2622603563066188,
+            "error": 0.13285877557277564,
+            "local_energy": 0.9999300690276334
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0004405837733756357,
+            "amplitude": 1.269006221639828,
+            "error": 0.13931177763736252,
+            "local_energy": 0.9999255437923897
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00045262486476360664,
+            "amplitude": 1.2758401039844531,
+            "error": 0.1460256170933805,
+            "local_energy": 0.9999206634554947
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00046457761625617877,
+            "amplitude": 1.282777889286751,
+            "error": 0.15301825722539925,
+            "local_energy": 0.9999154013961834
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0004764290972048002,
+            "amplitude": 1.2898368003997411,
+            "error": 0.16030950685613546,
+            "local_energy": 0.9999097293906604
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0004881661322926334,
+            "amplitude": 1.297035571742393,
+            "error": 0.16792122000839482,
+            "local_energy": 0.9999036176389663
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00049977523635647,
+            "amplitude": 1.304394652215287,
+            "error": 0.17587751873497928,
+            "local_energy": 0.999897034833121
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0005112425430695566,
+            "amplitude": 1.3119364386905032,
+            "error": 0.18420503944573602,
+            "local_energy": 0.9998899482786059
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0005225537273716441,
+            "amplitude": 1.3196855420947764,
+            "error": 0.1929332016170976,
+            "local_energy": 0.9998823240837226
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0005336939219802161,
+            "amplitude": 1.3276690872900183,
+            "error": 0.20209449536500407,
+            "local_energy": 0.9998741274340043
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0005446476289989732,
+            "amplitude": 1.3359170462928744,
+            "error": 0.21172478049000001,
+            "local_energy": 0.999865322971355
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0005553986286770396,
+            "amplitude": 1.3444626013512075,
+            "error": 0.2218635835147214,
+            "local_energy": 0.9998558752996057
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0005659298894187259,
+            "amplitude": 1.353342529222426,
+            "error": 0.23255436983741248,
+            "local_energy": 0.9998457496386766
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0005762234860142712,
+            "amplitude": 1.3625975894862659,
+            "error": 0.24384475385952406,
+            "local_energy": 0.9998349126472597
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0005862605375526186,
+            "amplitude": 1.3722728861100701,
+            "error": 0.25578658864223747,
+            "local_energy": 0.999823333426317
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.000596021183852713,
+            "amplitude": 1.3824181502295991,
+            "error": 0.2684358454283259,
+            "local_energy": 0.9998109846990527
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0006054846294745175,
+            "amplitude": 1.39308785971183,
+            "error": 0.28185214870110126,
+            "local_energy": 0.999797844131447
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.000614629299867886,
+            "amplitude": 1.4043410630482125,
+            "error": 0.29609777067438176,
+            "local_energy": 0.9997838957024855
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0006234331753560696,
+            "amplitude": 1.4162407065063656,
+            "error": 0.3112358079084823,
+            "local_energy": 0.9997691309433739
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0006318743958857453,
+            "amplitude": 1.4288521704895425,
+            "error": 0.32732716476267026,
+            "local_energy": 0.999753549726456
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0006399322602064217,
+            "amplitude": 1.4422406055045065,
+            "error": 0.3444258684797633,
+            "local_energy": 0.9997371600848991
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0006475887673573766,
+            "amplitude": 1.4564665363551903,
+            "error": 0.3625721788187678,
+            "local_energy": 0.9997199762817779
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0006548308440486039,
+            "amplitude": 1.471579122062775,
+            "error": 0.3817830153821808,
+            "local_energy": 0.9997020140514551
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0006616533249399481,
+            "amplitude": 1.4876065185144782,
+            "error": 0.40203955478662984,
+            "local_energy": 0.9996832817013107
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.504543161955337,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.5223346941017915,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.5408628240610183,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.5599344366848897,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.5792807507441067,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.5985716824291731,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.6174465245638339,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.6355555294990687,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.652601575375135,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.6683706144108998,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.682744488172926,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.695696565089534,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.707275540047905,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7175840765924477,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7267576829637492,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7349469802159747,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.742304536273311,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7489761440344853,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.755095780964402,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7607832963038117,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7661439250977624,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.771268878792807,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7762364248055726,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7811130019344599,
+            "error": null,
+            "local_energy": null
+          }
+        ],
+        "identity_scope": "Sampled field continuity only; not token/particle lineage or physical survival"
+      }
+    },
+    {
+      "job": {
+        "id": "f_o0_s1_a1_v0",
+        "kind": "FINITE",
+        "origin": 0,
+        "start": 1,
+        "arm": 1,
+        "setting": 0,
+        "duration": 15.0
+      },
+      "status": "VALIDATED COMPLETE",
+      "frames": 61,
+      "max_reference_error": 2.5669176182220556e-08,
+      "independent_balance": 2.1353521499044905e-16,
+      "minimum": 0.0,
+      "max_location": {
+        "time": 9.0,
+        "species": "X",
+        "site": 234,
+        "new": 8.823304490593285,
+        "reference": 8.823303985643681
+      },
+      "species_errors": [
+        6.727079031139866e-10,
+        2.5669176182220556e-08,
+        1.9917901314168545e-08,
+        3.0235834137352655e-13,
+        3.381938845226533e-09,
+        8.529729383210393e-09,
+        8.95393725018695e-09
+      ]
+    },
+    {
+      "job": {
+        "id": "f_o0_s1_a1_v1",
+        "kind": "FINITE",
+        "origin": 0,
+        "start": 1,
+        "arm": 1,
+        "setting": 1,
+        "duration": 15.0
+      },
+      "status": "VALIDATED COMPLETE",
+      "frames": 61,
+      "max_reference_error": 3.4789216331022304e-10,
+      "independent_balance": 2.1353521499044905e-16,
+      "minimum": 0.0,
+      "max_location": {
+        "time": 11.75,
+        "species": "X",
+        "site": 0,
+        "new": 8.959835554966434,
+        "reference": 8.959835561809973
+      },
+      "species_errors": [
+        9.920551531596262e-12,
+        3.4789216331022304e-10,
+        2.6827080642835404e-10,
+        3.358293314033986e-15,
+        8.141293861295314e-12,
+        8.811161857911151e-11,
+        9.214483236028669e-11
+      ],
+      "reference_continuity": {
+        "status": "CENSORED",
+        "matched_through": 19.0,
+        "visible_duration": 9.0,
+        "persistent_reference_signal": false,
+        "censor_reason": "NO_REFERENCE_MATCH",
+        "observations": [
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00026980651377783715,
+            "amplitude": 1.177124002999837,
+            "error": 0.0670113878842406,
+            "local_energy": 0.9999659989567328
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00027923330317491946,
+            "amplitude": 1.1832818119194575,
+            "error": 0.07108880934698542,
+            "local_energy": 0.9999638455852078
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00028467132329978995,
+            "amplitude": 1.1888085590787163,
+            "error": 0.07527327169982327,
+            "local_energy": 0.9999566451723854
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0002875800226078695,
+            "amplitude": 1.1939358007926,
+            "error": 0.07961036147986911,
+            "local_energy": 0.9999355184247776
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0002888959314688577,
+            "amplitude": 1.1988296793372142,
+            "error": 0.08416026598235862,
+            "local_energy": 0.9998897133433243
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00028921507301049587,
+            "amplitude": 1.203612644671445,
+            "error": 0.08898017030332667,
+            "local_energy": 0.9998081673140616
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00028891708512190917,
+            "amplitude": 1.2083754446034827,
+            "error": 0.09411741770156906,
+            "local_energy": 0.9996803126183542
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.000288243946577893,
+            "amplitude": 1.2131854951091627,
+            "error": 0.09960774203647085,
+            "local_energy": 0.9994964457586369
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00028734985722422834,
+            "amplitude": 1.2180929482740968,
+            "error": 0.10547603748381888,
+            "local_energy": 0.9992478458650816
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00028633286850521245,
+            "amplitude": 1.22313519163622,
+            "error": 0.11173828657084427,
+            "local_energy": 0.9989267527102644
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0002852550020691069,
+            "amplitude": 1.2283402415169706,
+            "error": 0.11840386045037153,
+            "local_energy": 0.9985262711145327
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00028415509855506116,
+            "amplitude": 1.233729338384924,
+            "error": 0.1254777552762095,
+            "local_energy": 0.9980402420973777
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00028305705917830437,
+            "amplitude": 1.2393189567438152,
+            "error": 0.13296254913675795,
+            "local_energy": 0.9974631048779936
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0002819751545715121,
+            "amplitude": 1.2451223803741198,
+            "error": 0.14086000221542833,
+            "local_energy": 0.9967897637603313
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00028091745741676277,
+            "amplitude": 1.2511509526157725,
+            "error": 0.14917230388569347,
+            "local_energy": 0.9960154677167701
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0002798880686967209,
+            "amplitude": 1.257415083211294,
+            "error": 0.15790301203467985,
+            "local_energy": 0.9951357066978092
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0002788885643241201,
+            "amplitude": 1.26392507352649,
+            "error": 0.16705774592972453,
+            "local_energy": 0.9941461264682574
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0002779189355024414,
+            "amplitude": 1.270691807925584,
+            "error": 0.17664469493682083,
+            "local_energy": 0.9930424625506823
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0002769781988618547,
+            "amplitude": 1.2777273488856202,
+            "error": 0.18667499871182236,
+            "local_energy": 0.9918204932890614
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00027606479036990095,
+            "amplitude": 1.2850454658666317,
+            "error": 0.1971630447207498,
+            "local_energy": 0.9904760118961344
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0002751768172046809,
+            "amplitude": 1.2926621221315568,
+            "error": 0.2081267186316798,
+            "local_energy": 0.9890048174579747
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00027431221629825586,
+            "amplitude": 1.3005959389423718,
+            "error": 0.21958763335044226,
+            "local_energy": 0.9874027251211309
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0002734688514607342,
+            "amplitude": 1.3088686522228368,
+            "error": 0.23157135340724577,
+            "local_energy": 0.9856655959797491
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.000272644570387115,
+            "amplitude": 1.3175055722095113,
+            "error": 0.2441076225962816,
+            "local_energy": 0.9837893874019566
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0002718372358785359,
+            "amplitude": 1.3265360509894075,
+            "error": 0.2572305933353138,
+            "local_energy": 0.9817702245392934
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0002710447411047312,
+            "amplitude": 1.3359939550206015,
+            "error": 0.2709790448424622,
+            "local_energy": 0.9796044933283153
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00027026501611970843,
+            "amplitude": 1.3459181281340644,
+            "error": 0.28539656213571735,
+            "local_energy": 0.9772889540699977
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0002694960313860406,
+            "amplitude": 1.3563528127634594,
+            "error": 0.30053162665331656,
+            "local_energy": 0.974820872106665
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0002687358037505305,
+            "amplitude": 1.367347969846877,
+            "error": 0.3164375388521801,
+            "local_energy": 0.9721981573449641
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0002679824108042794,
+            "amplitude": 1.37895939627109,
+            "error": 0.3331720496763929,
+            "local_energy": 0.9694194960954062
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0002672340211447022,
+            "amplitude": 1.3912484767752842,
+            "error": 0.3507965173728261,
+            "local_energy": 0.9664844450448411
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0002664889505652468,
+            "amplitude": 1.4042813180437035,
+            "error": 0.36937432642068074,
+            "local_energy": 0.963393435676009
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.000265745757317859,
+            "amplitude": 1.418126891162677,
+            "error": 0.38896820976375246,
+            "local_energy": 0.9601476053070845
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.000265003392861729,
+            "amplitude": 1.4328536576253776,
+            "error": 0.409636022011426,
+            "local_energy": 0.9567483261054176
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0002642614252792441,
+            "amplitude": 1.448523998139261,
+            "error": 0.43142446793559774,
+            "local_energy": 0.9531962473380924
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00026352034627308285,
+            "amplitude": 1.4651856723352021,
+            "error": 0.4543603981908236,
+            "local_energy": 0.9494896089256584
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00026278195119289194,
+            "amplitude": 1.4828596613046132,
+            "error": 0.4784397187063939,
+            "local_energy": 0.9456215537478154
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.501524330787574,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.5210972032736245,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.5414178627752282,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.5622381064964252,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.5832267846384476,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.6039945464402767,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.6241369658725004,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.643285952111001,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.661154581232193,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.6775632645826928,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.6924434748772903,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.705823396634066,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7178037743622603,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7285317673503686,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7381779361126442,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.746918635641003,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.754924066018522,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7623511597740948,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.769340115625701,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.776013411068411,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7824763096272414,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.788818088218969,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7951133850868712,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.8014231941390169,
+            "error": null,
+            "local_energy": null
+          }
+        ],
+        "identity_scope": "Sampled field continuity only; not token/particle lineage or physical survival"
+      }
+    },
+    {
+      "job": {
+        "id": "f_o1_s0_a0_v0",
+        "kind": "FINITE",
+        "origin": 1,
+        "start": 0,
+        "arm": 0,
+        "setting": 0,
+        "duration": 15.0
+      },
+      "status": "VALIDATED COMPLETE",
+      "frames": 61,
+      "max_reference_error": 7.284974127045925e-10,
+      "independent_balance": 6.406056588911279e-16,
+      "minimum": 0.0,
+      "max_location": {
+        "time": 0.25,
+        "species": "W",
+        "site": 0,
+        "new": 141.96109186692794,
+        "reference": 141.96109196786279
+      },
+      "species_errors": [
+        2.5983462834496294e-10,
+        6.883122885847088e-10,
+        6.942179336709924e-10,
+        2.240720464989752e-11,
+        2.278021756556667e-11,
+        6.792152355262826e-10,
+        7.284974127045925e-10
+      ]
+    },
+    {
+      "job": {
+        "id": "f_o1_s0_a0_v1",
+        "kind": "FINITE",
+        "origin": 1,
+        "start": 0,
+        "arm": 0,
+        "setting": 1,
+        "duration": 15.0
+      },
+      "status": "VALIDATED COMPLETE",
+      "frames": 61,
+      "max_reference_error": 1.6145129958027515e-11,
+      "independent_balance": 6.406056588911279e-16,
+      "minimum": 0.0,
+      "max_location": {
+        "time": 0.25,
+        "species": "Z",
+        "site": 0,
+        "new": 4497.859236792667,
+        "reference": 4497.85923686357
+      },
+      "species_errors": [
+        1.0156927901422452e-12,
+        3.328541395269268e-12,
+        3.879010055391528e-12,
+        3.1198544887375676e-13,
+        5.418833890278321e-13,
+        1.6145129958027515e-11,
+        9.109784421775129e-12
+      ],
+      "reference_continuity": {
+        "status": "INITIAL_UNRESOLVED",
+        "matched_through": null,
+        "visible_duration": null,
+        "persistent_reference_signal": false,
+        "censor_reason": null,
+        "observations": [
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          }
+        ],
+        "identity_scope": "Sampled field continuity only; not token/particle lineage or physical survival"
+      }
+    },
+    {
+      "job": {
+        "id": "f_o1_s0_a1_v0",
+        "kind": "FINITE",
+        "origin": 1,
+        "start": 0,
+        "arm": 1,
+        "setting": 0,
+        "duration": 15.0
+      },
+      "status": "VALIDATED COMPLETE",
+      "frames": 61,
+      "max_reference_error": 7.284976178383361e-10,
+      "independent_balance": 4.270704392607519e-16,
+      "minimum": 0.0,
+      "max_location": {
+        "time": 0.25,
+        "species": "W",
+        "site": 0,
+        "new": 141.96109186692792,
+        "reference": 141.96109196786279
+      },
+      "species_errors": [
+        2.598347459292174e-10,
+        6.883120541968914e-10,
+        6.942176937742699e-10,
+        2.240720464989752e-11,
+        2.278021756556667e-11,
+        6.792152355262826e-10,
+        7.284976178383361e-10
+      ]
+    },
+    {
+      "job": {
+        "id": "f_o1_s0_a1_v1",
+        "kind": "FINITE",
+        "origin": 1,
+        "start": 0,
+        "arm": 1,
+        "setting": 1,
+        "duration": 15.0
+      },
+      "status": "VALIDATED COMPLETE",
+      "frames": 61,
+      "max_reference_error": 1.614450866491352e-11,
+      "independent_balance": 1.0676760981518799e-15,
+      "minimum": 0.0,
+      "max_location": {
+        "time": 0.25,
+        "species": "Z",
+        "site": 0,
+        "new": 4497.859236792669,
+        "reference": 4497.85923686357
+      },
+      "species_errors": [
+        6.683489024274741e-13,
+        2.373997008801125e-12,
+        2.922181977471425e-12,
+        3.1164961954235337e-13,
+        5.417722562573178e-13,
+        1.614450866491352e-11,
+        9.10957928803148e-12
+      ],
+      "reference_continuity": {
+        "status": "INITIAL_UNRESOLVED",
+        "matched_through": null,
+        "visible_duration": null,
+        "persistent_reference_signal": false,
+        "censor_reason": null,
+        "observations": [
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          }
+        ],
+        "identity_scope": "Sampled field continuity only; not token/particle lineage or physical survival"
+      }
+    },
+    {
+      "job": {
+        "id": "f_o1_s1_a0_v0",
+        "kind": "FINITE",
+        "origin": 1,
+        "start": 1,
+        "arm": 0,
+        "setting": 0,
+        "duration": 15.0
+      },
+      "status": "VALIDATED COMPLETE",
+      "frames": 61,
+      "max_reference_error": 2.694951145872945e-08,
+      "independent_balance": 4.2707042998089815e-16,
+      "minimum": 0.0,
+      "max_location": {
+        "time": 9.0,
+        "species": "X",
+        "site": 234,
+        "new": 8.729755570497014,
+        "reference": 8.729755040408238
+      },
+      "species_errors": [
+        6.724588923135291e-10,
+        2.694951145872945e-08,
+        2.1024039677914243e-08,
+        3.1948563727509946e-13,
+        1.70966932827113e-09,
+        8.145887449467483e-09,
+        8.523594163718641e-09
+      ]
+    },
+    {
+      "job": {
+        "id": "f_o1_s1_a0_v1",
+        "kind": "FINITE",
+        "origin": 1,
+        "start": 1,
+        "arm": 0,
+        "setting": 1,
+        "duration": 15.0
+      },
+      "status": "VALIDATED COMPLETE",
+      "frames": 61,
+      "max_reference_error": 7.353008449784639e-10,
+      "independent_balance": 4.2707042998089815e-16,
+      "minimum": 0.0,
+      "max_location": {
+        "time": 10.25,
+        "species": "X",
+        "site": 234,
+        "new": 7.170045743213892,
+        "reference": 7.170045728750746
+      },
+      "species_errors": [
+        1.8111713946958756e-11,
+        7.353008449784639e-10,
+        5.354001868680723e-10,
+        3.3582933140339816e-15,
+        1.0713829434128478e-11,
+        1.663151143889653e-10,
+        1.7398877006067097e-10
+      ],
+      "reference_continuity": {
+        "status": "CENSORED",
+        "matched_through": 19.0,
+        "visible_duration": 9.0,
+        "persistent_reference_signal": false,
+        "censor_reason": "NO_REFERENCE_MATCH",
+        "observations": [
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.1670928414392823,
+            "error": 0.14612253730194683,
+            "local_energy": 0.9831572951649165
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 3.284586675533774e-06,
+            "amplitude": 1.1740537860805655,
+            "error": 0.15291556310890386,
+            "local_energy": 0.9817906951752723
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 1.1784981538198736e-05,
+            "amplitude": 1.1807605063747382,
+            "error": 0.15912096059225453,
+            "local_energy": 0.9805873095842268
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 2.342448316028367e-05,
+            "amplitude": 1.187372925749669,
+            "error": 0.1648459043582252,
+            "local_energy": 0.9795297052355864
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 3.687754076509009e-05,
+            "amplitude": 1.193959035183393,
+            "error": 0.17019129133539837,
+            "local_energy": 0.9786017570569683
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 5.131474584629814e-05,
+            "amplitude": 1.2005503754246496,
+            "error": 0.1752452004509073,
+            "local_energy": 0.9777889985363892
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 6.622169453152082e-05,
+            "amplitude": 1.207162435034005,
+            "error": 0.18008360520493025,
+            "local_energy": 0.9770785679157012
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 8.128330053835953e-05,
+            "amplitude": 1.2138037599310763,
+            "error": 0.18477244735194726,
+            "local_energy": 0.9764590266190947
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 9.631010357225023e-05,
+            "amplitude": 1.2204803294192317,
+            "error": 0.18936965322791355,
+            "local_energy": 0.9759201767956585
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00011119136171089394,
+            "amplitude": 1.2271977093009936,
+            "error": 0.1939268156649641,
+            "local_energy": 0.975452906581161
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00012586519156343456,
+            "amplitude": 1.2339621048778093,
+            "error": 0.19849054330699,
+            "local_energy": 0.9750490647277162
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0001402995745607427,
+            "amplitude": 1.2407808614351603,
+            "error": 0.20310354036490075,
+            "local_energy": 0.9747013595754408
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00015448029974152178,
+            "amplitude": 1.2476626927756673,
+            "error": 0.20780548268437696,
+            "local_energy": 0.9744032767353266
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00016840334008350055,
+            "amplitude": 1.254617785016734,
+            "error": 0.21263374483422076,
+            "local_energy": 0.9741490109252156
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0001820700633601291,
+            "amplitude": 1.2616578536483891,
+            "error": 0.21762402051134824,
+            "local_energy": 0.9739334086766152
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00019548425293436367,
+            "amplitude": 1.268796195136207,
+            "error": 0.22281086817966617,
+            "local_energy": 0.9737519196912169
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00020865028098171479,
+            "amplitude": 1.2760477547791818,
+            "error": 0.22822820590026932,
+            "local_energy": 0.973600555401499
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00022157201146910666,
+            "amplitude": 1.2834292221705415,
+            "error": 0.23390977335393304,
+            "local_energy": 0.9734758538165537
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00023425216127748172,
+            "amplitude": 1.290959160211158,
+            "error": 0.23988957453539836,
+            "local_energy": 0.9733748500700478
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00024669194507254133,
+            "amplitude": 1.2986581708306395,
+            "error": 0.24620231096726566,
+            "local_energy": 0.97329505228139
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0002588908923897293,
+            "amplitude": 1.306549099008144,
+            "error": 0.2528838120337185,
+            "local_energy": 0.973234422426859
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0002708467660923475,
+            "amplitude": 1.3146572754817287,
+            "error": 0.2599714656653178,
+            "local_energy": 0.9731913619103482
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00028255553804967803,
+            "amplitude": 1.3230107970357168,
+            "error": 0.2675046485479761,
+            "local_energy": 0.9731647014220925
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00029401139573792534,
+            "amplitude": 1.3316408408306224,
+            "error": 0.2755251495729439,
+            "local_energy": 0.9731536944594505
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0003052067658870783,
+            "amplitude": 1.3405820051355806,
+            "error": 0.2840775724427343,
+            "local_energy": 0.9731580135182069
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0003161323506404301,
+            "amplitude": 1.3498726620120245,
+            "error": 0.2932096918964691,
+            "local_energy": 0.9731777473847361
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00032677718030527103,
+            "amplitude": 1.3595552965149087,
+            "error": 0.30297272112370255,
+            "local_energy": 0.9732133970800846
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00033712869518609523,
+            "amplitude": 1.3696767897369333,
+            "error": 0.3134214231972479,
+            "local_energy": 0.9732658667071152
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0003471728798487561,
+            "amplitude": 1.380288576626139,
+            "error": 0.3246139637244346,
+            "local_energy": 0.9733364435830046
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0003568944869698498,
+            "amplitude": 1.3914465701837864,
+            "error": 0.33661135196106734,
+            "local_energy": 0.9734267594427819
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00036627740627892535,
+            "amplitude": 1.403210686981732,
+            "error": 0.3494762504123186,
+            "local_energy": 0.9735387210588885
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0003753052579398286,
+            "amplitude": 1.415643730975301,
+            "error": 0.3632708483223647,
+            "local_energy": 0.9736743943869862
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0003839623170449613,
+            "amplitude": 1.4288092927561444,
+            "error": 0.378053399998587,
+            "local_energy": 0.9738358217862514
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0003922349009783943,
+            "amplitude": 1.4427682088389482,
+            "error": 0.3938729490773289,
+            "local_energy": 0.9740247482954596
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00040011335796918956,
+            "amplitude": 1.457573031090132,
+            "error": 0.41076175072881993,
+            "local_energy": 0.9742422332101585
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00040759475138685275,
+            "amplitude": 1.4732599499180572,
+            "error": 0.42872507015884886,
+            "local_energy": 0.9744881323020858
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.00041468618751139275,
+            "amplitude": 1.489837828150979,
+            "error": 0.4477285426971969,
+            "local_energy": 0.9747604613489469
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.5072746187649328,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.5254826429775923,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.5443059546144287,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.5635147519935895,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.5828122530473938,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.601857158081048,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.6202995554757347,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.6378221263478034,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.654175571612408,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.6691995048678987,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.6828260414170566,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.6950691659491965,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7060059353928823,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7157554712603302,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7244598849071604,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.732269190982184,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7393306700216231,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7457822144611874,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.751748803227342,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7573411946127018,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7626560323898248,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.767776717248454,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7727745418301941,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7777096998244832,
+            "error": null,
+            "local_energy": null
+          }
+        ],
+        "identity_scope": "Sampled field continuity only; not token/particle lineage or physical survival"
+      }
+    },
+    {
+      "job": {
+        "id": "f_o1_s1_a1_v0",
+        "kind": "FINITE",
+        "origin": 1,
+        "start": 1,
+        "arm": 1,
+        "setting": 0,
+        "duration": 15.0
+      },
+      "status": "VALIDATED COMPLETE",
+      "frames": 61,
+      "max_reference_error": 8.74759572302553e-08,
+      "independent_balance": 4.2707042998089815e-16,
+      "minimum": 0.0,
+      "max_location": {
+        "time": 12.5,
+        "species": "X",
+        "site": 484,
+        "new": 8.215334040724803,
+        "reference": 8.215335761350545
+      },
+      "species_errors": [
+        1.999244040135955e-09,
+        8.74759572302553e-08,
+        6.418491420016403e-08,
+        2.7078814535939737e-11,
+        1.46796497483813e-09,
+        5.8289042813060944e-08,
+        6.05415737947556e-08
+      ]
+    },
+    {
+      "job": {
+        "id": "f_o1_s1_a1_v1",
+        "kind": "FINITE",
+        "origin": 1,
+        "start": 1,
+        "arm": 1,
+        "setting": 1,
+        "duration": 15.0
+      },
+      "status": "VALIDATED COMPLETE",
+      "frames": 61,
+      "max_reference_error": 1.5505323787160857e-09,
+      "independent_balance": 4.2707042998089815e-16,
+      "minimum": 0.0,
+      "max_location": {
+        "time": 8.5,
+        "species": "X",
+        "site": 0,
+        "new": 8.533427914047687,
+        "reference": 8.533427944546192
+      },
+      "species_errors": [
+        3.209344280912956e-11,
+        1.5505323787160857e-09,
+        1.1904493317704085e-09,
+        2.8321606948353243e-13,
+        2.2902122966157008e-11,
+        8.24737858896728e-10,
+        8.483398034243967e-10
+      ],
+      "reference_continuity": {
+        "status": "CENSORED",
+        "matched_through": 16.75,
+        "visible_duration": 6.75,
+        "persistent_reference_signal": false,
+        "censor_reason": "NO_REFERENCE_MATCH",
+        "observations": [
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.1670928414392823,
+            "error": 0.14612253730194683,
+            "local_energy": 0.9831572951649165
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.174317755040969,
+            "error": 0.1534121880544855,
+            "local_energy": 0.9816381317798754
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.1815541638095715,
+            "error": 0.1609283052059887,
+            "local_energy": 0.9800188262329135
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.188806138220952,
+            "error": 0.1686813641543301,
+            "local_energy": 0.9782937470736249
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.1960790177201057,
+            "error": 0.17668275395996222,
+            "local_energy": 0.9764568663622851
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.203379359374285,
+            "error": 0.18494487109195396,
+            "local_energy": 0.9745017275708675
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.2107149023685446,
+            "error": 0.19348122587303426,
+            "local_energy": 0.9724214098265732
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.21809455007756,
+            "error": 0.20230656352419188,
+            "local_energy": 0.9702084879479623
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.2255283712724647,
+            "error": 0.21143700194131962,
+            "local_energy": 0.9678549876813842
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.2330276219006702,
+            "error": 0.2208901886928755,
+            "local_energy": 0.9653523354714157
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.240604788916444,
+            "error": 0.2306854801644508,
+            "local_energy": 0.9626913020009602
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.2482736578331255,
+            "error": 0.24084414657148043,
+            "local_energy": 0.9598619385347549
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.2560494057180114,
+            "error": 0.25138960649377423,
+            "local_energy": 0.9568535051068536
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.2639487217602672,
+            "error": 0.2623476960642215,
+            "local_energy": 0.95365438918751
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.2719899576992797,
+            "error": 0.27374697807866916,
+            "local_energy": 0.9502520133693326
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.2801933106475347,
+            "error": 0.2856190971547265,
+            "local_energy": 0.9466327302998384
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.2885810409605198,
+            "error": 0.29799918769484524,
+            "local_energy": 0.9427817027763022
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.2971777276927778,
+            "error": 0.310926341831721,
+            "local_energy": 0.9386827665833125
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.3060105636486903,
+            "error": 0.3244441445325098,
+            "local_energy": 0.9343182733213025
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.3151096907848658,
+            "error": 0.33860128220435776,
+            "local_energy": 0.9296689102188593
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.324508574272814,
+            "error": 0.3534522288000923,
+            "local_energy": 0.9247134938903069
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.3342444091453953,
+            "error": 0.3690580084368233,
+            "local_energy": 0.9194287354859498
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.344358545989246,
+            "error": 0.3854870240398664,
+            "local_energy": 0.9137889762474821
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.3548969098824104,
+            "error": 0.4028159244200432,
+            "local_energy": 0.9077658961964853
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.3659103671593056,
+            "error": 0.42113045246337133,
+            "local_energy": 0.9013282065400506
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.3774549639605618,
+            "error": 0.4405261666517783,
+            "local_energy": 0.8944413520417639
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.3895919139508566,
+            "error": 0.4611088441209707,
+            "local_energy": 0.8870672796945442
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.4023871440017681,
+            "error": 0.4829942362473577,
+            "local_energy": 0.8791643861281412
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.415910110049846,
+            "error": 0.5063066288974206,
+            "local_energy": 0.8706878576152884
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.4302314684675166,
+            "error": 0.5311753226427687,
+            "local_energy": 0.8615907926856222
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.4454190402123077,
+            "error": 0.5577276586489973,
+            "local_energy": 0.8518267854923675
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.461531374831494,
+            "error": 0.5860765856620848,
+            "local_energy": 0.841355069292154
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.478608198635538,
+            "error": 0.6163001476966766,
+            "local_energy": 0.8301498092998826
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.4966572951568466,
+            "error": 0.6484102299555108,
+            "local_energy": 0.818215354135148
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.5156381763238052,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.5354445113336352,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.5558896231910766,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.576701586293887,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.5975347044267187,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.6180004479865182,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.6377134312954422,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.6563405066125727,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.6736388155861073,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.6894735377627408,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7038145895472911,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7167182739173208,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7283021563893297,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7387200562331726,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.748141209465007,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7567350729403026,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7646615579655593,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7720656777641728,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7790753813421312,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7858014482499045,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7923385349926064,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.7987666860934173,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.8051528006219781,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.811551665986238,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.8180062477705983,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.8245469948669308,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "NO_REFERENCE_MATCH",
+            "position": null,
+            "amplitude": 1.8311900500957836,
+            "error": null,
+            "local_energy": null
+          }
+        ],
+        "identity_scope": "Sampled field continuity only; not token/particle lineage or physical survival"
+      }
+    },
+    {
+      "job": {
+        "id": "MAINTAINED_s0_v0",
+        "kind": "MAINTAINED",
+        "start": 0,
+        "setting": 0,
+        "duration": 25.0
+      },
+      "status": "VALIDATED COMPLETE",
+      "frames": 101,
+      "max_reference_error": 7.821654435247183e-11,
+      "independent_balance": 2.8026497576486867e-16,
+      "minimum": 0.0,
+      "max_location": {
+        "time": 25.0,
+        "species": "Z",
+        "site": 0,
+        "new": 11277.77777777776,
+        "reference": 11277.777777777837
+      },
+      "species_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        7.821654435247183e-11,
+        2.7284841053187847e-12
+      ]
+    },
+    {
+      "job": {
+        "id": "MAINTAINED_s0_v1",
+        "kind": "MAINTAINED",
+        "start": 0,
+        "setting": 1,
+        "duration": 25.0
+      },
+      "status": "VALIDATED COMPLETE",
+      "frames": 101,
+      "max_reference_error": 1.8189894035458565e-12,
+      "independent_balance": 2.7359200015141944e-16,
+      "minimum": 0.0,
+      "max_location": {
+        "time": 18.75,
+        "species": "Z",
+        "site": 0,
+        "new": 8458.333333333307,
+        "reference": 8458.333333333308
+      },
+      "species_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.8189894035458565e-12,
+        5.684341886080802e-14
+      ],
+      "reference_continuity": {
+        "status": "INITIAL_UNRESOLVED",
+        "matched_through": null,
+        "visible_duration": null,
+        "persistent_reference_signal": false,
+        "censor_reason": null,
+        "observations": [
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          }
+        ],
+        "identity_scope": "Sampled field continuity only; not token/particle lineage or physical survival"
+      }
+    },
+    {
+      "job": {
+        "id": "MAINTAINED_s1_v0",
+        "kind": "MAINTAINED",
+        "start": 1,
+        "setting": 0,
+        "duration": 25.0
+      },
+      "status": "VALIDATED COMPLETE",
+      "frames": 101,
+      "max_reference_error": 1.837179297581315e-10,
+      "independent_balance": 4.037150158413179e-16,
+      "minimum": 0.0,
+      "max_location": {
+        "time": 25.0,
+        "species": "Z",
+        "site": 245,
+        "new": 13985.888203266113,
+        "reference": 13985.88820326593
+      },
+      "species_errors": [
+        5.681756506684217e-16,
+        1.0202122217630924e-14,
+        7.586646617669921e-15,
+        0.0,
+        0.0,
+        1.837179297581315e-10,
+        5.6843418860808015e-12
+      ]
+    },
+    {
+      "job": {
+        "id": "MAINTAINED_s1_v1",
+        "kind": "MAINTAINED",
+        "start": 1,
+        "setting": 1,
+        "duration": 25.0
+      },
+      "status": "VALIDATED COMPLETE",
+      "frames": 101,
+      "max_reference_error": 2.510205376893282e-10,
+      "independent_balance": 4.037150158413179e-16,
+      "minimum": 0.0,
+      "max_location": {
+        "time": 25.0,
+        "species": "Z",
+        "site": 335,
+        "new": 11278.465659551754,
+        "reference": 11278.465659551503
+      },
+      "species_errors": [
+        5.681756506684217e-16,
+        1.3117014279811189e-14,
+        9.444600891385005e-15,
+        0.0,
+        0.0,
+        2.510205376893282e-10,
+        7.673861546209082e-12
+      ],
+      "reference_continuity": {
+        "status": "CONTINUOUS",
+        "matched_through": 25.0,
+        "visible_duration": 25.0,
+        "persistent_reference_signal": true,
+        "censor_reason": null,
+        "observations": [
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 1.0,
+            "error": 4.362120368326912e-16,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999997,
+            "error": 2.460132141776329e-15,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999992,
+            "error": 4.296810058003138e-15,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999987,
+            "error": 5.919769012720382e-15,
+            "local_energy": 0.9999835183135616
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999983,
+            "error": 7.207141931361459e-15,
+            "local_energy": 0.9999835183135616
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999979,
+            "error": 8.133519297359351e-15,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999973,
+            "error": 8.916755495482e-15,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999971,
+            "error": 9.578491989082235e-15,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999961,
+            "error": 1.0371083515180495e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999959,
+            "error": 1.0989881312738281e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999951,
+            "error": 1.1624991816639674e-14,
+            "local_energy": 0.9999835183135616
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999944,
+            "error": 1.2250305203477342e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.999999999999994,
+            "error": 1.2716863276807122e-14,
+            "local_energy": 0.9999835183135616
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999932,
+            "error": 1.3176602473012978e-14,
+            "local_energy": 0.9999835183135616
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999926,
+            "error": 1.3495535889971109e-14,
+            "local_energy": 0.9999835183135616
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999923,
+            "error": 1.3985206087611252e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999923,
+            "error": 1.4227160431648888e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999921,
+            "error": 1.454121586034899e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.999999999999992,
+            "error": 1.4655502394536352e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999917,
+            "error": 1.497379823929211e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999917,
+            "error": 1.520309515227141e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999913,
+            "error": 1.538047978595552e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999913,
+            "error": 1.5580854048454648e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999913,
+            "error": 1.5874853902671607e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999916,
+            "error": 1.6226472097640534e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999912,
+            "error": 1.643134773922119e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999912,
+            "error": 1.6527951769664865e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999909,
+            "error": 1.670299704235774e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999911,
+            "error": 1.7022261906392357e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999911,
+            "error": 1.7124857138451362e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999906,
+            "error": 1.7301201349611946e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999905,
+            "error": 1.7489498833342306e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999905,
+            "error": 1.7683583338762733e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999905,
+            "error": 1.7728236445951885e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999903,
+            "error": 1.7918920066190106e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999903,
+            "error": 1.800381783259747e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999905,
+            "error": 1.8157549701387383e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999908,
+            "error": 1.8436780984493917e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999908,
+            "error": 1.8589183076480303e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999905,
+            "error": 1.8638873047191923e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999905,
+            "error": 1.8781248273767607e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999905,
+            "error": 1.88130570185999e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999903,
+            "error": 1.8890529605159095e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999903,
+            "error": 1.885915954766794e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999905,
+            "error": 1.9019742994555824e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999905,
+            "error": 1.917835902379684e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999903,
+            "error": 1.9373091661155494e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.99999999999999,
+            "error": 1.9444309973850155e-14,
+            "local_energy": 0.9999835183135616
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999901,
+            "error": 1.9728498145285533e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999901,
+            "error": 1.967828630364819e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.99999999999999,
+            "error": 1.9736313832587816e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999901,
+            "error": 1.9722201081436265e-14,
+            "local_energy": 0.9999835183135616
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999903,
+            "error": 1.98183005900525e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999901,
+            "error": 1.9829308777685524e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999901,
+            "error": 2.0028318696873114e-14,
+            "local_energy": 0.9999835183135616
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999901,
+            "error": 2.0059801460509478e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999901,
+            "error": 2.0231659068828733e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999901,
+            "error": 2.0222719910749253e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999901,
+            "error": 2.035890068582862e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999899,
+            "error": 2.0592211615053302e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999899,
+            "error": 2.0564112851892202e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999899,
+            "error": 2.057225738212741e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999896,
+            "error": 2.061955557807608e-14,
+            "local_energy": 0.9999835183135616
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999896,
+            "error": 2.0704794706862624e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999897,
+            "error": 2.0701461787628154e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999899,
+            "error": 2.0948342393181787e-14,
+            "local_energy": 0.9999835183135616
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999899,
+            "error": 2.097132504810254e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999893,
+            "error": 2.0954131230372154e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999896,
+            "error": 2.1027633407374104e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999897,
+            "error": 2.1086026682737805e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999899,
+            "error": 2.1144639290563276e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999897,
+            "error": 2.1110890828997822e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999896,
+            "error": 2.1204041697760568e-14,
+            "local_energy": 0.9999835183135616
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999897,
+            "error": 2.1278495451853334e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999896,
+            "error": 2.1249406380001105e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999897,
+            "error": 2.1196049021048152e-14,
+            "local_energy": 0.9999835183135616
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999896,
+            "error": 2.138048988289928e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999897,
+            "error": 2.135701907984612e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999899,
+            "error": 2.126392066911495e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999897,
+            "error": 2.127372253718353e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999899,
+            "error": 2.1331445064371442e-14,
+            "local_energy": 0.9999835183135616
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999897,
+            "error": 2.1394374085381154e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999899,
+            "error": 2.1497300398504894e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999897,
+            "error": 2.1597274485947928e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999899,
+            "error": 2.163789256350353e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999899,
+            "error": 2.151035986780247e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999899,
+            "error": 2.148705959449021e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999899,
+            "error": 2.151773380424708e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999899,
+            "error": 2.1593047950192856e-14,
+            "local_energy": 0.9999835183135616
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999897,
+            "error": 2.16250641714811e-14,
+            "local_energy": 0.9999835183135616
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999896,
+            "error": 2.1540939505450827e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999893,
+            "error": 2.1650638439617254e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999896,
+            "error": 2.154530877252553e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999896,
+            "error": 2.172750788483582e-14,
+            "local_energy": 0.9999835183135616
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999896,
+            "error": 2.179795346704717e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999893,
+            "error": 2.172260618314007e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999892,
+            "error": 2.182664919972709e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999896,
+            "error": 2.1906835295503827e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999896,
+            "error": 2.1900959813827104e-14,
+            "local_energy": 0.9999835183135617
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999896,
+            "error": 2.192191159043852e-14,
+            "local_energy": 0.9999835183135619
+          },
+          {
+            "status": "REFERENCE_MATCH",
+            "position": 0.0,
+            "amplitude": 0.9999999999999896,
+            "error": 2.2074034024107987e-14,
+            "local_energy": 0.9999835183135617
+          }
+        ],
+        "identity_scope": "Sampled field continuity only; not token/particle lineage or physical survival"
+      }
+    },
+    {
+      "job": {
+        "id": "ISOLATED_C1_s0_v0",
+        "kind": "ISOLATED_C1",
+        "start": 0,
+        "setting": 0,
+        "duration": 25.0
+      },
+      "status": "VALIDATED COMPLETE",
+      "frames": 101,
+      "max_reference_error": 4.1476562273601303e-07,
+      "independent_balance": 8.541408785215046e-16,
+      "minimum": 0.0,
+      "max_location": {
+        "time": 1.75,
+        "species": "Z",
+        "site": 1,
+        "new": 787.021457231925,
+        "reference": 787.0214576466906
+      },
+      "species_errors": [
+        6.421135623213558e-10,
+        1.644024687814343e-09,
+        1.645361343978676e-09,
+        1.9489172180848463e-15,
+        3.063429050661367e-12,
+        4.1476562273601303e-07,
+        1.2746696143040026e-08
+      ]
+    },
+    {
+      "job": {
+        "id": "ISOLATED_C1_s0_v1",
+        "kind": "ISOLATED_C1",
+        "start": 0,
+        "setting": 1,
+        "duration": 25.0
+      },
+      "status": "VALIDATED COMPLETE",
+      "frames": 101,
+      "max_reference_error": 9.395080269314349e-10,
+      "independent_balance": 2.562422635564514e-15,
+      "minimum": 0.0,
+      "max_location": {
+        "time": 1.5,
+        "species": "Z",
+        "site": 5,
+        "new": 674.9392310332837,
+        "reference": 674.9392310323442
+      },
+      "species_errors": [
+        1.7690991528849866e-12,
+        4.1212747500399666e-12,
+        4.1264905498565856e-12,
+        1.9489172180848463e-15,
+        6.451588032280871e-15,
+        9.395080269314349e-10,
+        2.923172814917052e-11
+      ],
+      "reference_continuity": {
+        "status": "INITIAL_UNRESOLVED",
+        "matched_through": null,
+        "visible_duration": null,
+        "persistent_reference_signal": false,
+        "censor_reason": null,
+        "observations": [
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          },
+          {
+            "status": "FLAT",
+            "position": null,
+            "amplitude": 0.0,
+            "error": null,
+            "local_energy": null
+          }
+        ],
+        "identity_scope": "Sampled field continuity only; not token/particle lineage or physical survival"
+      }
+    },
+    {
+      "job": {
+        "id": "ISOLATED_C1_s1_v0",
+        "kind": "ISOLATED_C1",
+        "start": 1,
+        "setting": 0,
+        "duration": 25.0
+      },
+      "status": "REFERENCE CRITERION FAILED",
+      "frames": 101,
+      "max_reference_error": 0.00010419267528050113,
+      "independent_balance": 8.541408599617965e-16,
+      "minimum": 0.0,
+      "max_location": {
+        "time": 25.0,
+        "species": "Z",
+        "site": 218,
+        "new": 9126.899344673393,
+        "reference": 9126.899240480718
+      },
+      "species_errors": [
+        1.1935799983045092e-09,
+        4.992269075157706e-08,
+        3.9573759179376525e-08,
+        2.2737367544323206e-15,
+        7.698957417206151e-10,
+        0.00010419267528050113,
+        3.472222545042314e-06
+      ],
+      "first_failed_observation": 14.5,
+      "relative_error_to_final_Z": 1.1415999293426325e-08
+    },
+    {
+      "job": {
+        "id": "ISOLATED_C1_s1_v1",
+        "kind": "ISOLATED_C1",
+        "start": 1,
+        "setting": 1,
+        "duration": 25.0
+      },
+      "status": "NOT STARTED"
+    }
+  ],
+  "available_refinement_pairs": [
+    {
+      "base": "f_o0_s0_a0_v0",
+      "fine": "f_o0_s0_a0_v1",
+      "error": 7.193876282828173e-10
+    },
+    {
+      "base": "f_o0_s0_a1_v0",
+      "fine": "f_o0_s0_a1_v1",
+      "error": 7.193882436840483e-10
+    },
+    {
+      "base": "f_o0_s1_a0_v0",
+      "fine": "f_o0_s1_a0_v1",
+      "error": 8.683141765253079e-08
+    },
+    {
+      "base": "f_o0_s1_a1_v0",
+      "fine": "f_o0_s1_a1_v1",
+      "error": 2.5856782867234267e-08
+    },
+    {
+      "base": "f_o1_s0_a0_v0",
+      "fine": "f_o1_s0_a0_v1",
+      "error": 7.193876282828173e-10
+    },
+    {
+      "base": "f_o1_s0_a1_v0",
+      "fine": "f_o1_s0_a1_v1",
+      "error": 7.193880385503047e-10
+    },
+    {
+      "base": "f_o1_s1_a0_v0",
+      "fine": "f_o1_s1_a0_v1",
+      "error": 2.703330341213404e-08
+    },
+    {
+      "base": "f_o1_s1_a1_v0",
+      "fine": "f_o1_s1_a1_v1",
+      "error": 8.607120583438396e-08
+    },
+    {
+      "base": "MAINTAINED_s0_v0",
+      "fine": "MAINTAINED_s0_v1",
+      "error": 7.821654435247183e-11
+    },
+    {
+      "base": "MAINTAINED_s1_v0",
+      "fine": "MAINTAINED_s1_v1",
+      "error": 2.4010660126805305e-10
+    },
+    {
+      "base": "ISOLATED_C1_s0_v0",
+      "fine": "ISOLATED_C1_s0_v1",
+      "error": 4.1569455788703635e-07
+    }
+  ],
+  "finite_interaction_component": {
+    "new_fine": 0.03333730614168485,
+    "closed_reference": 0.033337305923648364,
+    "separate_projection": 0.03333730614168485,
+    "error": 2.1803648470042347e-10,
+    "within_component_margin": true,
+    "scope": "descriptive supported component; does not qualify incomplete global study"
+  },
+  "failed_case": {
+    "job": {
+      "id": "ISOLATED_C1_s1_v0",
+      "kind": "ISOLATED_C1",
+      "start": 1,
+      "setting": 0,
+      "duration": 25.0
+    },
+    "status": "REFERENCE CRITERION FAILED",
+    "frames": 101,
+    "max_reference_error": 0.00010419267528050113,
+    "independent_balance": 8.541408599617965e-16,
+    "minimum": 0.0,
+    "max_location": {
+      "time": 25.0,
+      "species": "Z",
+      "site": 218,
+      "new": 9126.899344673393,
+      "reference": 9126.899240480718
+    },
+    "species_errors": [
+      1.1935799983045092e-09,
+      4.992269075157706e-08,
+      3.9573759179376525e-08,
+      2.2737367544323206e-15,
+      7.698957417206151e-10,
+      0.00010419267528050113,
+      3.472222545042314e-06
+    ],
+    "first_failed_observation": 14.5,
+    "relative_error_to_final_Z": 1.1415999293426325e-08
+  },
+  "all_retained_balance_and_nonnegative_checks_passed": true,
+  "source_reference_hashes_unchanged": true,
+  "known_complete_job_elapsed_seconds": 41.34067469998263,
+  "reconstructed_elapsed_seconds": 45.716366,
+  "automatic_retry": false
+}

@@ -1228,3 +1228,6 @@ MG114/H3a passed896states/1536paths, ring drift identity,13.505212seconds. MG115
 
 ### MG116 — H3b reference run approved/registered
 PI approves24deterministic prepared/control runs, frozen1e-5field/refinement/interaction criteria,3600seconds/oneworker cap and full public raw-results. Publication of registration precedes integrations; no retries, PI closure later.
+
+### MG117 — H3b numerical reference failure, incomplete
+Stopped after22validated jobs when coarser seeded isolatedZerror.000104192675 exceeded1e-5.23fulltrajectories retained, fineisolatedseedednotstarted; no retry. Activefields/positivity/balancepassed; finiteinteractioncomponentreproduced within2.18e-10, globalqualificationfailed. Separate allraw/reportaudit done. Failurehandler left staleRUNNINGand omittedfailedjobcharge; snapshotpreserved/statuscorrected; totalwall~45.716seconds reconstructed. PI disposition/anyfollowup separate.

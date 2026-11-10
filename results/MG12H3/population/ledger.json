@@ -1,0 +1,412 @@
+{
+  "records": [
+    {
+      "job": {
+        "id": "f_o0_s0_a0_v0",
+        "kind": "FINITE",
+        "origin": 0,
+        "start": 0,
+        "arm": 0,
+        "setting": 0,
+        "duration": 15.0
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 0.8031095000915229,
+      "check": {
+        "passed": true,
+        "reference_error": 7.284974127045925e-10,
+        "balance": 8.541408785215038e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o0_s0_a0_v1",
+        "kind": "FINITE",
+        "origin": 0,
+        "start": 0,
+        "arm": 0,
+        "setting": 1,
+        "duration": 15.0
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 0.9461897999281064,
+      "check": {
+        "passed": true,
+        "reference_error": 1.6145129958027515e-11,
+        "balance": 8.541408785215038e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o0_s0_a1_v0",
+        "kind": "FINITE",
+        "origin": 0,
+        "start": 0,
+        "arm": 1,
+        "setting": 0,
+        "duration": 15.0
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 0.9570982001023367,
+      "check": {
+        "passed": true,
+        "reference_error": 7.284978229720798e-10,
+        "balance": 1.0676760981518799e-15,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o0_s0_a1_v1",
+        "kind": "FINITE",
+        "origin": 0,
+        "start": 0,
+        "arm": 1,
+        "setting": 1,
+        "duration": 15.0
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 1.0043810000643134,
+      "check": {
+        "passed": true,
+        "reference_error": 1.614430156720885e-11,
+        "balance": 1.2812113177822557e-15,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o0_s1_a0_v0",
+        "kind": "FINITE",
+        "origin": 0,
+        "start": 1,
+        "arm": 0,
+        "setting": 0,
+        "duration": 15.0
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 2.457020499976352,
+      "check": {
+        "passed": true,
+        "reference_error": 8.709757316806174e-08,
+        "balance": 2.1353521499044905e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o0_s1_a0_v1",
+        "kind": "FINITE",
+        "origin": 0,
+        "start": 1,
+        "arm": 0,
+        "setting": 1,
+        "duration": 15.0
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 2.591954700066708,
+      "check": {
+        "passed": true,
+        "reference_error": 7.346850524341456e-10,
+        "balance": 2.1353521499044905e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o0_s1_a1_v0",
+        "kind": "FINITE",
+        "origin": 0,
+        "start": 1,
+        "arm": 1,
+        "setting": 0,
+        "duration": 15.0
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 2.4431571000022814,
+      "check": {
+        "passed": true,
+        "reference_error": 2.5669176182220556e-08,
+        "balance": 2.1353521499044905e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o0_s1_a1_v1",
+        "kind": "FINITE",
+        "origin": 0,
+        "start": 1,
+        "arm": 1,
+        "setting": 1,
+        "duration": 15.0
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 2.6901865999680012,
+      "check": {
+        "passed": true,
+        "reference_error": 3.4789216331022304e-10,
+        "balance": 2.1353521499044905e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o1_s0_a0_v0",
+        "kind": "FINITE",
+        "origin": 1,
+        "start": 0,
+        "arm": 0,
+        "setting": 0,
+        "duration": 15.0
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 0.9023795999819413,
+      "check": {
+        "passed": true,
+        "reference_error": 7.284974127045925e-10,
+        "balance": 6.406056588911279e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o1_s0_a0_v1",
+        "kind": "FINITE",
+        "origin": 1,
+        "start": 0,
+        "arm": 0,
+        "setting": 1,
+        "duration": 15.0
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 1.0010391999967396,
+      "check": {
+        "passed": true,
+        "reference_error": 1.6145129958027515e-11,
+        "balance": 6.406056588911279e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o1_s0_a1_v0",
+        "kind": "FINITE",
+        "origin": 1,
+        "start": 0,
+        "arm": 1,
+        "setting": 0,
+        "duration": 15.0
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 0.8323311000131071,
+      "check": {
+        "passed": true,
+        "reference_error": 7.284976178383361e-10,
+        "balance": 6.406056588911279e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o1_s0_a1_v1",
+        "kind": "FINITE",
+        "origin": 1,
+        "start": 0,
+        "arm": 1,
+        "setting": 1,
+        "duration": 15.0
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 1.0161923000123352,
+      "check": {
+        "passed": true,
+        "reference_error": 1.614450866491352e-11,
+        "balance": 1.0676760981518799e-15,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o1_s1_a0_v0",
+        "kind": "FINITE",
+        "origin": 1,
+        "start": 1,
+        "arm": 0,
+        "setting": 0,
+        "duration": 15.0
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 2.3967364999698475,
+      "check": {
+        "passed": true,
+        "reference_error": 2.694951145872945e-08,
+        "balance": 4.2707042998089815e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o1_s1_a0_v1",
+        "kind": "FINITE",
+        "origin": 1,
+        "start": 1,
+        "arm": 0,
+        "setting": 1,
+        "duration": 15.0
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 2.613013199996203,
+      "check": {
+        "passed": true,
+        "reference_error": 7.353008449784639e-10,
+        "balance": 4.2707042998089815e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o1_s1_a1_v0",
+        "kind": "FINITE",
+        "origin": 1,
+        "start": 1,
+        "arm": 1,
+        "setting": 0,
+        "duration": 15.0
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 1.902378199971281,
+      "check": {
+        "passed": true,
+        "reference_error": 8.74759572302553e-08,
+        "balance": 4.2707042998089815e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o1_s1_a1_v1",
+        "kind": "FINITE",
+        "origin": 1,
+        "start": 1,
+        "arm": 1,
+        "setting": 1,
+        "duration": 15.0
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 2.0985497999936342,
+      "check": {
+        "passed": true,
+        "reference_error": 1.5505323787160857e-09,
+        "balance": 4.2707042998089815e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "MAINTAINED_s0_v0",
+        "kind": "MAINTAINED",
+        "start": 0,
+        "setting": 0,
+        "duration": 25.0
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 1.2234539999626577,
+      "check": {
+        "passed": true,
+        "reference_error": 7.821654435247183e-11,
+        "balance": 3.4699473189936124e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "MAINTAINED_s0_v1",
+        "kind": "MAINTAINED",
+        "start": 0,
+        "setting": 1,
+        "duration": 25.0
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 1.3992709999438375,
+      "check": {
+        "passed": true,
+        "reference_error": 1.8189894035458565e-12,
+        "balance": 3.4699473189936124e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "MAINTAINED_s1_v0",
+        "kind": "MAINTAINED",
+        "start": 1,
+        "setting": 0,
+        "duration": 25.0
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 3.8699937999481335,
+      "check": {
+        "passed": true,
+        "reference_error": 1.837179297581315e-10,
+        "balance": 3.2697579795412524e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "MAINTAINED_s1_v1",
+        "kind": "MAINTAINED",
+        "start": 1,
+        "setting": 1,
+        "duration": 25.0
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 4.1000714000547305,
+      "check": {
+        "passed": true,
+        "reference_error": 2.510205376893282e-10,
+        "balance": 3.73686626233286e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "ISOLATED_C1_s0_v0",
+        "kind": "ISOLATED_C1",
+        "start": 0,
+        "setting": 0,
+        "duration": 25.0
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 1.9289829999906942,
+      "check": {
+        "passed": true,
+        "reference_error": 4.1476562273601303e-07,
+        "balance": 8.541408785215046e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "ISOLATED_C1_s0_v1",
+        "kind": "ISOLATED_C1",
+        "start": 0,
+        "setting": 1,
+        "duration": 25.0
+      },
+      "status": "COMPLETE",
+      "elapsed_seconds": 2.098172300029546,
+      "check": {
+        "passed": true,
+        "reference_error": 9.395080269314349e-10,
+        "balance": 2.562422635564514e-15,
+        "minimum": 0.0
+      }
+    }
+  ],
+  "elapsed_seconds": 41.34067469998263,
+  "elapsed_cap": 3600
+}
