@@ -2334,3 +2334,9 @@ PI: “go ahead with H2”. Spec MG12H2_qualification.md fixes12jobs/98304paths,
 
 ## MG112 — H2formal fixed-cell transport qualification result
 QUALIFIED WITHIN REGISTERED FIXED-CELL TRANSPORT SCOPE:24/24joint-count endpoint TVbounds supported; maxobserved.018686252810,maxupper.060613097308<.10, nominal99.9%family coverage conditional on sampling/reference.12jobs/98304paths/26720accepted-event saved audit PASS.317.248430seconds<900cap; one localworker/thread1, no failure/stop/retry. Sixfixed transport-only fixtures, no mixed chemistry/particle/evolvingtopology/physicaldimension claim. Full raw/trace/reference/report retained and publication verified separately; PI closure pending. Report results/MG12H2/qualification/MG12H2_qualification_results.md.
+
+## MG113 — H2closed; H3authorized
+Richard: “I sign off. Then proceed to doing H3.” H2closed under fixed-cell transport scope, accepts MG112audit/raw/retention without rescoring. H3starts mixed chemistry/transport and ring kinetic-limit bridge before particle-scale execution; later numerical production budgets/criteria remain prospective.
+
+## MG114 — H3a mixed kinetics/ring-limit bridge development
+After MG113H2closure, user authorizes H3. Freeze spec/MG12H3_bridge_development.md and source/seed/config plan before RNG/reference integration. Fourtiny all-enabled-P17 mixed reaction/cell fixtures, exact+strict.005/.001 x128paths=1536development paths, exhaustive generator cap8192states, ring conditional-drift Omega1/10/100/1000 algebra vs frozen continuum with finite-count correction.300second single-worker/thread1 cap; no retries/particle run or formal mixed-law qualification.

@@ -1214,3 +1214,9 @@ User authorizes H2qualification.12jobs/98304paths/24joint-count endpoint bounds,
 
 ### MG112 — H2formal transport qualification passed
 24/24joint-count endpoint bounds maxupper.060613097308<.10; all98304paths/26720accepted-event saved audit pass,317.248430seconds<900. Scope fixed transport-only cells and known-grid benchmarks; no particle result. Report/figure/full evidence published and verified separately; PI closure pending.
+
+### MG113 — H2PI closure; H3next
+User accepts qualification unchanged and directs H3. Controlled mixed reaction/transport validation and count/continuum bridge precede high-count pattern work.
+
+### MG114 — H3a bridge frozen
+Combined all-enabled reaction and multi-site transport generator/sample checks plus8site ring finite-count/continuum drift identity. Fourfixtures/1536paths,300seconds development; source/seeds published before draws/integration. No particle or large-count identity expansion.

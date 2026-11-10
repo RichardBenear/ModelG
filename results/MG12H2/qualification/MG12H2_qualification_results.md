@@ -64,3 +64,7 @@ After accepting this bounded transport result, H3 should begin with a controlled
 Particle-scale work also requires an efficient representation whose match rates and strict participant reservations are proven equivalent to the transparent identity-rich engine. Naive enumeration grows combinatorially with token count. A later pattern protocol needs its own numerical/population limits, meaningful statistical precision and measured local budget. Keep G5 closed and unresolved; this transport qualification does not rescore its noisy geometry response. Topology evolution, substrate-generated A/B supply and any quantum interpretation remain later questions.
 
 Publication verified at commit 3a3305a: every retained binary, metadata record and trace/report matches published bytes or values under the documented text normalization. Audited hashes and registered source hashes match. See retention_verified.json. PI closure remains pending.
+
+## MG113 — PI closure
+
+Richard signed off on H2 and authorized H3. H2 is CLOSED with its registered fixed-cell transport scope unchanged. See MG12H2_closure.md. Earlier pending statements describe the report at publication.
