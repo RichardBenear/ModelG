@@ -4,7 +4,7 @@ from check_mg12h3_completion import evaluate
 def plan():
     if (BASE/'preparation.json').exists():raise ValueError('Already prepared')
     entries=matrix();verify_reuse(entries);ledger=read(DIAG/'ledger.json');timings={r['method']['id']:r['elapsed_seconds'] for r in ledger['records']};forecast=2*(timings['bdf_tight']+timings['bdf_tighter'])+30;assert forecast<=225
-    atomic_json(BASE/'plan.json',dict(stage='MG120a',scope='planning/saved-evidence preparation only; fresh integrations await PI',source_original_hashes=completion_hashes(),entries=entries,forecast_seconds=forecast,elapsed_cap=300,workers=1,threads_per_library=1,original_failed_incomplete_preserved=True))
+    atomic_json(BASE/'plan.json',dict(stage='MG120b',scope='planning/saved-evidence preparation only; fresh integrations await PI',source_original_hashes=completion_hashes(),entries=entries,forecast_seconds=forecast,elapsed_cap=300,workers=1,threads_per_library=1,original_failed_incomplete_preserved=True))
 def prepare():
     plan=read(BASE/'plan.json');assert plan['source_original_hashes']==completion_hashes();verify_reuse(plan['entries']);start=time.perf_counter();held=[]
     for e in plan['entries']:

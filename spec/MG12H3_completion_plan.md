@@ -37,3 +37,5 @@ On approval, publish new registration before integration, generate only the2fres
 
 ## MG120a provenance hardening before registration
 Saved-only preparation version1 is preserved in preparation_v1/. Final preparation additionally pins all diagnostic raw/metadata reference files, binds its exact plan bytes and rechecks the canonical24slot manifest/effective reused methods at registration/launch. No physics, thresholds, numerical settings or integrations changed; repeat the same saved-only pipeline under the stronger hashes before run approval.
+
+MG120b additionally expands the active input hash check to every original population-reference/donor input, not just the diagnostic isolated reference. Preserve preparationv2 before repeating saved-only validation. No numerical/physical change or new integration.
