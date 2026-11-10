@@ -51,6 +51,8 @@ Preparation results:
 - Deliberately corrupt balance and negative-field records were rejected; incomplete/missing outputs did not produce a complete/qualified result.
 - Total preparation time: **5.523560 seconds**, below its separately frozen 300-second cap. No numerical failure, retry or criterion change. A syntax typo was corrected during uncommitted preflight, before registration/integration; no scientific outcome was affected.
 
+The complete 24-job analysis path also passed using separately labeled **held archived reference fields**, with no new ODE integration or random sampling. It exercised full late-window projection, independent dense projection, paired-setting and continuity reporting. The held interaction was 0.033337305924; new and archived inputs here are intentionally the same fields, so this validates the reporting pipeline rather than a new physical outcome. This added 4.491327 seconds, for 10.014887 aggregate preparation seconds, below the 300-second preparation allowance. Held artifacts are labeled in population/preparation/held_pipeline_results.json.
+
 ## Concrete proposed reference run
 
 | Item | Fixed scope |
