@@ -1,4 +1,4 @@
-# MG128 — H3 efficiency development
+# MG128 â€” H3 efficiency development
 
 The first step toward a faster strict-tick engine passed a deterministic check: count-based event channels reproduce both the changes to populations and the participants that must be reserved in every one of the 896 saved small-system states. This supports replacing enormous lists of individual token combinations with population-based calculations, while keeping the requirement that a token can participate only once per tick. It does not yet establish runtime improvement or a stochastic particle.
 
@@ -10,6 +10,6 @@ The [development specification](../../../spec/MG12H3_efficiency_development.md) 
 
 ## Remaining development
 
-Implement the accepted-event executor and test boundary handling, competition and snapshot reservation. Then prepare measured timing and stochastic-law qualification together where independent, with a concrete budget for approval. Particle-scale design depends on that qualification and performance evidence. The count arithmetic shares the existing independently assembled reference formulas, so subsequent validation must disclose this and retain the explicit identity engine as a comparison. No stochastic production is registered or started.
+The accepted-event tick prototype is implemented. Three scripted-clock checks passed: R4 catalysts cannot participate twice, A-to-G products cannot immediately undergo G-to-X, and a mark exactly at the tick boundary is excluded. These use controlled inputs, with no random draws. General competition, transport, trajectory framing and stochastic-law checks remain. Then prepare measured timing and stochastic-law qualification together where independent, with a concrete budget for approval. Particle-scale design depends on that qualification and performance evidence. The count arithmetic shares the existing independently assembled reference formulas, so subsequent validation must disclose this and retain the explicit identity engine as a comparison. No stochastic production is registered or started.
 
 The preceding mixed-law qualification is PI CLOSED as MG127. Full numerical precision is retained in raw records; future plain-language reports use at most six significant digits unless more are necessary to determine an outcome.

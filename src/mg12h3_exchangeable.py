@@ -20,3 +20,28 @@ def apply(available,output,channel):
     remaining=available-reserved;result=output+change
     if np.any(result<0) or result.sum()!=output.sum():raise ValueError('Invalid update')
     return remaining,result
+
+
+def tick(snapshot,config,delta,rng,max_events=100000):
+    """Accepted-event race; injected RNG, separate available/output populations."""
+    import math
+    if not math.isfinite(delta) or delta<=0:raise ValueError('Invalid tick')
+    available=np.array(snapshot,copy=True);output=np.array(snapshot,copy=True);clock=0.;trace=[]
+    while True:
+        options=list(channels(available,config));total=sum(c[3] for c in options)
+        if not total:break
+        wait=float(rng.exponential(1/total))
+        if not math.isfinite(wait) or wait<=0:raise ValueError('Invalid exponential draw')
+        clock+=wait
+        if clock>=delta:break
+        if len(trace)>=max_events:raise ValueError('Accepted event cap')
+        u=float(rng.random())
+        if not 0<=u<1:raise ValueError('Invalid uniform draw')
+        threshold=u*total;acc=0.;chosen=None
+        for c in options:
+            acc+=c[3]
+            if threshold<acc:chosen=c;break
+        if chosen is None:raise ValueError('Channel selection failed')
+        available,output=apply(available,output,chosen)
+        trace.append(dict(time=clock,rule=chosen[0],increment=chosen[1].tolist(),reserved=chosen[2].tolist()))
+    return dict(counts=output,available=available,trace=trace)

@@ -1,6 +1,6 @@
 """MG128 deterministic saved-support reservation generator check, no RNG."""
 from prepare_mg12h3_bridge import ROOT,fixture,instantiate,config,matches,atomic_json,np
-from mg12h3_exchangeable import channels,apply
+from mg12h3_exchangeable import channels,apply,tick
 from collections import defaultdict
 
 def key(rule,change,reserved):return rule,tuple(change.ravel()),tuple(reserved.ravel())
@@ -24,5 +24,17 @@ def run():
             assert explicit.keys()==grouped.keys()
             for k in explicit:np.testing.assert_allclose(explicit[k],grouped[k],rtol=1e-12,atol=1e-12)
             checked+=1
-    atomic_json(ROOT/'results/MG12H3/efficiency/algebra_check.json',dict(passed=True,states=checked,channels=total,random_draws=0,integrations=0,scope='Joint count increment and reservation rates, not stochastic executor qualification'))
+    class Fixed:
+        def exponential(self,scale):return .01
+        def random(self):return 0.
+    # Catalysts must be unavailable after one event; products stay unavailable.
+    a=np.zeros((7,1),np.int64);a[1,0]=2;a[2,0]=2
+    cfg=(2.,[(10.,4.)],[],(.2,.3,.4),(.4,.7),(False,False,False,False,True,False))
+    out=tick(a,cfg,.1,Fixed());assert len(out['trace'])==1 and out['counts'][1,0]==3 and out['available'][1,0]==0
+    # A->G followed by G->X is forbidden within the same tick.
+    a=np.zeros((7,1),np.int64);a[3,0]=1
+    cfg=(2.,[(10.,4.)],[],(.2,.3,.4),(.4,.7),(True,True,False,False,False,False))
+    out=tick(a,cfg,.1,Fixed());assert len(out['trace'])==1 and out['counts'][0,0]==1 and out['counts'][1,0]==0
+    assert not tick(a,cfg,.01,Fixed())['trace']
+    atomic_json(ROOT/'results/MG12H3/efficiency/algebra_check.json',dict(passed=True,states=checked,channels=total,random_draws=0,integrations=0,scripted_tick_checks=3,scope='Joint count increment and reservation rates, not stochastic executor qualification'))
 if __name__=='__main__':run()
