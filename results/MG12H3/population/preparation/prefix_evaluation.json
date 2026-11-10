@@ -1,0 +1,513 @@
+{
+  "complete": false,
+  "qualified": false,
+  "completed": 0,
+  "expected": 24,
+  "max_reference_error": 7.372343162614925e-07,
+  "refinement": [
+    {
+      "base": "f_o0_s0_a0_v0",
+      "fine": "f_o0_s0_a0_v1",
+      "error": 7.193876282828173e-10
+    },
+    {
+      "base": "f_o0_s0_a1_v0",
+      "fine": "f_o0_s0_a1_v1",
+      "error": 7.193882436840483e-10
+    },
+    {
+      "base": "f_o0_s1_a0_v0",
+      "fine": "f_o0_s1_a0_v1",
+      "error": 2.4528002258160353e-08
+    },
+    {
+      "base": "f_o0_s1_a1_v0",
+      "fine": "f_o0_s1_a1_v1",
+      "error": 6.449736601436658e-09
+    },
+    {
+      "base": "f_o1_s0_a0_v0",
+      "fine": "f_o1_s0_a0_v1",
+      "error": 7.193876282828173e-10
+    },
+    {
+      "base": "f_o1_s0_a1_v0",
+      "fine": "f_o1_s0_a1_v1",
+      "error": 7.193880385503047e-10
+    },
+    {
+      "base": "f_o1_s1_a0_v0",
+      "fine": "f_o1_s1_a0_v1",
+      "error": 4.880637382961926e-09
+    },
+    {
+      "base": "f_o1_s1_a1_v0",
+      "fine": "f_o1_s1_a1_v1",
+      "error": 2.4316623052751406e-08
+    },
+    {
+      "base": "MAINTAINED_s0_v0",
+      "fine": "MAINTAINED_s0_v1",
+      "error": 2.8421709430404007e-13
+    },
+    {
+      "base": "MAINTAINED_s1_v0",
+      "fine": "MAINTAINED_s1_v1",
+      "error": 4.547473508864641e-13
+    },
+    {
+      "base": "ISOLATED_C1_s0_v0",
+      "fine": "ISOLATED_C1_s0_v1",
+      "error": 2.707427029235987e-07
+    },
+    {
+      "base": "ISOLATED_C1_s1_v0",
+      "fine": "ISOLATED_C1_s1_v1",
+      "error": 7.388109608541527e-07
+    }
+  ],
+  "contrast": null,
+  "details": [
+    {
+      "job": {
+        "id": "f_o0_s0_a0_v0",
+        "kind": "FINITE",
+        "origin": 0,
+        "start": 0,
+        "arm": 0,
+        "setting": 0,
+        "duration": 15.0
+      },
+      "complete": false,
+      "frames": 5,
+      "check": {
+        "passed": true,
+        "reference_error": 7.284974127045925e-10,
+        "balance": 6.406056588911279e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o0_s0_a0_v1",
+        "kind": "FINITE",
+        "origin": 0,
+        "start": 0,
+        "arm": 0,
+        "setting": 1,
+        "duration": 15.0
+      },
+      "complete": false,
+      "frames": 5,
+      "check": {
+        "passed": true,
+        "reference_error": 1.6145129958027515e-11,
+        "balance": 8.541408785215038e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o0_s0_a1_v0",
+        "kind": "FINITE",
+        "origin": 0,
+        "start": 0,
+        "arm": 1,
+        "setting": 0,
+        "duration": 15.0
+      },
+      "complete": false,
+      "frames": 5,
+      "check": {
+        "passed": true,
+        "reference_error": 7.284978229720798e-10,
+        "balance": 4.270704392607519e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o0_s0_a1_v1",
+        "kind": "FINITE",
+        "origin": 0,
+        "start": 0,
+        "arm": 1,
+        "setting": 1,
+        "duration": 15.0
+      },
+      "complete": false,
+      "frames": 5,
+      "check": {
+        "passed": true,
+        "reference_error": 1.614430156720885e-11,
+        "balance": 6.406056588911279e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o0_s1_a0_v0",
+        "kind": "FINITE",
+        "origin": 0,
+        "start": 1,
+        "arm": 0,
+        "setting": 0,
+        "duration": 15.0
+      },
+      "complete": false,
+      "frames": 5,
+      "check": {
+        "passed": true,
+        "reference_error": 2.4788975696888082e-08,
+        "balance": 2.1353521499044905e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o0_s1_a0_v1",
+        "kind": "FINITE",
+        "origin": 0,
+        "start": 1,
+        "arm": 0,
+        "setting": 1,
+        "duration": 15.0
+      },
+      "complete": false,
+      "frames": 5,
+      "check": {
+        "passed": true,
+        "reference_error": 2.735888042865434e-10,
+        "balance": 0.0,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o0_s1_a1_v0",
+        "kind": "FINITE",
+        "origin": 0,
+        "start": 1,
+        "arm": 1,
+        "setting": 0,
+        "duration": 15.0
+      },
+      "complete": false,
+      "frames": 5,
+      "check": {
+        "passed": true,
+        "reference_error": 6.468832486504799e-09,
+        "balance": 2.1353521499044905e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o0_s1_a1_v1",
+        "kind": "FINITE",
+        "origin": 0,
+        "start": 1,
+        "arm": 1,
+        "setting": 1,
+        "duration": 15.0
+      },
+      "complete": false,
+      "frames": 5,
+      "check": {
+        "passed": true,
+        "reference_error": 3.1342956686013554e-11,
+        "balance": 2.1353521499044905e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o1_s0_a0_v0",
+        "kind": "FINITE",
+        "origin": 1,
+        "start": 0,
+        "arm": 0,
+        "setting": 0,
+        "duration": 15.0
+      },
+      "complete": false,
+      "frames": 5,
+      "check": {
+        "passed": true,
+        "reference_error": 7.284974127045925e-10,
+        "balance": 6.406056588911279e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o1_s0_a0_v1",
+        "kind": "FINITE",
+        "origin": 1,
+        "start": 0,
+        "arm": 0,
+        "setting": 1,
+        "duration": 15.0
+      },
+      "complete": false,
+      "frames": 5,
+      "check": {
+        "passed": true,
+        "reference_error": 1.6145129958027515e-11,
+        "balance": 6.406056588911279e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o1_s0_a1_v0",
+        "kind": "FINITE",
+        "origin": 1,
+        "start": 0,
+        "arm": 1,
+        "setting": 0,
+        "duration": 15.0
+      },
+      "complete": false,
+      "frames": 5,
+      "check": {
+        "passed": true,
+        "reference_error": 7.284976178383361e-10,
+        "balance": 6.406056588911279e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o1_s0_a1_v1",
+        "kind": "FINITE",
+        "origin": 1,
+        "start": 0,
+        "arm": 1,
+        "setting": 1,
+        "duration": 15.0
+      },
+      "complete": false,
+      "frames": 5,
+      "check": {
+        "passed": true,
+        "reference_error": 1.614450866491352e-11,
+        "balance": 4.270704392607519e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o1_s1_a0_v0",
+        "kind": "FINITE",
+        "origin": 1,
+        "start": 1,
+        "arm": 0,
+        "setting": 0,
+        "duration": 15.0
+      },
+      "complete": false,
+      "frames": 5,
+      "check": {
+        "passed": true,
+        "reference_error": 4.906075933773213e-09,
+        "balance": 4.2707042998089815e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o1_s1_a0_v1",
+        "kind": "FINITE",
+        "origin": 1,
+        "start": 1,
+        "arm": 0,
+        "setting": 1,
+        "duration": 15.0
+      },
+      "complete": false,
+      "frames": 5,
+      "check": {
+        "passed": true,
+        "reference_error": 3.1752480717105534e-11,
+        "balance": 4.2707042998089815e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o1_s1_a1_v0",
+        "kind": "FINITE",
+        "origin": 1,
+        "start": 1,
+        "arm": 1,
+        "setting": 0,
+        "duration": 15.0
+      },
+      "complete": false,
+      "frames": 5,
+      "check": {
+        "passed": true,
+        "reference_error": 2.457382494685063e-08,
+        "balance": 4.2707042998089815e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "f_o1_s1_a1_v1",
+        "kind": "FINITE",
+        "origin": 1,
+        "start": 1,
+        "arm": 1,
+        "setting": 1,
+        "duration": 15.0
+      },
+      "complete": false,
+      "frames": 5,
+      "check": {
+        "passed": true,
+        "reference_error": 2.878496210880191e-10,
+        "balance": 2.1353521499044908e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "MAINTAINED_s0_v0",
+        "kind": "MAINTAINED",
+        "start": 0,
+        "setting": 0,
+        "duration": 25.0
+      },
+      "complete": false,
+      "frames": 5,
+      "check": {
+        "passed": true,
+        "reference_error": 3.410605131648481e-13,
+        "balance": 3.0820806114618747e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "MAINTAINED_s0_v1",
+        "kind": "MAINTAINED",
+        "start": 0,
+        "setting": 1,
+        "duration": 25.0
+      },
+      "complete": false,
+      "frames": 5,
+      "check": {
+        "passed": true,
+        "reference_error": 5.684341886080802e-14,
+        "balance": 3.0852085687806786e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "MAINTAINED_s1_v0",
+        "kind": "MAINTAINED",
+        "start": 1,
+        "setting": 0,
+        "duration": 25.0
+      },
+      "complete": false,
+      "frames": 5,
+      "check": {
+        "passed": true,
+        "reference_error": 5.684341886080801e-13,
+        "balance": 1.8976273988409055e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "MAINTAINED_s1_v1",
+        "kind": "MAINTAINED",
+        "start": 1,
+        "setting": 1,
+        "duration": 25.0
+      },
+      "complete": false,
+      "frames": 5,
+      "check": {
+        "passed": true,
+        "reference_error": 6.252776074688882e-13,
+        "balance": 1.8976273988409055e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "ISOLATED_C1_s0_v0",
+        "kind": "ISOLATED_C1",
+        "start": 0,
+        "setting": 0,
+        "duration": 25.0
+      },
+      "complete": false,
+      "frames": 5,
+      "check": {
+        "passed": true,
+        "reference_error": 2.706389636841777e-07,
+        "balance": 4.270704392607523e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "ISOLATED_C1_s0_v1",
+        "kind": "ISOLATED_C1",
+        "start": 0,
+        "setting": 1,
+        "duration": 25.0
+      },
+      "complete": false,
+      "frames": 5,
+      "check": {
+        "passed": true,
+        "reference_error": 5.346123543858994e-10,
+        "balance": 1.7082817570430092e-15,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "ISOLATED_C1_s1_v0",
+        "kind": "ISOLATED_C1",
+        "start": 1,
+        "setting": 0,
+        "duration": 25.0
+      },
+      "complete": false,
+      "frames": 5,
+      "check": {
+        "passed": true,
+        "reference_error": 7.372343162614925e-07,
+        "balance": 6.406056449713475e-16,
+        "minimum": 0.0
+      }
+    },
+    {
+      "job": {
+        "id": "ISOLATED_C1_s1_v1",
+        "kind": "ISOLATED_C1",
+        "start": 1,
+        "setting": 1,
+        "duration": 25.0
+      },
+      "complete": false,
+      "frames": 5,
+      "check": {
+        "passed": true,
+        "reference_error": 1.5766445926601591e-09,
+        "balance": 8.541408599617965e-16,
+        "minimum": 0.0
+      }
+    }
+  ],
+  "scope": "deterministic population-limit trajectory/reference bridge; no finite-tick stochastic qualification"
+}
