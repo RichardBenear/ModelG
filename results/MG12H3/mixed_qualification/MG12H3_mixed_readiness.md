@@ -58,3 +58,5 @@ OriginalMG117remains failed/incomplete. The corrected deterministic MG122referen
 Approve the **262,144path/64job mixed-law qualification, frozen16bounds,3core-hour cap/max8local workers and full public raw/results retention**. The current instruction authorized next-step preparation; RESEARCH_PROTOCOL.md workflow3requires concrete scientific criteria and budget approval before this full batch. After approval, publish registration before sampling. PI closure remains later.
 
 Files: spec/MG12H3_mixed_qualification.md; preparation/plan.json/results.json; src/run_mg12h3_mixed.py; src/check_mg12h3_mixed.py. Published preparation/reference bytes and metadata are verified separately in retention_verified.json. No production registration or formal sample exists.
+
+Publication verification: all 53 preparation/report files and all frozen source/reference hashes match published commit `08fa352`. Binary archives match byte for byte. Formal production remains unregistered and unstarted. See [retention_verified.json](retention_verified.json).

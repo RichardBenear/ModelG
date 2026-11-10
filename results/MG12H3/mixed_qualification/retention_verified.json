@@ -1,0 +1,278 @@
+{
+  "passed": true,
+  "published_commit": "08fa35271f703b3d8793c8dd9fd6ee2a803ef3be",
+  "files": [
+    {
+      "path": "results/MG12H3/mixed_qualification/MG12H3_mixed_readiness.md",
+      "bytes": 7772,
+      "sha256": "2bca7e964576f36e692d1e9dcd258425f80fa111bdd1d32451830e9a5030dcf5"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/attempt.json",
+      "bytes": 30,
+      "sha256": "1f80f3d206fefa04bbf86864adb8db77eeab126ac77526e1fa9b4a3923063077"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/plan.json",
+      "bytes": 4952109,
+      "sha256": "11813e74990189ab2b41c53b78ab29739a2f11d0137202a1e46515cb957e9d8e"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/results.json",
+      "bytes": 8372,
+      "sha256": "39a852265be88aa5ae865eec0fa35c69ff601c9419f3ebc1d900f7040ad9f035"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/synthetic_score.json",
+      "bytes": 4876,
+      "sha256": "384ff1b6670073a97e84adc073b6ae3f9971c2a35ec8b26deba152ba4219aad2"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/bad_method/timing_c0_m0.json",
+      "bytes": 316,
+      "sha256": "84f5f2c44ce67490ac3684905887113f4cb6e3295891151d0474b7eb113df0e9"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/bad_method/timing_c0_m0.npz",
+      "bytes": 2214,
+      "sha256": "a220a2fd4cb1e25240f59c30fe086671046556d09a16da46b3a4a097961bca58"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/bad_method/timing_c0_m0_traces.jsonl",
+      "bytes": 14103,
+      "sha256": "79dcb844fa753b2b68ace9357d8c5199998762b595e528576e18679126241372"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/bad_seed/timing_c0_m0.json",
+      "bytes": 316,
+      "sha256": "23044ab95806da0eee80f0c5e0359d04f0ea9ded34bf5d5613ef589cd233a7c8"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/bad_seed/timing_c0_m0.npz",
+      "bytes": 2216,
+      "sha256": "0614528eb257fe95a24b069b4161e8b0ca53e3440a125624f92f96c6cce23c42"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/bad_seed/timing_c0_m0_traces.jsonl",
+      "bytes": 14103,
+      "sha256": "79dcb844fa753b2b68ace9357d8c5199998762b595e528576e18679126241372"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/bad_trace/timing_c0_m0.json",
+      "bytes": 316,
+      "sha256": "0c22823a2f9c7389405f8e9820a77d2673b14668c3f77c627a6cc0c50f447860"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/bad_trace/timing_c0_m0.npz",
+      "bytes": 2216,
+      "sha256": "1c350752935c8a9e4246a3cfd9f17090aad1a07c6e83269ff9c3da91280606ce"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/bad_trace/timing_c0_m0_traces.jsonl",
+      "bytes": 14147,
+      "sha256": "3ad19de5a27c46e3ef4bcf72c79938f30af425240b125d455e1550bebda5a3fc"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/prefix/timing_c0_m0.json",
+      "bytes": 314,
+      "sha256": "2763de1de4c020b981303c9fea7aebc53215a44818f1ca6b032feef7269d8ba3"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/prefix/timing_c0_m0.npz",
+      "bytes": 1594,
+      "sha256": "9d314e313f79e53e59fcebeedcc2cb4accad5b7bccbf2511d15ff5ef071e4675"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/prefix/timing_c0_m0_traces.jsonl",
+      "bytes": 7472,
+      "sha256": "f8d25870f439151f0226175c3835e6836808862eda849f19532d0aeec70f3d42"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/references/c0_reference.npz",
+      "bytes": 1513,
+      "sha256": "262a7c32fb1a1a23875f4010853efc9ed6e08c1251374639a966897dec551a46"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/references/c1_reference.npz",
+      "bytes": 1111,
+      "sha256": "58de04ae5b2707d429fceaadc66b3052bfefc0d4c52b4c3628e7240118eceda4"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/references/c2_reference.npz",
+      "bytes": 6523,
+      "sha256": "760b7ced4c77a882e2bf5a30f8a185686dbef9d33fbb02a8a387bbf8038f2980"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/references/c3_reference.npz",
+      "bytes": 9940,
+      "sha256": "ee12b66cc00dced1d57bc0641c9d985e07964ed786d26856344f55c2086ef598"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c0_m0.json",
+      "bytes": 316,
+      "sha256": "0c22823a2f9c7389405f8e9820a77d2673b14668c3f77c627a6cc0c50f447860"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c0_m0.npz",
+      "bytes": 2216,
+      "sha256": "1c350752935c8a9e4246a3cfd9f17090aad1a07c6e83269ff9c3da91280606ce"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c0_m0_progress.json",
+      "bytes": 47,
+      "sha256": "1536667a8876eed3bbc9feb4eb898d3c98db9c746031d0dc6126fc0b1770fa48"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c0_m0_traces.jsonl",
+      "bytes": 14103,
+      "sha256": "79dcb844fa753b2b68ace9357d8c5199998762b595e528576e18679126241372"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c0_m1.json",
+      "bytes": 316,
+      "sha256": "da34bd7060b8f1d7538d33e277350c43c0dba25671b51d60550ae77c0e97942e"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c0_m1.npz",
+      "bytes": 2197,
+      "sha256": "774852040c1a9025e397a1203571f4efef5733349c0d1fe91dfd30f5cde2e41a"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c0_m1_progress.json",
+      "bytes": 47,
+      "sha256": "1536667a8876eed3bbc9feb4eb898d3c98db9c746031d0dc6126fc0b1770fa48"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c0_m1_traces.jsonl",
+      "bytes": 14561,
+      "sha256": "384dab593a3ae6e3921af2e5c95a88f1edd9f5064e1392c9834774fcfbd51c37"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c1_m0.json",
+      "bytes": 316,
+      "sha256": "48ea4c100a95ebdf7be1591b13b7392a32abb5eb99c53b1e80030e1c2b90dc5e"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c1_m0.npz",
+      "bytes": 2191,
+      "sha256": "085edeef8873be1cefc9199379407da8df20eaefb8def0b78e14b68954fb166f"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c1_m0_progress.json",
+      "bytes": 47,
+      "sha256": "1536667a8876eed3bbc9feb4eb898d3c98db9c746031d0dc6126fc0b1770fa48"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c1_m0_traces.jsonl",
+      "bytes": 19690,
+      "sha256": "9c77d822175940b6ed137c8132159deb2b145baadff7a5e259f4405a711a089b"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c1_m1.json",
+      "bytes": 315,
+      "sha256": "862d2d4bdbc4a06a3fb4fd2a296fe3640119ed6e8ae18d93c430b97e6d725118"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c1_m1.npz",
+      "bytes": 2195,
+      "sha256": "828758f362c904caa927dde60e06bb0c5134be1a1b094a6169d5a8aed0b9cceb"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c1_m1_progress.json",
+      "bytes": 47,
+      "sha256": "1536667a8876eed3bbc9feb4eb898d3c98db9c746031d0dc6126fc0b1770fa48"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c1_m1_traces.jsonl",
+      "bytes": 20716,
+      "sha256": "0d7ae3e76784e9073232a604276ea6b0933695da831a87583ef2ac071aedd4f2"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c2_m0.json",
+      "bytes": 318,
+      "sha256": "da22ba77c406a3cc5a96ef51c585f97dc740152ad369a18e47bc60b13b448bd9"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c2_m0.npz",
+      "bytes": 2110,
+      "sha256": "e285861443008c37507cc6fc1e14e6efceadb3095356c46fa6a6a59aa31cee6e"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c2_m0_progress.json",
+      "bytes": 47,
+      "sha256": "1536667a8876eed3bbc9feb4eb898d3c98db9c746031d0dc6126fc0b1770fa48"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c2_m0_traces.jsonl",
+      "bytes": 13874,
+      "sha256": "33822bc7cc65863ecbc75ef70e77eaf0cef2a69fb058d603fe16507f21d638f5"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c2_m1.json",
+      "bytes": 315,
+      "sha256": "56b5dcb51260d5dd167357fe7a76a3727beb98f2e312ff8368815e782dbf976b"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c2_m1.npz",
+      "bytes": 2089,
+      "sha256": "30bb11ea6455fe0f04306ec0af9ed7932af9dc4aa464466bdf33e0d9b3bde4c3"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c2_m1_progress.json",
+      "bytes": 47,
+      "sha256": "1536667a8876eed3bbc9feb4eb898d3c98db9c746031d0dc6126fc0b1770fa48"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c2_m1_traces.jsonl",
+      "bytes": 13540,
+      "sha256": "d90554c0bc72b3a947f220a3c72481376dfb9dea6d7ac68a16f48fd01d824b5f"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c3_m0.json",
+      "bytes": 318,
+      "sha256": "6d9629afd24d27b5f2e589c4b1f5b93e9faa1d7b7ad50236fefd563c99303e17"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c3_m0.npz",
+      "bytes": 2116,
+      "sha256": "27b5ab111721b0531e88e31d3b8d55db46747151e7ec7e570970f22c9fa99a4d"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c3_m0_progress.json",
+      "bytes": 47,
+      "sha256": "1536667a8876eed3bbc9feb4eb898d3c98db9c746031d0dc6126fc0b1770fa48"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c3_m0_traces.jsonl",
+      "bytes": 27311,
+      "sha256": "6e3c4c9deb4d73f69289d14b4b06c9240d24eb3f26d75d3392ab70430e1a5e1f"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c3_m1.json",
+      "bytes": 316,
+      "sha256": "0bcfa05b1f20e09e9ec035ae24ea1e0d81c5d1866e4de694807def88f5c570a5"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c3_m1.npz",
+      "bytes": 2056,
+      "sha256": "924bf7c4f18fbf6d08e20e9a2e612c1792e41e8984629e2b127b9f5aadfe2541"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c3_m1_progress.json",
+      "bytes": 47,
+      "sha256": "1536667a8876eed3bbc9feb4eb898d3c98db9c746031d0dc6126fc0b1770fa48"
+    },
+    {
+      "path": "results/MG12H3/mixed_qualification/preparation/timing/timing_c3_m1_traces.jsonl",
+      "bytes": 26065,
+      "sha256": "60bc8a7fe1c8ac7aa3b717e784bdceca805819f0acaab6d97dacc7011b6f8f10"
+    }
+  ],
+  "file_count": 53,
+  "binary_count": 16,
+  "preparation_paths": 1024,
+  "formal_paths": 0,
+  "formal_registered": false,
+  "source_hashes_verified": true,
+  "plan_hash_verified": true
+}
