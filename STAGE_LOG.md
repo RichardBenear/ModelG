@@ -1244,3 +1244,6 @@ Freeze corrected24slot provenance manifest and execution/analysis before saved-o
 MG120completion preparation passed full24heldmatrix/12pairs, missing suppression and hash/method tamper rejection; no new trajectories. Forecast50.026955seconds/300cap draft; run approval pending. Ready report results/MG12H3/completion/MG12H3_completion_readiness.md.
 
 MG120b final saved-only validation passes with complete original/donor/diagnostic input hash coverage and bound canonicalplan/preparation metadata. All prior preparation versions retained; no new integration or threshold change. Run approval still pending.
+
+### MG121 — completion run registered
+PI approves22reuse+2fresh corrected matrix/criteria,300secondcap/oneworker/fullpublicretention. Registration published before fresh replays; oldfailedrununchanged. No independent stochastic replication or new physics claim.
