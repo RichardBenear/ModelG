@@ -22,12 +22,13 @@ def apply(available,output,channel):
     return remaining,result
 
 
-def tick(snapshot,config,delta,rng,max_events=100000):
+def tick(snapshot,config,delta,rng,max_events=100000,deadline=float("inf")):
     """Accepted-event race; injected RNG, separate available/output populations."""
-    import math
+    import math,time
     if not math.isfinite(delta) or delta<=0:raise ValueError('Invalid tick')
     available=np.array(snapshot,copy=True);output=np.array(snapshot,copy=True);clock=0.;trace=[]
     while True:
+        if time.perf_counter()>deadline:raise TimeoutError("Tick deadline")
         options=list(channels(available,config));total=sum(c[3] for c in options)
         if not total:break
         wait=float(rng.exponential(1/total))
@@ -45,3 +46,23 @@ def tick(snapshot,config,delta,rng,max_events=100000):
         available,output=apply(available,output,chosen)
         trace.append(dict(time=clock,rule=chosen[0],increment=chosen[1].tolist(),reserved=chosen[2].tolist()))
     return dict(counts=output,available=available,trace=trace)
+
+
+def simulate(initial,config,times,seed,delta=.001,deadline=float('inf'),rng=None):
+    """H2-compatible frame subdivision, count-only accepted-event traces."""
+    import math,time
+    times=np.asarray(times,float)
+    if type(seed) is not int or not 0<=seed<2**32 or times.ndim!=1 or len(times)<2 or times[0]!=0 or np.any(~np.isfinite(times)) or np.any(np.diff(times)<=0) or not math.isfinite(delta) or delta<=0:raise ValueError('Invalid execution bounds')
+    list(channels(initial,config))
+    rng=np.random.default_rng(seed) if rng is None else rng
+    output=np.array(initial,copy=True);saved=[output.copy()];trace=[];clock=0.;step=0
+    for target in times[1:]:
+        while clock<target:
+            if time.perf_counter()>deadline:raise TimeoutError('Trajectory deadline')
+            end=min(clock+delta,float(target))
+            if end<=clock:raise ValueError('Tick cannot advance')
+            result=tick(output,config,end-clock,rng,deadline=deadline)
+            for row in result['trace']:row.update(time=row['time']+clock,step=step)
+            trace.extend(result['trace']);output=result['counts'];clock=end;step+=1
+        saved.append(output.copy())
+    return dict(counts=np.asarray(saved),trace=trace,steps=step)

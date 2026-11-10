@@ -1,6 +1,6 @@
 """MG128 deterministic saved-support reservation generator check, no RNG."""
 from prepare_mg12h3_bridge import ROOT,fixture,instantiate,config,matches,atomic_json,np
-from mg12h3_exchangeable import channels,apply,tick
+from mg12h3_exchangeable import channels,apply,tick,simulate
 from collections import defaultdict
 
 def key(rule,change,reserved):return rule,tuple(change.ravel()),tuple(reserved.ravel())
@@ -36,5 +36,13 @@ def run():
     cfg=(2.,[(10.,4.)],[],(.2,.3,.4),(.4,.7),(True,True,False,False,False,False))
     out=tick(a,cfg,.1,Fixed());assert len(out['trace'])==1 and out['counts'][0,0]==1 and out['counts'][1,0]==0
     assert not tick(a,cfg,.01,Fixed())['trace']
-    atomic_json(ROOT/'results/MG12H3/efficiency/algebra_check.json',dict(passed=True,states=checked,channels=total,random_draws=0,integrations=0,scripted_tick_checks=3,scope='Joint count increment and reservation rates, not stochastic executor qualification'))
+    # Transport arrival cannot move again until the next tick.
+    a=np.zeros((7,2),np.int64);a[0,0]=1
+    cfg=(2.,[(10.,4.)]*2,[('ActiveLink',0,1,1.),('ActiveLink',1,0,1.)],(1.,1.,1.),(1.,1.),(False,)*6)
+    out=tick(a,cfg,.1,Fixed());assert len(out['trace'])==1 and out['counts'][0,1]==1
+    out=simulate(a,cfg,[0.,.025,.05],0,delta=.1,rng=Fixed());assert out['steps']==2 and len(out['trace'])==2 and out['counts'][-1,0,0]==1
+    zero=np.zeros((7,2),np.int64);assert not simulate(zero,cfg,[0.,.025],0,rng=Fixed())['trace']
+    try:list(channels(-np.ones((7,2),np.int64),cfg));raise AssertionError('Negative accepted')
+    except ValueError:pass
+    atomic_json(ROOT/'results/MG12H3/efficiency/algebra_check.json',dict(passed=True,states=checked,channels=total,random_draws=0,integrations=0,scripted_tick_checks=7,scope='Joint count increment and reservation rates, not stochastic executor qualification'))
 if __name__=='__main__':run()
