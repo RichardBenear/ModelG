@@ -4,7 +4,7 @@ The count-based engine passed the planned small-system qualification: it reprodu
 
 ## Registered conclusion
 
-**QUALIFIED within the registered fixed-fixture count-endpoint scope. PI closure pending.** All32 chunks and131,072 paths completed, with no worker failures, retries or budget stops. All8 comparisons passed the frozen total-variation upper-bound limit of0.10, at family alpha0.001. The largest upper bound was **0.0801649**; the largest observed distance was **0.00823681**. This supports finite-tolerance agreement, not exact equality of dynamics.
+**QUALIFIED within the registered fixed-fixture count-endpoint scope. PI CLOSED as MG133.** All32 chunks and131,072 paths completed, with no worker failures, retries or budget stops. All8 comparisons passed the frozen total-variation upper-bound limit of0.10, at family alpha0.001. The largest upper bound was **0.0801649**; the largest observed distance was **0.00823681**. This supports finite-tolerance agreement, not exact equality of dynamics.
 
 Four unchanged mixed fixtures used32,768 paths each, strict tick0.001, and endpoints0.05 and0.10. Registration MG131 was published as `e25f63b` before sampling. The preceding896-state algebra check compared both output increments and participant reservations against the identity engine, including R4 catalysts. Seven scripted checks covered catalyst reuse, products, transport arrival, observation boundaries and empty/invalid states.
 
