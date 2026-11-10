@@ -1242,3 +1242,5 @@ All3reference and3intersolver checks passed same1e-5threshold. TightestBDF/Radau
 Freeze corrected24slot provenance manifest and execution/analysis before saved-only pipeline tests. Reuse22original validated records, plan2fresh tighter isolatedcontrols. Preserve originalfailure, unchangedthresholds/physics, case-specificnumerics disclosed. ~50secondforecast/300cap draft, no integration yet.
 
 MG120completion preparation passed full24heldmatrix/12pairs, missing suppression and hash/method tamper rejection; no new trajectories. Forecast50.026955seconds/300cap draft; run approval pending. Ready report results/MG12H3/completion/MG12H3_completion_readiness.md.
+
+MG120b final saved-only validation passes with complete original/donor/diagnostic input hash coverage and bound canonicalplan/preparation metadata. All prior preparation versions retained; no new integration or threshold change. Run approval still pending.

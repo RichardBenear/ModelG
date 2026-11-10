@@ -34,7 +34,7 @@ Existing original and diagnostic costs remain in their ledgers; reuse does not t
 
 The complete saved-evidence pipeline evaluated the22validated originals plus the two **held diagnostic** paths under explicit provenance. It found24complete slots,12available refinement pairs and the expected closed-reference interaction. Largest held reference error was **3.82682446798e-06**; largest held pair difference was **4.14493297285e-06**. These are known validation outputs, not new predictions or production results.
 
-A deliberately missing corrected slot suppressed completion. A tampered reused checksum and altered solver-method metadata were rejected. Original/reference/source hashes remained unchanged. Final provenance-hardened preparation took **7.540086 seconds**, using saved data only. The earlier saved-only preparation is preserved in preparation_v1/. No new integration, trajectory or random draw was produced.
+A deliberately missing corrected slot suppressed completion. A tampered reused checksum and altered solver-method metadata were rejected. Original/reference/source hashes remained unchanged. Final provenance-hardened preparation took **7.652950 seconds**, using saved data only. The earlier saved-only preparation is preserved in preparation_v1/ and preparation_v2/. No new integration, trajectory or random draw was produced.
 
 The implementation is built and ready: src/run_mg12h3_completion.py refuses launch without approval and passing preparation, rejects an existing attempt, saves quarter-unit prefixes, checks the two fresh replays and re-evaluates all24slots through their provenance. The original engine and stopped run are never overwritten. The complete plan/spec is spec/MG12H3_completion_plan.md; machine-readable slots and hashes are in plan.json.
 
@@ -45,3 +45,6 @@ The final preparation additionally pins all diagnostic raw/metadata targets, bin
 Approve the **22-reuse/two-fresh numerical completion plan, unchanged criteria, case-specific correction,300second local cap and full public results**. The requested approval concerns fresh execution and registration; the current instruction requested preparation of this next plan. RESEARCH_PROTOCOL.md workflow3 requires concrete modeling/criteria/budget approval before production. After approval, publish the new registration before the two fresh integrations, report the corrected matrix separately and verify its public evidence. PI closure remains a later decision.
 
 Finite-tick mixed-law statistical qualification, efficient identity-equivalent stochastic sampling, noisy pattern precision, higher-arity/3Dparticles, evolving geometry and a physical source for A/B remain outside this completion study. No such run is authorized by this plan.
+
+
+MG120b final validation pins every original donor/archive input as well as all diagnostic targets. The full saved-only checks passed again; no integration or mathematical criterion changed. Earlier preparation versions remain archived.
