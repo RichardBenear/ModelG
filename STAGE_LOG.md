@@ -1258,3 +1258,7 @@ Accepts MG122 and directs next H3work. Preserve originalfailure and distinguish 
 Commit sources/seeds before short actual-writer timing/reference checks; formal262144paths in64chunks plannedonly. Joint-count TVfamily requires32768paths due488-state conservative bound; no sample/step selection after outcomes. Preparation90seconds/thread1, fullproductionapprovalpending.
 
 MG124preparation passed1024paths/reference/arithmetic/rawfailure guards in10.227712seconds. Formal262144path forecast5052.292659workerseconds (~11–16min8workers includingparentallowance), proposed3coreh cap/fullpublicarchive awaitsPI. No formalrunregistered. Readiness report published.
+
+
+## MG125 — mixed finite-tick qualification approved/registered (2026-11-10)
+Richard: “I approve.” Approves the MG124 readiness packet: four frozen mixed fixtures, exact and strict .001,32768paths per condition/262144 total/64jobs;16joint-count TV upper bounds <=.10 with family alpha .001. Total charge10800seconds (10500worker+300parent),max8local workers/thread1,600seconds/job,full public raw retention. Registration/source/seeds published before production; preserve failures/no retries, PI closure later.

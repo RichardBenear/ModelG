@@ -2372,3 +2372,7 @@ PIsignoff accepts MG12224slot correctedmatrix/12pairs,22reuse+2fresh, verifiedra
 
 ## MG124 — mixed finite-tick qualification preparation
 After MG123closure, user directs nextsteps. Freeze4mixed fixtures/finest.001, formalR32768perfixture/method,total262144paths/64chunks,16joint-countTVbounds margin.10/alpha.001. Source/fixture/reference/seed plan before1024short timing paths and matrix-reference integrations. Preparation90seconds singleworker; synthetic complete score and missing/prefix/seed/method/trace corruption guards. Full batch NOTRUN; measuredbudgetpacket/PI approval needed. Candidate3core-hours total10800charged seconds,10500worker ceiling+300parentreserve,max8localworkers/thread1,600/job. No particle/efficiency/geometry claim.
+
+
+## MG125 — mixed finite-tick qualification approved/registered (2026-11-10)
+Richard: “I approve.” Approves the MG124 readiness packet: four frozen mixed fixtures, exact and strict .001,32768paths per condition/262144 total/64jobs;16joint-count TV upper bounds <=.10 with family alpha .001. Total charge10800seconds (10500worker+300parent),max8local workers/thread1,600seconds/job,full public raw retention. Registration/source/seeds published before production; preserve failures/no retries, PI closure later.
