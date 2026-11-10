@@ -48,3 +48,5 @@ Finite-tick mixed-law statistical qualification, efficient identity-equivalent s
 
 
 MG120b final validation pins every original donor/archive input as well as all diagnostic targets. The full saved-only checks passed again; no integration or mathematical criterion changed. Earlier preparation versions remain archived.
+
+Publication verified at c2e71c7: all completion/archived preparation inputs and referenced original/donor/reference/diagnostic binaries match published bytes or values. Exact plan bytes and all source/input hashes are unchanged. See retention_verified.json. No new integration or production registration exists.
