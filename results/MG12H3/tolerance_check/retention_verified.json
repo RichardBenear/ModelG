@@ -1,0 +1,90 @@
+{
+  "published_commit": "6e51dd710fe1e2d5eb90a6ce7fa460eda034dcfe",
+  "all_files_verified": true,
+  "source_original_reference_hashes_unchanged": true,
+  "files": 13,
+  "binary_files": 4,
+  "local_bytes": 3999421,
+  "records": [
+    {
+      "file": "results/MG12H3/tolerance_check/bdf_tight.json",
+      "bytes": 428,
+      "local_sha256": "8a466e5859e42750516e62b2861a5c894378f3db8c4ba82f8b407128df8268d8",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/tolerance_check/bdf_tight.npz",
+      "bytes": 1300101,
+      "local_sha256": "2127a46e12014b1bf05c07e5d9f41f1a6781d4c9a3b0d378f877f17bbd87f2d7",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/tolerance_check/bdf_tighter.json",
+      "bytes": 430,
+      "local_sha256": "dcb53ab3d87bb5cdd7b003ace489ac02970697eee50a6878dcb575b04bcdc144",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/tolerance_check/bdf_tighter.npz",
+      "bytes": 1307434,
+      "local_sha256": "2346e59ab10b7bc2b7431ad9955e27c15db364f960cdfb06dfaf3137de4a5af3",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/tolerance_check/evaluation.json",
+      "bytes": 3035,
+      "local_sha256": "8f302ca003d91c22aefb605b15bcfcfd9438757b631a8a8cecc88b34f3464f94",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/tolerance_check/ledger.json",
+      "bytes": 1604,
+      "local_sha256": "d915be737f8f931cd2f26c5300da38331715640418e91c9a86090cf745a87285",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/tolerance_check/MG12H3_tolerance_results.md",
+      "bytes": 6548,
+      "local_sha256": "85f3ed22dff71d16e3aa707df89b4ddf38fdadac6ccb71e02af9c2be10602433",
+      "comparison": "text normalized LF"
+    },
+    {
+      "file": "results/MG12H3/tolerance_check/MG12H3_tolerance_summary.png",
+      "bytes": 74985,
+      "local_sha256": "8e5ebb1868f9481362b4347a13e8cac59fd1bde9e667df36509e6ec09e829222",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/tolerance_check/radau_reference.json",
+      "bytes": 437,
+      "local_sha256": "94899fe9dc309d6f33f2ca92f0bcaef53bcb804f2794e4495734c1005593dc20",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/tolerance_check/radau_reference.npz",
+      "bytes": 1296782,
+      "local_sha256": "f38896e2851252091cfd2019e4f3424b54ecea021c9f7941ca8cea8e73905739",
+      "comparison": "binary exact"
+    },
+    {
+      "file": "results/MG12H3/tolerance_check/raw_manifest.json",
+      "bytes": 631,
+      "local_sha256": "d1f7cac98c784f41feed911f429ebfa50804e4e0d39b77b6eee03be7822763a5",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/tolerance_check/registration.json",
+      "bytes": 6741,
+      "local_sha256": "353962ea7fd102b7394987ffd6bbd5a1129ff39c925bd496aa016e4e124753b0",
+      "comparison": "JSON semantic"
+    },
+    {
+      "file": "results/MG12H3/tolerance_check/run_state.json",
+      "bytes": 265,
+      "local_sha256": "6a6b7b872f57fc95704ec2835610e824ecb41d324bff0b583c0162d2eec57f7c",
+      "comparison": "JSON semantic"
+    }
+  ],
+  "original_study_status": "failed/incomplete, unchanged",
+  "notes": "Binary fields/figure byte-identical; metadata compared semantically. Text hashes require original line endings; source hashes normalize LF. This diagnostic does not complete/rescore the old batch."
+}

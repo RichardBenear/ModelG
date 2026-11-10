@@ -51,3 +51,5 @@ One local worker, numerical-library thread1, completed the three integrations, p
 This diagnostic supports using tighter numerical integration in a prospectively defined follow-up. It does **not** change the original MG117 registered failure, make its original coarse trajectory pass, complete its unstarted job, or qualify H3 as a whole. A continuation/replacement plan must explicitly identify what validated prior evidence is reused, which new trajectories are required, the fixed accuracy/refinement criteria and the compute cap before further runs. The original stopped record remains visible.
 
 Finite-tick mixed-law statistical qualification, an efficient identity-equivalent stochastic representation, meaningful noisy-pattern precision and higher-arity/3D particle tests remain separate H3 tasks. No further integration was launched by this report.
+
+Publication verified: all diagnostic binaries, metadata and report match their published contents at 6e51dd7, with original/source/reference hashes unchanged. See retention_verified.json. The original stopped study remains unchanged.
