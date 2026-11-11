@@ -1,3 +1,7 @@
+# Current handoff — MG145v2 decisions, 2026-11-11
+
+PI approved smallerpayload storage and delegatedaccuracychoice. Lead selects5%initialpatterncontrast usingunroundedfrozendonor template;power.05check retained. V1backgroundconcentrationmargin/provisionalR48 superseded. Savedtransportprecision shows ordinaryR48Ghalfwidth~7.94xmargin; do not launch underpoweredqualification. Next validate drift-integral variance-reduced contrastestimator (samplerunchanged), compactwriter, then prepare disjoint24pathprecision/costpilot. Storagechoice alreadyapproved, do not reask; productionbudgetpending. Spec spec/MG12H3_finer_tick_design_v2.md; no new stochasticpaths.
+
 # Current handoff — MG145 design, 2026-11-11
 
 Finer-tick design drafted; no new coupled sampling. CanonicalOmega10case,delta.0001/.00005/.00002,T.01. Recommend disjoint24pathprecision/costpilot before provisional48pertick/144pathqualification.24nominalsimultaneousWelch comparisons;contrastmargin.01(referenceconcentration,NOT1%pattern) andpowerscale.05 proposed,notapproved. WeakGpattern sensitivity explicitlydocumented. Saved-onlyprecision/archiveplanning and20tickreconstruction pass. Budgetplanning14.4062corehwith2xallowance for144paths; actualwriterbudgetpending. Proposedcompactdecisionarchive+3fullsentineltraces needsapproval. Summary results/MG12H3/finer_tick_design/MG12H3_finer_tick_design_summary.md; full spec/MG12H3_finer_tick_design.md.

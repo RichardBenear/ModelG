@@ -2442,3 +2442,7 @@ PI explicitlysignsoffMG142and directsnextstage. MG142CLOSED,MG139closureunchange
 
 ## MG145 — finer-tick study design, no production
 PI requests designing finer-tick tests. Proposed canonicalOmega10finitecase,delta.0001/.00005/.00002,48replicatesperresolutionpendingprecision/costplanning. Six path-levelprimaryobservables/twoendpoints/twofinereferencecomparisons;24nominalsimultaneousWelch intervals,proposedcontrastmargin.01 andpower.05,explicitcoverageassumptions. Saved-only transportprecision/archive-layoutplanning under60seconds/oneworker/thread1,noRNG; freezebeforecalculation. Compactdecisionarchive/sentineltraces proposalrequiresapproval. No new coupled paths or registeredbudget.
+
+
+## MG145v2 — storage approved; accuracy chosen by delegated lead
+PI approvescompactdecisionarchive+sentineltrace option anddelegatesaccuracychoice. Select5%initialpatterncontrast(frozenunroundedtemplate,simulatedcountsunchanged),retainpower.05screen. V1absoluteconcentrationmarginandR48recommendation superseded; savedtransportplanningGprecisiongap~7.94xmargin. Validate variance-reducedlinearcontrastestimator andcompactwriter before24pathprecisionpilot; no new stochasticproduction/budget registered.

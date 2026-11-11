@@ -1,0 +1,129 @@
+{
+  "storage_approved": true,
+  "accuracy_authorization": "PI delegated accuracy choice; lead selects 5% of initial prepared pattern contrast, not 1% of background concentration",
+  "records": [
+    {
+      "species": "G",
+      "template_basis": "Unrounded frozen prepared concentration, centered and unit spatial RMS; avoids using rounding artifacts as the intended pattern",
+      "initial_integer_state_contrast": 0.0014467104329996517,
+      "margin_5percent": 7.233552164998259e-05,
+      "planning": [
+        {
+          "horizon": 0.005,
+          "delta": 0.0001,
+          "transport_only_R48_halfwidth": 0.0004101142135019264,
+          "margin": 7.233552164998259e-05,
+          "halfwidth_to_margin": 5.669610229485712,
+          "large_R_width_match_approximation": 1458.3728497195534
+        },
+        {
+          "horizon": 0.005,
+          "delta": 5e-05,
+          "transport_only_R48_halfwidth": 0.0004102289522528834,
+          "margin": 7.233552164998259e-05,
+          "halfwidth_to_margin": 5.6711964315112136,
+          "large_R_width_match_approximation": 1459.1890469946688
+        },
+        {
+          "horizon": 0.01,
+          "delta": 0.0001,
+          "transport_only_R48_halfwidth": 0.0005739585680429404,
+          "margin": 7.233552164998259e-05,
+          "halfwidth_to_margin": 7.934671029542214,
+          "large_R_width_match_approximation": 2856.4065216858785
+        },
+        {
+          "horizon": 0.01,
+          "delta": 5e-05,
+          "transport_only_R48_halfwidth": 0.0005741159872563299,
+          "margin": 7.233552164998259e-05,
+          "halfwidth_to_margin": 7.936847266193291,
+          "large_R_width_match_approximation": 2857.9736937705684
+        }
+      ]
+    },
+    {
+      "species": "X",
+      "template_basis": "Unrounded frozen prepared concentration, centered and unit spatial RMS; avoids using rounding artifacts as the intended pattern",
+      "initial_integer_state_contrast": 0.06644098447063362,
+      "margin_5percent": 0.0033220492235316815,
+      "planning": [
+        {
+          "horizon": 0.005,
+          "delta": 0.0001,
+          "transport_only_R48_halfwidth": 0.00046778925502447585,
+          "margin": 0.0033220492235316815,
+          "halfwidth_to_margin": 0.14081346288035057,
+          "large_R_width_match_approximation": 0.899602230907899
+        },
+        {
+          "horizon": 0.005,
+          "delta": 5e-05,
+          "transport_only_R48_halfwidth": 0.00046791215965436586,
+          "margin": 0.0033220492235316815,
+          "halfwidth_to_margin": 0.14085045951153213,
+          "large_R_width_match_approximation": 0.9000750382767201
+        },
+        {
+          "horizon": 0.01,
+          "delta": 0.0001,
+          "transport_only_R48_halfwidth": 0.0006511285663164831,
+          "margin": 0.0033220492235316815,
+          "halfwidth_to_margin": 0.19600208260137283,
+          "large_R_width_match_approximation": 1.7429444226047395
+        },
+        {
+          "horizon": 0.01,
+          "delta": 5e-05,
+          "transport_only_R48_halfwidth": 0.0006512953408472285,
+          "margin": 0.0033220492235316815,
+          "halfwidth_to_margin": 0.19605228490709545,
+          "large_R_width_match_approximation": 1.7438374403174102
+        }
+      ]
+    },
+    {
+      "species": "Y",
+      "template_basis": "Unrounded frozen prepared concentration, centered and unit spatial RMS; avoids using rounding artifacts as the intended pattern",
+      "initial_integer_state_contrast": 0.059094644206085394,
+      "margin_5percent": 0.00295473221030427,
+      "planning": [
+        {
+          "horizon": 0.005,
+          "delta": 0.0001,
+          "transport_only_R48_halfwidth": 0.0044068135500845975,
+          "margin": 0.00295473221030427,
+          "halfwidth_to_margin": 1.4914426203215203,
+          "large_R_width_match_approximation": 100.91922839642412
+        },
+        {
+          "horizon": 0.005,
+          "delta": 5e-05,
+          "transport_only_R48_halfwidth": 0.004416982655572249,
+          "margin": 0.00295473221030427,
+          "halfwidth_to_margin": 1.4948842538652263,
+          "large_R_width_match_approximation": 101.3857987812869
+        },
+        {
+          "horizon": 0.01,
+          "delta": 0.0001,
+          "transport_only_R48_halfwidth": 0.0054318036890621665,
+          "margin": 0.00295473221030427,
+          "halfwidth_to_margin": 1.8383404323814558,
+          "large_R_width_match_approximation": 153.32511628580772
+        },
+        {
+          "horizon": 0.01,
+          "delta": 5e-05,
+          "transport_only_R48_halfwidth": 0.005441184115840547,
+          "margin": 0.00295473221030427,
+          "halfwidth_to_margin": 1.8415151453878216,
+          "large_R_width_match_approximation": 153.85537300612268
+        }
+      ]
+    }
+  ],
+  "scope": "Transport-only precision planning; not coupled variance or a production sample-size determination",
+  "random_draws": 0,
+  "source_hash": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+}

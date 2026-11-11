@@ -1,3 +1,5 @@
+> Superseded in the accuracy, template, replication and retention decisions by [MG145 v2](MG12H3_finer_tick_design_v2.md). Original proposal retained below.
+
 # MG145 — Finer-tick testing design (for PI review)
 
 ## Plain-language objective
