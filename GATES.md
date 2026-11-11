@@ -2485,3 +2485,8 @@ PI signsoffMG154. CLOSED variancevalidation only,notmeanaccuracy/tickequivalence
 ## MG156 — paired tick-resolution development authorized
 
 PI: “Looks good to me. Go ahead and prepare and then run the tests.” Implement the split-propensity joint sampler alongside frozen marginal engines. Prospective specification: spec/MG12H3_tick_coupling_development.md. Freeze source/seeds before draws. Stage A: 60 seconds, exact marginal/strict-tick controls; Stage B conditional on A: separate 60-second actual-ring microtiming exploration. One local worker, numerical-library threads one; no automatic retries, no formal equivalence or variance-benefit verdict. Preserve failed attempts and all decision inputs. External review not requested; same-author separate recomputation required.
+
+
+### MG156 development result
+
+Both bounded phases PASSED: 896 algebra states, 6 scripted controls, 128 identical-tick regressions, 8192 exact-law pairs and 4096 nonnested transport pairs; all marginal null-consistency screens passed. Actual-ring exploration: 8 coupled pairs + 16 standalone paths, T=.0001; Y difference variance ratios .00981796/.0000317990 descriptive only (R4/comparison). A16.3826s/B43.1083s below separate60s caps; total59.4909s, one worker/thread one; no failures/retries. Separate dense-generator, transport-matrix and saved-count reconstruction passed16400 endpoints/10 sentinels. Not formal marginal/variance/equivalence qualification. Report results/MG12H3/tick_coupling_development/MG12H3_tick_coupling_development_results.md; PI closure pending. No next run.

@@ -1,0 +1,243 @@
+{
+  "passed": true,
+  "comparisons": [
+    {
+      "comparison": 0,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "paired_difference_variance": [
+        1.340148229112664e-15,
+        1.0077490986198302e-09,
+        4.312645748299841e-08
+      ],
+      "independent_difference_variance": [
+        2.7059300391402878e-08,
+        1.8032064177223346e-07,
+        4.3926077067588245e-06
+      ],
+      "ratio": [
+        4.952634435214179e-08,
+        0.005588650798463427,
+        0.009817962440998437
+      ],
+      "paired_mean_difference": [
+        1.8274553746124023e-08,
+        -1.1308087809521611e-05,
+        -0.0001099937451185945
+      ],
+      "runtimes": [
+        {
+          "kind": "paired",
+          "replicate": 0,
+          "seconds": 3.1043700000009267,
+          "events": 69535
+        },
+        {
+          "kind": "single",
+          "replicate": 0,
+          "side": 0,
+          "seconds": 1.0945181999995839,
+          "events": 69271
+        },
+        {
+          "kind": "single",
+          "replicate": 0,
+          "side": 1,
+          "seconds": 1.1485991000008653,
+          "events": 69030
+        },
+        {
+          "kind": "paired",
+          "replicate": 1,
+          "seconds": 3.112269799996284,
+          "events": 68884
+        },
+        {
+          "kind": "single",
+          "replicate": 1,
+          "side": 0,
+          "seconds": 1.0450542000035057,
+          "events": 69059
+        },
+        {
+          "kind": "single",
+          "replicate": 1,
+          "side": 1,
+          "seconds": 1.1156649999975343,
+          "events": 69349
+        },
+        {
+          "kind": "paired",
+          "replicate": 2,
+          "seconds": 3.023243299998285,
+          "events": 69261
+        },
+        {
+          "kind": "single",
+          "replicate": 2,
+          "side": 0,
+          "seconds": 1.05349859999842,
+          "events": 69060
+        },
+        {
+          "kind": "single",
+          "replicate": 2,
+          "side": 1,
+          "seconds": 1.1113335999980336,
+          "events": 69423
+        },
+        {
+          "kind": "paired",
+          "replicate": 3,
+          "seconds": 3.02555929999653,
+          "events": 69743
+        },
+        {
+          "kind": "single",
+          "replicate": 3,
+          "side": 0,
+          "seconds": 1.061016200001177,
+          "events": 68996
+        },
+        {
+          "kind": "single",
+          "replicate": 3,
+          "side": 1,
+          "seconds": 1.1353720000042813,
+          "events": 69064
+        }
+      ]
+    },
+    {
+      "comparison": 1,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "paired_difference_variance": [
+        1.799211234732845e-19,
+        1.9187798725429322e-11,
+        2.362127061862682e-10
+      ],
+      "independent_difference_variance": [
+        7.3210318124994965e-09,
+        3.0308947321970197e-07,
+        7.428299873044037e-06
+      ],
+      "ratio": [
+        2.457592427970301e-11,
+        6.330737429313675e-05,
+        3.1799026725272845e-05
+      ],
+      "paired_mean_difference": [
+        -3.4859098257695315e-10,
+        2.0996368522291364e-06,
+        -1.729195586577456e-05
+      ],
+      "runtimes": [
+        {
+          "kind": "paired",
+          "replicate": 0,
+          "seconds": 3.1105437000005622,
+          "events": 69483
+        },
+        {
+          "kind": "single",
+          "replicate": 0,
+          "side": 0,
+          "seconds": 1.0927878000002238,
+          "events": 69052
+        },
+        {
+          "kind": "single",
+          "replicate": 0,
+          "side": 1,
+          "seconds": 1.1240542999948957,
+          "events": 69331
+        },
+        {
+          "kind": "paired",
+          "replicate": 1,
+          "seconds": 3.1684940999984974,
+          "events": 69059
+        },
+        {
+          "kind": "single",
+          "replicate": 1,
+          "side": 0,
+          "seconds": 1.071398699998099,
+          "events": 69461
+        },
+        {
+          "kind": "single",
+          "replicate": 1,
+          "side": 1,
+          "seconds": 1.128745699999854,
+          "events": 69366
+        },
+        {
+          "kind": "paired",
+          "replicate": 2,
+          "seconds": 3.11387499999546,
+          "events": 69585
+        },
+        {
+          "kind": "single",
+          "replicate": 2,
+          "side": 0,
+          "seconds": 1.0627001999964705,
+          "events": 69015
+        },
+        {
+          "kind": "single",
+          "replicate": 2,
+          "side": 1,
+          "seconds": 1.1162911999999778,
+          "events": 69594
+        },
+        {
+          "kind": "paired",
+          "replicate": 3,
+          "seconds": 3.0844464000037988,
+          "events": 68942
+        },
+        {
+          "kind": "single",
+          "replicate": 3,
+          "side": 0,
+          "seconds": 1.0664560000004712,
+          "events": 69399
+        },
+        {
+          "kind": "single",
+          "replicate": 3,
+          "side": 1,
+          "seconds": 1.1135983000058332,
+          "events": 68847
+        }
+      ]
+    }
+  ],
+  "scope": "R4 descriptive microtiming only; no variance benefit or tick equivalence verdict",
+  "elapsed_seconds": 43.10828960000072,
+  "source_hashes": {
+    "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+    "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+    "spec/MG12H3_tick_coupling_development.md": "402a060555fdbb21c535692852a4af9d0b1863f40575ff448d446d6ffc9925f1",
+    "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+    "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+    "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+    "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+    "src/runner.py": "b1525817634f248857cf0b9f381db5c4d598d99b8389bfe4a2bc095cf6552a48",
+    "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+    "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+    "src/run_mg12h3_sparse_combined.py": "20c85450a97e9ff84325a925f47635ee1f2c151435ac02228c1c8171e0a907d6",
+    "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab",
+    "results/MG12H3/bridge/c0_reference.npz": "e9ed38914f3f59dd956a7809788aa6cc0099a647beb206e677c9464ac1a8ba00",
+    "results/MG12H3/bridge/c1_reference.npz": "a0ddb17ffccc04943bc2d5513d72d8044fb1dfaa5f7ced1cc24c29e59e4ea9a4",
+    "results/MG12H3/bridge/c2_reference.npz": "b83a08e37c834dfd21d0cc4d30e410bb0ae1a2c7b2e8ed777d16e854b3a27d72",
+    "results/MG12H3/bridge/c3_reference.npz": "4348819fad6f590f49fc0c40f5003313e18daedb64cb751c2e306daf469d5d42"
+  }
+}

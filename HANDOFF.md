@@ -1,3 +1,7 @@
+# Current handoff — MG156 development complete
+
+Both phases passed within60s each, total59.4909s. Split-propensity coupling preserves separate strict-tick calendars/reservations;128 identical-tick regressions,8192 exact-law pairs,4096 nonnested transport pairs passed development controls. Actual-ring microprobe T.0001:4 pairs/comparison, descriptive Yvariance ratios .00981796/.0000317990; no benefit/5%equivalence verdict. Separate saved recomputation passed16400 endpoints/10sentinels. Report results/MG12H3/tick_coupling_development/MG12H3_tick_coupling_development_results.md. PI closure pending. Recommend prospective marginal/longhistory/fullhorizon paired validation packet beforeproduction; no next run.
+
 # Current handoff — MG156 development authorized
 
 PI approves preparing/running split-propensity coupling development. New prototype and exact-reference driver; freeze/push source/spec/seed plan before draws. Stage A 60 seconds; dependent Stage B separate 60 seconds, one worker/thread one. No production qualification. See spec/MG12H3_tick_coupling_development.md.

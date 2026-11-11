@@ -1,0 +1,32 @@
+{
+  "stage_A_seconds": 16.38257199999498,
+  "stage_B_seconds": 43.10828960000072,
+  "total_charged_seconds": 59.4908615999957,
+  "core_hours": 0.016525239333332137,
+  "workers": 1,
+  "library_threads": 1,
+  "limits_seconds": [
+    60,
+    60
+  ],
+  "comparisons": [
+    {
+      "comparison": 0,
+      "paired_seconds_mean": 3.0663605999980064,
+      "independent_pair_seconds_mean": 2.1912642250008503,
+      "cost_ratio": 1.3993568484406833,
+      "joint_events": 277423,
+      "single_events": 553252
+    },
+    {
+      "comparison": 1,
+      "paired_seconds_mean": 3.1193397999995796,
+      "independent_pair_seconds_mean": 2.1940080499989563,
+      "cost_ratio": 1.4217540359530876,
+      "joint_events": 277069,
+      "single_events": 554065
+    }
+  ],
+  "failures": 0,
+  "retries": 0
+}
