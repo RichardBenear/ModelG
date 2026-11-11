@@ -2464,3 +2464,7 @@ PI “i approve” authorizesMG147v2packet:24paths/8pertick(.0001/.00005/.00002)
 
 ## MG150 — precision pilot closed; MG151 Y-estimator proposal
 PI “i sign off” closesMG149precisionpilot. Recommend prospectivelyfixedYdirect/integratedblend,mathematicalanddisjointsavedcasechecks beforefreshvariancevalidation. Pilotfittedgainnotqualificationevidence. No new sampling,changedmargins orbudgetapproval inferred.
+
+
+## MG151/MG152 — fixed-blend validation preparation
+PI directsMG151proposal. FreezeYweights pertime/sharedacrossticks,analytic/savedcase/syntheticchecks;no newphysicalpaths. Proposedfresh24paths/3resolutions T.01,primarylateYvariancecomparison,stratifiedpaired10000bootstrap/95%interval plusalltickpointratios<1;noequivalenceverdict/refitting. Existingwriterreusedunchanged;forecast1.5xmeasuredpriorjobcharge+3s. Candidate14400chargedseconds/max8workers,budgetapprovalpending. Source/seeds/analysisseedbeforepreparation.

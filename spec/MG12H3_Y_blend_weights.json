@@ -1,0 +1,17 @@
+{
+  "scope": "MG151 fixed weights, shared across tick resolutions; no refitting",
+  "times": [
+    0.005,
+    0.01
+  ],
+  "alpha_direct": [
+    0.31103637554093005,
+    0.620838372539336
+  ],
+  "alpha_integrated": [
+    0.68896362445907,
+    0.37916162746066395
+  ],
+  "source": "MG149 closed precision pilot, pooled within-resolution centered covariance",
+  "training_file": "results/MG12H3/finer_tick_precision_pilot/separate_recomputation.json"
+}
