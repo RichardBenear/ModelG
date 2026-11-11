@@ -2452,3 +2452,7 @@ PI approvescompactdecisionarchive+sentineltrace option anddelegatesaccuracychoic
 PI directsnextstep afterMG145v2. Frozenbounded60second/oneworker/thread1 diagnosticbatch:factoredcontrastdriftexposures,128same-seedmixedpaths/384ticks,4096knownonechannelpaths,4x512mixedmeanchecks,scriptedboundaries/exhaustion/corruption. Noactualringprecisionpilot orformalqualification. Samplerfrozen;source/seeds beforedraws;failurestoppreserved/no silentretry.
 
 MG146passed:128same-seedpaths/384ticks identicalevents/states/RNG;4096knownmeanpaths and2048mixed diagnosticpaths passed;6scriptedguards andsavedrecomputation pass.3.03126s<60;one-channelvariancegain1138.93notextrapolated. MG147compactactualwriterpreparation nowfrozen3shortjobs/T.0001/60soneworker,prospective24pathpilotbudgetpending. No actual-ring precisionpilotregistered.
+
+
+## MG148 — compact finer-tick precision pilot approved/registered
+PI “i approve” authorizesMG147v2packet:24paths/8pertick(.0001/.00005/.00002),T.01,precision/costonly.21600chargedseconds(21000worker+600parent),max8workers/thread1,600job;3600secondwallchecks. Compactdecisionarchiveplus3fullsentinelpathsalreadyapproved. Publishregistrationbeforeproductiondraws;no retries/equivalenceverdict/automaticclosure.

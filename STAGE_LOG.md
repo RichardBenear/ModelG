@@ -1350,3 +1350,7 @@ PI directsnextstep afterMG145v2. Frozenbounded60second/oneworker/thread1 diagnos
 MG146passed:128same-seedpaths/384ticks identicalevents/states/RNG;4096knownmeanpaths and2048mixed diagnosticpaths passed;6scriptedguards andsavedrecomputation pass.3.03126s<60;one-channelvariancegain1138.93notextrapolated. MG147compactactualwriterpreparation nowfrozen3shortjobs/T.0001/60soneworker,prospective24pathpilotbudgetpending. No actual-ring precisionpilotregistered.
 
 MG147readiness:compactwriterpreparation_v2(all3finerresolutions)passed5.58055seconds/guards;runtimeenvironmentprovenancebound,originalsuccessfulpreparationpreserved.24pathprecisionpilotready,forecast8426.47worker-seconds,proposed21600chargedseconds/max8workers. Onlynewbudgetapprovalpending; rawchoice/accuracyresolved. No formalpilotregistration or production.
+
+
+## MG148 — compact finer-tick precision pilot approved/registered
+PI “i approve” authorizesMG147v2packet:24paths/8pertick(.0001/.00005/.00002),T.01,precision/costonly.21600chargedseconds(21000worker+600parent),max8workers/thread1,600job;3600secondwallchecks. Compactdecisionarchiveplus3fullsentinelpathsalreadyapproved. Publishregistrationbeforeproductiondraws;no retries/equivalenceverdict/automaticclosure.

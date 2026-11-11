@@ -1,3 +1,7 @@
+# Current handoff — MG148, 2026-11-11
+
+Compactfiner-tickprecisionpilot APPROVED/REGISTERED. PI approvesMG147v2design/budget21600chargedseconds/max8workers andapprovedcompact+sentinelarchive.24paths/T.01at3resolutions;entry src/run_mg12h3_finer_precision.py --run. Publishregistrationbeforelaunch. No retries or equivalenceverdict; PIclosureseparate.
+
 # Current handoff — MG147 ready, 2026-11-11
 
 MG146estimatorvalidationPASSED (128same-seedpaths/384ticks,4096knownmean+2048mixedpaths,6guards,savedrecomputation);samplerunchanged. MG147compactactualwriterpreparation_v2passed3shortpaths/guards5.58055s<60,environmenthashbound. Pilot24paths (8pertick.0001/.00005/.00002,T.01)READY;forecast8426.47worker-seconds,proposed21600total/max8workers/600job. Budgetapprovalpending; storageandaccuracyalreadyapproved/delegated,do not reask. No productionregistration/precisionpilotdraws. Report results/MG12H3/finer_tick_precision_pilot/MG12H3_finer_precision_readiness.md.
