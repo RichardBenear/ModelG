@@ -1,9 +1,10 @@
 """MG147 actual compact writer preparation, no precision-pilot draws."""
 from mg12h3_finer_precision import *
 import shutil
-PREP=BASE/'preparation'
+PREP=BASE/'preparation_v2'
+PLAN=BASE/'plan_v2.json'
 def plan():
- assert not (BASE/'plan.json').exists();used=set()
+ assert not (PLAN).exists();used=set()
  def collect(x):
   if isinstance(x,dict):
    for v in x.values():collect(v)
@@ -17,12 +18,12 @@ def plan():
   while v in used:nonce+=1;v=seed_for(12,j['level'],0,14701,j['replicate'],nonce)
   used.add(v);formal[j['id']]=v
  for level in range(3):
-  nonce=0;v=seed_for(12,level,0,14700,0)
-  while v in used:nonce+=1;v=seed_for(12,level,0,14700,0,nonce)
+  nonce=0;v=seed_for(12,level,0,14702,0)
+  while v in used:nonce+=1;v=seed_for(12,level,0,14702,0,nonce)
   used.add(v);prep[str(level)]=v
- atomic_json(BASE/'plan.json',dict(jobs=jobs(),seeds=formal,preparation_seeds=prep,source_hashes=hashes()))
+ atomic_json(PLAN,dict(jobs=jobs(),seeds=formal,preparation_seeds=prep,source_hashes=hashes()))
 def run():
- p=json.loads((BASE/'plan.json').read_text());assert hashes()==p['source_hashes'] and not (PREP/'attempt.json').exists();clock=time.perf_counter();deadline=clock+60;atomic_json(PREP/'attempt.json',dict(status='STARTED'));timings={};storage={};guards={};sample=None
+ p=json.loads((PLAN).read_text());assert hashes()==p['source_hashes'] and not (PREP/'attempt.json').exists();clock=time.perf_counter();deadline=clock+60;atomic_json(PREP/'attempt.json',dict(status='STARTED'));timings={};storage={};guards={};sample=None
  for j in jobs():
   if j['replicate']!=0:continue
   short=dict(j,duration=.0001,observation=.0001,stride=round(.0001/j['delta']));start=time.perf_counter();write(short,p['preparation_seeds'][str(j['level'])],PREP,deadline);audit(short,p['preparation_seeds'][str(j['level'])],PREP,deadline);timings[str(j['level'])]=time.perf_counter()-start;storage[str(j['level'])]=sum(x.stat().st_size for x in (PREP/j['id']).rglob('*') if x.is_file());sample=short if sample is None else sample
@@ -38,7 +39,7 @@ def run():
   if name=='corrupt_exposure':values['exposures'][0,0]+=1.
   else:values['steps']=values['steps'][:0]
   np.savez_compressed(file,**values);reject(name,lambda:audit(sample,seed,target,deadline))
- forecast={j['id']:2*timings[str(j['level'])]*100+3 for j in jobs()};assert time.perf_counter()-clock<60 and hashes()==p['source_hashes'];atomic_json(BASE/'readiness.json',dict(passed=True,elapsed_seconds=time.perf_counter()-clock,timings=timings,storage=storage,guards=guards,forecast=forecast,forecast_worker_seconds=sum(forecast.values()),source_hashes=hashes(),plan_sha256=hashlib.sha256((BASE/'plan.json').read_bytes()).hexdigest(),production_registered=False))
+ forecast={j['id']:2*timings[str(j['level'])]*100+3 for j in jobs()};assert time.perf_counter()-clock<60 and hashes()==p['source_hashes'];atomic_json(BASE/'readiness.json',dict(passed=True,elapsed_seconds=time.perf_counter()-clock,timings=timings,storage=storage,guards=guards,forecast=forecast,forecast_worker_seconds=sum(forecast.values()),source_hashes=hashes(),plan_sha256=hashlib.sha256((PLAN).read_bytes()).hexdigest(),production_registered=False))
 if __name__=='__main__':
  try:plan() if '--plan' in sys.argv else run()
  except BaseException:atomic_json(PREP/'failure.json',dict(error=traceback.format_exc()));raise

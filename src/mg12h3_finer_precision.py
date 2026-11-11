@@ -3,7 +3,7 @@ import os
 for key in ('OPENBLAS_NUM_THREADS','MKL_NUM_THREADS','OMP_NUM_THREADS','NUMEXPR_NUM_THREADS'):os.environ[key]='1'
 from pathlib import Path
 from datetime import datetime,timezone
-import numpy as np,json,time,hashlib,math,sys,traceback
+import numpy as np,json,time,hashlib,math,sys,traceback,platform
 from mg12h3_contrast_estimator import Contrast,tick,aggregate_audit
 from run_mg12h3_sparse_combined import ROOT,load
 from mg10e2c1_pool import atomic_json
@@ -13,6 +13,9 @@ FILES=['src/mg12h3_finer_precision.py','src/prepare_mg12h3_finer_precision.py','
 def hashes():
  h={p:hashlib.sha256((ROOT/p).read_text(encoding='utf-8').replace('\r\n','\n').encode()).hexdigest() for p in FILES}
  p=ROOT/f'results/MG12H3/ring_feasibility/{CASE}.npz';h[p.relative_to(ROOT).as_posix()]=hashlib.sha256(p.read_bytes()).hexdigest();return h
+
+def environment():
+ return dict(python=sys.version,numpy=np.__version__,platform=platform.platform(),byteorder=sys.byteorder,default_rng='PCG64')
 
 def setup():
  p=ROOT/f'results/MG12H3/ring_feasibility/{CASE}.npz';initial,model=load(p)
@@ -45,7 +48,7 @@ def ordered_audit(contrast,initial,result,delta):
  exposure+=values*(delta-last);np.testing.assert_array_equal(hist,result['histogram']);np.testing.assert_array_equal(available,result['available'].ravel());np.testing.assert_allclose(exposure,result['exposures'],rtol=1e-10,atol=1e-10)
 
 def write(job,seed,directory,deadline):
- directory=Path(directory);directory.mkdir(parents=True,exist_ok=True);path=directory/job['id'];path.mkdir(exist_ok=False);clock=time.perf_counter();started=datetime.now(timezone.utc).isoformat();initial,contrast=setup();atomic_json(path/'metadata.json',dict(job=job,seed=seed,contrast=contrast.metadata(),source_hashes=hashes()));pop=initial.copy();nsteps=round(job['duration']/job['delta']);assert abs(nsteps*job['delta']-job['duration'])<1e-14 and abs(job['stride']*job['delta']-job['observation'])<1e-14;rng=np.random.default_rng(seed);cumulative=contrast.direct(initial);rows=[];chunk=0;frames=[initial.copy()];direct=[cumulative.copy()];estimates=[cumulative.copy()];powers=[np.zeros(3)];events=0
+ directory=Path(directory);directory.mkdir(parents=True,exist_ok=True);path=directory/job['id'];path.mkdir(exist_ok=False);clock=time.perf_counter();started=datetime.now(timezone.utc).isoformat();initial,contrast=setup();atomic_json(path/'metadata.json',dict(job=job,seed=seed,contrast=contrast.metadata(),source_hashes=hashes(),environment=environment(),environment_sha256=hashlib.sha256(json.dumps(environment(),sort_keys=True).encode()).hexdigest()));pop=initial.copy();nsteps=round(job['duration']/job['delta']);assert abs(nsteps*job['delta']-job['duration'])<1e-14 and abs(job['stride']*job['delta']-job['observation'])<1e-14;rng=np.random.default_rng(seed);cumulative=contrast.direct(initial);rows=[];chunk=0;frames=[initial.copy()];direct=[cumulative.copy()];estimates=[cumulative.copy()];powers=[np.zeros(3)];events=0
  try:
   for step in range(nsteps):
    out=tick(contrast,pop,job['delta'],rng,deadline=deadline,sentinel=job['sentinel']);aggregate_audit(contrast,pop,out);cumulative=cumulative+out['integral'];rows.append(dict(out,step=step,cumulative=cumulative.copy(),final=out['counts']));pop=out['counts'];events+=out['events']
@@ -56,7 +59,7 @@ def write(job,seed,directory,deadline):
  np.savez_compressed(path/'observations.npz',initial=initial,counts=np.asarray(frames),direct=np.asarray(direct),estimates=np.asarray(estimates),power=np.asarray(powers),times=np.arange(len(frames))*job['observation'],job=json.dumps(job),seed=seed);meta=dict(status='COMPLETE',job=job,seed=seed,ticks=nsteps,events=events,elapsed_seconds=time.perf_counter()-clock,started=started,finished=datetime.now(timezone.utc).isoformat());atomic_json(directory/(job['id']+'.json'),meta);return meta
 
 def audit(job,seed,directory,deadline=math.inf):
- directory=Path(directory);path=directory/job['id'];meta=json.loads((directory/(job['id']+'.json')).read_text());assert meta['status']=='COMPLETE' and meta['job']==job and meta['seed']==seed;initial,contrast=setup();savedmeta=json.loads((path/'metadata.json').read_text());assert savedmeta['job']==job and savedmeta['seed']==seed and savedmeta['contrast']==json.loads(json.dumps(contrast.metadata())) and savedmeta['source_hashes']==hashes();pop=initial.copy();frames=[pop.copy()];direct=[contrast.direct(pop)];cumulative=direct[0].copy();estimates=[cumulative.copy()];powers=[np.zeros(3)];step=0;events=0;prior_rng=None
+ directory=Path(directory);path=directory/job['id'];meta=json.loads((directory/(job['id']+'.json')).read_text());assert meta['status']=='COMPLETE' and meta['job']==job and meta['seed']==seed;initial,contrast=setup();savedmeta=json.loads((path/'metadata.json').read_text());assert savedmeta['job']==job and savedmeta['seed']==seed and savedmeta['contrast']==json.loads(json.dumps(contrast.metadata())) and savedmeta['source_hashes']==hashes() and savedmeta['environment']==environment() and savedmeta['environment_sha256']==hashlib.sha256(json.dumps(environment(),sort_keys=True).encode()).hexdigest();pop=initial.copy();frames=[pop.copy()];direct=[contrast.direct(pop)];cumulative=direct[0].copy();estimates=[cumulative.copy()];powers=[np.zeros(3)];step=0;events=0;prior_rng=None
  for file in sorted(path.glob('chunk_*.npz')):
   with np.load(file) as z:
    assert z['steps'].tolist()==list(range(step,step+len(z['steps'])));offsets=z['trace_offsets'];assert offsets[0]==0 and offsets[-1]==len(z['trace_ids'])==len(z['trace_marks'])
