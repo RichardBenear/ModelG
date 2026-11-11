@@ -1,0 +1,286 @@
+{
+  "jobs": [
+    {
+      "id": "d0_r00",
+      "level": 0,
+      "replicate": 0,
+      "delta": 0.0001,
+      "stride": 10,
+      "duration": 0.01,
+      "observation": 0.001,
+      "sentinel": true
+    },
+    {
+      "id": "d0_r01",
+      "level": 0,
+      "replicate": 1,
+      "delta": 0.0001,
+      "stride": 10,
+      "duration": 0.01,
+      "observation": 0.001,
+      "sentinel": false
+    },
+    {
+      "id": "d0_r02",
+      "level": 0,
+      "replicate": 2,
+      "delta": 0.0001,
+      "stride": 10,
+      "duration": 0.01,
+      "observation": 0.001,
+      "sentinel": false
+    },
+    {
+      "id": "d0_r03",
+      "level": 0,
+      "replicate": 3,
+      "delta": 0.0001,
+      "stride": 10,
+      "duration": 0.01,
+      "observation": 0.001,
+      "sentinel": false
+    },
+    {
+      "id": "d0_r04",
+      "level": 0,
+      "replicate": 4,
+      "delta": 0.0001,
+      "stride": 10,
+      "duration": 0.01,
+      "observation": 0.001,
+      "sentinel": false
+    },
+    {
+      "id": "d0_r05",
+      "level": 0,
+      "replicate": 5,
+      "delta": 0.0001,
+      "stride": 10,
+      "duration": 0.01,
+      "observation": 0.001,
+      "sentinel": false
+    },
+    {
+      "id": "d0_r06",
+      "level": 0,
+      "replicate": 6,
+      "delta": 0.0001,
+      "stride": 10,
+      "duration": 0.01,
+      "observation": 0.001,
+      "sentinel": false
+    },
+    {
+      "id": "d0_r07",
+      "level": 0,
+      "replicate": 7,
+      "delta": 0.0001,
+      "stride": 10,
+      "duration": 0.01,
+      "observation": 0.001,
+      "sentinel": false
+    },
+    {
+      "id": "d1_r00",
+      "level": 1,
+      "replicate": 0,
+      "delta": 5e-05,
+      "stride": 20,
+      "duration": 0.01,
+      "observation": 0.001,
+      "sentinel": true
+    },
+    {
+      "id": "d1_r01",
+      "level": 1,
+      "replicate": 1,
+      "delta": 5e-05,
+      "stride": 20,
+      "duration": 0.01,
+      "observation": 0.001,
+      "sentinel": false
+    },
+    {
+      "id": "d1_r02",
+      "level": 1,
+      "replicate": 2,
+      "delta": 5e-05,
+      "stride": 20,
+      "duration": 0.01,
+      "observation": 0.001,
+      "sentinel": false
+    },
+    {
+      "id": "d1_r03",
+      "level": 1,
+      "replicate": 3,
+      "delta": 5e-05,
+      "stride": 20,
+      "duration": 0.01,
+      "observation": 0.001,
+      "sentinel": false
+    },
+    {
+      "id": "d1_r04",
+      "level": 1,
+      "replicate": 4,
+      "delta": 5e-05,
+      "stride": 20,
+      "duration": 0.01,
+      "observation": 0.001,
+      "sentinel": false
+    },
+    {
+      "id": "d1_r05",
+      "level": 1,
+      "replicate": 5,
+      "delta": 5e-05,
+      "stride": 20,
+      "duration": 0.01,
+      "observation": 0.001,
+      "sentinel": false
+    },
+    {
+      "id": "d1_r06",
+      "level": 1,
+      "replicate": 6,
+      "delta": 5e-05,
+      "stride": 20,
+      "duration": 0.01,
+      "observation": 0.001,
+      "sentinel": false
+    },
+    {
+      "id": "d1_r07",
+      "level": 1,
+      "replicate": 7,
+      "delta": 5e-05,
+      "stride": 20,
+      "duration": 0.01,
+      "observation": 0.001,
+      "sentinel": false
+    },
+    {
+      "id": "d2_r00",
+      "level": 2,
+      "replicate": 0,
+      "delta": 2e-05,
+      "stride": 50,
+      "duration": 0.01,
+      "observation": 0.001,
+      "sentinel": true
+    },
+    {
+      "id": "d2_r01",
+      "level": 2,
+      "replicate": 1,
+      "delta": 2e-05,
+      "stride": 50,
+      "duration": 0.01,
+      "observation": 0.001,
+      "sentinel": false
+    },
+    {
+      "id": "d2_r02",
+      "level": 2,
+      "replicate": 2,
+      "delta": 2e-05,
+      "stride": 50,
+      "duration": 0.01,
+      "observation": 0.001,
+      "sentinel": false
+    },
+    {
+      "id": "d2_r03",
+      "level": 2,
+      "replicate": 3,
+      "delta": 2e-05,
+      "stride": 50,
+      "duration": 0.01,
+      "observation": 0.001,
+      "sentinel": false
+    },
+    {
+      "id": "d2_r04",
+      "level": 2,
+      "replicate": 4,
+      "delta": 2e-05,
+      "stride": 50,
+      "duration": 0.01,
+      "observation": 0.001,
+      "sentinel": false
+    },
+    {
+      "id": "d2_r05",
+      "level": 2,
+      "replicate": 5,
+      "delta": 2e-05,
+      "stride": 50,
+      "duration": 0.01,
+      "observation": 0.001,
+      "sentinel": false
+    },
+    {
+      "id": "d2_r06",
+      "level": 2,
+      "replicate": 6,
+      "delta": 2e-05,
+      "stride": 50,
+      "duration": 0.01,
+      "observation": 0.001,
+      "sentinel": false
+    },
+    {
+      "id": "d2_r07",
+      "level": 2,
+      "replicate": 7,
+      "delta": 2e-05,
+      "stride": 50,
+      "duration": 0.01,
+      "observation": 0.001,
+      "sentinel": false
+    }
+  ],
+  "seeds": {
+    "d0_r00": 800706389,
+    "d0_r01": 1860998476,
+    "d0_r02": 2238618549,
+    "d0_r03": 3932655232,
+    "d0_r04": 627640208,
+    "d0_r05": 1123475057,
+    "d0_r06": 3948996406,
+    "d0_r07": 646930706,
+    "d1_r00": 617464300,
+    "d1_r01": 4134445791,
+    "d1_r02": 274943260,
+    "d1_r03": 3107233246,
+    "d1_r04": 3487407357,
+    "d1_r05": 369927870,
+    "d1_r06": 3614152235,
+    "d1_r07": 2663588036,
+    "d2_r00": 33693178,
+    "d2_r01": 3990956383,
+    "d2_r02": 2051958924,
+    "d2_r03": 1055406644,
+    "d2_r04": 2208860972,
+    "d2_r05": 2936520746,
+    "d2_r06": 1362860414,
+    "d2_r07": 3035989469
+  },
+  "preparation_seeds": {
+    "0": 4292804736,
+    "1": 2635844183,
+    "2": 171821345
+  },
+  "source_hashes": {
+    "src/mg12h3_finer_precision.py": "5df3ff0310c6d401420f3581c895a5410b599cfc71d057f10365bd6cfd8f2e7f",
+    "src/prepare_mg12h3_finer_precision.py": "7b75e8ad98f866c4471f9643cc1de0710fe7bdf1368a833c6131d24a3be6fb9c",
+    "src/run_mg12h3_finer_precision.py": "c3bac9516d4329d4eae946bb50efb9f6c921a961fc6702b370f6c5544842fd47",
+    "spec/MG12H3_finer_precision_pilot.md": "d1dea1124481178adea1889dccbadbfc129a0826000e4cdbd1ec311e20705bbd",
+    "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+    "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+    "src/run_mg12h3_sparse_combined.py": "20c85450a97e9ff84325a925f47635ee1f2c151435ac02228c1c8171e0a907d6",
+    "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+    "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+  }
+}

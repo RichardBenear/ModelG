@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "fixture": 0,
+      "paths": 512,
+      "passed": true
+    },
+    {
+      "fixture": 1,
+      "paths": 512,
+      "passed": true
+    },
+    {
+      "fixture": 2,
+      "paths": 512,
+      "passed": true
+    },
+    {
+      "fixture": 3,
+      "paths": 512,
+      "passed": true
+    }
+  ],
+  "source_hashes_unchanged": true,
+  "shared": "Saved factor coefficients and exposure arrays; independent matrix/einsum arithmetic, same author. Trace integration and sampler comparisons are the registered execution-time checks."
+}
