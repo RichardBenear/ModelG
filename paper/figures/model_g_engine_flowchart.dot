@@ -1,0 +1,33 @@
+digraph Engine {
+ graph [rankdir=TB, bgcolor="#f7f9fc", pad="0.3", nodesep="0.45", ranksep="0.40", fontname="Arial", fontsize=22, labelloc=t, label="Model G sparse engine\nOne participation per token per tick"];
+ node [shape=box, style="rounded,filled", fillcolor=white, color="#8caac5", penwidth=1.5, fontname="Arial", fontsize=15, fontcolor="#17324d", margin="0.18,0.12"];
+ edge [color="#51657a", penwidth=1.5, fontname="Arial", fontsize=13, arrowsize=0.8];
+ A [label="Load sites, connections, token counts,\nrates, tick size and random seed"];
+ B [label="Build compact reaction and transport channels"];
+ C [label="START A TICK\nAvailable counts = current state\nOutput counts = current state", fillcolor="#e3f2ec", color="#17866a"];
+ D [label="Calculate rates from available tokens"];
+ E [shape=diamond, style=filled, fillcolor="#e7eff8", label="Any possible\nevents?"];
+ F [label="Draw next within-tick event time\nusing the total available rate"];
+ G [shape=diamond, style=filled, fillcolor="#e7eff8", label="Before the\ntick ends?"];
+ H [label="Select an event\nwith probability proportional to its rate"];
+ I [label="Reserve ALL participants\nincluding unchanged catalysts", fillcolor="#e3f2ec", color="#17866a"];
+ J [label="Apply changes to OUTPUT counts\nProducts and arrivals stay unavailable", fillcolor="#e3f2ec", color="#17866a"];
+ K [label="Update only affected event rates"];
+ L [label="FINISH TICK: check and save\ncounts, events and numerical diagnostics"];
+ M [label="Make output the current state\nAdvance model time by one tick"];
+ N [shape=diamond, style=filled, fillcolor="#e7eff8", label="Requested duration\nreached?"];
+ O [label="Save final results and audit records", fillcolor="#e3f2ec", color="#17866a"];
+ A -> B -> C -> D -> E;
+ E -> F [label="Yes"];
+ F -> G;
+ G -> H [label="Yes"];
+ H -> I -> J -> K;
+ K -> E [constraint=false, label="Next eligible event"];
+ E -> L [label="No"];
+ G -> L [label="No"];
+ L -> M -> N;
+ N -> C [constraint=false, label="No: next tick", color="#7953ac", fontcolor="#7953ac"];
+ N -> O [label="Yes"];
+ note [shape=note, fillcolor="#fff4dc", color="#c78928", fontsize=12, label="Each token may participate at most once per tick.\nWithin-tick times order events; physical seconds are uncalibrated.\nAn integrity failure or run cap stops execution and preserves records."];
+ O -> note [style=invis];
+}

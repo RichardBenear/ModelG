@@ -1,0 +1,24 @@
+flowchart TD
+    A["Load sites, connections, token counts,<br/>rates, tick size and random seed"]
+    B["Build compact reaction and transport channels"]
+    C["Start a tick<br/>Available counts = current state<br/>Output counts = current state"]
+    D["Calculate rates from available tokens"]
+    E{"Any possible events?"}
+    F["Draw the next within-tick event time<br/>using the total available rate"]
+    G{"Before the tick ends?"}
+    H["Select an event<br/>with probability proportional to its rate"]
+    I["Reserve ALL participants<br/>including unchanged catalysts"]
+    J["Apply changes to OUTPUT counts<br/>Products and arrivals stay unavailable"]
+    K["Update only affected event rates"]
+    L["Finish tick: check and save<br/>counts, events and numerical diagnostics"]
+    M["Make output the current state<br/>Advance model time by one tick"]
+    N{"Requested duration reached?"}
+    O["Save final results and audit records"]
+    A --> B --> C --> D --> E
+    E -- Yes --> F --> G
+    G -- Yes --> H --> I --> J --> K --> E
+    E -- No --> L
+    G -- No --> L
+    L --> M --> N
+    N -- No --> C
+    N -- Yes --> O

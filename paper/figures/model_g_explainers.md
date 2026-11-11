@@ -1,0 +1,9 @@
+# Model G explanatory figures
+
+Added at Richard Benear's request, 2026-11-11. These explain the current fixed-ring transport and sparse strict-tick engine; they do not establish physical length/time calibration or particle persistence.
+
+- [Integrated spatial terminology](model_g_spatial_terms_integrated.png): the length ruler is aligned to site centers. Five neighbor spacings (between six centers) make one model-length unit. [SVG](model_g_spatial_terms_integrated.svg); regenerate with `python paper/figures/make_spatial_terms_integrated.py`.
+- [Transport explainer](model_g_transport_explainer.png): active nearest-neighbor ring and alternative LOCAL/CROSS_RING environment connections on the same sites. Only 12 of the actual 500 sites are shown. Rates are per token, per outgoing link, per model-time unit. [SVG](model_g_transport_explainer.svg); regenerate with `python paper/figures/make_transport_explainer.py`.
+- [Engine flowchart](model_g_engine_flowchart.png): matches the earlier chat flowchart. Available and output counts are distinct; catalysts are reserved and products/arrivals cannot act again within the tick. [SVG](model_g_engine_flowchart.svg), [Mermaid source](model_g_engine_flowchart.mmd), [Graphviz source](model_g_engine_flowchart.dot). Render with `dot -Tpng -Gdpi=170 paper/figures/model_g_engine_flowchart.dot -o paper/figures/model_g_engine_flowchart.png` and `dot -Tsvg paper/figures/model_g_engine_flowchart.dot -o paper/figures/model_g_engine_flowchart.svg`.
+
+The two explanatory illustrations use Matplotlib. The flowchart PNG/SVG uses Graphviz, with the original Mermaid retained as an editable equivalent. Numerical rates/topologies are documented in `src/mg11g2_pattern_v2.py`, `src/mg11n1.py`, and the frozen sparse engine in `src/mg12h3_sparse.py`. Drawing layout and token-marker positions are schematic.
