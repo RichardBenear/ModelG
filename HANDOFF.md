@@ -1,3 +1,7 @@
+# Current handoff — MG139, 2026-11-11
+
+Combined sparse qualification PASSED; PI closure pending.131072endpointpaths/8bounds allpass,maxupper.0818071;77930events identity-audited.8millionstressupdates pass,maxrelativetotaldrift3.82161e-11<1e-10 tolerance. Separate savedhistogram/IDaggregation pass,sourcehashes unchanged.1214.83chargedseconds(.337453coreh)<7200. Report results/MG12H3/sparse_qualification/MG12H3_sparse_qualification_results.md. Fullraw publication/verification; no next production. Recommend short actual-ring multi-tick/refinement feasibility pilot before particle trajectory design.
+
 # Current handoff — MG138, 2026-11-10
 
 Combined sparse qualification APPROVED/REGISTERED. PI approves fixed corrected-v2 packet and7200chargedseconds/max8workers/fullpublicraw. Entry src/run_mg12h3_sparse_qualification.py --run; publish registration before endpoint draws/longstress. No retry, PI closure separate.

@@ -1,0 +1,105 @@
+{
+  "qualified": true,
+  "comparisons": [
+    {
+      "cell": 0,
+      "time": 0.05,
+      "observed": 0.0032256696222736575,
+      "epsilon": 0.029977457814242183,
+      "upper": 0.03320312743651584,
+      "passed": true
+    },
+    {
+      "cell": 0,
+      "time": 0.1,
+      "observed": 0.005315925446889378,
+      "epsilon": 0.029977457814242183,
+      "upper": 0.03529338326113156,
+      "passed": true
+    },
+    {
+      "cell": 1,
+      "time": 0.05,
+      "observed": 0.003479283831823656,
+      "epsilon": 0.02275721553215948,
+      "upper": 0.026236499363983135,
+      "passed": true
+    },
+    {
+      "cell": 1,
+      "time": 0.1,
+      "observed": 0.004004906674246536,
+      "epsilon": 0.02275721553215948,
+      "upper": 0.026762122206406017,
+      "passed": true
+    },
+    {
+      "cell": 2,
+      "time": 0.05,
+      "observed": 0.004584506530946955,
+      "epsilon": 0.057533553043236374,
+      "upper": 0.06211805957418333,
+      "passed": true
+    },
+    {
+      "cell": 2,
+      "time": 0.1,
+      "observed": 0.006407928089610443,
+      "epsilon": 0.057533553043236374,
+      "upper": 0.06394148113284681,
+      "passed": true
+    },
+    {
+      "cell": 3,
+      "time": 0.05,
+      "observed": 0.00504368637697,
+      "epsilon": 0.07279085114116941,
+      "upper": 0.07783453751813942,
+      "passed": true
+    },
+    {
+      "cell": 3,
+      "time": 0.1,
+      "observed": 0.009016232941626063,
+      "epsilon": 0.07279085114116941,
+      "upper": 0.08180708408279548,
+      "passed": true
+    }
+  ],
+  "stress_passed": true,
+  "stress_results": [
+    {
+      "passed": true,
+      "updates": 1000000
+    },
+    {
+      "passed": true,
+      "updates": 1000000
+    },
+    {
+      "passed": true,
+      "updates": 1000000
+    },
+    {
+      "passed": true,
+      "updates": 1000000
+    },
+    {
+      "passed": true,
+      "updates": 1000000
+    },
+    {
+      "passed": true,
+      "updates": 1000000
+    },
+    {
+      "passed": true,
+      "updates": 1000000
+    },
+    {
+      "passed": true,
+      "updates": 1000000
+    }
+  ],
+  "combined_qualified": true
+}

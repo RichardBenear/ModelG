@@ -1,0 +1,140 @@
+{
+  "passed": true,
+  "comparisons": [
+    {
+      "cell": 0,
+      "time": 0.05,
+      "observed": 0.0032256696222736584,
+      "upper": 0.03320312743651584,
+      "passed": true
+    },
+    {
+      "cell": 0,
+      "time": 0.1,
+      "observed": 0.005315925446889378,
+      "upper": 0.03529338326113156,
+      "passed": true
+    },
+    {
+      "cell": 1,
+      "time": 0.05,
+      "observed": 0.003479283831823656,
+      "upper": 0.026236499363983135,
+      "passed": true
+    },
+    {
+      "cell": 1,
+      "time": 0.1,
+      "observed": 0.004004906674246534,
+      "upper": 0.026762122206406017,
+      "passed": true
+    },
+    {
+      "cell": 2,
+      "time": 0.05,
+      "observed": 0.004584506530946955,
+      "upper": 0.06211805957418333,
+      "passed": true
+    },
+    {
+      "cell": 2,
+      "time": 0.1,
+      "observed": 0.006407928089610443,
+      "upper": 0.06394148113284681,
+      "passed": true
+    },
+    {
+      "cell": 3,
+      "time": 0.05,
+      "observed": 0.005043686376970001,
+      "upper": 0.07783453751813942,
+      "passed": true
+    },
+    {
+      "cell": 3,
+      "time": 0.1,
+      "observed": 0.009016232941626063,
+      "upper": 0.08180708408279548,
+      "passed": true
+    }
+  ],
+  "stress": [
+    {
+      "case": "o0_a0_Omega1",
+      "updates": 1000000,
+      "checkpoints": 1000,
+      "maximum_leaf_error": 0.0,
+      "maximum_total_error": 0.002544298768043518,
+      "maximum_relative_total_error": 3.8048685911454533e-11,
+      "passed": true
+    },
+    {
+      "case": "o0_a0_Omega10",
+      "updates": 1000000,
+      "checkpoints": 1000,
+      "maximum_leaf_error": 0.0,
+      "maximum_total_error": 0.01594865322113037,
+      "maximum_relative_total_error": 2.327769154441065e-11,
+      "passed": true
+    },
+    {
+      "case": "o0_a1_Omega1",
+      "updates": 1000000,
+      "checkpoints": 1000,
+      "maximum_leaf_error": 0.0,
+      "maximum_total_error": 0.002544298768043518,
+      "maximum_relative_total_error": 3.8048685911454533e-11,
+      "passed": true
+    },
+    {
+      "case": "o0_a1_Omega10",
+      "updates": 1000000,
+      "checkpoints": 1000,
+      "maximum_leaf_error": 0.0,
+      "maximum_total_error": 0.01594865322113037,
+      "maximum_relative_total_error": 2.327769154441065e-11,
+      "passed": true
+    },
+    {
+      "case": "o1_a0_Omega1",
+      "updates": 1000000,
+      "checkpoints": 1000,
+      "maximum_leaf_error": 0.0,
+      "maximum_total_error": 0.002555541694164276,
+      "maximum_relative_total_error": 3.8216109531925473e-11,
+      "passed": true
+    },
+    {
+      "case": "o1_a0_Omega10",
+      "updates": 1000000,
+      "checkpoints": 1000,
+      "maximum_leaf_error": 0.0,
+      "maximum_total_error": 0.016119956970214844,
+      "maximum_relative_total_error": 2.353124518648648e-11,
+      "passed": true
+    },
+    {
+      "case": "o1_a1_Omega1",
+      "updates": 1000000,
+      "checkpoints": 1000,
+      "maximum_leaf_error": 0.0,
+      "maximum_total_error": 0.002555541694164276,
+      "maximum_relative_total_error": 3.8216109531925473e-11,
+      "passed": true
+    },
+    {
+      "case": "o1_a1_Omega10",
+      "updates": 1000000,
+      "checkpoints": 1000,
+      "maximum_leaf_error": 0.0,
+      "maximum_total_error": 0.016119956970214844,
+      "maximum_relative_total_error": 2.353124518648648e-11,
+      "passed": true
+    }
+  ],
+  "endpoint_paths": 131072,
+  "endpoint_events": 77930,
+  "stress_updates": 8000000,
+  "source_hashes_unchanged": true,
+  "shared": "Shared raw arrays/references and compact channel compilation; separate histogram and sorted-ID aggregation. Same author, not external replication. Checkpoint selection/leaf checks rely on registered worker checks."
+}

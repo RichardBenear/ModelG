@@ -2418,3 +2418,7 @@ PI requests endpoint and long-history stress qualification. Freeze131072freshend
 
 ## MG138 — sparse endpoint/stress qualification approved and registered
 PI “go ahead with this budget” approves corrected-v2 MG137packet:131072endpointpaths/8bounds<=.10/familyalpha.001 plus8millionforcedstressupdates/frozen numericalcriteria.7200chargedseconds total(6600worker+600parent),max8localworkers/thread1,600/job,fullpublicraw. Publish registration before draws; no retry/automaticclosure.
+
+
+## MG139 — combined sparse qualification passed; closure pending
+40/40jobs complete;131072endpointpaths/8bounds pass,maxupper.0818071<.10;77930identity-audited events.8millionforcedstressupdates pass,maxrelativetotaldrift3.82161e-11 underregisteredcriterion,leaferrorszero. Separatehistogram/IDrecomputation pass;frozenhashes unchanged.1214.83chargedseconds<7200,max8workers/thread1,no failures/retries. Long-update stress is not long physical-time qualification. Full report/raw retained; PI closure pending, no subsequent production.
