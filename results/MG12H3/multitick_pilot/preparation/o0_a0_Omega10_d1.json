@@ -1,0 +1,28 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "o0_a0_Omega10_d1",
+    "case": "o0_a0_Omega10",
+    "level": 1,
+    "delta": 0.0005,
+    "duration": 0.001
+  },
+  "seed": 3277069776,
+  "ticks": 2,
+  "events": 690385,
+  "elapsed_seconds": 11.240848299999925,
+  "started": "2026-11-11T13:33:52.613121+00:00",
+  "finished": "2026-11-11T13:34:03.853915+00:00",
+  "tick_summaries": [
+    {
+      "step": 0,
+      "events": 345652,
+      "wall_seconds": 5.585793800000829
+    },
+    {
+      "step": 1,
+      "events": 344733,
+      "wall_seconds": 5.628752300002816
+    }
+  ]
+}
