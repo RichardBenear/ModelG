@@ -61,3 +61,5 @@ The [raw manifest](raw_manifest.json) inventories **161production files**, total
 The sparse engine is qualified for these small-system endpoints and tested numerical histories. The next useful study is a short multi-tick pilot on actual ring states, checking drift across ticks, tick refinement and measured runtime/output costs. Its horizon, population scales and replicate count should be chosen prospectively from observed costs, rather than assuming that tiny-system qualification establishes particle persistence. Independent pilot checks can share a batch; the full particle design depends on them.
 
 No evidence here establishes a physical vacuum source, quantum entanglement, evolving geometry or a persistent three-dimensional particle. No subsequent production run is registered or started. PI sign-off closes this qualification scope only.
+
+Publication verification passed for all161production files and6decision/provenance files at commit`8f50308`; binary archives match byte for byte. See [verification record](production_retention_verified.json).
