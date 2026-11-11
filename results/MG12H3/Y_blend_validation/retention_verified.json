@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "published_commit": "26f4c6bcad8f1ea6adf9054f9729194673c0b2cd",
+  "files": [
+    {
+      "path": "results/MG12H3/Y_blend_validation/MG12H3_Y_blend_readiness.md",
+      "bytes": 5453,
+      "sha256": "1244b53fc2d7ed56fc592052315104b1c0983f71be31f19c5259e69756919212"
+    },
+    {
+      "path": "results/MG12H3/Y_blend_validation/plan.json",
+      "bytes": 8981,
+      "sha256": "f9b035200d49ff9ca50087f01d03c338d4f0f4e882e392663f886c2858595b6b"
+    },
+    {
+      "path": "results/MG12H3/Y_blend_validation/plan_v2.json",
+      "bytes": 8981,
+      "sha256": "632d61cb28ae6e72e30dea91717be37e24491ee4c831d33d4195b0773f3765dd"
+    },
+    {
+      "path": "results/MG12H3/Y_blend_validation/preparation/failure.json",
+      "bytes": 1143,
+      "sha256": "53c65ed639c8c1ec17d38a82368bbc7bcbeed909ac57a5463f22260f2669daa6"
+    },
+    {
+      "path": "results/MG12H3/Y_blend_validation/preparation_v2/attempt.json",
+      "bytes": 54,
+      "sha256": "d770fc401d00391c27e0c9966c6f0ca6b66d866397c3d7c85c755c0c837b0be6"
+    },
+    {
+      "path": "results/MG12H3/Y_blend_validation/preparation_v2/bootstrap_indices.npz",
+      "bytes": 103782,
+      "sha256": "5815ca361a11aefdfd4b776adde7edd83b122b1ef0b44b533b420823f63c4f14"
+    },
+    {
+      "path": "results/MG12H3/Y_blend_validation/preparation_v2/known_case_blends.npz",
+      "bytes": 4497,
+      "sha256": "6b6ab68c132eb50df6f10050cc55af8f429c97fa026f90172e46f358b5711b12"
+    },
+    {
+      "path": "results/MG12H3/Y_blend_validation/preparation_v2/synthetic_statistics.json",
+      "bytes": 2490,
+      "sha256": "f5ae4c4b66c9baffd62c25d0d260ed2cfd60a51fb07763cd326ec98928c8a1f7"
+    },
+    {
+      "path": "results/MG12H3/Y_blend_validation/readiness.json",
+      "bytes": 5316,
+      "sha256": "5329e878ff3f17f65ec56a5efae9ac1814f7b927e98138fb15e94cdf67b9b472"
+    },
+    {
+      "path": "results/MG12H3/Y_blend_validation/seed_disjointness_verified.json",
+      "bytes": 246,
+      "sha256": "688d926489cc996272f7895467c06fedaddb38901e7a40a856d500c18e984c30"
+    }
+  ],
+  "source_plan_bootstrap_hashes_verified": true,
+  "fresh_trajectories": 0,
+  "production_registered": false
+}
