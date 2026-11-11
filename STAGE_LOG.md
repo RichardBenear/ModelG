@@ -1322,3 +1322,7 @@ MG140preparation complete:4actualwriterjobs/guards pass in25.6923seconds<60.16tr
 
 ## MG141 — actual-ring multi-tick pilot approved/registered
 PI approves MG140design and production (2026-11-11):16trajectories/eightstates x2ticks(.001/.0005),horizon.01; integrity/runtime criteria,7200chargedseconds(6600worker+600parent),max8localworkers/thread1,600/job/fullpublicraw. Publish registration before draws,no retries or automaticclosure. Not particle/refinement qualification.
+
+
+## MG142 — multi-tick pilot passed; MG143 tick-resolution draft
+16paths/240ticks/60.8065millionevents integritypassed;separate savedaggregation passed;maxrelativetreedrift1.91545e-11.222.567swall/1483.38chargedsecs<7200,no failures/retries. No persistence/refinementverdict. Raw483.301MBretained;PIclosurepending. Draftnextdeterministictransporttick-resolutionanalysis before replicatedcoupledtrajectorydesign; no new production.

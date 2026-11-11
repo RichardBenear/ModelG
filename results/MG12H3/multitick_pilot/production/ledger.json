@@ -1,0 +1,1552 @@
+{
+  "records": [
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o0_a0_Omega1_d0",
+        "case": "o0_a0_Omega1",
+        "level": 0,
+        "delta": 0.001,
+        "duration": 0.01
+      },
+      "seed": 607650900,
+      "ticks": 10,
+      "events": 689982,
+      "elapsed_seconds": 16.738935200002743,
+      "started": "2026-11-11T13:39:26.364905+00:00",
+      "finished": "2026-11-11T13:39:43.103759+00:00",
+      "tick_summaries": [
+        {
+          "step": 0,
+          "events": 68453,
+          "wall_seconds": 1.576040899999498
+        },
+        {
+          "step": 1,
+          "events": 69071,
+          "wall_seconds": 1.8329676000030304
+        },
+        {
+          "step": 2,
+          "events": 68842,
+          "wall_seconds": 1.4981201000009605
+        },
+        {
+          "step": 3,
+          "events": 69408,
+          "wall_seconds": 1.731313100000989
+        },
+        {
+          "step": 4,
+          "events": 68966,
+          "wall_seconds": 1.6102516999999352
+        },
+        {
+          "step": 5,
+          "events": 68822,
+          "wall_seconds": 1.5548645000017132
+        },
+        {
+          "step": 6,
+          "events": 68962,
+          "wall_seconds": 1.6243632000005164
+        },
+        {
+          "step": 7,
+          "events": 69219,
+          "wall_seconds": 1.6776016999974672
+        },
+        {
+          "step": 8,
+          "events": 68749,
+          "wall_seconds": 1.764478600001894
+        },
+        {
+          "step": 9,
+          "events": 69490,
+          "wall_seconds": 1.799023200001102
+        }
+      ],
+      "id": "o0_a0_Omega1_d0",
+      "charged_worker_seconds": 19.018134000001737,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o0_a1_Omega1_d0",
+        "case": "o0_a1_Omega1",
+        "level": 0,
+        "delta": 0.001,
+        "duration": 0.01
+      },
+      "seed": 391167141,
+      "ticks": 10,
+      "events": 690032,
+      "elapsed_seconds": 16.302446800000325,
+      "started": "2026-11-11T13:39:26.388093+00:00",
+      "finished": "2026-11-11T13:39:42.690460+00:00",
+      "tick_summaries": [
+        {
+          "step": 0,
+          "events": 68855,
+          "wall_seconds": 1.610303900000872
+        },
+        {
+          "step": 1,
+          "events": 68879,
+          "wall_seconds": 1.5633376000005228
+        },
+        {
+          "step": 2,
+          "events": 68741,
+          "wall_seconds": 1.5322804999996151
+        },
+        {
+          "step": 3,
+          "events": 68673,
+          "wall_seconds": 1.5996732999992673
+        },
+        {
+          "step": 4,
+          "events": 69391,
+          "wall_seconds": 1.6159627000015462
+        },
+        {
+          "step": 5,
+          "events": 69011,
+          "wall_seconds": 1.541757900002267
+        },
+        {
+          "step": 6,
+          "events": 69102,
+          "wall_seconds": 1.611751099997491
+        },
+        {
+          "step": 7,
+          "events": 69217,
+          "wall_seconds": 1.7326119000026665
+        },
+        {
+          "step": 8,
+          "events": 68883,
+          "wall_seconds": 1.745116300000518
+        },
+        {
+          "step": 9,
+          "events": 69280,
+          "wall_seconds": 1.6860830999976315
+        }
+      ],
+      "id": "o0_a1_Omega1_d0",
+      "charged_worker_seconds": 19.0003930999992,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o0_a0_Omega1_d1",
+        "case": "o0_a0_Omega1",
+        "level": 1,
+        "delta": 0.0005,
+        "duration": 0.01
+      },
+      "seed": 2887624396,
+      "ticks": 20,
+      "events": 692250,
+      "elapsed_seconds": 16.926512199999706,
+      "started": "2026-11-11T13:39:26.343811+00:00",
+      "finished": "2026-11-11T13:39:43.270241+00:00",
+      "tick_summaries": [
+        {
+          "step": 0,
+          "events": 34534,
+          "wall_seconds": 0.830140099998971
+        },
+        {
+          "step": 1,
+          "events": 34800,
+          "wall_seconds": 0.8030502000001434
+        },
+        {
+          "step": 2,
+          "events": 34513,
+          "wall_seconds": 0.8776460000008228
+        },
+        {
+          "step": 3,
+          "events": 34485,
+          "wall_seconds": 0.8099609000018972
+        },
+        {
+          "step": 4,
+          "events": 34497,
+          "wall_seconds": 0.9638439999980619
+        },
+        {
+          "step": 5,
+          "events": 34716,
+          "wall_seconds": 0.9032260999993014
+        },
+        {
+          "step": 6,
+          "events": 34625,
+          "wall_seconds": 0.7528736999993271
+        },
+        {
+          "step": 7,
+          "events": 34503,
+          "wall_seconds": 0.7219482000000426
+        },
+        {
+          "step": 8,
+          "events": 34901,
+          "wall_seconds": 0.7993576000008034
+        },
+        {
+          "step": 9,
+          "events": 34772,
+          "wall_seconds": 0.8802757000012207
+        },
+        {
+          "step": 10,
+          "events": 34622,
+          "wall_seconds": 0.8359056999979657
+        },
+        {
+          "step": 11,
+          "events": 34720,
+          "wall_seconds": 0.84403889999885
+        },
+        {
+          "step": 12,
+          "events": 34519,
+          "wall_seconds": 0.7495166000007885
+        },
+        {
+          "step": 13,
+          "events": 34490,
+          "wall_seconds": 0.9885649000025296
+        },
+        {
+          "step": 14,
+          "events": 34725,
+          "wall_seconds": 0.7846277999997255
+        },
+        {
+          "step": 15,
+          "events": 34657,
+          "wall_seconds": 0.9469957000001159
+        },
+        {
+          "step": 16,
+          "events": 34558,
+          "wall_seconds": 0.8076500999995915
+        },
+        {
+          "step": 17,
+          "events": 34483,
+          "wall_seconds": 0.8445023999993282
+        },
+        {
+          "step": 18,
+          "events": 34344,
+          "wall_seconds": 0.798569900001894
+        },
+        {
+          "step": 19,
+          "events": 34786,
+          "wall_seconds": 0.9001877000009699
+        }
+      ],
+      "id": "o0_a0_Omega1_d1",
+      "charged_worker_seconds": 19.531459199999517,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o0_a1_Omega1_d1",
+        "case": "o0_a1_Omega1",
+        "level": 1,
+        "delta": 0.0005,
+        "duration": 0.01
+      },
+      "seed": 799124202,
+      "ticks": 20,
+      "events": 690934,
+      "elapsed_seconds": 16.925617100001546,
+      "started": "2026-11-11T13:39:26.404969+00:00",
+      "finished": "2026-11-11T13:39:43.330504+00:00",
+      "tick_summaries": [
+        {
+          "step": 0,
+          "events": 34578,
+          "wall_seconds": 0.8959553000022424
+        },
+        {
+          "step": 1,
+          "events": 34446,
+          "wall_seconds": 0.8369296999990183
+        },
+        {
+          "step": 2,
+          "events": 34655,
+          "wall_seconds": 0.8175568000006024
+        },
+        {
+          "step": 3,
+          "events": 34583,
+          "wall_seconds": 0.8265008000016678
+        },
+        {
+          "step": 4,
+          "events": 34611,
+          "wall_seconds": 0.7896934000018518
+        },
+        {
+          "step": 5,
+          "events": 34563,
+          "wall_seconds": 0.7390655999988667
+        },
+        {
+          "step": 6,
+          "events": 34432,
+          "wall_seconds": 0.8753714999984368
+        },
+        {
+          "step": 7,
+          "events": 34430,
+          "wall_seconds": 0.7824005000002217
+        },
+        {
+          "step": 8,
+          "events": 34558,
+          "wall_seconds": 0.8537876000009419
+        },
+        {
+          "step": 9,
+          "events": 34906,
+          "wall_seconds": 0.9056730000011157
+        },
+        {
+          "step": 10,
+          "events": 34530,
+          "wall_seconds": 0.729534699999931
+        },
+        {
+          "step": 11,
+          "events": 34472,
+          "wall_seconds": 0.7821550999979081
+        },
+        {
+          "step": 12,
+          "events": 34440,
+          "wall_seconds": 0.8615952000000107
+        },
+        {
+          "step": 13,
+          "events": 34385,
+          "wall_seconds": 0.8728890999991563
+        },
+        {
+          "step": 14,
+          "events": 34767,
+          "wall_seconds": 0.8773528999990958
+        },
+        {
+          "step": 15,
+          "events": 34475,
+          "wall_seconds": 0.8164880000003905
+        },
+        {
+          "step": 16,
+          "events": 34399,
+          "wall_seconds": 0.7578119999998307
+        },
+        {
+          "step": 17,
+          "events": 34352,
+          "wall_seconds": 0.9119562000014412
+        },
+        {
+          "step": 18,
+          "events": 34705,
+          "wall_seconds": 0.9407831999997143
+        },
+        {
+          "step": 19,
+          "events": 34647,
+          "wall_seconds": 0.960567499998433
+        }
+      ],
+      "id": "o0_a1_Omega1_d1",
+      "charged_worker_seconds": 19.511770799999795,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o1_a0_Omega1_d0",
+        "case": "o1_a0_Omega1",
+        "level": 0,
+        "delta": 0.001,
+        "duration": 0.01
+      },
+      "seed": 3149994647,
+      "ticks": 10,
+      "events": 690773,
+      "elapsed_seconds": 15.40265989999898,
+      "started": "2026-11-11T13:39:45.612405+00:00",
+      "finished": "2026-11-11T13:40:01.014991+00:00",
+      "tick_summaries": [
+        {
+          "step": 0,
+          "events": 68857,
+          "wall_seconds": 1.541479799998342
+        },
+        {
+          "step": 1,
+          "events": 68958,
+          "wall_seconds": 1.5570987999999488
+        },
+        {
+          "step": 2,
+          "events": 68821,
+          "wall_seconds": 1.492600499997934
+        },
+        {
+          "step": 3,
+          "events": 69051,
+          "wall_seconds": 1.5238860999997996
+        },
+        {
+          "step": 4,
+          "events": 68992,
+          "wall_seconds": 1.6218225000011444
+        },
+        {
+          "step": 5,
+          "events": 68740,
+          "wall_seconds": 1.5264258999995945
+        },
+        {
+          "step": 6,
+          "events": 68963,
+          "wall_seconds": 1.4887893999984954
+        },
+        {
+          "step": 7,
+          "events": 69003,
+          "wall_seconds": 1.579451900001004
+        },
+        {
+          "step": 8,
+          "events": 69473,
+          "wall_seconds": 1.5106120999989798
+        },
+        {
+          "step": 9,
+          "events": 69915,
+          "wall_seconds": 1.4902382000000216
+        }
+      ],
+      "id": "o1_a0_Omega1_d0",
+      "charged_worker_seconds": 17.522617400001764,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o1_a0_Omega1_d1",
+        "case": "o1_a0_Omega1",
+        "level": 1,
+        "delta": 0.0005,
+        "duration": 0.01
+      },
+      "seed": 590904080,
+      "ticks": 20,
+      "events": 690798,
+      "elapsed_seconds": 15.721741800000018,
+      "started": "2026-11-11T13:39:45.608128+00:00",
+      "finished": "2026-11-11T13:40:01.329793+00:00",
+      "tick_summaries": [
+        {
+          "step": 0,
+          "events": 34849,
+          "wall_seconds": 0.7694606999975804
+        },
+        {
+          "step": 1,
+          "events": 34514,
+          "wall_seconds": 0.7025424999992538
+        },
+        {
+          "step": 2,
+          "events": 34734,
+          "wall_seconds": 0.8791595999973651
+        },
+        {
+          "step": 3,
+          "events": 34363,
+          "wall_seconds": 0.7178775000029418
+        },
+        {
+          "step": 4,
+          "events": 34539,
+          "wall_seconds": 0.8177453000025707
+        },
+        {
+          "step": 5,
+          "events": 33942,
+          "wall_seconds": 0.9320537999992666
+        },
+        {
+          "step": 6,
+          "events": 34540,
+          "wall_seconds": 0.7786663999977463
+        },
+        {
+          "step": 7,
+          "events": 34403,
+          "wall_seconds": 0.7934862000001885
+        },
+        {
+          "step": 8,
+          "events": 34815,
+          "wall_seconds": 0.7998198999994202
+        },
+        {
+          "step": 9,
+          "events": 34593,
+          "wall_seconds": 0.7072034000011627
+        },
+        {
+          "step": 10,
+          "events": 34526,
+          "wall_seconds": 0.7310324999998556
+        },
+        {
+          "step": 11,
+          "events": 34629,
+          "wall_seconds": 0.8291858999982651
+        },
+        {
+          "step": 12,
+          "events": 34633,
+          "wall_seconds": 0.7726703999978781
+        },
+        {
+          "step": 13,
+          "events": 34662,
+          "wall_seconds": 0.7904745999985607
+        },
+        {
+          "step": 14,
+          "events": 34542,
+          "wall_seconds": 0.7174219999978959
+        },
+        {
+          "step": 15,
+          "events": 34530,
+          "wall_seconds": 0.7683058000002347
+        },
+        {
+          "step": 16,
+          "events": 34350,
+          "wall_seconds": 0.7424062999998569
+        },
+        {
+          "step": 17,
+          "events": 34598,
+          "wall_seconds": 0.8665592999968794
+        },
+        {
+          "step": 18,
+          "events": 34464,
+          "wall_seconds": 0.8199098000004597
+        },
+        {
+          "step": 19,
+          "events": 34572,
+          "wall_seconds": 0.7047139999995125
+        }
+      ],
+      "id": "o1_a0_Omega1_d1",
+      "charged_worker_seconds": 18.019374999999854,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o1_a1_Omega1_d0",
+        "case": "o1_a1_Omega1",
+        "level": 0,
+        "delta": 0.001,
+        "duration": 0.01
+      },
+      "seed": 767458068,
+      "ticks": 10,
+      "events": 691611,
+      "elapsed_seconds": 16.636153600000398,
+      "started": "2026-11-11T13:40:03.816778+00:00",
+      "finished": "2026-11-11T13:40:20.452851+00:00",
+      "tick_summaries": [
+        {
+          "step": 0,
+          "events": 68877,
+          "wall_seconds": 1.5281037999993714
+        },
+        {
+          "step": 1,
+          "events": 69370,
+          "wall_seconds": 1.7309462999983225
+        },
+        {
+          "step": 2,
+          "events": 69447,
+          "wall_seconds": 1.6133018000000448
+        },
+        {
+          "step": 3,
+          "events": 68917,
+          "wall_seconds": 1.5737986999993154
+        },
+        {
+          "step": 4,
+          "events": 68934,
+          "wall_seconds": 1.5619025000014517
+        },
+        {
+          "step": 5,
+          "events": 69203,
+          "wall_seconds": 1.7020750000010594
+        },
+        {
+          "step": 6,
+          "events": 68733,
+          "wall_seconds": 1.6962407999999414
+        },
+        {
+          "step": 7,
+          "events": 69347,
+          "wall_seconds": 1.7282903999985137
+        },
+        {
+          "step": 8,
+          "events": 69433,
+          "wall_seconds": 1.7205079999985173
+        },
+        {
+          "step": 9,
+          "events": 69350,
+          "wall_seconds": 1.713269699997909
+        }
+      ],
+      "id": "o1_a1_Omega1_d0",
+      "charged_worker_seconds": 19.012083199999324,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o1_a1_Omega1_d1",
+        "case": "o1_a1_Omega1",
+        "level": 1,
+        "delta": 0.0005,
+        "duration": 0.01
+      },
+      "seed": 3158121125,
+      "ticks": 20,
+      "events": 691749,
+      "elapsed_seconds": 17.111046500001976,
+      "started": "2026-11-11T13:40:04.517969+00:00",
+      "finished": "2026-11-11T13:40:21.628933+00:00",
+      "tick_summaries": [
+        {
+          "step": 0,
+          "events": 34461,
+          "wall_seconds": 0.7677197000011802
+        },
+        {
+          "step": 1,
+          "events": 34459,
+          "wall_seconds": 0.8123247000003175
+        },
+        {
+          "step": 2,
+          "events": 34768,
+          "wall_seconds": 0.8174023999999918
+        },
+        {
+          "step": 3,
+          "events": 34488,
+          "wall_seconds": 0.8983107000021846
+        },
+        {
+          "step": 4,
+          "events": 34681,
+          "wall_seconds": 0.8159828999996535
+        },
+        {
+          "step": 5,
+          "events": 34670,
+          "wall_seconds": 0.7847799999981362
+        },
+        {
+          "step": 6,
+          "events": 34662,
+          "wall_seconds": 0.8043102999981784
+        },
+        {
+          "step": 7,
+          "events": 34496,
+          "wall_seconds": 0.9173005000011472
+        },
+        {
+          "step": 8,
+          "events": 34725,
+          "wall_seconds": 0.804249400000117
+        },
+        {
+          "step": 9,
+          "events": 34895,
+          "wall_seconds": 0.8607437999999092
+        },
+        {
+          "step": 10,
+          "events": 34670,
+          "wall_seconds": 0.9250251999983448
+        },
+        {
+          "step": 11,
+          "events": 34725,
+          "wall_seconds": 0.8576396999997087
+        },
+        {
+          "step": 12,
+          "events": 34446,
+          "wall_seconds": 0.8196109999989858
+        },
+        {
+          "step": 13,
+          "events": 34612,
+          "wall_seconds": 0.891448099999252
+        },
+        {
+          "step": 14,
+          "events": 34350,
+          "wall_seconds": 0.8576016000006348
+        },
+        {
+          "step": 15,
+          "events": 34703,
+          "wall_seconds": 0.897369999998773
+        },
+        {
+          "step": 16,
+          "events": 34624,
+          "wall_seconds": 0.8544005000003381
+        },
+        {
+          "step": 17,
+          "events": 34543,
+          "wall_seconds": 0.8208526999987953
+        },
+        {
+          "step": 18,
+          "events": 34415,
+          "wall_seconds": 0.9562172000005376
+        },
+        {
+          "step": 19,
+          "events": 34356,
+          "wall_seconds": 0.8636609000022872
+        }
+      ],
+      "id": "o1_a1_Omega1_d1",
+      "charged_worker_seconds": 19.518630299997312,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o0_a1_Omega10_d0",
+        "case": "o0_a1_Omega10",
+        "level": 0,
+        "delta": 0.001,
+        "duration": 0.01
+      },
+      "seed": 2059171280,
+      "ticks": 10,
+      "events": 6906866,
+      "elapsed_seconds": 167.11298689999967,
+      "started": "2026-11-11T13:39:26.399888+00:00",
+      "finished": "2026-11-11T13:42:13.512073+00:00",
+      "tick_summaries": [
+        {
+          "step": 0,
+          "events": 691032,
+          "wall_seconds": 17.43953959999999
+        },
+        {
+          "step": 1,
+          "events": 690082,
+          "wall_seconds": 15.536234200000763
+        },
+        {
+          "step": 2,
+          "events": 689988,
+          "wall_seconds": 15.524620200001664
+        },
+        {
+          "step": 3,
+          "events": 689801,
+          "wall_seconds": 16.91243929999837
+        },
+        {
+          "step": 4,
+          "events": 691556,
+          "wall_seconds": 16.967330100000254
+        },
+        {
+          "step": 5,
+          "events": 692866,
+          "wall_seconds": 17.091275999999198
+        },
+        {
+          "step": 6,
+          "events": 688535,
+          "wall_seconds": 16.834241900000052
+        },
+        {
+          "step": 7,
+          "events": 689833,
+          "wall_seconds": 16.84576670000024
+        },
+        {
+          "step": 8,
+          "events": 691795,
+          "wall_seconds": 17.03691190000245
+        },
+        {
+          "step": 9,
+          "events": 691378,
+          "wall_seconds": 16.855034199998045
+        }
+      ],
+      "id": "o0_a1_Omega10_d0",
+      "charged_worker_seconds": 169.58669409999857,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o0_a0_Omega10_d0",
+        "case": "o0_a0_Omega10",
+        "level": 0,
+        "delta": 0.001,
+        "duration": 0.01
+      },
+      "seed": 452481204,
+      "ticks": 10,
+      "events": 6904798,
+      "elapsed_seconds": 167.54063959999985,
+      "started": "2026-11-11T13:39:26.347881+00:00",
+      "finished": "2026-11-11T13:42:13.887718+00:00",
+      "tick_summaries": [
+        {
+          "step": 0,
+          "events": 690441,
+          "wall_seconds": 16.447620899998583
+        },
+        {
+          "step": 1,
+          "events": 689802,
+          "wall_seconds": 15.465633499999967
+        },
+        {
+          "step": 2,
+          "events": 689613,
+          "wall_seconds": 15.749824200000148
+        },
+        {
+          "step": 3,
+          "events": 691296,
+          "wall_seconds": 17.296675899997354
+        },
+        {
+          "step": 4,
+          "events": 690790,
+          "wall_seconds": 17.388877699999284
+        },
+        {
+          "step": 5,
+          "events": 690077,
+          "wall_seconds": 17.259554399999615
+        },
+        {
+          "step": 6,
+          "events": 690077,
+          "wall_seconds": 16.99943599999824
+        },
+        {
+          "step": 7,
+          "events": 692134,
+          "wall_seconds": 16.93390300000101
+        },
+        {
+          "step": 8,
+          "events": 690677,
+          "wall_seconds": 16.688117800000327
+        },
+        {
+          "step": 9,
+          "events": 689891,
+          "wall_seconds": 17.231533300000592
+        }
+      ],
+      "id": "o0_a0_Omega10_d0",
+      "charged_worker_seconds": 170.12060969999948,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o0_a0_Omega10_d1",
+        "case": "o0_a0_Omega10",
+        "level": 1,
+        "delta": 0.0005,
+        "duration": 0.01
+      },
+      "seed": 3423392629,
+      "ticks": 20,
+      "events": 6915001,
+      "elapsed_seconds": 168.25603279999996,
+      "started": "2026-11-11T13:39:26.388844+00:00",
+      "finished": "2026-11-11T13:42:14.644068+00:00",
+      "tick_summaries": [
+        {
+          "step": 0,
+          "events": 344584,
+          "wall_seconds": 8.972781499996927
+        },
+        {
+          "step": 1,
+          "events": 344317,
+          "wall_seconds": 8.514942699999665
+        },
+        {
+          "step": 2,
+          "events": 346972,
+          "wall_seconds": 7.5959402000007685
+        },
+        {
+          "step": 3,
+          "events": 346245,
+          "wall_seconds": 7.488996300002327
+        },
+        {
+          "step": 4,
+          "events": 345097,
+          "wall_seconds": 7.564191099998425
+        },
+        {
+          "step": 5,
+          "events": 346273,
+          "wall_seconds": 8.450390400001197
+        },
+        {
+          "step": 6,
+          "events": 346424,
+          "wall_seconds": 8.341789099999005
+        },
+        {
+          "step": 7,
+          "events": 345323,
+          "wall_seconds": 8.453456300001562
+        },
+        {
+          "step": 8,
+          "events": 345382,
+          "wall_seconds": 8.23080900000059
+        },
+        {
+          "step": 9,
+          "events": 346525,
+          "wall_seconds": 8.622155400000338
+        },
+        {
+          "step": 10,
+          "events": 345274,
+          "wall_seconds": 8.594726999999693
+        },
+        {
+          "step": 11,
+          "events": 345719,
+          "wall_seconds": 8.631540099999256
+        },
+        {
+          "step": 12,
+          "events": 345168,
+          "wall_seconds": 8.731840500000544
+        },
+        {
+          "step": 13,
+          "events": 345352,
+          "wall_seconds": 8.76538370000344
+        },
+        {
+          "step": 14,
+          "events": 346256,
+          "wall_seconds": 8.720572099999117
+        },
+        {
+          "step": 15,
+          "events": 346278,
+          "wall_seconds": 8.656522499997664
+        },
+        {
+          "step": 16,
+          "events": 345758,
+          "wall_seconds": 8.355572799999209
+        },
+        {
+          "step": 17,
+          "events": 346007,
+          "wall_seconds": 8.76471550000133
+        },
+        {
+          "step": 18,
+          "events": 345450,
+          "wall_seconds": 8.386757000000216
+        },
+        {
+          "step": 19,
+          "events": 346597,
+          "wall_seconds": 8.32875950000016
+        }
+      ],
+      "id": "o0_a0_Omega10_d1",
+      "charged_worker_seconds": 170.61305869999705,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o0_a1_Omega10_d1",
+        "case": "o0_a1_Omega10",
+        "level": 1,
+        "delta": 0.0005,
+        "duration": 0.01
+      },
+      "seed": 1855775583,
+      "ticks": 20,
+      "events": 6915280,
+      "elapsed_seconds": 169.64122629999838,
+      "started": "2026-11-11T13:39:26.369433+00:00",
+      "finished": "2026-11-11T13:42:16.009845+00:00",
+      "tick_summaries": [
+        {
+          "step": 0,
+          "events": 345320,
+          "wall_seconds": 8.731482600000163
+        },
+        {
+          "step": 1,
+          "events": 346134,
+          "wall_seconds": 8.635158000000956
+        },
+        {
+          "step": 2,
+          "events": 345199,
+          "wall_seconds": 7.8422758000015165
+        },
+        {
+          "step": 3,
+          "events": 345147,
+          "wall_seconds": 7.97368060000008
+        },
+        {
+          "step": 4,
+          "events": 345936,
+          "wall_seconds": 7.515296699999453
+        },
+        {
+          "step": 5,
+          "events": 345595,
+          "wall_seconds": 7.988179699998
+        },
+        {
+          "step": 6,
+          "events": 344955,
+          "wall_seconds": 8.47535760000028
+        },
+        {
+          "step": 7,
+          "events": 345285,
+          "wall_seconds": 8.59675849999985
+        },
+        {
+          "step": 8,
+          "events": 345603,
+          "wall_seconds": 8.76347270000042
+        },
+        {
+          "step": 9,
+          "events": 345536,
+          "wall_seconds": 8.633523500000592
+        },
+        {
+          "step": 10,
+          "events": 345883,
+          "wall_seconds": 8.485215000000608
+        },
+        {
+          "step": 11,
+          "events": 345513,
+          "wall_seconds": 8.810639499999525
+        },
+        {
+          "step": 12,
+          "events": 344758,
+          "wall_seconds": 8.338975599999685
+        },
+        {
+          "step": 13,
+          "events": 346646,
+          "wall_seconds": 8.638120499999786
+        },
+        {
+          "step": 14,
+          "events": 346193,
+          "wall_seconds": 9.02382260000013
+        },
+        {
+          "step": 15,
+          "events": 346194,
+          "wall_seconds": 8.513107200000377
+        },
+        {
+          "step": 16,
+          "events": 346815,
+          "wall_seconds": 8.691478500000812
+        },
+        {
+          "step": 17,
+          "events": 345792,
+          "wall_seconds": 8.651874099999986
+        },
+        {
+          "step": 18,
+          "events": 347196,
+          "wall_seconds": 8.992748500000744
+        },
+        {
+          "step": 19,
+          "events": 345580,
+          "wall_seconds": 8.253830099998595
+        }
+      ],
+      "id": "o0_a1_Omega10_d1",
+      "charged_worker_seconds": 172.07949609999923,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o1_a0_Omega10_d0",
+        "case": "o1_a0_Omega10",
+        "level": 0,
+        "delta": 0.001,
+        "duration": 0.01
+      },
+      "seed": 3266863827,
+      "ticks": 10,
+      "events": 6902760,
+      "elapsed_seconds": 162.38881930000207,
+      "started": "2026-11-11T13:39:46.272411+00:00",
+      "finished": "2026-11-11T13:42:28.660448+00:00",
+      "tick_summaries": [
+        {
+          "step": 0,
+          "events": 689940,
+          "wall_seconds": 16.09500929999922
+        },
+        {
+          "step": 1,
+          "events": 690049,
+          "wall_seconds": 15.9617141000017
+        },
+        {
+          "step": 2,
+          "events": 689765,
+          "wall_seconds": 17.115438699998776
+        },
+        {
+          "step": 3,
+          "events": 690199,
+          "wall_seconds": 16.933310500000516
+        },
+        {
+          "step": 4,
+          "events": 689565,
+          "wall_seconds": 16.89479680000295
+        },
+        {
+          "step": 5,
+          "events": 690053,
+          "wall_seconds": 16.627298199997313
+        },
+        {
+          "step": 6,
+          "events": 689967,
+          "wall_seconds": 16.394546899999114
+        },
+        {
+          "step": 7,
+          "events": 691340,
+          "wall_seconds": 16.904156799999328
+        },
+        {
+          "step": 8,
+          "events": 691594,
+          "wall_seconds": 16.91020849999768
+        },
+        {
+          "step": 9,
+          "events": 690288,
+          "wall_seconds": 12.483545999999478
+        }
+      ],
+      "id": "o1_a0_Omega10_d0",
+      "charged_worker_seconds": 164.6223721000024,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o1_a0_Omega10_d1",
+        "case": "o1_a0_Omega10",
+        "level": 1,
+        "delta": 0.0005,
+        "duration": 0.01
+      },
+      "seed": 4135092085,
+      "ticks": 20,
+      "events": 6914581,
+      "elapsed_seconds": 164.0057369999995,
+      "started": "2026-11-11T13:39:46.285728+00:00",
+      "finished": "2026-11-11T13:42:30.290676+00:00",
+      "tick_summaries": [
+        {
+          "step": 0,
+          "events": 346282,
+          "wall_seconds": 8.328848299999663
+        },
+        {
+          "step": 1,
+          "events": 345386,
+          "wall_seconds": 7.332185800001753
+        },
+        {
+          "step": 2,
+          "events": 345058,
+          "wall_seconds": 7.814087999999174
+        },
+        {
+          "step": 3,
+          "events": 344591,
+          "wall_seconds": 8.586932199999865
+        },
+        {
+          "step": 4,
+          "events": 344655,
+          "wall_seconds": 8.599427499997546
+        },
+        {
+          "step": 5,
+          "events": 345884,
+          "wall_seconds": 8.538222600000154
+        },
+        {
+          "step": 6,
+          "events": 345901,
+          "wall_seconds": 9.14405749999787
+        },
+        {
+          "step": 7,
+          "events": 345867,
+          "wall_seconds": 8.747459300000628
+        },
+        {
+          "step": 8,
+          "events": 346104,
+          "wall_seconds": 8.46554119999928
+        },
+        {
+          "step": 9,
+          "events": 345766,
+          "wall_seconds": 8.433126700001594
+        },
+        {
+          "step": 10,
+          "events": 345486,
+          "wall_seconds": 8.641553000001295
+        },
+        {
+          "step": 11,
+          "events": 345614,
+          "wall_seconds": 8.516725100002077
+        },
+        {
+          "step": 12,
+          "events": 346919,
+          "wall_seconds": 8.52543660000083
+        },
+        {
+          "step": 13,
+          "events": 344329,
+          "wall_seconds": 8.299893399998837
+        },
+        {
+          "step": 14,
+          "events": 345906,
+          "wall_seconds": 8.470387800000026
+        },
+        {
+          "step": 15,
+          "events": 346567,
+          "wall_seconds": 8.834285900000395
+        },
+        {
+          "step": 16,
+          "events": 346555,
+          "wall_seconds": 8.703660799998033
+        },
+        {
+          "step": 17,
+          "events": 344973,
+          "wall_seconds": 7.516417900002125
+        },
+        {
+          "step": 18,
+          "events": 346816,
+          "wall_seconds": 6.2687368000006245
+        },
+        {
+          "step": 19,
+          "events": 345922,
+          "wall_seconds": 6.145423800000572
+        }
+      ],
+      "id": "o1_a0_Omega10_d1",
+      "charged_worker_seconds": 166.1144682999984,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o1_a1_Omega10_d0",
+        "case": "o1_a1_Omega10",
+        "level": 0,
+        "delta": 0.001,
+        "duration": 0.01
+      },
+      "seed": 1905558364,
+      "ticks": 10,
+      "events": 6903296,
+      "elapsed_seconds": 151.82345219999843,
+      "started": "2026-11-11T13:40:23.626628+00:00",
+      "finished": "2026-11-11T13:42:55.449377+00:00",
+      "tick_summaries": [
+        {
+          "step": 0,
+          "events": 690174,
+          "wall_seconds": 17.10027809999883
+        },
+        {
+          "step": 1,
+          "events": 689152,
+          "wall_seconds": 17.072552100002213
+        },
+        {
+          "step": 2,
+          "events": 690041,
+          "wall_seconds": 16.882067900001857
+        },
+        {
+          "step": 3,
+          "events": 690751,
+          "wall_seconds": 17.0424944999977
+        },
+        {
+          "step": 4,
+          "events": 689803,
+          "wall_seconds": 16.873606500001188
+        },
+        {
+          "step": 5,
+          "events": 690730,
+          "wall_seconds": 17.37861630000043
+        },
+        {
+          "step": 6,
+          "events": 690896,
+          "wall_seconds": 14.697270100001333
+        },
+        {
+          "step": 7,
+          "events": 690855,
+          "wall_seconds": 12.189703500000178
+        },
+        {
+          "step": 8,
+          "events": 690326,
+          "wall_seconds": 11.27464719999989
+        },
+        {
+          "step": 9,
+          "events": 690568,
+          "wall_seconds": 11.250715499998478
+        }
+      ],
+      "id": "o1_a1_Omega10_d0",
+      "charged_worker_seconds": 154.60673699999825,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "o1_a1_Omega10_d1",
+        "case": "o1_a1_Omega10",
+        "level": 1,
+        "delta": 0.0005,
+        "duration": 0.01
+      },
+      "seed": 2423051933,
+      "ticks": 20,
+      "events": 6915800,
+      "elapsed_seconds": 152.43164009999964,
+      "started": "2026-11-11T13:40:24.579412+00:00",
+      "finished": "2026-11-11T13:42:57.010318+00:00",
+      "tick_summaries": [
+        {
+          "step": 0,
+          "events": 345517,
+          "wall_seconds": 9.015760800000862
+        },
+        {
+          "step": 1,
+          "events": 344838,
+          "wall_seconds": 8.256049699997675
+        },
+        {
+          "step": 2,
+          "events": 345413,
+          "wall_seconds": 8.331756399998994
+        },
+        {
+          "step": 3,
+          "events": 344589,
+          "wall_seconds": 8.617324199996801
+        },
+        {
+          "step": 4,
+          "events": 344610,
+          "wall_seconds": 8.144842400000925
+        },
+        {
+          "step": 5,
+          "events": 346376,
+          "wall_seconds": 8.837903499999811
+        },
+        {
+          "step": 6,
+          "events": 346028,
+          "wall_seconds": 8.800818300001993
+        },
+        {
+          "step": 7,
+          "events": 346053,
+          "wall_seconds": 8.622306799999933
+        },
+        {
+          "step": 8,
+          "events": 345573,
+          "wall_seconds": 8.601859600003081
+        },
+        {
+          "step": 9,
+          "events": 346542,
+          "wall_seconds": 8.684756400001788
+        },
+        {
+          "step": 10,
+          "events": 346316,
+          "wall_seconds": 8.689726899996458
+        },
+        {
+          "step": 11,
+          "events": 346279,
+          "wall_seconds": 8.717378900000767
+        },
+        {
+          "step": 12,
+          "events": 346247,
+          "wall_seconds": 8.045424899999489
+        },
+        {
+          "step": 13,
+          "events": 345969,
+          "wall_seconds": 6.264205199997377
+        },
+        {
+          "step": 14,
+          "events": 346454,
+          "wall_seconds": 6.264630400000897
+        },
+        {
+          "step": 15,
+          "events": 346172,
+          "wall_seconds": 5.78386689999752
+        },
+        {
+          "step": 16,
+          "events": 346211,
+          "wall_seconds": 5.702128000000812
+        },
+        {
+          "step": 17,
+          "events": 345800,
+          "wall_seconds": 5.670198699997854
+        },
+        {
+          "step": 18,
+          "events": 346177,
+          "wall_seconds": 5.66771300000255
+        },
+        {
+          "step": 19,
+          "events": 344636,
+          "wall_seconds": 5.623938200002158
+        }
+      ],
+      "id": "o1_a1_Omega10_d1",
+      "charged_worker_seconds": 155.1235945999979,
+      "returncode": 0
+    }
+  ],
+  "ceiling": 6600,
+  "prior_charge": 0,
+  "poll_seconds": 0.5,
+  "charged_worker_seconds": 1474.0014935999898,
+  "inflight_worker_seconds": 0,
+  "pending_ids": [],
+  "active_ids": [],
+  "stop_reason": null,
+  "admission_pause": null,
+  "workers": 8,
+  "threads_per_library": 1,
+  "max_observed_poll_gap_seconds": 0.5066246000023966
+}

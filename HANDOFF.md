@@ -1,3 +1,7 @@
+# Current handoff — MG142/MG143draft, 2026-11-11
+
+Pilot16/16paths passed,240ticks/60.8065millionevents;separate saved-ID/frame recomputation passed;sourcehashes unchanged.222.567s wall,1483.38chargedsecs<7200. Report results/MG12H3/multitick_pilot/MG12H3_multitick_results.md. Fullraw483.301MB publishing/verification. MG139 andMG142closurependingexplicitPI signoff. Next draft tick-resolutionstudy spec/MG12H3_tick_resolution_plan.md: actualYpuretransportdriftratio.751981/.863939atdelta.001/.0005; not fullcoupled biasclaim. No new production.
+
 # Current handoff — MG141, 2026-11-11
 
 Multi-tick pilot APPROVED/REGISTERED. PI authorizes MG140 packet/design/budget7200chargedseconds/max8workers/fullpublicraw. Entry src/run_mg12h3_multitick.py --run; publish registration before launch.16paths horizon.01/delta.001/.0005, integrity/runtimeonly. No retry; PI closure separate.
