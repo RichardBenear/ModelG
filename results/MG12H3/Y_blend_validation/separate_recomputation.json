@@ -1,0 +1,243 @@
+{
+  "passed": true,
+  "trajectories": 24,
+  "ticks": 6400,
+  "events": 166235096,
+  "records": [
+    {
+      "id": "d0_r00",
+      "ticks": 100,
+      "events": 6932115,
+      "body_seconds": 251.26693469999736,
+      "sentinel": true,
+      "passed": true
+    },
+    {
+      "id": "d0_r01",
+      "ticks": 100,
+      "events": 6922727,
+      "body_seconds": 235.55109669999365,
+      "sentinel": false,
+      "passed": true
+    },
+    {
+      "id": "d0_r02",
+      "ticks": 100,
+      "events": 6928955,
+      "body_seconds": 235.24300629999925,
+      "sentinel": false,
+      "passed": true
+    },
+    {
+      "id": "d0_r03",
+      "ticks": 100,
+      "events": 6925776,
+      "body_seconds": 235.8387917,
+      "sentinel": false,
+      "passed": true
+    },
+    {
+      "id": "d0_r04",
+      "ticks": 100,
+      "events": 6921532,
+      "body_seconds": 236.74007939999865,
+      "sentinel": false,
+      "passed": true
+    },
+    {
+      "id": "d0_r05",
+      "ticks": 100,
+      "events": 6927821,
+      "body_seconds": 236.43156640000234,
+      "sentinel": false,
+      "passed": true
+    },
+    {
+      "id": "d0_r06",
+      "ticks": 100,
+      "events": 6922916,
+      "body_seconds": 234.48586340000475,
+      "sentinel": false,
+      "passed": true
+    },
+    {
+      "id": "d0_r07",
+      "ticks": 100,
+      "events": 6924739,
+      "body_seconds": 234.48744360000273,
+      "sentinel": false,
+      "passed": true
+    },
+    {
+      "id": "d1_r00",
+      "ticks": 200,
+      "events": 6933289,
+      "body_seconds": 249.32690759999969,
+      "sentinel": true,
+      "passed": true
+    },
+    {
+      "id": "d1_r01",
+      "ticks": 200,
+      "events": 6926537,
+      "body_seconds": 237.28853890000028,
+      "sentinel": false,
+      "passed": true
+    },
+    {
+      "id": "d1_r02",
+      "ticks": 200,
+      "events": 6927572,
+      "body_seconds": 236.27750729999389,
+      "sentinel": false,
+      "passed": true
+    },
+    {
+      "id": "d1_r03",
+      "ticks": 200,
+      "events": 6925649,
+      "body_seconds": 237.3411219000045,
+      "sentinel": false,
+      "passed": true
+    },
+    {
+      "id": "d1_r04",
+      "ticks": 200,
+      "events": 6924388,
+      "body_seconds": 234.63965750000352,
+      "sentinel": false,
+      "passed": true
+    },
+    {
+      "id": "d1_r05",
+      "ticks": 200,
+      "events": 6927834,
+      "body_seconds": 233.81739960000414,
+      "sentinel": false,
+      "passed": true
+    },
+    {
+      "id": "d1_r06",
+      "ticks": 200,
+      "events": 6928678,
+      "body_seconds": 236.12420440000278,
+      "sentinel": false,
+      "passed": true
+    },
+    {
+      "id": "d1_r07",
+      "ticks": 200,
+      "events": 6924354,
+      "body_seconds": 233.91059769999993,
+      "sentinel": false,
+      "passed": true
+    },
+    {
+      "id": "d2_r00",
+      "ticks": 500,
+      "events": 6928067,
+      "body_seconds": 262.0865602999984,
+      "sentinel": true,
+      "passed": true
+    },
+    {
+      "id": "d2_r01",
+      "ticks": 500,
+      "events": 6924828,
+      "body_seconds": 254.00039010000182,
+      "sentinel": false,
+      "passed": true
+    },
+    {
+      "id": "d2_r02",
+      "ticks": 500,
+      "events": 6930529,
+      "body_seconds": 255.51168789999792,
+      "sentinel": false,
+      "passed": true
+    },
+    {
+      "id": "d2_r03",
+      "ticks": 500,
+      "events": 6922770,
+      "body_seconds": 251.07853810000233,
+      "sentinel": false,
+      "passed": true
+    },
+    {
+      "id": "d2_r04",
+      "ticks": 500,
+      "events": 6927780,
+      "body_seconds": 254.89883199999895,
+      "sentinel": false,
+      "passed": true
+    },
+    {
+      "id": "d2_r05",
+      "ticks": 500,
+      "events": 6922271,
+      "body_seconds": 254.54366469999513,
+      "sentinel": false,
+      "passed": true
+    },
+    {
+      "id": "d2_r06",
+      "ticks": 500,
+      "events": 6926351,
+      "body_seconds": 250.4637952999983,
+      "sentinel": false,
+      "passed": true
+    },
+    {
+      "id": "d2_r07",
+      "ticks": 500,
+      "events": 6927618,
+      "body_seconds": 250.3763562000022,
+      "sentinel": false,
+      "passed": true
+    }
+  ],
+  "statistics": [
+    {
+      "time": 0.005,
+      "alpha_direct": 0.31103637554093005,
+      "pooled_direct_variance": 0.00010482586855489562,
+      "pooled_blend_variance": 1.1217403233925623e-05,
+      "blend_over_direct": 0.10700987636511926,
+      "variance_gain": 9.344931832160851,
+      "per_tick_blend_over_direct": [
+        0.07954996843786148,
+        0.13809168287797138,
+        0.1172263544122543
+      ],
+      "bootstrap_95_interval": [
+        0.04694382732009967,
+        0.24309277254221495
+      ],
+      "verdict": "VARIANCE BENEFIT SUPPORTED IN THIS VALIDATION"
+    },
+    {
+      "time": 0.01,
+      "alpha_direct": 0.620838372539336,
+      "pooled_direct_variance": 0.0001441933902472673,
+      "pooled_blend_variance": 4.827766417431076e-05,
+      "blend_over_direct": 0.3348119084482495,
+      "variance_gain": 2.9867515902725605,
+      "per_tick_blend_over_direct": [
+        0.4440325720745386,
+        0.17433491225032283,
+        0.27626851464122754
+      ],
+      "bootstrap_95_interval": [
+        0.1867989057200374,
+        0.4894617243136717
+      ],
+      "verdict": "VARIANCE BENEFIT SUPPORTED IN THIS VALIDATION"
+    }
+  ],
+  "maximum_saved_drift_difference": 4.440892098500626e-14,
+  "source_hashes_unchanged": true,
+  "weights_refitted": false,
+  "equivalence_verdict": null,
+  "shared": "Frozen compact model/coefficients and registered bootstrap indexes; independent sparse-matrix count and exposure arithmetic, scalar variances and resampling loops, sorted linear quantiles. Same author, not external replication; ordered exposure replay remains the registered sentinel audit."
+}

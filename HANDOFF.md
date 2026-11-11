@@ -1,3 +1,7 @@
+# Current handoff — MG154 results, 2026-11-11
+
+FixedYblendfreshvalidation COMPLETE24paths/6400ticks/166.235millionevents. RegisteredprimaryvariancebenefitSUPPORTED:lateblend/direct.334812,pairedbootstrap95%[.186799,.489462],alltickpointratios<1;earlysecondary.107010. Weightsnotrefit,integrity/separaterecomputationpassed.878.909swall,6020.34chargedseconds(1.67232coreh)<14400,no failures/retries. Raw355.042MB/441filespublishing+verification. Report results/MG12H3/Y_blend_validation/MG12H3_Y_blend_results.md. PIclosurepending,no newrun;R48stillunderpoweredfor5%contrast. Recommend validatedvariance-reductionforbetween-tickdifferences beforelargequalification;notjustsameseed.
+
 # Current handoff — MG153, 2026-11-11
 
 FreshfixedY-blendvariancevalidation APPROVED/REGISTERED. PIapprovesMG152v2packet/budget14400chargedseconds/max8workers.24paths T.01 at3finerresolutions,weightsfrozen,no refitting. Entry src/run_mg12h3_Y_blend.py --run;pushregistrationbeforelaunch. Approvedcompactarchive+3sentinels;no retry/equivalenceverdict,closureseparate.

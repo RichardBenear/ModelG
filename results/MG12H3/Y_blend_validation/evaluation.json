@@ -1,0 +1,45 @@
+{
+  "integrity_passed": true,
+  "primary_late": {
+    "time": 0.01,
+    "alpha_direct": 0.620838372539336,
+    "pooled_direct_variance": 0.0001441933902472673,
+    "pooled_blend_variance": 4.827766417431076e-05,
+    "blend_over_direct": 0.3348119084482495,
+    "per_tick_blend_over_direct": [
+      0.4440325720745387,
+      0.17433491225032263,
+      0.27626851464122754
+    ],
+    "bootstrap_95_interval": [
+      0.18679890572003746,
+      0.4894617243136719
+    ],
+    "bootstrap_replicates": 10000,
+    "nonfinite_bootstrap_count": 0,
+    "verdict": "VARIANCE BENEFIT SUPPORTED IN THIS VALIDATION",
+    "coverage": "Approximate stratified paired percentile bootstrap; small-sample coverage not guaranteed"
+  },
+  "secondary_early": {
+    "time": 0.005,
+    "alpha_direct": 0.31103637554093005,
+    "pooled_direct_variance": 0.00010482586855489562,
+    "pooled_blend_variance": 1.1217403233925625e-05,
+    "blend_over_direct": 0.10700987636511927,
+    "per_tick_blend_over_direct": [
+      0.07954996843786155,
+      0.13809168287797133,
+      0.1172263544122543
+    ],
+    "bootstrap_95_interval": [
+      0.04694382732009979,
+      0.24309277254221487
+    ],
+    "bootstrap_replicates": 10000,
+    "nonfinite_bootstrap_count": 0,
+    "verdict": "VARIANCE BENEFIT SUPPORTED IN THIS VALIDATION",
+    "coverage": "Approximate stratified paired percentile bootstrap; small-sample coverage not guaranteed"
+  },
+  "equivalence_verdict": null,
+  "weights_refitted": false
+}

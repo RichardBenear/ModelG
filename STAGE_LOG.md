@@ -1372,3 +1372,7 @@ MG152readiness:knownmean/savedsmallcase/syntheticvariancechecks pass0.0732999s,n
 
 ## MG153 — fixed Y-blend validation approved/registered
 PI “i approve” authorizesMG152v2fresh24pathbatch,unchangedweights andvariancecriteria,14400chargedseconds(13800worker+600parent),max8workers/thread1,600/job. Compactdecisionarchive+3sentinelsunchanged. Publishregistrationbeforefreshdraws,no retries/refitting/tickequivalenceverdict;PIclosureseparate.
+
+
+## MG154 — fixed Y-blend fresh validation supports variance benefit
+24pathscomplete,primarylateYblend/directvariance.334812/pairedbootstrap95%[.186799,.489462],all3tickpointratios<1;registeredbenefitSUPPORTED. Earlysecondary.107010. Weightsfrozen,source/intchecks/separaterecomputationpass;noequivalenceverdict.878.909swall/6020.34chargedseconds<14400,nofailures/retries. Approvedcompactarchive+3sentinelsretained. PIclosurepending,no nextproduction;full5%contrastprecisionstillrequiresdesignwork.
