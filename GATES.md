@@ -2446,3 +2446,7 @@ PI requests designing finer-tick tests. Proposed canonicalOmega10finitecase,delt
 
 ## MG145v2 — storage approved; accuracy chosen by delegated lead
 PI approvescompactdecisionarchive+sentineltrace option anddelegatesaccuracychoice. Select5%initialpatterncontrast(frozenunroundedtemplate,simulatedcountsunchanged),retainpower.05screen. V1absoluteconcentrationmarginandR48recommendation superseded; savedtransportplanningGprecisiongap~7.94xmargin. Validate variance-reducedlinearcontrastestimator andcompactwriter before24pathprecisionpilot; no new stochasticproduction/budget registered.
+
+
+## MG146 — estimator/compact writer development
+PI directsnextstep afterMG145v2. Frozenbounded60second/oneworker/thread1 diagnosticbatch:factoredcontrastdriftexposures,128same-seedmixedpaths/384ticks,4096knownonechannelpaths,4x512mixedmeanchecks,scriptedboundaries/exhaustion/corruption. Noactualringprecisionpilot orformalqualification. Samplerfrozen;source/seeds beforedraws;failurestoppreserved/no silentretry.
