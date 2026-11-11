@@ -2426,3 +2426,7 @@ PI “go ahead with this budget” approves corrected-v2 MG137packet:131072endpo
 
 ## MG140 — multi-tick pilot preparation
 PI requests actual-ring multi-tickpilot. Freeze16paths/eightstates x2ticks(.001/.0005),horizon.01; integrity/runtime only, no stochasticrefinement/persistenceverdict. Preparation4shortjobs horizon.001 under60seconds one-worker/thread1; source/seeds before draws. Measuredproductionbudgetapproval pending. MG139closure not inferred.
+
+
+## MG141 — actual-ring multi-tick pilot approved/registered
+PI approves MG140design and production (2026-11-11):16trajectories/eightstates x2ticks(.001/.0005),horizon.01; integrity/runtime criteria,7200chargedseconds(6600worker+600parent),max8localworkers/thread1,600/job/fullpublicraw. Publish registration before draws,no retries or automaticclosure. Not particle/refinement qualification.

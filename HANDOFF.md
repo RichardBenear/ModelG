@@ -1,3 +1,7 @@
+# Current handoff — MG141, 2026-11-11
+
+Multi-tick pilot APPROVED/REGISTERED. PI authorizes MG140 packet/design/budget7200chargedseconds/max8workers/fullpublicraw. Entry src/run_mg12h3_multitick.py --run; publish registration before launch.16paths horizon.01/delta.001/.0005, integrity/runtimeonly. No retry; PI closure separate.
+
 # Current handoff — MG140, 2026-11-11
 
 Actual-ring multi-tick pilot READY; concretebudgetapprovalpending.16trajectories/eightstates xdelta.001/.0005,horizon.01,10/20ticks; integrity/runtimeonly,no statisticalrefinement or particleverdict.4developmentjobs passed25.6923seconds<60 andrawguards;forecast2089.13worker-seconds,candidate7200total/max8workers,600/job/fullpublicraw. No productionregistration/paths. MG139closurependingexplicitPI signoff. Report results/MG12H3/multitick_pilot/MG12H3_multitick_readiness.md.
