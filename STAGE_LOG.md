@@ -1354,3 +1354,7 @@ MG147readiness:compactwriterpreparation_v2(all3finerresolutions)passed5.58055sec
 
 ## MG148 — compact finer-tick precision pilot approved/registered
 PI “i approve” authorizesMG147v2packet:24paths/8pertick(.0001/.00005/.00002),T.01,precision/costonly.21600chargedseconds(21000worker+600parent),max8workers/thread1,600job;3600secondwallchecks. Compactdecisionarchiveplus3fullsentinelpathsalreadyapproved. Publishregistrationbeforeproductiondraws;no retries/equivalenceverdict/automaticclosure.
+
+
+## MG149 — finer-tick precision pilot complete; closure pending
+24/24paths,6400ticks/166.212millionevents; integrityandseparaterecomputationpass. Gintegralvariancegainlarge;lateYintegralvarianceworse. Noequivalenceverdict.731.577swall,4837.62chargedseconds<21600,no failures/retries. R48notreadyforYmargin;hybridpilotfittingexploratory/notdeployed. Fullapproveddecisionarchive+3sentinelsretained;PIclosurepending,no futureproduction.

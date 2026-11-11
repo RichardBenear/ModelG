@@ -1,0 +1,139 @@
+{
+  "planning_only": true,
+  "records": [
+    {
+      "level": 0,
+      "time": 0.005,
+      "species": "G",
+      "estimator": "integral",
+      "assumed_replicates": 48,
+      "halfwidth_from_pilot_variances": 8.301427712143113e-06,
+      "margin": 7.233552164998259e-05,
+      "halfwidth_to_margin": 0.1147628097895263,
+      "scope": "Planning from eight pilot paths, not a qualification interval or sample-count guarantee"
+    },
+    {
+      "level": 0,
+      "time": 0.005,
+      "species": "X",
+      "estimator": "integral",
+      "assumed_replicates": 48,
+      "halfwidth_from_pilot_variances": 0.00048822315313488756,
+      "margin": 0.0033220492235316815,
+      "halfwidth_to_margin": 0.1469644548541204,
+      "scope": "Planning from eight pilot paths, not a qualification interval or sample-count guarantee"
+    },
+    {
+      "level": 0,
+      "time": 0.005,
+      "species": "Y",
+      "estimator": "integral",
+      "assumed_replicates": 48,
+      "halfwidth_from_pilot_variances": 0.004560414016085401,
+      "margin": 0.00295473221030427,
+      "halfwidth_to_margin": 1.5434271844269036,
+      "scope": "Planning from eight pilot paths, not a qualification interval or sample-count guarantee"
+    },
+    {
+      "level": 0,
+      "time": 0.01,
+      "species": "G",
+      "estimator": "integral",
+      "assumed_replicates": 48,
+      "halfwidth_from_pilot_variances": 2.0812355392613233e-05,
+      "margin": 7.233552164998259e-05,
+      "halfwidth_to_margin": 0.2877197111167614,
+      "scope": "Planning from eight pilot paths, not a qualification interval or sample-count guarantee"
+    },
+    {
+      "level": 0,
+      "time": 0.01,
+      "species": "X",
+      "estimator": "integral",
+      "assumed_replicates": 48,
+      "halfwidth_from_pilot_variances": 0.0009976994232075995,
+      "margin": 0.0033220492235316815,
+      "halfwidth_to_margin": 0.3003265021301948,
+      "scope": "Planning from eight pilot paths, not a qualification interval or sample-count guarantee"
+    },
+    {
+      "level": 0,
+      "time": 0.01,
+      "species": "Y",
+      "estimator": "direct",
+      "assumed_replicates": 48,
+      "halfwidth_from_pilot_variances": 0.006595236208944553,
+      "margin": 0.00295473221030427,
+      "halfwidth_to_margin": 2.2320927040171243,
+      "scope": "Planning from eight pilot paths, not a qualification interval or sample-count guarantee"
+    },
+    {
+      "level": 1,
+      "time": 0.005,
+      "species": "G",
+      "estimator": "integral",
+      "assumed_replicates": 48,
+      "halfwidth_from_pilot_variances": 4.435735528450598e-06,
+      "margin": 7.233552164998259e-05,
+      "halfwidth_to_margin": 0.0613216774728501,
+      "scope": "Planning from eight pilot paths, not a qualification interval or sample-count guarantee"
+    },
+    {
+      "level": 1,
+      "time": 0.005,
+      "species": "X",
+      "estimator": "integral",
+      "assumed_replicates": 48,
+      "halfwidth_from_pilot_variances": 0.000525286802884852,
+      "margin": 0.0033220492235316815,
+      "halfwidth_to_margin": 0.15812131836096574,
+      "scope": "Planning from eight pilot paths, not a qualification interval or sample-count guarantee"
+    },
+    {
+      "level": 1,
+      "time": 0.005,
+      "species": "Y",
+      "estimator": "integral",
+      "assumed_replicates": 48,
+      "halfwidth_from_pilot_variances": 0.004420026133723521,
+      "margin": 0.00295473221030427,
+      "halfwidth_to_margin": 1.4959142890544246,
+      "scope": "Planning from eight pilot paths, not a qualification interval or sample-count guarantee"
+    },
+    {
+      "level": 1,
+      "time": 0.01,
+      "species": "G",
+      "estimator": "integral",
+      "assumed_replicates": 48,
+      "halfwidth_from_pilot_variances": 1.6980050171251732e-05,
+      "margin": 7.233552164998259e-05,
+      "halfwidth_to_margin": 0.23474013574430094,
+      "scope": "Planning from eight pilot paths, not a qualification interval or sample-count guarantee"
+    },
+    {
+      "level": 1,
+      "time": 0.01,
+      "species": "X",
+      "estimator": "integral",
+      "assumed_replicates": 48,
+      "halfwidth_from_pilot_variances": 0.0009943079398277998,
+      "margin": 0.0033220492235316815,
+      "halfwidth_to_margin": 0.29930560112855514,
+      "scope": "Planning from eight pilot paths, not a qualification interval or sample-count guarantee"
+    },
+    {
+      "level": 1,
+      "time": 0.01,
+      "species": "Y",
+      "estimator": "direct",
+      "assumed_replicates": 48,
+      "halfwidth_from_pilot_variances": 0.005220496012442618,
+      "margin": 0.00295473221030427,
+      "halfwidth_to_margin": 1.7668254315016338,
+      "scope": "Planning from eight pilot paths, not a qualification interval or sample-count guarantee"
+    }
+  ],
+  "selection": "Illustrative fixed estimator by species/time: integral for G/X and early Y; direct for late Y. Not yet registered for qualification.",
+  "uncertainty": "Pilot variances have only seven degrees of freedom percondition; point calculations can understate required sample counts."
+}
