@@ -71,3 +71,5 @@ Point planning from these eight-path variance estimates projects a worst contras
 Before committing a large independent-path batch, investigate reducing the variance of the **difference between tick resolutions**, for example with a carefully validated shared-randomness coupling that preserves each run's marginal rule law. Merely assigning the same seed is not a validated coupling. Such a method is a numerical comparison technique, not a physical interaction or entanglement between runs. It must retain each chain's separate tick boundaries and reservations. Otherwise prepare a transparent larger-sample cost/precision proposal rather than loosening the five-percent target.
 
 No new qualification or particle run is registered or running. This validation is ready for PI sign-off.
+
+Publication verification passed for all 454 production, decision and frozen-weight files at commit `cce4a94`. Binary archives and the plot PNG match byte for byte. See [verification record](production_retention_verified.json).
