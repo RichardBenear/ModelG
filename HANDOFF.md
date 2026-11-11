@@ -1,3 +1,7 @@
+# Current handoff — MG138, 2026-11-10
+
+Combined sparse qualification APPROVED/REGISTERED. PI approves fixed corrected-v2 packet and7200chargedseconds/max8workers/fullpublicraw. Entry src/run_mg12h3_sparse_qualification.py --run; publish registration before endpoint draws/longstress. No retry, PI closure separate.
+
 # Current handoff — MG137a, 2026-11-10
 
 Sparse endpoint+long-update qualification READY; formalbudgetapproval pending.131072freshendpointpaths/32jobs+8millionforcedstressupdates/8jobs. Forecast1917.29worker-seconds;proposed7200total(6600worker+600parent),max8workers/thread1,600/job. Preparationv2 passed128paths/80000stressupdates/guards in2.79915s. Original pre-RNG preparation oracle failure preserved; corrected reference selection normalization, sparseengine unchanged. Source157a0d6 beforev2draws. Plan_v2.json andreadiness bound; no formalregistration/paths. Report results/MG12H3/sparse_qualification/MG12H3_sparse_qualification_readiness.md.

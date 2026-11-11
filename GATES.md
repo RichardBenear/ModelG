@@ -2414,3 +2414,7 @@ MG136 results:developmentchecksPASSED in66.9214s<180;80000stressupdates/1024expl
 
 ## MG137 — sparse combined formal qualification preparation
 PI requests endpoint and long-history stress qualification. Freeze131072freshendpointpaths/8TVbounds<=.10/familyalpha.001 plus8x1000000forcedstressupdates,relative1e-10/absolute1e-6ratecriteria and exactintegerchecks. Actualwriter preparation128paths+8x10000stressupdates under60seconds/oneworker/thread1; source/seeds before draws. Formal batch notregistered; concrete measuredbudgetapproval needed. Candidate7200chargedseconds/max8workers/fullpublicraw.
+
+
+## MG138 — sparse endpoint/stress qualification approved and registered
+PI “go ahead with this budget” approves corrected-v2 MG137packet:131072endpointpaths/8bounds<=.10/familyalpha.001 plus8millionforcedstressupdates/frozen numericalcriteria.7200chargedseconds total(6600worker+600parent),max8localworkers/thread1,600/job,fullpublicraw. Publish registration before draws; no retry/automaticclosure.
