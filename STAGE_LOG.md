@@ -1376,3 +1376,7 @@ PI “i approve” authorizesMG152v2fresh24pathbatch,unchangedweights andvarianc
 
 ## MG154 — fixed Y-blend fresh validation supports variance benefit
 24pathscomplete,primarylateYblend/directvariance.334812/pairedbootstrap95%[.186799,.489462],all3tickpointratios<1;registeredbenefitSUPPORTED. Earlysecondary.107010. Weightsfrozen,source/intchecks/separaterecomputationpass;noequivalenceverdict.878.909swall/6020.34chargedseconds<14400,nofailures/retries. Approvedcompactarchive+3sentinelsretained. PIclosurepending,no nextproduction;full5%contrastprecisionstillrequiresdesignwork.
+
+
+## MG155 — fixed Y-blend validation closed; MG156 coupling proposal
+PI signsoffMG154. CLOSED variancevalidation only,notmeanaccuracy/tickequivalence. Proposednext split-propensitycoupledcomparison withunchangedmarginals andasynchronoustickboundaries; no newsampling/implementation/budget registered.

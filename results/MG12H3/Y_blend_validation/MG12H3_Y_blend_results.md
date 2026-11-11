@@ -4,7 +4,7 @@ The fixed blend reduced uncertainty in the estimated Y pattern contrast on fresh
 
 ## Registered outcome
 
-**VARIANCE BENEFIT SUPPORTED IN THIS VALIDATION. Integrity passed; PI closure pending.** All 24 fresh paths completed: eight each at ticks 0.0001, 0.00005 and 0.00002, on the canonical prepared finite-stock 500-site LOCAL/LOCAL ring at Omega10. Each ran through model time 0.01. Registration MG153 was published as `5288078` before sampling. No weights were refitted, paths removed, margins changed, or failed jobs retried.
+**VARIANCE BENEFIT SUPPORTED IN THIS VALIDATION. Integrity passed; PI CLOSED as MG155 (2026-11-11).** All 24 fresh paths completed: eight each at ticks 0.0001, 0.00005 and 0.00002, on the canonical prepared finite-stock 500-site LOCAL/LOCAL ring at Omega10. Each ran through model time 0.01. Registration MG153 was published as `5288078` before sampling. No weights were refitted, paths removed, margins changed, or failed jobs retried.
 
 The batch covers 6,400 ticks and approximately **166.235 million accepted events**. The existing raw writer, sparse sampler, participant reservation and finite-stock transport remained unchanged. The fixed weights came from the earlier closed precision pilot; none of its paths entered this validation denominator.
 

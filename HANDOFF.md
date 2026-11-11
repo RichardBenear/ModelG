@@ -1,3 +1,7 @@
+# Current handoff — MG155 closure/MG156 proposal, 2026-11-11
+
+PI signsoffMG154fixedYblendfreshvalidation: CLOSED asMG155. Recommend split-propensity pairedtick-resolutioncoupling toreduce varianceofdifferences whilepreserving eachmarginalstrict-ticklaw. Sharedrate=min(a,b),residualsperrun; separateavailability andunionoftickboundaries. Needsproof/implementation/marginalqualification/actualvariancecostchecks beforeproduction. Proposal spec/MG12H3_tick_coupling_proposal.md. No newrun.
+
 # Current handoff — MG154 results, 2026-11-11
 
 FixedYblendfreshvalidation COMPLETE24paths/6400ticks/166.235millionevents. RegisteredprimaryvariancebenefitSUPPORTED:lateblend/direct.334812,pairedbootstrap95%[.186799,.489462],alltickpointratios<1;earlysecondary.107010. Weightsnotrefit,integrity/separaterecomputationpassed.878.909swall,6020.34chargedseconds(1.67232coreh)<14400,no failures/retries. Raw355.042MB/441productionfilespublishedatcce4a94;454production/decision/weightfilesverified. Report results/MG12H3/Y_blend_validation/MG12H3_Y_blend_results.md. PIclosurepending,no newrun;R48stillunderpoweredfor5%contrast. Recommend validatedvariance-reductionforbetween-tickdifferences beforelargequalification;notjustsameseed.
