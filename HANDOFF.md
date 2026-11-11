@@ -1,3 +1,7 @@
+# Current handoff — MG144 results/MG145draft, 2026-11-11
+
+MG142PIclosedasMG143. MG144deterministic puretransportresolutionanalysis complete3.52470s<60;20operators/160conditions,allcontrols andseparatecolumn/logpowerrecomputation pass. WorstoperatorL2error:delta.001=.102758,.0005=.0529089,.0001=.0107793,.00002=.00216449. Actualprofileerrorsmuchsmaller;1%screenplanningonly. Report results/MG12H3/tick_resolution/MG12H3_tick_resolution_results.md. MG145coupledreplicateddraft spec/MG12H3_tick_resolution_stage2_draft.md; noStage2sampling/production.
+
 # Current handoff — MG142/MG143draft, 2026-11-11
 
 Pilot16/16paths passed,240ticks/60.8065millionevents;separate saved-ID/frame recomputation passed;sourcehashes unchanged.222.567s wall,1483.38chargedsecs<7200. Report results/MG12H3/multitick_pilot/MG12H3_multitick_results.md. Fullraw483.301MB publishing/verification. MG139 andMG142closurependingexplicitPI signoff. Next draft tick-resolutionstudy spec/MG12H3_tick_resolution_plan.md: actualYpuretransportdriftratio.751981/.863939atdelta.001/.0005; not fullcoupled biasclaim. No new production.
