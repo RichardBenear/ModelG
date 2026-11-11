@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "elapsed_seconds": 5.6547455999971135,
+  "timings": {
+    "0": 1.6863498000020627,
+    "1": 1.7387111999996705,
+    "2": 1.849885900002846
+  },
+  "storage": {
+    "0": 1320561,
+    "1": 1358247,
+    "2": 1428785
+  },
+  "guards": {
+    "wrong_seed": true,
+    "missing": true,
+    "corrupt_exposure": true,
+    "incomplete_chunk": true
+  },
+  "forecast": {
+    "d0_r00": 340.26996000041254,
+    "d0_r01": 340.26996000041254,
+    "d0_r02": 340.26996000041254,
+    "d0_r03": 340.26996000041254,
+    "d0_r04": 340.26996000041254,
+    "d0_r05": 340.26996000041254,
+    "d0_r06": 340.26996000041254,
+    "d0_r07": 340.26996000041254,
+    "d1_r00": 350.7422399999341,
+    "d1_r01": 350.7422399999341,
+    "d1_r02": 350.7422399999341,
+    "d1_r03": 350.7422399999341,
+    "d1_r04": 350.7422399999341,
+    "d1_r05": 350.7422399999341,
+    "d1_r06": 350.7422399999341,
+    "d1_r07": 350.7422399999341,
+    "d2_r00": 372.9771800005692,
+    "d2_r01": 372.9771800005692,
+    "d2_r02": 372.9771800005692,
+    "d2_r03": 372.9771800005692,
+    "d2_r04": 372.9771800005692,
+    "d2_r05": 372.9771800005692,
+    "d2_r06": 372.9771800005692,
+    "d2_r07": 372.9771800005692
+  },
+  "forecast_worker_seconds": 8511.915040007327,
+  "source_hashes": {
+    "src/mg12h3_finer_precision.py": "5df3ff0310c6d401420f3581c895a5410b599cfc71d057f10365bd6cfd8f2e7f",
+    "src/prepare_mg12h3_finer_precision.py": "7b75e8ad98f866c4471f9643cc1de0710fe7bdf1368a833c6131d24a3be6fb9c",
+    "src/run_mg12h3_finer_precision.py": "c3bac9516d4329d4eae946bb50efb9f6c921a961fc6702b370f6c5544842fd47",
+    "spec/MG12H3_finer_precision_pilot.md": "d1dea1124481178adea1889dccbadbfc129a0826000e4cdbd1ec311e20705bbd",
+    "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+    "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+    "src/run_mg12h3_sparse_combined.py": "20c85450a97e9ff84325a925f47635ee1f2c151435ac02228c1c8171e0a907d6",
+    "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+    "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+  },
+  "plan_sha256": "c854b6a8a6a2e8e94d7f9398100e477d4a81647102843136b271295229b6298f",
+  "production_registered": false
+}

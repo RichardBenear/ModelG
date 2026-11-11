@@ -1,3 +1,7 @@
+# Current handoff — MG147 ready, 2026-11-11
+
+MG146estimatorvalidationPASSED (128same-seedpaths/384ticks,4096knownmean+2048mixedpaths,6guards,savedrecomputation);samplerunchanged. MG147compactactualwriterpreparation_v2passed3shortpaths/guards5.58055s<60,environmenthashbound. Pilot24paths (8pertick.0001/.00005/.00002,T.01)READY;forecast8426.47worker-seconds,proposed21600total/max8workers/600job. Budgetapprovalpending; storageandaccuracyalreadyapproved/delegated,do not reask. No productionregistration/precisionpilotdraws. Report results/MG12H3/finer_tick_precision_pilot/MG12H3_finer_precision_readiness.md.
+
 # Current handoff — MG145v2 decisions, 2026-11-11
 
 PI approved smallerpayload storage and delegatedaccuracychoice. Lead selects5%initialpatterncontrast usingunroundedfrozendonor template;power.05check retained. V1backgroundconcentrationmargin/provisionalR48 superseded. Savedtransportprecision shows ordinaryR48Ghalfwidth~7.94xmargin; do not launch underpoweredqualification. Next validate drift-integral variance-reduced contrastestimator (samplerunchanged), compactwriter, then prepare disjoint24pathprecision/costpilot. Storagechoice alreadyapproved, do not reask; productionbudgetpending. Spec spec/MG12H3_finer_tick_design_v2.md; no new stochasticpaths.
