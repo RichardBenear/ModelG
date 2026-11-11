@@ -4,7 +4,7 @@ The optimized engine successfully carried all tested actual Model G ring states 
 
 ## Registered conclusion
 
-**FEASIBILITY AND INTEGRITY CHECKS PASSED; PI closure pending.** All 16 trajectories completed through model time 0.01. Eight finite-stock 500 site starting states were each run at tick 0.001 and 0.0005, giving 10 or 20 successive ticks respectively and observations every 0.001. Seeds/registration MG141 were published at `ab9345b` before production. There were no failures, retries or budget stops. This was not a registered particle-preservation or statistical refinement test.
+**FEASIBILITY AND INTEGRITY CHECKS PASSED; PI CLOSED as MG143 (2026-11-11).** All 16 trajectories completed through model time 0.01. Eight finite-stock 500 site starting states were each run at tick 0.001 and 0.0005, giving 10 or 20 successive ticks respectively and observations every 0.001. Seeds/registration MG141 were published at `ab9345b` before production. There were no failures, retries or budget stops. This was not a registered particle-preservation or statistical refinement test.
 
 Source/initialization remain the frozen MG134states: two donor origins,two B-network interventions, Omega1/10, with disclosed donor concentration-to-integer rounding. Reservoir transport was retained; stocks were not replaced with maintained controls. All frozen source and input hashes remain unchanged.
 

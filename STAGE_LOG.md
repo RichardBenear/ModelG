@@ -1326,3 +1326,7 @@ PI approves MG140design and production (2026-11-11):16trajectories/eightstates x
 
 ## MG142 — multi-tick pilot passed; MG143 tick-resolution draft
 16paths/240ticks/60.8065millionevents integritypassed;separate savedaggregation passed;maxrelativetreedrift1.91545e-11.222.567swall/1483.38chargedsecs<7200,no failures/retries. No persistence/refinementverdict. Raw483.301MBretained;PIclosurepending. Draftnextdeterministictransporttick-resolutionanalysis before replicatedcoupledtrajectorydesign; no new production.
+
+
+## MG143/MG144 — pilot closed; deterministic tick-resolution development
+PI explicitlysignsoffMG142and directsnextstage. MG142CLOSED,MG139closureunchanged. Stage1transport-only means on20actualoperators at4ticks/2horizons;uniform/point/Fourier/actualprofiles,independentcontinuous anddiscretechecks.60elapsedseconds/oneworker/thread1/noRNG;freeze source/specbeforecomputations. Descriptive1%operator screening is planningaid,not approvedphysicalgate. Coupledreplicatedstudydepends onthisstage;none started.
