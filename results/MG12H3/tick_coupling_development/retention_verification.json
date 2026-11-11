@@ -1,0 +1,603 @@
+{
+  "passed": true,
+  "verified_commit": "66ba0a22d8b101ddf5182bd7efe30e693663ff2c",
+  "verified_files": 85,
+  "text_comparison": "Git-normalized LF versus local CRLF; binary comparison exact",
+  "files": [
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_c0_r0.npz",
+      "git_blob": "030de0c99a8663989133442f578b498b3f99f718",
+      "sha256_git": "7ef76fdafa6e7ca2ae3deafe44c9bf6070ec4ad172256f599f553ecc2e865515",
+      "local_bytes": 20685,
+      "git_bytes": 20685
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_c0_r0_trace.json",
+      "git_blob": "a333ca9f756a2f2adc740cf544e6ce69df39fd15",
+      "sha256_git": "e71a6aa05cdaabeccb1351b3073ac2037a5f29ad2cace264ed5b8b78adb1c2e2",
+      "local_bytes": 7892445,
+      "git_bytes": 7474404
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_c0_r1.npz",
+      "git_blob": "7eb13934330d142b57a401e3bdc6fb0fe7531726",
+      "sha256_git": "3da63f078466f7aecc9ccfe3e5000084ce2544ad33fb3c3ee2046b96287bda4e",
+      "local_bytes": 20742,
+      "git_bytes": 20742
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_c0_r2.npz",
+      "git_blob": "0c423bf98403c42652f196171bce051a3fe6d02f",
+      "sha256_git": "40ff119f8a30c37084e7b071fd2a6d202eaeb785f4c5a6c9d6cffc50e6fe1eb4",
+      "local_bytes": 20564,
+      "git_bytes": 20564
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_c0_r3.npz",
+      "git_blob": "b5d56b845386bab4ebfa11ef65d6d686f644da0e",
+      "sha256_git": "764361a2fa9b95c5a8d3ab5fe77b4e437c789393e336795a17842be1e191dd6c",
+      "local_bytes": 20641,
+      "git_bytes": 20641
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_c1_r0.npz",
+      "git_blob": "7f78d3dd7d05d4a4745f2f553b8207e6e8ff2318",
+      "sha256_git": "77170bfeac605dc66088efdee01e3c57a9f8268c2e02a2f760aa6c308aae51e9",
+      "local_bytes": 20639,
+      "git_bytes": 20639
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_c1_r0_trace.json",
+      "git_blob": "1fefd561b3919000d214b830f7cb394a32d37a21",
+      "sha256_git": "d28e915b2e74e0e59fa57d4cf40d1b708eff0d8f8dc1ebb674372b51fdde07aa",
+      "local_bytes": 8156480,
+      "git_bytes": 7724627
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_c1_r1.npz",
+      "git_blob": "c287bdbbaa3969c1f61bd90e22a30d9bb051fd0c",
+      "sha256_git": "b55667c340a12b33c2200e7f54ffc8a4fe44d83c63ec3fbe81d116bc592f64a8",
+      "local_bytes": 20520,
+      "git_bytes": 20520
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_c1_r2.npz",
+      "git_blob": "8e02200bcd008a47f5961a4127ecf2a5cba98d74",
+      "sha256_git": "5bbe9c7de41e7cfe25bc14d316acfba658abbedc47b14a6524f363b549a31d94",
+      "local_bytes": 20625,
+      "git_bytes": 20625
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_c1_r3.npz",
+      "git_blob": "7ad83cbb9dc76edc8ff102bd0d0c46c90bfc18eb",
+      "sha256_git": "3e754e91e2c0dfdb312c851055b4a69dcc3e56b6c582865d3fa1d9b89f7b3ec0",
+      "local_bytes": 20478,
+      "git_bytes": 20478
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_contrasts_c0.npz",
+      "git_blob": "fe3ebbc5470e2c442188899f26d905a20a89515a",
+      "sha256_git": "7d3a5c26d46ce39820090c3761071b94fc5433f24ba710bb2353c732f721d657",
+      "local_bytes": 11746,
+      "git_bytes": 11746
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_contrasts_c1.npz",
+      "git_blob": "2b103881361560f93a06fb4ef896bec092e04f23",
+      "sha256_git": "f04b80f282dd0d048645f42b922e6e0aa7c7cec23ed64e3e1ed847dd00a3c30f",
+      "local_bytes": 11738,
+      "git_bytes": 11738
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_single_c0_r0_s0.npz",
+      "git_blob": "286d1c3c249297ee29a601a6da211fc0ef38ff38",
+      "sha256_git": "d5be47f3af5dcdb364c40aec0912b88f0dd798d57d48f08b62089521b42c880b",
+      "local_bytes": 4255,
+      "git_bytes": 4255
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_single_c0_r0_s1.npz",
+      "git_blob": "a3ea1e211b7926b8b65c70b1b06e19f185523719",
+      "sha256_git": "9013799c74dc2962b077b288ed259e55b2a4f41e3f953fe41a21893ef43e90ef",
+      "local_bytes": 4236,
+      "git_bytes": 4236
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_single_c0_r1_s0.npz",
+      "git_blob": "593a03844fc4dd62d9dab15f6c51957b3ed815d1",
+      "sha256_git": "e6a98bb7f9c665c74df162d3c991380923e69d6a4805aee34cab5da085fdaa29",
+      "local_bytes": 4190,
+      "git_bytes": 4190
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_single_c0_r1_s1.npz",
+      "git_blob": "97c4371b4cf66e76bc5e8a929cf6deab61da6d37",
+      "sha256_git": "1492ba4c7c6b36e1131d3b1bba850c3849a71ecfa087ed8f5f6411bda91d2890",
+      "local_bytes": 4243,
+      "git_bytes": 4243
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_single_c0_r2_s0.npz",
+      "git_blob": "fb147c260535e2aee00719816a7022ffd1e565e4",
+      "sha256_git": "21fae6e565f2800c8e88fd4d0d1004c6e365fa721ce16d9c7960379ab18f42e0",
+      "local_bytes": 4229,
+      "git_bytes": 4229
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_single_c0_r2_s1.npz",
+      "git_blob": "7d521a439285b0278608833f585df2d769db3fe9",
+      "sha256_git": "be5d44629350581f6b216cb29521e27a03a4f19e60bef333dc2179dac901ef75",
+      "local_bytes": 4189,
+      "git_bytes": 4189
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_single_c0_r3_s0.npz",
+      "git_blob": "1dde99e8af7b3ac9257b9787e228d0d1ee899c3f",
+      "sha256_git": "1fb92ceaf9313993efad8678e9c8b32e9462b0303b5e7c9f00053cb8ad9ebfaa",
+      "local_bytes": 4207,
+      "git_bytes": 4207
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_single_c0_r3_s1.npz",
+      "git_blob": "5a3a77b77a0836e89db7a8333c291b1e9c74980f",
+      "sha256_git": "00d04b7d837a9cebbcaa79fd332c0efc24d174ee39c49ebc87ae579eae313fe6",
+      "local_bytes": 4196,
+      "git_bytes": 4196
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_single_c1_r0_s0.npz",
+      "git_blob": "effeb41bcdc87e61b97821dcf95c4af4006f8305",
+      "sha256_git": "90c4237bd703c2e6166393166d675864d80cf64a285f25647fd828f1616b9cd6",
+      "local_bytes": 4255,
+      "git_bytes": 4255
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_single_c1_r0_s1.npz",
+      "git_blob": "9b0f9c0279d66bd765bfa4a3af7fb4b14ebcf6c1",
+      "sha256_git": "a9cb57b6fdf6f51b5181948f02270667463dde85504ef602503366652197b07a",
+      "local_bytes": 4235,
+      "git_bytes": 4235
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_single_c1_r1_s0.npz",
+      "git_blob": "b43c6900f40747272dbc71aaa574eb74eeb2e6c1",
+      "sha256_git": "4036aef76e89f1b3fe8201bbf041b50b4d289cec886680be5690bda780d3d5f3",
+      "local_bytes": 4217,
+      "git_bytes": 4217
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_single_c1_r1_s1.npz",
+      "git_blob": "1f8416874367607ce9468b051db7e91287b58351",
+      "sha256_git": "5221827dfa7e2c8778ddbd363c7d2952dc45e504ce66695b24a8de6c92812445",
+      "local_bytes": 4203,
+      "git_bytes": 4203
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_single_c1_r2_s0.npz",
+      "git_blob": "278b94f0f9d6be975feac370e00ab1343980ffec",
+      "sha256_git": "236e210ac28339f700dadb8e11a1873d86f2548029a73837552e5eedbe5c85b9",
+      "local_bytes": 4234,
+      "git_bytes": 4234
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_single_c1_r2_s1.npz",
+      "git_blob": "c27b3b146999219ca930de354a700498218c7bbd",
+      "sha256_git": "ee3aadbf08ff29339e3aaaf1b86d9b763422f5a4dce75f50896c56fb7cfa3305",
+      "local_bytes": 4204,
+      "git_bytes": 4204
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_single_c1_r3_s0.npz",
+      "git_blob": "e791269cecdf86594ff6e782145404c647af775c",
+      "sha256_git": "ce1709c81ef73ff6abcfb6aa209577c8b8c032e6736d71ec99a2c5c2f72ad77c",
+      "local_bytes": 4201,
+      "git_bytes": 4201
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/actual_single_c1_r3_s1.npz",
+      "git_blob": "17ff00158825223a9cbdcc4b2e034d79f778cef8",
+      "sha256_git": "bbd19903c01786ce430ca7085d3ef36ab5c27df56040a10f9d61c0625f418154",
+      "local_bytes": 4218,
+      "git_bytes": 4218
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/budget_ledger.json",
+      "git_blob": "ea639598a590516ae17f0cbdba52dc44ad57a4ce",
+      "sha256_git": "0447d1acc9d8b52fc1e2666a482262af93d529e1d773d231aeaedfc7e231196e",
+      "local_bytes": 824,
+      "git_bytes": 792
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/exact_c0_s0.npz",
+      "git_blob": "88306d47a2c5439546272987209e843ae50ca75f",
+      "sha256_git": "ae9493a804ff22d9515ecc7d0dc4665798d976d58f5946e059b1c378b2803095",
+      "local_bytes": 2159,
+      "git_bytes": 2159
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/exact_c0_s1.npz",
+      "git_blob": "be9b5ed04c90ec1da9afbcc5070b6d5e94c458e4",
+      "sha256_git": "c8c280b44683a88be5af818f3564f523e75b1813283b3f643cbc6732f7fa3e30",
+      "local_bytes": 2163,
+      "git_bytes": 2163
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/exact_c1_s0.npz",
+      "git_blob": "d2e8933e10f3bf91fe2402a36d4a69dbea57cc9a",
+      "sha256_git": "962e1e0d5e7d524c8dc6985d34e542f21d734740e8c3bd864ad07583f68ac921",
+      "local_bytes": 2048,
+      "git_bytes": 2048
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/exact_c1_s1.npz",
+      "git_blob": "677c72d0d568c1c785f85626a33052a1a4331e27",
+      "sha256_git": "a6dae8d6f93754ac1fa345a80032e79255555474d12e4fc8fdb25975bbc54f4f",
+      "local_bytes": 1997,
+      "git_bytes": 1997
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/exact_c2_s0.npz",
+      "git_blob": "af7548a41f3974172253fc1acb91caafa9cecc0e",
+      "sha256_git": "9e2a7fcebc56e0cb0cf2f190bccfc742e08da09db5e558c79389251c08c50dad",
+      "local_bytes": 3332,
+      "git_bytes": 3332
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/exact_c2_s1.npz",
+      "git_blob": "ac9c5f2f77fd6027ce1c3efd47bfddd552b2f50d",
+      "sha256_git": "fea96734a7ddb1d41be07259cdbe0216cb65a962c71a933cbd198cd65320bad4",
+      "local_bytes": 3371,
+      "git_bytes": 3371
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/exact_c3_s0.npz",
+      "git_blob": "55adfdf1b7f197ae54719cab65a883e69388b447",
+      "sha256_git": "bfeb966ef497512d8af1149eda54d515ecb9f1bb731def3caad598379c2bd258",
+      "local_bytes": 3635,
+      "git_bytes": 3635
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/exact_c3_s1.npz",
+      "git_blob": "399180710fbd2e5a5e7e8fd2cf4acdf0bc38be84",
+      "sha256_git": "b6e46d0200cfa9b56c1132bb6ab0ba3afe8cdef5064b3c406fdf309ac6c9c28b",
+      "local_bytes": 3388,
+      "git_bytes": 3388
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/marginal_c0.npz",
+      "git_blob": "ecd91c40a033d79d4f854fa9e6f42d9500cd2543",
+      "sha256_git": "3cbd22861c7b1a47271200392c3fe87f1f15bac9786f4855d0058f7c3702fe26",
+      "local_bytes": 24140,
+      "git_bytes": 24140
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/marginal_c0_r0.npz",
+      "git_blob": "a8a3de5cc4bb6233c1744d751325888f31f07525",
+      "sha256_git": "7c2c8839b0f4c9c644157ed430b38ce598ea6d21a8c22b42d5d43ecafebb46a2",
+      "local_bytes": 1256,
+      "git_bytes": 1256
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/marginal_c0_r0_trace.json",
+      "git_blob": "afb022a4e03a4bc027e8af6d3eac42fec034a0b8",
+      "sha256_git": "1d6a8a82e276f645da9e76c4fdf26a76a58d00c5eac253c97a1f6156aac62cb7",
+      "local_bytes": 2408,
+      "git_bytes": 2241
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/marginal_c1.npz",
+      "git_blob": "6b0b05df333821772807d49f2d7b657bc06207bc",
+      "sha256_git": "47006fe6f1ad446345605d6a5185fe14e4e5cebec1fcdfe5a972bf4ebee29e13",
+      "local_bytes": 25160,
+      "git_bytes": 25160
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/marginal_c1_r0.npz",
+      "git_blob": "ef15ac6683384de762795543cae93a0722b6605c",
+      "sha256_git": "341fd5efbabf3802b71655b885ecbc0c9b34d48b212cf1901420025347bb470c",
+      "local_bytes": 1253,
+      "git_bytes": 1253
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/marginal_c1_r0_trace.json",
+      "git_blob": "7d331be710f74ab97e4dc3d734e84fcb0beadfad",
+      "sha256_git": "d48f1263c496a023a700771da46218908a333669fe8f300a65a448dfa7fd9774",
+      "local_bytes": 2409,
+      "git_bytes": 2242
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/marginal_c2.npz",
+      "git_blob": "37e61ac821039911c447634bc82a32423665cc70",
+      "sha256_git": "b01f363f1534cca6b2a83772410b58376c38dab934e320ee0375ab06c4d954a6",
+      "local_bytes": 24245,
+      "git_bytes": 24245
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/marginal_c2_r0.npz",
+      "git_blob": "7231667a7f17a55e135d2200fed134199ded7308",
+      "sha256_git": "c4457d1947674ede47c2f321f69d2d088bbb0f6243c1052bf4d354e9dac9917a",
+      "local_bytes": 1274,
+      "git_bytes": 1274
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/marginal_c2_r0_trace.json",
+      "git_blob": "46b2eed315c881c0c2e11a3b99293c98be364350",
+      "sha256_git": "1e9f637b3f8cd069e63b0537bb5530bcabec95130c8a68656f6b9c997735fbcf",
+      "local_bytes": 2498,
+      "git_bytes": 2326
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/marginal_c3.npz",
+      "git_blob": "aa8bb5da6986bd736a2716d62974317ede9609cb",
+      "sha256_git": "31074795b02f2f8edc61b9a12f2d48326411404515517343cb442d24c3f39f86",
+      "local_bytes": 25745,
+      "git_bytes": 25745
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/marginal_c3_r0.npz",
+      "git_blob": "a7ecba4a484078c20189c734e3701fb5b5458e1e",
+      "sha256_git": "591dc06acc7629e6aca7ee8d89007245ae680b8175cf77242443783c69687f57",
+      "local_bytes": 1257,
+      "git_bytes": 1257
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/marginal_c3_r0_trace.json",
+      "git_blob": "d7454dd64bf8c0466eb13d8da06bc89b381befa7",
+      "sha256_git": "7947cebff2de519de9bfe99da12ae9acecb1dd119ea3e1332b2dd5b725b2bad1",
+      "local_bytes": 1959,
+      "git_bytes": 1820
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/MG12H3_tick_coupling_development_results.md",
+      "git_blob": "7ea3da15474231cfdb4a64542550666e3509b7b4",
+      "sha256_git": "58af747833adc94f78b167e85299bebbe266921145c55e9d1dac63bc914b13b7",
+      "local_bytes": 7119,
+      "git_bytes": 7066
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/plan.json",
+      "git_blob": "02073ebfb537739e36e99c87bec40ce9c4790935",
+      "sha256_git": "b318d955254aa50b11b00bdf92d487cbaaca37eec6407c39634b7a0a493c0f53",
+      "local_bytes": 252790,
+      "git_bytes": 240257
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/raw_manifest.json",
+      "git_blob": "7d89a37b61062fe9f7770957b877499653306d67",
+      "sha256_git": "253ba3f506a6de27906989ea57892b9d1862c75a734a6fc13b6a00b250d1f82e",
+      "local_bytes": 11583,
+      "git_bytes": 11262
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/regression_c0.npz",
+      "git_blob": "0068d77642a3fbf223308f7c02eaca1d5970b320",
+      "sha256_git": "4be0ec8d6c9deceabcdf131e5699685e379f47a0a8d56ae41b22a2ae49a71983",
+      "local_bytes": 689,
+      "git_bytes": 689
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/regression_c0_r0.npz",
+      "git_blob": "c5416385f994073ec97aaf83672a64d3a799b410",
+      "sha256_git": "446ff7de1a726637e894ad961843b0aebb36d818faf6b932a1ba8139c332510c",
+      "local_bytes": 1246,
+      "git_bytes": 1246
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/regression_c0_r0_trace.json",
+      "git_blob": "b94e26fb691ce162069267faa05c04f88f68f9ad",
+      "sha256_git": "f065770e1f9e9cd5ef6e975728e1e20e6e4c1336d13ffb36b0b5326d04f3ad3f",
+      "local_bytes": 22764,
+      "git_bytes": 21199
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/regression_c1.npz",
+      "git_blob": "9d3e8316fe453a06c8e0365bd3a08ff4a7c793be",
+      "sha256_git": "a9690e68158aff9878a1324ac110d9aee219f248949bb65bd5e47eef8decd4a0",
+      "local_bytes": 694,
+      "git_bytes": 694
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/regression_c1_r0.npz",
+      "git_blob": "2101e77827bdc8a6577daa78e700266d8d95ffcd",
+      "sha256_git": "ffa5fb6fa98f9ebae0cf3b084605c4b58b32f1ad7295d2fcd746005865cef7fa",
+      "local_bytes": 1252,
+      "git_bytes": 1252
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/regression_c1_r0_trace.json",
+      "git_blob": "44a7a060c49415f2f7b8881ff32ef7c37f81552f",
+      "sha256_git": "5896a4111ea06e6981ae401be97c19235fa211eaab97deb18f854c5c493776b3",
+      "local_bytes": 22764,
+      "git_bytes": 21199
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/regression_c2.npz",
+      "git_blob": "799edf5fcc1fcc2186aa6719b75246a0d84964df",
+      "sha256_git": "1c6928e9facc374ef9edc88900c9239234539a670b435bd51d7530fd9bf4c5c8",
+      "local_bytes": 692,
+      "git_bytes": 692
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/regression_c2_r0.npz",
+      "git_blob": "0216abf7b8dd4590b54afd22fc38dbd35d3a7046",
+      "sha256_git": "21982fed391449487684b132d23941d364f1ead17016d0fe46aef0697e6a39c8",
+      "local_bytes": 1250,
+      "git_bytes": 1250
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/regression_c2_r0_trace.json",
+      "git_blob": "35db31ae41bf855eebfbec118620a273d9997abf",
+      "sha256_git": "07b9d19276efc8295b8a98b1d8edc06951935e33c64901bd2385372ebf8c6140",
+      "local_bytes": 22764,
+      "git_bytes": 21199
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/regression_c3.npz",
+      "git_blob": "3a56dffbefae293f30600f8cac5971343ce2ce7a",
+      "sha256_git": "e76a28d1683bfec1349edba7526755400992a5823b9f986f517ebf7164f851fe",
+      "local_bytes": 670,
+      "git_bytes": 670
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/regression_c3_r0.npz",
+      "git_blob": "0c48ce47402acbf052aac178edcf4e05b0a17431",
+      "sha256_git": "e8d01aff4ef1fc3b0f4d97949d98d1cf76af3578fd435e9229640557246efe07",
+      "local_bytes": 1248,
+      "git_bytes": 1248
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/regression_c3_r0_trace.json",
+      "git_blob": "2c099d2b9022fb7c68306c198d5add36b13b64b2",
+      "sha256_git": "e637ac4f7064408cd47a44474d8d6646ebb6606264ea8e9fe81dce6f1b8dd80e",
+      "local_bytes": 18376,
+      "git_bytes": 17085
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/script_boundary.npz",
+      "git_blob": "51b0b3a2740cdf3e87f7ab75c4805ebaf6f335d9",
+      "sha256_git": "a5a5e1d8f9fad06c5cb3880a2bb3c8774952dff53491c5e0d5904bbee0a5cb3e",
+      "local_bytes": 1157,
+      "git_bytes": 1157
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/script_boundary_trace.json",
+      "git_blob": "ef17bb2a2d36313745a65f8dcd722dad315d7950",
+      "sha256_git": "eeed2a7389fffb8dcc803d725c022ca9698a5d1866af84e8f628a0b0091298e8",
+      "local_bytes": 2798,
+      "git_bytes": 2593
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/script_empty.npz",
+      "git_blob": "07097d69ad3dcf8e681e69995a6eec7f9ea74eac",
+      "sha256_git": "470626519e1e8d0a7b302161f4573daf9e37d2cda76852d41b3db2926f92b531",
+      "local_bytes": 1210,
+      "git_bytes": 1210
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/script_empty_trace.json",
+      "git_blob": "e7942035415ff568b2640ee58c0fcdc9f41f7227",
+      "sha256_git": "eeb563a69e241562091168214a5c208fcc3cb5ec8d41c05fdd3db12dc0c30c8f",
+      "local_bytes": 2798,
+      "git_bytes": 2593
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/script_one_sided.npz",
+      "git_blob": "4d33b9712a8149883550ae84cb84a357f970978d",
+      "sha256_git": "58273f36255a32b9e4e668b4a249f940766701622c282f2390375e5482cf37e6",
+      "local_bytes": 1158,
+      "git_bytes": 1158
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/script_one_sided_trace.json",
+      "git_blob": "f09d09fa807807f69eb2724b0a35d4309821db56",
+      "sha256_git": "666638bf72eba537ca331aa3714add9b1509d6b99c84656d3e69a96c7dd0e2b0",
+      "local_bytes": 2876,
+      "git_bytes": 2665
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/script_R4.npz",
+      "git_blob": "6436881e24f00856a597aafd70cea25e69404809",
+      "sha256_git": "1361e7acaa70b6b9413e1c349b1ea8295742789edfdf81b571737167a6842e8e",
+      "local_bytes": 1170,
+      "git_bytes": 1170
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/script_R4_trace.json",
+      "git_blob": "f45f0c388e0a767993b0966b5b92088df17e530c",
+      "sha256_git": "02e4a3d948ca0b6d06bcbc88306bb5cffd0c0f19e07e676563330317ac40dcf9",
+      "local_bytes": 2951,
+      "git_bytes": 2735
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/separate_recomputation.json",
+      "git_blob": "fd390f58b6b8acecf329c957f2d16c3e011d0612",
+      "sha256_git": "4ea0f6d302847ef008fb3baade4d0596deaac5842605dfb7e2daeff9df9f99a0",
+      "local_bytes": 4304,
+      "git_bytes": 4172
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/stage_A_attempt.json",
+      "git_blob": "2b1f64a24e8deef724e502ca3960ed8b81de0f99",
+      "sha256_git": "138591ac0ffa03e78eeb2bd66bf7d5b17022cef95c7c94aff896beb1e75f9de8",
+      "local_bytes": 71,
+      "git_bytes": 67
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/stage_A_results.json",
+      "git_blob": "682204f06da9d7aa75d83baebca30befdcc636c4",
+      "sha256_git": "63de8f50e2c20babce3c1428710a1768ade91deb1a617b19e038afc15815e572",
+      "local_bytes": 3785,
+      "git_bytes": 3670
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/stage_B_attempt.json",
+      "git_blob": "dd33b4a43f4229cb9278bb7bdcfd17aaa90dae72",
+      "sha256_git": "43f8976e858cd60b2734413640b271377dea4077e62571291d99954621116dbc",
+      "local_bytes": 71,
+      "git_bytes": 67
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/stage_B_results.json",
+      "git_blob": "13b7e9e5c600fa86999b4e35e2b7d1047b0f302f",
+      "sha256_git": "5e961bbfeaf47374d1028b9ae232656a4828e6496f681e763f97511ea37581c7",
+      "local_bytes": 7201,
+      "git_bytes": 6958
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/transport.npz",
+      "git_blob": "5027eb67deb3bdd549b6fb7543e7d484010f0ae8",
+      "sha256_git": "adad4e619d5f58800df94dfca3e64cefb5a14f6dde7e9ebe4042bdb9e30971aa",
+      "local_bytes": 47162,
+      "git_bytes": 47162
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/transport_r0.npz",
+      "git_blob": "0c352aeb4dec4a8605f1e42abb2365df57e7bb8d",
+      "sha256_git": "d78a78ccb9c41d1c77b83a07af7516da967b390261bc603a31bbfdf7cc26f98e",
+      "local_bytes": 1241,
+      "git_bytes": 1241
+    },
+    {
+      "path": "results/MG12H3/tick_coupling_development/transport_r0_trace.json",
+      "git_blob": "da7fdbcf4de98601d4a179cdd40bc3d9b2dd3c26",
+      "sha256_git": "bc9d26254e7a8da41c0fb5386fec0352b77dddd20f04defe8f494a5a63a86b0a",
+      "local_bytes": 22036,
+      "git_bytes": 20489
+    },
+    {
+      "path": "src/mg12h3_tick_coupling.py",
+      "git_blob": "89aeb4b1d34dae1b6e7d73fd23ead4d5f1949c2c",
+      "sha256_git": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+      "local_bytes": 6031,
+      "git_bytes": 5959
+    },
+    {
+      "path": "src/run_mg12h3_tick_coupling.py",
+      "git_blob": "c062e928994e81c220997fa3a74732f36d46a935",
+      "sha256_git": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+      "local_bytes": 14567,
+      "git_bytes": 14567
+    },
+    {
+      "path": "src/check_mg12h3_tick_coupling.py",
+      "git_blob": "08e4b4e427f18396b3e1e202fee5cfe04e137086",
+      "sha256_git": "4bb83b9c115da254a9b2377c07f83109f7ebf8af8d34fd4b347b7955f741fb2a",
+      "local_bytes": 6309,
+      "git_bytes": 6309
+    },
+    {
+      "path": "spec/MG12H3_tick_coupling_development.md",
+      "git_blob": "eaee3a2c0f386a12c28cb5d8c973d03da4a88a82",
+      "sha256_git": "a624b59c10980b5376876521c98b935560131d0e8b4d34f6af10ecdbd3df30db",
+      "local_bytes": 3107,
+      "git_bytes": 3098
+    },
+    {
+      "path": "review/MG156_internal_check.md",
+      "git_blob": "9df011ef6cb68a0da755a9055198d866eca10fe0",
+      "sha256_git": "6d18ab231f2a00f7f20b969f0c3e78ee844fe8dcc01543dd3691cab3841b348e",
+      "local_bytes": 1620,
+      "git_bytes": 1613
+    }
+  ]
+}
