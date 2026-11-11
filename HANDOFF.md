@@ -1,6 +1,10 @@
+# Current handoff — MG150 closure/MG151 proposal, 2026-11-11
+
+PI signsoffMG149precisionpilot: CLOSED asMG150. Recommend fixeddirect/integratedYcontrastblend,weightsfrompriorpilotfrozenacrossticks pertime(.311036early/.620838late direct). In-samplelatevariancegain2.69246vsdirect isexploratoryoptimistic,notvalidated. Nextanalytic/disjointsmallcasevalidation thenprospectivefreshactualringvariancebatch/budget. Margins/storage/samplerunchanged;no newrun. Proposal spec/MG12H3_Y_noise_next_step.md.
+
 # Current handoff — MG149 pilot results, 2026-11-11
 
-MG148precisionpilotcomplete24paths/6400ticks/166.212millionevents,integrityandseparatecompactrecomputationpass.731.577s wall,4837.62chargedseconds(1.34378coreh)<21600,no failures/retries. Gvariancegain892–8356;YintegralworseatT.01,notuniversalreduction. Noequivalenceverdict. OldR48proposalstillinadequateY(planninghalfwidth~2.23209xmargin). Pilotfittedhybrid exploratoryonly,nextvalidate/freezeestimationstrategybeforefreshqualification. Report results/MG12H3/finer_tick_precision_pilot/MG12H3_finer_precision_results.md. Raw354.835MB/441productionfilespublishedatd18af7f;450production/decisionfilesverified;PIclosurepending,no newrun.
+MG148precisionpilotcomplete24paths/6400ticks/166.212millionevents,integrityandseparatecompactrecomputationpass.731.577s wall,4837.62chargedseconds(1.34378coreh)<21600,no failures/retries. Gvariancegain892–8356;YintegralworseatT.01,notuniversalreduction. Noequivalenceverdict. OldR48proposalstillinadequateY(planninghalfwidth~2.23209xmargin). Pilotfittedhybrid exploratoryonly,nextvalidate/freezeestimationstrategybeforefreshqualification. Report results/MG12H3/finer_tick_precision_pilot/MG12H3_finer_precision_results.md. Raw354.835MB/441productionfilespublishedatd18af7f;450production/decisionfilesverified;PIclosedasMG150,no newrun.
 
 # Current handoff — MG148, 2026-11-11
 

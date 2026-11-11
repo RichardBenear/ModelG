@@ -4,7 +4,7 @@ The pilot completed successfully and showed that the integrated-rate estimator m
 
 ## Registered outcome
 
-**PRECISION/COST PILOT COMPLETE; integrity checks passed; PI closure pending.** All 24 paths completed, eight each at ticks 0.0001, 0.00005 and 0.00002, on the canonical prepared finite-stock 500-site LOCAL/LOCAL ring at Omega10. Every path ran through model time 0.01, with observations every 0.001. Registration MG148 was published as `383f09b` before sampling. There were no failures, retries or budget stops.
+**PRECISION/COST PILOT COMPLETE; integrity checks passed; PI CLOSED as MG150 (2026-11-11).** All 24 paths completed, eight each at ticks 0.0001, 0.00005 and 0.00002, on the canonical prepared finite-stock 500-site LOCAL/LOCAL ring at Omega10. Every path ran through model time 0.01, with observations every 0.001. Registration MG148 was published as `383f09b` before sampling. There were no failures, retries or budget stops.
 
 The archive covers **6,400 ticks** and approximately **166.212 million accepted events**. No reservoirs, reaction rules, reservations, initial counts or tick semantics were changed. Products and arrivals become eligible only in the next tick. The existing five-percent initial projected-contrast target remains unchanged. By design this pilot has **no equivalence verdict**; its samples are excluded from a future qualification denominator.
 

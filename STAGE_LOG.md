@@ -1358,3 +1358,7 @@ PI “i approve” authorizesMG147v2packet:24paths/8pertick(.0001/.00005/.00002)
 
 ## MG149 — finer-tick precision pilot complete; closure pending
 24/24paths,6400ticks/166.212millionevents; integrityandseparaterecomputationpass. Gintegralvariancegainlarge;lateYintegralvarianceworse. Noequivalenceverdict.731.577swall,4837.62chargedseconds<21600,no failures/retries. R48notreadyforYmargin;hybridpilotfittingexploratory/notdeployed. Fullapproveddecisionarchive+3sentinelsretained;PIclosurepending,no futureproduction.
+
+
+## MG150 — precision pilot closed; MG151 Y-estimator proposal
+PI “i sign off” closesMG149precisionpilot. Recommend prospectivelyfixedYdirect/integratedblend,mathematicalanddisjointsavedcasechecks beforefreshvariancevalidation. Pilotfittedgainnotqualificationevidence. No new sampling,changedmargins orbudgetapproval inferred.

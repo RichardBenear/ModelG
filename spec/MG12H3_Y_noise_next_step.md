@@ -1,0 +1,11 @@
+# MG151 proposal — Reduce uncertainty in the Y mean estimate
+
+MG149precisionpilot is PI CLOSED as MG150. Recommendation: validate a fixed blend of direct and integrated Ycontrast estimates. Both target the same ensemblemean; their within-condition pilot fluctuations were negatively correlated. Mixing them can cancel estimationnoise without changing token trajectories or suppressing the model's actual Yfluctuations. No sampler, margin, population, tick or chemistry change is proposed.
+
+Freeze one coefficient per observationtime, shared across all three tick resolutions. Pilot fitted direct weights were0.31103637554093005atT0.005 and0.620838372539336atT0.01; integrated weights are one minus these values. Retain exact coefficients in the source decision record. Fit used within-condition centered pilot covariance, not pooled tick-mean differences. No refitting on validation or qualification outcomes.
+
+AtT0.01the in-sample pooled blend variance was approximately2.69246times lower than direct and5.53760times lower than integrated alone. These are optimistic fitted-pilot observations,not validated performance or guaranteed sample savings. They do not establish five-percent equivalence, continuumaccuracy or a particle result. The earlier time also showed a possible benefit, which must be independently checked.
+
+Next steps: (1) verify the fixed linear combination against the analytic mean identity and disjoint existing small-system development records; (2) design a modest fresh actual-ring validation batch at the same three ticks,retaining both constituent estimates, the fixed blend, its cross-resolution variance and full integrity checks; (3) use independent precision evidence to plan later qualification with unchanged margins. Present fixed validation rules and measured budget before new sampling. No production is registered or authorized by this proposal.
+
+More independent replicates remain the fallback if the out-of-sample gain is inadequate. RaisingOmega would change finite-population noise and cost, so it should be a separately justified physical/numerical study rather than a way to hide an estimator problem. High-band power is nonlinear and is not automatically improved by this linear-contrast blend.
