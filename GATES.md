@@ -2438,3 +2438,7 @@ PI approves MG140design and production (2026-11-11):16trajectories/eightstates x
 
 ## MG143/MG144 — pilot closed; deterministic tick-resolution development
 PI explicitlysignsoffMG142and directsnextstage. MG142CLOSED,MG139closureunchanged. Stage1transport-only means on20actualoperators at4ticks/2horizons;uniform/point/Fourier/actualprofiles,independentcontinuous anddiscretechecks.60elapsedseconds/oneworker/thread1/noRNG;freeze source/specbeforecomputations. Descriptive1%operator screening is planningaid,not approvedphysicalgate. Coupledreplicatedstudydepends onthisstage;none started.
+
+
+## MG145 — finer-tick study design, no production
+PI requests designing finer-tick tests. Proposed canonicalOmega10finitecase,delta.0001/.00005/.00002,48replicatesperresolutionpendingprecision/costplanning. Six path-levelprimaryobservables/twoendpoints/twofinereferencecomparisons;24nominalsimultaneousWelch intervals,proposedcontrastmargin.01 andpower.05,explicitcoverageassumptions. Saved-only transportprecision/archive-layoutplanning under60seconds/oneworker/thread1,noRNG; freezebeforecalculation. Compactdecisionarchive/sentineltraces proposalrequiresapproval. No new coupled paths or registeredbudget.
