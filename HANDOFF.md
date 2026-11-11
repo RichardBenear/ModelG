@@ -1,3 +1,7 @@
+# Current handoff — MG153, 2026-11-11
+
+FreshfixedY-blendvariancevalidation APPROVED/REGISTERED. PIapprovesMG152v2packet/budget14400chargedseconds/max8workers.24paths T.01 at3finerresolutions,weightsfrozen,no refitting. Entry src/run_mg12h3_Y_blend.py --run;pushregistrationbeforelaunch. Approvedcompactarchive+3sentinels;no retry/equivalenceverdict,closureseparate.
+
 # Current handoff — MG152 ready, 2026-11-11
 
 FixedYblend saved/knowncase/syntheticchecks PASSED; exactweightssharedacrossticks,notrefit. Fresh24pathvariancevalidationREADY:8pertick.0001/.00005/.00002,T.01; primarylateYpooledpairedbootstrap95%upper<1 plusalltickpointratios<1,approximatecoverage/noequivalenceverdict. Frozenoldwriterreusedunchanged. Forecast7121.21worker-seconds;proposed14400total/max8workers/600job;budgetapprovalpending. Sourcebindingv2preservesinitialpre-drawstaleplanblock. No freshphysicalpaths/registration. Report results/MG12H3/Y_blend_validation/MG12H3_Y_blend_readiness.md.
