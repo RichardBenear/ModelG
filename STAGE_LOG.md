@@ -1380,3 +1380,8 @@ PI ‚Äúi approve‚Äù authorizesMG152v2fresh24pathbatch,unchangedweights andvarianc
 
 ## MG155 ‚Äî fixed Y-blend validation closed; MG156 coupling proposal
 PI signsoffMG154. CLOSED variancevalidation only,notmeanaccuracy/tickequivalence. Proposednext split-propensitycoupledcomparison withunchangedmarginals andasynchronoustickboundaries; no newsampling/implementation/budget registered.
+
+
+## MG156 ó paired tick-resolution development authorized
+
+PI: ìLooks good to me. Go ahead and prepare and then run the tests.î Implement the split-propensity joint sampler alongside frozen marginal engines. Prospective specification: spec/MG12H3_tick_coupling_development.md. Freeze source/seeds before draws. Stage A: 60 seconds, exact marginal/strict-tick controls; Stage B conditional on A: separate 60-second actual-ring microtiming exploration. One local worker, numerical-library threads one; no automatic retries, no formal equivalence or variance-benefit verdict. Preserve failed attempts and all decision inputs. External review not requested; same-author separate recomputation required.

@@ -1,3 +1,7 @@
+# Current handoff — MG156 development authorized
+
+PI approves preparing/running split-propensity coupling development. New prototype and exact-reference driver; freeze/push source/spec/seed plan before draws. Stage A 60 seconds; dependent Stage B separate 60 seconds, one worker/thread one. No production qualification. See spec/MG12H3_tick_coupling_development.md.
+
 # Current handoff — MG155 closure/MG156 proposal, 2026-11-11
 
 PI signsoffMG154fixedYblendfreshvalidation: CLOSED asMG155. Recommend split-propensity pairedtick-resolutioncoupling toreduce varianceofdifferences whilepreserving eachmarginalstrict-ticklaw. Sharedrate=min(a,b),residualsperrun; separateavailability andunionoftickboundaries. Needsproof/implementation/marginalqualification/actualvariancecostchecks beforeproduction. Proposal spec/MG12H3_tick_coupling_proposal.md. No newrun.
