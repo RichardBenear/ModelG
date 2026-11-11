@@ -1366,3 +1366,5 @@ PI “i sign off” closesMG149precisionpilot. Recommend prospectivelyfixedYdire
 
 ## MG151/MG152 — fixed-blend validation preparation
 PI directsMG151proposal. FreezeYweights pertime/sharedacrossticks,analytic/savedcase/syntheticchecks;no newphysicalpaths. Proposedfresh24paths/3resolutions T.01,primarylateYvariancecomparison,stratifiedpaired10000bootstrap/95%interval plusalltickpointratios<1;noequivalenceverdict/refitting. Existingwriterreusedunchanged;forecast1.5xmeasuredpriorjobcharge+3s. Candidate14400chargedseconds/max8workers,budgetapprovalpending. Source/seeds/analysisseedbeforepreparation.
+
+MG152readiness:knownmean/savedsmallcase/syntheticvariancechecks pass0.0732999s,no newphysicalpaths. Seedsdisjointagainst26priorH3manifests. Proposedfresh24paths fixedYweights,forecast7121.21worker-seconds,14400chargedseconds/max8workers;budgetapprovalpending. Accuracy/storage/samplerunchanged,no refitting.

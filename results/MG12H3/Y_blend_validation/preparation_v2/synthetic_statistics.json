@@ -1,0 +1,82 @@
+{
+  "supported": {
+    "time": 0.01,
+    "alpha_direct": 0.620838372539336,
+    "pooled_direct_variance": 6.0,
+    "pooled_blend_variance": 0.35044589467092857,
+    "blend_over_direct": 0.058407649111821426,
+    "per_tick_blend_over_direct": [
+      0.05840764911182144,
+      0.0584076491118214,
+      0.058407649111821426
+    ],
+    "bootstrap_95_interval": [
+      0.058407649111821364,
+      0.058407649111821495
+    ],
+    "bootstrap_replicates": 10000,
+    "nonfinite_bootstrap_count": 0,
+    "verdict": "VARIANCE BENEFIT SUPPORTED IN THIS VALIDATION",
+    "coverage": "Approximate stratified paired percentile bootstrap; small-sample coverage not guaranteed"
+  },
+  "worse": {
+    "time": 0.01,
+    "alpha_direct": 0.620838372539336,
+    "pooled_direct_variance": 6.0,
+    "pooled_blend_variance": 18.5502040127828,
+    "blend_over_direct": 3.091700668797133,
+    "per_tick_blend_over_direct": [
+      3.0917006687971322,
+      3.091700668797134,
+      3.091700668797134
+    ],
+    "bootstrap_95_interval": [
+      3.0917006687971322,
+      3.091700668797134
+    ],
+    "bootstrap_replicates": 10000,
+    "nonfinite_bootstrap_count": 0,
+    "verdict": "EVIDENCE OF HIGHER POOLED VARIANCE",
+    "coverage": "Approximate stratified paired percentile bootstrap; small-sample coverage not guaranteed"
+  },
+  "unresolved": {
+    "time": 0.01,
+    "alpha_direct": 0.620838372539336,
+    "pooled_direct_variance": 6.0,
+    "pooled_blend_variance": 6.0,
+    "blend_over_direct": 1.0,
+    "per_tick_blend_over_direct": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "bootstrap_95_interval": [
+      1.0,
+      1.0
+    ],
+    "bootstrap_replicates": 10000,
+    "nonfinite_bootstrap_count": 0,
+    "verdict": "UNRESOLVED VARIANCE BENEFIT",
+    "coverage": "Approximate stratified paired percentile bootstrap; small-sample coverage not guaranteed"
+  },
+  "zero_variance": {
+    "time": 0.01,
+    "alpha_direct": 0.620838372539336,
+    "pooled_direct_variance": 0.0,
+    "pooled_blend_variance": 0.0,
+    "blend_over_direct": null,
+    "per_tick_blend_over_direct": [
+      null,
+      null,
+      null
+    ],
+    "bootstrap_95_interval": [
+      null,
+      null
+    ],
+    "bootstrap_replicates": 10000,
+    "nonfinite_bootstrap_count": 10000,
+    "verdict": "UNRESOLVED: NONFINITE OR ZERO VARIANCE",
+    "coverage": "Approximate stratified paired percentile bootstrap; small-sample coverage not guaranteed"
+  }
+}

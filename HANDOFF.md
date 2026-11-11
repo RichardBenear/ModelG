@@ -1,3 +1,7 @@
+# Current handoff — MG152 ready, 2026-11-11
+
+FixedYblend saved/knowncase/syntheticchecks PASSED; exactweightssharedacrossticks,notrefit. Fresh24pathvariancevalidationREADY:8pertick.0001/.00005/.00002,T.01; primarylateYpooledpairedbootstrap95%upper<1 plusalltickpointratios<1,approximatecoverage/noequivalenceverdict. Frozenoldwriterreusedunchanged. Forecast7121.21worker-seconds;proposed14400total/max8workers/600job;budgetapprovalpending. Sourcebindingv2preservesinitialpre-drawstaleplanblock. No freshphysicalpaths/registration. Report results/MG12H3/Y_blend_validation/MG12H3_Y_blend_readiness.md.
+
 # Current handoff — MG150 closure/MG151 proposal, 2026-11-11
 
 PI signsoffMG149precisionpilot: CLOSED asMG150. Recommend fixeddirect/integratedYcontrastblend,weightsfrompriorpilotfrozenacrossticks pertime(.311036early/.620838late direct). In-samplelatevariancegain2.69246vsdirect isexploratoryoptimistic,notvalidated. Nextanalytic/disjointsmallcasevalidation thenprospectivefreshactualringvariancebatch/budget. Margins/storage/samplerunchanged;no newrun. Proposal spec/MG12H3_Y_noise_next_step.md.
