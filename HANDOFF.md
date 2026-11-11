@@ -1,3 +1,7 @@
+# Current handoff — MG145 design, 2026-11-11
+
+Finer-tick design drafted; no new coupled sampling. CanonicalOmega10case,delta.0001/.00005/.00002,T.01. Recommend disjoint24pathprecision/costpilot before provisional48pertick/144pathqualification.24nominalsimultaneousWelch comparisons;contrastmargin.01(referenceconcentration,NOT1%pattern) andpowerscale.05 proposed,notapproved. WeakGpattern sensitivity explicitlydocumented. Saved-onlyprecision/archiveplanning and20tickreconstruction pass. Budgetplanning14.4062corehwith2xallowance for144paths; actualwriterbudgetpending. Proposedcompactdecisionarchive+3fullsentineltraces needsapproval. Summary results/MG12H3/finer_tick_design/MG12H3_finer_tick_design_summary.md; full spec/MG12H3_finer_tick_design.md.
+
 # Current handoff — MG144 results/MG145draft, 2026-11-11
 
 MG142PIclosedasMG143. MG144deterministic puretransportresolutionanalysis complete3.52470s<60;20operators/160conditions,allcontrols andseparatecolumn/logpowerrecomputation pass. WorstoperatorL2error:delta.001=.102758,.0005=.0529089,.0001=.0107793,.00002=.00216449. Actualprofileerrorsmuchsmaller;1%screenplanningonly. Report results/MG12H3/tick_resolution/MG12H3_tick_resolution_results.md. MG145coupledreplicateddraft spec/MG12H3_tick_resolution_stage2_draft.md; noStage2sampling/production.

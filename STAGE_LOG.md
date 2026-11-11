@@ -1336,3 +1336,5 @@ MG144results:20operators/160conditions complete3.52470seconds<60; sparsecontinuo
 
 ## MG145 — finer-tick study design, no production
 PI requests designing finer-tick tests. Proposed canonicalOmega10finitecase,delta.0001/.00005/.00002,48replicatesperresolutionpendingprecision/costplanning. Six path-levelprimaryobservables/twoendpoints/twofinereferencecomparisons;24nominalsimultaneousWelch intervals,proposedcontrastmargin.01 andpower.05,explicitcoverageassumptions. Saved-only transportprecision/archive-layoutplanning under60seconds/oneworker/thread1,noRNG; freezebeforecalculation. Compactdecisionarchive/sentineltraces proposalrequiresapproval. No new coupled paths or registeredbudget.
+
+MG145saved-onlydesignplanning complete3.10329seconds;transportvariance/Gaussianpowerbaseline and20tickarchive-layout reconstruction passed. ProvisionalR48/3ticks butrecommend24pathdisjointprecisionpilot first; no new coupled draws. Margininterpretation andchangedrawretention requirePIdecision beforeproduction. Fullreadinessbudgetnotyetmeasured.

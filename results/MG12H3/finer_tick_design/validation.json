@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "saved_ticks_reconstructed": 20,
+  "all_old_files_unchanged": true,
+  "precision_summary": [
+    {
+      "replicates": 32,
+      "transport_baseline_worst_contrast_halfwidth": 0.006838024190964768,
+      "transport_baseline_worst_power_halfwidth": 0.03659180345165387,
+      "approximate_zero_effect_family_union_bound": 0
+    },
+    {
+      "replicates": 48,
+      "transport_baseline_worst_contrast_halfwidth": 0.005501193992728352,
+      "transport_baseline_worst_power_halfwidth": 0.02943812649520097,
+      "approximate_zero_effect_family_union_bound": 0.8723447704311318
+    },
+    {
+      "replicates": 64,
+      "transport_baseline_worst_contrast_halfwidth": 0.004729904340200901,
+      "transport_baseline_worst_power_halfwidth": 0.02531078278672318,
+      "approximate_zero_effect_family_union_bound": 0.9904204004947752
+    }
+  ],
+  "limitations": "Saved-only layout validation, not production writer qualification or exact coupled-model power."
+}
