@@ -1,0 +1,4856 @@
+{
+  "stage": "MG158",
+  "approval": {
+    "stage": "MG158",
+    "PI": "Richard Benear",
+    "authorization": "I approve of the run and the budget. Proceed.",
+    "approved_pairs": [
+      256,
+      64
+    ],
+    "approved_worker_ceiling": 300000,
+    "approved_session_worker_ceiling": 100000,
+    "approved_active_parent_seconds": 1800,
+    "max_workers": 8,
+    "threads_per_library": 1,
+    "job_cap_seconds": 1200,
+    "sessions": 3,
+    "scope": "Approve concrete MG158 readiness packet and fixed paired-t accuracy design; execute all three fixed sessions without intermediate scientific selection.",
+    "specification": "spec/MG12H3_tick_accuracy_draft.md",
+    "readiness": "results/MG12H3/tick_accuracy_readiness/MG12H3_tick_accuracy_readiness.md",
+    "closure_note": "MG156/MG157 closure remains separate.",
+    "external_review": "Not requested; optional under standing protocol."
+  },
+  "jobs": [
+    {
+      "id": "c0_paired_r000",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 0,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": true,
+      "seeds": [
+        268818247
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r001",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 1,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3680852313
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r002",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 2,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        786860081
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r003",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 3,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3837304442
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r004",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 4,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1166086999
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r005",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 5,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2496659999
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r006",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 6,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        164712964
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r007",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 7,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        837026602
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r008",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 8,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3957059324
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r009",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 9,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2893500232
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r010",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 10,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        4032663834
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r011",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 11,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3956517617
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r012",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 12,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        609530415
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r013",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 13,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2840896507
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r014",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 14,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2722294526
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r015",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 15,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1285121013
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r016",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 16,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        713391889
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r017",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 17,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2029143214
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r018",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 18,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3423100742
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r019",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 19,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1778782769
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r020",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 20,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2116362062
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r021",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 21,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2528879272
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r022",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 22,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        481044882
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r023",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 23,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2422310781
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r024",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 24,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        644401399
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r025",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 25,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2562982638
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r026",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 26,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3316567423
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r027",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 27,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2245714260
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r028",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 28,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1116783361
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r029",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 29,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1242463410
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r030",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 30,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2644906081
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r031",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 31,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3214543294
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r032",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 32,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2569752641
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r033",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 33,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1486994646
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r034",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 34,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1665438635
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r035",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 35,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3411116821
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r036",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 36,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2477526296
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r037",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 37,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3098604826
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r038",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 38,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        4201018449
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r039",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 39,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2630652985
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r040",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 40,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1023204809
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r041",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 41,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2406407700
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r042",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 42,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2316698812
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r043",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 43,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3628997750
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r044",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 44,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2163195762
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r045",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 45,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3107493617
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r046",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 46,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2722071705
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r047",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 47,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1034579007
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r048",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 48,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        216505976
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r049",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 49,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        24783794
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r050",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 50,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1732737758
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r051",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 51,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2388699126
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r052",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 52,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1738947184
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r053",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 53,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2036803989
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r054",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 54,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3925516838
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r055",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 55,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2762217582
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r056",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 56,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2757233332
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r057",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 57,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2986541783
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r058",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 58,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2066154067
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r059",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 59,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3427918286
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r060",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 60,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2913801728
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r061",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 61,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3000164849
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r062",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 62,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1037662357
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r063",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 63,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        580565511
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r064",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 64,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        339306453
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r065",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 65,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2938546028
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r066",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 66,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1956843940
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r067",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 67,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1452107570
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r068",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 68,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3577729426
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r069",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 69,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        871623088
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r070",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 70,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1501910737
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r071",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 71,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1818736617
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r072",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 72,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2644628894
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r073",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 73,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1303670931
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r074",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 74,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        547662558
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r075",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 75,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3707645212
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r076",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 76,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1538562043
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r077",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 77,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2353536103
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r078",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 78,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        122943064
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r079",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 79,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        4291317826
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r080",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 80,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1027567777
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r081",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 81,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        4136160928
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r082",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 82,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2839677493
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r083",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 83,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        4176243285
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r084",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 84,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1028468953
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r085",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 85,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1121950131
+      ],
+      "session": 1
+    },
+    {
+      "id": "c1_paired_r000",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 0,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": true,
+      "seeds": [
+        3120096885
+      ],
+      "session": 1
+    },
+    {
+      "id": "c1_paired_r001",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 1,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        22542297
+      ],
+      "session": 1
+    },
+    {
+      "id": "c1_paired_r002",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 2,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        460125439
+      ],
+      "session": 1
+    },
+    {
+      "id": "c1_paired_r003",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 3,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3561794581
+      ],
+      "session": 1
+    },
+    {
+      "id": "c1_paired_r004",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 4,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3476278434
+      ],
+      "session": 1
+    },
+    {
+      "id": "c1_paired_r005",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 5,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3832921270
+      ],
+      "session": 1
+    },
+    {
+      "id": "c1_paired_r006",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 6,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2751728039
+      ],
+      "session": 1
+    },
+    {
+      "id": "c1_paired_r007",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 7,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1008561487
+      ],
+      "session": 1
+    },
+    {
+      "id": "c1_paired_r008",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 8,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2818786402
+      ],
+      "session": 1
+    },
+    {
+      "id": "c1_paired_r009",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 9,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2006867723
+      ],
+      "session": 1
+    },
+    {
+      "id": "c1_paired_r010",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 10,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        732424016
+      ],
+      "session": 1
+    },
+    {
+      "id": "c1_paired_r011",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 11,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        878100164
+      ],
+      "session": 1
+    },
+    {
+      "id": "c1_paired_r012",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 12,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3493536270
+      ],
+      "session": 1
+    },
+    {
+      "id": "c1_paired_r013",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 13,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        77455262
+      ],
+      "session": 1
+    },
+    {
+      "id": "c1_paired_r014",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 14,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        159161411
+      ],
+      "session": 1
+    },
+    {
+      "id": "c1_paired_r015",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 15,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1511971683
+      ],
+      "session": 1
+    },
+    {
+      "id": "c1_paired_r016",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 16,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2225440820
+      ],
+      "session": 1
+    },
+    {
+      "id": "c1_paired_r017",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 17,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2298724234
+      ],
+      "session": 1
+    },
+    {
+      "id": "c1_paired_r018",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 18,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3916187967
+      ],
+      "session": 1
+    },
+    {
+      "id": "c1_paired_r019",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 19,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1322318399
+      ],
+      "session": 1
+    },
+    {
+      "id": "c1_paired_r020",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 20,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        861301009
+      ],
+      "session": 1
+    },
+    {
+      "id": "c1_paired_r021",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 21,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        451470236
+      ],
+      "session": 1
+    },
+    {
+      "id": "c0_paired_r086",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 86,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2478027918
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r087",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 87,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        675521654
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r088",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 88,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        109460320
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r089",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 89,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3605825900
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r090",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 90,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        40146413
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r091",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 91,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3188333285
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r092",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 92,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2475551061
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r093",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 93,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        133031078
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r094",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 94,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        35491678
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r095",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 95,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        520404475
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r096",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 96,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2200666158
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r097",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 97,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3475492853
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r098",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 98,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1935159810
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r099",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 99,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2700329310
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r100",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 100,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1344663865
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r101",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 101,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3602215437
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r102",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 102,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        4157385504
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r103",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 103,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3388378193
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r104",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 104,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1734461769
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r105",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 105,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1090281628
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r106",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 106,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1839752712
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r107",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 107,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1447873886
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r108",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 108,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        737462540
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r109",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 109,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2157794294
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r110",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 110,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        476134045
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r111",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 111,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1922639853
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r112",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 112,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1282882806
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r113",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 113,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        62855094
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r114",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 114,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2929567517
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r115",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 115,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        630611856
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r116",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 116,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        461632700
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r117",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 117,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1262599153
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r118",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 118,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1550881204
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r119",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 119,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3188935477
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r120",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 120,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        299184697
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r121",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 121,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        246250271
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r122",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 122,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1603906670
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r123",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 123,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3592360667
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r124",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 124,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2919269442
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r125",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 125,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2407856438
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r126",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 126,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2660337662
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r127",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 127,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1820915819
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r128",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 128,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1712545659
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r129",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 129,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2918168674
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r130",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 130,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1919972646
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r131",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 131,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        879110155
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r132",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 132,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1698159382
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r133",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 133,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3437347480
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r134",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 134,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1517717996
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r135",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 135,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1670994370
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r136",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 136,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        283151897
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r137",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 137,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3156953446
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r138",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 138,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        696842900
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r139",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 139,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1520297940
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r140",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 140,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1940138968
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r141",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 141,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        4012031464
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r142",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 142,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        695877575
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r143",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 143,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2165951520
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r144",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 144,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        988290203
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r145",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 145,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1950155980
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r146",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 146,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1789427951
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r147",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 147,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2232501914
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r148",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 148,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1401974288
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r149",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 149,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3129401147
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r150",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 150,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1975583351
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r151",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 151,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2153587899
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r152",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 152,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3363723114
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r153",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 153,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1110993239
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r154",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 154,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2299157351
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r155",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 155,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1655763576
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r156",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 156,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1521166195
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r157",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 157,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3230633900
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r158",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 158,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        4199476750
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r159",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 159,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1535673800
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r160",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 160,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3056804269
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r161",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 161,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        4264509929
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r162",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 162,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1614842376
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r163",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 163,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2960501066
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r164",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 164,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        4086576771
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r165",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 165,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1925240231
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r166",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 166,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        807492226
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r167",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 167,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1218443590
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r168",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 168,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1863511002
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r169",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 169,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3684887706
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r170",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 170,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1719090648
+      ],
+      "session": 2
+    },
+    {
+      "id": "c1_paired_r022",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 22,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1870009268
+      ],
+      "session": 2
+    },
+    {
+      "id": "c1_paired_r023",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 23,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1727112421
+      ],
+      "session": 2
+    },
+    {
+      "id": "c1_paired_r024",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 24,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1096140078
+      ],
+      "session": 2
+    },
+    {
+      "id": "c1_paired_r025",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 25,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1280137125
+      ],
+      "session": 2
+    },
+    {
+      "id": "c1_paired_r026",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 26,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        278419469
+      ],
+      "session": 2
+    },
+    {
+      "id": "c1_paired_r027",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 27,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1728751756
+      ],
+      "session": 2
+    },
+    {
+      "id": "c1_paired_r028",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 28,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3885887372
+      ],
+      "session": 2
+    },
+    {
+      "id": "c1_paired_r029",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 29,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        237913233
+      ],
+      "session": 2
+    },
+    {
+      "id": "c1_paired_r030",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 30,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2871596927
+      ],
+      "session": 2
+    },
+    {
+      "id": "c1_paired_r031",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 31,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3029008007
+      ],
+      "session": 2
+    },
+    {
+      "id": "c1_paired_r032",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 32,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3256344427
+      ],
+      "session": 2
+    },
+    {
+      "id": "c1_paired_r033",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 33,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        957179066
+      ],
+      "session": 2
+    },
+    {
+      "id": "c1_paired_r034",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 34,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        586449843
+      ],
+      "session": 2
+    },
+    {
+      "id": "c1_paired_r035",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 35,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1292527364
+      ],
+      "session": 2
+    },
+    {
+      "id": "c1_paired_r036",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 36,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1599356247
+      ],
+      "session": 2
+    },
+    {
+      "id": "c1_paired_r037",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 37,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3312340194
+      ],
+      "session": 2
+    },
+    {
+      "id": "c1_paired_r038",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 38,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3372139898
+      ],
+      "session": 2
+    },
+    {
+      "id": "c1_paired_r039",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 39,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2594529461
+      ],
+      "session": 2
+    },
+    {
+      "id": "c1_paired_r040",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 40,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3631486711
+      ],
+      "session": 2
+    },
+    {
+      "id": "c1_paired_r041",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 41,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        17448779
+      ],
+      "session": 2
+    },
+    {
+      "id": "c1_paired_r042",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 42,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3747978627
+      ],
+      "session": 2
+    },
+    {
+      "id": "c0_paired_r171",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 171,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3771326732
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r172",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 172,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3063820485
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r173",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 173,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1963904548
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r174",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 174,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3398081890
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r175",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 175,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3158939446
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r176",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 176,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1953036921
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r177",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 177,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        83084992
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r178",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 178,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3076128897
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r179",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 179,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3961068230
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r180",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 180,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        467180704
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r181",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 181,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3325480295
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r182",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 182,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1650824319
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r183",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 183,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3777083807
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r184",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 184,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2397215624
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r185",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 185,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1094665171
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r186",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 186,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        538623117
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r187",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 187,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2316040915
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r188",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 188,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3985641154
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r189",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 189,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        745735888
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r190",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 190,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3590800318
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r191",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 191,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2115696182
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r192",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 192,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1069722483
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r193",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 193,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1701484653
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r194",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 194,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        259504961
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r195",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 195,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3325581637
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r196",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 196,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3998659931
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r197",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 197,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1279968664
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r198",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 198,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1205428754
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r199",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 199,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3048450961
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r200",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 200,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3554765774
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r201",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 201,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        4125126690
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r202",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 202,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2847046116
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r203",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 203,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1695154449
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r204",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 204,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3177412915
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r205",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 205,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2918326421
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r206",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 206,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1267654538
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r207",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 207,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        207562418
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r208",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 208,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2882690333
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r209",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 209,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2380275529
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r210",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 210,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        306160417
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r211",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 211,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2028247449
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r212",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 212,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        753078497
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r213",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 213,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2426756403
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r214",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 214,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1520877993
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r215",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 215,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2550221366
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r216",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 216,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1415180823
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r217",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 217,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        777923785
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r218",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 218,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        729966554
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r219",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 219,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        295051822
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r220",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 220,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3958337092
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r221",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 221,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2131384064
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r222",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 222,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3735015463
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r223",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 223,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3264864445
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r224",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 224,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1593611049
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r225",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 225,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3855225715
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r226",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 226,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        20480172
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r227",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 227,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3935285071
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r228",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 228,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3809834445
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r229",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 229,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1175487969
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r230",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 230,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2700732611
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r231",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 231,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        4234622154
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r232",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 232,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        62812377
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r233",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 233,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2530477494
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r234",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 234,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        69671753
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r235",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 235,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3061477147
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r236",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 236,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1093372671
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r237",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 237,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3985615236
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r238",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 238,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3510299403
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r239",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 239,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3282914696
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r240",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 240,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        464993284
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r241",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 241,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        595233396
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r242",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 242,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        4006826613
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r243",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 243,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2251279930
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r244",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 244,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2913587651
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r245",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 245,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3571488257
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r246",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 246,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2904108109
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r247",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 247,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3521658803
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r248",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 248,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3191799716
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r249",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 249,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        4245569757
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r250",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 250,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1315423063
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r251",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 251,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2468888663
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r252",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 252,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1497933657
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r253",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 253,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        677215830
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r254",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 254,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3198324035
+      ],
+      "session": 3
+    },
+    {
+      "id": "c0_paired_r255",
+      "comparison": 0,
+      "kind": "paired",
+      "replicate": 255,
+      "deltas": [
+        0.0001,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1322286218
+      ],
+      "session": 3
+    },
+    {
+      "id": "c1_paired_r043",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 43,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3403385636
+      ],
+      "session": 3
+    },
+    {
+      "id": "c1_paired_r044",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 44,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1826555260
+      ],
+      "session": 3
+    },
+    {
+      "id": "c1_paired_r045",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 45,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        228504664
+      ],
+      "session": 3
+    },
+    {
+      "id": "c1_paired_r046",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 46,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1808937019
+      ],
+      "session": 3
+    },
+    {
+      "id": "c1_paired_r047",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 47,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        729502734
+      ],
+      "session": 3
+    },
+    {
+      "id": "c1_paired_r048",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 48,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2608602741
+      ],
+      "session": 3
+    },
+    {
+      "id": "c1_paired_r049",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 49,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        999810933
+      ],
+      "session": 3
+    },
+    {
+      "id": "c1_paired_r050",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 50,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1987247794
+      ],
+      "session": 3
+    },
+    {
+      "id": "c1_paired_r051",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 51,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2608749632
+      ],
+      "session": 3
+    },
+    {
+      "id": "c1_paired_r052",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 52,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        3309564907
+      ],
+      "session": 3
+    },
+    {
+      "id": "c1_paired_r053",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 53,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2413014658
+      ],
+      "session": 3
+    },
+    {
+      "id": "c1_paired_r054",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 54,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2646688423
+      ],
+      "session": 3
+    },
+    {
+      "id": "c1_paired_r055",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 55,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        793414918
+      ],
+      "session": 3
+    },
+    {
+      "id": "c1_paired_r056",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 56,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2393068395
+      ],
+      "session": 3
+    },
+    {
+      "id": "c1_paired_r057",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 57,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1043421579
+      ],
+      "session": 3
+    },
+    {
+      "id": "c1_paired_r058",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 58,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        2622264676
+      ],
+      "session": 3
+    },
+    {
+      "id": "c1_paired_r059",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 59,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        4138206911
+      ],
+      "session": 3
+    },
+    {
+      "id": "c1_paired_r060",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 60,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        4212688001
+      ],
+      "session": 3
+    },
+    {
+      "id": "c1_paired_r061",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 61,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        330720482
+      ],
+      "session": 3
+    },
+    {
+      "id": "c1_paired_r062",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 62,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1616290377
+      ],
+      "session": 3
+    },
+    {
+      "id": "c1_paired_r063",
+      "comparison": 1,
+      "kind": "paired",
+      "replicate": 63,
+      "deltas": [
+        5e-05,
+        2e-05
+      ],
+      "sentinel": false,
+      "seeds": [
+        1847624075
+      ],
+      "session": 3
+    }
+  ],
+  "source_hashes": {
+    "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+    "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+    "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+    "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+    "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+    "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+    "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+    "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+    "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+    "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+    "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+    "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+    "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+    "src/mg12h3_tick_accuracy.py": "6dbd185b4ca8d9fc95be32f58824d2ed0dac39910a776cebf1ec39fa923219ed",
+    "src/check_mg12h3_tick_accuracy.py": "16ed42671289d0441972acb59fa0928372d982771e8863293db9facc5c32bfb0",
+    "src/mg12h3_accuracy_readiness.py": "233e9c5cba3f95cc5cf6db7b6c56fe0b8ef8c6156632cb1336f2ee6bd63bd130",
+    "spec/MG12H3_tick_accuracy_draft.md": "e66782d48c144813bc1df23afcd905a3cb51af808e184409fe79d7a4eae56e1b",
+    "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+  },
+  "pairs": [
+    256,
+    64
+  ],
+  "workers": 8,
+  "threads": 1,
+  "session_worker_ceiling": 100000,
+  "total_worker_ceiling": 300000,
+  "job_seconds": 1200,
+  "collisions_resolved": []
+}

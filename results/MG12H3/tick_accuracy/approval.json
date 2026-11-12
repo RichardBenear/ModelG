@@ -1,0 +1,21 @@
+{
+  "stage": "MG158",
+  "PI": "Richard Benear",
+  "authorization": "I approve of the run and the budget. Proceed.",
+  "approved_pairs": [
+    256,
+    64
+  ],
+  "approved_worker_ceiling": 300000,
+  "approved_session_worker_ceiling": 100000,
+  "approved_active_parent_seconds": 1800,
+  "max_workers": 8,
+  "threads_per_library": 1,
+  "job_cap_seconds": 1200,
+  "sessions": 3,
+  "scope": "Approve concrete MG158 readiness packet and fixed paired-t accuracy design; execute all three fixed sessions without intermediate scientific selection.",
+  "specification": "spec/MG12H3_tick_accuracy_draft.md",
+  "readiness": "results/MG12H3/tick_accuracy_readiness/MG12H3_tick_accuracy_readiness.md",
+  "closure_note": "MG156/MG157 closure remains separate.",
+  "external_review": "Not requested; optional under standing protocol."
+}

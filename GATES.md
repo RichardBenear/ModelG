@@ -2505,3 +2505,8 @@ All32jobs complete, T=.01,8pairs/comparison/method; no failed/replaced/retried p
 ## MG158 - paired accuracy readiness, budget approval pending
 
 PI asks to proceed to next accuracy step. Saved-only/synthetic preparation complete;8controls,Parsevalpower andseparateplanning recomputation passed. Draftspec/MG12H3_tick_accuracy_draft.md retains24primaryquantities/5%contrast/.05power;prospectivepaired-t/Bonferroni amendment. Recommend256coarse+64finer freshpairs;upperSDsensitivityprompted revisionfrom192coarse. Forecast7.43097h at8workers in3sessions expected<3heach;proposed100000worker-seconds/session,300000total+1800activeparent. No productionregistration/draws or impliedMG157closure. Report results/MG12H3/tick_accuracy_readiness/MG12H3_tick_accuracy_readiness.md. Concrete budgetapprovalpending underRESEARCH_PROTOCOLworkflow3.
+
+
+## MG158 - accuracy production APPROVED and REGISTERED
+
+PI: "I approve of the run and the budget. Proceed." Approves concrete readiness packet:256coarse+64finer freshcoupledpairs,24paired-t/Bonferroni primaryintervals at.005/.01,unchanged5%contrast/.05power margins. Three fixed sessions, no outcome-based selection between sessions. Worker cap100000seconds/session/300000total;1800activeparent;max8workers/thread1;1200/job. Compact archive plus2predeclared sentinels; no automaticretry/replacement/denominatorchange. Approved specification is the frozen file spec/MG12H3_tick_accuracy_draft.md despite its historical draft heading; approval.json andplan.json nowregister itsdesign. Publishregistration beforedraws. Entrypoint python src/mg12h3_tick_accuracy.py run-all. Closure separate; no externalreviewrequested.

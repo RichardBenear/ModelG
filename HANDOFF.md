@@ -1,3 +1,7 @@
+# Current handoff - MG158 accuracy APPROVED / registration
+
+PI explicitly approves run andbudget.320freshcoupledpairs(256coarse/64finer),3fixedsessions,24primarypaired-t intervals;cap100000worker-seconds/session/300000total+1800activeparent,max8workers/thread1. Approval results/MG12H3/tick_accuracy/approval.json. Freeze/pushplan beforelaunch python src/mg12h3_tick_accuracy.py run-all;no retries. No resultsyet;MG156/MG157closureseparate.
+
 # Current handoff - MG158 accuracy READY, concretebudget pending
 
 Saved-only readiness andclassification/Parseval/recompute passed. Recommend256pairs coarse+64finer,24primaryintervals at.005/.01,paired-t/Bonferroni withfixed5%contrast/.05power. Expected7.43097hat8workers split3sessions~2.5h;cap100000worker-seconds/session/300000total+1800activeparent. Draftspec/MG12H3_tick_accuracy_draft.md,report results/MG12H3/tick_accuracy_readiness/MG12H3_tick_accuracy_readiness.md. PI approval ofthis concreteallocationneeded beforecreateaccuracyapproval.json/register. No newdraws;MG156/MG157closureseparate.
