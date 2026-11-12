@@ -1,0 +1,1632 @@
+{
+  "records": [
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_paired_r03",
+        "comparison": 0,
+        "kind": "paired",
+        "replicate": 3,
+        "deltas": [
+          0.0001,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          3220793857
+        ]
+      },
+      "elapsed_seconds": 579.4378321999975,
+      "events": 6930528,
+      "segment_seconds": [
+        56.252559000000474,
+        58.54963680000219,
+        57.862590799995814,
+        60.46687829999428,
+        57.68413180000789,
+        56.67941229999997,
+        61.68079800000123,
+        59.61054549999244,
+        55.00703240001167,
+        55.48760290000064
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c0_paired_r03",
+      "charged_worker_seconds": 581.8897789000039,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_paired_r02",
+        "comparison": 0,
+        "kind": "paired",
+        "replicate": 2,
+        "deltas": [
+          0.0001,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          4091225721
+        ]
+      },
+      "elapsed_seconds": 579.900370000003,
+      "events": 6927373,
+      "segment_seconds": [
+        56.70149479999964,
+        58.44442179999896,
+        58.801648099994054,
+        59.796516599992174,
+        57.367589699992095,
+        57.90399619999516,
+        62.13468170000124,
+        59.51968159999524,
+        55.05751809998765,
+        54.05050029999984
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c0_paired_r02",
+      "charged_worker_seconds": 582.4119172000064,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_paired_r01",
+        "comparison": 0,
+        "kind": "paired",
+        "replicate": 1,
+        "deltas": [
+          0.0001,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          2619602657
+        ]
+      },
+      "elapsed_seconds": 580.8074257000117,
+      "events": 6928206,
+      "segment_seconds": [
+        56.69232299999567,
+        57.83216489999904,
+        57.835774000006495,
+        59.94516519999888,
+        57.330681199993705,
+        58.43876259999524,
+        61.548014500003774,
+        59.52885079999396,
+        56.14894670000649,
+        55.38469089999853
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c0_paired_r01",
+      "charged_worker_seconds": 583.4108437000104,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_paired_r05",
+        "comparison": 0,
+        "kind": "paired",
+        "replicate": 5,
+        "deltas": [
+          0.0001,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          643030805
+        ]
+      },
+      "elapsed_seconds": 582.1362254999985,
+      "events": 6926575,
+      "segment_seconds": [
+        57.093619999999646,
+        57.951867499999935,
+        57.794829400008894,
+        61.14151539999875,
+        58.40355689999706,
+        58.65721059999487,
+        62.30749999999534,
+        59.346197800012305,
+        54.2799393000023,
+        55.018600600000354
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c0_paired_r05",
+      "charged_worker_seconds": 584.3800397000014,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_paired_r06",
+        "comparison": 0,
+        "kind": "paired",
+        "replicate": 6,
+        "deltas": [
+          0.0001,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          4287773012
+        ]
+      },
+      "elapsed_seconds": 582.1482074999949,
+      "events": 6923912,
+      "segment_seconds": [
+        56.85917729999346,
+        58.08984240000427,
+        57.88640160000068,
+        60.52663500000199,
+        58.66083029999572,
+        58.98323399999936,
+        61.63616350000666,
+        59.294113500000094,
+        54.56884690000152,
+        55.51411040000676
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c0_paired_r06",
+      "charged_worker_seconds": 584.382744100003,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_paired_r04",
+        "comparison": 0,
+        "kind": "paired",
+        "replicate": 4,
+        "deltas": [
+          0.0001,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          771843787
+        ]
+      },
+      "elapsed_seconds": 582.4783210000023,
+      "events": 6924516,
+      "segment_seconds": [
+        57.13995879999129,
+        58.70803820001311,
+        58.58944049999991,
+        59.65895179999643,
+        58.78360480000265,
+        58.01805250000325,
+        61.37579400000686,
+        59.76571750000585,
+        55.38715310000407,
+        54.93504779999785
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c0_paired_r04",
+      "charged_worker_seconds": 584.9071876000089,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_paired_r07",
+        "comparison": 0,
+        "kind": "paired",
+        "replicate": 7,
+        "deltas": [
+          0.0001,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          1134904794
+        ]
+      },
+      "elapsed_seconds": 582.5498359000048,
+      "events": 6929683,
+      "segment_seconds": [
+        57.29252520001319,
+        56.525761799988686,
+        58.71103690000018,
+        60.37528979999479,
+        57.67149740000605,
+        59.3602838999941,
+        62.00479219999397,
+        58.91087140000309,
+        56.52583000001323,
+        55.021988000007696
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c0_paired_r07",
+      "charged_worker_seconds": 584.8946970999968,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_paired_r00",
+        "comparison": 0,
+        "kind": "paired",
+        "replicate": 0,
+        "deltas": [
+          0.0001,
+          2e-05
+        ],
+        "sentinel": true,
+        "seeds": [
+          3010510478
+        ]
+      },
+      "elapsed_seconds": 590.4147582000005,
+      "events": 6924068,
+      "segment_seconds": [
+        57.417681500010076,
+        57.228424799992354,
+        59.33814010000788,
+        60.54236109998601,
+        58.653723499999614,
+        60.1568152000109,
+        63.38416270000744,
+        60.75280930000008,
+        56.02673149999464,
+        56.78516060000402
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c0_paired_r00",
+      "charged_worker_seconds": 592.9212680999917,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_independent_r04",
+        "comparison": 0,
+        "kind": "independent",
+        "replicate": 4,
+        "deltas": [
+          0.0001,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          4015934782,
+          1406166513
+        ]
+      },
+      "elapsed_seconds": 428.543659700008,
+      "events": 13851615,
+      "segment_seconds": [
+        44.13466570001037,
+        42.190860300004715,
+        40.24138600000879,
+        44.12232059999951,
+        45.54952460000641,
+        42.79225399999996,
+        41.91781819998869,
+        44.252258000007714,
+        42.72104730000137,
+        40.46731920000457
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c0_independent_r04",
+      "charged_worker_seconds": 430.809316400002,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_independent_r00",
+        "comparison": 0,
+        "kind": "independent",
+        "replicate": 0,
+        "deltas": [
+          0.0001,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          2067291931,
+          725835618
+        ]
+      },
+      "elapsed_seconds": 434.5369481999951,
+      "events": 13848277,
+      "segment_seconds": [
+        44.75855579999916,
+        43.74662649999664,
+        41.38624659999914,
+        44.634665199992014,
+        44.742786899994826,
+        44.538456499998574,
+        42.86353750000126,
+        45.11614960001316,
+        42.91579450000427,
+        39.70743399999628
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c0_independent_r00",
+      "charged_worker_seconds": 436.3218340000021,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_independent_r03",
+        "comparison": 0,
+        "kind": "independent",
+        "replicate": 3,
+        "deltas": [
+          0.0001,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          249278515,
+          2578005467
+        ]
+      },
+      "elapsed_seconds": 432.55124670000805,
+      "events": 13845263,
+      "segment_seconds": [
+        44.73124420001113,
+        42.01956329999666,
+        41.89414350000152,
+        44.344590199994855,
+        45.236562099991716,
+        43.76584210000874,
+        43.816203499998664,
+        44.575056699992274,
+        41.98741429999063,
+        40.02359290000459
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c0_independent_r03",
+      "charged_worker_seconds": 434.81657549999363,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_independent_r01",
+        "comparison": 0,
+        "kind": "independent",
+        "replicate": 1,
+        "deltas": [
+          0.0001,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          540527321,
+          4140514632
+        ]
+      },
+      "elapsed_seconds": 435.1700867999898,
+      "events": 13854549,
+      "segment_seconds": [
+        45.4130839999998,
+        42.897809300004155,
+        41.52234729999327,
+        44.00104730000021,
+        45.39224070000637,
+        43.49170729999605,
+        42.98085049999645,
+        45.40450210000563,
+        42.41175010000006,
+        41.534637799995835
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c0_independent_r01",
+      "charged_worker_seconds": 437.3304977999942,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_independent_r05",
+        "comparison": 0,
+        "kind": "independent",
+        "replicate": 5,
+        "deltas": [
+          0.0001,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          2980793521,
+          3626437517
+        ]
+      },
+      "elapsed_seconds": 433.5559265999909,
+      "events": 13850663,
+      "segment_seconds": [
+        43.87541440001223,
+        42.51895070000319,
+        41.656141300001764,
+        44.54215799999656,
+        44.887665600006585,
+        43.27459849999286,
+        43.44764290000603,
+        44.768295399990166,
+        41.253662899995106,
+        43.17612750000262
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c0_independent_r05",
+      "charged_worker_seconds": 435.8241658999905,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_independent_r06",
+        "comparison": 0,
+        "kind": "independent",
+        "replicate": 6,
+        "deltas": [
+          0.0001,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          4175125039,
+          2060505527
+        ]
+      },
+      "elapsed_seconds": 433.8612970999966,
+      "events": 13852843,
+      "segment_seconds": [
+        44.713501799997175,
+        42.84424510000099,
+        42.28575080000155,
+        44.71849860000657,
+        45.137479600001825,
+        43.43976710000425,
+        42.55161959999532,
+        44.961764399995445,
+        42.029431499991915,
+        41.046631599994726
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c0_independent_r06",
+      "charged_worker_seconds": 436.3266156000027,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_independent_r02",
+        "comparison": 0,
+        "kind": "independent",
+        "replicate": 2,
+        "deltas": [
+          0.0001,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          739522029,
+          3184963352
+        ]
+      },
+      "elapsed_seconds": 436.5480194999982,
+      "events": 13859537,
+      "segment_seconds": [
+        45.10422500000277,
+        42.63968900000327,
+        41.682898200000636,
+        44.37030280000181,
+        45.365840400001616,
+        43.884416200002306,
+        44.0576723000122,
+        45.28899630000524,
+        42.861439600004815,
+        41.14373460000206
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c0_independent_r02",
+      "charged_worker_seconds": 438.82876920000126,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c0_independent_r07",
+        "comparison": 0,
+        "kind": "independent",
+        "replicate": 7,
+        "deltas": [
+          0.0001,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          384878528,
+          926371144
+        ]
+      },
+      "elapsed_seconds": 429.818603599997,
+      "events": 13851985,
+      "segment_seconds": [
+        43.96540800000366,
+        40.79026110000268,
+        41.20361500000581,
+        42.932943300009356,
+        46.112965799999074,
+        43.20334490000096,
+        43.89210589999857,
+        44.897852299996885,
+        41.51756839999871,
+        41.17541569999594
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c0_independent_r07",
+      "charged_worker_seconds": 431.81784039999184,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_paired_r01",
+        "comparison": 1,
+        "kind": "paired",
+        "replicate": 1,
+        "deltas": [
+          5e-05,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          1810497321
+        ]
+      },
+      "elapsed_seconds": 571.0360958999954,
+      "events": 6928335,
+      "segment_seconds": [
+        56.983370300004026,
+        60.466093099996215,
+        60.8141375999985,
+        56.95385209999222,
+        53.95065539999632,
+        59.018804599996656,
+        56.98838429999887,
+        54.77434910000011,
+        54.26747639999667,
+        56.707009499994456
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c1_paired_r01",
+      "charged_worker_seconds": 572.8933289999986,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_paired_r02",
+        "comparison": 1,
+        "kind": "paired",
+        "replicate": 2,
+        "deltas": [
+          5e-05,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          1106693338
+        ]
+      },
+      "elapsed_seconds": 574.939016999997,
+      "events": 6927373,
+      "segment_seconds": [
+        56.27961479999067,
+        60.72528220000095,
+        60.59351570000581,
+        56.81190030000289,
+        57.127304899986484,
+        59.88215789999231,
+        57.060680700000376,
+        55.0934275000036,
+        54.93940119999752,
+        56.296823399999994
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c1_paired_r02",
+      "charged_worker_seconds": 576.8958392999921,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_paired_r04",
+        "comparison": 1,
+        "kind": "paired",
+        "replicate": 4,
+        "deltas": [
+          5e-05,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          2623777124
+        ]
+      },
+      "elapsed_seconds": 573.85070000001,
+      "events": 6932677,
+      "segment_seconds": [
+        56.282693699991796,
+        62.033870699990075,
+        60.45930679999583,
+        57.610254500003066,
+        55.48028930000146,
+        59.03163740001037,
+        56.84296110000287,
+        54.38443590000679,
+        54.04202300000179,
+        57.556821799997124
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c1_paired_r04",
+      "charged_worker_seconds": 575.9048167000001,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_paired_r06",
+        "comparison": 1,
+        "kind": "paired",
+        "replicate": 6,
+        "deltas": [
+          5e-05,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          2893252304
+        ]
+      },
+      "elapsed_seconds": 576.3780429000035,
+      "events": 6927401,
+      "segment_seconds": [
+        56.73568460000388,
+        62.424382199998945,
+        60.74549530001241,
+        57.52604120000615,
+        56.63817200000631,
+        58.728252700006124,
+        57.4580117000005,
+        54.19828860000416,
+        54.19446729999618,
+        57.6121862
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c1_paired_r06",
+      "charged_worker_seconds": 578.3966972000053,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_paired_r03",
+        "comparison": 1,
+        "kind": "paired",
+        "replicate": 3,
+        "deltas": [
+          5e-05,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          820654647
+        ]
+      },
+      "elapsed_seconds": 579.5287099000125,
+      "events": 6930900,
+      "segment_seconds": [
+        57.38485729999957,
+        60.97452390000399,
+        60.552136599988444,
+        57.61329329998989,
+        57.552129299991066,
+        59.0487204999954,
+        57.79296520000207,
+        55.67828600000939,
+        54.718443500009016,
+        58.09582830000727
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c1_paired_r03",
+      "charged_worker_seconds": 581.4070369999972,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_paired_r05",
+        "comparison": 1,
+        "kind": "paired",
+        "replicate": 5,
+        "deltas": [
+          5e-05,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          2676324865
+        ]
+      },
+      "elapsed_seconds": 577.9762516000046,
+      "events": 6924864,
+      "segment_seconds": [
+        57.0663271999947,
+        62.364088700007414,
+        60.641400500011514,
+        57.57977369999571,
+        57.299171799997566,
+        59.78615929999796,
+        57.33205290000478,
+        54.70973220000451,
+        53.883130999995046,
+        57.169128200010164
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c1_paired_r05",
+      "charged_worker_seconds": 579.9150287999946,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_paired_r07",
+        "comparison": 1,
+        "kind": "paired",
+        "replicate": 7,
+        "deltas": [
+          5e-05,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          897833528
+        ]
+      },
+      "elapsed_seconds": 577.4866793999972,
+      "events": 6925483,
+      "segment_seconds": [
+        56.99188650000724,
+        61.22905609999725,
+        61.034180300004664,
+        57.86956160000409,
+        57.035991900003864,
+        58.631186600003275,
+        57.333731899998384,
+        54.73043749999488,
+        54.502620500003104,
+        58.00170160000562
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c1_paired_r07",
+      "charged_worker_seconds": 579.3980921000039,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_paired_r00",
+        "comparison": 1,
+        "kind": "paired",
+        "replicate": 0,
+        "deltas": [
+          5e-05,
+          2e-05
+        ],
+        "sentinel": true,
+        "seeds": [
+          818525398
+        ]
+      },
+      "elapsed_seconds": 591.4907690999971,
+      "events": 6931672,
+      "segment_seconds": [
+        58.940542399999686,
+        63.187105999997584,
+        61.873815200000536,
+        58.36232729999756,
+        58.640050899994094,
+        60.76580439999816,
+        58.03840710000077,
+        55.82826219999697,
+        56.399286600004416,
+        59.32507200000691
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c1_paired_r00",
+      "charged_worker_seconds": 593.4057343000022,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_independent_r00",
+        "comparison": 1,
+        "kind": "independent",
+        "replicate": 0,
+        "deltas": [
+          5e-05,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          4113738810,
+          1048389715
+        ]
+      },
+      "elapsed_seconds": 447.2082001999952,
+      "events": 13851966,
+      "segment_seconds": [
+        44.94162800000049,
+        47.28653199999826,
+        41.508225099998526,
+        43.71427979999862,
+        43.061325599992415,
+        47.17490790000011,
+        44.57415970000147,
+        44.03262070000346,
+        44.52074769999308,
+        46.224013899991405
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c1_independent_r00",
+      "charged_worker_seconds": 449.29638339999656,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_independent_r01",
+        "comparison": 1,
+        "kind": "independent",
+        "replicate": 1,
+        "deltas": [
+          5e-05,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          2909261495,
+          139291014
+        ]
+      },
+      "elapsed_seconds": 445.53306309999607,
+      "events": 13849973,
+      "segment_seconds": [
+        45.60810430000129,
+        46.53110929999093,
+        41.555509900004836,
+        43.734264800004894,
+        42.71714160000556,
+        46.766955899991444,
+        44.08780899998965,
+        43.449712100002216,
+        44.65856209999765,
+        46.294232899992494
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c1_independent_r01",
+      "charged_worker_seconds": 447.7937884999992,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_independent_r02",
+        "comparison": 1,
+        "kind": "independent",
+        "replicate": 2,
+        "deltas": [
+          5e-05,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          1984267254,
+          972963343
+        ]
+      },
+      "elapsed_seconds": 449.99389609998616,
+      "events": 13861013,
+      "segment_seconds": [
+        45.89608259999659,
+        46.49122039999929,
+        41.08064660000673,
+        44.16447299999709,
+        43.91836029999831,
+        47.581801199994516,
+        44.65814600000158,
+        45.06671259998984,
+        45.11763019999489,
+        45.87459550000494
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c1_independent_r02",
+      "charged_worker_seconds": 452.2972981999919,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_independent_r04",
+        "comparison": 1,
+        "kind": "independent",
+        "replicate": 4,
+        "deltas": [
+          5e-05,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          3084640107,
+          3699504539
+        ]
+      },
+      "elapsed_seconds": 445.65057199999865,
+      "events": 13845882,
+      "segment_seconds": [
+        45.987862899986794,
+        45.655220799992094,
+        40.49255890000495,
+        44.429723300010664,
+        43.26132560000406,
+        46.22280839999439,
+        44.646532200000365,
+        43.701559000008274,
+        45.210803899986786,
+        45.9227979999996
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c1_independent_r04",
+      "charged_worker_seconds": 447.80096039999626,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_independent_r03",
+        "comparison": 1,
+        "kind": "independent",
+        "replicate": 3,
+        "deltas": [
+          5e-05,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          2576636685,
+          4076621686
+        ]
+      },
+      "elapsed_seconds": 447.81459500000346,
+      "events": 13856020,
+      "segment_seconds": [
+        46.40686529999948,
+        46.060581400000956,
+        40.68165849999059,
+        44.22029629998724,
+        43.98806940000213,
+        46.98828720000165,
+        44.57932829999481,
+        43.45541769999545,
+        45.89612200000556,
+        45.41269549999561
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c1_independent_r03",
+      "charged_worker_seconds": 449.7962373000046,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_independent_r05",
+        "comparison": 1,
+        "kind": "independent",
+        "replicate": 5,
+        "deltas": [
+          5e-05,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          1569890675,
+          1028893932
+        ]
+      },
+      "elapsed_seconds": 448.9288586000039,
+      "events": 13849591,
+      "segment_seconds": [
+        46.229162300005555,
+        46.22649580000143,
+        40.968747399994754,
+        45.11904649999633,
+        44.26986610000313,
+        46.952743600006215,
+        44.21466260000307,
+        44.3773816999892,
+        45.46368819999043,
+        44.97951639999519
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c1_independent_r05",
+      "charged_worker_seconds": 450.7906551000051,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_independent_r06",
+        "comparison": 1,
+        "kind": "independent",
+        "replicate": 6,
+        "deltas": [
+          5e-05,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          2308205816,
+          3602845117
+        ]
+      },
+      "elapsed_seconds": 446.0838444999972,
+      "events": 13848711,
+      "segment_seconds": [
+        46.387720500002615,
+        45.95962860000145,
+        40.660218000004534,
+        43.69026529999974,
+        44.10720980000042,
+        46.65089330000046,
+        43.773661299987,
+        44.607857200011495,
+        45.53085860000283,
+        44.58413270000892
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c1_independent_r06",
+      "charged_worker_seconds": 448.29549560000305,
+      "returncode": 0
+    },
+    {
+      "status": "COMPLETE",
+      "job": {
+        "id": "c1_independent_r07",
+        "comparison": 1,
+        "kind": "independent",
+        "replicate": 7,
+        "deltas": [
+          5e-05,
+          2e-05
+        ],
+        "sentinel": false,
+        "seeds": [
+          3981813876,
+          2808002543
+        ]
+      },
+      "elapsed_seconds": 444.7407211999962,
+      "events": 13852984,
+      "segment_seconds": [
+        45.81032289999712,
+        45.91623649999383,
+        41.604918400000315,
+        43.156557100010104,
+        44.67780390000553,
+        46.932425899998634,
+        44.705127499997616,
+        44.67522220000683,
+        45.43300970000564,
+        41.69067730000825
+      ],
+      "source_hashes": {
+        "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+        "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+        "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+        "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+        "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+        "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+        "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+        "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+        "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+        "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+        "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+        "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+        "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+        "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+      },
+      "id": "c1_independent_r07",
+      "charged_worker_seconds": 446.80363199999556,
+      "returncode": 0
+    }
+  ],
+  "ceiling": 18000,
+  "prior_charge": 0,
+  "poll_seconds": 0.5,
+  "charged_worker_seconds": 16392.365116099987,
+  "inflight_worker_seconds": 0,
+  "pending_ids": [],
+  "active_ids": [],
+  "stop_reason": null,
+  "admission_pause": null,
+  "workers": 8,
+  "threads_per_library": 1,
+  "max_observed_poll_gap_seconds": 0.5079993999970611
+}

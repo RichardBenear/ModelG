@@ -1,0 +1,9 @@
+{
+  "reason": "Original saved-data audit repeatedly decompressed compressed event arrays inside the event loop; interrupted without producing audit or scoring outputs.",
+  "original_source_sha256": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+  "corrected_source": "src/check_mg12h3_coupling_long_v2.py",
+  "change": "Eagerly materialize trace arrays once per archive; change audit output filename to raw_audit_v2.json. Reservation replay and all statistical scoring unchanged.",
+  "stochastic_paths_replaced": 0,
+  "interrupted_audit_elapsed_seconds": null,
+  "budget_note": "Elapsed cost of interrupted audit was not captured; full parent allowance compliance cannot be certified."
+}
