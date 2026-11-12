@@ -1,0 +1,52 @@
+{
+  "status": "COMPLETE",
+  "job": {
+    "id": "c0_paired_r151",
+    "comparison": 0,
+    "kind": "paired",
+    "replicate": 151,
+    "deltas": [
+      0.0001,
+      2e-05
+    ],
+    "sentinel": false,
+    "seeds": [
+      2153587899
+    ],
+    "session": 2
+  },
+  "elapsed_seconds": 531.2507141999959,
+  "events": 6927837,
+  "segment_seconds": [
+    51.93266409999342,
+    53.041848199995,
+    53.364316399995005,
+    52.84623510000529,
+    53.55449549999321,
+    53.06433660000039,
+    54.83185790000425,
+    54.226683000000776,
+    52.279476600000635,
+    51.97977520000131
+  ],
+  "source_hashes": {
+    "src/check_mg12h3_coupling_long.py": "1b265b10ca910ada13220407ff7edadc22548d6cbae5f513f7d8701d8b369471",
+    "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+    "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+    "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+    "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+    "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+    "src/run_mg12h3_tick_coupling.py": "1494584a07870e8d718020d7313dc7cb256a45e20fb1f0eeb2a42567e11dfed0",
+    "src/prepare_mg12h3_bridge.py": "85962a8218cbfbaeb63666533d65d2e9fb818a042c3d8a778abe0c2edeab8f7f",
+    "src/mg12h1.py": "e23241068ba525708ba79b7c1b43bdbf959492090a932505017a411f05fdc8ef",
+    "src/mg12h2.py": "cc884f56a3f43c849d6aad9f42e8f2911ab8715e2afb2185c52dcb6f928feef6",
+    "src/mg10e2c1_pool.py": "d69ad9e68bfa53027f083393e0e305bc99e2f58d68bf965bcced8f914079fb70",
+    "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+    "spec/MG12H3_coupling_long_pilot.md": "88336c7350f4e825c30ac05821cb026877e8fea89d3384f5ef5f15b48120dae4",
+    "src/mg12h3_tick_accuracy.py": "6dbd185b4ca8d9fc95be32f58824d2ed0dac39910a776cebf1ec39fa923219ed",
+    "src/check_mg12h3_tick_accuracy.py": "16ed42671289d0441972acb59fa0928372d982771e8863293db9facc5c32bfb0",
+    "src/mg12h3_accuracy_readiness.py": "233e9c5cba3f95cc5cf6db7b6c56fe0b8ef8c6156632cb1336f2ee6bd63bd130",
+    "spec/MG12H3_tick_accuracy_draft.md": "e66782d48c144813bc1df23afcd905a3cb51af808e184409fe79d7a4eae56e1b",
+    "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+  }
+}

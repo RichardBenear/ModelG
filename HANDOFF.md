@@ -1,3 +1,7 @@
+# Current handoff - MG158 accuracy results complete, PI closure pending
+
+Bothcandidate ticks.0001/.00005 EQUIVALENT withinregistered scope against.00002:24/24intervalsinsidetolerances forcontrasts/powers at.005/.01;worstmarginfractions .655517/.468483.320freshpairs/640chains,6.26802hwall/175446worker-seconds<300000;nofailures/retries.6400checkpointendpoints+fullsentinels passedaudit;separate rawfield/Parseval/intervalrecompute agreed. Nominaltcoverage caveat/heaviertail64pairpowers documented. Report results/MG12H3/tick_accuracy/MG12H3_tick_accuracy_results.md;publish raw+report/verify,then PIclosure. No nextbatch.
+
 # Current handoff - MG158 accuracy RUNNING
 
 Approved registration5a41341 published beforedraws. Controller session19666 executing run-all:3fixedsessions of108/106/106jobs,320coupledpairs total. Results in results/MG12H3/tick_accuracy/session_{1,2,3};inspect session_N_attempt.json andsession_N/ledger.json. Max8localworkers/thread1,100000worker-seconds/session/300000total;no retries. Expected7.43h. Do not rerun registration orproduction. Onallcomplete run python src/check_mg12h3_tick_accuracy.py;independently recompute24paired intervals beforeplain-language report/publishingraw/verification. No resultsyet.

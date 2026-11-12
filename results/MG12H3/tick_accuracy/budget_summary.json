@@ -1,0 +1,34 @@
+{
+  "worker_seconds": 175445.7287775001,
+  "worker_core_hours": 48.734924660416695,
+  "worker_ceiling": 300000,
+  "wall_seconds": 22564.889304900003,
+  "sessions": [
+    {
+      "status": "COMPLETE",
+      "wall_seconds": 7793.251115399995,
+      "charged_worker_seconds": 60957.03228150004,
+      "stop_reason": null
+    },
+    {
+      "status": "COMPLETE",
+      "wall_seconds": 7369.6657385,
+      "charged_worker_seconds": 57089.77351710005,
+      "stop_reason": null
+    },
+    {
+      "status": "COMPLETE",
+      "wall_seconds": 7401.972451000009,
+      "charged_worker_seconds": 57398.922978899995,
+      "stop_reason": null
+    }
+  ],
+  "active_audit_recompute_seconds": 135.10237069998402,
+  "active_parent_ceiling": 1800,
+  "report_generation_seconds_so_far": 0.34544819999428,
+  "completed_pairs": 320,
+  "marginal_chains": 640,
+  "failures": 0,
+  "retries": 0,
+  "event_count": 2216929175
+}

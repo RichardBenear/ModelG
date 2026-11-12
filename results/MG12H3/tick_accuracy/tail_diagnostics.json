@@ -1,0 +1,17 @@
+{
+  "diagnostics": [
+    {
+      "comparison": 0,
+      "max_abs_skew": 0.6676064573278748,
+      "max_excess_kurtosis": 2.3804109177790806,
+      "max_single_replicate_variance_share": 0.11559054677959897
+    },
+    {
+      "comparison": 1,
+      "max_abs_skew": 1.8927453149915372,
+      "max_excess_kurtosis": 5.2442789283120685,
+      "max_single_replicate_variance_share": 0.27712634973087413
+    }
+  ],
+  "meaning": "Descriptive only; no sample exclusion or scoring-method change. Kurtosis uses population moments; skewness is bias-corrected."
+}
