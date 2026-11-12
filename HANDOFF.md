@@ -1,3 +1,7 @@
+# Current handoff - MG158 accuracy READY, concretebudget pending
+
+Saved-only readiness andclassification/Parseval/recompute passed. Recommend256pairs coarse+64finer,24primaryintervals at.005/.01,paired-t/Bonferroni withfixed5%contrast/.05power. Expected7.43097hat8workers split3sessions~2.5h;cap100000worker-seconds/session/300000total+1800activeparent. Draftspec/MG12H3_tick_accuracy_draft.md,report results/MG12H3/tick_accuracy_readiness/MG12H3_tick_accuracy_readiness.md. PI approval ofthis concreteallocationneeded beforecreateaccuracyapproval.json/register. No newdraws;MG156/MG157closureseparate.
+
 # Current handoff - MG157 results complete, PI closure pending
 
 Long paired pilot passed registered Ycost-benefit criterion atT.01:rawratios .0129335/.0152075,costadjusted .0173955/.0196590,approxbootstrap uppers .108602/.0612844;R8/comparison/method,notfinalequivalence. All32jobs complete34.2827min/16392.4worker-seconds;nofailedproduction/retries. v2saved-audit640endpoints/13.8557million sentinel events andseparate statistics passed. Original audit repeateddecompression corrected innewv2source;interruptedelapsed unrecorded so parentallowancecomplianceuncertified. Report results/MG12H3/coupling_long_pilot/MG12H3_coupling_long_results.md. Report+compactarchive published at a54856d;690archive/provenancefiles verified. No nextrun. MG156 closure remainsseparate.
