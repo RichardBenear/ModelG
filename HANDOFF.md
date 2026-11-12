@@ -1,3 +1,7 @@
+# Current handoff - MG160-P1 persistence pilot RUNNING
+
+Explicit PI approval recorded;frozen registration d73f1ef published beforedraws. Controller session20081 runs8localworkers/thread1,4prepared+4massmatchedhomogeneouscoupledpairs,T.1/deltas.0001/.00002. Progress results/MG12H3/pattern_persistence/P1_production/ledger.json and*/progress.json;P1_attempt.json isoverallstatus. Forecast1.75h;cap100000worker-seconds+1800activeparent,12000/job,2GB. No retries/replacements/extensions. Do not rerun register/run. Oncomplete independently recompute all amplitudes/correlations/extents/phaseflags and sampled-retention/loss brackets from observations;reconstruct100checkpoints/job using3branch hist(common,left,right),checkRNGcontinuity,replay2numeric sentinels eagerly loaded. Record everyanalysis attempt time includinginterruptions;plain-language report+rawpublication/verification required. No P1outcomesyet;laterP2/P3 notauthorized. MG158closedasMG159.
+
 # Current handoff - MG160-P1 APPROVED, registration before launch
 
 PI explicitly approves firstpilot criteria/budget.8pairs(4prepared/4massmatchedhomogeneous),T.1/deltas.0001/.00002;8workers/thread1,100000worker-seconds+1800activeparent,12000/job,2GB. Criteria .5amplitude/.8correlation/extent[.5,2],no physicalparticleclaim. Approval results/MG12H3/pattern_persistence/P1_approval.json;register/pushsource-seeds before python src/run_mg160_persistence.py run. No retry/extension. Laterstages notapproved.
