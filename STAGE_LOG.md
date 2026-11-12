@@ -1390,3 +1390,8 @@ PI: “Looks good to me. Go ahead and prepare and then run the tests.” Impleme
 ### MG156 development result
 
 Both bounded phases PASSED: 896 algebra states, 6 scripted controls, 128 identical-tick regressions, 8192 exact-law pairs and 4096 nonnested transport pairs; all marginal null-consistency screens passed. Actual-ring exploration: 8 coupled pairs + 16 standalone paths, T=.0001; Y difference variance ratios .00981796/.0000317990 descriptive only (R4/comparison). A16.3826s/B43.1083s below separate60s caps; total59.4909s, one worker/thread one; no failures/retries. Separate dense-generator, transport-matrix and saved-count reconstruction passed16400 endpoints/10 sentinels. Not formal marginal/variance/equivalence qualification. Report results/MG12H3/tick_coupling_development/MG12H3_tick_coupling_development_results.md; PI closure pending. No next run.
+
+
+## MG157 - longer paired pilot approved and registered
+
+PI: "go ahead and do the longer test." Freeze spec/MG12H3_coupling_long_pilot.md, source and disjoint seeds before draws. Prerequisite mixed unequal-tick exact-law/segmentation controls:120 seconds. Conditional full T=.01 batch:8 coupled pairs and8 independent pairs per comparison at deltas(.0001,.00002)/(.00005,.00002),32 jobs,total48 chains. Max8workers/thread1;forecast9920worker-seconds;ceiling18000worker-seconds plus600 active parent/control/audit seconds,1200/job. Compact all-decision records plus2 full joint sentinels. Primary Yendpoint cost-adjusted variance bootstrap upper97.5%<1 eachcomparison and rawpointratio<1; n8 approximate-coverage pilot, not final qualification/equivalence. Controls/integrity fail blocks; no retries/replacement. MG156 closure remains pending, no implied signoff.

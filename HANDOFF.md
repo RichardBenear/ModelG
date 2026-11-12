@@ -1,3 +1,7 @@
+# Current handoff - MG157 longer pilot approved
+
+PI authorizes longer paired test. Spec/source/seed plan frozen prospectively. Controls120s first, then32jobs/fullT.01 with8pairs per comparison per method. Ceiling18000worker-seconds+600activeparent, max8workers/thread1;forecast9920. Entry python src/mg12h3_coupling_long.py controls then run ifpassed. No retries/equivalence claim. MG156 closure stillpending.
+
 # Current handoff — MG156 development complete
 
 Both phases passed within60s each, total59.4909s. Split-propensity coupling preserves separate strict-tick calendars/reservations;128 identical-tick regressions,8192 exact-law pairs,4096 nonnested transport pairs passed development controls. Actual-ring microprobe T.0001:4 pairs/comparison, descriptive Yvariance ratios .00981796/.0000317990; no benefit/5%equivalence verdict. Separate saved recomputation passed16400 endpoints/10sentinels. Report results/MG12H3/tick_coupling_development/MG12H3_tick_coupling_development_results.md. PI closure pending. Recommend prospective marginal/longhistory/fullhorizon paired validation packet beforeproduction; no next run.
