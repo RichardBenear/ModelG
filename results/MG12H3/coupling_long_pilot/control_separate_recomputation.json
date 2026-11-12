@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "kernels": 161,
+  "rows": [
+    {
+      "side": 0,
+      "frame": 1,
+      "TV": 0.01175202897375014,
+      "bound": 0.05593945027305617
+    },
+    {
+      "side": 0,
+      "frame": 2,
+      "TV": 0.01681117652040946,
+      "bound": 0.06600080411990218
+    },
+    {
+      "side": 1,
+      "frame": 1,
+      "TV": 0.012022367080157676,
+      "bound": 0.06600080411990218
+    },
+    {
+      "side": 1,
+      "frame": 2,
+      "TV": 0.01663099116479449,
+      "bound": 0.06600080411990218
+    }
+  ],
+  "elapsed_seconds": 1.8735264999995707,
+  "method": "Dense saved-generator exponential, separate kernel composition and sample aggregation; same author, shared saved generator."
+}
