@@ -1,0 +1,173 @@
+{
+  "passed": true,
+  "verified_commit": "3a33b604c8f41f0c69e8ff25e69a53e1998a27c7",
+  "verified_files": 27,
+  "raw_production_absent_from_public_tree": true,
+  "large_unpublished_history_excluded": true,
+  "new_blob_content_bytes": 1903285,
+  "full_raw_retention": "P1_local_archive.json",
+  "files": [
+    {
+      "path": ".gitignore",
+      "git_blob": "9a6f1581630ae5dd3d78e71f675a4da52016647d",
+      "sha256_git": "24bbc2bf33555ba9007515ea804ecf291b15f0f6d1f83eeeaa8c5c7fcca96f52",
+      "bytes": 1732
+    },
+    {
+      "path": "AGENTS.md",
+      "git_blob": "c921f816b85793f2a67fe99de69bf7cfe44c23de",
+      "sha256_git": "7d68d1e40d8f397c6f15c6cd9abb1f40e704d9752f37d54d19d815a0f675c445",
+      "bytes": 7597
+    },
+    {
+      "path": "GATES.md",
+      "git_blob": "ec9f123413e3ed0ca2fa10b9076e377aca94a126",
+      "sha256_git": "edebb0c642c9a9933d7f2f7d7e94e097552fd8b3f872c1dec1dca5c3db242842",
+      "bytes": 275753
+    },
+    {
+      "path": "HANDOFF.md",
+      "git_blob": "2b8ce398c09d2babb90d95b1e30e1e0a9d4314da",
+      "sha256_git": "b74397d54cae37b0886764669c8782737f21f86a7967ab9390a3194cf0deed43",
+      "bytes": 60203
+    },
+    {
+      "path": "RESEARCH_PROTOCOL.md",
+      "git_blob": "e523b1d2114c56345b61b8ccc666641eda4ebf62",
+      "sha256_git": "4c1f6b834791a5a9d34498d58063020fab8d33c96c6c97c4034a09137bbd1a00",
+      "bytes": 9299
+    },
+    {
+      "path": "STAGE_LOG.md",
+      "git_blob": "0e4a8aae2b8747a66240c9b75a8782e94bb7c89c",
+      "sha256_git": "0964011f75b5212853a0c9815c82410284e3edef4c677f69c67c21267436cefa",
+      "bytes": 189823
+    },
+    {
+      "path": "results/MG12H3/pattern_persistence/MG12H3_pattern_persistence_P1_results.md",
+      "git_blob": "4b44b7c8baa30e6dbd3f7b88105f0de51e4cfeff",
+      "sha256_git": "cb954714035687aa15664a4deca9324e99f1d9620b0adcb5c110e91faf189bac",
+      "bytes": 8993
+    },
+    {
+      "path": "results/MG12H3/pattern_persistence/MG160_P1_pattern_diagnostics.png",
+      "git_blob": "c2c4894be3f1d7200d6699e47b6ab5947a019afc",
+      "sha256_git": "8d3204568cc37f3e43e47441bddf2f78d2b6ff6334f6e20c1d1f9a1679300508",
+      "bytes": 458528
+    },
+    {
+      "path": "results/MG12H3/pattern_persistence/MG160_P1_pattern_diagnostics.svg",
+      "git_blob": "4eb72e3c8afaae846e4ac4477d6f8cb55ff2af95",
+      "sha256_git": "6f8389a494127ddf1c1d563b7cd69fdf900d21396b5f5b64004047f7b4e73046",
+      "bytes": 323492
+    },
+    {
+      "path": "results/MG12H3/pattern_persistence/P1_analysis_attempt.json",
+      "git_blob": "c8647b50671ba35d677421464615ad97b976766e",
+      "sha256_git": "b36da9ee942b7c24576c9617044c20944eae273cd54207038f604357b657b672",
+      "bytes": 68
+    },
+    {
+      "path": "results/MG12H3/pattern_persistence/P1_analysis_results.json",
+      "git_blob": "9eac7f7fc9e75f01475dc117a582b242ce3b14bb",
+      "sha256_git": "a720b4b333526afd50a7bbe337cc3d20bcb77939c9b87693eb7a0e3686a5f12f",
+      "bytes": 45035
+    },
+    {
+      "path": "results/MG12H3/pattern_persistence/P1_attempt.json",
+      "git_blob": "e94a8cc02e9254ddc067169ac55ba89b075d9ec6",
+      "sha256_git": "aae30733540115448ba17fcd212edef449858769ac8d188dd509faa14c54b0e8",
+      "bytes": 134
+    },
+    {
+      "path": "results/MG12H3/pattern_persistence/P1_budget_summary.json",
+      "git_blob": "d3f937382a54ee3eed5156a8047dd5d3d3f615eb",
+      "sha256_git": "27f44a2700b770a60b252ac719152c238f95982fe98fff70c86b7a345076961b",
+      "bytes": 381
+    },
+    {
+      "path": "results/MG12H3/pattern_persistence/P1_compact_plot_inputs.npz",
+      "git_blob": "d39dba0c2e4c308c5d42e2087d458ce3967501c5",
+      "sha256_git": "6ad61771f58c92cc6294a107d80eec9f6a7546674b0098d99613881b386a13a0",
+      "bytes": 69410
+    },
+    {
+      "path": "results/MG12H3/pattern_persistence/P1_compact_publication_manifest.json",
+      "git_blob": "69ebde690b9cc6af4a80baf0213e6b4b535b4916",
+      "sha256_git": "96c17e76fdecd48496e20a951c390e03c9fb4ad982400af5ef8e6275f481f6ca",
+      "bytes": 3802
+    },
+    {
+      "path": "results/MG12H3/pattern_persistence/P1_diagnostic_attempt.json",
+      "git_blob": "248c944f6b2e7bed6930fe42683b3dfcc6a9aa9d",
+      "sha256_git": "8eb94bdbeba97769ae14a9abbb97c2dbaae4edc603cab20b0e4d4cac4350d93c",
+      "bytes": 68
+    },
+    {
+      "path": "results/MG12H3/pattern_persistence/P1_exploratory_diagnostics.json",
+      "git_blob": "1851358238ab2f5205cf9211fbdc94e66daf6559",
+      "sha256_git": "5cfaefbd7b00158880af3d54930a189c6c0fc2a34d884d04dab7026e8349ed8d",
+      "bytes": 235573
+    },
+    {
+      "path": "results/MG12H3/pattern_persistence/P1_local_archive.json",
+      "git_blob": "18a904c25d5f45c48483f9ebe1164158a692d2f7",
+      "sha256_git": "57f1f5226509da58026856f76e0197b135f6da059fbb29b3f3fd3a52d8afa927",
+      "bytes": 918
+    },
+    {
+      "path": "results/MG12H3/pattern_persistence/P1_outcome_summary.json",
+      "git_blob": "5217d15748bf44b8513277e769cda7db8f15c9b7",
+      "sha256_git": "fee3d4a3fc1b6efe20875709994664298526af29bac90fdae3de50173e968e2b",
+      "bytes": 546
+    },
+    {
+      "path": "results/MG12H3/pattern_persistence/P1_raw_manifest.json",
+      "git_blob": "badc9af2d4574d506589c1f8562cce64fcd9ded5",
+      "sha256_git": "b4781c647111ec2376806e4631b1aba15cd183e8cf3bb7f2a908f69b3fcd4c16",
+      "bytes": 177706
+    },
+    {
+      "path": "results/MG12H3/pattern_persistence/P1_report_attempt.json",
+      "git_blob": "4c06523e84167235bcb128605680feb751f11548",
+      "sha256_git": "d89476290bfeb90ac3d5df1566d19db855114d36f75023c05c75fd70db3c5529",
+      "bytes": 68
+    },
+    {
+      "path": "results/MG12H3/pattern_persistence/P1_report_attempt_002.json",
+      "git_blob": "0362322ff0bc430c298b89d9c6f3dac7a1fe6669",
+      "sha256_git": "6da6adf5d129608ea36eeee5f4b0bdd3b6916417359f766a3a752de943ef31a0",
+      "bytes": 68
+    },
+    {
+      "path": "src/check_mg160_pilot.py",
+      "git_blob": "3139ea6c4584a8d29cb71989cb6ce33993f5267e",
+      "sha256_git": "f91496bdb6895710a6dd353caee7fe524c0eda21966023229c6f6915cc662e68",
+      "bytes": 10890
+    },
+    {
+      "path": "src/check_publication_payload.py",
+      "git_blob": "8d7b077c91f622ea6d5f1f32a9b2c4fd537faa46",
+      "sha256_git": "d861523d6b1ea837e8761e0f96f2303dc223d59fc25122c93e71e33f0d5fc206",
+      "bytes": 1858
+    },
+    {
+      "path": "src/diagnose_mg160_pilot.py",
+      "git_blob": "0b73c6586c0bfdf431989eb63db7738272465d6e",
+      "sha256_git": "45c0e3dd316119edb39df7c8f50080128a5ba3c3fc2a974c117b312b64a0567c",
+      "bytes": 2850
+    },
+    {
+      "path": "src/mg160_local_archive.py",
+      "git_blob": "02dc039afcb54ecbfe720d1c678a4cbe71ef9dc7",
+      "sha256_git": "6dcb576b9282e82e43007649b1f7919fd794f96daf403f109001c0112d00b77d",
+      "bytes": 797
+    },
+    {
+      "path": "src/report_mg160_pilot.py",
+      "git_blob": "859ef70a0e37241710fb6dbbc81c70c359d59b29",
+      "sha256_git": "248dc041376ef742f7a0cbbd65ee3e104c3fb7afc1c410d920addc71cf1a1ec5",
+      "bytes": 17693
+    }
+  ]
+}
