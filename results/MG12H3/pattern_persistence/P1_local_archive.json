@@ -1,0 +1,12 @@
+{
+  "policy": "Full raw trajectories and sentinel event histories stay local; public repository contains reports, figures, code, compact decisions and small plot exports only.",
+  "PI_authorization": "yes, keep the large data locally",
+  "archive_checkout_sibling": "ModelG_MG10",
+  "path_in_checkout": "results/MG12H3/pattern_persistence",
+  "local_git_branch": "archive/mg160-p1-local-raw",
+  "immutable_local_raw_commit": "5dcf43038ab31cf074b7205195450e25af3b3a4e",
+  "local_raw_manifest_sha256": "3ec131cc08327743926cbf9f08a3e0aec2a305de1a30199beab448686fca2924",
+  "cancelled_upload_remote_tip": "1fc1dfb1838d04e3c39fb7101531620f3190200b",
+  "public_limits": "Full causal audit/raw-field reproduction requires the local archive; compact metrics reproduce reported threshold decisions and curves.",
+  "historical_publication": "Earlier already-published study archives are unchanged; no remote history rewrite."
+}

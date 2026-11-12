@@ -2530,3 +2530,13 @@ AfterMG159closure, PI requests making persistence study. P0 saved-only/determini
 ## MG160-P1 - first pattern-persistence pilot APPROVED and REGISTERED
 
 PI: "I approve the MG160 first-pilot criteria and budget. Proceed." Approves frozen MG160 packet:4prepared+4massmatchedhomogeneous independentcoupledpairs,T=.1,delta.0001/.00002,observations.001,100segments. Criteria amplitude>=.5/correlation>=.8/relativeextent[.5,2], coherence/shape/phase separate; no physicalparticle/lifetimepopulation claim. Max8localworkers/thread1;100000worker-seconds+1800activeparent,12000/job,2GB;2predeclaredfullnumeric sentinels,compactallpaths;no retries/replacement/thresholdchanges. Publish source/seed registration beforedraws. LaterP2/P3 notauthorized. MG158 remainsCLOSEDasMG159.
+
+
+### MG160-P1 results - pilot complete; sampled retention not observed throughT.1
+
+Eightapprovedpairs/16marginalpaths complete,4prepared+4homogeneous;0/4prepared pairs retain initial-patterncriterion atallframes ateachdelta.0001/.00002. Firstsampledloss .054-.094;firstcauseupperglobalextentbound inall8preparedmarginals;amplitudethresholdneverfailed. Allfinalpreparedcorrelations<.8 andextentratios>2;nohomogeneousdetection(0/4eachdelta). No particle-death/populationzero-survival inference from4independentpairs;tickmarginals correlated. Post-result unalignedensemblemeanfield retainsamplitude/correlation/extent,explicitlyexploratorydifferentestimand,noreclassification.1600checkpointendpoints/138.557million fullsentinel events causallyreplayed;independentFFTmetrics/outcomes andstockreactionaccounts passed.77.9605minwall/36912.7worker-seconds(10.2535coreh)<100000;max8workers/thread1,nofailed/replaced/retriedjobs. Raw~1.26GB<2GB. Recommendnoise-awaremeasurementqualificationbeforeexpensivelongextension,preservefrozennegativeoutcome. PIclosurepending;no P2/P3authorized. Report results/MG12H3/pattern_persistence/MG12H3_pattern_persistence_P1_results.md.
+
+
+### MG160-P1 storage amendment at PI request
+
+PI: "yes, keep the large data locally". Canceled bulkpush; confirmed remote main still1fc1dfb. Retain complete1.26GB raw working files and immutable local Git archive5dcf430 on archive/mg160-p1-local-raw; preserve all scientific results. Publish compact report/figures/code/decision and plot exports plus raw hash manifest/local retention record only. Active checkout ModelG_Public, archive sibling ModelG_MG10. No remote force-push or deletion of historical published datasets. All next bulk archives stay local under the new policy.

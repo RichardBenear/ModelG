@@ -34,3 +34,10 @@ results/MG9b/partial/
 results/MG9b/fields/
 # MG8: full stochastic fields stay on the PI's PC (SHA-256 in each run record)
 results/MG8/full/
+
+# PI instruction: large MG160 raw data are retained in the local archive checkout.
+/results/MG12H3/pattern_persistence/P1_production/
+/results/MG12H3/pattern_persistence/P1_exploratory_mean_fields.npz
+
+# Preferred ignored location for future local-only raw archives.
+/local_raw/

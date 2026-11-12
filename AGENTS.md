@@ -1,3 +1,7 @@
+# Current PI publication policy — bulk data stay local
+
+Use this ModelG_Public checkout for coding and publication. Full MG160 raw data are retained in sibling ModelG_MG10, on the local-only archive/mg160-p1-local-raw branch. Never push that branch or add bulk raw arrays/event archives to public Git history. Publish only compact reports, figures, code, decision exports and manifests. Read HANDOFF.md and RESEARCH_PROTOCOL.md for the local retention record and publication guard. This PI instruction supersedes historical instructions to publish large raw archives.
+
 # Model G Hypergraph Study — standing instructions for Codex
 
 This file is read automatically at the start of every Codex session in this repository. Current state and

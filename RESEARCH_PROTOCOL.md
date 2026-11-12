@@ -64,3 +64,12 @@ Group independent short studies into prospectively approved batches estimated up
 
 ### PI numerical presentation preference (2026-11-10)
 Use at most six significant digits in plain-language reports and summaries, unless additional digits are needed to resolve a comparison or outcome. Preserve full precision in raw records, calculations, machine-readable outputs and frozen scoring; presentation rounding must not change decisions.
+
+
+## PI storage policy — 2026-11-12
+
+Richard instructed: "yes, keep the large data locally" after the attempted1.26GB MG160-P1 upload. Full raw trajectories, checkpoint/count tensors and full event/sentinel histories remain local. Publish reports, figures, source, seeds/configuration, compact decision/plot exports and hash manifests. Verify the local retention path and immutable local commit; a hash alone is not retention. Do not add bulk raw archives to public Git history. Earlier already-published archives remain unchanged unless the PI separately requests a migration.
+
+MG160-P1 local archive: sibling checkout ModelG_MG10, branch archive/mg160-p1-local-raw, raw version5dcf43038ab31cf074b7205195450e25af3b3a4e. The active publication checkout is ModelG_Public. P1_local_archive.json records the dataset location and limitations of public-only recomputation. The initial large push was stopped; remote main was confirmed unchanged at1fc1dfb before compact publication. No scientific outcome was rescored.
+
+A local pre-push guard rejects archive branches, new bulk P1 paths, individual new blobs over5MiB and total new blob content over10MiB. These are conservative publication defaults; a larger payload requires explicit review rather than automatic upload.
