@@ -1,6 +1,6 @@
 # Current handoff - MG157 results complete, PI closure pending
 
-Long paired pilot passed registered Ycost-benefit criterion atT.01:rawratios .0129335/.0152075,costadjusted .0173955/.0196590,approxbootstrap uppers .108602/.0612844;R8/comparison/method,notfinalequivalence. All32jobs complete34.2827min/16392.4worker-seconds;nofailedproduction/retries. v2saved-audit640endpoints/13.8557million sentinel events andseparate statistics passed. Original audit repeateddecompression corrected innewv2source;interruptedelapsed unrecorded so parentallowancecomplianceuncertified. Report results/MG12H3/coupling_long_pilot/MG12H3_coupling_long_results.md. Publish report+compactarchive/verify, no nextrun. MG156 closure remainsseparate.
+Long paired pilot passed registered Ycost-benefit criterion atT.01:rawratios .0129335/.0152075,costadjusted .0173955/.0196590,approxbootstrap uppers .108602/.0612844;R8/comparison/method,notfinalequivalence. All32jobs complete34.2827min/16392.4worker-seconds;nofailedproduction/retries. v2saved-audit640endpoints/13.8557million sentinel events andseparate statistics passed. Original audit repeateddecompression corrected innewv2source;interruptedelapsed unrecorded so parentallowancecomplianceuncertified. Report results/MG12H3/coupling_long_pilot/MG12H3_coupling_long_results.md. Report+compactarchive published at a54856d;690archive/provenancefiles verified. No nextrun. MG156 closure remainsseparate.
 
 # Current handoff - MG157 full-horizon pilot RUNNING
 
