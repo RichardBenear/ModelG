@@ -1,3 +1,7 @@
+# Current handoff - MG157 results complete, PI closure pending
+
+Long paired pilot passed registered Ycost-benefit criterion atT.01:rawratios .0129335/.0152075,costadjusted .0173955/.0196590,approxbootstrap uppers .108602/.0612844;R8/comparison/method,notfinalequivalence. All32jobs complete34.2827min/16392.4worker-seconds;nofailedproduction/retries. v2saved-audit640endpoints/13.8557million sentinel events andseparate statistics passed. Original audit repeateddecompression corrected innewv2source;interruptedelapsed unrecorded so parentallowancecomplianceuncertified. Report results/MG12H3/coupling_long_pilot/MG12H3_coupling_long_results.md. Publish report+compactarchive/verify, no nextrun. MG156 closure remainsseparate.
+
 # Current handoff - MG157 full-horizon pilot RUNNING
 
 Registration3509d14 and controlsdf47bd7 published. Mixed unequal-tick exact controls8192pairs/4bounds and64segmentationpaths passed;161kernels separately recomputed. Production started with8localworkers/thread1,32jobs atT.01,8pairs per comparison per method. Controller session41825; inspect results/MG12H3/coupling_long_pilot/production/ledger.json andproduction_attempt.json. Ceiling18000worker-seconds;no retries. Oncomplete run python src/check_mg12h3_coupling_long.py, separately recompute analysis,write plain-language report,publishcompactraw andverify. Do not rerunproduction.
