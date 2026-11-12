@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "scalar_fit_checks": 54,
+  "bounds": [
+    {
+      "case": "null",
+      "lower": 0.0002388528415171428,
+      "upper": 0.0035952578195141507,
+      "passed": true
+    },
+    {
+      "case": "retain_a0.8_s0.75",
+      "lower": 0.9656414997196224,
+      "upper": 0.9962969933160083,
+      "passed": true
+    },
+    {
+      "case": "retain_a0.8_s1",
+      "lower": 0.9846959122820739,
+      "upper": 0.9999934787297293,
+      "passed": true
+    },
+    {
+      "case": "retain_a0.8_s1.5",
+      "lower": 0.9889216221001167,
+      "upper": 1.0,
+      "passed": true
+    },
+    {
+      "case": "retain_a1_s0.75",
+      "lower": 0.9889216221001167,
+      "upper": 1.0,
+      "passed": true
+    },
+    {
+      "case": "retain_a1_s1",
+      "lower": 0.9889216221001167,
+      "upper": 1.0,
+      "passed": true
+    },
+    {
+      "case": "retain_a1_s1.5",
+      "lower": 0.9889216221001167,
+      "upper": 1.0,
+      "passed": true
+    },
+    {
+      "case": "retain_a1.2_s0.75",
+      "lower": 0.9846959122820739,
+      "upper": 0.9999934787297293,
+      "passed": true
+    },
+    {
+      "case": "retain_a1.2_s1",
+      "lower": 0.9846959122820739,
+      "upper": 0.9999934787297293,
+      "passed": true
+    },
+    {
+      "case": "retain_a1.2_s1.5",
+      "lower": 0.9889216221001167,
+      "upper": 1.0,
+      "passed": true
+    },
+    {
+      "case": "weak",
+      "lower": 0.00016412884009134836,
+      "upper": 0.018944307766291437,
+      "passed": true
+    },
+    {
+      "case": "narrow",
+      "lower": 0.0,
+      "upper": 0.011078377899882962,
+      "passed": true
+    },
+    {
+      "case": "broad",
+      "lower": 0.0,
+      "upper": 0.011078377899882962,
+      "passed": true
+    },
+    {
+      "case": "inverted",
+      "lower": 0.0,
+      "upper": 0.011078377899882962,
+      "passed": true
+    },
+    {
+      "case": "split",
+      "lower": 0.0,
+      "upper": 0.011078377899882962,
+      "passed": true
+    }
+  ],
+  "source_hashes": {
+    "src/mg161_local_shape.py": "c3d1f9535e4adbc34eb6c7b776deeb695c15ee1573e8561954bb7689a6757fc3",
+    "src/run_mg161_shape.py": "c4361298914e51616bebac6a2ae667d65780702632590f4f56d07eb7532ed778",
+    "spec/MG161_noise_aware_shape.md": "bdf37674bddd193ad0d3740936a86976a325b670da3b58bc7250e2681412cfe4"
+  },
+  "elapsed_seconds": 0.6957467999891378,
+  "method": "Direct weighted local means/dot products/residual sums; separate threshold logic; binomial tail inversion instead of beta quantiles. Same author/shared fields and template bank."
+}

@@ -1,0 +1,366 @@
+{
+  "qualified_within_synthetic_scope": true,
+  "cases": [
+    {
+      "case": {
+        "id": "null",
+        "kind": "null",
+        "N": 4096,
+        "primary": true,
+        "truth": "reject",
+        "seed": 2002823062,
+        "seed_nonce": 0,
+        "index": 2
+      },
+      "compatible": 5,
+      "N": 4096,
+      "label_counts": {
+        "absent_or_weak": 4091,
+        "core_compatible": 5
+      },
+      "lower": 0.00023885284151714306,
+      "upper": 0.0035952578195140705,
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "retain_a0.8_s0.75",
+        "kind": "signal",
+        "N": 512,
+        "amplitude": 0.8,
+        "scale": 0.75,
+        "primary": true,
+        "truth": "compatible",
+        "seed": 4261073945,
+        "seed_nonce": 0,
+        "index": 3
+      },
+      "compatible": 505,
+      "N": 512,
+      "label_counts": {
+        "absent_or_weak": 7,
+        "core_compatible": 505
+      },
+      "lower": 0.9656414997196294,
+      "upper": 0.9962969933160012,
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "retain_a0.8_s1",
+        "kind": "signal",
+        "N": 512,
+        "amplitude": 0.8,
+        "scale": 1.0,
+        "primary": true,
+        "truth": "compatible",
+        "seed": 3942126243,
+        "seed_nonce": 0,
+        "index": 4
+      },
+      "compatible": 511,
+      "N": 512,
+      "label_counts": {
+        "core_compatible": 511,
+        "shape_mismatch": 1
+      },
+      "lower": 0.9846959122820739,
+      "upper": 0.9999934787297293,
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "retain_a0.8_s1.5",
+        "kind": "signal",
+        "N": 512,
+        "amplitude": 0.8,
+        "scale": 1.5,
+        "primary": true,
+        "truth": "compatible",
+        "seed": 17038512,
+        "seed_nonce": 0,
+        "index": 5
+      },
+      "compatible": 512,
+      "N": 512,
+      "label_counts": {
+        "core_compatible": 512
+      },
+      "lower": 0.9889216221001368,
+      "upper": 1.0,
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "retain_a1_s0.75",
+        "kind": "signal",
+        "N": 512,
+        "amplitude": 1.0,
+        "scale": 0.75,
+        "primary": true,
+        "truth": "compatible",
+        "seed": 2421528531,
+        "seed_nonce": 0,
+        "index": 6
+      },
+      "compatible": 512,
+      "N": 512,
+      "label_counts": {
+        "core_compatible": 512
+      },
+      "lower": 0.9889216221001368,
+      "upper": 1.0,
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "retain_a1_s1",
+        "kind": "signal",
+        "N": 512,
+        "amplitude": 1.0,
+        "scale": 1.0,
+        "primary": true,
+        "truth": "compatible",
+        "seed": 3532916212,
+        "seed_nonce": 0,
+        "index": 7
+      },
+      "compatible": 512,
+      "N": 512,
+      "label_counts": {
+        "core_compatible": 512
+      },
+      "lower": 0.9889216221001368,
+      "upper": 1.0,
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "retain_a1_s1.5",
+        "kind": "signal",
+        "N": 512,
+        "amplitude": 1.0,
+        "scale": 1.5,
+        "primary": true,
+        "truth": "compatible",
+        "seed": 1786272021,
+        "seed_nonce": 0,
+        "index": 8
+      },
+      "compatible": 512,
+      "N": 512,
+      "label_counts": {
+        "core_compatible": 512
+      },
+      "lower": 0.9889216221001368,
+      "upper": 1.0,
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "retain_a1.2_s0.75",
+        "kind": "signal",
+        "N": 512,
+        "amplitude": 1.2,
+        "scale": 0.75,
+        "primary": true,
+        "truth": "compatible",
+        "seed": 892353788,
+        "seed_nonce": 0,
+        "index": 9
+      },
+      "compatible": 511,
+      "N": 512,
+      "label_counts": {
+        "core_compatible": 511,
+        "shape_mismatch": 1
+      },
+      "lower": 0.9846959122820739,
+      "upper": 0.9999934787297293,
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "retain_a1.2_s1",
+        "kind": "signal",
+        "N": 512,
+        "amplitude": 1.2,
+        "scale": 1.0,
+        "primary": true,
+        "truth": "compatible",
+        "seed": 1906962143,
+        "seed_nonce": 0,
+        "index": 10
+      },
+      "compatible": 511,
+      "N": 512,
+      "label_counts": {
+        "core_compatible": 511,
+        "shape_mismatch": 1
+      },
+      "lower": 0.9846959122820739,
+      "upper": 0.9999934787297293,
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "retain_a1.2_s1.5",
+        "kind": "signal",
+        "N": 512,
+        "amplitude": 1.2,
+        "scale": 1.5,
+        "primary": true,
+        "truth": "compatible",
+        "seed": 1047601526,
+        "seed_nonce": 0,
+        "index": 11
+      },
+      "compatible": 512,
+      "N": 512,
+      "label_counts": {
+        "core_compatible": 512
+      },
+      "lower": 0.9889216221001368,
+      "upper": 1.0,
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "weak",
+        "kind": "signal",
+        "N": 512,
+        "amplitude": 0.2,
+        "scale": 1.0,
+        "primary": true,
+        "truth": "reject",
+        "seed": 1345029500,
+        "seed_nonce": 0,
+        "index": 12
+      },
+      "compatible": 2,
+      "N": 512,
+      "label_counts": {
+        "absent_or_weak": 510,
+        "core_compatible": 2
+      },
+      "lower": 0.00016412884009134836,
+      "upper": 0.018944307766272477,
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "narrow",
+        "kind": "signal",
+        "N": 512,
+        "amplitude": 1.0,
+        "scale": 0.25,
+        "primary": true,
+        "truth": "reject",
+        "seed": 53753182,
+        "seed_nonce": 0,
+        "index": 13
+      },
+      "compatible": 0,
+      "N": 512,
+      "label_counts": {
+        "absent_or_weak": 512
+      },
+      "lower": 0.0,
+      "upper": 0.011078377899863205,
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "broad",
+        "kind": "signal",
+        "N": 512,
+        "amplitude": 1.0,
+        "scale": 3.0,
+        "primary": true,
+        "truth": "reject",
+        "seed": 1288458187,
+        "seed_nonce": 0,
+        "index": 14
+      },
+      "compatible": 0,
+      "N": 512,
+      "label_counts": {
+        "deformed_scale": 512
+      },
+      "lower": 0.0,
+      "upper": 0.011078377899863205,
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "inverted",
+        "kind": "signal",
+        "N": 512,
+        "amplitude": -1.0,
+        "scale": 1.0,
+        "primary": true,
+        "truth": "reject",
+        "seed": 3378926789,
+        "seed_nonce": 0,
+        "index": 15
+      },
+      "compatible": 0,
+      "N": 512,
+      "label_counts": {
+        "shape_mismatch": 512
+      },
+      "lower": 0.0,
+      "upper": 0.011078377899863205,
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "split",
+        "kind": "split",
+        "N": 512,
+        "amplitude": 1.0,
+        "scale": 1.0,
+        "primary": true,
+        "truth": "reject",
+        "seed": 1168501181,
+        "seed_nonce": 0,
+        "index": 16
+      },
+      "compatible": 0,
+      "N": 512,
+      "label_counts": {
+        "ambiguous_multiple_cores": 512
+      },
+      "lower": 0.0,
+      "upper": 0.011078377899863205,
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "double_noise_sensitivity",
+        "kind": "signal",
+        "N": 512,
+        "amplitude": 1.0,
+        "scale": 1.0,
+        "noise_scale": 2.0,
+        "primary": false,
+        "seed": 2743171745,
+        "seed_nonce": 0,
+        "index": 17
+      },
+      "compatible": 503,
+      "N": 512,
+      "label_counts": {
+        "absent_or_weak": 9,
+        "core_compatible": 503
+      }
+    }
+  ],
+  "elapsed_seconds": 5.035276700014947,
+  "source_hashes": {
+    "src/mg161_local_shape.py": "c3d1f9535e4adbc34eb6c7b776deeb695c15ee1573e8561954bb7689a6757fc3",
+    "src/run_mg161_shape.py": "c4361298914e51616bebac6a2ae667d65780702632590f4f56d07eb7532ed778",
+    "spec/MG161_noise_aware_shape.md": "bdf37674bddd193ad0d3740936a86976a325b670da3b58bc7250e2681412cfe4"
+  },
+  "scope": "Conditional stationary colored-Gaussian instrument benchmark; not real-trajectory survival qualification or MG160-P1 rescore."
+}

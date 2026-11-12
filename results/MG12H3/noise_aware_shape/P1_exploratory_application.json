@@ -1,0 +1,200 @@
+{
+  "exploratory": true,
+  "jobs": [
+    {
+      "id": "prepared_r0",
+      "condition": "prepared",
+      "outcomes": [
+        {
+          "side": 0,
+          "compatible_frames": 101,
+          "all_frames_compatible": true,
+          "first_noncompatible_time": null,
+          "final_label": "core_compatible",
+          "final_amplitude": 1.0431689772947343,
+          "final_scale": 1.0
+        },
+        {
+          "side": 1,
+          "compatible_frames": 101,
+          "all_frames_compatible": true,
+          "first_noncompatible_time": null,
+          "final_label": "core_compatible",
+          "final_amplitude": 1.0485195082959735,
+          "final_scale": 1.0
+        }
+      ]
+    },
+    {
+      "id": "prepared_r1",
+      "condition": "prepared",
+      "outcomes": [
+        {
+          "side": 0,
+          "compatible_frames": 101,
+          "all_frames_compatible": true,
+          "first_noncompatible_time": null,
+          "final_label": "core_compatible",
+          "final_amplitude": 0.8155836852012652,
+          "final_scale": 1.125
+        },
+        {
+          "side": 1,
+          "compatible_frames": 101,
+          "all_frames_compatible": true,
+          "first_noncompatible_time": null,
+          "final_label": "core_compatible",
+          "final_amplitude": 0.8275477357802112,
+          "final_scale": 1.125
+        }
+      ]
+    },
+    {
+      "id": "prepared_r2",
+      "condition": "prepared",
+      "outcomes": [
+        {
+          "side": 0,
+          "compatible_frames": 101,
+          "all_frames_compatible": true,
+          "first_noncompatible_time": null,
+          "final_label": "core_compatible",
+          "final_amplitude": 1.0468226316934355,
+          "final_scale": 1.0
+        },
+        {
+          "side": 1,
+          "compatible_frames": 101,
+          "all_frames_compatible": true,
+          "first_noncompatible_time": null,
+          "final_label": "core_compatible",
+          "final_amplitude": 1.0301164464993207,
+          "final_scale": 1.0
+        }
+      ]
+    },
+    {
+      "id": "prepared_r3",
+      "condition": "prepared",
+      "outcomes": [
+        {
+          "side": 0,
+          "compatible_frames": 101,
+          "all_frames_compatible": true,
+          "first_noncompatible_time": null,
+          "final_label": "core_compatible",
+          "final_amplitude": 1.070796741009811,
+          "final_scale": 1.0
+        },
+        {
+          "side": 1,
+          "compatible_frames": 101,
+          "all_frames_compatible": true,
+          "first_noncompatible_time": null,
+          "final_label": "core_compatible",
+          "final_amplitude": 1.0719631118393407,
+          "final_scale": 1.0
+        }
+      ]
+    },
+    {
+      "id": "homogeneous_r0",
+      "condition": "homogeneous",
+      "outcomes": [
+        {
+          "side": 0,
+          "compatible_frames": 0,
+          "all_frames_compatible": false,
+          "first_noncompatible_time": 0.0,
+          "final_label": "absent_or_weak",
+          "final_amplitude": 0.2642266021398815,
+          "final_scale": 0.875
+        },
+        {
+          "side": 1,
+          "compatible_frames": 0,
+          "all_frames_compatible": false,
+          "first_noncompatible_time": 0.0,
+          "final_label": "absent_or_weak",
+          "final_amplitude": 0.29357509103674745,
+          "final_scale": 0.875
+        }
+      ]
+    },
+    {
+      "id": "homogeneous_r1",
+      "condition": "homogeneous",
+      "outcomes": [
+        {
+          "side": 0,
+          "compatible_frames": 0,
+          "all_frames_compatible": false,
+          "first_noncompatible_time": 0.0,
+          "final_label": "absent_or_weak",
+          "final_amplitude": 0.5400446426651324,
+          "final_scale": 0.625
+        },
+        {
+          "side": 1,
+          "compatible_frames": 0,
+          "all_frames_compatible": false,
+          "first_noncompatible_time": 0.0,
+          "final_label": "absent_or_weak",
+          "final_amplitude": 0.511686413772544,
+          "final_scale": 0.625
+        }
+      ]
+    },
+    {
+      "id": "homogeneous_r2",
+      "condition": "homogeneous",
+      "outcomes": [
+        {
+          "side": 0,
+          "compatible_frames": 0,
+          "all_frames_compatible": false,
+          "first_noncompatible_time": 0.0,
+          "final_label": "absent_or_weak",
+          "final_amplitude": 0.5001546591314454,
+          "final_scale": 0.625
+        },
+        {
+          "side": 1,
+          "compatible_frames": 0,
+          "all_frames_compatible": false,
+          "first_noncompatible_time": 0.0,
+          "final_label": "absent_or_weak",
+          "final_amplitude": 0.503913275373284,
+          "final_scale": 0.625
+        }
+      ]
+    },
+    {
+      "id": "homogeneous_r3",
+      "condition": "homogeneous",
+      "outcomes": [
+        {
+          "side": 0,
+          "compatible_frames": 0,
+          "all_frames_compatible": false,
+          "first_noncompatible_time": 0.0,
+          "final_label": "absent_or_weak",
+          "final_amplitude": 0.35556279365722426,
+          "final_scale": 0.875
+        },
+        {
+          "side": 1,
+          "compatible_frames": 0,
+          "all_frames_compatible": false,
+          "first_noncompatible_time": 0.0,
+          "final_label": "absent_or_weak",
+          "final_amplitude": 0.3323617142141364,
+          "final_scale": 0.875
+        }
+      ]
+    }
+  ],
+  "noise_scale_fixed": 1.0,
+  "scope": "Post-result new-instrument compatibility on previously seen P1 data. Not held-out real trajectories, not a persistence rescore; original0/4continuous-retention result stays unchanged.",
+  "elapsed_seconds": 0.3641337000008207
+}

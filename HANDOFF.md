@@ -1,3 +1,7 @@
+# Current handoff - MG161 measurement benchmark complete
+
+Local weightedtemplatebank+syntheticnoisecalibration passedall15registered conditional-Gaussian validationrequirements. Null5/4096upper.00359526<.01;positive98.6328-100%recall;54directfit/15tailboundrecompute passed. No newModelGtrajectories;benchmark5.03528s<300,oneworker/thread1. Fullsyntheticfields ignored local_raw/MG161_noise_shape (~52.2MB),compactexports onlypublic. ExploratoryalreadyseenP1 newinstrument findsall101frames compatible inall4preparedpairs/both ticks,nohomogeneouscompatibleframes. OriginalP1globalmetricnegative resultandclosurepending unchanged;notreal-noise/physical survivalproof. Needoff-grid/boundary/spectrumuncertainty/heldoutrealnoise validation beforelongstudy. Report results/MG12H3/noise_aware_shape/MG161_noise_aware_shape_results.md. Publishcompactresults+verify;no newmodelrunapproved. Active ModelG_Public; P1raw siblingarchive remainslocal.
+
 # Current handoff - MG161 noise-aware shape benchmark prepared
 
 PI authorizes noise-awaremeasurement. Source/spec/seedplan mustpublish before freshsyntheticnoise draws. Localtemplatebank+noise calibration, held-outconditionalGaussian benchmark with15primarycases;300soneworker/thread1, no ModelG runs/noP1rescore. P1 data allalreadyseen; newsyntheticvalidationonlyheldout. Source src/run_mg161_shape.py plan/run, spec/MG161_noise_aware_shape.md. Fullfields ignored local_raw/MG161_noise_shape. If anycasefailsqualification, preserve/blockdependentP1application;no thresholdtuning. MG160-P1closurepending.
