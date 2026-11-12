@@ -48,4 +48,8 @@ if __name__=='__main__':
     if sys.argv[1]=='--worker':worker(json.loads(sys.argv[2]),sys.argv[3])
     elif sys.argv[1]=='register':register()
     elif sys.argv[1]=='run':run(int(sys.argv[2]))
+    elif sys.argv[1]=='run-all':
+        for session in (1,2,3):
+            run(session)
+            if read(BASE/f'session_{session}_attempt.json')['status']!='COMPLETE':break
     else:raise ValueError('Choose register, run SESSION, or controller worker')
