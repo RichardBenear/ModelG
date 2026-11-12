@@ -1,0 +1,13 @@
+{
+  "jobs": [
+    {
+      "id": "inactive_fixture",
+      "condition": "prepared",
+      "seed": 0,
+      "sentinel": true
+    }
+  ],
+  "source_hashes": {
+    "fixture_only": "inactive/no_random_marks"
+  }
+}

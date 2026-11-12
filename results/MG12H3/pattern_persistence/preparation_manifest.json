@@ -1,0 +1,865 @@
+{
+  "files": {
+    "coherence_measurement_v1.py": {
+      "bytes": 3327,
+      "sha256": "6c2d66489819239ad498b64b684201334cf2000e60f55df06e8caad6e9d7bf14"
+    },
+    "MG12H3_pattern_persistence_readiness.md": {
+      "bytes": 6109,
+      "sha256": "ee89fcf7236357213407f7fb60cc57663b9ba0286e3892e3cd065d37c927f070"
+    },
+    "preparation_results.json": {
+      "bytes": 42541,
+      "sha256": "efe0c6d722de1ca837acff92e6291078eaa5626e82f96ed0ea2184d7870da9af"
+    },
+    "preparation_results_v1.json": {
+      "bytes": 7372,
+      "sha256": "8be340bda1c4ad64727235bdcdb357d1bea809d1a780576ab8116807d4da8959"
+    },
+    "preparation_results_v2.json": {
+      "bytes": 29712,
+      "sha256": "0b24ae9b7b755e96e2ece951697e59904ba897aae72ec0a243e599caede5ddb9"
+    },
+    "prepared_inputs.npz": {
+      "bytes": 22236,
+      "sha256": "ccf9c00393f39b390ac60314d15594cd6e4f55cb334d828f7b7af4474462ec43"
+    },
+    "separate_measurement_recomputation.json": {
+      "bytes": 216,
+      "sha256": "4a601d2a5d0c0967fcac45e7be6d7dddfdc9025fba57bee1d6c1c7eafb0667ec"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_000.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_001.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_002.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_003.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_004.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_005.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_006.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_007.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_008.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_009.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_010.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_011.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_012.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_013.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_014.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_015.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_016.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_017.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_018.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_019.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_020.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_021.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_022.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_023.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_024.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_025.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_026.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_027.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_028.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_029.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_030.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_031.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_032.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_033.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_034.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_035.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_036.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_037.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_038.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_039.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_040.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_041.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_042.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_043.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_044.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_045.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_046.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_047.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_048.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_049.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_050.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_051.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_052.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_053.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_054.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_055.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_056.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_057.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_058.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_059.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_060.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_061.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_062.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_063.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_064.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_065.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_066.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_067.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_068.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_069.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_070.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_071.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_072.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_073.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_074.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_075.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_076.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_077.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_078.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_079.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_080.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_081.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_082.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_083.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_084.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_085.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_086.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_087.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_088.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_089.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_090.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_091.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_092.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_093.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_094.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_095.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_096.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_097.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_098.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/checkpoint_099.npz": {
+      "bytes": 1778,
+      "sha256": "9fedadec8adb3559fc5d8d8b7b355223c162cc8a4ac197c85f95d58216fdc48f"
+    },
+    "writer_fixture/inactive_fixture/metadata.json": {
+      "bytes": 198,
+      "sha256": "7e09199930a0b1e07fc5d1bc17cc2f60158545f9aa7940dd2e84736449750bf1"
+    },
+    "writer_fixture/inactive_fixture/metrics.json": {
+      "bytes": 87087,
+      "sha256": "ec5245ab47ecfe1bca5e72add199cdd5cbb42b45ecc61852ed0fdbd60c145c6e"
+    },
+    "writer_fixture/inactive_fixture/observations.npz": {
+      "bytes": 1352,
+      "sha256": "7015a22a2923687f6221abef738e2f9acecdafeb1043d719289b15b97a34907e"
+    },
+    "writer_fixture/inactive_fixture/progress.json": {
+      "bytes": 70,
+      "sha256": "fdad5ccbb85e599af072505516ded2b3725f4b660c2936031dc59b8ed7a4af91"
+    },
+    "writer_fixture/inactive_fixture/trace_000.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_001.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_002.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_003.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_004.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_005.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_006.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_007.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_008.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_009.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_010.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_011.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_012.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_013.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_014.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_015.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_016.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_017.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_018.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_019.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_020.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_021.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_022.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_023.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_024.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_025.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_026.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_027.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_028.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_029.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_030.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_031.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_032.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_033.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_034.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_035.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_036.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_037.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_038.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_039.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_040.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_041.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_042.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_043.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_044.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_045.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_046.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_047.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_048.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_049.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_050.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_051.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_052.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_053.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_054.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_055.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_056.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_057.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_058.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_059.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_060.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_061.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_062.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_063.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_064.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_065.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_066.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_067.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_068.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_069.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_070.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_071.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_072.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_073.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_074.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_075.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_076.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_077.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_078.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_079.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_080.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_081.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_082.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_083.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_084.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_085.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_086.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_087.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_088.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_089.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_090.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_091.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_092.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_093.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_094.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_095.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_096.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_097.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_098.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture/trace_099.npz": {
+      "bytes": 2002,
+      "sha256": "488275706abf5985ace5248f4168a563002481a46af7896bc36d86dfc06f7d4e"
+    },
+    "writer_fixture/inactive_fixture.json": {
+      "bytes": 273,
+      "sha256": "e368acc6fa27bf92ba9fd35fe331ea39bb7c0d3a7615e64073db8cf157ef99b0"
+    },
+    "writer_fixture/P1_plan.json": {
+      "bytes": 221,
+      "sha256": "020b4ffa8306087d962e615472e7761271fcd8aeef4a83f472f53a7d81ca489d"
+    },
+    "writer_fixture/prepared_inputs.npz": {
+      "bytes": 825,
+      "sha256": "a1564664e3b85340e038496d2545cdbc2a798b6e35377df7028e3455b724518b"
+    },
+    "writer_fixture_results.json": {
+      "bytes": 268,
+      "sha256": "13b615d6448ba49282a176d8359f3eaace2894c3ffc819197d6c43fb3bb3fd23"
+    }
+  },
+  "scope": "P0/saved/deterministic fixtures, no stochastic P1 production."
+}

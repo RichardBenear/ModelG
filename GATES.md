@@ -2520,3 +2520,8 @@ All320freshpairs/640chains complete,256coarse+64finer;24/24registered paired-t/B
 ## MG159 - PI closure of MG158 accuracy qualification
 
 PI: "Go ahead and close the boundary accuracy study. Then proceed to make a pattern persistence study as you suggested." MG158 CLOSED with both candidate ticks equivalent within registered24measurement scope; no rescoring, no continuum/persistence/physicalclaims. closure.json andpost-result report annotation preserve original0472542 publication. MG156/MG157closure remainsseparate. Authorize preparingMG160 pattern-persistence design/measurement/cost packet; concrete futureproductioncriteria/budgetapproval stillrequired.
+
+
+## MG160 - pattern-persistence study prepared, P1 approval pending
+
+AfterMG159closure, PI requests making persistence study. P0 saved-only/deterministic preparation passed14measurement cases, FFT cross-check and inactive100checkpoint/101frame writer fixture (zero events/unchangedRNG). No new scientificdraws. Plan stages P0measurement,P1earlycoherence/noise,T.1 paired.0001/.00002 (4prepared+4massmatchedhomogeneouspairs), dependentlongerdesign thenhistoricalT15. Propose amplitude>=.5initial/correlation>=.8 andextent[.5,2]initial; coherence/shape/displacement separate, no physicalparticleidentity. Saved initial/controlchecks pass; archivedlimitshape interpretation descriptive,newdiagnostic notrescore. P1 forecast1.75141h at8workers,cap100000worker-seconds+1800activeparent,12000/job,2GB,2sentinels; criteria/budgetapprovalpending,no registration/run. Full15unit8pair projection9.51854days,notauthorized. Report results/MG12H3/pattern_persistence/MG12H3_pattern_persistence_readiness.md; spec/MG12H3_pattern_persistence_plan.md.
