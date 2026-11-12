@@ -1,3 +1,7 @@
+# Current handoff - MG160-P1 APPROVED, registration before launch
+
+PI explicitly approves firstpilot criteria/budget.8pairs(4prepared/4massmatchedhomogeneous),T.1/deltas.0001/.00002;8workers/thread1,100000worker-seconds+1800activeparent,12000/job,2GB. Criteria .5amplitude/.8correlation/extent[.5,2],no physicalparticleclaim. Approval results/MG12H3/pattern_persistence/P1_approval.json;register/pushsource-seeds before python src/run_mg160_persistence.py run. No retry/extension. Laterstages notapproved.
+
 # Current handoff - MG159 accuracy CLOSED; MG160 persistence READY/P1pending
 
 PI closed MG158 accuracy asMG159;closure.json/report annotation preserve original0472542 scientificrecord. MG160 P0 measurement/controls/cost preparation complete:14deterministic checks, FFTrecompute, inactive100checkpointframing passed,no newscientificdraws. Plan preparedpattern persistence with4prepared+4massmatchedhomogeneouscoupledpairs,T.1/deltas.0001/.00002. Proposed diagnostic .5amplitude/.8correlation/extent[.5,2], notphysicalparticleidentity. Forecast1.75141h/8workers;cap100000worker-seconds+1800activeparent,12000/job,2GB. Concrete P1criteria/budgetapprovalneeded;realBASE P1_approval/P1_plan absent. Source src/run_mg160_persistence.py register/run afterapproval+publish. Report results/MG12H3/pattern_persistence/MG12H3_pattern_persistence_readiness.md;fullT15~9.52days for8pairs notauthorized. No nextrunstarted.

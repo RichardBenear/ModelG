@@ -1,0 +1,129 @@
+{
+  "approval": {
+    "stage": "MG160-P1",
+    "PI": "Richard Benear",
+    "authorization": "I approve the MG160 first-pilot criteria and budget. Proceed.",
+    "pairs": 8,
+    "prepared_pairs": 4,
+    "homogeneous_pairs": 4,
+    "worker_cap": 100000,
+    "parent_cap": 1800,
+    "job_cap": 12000,
+    "max_workers": 8,
+    "threads_per_library": 1,
+    "storage_reserve_GB": 2,
+    "criteria": {
+      "amplitude_fraction_min": 0.5,
+      "correlation_min": 0.8,
+      "relative_extent_min": 0.5,
+      "relative_extent_max": 2.0
+    },
+    "duration": 0.1,
+    "deltas": [
+      0.0001,
+      2e-05
+    ],
+    "observation": 0.001,
+    "scope": "Approve the published MG160 first-pilot packet only; later stages require separate decisions.",
+    "specification": "spec/MG12H3_pattern_persistence_plan.md",
+    "readiness": "results/MG12H3/pattern_persistence/MG12H3_pattern_persistence_readiness.md",
+    "external_review": "Not requested; optional under standing protocol."
+  },
+  "jobs": [
+    {
+      "id": "prepared_r0",
+      "condition": "prepared",
+      "replicate": 0,
+      "seed": 674682013,
+      "seed_nonce": 0,
+      "sentinel": true
+    },
+    {
+      "id": "prepared_r1",
+      "condition": "prepared",
+      "replicate": 1,
+      "seed": 3394654023,
+      "seed_nonce": 0,
+      "sentinel": false
+    },
+    {
+      "id": "prepared_r2",
+      "condition": "prepared",
+      "replicate": 2,
+      "seed": 2048109974,
+      "seed_nonce": 0,
+      "sentinel": false
+    },
+    {
+      "id": "prepared_r3",
+      "condition": "prepared",
+      "replicate": 3,
+      "seed": 4005265398,
+      "seed_nonce": 0,
+      "sentinel": false
+    },
+    {
+      "id": "homogeneous_r0",
+      "condition": "homogeneous",
+      "replicate": 0,
+      "seed": 2589760208,
+      "seed_nonce": 0,
+      "sentinel": true
+    },
+    {
+      "id": "homogeneous_r1",
+      "condition": "homogeneous",
+      "replicate": 1,
+      "seed": 211829805,
+      "seed_nonce": 0,
+      "sentinel": false
+    },
+    {
+      "id": "homogeneous_r2",
+      "condition": "homogeneous",
+      "replicate": 2,
+      "seed": 3340045713,
+      "seed_nonce": 0,
+      "sentinel": false
+    },
+    {
+      "id": "homogeneous_r3",
+      "condition": "homogeneous",
+      "replicate": 3,
+      "seed": 2065379337,
+      "seed_nonce": 0,
+      "sentinel": false
+    }
+  ],
+  "source_hashes": {
+    "src/run_mg160_persistence.py": "5ff2b8f80a55e0ecce5bdd980dafc5006e35a4d41f4ebefaec4e616f8eb27fb4",
+    "src/mg12h3_pattern_persistence.py": "63f238bed53489793e10dd8e1aae602ac4659363b8fffeff4dc8cbe376eff617",
+    "src/prepare_mg160_persistence.py": "8e4e4aae31aae845be5412337b975ef6b64357f5c2aef6b8913eab9cbc9b4b06",
+    "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+    "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+    "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+    "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+    "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+    "src/measure.py": "23f0bf08df1bda3f0669869ab92af615ea0462bc5e7bc24b3a187a8f040fb409",
+    "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+    "spec/MG12H3_pattern_persistence_plan.md": "be9ad9f8b48bb3dbcc347f16732a5c3e6723152d5e5e813c30204a94303d0947",
+    "results/MG12H3/pattern_persistence/prepared_inputs.npz": "ccf9c00393f39b390ac60314d15594cd6e4f55cb334d828f7b7af4474462ec43",
+    "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+  },
+  "duration": 0.1,
+  "segment": 0.001,
+  "deltas": [
+    0.0001,
+    2e-05
+  ],
+  "workers": 8,
+  "worker_cap": 100000,
+  "parent_cap": 1800,
+  "job_cap": 12000,
+  "environment": {
+    "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+    "numpy": "2.2.4",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numerical_library_threads": 1
+  }
+}
