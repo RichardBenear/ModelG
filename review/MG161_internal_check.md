@@ -1,0 +1,7 @@
+# MG161 pre-draw challenge
+
+A fixed local template model is a new instrument, not a cure demonstrated by a favorable P1 image. Keep P1 outcome and closure unchanged. Do not fit the template/window/scales to late prepared trajectories. Calibrate the full position/scale search on independent synthetic nulls to include maximization bias. Local constant-background removal avoids penalizing offsets but can hide broad components; rejected scale/inversion/split tests address some limitations, not all possible deformations.
+
+Two homogeneous paths cannot establish a true covariance law or Gaussian stationarity. All real P1 data were already seen: only newly generated conditional-noise validation draws are held out. Conditional binomial bounds and rank calibration do not establish real-path false-positive coverage. Model-family sensitivity, weak/near-boundary and double-noise performance remain explicit. Failing a prescribed case must block broad qualification and the dependent P1 application; no threshold tuning or case removal after results. No claims about quantum fields, energy, identity or long lifetimes.
+
+Direct noiseless scale/lag, offset/flat and FFT-vs-direct scalar checks before noise. Preserve complete local synthetic fields, not only a hash. One-worker300second cap is a bounded development task authorized by PI instruction, not expensive model production. Raw stays ignored locally; compact exports fit the public payload guard. Shared source/noise model and same author are disclosed.

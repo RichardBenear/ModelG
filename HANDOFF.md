@@ -1,3 +1,7 @@
+# Current handoff - MG161 noise-aware shape benchmark prepared
+
+PI authorizes noise-awaremeasurement. Source/spec/seedplan mustpublish before freshsyntheticnoise draws. Localtemplatebank+noise calibration, held-outconditionalGaussian benchmark with15primarycases;300soneworker/thread1, no ModelG runs/noP1rescore. P1 data allalreadyseen; newsyntheticvalidationonlyheldout. Source src/run_mg161_shape.py plan/run, spec/MG161_noise_aware_shape.md. Fullfields ignored local_raw/MG161_noise_shape. If anycasefailsqualification, preserve/blockdependentP1application;no thresholdtuning. MG160-P1closurepending.
+
 # Active checkout and PI storage instruction — 2026-11-12
 
 Use this ModelG_Public checkout for coding/publication. Full MG160-P1 raw data remain in sibling ModelG_MG10/results/MG12H3/pattern_persistence, local branch archive/mg160-p1-local-raw; immutable raw commit5dcf430. Never push that archive branch. The1.26GB push was canceled and remote main confirmed unchanged at1fc1dfb; Compact report published at3a33b60, verified; about1.9MBnewfilecontent, fullrawexcluded frompublictree/history. See P1_compact_publication_verification.json. PI instruction: "yes, keep the large data locally". Public artifacts are report/figures/code/compact decisions/plot exports/manifests only; full causal reproduction needs the local archive. See RESEARCH_PROTOCOL storage policy and P1_local_archive.json. MG160-P1 report complete, closure pending, no new run.

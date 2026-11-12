@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "noiseless_scale_shift_cases": 3,
+  "offset_and_flat": true,
+  "direct_FFT_dot_checks": 92,
+  "initial_radius95": 3.2,
+  "pre_draw_note": "A missing CLI sys import was corrected before plan generation/noise draws; no benchmark retry."
+}

@@ -1,0 +1,238 @@
+{
+  "stage": "MG161",
+  "authorization": "go ahead with the noise-aware shape measurement.",
+  "scope": "bounded new-instrument development/known-truth synthetic benchmark; not a persistence rescore or new Model G simulation",
+  "source_hashes": {
+    "src/mg161_local_shape.py": "c3d1f9535e4adbc34eb6c7b776deeb695c15ee1573e8561954bb7689a6757fc3",
+    "src/run_mg161_shape.py": "c4361298914e51616bebac6a2ae667d65780702632590f4f56d07eb7532ed778",
+    "spec/MG161_noise_aware_shape.md": "bdf37674bddd193ad0d3740936a86976a325b670da3b58bc7250e2681412cfe4"
+  },
+  "inputs": {
+    "prepared_inputs.npz": "ccf9c00393f39b390ac60314d15594cd6e4f55cb334d828f7b7af4474462ec43",
+    "P1_production\\homogeneous_r0\\observations.npz": "7482267cfa852e3ffae9fedd61619d661a4a20bb817cc13b5aae052771766e76",
+    "P1_production\\homogeneous_r1\\observations.npz": "f0578cf9d81b288e80bbb913bc12f04dfaf6c21f7e15adc658673be1b1702ac1"
+  },
+  "cases": [
+    {
+      "id": "cal_null",
+      "kind": "null",
+      "N": 1024,
+      "seed": 2334799892,
+      "seed_nonce": 0,
+      "index": 0
+    },
+    {
+      "id": "cal_shape",
+      "kind": "signal",
+      "N": 1024,
+      "amplitude": 1.0,
+      "scale": 1.0,
+      "seed": 2168088204,
+      "seed_nonce": 0,
+      "index": 1
+    },
+    {
+      "id": "null",
+      "kind": "null",
+      "N": 4096,
+      "primary": true,
+      "truth": "reject",
+      "seed": 2002823062,
+      "seed_nonce": 0,
+      "index": 2
+    },
+    {
+      "id": "retain_a0.8_s0.75",
+      "kind": "signal",
+      "N": 512,
+      "amplitude": 0.8,
+      "scale": 0.75,
+      "primary": true,
+      "truth": "compatible",
+      "seed": 4261073945,
+      "seed_nonce": 0,
+      "index": 3
+    },
+    {
+      "id": "retain_a0.8_s1",
+      "kind": "signal",
+      "N": 512,
+      "amplitude": 0.8,
+      "scale": 1.0,
+      "primary": true,
+      "truth": "compatible",
+      "seed": 3942126243,
+      "seed_nonce": 0,
+      "index": 4
+    },
+    {
+      "id": "retain_a0.8_s1.5",
+      "kind": "signal",
+      "N": 512,
+      "amplitude": 0.8,
+      "scale": 1.5,
+      "primary": true,
+      "truth": "compatible",
+      "seed": 17038512,
+      "seed_nonce": 0,
+      "index": 5
+    },
+    {
+      "id": "retain_a1_s0.75",
+      "kind": "signal",
+      "N": 512,
+      "amplitude": 1.0,
+      "scale": 0.75,
+      "primary": true,
+      "truth": "compatible",
+      "seed": 2421528531,
+      "seed_nonce": 0,
+      "index": 6
+    },
+    {
+      "id": "retain_a1_s1",
+      "kind": "signal",
+      "N": 512,
+      "amplitude": 1.0,
+      "scale": 1.0,
+      "primary": true,
+      "truth": "compatible",
+      "seed": 3532916212,
+      "seed_nonce": 0,
+      "index": 7
+    },
+    {
+      "id": "retain_a1_s1.5",
+      "kind": "signal",
+      "N": 512,
+      "amplitude": 1.0,
+      "scale": 1.5,
+      "primary": true,
+      "truth": "compatible",
+      "seed": 1786272021,
+      "seed_nonce": 0,
+      "index": 8
+    },
+    {
+      "id": "retain_a1.2_s0.75",
+      "kind": "signal",
+      "N": 512,
+      "amplitude": 1.2,
+      "scale": 0.75,
+      "primary": true,
+      "truth": "compatible",
+      "seed": 892353788,
+      "seed_nonce": 0,
+      "index": 9
+    },
+    {
+      "id": "retain_a1.2_s1",
+      "kind": "signal",
+      "N": 512,
+      "amplitude": 1.2,
+      "scale": 1.0,
+      "primary": true,
+      "truth": "compatible",
+      "seed": 1906962143,
+      "seed_nonce": 0,
+      "index": 10
+    },
+    {
+      "id": "retain_a1.2_s1.5",
+      "kind": "signal",
+      "N": 512,
+      "amplitude": 1.2,
+      "scale": 1.5,
+      "primary": true,
+      "truth": "compatible",
+      "seed": 1047601526,
+      "seed_nonce": 0,
+      "index": 11
+    },
+    {
+      "id": "weak",
+      "kind": "signal",
+      "N": 512,
+      "amplitude": 0.2,
+      "scale": 1.0,
+      "primary": true,
+      "truth": "reject",
+      "seed": 1345029500,
+      "seed_nonce": 0,
+      "index": 12
+    },
+    {
+      "id": "narrow",
+      "kind": "signal",
+      "N": 512,
+      "amplitude": 1.0,
+      "scale": 0.25,
+      "primary": true,
+      "truth": "reject",
+      "seed": 53753182,
+      "seed_nonce": 0,
+      "index": 13
+    },
+    {
+      "id": "broad",
+      "kind": "signal",
+      "N": 512,
+      "amplitude": 1.0,
+      "scale": 3.0,
+      "primary": true,
+      "truth": "reject",
+      "seed": 1288458187,
+      "seed_nonce": 0,
+      "index": 14
+    },
+    {
+      "id": "inverted",
+      "kind": "signal",
+      "N": 512,
+      "amplitude": -1.0,
+      "scale": 1.0,
+      "primary": true,
+      "truth": "reject",
+      "seed": 3378926789,
+      "seed_nonce": 0,
+      "index": 15
+    },
+    {
+      "id": "split",
+      "kind": "split",
+      "N": 512,
+      "amplitude": 1.0,
+      "scale": 1.0,
+      "primary": true,
+      "truth": "reject",
+      "seed": 1168501181,
+      "seed_nonce": 0,
+      "index": 16
+    },
+    {
+      "id": "double_noise_sensitivity",
+      "kind": "signal",
+      "N": 512,
+      "amplitude": 1.0,
+      "scale": 1.0,
+      "noise_scale": 2.0,
+      "primary": false,
+      "seed": 2743171745,
+      "seed_nonce": 0,
+      "index": 17
+    }
+  ],
+  "cap_seconds": 300,
+  "workers": 1,
+  "threads": 1,
+  "environment": {
+    "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+    "numpy": "2.2.4",
+    "scipy": "1.16.1",
+    "rng": "PCG64"
+  },
+  "primary_bounds": 15,
+  "bound_alpha": 0.0033333333333333335,
+  "raw_location": "local_raw/MG161_noise_shape",
+  "threshold_calibration": "maximum of1024 separate null-search scores and maximum of1024 correct-template residuals; fixed before held-out cases"
+}

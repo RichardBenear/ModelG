@@ -2540,3 +2540,8 @@ Eightapprovedpairs/16marginalpaths complete,4prepared+4homogeneous;0/4prepared p
 ### MG160-P1 storage amendment at PI request
 
 PI: "yes, keep the large data locally". Canceled bulkpush; confirmed remote main still1fc1dfb. Retain complete1.26GB raw working files and immutable local Git archive5dcf430 on archive/mg160-p1-local-raw; preserve all scientific results. Publish compact report/figures/code/decision and plot exports plus raw hash manifest/local retention record only. Active checkout ModelG_Public, archive sibling ModelG_MG10. No remote force-push or deletion of historical published datasets. All next bulk archives stay local under the new policy.
+
+
+## MG161 - noise-aware local shape development authorized
+
+PI: "go ahead with the noise-aware shape measurement." Separate instrument; preserve MG160-P1 negative result/closurepending. Freeze local weighted23scale/500position fit, conditionalGaussian spectrum fromhomogeneousr0/r1finalcoarsefields,1024null+1024shape calibration and held-outsynthetic15primarycases beforedraws. AllcaseexactBonferroni CPbounds mustsupport prespecified detection/recall criteria for conditionalbenchmark qualification;failures block dependentP1application,noretries/tuning. One localworker/thread1,300elapsed-second developmentcap,no newModelGtrajectories. Fullsyntheticfields local_raw/MG161_noise_shape ignored;publishcompactfeatures/report/codeonly. Spec/MG161_noise_aware_shape.md.
