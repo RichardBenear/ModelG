@@ -1,3 +1,7 @@
+# Current handoff - MG157 full-horizon pilot RUNNING
+
+Registration3509d14 and controlsdf47bd7 published. Mixed unequal-tick exact controls8192pairs/4bounds and64segmentationpaths passed;161kernels separately recomputed. Production started with8localworkers/thread1,32jobs atT.01,8pairs per comparison per method. Controller session41825; inspect results/MG12H3/coupling_long_pilot/production/ledger.json andproduction_attempt.json. Ceiling18000worker-seconds;no retries. Oncomplete run python src/check_mg12h3_coupling_long.py, separately recompute analysis,write plain-language report,publishcompactraw andverify. Do not rerunproduction.
+
 # Current handoff - MG157 longer pilot approved
 
 PI authorizes longer paired test. Spec/source/seed plan frozen prospectively. Controls120s first, then32jobs/fullT.01 with8pairs per comparison per method. Ceiling18000worker-seconds+600activeparent, max8workers/thread1;forecast9920. Entry python src/mg12h3_coupling_long.py controls then run ifpassed. No retries/equivalence claim. MG156 closure stillpending.
