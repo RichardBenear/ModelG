@@ -78,3 +78,7 @@ All three fixed sessions completed without failed, replaced or retried jobs. Tot
 Close this bounded accuracy qualification, then prepare a longer pattern-persistence study with explicit survival, shape and drift measurements and a separately measured compute budget. Tick 0.0001 is the cheaper of the two qualified candidates and is reasonable for a pilot within the tested numerical setting; its agreement over much longer evolution must be checked prospectively rather than assumed. Retain the finer reference/control trajectories. No new simulation batch has been launched by this report.
 
 Recompute with `src/check_mg12h3_tick_accuracy.py`, `src/recompute_mg158_accuracy.py`, and `src/report_mg158.py`. Do not rerun production to replace samples. Specification: `spec/MG12H3_tick_accuracy_draft.md`.
+
+## PI closure — MG159
+
+Richard Benear signed off on this accuracy study: “Go ahead and close the boundary accuracy study.” The registered MG158 outcome is CLOSED within its stated scope. This post-result closure annotation changes no data, thresholds or classifications. The original result report and raw manifest remain preserved at commit0472542; closure.json records this disposition. The requested next work is a separate pattern-persistence study.

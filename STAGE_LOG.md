@@ -1415,3 +1415,8 @@ PI: "I approve of the run and the budget. Proceed." Approves concrete readiness 
 ### MG158 accuracy qualification results - EQUIVALENT within registered scope
 
 All320freshpairs/640chains complete,256coarse+64finer;24/24registered paired-t/Bonferroni intervals fully inside unchanged5%contrast/.05power margins atT.005/.01 againsttick.00002. Bothcandidates.0001/.00005 classifiedEQUIVALENT. Worstedgefractions .655517/.468483;notfullfield/continuum/longpersistenceequivalence.6400checkpointchainendpoints and13.8531million sentinel events audited;separate rawfield/Parseval/SSE/t-critical recomputation and24interval classifications agreed. Taildiagnostics retained,especially64pairpowers;95%coverage nominal/approximate,nosampleexclusionorrescore. All3sessions complete6.26802hwall,175446worker-seconds(48.7349coreh)<300000;max8workers/thread1,nofailed/replaced/retriedjobs. PIclosurepending. Report results/MG12H3/tick_accuracy/MG12H3_tick_accuracy_results.md. No nextrun.
+
+
+## MG159 - PI closure of MG158 accuracy qualification
+
+PI: "Go ahead and close the boundary accuracy study. Then proceed to make a pattern persistence study as you suggested." MG158 CLOSED with both candidate ticks equivalent within registered24measurement scope; no rescoring, no continuum/persistence/physicalclaims. closure.json andpost-result report annotation preserve original0472542 publication. MG156/MG157closure remainsseparate. Authorize preparingMG160 pattern-persistence design/measurement/cost packet; concrete futureproductioncriteria/budgetapproval stillrequired.
