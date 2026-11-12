@@ -1,3 +1,7 @@
+# Current handoff - MG158 accuracy RUNNING
+
+Approved registration5a41341 published beforedraws. Controller session19666 executing run-all:3fixedsessions of108/106/106jobs,320coupledpairs total. Results in results/MG12H3/tick_accuracy/session_{1,2,3};inspect session_N_attempt.json andsession_N/ledger.json. Max8localworkers/thread1,100000worker-seconds/session/300000total;no retries. Expected7.43h. Do not rerun registration orproduction. Onallcomplete run python src/check_mg12h3_tick_accuracy.py;independently recompute24paired intervals beforeplain-language report/publishingraw/verification. No resultsyet.
+
 # Current handoff - MG158 accuracy APPROVED / registration
 
 PI explicitly approves run andbudget.320freshcoupledpairs(256coarse/64finer),3fixedsessions,24primarypaired-t intervals;cap100000worker-seconds/session/300000total+1800activeparent,max8workers/thread1. Approval results/MG12H3/tick_accuracy/approval.json. Freeze/pushplan beforelaunch python src/mg12h3_tick_accuracy.py run-all;no retries. No resultsyet;MG156/MG157closureseparate.
