@@ -4,7 +4,7 @@ Both tested tick sizes met the accuracy criterion we set in advance: at the two 
 
 ## Registered result
 
-**EQUIVALENT for both candidate ticks within the registered scope.** All 24 primary intervals lie entirely inside their respective tolerance bands. PI closure remains pending. No margins, denominators, estimators or scoring rules were changed after seeing the data.
+**EQUIVALENT for both candidate ticks within the registered scope.** All 24 primary intervals lie entirely inside their respective tolerance bands. PI closure is recorded as MG159; see closure.json. No margins, denominators, estimators or scoring rules were changed after seeing the data.
 
 | Tick compared with 0.00002 | Fresh pairs | Registered classification | Largest interval edge / margin |
 |---|---:|---|---:|
