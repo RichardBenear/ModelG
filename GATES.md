@@ -2607,3 +2607,8 @@ All eight results, criteria and data are unchanged; nothing is rescored. These c
 ## MG164 - saved G/X/Y profile diagnosis
 
 PI approves4jointmeasurementprinciples and asks savedprofileexamination. Descriptiveonly,16016savedfields/3species,sharedXcenter/dilation;nonewmodeldraws/jointscore/rescore. PreparedXcoreremainsvisible,Ymoredistorted,Gsmallreferenceoverwhelmed;offcoreXYanticorrelation-.634278..-.568576atfirstXfailures. Backgroundstructured/noisecausenotidentified.96independentweightednormalequationchecks,16016Xresidualchecks,96compactsummarychecks passed. Report results/MG12H3/species_profile_diagnostic/MG164_species_profile_diagnosis.md. MG163NOTESTABLISHED unchanged/closurepending; jointinstrumentqualificationfutureseparatescope.
+
+
+## MG165 - multivariate instrument development NOT QUALIFIED
+
+PIauthorizesinstrument/analysis. Sharedgeometry3speciesGLS/commonamplitude/fullcovariance+componentguard. Frozenconditionalcalibration/validation beforedraws,noModelGpaths. v1nullcalibrationgeneratorbug invalidatesv1;allraw/provenanceretained,correctedv2registeredseparately,samecriteria/seed/cases,nothresholdtuning. v2failsmissing/displacedG/Y/multiplecoreandlateweak-intactrequirements;noqualifiedGXYpersistenceverdict. IndependentGLS142fits/directfullbank9cases/allvalidationlabelsandfractionsrecomputed. ExploratorysavedMG163applicationnotvalidation,rescoreforbidden. Report results/MG12H3/multivariate_instrument/v2/MG165_multivariate_results.md. Fullfields local only; futureidentifiabilityinstrument workrequiresseparatescope.

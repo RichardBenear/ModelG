@@ -1,0 +1,80 @@
+{
+  "application": [
+    {
+      "id": "prepared_r0",
+      "condition": "prepared",
+      "compatible_frames": [
+        921,
+        928
+      ],
+      "frames": 1001
+    },
+    {
+      "id": "prepared_r1",
+      "condition": "prepared",
+      "compatible_frames": [
+        796,
+        795
+      ],
+      "frames": 1001
+    },
+    {
+      "id": "prepared_r2",
+      "condition": "prepared",
+      "compatible_frames": [
+        823,
+        711
+      ],
+      "frames": 1001
+    },
+    {
+      "id": "prepared_r3",
+      "condition": "prepared",
+      "compatible_frames": [
+        859,
+        773
+      ],
+      "frames": 1001
+    },
+    {
+      "id": "homogeneous_r0",
+      "condition": "homogeneous",
+      "compatible_frames": [
+        16,
+        13
+      ],
+      "frames": 1001
+    },
+    {
+      "id": "homogeneous_r1",
+      "condition": "homogeneous",
+      "compatible_frames": [
+        24,
+        31
+      ],
+      "frames": 1001
+    },
+    {
+      "id": "homogeneous_r2",
+      "condition": "homogeneous",
+      "compatible_frames": [
+        24,
+        7
+      ],
+      "frames": 1001
+    },
+    {
+      "id": "homogeneous_r3",
+      "condition": "homogeneous",
+      "compatible_frames": [
+        1,
+        0
+      ],
+      "frames": 1001
+    }
+  ],
+  "independent_GLS_checks": 142,
+  "conditional_screen_passed": false,
+  "new_persistence_verdict": null,
+  "elapsed_seconds": 10.52654569997685
+}

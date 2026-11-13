@@ -47,3 +47,12 @@ results/MG8/full/
 
 # Public diagnostic JSON uses null for undefined variance ratios
 /results/MG12H3/species_profile_diagnostic/diagnostics.json
+
+# MG165 full decision JSON stays local; compact v2 gzip exports are public
+/results/MG12H3/multivariate_instrument/*_fits.json
+/results/MG12H3/multivariate_instrument/*_candidate.json
+/results/MG12H3/multivariate_instrument/r*_calibration.json
+/results/MG12H3/multivariate_instrument/benchmark.json
+/results/MG12H3/multivariate_instrument/analysis.json
+/results/MG12H3/multivariate_instrument/v2/*_fits.json
+/results/MG12H3/multivariate_instrument/v2/*_candidate.json
