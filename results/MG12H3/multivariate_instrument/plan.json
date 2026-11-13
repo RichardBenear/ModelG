@@ -1,0 +1,27 @@
+{
+  "source": {
+    "src/mg165_joint.py": "19a9de4d639ad199dede1bb93f52d959cf8a2493b695b2893f52fdc2643197f6",
+    "src/run_mg165_joint.py": "38aa4d9033841529b360b7edbfac622ffe9243213600a6b3a45998c6c07945b5",
+    "spec/MG165_multivariate_instrument.md": "97f8b66cc29e3eaae3a1c104e5f13a56a47070f5ee25c7839452ed18738b1f56"
+  },
+  "inputs": {
+    "local_raw\\MG163_long_horizon\\prepared_inputs.npz": "ccf9c00393f39b390ac60314d15594cd6e4f55cb334d828f7b7af4474462ec43",
+    "local_raw\\MG163_long_horizon\\production\\prepared_r0\\observations.npz": "7e4ac13299420bd7fe74ec3ac195ef91ed5fc3f7a0561e3704893f17d14af855",
+    "local_raw\\MG163_long_horizon\\production\\prepared_r1\\observations.npz": "e940c230f0550432b0b88a544d1560341e1cd34252d3702fd3a33d1c4005063d",
+    "local_raw\\MG163_long_horizon\\production\\prepared_r2\\observations.npz": "4c197fe19f7e1d29560ea117d1751d9fcb7daf05f584331ff640526b3db1c658",
+    "local_raw\\MG163_long_horizon\\production\\prepared_r3\\observations.npz": "6dd31bcb621470ed2e1a767469d663c5eb18bff830b468b2a6f1052c6bb90260",
+    "local_raw\\MG163_long_horizon\\production\\homogeneous_r0\\observations.npz": "9dc9e3a5f7e7fed80bcbe511e90d67f0a663e1f2000a57a97cb230db919a9fe3",
+    "local_raw\\MG163_long_horizon\\production\\homogeneous_r1\\observations.npz": "2c48e88d3838afc5b2312e1daefae03b807d5a878100c86b6d5e6f798201b8b4",
+    "local_raw\\MG163_long_horizon\\production\\homogeneous_r2\\observations.npz": "f95418f19626af090e8b3ab2bf1cb645371c18f15a98a8a7d9d61af3f75c90d6",
+    "local_raw\\MG163_long_horizon\\production\\homogeneous_r3\\observations.npz": "4388f0e5dd36a1a1ef5bcddca89022245eb11c1d4061c0f66d68e39e9defa802"
+  },
+  "seed": 16500,
+  "cap": 600,
+  "regimes": [
+    0.1,
+    0.5,
+    1.0
+  ],
+  "no_ModelG_draws": true,
+  "scope": "Conditional synthetic development and already-seen saved trajectories; no rescore"
+}
