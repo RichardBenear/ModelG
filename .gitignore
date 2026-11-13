@@ -44,3 +44,6 @@ results/MG8/full/
 
 # MG163 uncompressed local decision export; public lossless gzip replaces it
 /results/MG12H3/long_horizon_persistence/fresh_candidate_scores.json
+
+# Public diagnostic JSON uses null for undefined variance ratios
+/results/MG12H3/species_profile_diagnostic/diagnostics.json

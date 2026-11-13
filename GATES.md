@@ -2602,3 +2602,8 @@ Richard (2026-11-13 15:56 UTC, project thread): "I sign off on all eight."
 - **MG12-H3 noise-aware shape instrument (MG161):** CLOSED as conditional synthetic benchmark SUPPORTED. The dependent P1 application stays exploratory; MG160-P1's score is not changed.
 
 All eight results, criteria and data are unchanged; nothing is rescored. These closures were recorded because each report ended "PI closure pending" and closure is never inferred from an instruction to proceed. MG162A/B was already closed (see MG163). No production is authorized by this record. Recorded by Claude at the PI's request.
+
+
+## MG164 - saved G/X/Y profile diagnosis
+
+PI approves4jointmeasurementprinciples and asks savedprofileexamination. Descriptiveonly,16016savedfields/3species,sharedXcenter/dilation;nonewmodeldraws/jointscore/rescore. PreparedXcoreremainsvisible,Ymoredistorted,Gsmallreferenceoverwhelmed;offcoreXYanticorrelation-.634278..-.568576atfirstXfailures. Backgroundstructured/noisecausenotidentified.96independentweightednormalequationchecks,16016Xresidualchecks,96compactsummarychecks passed. Report results/MG12H3/species_profile_diagnostic/MG164_species_profile_diagnosis.md. MG163NOTESTABLISHED unchanged/closurepending; jointinstrumentqualificationfutureseparatescope.
