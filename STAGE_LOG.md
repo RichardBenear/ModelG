@@ -1455,3 +1455,8 @@ All15primary exact-CP family-adjusted bounds met: null5/4096core-compatible (upp
 ## MG162A - frozen shape instrument empirical replay challenge
 
 PI directs recommendednextstep. Freeze MG161 instrument/calibration, testoffgridinterior cases anddescriptiveboundary curves withP1homogeneous2/3noise (excludedcalibration butpreviouslyseen). Exhaustive500rotations x2reflections x2parents percase,15primary+21boundary,300soneworker/thread1,no newkineticdraws/no P1rescore. Finiteconditionalfractionsnotindependentreal-noiseCIs. Rawlocalonly. Spec/MG162_shape_validation.md. FreshMG162B eight-paircriteria/budgetproposedseparately,notregistered/approved bythis preparation.
+
+
+### MG162A results / MG162B concrete readiness
+
+All15finite empirical-noise/offgridinterior requirements supported. Ninepositive cases1992-2000/2000compatible, null0/2000,weak8/2000,othernegativecases0/2000. Per-parent/reflection bounds met;exactfinite replayfractions,notindependentphysicalreplications. Boundarysensitivityexplicit:nominalamp.4 compatible17.8%,truescale2.01 compatible92.3%; sharpboundaryclassification notqualified.72000deterministic testfields,19.7287s<300oneworker/thread1;108directfits/allcasefractionverdicts independentlyrecomputed. Raw144.987MBlocalignored,compactpublicationonly. MG161/P1unchanged,closuresnotinferred. MG162B prepared:8freshpairs,T.1/.0001/.00002, frozeninstrument/calibration;strictclear-casepointseparation with boundaryadvisory flags. Forecast1.60211h/8workers;cap100000worker-seconds+1800activeparent,12000/job,2GB. NewconcretePIcriteria/budgetapprovalpending;no freshphysicsseedregistration/trajectorydraws. Report results/MG12H3/shape_real_noise_challenge/MG162_validation_readiness.md.

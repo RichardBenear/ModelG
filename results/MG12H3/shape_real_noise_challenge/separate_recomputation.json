@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "scalar_fit_checks": 108,
+  "primary_cases": [
+    {
+      "case": "null",
+      "passed": true
+    },
+    {
+      "case": "interior_a0.8_s0.85",
+      "passed": true
+    },
+    {
+      "case": "interior_a0.8_s1.1",
+      "passed": true
+    },
+    {
+      "case": "interior_a0.8_s1.6",
+      "passed": true
+    },
+    {
+      "case": "interior_a1_s0.85",
+      "passed": true
+    },
+    {
+      "case": "interior_a1_s1.1",
+      "passed": true
+    },
+    {
+      "case": "interior_a1_s1.6",
+      "passed": true
+    },
+    {
+      "case": "interior_a1.2_s0.85",
+      "passed": true
+    },
+    {
+      "case": "interior_a1.2_s1.1",
+      "passed": true
+    },
+    {
+      "case": "interior_a1.2_s1.6",
+      "passed": true
+    },
+    {
+      "case": "weak",
+      "passed": true
+    },
+    {
+      "case": "narrow",
+      "passed": true
+    },
+    {
+      "case": "broad",
+      "passed": true
+    },
+    {
+      "case": "inverted",
+      "passed": true
+    },
+    {
+      "case": "split",
+      "passed": true
+    }
+  ],
+  "elapsed_seconds": 2.1250067000219133,
+  "scope": "Separate weighted scalar sums, classification branches and exhaustive finite-group fractions; same author/shared fields/bank, no independent-trajectory population inference."
+}

@@ -1,0 +1,1649 @@
+{
+  "supported_within_finite_challenge": true,
+  "cases": [
+    {
+      "case": {
+        "id": "null",
+        "kind": "null",
+        "primary": true,
+        "truth": "reject",
+        "amplitude": 0.0,
+        "scale": 1.0
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 0,
+          "N": 500,
+          "fraction": 0.0
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 0,
+          "N": 500,
+          "fraction": 0.0
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 0,
+          "N": 500,
+          "fraction": 0.0
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 0,
+          "N": 500,
+          "fraction": 0.0
+        }
+      ],
+      "compatible": 0,
+      "N": 2000,
+      "label_counts": {
+        "absent_or_weak": 2000
+      },
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "interior_a0.8_s0.85",
+        "kind": "signal",
+        "primary": true,
+        "truth": "compatible",
+        "amplitude": 0.8,
+        "scale": 0.85
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 499,
+          "N": 500,
+          "fraction": 0.998
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 499,
+          "N": 500,
+          "fraction": 0.998
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 497,
+          "N": 500,
+          "fraction": 0.994
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 497,
+          "N": 500,
+          "fraction": 0.994
+        }
+      ],
+      "compatible": 1992,
+      "N": 2000,
+      "label_counts": {
+        "absent_or_weak": 8,
+        "core_compatible": 1992
+      },
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "interior_a0.8_s1.1",
+        "kind": "signal",
+        "primary": true,
+        "truth": "compatible",
+        "amplitude": 0.8,
+        "scale": 1.1
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        }
+      ],
+      "compatible": 2000,
+      "N": 2000,
+      "label_counts": {
+        "core_compatible": 2000
+      },
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "interior_a0.8_s1.6",
+        "kind": "signal",
+        "primary": true,
+        "truth": "compatible",
+        "amplitude": 0.8,
+        "scale": 1.6
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        }
+      ],
+      "compatible": 2000,
+      "N": 2000,
+      "label_counts": {
+        "core_compatible": 2000
+      },
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "interior_a1_s0.85",
+        "kind": "signal",
+        "primary": true,
+        "truth": "compatible",
+        "amplitude": 1.0,
+        "scale": 0.85
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        }
+      ],
+      "compatible": 2000,
+      "N": 2000,
+      "label_counts": {
+        "core_compatible": 2000
+      },
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "interior_a1_s1.1",
+        "kind": "signal",
+        "primary": true,
+        "truth": "compatible",
+        "amplitude": 1.0,
+        "scale": 1.1
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        }
+      ],
+      "compatible": 2000,
+      "N": 2000,
+      "label_counts": {
+        "core_compatible": 2000
+      },
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "interior_a1_s1.6",
+        "kind": "signal",
+        "primary": true,
+        "truth": "compatible",
+        "amplitude": 1.0,
+        "scale": 1.6
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        }
+      ],
+      "compatible": 2000,
+      "N": 2000,
+      "label_counts": {
+        "core_compatible": 2000
+      },
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "interior_a1.2_s0.85",
+        "kind": "signal",
+        "primary": true,
+        "truth": "compatible",
+        "amplitude": 1.2,
+        "scale": 0.85
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        }
+      ],
+      "compatible": 2000,
+      "N": 2000,
+      "label_counts": {
+        "core_compatible": 2000
+      },
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "interior_a1.2_s1.1",
+        "kind": "signal",
+        "primary": true,
+        "truth": "compatible",
+        "amplitude": 1.2,
+        "scale": 1.1
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        }
+      ],
+      "compatible": 2000,
+      "N": 2000,
+      "label_counts": {
+        "core_compatible": 2000
+      },
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "interior_a1.2_s1.6",
+        "kind": "signal",
+        "primary": true,
+        "truth": "compatible",
+        "amplitude": 1.2,
+        "scale": 1.6
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        }
+      ],
+      "compatible": 2000,
+      "N": 2000,
+      "label_counts": {
+        "core_compatible": 2000
+      },
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "weak",
+        "amplitude": 0.2,
+        "scale": 1.1,
+        "kind": "signal",
+        "primary": true,
+        "truth": "reject"
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 3,
+          "N": 500,
+          "fraction": 0.006
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 3,
+          "N": 500,
+          "fraction": 0.006
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 1,
+          "N": 500,
+          "fraction": 0.002
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 1,
+          "N": 500,
+          "fraction": 0.002
+        }
+      ],
+      "compatible": 8,
+      "N": 2000,
+      "label_counts": {
+        "absent_or_weak": 1992,
+        "core_compatible": 8
+      },
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "narrow",
+        "amplitude": 1.0,
+        "scale": 0.3,
+        "kind": "signal",
+        "primary": true,
+        "truth": "reject"
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 0,
+          "N": 500,
+          "fraction": 0.0
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 0,
+          "N": 500,
+          "fraction": 0.0
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 0,
+          "N": 500,
+          "fraction": 0.0
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 0,
+          "N": 500,
+          "fraction": 0.0
+        }
+      ],
+      "compatible": 0,
+      "N": 2000,
+      "label_counts": {
+        "absent_or_weak": 2000
+      },
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "broad",
+        "amplitude": 1.0,
+        "scale": 2.6,
+        "kind": "signal",
+        "primary": true,
+        "truth": "reject"
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 0,
+          "N": 500,
+          "fraction": 0.0
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 0,
+          "N": 500,
+          "fraction": 0.0
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 0,
+          "N": 500,
+          "fraction": 0.0
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 0,
+          "N": 500,
+          "fraction": 0.0
+        }
+      ],
+      "compatible": 0,
+      "N": 2000,
+      "label_counts": {
+        "deformed_scale": 2000
+      },
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "inverted",
+        "amplitude": -1.0,
+        "scale": 1.1,
+        "kind": "signal",
+        "primary": true,
+        "truth": "reject"
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 0,
+          "N": 500,
+          "fraction": 0.0
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 0,
+          "N": 500,
+          "fraction": 0.0
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 0,
+          "N": 500,
+          "fraction": 0.0
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 0,
+          "N": 500,
+          "fraction": 0.0
+        }
+      ],
+      "compatible": 0,
+      "N": 2000,
+      "label_counts": {
+        "shape_mismatch": 2000
+      },
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "split",
+        "amplitude": 1.0,
+        "scale": 1.1,
+        "kind": "split",
+        "primary": true,
+        "truth": "reject"
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 0,
+          "N": 500,
+          "fraction": 0.0
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 0,
+          "N": 500,
+          "fraction": 0.0
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 0,
+          "N": 500,
+          "fraction": 0.0
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 0,
+          "N": 500,
+          "fraction": 0.0
+        }
+      ],
+      "compatible": 0,
+      "N": 2000,
+      "label_counts": {
+        "ambiguous_multiple_cores": 2000
+      },
+      "passed": true
+    },
+    {
+      "case": {
+        "id": "boundary_amplitude_0.4",
+        "amplitude": 0.4,
+        "scale": 1.0,
+        "kind": "signal",
+        "primary": false
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 88,
+          "N": 500,
+          "fraction": 0.176
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 88,
+          "N": 500,
+          "fraction": 0.176
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 90,
+          "N": 500,
+          "fraction": 0.18
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 90,
+          "N": 500,
+          "fraction": 0.18
+        }
+      ],
+      "compatible": 356,
+      "N": 2000,
+      "label_counts": {
+        "absent_or_weak": 1644,
+        "core_compatible": 356
+      }
+    },
+    {
+      "case": {
+        "id": "boundary_amplitude_0.45",
+        "amplitude": 0.45,
+        "scale": 1.0,
+        "kind": "signal",
+        "primary": false
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 177,
+          "N": 500,
+          "fraction": 0.354
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 177,
+          "N": 500,
+          "fraction": 0.354
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 160,
+          "N": 500,
+          "fraction": 0.32
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 161,
+          "N": 500,
+          "fraction": 0.322
+        }
+      ],
+      "compatible": 675,
+      "N": 2000,
+      "label_counts": {
+        "absent_or_weak": 1325,
+        "core_compatible": 675
+      }
+    },
+    {
+      "case": {
+        "id": "boundary_amplitude_0.49",
+        "amplitude": 0.49,
+        "scale": 1.0,
+        "kind": "signal",
+        "primary": false
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 266,
+          "N": 500,
+          "fraction": 0.532
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 267,
+          "N": 500,
+          "fraction": 0.534
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 261,
+          "N": 500,
+          "fraction": 0.522
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 261,
+          "N": 500,
+          "fraction": 0.522
+        }
+      ],
+      "compatible": 1055,
+      "N": 2000,
+      "label_counts": {
+        "absent_or_weak": 945,
+        "core_compatible": 1055
+      }
+    },
+    {
+      "case": {
+        "id": "boundary_amplitude_0.5",
+        "amplitude": 0.5,
+        "scale": 1.0,
+        "kind": "signal",
+        "primary": false
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 286,
+          "N": 500,
+          "fraction": 0.572
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 286,
+          "N": 500,
+          "fraction": 0.572
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 283,
+          "N": 500,
+          "fraction": 0.566
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 283,
+          "N": 500,
+          "fraction": 0.566
+        }
+      ],
+      "compatible": 1138,
+      "N": 2000,
+      "label_counts": {
+        "absent_or_weak": 862,
+        "core_compatible": 1138
+      }
+    },
+    {
+      "case": {
+        "id": "boundary_amplitude_0.51",
+        "amplitude": 0.51,
+        "scale": 1.0,
+        "kind": "signal",
+        "primary": false
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 299,
+          "N": 500,
+          "fraction": 0.598
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 299,
+          "N": 500,
+          "fraction": 0.598
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 298,
+          "N": 500,
+          "fraction": 0.596
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 298,
+          "N": 500,
+          "fraction": 0.596
+        }
+      ],
+      "compatible": 1194,
+      "N": 2000,
+      "label_counts": {
+        "absent_or_weak": 806,
+        "core_compatible": 1194
+      }
+    },
+    {
+      "case": {
+        "id": "boundary_amplitude_0.55",
+        "amplitude": 0.55,
+        "scale": 1.0,
+        "kind": "signal",
+        "primary": false
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 370,
+          "N": 500,
+          "fraction": 0.74
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 370,
+          "N": 500,
+          "fraction": 0.74
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 384,
+          "N": 500,
+          "fraction": 0.768
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 384,
+          "N": 500,
+          "fraction": 0.768
+        }
+      ],
+      "compatible": 1508,
+      "N": 2000,
+      "label_counts": {
+        "absent_or_weak": 492,
+        "core_compatible": 1508
+      }
+    },
+    {
+      "case": {
+        "id": "boundary_amplitude_0.6",
+        "amplitude": 0.6,
+        "scale": 1.0,
+        "kind": "signal",
+        "primary": false
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 443,
+          "N": 500,
+          "fraction": 0.886
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 442,
+          "N": 500,
+          "fraction": 0.884
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 432,
+          "N": 500,
+          "fraction": 0.864
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 432,
+          "N": 500,
+          "fraction": 0.864
+        }
+      ],
+      "compatible": 1749,
+      "N": 2000,
+      "label_counts": {
+        "absent_or_weak": 251,
+        "core_compatible": 1749
+      }
+    },
+    {
+      "case": {
+        "id": "boundary_scale_0.4",
+        "amplitude": 1.0,
+        "scale": 0.4,
+        "kind": "signal",
+        "primary": false
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 1,
+          "N": 500,
+          "fraction": 0.002
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 1,
+          "N": 500,
+          "fraction": 0.002
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 0,
+          "N": 500,
+          "fraction": 0.0
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 0,
+          "N": 500,
+          "fraction": 0.0
+        }
+      ],
+      "compatible": 2,
+      "N": 2000,
+      "label_counts": {
+        "absent_or_weak": 1998,
+        "core_compatible": 2
+      }
+    },
+    {
+      "case": {
+        "id": "boundary_scale_0.45",
+        "amplitude": 1.0,
+        "scale": 0.45,
+        "kind": "signal",
+        "primary": false
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 13,
+          "N": 500,
+          "fraction": 0.026
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 13,
+          "N": 500,
+          "fraction": 0.026
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 11,
+          "N": 500,
+          "fraction": 0.022
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 11,
+          "N": 500,
+          "fraction": 0.022
+        }
+      ],
+      "compatible": 48,
+      "N": 2000,
+      "label_counts": {
+        "absent_or_weak": 1952,
+        "core_compatible": 48
+      }
+    },
+    {
+      "case": {
+        "id": "boundary_scale_0.49",
+        "amplitude": 1.0,
+        "scale": 0.49,
+        "kind": "signal",
+        "primary": false
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 68,
+          "N": 500,
+          "fraction": 0.136
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 68,
+          "N": 500,
+          "fraction": 0.136
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 68,
+          "N": 500,
+          "fraction": 0.136
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 68,
+          "N": 500,
+          "fraction": 0.136
+        }
+      ],
+      "compatible": 272,
+      "N": 2000,
+      "label_counts": {
+        "absent_or_weak": 1728,
+        "core_compatible": 272
+      }
+    },
+    {
+      "case": {
+        "id": "boundary_scale_0.5",
+        "amplitude": 1.0,
+        "scale": 0.5,
+        "kind": "signal",
+        "primary": false
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 100,
+          "N": 500,
+          "fraction": 0.2
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 100,
+          "N": 500,
+          "fraction": 0.2
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 95,
+          "N": 500,
+          "fraction": 0.19
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 96,
+          "N": 500,
+          "fraction": 0.192
+        }
+      ],
+      "compatible": 391,
+      "N": 2000,
+      "label_counts": {
+        "absent_or_weak": 1609,
+        "core_compatible": 391
+      }
+    },
+    {
+      "case": {
+        "id": "boundary_scale_0.51",
+        "amplitude": 1.0,
+        "scale": 0.51,
+        "kind": "signal",
+        "primary": false
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 135,
+          "N": 500,
+          "fraction": 0.27
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 135,
+          "N": 500,
+          "fraction": 0.27
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 136,
+          "N": 500,
+          "fraction": 0.272
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 135,
+          "N": 500,
+          "fraction": 0.27
+        }
+      ],
+      "compatible": 541,
+      "N": 2000,
+      "label_counts": {
+        "absent_or_weak": 1459,
+        "core_compatible": 541
+      }
+    },
+    {
+      "case": {
+        "id": "boundary_scale_0.55",
+        "amplitude": 1.0,
+        "scale": 0.55,
+        "kind": "signal",
+        "primary": false
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 319,
+          "N": 500,
+          "fraction": 0.638
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 319,
+          "N": 500,
+          "fraction": 0.638
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 324,
+          "N": 500,
+          "fraction": 0.648
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 324,
+          "N": 500,
+          "fraction": 0.648
+        }
+      ],
+      "compatible": 1286,
+      "N": 2000,
+      "label_counts": {
+        "absent_or_weak": 714,
+        "core_compatible": 1286
+      }
+    },
+    {
+      "case": {
+        "id": "boundary_scale_0.6",
+        "amplitude": 1.0,
+        "scale": 0.6,
+        "kind": "signal",
+        "primary": false
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 462,
+          "N": 500,
+          "fraction": 0.924
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 462,
+          "N": 500,
+          "fraction": 0.924
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 463,
+          "N": 500,
+          "fraction": 0.926
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 463,
+          "N": 500,
+          "fraction": 0.926
+        }
+      ],
+      "compatible": 1850,
+      "N": 2000,
+      "label_counts": {
+        "absent_or_weak": 150,
+        "core_compatible": 1850
+      }
+    },
+    {
+      "case": {
+        "id": "boundary_scale_1.9",
+        "amplitude": 1.0,
+        "scale": 1.9,
+        "kind": "signal",
+        "primary": false
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        }
+      ],
+      "compatible": 2000,
+      "N": 2000,
+      "label_counts": {
+        "core_compatible": 2000
+      }
+    },
+    {
+      "case": {
+        "id": "boundary_scale_1.95",
+        "amplitude": 1.0,
+        "scale": 1.95,
+        "kind": "signal",
+        "primary": false
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 500,
+          "N": 500,
+          "fraction": 1.0
+        }
+      ],
+      "compatible": 2000,
+      "N": 2000,
+      "label_counts": {
+        "core_compatible": 2000
+      }
+    },
+    {
+      "case": {
+        "id": "boundary_scale_1.99",
+        "amplitude": 1.0,
+        "scale": 1.99,
+        "kind": "signal",
+        "primary": false
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 497,
+          "N": 500,
+          "fraction": 0.994
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 497,
+          "N": 500,
+          "fraction": 0.994
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 487,
+          "N": 500,
+          "fraction": 0.974
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 487,
+          "N": 500,
+          "fraction": 0.974
+        }
+      ],
+      "compatible": 1968,
+      "N": 2000,
+      "label_counts": {
+        "core_compatible": 1968,
+        "deformed_scale": 32
+      }
+    },
+    {
+      "case": {
+        "id": "boundary_scale_2",
+        "amplitude": 1.0,
+        "scale": 2.0,
+        "kind": "signal",
+        "primary": false
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 492,
+          "N": 500,
+          "fraction": 0.984
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 492,
+          "N": 500,
+          "fraction": 0.984
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 474,
+          "N": 500,
+          "fraction": 0.948
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 474,
+          "N": 500,
+          "fraction": 0.948
+        }
+      ],
+      "compatible": 1932,
+      "N": 2000,
+      "label_counts": {
+        "core_compatible": 1932,
+        "deformed_scale": 68
+      }
+    },
+    {
+      "case": {
+        "id": "boundary_scale_2.01",
+        "amplitude": 1.0,
+        "scale": 2.01,
+        "kind": "signal",
+        "primary": false
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 475,
+          "N": 500,
+          "fraction": 0.95
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 475,
+          "N": 500,
+          "fraction": 0.95
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 448,
+          "N": 500,
+          "fraction": 0.896
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 448,
+          "N": 500,
+          "fraction": 0.896
+        }
+      ],
+      "compatible": 1846,
+      "N": 2000,
+      "label_counts": {
+        "core_compatible": 1846,
+        "deformed_scale": 154
+      }
+    },
+    {
+      "case": {
+        "id": "boundary_scale_2.05",
+        "amplitude": 1.0,
+        "scale": 2.05,
+        "kind": "signal",
+        "primary": false
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 282,
+          "N": 500,
+          "fraction": 0.564
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 283,
+          "N": 500,
+          "fraction": 0.566
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 298,
+          "N": 500,
+          "fraction": 0.596
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 298,
+          "N": 500,
+          "fraction": 0.596
+        }
+      ],
+      "compatible": 1161,
+      "N": 2000,
+      "label_counts": {
+        "core_compatible": 1161,
+        "deformed_scale": 839
+      }
+    },
+    {
+      "case": {
+        "id": "boundary_scale_2.1",
+        "amplitude": 1.0,
+        "scale": 2.1,
+        "kind": "signal",
+        "primary": false
+      },
+      "groups": [
+        {
+          "parent": 2,
+          "reflected": false,
+          "compatible": 71,
+          "N": 500,
+          "fraction": 0.142
+        },
+        {
+          "parent": 2,
+          "reflected": true,
+          "compatible": 71,
+          "N": 500,
+          "fraction": 0.142
+        },
+        {
+          "parent": 3,
+          "reflected": false,
+          "compatible": 87,
+          "N": 500,
+          "fraction": 0.174
+        },
+        {
+          "parent": 3,
+          "reflected": true,
+          "compatible": 87,
+          "N": 500,
+          "fraction": 0.174
+        }
+      ],
+      "compatible": 316,
+      "N": 2000,
+      "label_counts": {
+        "core_compatible": 316,
+        "deformed_scale": 1684
+      }
+    }
+  ],
+  "source_hashes": {
+    "src/run_mg162_challenge.py": "1d2cc3d1e98f4028c3a27fe5e7b534b405e84b9ec5ff49e3eb9513e4c74e4c63",
+    "src/mg161_local_shape.py": "c3d1f9535e4adbc34eb6c7b776deeb695c15ee1573e8561954bb7689a6757fc3",
+    "src/run_mg161_shape.py": "c4361298914e51616bebac6a2ae667d65780702632590f4f56d07eb7532ed778",
+    "spec/MG162_shape_validation.md": "15ed4584f3a2fc7a6ae9e5494e5f99a0144de6f50fcdf6727fcc25fd34fb698b"
+  },
+  "elapsed_seconds": 19.727294400014216,
+  "scope": "exhaustive finite empirical-noise replay challenge; no new Model G trajectories or stochastic draws",
+  "limits": "Two calibration-excluded P1 parent fields were previously seen; rotations are not independent new real trajectories. Exact finite-orbit fractions, not population confidence intervals."
+}
