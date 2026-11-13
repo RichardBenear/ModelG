@@ -2580,3 +2580,8 @@ PI: "I sign off on MG162A/B. Go ahead and prepare the long horizon test". Close 
 ### MG163 - PI APPROVED, prelaunch qualification
 
 PI: "i approve. go ahead." Approves proposedT1/eightfreshpairs/frozenMG161instrumentandcriterion,10%fixedsentineltracing,800000worker-seconds/100000job+3600activeanalysis,4GBlocalraw/max8workers/thread1. Approval results/MG12H3/long_horizon_persistence/approval.json. Finish no-active-model qualification and publish source/config/seeds beforedraws;blockingfailures stop. Fullraw stayslocal,compactpublicationonly. No scientificretries/replacements.
+
+
+### MG163 results - clear-case separation NOT ESTABLISHED
+
+All8registeredpairs completedT1/no retries,460029worker-seconds/16.0254hwall withinbudget.0/8preparedmarginalpaths retainall1001frames; firstfailures shape_mismatch inT.205-.460, no preparedboundaryadvisories/amplitudenever<.5.7/8homogeneousmarginalpaths evercompatible, all4controlpairs includeacrossing. Notphysicaldeath/birthproof. Audit16000endpoints/138372030eventsfrom200preselectedsegments and separatefullbankspatialsums16016fields passed. Raw1.74145GB localonly; compactdecisions/report/manifestpublicpackage. PIclosurepending; no furtherproduction. Report results/MG12H3/long_horizon_persistence/MG163_long_horizon_results.md.

@@ -1,0 +1,1338 @@
+{
+  "passed": true,
+  "jobs": [
+    {
+      "id": "prepared_r0",
+      "condition": "prepared",
+      "seed": 689891475,
+      "trajectories": [
+        {
+          "side": 0,
+          "delta": 0.0001,
+          "coherence": {
+            "initial_present": true,
+            "retained_at_all_frames": false,
+            "positive_frames": 106,
+            "first_loss_interval": [
+              0.092,
+              0.093
+            ],
+            "right_censored_at": null,
+            "first_positive_time": 0.0
+          },
+          "shape": {
+            "initial_present": true,
+            "retained_at_all_frames": false,
+            "positive_frames": 118,
+            "first_loss_interval": [
+              0.079,
+              0.08
+            ],
+            "right_censored_at": null,
+            "first_positive_time": 0.0
+          },
+          "pattern": {
+            "initial_present": true,
+            "retained_at_all_frames": false,
+            "positive_frames": 96,
+            "first_loss_interval": [
+              0.079,
+              0.08
+            ],
+            "right_censored_at": null,
+            "first_positive_time": 0.0
+          },
+          "initial": {
+            "amplitude": 0.9979655798928252,
+            "unaligned_amplitude": 0.997965579892825,
+            "correlation": 0.9996309538587281,
+            "shift_sites": 0,
+            "phase_ambiguous": false,
+            "participation_length": 2.581626685286887,
+            "residual_fraction": 0.027165347181445285,
+            "relative_amplitude": 1.0,
+            "relative_width": 1.0,
+            "coherent": true,
+            "shape_retained": true,
+            "pattern_retained": true
+          },
+          "final": {
+            "amplitude": 1.1431549538390462,
+            "unaligned_amplitude": 1.1431549538390464,
+            "correlation": 0.5322027192159411,
+            "shift_sites": 0,
+            "phase_ambiguous": false,
+            "participation_length": 16.360148522605417,
+            "residual_fraction": 0.8466169533260941,
+            "relative_amplitude": 1.1454853522721828,
+            "relative_width": 6.337147278436723,
+            "coherent": false,
+            "shape_retained": false,
+            "pattern_retained": false
+          },
+          "minimum_relative_amplitude": 0.9285036243476793,
+          "minimum_correlation": 0.483461617522308,
+          "relative_width_range": [
+            1.0,
+            7.189429511297115
+          ],
+          "maximum_abs_wrapped_shift_sites": 1,
+          "ambiguous_frames": 0,
+          "species_total_change": [
+            -289,
+            32,
+            307,
+            -67666,
+            -2105663,
+            2105663,
+            67616
+          ]
+        },
+        {
+          "side": 1,
+          "delta": 2e-05,
+          "coherence": {
+            "initial_present": true,
+            "retained_at_all_frames": false,
+            "positive_frames": 99,
+            "first_loss_interval": [
+              0.091,
+              0.092
+            ],
+            "right_censored_at": null,
+            "first_positive_time": 0.0
+          },
+          "shape": {
+            "initial_present": true,
+            "retained_at_all_frames": false,
+            "positive_frames": 103,
+            "first_loss_interval": [
+              0.079,
+              0.08
+            ],
+            "right_censored_at": null,
+            "first_positive_time": 0.0
+          },
+          "pattern": {
+            "initial_present": true,
+            "retained_at_all_frames": false,
+            "positive_frames": 89,
+            "first_loss_interval": [
+              0.079,
+              0.08
+            ],
+            "right_censored_at": null,
+            "first_positive_time": 0.0
+          },
+          "initial": {
+            "amplitude": 0.9979655798928252,
+            "unaligned_amplitude": 0.997965579892825,
+            "correlation": 0.9996309538587281,
+            "shift_sites": 0,
+            "phase_ambiguous": false,
+            "participation_length": 2.581626685286887,
+            "residual_fraction": 0.027165347181445285,
+            "relative_amplitude": 1.0,
+            "relative_width": 1.0,
+            "coherent": true,
+            "shape_retained": true,
+            "pattern_retained": true
+          },
+          "final": {
+            "amplitude": 1.105665100006516,
+            "unaligned_amplitude": 1.1056651000065159,
+            "correlation": 0.5288876384601902,
+            "shift_sites": 0,
+            "phase_ambiguous": false,
+            "participation_length": 16.314209930581452,
+            "residual_fraction": 0.8486918556720121,
+            "relative_amplitude": 1.1079190728454353,
+            "relative_width": 6.319352841973164,
+            "coherent": false,
+            "shape_retained": false,
+            "pattern_retained": false
+          },
+          "minimum_relative_amplitude": 0.9154429264028768,
+          "minimum_correlation": 0.4879714267342203,
+          "relative_width_range": [
+            1.0,
+            7.017653911140086
+          ],
+          "maximum_abs_wrapped_shift_sites": 1,
+          "ambiguous_frames": 0,
+          "species_total_change": [
+            -353,
+            51,
+            -110,
+            -67669,
+            -2121207,
+            2121207,
+            68081
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prepared_r1",
+      "condition": "prepared",
+      "seed": 2260313988,
+      "trajectories": [
+        {
+          "side": 0,
+          "delta": 0.0001,
+          "coherence": {
+            "initial_present": true,
+            "retained_at_all_frames": false,
+            "positive_frames": 83,
+            "first_loss_interval": [
+              0.076,
+              0.077
+            ],
+            "right_censored_at": null,
+            "first_positive_time": 0.0
+          },
+          "shape": {
+            "initial_present": true,
+            "retained_at_all_frames": false,
+            "positive_frames": 45,
+            "first_loss_interval": [
+              0.044,
+              0.045
+            ],
+            "right_censored_at": null,
+            "first_positive_time": 0.0
+          },
+          "pattern": {
+            "initial_present": true,
+            "retained_at_all_frames": false,
+            "positive_frames": 45,
+            "first_loss_interval": [
+              0.044,
+              0.045
+            ],
+            "right_censored_at": null,
+            "first_positive_time": 0.0
+          },
+          "initial": {
+            "amplitude": 0.9979655798928252,
+            "unaligned_amplitude": 0.997965579892825,
+            "correlation": 0.9996309538587281,
+            "shift_sites": 0,
+            "phase_ambiguous": false,
+            "participation_length": 2.581626685286887,
+            "residual_fraction": 0.027165347181445285,
+            "relative_amplitude": 1.0,
+            "relative_width": 1.0,
+            "coherent": true,
+            "shape_retained": true,
+            "pattern_retained": true
+          },
+          "final": {
+            "amplitude": 1.2017760906975867,
+            "unaligned_amplitude": 1.201776090697587,
+            "correlation": 0.5297465643928662,
+            "shift_sites": 0,
+            "phase_ambiguous": false,
+            "participation_length": 22.5051872827664,
+            "residual_fraction": 0.8481559865460805,
+            "relative_amplitude": 1.204225992269843,
+            "relative_width": 8.717444474457576,
+            "coherent": false,
+            "shape_retained": false,
+            "pattern_retained": false
+          },
+          "minimum_relative_amplitude": 0.738102707512638,
+          "minimum_correlation": 0.5024620330575669,
+          "relative_width_range": [
+            1.0,
+            9.121505945499202
+          ],
+          "maximum_abs_wrapped_shift_sites": 1,
+          "ambiguous_frames": 0,
+          "species_total_change": [
+            -25,
+            -429,
+            408,
+            -67526,
+            -2103517,
+            2103517,
+            67572
+          ]
+        },
+        {
+          "side": 1,
+          "delta": 2e-05,
+          "coherence": {
+            "initial_present": true,
+            "retained_at_all_frames": false,
+            "positive_frames": 72,
+            "first_loss_interval": [
+              0.069,
+              0.07
+            ],
+            "right_censored_at": null,
+            "first_positive_time": 0.0
+          },
+          "shape": {
+            "initial_present": true,
+            "retained_at_all_frames": false,
+            "positive_frames": 45,
+            "first_loss_interval": [
+              0.044,
+              0.045
+            ],
+            "right_censored_at": null,
+            "first_positive_time": 0.0
+          },
+          "pattern": {
+            "initial_present": true,
+            "retained_at_all_frames": false,
+            "positive_frames": 45,
+            "first_loss_interval": [
+              0.044,
+              0.045
+            ],
+            "right_censored_at": null,
+            "first_positive_time": 0.0
+          },
+          "initial": {
+            "amplitude": 0.9979655798928252,
+            "unaligned_amplitude": 0.997965579892825,
+            "correlation": 0.9996309538587281,
+            "shift_sites": 0,
+            "phase_ambiguous": false,
+            "participation_length": 2.581626685286887,
+            "residual_fraction": 0.027165347181445285,
+            "relative_amplitude": 1.0,
+            "relative_width": 1.0,
+            "coherent": true,
+            "shape_retained": true,
+            "pattern_retained": true
+          },
+          "final": {
+            "amplitude": 1.1870527776450184,
+            "unaligned_amplitude": 1.1870527776450182,
+            "correlation": 0.5396527570285233,
+            "shift_sites": 0,
+            "phase_ambiguous": false,
+            "participation_length": 20.850952152284624,
+            "residual_fraction": 0.8418877014373791,
+            "relative_amplitude": 1.189472664751123,
+            "relative_width": 8.076672073122582,
+            "coherent": false,
+            "shape_retained": false,
+            "pattern_retained": false
+          },
+          "minimum_relative_amplitude": 0.7253844554766805,
+          "minimum_correlation": 0.5077771061496512,
+          "relative_width_range": [
+            1.0,
+            8.836514502806516
+          ],
+          "maximum_abs_wrapped_shift_sites": 1,
+          "ambiguous_frames": 0,
+          "species_total_change": [
+            -63,
+            -583,
+            47,
+            -67529,
+            -2117411,
+            2117411,
+            68128
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prepared_r2",
+      "condition": "prepared",
+      "seed": 1823672764,
+      "trajectories": [
+        {
+          "side": 0,
+          "delta": 0.0001,
+          "coherence": {
+            "initial_present": true,
+            "retained_at_all_frames": false,
+            "positive_frames": 94,
+            "first_loss_interval": [
+              0.079,
+              0.08
+            ],
+            "right_censored_at": null,
+            "first_positive_time": 0.0
+          },
+          "shape": {
+            "initial_present": true,
+            "retained_at_all_frames": false,
+            "positive_frames": 94,
+            "first_loss_interval": [
+              0.081,
+              0.082
+            ],
+            "right_censored_at": null,
+            "first_positive_time": 0.0
+          },
+          "pattern": {
+            "initial_present": true,
+            "retained_at_all_frames": false,
+            "positive_frames": 93,
+            "first_loss_interval": [
+              0.079,
+              0.08
+            ],
+            "right_censored_at": null,
+            "first_positive_time": 0.0
+          },
+          "initial": {
+            "amplitude": 0.9979655798928252,
+            "unaligned_amplitude": 0.997965579892825,
+            "correlation": 0.9996309538587281,
+            "shift_sites": 0,
+            "phase_ambiguous": false,
+            "participation_length": 2.581626685286887,
+            "residual_fraction": 0.027165347181445285,
+            "relative_amplitude": 1.0,
+            "relative_width": 1.0,
+            "coherent": true,
+            "shape_retained": true,
+            "pattern_retained": true
+          },
+          "final": {
+            "amplitude": 1.1915263047496676,
+            "unaligned_amplitude": 1.1915263047496678,
+            "correlation": 0.5300928499483231,
+            "shift_sites": 0,
+            "phase_ambiguous": false,
+            "participation_length": 25.742923605637472,
+            "residual_fraction": 0.847939603057709,
+            "relative_amplitude": 1.193955311442334,
+            "relative_width": 9.971590297059835,
+            "coherent": false,
+            "shape_retained": false,
+            "pattern_retained": false
+          },
+          "minimum_relative_amplitude": 0.8534925136320873,
+          "minimum_correlation": 0.5063584627751596,
+          "relative_width_range": [
+            1.0,
+            10.872682829501375
+          ],
+          "maximum_abs_wrapped_shift_sites": 1,
+          "ambiguous_frames": 0,
+          "species_total_change": [
+            86,
+            32,
+            448,
+            -67972,
+            -2103890,
+            2103890,
+            67406
+          ]
+        },
+        {
+          "side": 1,
+          "delta": 2e-05,
+          "coherence": {
+            "initial_present": true,
+            "retained_at_all_frames": false,
+            "positive_frames": 95,
+            "first_loss_interval": [
+              0.091,
+              0.092
+            ],
+            "right_censored_at": null,
+            "first_positive_time": 0.0
+          },
+          "shape": {
+            "initial_present": true,
+            "retained_at_all_frames": false,
+            "positive_frames": 98,
+            "first_loss_interval": [
+              0.092,
+              0.093
+            ],
+            "right_censored_at": null,
+            "first_positive_time": 0.0
+          },
+          "pattern": {
+            "initial_present": true,
+            "retained_at_all_frames": false,
+            "positive_frames": 94,
+            "first_loss_interval": [
+              0.091,
+              0.092
+            ],
+            "right_censored_at": null,
+            "first_positive_time": 0.0
+          },
+          "initial": {
+            "amplitude": 0.9979655798928252,
+            "unaligned_amplitude": 0.997965579892825,
+            "correlation": 0.9996309538587281,
+            "shift_sites": 0,
+            "phase_ambiguous": false,
+            "participation_length": 2.581626685286887,
+            "residual_fraction": 0.027165347181445285,
+            "relative_amplitude": 1.0,
+            "relative_width": 1.0,
+            "coherent": true,
+            "shape_retained": true,
+            "pattern_retained": true
+          },
+          "final": {
+            "amplitude": 1.1222347215944812,
+            "unaligned_amplitude": 1.1222347215944803,
+            "correlation": 0.5172847024348917,
+            "shift_sites": 0,
+            "phase_ambiguous": false,
+            "participation_length": 25.763045026036128,
+            "residual_fraction": 0.8558133772189154,
+            "relative_amplitude": 1.1245224727239609,
+            "relative_width": 9.97938438305737,
+            "coherent": false,
+            "shape_retained": false,
+            "pattern_retained": false
+          },
+          "minimum_relative_amplitude": 0.8223264478374404,
+          "minimum_correlation": 0.4868290184637345,
+          "relative_width_range": [
+            1.0,
+            11.091664630119784
+          ],
+          "maximum_abs_wrapped_shift_sites": 1,
+          "ambiguous_frames": 0,
+          "species_total_change": [
+            26,
+            -21,
+            65,
+            -67973,
+            -2118984,
+            2118984,
+            67903
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prepared_r3",
+      "condition": "prepared",
+      "seed": 713218429,
+      "trajectories": [
+        {
+          "side": 0,
+          "delta": 0.0001,
+          "coherence": {
+            "initial_present": true,
+            "retained_at_all_frames": false,
+            "positive_frames": 80,
+            "first_loss_interval": [
+              0.067,
+              0.068
+            ],
+            "right_censored_at": null,
+            "first_positive_time": 0.0
+          },
+          "shape": {
+            "initial_present": true,
+            "retained_at_all_frames": false,
+            "positive_frames": 47,
+            "first_loss_interval": [
+              0.041,
+              0.042
+            ],
+            "right_censored_at": null,
+            "first_positive_time": 0.0
+          },
+          "pattern": {
+            "initial_present": true,
+            "retained_at_all_frames": false,
+            "positive_frames": 47,
+            "first_loss_interval": [
+              0.041,
+              0.042
+            ],
+            "right_censored_at": null,
+            "first_positive_time": 0.0
+          },
+          "initial": {
+            "amplitude": 0.9979655798928252,
+            "unaligned_amplitude": 0.997965579892825,
+            "correlation": 0.9996309538587281,
+            "shift_sites": 0,
+            "phase_ambiguous": false,
+            "participation_length": 2.581626685286887,
+            "residual_fraction": 0.027165347181445285,
+            "relative_amplitude": 1.0,
+            "relative_width": 1.0,
+            "coherent": true,
+            "shape_retained": true,
+            "pattern_retained": true
+          },
+          "final": {
+            "amplitude": 1.096228017924349,
+            "unaligned_amplitude": 1.0962280179243484,
+            "correlation": 0.49199224194431296,
+            "shift_sites": 0,
+            "phase_ambiguous": false,
+            "participation_length": 25.528407241895554,
+            "residual_fraction": 0.8705995829694662,
+            "relative_amplitude": 1.098462752635293,
+            "relative_width": 9.888496809932327,
+            "coherent": false,
+            "shape_retained": false,
+            "pattern_retained": false
+          },
+          "minimum_relative_amplitude": 0.9715043748924925,
+          "minimum_correlation": 0.48230634193903565,
+          "relative_width_range": [
+            1.0,
+            10.187063645555877
+          ],
+          "maximum_abs_wrapped_shift_sites": 1,
+          "ambiguous_frames": 0,
+          "species_total_change": [
+            -280,
+            -332,
+            495,
+            -67413,
+            -2105208,
+            2105208,
+            67530
+          ]
+        },
+        {
+          "side": 1,
+          "delta": 2e-05,
+          "coherence": {
+            "initial_present": true,
+            "retained_at_all_frames": false,
+            "positive_frames": 71,
+            "first_loss_interval": [
+              0.064,
+              0.065
+            ],
+            "right_censored_at": null,
+            "first_positive_time": 0.0
+          },
+          "shape": {
+            "initial_present": true,
+            "retained_at_all_frames": false,
+            "positive_frames": 49,
+            "first_loss_interval": [
+              0.043000000000000003,
+              0.044
+            ],
+            "right_censored_at": null,
+            "first_positive_time": 0.0
+          },
+          "pattern": {
+            "initial_present": true,
+            "retained_at_all_frames": false,
+            "positive_frames": 49,
+            "first_loss_interval": [
+              0.043000000000000003,
+              0.044
+            ],
+            "right_censored_at": null,
+            "first_positive_time": 0.0
+          },
+          "initial": {
+            "amplitude": 0.9979655798928252,
+            "unaligned_amplitude": 0.997965579892825,
+            "correlation": 0.9996309538587281,
+            "shift_sites": 0,
+            "phase_ambiguous": false,
+            "participation_length": 2.581626685286887,
+            "residual_fraction": 0.027165347181445285,
+            "relative_amplitude": 1.0,
+            "relative_width": 1.0,
+            "coherent": true,
+            "shape_retained": true,
+            "pattern_retained": true
+          },
+          "final": {
+            "amplitude": 1.0215919213077669,
+            "unaligned_amplitude": 1.021591921307767,
+            "correlation": 0.47444367800688847,
+            "shift_sites": 0,
+            "phase_ambiguous": false,
+            "participation_length": 24.879227719712212,
+            "residual_fraction": 0.8802858606153432,
+            "relative_amplitude": 1.0236745053045606,
+            "relative_width": 9.637035386062207,
+            "coherent": false,
+            "shape_retained": false,
+            "pattern_retained": false
+          },
+          "minimum_relative_amplitude": 0.931129363024747,
+          "minimum_correlation": 0.4631578128692026,
+          "relative_width_range": [
+            1.0,
+            10.277195259023657
+          ],
+          "maximum_abs_wrapped_shift_sites": 1,
+          "ambiguous_frames": 0,
+          "species_total_change": [
+            -333,
+            -414,
+            132,
+            -67416,
+            -2119601,
+            2119601,
+            68031
+          ]
+        }
+      ]
+    },
+    {
+      "id": "homogeneous_r0",
+      "condition": "homogeneous",
+      "seed": 2405734710,
+      "trajectories": [
+        {
+          "side": 0,
+          "delta": 0.0001,
+          "coherence": {
+            "initial_present": false,
+            "retained_at_all_frames": false,
+            "positive_frames": 0,
+            "first_loss_interval": null,
+            "right_censored_at": null,
+            "first_positive_time": null
+          },
+          "shape": {
+            "initial_present": false,
+            "retained_at_all_frames": false,
+            "positive_frames": 0,
+            "first_loss_interval": null,
+            "right_censored_at": null,
+            "first_positive_time": null
+          },
+          "pattern": {
+            "initial_present": false,
+            "retained_at_all_frames": false,
+            "positive_frames": 0,
+            "first_loss_interval": null,
+            "right_censored_at": null,
+            "first_positive_time": null
+          },
+          "initial": {
+            "amplitude": 0.0004098998097814929,
+            "unaligned_amplitude": 7.991579702783335e-05,
+            "correlation": 0.05058926048448985,
+            "shift_sites": -214,
+            "phase_ambiguous": false,
+            "participation_length": 65.30978811142928,
+            "residual_fraction": 0.9987195435774915,
+            "relative_amplitude": 0.0004107354181749569,
+            "relative_width": 25.297921067999663,
+            "coherent": false,
+            "shape_retained": false,
+            "pattern_retained": false
+          },
+          "final": {
+            "amplitude": 0.6383270686904935,
+            "unaligned_amplitude": -0.17408782608730666,
+            "correlation": 0.3198425987905516,
+            "shift_sites": 213,
+            "phase_ambiguous": false,
+            "participation_length": 34.10128383244388,
+            "residual_fraction": 0.947470691894428,
+            "relative_amplitude": 0.6396283414494571,
+            "relative_width": 13.209223481765461,
+            "coherent": false,
+            "shape_retained": false,
+            "pattern_retained": false
+          },
+          "minimum_relative_amplitude": 0.0004107354181749569,
+          "minimum_correlation": 0.05058926048448985,
+          "relative_width_range": [
+            10.164421829809676,
+            25.297921067999663
+          ],
+          "maximum_abs_wrapped_shift_sites": 249,
+          "ambiguous_frames": 0,
+          "species_total_change": [
+            -349,
+            -410,
+            567,
+            -67299,
+            -2115038,
+            2115038,
+            67491
+          ]
+        },
+        {
+          "side": 1,
+          "delta": 2e-05,
+          "coherence": {
+            "initial_present": false,
+            "retained_at_all_frames": false,
+            "positive_frames": 0,
+            "first_loss_interval": null,
+            "right_censored_at": null,
+            "first_positive_time": null
+          },
+          "shape": {
+            "initial_present": false,
+            "retained_at_all_frames": false,
+            "positive_frames": 0,
+            "first_loss_interval": null,
+            "right_censored_at": null,
+            "first_positive_time": null
+          },
+          "pattern": {
+            "initial_present": false,
+            "retained_at_all_frames": false,
+            "positive_frames": 0,
+            "first_loss_interval": null,
+            "right_censored_at": null,
+            "first_positive_time": null
+          },
+          "initial": {
+            "amplitude": 0.0004098998097814929,
+            "unaligned_amplitude": 7.991579702783335e-05,
+            "correlation": 0.05058926048448985,
+            "shift_sites": -214,
+            "phase_ambiguous": false,
+            "participation_length": 65.30978811142928,
+            "residual_fraction": 0.9987195435774915,
+            "relative_amplitude": 0.0004107354181749569,
+            "relative_width": 25.297921067999663,
+            "coherent": false,
+            "shape_retained": false,
+            "pattern_retained": false
+          },
+          "final": {
+            "amplitude": 0.6391612835579562,
+            "unaligned_amplitude": -0.16518977842119392,
+            "correlation": 0.3222971862131305,
+            "shift_sites": -154,
+            "phase_ambiguous": false,
+            "participation_length": 31.88122467564516,
+            "residual_fraction": 0.9466385391262594,
+            "relative_amplitude": 0.6404642569201614,
+            "relative_width": 12.349277630782744,
+            "coherent": false,
+            "shape_retained": false,
+            "pattern_retained": false
+          },
+          "minimum_relative_amplitude": 0.0004107354181749569,
+          "minimum_correlation": 0.05058926048448985,
+          "relative_width_range": [
+            9.95906289180648,
+            25.297921067999663
+          ],
+          "maximum_abs_wrapped_shift_sites": 230,
+          "ambiguous_frames": 0,
+          "species_total_change": [
+            -429,
+            -435,
+            171,
+            -67302,
+            -2130383,
+            2130383,
+            67995
+          ]
+        }
+      ]
+    },
+    {
+      "id": "homogeneous_r1",
+      "condition": "homogeneous",
+      "seed": 2203006657,
+      "trajectories": [
+        {
+          "side": 0,
+          "delta": 0.0001,
+          "coherence": {
+            "initial_present": false,
+            "retained_at_all_frames": false,
+            "positive_frames": 0,
+            "first_loss_interval": null,
+            "right_censored_at": null,
+            "first_positive_time": null
+          },
+          "shape": {
+            "initial_present": false,
+            "retained_at_all_frames": false,
+            "positive_frames": 0,
+            "first_loss_interval": null,
+            "right_censored_at": null,
+            "first_positive_time": null
+          },
+          "pattern": {
+            "initial_present": false,
+            "retained_at_all_frames": false,
+            "positive_frames": 0,
+            "first_loss_interval": null,
+            "right_censored_at": null,
+            "first_positive_time": null
+          },
+          "initial": {
+            "amplitude": 0.0004098998097814929,
+            "unaligned_amplitude": 7.991579702783335e-05,
+            "correlation": 0.05058926048448985,
+            "shift_sites": -214,
+            "phase_ambiguous": false,
+            "participation_length": 65.30978811142928,
+            "residual_fraction": 0.9987195435774915,
+            "relative_amplitude": 0.0004107354181749569,
+            "relative_width": 25.297921067999663,
+            "coherent": false,
+            "shape_retained": false,
+            "pattern_retained": false
+          },
+          "final": {
+            "amplitude": 0.8291982554355899,
+            "unaligned_amplitude": 0.528985216867801,
+            "correlation": 0.40668577786310484,
+            "shift_sites": 88,
+            "phase_ambiguous": false,
+            "participation_length": 28.311556169522436,
+            "residual_fraction": 0.9135681025976561,
+            "relative_amplitude": 0.8308886319753034,
+            "relative_width": 10.966556989387593,
+            "coherent": false,
+            "shape_retained": false,
+            "pattern_retained": false
+          },
+          "minimum_relative_amplitude": 0.0004107354181749569,
+          "minimum_correlation": 0.05058926048448985,
+          "relative_width_range": [
+            9.917838417847602,
+            25.297921067999663
+          ],
+          "maximum_abs_wrapped_shift_sites": 232,
+          "ambiguous_frames": 0,
+          "species_total_change": [
+            -364,
+            256,
+            340,
+            -68040,
+            -2110008,
+            2110008,
+            67808
+          ]
+        },
+        {
+          "side": 1,
+          "delta": 2e-05,
+          "coherence": {
+            "initial_present": false,
+            "retained_at_all_frames": false,
+            "positive_frames": 0,
+            "first_loss_interval": null,
+            "right_censored_at": null,
+            "first_positive_time": null
+          },
+          "shape": {
+            "initial_present": false,
+            "retained_at_all_frames": false,
+            "positive_frames": 0,
+            "first_loss_interval": null,
+            "right_censored_at": null,
+            "first_positive_time": null
+          },
+          "pattern": {
+            "initial_present": false,
+            "retained_at_all_frames": false,
+            "positive_frames": 0,
+            "first_loss_interval": null,
+            "right_censored_at": null,
+            "first_positive_time": null
+          },
+          "initial": {
+            "amplitude": 0.0004098998097814929,
+            "unaligned_amplitude": 7.991579702783335e-05,
+            "correlation": 0.05058926048448985,
+            "shift_sites": -214,
+            "phase_ambiguous": false,
+            "participation_length": 65.30978811142928,
+            "residual_fraction": 0.9987195435774915,
+            "relative_amplitude": 0.0004107354181749569,
+            "relative_width": 25.297921067999663,
+            "coherent": false,
+            "shape_retained": false,
+            "pattern_retained": false
+          },
+          "final": {
+            "amplitude": 0.8193769645200184,
+            "unaligned_amplitude": 0.5471036045678134,
+            "correlation": 0.40490220600323507,
+            "shift_sites": 88,
+            "phase_ambiguous": false,
+            "participation_length": 28.60796432917313,
+            "residual_fraction": 0.9143599967046426,
+            "relative_amplitude": 0.8210473196961502,
+            "relative_width": 11.081371482644876,
+            "coherent": false,
+            "shape_retained": false,
+            "pattern_retained": false
+          },
+          "minimum_relative_amplitude": 0.0004107354181749569,
+          "minimum_correlation": 0.05058926048448985,
+          "relative_width_range": [
+            9.65532672374144,
+            25.297921067999663
+          ],
+          "maximum_abs_wrapped_shift_sites": 232,
+          "ambiguous_frames": 0,
+          "species_total_change": [
+            -435,
+            234,
+            -53,
+            -68045,
+            -2125294,
+            2125294,
+            68299
+          ]
+        }
+      ]
+    },
+    {
+      "id": "homogeneous_r2",
+      "condition": "homogeneous",
+      "seed": 2345346294,
+      "trajectories": [
+        {
+          "side": 0,
+          "delta": 0.0001,
+          "coherence": {
+            "initial_present": false,
+            "retained_at_all_frames": false,
+            "positive_frames": 0,
+            "first_loss_interval": null,
+            "right_censored_at": null,
+            "first_positive_time": null
+          },
+          "shape": {
+            "initial_present": false,
+            "retained_at_all_frames": false,
+            "positive_frames": 0,
+            "first_loss_interval": null,
+            "right_censored_at": null,
+            "first_positive_time": null
+          },
+          "pattern": {
+            "initial_present": false,
+            "retained_at_all_frames": false,
+            "positive_frames": 0,
+            "first_loss_interval": null,
+            "right_censored_at": null,
+            "first_positive_time": null
+          },
+          "initial": {
+            "amplitude": 0.0004098998097814929,
+            "unaligned_amplitude": 7.991579702783335e-05,
+            "correlation": 0.05058926048448985,
+            "shift_sites": -214,
+            "phase_ambiguous": false,
+            "participation_length": 65.30978811142928,
+            "residual_fraction": 0.9987195435774915,
+            "relative_amplitude": 0.0004107354181749569,
+            "relative_width": 25.297921067999663,
+            "coherent": false,
+            "shape_retained": false,
+            "pattern_retained": false
+          },
+          "final": {
+            "amplitude": 0.5758476933539138,
+            "unaligned_amplitude": -0.2600592491982669,
+            "correlation": 0.2929301111387649,
+            "shift_sites": 147,
+            "phase_ambiguous": false,
+            "participation_length": 33.80239486868602,
+            "residual_fraction": 0.9561338556856099,
+            "relative_amplitude": 0.5770215976945378,
+            "relative_width": 13.09344804240342,
+            "coherent": false,
+            "shape_retained": false,
+            "pattern_retained": false
+          },
+          "minimum_relative_amplitude": 0.0004107354181749569,
+          "minimum_correlation": 0.05058926048448985,
+          "relative_width_range": [
+            9.78982409562916,
+            25.297921067999663
+          ],
+          "maximum_abs_wrapped_shift_sites": 240,
+          "ambiguous_frames": 0,
+          "species_total_change": [
+            -358,
+            -368,
+            421,
+            -67310,
+            -2111659,
+            2111659,
+            67615
+          ]
+        },
+        {
+          "side": 1,
+          "delta": 2e-05,
+          "coherence": {
+            "initial_present": false,
+            "retained_at_all_frames": false,
+            "positive_frames": 0,
+            "first_loss_interval": null,
+            "right_censored_at": null,
+            "first_positive_time": null
+          },
+          "shape": {
+            "initial_present": false,
+            "retained_at_all_frames": false,
+            "positive_frames": 0,
+            "first_loss_interval": null,
+            "right_censored_at": null,
+            "first_positive_time": null
+          },
+          "pattern": {
+            "initial_present": false,
+            "retained_at_all_frames": false,
+            "positive_frames": 0,
+            "first_loss_interval": null,
+            "right_censored_at": null,
+            "first_positive_time": null
+          },
+          "initial": {
+            "amplitude": 0.0004098998097814929,
+            "unaligned_amplitude": 7.991579702783335e-05,
+            "correlation": 0.05058926048448985,
+            "shift_sites": -214,
+            "phase_ambiguous": false,
+            "participation_length": 65.30978811142928,
+            "residual_fraction": 0.9987195435774915,
+            "relative_amplitude": 0.0004107354181749569,
+            "relative_width": 25.297921067999663,
+            "coherent": false,
+            "shape_retained": false,
+            "pattern_retained": false
+          },
+          "final": {
+            "amplitude": 0.5675819845264417,
+            "unaligned_amplitude": -0.2671157431358202,
+            "correlation": 0.2884285996668121,
+            "shift_sites": 147,
+            "phase_ambiguous": false,
+            "participation_length": 33.52605278928905,
+            "residual_fraction": 0.9575014062100599,
+            "relative_amplitude": 0.5687390386624318,
+            "relative_width": 12.986406198990545,
+            "coherent": false,
+            "shape_retained": false,
+            "pattern_retained": false
+          },
+          "minimum_relative_amplitude": 0.0004107354181749569,
+          "minimum_correlation": 0.05058926048448985,
+          "relative_width_range": [
+            9.469190528423164,
+            25.297921067999663
+          ],
+          "maximum_abs_wrapped_shift_sites": 240,
+          "ambiguous_frames": 0,
+          "species_total_change": [
+            -412,
+            -495,
+            87,
+            -67313,
+            -2126883,
+            2126883,
+            68133
+          ]
+        }
+      ]
+    },
+    {
+      "id": "homogeneous_r3",
+      "condition": "homogeneous",
+      "seed": 1366077646,
+      "trajectories": [
+        {
+          "side": 0,
+          "delta": 0.0001,
+          "coherence": {
+            "initial_present": false,
+            "retained_at_all_frames": false,
+            "positive_frames": 0,
+            "first_loss_interval": null,
+            "right_censored_at": null,
+            "first_positive_time": null
+          },
+          "shape": {
+            "initial_present": false,
+            "retained_at_all_frames": false,
+            "positive_frames": 0,
+            "first_loss_interval": null,
+            "right_censored_at": null,
+            "first_positive_time": null
+          },
+          "pattern": {
+            "initial_present": false,
+            "retained_at_all_frames": false,
+            "positive_frames": 0,
+            "first_loss_interval": null,
+            "right_censored_at": null,
+            "first_positive_time": null
+          },
+          "initial": {
+            "amplitude": 0.0004098998097814929,
+            "unaligned_amplitude": 7.991579702783335e-05,
+            "correlation": 0.05058926048448985,
+            "shift_sites": -214,
+            "phase_ambiguous": false,
+            "participation_length": 65.30978811142928,
+            "residual_fraction": 0.9987195435774915,
+            "relative_amplitude": 0.0004107354181749569,
+            "relative_width": 25.297921067999663,
+            "coherent": false,
+            "shape_retained": false,
+            "pattern_retained": false
+          },
+          "final": {
+            "amplitude": 0.6645472694861918,
+            "unaligned_amplitude": 0.24680536587944876,
+            "correlation": 0.33216451926947926,
+            "shift_sites": 109,
+            "phase_ambiguous": false,
+            "participation_length": 33.786506457772056,
+            "residual_fraction": 0.9432214650539269,
+            "relative_amplitude": 0.6659019938919735,
+            "relative_width": 13.087293623949149,
+            "coherent": false,
+            "shape_retained": false,
+            "pattern_retained": false
+          },
+          "minimum_relative_amplitude": 0.0004107354181749569,
+          "minimum_correlation": 0.05058926048448985,
+          "relative_width_range": [
+            9.539873121572109,
+            25.297921067999663
+          ],
+          "maximum_abs_wrapped_shift_sites": 231,
+          "ambiguous_frames": 0,
+          "species_total_change": [
+            131,
+            -299,
+            328,
+            -67871,
+            -2102896,
+            2102896,
+            67711
+          ]
+        },
+        {
+          "side": 1,
+          "delta": 2e-05,
+          "coherence": {
+            "initial_present": false,
+            "retained_at_all_frames": false,
+            "positive_frames": 0,
+            "first_loss_interval": null,
+            "right_censored_at": null,
+            "first_positive_time": null
+          },
+          "shape": {
+            "initial_present": false,
+            "retained_at_all_frames": false,
+            "positive_frames": 0,
+            "first_loss_interval": null,
+            "right_censored_at": null,
+            "first_positive_time": null
+          },
+          "pattern": {
+            "initial_present": false,
+            "retained_at_all_frames": false,
+            "positive_frames": 0,
+            "first_loss_interval": null,
+            "right_censored_at": null,
+            "first_positive_time": null
+          },
+          "initial": {
+            "amplitude": 0.0004098998097814929,
+            "unaligned_amplitude": 7.991579702783335e-05,
+            "correlation": 0.05058926048448985,
+            "shift_sites": -214,
+            "phase_ambiguous": false,
+            "participation_length": 65.30978811142928,
+            "residual_fraction": 0.9987195435774915,
+            "relative_amplitude": 0.0004107354181749569,
+            "relative_width": 25.297921067999663,
+            "coherent": false,
+            "shape_retained": false,
+            "pattern_retained": false
+          },
+          "final": {
+            "amplitude": 0.6087766601301708,
+            "unaligned_amplitude": 0.2334634507464903,
+            "correlation": 0.3123859242331877,
+            "shift_sites": -183,
+            "phase_ambiguous": false,
+            "participation_length": 33.80219193776375,
+            "residual_fraction": 0.9499552801795341,
+            "relative_amplitude": 0.6100176923893,
+            "relative_width": 13.093369436568027,
+            "coherent": false,
+            "shape_retained": false,
+            "pattern_retained": false
+          },
+          "minimum_relative_amplitude": 0.0004107354181749569,
+          "minimum_correlation": 0.05058926048448985,
+          "relative_width_range": [
+            9.596225108989618,
+            25.297921067999663
+          ],
+          "maximum_abs_wrapped_shift_sites": 231,
+          "ambiguous_frames": 0,
+          "species_total_change": [
+            46,
+            -406,
+            -32,
+            -67873,
+            -2117925,
+            2117925,
+            68265
+          ]
+        }
+      ]
+    }
+  ],
+  "source_hashes": {
+    "src/run_mg160_persistence.py": "5ff2b8f80a55e0ecce5bdd980dafc5006e35a4d41f4ebefaec4e616f8eb27fb4",
+    "src/mg12h3_pattern_persistence.py": "63f238bed53489793e10dd8e1aae602ac4659363b8fffeff4dc8cbe376eff617",
+    "src/prepare_mg160_persistence.py": "8e4e4aae31aae845be5412337b975ef6b64357f5c2aef6b8913eab9cbc9b4b06",
+    "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+    "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+    "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+    "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+    "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+    "src/measure.py": "23f0bf08df1bda3f0669869ab92af615ea0462bc5e7bc24b3a187a8f040fb409",
+    "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+    "spec/MG12H3_pattern_persistence_plan.md": "be9ad9f8b48bb3dbcc347f16732a5c3e6723152d5e5e813c30204a94303d0947",
+    "src/run_mg163_long.py": "e82f79c251d810a1f1acd6aee8d8809c96baf546e7657136472848f50588d321",
+    "src/check_mg163_long.py": "f1710e08e8b80fb6c4659804aee54193e11e5b31e1422b3adff8006237ad935f",
+    "src/qualify_mg163_long.py": "1bbf8b9d6a7fb7b27c034c49555d98fb36582df8106d69993ce58464758f37dc",
+    "src/score_mg163_long.py": "84e2350074334c85ebc2a1a4baf115594f18859f5e62115c39507a18c5d01bc0",
+    "src/check_mg163_shape.py": "5358009abd5f0fd9d2899daeb6c187fbba6cab29f563a5d74728c17d80fa644f",
+    "src/mg161_local_shape.py": "c3d1f9535e4adbc34eb6c7b776deeb695c15ee1573e8561954bb7689a6757fc3",
+    "spec/MG163_long_horizon_persistence.md": "aa69b2801305305d0e3a4dd0a88213e37153a6b414ef7720eec6521ae0c031cc",
+    "results/MG12H3/pattern_persistence/prepared_inputs.npz": "ccf9c00393f39b390ac60314d15594cd6e4f55cb334d828f7b7af4474462ec43",
+    "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab",
+    "results/MG12H3/noise_aware_shape/calibration.json": "078d4d3682c1d81ff7a74ba7a6a745799e3c81c17fcc4cb8949f5c2ba60b4392"
+  },
+  "input_sha256": {
+    "production/prepared_r0/observations.npz": "7e4ac13299420bd7fe74ec3ac195ef91ed5fc3f7a0561e3704893f17d14af855",
+    "production/prepared_r1/observations.npz": "e940c230f0550432b0b88a544d1560341e1cd34252d3702fd3a33d1c4005063d",
+    "production/prepared_r2/observations.npz": "4c197fe19f7e1d29560ea117d1751d9fcb7daf05f584331ff640526b3db1c658",
+    "production/prepared_r3/observations.npz": "6dd31bcb621470ed2e1a767469d663c5eb18bff830b468b2a6f1052c6bb90260",
+    "production/homogeneous_r0/observations.npz": "9dc9e3a5f7e7fed80bcbe511e90d67f0a663e1f2000a57a97cb230db919a9fe3",
+    "production/homogeneous_r1/observations.npz": "2c48e88d3838afc5b2312e1daefae03b807d5a878100c86b6d5e6f798201b8b4",
+    "production/homogeneous_r2/observations.npz": "f95418f19626af090e8b3ab2bf1cb645371c18f15a98a8a7d9d61af3f75c90d6",
+    "production/homogeneous_r3/observations.npz": "4388f0e5dd36a1a1ef5bcddca89022245eb11c1d4061c0f66d68e39e9defa802"
+  },
+  "checkpoint_chain_endpoints": 16000,
+  "sentinel_events": 138372030,
+  "method": "Independent FFT smoothing/cross-correlation and extent/outcome recomputation; compiled integer event/reservation replay and separate histogram aggregation. Shared frozen channel/inputs and same author; not external replication.",
+  "elapsed_seconds": 226.74336900000344
+}

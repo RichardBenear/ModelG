@@ -1,0 +1,137 @@
+{
+  "passed": true,
+  "fields_checked": 16016,
+  "pilot_separation_supported": false,
+  "jobs": [
+    {
+      "id": "prepared_r0",
+      "condition": "prepared",
+      "outcomes": [
+        {
+          "all_compatible": false,
+          "any_compatible": true,
+          "boundary_frames": 0
+        },
+        {
+          "all_compatible": false,
+          "any_compatible": true,
+          "boundary_frames": 0
+        }
+      ]
+    },
+    {
+      "id": "prepared_r1",
+      "condition": "prepared",
+      "outcomes": [
+        {
+          "all_compatible": false,
+          "any_compatible": true,
+          "boundary_frames": 0
+        },
+        {
+          "all_compatible": false,
+          "any_compatible": true,
+          "boundary_frames": 0
+        }
+      ]
+    },
+    {
+      "id": "prepared_r2",
+      "condition": "prepared",
+      "outcomes": [
+        {
+          "all_compatible": false,
+          "any_compatible": true,
+          "boundary_frames": 0
+        },
+        {
+          "all_compatible": false,
+          "any_compatible": true,
+          "boundary_frames": 0
+        }
+      ]
+    },
+    {
+      "id": "prepared_r3",
+      "condition": "prepared",
+      "outcomes": [
+        {
+          "all_compatible": false,
+          "any_compatible": true,
+          "boundary_frames": 0
+        },
+        {
+          "all_compatible": false,
+          "any_compatible": true,
+          "boundary_frames": 0
+        }
+      ]
+    },
+    {
+      "id": "homogeneous_r0",
+      "condition": "homogeneous",
+      "outcomes": [
+        {
+          "all_compatible": false,
+          "any_compatible": true,
+          "boundary_frames": 16
+        },
+        {
+          "all_compatible": false,
+          "any_compatible": true,
+          "boundary_frames": 7
+        }
+      ]
+    },
+    {
+      "id": "homogeneous_r1",
+      "condition": "homogeneous",
+      "outcomes": [
+        {
+          "all_compatible": false,
+          "any_compatible": false,
+          "boundary_frames": 0
+        },
+        {
+          "all_compatible": false,
+          "any_compatible": true,
+          "boundary_frames": 3
+        }
+      ]
+    },
+    {
+      "id": "homogeneous_r2",
+      "condition": "homogeneous",
+      "outcomes": [
+        {
+          "all_compatible": false,
+          "any_compatible": true,
+          "boundary_frames": 40
+        },
+        {
+          "all_compatible": false,
+          "any_compatible": true,
+          "boundary_frames": 21
+        }
+      ]
+    },
+    {
+      "id": "homogeneous_r3",
+      "condition": "homogeneous",
+      "outcomes": [
+        {
+          "all_compatible": false,
+          "any_compatible": true,
+          "boundary_frames": 51
+        },
+        {
+          "all_compatible": false,
+          "any_compatible": true,
+          "boundary_frames": 24
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 22.902536600013264,
+  "method": "Direct spatial weighted sums over all scale/position fits; independent classification, advisory and outcome aggregation. Shared template bank, smoothing and input fields; same author, not external replication."
+}

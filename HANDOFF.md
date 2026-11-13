@@ -1,3 +1,7 @@
+# MG163 report complete - finite clear-case separation NOT ESTABLISHED; PI closure pending
+
+All8jobs completeT1 in16.0254h/460029worker-seconds. Prepared0/8marginalpaths retainall1001frames; firstfailure shape_mismatchT.205-.460, amplitudesalwaysabove.5, noboundaryadvisories. Controls7/8paths hadcompatibleframes (all4independentcontrolpairs at leastonecrossing). Audit16000marginalendpoints/138372030events in200fixedsentinelsegments passed; directsum fullbankrecompute16016fields/labels/verdictpassed. Report results/MG12H3/long_horizon_persistence/MG163_long_horizon_results.md;compactlosslesscandidate_scores.json.gz and decision_summary.json. Fullraw1.74145GBlocal_raw/MG163_long_horizon,verifiedSHAmanifest;noimmutablearchiveclaim. No furtherdraws. Recommend saved-data diagnosisofresidualmismatch/controlcrossings before nextdynamics. MG162A/Bclosedunchanged.
+
 # MG163 long-horizon production RUNNING
 
 Registration0000067 published beforedraws; eightactivejobs confirmed, controller session31054. Fourprepared/fourhomogeneousfreshpairs,T1,both ticks;1000segments,1001observations. Ledger local_raw/MG163_long_horizon/production/ledger.json;attempt results/MG12H3/long_horizon_persistence/attempt.json. Forecast19.6h;ceiling800000worker-seconds/100000job+3600activeanalysis,max8workers/thread1. Fullrawlocal, fixed10%sentineltraces,4GBguard. Do not rerun register/run or replace jobs. Oncomplete run src/check_mg163_long.py then src/score_mg163_long.py then src/check_mg163_shape.py and report with plain-language summary; allanalysisattemptstimed. MG162A/B PIclosed.
