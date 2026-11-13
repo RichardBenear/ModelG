@@ -1,0 +1,126 @@
+{
+  "stage": "MG163",
+  "approval": {
+    "stage": "MG163",
+    "approved_by": "Richard Benear",
+    "date": "2026-11-12",
+    "statement": "i approve. go ahead.",
+    "scope": "MG163 eight-pair T1 criteria, deterministic 10 percent sentinel retention, local storage, budget, implementation qualification and prospective compact publication before execution",
+    "pairs": 8,
+    "worker_cap": 800000,
+    "job_cap": 100000,
+    "parent_cap": 3600,
+    "workers": 8,
+    "storage_cap": 4000000000,
+    "raw_retention": "Full raw local only; compact code/spec/seeds/reports public"
+  },
+  "jobs": [
+    {
+      "id": "prepared_r0",
+      "condition": "prepared",
+      "replicate": 0,
+      "seed": 689891475,
+      "seed_nonce": 0,
+      "sentinel": true
+    },
+    {
+      "id": "prepared_r1",
+      "condition": "prepared",
+      "replicate": 1,
+      "seed": 2260313988,
+      "seed_nonce": 0,
+      "sentinel": false
+    },
+    {
+      "id": "prepared_r2",
+      "condition": "prepared",
+      "replicate": 2,
+      "seed": 1823672764,
+      "seed_nonce": 0,
+      "sentinel": false
+    },
+    {
+      "id": "prepared_r3",
+      "condition": "prepared",
+      "replicate": 3,
+      "seed": 713218429,
+      "seed_nonce": 0,
+      "sentinel": false
+    },
+    {
+      "id": "homogeneous_r0",
+      "condition": "homogeneous",
+      "replicate": 0,
+      "seed": 2405734710,
+      "seed_nonce": 0,
+      "sentinel": true
+    },
+    {
+      "id": "homogeneous_r1",
+      "condition": "homogeneous",
+      "replicate": 1,
+      "seed": 2203006657,
+      "seed_nonce": 0,
+      "sentinel": false
+    },
+    {
+      "id": "homogeneous_r2",
+      "condition": "homogeneous",
+      "replicate": 2,
+      "seed": 2345346294,
+      "seed_nonce": 0,
+      "sentinel": false
+    },
+    {
+      "id": "homogeneous_r3",
+      "condition": "homogeneous",
+      "replicate": 3,
+      "seed": 1366077646,
+      "seed_nonce": 0,
+      "sentinel": false
+    }
+  ],
+  "source_hashes": {
+    "src/run_mg160_persistence.py": "5ff2b8f80a55e0ecce5bdd980dafc5006e35a4d41f4ebefaec4e616f8eb27fb4",
+    "src/mg12h3_pattern_persistence.py": "63f238bed53489793e10dd8e1aae602ac4659363b8fffeff4dc8cbe376eff617",
+    "src/prepare_mg160_persistence.py": "8e4e4aae31aae845be5412337b975ef6b64357f5c2aef6b8913eab9cbc9b4b06",
+    "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+    "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+    "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+    "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+    "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+    "src/measure.py": "23f0bf08df1bda3f0669869ab92af615ea0462bc5e7bc24b3a187a8f040fb409",
+    "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+    "spec/MG12H3_pattern_persistence_plan.md": "be9ad9f8b48bb3dbcc347f16732a5c3e6723152d5e5e813c30204a94303d0947",
+    "src/run_mg163_long.py": "e82f79c251d810a1f1acd6aee8d8809c96baf546e7657136472848f50588d321",
+    "src/check_mg163_long.py": "f1710e08e8b80fb6c4659804aee54193e11e5b31e1422b3adff8006237ad935f",
+    "src/qualify_mg163_long.py": "1bbf8b9d6a7fb7b27c034c49555d98fb36582df8106d69993ce58464758f37dc",
+    "src/score_mg163_long.py": "84e2350074334c85ebc2a1a4baf115594f18859f5e62115c39507a18c5d01bc0",
+    "src/check_mg163_shape.py": "5358009abd5f0fd9d2899daeb6c187fbba6cab29f563a5d74728c17d80fa644f",
+    "src/mg161_local_shape.py": "c3d1f9535e4adbc34eb6c7b776deeb695c15ee1573e8561954bb7689a6757fc3",
+    "spec/MG163_long_horizon_persistence.md": "aa69b2801305305d0e3a4dd0a88213e37153a6b414ef7720eec6521ae0c031cc",
+    "results/MG12H3/pattern_persistence/prepared_inputs.npz": "ccf9c00393f39b390ac60314d15594cd6e4f55cb334d828f7b7af4474462ec43",
+    "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab",
+    "results/MG12H3/noise_aware_shape/calibration.json": "078d4d3682c1d81ff7a74ba7a6a745799e3c81c17fcc4cb8949f5c2ba60b4392"
+  },
+  "segments": 1000,
+  "segment": 0.001,
+  "duration": 1.0,
+  "deltas": [
+    0.0001,
+    2e-05
+  ],
+  "workers": 8,
+  "worker_cap": 800000,
+  "job_cap": 100000,
+  "parent_cap": 3600,
+  "trace_stride": 10,
+  "storage_cap": 4000000000,
+  "forecast_worker_seconds": 563540.728079,
+  "environment": {
+    "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+    "numpy": "2.2.4",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "threads": 1
+  }
+}

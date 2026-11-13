@@ -1,3 +1,11 @@
+# MG163 APPROVED and REGISTERED - publish before production
+
+No-active-model qualification passed full1000segment framing and100segment regression versus frozenwriter, storage/free-space guards and trace schedule. Eightfreshseeds and sourcehashes registered results/MG12H3/long_horizon_persistence/plan.json. Publish registration before python src/run_mg163_long.py run. No modeldrawsyet. Fullraw local_raw/MG163_long_horizon;budget800000worker-seconds/100000job+3600activeanalysis,max8workers/thread1. Forecast19.6h. Oncomplete run check_mg163_long.py,score_mg163_long.py,check_mg163_shape.py thenreport.
+
+# MG163 APPROVED - implementation qualification in progress, no active trajectories
+
+PI approves full proposed design/budget with "i approve. go ahead." Approval results/MG12H3/long_horizon_persistence/approval.json. New driver src/run_mg163_long.py; auditor check_mg163_long.py;score_mg163_long.py;separate check_mg163_shape.py. Inactive full1000segment and100segment regression qualification running; finish before register and publish source/seeds. No active scientificdraws. Later budget800000worker-seconds/100000job+3600activeanalysis,max8workers/thread1,4GBlocalraw.
+
 # MG162A/B PI CLOSED; MG163 longer-horizon design prepared
 
 PI signs off MG162A/B and authorizes preparation. MG163 proposed eight fresh pairs throughT1, unchanged MG161 measurement/strict separation, both ticks. Forecast19.6h/8workers with25%allowance; ceiling800000worker-seconds/100000job+3600activeanalysis;4GBlocal reserve,1.63GBprojected using predeclared10%sentinel traces and all checkpoints/observations. Spec/MG163_long_horizon_persistence.md;readiness results/MG12H3/long_horizon_persistence/MG163_long_horizon_readiness.md. Production approval pending; no seeds/draws. Newparameterizedwriter/auditor and no-drawimplementationqualification required beforelaunch; old100segmentwritercannotrunT1unchanged.

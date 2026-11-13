@@ -2575,3 +2575,8 @@ Eight fresh independent seed pairs complete, four prepared/four homogeneous, bot
 ## MG162A/B - PI CLOSED; MG163 preparation authorized
 
 PI: "I sign off on MG162A/B. Go ahead and prepare the long horizon test". Close finite replay/instrument challenge and fresh short pilot without changing outcomes or inference limits. Closure record results/MG12H3/long_horizon_persistence/MG162AB_closure.json. MG163 design proposesT1/eightfreshpairs, frozeninstrument and controls,800000worker-seconds plus3600activeanalysisseconds,4GBlocal reserve and predeclared10%sentinel tracing. Concrete production approval and implementation qualification pending; no new trajectories.
+
+
+### MG163 - PI APPROVED, prelaunch qualification
+
+PI: "i approve. go ahead." Approves proposedT1/eightfreshpairs/frozenMG161instrumentandcriterion,10%fixedsentineltracing,800000worker-seconds/100000job+3600activeanalysis,4GBlocalraw/max8workers/thread1. Approval results/MG12H3/long_horizon_persistence/approval.json. Finish no-active-model qualification and publish source/config/seeds beforedraws;blockingfailures stop. Fullraw stayslocal,compactpublicationonly. No scientificretries/replacements.

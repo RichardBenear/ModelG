@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "elapsed_seconds": 98.65734049997991,
+  "inactive_segments": 1200,
+  "active_model_draws": 0,
+  "checks": [
+    "1000segment actual-engine inactive framing/count conservation/availability/RNG continuity",
+    "100segment checkpoint regression vs frozen old writer",
+    "selected full traces array-identical vs old writer",
+    "fixed100of1000trace schedule",
+    "local storage/free-space rejection boundaries",
+    "budget admission arithmetic"
+  ],
+  "limits": "No active-model microbenchmark; frozen engine unchanged. Inactive checks do not establish long-horizon outcome.",
+  "source_hashes": {
+    "src/run_mg160_persistence.py": "5ff2b8f80a55e0ecce5bdd980dafc5006e35a4d41f4ebefaec4e616f8eb27fb4",
+    "src/mg12h3_pattern_persistence.py": "63f238bed53489793e10dd8e1aae602ac4659363b8fffeff4dc8cbe376eff617",
+    "src/prepare_mg160_persistence.py": "8e4e4aae31aae845be5412337b975ef6b64357f5c2aef6b8913eab9cbc9b4b06",
+    "src/mg12h3_sparse.py": "d087d2deb755d5a8c9c23b472d2c8861b0ab40be8afa55318f3492bead45321e",
+    "src/mg12h3_tick_coupling.py": "218830b91fe4d58b5943e5bb5bec536214d8c452db3355ef4caae993e20b27f0",
+    "src/mg12h3_coupling_long.py": "fc525523b76e838d229c52e76b13873b5a9a8192ca51eb6e5e774649f3048d79",
+    "src/mg12h3_finer_precision.py": "671b84f1343998096f1e216c91926c74c7b4e241db3950dc41f58d92b0bb065d",
+    "src/mg12h3_contrast_estimator.py": "39c57db5581ab96ae612dec1641b49a986691d3a4aff3760b03f53b945d659a8",
+    "src/measure.py": "23f0bf08df1bda3f0669869ab92af615ea0462bc5e7bc24b3a187a8f040fb409",
+    "src/runner.py": "43f54d2d266a8b8383e67fd75c28b06307683aac5c38e095265ca1350f2ec6ad",
+    "spec/MG12H3_pattern_persistence_plan.md": "be9ad9f8b48bb3dbcc347f16732a5c3e6723152d5e5e813c30204a94303d0947",
+    "src/run_mg163_long.py": "e82f79c251d810a1f1acd6aee8d8809c96baf546e7657136472848f50588d321",
+    "src/check_mg163_long.py": "f1710e08e8b80fb6c4659804aee54193e11e5b31e1422b3adff8006237ad935f",
+    "src/qualify_mg163_long.py": "1bbf8b9d6a7fb7b27c034c49555d98fb36582df8106d69993ce58464758f37dc",
+    "src/score_mg163_long.py": "84e2350074334c85ebc2a1a4baf115594f18859f5e62115c39507a18c5d01bc0",
+    "src/check_mg163_shape.py": "5358009abd5f0fd9d2899daeb6c187fbba6cab29f563a5d74728c17d80fa644f",
+    "src/mg161_local_shape.py": "c3d1f9535e4adbc34eb6c7b776deeb695c15ee1573e8561954bb7689a6757fc3",
+    "spec/MG163_long_horizon_persistence.md": "aa69b2801305305d0e3a4dd0a88213e37153a6b414ef7720eec6521ae0c031cc",
+    "results/MG12H3/pattern_persistence/prepared_inputs.npz": "ccf9c00393f39b390ac60314d15594cd6e4f55cb334d828f7b7af4474462ec43",
+    "results/MG12H3/ring_feasibility/o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab",
+    "results/MG12H3/noise_aware_shape/calibration.json": "078d4d3682c1d81ff7a74ba7a6a745799e3c81c17fcc4cb8949f5c2ba60b4392"
+  }
+}
