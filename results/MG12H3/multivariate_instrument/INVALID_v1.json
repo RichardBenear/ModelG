@@ -1,0 +1,8 @@
+{
+  "status": "INVALID IMPLEMENTATION CALIBRATION",
+  "reason": "cal_null accidentally received signal; generator only zeroed kind null. All v1 thresholds/screens/applications invalid, not scientific negative. No outcome inspected or used for tuning.",
+  "elapsed_seconds": 10.574139999982435,
+  "retained_raw": "local_raw/MG165_multivariate",
+  "source_commit": "see frozen original source and plan",
+  "corrected_scope": "Same spec/seed/cases; fix cal_null zero-signal generator only, separate v2 outputs."
+}

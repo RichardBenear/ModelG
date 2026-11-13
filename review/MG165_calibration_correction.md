@@ -1,0 +1,3 @@
+# MG165 v1 invalid calibration; prospective correction
+
+Code inspection found generator zeroed only validation kind null, leaving template in calibration kind cal_null. Original attempt/source/inputs/raw retained. v1 results are invalid, not a scored scientific failure. No v1 outcomes inspected for threshold tuning. v2 corrects null template contribution only, retains same sample sizes/seed/cases/threshold rules, separate directories and registered hashes. Null construction asserts zero template contribution. Total active time remains within600seconds. Doublecore/weakcomponent failures, if any, remain genuine qualification limitations; do not adjust criteria.
