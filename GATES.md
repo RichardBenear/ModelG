@@ -2565,3 +2565,8 @@ All15finite empirical-noise/offgridinterior requirements supported. Ninepositive
 ## MG162B - fresh real-trajectory pilot APPROVED
 
 PI: "yes, i approve." Approves spec/MG162B_fresh_pilot.md criteria and budget: eight new independent pairs (four prepared/four homogeneous), T=0.1, deltas 0.0001/0.00002, observations every 0.001; frozen MG161 instrument/calibration. Clear-case separation requires all prepared marginal frames compatible with no boundary advisories and no homogeneous compatible frame. Finite pilot only; no population survival claim or P1 rescore. Cap 100000 worker-seconds plus 1800 active parent/audit seconds, 12000/job, at most eight local workers/thread one, 2 GB local raw reserve; no retries or replacements. Publish registration before draws. PI also approves compact verification publication.
+
+
+### MG162B results - clear-case finite pilot SUPPORTED
+
+Eight fresh independent seed pairs complete, four prepared/four homogeneous, both tick sizes throughT.1. Prepared8marginal paths each101/101core-compatible frames, no boundary advisories; homogeneous8paths each0/101compatible. Frozen finite-pilot criterion supported. All1600checkpoint endpoints and138555762sentinel events causally audited; separate direct-sum search/metric recomputation passed1616fields and verdict.45083.3worker-seconds/94.8322minuteswall within budget, no retries/replacements. Full raw local only with manifest. Four pairs do not establish population survival, physical particle identity or longer-horizon stability; P1 unchanged. PIclosurepending. Report results/MG12H3/shape_real_noise_challenge/MG162B_fresh_pilot_results.md.

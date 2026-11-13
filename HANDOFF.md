@@ -1,3 +1,7 @@
+# MG162B complete - clear-case finite pilot SUPPORTED; PI closure pending
+
+All eight fresh pairs completed94.8322minutes/45083.3worker-seconds, no failures/retries. All four prepared pairs both ticks compatible101/101frames, no boundary advisories; all four homogeneous pairs both ticks0/101compatible. Frozen finite criterion supported, not population/long-term physical survival. Audit1600endpoints/138555762sentinel events passed; all1616fields independently checked by direct spatial weighted sums over all11500scale/position hypotheses. Report results/MG12H3/shape_real_noise_challenge/MG162B_fresh_pilot_results.md. Full raw retained local_raw/MG162_fresh_model with SHA manifest, compact summaries public only. No longer run authorized. Recommend prepare longer-horizon feasibility/budget after sign-off.
+
 # MG162B fresh pilot RUNNING
 
 PI-approved registration a72bb02 published before draws. Controller session63466; eight active jobs confirmed (four prepared/four homogeneous), library threads one. Ledger local_raw/MG162_fresh_model/P1_production/ledger.json; public fresh_attempt.json. No rerun/replacement. On completion run src/run_mg162_fresh.py audit then score, separately recompute instrument metrics and write plain-language report. Budget100000 worker-seconds plus1800 activeparent/audit seconds,12000/job. Full raw stays local; compact exports only public. Initial hidden process launch exited before any attempt/raw creation, recorded in fresh_launch_record.json.
