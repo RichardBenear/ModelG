@@ -1,3 +1,7 @@
+# MG162B fresh pilot RUNNING
+
+PI-approved registration a72bb02 published before draws. Controller session63466; eight active jobs confirmed (four prepared/four homogeneous), library threads one. Ledger local_raw/MG162_fresh_model/P1_production/ledger.json; public fresh_attempt.json. No rerun/replacement. On completion run src/run_mg162_fresh.py audit then score, separately recompute instrument metrics and write plain-language report. Budget100000 worker-seconds plus1800 activeparent/audit seconds,12000/job. Full raw stays local; compact exports only public. Initial hidden process launch exited before any attempt/raw creation, recorded in fresh_launch_record.json.
+
 # MG162B approved - register and publish before launch
 
 PI approves concrete fresh-pilot criteria/budget and compact verification publication. Approval: results/MG12H3/shape_real_noise_challenge/fresh_approval.json. Run eight pairs locally with at most eight workers/thread one; full raw stays local. No trajectories yet; registration must publish before launch.
