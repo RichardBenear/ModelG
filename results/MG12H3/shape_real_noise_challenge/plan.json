@@ -1,0 +1,303 @@
+{
+  "stage": "MG162A",
+  "authorization": "ok, go ahead with the recommended next step",
+  "scope": "exhaustive finite empirical-noise replay challenge; no new Model G trajectories or stochastic draws",
+  "source_hashes": {
+    "src/run_mg162_challenge.py": "1d2cc3d1e98f4028c3a27fe5e7b534b405e84b9ec5ff49e3eb9513e4c74e4c63",
+    "src/mg161_local_shape.py": "c3d1f9535e4adbc34eb6c7b776deeb695c15ee1573e8561954bb7689a6757fc3",
+    "src/run_mg161_shape.py": "c4361298914e51616bebac6a2ae667d65780702632590f4f56d07eb7532ed778",
+    "spec/MG162_shape_validation.md": "15ed4584f3a2fc7a6ae9e5494e5f99a0144de6f50fcdf6727fcc25fd34fb698b"
+  },
+  "cases": [
+    {
+      "id": "null",
+      "kind": "null",
+      "primary": true,
+      "truth": "reject",
+      "amplitude": 0.0,
+      "scale": 1.0
+    },
+    {
+      "id": "interior_a0.8_s0.85",
+      "kind": "signal",
+      "primary": true,
+      "truth": "compatible",
+      "amplitude": 0.8,
+      "scale": 0.85
+    },
+    {
+      "id": "interior_a0.8_s1.1",
+      "kind": "signal",
+      "primary": true,
+      "truth": "compatible",
+      "amplitude": 0.8,
+      "scale": 1.1
+    },
+    {
+      "id": "interior_a0.8_s1.6",
+      "kind": "signal",
+      "primary": true,
+      "truth": "compatible",
+      "amplitude": 0.8,
+      "scale": 1.6
+    },
+    {
+      "id": "interior_a1_s0.85",
+      "kind": "signal",
+      "primary": true,
+      "truth": "compatible",
+      "amplitude": 1.0,
+      "scale": 0.85
+    },
+    {
+      "id": "interior_a1_s1.1",
+      "kind": "signal",
+      "primary": true,
+      "truth": "compatible",
+      "amplitude": 1.0,
+      "scale": 1.1
+    },
+    {
+      "id": "interior_a1_s1.6",
+      "kind": "signal",
+      "primary": true,
+      "truth": "compatible",
+      "amplitude": 1.0,
+      "scale": 1.6
+    },
+    {
+      "id": "interior_a1.2_s0.85",
+      "kind": "signal",
+      "primary": true,
+      "truth": "compatible",
+      "amplitude": 1.2,
+      "scale": 0.85
+    },
+    {
+      "id": "interior_a1.2_s1.1",
+      "kind": "signal",
+      "primary": true,
+      "truth": "compatible",
+      "amplitude": 1.2,
+      "scale": 1.1
+    },
+    {
+      "id": "interior_a1.2_s1.6",
+      "kind": "signal",
+      "primary": true,
+      "truth": "compatible",
+      "amplitude": 1.2,
+      "scale": 1.6
+    },
+    {
+      "id": "weak",
+      "amplitude": 0.2,
+      "scale": 1.1,
+      "kind": "signal",
+      "primary": true,
+      "truth": "reject"
+    },
+    {
+      "id": "narrow",
+      "amplitude": 1.0,
+      "scale": 0.3,
+      "kind": "signal",
+      "primary": true,
+      "truth": "reject"
+    },
+    {
+      "id": "broad",
+      "amplitude": 1.0,
+      "scale": 2.6,
+      "kind": "signal",
+      "primary": true,
+      "truth": "reject"
+    },
+    {
+      "id": "inverted",
+      "amplitude": -1.0,
+      "scale": 1.1,
+      "kind": "signal",
+      "primary": true,
+      "truth": "reject"
+    },
+    {
+      "id": "split",
+      "amplitude": 1.0,
+      "scale": 1.1,
+      "kind": "split",
+      "primary": true,
+      "truth": "reject"
+    },
+    {
+      "id": "boundary_amplitude_0.4",
+      "amplitude": 0.4,
+      "scale": 1.0,
+      "kind": "signal",
+      "primary": false
+    },
+    {
+      "id": "boundary_amplitude_0.45",
+      "amplitude": 0.45,
+      "scale": 1.0,
+      "kind": "signal",
+      "primary": false
+    },
+    {
+      "id": "boundary_amplitude_0.49",
+      "amplitude": 0.49,
+      "scale": 1.0,
+      "kind": "signal",
+      "primary": false
+    },
+    {
+      "id": "boundary_amplitude_0.5",
+      "amplitude": 0.5,
+      "scale": 1.0,
+      "kind": "signal",
+      "primary": false
+    },
+    {
+      "id": "boundary_amplitude_0.51",
+      "amplitude": 0.51,
+      "scale": 1.0,
+      "kind": "signal",
+      "primary": false
+    },
+    {
+      "id": "boundary_amplitude_0.55",
+      "amplitude": 0.55,
+      "scale": 1.0,
+      "kind": "signal",
+      "primary": false
+    },
+    {
+      "id": "boundary_amplitude_0.6",
+      "amplitude": 0.6,
+      "scale": 1.0,
+      "kind": "signal",
+      "primary": false
+    },
+    {
+      "id": "boundary_scale_0.4",
+      "amplitude": 1.0,
+      "scale": 0.4,
+      "kind": "signal",
+      "primary": false
+    },
+    {
+      "id": "boundary_scale_0.45",
+      "amplitude": 1.0,
+      "scale": 0.45,
+      "kind": "signal",
+      "primary": false
+    },
+    {
+      "id": "boundary_scale_0.49",
+      "amplitude": 1.0,
+      "scale": 0.49,
+      "kind": "signal",
+      "primary": false
+    },
+    {
+      "id": "boundary_scale_0.5",
+      "amplitude": 1.0,
+      "scale": 0.5,
+      "kind": "signal",
+      "primary": false
+    },
+    {
+      "id": "boundary_scale_0.51",
+      "amplitude": 1.0,
+      "scale": 0.51,
+      "kind": "signal",
+      "primary": false
+    },
+    {
+      "id": "boundary_scale_0.55",
+      "amplitude": 1.0,
+      "scale": 0.55,
+      "kind": "signal",
+      "primary": false
+    },
+    {
+      "id": "boundary_scale_0.6",
+      "amplitude": 1.0,
+      "scale": 0.6,
+      "kind": "signal",
+      "primary": false
+    },
+    {
+      "id": "boundary_scale_1.9",
+      "amplitude": 1.0,
+      "scale": 1.9,
+      "kind": "signal",
+      "primary": false
+    },
+    {
+      "id": "boundary_scale_1.95",
+      "amplitude": 1.0,
+      "scale": 1.95,
+      "kind": "signal",
+      "primary": false
+    },
+    {
+      "id": "boundary_scale_1.99",
+      "amplitude": 1.0,
+      "scale": 1.99,
+      "kind": "signal",
+      "primary": false
+    },
+    {
+      "id": "boundary_scale_2",
+      "amplitude": 1.0,
+      "scale": 2.0,
+      "kind": "signal",
+      "primary": false
+    },
+    {
+      "id": "boundary_scale_2.01",
+      "amplitude": 1.0,
+      "scale": 2.01,
+      "kind": "signal",
+      "primary": false
+    },
+    {
+      "id": "boundary_scale_2.05",
+      "amplitude": 1.0,
+      "scale": 2.05,
+      "kind": "signal",
+      "primary": false
+    },
+    {
+      "id": "boundary_scale_2.1",
+      "amplitude": 1.0,
+      "scale": 2.1,
+      "kind": "signal",
+      "primary": false
+    }
+  ],
+  "parents": [
+    2,
+    3
+  ],
+  "reflections": [
+    false,
+    true
+  ],
+  "rotations": 500,
+  "fields_per_case": 2000,
+  "cap_seconds": 300,
+  "workers": 1,
+  "threads": 1,
+  "inputs": {
+    "P1_production\\homogeneous_r2\\observations.npz": "50b8aa0079dd2a92e3e77b6d16b69a1d9a5092ac4ab9f3068c2c65ffadf10b41",
+    "P1_production\\homogeneous_r3\\observations.npz": "05f9cc2ac1a3d76eebc18ded2258382fcfbd734241a3a29f518350b19c575c92"
+  },
+  "calibration_sha256": "078d4d3682c1d81ff7a74ba7a6a745799e3c81c17fcc4cb8949f5c2ba60b4392",
+  "primary_positive_min": 0.9,
+  "primary_negative_max": 0.05,
+  "null_max": 0.01,
+  "raw_location": "local_raw/MG162_shape_challenge",
+  "limits": "Two calibration-excluded P1 parent fields were previously seen; rotations are not independent new real trajectories. Exact finite-orbit fractions, not population confidence intervals."
+}

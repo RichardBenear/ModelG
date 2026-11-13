@@ -1,0 +1,5 @@
+# MG162 challenge check before evaluation
+
+Freeze MG161; avoid another favorable redefinition of P1. Off-grid planted shapes expose the finite bank; near-boundary classification is intrinsically noisy and must be shown, not selected away. Two held-from-calibration P1 snapshots were already inspected, so call this finite empirical replay stress testing, not independent real-trajectory validation. Rotations/reflections preserve empirical field structure but do not create new kinetic realizations. Exact finite fractions need no pseudo-binomial precision from2000replays. Planted signal/background are not dynamically coupled. No gate on descriptive boundary cases can imply validated boundary reliability.
+
+A300secondoneworker deterministic preparation is within the instruction to develop validation. Full fields local/ignored; no new ModelGdraws. Preserve any primary failure and use a separately measured/frozen packet for a fresh eight-pair real test. Do not infer MG160-P1 closure or retroactively alter its negative score.

@@ -1,0 +1,23 @@
+# MG162 — frozen-instrument validation extension
+
+PI asks to proceed with the recommended validation. Preserve MG161 and the original MG160-P1 result; neither is rescored or automatically closed. No recalibration of the MG161 window, template bank, amplitude/scale criteria, detection/residual thresholds or ambiguity rule.
+
+## A: bounded empirical-noise/off-grid challenge, authorized preparation
+
+One local worker/thread1,300seconds total, no kinetic trajectories and no random sampling. Freeze/publish source and this design before evaluation. Full fields stay ignored under local_raw/MG162_shape_challenge; publish compact features/results only. Failure/partial records are retained with no retries, case dropping or threshold changes.
+
+Use final coarse-tick X fields from P1 homogeneous parents2/3, excluded from MG161 spectral calibration. They have previously been inspected; this is not a claim of unseen real trajectories. Center each field and exhaustively apply500cyclic rotations and both reflections:2000conditional noise fields per test case. Each transformation preserves that parent's empirical values/non-Gaussian tails and circular correlation structure. These are finite replays of two observed snapshots, not2000independent physical realizations. No binomial confidence intervals or new real-noise population false-positive rates are inferred from the rotations.
+
+Plant known X cores at the fixed initial anchor, leaving the noise transformation independent of the planted shape. Nine primary interior positives: amplitude0.8/1/1.2 crossed with off-bank scales0.85/1.1/1.6. Five primary rejected shapes: weak amplitude0.2/scale1.1; scale0.3; scale2.6; inverted scale1.1; equal split cores separated by half the ring. Include a null primary. For each positive require compatible fraction>=0.90 separately within each parent/reflection group; for negatives require<=0.05 in each group, with null<=0.01. Support the prescribed finite interior challenge only if all15primary cases meet these requirements. A failure blocks treating that complete challenge as supported and informs a separately versioned future design.
+
+Boundary sensitivity is descriptive: amplitude0.4/0.45/0.49/0.5/0.51/0.55/0.6 at scale1; scale0.4/0.45/0.49/0.5/0.51/0.55/0.6/1.9/1.95/1.99/2/2.01/2.05/2.1 at amplitude1. Report every classification frequency. Do not force crisp noisy distinctions arbitrarily close to a cutoff, combine these cases into a passing interior claim, or hide bank quantization. No fitted confidence interval for physical width is provided by this point estimator.
+
+Before reporting, separately recompute decisions from compact features, direct weighted fits on fixed fields, finite-group fractions and input/source hashes. Document the finite-parent and planted-core limitations, including lack of coupling between a planted feature and its background noise. No synthetic/P1 replay result becomes a fresh trajectory persistence verdict.
+
+## B: fresh real-trajectory pilot — concrete proposal, approval pending
+
+Only after reviewing A, prepare a new fixed eight-pair pilot (four prepared/four mass-matched homogeneous) through post-preparationT=0.1, ticks0.0001/0.00002, observations0.001. Use disjoint new seeds and the frozen original Model G/paired law. Freeze the MG161 instrument and calibration hash before new data. No training, PSD refitting, threshold adjustment or sample exclusion on the new trajectories. Earlier P1 data are excluded from the new denominator.
+
+Record each prepared marginal path's point-label compatibility at all101frames and its first noncompatible-frame bracket; for each homogeneous path record any compatible crossing. Preserve all label types and fitted parameters. Report boundary sensitivity whenever estimates approach the fixed cutoffs; these point labels are not formal confidence intervals or physical identity. This is an independent-data pilot of the candidate instrument, not a high-precision survival-rate qualification. Four independent pairs per condition cannot demonstrate a small population false-positive rate. No longerT=1/T=15 extension is included.
+
+Measured MG160-P1 execution was36912.7worker-seconds for eight pairs. A25% planning allowance gives46140.9worker-seconds (12.8169core-hours), about1.60hours at eight workers. Proposed ceiling100000worker-seconds,12000/job, plus1800 measured active parent/audit seconds, max8workers/thread1. Retain all raw data locally with2GB reserve; publish only compact decisions/code/report/figures/manifests. Criteria/source/seeds and concrete PI approval must be recorded before B registration or draws under RESEARCH_PROTOCOL.md workflow3. General direction to prepare validation supplies no automatic budget allocation for the fresh kinetic batch.
