@@ -2570,3 +2570,8 @@ PI: "yes, i approve." Approves spec/MG162B_fresh_pilot.md criteria and budget: e
 ### MG162B results - clear-case finite pilot SUPPORTED
 
 Eight fresh independent seed pairs complete, four prepared/four homogeneous, both tick sizes throughT.1. Prepared8marginal paths each101/101core-compatible frames, no boundary advisories; homogeneous8paths each0/101compatible. Frozen finite-pilot criterion supported. All1600checkpoint endpoints and138555762sentinel events causally audited; separate direct-sum search/metric recomputation passed1616fields and verdict.45083.3worker-seconds/94.8322minuteswall within budget, no retries/replacements. Full raw local only with manifest. Four pairs do not establish population survival, physical particle identity or longer-horizon stability; P1 unchanged. PIclosurepending. Report results/MG12H3/shape_real_noise_challenge/MG162B_fresh_pilot_results.md.
+
+
+## MG162A/B - PI CLOSED; MG163 preparation authorized
+
+PI: "I sign off on MG162A/B. Go ahead and prepare the long horizon test". Close finite replay/instrument challenge and fresh short pilot without changing outcomes or inference limits. Closure record results/MG12H3/long_horizon_persistence/MG162AB_closure.json. MG163 design proposesT1/eightfreshpairs, frozeninstrument and controls,800000worker-seconds plus3600activeanalysisseconds,4GBlocal reserve and predeclared10%sentinel tracing. Concrete production approval and implementation qualification pending; no new trajectories.

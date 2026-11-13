@@ -1,3 +1,7 @@
+# MG162A/B PI CLOSED; MG163 longer-horizon design prepared
+
+PI signs off MG162A/B and authorizes preparation. MG163 proposed eight fresh pairs throughT1, unchanged MG161 measurement/strict separation, both ticks. Forecast19.6h/8workers with25%allowance; ceiling800000worker-seconds/100000job+3600activeanalysis;4GBlocal reserve,1.63GBprojected using predeclared10%sentinel traces and all checkpoints/observations. Spec/MG163_long_horizon_persistence.md;readiness results/MG12H3/long_horizon_persistence/MG163_long_horizon_readiness.md. Production approval pending; no seeds/draws. Newparameterizedwriter/auditor and no-drawimplementationqualification required beforelaunch; old100segmentwritercannotrunT1unchanged.
+
 # MG162B complete - clear-case finite pilot SUPPORTED; PI closure pending
 
 All eight fresh pairs completed94.8322minutes/45083.3worker-seconds, no failures/retries. All four prepared pairs both ticks compatible101/101frames, no boundary advisories; all four homogeneous pairs both ticks0/101compatible. Frozen finite criterion supported, not population/long-term physical survival. Audit1600endpoints/138555762sentinel events passed; all1616fields independently checked by direct spatial weighted sums over all11500scale/position hypotheses. Report results/MG12H3/shape_real_noise_challenge/MG162B_fresh_pilot_results.md. Full raw retained local_raw/MG162_fresh_model with SHA manifest, compact summaries public only. No longer run authorized. Recommend prepare longer-horizon feasibility/budget after sign-off.
