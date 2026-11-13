@@ -1,5 +1,7 @@
 # Stage Log
 
+_This table covers MG000–MG004f only. Later stages are in the sections below; a shorter overview is in `stage_log_summary.md`._
+
 | Stage | Date | Phase | Summary | Gate | Commit |
 |---|---|---|---|---|---|
 | MG000 | 2026-10-26 | 0 | Repo scaffold; charter (README), rules spec v1.0 frozen, gate table created | — | 1bc0015 |
