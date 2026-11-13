@@ -2001,6 +2001,8 @@ PI sign-off: registration 2026-11-05 20:02 UTC; deviation D1 and production go 2
 
 **Current status (MG043): first deterministic batch REGISTERED MG042 and completed; result UNRESOLVED; PI closure pending. Historical drafting and approval records follow.**
 
+**PI CLOSED 2026-11-13 as UNRESOLVED** (see "PI closure of eight pending studies" at the end of this file).
+
 Design: [spec/MG10_proposal.md](spec/MG10_proposal.md), Draft 1. NOT REGISTERED; no scientific or development trajectory run.
 Proposed sequence: A formal state/reaction/accounting model; B implementation qualification; C deterministic recovery of the fixed-reservoir baseline; D finite-capacity estimation; E causal supply interventions; F recomputation and PI closure.
 Only A/B/C are the first proposed scope. D/E require separately frozen arms and budgets. Numerical margins, sample sizes, run caps and compute ceiling remain to be finalized before PI registration.
@@ -2585,3 +2587,18 @@ PI: "i approve. go ahead." Approves proposedT1/eightfreshpairs/frozenMG161instru
 ### MG163 results - clear-case separation NOT ESTABLISHED
 
 All8registeredpairs completedT1/no retries,460029worker-seconds/16.0254hwall withinbudget.0/8preparedmarginalpaths retainall1001frames; firstfailures shape_mismatch inT.205-.460, no preparedboundaryadvisories/amplitudenever<.5.7/8homogeneousmarginalpaths evercompatible, all4controlpairs includeacrossing. Notphysicaldeath/birthproof. Audit16000endpoints/138372030eventsfrom200preselectedsegments and separatefullbankspatialsums16016fields passed. Raw1.74145GB localonly; compactdecisions/report/manifestpublicpackage. PIclosurepending; no furtherproduction. Report results/MG12H3/long_horizon_persistence/MG163_long_horizon_results.md.
+
+## PI closure of eight pending studies (2026-11-13)
+
+Richard (2026-11-13 15:56 UTC, project thread): "I sign off on all eight."
+
+- **MG10 first deterministic batch (MG043):** CLOSED as UNRESOLVED. Top capacities recover; the C = 1 homogeneous numerical disagreement keeps the batch verdict UNRESOLVED.
+- **MG10-D1 (MG054):** CLOSED as COMPLETE DESCRIPTIVE PILOT, with the post-hoc ~0.3% HIGH fine-step source-sampler deficit retained as a limitation. MG10-D2 closure (MG057) unchanged.
+- **MG11-G2 Step 1 (MG087/MG087a):** CLOSED as coupling qualified on tested small deterministic systems. The original kappa = 1000 mixing criterion remains FAILED; the separately registered kappa = 10000 point passed.
+- **MG12-H3 combined sparse qualification (MG139):** CLOSED as PASSED within registered scope (8/8 endpoint bounds, max upper 0.0818071 < 0.10; 8 million forced stress updates pass). Not long physical-time qualification.
+- **MG12-H3 paired tick-coupling development (MG156):** CLOSED as development PASSED (both bounded phases). Not formal marginal, variance or equivalence qualification.
+- **MG12-H3 longer paired coupling pilot (MG157):** CLOSED as pilot benefit SUPPORTED (eight-pair approximate-coverage criterion). No final tick-equivalence, 5% accuracy or particle verdict; the uncertified 600 s parent-allowance note stands.
+- **MG12-H3 pattern persistence pilot (MG160-P1):** CLOSED with its registered negative outcome: 0/4 prepared pairs retain the initial-pattern criterion at all frames through T = 0.1 at either tick. No particle-death or population inference; storage amendment unchanged.
+- **MG12-H3 noise-aware shape instrument (MG161):** CLOSED as conditional synthetic benchmark SUPPORTED. The dependent P1 application stays exploratory; MG160-P1's score is not changed.
+
+All eight results, criteria and data are unchanged; nothing is rescored. These closures were recorded because each report ended "PI closure pending" and closure is never inferred from an instruction to proceed. MG162A/B was already closed (see MG163). No production is authorized by this record. Recorded by Claude at the PI's request.

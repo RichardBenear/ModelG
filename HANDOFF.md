@@ -6,6 +6,10 @@ All8jobs completeT1 in16.0254h/460029worker-seconds. Prepared0/8marginalpaths re
 
 Registration0000067 published beforedraws; eightactivejobs confirmed, controller session31054. Fourprepared/fourhomogeneousfreshpairs,T1,both ticks;1000segments,1001observations. Ledger local_raw/MG163_long_horizon/production/ledger.json;attempt results/MG12H3/long_horizon_persistence/attempt.json. Forecast19.6h;ceiling800000worker-seconds/100000job+3600activeanalysis,max8workers/thread1. Fullrawlocal, fixed10%sentineltraces,4GBguard. Do not rerun register/run or replace jobs. Oncomplete run src/check_mg163_long.py then src/score_mg163_long.py then src/check_mg163_shape.py and report with plain-language summary; allanalysisattemptstimed. MG162A/B PIclosed.
 
+# PI closures recorded 2026-11-13 (no production change)
+
+Richard (2026-11-13 15:56 UTC, project thread): "I sign off on all eight." Closed with results unchanged: MG10 first batch (UNRESOLVED), MG10-D1, MG11-G2 Step 1, MG139, MG156, MG157, MG160-P1, MG161. Details at the end of GATES.md and STAGE_LOG.md. The MG163 handoff below remains current.
+
 # MG163 APPROVED and REGISTERED - publish before production
 
 No-active-model qualification passed full1000segment framing and100segment regression versus frozenwriter, storage/free-space guards and trace schedule. Eightfreshseeds and sourcehashes registered results/MG12H3/long_horizon_persistence/plan.json. Publish registration before python src/run_mg163_long.py run. No modeldrawsyet. Fullraw local_raw/MG163_long_horizon;budget800000worker-seconds/100000job+3600activeanalysis,max8workers/thread1. Forecast19.6h. Oncomplete run check_mg163_long.py,score_mg163_long.py,check_mg163_shape.py thenreport.
