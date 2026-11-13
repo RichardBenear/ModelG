@@ -1,3 +1,7 @@
+# MG162B approved - register and publish before launch
+
+PI approves concrete fresh-pilot criteria/budget and compact verification publication. Approval: results/MG12H3/shape_real_noise_challenge/fresh_approval.json. Run eight pairs locally with at most eight workers/thread one; full raw stays local. No trajectories yet; registration must publish before launch.
+
 # Current handoff - MG162A complete; MG162B fresh-data pilot READY/approvalpending
 
 FrozenMG161 empirical-noise/offgridchallenge passed15finiteinteriorcases (two calibration-excluded butalreadyseen P1noisesnapshots, exhaustiveorbits,notnewindependentphysics). Boundarylabels sensitive:amp.4 accepted17.8%,scale2.01 accepted92.3%;notqualifiedatsharpboundaries.108directfit/fractionrecompute passed.72000testfields19.7287s/oneworker;raw~145MBignored local_raw/MG162_shape_challenge. Compact report/artifacts published e4eaee7 and verified;rawlocalonly. Report results/MG12H3/shape_real_noise_challenge/MG162_validation_readiness.md. FreshMG162B eightpairs4prepared/4homogeneous,T.1,strictclearcasefrozeninstrument andboundaryadvisory, forecast1.60211h/8workers;cap100000worker-seconds+1800activeparent,12000/job,2GB. Spec/MG162B_fresh_pilot.md;source src/run_mg162_fresh.py register/run/audit/score. No freshapproval/seedplan/modeldraws yet;needPIconcreteallocationapproval. P1/MG161outcomesunchanged;no closuresinferred. Activepubliccheckout,allfullrawlocal.
