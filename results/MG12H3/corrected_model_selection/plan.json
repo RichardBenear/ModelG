@@ -1,0 +1,44 @@
+{
+  "source": {
+    "src/mg172_corrected.py": "438c72bc15dba474a99245133d0a661078fc22b2355820bd2e9613460693985f",
+    "src/run_mg172.py": "7a4b0d0508d82e5f39e7c5cb7b2b22f4373f9a47efeca145771da9d4e35a7090",
+    "src/analyze_mg170.py": "e610e428874573a4be60b8b15803084e22b9a0b187ceff95450aee4e4361fc62",
+    "src/mg167_xy.py": "a9b737504784b72189ff3f2951f7afa5b7e9385032ccf72861325664820ebe87",
+    "src/run_mg169_tracking.py": "7bdbd00e9a4df53f111fe56d8602be3ec2a8f540efb97076cbb963b2a07590ad",
+    "src/mg161_local_shape.py": "c3d1f9535e4adbc34eb6c7b776deeb695c15ee1573e8561954bb7689a6757fc3",
+    "spec/MG172_corrected_model_selection.md": "ab9a7570c4e0851a794171111d43833c8a2b10df7335183e0da6da27ba5d613d"
+  },
+  "inputs": {
+    "local_raw\\MG163_long_horizon\\prepared_inputs.npz": "ccf9c00393f39b390ac60314d15594cd6e4f55cb334d828f7b7af4474462ec43",
+    "results\\MG12H3\\XY_core_instrument\\benchmark.json": "48a41e28e2290fbf92b6c54b7336c28e5bae47015bc47a34c816d8e6e8b74b29",
+    "local_raw\\MG163_long_horizon\\production\\homogeneous_r0\\observations.npz": "9dc9e3a5f7e7fed80bcbe511e90d67f0a663e1f2000a57a97cb230db919a9fe3",
+    "local_raw\\MG163_long_horizon\\production\\homogeneous_r1\\observations.npz": "2c48e88d3838afc5b2312e1daefae03b807d5a878100c86b6d5e6f798201b8b4"
+  },
+  "seed": 17200,
+  "cap": 600,
+  "workers": 1,
+  "threads": 1,
+  "frames": 24,
+  "replicates": 4,
+  "regimes": [
+    0.1,
+    1.0
+  ],
+  "rho": [
+    0.0,
+    0.95
+  ],
+  "cases": [
+    "static",
+    "moving",
+    "deforming",
+    "absent",
+    "vanish",
+    "missingX",
+    "missingY",
+    "displacedY",
+    "split",
+    "jump"
+  ],
+  "no_ModelG_draws": true
+}
