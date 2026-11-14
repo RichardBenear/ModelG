@@ -2672,3 +2672,8 @@ MG176 acquisition/independent scalar-noise pilot complete: primary FAILED,95/96i
 ## MG177 saved split/reference audit - registered
 
 PI authorizes audit. Source/spec/input bindings28ebf44; diagnostic only, no newdraws/relabeling. Twelve saved late-iid split/moving paths atthree scales; exact conditional true-primary full5655secondary-grid redrawn versus persistent comparison, actualweights/prior decomposition. All274saved reference samples channel/mean diagnostics. Cap600soneworker. Full criteria spec/MG177_split_reference_audit.md. No physics verdict or newqualifiedtracker;MG176unchanged.
+
+
+## MG177 audit result
+
+MG177 saved-data audit complete: target late-iid/highnoise split at15 actualmultiple.0334867;trueprimary redrawnsecondary.0398527 versus persistentfull5655offset/widthgrid.999980. KnownpairlogBF5.96703 vs uniformgrid-.560563; truescaleknownpair5.91620. All6conditional split paths>.999970at15;6movingcontrols maxmultiple.0804397. No unconditionedtrackerqualification:primarytruth supplied,secondaryrelativeoffsetpersisted,compressioncontributionnotfullyisolated. Newretrospective channel/mean reference diagnostics flag2/2shapeXand2/2stationarycontamination,0/264clean each;notfreshvalidation/temporalestimation. All288originalweights/labelsunchanged,288full5655grids/576filtersteps/288prior decompositions separatelychecked;864directgridchecks/274realspacereferences. Eval13.41s/check.98soneworker,no newdraws. Report results/MG12H3/split_reference_audit/MG177_split_reference_audit_results.md. RawMG176local/publiccompactonly;MG176FAILED/MG163unchanged/Gunresolved/PIclosurepending. Recommendseparatelyregisteredsecondary-memory/boundedmotiontracker +species/mean/spectral/timeorderedbackgroundqualification;no newinstrument/kineticrunapproved.
