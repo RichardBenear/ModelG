@@ -1,0 +1,3 @@
+# Supplementary continuation diagnostic
+
+During preparation of the separate checker, before early-damage cases were generated, the lead noted that the registered episode-onset metric does not count an already acquired track that continues incorrectly after damage. The checker will additionally count single frames and fully confirmed single windows after the same registered onset+5 response allowance, including continuations. These are supplementary descriptive label-derived diagnostics, not changed acquisition metrics, new acceptance criteria or a tracker revision. Report both onset and continuation meanings; no frozen result is replaced. The original source/spec/seed remains unchanged. This note is included in the final compact record.
