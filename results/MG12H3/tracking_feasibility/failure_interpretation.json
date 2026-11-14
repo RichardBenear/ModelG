@@ -1,0 +1,15 @@
+{
+  "local_positive_failure_counts": {
+    "0.0": {
+      "too_few_compatible": 11,
+      "stopped": 5
+    },
+    "0.95": {
+      "stopped": 45,
+      "too_few_compatible": 2,
+      "localization_width_error": 6
+    }
+  },
+  "denominator_per_rho": 144,
+  "limits": "Descriptive post-result grouping, frozen path success metrics unchanged; not independent real-noise mechanism inference."
+}

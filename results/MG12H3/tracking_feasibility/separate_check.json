@@ -1,0 +1,981 @@
+{
+  "passed": true,
+  "state_records_checked": 76800,
+  "guard_decisions_checked": 33743,
+  "path_outcomes_checked": 1920,
+  "independent_primary_fits": 120,
+  "additional_outcomes": [
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "static",
+      "local": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "moving",
+      "local": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "deforming",
+      "local": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "absent",
+      "local": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "vanish",
+      "local": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "missingX",
+      "local": {
+        "stopped_before_damage": 1,
+        "alive_at_damage_onset": 15,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "missingY",
+      "local": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "displacedY",
+      "local": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "split",
+      "local": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "jump",
+      "local": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "static",
+      "local": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "stopped": 4
+        }
+      },
+      "free": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "stopped": 3
+        }
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "moving",
+      "local": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "stopped": 3
+        }
+      },
+      "free": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "stopped": 1
+        }
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "deforming",
+      "local": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "too_few_compatible": 1
+        }
+      },
+      "free": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "stopped": 1
+        }
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "absent",
+      "local": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "vanish",
+      "local": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 1,
+        "alive_at_damage_onset": 15,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "missingX",
+      "local": {
+        "stopped_before_damage": 1,
+        "alive_at_damage_onset": 15,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 1,
+        "alive_at_damage_onset": 15,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "missingY",
+      "local": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "displacedY",
+      "local": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "split",
+      "local": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 1,
+        "alive_at_damage_onset": 15,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "jump",
+      "local": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.5,
+      "rho": 0.0,
+      "case": "static",
+      "local": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "too_few_compatible": 5
+        }
+      },
+      "free": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "too_few_compatible": 11,
+          "stopped": 4
+        }
+      }
+    },
+    {
+      "regime": 0.5,
+      "rho": 0.0,
+      "case": "moving",
+      "local": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "stopped": 4,
+          "too_few_compatible": 3
+        }
+      },
+      "free": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "too_few_compatible": 9,
+          "stopped": 2
+        }
+      }
+    },
+    {
+      "regime": 0.5,
+      "rho": 0.0,
+      "case": "deforming",
+      "local": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "too_few_compatible": 1
+        }
+      },
+      "free": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "too_few_compatible": 4,
+          "stopped": 2
+        }
+      }
+    },
+    {
+      "regime": 0.5,
+      "rho": 0.0,
+      "case": "absent",
+      "local": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.5,
+      "rho": 0.0,
+      "case": "vanish",
+      "local": {
+        "stopped_before_damage": 1,
+        "alive_at_damage_onset": 15,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 1,
+        "alive_at_damage_onset": 15,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.5,
+      "rho": 0.0,
+      "case": "missingX",
+      "local": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.5,
+      "rho": 0.0,
+      "case": "missingY",
+      "local": {
+        "stopped_before_damage": 1,
+        "alive_at_damage_onset": 15,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.5,
+      "rho": 0.0,
+      "case": "displacedY",
+      "local": {
+        "stopped_before_damage": 1,
+        "alive_at_damage_onset": 15,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.5,
+      "rho": 0.0,
+      "case": "split",
+      "local": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.5,
+      "rho": 0.0,
+      "case": "jump",
+      "local": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 1,
+        "alive_at_damage_onset": 15,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.5,
+      "rho": 0.95,
+      "case": "static",
+      "local": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "stopped": 1,
+          "localization_width_error": 1
+        }
+      },
+      "free": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "stopped": 7
+        }
+      }
+    },
+    {
+      "regime": 0.5,
+      "rho": 0.95,
+      "case": "moving",
+      "local": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "stopped": 11
+        }
+      },
+      "free": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "stopped": 13,
+          "too_few_compatible": 1
+        }
+      }
+    },
+    {
+      "regime": 0.5,
+      "rho": 0.95,
+      "case": "deforming",
+      "local": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "stopped": 6,
+          "localization_width_error": 1
+        }
+      },
+      "free": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "stopped": 7,
+          "localization_width_error": 1
+        }
+      }
+    },
+    {
+      "regime": 0.5,
+      "rho": 0.95,
+      "case": "absent",
+      "local": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.5,
+      "rho": 0.95,
+      "case": "vanish",
+      "local": {
+        "stopped_before_damage": 2,
+        "alive_at_damage_onset": 14,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 4,
+        "alive_at_damage_onset": 12,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.5,
+      "rho": 0.95,
+      "case": "missingX",
+      "local": {
+        "stopped_before_damage": 6,
+        "alive_at_damage_onset": 10,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 8,
+        "alive_at_damage_onset": 8,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.5,
+      "rho": 0.95,
+      "case": "missingY",
+      "local": {
+        "stopped_before_damage": 2,
+        "alive_at_damage_onset": 14,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 8,
+        "alive_at_damage_onset": 8,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.5,
+      "rho": 0.95,
+      "case": "displacedY",
+      "local": {
+        "stopped_before_damage": 2,
+        "alive_at_damage_onset": 14,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 3,
+        "alive_at_damage_onset": 13,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.5,
+      "rho": 0.95,
+      "case": "split",
+      "local": {
+        "stopped_before_damage": 5,
+        "alive_at_damage_onset": 11,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 4,
+        "alive_at_damage_onset": 12,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 0.5,
+      "rho": 0.95,
+      "case": "jump",
+      "local": {
+        "stopped_before_damage": 4,
+        "alive_at_damage_onset": 12,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 4,
+        "alive_at_damage_onset": 12,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "static",
+      "local": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "too_few_compatible": 1
+        }
+      },
+      "free": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "stopped": 16
+        }
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "moving",
+      "local": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "too_few_compatible": 1,
+          "stopped": 1
+        }
+      },
+      "free": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "stopped": 16
+        }
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "deforming",
+      "local": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "stopped": 16
+        }
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "absent",
+      "local": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "vanish",
+      "local": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 11,
+        "alive_at_damage_onset": 5,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "missingX",
+      "local": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 14,
+        "alive_at_damage_onset": 2,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "missingY",
+      "local": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 14,
+        "alive_at_damage_onset": 2,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "displacedY",
+      "local": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 15,
+        "alive_at_damage_onset": 1,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "split",
+      "local": {
+        "stopped_before_damage": 1,
+        "alive_at_damage_onset": 15,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 13,
+        "alive_at_damage_onset": 3,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "jump",
+      "local": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 14,
+        "alive_at_damage_onset": 2,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "static",
+      "local": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "stopped": 5,
+          "localization_width_error": 2
+        }
+      },
+      "free": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "stopped": 12
+        }
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "moving",
+      "local": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "stopped": 10,
+          "localization_width_error": 1
+        }
+      },
+      "free": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "stopped": 16
+        }
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "deforming",
+      "local": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "stopped": 5,
+          "too_few_compatible": 1,
+          "localization_width_error": 1
+        }
+      },
+      "free": {
+        "stopped_before_damage": null,
+        "alive_at_damage_onset": null,
+        "positive_failure_reasons": {
+          "stopped": 16
+        }
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "absent",
+      "local": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 0,
+        "alive_at_damage_onset": 16,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "vanish",
+      "local": {
+        "stopped_before_damage": 2,
+        "alive_at_damage_onset": 14,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 15,
+        "alive_at_damage_onset": 1,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "missingX",
+      "local": {
+        "stopped_before_damage": 1,
+        "alive_at_damage_onset": 15,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 12,
+        "alive_at_damage_onset": 4,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "missingY",
+      "local": {
+        "stopped_before_damage": 2,
+        "alive_at_damage_onset": 14,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 14,
+        "alive_at_damage_onset": 2,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "displacedY",
+      "local": {
+        "stopped_before_damage": 2,
+        "alive_at_damage_onset": 14,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 14,
+        "alive_at_damage_onset": 2,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "split",
+      "local": {
+        "stopped_before_damage": 1,
+        "alive_at_damage_onset": 15,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 14,
+        "alive_at_damage_onset": 2,
+        "positive_failure_reasons": {}
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "jump",
+      "local": {
+        "stopped_before_damage": 3,
+        "alive_at_damage_onset": 13,
+        "positive_failure_reasons": {}
+      },
+      "free": {
+        "stopped_before_damage": 14,
+        "alive_at_damage_onset": 2,
+        "positive_failure_reasons": {}
+      }
+    }
+  ],
+  "limits": "Same author/shared fields and templates; independent state replay/branch aggregation, not external replication."
+}

@@ -62,3 +62,6 @@ results/MG8/full/
 
 # MG168 per-field oracle decisions are public as lossless gzip
 /results/MG12H3/known_geometry_XY/r[012]_*.json
+
+# MG169 public path and calibration decisions are lossless gzip exports
+/results/MG12H3/tracking_feasibility/r[012]_*.json
