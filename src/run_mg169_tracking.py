@@ -78,7 +78,7 @@ def run():
                                 if accepted:state.update(center=f.get('center',f.get('center_site')),scale=f['scale'],gap=0)
                                 else:state['gap']+=1
                                 if state['gap']>=3:state['alive']=False;state['stop']=t
-                                records[name].append(dict(active=True,accepted=accepted,center=state['center'],scale=state['scale'],fit=f,flags=flags))
+                                records[name].append(dict(active=True,accepted=accepted,center=state['center'] if state['alive'] else None,scale=state['scale'] if state['alive'] else None,fit=f,flags=flags))
                                 if t in(0,10,39) and replicate==0:
                                     w=np.roll(m.window,f['center']);template=model.signal(f['scale'],f['center']);A=np.zeros((2,500,3));A[:,:,0]=template
                                     for sp in range(2):A[sp,:,sp+1]=1
@@ -86,7 +86,7 @@ def run():
                             deadline()
                         outcomes={}
                         for name,state in states.items():
-                            rec=records[name];compatible=sum(r['accepted'] for r in rec);accurate=sum(r['center'] is not None and min((r['center']-tr[0])%500,(tr[0]-r['center'])%500)<=2 and abs(r['scale']-tr[1])<=.12500001 for r,tr in zip(rec,truths));positive=case in('static','moving','deforming');onset=0 if case=='absent' else 10;continued=state['stop'] is None or state['stop']>onset+5;success=state['alive'] and compatible>=36 and accurate>=36 if positive else not continued;outcomes[name]=dict(compatible_frames=compatible,accurate_frames=accurate,stop=state['stop'],alive_final=state['alive'],success=bool(success),false_continuation=bool(continued) if not positive else None)
+                            rec=records[name];compatible=sum(r['accepted'] for r in rec);accurate=sum(r['center'] is not None and min((r['center']-tr[0])%500,(tr[0]-r['center'])%500)<=2 and abs(r['scale']-tr[1])<=.12500001 for r,tr in zip(rec,truths));positive=case in('static','moving','deforming');onset=0 if case=='absent' else 10;continued=state['stop'] is None or state['stop']>onset+5;success=state['alive'] and compatible>=36 and accurate>=36 if positive else not continued;outcomes[name]=dict(stopped_before_damage=bool(state['stop'] is not None and state['stop']<onset) if not positive else None,alive_at_damage_onset=bool(state['stop'] is None or state['stop']>=onset) if not positive else None,pre_damage_accepted_frames=sum(v['accepted'] for v in rec[:onset]) if not positive else None,compatible_frames=compatible,accurate_frames=accurate,stop=state['stop'],alive_final=state['alive'],success=bool(success),false_continuation=bool(continued) if not positive else None)
                         paths.append(dict(replicate=replicate,initial_seed=seed,truth=truths,records=records,outcomes=outcomes));fields.append(sequence)
                     tag=f'r{ri}_rho{rho:g}_{case}';np.savez_compressed(RAW/(tag+'.npz'),fields=fields);atomic_json(OUT/(tag+'.json'),dict(regime=when,rho=rho,case=case,paths=paths));positive=case in('static','moving','deforming');summary=dict(regime=when,rho=rho,case=case,n=16)
                     for name in('local','free'):

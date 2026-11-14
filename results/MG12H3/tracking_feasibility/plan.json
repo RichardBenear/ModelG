@@ -1,6 +1,6 @@
 {
   "source": {
-    "src/run_mg169_tracking.py": "33059674bfabfe6201413240d27de0362f32dd8055321aba3b693d108f261335",
+    "src/run_mg169_tracking.py": "7bdbd00e9a4df53f111fe56d8602be3ec2a8f540efb97076cbb963b2a07590ad",
     "src/mg167_xy.py": "a9b737504784b72189ff3f2951f7afa5b7e9385032ccf72861325664820ebe87",
     "src/analyze_mg168.py": "9656f6e8ee55890836237df8a7dbb4e96d32720f6bb199a1adf9ed32b84902aa",
     "spec/MG169_tracking_feasibility.md": "24f766a49436ae06771bc8d5f8d7942e2a9a365c941b3504ab43798d8cdd1e97"
@@ -38,5 +38,6 @@
     "split",
     "jump"
   ],
-  "no_ModelG_draws": true
+  "no_ModelG_draws": true,
+  "pre_evaluation_check": "Stopped frames have no live estimate; negative early-loss metadata retained to prevent interpreting pre-damage loss as successful damage recognition."
 }
