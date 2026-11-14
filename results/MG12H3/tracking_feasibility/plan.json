@@ -1,0 +1,42 @@
+{
+  "source": {
+    "src/run_mg169_tracking.py": "33059674bfabfe6201413240d27de0362f32dd8055321aba3b693d108f261335",
+    "src/mg167_xy.py": "a9b737504784b72189ff3f2951f7afa5b7e9385032ccf72861325664820ebe87",
+    "src/analyze_mg168.py": "9656f6e8ee55890836237df8a7dbb4e96d32720f6bb199a1adf9ed32b84902aa",
+    "spec/MG169_tracking_feasibility.md": "24f766a49436ae06771bc8d5f8d7942e2a9a365c941b3504ab43798d8cdd1e97"
+  },
+  "inputs": {
+    "local_raw\\MG163_long_horizon\\prepared_inputs.npz": "ccf9c00393f39b390ac60314d15594cd6e4f55cb334d828f7b7af4474462ec43",
+    "results\\MG12H3\\XY_core_instrument\\benchmark.json": "48a41e28e2290fbf92b6c54b7336c28e5bae47015bc47a34c816d8e6e8b74b29",
+    "local_raw\\MG163_long_horizon\\production\\homogeneous_r0\\observations.npz": "9dc9e3a5f7e7fed80bcbe511e90d67f0a663e1f2000a57a97cb230db919a9fe3",
+    "local_raw\\MG163_long_horizon\\production\\homogeneous_r1\\observations.npz": "2c48e88d3838afc5b2312e1daefae03b807d5a878100c86b6d5e6f798201b8b4"
+  },
+  "seed": 16900,
+  "cap": 600,
+  "workers": 1,
+  "threads": 1,
+  "frames": 40,
+  "replicates": 16,
+  "regimes": [
+    0.1,
+    0.5,
+    1.0
+  ],
+  "rho": [
+    0.0,
+    0.95
+  ],
+  "cases": [
+    "static",
+    "moving",
+    "deforming",
+    "absent",
+    "vanish",
+    "missingX",
+    "missingY",
+    "displacedY",
+    "split",
+    "jump"
+  ],
+  "no_ModelG_draws": true
+}
