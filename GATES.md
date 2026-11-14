@@ -2612,3 +2612,8 @@ PI approves4jointmeasurementprinciples and asks savedprofileexamination. Descrip
 ## MG165 - multivariate instrument development NOT QUALIFIED
 
 PIauthorizesinstrument/analysis. Sharedgeometry3speciesGLS/commonamplitude/fullcovariance+componentguard. Frozenconditionalcalibration/validation beforedraws,noModelGpaths. v1nullcalibrationgeneratorbug invalidatesv1;allraw/provenanceretained,correctedv2registeredseparately,samecriteria/seed/cases,nothresholdtuning. v2failsmissing/displacedG/Y/multiplecoreandlateweak-intactrequirements;noqualifiedGXYpersistenceverdict. IndependentGLS142fits/directfullbank9cases/allvalidationlabelsandfractionsrecomputed. ExploratorysavedMG163applicationnotvalidation,rescoreforbidden. Report results/MG12H3/multivariate_instrument/v2/MG165_multivariate_results.md. Fullfields local only; futureidentifiabilityinstrument workrequiresseparatescope.
+
+
+## MG166 - G detectability, temporal averaging, competing-core diagnostic
+
+PIauthorizesrecommendednextstep;savedonly,noModelGdraws/newsyntheticfields. Prospectivepacketpublishedbeforecalculation. ConditionalGknowngeometrySNR~.4-.55;idealindependentaverages29-55forstatedGaussian5%/90%target,notactualframecount. AdjacentM50stdgain1.014-1.084,pooledstructuredbackgroundincluded. Veto0/384intactrejectionseachregime,split128/128,67/128,55/128;latescreenFAILS. Independentprojection,cumsumaggregation,fullspatialvetoandGaussianpowerchecks pass; no newpersistenceverdict. Report results/MG12H3/detectability_and_veto/MG166_detectability_results.md. Earlieroutcomesunchanged; nextscopeproposalonly.
