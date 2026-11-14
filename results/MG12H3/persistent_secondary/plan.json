@@ -1,0 +1,56 @@
+{
+  "source": {
+    "src/mg174_modes.py": "3efe093031b53be7e1d004427ba9e360e4e93eb9cd995cc38207476ca1a41b0e",
+    "src/run_mg174.py": "39b5f0a9cc178433aa5d0425ef17d12c4bd2894e472a279d802b82e78c548fb7",
+    "src/mg172_corrected.py": "438c72bc15dba474a99245133d0a661078fc22b2355820bd2e9613460693985f",
+    "src/analyze_mg170.py": "e610e428874573a4be60b8b15803084e22b9a0b187ceff95450aee4e4361fc62",
+    "src/mg167_xy.py": "a9b737504784b72189ff3f2951f7afa5b7e9385032ccf72861325664820ebe87",
+    "src/mg161_local_shape.py": "c3d1f9535e4adbc34eb6c7b776deeb695c15ee1573e8561954bb7689a6757fc3",
+    "src/run_mg169_tracking.py": "7bdbd00e9a4df53f111fe56d8602be3ec2a8f540efb97076cbb963b2a07590ad",
+    "spec/MG174_stationary_moving_tracker.md": "27de31f04b3018b385333f3823bc84f5cae5808489a62894bb40e270407a268c",
+    "src/run_mg176.py": "99e7a6627c71c58214962896e9b8e36cf5cdc9e65ce877ffb52c5de0a85fed02",
+    "src/mg176_acquisition.py": "56c88d6b775da728c981fb2dc0d47545a0f4357253da408a49b218b0e789645a",
+    "src/mg178_persistent.py": "be3363c2ec00796295b7fe75f61e34ae31a353688f94a81876b20e98220f3d7c",
+    "src/mg178_background.py": "bc0f263f85c39f8700a25df99a3a19c5373b9920ce61a8c16b9b7c4d441baa29",
+    "src/run_mg178.py": "e1b1d8f7df586405ef9b102a7eb73e1e739769a53cbc82bb3f2df6051d06de4b",
+    "spec/MG178_persistent_secondary.md": "a36e37852b0cc74afc645de28e81410b92d117a3ea1b3593c3c06b24021e874e"
+  },
+  "inputs": {
+    "local_raw\\MG163_long_horizon\\prepared_inputs.npz": "ccf9c00393f39b390ac60314d15594cd6e4f55cb334d828f7b7af4474462ec43",
+    "results\\MG12H3\\XY_core_instrument\\benchmark.json": "48a41e28e2290fbf92b6c54b7336c28e5bae47015bc47a34c816d8e6e8b74b29",
+    "local_raw\\MG163_long_horizon\\production\\homogeneous_r0\\observations.npz": "9dc9e3a5f7e7fed80bcbe511e90d67f0a663e1f2000a57a97cb230db919a9fe3",
+    "local_raw\\MG163_long_horizon\\production\\homogeneous_r1\\observations.npz": "2c48e88d3838afc5b2312e1daefae03b807d5a878100c86b6d5e6f798201b8b4"
+  },
+  "seed": 17800,
+  "cap_seconds": 2000,
+  "workers": 1,
+  "threads": 1,
+  "primary": [
+    "static",
+    "moving",
+    "deforming",
+    "stop_start",
+    "absent",
+    "vanish",
+    "missingX",
+    "missingY",
+    "displacedY",
+    "split",
+    "jump"
+  ],
+  "extra": [
+    "secondary_static",
+    "secondary_counter",
+    "secondary_initial",
+    "secondary_vanish"
+  ],
+  "sensitivities": [
+    "weak_static",
+    "weak_moving",
+    "actual_rho",
+    "shape_X",
+    "contaminated_reference",
+    "temporal_shift"
+  ],
+  "new_ModelG_draws": false
+}
