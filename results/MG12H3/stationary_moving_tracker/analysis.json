@@ -1,0 +1,1020 @@
+{
+  "rows": [
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "static",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "moving",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "deforming",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "stop_start",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "absent",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "vanish",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "missingX",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "missingY",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "displacedY",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "split",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "jump",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "weak_static",
+      "primary": false,
+      "frames": 12,
+      "n": 2,
+      "modes": {
+        "successful_paths": 2,
+        "false_single_deadline": null,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 2,
+        "false_single_deadline": null,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "weak_moving",
+      "primary": false,
+      "frames": 12,
+      "n": 2,
+      "modes": {
+        "successful_paths": 2,
+        "false_single_deadline": null,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 2,
+        "false_single_deadline": null,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "noise_scaled",
+      "primary": false,
+      "frames": 12,
+      "n": 2,
+      "modes": {
+        "successful_paths": 0,
+        "false_single_deadline": null,
+        "screen_passed": false
+      },
+      "MG172": {
+        "successful_paths": 0,
+        "false_single_deadline": null,
+        "screen_passed": false
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "static",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "moving",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "deforming",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "stop_start",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "absent",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "vanish",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "missingX",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "missingY",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "displacedY",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "split",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "jump",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "weak_static",
+      "primary": false,
+      "frames": 12,
+      "n": 2,
+      "modes": {
+        "successful_paths": 2,
+        "false_single_deadline": null,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 2,
+        "false_single_deadline": null,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "weak_moving",
+      "primary": false,
+      "frames": 12,
+      "n": 2,
+      "modes": {
+        "successful_paths": 2,
+        "false_single_deadline": null,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 2,
+        "false_single_deadline": null,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "noise_scaled",
+      "primary": false,
+      "frames": 12,
+      "n": 2,
+      "modes": {
+        "successful_paths": 0,
+        "false_single_deadline": null,
+        "screen_passed": false
+      },
+      "MG172": {
+        "successful_paths": 0,
+        "false_single_deadline": null,
+        "screen_passed": false
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "static",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "moving",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "deforming",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "stop_start",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "absent",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "vanish",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "missingX",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "missingY",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "displacedY",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "split",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "jump",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "weak_static",
+      "primary": false,
+      "frames": 12,
+      "n": 2,
+      "modes": {
+        "successful_paths": 2,
+        "false_single_deadline": null,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 1,
+        "false_single_deadline": null,
+        "screen_passed": false
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "weak_moving",
+      "primary": false,
+      "frames": 12,
+      "n": 2,
+      "modes": {
+        "successful_paths": 2,
+        "false_single_deadline": null,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 2,
+        "false_single_deadline": null,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "noise_scaled",
+      "primary": false,
+      "frames": 12,
+      "n": 2,
+      "modes": {
+        "successful_paths": 0,
+        "false_single_deadline": null,
+        "screen_passed": false
+      },
+      "MG172": {
+        "successful_paths": 0,
+        "false_single_deadline": null,
+        "screen_passed": false
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "static",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 0,
+        "false_single_deadline": null,
+        "screen_passed": false
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "moving",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "deforming",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": null,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "stop_start",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 3,
+        "false_single_deadline": null,
+        "screen_passed": false
+      },
+      "MG172": {
+        "successful_paths": 0,
+        "false_single_deadline": null,
+        "screen_passed": false
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "absent",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "vanish",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "missingX",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "missingY",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "displacedY",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "split",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "jump",
+      "primary": true,
+      "frames": 24,
+      "n": 4,
+      "modes": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 4,
+        "false_single_deadline": 0,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "weak_static",
+      "primary": false,
+      "frames": 12,
+      "n": 2,
+      "modes": {
+        "successful_paths": 2,
+        "false_single_deadline": null,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 0,
+        "false_single_deadline": null,
+        "screen_passed": false
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "weak_moving",
+      "primary": false,
+      "frames": 12,
+      "n": 2,
+      "modes": {
+        "successful_paths": 2,
+        "false_single_deadline": null,
+        "screen_passed": true
+      },
+      "MG172": {
+        "successful_paths": 2,
+        "false_single_deadline": null,
+        "screen_passed": true
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "noise_scaled",
+      "primary": false,
+      "frames": 12,
+      "n": 2,
+      "modes": {
+        "successful_paths": 0,
+        "false_single_deadline": null,
+        "screen_passed": false
+      },
+      "MG172": {
+        "successful_paths": 0,
+        "false_single_deadline": null,
+        "screen_passed": false
+      }
+    }
+  ],
+  "primary_modes_screen_passed": false,
+  "primary_MG172_screen_passed": false,
+  "sensitivity_not_qualification": true,
+  "explicit_history_endpoint_checks": 696,
+  "G_status": "UNRESOLVED",
+  "ready_for_real_persistence": false,
+  "new_persistence_verdict": null,
+  "elapsed_seconds": 280.5985179999843
+}
