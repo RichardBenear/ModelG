@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "expected_sufficient_statistics": [
+    {
+      "LR": 0.0,
+      "p": 1.0,
+      "unrestricted": {
+        "rho": -1.1637472275891937e-11,
+        "scale": 1.0,
+        "loglike": -39920.0,
+        "success": true,
+        "interior": true
+      },
+      "shared": {
+        "rho": 1.1637277986863036e-11,
+        "scale": 1.0,
+        "loglike": -39920.0,
+        "success": true,
+        "interior": true
+      },
+      "valid": true,
+      "asymptotic_chi_square_df": 1
+    },
+    {
+      "LR": 0.0,
+      "p": 1.0,
+      "unrestricted": {
+        "rho": 0.8000000113608137,
+        "scale": 1.0000000497035626,
+        "loglike": -7802.349731337097,
+        "success": true,
+        "interior": true
+      },
+      "shared": {
+        "rho": 0.8000000000366302,
+        "scale": 1.0000000001282057,
+        "loglike": -7802.349731337097,
+        "success": true,
+        "interior": true
+      },
+      "valid": true,
+      "asymptotic_chi_square_df": 1
+    },
+    {
+      "LR": 2.9103830456733704e-11,
+      "p": 0.9999956955750767,
+      "unrestricted": {
+        "rho": 0.9500000005927952,
+        "scale": 1.000000011371409,
+        "loglike": 33262.28349805591,
+        "success": true,
+        "interior": true
+      },
+      "shared": {
+        "rho": 0.9500000033688734,
+        "scale": 1.0000000516992527,
+        "loglike": 33262.2834980559,
+        "success": true,
+        "interior": true
+      },
+      "valid": true,
+      "asymptotic_chi_square_df": 1
+    }
+  ],
+  "no_random_draws": true
+}
