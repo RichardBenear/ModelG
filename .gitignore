@@ -71,3 +71,6 @@ results/MG8/full/
 
 # MG171 public one-step audit summaries are lossless gzip; full caches local
 /results/MG12H3/weight_audit/r[02]_rho*.json
+
+# MG172 public sequence fit/state decisions are lossless gzip; raw snapshots stay local
+/results/MG12H3/corrected_model_selection/r[02]_rho*.json
