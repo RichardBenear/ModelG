@@ -18,7 +18,7 @@ def run():
         with np.load(OLD/'prepared_inputs.npz') as z:ref=z['reference'];initial=z['initial'];omega=float(z['omega'])
         benchmark=read(PRIOR/'benchmark.json');detect=[];averaging=[];veto=[];projectionchecks=0;artifacts={};target=float(norm.ppf(.95)+norm.ppf(.9));assert abs(norm.cdf(target-norm.ppf(.95))-.9)<1e-12
         for regime,rr in enumerate(benchmark['regime_inputs']):
-            model=Joint(ref,initial,omega,np.array(rr['covariance']));m=model.x;g=model.g[int(np.flatnonzero(m.scales==1)[0])];contrast=np.zeros_like(g);contrast[0]=g[0];kernels=[contrast*m.window, (model.inv@contrast)*m.window];gap=[float((g*k).sum()) for k in kernels]
+            model=Joint(ref,initial,omega,np.array(rr['covariance']));m=model.x;g=model.g[int(np.flatnonzero(m.scales==1)[0])];contrast=np.zeros_like(g);contrast[0]=g[0];kernels=[contrast*m.window, (model.inv@contrast)*m.window];gap=[float((contrast*k).sum()) for k in kernels]
             with np.load(SYN/f'r{regime}_null.npz') as z:null=z['fields']
             for kind,k,delta in zip(['G_only','G_conditional_GXY'],kernels,gap):
                 scores=np.einsum('rsn,sn->r',null,k);std=float(np.std(scores[:512],ddof=1));checkstd=float(np.std(scores[512:],ddof=1));snr=delta/std;count=int(np.ceil((target/snr)**2));detect.append(dict(regime=rr['time'],projection=kind,signal_difference=delta,calibration_std=std,validation_std=checkstd,SNR=snr,ideal_independent_count=count,gaussian_power_one_frame=float(norm.cdf(snr-norm.ppf(.95)))))

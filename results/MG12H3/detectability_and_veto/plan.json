@@ -1,7 +1,7 @@
 {
   "source": {
     "spec/MG166_detectability_and_veto.md": "46062f22317faabf24ec998f15cd04e19ca732442af899b59c24fe9aa0704dfd",
-    "src/analyze_mg166.py": "fdad0bfb01b3103c0fa922197b5abc7324cbd40884dd071773729eba7332f884",
+    "src/analyze_mg166.py": "8620c0f35b5a97ad72ca872d486648bc42a55dda6e381fb874c35a70b56f44cd",
     "src/mg165_joint.py": "19a9de4d639ad199dede1bb93f52d959cf8a2493b695b2893f52fdc2643197f6"
   },
   "inputs": {
@@ -28,5 +28,6 @@
     "local_raw\\MG165_multivariate_v2\\r2_intact_2.npz": "fdfe552d97b6ef371a1f4d4db99be119df837c0de3cd1c1c3bd98d4fc1565a39"
   },
   "cap": 600,
-  "no_new_draws": true
+  "no_new_draws": true,
+  "pre_evaluation_code_check": "Signal difference must use G-only contrast, not intact GXY signal. Corrected before any evaluation; original registration retained in Git."
 }
