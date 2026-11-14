@@ -1,0 +1,52 @@
+{
+  "source": {
+    "src/audit_mg173.py": "4b06018ddce04053cbf3d88b40a2654a818707ff2363dc9388156eaa5a3c99d1",
+    "spec/MG173_static_core_audit.md": "1934ce9d1f298c97120a8822bc1dafe024ca86092227dd0758d07f741a3b8991"
+  },
+  "inputs": {
+    "results\\MG12H3\\corrected_model_selection\\plan.json": "54d484bac113c4844767af5d8c94e84dd31c9eb630f04c88a77bafe726b0b465",
+    "results\\MG12H3\\corrected_model_selection\\analysis.json": "9f81d989efa307d119aed3a940a1ecccf3fbb6a7cb910f4d3de411b7301c63d3",
+    "local_raw\\MG172_corrected\\r0_rho0_static_snap0.npz": "82c49a9cab2f474437c704a6fb8aa45a854edc564416e41c1d1c30697627d6d9",
+    "local_raw\\MG172_corrected\\r0_rho0_static.npz": "a836eacf06d023e017aa6825daebfe1f026478556749f83e548ae350eff405d5",
+    "results\\MG12H3\\corrected_model_selection\\r0_rho0_static.json.gz": "7ee3a54061669b9af3cec0252f220256b1f46fdad20cf812c983c46ec43bb6ea",
+    "local_raw\\MG172_corrected\\r0_rho0_moving.npz": "035003f3be384465a9c3d589a7cf68689ddfcead73df5db7ca6486013fd92e54",
+    "results\\MG12H3\\corrected_model_selection\\r0_rho0_moving.json.gz": "a51c1ad0aa4ad0a80be4fe6712060162af8db5ac7fa522d0228cebeab7dd31ed",
+    "local_raw\\MG172_corrected\\r0_rho0_absent.npz": "f9bf84057360a07a830f3c249e81a071d0406ebe30336d2f940cb120a413166a",
+    "results\\MG12H3\\corrected_model_selection\\r0_rho0_absent.json.gz": "5df4a22e752b805a489678ca26ca6c5cc7db94a09a22dd9c6364450317de625a",
+    "local_raw\\MG172_corrected\\r0_rho0.95_static.npz": "9a4c0c35415b3282cfd5f6d494bcc8e749319aa0e2afab18e36523eb93718b51",
+    "results\\MG12H3\\corrected_model_selection\\r0_rho0.95_static.json.gz": "f455605a5c0367ba242ebff3391a3409ae0e7b2a4799f97b35a03b8d013c4b02",
+    "local_raw\\MG172_corrected\\r0_rho0.95_moving.npz": "843f0a1ff7186c03721297b64c4a2a1e51cd38961c71f088ba248615884cf8bb",
+    "results\\MG12H3\\corrected_model_selection\\r0_rho0.95_moving.json.gz": "5dd3573951f4fbb2387ea6b464c56539a66612452e55c3d187f768996c27666c",
+    "local_raw\\MG172_corrected\\r0_rho0.95_absent.npz": "ef37f55c11b0ed7302c4a729ea4fa7c14e4b3aae87ae25927f196eec9b4651e9",
+    "results\\MG12H3\\corrected_model_selection\\r0_rho0.95_absent.json.gz": "ae0c9afde472fddf1dd3bdd804232003bbbac73f48cdf40abf11ae73b2f0f985",
+    "local_raw\\MG172_corrected\\r2_rho0_static_snap0.npz": "6fb2ba51cd9c89e7e3393b5313f5afbab79561c2042c09c9315e9610dda83ee3",
+    "local_raw\\MG172_corrected\\r2_rho0_static.npz": "05fe0b357c271593adb0c7387046e13b758f67442b8897ea9c1d9d67a58b0e1e",
+    "results\\MG12H3\\corrected_model_selection\\r2_rho0_static.json.gz": "a8c1f41182b419937229e9098cb49edb6006bd77c37e1555c058a39f8a02c044",
+    "local_raw\\MG172_corrected\\r2_rho0_moving.npz": "8d70049606ae364713c0bef1591be8042853b80794610fb7e0dcd09c39d46cf1",
+    "results\\MG12H3\\corrected_model_selection\\r2_rho0_moving.json.gz": "9d882fa10bb15ce5d2fa0309f1fa6d68c10d759a4f55f51ff3062497826206f4",
+    "local_raw\\MG172_corrected\\r2_rho0_absent.npz": "c59c0abc62768bdc12b8c261b1b78104e32833336513ed4b3f96d3ed76282fc4",
+    "results\\MG12H3\\corrected_model_selection\\r2_rho0_absent.json.gz": "850bff1f3d85176ed5c640c5e82529cead365115d7190831e7f6a5b059e36704",
+    "local_raw\\MG172_corrected\\r2_rho0.95_static.npz": "953436b5c63733471938d0c0a60927421973b247e5b323d9b18741e4c3394576",
+    "results\\MG12H3\\corrected_model_selection\\r2_rho0.95_static.json.gz": "825aeb4d5fbc8bde713350eb9874ee3a173ca2fcd6557d34ddcb0586cbd2818a",
+    "local_raw\\MG172_corrected\\r2_rho0.95_moving.npz": "e4ffb0bc9f2b5786b34d374b9a077830d2859411f817decc9a58443a1b266ac0",
+    "results\\MG12H3\\corrected_model_selection\\r2_rho0.95_moving.json.gz": "44421577bb17ad6b9db2353175448a0f6ec35f5501d74e55c767fb5446b2bada",
+    "local_raw\\MG172_corrected\\r2_rho0.95_absent.npz": "89fd025924de745dd866e1099434780aaab20473efdc555f047b1f5d17aca062",
+    "results\\MG12H3\\corrected_model_selection\\r2_rho0.95_absent.json.gz": "2612de8a331c9872af56ee21302c73e4ac03a13298773e1514e0e306cdc20028"
+  },
+  "no_new_draws": true,
+  "workers": 1,
+  "threads": 1,
+  "cap": 600,
+  "replicates": 4,
+  "frames": 24,
+  "case_list": [
+    "static",
+    "moving",
+    "absent"
+  ],
+  "mode_parameters": {
+    "uniform": 0.0,
+    "sticky90": 0.9,
+    "fixed": 1.0
+  }
+}
