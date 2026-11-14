@@ -1,0 +1,9 @@
+# MG175 saved-decision initialization and noise audit
+
+Authorized by PI: go ahead with the audit. Diagnostic only; MG174 failed screen and all labels remain frozen. No new random draws or tracker revision.
+
+Read all 56 MG174 compressed case decisions; decompose each label into structural weight >=0.95, representative innovation quadratic <= frozen qcut, and single geometry spreads <=4 sites/0.25 width. Preserve overlaps rather than assign an arbitrary exclusive cause. Detail all uncertain intact primary frames, including the failed stop-start path and first-frame structural alternatives/mode weights.
+
+For static, stop-start and noise-scaled cases in every regime/rho, read saved local fields and templates/precision from MG174 static snapshots. Compute the innovation quadratic at the injected true current AND previous geometry, rather than the tracker-selected history. Also compute the same residual using a real-space circular covariance quadratic as a separate verification. For noise-scaled cases divide the oracle quadratic by 1.25^2 as a known-injection diagnostic only; never relabel or re-estimate the tracker. Compare exceedance counts to unchanged qcut; no population qualification or new pass gate. Summarize cumulative structural single weights during initialization and mode weights during stop-start segments.
+
+Freeze code/spec/input hashes before execution. One worker/thread1, 120 active seconds cap; compact outputs only, no additional bulk raw cache. Verify all 9024 frozen labels and both quadratic paths. Same-author checks share input templates and precision, not external replication. Report guard causes versus causal conclusions carefully: oracle fit conditions on truth and does not demonstrate a deployable correction. Any new initialization/noise rule requires separate specification and fresh validation.
