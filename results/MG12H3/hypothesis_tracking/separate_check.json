@@ -1,0 +1,429 @@
+{
+  "passed": true,
+  "frame_labels_checked": 3840,
+  "beam_motion_and_weight_checks": 34560,
+  "independent_componentwise_spectral_q_checks": 160,
+  "path_outcomes_checked": 160,
+  "label_totals": {
+    "0.1_0.0_static": {
+      "single": 94,
+      "uncertain": 2
+    },
+    "0.1_0.0_moving": {
+      "single": 93,
+      "uncertain": 3
+    },
+    "0.1_0.0_deforming": {
+      "single": 95,
+      "uncertain": 1
+    },
+    "0.1_0.0_absent": {
+      "absent": 96
+    },
+    "0.1_0.0_vanish": {
+      "single": 40,
+      "absent": 56
+    },
+    "0.1_0.0_missingX": {
+      "single": 40,
+      "Yonly": 56
+    },
+    "0.1_0.0_missingY": {
+      "uncertain": 2,
+      "single": 38,
+      "Xonly": 56
+    },
+    "0.1_0.0_displacedY": {
+      "single": 41,
+      "uncertain": 8,
+      "Xonly": 47
+    },
+    "0.1_0.0_split": {
+      "single": 40,
+      "multiple": 56
+    },
+    "0.1_0.0_jump": {
+      "single": 40,
+      "absent": 10,
+      "uncertain": 21,
+      "multiple": 25
+    },
+    "0.1_0.95_static": {
+      "single": 96
+    },
+    "0.1_0.95_moving": {
+      "single": 96
+    },
+    "0.1_0.95_deforming": {
+      "single": 96
+    },
+    "0.1_0.95_absent": {
+      "absent": 96
+    },
+    "0.1_0.95_vanish": {
+      "single": 40,
+      "absent": 56
+    },
+    "0.1_0.95_missingX": {
+      "single": 40,
+      "Yonly": 56
+    },
+    "0.1_0.95_missingY": {
+      "single": 40,
+      "Xonly": 56
+    },
+    "0.1_0.95_displacedY": {
+      "single": 37,
+      "uncertain": 7,
+      "Xonly": 52
+    },
+    "0.1_0.95_split": {
+      "single": 40,
+      "multiple": 56
+    },
+    "0.1_0.95_jump": {
+      "uncertain": 58,
+      "single": 38
+    },
+    "1.0_0.0_static": {
+      "uncertain": 4,
+      "multiple": 92
+    },
+    "1.0_0.0_moving": {
+      "uncertain": 6,
+      "multiple": 90
+    },
+    "1.0_0.0_deforming": {
+      "multiple": 94,
+      "uncertain": 2
+    },
+    "1.0_0.0_absent": {
+      "absent": 91,
+      "uncertain": 5
+    },
+    "1.0_0.0_vanish": {
+      "uncertain": 11,
+      "multiple": 37,
+      "absent": 48
+    },
+    "1.0_0.0_missingX": {
+      "uncertain": 6,
+      "multiple": 35,
+      "Yonly": 55
+    },
+    "1.0_0.0_missingY": {
+      "uncertain": 11,
+      "multiple": 34,
+      "Xonly": 51
+    },
+    "1.0_0.0_displacedY": {
+      "multiple": 45,
+      "Xonly": 34,
+      "uncertain": 17
+    },
+    "1.0_0.0_split": {
+      "multiple": 93,
+      "uncertain": 3
+    },
+    "1.0_0.0_jump": {
+      "multiple": 46,
+      "uncertain": 12,
+      "absent": 38
+    },
+    "1.0_0.95_static": {
+      "uncertain": 18,
+      "absent": 72,
+      "single": 6
+    },
+    "1.0_0.95_moving": {
+      "uncertain": 14,
+      "single": 82
+    },
+    "1.0_0.95_deforming": {
+      "uncertain": 5,
+      "single": 87,
+      "multiple": 4
+    },
+    "1.0_0.95_absent": {
+      "absent": 96
+    },
+    "1.0_0.95_vanish": {
+      "multiple": 3,
+      "uncertain": 8,
+      "single": 29,
+      "absent": 56
+    },
+    "1.0_0.95_missingX": {
+      "multiple": 3,
+      "uncertain": 10,
+      "single": 27,
+      "Yonly": 56
+    },
+    "1.0_0.95_missingY": {
+      "multiple": 3,
+      "uncertain": 3,
+      "single": 34,
+      "Xonly": 56
+    },
+    "1.0_0.95_displacedY": {
+      "uncertain": 14,
+      "single": 30,
+      "Xonly": 50,
+      "multiple": 2
+    },
+    "1.0_0.95_split": {
+      "uncertain": 14,
+      "single": 35,
+      "multiple": 47
+    },
+    "1.0_0.95_jump": {
+      "uncertain": 10,
+      "single": 34,
+      "absent": 51,
+      "multiple": 1
+    }
+  },
+  "postdeadline": [
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "static",
+      "postdeadline_single_frames": null
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "moving",
+      "postdeadline_single_frames": null
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "deforming",
+      "postdeadline_single_frames": null
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "absent",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "vanish",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "missingX",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "missingY",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "displacedY",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "split",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "jump",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "static",
+      "postdeadline_single_frames": null
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "moving",
+      "postdeadline_single_frames": null
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "deforming",
+      "postdeadline_single_frames": null
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "absent",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "vanish",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "missingX",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "missingY",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "displacedY",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "split",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "jump",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "static",
+      "postdeadline_single_frames": null
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "moving",
+      "postdeadline_single_frames": null
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "deforming",
+      "postdeadline_single_frames": null
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "absent",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "vanish",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "missingX",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "missingY",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "displacedY",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "split",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "jump",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "static",
+      "postdeadline_single_frames": null
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "moving",
+      "postdeadline_single_frames": null
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "deforming",
+      "postdeadline_single_frames": null
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "absent",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "vanish",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "missingX",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "missingY",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "displacedY",
+      "postdeadline_single_frames": 0
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "split",
+      "postdeadline_single_frames": 6
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "jump",
+      "postdeadline_single_frames": 0
+    }
+  ],
+  "limits": "Same author/shared reference and noise covariance construction; weights are not calibrated posteriors."
+}
