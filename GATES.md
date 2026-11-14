@@ -2667,3 +2667,8 @@ MG175 saved-decision audit complete: all9024labels unchanged;864 true-geometry q
 ## MG176 acquisition/noise pilot result
 
 MG176 acquisition/independent scalar-noise pilot complete: primary FAILED,95/96intact and166/168negative paths success (264primary +10sensitivity,24frames/16independentreferencefields each). Three failures: high-noise static acquisition; valid-reference band rejection prevents split-control acquisition; high-noise iid split false-single at15 despite scaleCI containingtruth. Reference gate misses altered Xnoise and contaminatedreferences2/2each; wrongrho0/2tracking, weakstatic1/2/weakmoving2/2. All6576labels/274outcomes/4384realspace referencequadratics/2192bands/548selectedhistoryquadratics independentlyrecomputed;822driverendpointchecks. Frozen4f9694fpushedbeforedraws;eval271.39s,check8.09soneworker. Raw84.55MBlocal_raw/MG176_acquisition,publiccompactgziponly. Report results/MG12H3/acquisition_noise/MG176_acquisition_noise_results.md. MG174/MG163unchanged/Gunresolved/notqualified/PIclosurepending. Recommend saved split-path model-selection/detectability audit and stronger species/temporal/reference-contamination adequacy design;no newkineticproduction.
+
+
+## MG177 saved split/reference audit - registered
+
+PI authorizes audit. Source/spec/input bindings28ebf44; diagnostic only, no newdraws/relabeling. Twelve saved late-iid split/moving paths atthree scales; exact conditional true-primary full5655secondary-grid redrawn versus persistent comparison, actualweights/prior decomposition. All274saved reference samples channel/mean diagnostics. Cap600soneworker. Full criteria spec/MG177_split_reference_audit.md. No physics verdict or newqualifiedtracker;MG176unchanged.
