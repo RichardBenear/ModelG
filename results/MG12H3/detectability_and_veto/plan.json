@@ -1,0 +1,32 @@
+{
+  "source": {
+    "spec/MG166_detectability_and_veto.md": "46062f22317faabf24ec998f15cd04e19ca732442af899b59c24fe9aa0704dfd",
+    "src/analyze_mg166.py": "fdad0bfb01b3103c0fa922197b5abc7324cbd40884dd071773729eba7332f884",
+    "src/mg165_joint.py": "19a9de4d639ad199dede1bb93f52d959cf8a2493b695b2893f52fdc2643197f6"
+  },
+  "inputs": {
+    "local_raw\\MG163_long_horizon\\prepared_inputs.npz": "ccf9c00393f39b390ac60314d15594cd6e4f55cb334d828f7b7af4474462ec43",
+    "results\\MG12H3\\multivariate_instrument\\v2\\benchmark.json": "e306d0759f45ab868efd43057b5fc42ee376045807260bfe6c73b13e77408618",
+    "local_raw\\MG163_long_horizon\\production\\homogeneous_r0\\observations.npz": "9dc9e3a5f7e7fed80bcbe511e90d67f0a663e1f2000a57a97cb230db919a9fe3",
+    "local_raw\\MG163_long_horizon\\production\\homogeneous_r1\\observations.npz": "2c48e88d3838afc5b2312e1daefae03b807d5a878100c86b6d5e6f798201b8b4",
+    "local_raw\\MG163_long_horizon\\production\\homogeneous_r2\\observations.npz": "f95418f19626af090e8b3ab2bf1cb645371c18f15a98a8a7d9d61af3f75c90d6",
+    "local_raw\\MG163_long_horizon\\production\\homogeneous_r3\\observations.npz": "4388f0e5dd36a1a1ef5bcddca89022245eb11c1d4061c0f66d68e39e9defa802",
+    "local_raw\\MG165_multivariate_v2\\r0_null.npz": "12c64a9185110efe609b2f4db3fef5fd3745367c008e9f0a91839cb5839b90e7",
+    "local_raw\\MG165_multivariate_v2\\r0_split.npz": "85cacb83fbab7bc38eb1a1110f1b6f7a1e7b46681961227faf3b638fc850072a",
+    "local_raw\\MG165_multivariate_v2\\r0_intact_0.npz": "684d6a5aad13c3b99f4784aadfb934e2f6b61d689e1cd4d676683656c5042cf6",
+    "local_raw\\MG165_multivariate_v2\\r0_intact_1.npz": "c2ec3e00faf7f261a73b9e9040279e463202854974ad244b802fa514214a1326",
+    "local_raw\\MG165_multivariate_v2\\r0_intact_2.npz": "18834b020eca211bb5800f65470f4a3e3e4962354df58123246e0a10c9d4eda7",
+    "local_raw\\MG165_multivariate_v2\\r1_null.npz": "f1a48ec92b6f3a5da4dbfbadc56072e3e10a4a08c459e0a69fbb04dac69b9d2d",
+    "local_raw\\MG165_multivariate_v2\\r1_split.npz": "769f83217678c076563aa40960e127419963f97fc059a4208e38142c78ed5110",
+    "local_raw\\MG165_multivariate_v2\\r1_intact_0.npz": "9b80a3bf9268f28892764359594cdd49acbef3e398c45dc4b9edafb2d3767b4e",
+    "local_raw\\MG165_multivariate_v2\\r1_intact_1.npz": "2df87e73a734a00b959c18cf26c12091a528430808a55e46d8dcc0e940eebcc1",
+    "local_raw\\MG165_multivariate_v2\\r1_intact_2.npz": "c03cc03a2b0ea76a5d9cb6be71b9235294c5cb895585a77749094a2494b0385e",
+    "local_raw\\MG165_multivariate_v2\\r2_null.npz": "1e005bc6c06ec7e2243c37aa7fe262a281163c43547a4061bdfbd5d300d47a4c",
+    "local_raw\\MG165_multivariate_v2\\r2_split.npz": "260f765e17ab7045ca3107b1cc663070ae0675ebef437ce961e54830c338c408",
+    "local_raw\\MG165_multivariate_v2\\r2_intact_0.npz": "98cca12905d421726a4e2adefe8ec5d0e92adbebfeac63d6aee5b4e77cc81bfa",
+    "local_raw\\MG165_multivariate_v2\\r2_intact_1.npz": "616ae41f68101a7b011745aa741c1d9e1f5c154f76f95b0b99c7f397e7308719",
+    "local_raw\\MG165_multivariate_v2\\r2_intact_2.npz": "fdfe552d97b6ef371a1f4d4db99be119df837c0de3cd1c1c3bd98d4fc1565a39"
+  },
+  "cap": 600,
+  "no_new_draws": true
+}
