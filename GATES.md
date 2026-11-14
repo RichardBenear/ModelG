@@ -2617,3 +2617,8 @@ PIauthorizesinstrument/analysis. Sharedgeometry3speciesGLS/commonamplitude/fullc
 ## MG166 - G detectability, temporal averaging, competing-core diagnostic
 
 PIauthorizesrecommendednextstep;savedonly,noModelGdraws/newsyntheticfields. Prospectivepacketpublishedbeforecalculation. ConditionalGknowngeometrySNR~.4-.55;idealindependentaverages29-55forstatedGaussian5%/90%target,notactualframecount. AdjacentM50stdgain1.014-1.084,pooledstructuredbackgroundincluded. Veto0/384intactrejectionseachregime,split128/128,67/128,55/128;latescreenFAILS. Independentprojection,cumsumaggregation,fullspatialvetoandGaussianpowerchecks pass; no newpersistenceverdict. Report results/MG12H3/detectability_and_veto/MG166_detectability_results.md. Earlieroutcomesunchanged; nextscopeproposalonly.
+
+
+## MG167 - X/Y-only core instrument development FAILED screen
+
+PIauthorizesMG166recommendation. Prospectivefrozen/publishedXYcandidate/Gunresolved,newsyntheticseed16700/sameregimeparameters;commongeometry+individualcomponentfloors+residualsecondcoreveto. All27conditionalbenchmarkcasesretained. MissingX/Yscreenspass,butsomeintact/displaced/doublecorecasesfail;thresholdsunchanged. DependencygateBLOCKSsavedMG163application;no newpersistenceverdict.66GLSfit/27directfullspatialprimary-secondarysearch/6144labelchecks pass. Report results/MG12H3/XY_core_instrument/MG167_XY_core_results.md. No newModelGtrajectories,fullsyntheticfieldslocalonly. Futureknowngeometrydiscrimination/trackingrequiresseparatescope.

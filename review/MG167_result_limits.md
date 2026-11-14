@@ -1,0 +1,3 @@
+# MG167 result review
+
+Screen fails despite improved missing-species protection; do not confuse implementation correctness with instrument qualification. Eachprimary andsecondarysearch verified by independentdirectspatialsum;labels/calibration maxima andverdicts recomputed. Per-speciesfloors can reject noisybutintactY; totalgainsearchpenalty rejectsweaklatecases. Residualvetoaddsdiscrimination butdoesnotqualifylatedoublecores. Allfailuresretained,no retuning. NewGaussianrandomfieldsare independentrealizations conditionalonseenparameterestimates,notnewphysics/real-noisevalidation. Savedapplicationblocked,notquietlyrescored. GexplicitlyUNRESOLVED. Sharedinputs/templates/sameauthor limitationsdisclosed. Fullfields local;publiccompactgzipdecisionslossless.
