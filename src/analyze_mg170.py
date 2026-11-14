@@ -27,17 +27,18 @@ class Beam:
     def step(self,field):
         y=np.fft.rfft(field-field.mean(axis=1)[:,None],axis=1);rho=0 if self.previous is None else self.rho;innovation=y if self.previous is None else y-rho*self.previous;variance=1 if self.previous is None else 1-rho*rho
         # Spectral global proposals are discovery candidates, never true secondary coordinates.
-        kernels=np.einsum('fst,ist->isf',self.P,self.ft);corr=np.fft.irfft((y[None,:,:]*np.conj(kernels)).sum(axis=1),n=500,axis=1);scores=corr-.5*self.norms[:,None];global_order=np.argsort(scores.ravel())[::-1]
-        candidates=[];means=[];origins=[];logprior=[]
+        kernels=np.einsum('fst,itf->isf',self.P,self.ft);corr=np.fft.irfft((y[None,:,:]*np.conj(kernels)).sum(axis=1),n=500,axis=1);scores=corr-.5*self.norms[:,None];global_order=np.argsort(scores.ravel())[::-1]
+        candidates=[];means=[];origins=[];logprior=[];secondary_cache={}
         for pi,parent in enumerate(self.beam):
             candidates.append(dict(kind='absent',center=parent['center'],si=parent['si'],second=None));means.append(np.zeros((2,251),complex));origins.append(pi);logprior.append(parent['log']+np.log(.98 if parent['kind']=='absent' else .005))
             locations=[((parent['center']+d)%500,si) for d in range(-2,3) for si in range(max(0,parent['si']-1),min(13,parent['si']+2))]
             for k,si in locations:
-                seconds=[]
-                for idx in global_order:
+                seconds=list(secondary_cache.get(k,[]))
+                for idx in ([] if k in secondary_cache else global_order):
                     ss,kk=np.unravel_index(int(idx),scores.shape);dist=min((kk-k)%500,(k-kk)%500)*.2
                     if dist>self.model.x.background_exclusion and all(min((kk-q[0])%500,(q[0]-kk)%500)*.2>self.model.x.background_exclusion for q in seconds):seconds.append((int(kk),int(ss)))
                     if len(seconds)==2:break
+                secondary_cache[k]=seconds
                 for kind in('single','Xonly','Yonly','multiple'):
                     choices=seconds if kind=='multiple' else [None]
                     for second in choices:
@@ -65,6 +66,7 @@ def run():
         inputs=[]
         for r in(0,1):
             with np.load(OLD/'production'/f'homogeneous_r{r}'/'observations.npz') as z:inputs.append(z['counts'][:,0,:3]/omega)
+        checker=Beam.__new__(Beam);checker.P=np.tile(np.eye(2),(251,1,1)).astype(complex);checker.freqweights=np.full(251,2.);checker.freqweights[[0,-1]]=1;checker.freqweights[0]=0;grid=np.arange(500);fixture=np.array([np.sin(2*np.pi*grid/500),np.cos(6*np.pi*grid/500)]);ftest=np.fft.rfft(fixture,axis=1);np.testing.assert_allclose(checker.inner(ftest,ftest),np.sum(fixture*fixture),rtol=1e-12)
         covariances=read(BENCH)['regime_inputs'];oldsummary=read(PRIOR/'analysis.json');rows=[]
         for ri in(0,2):
             when=[.1,.5,1.][ri];model=XYCore(ref,initial,omega,np.array(covariances[ri]['covariance'])[1:,1:]);samples=np.array([x[round(when*1000)] for x in inputs]);samples-=samples.mean(axis=2)[:,:,None];ft=np.fft.rfft(samples,axis=2);S=np.einsum('rsf,rtf->fst',ft,np.conj(ft))/(2*500);S=np.stack([S[max(0,i-2):min(251,i+3)].mean(axis=0) for i in range(251)]);diag=np.zeros_like(S)
@@ -76,6 +78,8 @@ def run():
                     with np.load(INPUT/(tag+'.npz')) as z:fields=z['fields'][:4,:24]
                     for r,field in enumerate(fields):
                         seed=previous['paths'][r]['initial_seed'];truth=previous['paths'][r]['truth'][:24];beam=Beam(model,L,rho,seed);records=[]
+                        if case=='absent':
+                            nf=np.fft.rfft(field[0]-field[0].mean(axis=1)[:,None],axis=1);qnoise=float(beam.inner(nf,nf));assert .2*998<qnoise<3*998
                         for frame in field:
                             records.append(beam.step(frame))
                             if time.perf_counter()-start>600:raise TimeoutError('MG170 active600s cap')

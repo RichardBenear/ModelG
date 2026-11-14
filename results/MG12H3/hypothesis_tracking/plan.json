@@ -1,6 +1,6 @@
 {
   "source": {
-    "src/analyze_mg170.py": "ed6413b5bf46b927ae3ef6b09ab0315f19335302679e46781b9420246714360b",
+    "src/analyze_mg170.py": "e610e428874573a4be60b8b15803084e22b9a0b187ceff95450aee4e4361fc62",
     "spec/MG170_uncertainty_hypotheses.md": "6fed8dc78e2fccf85dc02ec6711944625f66eb694b8bec28d7ca867f80f8e509",
     "src/mg167_xy.py": "a9b737504784b72189ff3f2951f7afa5b7e9385032ccf72861325664820ebe87"
   },
@@ -62,5 +62,6 @@
     0.95
   ],
   "beam_per_nonabsent_class": 2,
-  "no_new_draws": true
+  "no_new_draws": true,
+  "pre_evaluation_checks": "Corrected spectral matrix-vector contraction before any evaluation; memoized identical secondary proposals; deterministic Parseval and pure-noise quadratic checks run before sequence classification."
 }
