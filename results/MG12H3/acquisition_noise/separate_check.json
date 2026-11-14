@@ -1,0 +1,5742 @@
+{
+  "passed": true,
+  "labels": 6576,
+  "paths": 274,
+  "real_space_reference_quadratics": 4384,
+  "reference_band_checks": 2192,
+  "selected_history_quadratics": 548,
+  "max_selected_quadratic_difference": 1.8443301996740047e-06,
+  "path_summary": [
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "absent",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6296505493694016,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6160642390358008,
+        0.6436934547032981
+      ],
+      "acquisition": null,
+      "success": true,
+      "labels": {
+        "absent": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "absent",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6421154613211518,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6282601888430296,
+        0.6564363678077657
+      ],
+      "acquisition": null,
+      "success": true,
+      "labels": {
+        "absent": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "deforming",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6304598012134585,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6168560292152845,
+        0.644520755045921
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "deforming",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.632723333337504,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6190707198828774,
+        0.6468347700407748
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "displacedY",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.640899598339029,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6270705611938463,
+        0.6551933878021223
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 3,
+        "Xonly": 11
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "displacedY",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6397815571204962,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6259766445551713,
+        0.6540504112492093
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 2,
+        "Xonly": 12
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "jump",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.638553587963223,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6247751719523242,
+        0.652795055068061
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "jump",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.638211997749182,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6244409524150174,
+        0.652445846471024
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "missingX",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6353423620603519,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.621633236406956,
+        0.649512210167311
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Yonly": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "missingX",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6410962295398104,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6272629495768968,
+        0.655394404408969
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Yonly": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "missingY",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6333259324061666,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6196603163456315,
+        0.6474508086937973
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Xonly": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "missingY",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6377794524551142,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6240177403846217,
+        0.6520036542503819
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Xonly": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "moving",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6370549434399873,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6233088644922306,
+        0.6512629867303141
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "moving",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6344782531818438,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6207877728729126,
+        0.6486288293304265
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "split",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6394354901211086,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6256380448305356,
+        0.653696626022439
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "multiple": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "split",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6393913325971566,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6255948401173524,
+        0.6536514836666161
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "multiple": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "static",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6415752802441866,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6277316635452189,
+        0.6558841392359883
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "static",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6421642669336818,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6283079413504705,
+        0.6564862619170772
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "stop_start",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6392929967563374,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6254986261221374,
+        0.6535509546713482
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "stop_start",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.637223582837047,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6234738650658426,
+        0.6514353872407261
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "vanish",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6468701954066625,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.63291232746046,
+        0.6612971452862623
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "absent": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "vanish",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6369202910148594,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6231771175352815,
+        0.6511253311929663
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "absent": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "absent",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5560533995770696,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.522477594071172,
+        1.5907575868546524
+      ],
+      "acquisition": null,
+      "success": true,
+      "labels": {
+        "absent": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "absent",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5550165643069755,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.521463131156281,
+        1.5896976273618297
+      ],
+      "acquisition": null,
+      "success": true,
+      "labels": {
+        "absent": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "deforming",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5915707090631828,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.557228527367546,
+        1.627067028127719
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "deforming",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.556475088401229,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5228901838875804,
+        1.5911886804768287
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "displacedY",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5839563053601593,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5497784237700625,
+        1.6192828026870942
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 1,
+        "Xonly": 13
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "displacedY",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5333375908744415,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5002519366545575,
+        1.5675351543564708
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 1,
+        "Xonly": 13
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "jump",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5561232073949933,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.522545895608066,
+        1.5908289515751783
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 13,
+        "absent": 1
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "jump",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5614371393951871,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5277451660244357,
+        1.596261398589937
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 11,
+        "absent": 3
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "missingX",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.549914288628935,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5164709500391662,
+        1.5844815571760167
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Yonly": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "missingX",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5682626725725761,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5344234209821308,
+        1.603239159564728
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Yonly": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "missingY",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5702761643817924,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5363934665899557,
+        1.6052975576714068
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Xonly": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "missingY",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5454462029086842,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5120992746202377,
+        1.5799138210943773
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Xonly": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "moving",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5425246712911234,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.509240782469958,
+        1.5769271314427666
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "moving",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5887217554997946,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.554441047215524,
+        1.6241545352166222
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "split",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5682541314485916,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5344150641545964,
+        1.6032304279506444
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "multiple": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "split",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5380767492960095,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5048888356925674,
+        1.5723800087917135
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "multiple": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "static",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5607004585616002,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5270243809514923,
+        1.595508287787032
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "static",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5730066139073287,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5390649997298216,
+        1.608088903585018
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "stop_start",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.553402904726179,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5198842903807082,
+        1.5880479788205584
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "stop_start",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5828726373932342,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5487181386927606,
+        1.6181749660019997
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "vanish",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5516191318376877,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.518139006924255,
+        1.5862244229860578
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "absent": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "vanish",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5440329916382312,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5107165569734406,
+        1.5784690914013522
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "absent": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "absent",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.0036210131562664,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9819653399328888,
+        1.0260044683807201
+      ],
+      "acquisition": null,
+      "success": true,
+      "labels": {
+        "absent": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "absent",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.9950818384338044,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9736104196002442,
+        1.01727484703294
+      ],
+      "acquisition": null,
+      "success": true,
+      "labels": {
+        "absent": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "deforming",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.0077453598995498,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9860006934166036,
+        1.030220799179188
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "deforming",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.0064839680092552,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9847665192611159,
+        1.0289312748479353
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "displacedY",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.9935802799654249,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9721412610707767,
+        1.015739799761214
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 1,
+        "Xonly": 13
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "displacedY",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.9893506681234855,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9680029138503529,
+        1.0114158561685045
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 2,
+        "Xonly": 12
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "jump",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.9840810111630715,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9628469631272915,
+        1.0060286716463163
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "jump",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.00588288171436,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9841784029301919,
+        1.028316782707615
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "missingX",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.019860731424965,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9978546450202606,
+        1.0426063761631497
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Yonly": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "missingX",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.9987947967752732,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9772432614321134,
+        1.0210706143587736
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Yonly": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "missingY",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.9963023255245784,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9748045715811863,
+        1.0185225542773282
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Xonly": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "missingY",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.0017061155045879,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9800917610631582,
+        1.0240468633471875
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Xonly": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "moving",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.0012104347769384,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9796067759065664,
+        1.023540127602527
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "moving",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.0115835366820145,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9897560517834662,
+        1.034144577654949
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 23,
+        "uncertain": 1
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "split",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.003782690551652,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.982123528727701,
+        1.0261697516180452
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "multiple": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "split",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.0195023903977196,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9975040361111024,
+        1.042240043164599
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "multiple": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "static",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.9838974450836533,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9626673579524165,
+        1.0058410115482739
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "static",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.9992225796144295,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9776618137696622,
+        1.0215079379089158
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "stop_start",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.0068935439111892,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9851672575223709,
+        1.0293499853970538
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "stop_start",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.0176715002754422,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9957126520948911,
+        1.0403683192549302
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "vanish",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.9927961860207153,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.971374085945044,
+        1.0149382184069415
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "absent": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "vanish",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.9916148630753472,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9702182530435678,
+        1.0137305487740225
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "absent": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "absent",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6342206298329746,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6205357084023299,
+        0.6483654602861019
+      ],
+      "acquisition": null,
+      "success": true,
+      "labels": {
+        "absent": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "absent",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6337995855329142,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6201237492027757,
+        0.6479350255626503
+      ],
+      "acquisition": null,
+      "success": true,
+      "labels": {
+        "absent": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "deforming",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6441976436311284,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6302974427795413,
+        0.6585649883986207
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "deforming",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6256694486716302,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.612169040700226,
+        0.6396235647234725
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "displacedY",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6462969780859217,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6323514787597673,
+        0.6607111436733789
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Xonly": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "displacedY",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6501306403946722,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6361024200641558,
+        0.6646303069904869
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 11,
+        "uncertain": 1,
+        "Xonly": 12
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "jump",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6347410562672734,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6210449053140795,
+        0.6488974936334058
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 9,
+        "multiple": 5
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "jump",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6421810953097816,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6283244066116007,
+        0.6565034656113479
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 9,
+        "multiple": 5
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "missingX",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6346512109589371,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6209569986465374,
+        0.6488056445323929
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Yonly": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "missingX",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6300598182859424,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6164646769356521,
+        0.644111851420421
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Yonly": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "missingY",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6462527769943514,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6323082314190478,
+        0.6606659567782622
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Xonly": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "missingY",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6448300002807468,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6309161547278379,
+        0.6592114483069066
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Xonly": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "moving",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6430995415516717,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6292230350423581,
+        0.6574423956813583
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "moving",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6479276513381957,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6339469660936294,
+        0.6623781853368854
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "split",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6349150375799741,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6212151325379306,
+        0.649075355198584
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "multiple": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "split",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6378972611924538,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6241330070991407,
+        0.6521240904402785
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "multiple": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "static",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6340296548566224,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6203488541962959,
+        0.6481702260527433
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "static",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6328904292058869,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6192342102333654,
+        0.6470055925976578
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "stop_start",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6350807855486676,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6213773040730896,
+        0.6492447997939794
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "stop_start",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6400785953316597,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6262672734122544,
+        0.6543540742135538
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "vanish",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6421000094363831,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6282450703719328,
+        0.6564205713042949
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "absent": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "vanish",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.645840890072723,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6319052320042202,
+        0.6602448836674779
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "absent": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "absent",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5591299352972892,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.525487745716782,
+        1.5939027376184365
+      ],
+      "acquisition": null,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "absent": 23
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "absent",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5591988343318228,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5255551580795963,
+        1.5939731732872517
+      ],
+      "acquisition": null,
+      "success": true,
+      "labels": {
+        "absent": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "deforming",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5970659365391893,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.562605181349227,
+        1.6326848139963308
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "deforming",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5767172170826271,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5426955372142144,
+        1.6118822632181242
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "displacedY",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5680021887156639,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5341685577262338,
+        1.6029728662153169
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Xonly": 13,
+        "uncertain": 1
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "displacedY",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5575500679811904,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5239419680519413,
+        1.5922876350004989
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 11,
+        "uncertain": 4,
+        "Xonly": 9
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "jump",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.574373334910238,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5404022302547133,
+        1.6094861061521553
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "absent": 7,
+        "uncertain": 1,
+        "multiple": 6
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "jump",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5647514656335777,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5309879772536412,
+        1.5996496432417366
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "absent": 4,
+        "uncertain": 3,
+        "multiple": 7
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "missingX",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5647999562682786,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5310354215797,
+        1.599699215348364
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Yonly": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "missingX",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5761886730311423,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5421783978434935,
+        1.6113419312088788
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 9,
+        "Yonly": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "missingY",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.6032664330327853,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5686718863775908,
+        1.6390235982836403
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 10,
+        "Xonly": 13
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "missingY",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.55885781745498,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.525221499508281,
+        1.5936245508143787
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 1,
+        "Xonly": 13
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "moving",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.557783342435401,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.52417020901713,
+        1.592526112104148
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "moving",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5707865166508785,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5368928067122023,
+        1.605819292172445
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "split",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.571042660836989,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.537143423936721,
+        1.6060811490646925
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "multiple": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "split",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5427493648326678,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5094606276774727,
+        1.5771568362562556
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 9,
+        "multiple": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "static",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5222610906878955,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.48941444010121,
+        1.5562116183439316
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 22,
+        "uncertain": 2
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "static",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.550286211075638,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5168348473141513,
+        1.584861774496306
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "stop_start",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5709623909251633,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5370648860521818,
+        1.6059990889173559
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "stop_start",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5425968389558584,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5093113929339725,
+        1.5770009086410517
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "vanish",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5991444679245161,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.564638863139064,
+        1.6348097022370705
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 1,
+        "absent": 13
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "vanish",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.560644306864062,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5269694408694914,
+        1.5954508837552053
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 1,
+        "absent": 13
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "absent",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.993352302200137,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.97191820250499,
+        1.0155067374769349
+      ],
+      "acquisition": null,
+      "success": true,
+      "labels": {
+        "absent": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "absent",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.999825648164372,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9782518695834447,
+        1.022124456513917
+      ],
+      "acquisition": null,
+      "success": true,
+      "labels": {
+        "absent": 23,
+        "uncertain": 1
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "deforming",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.9979257304128433,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9763929473844593,
+        1.0201821654727061
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "deforming",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.0109295943469052,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.989116219915685,
+        1.033476050642172
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "displacedY",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.001149187423264,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9795468501201565,
+        1.02347751426769
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Xonly": 13,
+        "uncertain": 1
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "displacedY",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.9853920045461598,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9641296684973449,
+        1.0073689037174205
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 11,
+        "uncertain": 1,
+        "Xonly": 12
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "jump",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.0013574471330795,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9797506160976146,
+        1.0236904187306828
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "absent": 3,
+        "uncertain": 5,
+        "multiple": 6
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "jump",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.0039081169982493,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9822462487800464,
+        1.02629797541266
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 5,
+        "absent": 2,
+        "multiple": 7
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "missingX",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.9985331534257317,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9769872637025864,
+        1.0208031356569203
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Yonly": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "missingX",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.9919837202154173,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9705791511536985,
+        1.0141076324230742
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Yonly": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "missingY",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.0115508522063767,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9897240725584305,
+        1.0341111642273588
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Xonly": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "missingY",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.0032237467181322,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9815766455274784,
+        1.0255983418296415
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Xonly": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "moving",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.0226727136257063,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        1.0006059515607169,
+        1.0454810731505058
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "moving",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.007297433670001,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9855624323334876,
+        1.0297628829867234
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "split",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.0080712697892729,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9863195709724281,
+        1.0305539777383872
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "multiple": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "split",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.9987512769605825,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.977200680667994,
+        1.0210261239348482
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "multiple": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "static",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.978131049698098,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9570253871977822,
+        0.9999460099944271
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 23,
+        "uncertain": 1
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "static",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.9908030249896581,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9694239324271858,
+        1.012900604509604
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "stop_start",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.0050440140928392,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9833576360088868,
+        1.027459206075821
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 23,
+        "uncertain": 1
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "stop_start",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.9961064873435667,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9746129591064889,
+        1.0183223483767305
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "vanish",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.00417692342225,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9825092550225023,
+        1.0265727769448505
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "absent": 14
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "vanish",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.9927669126153575,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9713454441877808,
+        1.0149082921256978
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "absent": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "absent",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6317698200997237,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6181377811157598,
+        0.645859990886295
+      ],
+      "acquisition": null,
+      "success": true,
+      "labels": {
+        "absent": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "absent",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6318360174796608,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6182025501190394,
+        0.64592766464633
+      ],
+      "acquisition": null,
+      "success": true,
+      "labels": {
+        "absent": 23,
+        "uncertain": 1
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "deforming",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6343615265635089,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6206735649279315,
+        0.6485094993937067
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 23
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "deforming",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6394326985785462,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6256353135225965,
+        0.6536937722209492
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "displacedY",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6311373979754507,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6175190051055904,
+        0.645213464043093
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 4,
+        "Xonly": 10
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "displacedY",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6303077660781647,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6167072746243051,
+        0.6443653291170919
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 7,
+        "single": 9,
+        "Xonly": 8
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "jump",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6304658960737108,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.616861992563442,
+        0.6445269858379941
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 6,
+        "absent": 8
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "jump",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6439571301962334,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.630062119033068,
+        0.658319110865495
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 3,
+        "absent": 11
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "missingX",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6326092905252838,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6189591378340755,
+        0.646718183766284
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Yonly": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "missingX",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.645220859963377,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6312985806197718,
+        0.6596110252145554
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Yonly": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "missingY",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.643266099682,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6293859992578561,
+        0.6576126685071778
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Xonly": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "missingY",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6280835488350262,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6145310505191774,
+        0.642091505831016
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Xonly": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "moving",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6409367987132037,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6271069588754346,
+        0.6552314178449656
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "moving",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6424388758419877,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6285766248738905,
+        0.6567669953446217
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "split",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.645902294422992,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6319653113996241,
+        0.660307657500357
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "multiple": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "split",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6412735806802153,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6274364739158578,
+        0.6555757109580973
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "multiple": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "static",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6380161289484072,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6242493099812563,
+        0.6522456092677601
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "static",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.638165629335915,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6243955845180732,
+        0.6523984439170918
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "stop_start",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6279599854468962,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6144101533250796,
+        0.6419651866460971
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "stop_start",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6369281227937914,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6231847803236852,
+        0.6511333376416899
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "vanish",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6438845393999184,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6299910945676125,
+        0.6582449010986547
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "absent": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 0.8,
+      "case": "vanish",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6416702711165118,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6278246047481337,
+        0.6559812486609439
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "absent": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "absent",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5463903268932713,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5130230267311549,
+        1.5808790015899963
+      ],
+      "acquisition": null,
+      "success": true,
+      "labels": {
+        "absent": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "absent",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5572329849857012,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5236317269276813,
+        1.5919634801990799
+      ],
+      "acquisition": null,
+      "success": true,
+      "labels": {
+        "uncertain": 9,
+        "absent": 15
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "deforming",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5734306804134832,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5394799159236952,
+        1.6085224279179104
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 23
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "deforming",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5837242754491256,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5495514004938695,
+        1.619045597883291
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 23
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "displacedY",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5921145377263137,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5577606215455837,
+        1.6276229856366708
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 2,
+        "single": 9,
+        "Xonly": 13
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "displacedY",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5864354188077925,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5522040440464668,
+        1.6218172070504455
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 2,
+        "single": 9,
+        "Xonly": 13
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "jump",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.572205582887693,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.538281252989586,
+        1.6072700074133717
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "absent": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "jump",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5400198813239334,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5067900397101417,
+        1.5743664779042261
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "absent": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "missingX",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5559151405524516,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5223423183362799,
+        1.5906162442809193
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 9,
+        "Yonly": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "missingX",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5842712219018358,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5500865451872547,
+        1.6196047427169376
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 9,
+        "Yonly": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "missingY",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.580341929369562,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.54624203712438,
+        1.61558781636442
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 9,
+        "Xonly": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "missingY",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.583076462384981,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5489175656424596,
+        1.618383336840751
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Xonly": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "moving",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5282696959156283,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.4952933944053028,
+        1.5623542316726442
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 23
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "moving",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5718361251341222,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5379197672257168,
+        1.6068923097555183
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "split",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.541264973101602,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5080082654693463,
+        1.5756393385863818
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 9,
+        "multiple": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "split",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.546622224512177,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5132499205697585,
+        1.5811160711512002
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 9,
+        "multiple": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "static",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5406833458031788,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5074391882576068,
+        1.5750447394306333
+      ],
+      "acquisition": 4,
+      "success": true,
+      "labels": {
+        "uncertain": 3,
+        "single": 21
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "static",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.549838612604155,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5163969069168883,
+        1.584404193371796
+      ],
+      "acquisition": null,
+      "success": false,
+      "labels": {
+        "uncertain": 10,
+        "single": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "stop_start",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5947826636089086,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5603711758334482,
+        1.6303506179220246
+      ],
+      "acquisition": 4,
+      "success": true,
+      "labels": {
+        "uncertain": 3,
+        "single": 21
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "stop_start",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5686863229263115,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.534837930003131,
+        1.6036722584638798
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "vanish",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5503991559511703,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.516945355117039,
+        1.58497723834716
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 9,
+        "absent": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.25,
+      "case": "vanish",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5497923654138543,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5163516576272171,
+        1.5843569147444294
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "absent": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "absent",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.0083265090464026,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.986569302794108,
+        1.0308149095192969
+      ],
+      "acquisition": null,
+      "success": true,
+      "labels": {
+        "absent": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "absent",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.0137618241228814,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9918873371384983,
+        1.0363714467802958
+      ],
+      "acquisition": null,
+      "success": true,
+      "labels": {
+        "absent": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "contaminated_reference",
+      "primary": false,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.0223901659308576,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        1.0003295005502435,
+        1.045192223880069
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "contaminated_reference",
+      "primary": false,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.0449313449982072,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        1.022384296409636,
+        1.0682361320311526
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "deforming",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.9976848798229189,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.976157293757933,
+        1.0199359432650847
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 23
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "deforming",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.986763871398457,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.96547193383685,
+        1.0087713669002645
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "displacedY",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.004746503116117,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9830665445873629,
+        1.0271550598019705
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 1,
+        "Xonly": 13
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "displacedY",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.0252077550098266,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        1.0030862929862845,
+        1.0480726527941582
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 1,
+        "Xonly": 13
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "jump",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.9918148932571703,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9704139670660085,
+        1.0139350401683547
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 3,
+        "single": 9,
+        "absent": 12
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "jump",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.9822717393128184,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9610767309139607,
+        1.0041790481544393
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 3,
+        "absent": 11
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "missingX",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.9837753463015196,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9625478937617196,
+        1.0057161896340148
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 9,
+        "uncertain": 1,
+        "Yonly": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "missingX",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.9845553995808068,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9633111154096522,
+        1.006513640205129
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Yonly": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "missingY",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.0098487733613344,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9880587203888817,
+        1.0323711244337939
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Xonly": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "missingY",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.0034565891794174,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9818044638210867,
+        1.0258363773057582
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Xonly": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "moving",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.9927122991975299,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9712920091931971,
+        1.0148524606813676
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "moving",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.000679602510006,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9790873976944598,
+        1.0229974563444588
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "absent": 1,
+        "single": 23
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "shape_X",
+      "primary": false,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.6735648994686745,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        1.63745348479529,
+        1.7108899101065715
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "multiple": 1,
+        "single": 23
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "shape_X",
+      "primary": false,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.6626201233024271,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        1.6267448699818365,
+        1.6997010359152256
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 23
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "split",
+      "primary": true,
+      "replicate": 0,
+      "adequate": false,
+      "estimated_variance_scale": 1.0135389002007578,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9916692233663694,
+        1.036143551053513
+      ],
+      "acquisition": null,
+      "success": false,
+      "labels": {
+        "noise_unqualified": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "split",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.0054777215993507,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9837819851740399,
+        1.0279025864293785
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "multiple": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "static",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.9951581344539373,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9736850693399002,
+        1.0173528446600821
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 23
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "static",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.0094402074339208,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9876589703093811,
+        1.0319534463843516
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "stop_start",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.0013333274626142,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9797270168703196,
+        1.0236657611265185
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 23
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "stop_start",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.0139617683066156,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9920829670184772,
+        1.0365758502585498
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "vanish",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.004965329165342,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9832806489086123,
+        1.027378766262238
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "absent": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "vanish",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.9842271896392085,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9629899874314153,
+        1.006178110296695
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 9,
+        "absent": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "weak_moving",
+      "primary": false,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.9935192153008907,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9720815140315247,
+        1.0156773731899778
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 23
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "weak_moving",
+      "primary": false,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.9964552230671071,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9749541699707734,
+        1.0186788618473992
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 23
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "weak_static",
+      "primary": false,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.9886319665050327,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9672997200452981,
+        1.0106811255657184
+      ],
+      "acquisition": 2,
+      "success": false,
+      "labels": {
+        "uncertain": 4,
+        "single": 20
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "weak_static",
+      "primary": false,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.0013337385205487,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9797274190586348,
+        1.0236661813521535
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "wrong_rho",
+      "primary": false,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.0102062803485619,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9884085132545545,
+        1.0327366047909852
+      ],
+      "acquisition": null,
+      "success": false,
+      "labels": {
+        "single": 1,
+        "uncertain": 23
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "noise_amplitude": 1.0,
+      "case": "wrong_rho",
+      "primary": false,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.9945685731673579,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9731082293359563,
+        1.0167501345668444
+      ],
+      "acquisition": null,
+      "success": false,
+      "labels": {
+        "uncertain": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "absent",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.646405570400842,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6324577279195965,
+        0.6608221578897808
+      ],
+      "acquisition": null,
+      "success": true,
+      "labels": {
+        "absent": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "absent",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6299131574272551,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6163211806576071,
+        0.6439619196290604
+      ],
+      "acquisition": null,
+      "success": true,
+      "labels": {
+        "absent": 23,
+        "uncertain": 1
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "deforming",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6449546880554936,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6310381520470547,
+        0.6593389169552963
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 23
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "deforming",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6353392407515875,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6216301824483584,
+        0.6495090192449434
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "displacedY",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6395015895276326,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6257027179744274,
+        0.6537641996239898
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 1,
+        "Xonly": 13
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "displacedY",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6582683703743439,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6440645578442724,
+        0.6729495302950701
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 11,
+        "Xonly": 12,
+        "uncertain": 1
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "jump",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6424554624993014,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6285928536319316,
+        0.6567839519291255
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "absent": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "jump",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6433255946499786,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6294442104707438,
+        0.6576734903733923
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "absent": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "missingX",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6340831060556313,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6204011520498846,
+        0.6482248693576408
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Yonly": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "missingX",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6435669460550044,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6296803541060132,
+        0.6579202245656425
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Yonly": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "missingY",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6407516181107926,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6269257740150022,
+        0.6550421072157134
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Xonly": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "missingY",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6365378842605679,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6228029621782812,
+        0.6507343957367545
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Xonly": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "moving",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6357492266659461,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6220313218749779,
+        0.6499281489508691
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "moving",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6430911356534296,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.629214810522727,
+        0.6574338023089158
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "split",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6358542325636583,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6221340620036622,
+        0.650035496763287
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "multiple": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "split",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6365248149820515,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6227901749026535,
+        0.6507210349780812
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "multiple": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "static",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6516187478094588,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6375584177806864,
+        0.6661516032138491
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "static",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.634096374863343,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6204141345493583,
+        0.6482384340955486
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "stop_start",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6614886763819715,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6472153775680675,
+        0.6762416578114004
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "stop_start",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6461528542020386,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6322104647148494,
+        0.6605638054382025
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "vanish",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.6328200553955973,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.619165354916829,
+        0.6469336492616099
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "absent": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 0.8,
+      "case": "vanish",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.6536802646828734,
+      "true_variance_scale": 0.6400000000000001,
+      "ci95": [
+        0.6395754521899337,
+        0.6682590974731749
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 9,
+        "absent": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "absent",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.550529943156428,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5170733202560567,
+        1.5851109424598102
+      ],
+      "acquisition": null,
+      "success": true,
+      "labels": {
+        "absent": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "absent",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5591589216092758,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.525516106575443,
+        1.5939323704033528
+      ],
+      "acquisition": null,
+      "success": true,
+      "labels": {
+        "absent": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "deforming",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5366378530340938,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5034809872732557,
+        1.5709090212626473
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 22,
+        "uncertain": 2
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "deforming",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5862537961094985,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5520263403193308,
+        1.6216315336761675
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 23
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "displacedY",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.557968602301749,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5243514714311783,
+        1.5927155037651366
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 2,
+        "single": 9,
+        "Xonly": 13
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "displacedY",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5746906517643469,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.540712700191499,
+        1.6098105000278717
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 4,
+        "single": 10,
+        "Xonly": 10
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "jump",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5748566779887232,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5408751439782675,
+        1.609980229084802
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 7,
+        "single": 8,
+        "absent": 9
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "jump",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5670898670341902,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5332759217029412,
+        1.6020401972999372
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 2,
+        "single": 9,
+        "absent": 13
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "missingX",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5455005428783297,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5121524420669785,
+        1.5799693729918936
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 9,
+        "Yonly": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "missingX",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.561639886007414,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5279435378633925,
+        1.5964686669983972
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 1,
+        "Yonly": 13
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "missingY",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.561035116189078,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5273518174904046,
+        1.5958504091821293
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Xonly": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "missingY",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5429397004771068,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.509646856346804,
+        1.5773514168988754
+      ],
+      "acquisition": 3,
+      "success": true,
+      "labels": {
+        "uncertain": 3,
+        "single": 8,
+        "Xonly": 13
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "moving",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5649466199565367,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5311789206262605,
+        1.5998491500324026
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 23,
+        "uncertain": 1
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "moving",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5626150014795803,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5288976127418055,
+        1.5974655301753482
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 23
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "split",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5491902440786536,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5157625285896117,
+        1.5837413644796132
+      ],
+      "acquisition": 2,
+      "success": false,
+      "labels": {
+        "uncertain": 10,
+        "single": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "split",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.541089859829013,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5078369307105177,
+        1.5754603198155575
+      ],
+      "acquisition": 3,
+      "success": true,
+      "labels": {
+        "uncertain": 6,
+        "single": 7,
+        "multiple": 11
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "static",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5900497759092334,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5557404122105742,
+        1.6255121740626841
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 23
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "static",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5470308300865925,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5136497094407761,
+        1.5815337897318797
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 2,
+        "single": 22
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "stop_start",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.5792906715585286,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5452134628715133,
+        1.6145131126690995
+      ],
+      "acquisition": 3,
+      "success": true,
+      "labels": {
+        "uncertain": 2,
+        "single": 22
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "stop_start",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.5162686542680517,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.483551305721896,
+        1.550085534431129
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 23
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "vanish",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.578409348725571,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5443511568178225,
+        1.6136121339601577
+      ],
+      "acquisition": 5,
+      "success": true,
+      "labels": {
+        "uncertain": 5,
+        "single": 7,
+        "absent": 12
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.25,
+      "case": "vanish",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.552226128589875,
+      "true_variance_scale": 1.5625,
+      "ci95": [
+        1.5187329061793389,
+        1.5868449574028078
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 2,
+        "single": 9,
+        "absent": 13
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "absent",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.9987830681897727,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9772317859206436,
+        1.021058624194186
+      ],
+      "acquisition": null,
+      "success": true,
+      "labels": {
+        "absent": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "absent",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.9884106633189575,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9670831920377198,
+        1.0104548867217689
+      ],
+      "acquisition": null,
+      "success": true,
+      "labels": {
+        "absent": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "deforming",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.0113449221966264,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9895225860118397,
+        1.0339006414230256
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "deforming",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.9980374779358124,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9765022836707073,
+        1.0202964052668055
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 23
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "displacedY",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.0156586451492786,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9937432294320646,
+        1.0383105720310533
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Xonly": 13,
+        "uncertain": 1
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "displacedY",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.0020949591846382,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9804722144528902,
+        1.0244443792899622
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 3,
+        "single": 9,
+        "Xonly": 12
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "jump",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.000570270231527,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9789804245376656,
+        1.022885685661315
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 2,
+        "single": 9,
+        "absent": 13
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "jump",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.9879960855460773,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9666775598335925,
+        1.0100310627464928
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 1,
+        "absent": 13
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "missingX",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.990751797206644,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9693738100137429,
+        1.0128482342088745
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Yonly": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "missingX",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.0020098864596338,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.980388977388069,
+        1.0243574092137604
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Yonly": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "missingY",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.996330493000407,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9748321312721597,
+        1.0185513499638317
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "Xonly": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "missingY",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.0074491462527144,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9857108713317783,
+        1.02991797916918
+      ],
+      "acquisition": 3,
+      "success": true,
+      "labels": {
+        "uncertain": 2,
+        "single": 8,
+        "Xonly": 14
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "moving",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.9947734510650489,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9733086864724786,
+        1.016959581794182
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "moving",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.0048548158632702,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9831725202118101,
+        1.0272657882154905
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "split",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.0122543444940793,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9904123852126878,
+        1.0348303462903012
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 6,
+        "single": 10,
+        "multiple": 8
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "split",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.9950904749063708,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9736188697189726,
+        1.017283676122136
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 1,
+        "multiple": 13
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "static",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.9896257783135998,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9682720878391526,
+        1.0116971020577936
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 23
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "static",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.9988261023160131,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.977273891476275,
+        1.0211026180974987
+      ],
+      "acquisition": 2,
+      "success": true,
+      "labels": {
+        "uncertain": 1,
+        "single": 23
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "stop_start",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 1.016653012398534,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9947161406815636,
+        1.039327116351642
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 24
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "stop_start",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 1.0191926418001274,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.9972009711264705,
+        1.0419233863379302
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 23,
+        "uncertain": 1
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "vanish",
+      "primary": true,
+      "replicate": 0,
+      "adequate": true,
+      "estimated_variance_scale": 0.9876070953012254,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.966296963041567,
+        1.0096333969701263
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "uncertain": 1,
+        "absent": 13
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "noise_amplitude": 1.0,
+      "case": "vanish",
+      "primary": true,
+      "replicate": 1,
+      "adequate": true,
+      "estimated_variance_scale": 0.9973102277163727,
+      "true_variance_scale": 1.0,
+      "ci95": [
+        0.975790725722451,
+        1.019552935406176
+      ],
+      "acquisition": 1,
+      "success": true,
+      "labels": {
+        "single": 10,
+        "absent": 14
+      }
+    }
+  ],
+  "elapsed_seconds": 8.091025799978524
+}
