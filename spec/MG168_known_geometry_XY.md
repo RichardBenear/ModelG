@@ -1,0 +1,11 @@
+# MG168 - known-position/width X/Y discrimination
+
+PI authorizes recommendedtest. Saved MG167synthetic fields only;no new ModelG/syntheticdraws. One localworker/librarythread1,600active-secondcap. Publish source,inputhashes andplan beforecalculation. Sourcecorrectness validatedbeforeinterpretingresults;oldcriteria/outcomesunchanged.
+
+Compare original free23scale/500position MG167 search against(A)knowntruecenter/nearestbankwidth and(B)knowntruecenter/exactinjectedwidth. Trueinjectedcenter=(37*index+71*regime)%500;intactcaseshavefixeda/s(.8,.85),(1,1.1),(1.2,1.6);othercasesuseoriginalcyclicinjections. Nullsgetprescribedcenter/width independentofnoiserealization,notameasuredlocation. Damagedcasesuseoriginalundamagedcenter/width,so noindependentspeciesrealignment. A/Bareneworacleprocedurediagnostics,notMG167rescoring. Exactwidth-vsnearestbankcomparison separateswidthgridmismatchfromposition/searchpenalty.
+
+Same covariance,window,smoothing,commonamplitude,twooffsets,individualcomponentfloors,componentstat,localresidual andresidualsecondarysearch. Eachoracle modecalibratesitsownmaximumnullgainandmaximumcorrectshape residual/component/secondary onexisting256+256calibrationfields perregime. Freeze thresholds before reading validationcases. Same1024null/128eachintactanddamagecase,criteria intact>=.9,damage<=.05,null<=.01. No thresholdtuning/additionalcases; allnegativeoutcomesretained. No populationqualification/freshvalidation: allfieldsalreadyseen andnoiseconditionalonoldestimatedregimes.
+
+Recordallguardfailurecounts (notjustfirst),gain-only versusfullcriteria asdescriptivecomponents,per-casepairedacceptancechanges relativeMG167, andrawcomponentestimates. Comparebaseline samefields/seed. Knowngeometryremovesrealmeasurementuncertainty;evenoraclepassingcannotqualifyactualtracker. Iforaclefails,do notdeclareuniversalimpossibility:remainingfloor/threshold/modelassumptionsmaylimitthisspecificprocedure. NoMG163applicationbecauseitstruegeometryisunknown. Anytrackerrequiresseparateregisteredmotion/deformationconstraints andindependentfalse-trackvalidation.
+
+Separate weightednormal-equation primaryfits,residuals,components anddirectspatialsecondarysearch atselectedcases;independentlyrecomputealllabels/fractions andpairedcounts. Fullinputfieldslocal;publiccompactfit/label/summarygziponly. NoGclaim,Gunresolved. No newkineticallocation.
