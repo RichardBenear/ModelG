@@ -98,7 +98,7 @@ def run():
                         summary.append(dict(regime=when,rho=rho,case=case,method=method,final_present_weights=final,frames_present_ge95=n95,final_logodds=logodds))
                     if sum(p.stat().st_size for p in RAW.iterdir())>100000000:raise RuntimeError('MG173 auditcache0.1GB')
         atomic_json(OUT/'analysis.json',dict(rows=summary,fixed_grid_vs_scalar_hmm_checks=checks,geometry_probability_rows_checked=39,no_new_draws=True,new_tracker_qualification=False,elapsed_seconds=time.perf_counter()-start));atomic_json(OUT/'attempt.json',dict(status='COMPLETE',elapsed_seconds=time.perf_counter()-start))
-    except BaseException:atomic_json(attempt,dict(status='FAILED',elapsed_seconds=time.perf_counter()-start,error=traceback.format_exc()));raise
+    except BaseException:atomic_json(OUT/'attempt.json',dict(status='FAILED',elapsed_seconds=time.perf_counter()-start,error=traceback.format_exc()));raise
 if __name__=='__main__':
     if __import__('sys').argv[1]=='register':register()
     else:run()
