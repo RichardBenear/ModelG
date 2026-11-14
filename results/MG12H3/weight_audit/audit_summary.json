@@ -1,0 +1,383 @@
+{
+  "classes": [
+    "absent",
+    "single",
+    "Xonly",
+    "Yonly",
+    "multiple"
+  ],
+  "all_mass_summary": {
+    "n": 3840,
+    "median_retained_fraction": [
+      0.9999900317278092,
+      0.9997472910963968,
+      0.999540677886753,
+      0.9692374774180214,
+      0.9971448274242196
+    ],
+    "median_max_collapse_fraction": [
+      1.0,
+      0.9999851292662456,
+      0.9999650452611277,
+      0.9999651051996818,
+      0.9998584732387121
+    ],
+    "median_topK_fraction": [
+      0.999999829052101,
+      0.9999924437064602,
+      0.9999948956233413,
+      0.9784778446741557,
+      0.9998231066179405
+    ],
+    "median_multiple_single_odds_shift": -2.7619171419246413e-05,
+    "median_absent_single_odds_shift": 2.697199136036943e-06,
+    "pruning_favors_multiple_frames": 816,
+    "winner_changed": 4,
+    "median_multiple_weight_all": 7.666430514373893e-09,
+    "median_multiple_weight_retained": 6.699658677106729e-09,
+    "multiple_weight_ge95_all": 771,
+    "multiple_weight_ge95_retained": 767
+  },
+  "all_probe_summary": {
+    "n": 640,
+    "median_selected_logBF": -7.494976231317058,
+    "median_full_logBF": -15.049601313500663,
+    "median_log_inflation": 6.86071576065238,
+    "min_log_inflation": -287.6035777138563,
+    "max_log_inflation": 7.947148207990381,
+    "selected_favors_double": 231,
+    "full_favors_double": 51,
+    "selected_positive_full_negative": 180,
+    "median_two_term_coverage": 0.3374283767214807,
+    "eligible_grid_sizes": [
+      5655
+    ]
+  },
+  "strata": [
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "intact_frame_masses": {
+        "n": 288,
+        "median_retained_fraction": [
+          0.9989552545043738,
+          0.999141717985901,
+          0.9983501869349303,
+          0.8648651724413036,
+          0.9921581420814232
+        ],
+        "median_max_collapse_fraction": [
+          0.9999963154606597,
+          0.9993335665242336,
+          0.9989112608805956,
+          0.9995323336697506,
+          0.9960407913039171
+        ],
+        "median_topK_fraction": [
+          0.9995143240359501,
+          0.9999890822505074,
+          0.9999888062413458,
+          0.8853498067568029,
+          0.9995197421615584
+        ],
+        "median_multiple_single_odds_shift": -0.0024516474243796438,
+        "median_absent_single_odds_shift": 2.2182831571626593e-06,
+        "pruning_favors_multiple_frames": 2,
+        "winner_changed": 0,
+        "median_multiple_weight_all": 3.356752407449149e-06,
+        "median_multiple_weight_retained": 3.1385399412797276e-06,
+        "multiple_weight_ge95_all": 0,
+        "multiple_weight_ge95_retained": 0
+      },
+      "single_scene_probes": {
+        "n": 72,
+        "median_selected_logBF": -7.34244384412839,
+        "median_full_logBF": -14.94272271086308,
+        "median_log_inflation": 7.8274828966327155,
+        "min_log_inflation": 5.784935434917985,
+        "max_log_inflation": 7.946369105499898,
+        "selected_favors_double": 1,
+        "full_favors_double": 0,
+        "selected_positive_full_negative": 1,
+        "median_two_term_coverage": 0.8872595170991846,
+        "eligible_grid_sizes": [
+          5655
+        ]
+      },
+      "accurate_primary_single_scene": {
+        "n": 72,
+        "median_selected_logBF": -7.34244384412839,
+        "median_full_logBF": -14.94272271086308,
+        "median_log_inflation": 7.8274828966327155,
+        "min_log_inflation": 5.784935434917985,
+        "max_log_inflation": 7.946369105499898,
+        "selected_favors_double": 1,
+        "full_favors_double": 0,
+        "selected_positive_full_negative": 1,
+        "median_two_term_coverage": 0.8872595170991846,
+        "eligible_grid_sizes": [
+          5655
+        ]
+      },
+      "true_split_probes": {
+        "n": 12,
+        "median_selected_logBF": 87.93647787667807,
+        "median_full_logBF": 79.99003597424243,
+        "median_log_inflation": 7.946785542275734,
+        "min_log_inflation": 7.571140356614386,
+        "max_log_inflation": 7.94712810295205,
+        "selected_favors_double": 12,
+        "full_favors_double": 12,
+        "selected_positive_full_negative": 0,
+        "median_two_term_coverage": 0.9996374005438788,
+        "eligible_grid_sizes": [
+          5655
+        ]
+      }
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "intact_frame_masses": {
+        "n": 288,
+        "median_retained_fraction": [
+          1.0,
+          1.0,
+          1.0,
+          0.9999880141466897,
+          1.0
+        ],
+        "median_max_collapse_fraction": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "median_topK_fraction": [
+          1.0,
+          1.0,
+          1.0,
+          0.9999902948144106,
+          1.0
+        ],
+        "median_multiple_single_odds_shift": 0.0,
+        "median_absent_single_odds_shift": 0.0,
+        "pruning_favors_multiple_frames": 0,
+        "winner_changed": 0,
+        "median_multiple_weight_all": 1.8867254959111902e-113,
+        "median_multiple_weight_retained": 1.8867254959111902e-113,
+        "multiple_weight_ge95_all": 0,
+        "multiple_weight_ge95_retained": 0
+      },
+      "single_scene_probes": {
+        "n": 72,
+        "median_selected_logBF": -133.78783930332358,
+        "median_full_logBF": -118.3410142313896,
+        "median_log_inflation": 0.39992731538561,
+        "min_log_inflation": -74.79756861408563,
+        "max_log_inflation": 7.946765299177727,
+        "selected_favors_double": 0,
+        "full_favors_double": 0,
+        "selected_positive_full_negative": 0,
+        "median_two_term_coverage": 0.13112329539484474,
+        "eligible_grid_sizes": [
+          5655
+        ]
+      },
+      "accurate_primary_single_scene": {
+        "n": 72,
+        "median_selected_logBF": -133.78783930332358,
+        "median_full_logBF": -118.3410142313896,
+        "median_log_inflation": 0.39992731538561,
+        "min_log_inflation": -74.79756861408563,
+        "max_log_inflation": 7.946765299177727,
+        "selected_favors_double": 0,
+        "full_favors_double": 0,
+        "selected_positive_full_negative": 0,
+        "median_two_term_coverage": 0.13112329539484474,
+        "eligible_grid_sizes": [
+          5655
+        ]
+      },
+      "true_split_probes": {
+        "n": 12,
+        "median_selected_logBF": 932.2674738237498,
+        "median_full_logBF": 924.3203256157594,
+        "median_log_inflation": 7.947148207990381,
+        "min_log_inflation": 7.947148207990381,
+        "max_log_inflation": 7.947148207990381,
+        "selected_favors_double": 12,
+        "full_favors_double": 12,
+        "selected_positive_full_negative": 0,
+        "median_two_term_coverage": 1.0,
+        "eligible_grid_sizes": [
+          5655
+        ]
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "intact_frame_masses": {
+        "n": 288,
+        "median_retained_fraction": [
+          0.6453846394642926,
+          0.4668351690711336,
+          0.5645625954843243,
+          0.5299171586670726,
+          0.4306144272406226
+        ],
+        "median_max_collapse_fraction": [
+          0.9984287731487316,
+          0.5941044267832792,
+          0.701701944318438,
+          0.7892191924919184,
+          0.690393885302203
+        ],
+        "median_topK_fraction": [
+          0.7032966473994648,
+          0.7768409254863786,
+          0.8310748020144236,
+          0.7296482409441791,
+          0.6478266400101221
+        ],
+        "median_multiple_single_odds_shift": -0.04399381069478636,
+        "median_absent_single_odds_shift": 0.3177090220725063,
+        "pruning_favors_multiple_frames": 114,
+        "winner_changed": 0,
+        "median_multiple_weight_all": 0.9994883374347503,
+        "median_multiple_weight_retained": 0.9994699922350652,
+        "multiple_weight_ge95_all": 279,
+        "multiple_weight_ge95_retained": 276
+      },
+      "single_scene_probes": {
+        "n": 72,
+        "median_selected_logBF": 2.8950772818160098,
+        "median_full_logBF": -4.104407370251417,
+        "median_log_inflation": 6.950995324996815,
+        "min_log_inflation": 5.640427177382069,
+        "max_log_inflation": 7.7218129748445135,
+        "selected_favors_double": 72,
+        "full_favors_double": 1,
+        "selected_positive_full_negative": 71,
+        "median_two_term_coverage": 0.3692974987248864,
+        "eligible_grid_sizes": [
+          5655
+        ]
+      },
+      "accurate_primary_single_scene": {
+        "n": 72,
+        "median_selected_logBF": 2.8950772818160098,
+        "median_full_logBF": -4.104407370251417,
+        "median_log_inflation": 6.950995324996815,
+        "min_log_inflation": 5.640427177382069,
+        "max_log_inflation": 7.7218129748445135,
+        "selected_favors_double": 72,
+        "full_favors_double": 1,
+        "selected_positive_full_negative": 71,
+        "median_two_term_coverage": 0.3692974987248864,
+        "eligible_grid_sizes": [
+          5655
+        ]
+      },
+      "true_split_probes": {
+        "n": 12,
+        "median_selected_logBF": 14.068079522872864,
+        "median_full_logBF": 6.739297687969043,
+        "median_log_inflation": 7.378684223844702,
+        "min_log_inflation": 6.972673090027158,
+        "max_log_inflation": 7.670007145570295,
+        "selected_favors_double": 12,
+        "full_favors_double": 12,
+        "selected_positive_full_negative": 0,
+        "median_two_term_coverage": 0.5666755712670932,
+        "eligible_grid_sizes": [
+          5655
+        ]
+      }
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "intact_frame_masses": {
+        "n": 288,
+        "median_retained_fraction": [
+          1.0,
+          0.9999988647398561,
+          0.999999426282096,
+          0.999720814544484,
+          0.9999877738369642
+        ],
+        "median_max_collapse_fraction": [
+          1.0,
+          0.9999999881606243,
+          0.9999999993586357,
+          0.9999999380112874,
+          0.9999999189155948
+        ],
+        "median_topK_fraction": [
+          1.0,
+          0.9999995248028873,
+          0.999999950192206,
+          0.9998415013238142,
+          0.9999977306768701
+        ],
+        "median_multiple_single_odds_shift": -1.011374081372196e-06,
+        "median_absent_single_odds_shift": 5.665834237333911e-07,
+        "pruning_favors_multiple_frames": 74,
+        "winner_changed": 0,
+        "median_multiple_weight_all": 2.0569536253985313e-46,
+        "median_multiple_weight_retained": 2.0564701712418225e-46,
+        "multiple_weight_ge95_all": 4,
+        "multiple_weight_ge95_retained": 4
+      },
+      "single_scene_probes": {
+        "n": 72,
+        "median_selected_logBF": -36.16224540071908,
+        "median_full_logBF": -36.51457225160717,
+        "median_log_inflation": 5.883300775161199,
+        "min_log_inflation": -48.863331518117235,
+        "max_log_inflation": 7.50617934814794,
+        "selected_favors_double": 33,
+        "full_favors_double": 0,
+        "selected_positive_full_negative": 33,
+        "median_two_term_coverage": 0.12699446605480455,
+        "eligible_grid_sizes": [
+          5655
+        ]
+      },
+      "accurate_primary_single_scene": {
+        "n": 72,
+        "median_selected_logBF": -36.16224540071908,
+        "median_full_logBF": -36.51457225160717,
+        "median_log_inflation": 5.883300775161199,
+        "min_log_inflation": -48.863331518117235,
+        "max_log_inflation": 7.50617934814794,
+        "selected_favors_double": 33,
+        "full_favors_double": 0,
+        "selected_positive_full_negative": 33,
+        "median_two_term_coverage": 0.12699446605480455,
+        "eligible_grid_sizes": [
+          5655
+        ]
+      },
+      "true_split_probes": {
+        "n": 12,
+        "median_selected_logBF": 17.96291497955181,
+        "median_full_logBF": 38.86111517870292,
+        "median_log_inflation": -33.216683182567984,
+        "min_log_inflation": -114.08992029460994,
+        "max_log_inflation": 7.947148197508795,
+        "selected_favors_double": 6,
+        "full_favors_double": 6,
+        "selected_positive_full_negative": 0,
+        "median_two_term_coverage": 4.0354638550136046e-13,
+        "eligible_grid_sizes": [
+          5655
+        ]
+      }
+    }
+  ],
+  "scope": "One-step generated candidate trees conditioned on original pruned histories; conditional fixed-primary Bayes factors, not a replacement tracker or calibrated probabilities."
+}
