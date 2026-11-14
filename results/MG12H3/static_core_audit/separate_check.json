@@ -1,0 +1,397 @@
+{
+  "passed": true,
+  "oracle_prefix_closed_form_checks": 2304,
+  "independent_two_state_HMM_checks": 1152,
+  "explicit_transition_nodes_checked": 754,
+  "grid_snapshots_checked": 216,
+  "mass_compression_checks": 432,
+  "summary_checks": 120,
+  "MG172_restricted_comparisons": [
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "absent",
+      "replicate": 0,
+      "MG172_vs_restricted_max_logodds_difference": 2.233946361229755e-11,
+      "oracle_final_logBF": -144.59130290613533
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "absent",
+      "replicate": 1,
+      "MG172_vs_restricted_max_logodds_difference": 2.5295321393059567e-11,
+      "oracle_final_logBF": -163.32743255826134
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "absent",
+      "replicate": 2,
+      "MG172_vs_restricted_max_logodds_difference": 2.7966962079517543e-11,
+      "oracle_final_logBF": -130.56891974041653
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "absent",
+      "replicate": 3,
+      "MG172_vs_restricted_max_logodds_difference": 2.984279490192421e-11,
+      "oracle_final_logBF": -153.15614238086022
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "moving",
+      "replicate": 0,
+      "MG172_vs_restricted_max_logodds_difference": 1.830358087318018e-11,
+      "oracle_final_logBF": -55.912128405261804
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "moving",
+      "replicate": 1,
+      "MG172_vs_restricted_max_logodds_difference": 2.5124791136477143e-11,
+      "oracle_final_logBF": -48.450963446178235
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "moving",
+      "replicate": 2,
+      "MG172_vs_restricted_max_logodds_difference": 1.5120349416974932e-11,
+      "oracle_final_logBF": -38.75642630637006
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "moving",
+      "replicate": 3,
+      "MG172_vs_restricted_max_logodds_difference": 1.6711965145077556e-11,
+      "oracle_final_logBF": -52.39574560160141
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "static",
+      "replicate": 0,
+      "MG172_vs_restricted_max_logodds_difference": 7.94670995674096e-11,
+      "oracle_final_logBF": 160.3834939260428
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "static",
+      "replicate": 1,
+      "MG172_vs_restricted_max_logodds_difference": 8.57767190609593e-11,
+      "oracle_final_logBF": 141.71677187311448
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "static",
+      "replicate": 2,
+      "MG172_vs_restricted_max_logodds_difference": 9.379164112033322e-11,
+      "oracle_final_logBF": 113.89041165441026
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.95,
+      "case": "static",
+      "replicate": 3,
+      "MG172_vs_restricted_max_logodds_difference": 1.0015810403274372e-10,
+      "oracle_final_logBF": 146.419635555078
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "absent",
+      "replicate": 0,
+      "MG172_vs_restricted_max_logodds_difference": 24.525589676491677,
+      "oracle_final_logBF": -2175.049518033316
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "absent",
+      "replicate": 1,
+      "MG172_vs_restricted_max_logodds_difference": 25.35791399421464,
+      "oracle_final_logBF": -2052.0929291616026
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "absent",
+      "replicate": 2,
+      "MG172_vs_restricted_max_logodds_difference": 23.16628465468233,
+      "oracle_final_logBF": -2112.257202848827
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "absent",
+      "replicate": 3,
+      "MG172_vs_restricted_max_logodds_difference": 11.715789621733336,
+      "oracle_final_logBF": -2068.7033587106785
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "moving",
+      "replicate": 0,
+      "MG172_vs_restricted_max_logodds_difference": 0.05584742290710665,
+      "oracle_final_logBF": -1858.2684141700968
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "moving",
+      "replicate": 1,
+      "MG172_vs_restricted_max_logodds_difference": 0.00020658493713199277,
+      "oracle_final_logBF": -1972.086966389606
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "moving",
+      "replicate": 2,
+      "MG172_vs_restricted_max_logodds_difference": 1.1219847067422961e-05,
+      "oracle_final_logBF": -2035.5118011978843
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "moving",
+      "replicate": 3,
+      "MG172_vs_restricted_max_logodds_difference": 1.5172229666404746e-05,
+      "oracle_final_logBF": -2038.7920079188912
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "static",
+      "replicate": 0,
+      "MG172_vs_restricted_max_logodds_difference": 1.6610744580702885e-05,
+      "oracle_final_logBF": 2092.438477905673
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "static",
+      "replicate": 1,
+      "MG172_vs_restricted_max_logodds_difference": 1.7884585190586222e-06,
+      "oracle_final_logBF": 2066.817607777137
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "static",
+      "replicate": 2,
+      "MG172_vs_restricted_max_logodds_difference": 8.010857754925382e-07,
+      "oracle_final_logBF": 2120.9524321718786
+    },
+    {
+      "regime": 0.1,
+      "rho": 0.0,
+      "case": "static",
+      "replicate": 3,
+      "MG172_vs_restricted_max_logodds_difference": 2.726734805946762e-06,
+      "oracle_final_logBF": 2007.934708898934
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "absent",
+      "replicate": 0,
+      "MG172_vs_restricted_max_logodds_difference": 1.6484591469634324e-12,
+      "oracle_final_logBF": -22.228452282092203
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "absent",
+      "replicate": 1,
+      "MG172_vs_restricted_max_logodds_difference": 3.0127011996228248e-12,
+      "oracle_final_logBF": -15.878264426074415
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "absent",
+      "replicate": 2,
+      "MG172_vs_restricted_max_logodds_difference": 7.105427357601002e-12,
+      "oracle_final_logBF": -18.396271488894616
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "absent",
+      "replicate": 3,
+      "MG172_vs_restricted_max_logodds_difference": 4.433786671143025e-12,
+      "oracle_final_logBF": -23.867235625003957
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "moving",
+      "replicate": 0,
+      "MG172_vs_restricted_max_logodds_difference": 2.2737367544323206e-12,
+      "oracle_final_logBF": -1.7309961813986745
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "moving",
+      "replicate": 1,
+      "MG172_vs_restricted_max_logodds_difference": 2.2737367544323206e-12,
+      "oracle_final_logBF": -5.6727238259709925
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "moving",
+      "replicate": 2,
+      "MG172_vs_restricted_max_logodds_difference": 2.3874235921539366e-12,
+      "oracle_final_logBF": -11.376678962204274
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "moving",
+      "replicate": 3,
+      "MG172_vs_restricted_max_logodds_difference": 3.637978807091713e-12,
+      "oracle_final_logBF": -1.2409487097558807
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "static",
+      "replicate": 0,
+      "MG172_vs_restricted_max_logodds_difference": 4.433786671143025e-12,
+      "oracle_final_logBF": 16.473165375145985
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "static",
+      "replicate": 1,
+      "MG172_vs_restricted_max_logodds_difference": 2.8421709430404007e-12,
+      "oracle_final_logBF": 17.335378105026283
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "static",
+      "replicate": 2,
+      "MG172_vs_restricted_max_logodds_difference": 1.8189894035458565e-12,
+      "oracle_final_logBF": 15.11964481586953
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.95,
+      "case": "static",
+      "replicate": 3,
+      "MG172_vs_restricted_max_logodds_difference": 5.002220859751105e-12,
+      "oracle_final_logBF": 13.20558746651818
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "absent",
+      "replicate": 0,
+      "MG172_vs_restricted_max_logodds_difference": 0.004133616286878805,
+      "oracle_final_logBF": -287.38156510710047
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "absent",
+      "replicate": 1,
+      "MG172_vs_restricted_max_logodds_difference": 0.0030586261196390296,
+      "oracle_final_logBF": -303.6352113161717
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "absent",
+      "replicate": 2,
+      "MG172_vs_restricted_max_logodds_difference": 0.011850859273010883,
+      "oracle_final_logBF": -281.95903660004825
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "absent",
+      "replicate": 3,
+      "MG172_vs_restricted_max_logodds_difference": 0.0008970961469003669,
+      "oracle_final_logBF": -305.6514863433311
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "moving",
+      "replicate": 0,
+      "MG172_vs_restricted_max_logodds_difference": 0.001322881680835053,
+      "oracle_final_logBF": -279.7101056636256
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "moving",
+      "replicate": 1,
+      "MG172_vs_restricted_max_logodds_difference": 0.014331060013489605,
+      "oracle_final_logBF": -256.64804474108985
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "moving",
+      "replicate": 2,
+      "MG172_vs_restricted_max_logodds_difference": 0.04740775971669109,
+      "oracle_final_logBF": -267.43045622383084
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "moving",
+      "replicate": 3,
+      "MG172_vs_restricted_max_logodds_difference": 0.2683425214308386,
+      "oracle_final_logBF": -252.74370702258318
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "static",
+      "replicate": 0,
+      "MG172_vs_restricted_max_logodds_difference": 0.7646651348567275,
+      "oracle_final_logBF": 299.05893670188
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "static",
+      "replicate": 1,
+      "MG172_vs_restricted_max_logodds_difference": 1.3649471986601611,
+      "oracle_final_logBF": 295.623099347267
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "static",
+      "replicate": 2,
+      "MG172_vs_restricted_max_logodds_difference": 0.012805228212585007,
+      "oracle_final_logBF": 308.6944649797333
+    },
+    {
+      "regime": 1.0,
+      "rho": 0.0,
+      "case": "static",
+      "replicate": 3,
+      "MG172_vs_restricted_max_logodds_difference": 0.009123511684663299,
+      "oracle_final_logBF": 276.4582290092501
+    }
+  ],
+  "elapsed_seconds": 4.108755900000688,
+  "limits": "Independent weighted-observation closed form and componentwise scalar Gaussian node sums; shared precision/templates, same author, not external replication."
+}

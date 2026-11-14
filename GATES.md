@@ -2647,3 +2647,8 @@ PIauthorizesaudit. Frozen5bb76e5publishedbeforereplay;allMG170outcomesexactlyrep
 ## MG172 - corrected model-selection independent conditional validation FAILED overall
 
 PIauthorizesnextstep. Prospectivelypublished0f577e2,independentseed17200;4pathsx24frames/all10cases/2regimes/2rho,matchedMG170comparator. Fullsecondarypriorintegration/historylogsum/classmasspreservinggeometrycompression implemented. Intact44/48vs27/48,lateiid12/12vs0/12;all112negativedeadlinesfalse-single0. LatehighrhoSTATIC0/4fail,73false-absentframes,modelrelativeweightsnotcalibratedconfidence. NoMG163application/Gunresolved/earlierverdictsunchanged. Independent614grid/1929scalarhist-sum/19200classmass/7680label/320pathchecks pass;24representativeq. Eval177s,raw58.3MBlocal;nonewModelGpaths. Report results/MG12H3/corrected_model_selection/MG172_corrected_model_selection_results.md. Exactstatic-prior/innovationauditfutureseparatescope,noproductionauthorized.
+
+
+## MG173 - static-core prior/correlated-history audit complete
+
+PIauthorizesMG172nextstep. Saved48paths,no newdraws;687d101publishedbeforeevaluation. Staticoraclepositivewhileuniformexactgeometryfilterfalseabsence4/4targetlate-rho.95;beamnotneededforfailure. Changingonlygeometryprior topredeclared90%staymixturerescues4/4static,retains4/4movingand0/4absentfalse-final-presence. Seen-data3case2-classdiagnosticNOTfulltrackerqualification. Logoddsprioreffect+60.8..61.9,compressioneffect-2.21..+.228. Independentrecompute2304oracleprefixes/1152HMMsteps/754nodes/216snapshots/432normalizations/120summaries pass. Report results/MG12H3/static_core_audit/MG173_static_core_audit_results.md. Raw37.5MBlocal;earlieroutcomes/Gunresolved unchanged. Futurestationary/moving-modeprototypeandfullindependentcontrolsseparatescope.
