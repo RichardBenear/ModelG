@@ -2732,3 +2732,8 @@ MG182 G-focused testdevelopment complete; NOscientificproduction. Scaleall7count
 ## MG183 registered pilot approval
 
 PI approvesMG183pilot: go ahead with the pilot test. Registered24jobs(Omega10/40single,160coupled.0001/.00002),4prepared+4homogeneous/Omega,T.01,obs.001,8workers/thread1. Budgets86400worker-seconds/10800job/10800wall,2GBraw,600sanalysis. Source/canonicalinputhashesandcollision-checkedfresh18300seeds frozen plan results/MG12H3/G_population_pilot/plan.json beforelaunch. No criteriamodified;historicaldraftspecfilename nowregisteredcontent. Runtimecontrollerfailurestatus/inputbinding strengthened beforedraws. Awaitpublishconfirmation,thenlaunch. Fullraw local_raw/MG183_G_population;oldverdicts/Gviabilityunchanged.
+
+
+## MG183 launch verified
+
+MG183 RUNNING: PIapproved24jobGpopulationpilot,source/input/seeds7826e67confirmedpublishedbeforedraws. PersistenthiddencontrollerPID34204 (controller_launch_2.json),8activeOmega160pairedjobs;all8firstcheckpointscompletewith~1.108millionjoint events each,nostop/error. Omega40/10sixteenjobsqueued. InitialsandboxbackgroundlaunchPID36128exitedbeforeraw/attemptcreation,recordretained,no scientificreplicateretry. Fullrawlocal_raw/MG183_G_population/production;ledger.json and */progress.json trackrun. Benchforecast~1.43hbutinitialparallelpaceslower;cap10800wall/job and86400worker-secondsunchanged. DoNOTrerunregister/runorreplacejobs. Oncompletioncheckledger/all24jobs,binding,sentineltraces/ledgers,then score_mg183_gpopulation.py andindependentrecompute/report. ShortT.01only;oldverdicts/Gviabilityunchanged.

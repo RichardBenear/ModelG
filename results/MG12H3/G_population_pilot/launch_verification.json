@@ -1,0 +1,79 @@
+{
+  "status": "RUNNING",
+  "registration_commit": "7826e67",
+  "controller_pid": 34204,
+  "active_jobs": [
+    "Omega160_prepared_r0",
+    "Omega160_prepared_r1",
+    "Omega160_prepared_r2",
+    "Omega160_prepared_r3",
+    "Omega160_homogeneous_r0",
+    "Omega160_homogeneous_r1",
+    "Omega160_homogeneous_r2",
+    "Omega160_homogeneous_r3"
+  ],
+  "pending_jobs": [
+    "Omega40_prepared_r0",
+    "Omega40_prepared_r1",
+    "Omega40_prepared_r2",
+    "Omega40_prepared_r3",
+    "Omega40_homogeneous_r0",
+    "Omega40_homogeneous_r1",
+    "Omega40_homogeneous_r2",
+    "Omega40_homogeneous_r3",
+    "Omega10_prepared_r0",
+    "Omega10_prepared_r1",
+    "Omega10_prepared_r2",
+    "Omega10_prepared_r3",
+    "Omega10_homogeneous_r0",
+    "Omega10_homogeneous_r1",
+    "Omega10_homogeneous_r2",
+    "Omega10_homogeneous_r3"
+  ],
+  "first_checkpoints": {
+    "Omega160_homogeneous_r0": {
+      "ticks": 2,
+      "required": 100,
+      "events": 2215759
+    },
+    "Omega160_homogeneous_r1": {
+      "ticks": 2,
+      "required": 100,
+      "events": 2216214
+    },
+    "Omega160_homogeneous_r2": {
+      "ticks": 2,
+      "required": 100,
+      "events": 2217816
+    },
+    "Omega160_homogeneous_r3": {
+      "ticks": 2,
+      "required": 100,
+      "events": 2213764
+    },
+    "Omega160_prepared_r0": {
+      "ticks": 2,
+      "required": 100,
+      "events": 2216998
+    },
+    "Omega160_prepared_r1": {
+      "ticks": 2,
+      "required": 100,
+      "events": 2214306
+    },
+    "Omega160_prepared_r2": {
+      "ticks": 2,
+      "required": 100,
+      "events": 2218456
+    },
+    "Omega160_prepared_r3": {
+      "ticks": 2,
+      "required": 100,
+      "events": 2213015
+    }
+  },
+  "stop_reason": null,
+  "full_raw_local": true,
+  "production_retry": false,
+  "initial_launcher_exited_before_attempt": true
+}
