@@ -2763,3 +2763,7 @@ Infrastructure-only storage-race fix and checkpoint continuation approved by PI.
 
 ## MG185 completed — PI closure pending
 48qualification+180maintrajectories complete,zero clips. HistoricalX counts0,0,1,29,30/30 atOmega100,300,1000,3000,10000;strict0,0,1,28,30. DirectGsupports highpopulation finitehorizon visibility; no fullGXYbinarypass/universalpopulationthreshold.18000segmentsverified and separate rawGXYprojections checked.49.4112workerh,totalbudgetmet;infrastructuredeviation/prefixcontinuation preserved. Report results/MG185_Phase2_G/MG185_results.md. No newrun or oldverdict change;PIclosurepending.
+
+
+## MG187 bounded saved-data audit complete — PI closure pending
+One pass only,90prepared histories, no simulations or instrument refinement.29Omega1000losses:matchedG/Xhalf-amplitudefade22together/6Gbefore/1after;medianGlead0.5units. No consistent earlyGweaklink established. HigherpopulationGaveragedamplitude/shaperesidual stable withnoise limitations. See results/MG187_G_loss_audit/MG187_results.md. No newGpasscriterion,MG185rescore or automaticfollowup.

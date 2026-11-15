@@ -1,0 +1,4048 @@
+{
+  "loss_runs": [
+    {
+      "id": "main_Omega1000_d0_prepared_r00",
+      "X_detector_loss": 29.5,
+      "G_half_amplitude": {
+        "onset": 34.5,
+        "confirmed": 44.5
+      },
+      "X_half_amplitude": {
+        "onset": 35.0,
+        "confirmed": 45.0
+      },
+      "G_minus_detector_loss": 5.0,
+      "G_minus_X_half": -0.5,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "together",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.850015132045273,
+          "X_amplitude": 0.9488134827669233,
+          "G_residual": 6.629204792535835
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.6687873177648931,
+          "X_amplitude": 0.7454049813979875,
+          "G_residual": 6.6499617308889665
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.1939778560192409,
+          "X_amplitude": 0.27329014673674185,
+          "G_residual": 6.612926746664831
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": -0.0438589999406993,
+          "X_amplitude": -0.006950039599817828,
+          "G_residual": 6.603223848995194
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r01",
+      "X_detector_loss": 772.0,
+      "G_half_amplitude": {
+        "onset": 778.5,
+        "confirmed": 788.5
+      },
+      "X_half_amplitude": {
+        "onset": 778.0,
+        "confirmed": 788.0
+      },
+      "G_minus_detector_loss": 6.5,
+      "G_minus_X_half": 0.5,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "together",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.9597113370432963,
+          "X_amplitude": 0.903997271456153,
+          "G_residual": 6.553636932967251
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.8552844950488845,
+          "X_amplitude": 0.751761187058732,
+          "G_residual": 6.560458706129735
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.2740789350836347,
+          "X_amplitude": 0.32420694182966037,
+          "G_residual": 6.6095907870826185
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": 0.09759781890985593,
+          "X_amplitude": 0.05094813372254915,
+          "G_residual": 6.601023134379328
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r02",
+      "X_detector_loss": 91.5,
+      "G_half_amplitude": {
+        "onset": 93.5,
+        "confirmed": 103.5
+      },
+      "X_half_amplitude": {
+        "onset": 96.5,
+        "confirmed": 106.5
+      },
+      "G_minus_detector_loss": 2.0,
+      "G_minus_X_half": -3.0,
+      "relative_to_detector": "together",
+      "relative_to_X_half": "before",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.9129309353086109,
+          "X_amplitude": 0.8182808357797177,
+          "G_residual": 6.588870264547521
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.5946042335788698,
+          "X_amplitude": 0.6998350716374634,
+          "G_residual": 6.66062305014016
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.1294878816765311,
+          "X_amplitude": 0.25624205354615337,
+          "G_residual": 6.606071756015074
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": -0.02672270536391764,
+          "X_amplitude": 0.0015636558464624598,
+          "G_residual": 6.644414422583475
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r03",
+      "X_detector_loss": 210.5,
+      "G_half_amplitude": {
+        "onset": 215.5,
+        "confirmed": 225.5
+      },
+      "X_half_amplitude": {
+        "onset": 216.0,
+        "confirmed": 226.0
+      },
+      "G_minus_detector_loss": 5.0,
+      "G_minus_X_half": -0.5,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "together",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.7861229739571032,
+          "X_amplitude": 0.8753161840755382,
+          "G_residual": 6.652248955956713
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.6535010533132609,
+          "X_amplitude": 0.7401015108943942,
+          "G_residual": 6.660537866436395
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.3699254633718895,
+          "X_amplitude": 0.26235491366100494,
+          "G_residual": 6.556460019051583
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": 0.008730289774382517,
+          "X_amplitude": 0.0523687096871994,
+          "G_residual": 6.600166494045969
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r04",
+      "X_detector_loss": 225.5,
+      "G_half_amplitude": {
+        "onset": 231.5,
+        "confirmed": 241.5
+      },
+      "X_half_amplitude": {
+        "onset": 231.0,
+        "confirmed": 241.0
+      },
+      "G_minus_detector_loss": 6.0,
+      "G_minus_X_half": 0.5,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "together",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.7236640573187811,
+          "X_amplitude": 0.7983362374309894,
+          "G_residual": 6.608605698812262
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.646398535833772,
+          "X_amplitude": 0.6875961715539647,
+          "G_residual": 6.634725980315193
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.18891209493693395,
+          "X_amplitude": 0.26172781566739844,
+          "G_residual": 6.717290552838418
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": 0.06970888139169734,
+          "X_amplitude": -0.0008728144011035336,
+          "G_residual": 6.604235434976992
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r05",
+      "X_detector_loss": 29.0,
+      "G_half_amplitude": {
+        "onset": 34.5,
+        "confirmed": 44.5
+      },
+      "X_half_amplitude": {
+        "onset": 35.5,
+        "confirmed": 45.5
+      },
+      "G_minus_detector_loss": 5.5,
+      "G_minus_X_half": -1.0,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "together",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.7261542852116789,
+          "X_amplitude": 0.786284267515871,
+          "G_residual": 6.596092514957088
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.7409549012358849,
+          "X_amplitude": 0.7762731086735477,
+          "G_residual": 6.665244700412916
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.42606036531805425,
+          "X_amplitude": 0.288159840929696,
+          "G_residual": 6.644781274884887
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": -0.03416616754118471,
+          "X_amplitude": 0.019691618715367933,
+          "G_residual": 6.687456288096861
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r06",
+      "X_detector_loss": 107.5,
+      "G_half_amplitude": {
+        "onset": 112.5,
+        "confirmed": 122.5
+      },
+      "X_half_amplitude": {
+        "onset": 113.5,
+        "confirmed": 123.5
+      },
+      "G_minus_detector_loss": 5.0,
+      "G_minus_X_half": -1.0,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "together",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.9711881648824855,
+          "X_amplitude": 0.9354577132798282,
+          "G_residual": 6.6582630617526615
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.6062988923668301,
+          "X_amplitude": 0.7255933196026446,
+          "G_residual": 6.631305993012941
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.2579523978005706,
+          "X_amplitude": 0.28725292776464184,
+          "G_residual": 6.588871317931411
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": -0.03515434577650214,
+          "X_amplitude": 0.05498444993284575,
+          "G_residual": 6.6512508309237885
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r07",
+      "X_detector_loss": 158.5,
+      "G_half_amplitude": {
+        "onset": 165.0,
+        "confirmed": 175.0
+      },
+      "X_half_amplitude": {
+        "onset": 164.0,
+        "confirmed": 174.0
+      },
+      "G_minus_detector_loss": 6.5,
+      "G_minus_X_half": 1.0,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "together",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.7983356199413254,
+          "X_amplitude": 0.827240017562285,
+          "G_residual": 6.640823183419494
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.7490963292937354,
+          "X_amplitude": 0.705643300720028,
+          "G_residual": 6.568282814184874
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.2710498263454944,
+          "X_amplitude": 0.2439632284987044,
+          "G_residual": 6.610079302595823
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": -0.07885578335997903,
+          "X_amplitude": 0.026499353914839752,
+          "G_residual": 6.5959899677606995
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r08",
+      "X_detector_loss": 84.5,
+      "G_half_amplitude": {
+        "onset": 88.5,
+        "confirmed": 98.5
+      },
+      "X_half_amplitude": {
+        "onset": 90.0,
+        "confirmed": 100.0
+      },
+      "G_minus_detector_loss": 4.0,
+      "G_minus_X_half": -1.5,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "together",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.8652461437457877,
+          "X_amplitude": 0.8865107031676447,
+          "G_residual": 6.6022102885311345
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.6498555559459307,
+          "X_amplitude": 0.7008994626932832,
+          "G_residual": 6.62161929960598
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.18770492080815607,
+          "X_amplitude": 0.26534898977735477,
+          "G_residual": 6.568790523155464
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": 0.013202715745719277,
+          "X_amplitude": 0.008730052320552358,
+          "G_residual": 6.606301357561309
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r09",
+      "X_detector_loss": 68.5,
+      "G_half_amplitude": {
+        "onset": 74.5,
+        "confirmed": 84.5
+      },
+      "X_half_amplitude": {
+        "onset": 74.5,
+        "confirmed": 84.5
+      },
+      "G_minus_detector_loss": 6.0,
+      "G_minus_X_half": 0.0,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "together",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.891127528100719,
+          "X_amplitude": 0.8990743089970721,
+          "G_residual": 6.614336078230653
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.7171321120656668,
+          "X_amplitude": 0.7879889740833055,
+          "G_residual": 6.586528080020064
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.3816282972676871,
+          "X_amplitude": 0.27634251554994715,
+          "G_residual": 6.622522737268559
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": 0.0037421630915217747,
+          "X_amplitude": 0.06409584434042899,
+          "G_residual": 6.6306882184022715
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r10",
+      "X_detector_loss": 225.0,
+      "G_half_amplitude": {
+        "onset": 230.0,
+        "confirmed": 240.0
+      },
+      "X_half_amplitude": {
+        "onset": 230.5,
+        "confirmed": 240.5
+      },
+      "G_minus_detector_loss": 5.0,
+      "G_minus_X_half": -0.5,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "together",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.7347838375959733,
+          "X_amplitude": 0.9228158048123495,
+          "G_residual": 6.5450425657332945
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.6854233267416305,
+          "X_amplitude": 0.6751527805477365,
+          "G_residual": 6.67355565216149
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.2770077081823882,
+          "X_amplitude": 0.27229145354768997,
+          "G_residual": 6.514650706768788
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": 0.038002260379731465,
+          "X_amplitude": 0.03267129976488447,
+          "G_residual": 6.580132672195556
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r11",
+      "X_detector_loss": 754.5,
+      "G_half_amplitude": {
+        "onset": 761.0,
+        "confirmed": 771.0
+      },
+      "X_half_amplitude": {
+        "onset": 759.0,
+        "confirmed": 769.0
+      },
+      "G_minus_detector_loss": 6.5,
+      "G_minus_X_half": 2.0,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "together",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.9660220174494862,
+          "X_amplitude": 0.873969833927678,
+          "G_residual": 6.540214260817196
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.6427431681557341,
+          "X_amplitude": 0.6395285460916533,
+          "G_residual": 6.640638024709148
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.3832283625018922,
+          "X_amplitude": 0.27564256808312426,
+          "G_residual": 6.7206877394449265
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": 0.10691575794890269,
+          "X_amplitude": 0.04035449808382914,
+          "G_residual": 6.69167674395261
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r12",
+      "X_detector_loss": 783.5,
+      "G_half_amplitude": {
+        "onset": 787.0,
+        "confirmed": 797.0
+      },
+      "X_half_amplitude": {
+        "onset": 789.5,
+        "confirmed": 799.5
+      },
+      "G_minus_detector_loss": 3.5,
+      "G_minus_X_half": -2.5,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "before",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.8668391221439025,
+          "X_amplitude": 0.8944160409748336,
+          "G_residual": 6.716111409344185
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.7109998436920589,
+          "X_amplitude": 0.7525592173228188,
+          "G_residual": 6.595816343940062
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.2809995126960759,
+          "X_amplitude": 0.30142574606207345,
+          "G_residual": 6.61832175232708
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": 0.019028375362836157,
+          "X_amplitude": 0.03979795862140287,
+          "G_residual": 6.503129362126245
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r13",
+      "X_detector_loss": 503.5,
+      "G_half_amplitude": {
+        "onset": 506.5,
+        "confirmed": 516.5
+      },
+      "X_half_amplitude": {
+        "onset": 509.0,
+        "confirmed": 519.0
+      },
+      "G_minus_detector_loss": 3.0,
+      "G_minus_X_half": -2.5,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "before",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.8960061713024221,
+          "X_amplitude": 0.8819491900298093,
+          "G_residual": 6.577487962726201
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.7066076631588277,
+          "X_amplitude": 0.7618290711717839,
+          "G_residual": 6.650226499791112
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": -0.0011753733564068003,
+          "X_amplitude": 0.24113563109609118,
+          "G_residual": 6.677262734610991
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": 0.11135077237460426,
+          "X_amplitude": 0.008368009710791758,
+          "G_residual": 6.603154761599173
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r14",
+      "X_detector_loss": 54.5,
+      "G_half_amplitude": {
+        "onset": 60.5,
+        "confirmed": 70.5
+      },
+      "X_half_amplitude": {
+        "onset": 59.5,
+        "confirmed": 69.5
+      },
+      "G_minus_detector_loss": 6.0,
+      "G_minus_X_half": 1.0,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "together",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.787159171414831,
+          "X_amplitude": 0.8328325048302455,
+          "G_residual": 6.6327166300098925
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 19,
+          "G_amplitude": 0.7454912148492585,
+          "X_amplitude": 0.6422952416491099,
+          "G_residual": 6.626263829266977
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.17427361522567222,
+          "X_amplitude": 0.3029543787669851,
+          "G_residual": 6.664058406050797
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": 0.05256092499004632,
+          "X_amplitude": 0.07780497020367423,
+          "G_residual": 6.598671440680784
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r15",
+      "X_detector_loss": 573.5,
+      "G_half_amplitude": {
+        "onset": 582.0,
+        "confirmed": 592.0
+      },
+      "X_half_amplitude": {
+        "onset": 578.5,
+        "confirmed": 588.5
+      },
+      "G_minus_detector_loss": 8.5,
+      "G_minus_X_half": 3.5,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "after",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.8612597402433405,
+          "X_amplitude": 0.7986193739554472,
+          "G_residual": 6.638478718015692
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.611287761689916,
+          "X_amplitude": 0.7216058490090107,
+          "G_residual": 6.6983863591340285
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.44405511122291486,
+          "X_amplitude": 0.2457692826644894,
+          "G_residual": 6.50818511706689
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": -0.11223838655017856,
+          "X_amplitude": 0.02794889101319683,
+          "G_residual": 6.646083092783732
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r16",
+      "X_detector_loss": null,
+      "G_half_amplitude": null,
+      "X_half_amplitude": null,
+      "G_minus_detector_loss": null,
+      "G_minus_X_half": null,
+      "relative_to_detector": "unresolved/censored",
+      "relative_to_X_half": "unresolved/censored",
+      "held_anchor_after_loss": true,
+      "windows": []
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r17",
+      "X_detector_loss": 683.5,
+      "G_half_amplitude": {
+        "onset": 692.0,
+        "confirmed": 702.0
+      },
+      "X_half_amplitude": {
+        "onset": 690.0,
+        "confirmed": 700.0
+      },
+      "G_minus_detector_loss": 8.5,
+      "G_minus_X_half": 2.0,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "together",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.8367643750917054,
+          "X_amplitude": 0.9356155639563939,
+          "G_residual": 6.613929950173547
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.7240512972672984,
+          "X_amplitude": 0.771972112830759,
+          "G_residual": 6.661571954579452
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.387285088138167,
+          "X_amplitude": 0.30678454103795044,
+          "G_residual": 6.684436113605036
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": 0.07097487540983351,
+          "X_amplitude": 0.07342931036138985,
+          "G_residual": 6.685945848111494
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r18",
+      "X_detector_loss": 642.5,
+      "G_half_amplitude": {
+        "onset": 646.0,
+        "confirmed": 656.0
+      },
+      "X_half_amplitude": {
+        "onset": 648.5,
+        "confirmed": 658.5
+      },
+      "G_minus_detector_loss": 3.5,
+      "G_minus_X_half": -2.5,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "before",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.887774113039506,
+          "X_amplitude": 0.925901262266664,
+          "G_residual": 6.66193779915439
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.7561409283331453,
+          "X_amplitude": 0.7510959012576899,
+          "G_residual": 6.553319024243177
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.21246020612866706,
+          "X_amplitude": 0.2626809586119988,
+          "G_residual": 6.597944987804388
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": 0.13831166579103293,
+          "X_amplitude": 0.023184016907185318,
+          "G_residual": 6.6881382032232555
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r19",
+      "X_detector_loss": 314.5,
+      "G_half_amplitude": {
+        "onset": 320.5,
+        "confirmed": 330.5
+      },
+      "X_half_amplitude": {
+        "onset": 320.0,
+        "confirmed": 330.0
+      },
+      "G_minus_detector_loss": 6.0,
+      "G_minus_X_half": 0.5,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "together",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.9813136329258516,
+          "X_amplitude": 0.9589258956329634,
+          "G_residual": 6.576339683617808
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.8441187453274864,
+          "X_amplitude": 0.8599115506169601,
+          "G_residual": 6.594276190129233
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.2984824425284054,
+          "X_amplitude": 0.20956123794904813,
+          "G_residual": 6.637783867466458
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": -0.0005680942327398935,
+          "X_amplitude": 0.034081418498476415,
+          "G_residual": 6.68797332369557
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r20",
+      "X_detector_loss": 600.0,
+      "G_half_amplitude": {
+        "onset": 605.5,
+        "confirmed": 615.5
+      },
+      "X_half_amplitude": {
+        "onset": 605.5,
+        "confirmed": 615.5
+      },
+      "G_minus_detector_loss": 5.5,
+      "G_minus_X_half": 0.0,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "together",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.9433750904478464,
+          "X_amplitude": 0.9603351700892647,
+          "G_residual": 6.568106279079602
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.8113657831205577,
+          "X_amplitude": 0.7514933252700675,
+          "G_residual": 6.687099792505651
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.3617160649956062,
+          "X_amplitude": 0.2694935225272174,
+          "G_residual": 6.611392848004245
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": 0.07814627034597796,
+          "X_amplitude": 0.021604767914450655,
+          "G_residual": 6.5859533445423555
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r21",
+      "X_detector_loss": 268.0,
+      "G_half_amplitude": {
+        "onset": 270.0,
+        "confirmed": 280.0
+      },
+      "X_half_amplitude": {
+        "onset": 273.5,
+        "confirmed": 283.5
+      },
+      "G_minus_detector_loss": 2.0,
+      "G_minus_X_half": -3.5,
+      "relative_to_detector": "together",
+      "relative_to_X_half": "before",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.9302880892336743,
+          "X_amplitude": 0.8492014472001284,
+          "G_residual": 6.638323316054732
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.6339995613443701,
+          "X_amplitude": 0.8009375999279662,
+          "G_residual": 6.527413350624603
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.034440924207731365,
+          "X_amplitude": 0.2159558109791586,
+          "G_residual": 6.578319502415312
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": 0.013911547955655365,
+          "X_amplitude": 0.02573037211729471,
+          "G_residual": 6.640747001942936
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r22",
+      "X_detector_loss": 32.0,
+      "G_half_amplitude": {
+        "onset": 38.0,
+        "confirmed": 48.0
+      },
+      "X_half_amplitude": {
+        "onset": 38.5,
+        "confirmed": 48.5
+      },
+      "G_minus_detector_loss": 6.0,
+      "G_minus_X_half": -0.5,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "together",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.8861043157188394,
+          "X_amplitude": 0.8081481816735925,
+          "G_residual": 6.6535294152443125
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.7521521853187524,
+          "X_amplitude": 0.6987884497344831,
+          "G_residual": 6.669794666653507
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.27531287734111415,
+          "X_amplitude": 0.34731326157726333,
+          "G_residual": 6.693947757181701
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": 0.24402924690166822,
+          "X_amplitude": 0.14950380671963967,
+          "G_residual": 6.645896100968391
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r23",
+      "X_detector_loss": 197.0,
+      "G_half_amplitude": {
+        "onset": 203.0,
+        "confirmed": 213.0
+      },
+      "X_half_amplitude": {
+        "onset": 202.5,
+        "confirmed": 212.5
+      },
+      "G_minus_detector_loss": 6.0,
+      "G_minus_X_half": 0.5,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "together",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.9089893266460749,
+          "X_amplitude": 0.9187828157347706,
+          "G_residual": 6.607217823597155
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.7126531733922542,
+          "X_amplitude": 0.7248612521996511,
+          "G_residual": 6.668712932008161
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.22950988009739492,
+          "X_amplitude": 0.23963866189870336,
+          "G_residual": 6.606104669259073
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": 0.13165391054839753,
+          "X_amplitude": 0.08265340124311965,
+          "G_residual": 6.63358477935017
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r24",
+      "X_detector_loss": 386.0,
+      "G_half_amplitude": {
+        "onset": 390.5,
+        "confirmed": 400.5
+      },
+      "X_half_amplitude": {
+        "onset": 391.0,
+        "confirmed": 401.0
+      },
+      "G_minus_detector_loss": 4.5,
+      "G_minus_X_half": -0.5,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "together",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.7566683301756371,
+          "X_amplitude": 0.843802568453736,
+          "G_residual": 6.6603981074409235
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.5517426748193461,
+          "X_amplitude": 0.7033051731650924,
+          "G_residual": 6.637606928993352
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.28995004198619523,
+          "X_amplitude": 0.24203404626308922,
+          "G_residual": 6.572897900915898
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": -0.05143034271536619,
+          "X_amplitude": -0.007657315019969582,
+          "G_residual": 6.6905599322658045
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r25",
+      "X_detector_loss": 25.0,
+      "G_half_amplitude": {
+        "onset": 32.5,
+        "confirmed": 42.5
+      },
+      "X_half_amplitude": {
+        "onset": 31.5,
+        "confirmed": 41.5
+      },
+      "G_minus_detector_loss": 7.5,
+      "G_minus_X_half": 1.0,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "together",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.8180425752730842,
+          "X_amplitude": 0.8357452961543809,
+          "G_residual": 6.611954101090322
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.7397621902615978,
+          "X_amplitude": 0.7574585005888566,
+          "G_residual": 6.560980664674025
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.3692520071755415,
+          "X_amplitude": 0.3158062000756573,
+          "G_residual": 6.703540066911735
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": -0.04538272230392146,
+          "X_amplitude": 0.024367829588572962,
+          "G_residual": 6.633422275333606
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r26",
+      "X_detector_loss": 257.0,
+      "G_half_amplitude": {
+        "onset": 261.0,
+        "confirmed": 271.0
+      },
+      "X_half_amplitude": {
+        "onset": 264.5,
+        "confirmed": 274.5
+      },
+      "G_minus_detector_loss": 4.0,
+      "G_minus_X_half": -3.5,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "before",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.9375297781100895,
+          "X_amplitude": 0.9392422594667005,
+          "G_residual": 6.646811061210568
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.7195082336904457,
+          "X_amplitude": 0.8024548051607073,
+          "G_residual": 6.547243628272909
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.28018331044714145,
+          "X_amplitude": 0.3700364330229028,
+          "G_residual": 6.644627859044567
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": 0.09116104122882733,
+          "X_amplitude": 0.060481229548208726,
+          "G_residual": 6.740293735848499
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r27",
+      "X_detector_loss": 89.5,
+      "G_half_amplitude": {
+        "onset": 95.0,
+        "confirmed": 105.0
+      },
+      "X_half_amplitude": {
+        "onset": 95.0,
+        "confirmed": 105.0
+      },
+      "G_minus_detector_loss": 5.5,
+      "G_minus_X_half": 0.0,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "together",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.7076707262962616,
+          "X_amplitude": 0.8051310636620043,
+          "G_residual": 6.604607534596876
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.5942060878891707,
+          "X_amplitude": 0.7027210245405836,
+          "G_residual": 6.588988710546644
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.2102337021130008,
+          "X_amplitude": 0.23954272440331698,
+          "G_residual": 6.627315585078312
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": 0.11200827261156192,
+          "X_amplitude": 0.021066714992513284,
+          "G_residual": 6.576492496298466
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r28",
+      "X_detector_loss": 371.5,
+      "G_half_amplitude": {
+        "onset": 376.5,
+        "confirmed": 386.5
+      },
+      "X_half_amplitude": {
+        "onset": 377.0,
+        "confirmed": 387.0
+      },
+      "G_minus_detector_loss": 5.0,
+      "G_minus_X_half": -0.5,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "together",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.961618061960492,
+          "X_amplitude": 0.7876954478035387,
+          "G_residual": 6.646781330418858
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.5894150301375408,
+          "X_amplitude": 0.6862585933358667,
+          "G_residual": 6.590846165308425
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.3636105384025904,
+          "X_amplitude": 0.28455919571836075,
+          "G_residual": 6.635087706657153
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": 0.01309279114437616,
+          "X_amplitude": 0.006652956219173768,
+          "G_residual": 6.675817601513584
+        }
+      ]
+    },
+    {
+      "id": "main_Omega1000_d0_prepared_r29",
+      "X_detector_loss": 247.0,
+      "G_half_amplitude": {
+        "onset": 253.5,
+        "confirmed": 263.5
+      },
+      "X_half_amplitude": {
+        "onset": 253.0,
+        "confirmed": 263.0
+      },
+      "G_minus_detector_loss": 6.5,
+      "G_minus_X_half": 0.5,
+      "relative_to_detector": "after",
+      "relative_to_X_half": "together",
+      "held_anchor_after_loss": true,
+      "windows": [
+        {
+          "left": -20,
+          "right": -10,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 1.0412093816042762,
+          "X_amplitude": 0.9755442818428245,
+          "G_residual": 6.7213327045950155
+        },
+        {
+          "left": -10,
+          "right": 0,
+          "n": 20,
+          "unique_original_frames": 20,
+          "G_amplitude": 0.7795664169284628,
+          "X_amplitude": 0.8136409382926841,
+          "G_residual": 6.557340276836394
+        },
+        {
+          "left": 0,
+          "right": 10,
+          "n": 20,
+          "unique_original_frames": 1,
+          "G_amplitude": 0.3661033339552827,
+          "X_amplitude": 0.27982296178368554,
+          "G_residual": 6.648468090262263
+        },
+        {
+          "left": 10,
+          "right": 20,
+          "n": 20,
+          "unique_original_frames": 0,
+          "G_amplitude": 0.06274494791865949,
+          "X_amplitude": 0.038978260968300406,
+          "G_residual": 6.650222355817759
+        }
+      ]
+    }
+  ],
+  "high_population_runs": [
+    {
+      "id": "main_Omega3000_d0_prepared_r00",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9879758491532681,
+          "amplitude_SD": 0.1744380155705639,
+          "instantaneous_residual": 3.8042559149136514,
+          "averaged_profile_residual": 0.2953381317933775
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.0030881572299148,
+          "amplitude_SD": 0.18360696928154602,
+          "instantaneous_residual": 3.812001772643946,
+          "averaged_profile_residual": 0.2996675786233296
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r01",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.968419514580797,
+          "amplitude_SD": 0.16604565158427567,
+          "instantaneous_residual": 3.806087240480683,
+          "averaged_profile_residual": 0.2783436111668511
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9789521635786447,
+          "amplitude_SD": 0.17027160384006923,
+          "instantaneous_residual": 3.8405821524411703,
+          "averaged_profile_residual": 0.3103292940541578
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r02",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.0149234664850306,
+          "amplitude_SD": 0.16824065176284733,
+          "instantaneous_residual": 3.8039009033909696,
+          "averaged_profile_residual": 0.2998647062761488
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.048173360960458,
+          "amplitude_SD": 0.1764538701832763,
+          "instantaneous_residual": 3.819834142241881,
+          "averaged_profile_residual": 0.3000733515486181
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r03",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.021698773850972,
+          "amplitude_SD": 0.1807929707416665,
+          "instantaneous_residual": 3.815466602889452,
+          "averaged_profile_residual": 0.30529160742726325
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.0426738559711497,
+          "amplitude_SD": 0.18004666915383516,
+          "instantaneous_residual": 3.8117768072930116,
+          "averaged_profile_residual": 0.2863584529844244
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r04",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9760523341884598,
+          "amplitude_SD": 0.16179173315149206,
+          "instantaneous_residual": 3.800648674380177,
+          "averaged_profile_residual": 0.2914603176639084
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9986561836620007,
+          "amplitude_SD": 0.1658727221007749,
+          "instantaneous_residual": 3.825990232221001,
+          "averaged_profile_residual": 0.29191068881158877
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r05",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.001031162591126,
+          "amplitude_SD": 0.16339102915331177,
+          "instantaneous_residual": 3.8008103643520745,
+          "averaged_profile_residual": 0.30800976954807624
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9731534872319137,
+          "amplitude_SD": 0.18714392090903287,
+          "instantaneous_residual": 3.825868473872318,
+          "averaged_profile_residual": 0.294559936644298
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r06",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9983259925045597,
+          "amplitude_SD": 0.1853903029597671,
+          "instantaneous_residual": 3.7999131394967036,
+          "averaged_profile_residual": 0.3006167641501791
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9797320328592746,
+          "amplitude_SD": 0.1698008038108082,
+          "instantaneous_residual": 3.8188965987744785,
+          "averaged_profile_residual": 0.2998771214678094
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r07",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.994716805046352,
+          "amplitude_SD": 0.1744506836028148,
+          "instantaneous_residual": 3.8001790363894763,
+          "averaged_profile_residual": 0.30559581546897574
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9817974698532995,
+          "amplitude_SD": 0.19090526188452972,
+          "instantaneous_residual": 3.814518118415224,
+          "averaged_profile_residual": 0.304522408873753
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r08",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9953475112211048,
+          "amplitude_SD": 0.19468780761655521,
+          "instantaneous_residual": 3.809751024844709,
+          "averaged_profile_residual": 0.2984452835254544
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9614088996165239,
+          "amplitude_SD": 0.16528009785186462,
+          "instantaneous_residual": 3.8341440794710797,
+          "averaged_profile_residual": 0.28899556298055806
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r09",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9904841227040161,
+          "amplitude_SD": 0.1591499288779868,
+          "instantaneous_residual": 3.793394998534566,
+          "averaged_profile_residual": 0.30399963962396603
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9786292143257352,
+          "amplitude_SD": 0.1769408253759627,
+          "instantaneous_residual": 3.818601274519212,
+          "averaged_profile_residual": 0.29128585634187737
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r10",
+      "omega": 3000,
+      "X_persistent": false,
+      "strict": false,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9247040231595727,
+          "amplitude_SD": 0.19696790047733675,
+          "instantaneous_residual": 3.8164998354989605,
+          "averaged_profile_residual": 0.30002546736721375
+        },
+        {
+          "name": "final",
+          "valid": 0,
+          "total": 201,
+          "amplitude": null,
+          "amplitude_SD": null,
+          "instantaneous_residual": null,
+          "averaged_profile_residual": null
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r11",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9586178964432405,
+          "amplitude_SD": 0.1683806710957403,
+          "instantaneous_residual": 3.8054188789556083,
+          "averaged_profile_residual": 0.29629795245949486
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9894160716959282,
+          "amplitude_SD": 0.183386097952347,
+          "instantaneous_residual": 3.8246317551683933,
+          "averaged_profile_residual": 0.3068519743643374
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r12",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9975717428278021,
+          "amplitude_SD": 0.16193036829258936,
+          "instantaneous_residual": 3.812625992143377,
+          "averaged_profile_residual": 0.3001104673274687
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.981291210000928,
+          "amplitude_SD": 0.17364126194984497,
+          "instantaneous_residual": 3.8224636826944227,
+          "averaged_profile_residual": 0.32450686488578934
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r13",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9690693715856358,
+          "amplitude_SD": 0.17161074762265294,
+          "instantaneous_residual": 3.8128223816850833,
+          "averaged_profile_residual": 0.29367040895080476
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.0320374650610837,
+          "amplitude_SD": 0.15354594844357505,
+          "instantaneous_residual": 3.826321694604065,
+          "averaged_profile_residual": 0.32043672795735584
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r14",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9977675412452388,
+          "amplitude_SD": 0.18108438052628734,
+          "instantaneous_residual": 3.8110413847818023,
+          "averaged_profile_residual": 0.2918108271865995
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9699607845317096,
+          "amplitude_SD": 0.18107628193291575,
+          "instantaneous_residual": 3.823654574226568,
+          "averaged_profile_residual": 0.32265327614426415
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r15",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9657369444631231,
+          "amplitude_SD": 0.17363893155122612,
+          "instantaneous_residual": 3.798764952606739,
+          "averaged_profile_residual": 0.3089609058818295
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.0015054475507748,
+          "amplitude_SD": 0.1817342468208567,
+          "instantaneous_residual": 3.822205200784891,
+          "averaged_profile_residual": 0.295849093189906
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r16",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.0187331262539634,
+          "amplitude_SD": 0.19642147399956283,
+          "instantaneous_residual": 3.806932692303966,
+          "averaged_profile_residual": 0.2910634343136679
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.0072276130246545,
+          "amplitude_SD": 0.1689905795034855,
+          "instantaneous_residual": 3.8305724503029004,
+          "averaged_profile_residual": 0.30310696925307073
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r17",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9709521775336132,
+          "amplitude_SD": 0.1607686862925177,
+          "instantaneous_residual": 3.809171389355135,
+          "averaged_profile_residual": 0.3049115721931994
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9968550090969907,
+          "amplitude_SD": 0.18562829391795738,
+          "instantaneous_residual": 3.821336020181457,
+          "averaged_profile_residual": 0.32012287406649537
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r18",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9906704552330269,
+          "amplitude_SD": 0.1635150695550599,
+          "instantaneous_residual": 3.813840483118454,
+          "averaged_profile_residual": 0.28913947615822316
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.0039359931877234,
+          "amplitude_SD": 0.163829697626874,
+          "instantaneous_residual": 3.8289446909547786,
+          "averaged_profile_residual": 0.31642376856053606
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r19",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.0146683592214123,
+          "amplitude_SD": 0.18288607791602857,
+          "instantaneous_residual": 3.805374120085662,
+          "averaged_profile_residual": 0.29319490942703225
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.0208603356968649,
+          "amplitude_SD": 0.18778956492432494,
+          "instantaneous_residual": 3.809396447178983,
+          "averaged_profile_residual": 0.2972298225215219
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r20",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.002738875877645,
+          "amplitude_SD": 0.16452586857726875,
+          "instantaneous_residual": 3.8058916399465725,
+          "averaged_profile_residual": 0.30269271742562953
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.0113826381691735,
+          "amplitude_SD": 0.1646229391092717,
+          "instantaneous_residual": 3.807527417951955,
+          "averaged_profile_residual": 0.290340478329806
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r21",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.0046685741831867,
+          "amplitude_SD": 0.16909020241800893,
+          "instantaneous_residual": 3.794968719147073,
+          "averaged_profile_residual": 0.31459290956269603
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.961285355550336,
+          "amplitude_SD": 0.17490819037709496,
+          "instantaneous_residual": 3.83306648393044,
+          "averaged_profile_residual": 0.3108848370159538
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r22",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": false,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.0263543889189002,
+          "amplitude_SD": 0.17212091428427395,
+          "instantaneous_residual": 3.801614160924545,
+          "averaged_profile_residual": 0.29043477223331693
+        },
+        {
+          "name": "final",
+          "valid": 195,
+          "total": 201,
+          "amplitude": 0.9379460906867307,
+          "amplitude_SD": 0.2112919837052655,
+          "instantaneous_residual": 3.8162857484000567,
+          "averaged_profile_residual": 0.3169663844036541
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r23",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9910462688123944,
+          "amplitude_SD": 0.17103134395483222,
+          "instantaneous_residual": 3.8059629478180543,
+          "averaged_profile_residual": 0.30688714650718374
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.0180200322996256,
+          "amplitude_SD": 0.18561569562193883,
+          "instantaneous_residual": 3.8243119572107767,
+          "averaged_profile_residual": 0.30081429800746123
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r24",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.013562854852492,
+          "amplitude_SD": 0.19771032882734507,
+          "instantaneous_residual": 3.8077302449993558,
+          "averaged_profile_residual": 0.31150230394119877
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9505620751055383,
+          "amplitude_SD": 0.17128059592225878,
+          "instantaneous_residual": 3.8378299232310056,
+          "averaged_profile_residual": 0.28255878296716824
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r25",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9854397093034076,
+          "amplitude_SD": 0.1607133830219577,
+          "instantaneous_residual": 3.7949027404954854,
+          "averaged_profile_residual": 0.3019715979932464
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.0163632848809712,
+          "amplitude_SD": 0.15903132403427395,
+          "instantaneous_residual": 3.8215947242672224,
+          "averaged_profile_residual": 0.2885470119485103
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r26",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.996488779984114,
+          "amplitude_SD": 0.17768314614996802,
+          "instantaneous_residual": 3.8151984566378734,
+          "averaged_profile_residual": 0.2998723269765077
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.0469720175924249,
+          "amplitude_SD": 0.17742378686581975,
+          "instantaneous_residual": 3.8277778945240137,
+          "averaged_profile_residual": 0.2982812852260079
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r27",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.0026610174315798,
+          "amplitude_SD": 0.1684027902065469,
+          "instantaneous_residual": 3.8074041358354687,
+          "averaged_profile_residual": 0.3004267528486721
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9665745502725306,
+          "amplitude_SD": 0.18492885279633642,
+          "instantaneous_residual": 3.8209515513485095,
+          "averaged_profile_residual": 0.29085001020712326
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r28",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.0156722536331844,
+          "amplitude_SD": 0.1692087732794741,
+          "instantaneous_residual": 3.804955482595458,
+          "averaged_profile_residual": 0.27781270137620717
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.0271004749654589,
+          "amplitude_SD": 0.1794629293575214,
+          "instantaneous_residual": 3.8178958615395837,
+          "averaged_profile_residual": 0.29173214851501283
+        }
+      ]
+    },
+    {
+      "id": "main_Omega3000_d0_prepared_r29",
+      "omega": 3000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9654157297097036,
+          "amplitude_SD": 0.176180520626722,
+          "instantaneous_residual": 3.8073515421271877,
+          "averaged_profile_residual": 0.28603956466674907
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.004443911150532,
+          "amplitude_SD": 0.1851363176625316,
+          "instantaneous_residual": 3.8020205492590464,
+          "averaged_profile_residual": 0.28826889589494753
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r00",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.0129261942507783,
+          "amplitude_SD": 0.08776998364717371,
+          "instantaneous_residual": 2.084523501567472,
+          "averaged_profile_residual": 0.1634462138134149
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.0023993964689708,
+          "amplitude_SD": 0.09985152186423336,
+          "instantaneous_residual": 2.086959682779725,
+          "averaged_profile_residual": 0.15719107903286758
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r01",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.0080254381028753,
+          "amplitude_SD": 0.09768083793053903,
+          "instantaneous_residual": 2.0756955627024865,
+          "averaged_profile_residual": 0.17114029845771264
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9867211636282408,
+          "amplitude_SD": 0.09141827482953509,
+          "instantaneous_residual": 2.100165141259254,
+          "averaged_profile_residual": 0.16891495407505358
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r02",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9856300806328602,
+          "amplitude_SD": 0.09661890220065612,
+          "instantaneous_residual": 2.0808430662028328,
+          "averaged_profile_residual": 0.16089065385390672
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9990442153703135,
+          "amplitude_SD": 0.09694169384806563,
+          "instantaneous_residual": 2.0885658965587584,
+          "averaged_profile_residual": 0.14830945975020854
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r03",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.0018857185837298,
+          "amplitude_SD": 0.09489285695011394,
+          "instantaneous_residual": 2.076909593917077,
+          "averaged_profile_residual": 0.15670115009995436
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9950583970222122,
+          "amplitude_SD": 0.09948736924798066,
+          "instantaneous_residual": 2.0953782720492535,
+          "averaged_profile_residual": 0.16351419525559463
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r04",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9933287077867327,
+          "amplitude_SD": 0.09868647751511327,
+          "instantaneous_residual": 2.0835577220041075,
+          "averaged_profile_residual": 0.16416655482618775
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.0069769368070076,
+          "amplitude_SD": 0.09078744898984428,
+          "instantaneous_residual": 2.0897335910463464,
+          "averaged_profile_residual": 0.16510397730320503
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r05",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9866576555299504,
+          "amplitude_SD": 0.09116973076467946,
+          "instantaneous_residual": 2.081140064949372,
+          "averaged_profile_residual": 0.1621609337606707
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.004521531490798,
+          "amplitude_SD": 0.09648077005662928,
+          "instantaneous_residual": 2.0948904965638038,
+          "averaged_profile_residual": 0.15744170043426797
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r06",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9901011061525867,
+          "amplitude_SD": 0.09283306903162468,
+          "instantaneous_residual": 2.079870694614039,
+          "averaged_profile_residual": 0.16609933269047314
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9931054822684762,
+          "amplitude_SD": 0.09619075379173089,
+          "instantaneous_residual": 2.1015953809478267,
+          "averaged_profile_residual": 0.1617136976904135
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r07",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.00623089406802,
+          "amplitude_SD": 0.09299415312040143,
+          "instantaneous_residual": 2.0826457169175216,
+          "averaged_profile_residual": 0.15514937283425143
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.0047286150485242,
+          "amplitude_SD": 0.0991410071905819,
+          "instantaneous_residual": 2.095031296194625,
+          "averaged_profile_residual": 0.16700521411594876
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r08",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9993818777963541,
+          "amplitude_SD": 0.09709090895863816,
+          "instantaneous_residual": 2.0810212891378215,
+          "averaged_profile_residual": 0.16489109713907416
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9988207304567136,
+          "amplitude_SD": 0.10146771181781168,
+          "instantaneous_residual": 2.0996887180866164,
+          "averaged_profile_residual": 0.1669699843792723
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r09",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.002573357923714,
+          "amplitude_SD": 0.08589891947158809,
+          "instantaneous_residual": 2.0720489394471486,
+          "averaged_profile_residual": 0.16826005878213574
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.0001135460401205,
+          "amplitude_SD": 0.0976867742057938,
+          "instantaneous_residual": 2.0944143688657837,
+          "averaged_profile_residual": 0.16601711558196972
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r10",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.0017439836685527,
+          "amplitude_SD": 0.09240600314949915,
+          "instantaneous_residual": 2.085687034460543,
+          "averaged_profile_residual": 0.16816245100617722
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.0134418757557644,
+          "amplitude_SD": 0.10461171155128231,
+          "instantaneous_residual": 2.0964794651424388,
+          "averaged_profile_residual": 0.16092531084509187
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r11",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9925803426217237,
+          "amplitude_SD": 0.0996440693016611,
+          "instantaneous_residual": 2.082615312106611,
+          "averaged_profile_residual": 0.17332815959675774
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.992970604426176,
+          "amplitude_SD": 0.094935231132588,
+          "instantaneous_residual": 2.0924523189398925,
+          "averaged_profile_residual": 0.1588805551882612
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r12",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.013850251237385,
+          "amplitude_SD": 0.09569147499849992,
+          "instantaneous_residual": 2.0870749650433087,
+          "averaged_profile_residual": 0.1615543067153975
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.005262141758861,
+          "amplitude_SD": 0.10186562951253926,
+          "instantaneous_residual": 2.0975625571366687,
+          "averaged_profile_residual": 0.16920704416361712
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r13",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.999591365256553,
+          "amplitude_SD": 0.09514723742161428,
+          "instantaneous_residual": 2.085609203960617,
+          "averaged_profile_residual": 0.17730418463785375
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9952435332348546,
+          "amplitude_SD": 0.09707771618662801,
+          "instantaneous_residual": 2.0961911065793415,
+          "averaged_profile_residual": 0.15756975232878281
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r14",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.0041469906351643,
+          "amplitude_SD": 0.0943521465818895,
+          "instantaneous_residual": 2.0802140897797483,
+          "averaged_profile_residual": 0.15845344534251748
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.0028103795083159,
+          "amplitude_SD": 0.08876339152930242,
+          "instantaneous_residual": 2.0950655383948646,
+          "averaged_profile_residual": 0.16442025954190176
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r15",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.0083230397302707,
+          "amplitude_SD": 0.08935184311568659,
+          "instantaneous_residual": 2.080546483930453,
+          "averaged_profile_residual": 0.1597413425461787
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9965328837302565,
+          "amplitude_SD": 0.09266999357540169,
+          "instantaneous_residual": 2.0899203804768445,
+          "averaged_profile_residual": 0.16769954764256542
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r16",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.0145154739567155,
+          "amplitude_SD": 0.09301441301203532,
+          "instantaneous_residual": 2.0852924170901463,
+          "averaged_profile_residual": 0.16502549124057062
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.021139823243006,
+          "amplitude_SD": 0.0943242180487392,
+          "instantaneous_residual": 2.0932842627001884,
+          "averaged_profile_residual": 0.1670416311133355
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r17",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9942027922624718,
+          "amplitude_SD": 0.10097095971519753,
+          "instantaneous_residual": 2.0792300394080443,
+          "averaged_profile_residual": 0.15770417302207157
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9758836081716392,
+          "amplitude_SD": 0.09660134372599798,
+          "instantaneous_residual": 2.1024464496338835,
+          "averaged_profile_residual": 0.16215025487768286
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r18",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.0128427798298032,
+          "amplitude_SD": 0.09283420101461709,
+          "instantaneous_residual": 2.076246486368629,
+          "averaged_profile_residual": 0.1710299070068221
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.0040376024106843,
+          "amplitude_SD": 0.09121106184239237,
+          "instantaneous_residual": 2.0935069579258268,
+          "averaged_profile_residual": 0.16267594882392947
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r19",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9899097258630127,
+          "amplitude_SD": 0.09262998286772786,
+          "instantaneous_residual": 2.090991965090163,
+          "averaged_profile_residual": 0.16336497410212297
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9967759245278746,
+          "amplitude_SD": 0.09135424612846113,
+          "instantaneous_residual": 2.0895096852151203,
+          "averaged_profile_residual": 0.16127987866228258
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r20",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9972209156983208,
+          "amplitude_SD": 0.08565640624977354,
+          "instantaneous_residual": 2.086818081114126,
+          "averaged_profile_residual": 0.15732049057602188
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.003649951076444,
+          "amplitude_SD": 0.09575089619797572,
+          "instantaneous_residual": 2.0915804286030664,
+          "averaged_profile_residual": 0.15613760869440818
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r21",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.0044902889628866,
+          "amplitude_SD": 0.08744037970537062,
+          "instantaneous_residual": 2.0900992001476193,
+          "averaged_profile_residual": 0.1632633592272018
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.998186553475179,
+          "amplitude_SD": 0.09549155709769225,
+          "instantaneous_residual": 2.100302179951801,
+          "averaged_profile_residual": 0.16145638839765974
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r22",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9846183782806032,
+          "amplitude_SD": 0.09456757535977013,
+          "instantaneous_residual": 2.0896032844297707,
+          "averaged_profile_residual": 0.163996470585749
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.0095834848331395,
+          "amplitude_SD": 0.09104302187364041,
+          "instantaneous_residual": 2.0913531926080577,
+          "averaged_profile_residual": 0.15600835880251282
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r23",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.0002610015622717,
+          "amplitude_SD": 0.09519158419206257,
+          "instantaneous_residual": 2.084552745501702,
+          "averaged_profile_residual": 0.1708850150652178
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9901498188783996,
+          "amplitude_SD": 0.0928390162050488,
+          "instantaneous_residual": 2.098559431549948,
+          "averaged_profile_residual": 0.1653194165224839
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r24",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9895636757113189,
+          "amplitude_SD": 0.09531134887042736,
+          "instantaneous_residual": 2.080942338565208,
+          "averaged_profile_residual": 0.16711640812630355
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.0008412915258962,
+          "amplitude_SD": 0.10598654958172289,
+          "instantaneous_residual": 2.1024243741043906,
+          "averaged_profile_residual": 0.16071932593244617
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r25",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 1.008859808696001,
+          "amplitude_SD": 0.09787088145291575,
+          "instantaneous_residual": 2.0939739480095394,
+          "averaged_profile_residual": 0.16067286301475264
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9932412522775192,
+          "amplitude_SD": 0.08770823669011721,
+          "instantaneous_residual": 2.0950263762557233,
+          "averaged_profile_residual": 0.165195678263451
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r26",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.997352753318967,
+          "amplitude_SD": 0.09964899748829832,
+          "instantaneous_residual": 2.080195703762995,
+          "averaged_profile_residual": 0.1609709332532518
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9878890775798486,
+          "amplitude_SD": 0.09032786184379447,
+          "instantaneous_residual": 2.09454441117488,
+          "averaged_profile_residual": 0.17552967402842437
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r27",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9965035175388111,
+          "amplitude_SD": 0.09971472210558151,
+          "instantaneous_residual": 2.0916807853065267,
+          "averaged_profile_residual": 0.16133521122184677
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9958090181984562,
+          "amplitude_SD": 0.10479038116263688,
+          "instantaneous_residual": 2.0945827706134565,
+          "averaged_profile_residual": 0.16018791326980206
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r28",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9747579623464523,
+          "amplitude_SD": 0.09864478757419494,
+          "instantaneous_residual": 2.091651819781189,
+          "averaged_profile_residual": 0.162270884249291
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 0.9920085905548555,
+          "amplitude_SD": 0.10036124202078513,
+          "instantaneous_residual": 2.0886036295919723,
+          "averaged_profile_residual": 0.1568102116987327
+        }
+      ]
+    },
+    {
+      "id": "main_Omega10000_d0_prepared_r29",
+      "omega": 10000,
+      "X_persistent": true,
+      "strict": true,
+      "blocks": [
+        {
+          "name": "initial",
+          "valid": 200,
+          "total": 200,
+          "amplitude": 0.9872568196903209,
+          "amplitude_SD": 0.10073028319910439,
+          "instantaneous_residual": 2.0814423001231153,
+          "averaged_profile_residual": 0.1622223041935121
+        },
+        {
+          "name": "final",
+          "valid": 201,
+          "total": 201,
+          "amplitude": 1.0124158996979187,
+          "amplitude_SD": 0.10733389219124129,
+          "instantaneous_residual": 2.094426577424966,
+          "averaged_profile_residual": 0.17481471808971089
+        }
+      ]
+    }
+  ],
+  "cohort": [
+    {
+      "omega": 3000,
+      "block": "initial",
+      "metrics": {
+        "amplitude": {
+          "n": 30,
+          "median": 0.9959181456026094,
+          "min": 0.9247040231595727,
+          "max": 1.0263543889189002
+        },
+        "amplitude_SD": {
+          "n": 30,
+          "median": 0.17132104578874258,
+          "min": 0.1591499288779868,
+          "max": 0.19771032882734507
+        },
+        "instantaneous_residual": {
+          "n": 30,
+          "median": 3.8059272938823137,
+          "min": 3.793394998534566,
+          "max": 3.8164998354989605
+        },
+        "averaged_profile_residual": {
+          "n": 30,
+          "median": 0.2999488971718607,
+          "min": 0.27781270137620717,
+          "max": 0.31459290956269603
+        }
+      },
+      "total_valid_frames": 6000,
+      "total_frames": 6000
+    },
+    {
+      "omega": 3000,
+      "block": "final",
+      "metrics": {
+        "amplitude": {
+          "n": 29,
+          "median": 0.9986561836620007,
+          "min": 0.9379460906867307,
+          "max": 1.048173360960458
+        },
+        "amplitude_SD": {
+          "n": 29,
+          "median": 0.17742378686581975,
+          "min": 0.15354594844357505,
+          "max": 0.2112919837052655
+        },
+        "instantaneous_residual": {
+          "n": 29,
+          "median": 3.822205200784891,
+          "min": 3.8020205492590464,
+          "max": 3.8405821524411703
+        },
+        "averaged_profile_residual": {
+          "n": 29,
+          "median": 0.2996675786233296,
+          "min": 0.28255878296716824,
+          "max": 0.32450686488578934
+        }
+      },
+      "total_valid_frames": 5823,
+      "total_frames": 6030
+    },
+    {
+      "omega": 10000,
+      "block": "initial",
+      "metrics": {
+        "amplitude": {
+          "n": 30,
+          "median": 0.9994866215264535,
+          "min": 0.9747579623464523,
+          "max": 1.0145154739567155
+        },
+        "amplitude_SD": {
+          "n": 30,
+          "median": 0.09502004718586411,
+          "min": 0.08565640624977354,
+          "max": 0.10097095971519753
+        },
+        "instantaneous_residual": {
+          "n": 30,
+          "median": 2.0826305145120663,
+          "min": 2.0720489394471486,
+          "max": 2.0939739480095394
+        },
+        "averaged_profile_residual": {
+          "n": 30,
+          "median": 0.1633141666646624,
+          "min": 0.15514937283425143,
+          "max": 0.17730418463785375
+        }
+      },
+      "total_valid_frames": 6000,
+      "total_frames": 6000
+    },
+    {
+      "omega": 10000,
+      "block": "final",
+      "metrics": {
+        "amplitude": {
+          "n": 30,
+          "median": 0.9989324729135136,
+          "min": 0.9758836081716392,
+          "max": 1.021139823243006
+        },
+        "amplitude_SD": {
+          "n": 30,
+          "median": 0.09633576192418009,
+          "min": 0.08770823669011721,
+          "max": 0.10733389219124129
+        },
+        "instantaneous_residual": {
+          "n": 30,
+          "median": 2.09473663358863,
+          "min": 2.086959682779725,
+          "max": 2.1024464496338835
+        },
+        "averaged_profile_residual": {
+          "n": 30,
+          "median": 0.16241310185080615,
+          "min": 0.14830945975020854,
+          "max": 0.17552967402842437
+        }
+      },
+      "total_valid_frames": 6030,
+      "total_frames": 6030
+    }
+  ],
+  "counts_detector": {
+    "after": 27,
+    "together": 2
+  },
+  "counts_half_amplitude": {
+    "together": 22,
+    "before": 6,
+    "after": 1
+  },
+  "loss_curve": {
+    "relative_time": [
+      -30.0,
+      -29.5,
+      -29.0,
+      -28.5,
+      -28.0,
+      -27.5,
+      -27.0,
+      -26.5,
+      -26.0,
+      -25.5,
+      -25.0,
+      -24.5,
+      -24.0,
+      -23.5,
+      -23.0,
+      -22.5,
+      -22.0,
+      -21.5,
+      -21.0,
+      -20.5,
+      -20.0,
+      -19.5,
+      -19.0,
+      -18.5,
+      -18.0,
+      -17.5,
+      -17.0,
+      -16.5,
+      -16.0,
+      -15.5,
+      -15.0,
+      -14.5,
+      -14.0,
+      -13.5,
+      -13.0,
+      -12.5,
+      -12.0,
+      -11.5,
+      -11.0,
+      -10.5,
+      -10.0,
+      -9.5,
+      -9.0,
+      -8.5,
+      -8.0,
+      -7.5,
+      -7.0,
+      -6.5,
+      -6.0,
+      -5.5,
+      -5.0,
+      -4.5,
+      -4.0,
+      -3.5,
+      -3.0,
+      -2.5,
+      -2.0,
+      -1.5,
+      -1.0,
+      -0.5,
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0,
+      3.5,
+      4.0,
+      4.5,
+      5.0,
+      5.5,
+      6.0,
+      6.5,
+      7.0,
+      7.5,
+      8.0,
+      8.5,
+      9.0,
+      9.5,
+      10.0,
+      10.5,
+      11.0,
+      11.5,
+      12.0,
+      12.5,
+      13.0,
+      13.5,
+      14.0,
+      14.5,
+      15.0,
+      15.5,
+      16.0,
+      16.5,
+      17.0,
+      17.5,
+      18.0,
+      18.5,
+      19.0,
+      19.5,
+      20.0,
+      20.5,
+      21.0,
+      21.5,
+      22.0,
+      22.5,
+      23.0,
+      23.5,
+      24.0,
+      24.5,
+      25.0,
+      25.5,
+      26.0,
+      26.5,
+      27.0,
+      27.5,
+      28.0,
+      28.5,
+      29.0,
+      29.5,
+      30.0
+    ],
+    "mean": [
+      [
+        1.0136409302431484,
+        0.9598042250166869
+      ],
+      [
+        0.9651125467791334,
+        0.9649177779290419
+      ],
+      [
+        1.0196852982279752,
+        0.964345937623263
+      ],
+      [
+        0.9641274243776533,
+        0.9690499396417718
+      ],
+      [
+        0.9933609965635809,
+        0.975178246241134
+      ],
+      [
+        1.0735140470945839,
+        0.9746901708918554
+      ],
+      [
+        0.9161227479407171,
+        0.9692638090419111
+      ],
+      [
+        0.9253869029291556,
+        0.9713358379094228
+      ],
+      [
+        0.9753449003466382,
+        0.9717090273571561
+      ],
+      [
+        1.017063874594701,
+        0.9677296833561417
+      ],
+      [
+        0.9463126858451952,
+        0.963931894976117
+      ],
+      [
+        0.969185878279491,
+        0.960192632357818
+      ],
+      [
+        0.8617279806135474,
+        0.9594571815481886
+      ],
+      [
+        0.900245956073412,
+        0.958167039641272
+      ],
+      [
+        0.8735696920367007,
+        0.9487378749476896
+      ],
+      [
+        0.8498139697811059,
+        0.9397384205153178
+      ],
+      [
+        0.967193390100897,
+        0.9412197399867606
+      ],
+      [
+        0.8435554174611429,
+        0.9439726317131949
+      ],
+      [
+        0.9334036309563404,
+        0.935732438607461
+      ],
+      [
+        0.9583009474196088,
+        0.9310994637183446
+      ],
+      [
+        0.8640130056667611,
+        0.9299726262600778
+      ],
+      [
+        0.9351328684012002,
+        0.9190832753173804
+      ],
+      [
+        1.0504056977774137,
+        0.9147828684808833
+      ],
+      [
+        0.8826801140225322,
+        0.9094586767252284
+      ],
+      [
+        0.9095436912906812,
+        0.9032548446544472
+      ],
+      [
+        0.9454484259367087,
+        0.9006644757438641
+      ],
+      [
+        0.9324465654843025,
+        0.901621513740453
+      ],
+      [
+        0.8766278257624494,
+        0.8919697619396065
+      ],
+      [
+        0.8065483916190269,
+        0.8827974731681778
+      ],
+      [
+        0.8390145179946225,
+        0.8759606862735825
+      ],
+      [
+        0.8105573396400401,
+        0.8662704359255202
+      ],
+      [
+        0.8028477185118524,
+        0.8653072349785396
+      ],
+      [
+        0.8968181834680647,
+        0.8618613582828893
+      ],
+      [
+        0.8464401142296298,
+        0.8566889106623095
+      ],
+      [
+        0.7952683387861715,
+        0.8541016234633025
+      ],
+      [
+        0.8552904220520936,
+        0.8459689713217118
+      ],
+      [
+        0.8239933182599816,
+        0.8448608204247127
+      ],
+      [
+        0.8748051016427245,
+        0.8408824695830004
+      ],
+      [
+        0.8255465363084667,
+        0.8405913273593422
+      ],
+      [
+        0.8016849501993147,
+        0.8304420419014176
+      ],
+      [
+        0.753534707067243,
+        0.8321948871024891
+      ],
+      [
+        0.726927991731986,
+        0.8257486418064064
+      ],
+      [
+        0.7535877307542257,
+        0.810658703029978
+      ],
+      [
+        0.8021879800267561,
+        0.8056275625146531
+      ],
+      [
+        0.7751291823250513,
+        0.8021886129363284
+      ],
+      [
+        0.7475596902874805,
+        0.7926362804827585
+      ],
+      [
+        0.7701471186921514,
+        0.7778527996555595
+      ],
+      [
+        0.7532236496420291,
+        0.7683050163329458
+      ],
+      [
+        0.7578869892735054,
+        0.7624462152136277
+      ],
+      [
+        0.7121817361607644,
+        0.7529288664157502
+      ],
+      [
+        0.7581135973580247,
+        0.7429552533200942
+      ],
+      [
+        0.7369563107007158,
+        0.7306431356346221
+      ],
+      [
+        0.7084100714382893,
+        0.7206599182718002
+      ],
+      [
+        0.7039456915696318,
+        0.7094300870692897
+      ],
+      [
+        0.6159213391554391,
+        0.6970349277155338
+      ],
+      [
+        0.6215566376926688,
+        0.676062795750278
+      ],
+      [
+        0.6104931679266303,
+        0.6564211019041273
+      ],
+      [
+        0.4799330339183625,
+        0.6417924926478775
+      ],
+      [
+        0.6207929752944413,
+        0.6181147632306676
+      ],
+      [
+        0.5178198559263859,
+        0.5928269189850973
+      ],
+      [
+        0.5948293597984008,
+        0.5583872518740357
+      ],
+      [
+        0.5295182215352222,
+        0.5147592983269591
+      ],
+      [
+        0.39060708960752744,
+        0.4834826979972785
+      ],
+      [
+        0.4103390389264728,
+        0.4477201645756399
+      ],
+      [
+        0.3467608641336431,
+        0.4132836822642525
+      ],
+      [
+        0.3946556037906376,
+        0.38201303210334
+      ],
+      [
+        0.3555560907874392,
+        0.34755967397928517
+      ],
+      [
+        0.37678781369438574,
+        0.3157564655911481
+      ],
+      [
+        0.301272550321668,
+        0.2855277069363557
+      ],
+      [
+        0.20740035023824988,
+        0.2527240344909086
+      ],
+      [
+        0.20483901528323284,
+        0.23241872216635318
+      ],
+      [
+        0.14280371199245404,
+        0.2129353461642454
+      ],
+      [
+        0.12304248395297081,
+        0.19093932804733518
+      ],
+      [
+        0.11479610486427197,
+        0.17287598504969165
+      ],
+      [
+        0.06509545738820055,
+        0.15460483890650895
+      ],
+      [
+        0.21467150551683403,
+        0.13773380089210016
+      ],
+      [
+        0.16067501641355908,
+        0.11592607355259789
+      ],
+      [
+        0.2056007197376491,
+        0.09977571497015628
+      ],
+      [
+        0.135190141005653,
+        0.09219636907894432
+      ],
+      [
+        0.18604671798916067,
+        0.07995773719156031
+      ],
+      [
+        0.07241997281057952,
+        0.07572585565969311
+      ],
+      [
+        0.1570262910037279,
+        0.06423817884279884
+      ],
+      [
+        0.06179072366283791,
+        0.06342713489708675
+      ],
+      [
+        0.1085011299637812,
+        0.06322816172993306
+      ],
+      [
+        0.030054838594291994,
+        0.0528460556058369
+      ],
+      [
+        -0.01599106909963141,
+        0.041032064972280034
+      ],
+      [
+        0.026811653627173606,
+        0.03914648508092534
+      ],
+      [
+        0.1068624260960934,
+        0.040118677338482345
+      ],
+      [
+        -0.035325910844777694,
+        0.02779516860032556
+      ],
+      [
+        0.06522881322856267,
+        0.025309259766485376
+      ],
+      [
+        0.045110071039330395,
+        0.029135630798576992
+      ],
+      [
+        0.023582413030526106,
+        0.02854227783443381
+      ],
+      [
+        0.02477007078258896,
+        0.02450683885160703
+      ],
+      [
+        -0.05623485293891656,
+        0.023594539065341584
+      ],
+      [
+        0.018693882557328293,
+        0.023107319500980095
+      ],
+      [
+        -0.062119864678831516,
+        0.0227722268687615
+      ],
+      [
+        -0.03524092587548013,
+        0.013988340939633278
+      ],
+      [
+        0.0772367886730482,
+        0.021348496607803653
+      ],
+      [
+        -0.008221714620054978,
+        0.026841756202058913
+      ],
+      [
+        0.11814662991251075,
+        0.01886888389589345
+      ],
+      [
+        -0.07254880230671314,
+        0.011500637484426132
+      ],
+      [
+        0.06561045963746684,
+        0.008820574318498585
+      ],
+      [
+        -0.05825386905849802,
+        0.01058033077108917
+      ],
+      [
+        -0.10860943777374732,
+        0.013742801021238961
+      ],
+      [
+        -0.07419774153300587,
+        0.014621793164906834
+      ],
+      [
+        -0.016601870267407177,
+        0.0135426822768532
+      ],
+      [
+        -0.0007545962250718101,
+        0.0070935432098614285
+      ],
+      [
+        -0.10713715786924223,
+        0.004686912221513532
+      ],
+      [
+        0.05391447271467956,
+        0.004640572841963202
+      ],
+      [
+        -0.038337647321805654,
+        0.002055861084152822
+      ],
+      [
+        0.00415696147830656,
+        0.005285257464773801
+      ],
+      [
+        0.17484416544807047,
+        0.007067287739565261
+      ],
+      [
+        0.030257582266732887,
+        3.058411476523466e-05
+      ],
+      [
+        0.16548354339286978,
+        -0.006901520754398745
+      ],
+      [
+        0.02013955784392369,
+        -0.006486125896350966
+      ],
+      [
+        -0.042961872821689125,
+        -0.005149332690275633
+      ],
+      [
+        0.034915423236599206,
+        -0.0014282378429693115
+      ],
+      [
+        0.0068573210200664,
+        -0.0025809419160806564
+      ],
+      [
+        -0.009446597446026862,
+        -0.006704032484020292
+      ],
+      [
+        -0.040505810401968316,
+        -0.008385483187266833
+      ],
+      [
+        0.04703369641728002,
+        -0.005193140244873978
+      ]
+    ],
+    "contributors": [
+      26,
+      27,
+      28,
+      28,
+      28,
+      28,
+      28,
+      28,
+      28,
+      28,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29
+    ]
+  },
+  "posthoc_exploratory": true,
+  "no_new_G_gate": true
+}
