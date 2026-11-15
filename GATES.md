@@ -2759,3 +2759,7 @@ PI approves MG185 specification and100worker-hour cap. Freeze results/MG185_Phas
 
 ## MG185 continuation 1 — PI authorized
 Infrastructure-only storage-race fix and checkpoint continuation approved by PI. Preserve original failures and36complete runs; resume8prefixes plus136original pending jobs. Same seeds/criteria/denominators and remaining original budget. See spec/MG185_continuation_1.md; no scientific rescore or closure.
+
+
+## MG185 completed — PI closure pending
+48qualification+180maintrajectories complete,zero clips. HistoricalX counts0,0,1,29,30/30 atOmega100,300,1000,3000,10000;strict0,0,1,28,30. DirectGsupports highpopulation finitehorizon visibility; no fullGXYbinarypass/universalpopulationthreshold.18000segmentsverified and separate rawGXYprojections checked.49.4112workerh,totalbudgetmet;infrastructuredeviation/prefixcontinuation preserved. Report results/MG185_Phase2_G/MG185_results.md. No newrun or oldverdict change;PIclosurepending.

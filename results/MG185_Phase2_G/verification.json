@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "jobs": 180,
+  "segments": 18000,
+  "raw_snapshots": 360180,
+  "maximum_fixed_projection_error": 4.618527782440651e-14,
+  "aligned_sentinel_checks": 277,
+  "qualification_recomputed": true,
+  "manifest_sha256": "c4a5dae28e4046caa539026653081a6899cdffe1b8ae465a830d0d7c13984124",
+  "raw_bytes_before_analysis_manifest": 1274598987,
+  "elapsed_seconds": 216.62762240000302,
+  "external_replication": false,
+  "shared_dependencies": [
+    "NumPy/SciPy",
+    "reference",
+    "legacy X detector outputs"
+  ],
+  "limits": "G projections and interval calculations independently recomputed; X tracking classifications checked against saved legacy outputs, not an independent detector. No new simulations."
+}

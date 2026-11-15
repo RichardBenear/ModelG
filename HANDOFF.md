@@ -1,3 +1,13 @@
+# MG185 complete — results ready for PI sign-off
+
+All 48 qualification jobs and 180 main trajectories completed with zero clips. Joined 36 original completions and 144 continuation completions by registered ID. Initial failures remain recorded. Historical X persistence at Ω=100, 300, 1000, 3000, 10000: 0, 0, 1, 29, 30 out of 30. Strict sampled-track counts: 0, 0, 1, 28, 30. At Ω=3000, r10 lost its track at 99.5; r22 lost uniqueness for the final six observations at 997.5–1000, despite historical eligibility.
+
+Final-block aligned G/reference: 0.996207 at Ω=3000 (29 contributing runs, 5823 valid frames); 0.999312 at Ω=10000 (all 30 runs, 6030 frames). Fixed-frame prepared-minus-control G intervals exclude zero only at the two highest populations. These support finite-horizon population-dependent G visibility, not a full GXY binary persistence claim. All six Ω=100 controls had detector-defined birth episodes; none at higher populations.
+
+Report: results/MG185_Phase2_G/MG185_results.md. Compact decisions: decision_exports.json; checks: verification.json. All 18000 segments / 360180 snapshots checked; 277 aligned sentinels; fixed GXY projection maximum error 4.62e-14. Qualification intervals recomputed. Same-author check shares reference and X detector; no external replication. Execution cost 49.4112 worker-hours including the interrupted attempt, within cap; active phase wall time 6.23173 hours, excluding restart gap. Full raw about 1.2746 GB before the local analysis manifest, local only.
+
+PI closure pending. Recommend saved-history per-run G amplitude/shape uncertainty analysis, using Ω=10000 as working population and Ω=3000 as transition comparison, before proposing individual G acceptance criteria. No new simulations, thresholds or historical verdict changes.
+
 # MG185 continuation RUNNING — eight resumed workers advancing
 
 Fix/continuation73a469a published before resumed draws. Hidden controllerPID21216; results/MG185_Phase2_G/continuation_launch.json. Eight active runs verified advancing beyond original checkpoints: fourOmega100controls900->910, threeOmega300prepared230->240, one220->230;zero clips/no stderr/stop.36originalcompleted untouched.144outstanding jobs in continuation plan;136notstarted queued. Prior charged runtime counts against original cap. Read local_raw/MG185_Phase2_G/continuation/ledger.json and progress files; do not rerun launch/register. Final full-study analysis must join original36complete+continuation144 by jobID, retain initial failure history. Raw local only; no new scientific verdict or closure.
