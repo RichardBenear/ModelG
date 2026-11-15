@@ -2767,3 +2767,7 @@ Infrastructure-only storage-race fix and checkpoint continuation approved by PI.
 
 ## MG187 bounded saved-data audit complete — PI closure pending
 One pass only,90prepared histories, no simulations or instrument refinement.29Omega1000losses:matchedG/Xhalf-amplitudefade22together/6Gbefore/1after;medianGlead0.5units. No consistent earlyGweaklink established. HigherpopulationGaveragedamplitude/shaperesidual stable withnoise limitations. See results/MG187_G_loss_audit/MG187_results.md. No newGpasscriterion,MG185rescore or automaticfollowup.
+
+
+## MG188 lifetime analysis complete — PI closure pending
+All150prepared histories, original-track loss, censor980. Pre-fit source/spec3b32715. Primary multiplier9.37471 per+1000Omega, conditional95%6.22612–14.9283; prespecified diagnostics compatible. Noevent10000 meanunmeasured; extrapolation not measured lifetime. Secondary solitary endpoint factor16.6382 disclosed. Report results/MG188_lifetime/MG188_results.md. No new simulations or prior rescore.

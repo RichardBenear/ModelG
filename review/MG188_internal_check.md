@@ -1,0 +1,5 @@
+# MG188 internal check
+
+Published specification/source3b32715 fixed primary exponential-population model, power and common-shape Weibull challengers before computation. Prior counts known: exploratory, not blinded validation. All150prepared trajectories, original loss, common980censor avoidsconfirmation boundary. Likelihood includescensored exposure; no survivor lifetime imputation or population exclusions. Summary event times independently reread. KM integral equals capped-time mean; profile matches general optimizer; aggregate likelihood recomputed separately; zeroevent fixture/bound pass. Sameauthor/sharedlegacydetector/SciPy,notexternalreplication.
+
+Primaryfactor9.37471CI6.22612–14.9283 conditional onmodel. No decisive challenger or eventcount mismatch in prespecified screens; no fourthfit. Oneevent3000 weakly measuresmean; zeroevent10000 cannotmeasuremean. Vast extrapolation there explicitly not observed evidence. Secondary solitaryendpointfactor16.6382 distinct; no newGshape verdict. PIclosurepending,noautomaticfollowup.
