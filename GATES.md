@@ -2751,3 +2751,7 @@ PI requestsnecessarytests. spec/MG184_phase2_development.md/source-inputhashplan
 
 ## MG184 development / MG185 draft
 MG184 preparation and separate same-author checks passed; numerical gate fixtures passed. MG185 concrete population ladder and budget remain DRAFT awaiting PI approval; no scientific production. Readiness: results/MG12H3/phase2_G_development/MG184_Phase2_G_readiness.md. No G persistence verdict or prior gate closure. MG186 bridge separate.
+
+
+## MG185 PI approved 2026-11-15
+PI approves MG185 specification and100worker-hour cap. Freeze results/MG185_Phase2_G/plan.json before publication/launch. Numerical qualification first; automatic main only on both prespecified G comparisons passing. No retries/replacements; raw local only. MG186 not included.

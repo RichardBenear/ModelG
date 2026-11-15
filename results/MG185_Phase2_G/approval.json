@@ -1,0 +1,16 @@
+{
+  "PI": "Richard Benear",
+  "instruction": "I approve. Go ahead and launch the tests.",
+  "date": "2026-11-15",
+  "prepared_per_omega": 30,
+  "controls_per_omega": 6,
+  "duration": 1000,
+  "total_worker_cap": 360000,
+  "qualification_jobs": 48,
+  "qualification_worker_cap": 28800,
+  "main_worker_cap": 331200,
+  "workers": 8,
+  "automatic_main_only_if_qualification_passes": true,
+  "raw_local_only": true,
+  "specification": "spec/MG185_phase2_G_draft.md"
+}
