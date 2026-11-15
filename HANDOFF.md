@@ -1,3 +1,7 @@
+# MG185 RUNNING — eight workers verified
+
+Approved/frozen registration1af6bff published before draws. Hidden controller PID24708; launch record results/MG185_Phase2_G/controller_launch.json. Qualification ledger has eight active jobs; all eight first checkpoints reached modeltime10/100 with zero clips, no controller error/stop. 40 qualification jobs queued. Main180jobs automatic only on both prespecified G comparisons passing. Raw local_raw/MG185_Phase2_G; do NOT rerun register/run or replace trajectories. Check qualification_attempt.json, qualification.json, main_attempt.json and local ledgers for current status. Point forecast~6.5h total at8workers, cap100workerh unchanged. Report only after separate recomputation; no G persistence conclusion yet.
+
 # MG185 approved — registration and launch
 
 PI approved concrete MG185 criteria/budget on 2026-11-15: "I approve. Go ahead and launch the tests." Approval recorded results/MG185_Phase2_G/approval.json; source/input/seed plan frozen there before launch and publication. 48 numerical qualification jobs first, then 180 main jobs only if both G equivalence checks pass. Caps unchanged: total100workerh,8workers,raw10GBlocalonly. Do not rerun registration or replace jobs. Driver src/run_mg185_phase2_G.py; raw/ledger local_raw/MG185_Phase2_G/qualification then main. Check attempt files and controller launch record for actual runtime status. No closure or G persistence claim.
