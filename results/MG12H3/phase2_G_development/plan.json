@@ -1,0 +1,22 @@
+{
+  "source": {
+    "src/mg184_phase2.py": "00b5a7eefc608c884d4af0c0ee54df5ea6da3bd21c901f7647d443395b406f80",
+    "src/mg184_open_bridge.py": "a162063d02e86ab82ee704d384e8fb096debcb6d744a1c7924b818fe4f3584b1",
+    "src/prepare_mg184.py": "86b0e3b7a26f252c92d0554f68fa24028fa808c678151dc0430a5a2a0d197615",
+    "src/lattice.py": "11aa7c565dba5e8449ab727075fbc86718634f8d5ad4cbeafef89281f2ae6f04",
+    "src/measure.py": "342399a9ca0bd61c57712558b7bc83ff554784a03f0dadc7e74e8353968a4379",
+    "src/runner.py": "15d583bdebb03cc2cd7029ea31487d8ca9f99770abf2939d8717569f0ffe84ed",
+    "spec/MG184_phase2_development.md": "db14146152b56c751d10e90f5997f364e5593402d29a2faf7fb5f4514cbead22"
+  },
+  "reference_sha256": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b",
+  "cap_seconds": 240,
+  "workers": 1,
+  "benchmark_seeds": {
+    "100": 18400,
+    "300": 18401,
+    "1000": 18402,
+    "3000": 18403,
+    "10000": 18404
+  },
+  "production_started": false
+}
