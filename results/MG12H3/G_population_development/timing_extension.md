@@ -1,0 +1,3 @@
+# MG182 development timing extension
+
+After completing the registered algebra/continuum/microthroughput checks, one actual proposed top-Omega common tick is timed before production budgeting: Omega160,delta.0001/.00002,T.0001,seed18206,150secondsoneworker. No scientific production or signal/noise assessment. Existingfrozenpair kernel unchanged; computationalmax_events2million because initial total intensity predicts about1.1millionevents inthatinterval. Storeaggregatehistogram/endpoints/RNG locally,independentlyreconstructbothmarginals andtokenconservation;no fullmillion-eventtrace. Previousmicrotracechecks remain. Newsource/hashplan frozen/published beforedraw. Originalcompletedpreparationattempt remainsunchanged.
