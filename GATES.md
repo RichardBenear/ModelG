@@ -2747,3 +2747,7 @@ MG183 pilot/report complete,PIclosurepending. All24jobs COMPLETE,noreplacement,9
 ## MG184 Phase2 long-horizon G study development - registered preparation
 
 PI requestsnecessarytests. spec/MG184_phase2_development.md/source-inputhashplanfreeze:explicitT1000wrapper/late-loss/missingG/translation/tailfixtures,open-boundarybridgegeneratormatching,5shortPhase2timingprobes/JITcap240soneworker,seeds18400. ProposedMG185150prepared+30unpreparedT1000,allattemptsretained,fixedlegacykernel/explicitGscores,noX-onlyGXYclaim. Productionbudget/numericalsubsets/bridgeensembletestsneedreadinessapproval;no scientificlongrunstarted. Fullrawlocal/publiccompactonly.
+
+
+## MG184 development / MG185 draft
+MG184 preparation and separate same-author checks passed; numerical gate fixtures passed. MG185 concrete population ladder and budget remain DRAFT awaiting PI approval; no scientific production. Readiness: results/MG12H3/phase2_G_development/MG184_Phase2_G_readiness.md. No G persistence verdict or prior gate closure. MG186 bridge separate.

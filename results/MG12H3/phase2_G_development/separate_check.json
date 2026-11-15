@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": [
+    "frozen kernel, adapter, detector and reference hashes unchanged",
+    "G/X/Y projection recomputed with direct sums",
+    "full-horizon late-loss and missing-alignment regression",
+    "X-only persistence cannot certify absent G",
+    "all five saved benchmark endpoints, sampling grids and zero-clip records checked",
+    "qualification accepts equality, rejects discrepancy and incomplete jobs"
+  ],
+  "new_stochastic_draws": false,
+  "external_replication": false,
+  "shared_dependencies": [
+    "summarize",
+    "reference",
+    "numpy"
+  ],
+  "limits": "Generator fixture checked by preparation; no finite-step bridge equivalence or long-horizon accuracy demonstrated."
+}

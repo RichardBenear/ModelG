@@ -1,0 +1,26 @@
+{
+  "status": "DRAFT_NOT_APPROVED",
+  "parallel_seconds_per_model_unit": 0.9379026624999824,
+  "parallel_factor": 1.4361845077510091,
+  "main_worker_hours": 49.89892953892908,
+  "qualification_worker_hours": 1.8758053249999649,
+  "total_worker_hours": 51.77473486392905,
+  "ideal_eight_worker_wall_hours": 6.471841857991131,
+  "cap_worker_hours": 100,
+  "job_forecasts": {
+    "qualification": {
+      "3000": 0.9379026624999824
+    },
+    "main": {
+      "100": 1.4081746013126888,
+      "300": 0.9493170260860126,
+      "1000": 0.9416040690347501,
+      "3000": 0.9379026624999824,
+      "10000": 0.7528945949594739
+    }
+  },
+  "prepared_jobs": 150,
+  "controls": 30,
+  "numerical_jobs": 48,
+  "production_started": false
+}

@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "checks": [
+    "constant reference passes full horizon",
+    "constant sampled track unique",
+    "old T100 would miss late loss",
+    "explicit T1000 detects late loss",
+    "unmatched G is NaN",
+    "X persistence not full G evidence",
+    "common-alignment translation invariant",
+    "right-tail ambiguity explicit",
+    "fixed G/X exit probabilities valid"
+  ],
+  "bridge": [
+    {
+      "omega": 100,
+      "max_generator_error": 4.547473508864641e-13,
+      "external_active_balance": 4.0,
+      "finite_step_equivalence_claim": false
+    },
+    {
+      "omega": 160,
+      "max_generator_error": 2.8421709430404007e-13,
+      "external_active_balance": 4.0,
+      "finite_step_equivalence_claim": false
+    },
+    {
+      "omega": 3000,
+      "max_generator_error": 4.547473508864641e-13,
+      "external_active_balance": 4.000000000000014,
+      "finite_step_equivalence_claim": false
+    }
+  ],
+  "reference_G_norm": 0.4202170357705912,
+  "G_exit_probability": 0.034,
+  "X_exit_probability": 0.053333333333333344,
+  "late_loss_events": [
+    [
+      "loss",
+      499.5
+    ]
+  ],
+  "tail_legacy_eligible": true,
+  "full_GXY_claim": false
+}
