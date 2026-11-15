@@ -1,0 +1,24 @@
+{
+  "source": {
+    "src/mg182_gscale.py": "21e094c210622d85f11e6d281f6dd6f132786bad503ef5d354124c9e01dba8a9",
+    "src/prepare_mg182.py": "b4d186837084f90fc7e2885f32f4caa18d5234b8fd584d767a1be3da803acb8a",
+    "src/mg12h3_sparse.py": "138c0fa5da8cb9c06852593af7f054e55b2f7a2a9c7555a90739af90aab92815",
+    "src/mg12h3_tick_coupling.py": "d9988e8b21f8d59e9bce9acec5b2ebe0fa2a856a647ca7e567389cb6a6f5b702",
+    "src/mg11n1.py": "d16e71d82af535625d6afce1afcc6ba209f92fb873e109dc957f15c1f40797f3",
+    "spec/MG182_G_population_development.md": "52e6673bacca8466d1a54ead8bae198be0316df1d0ec08bb08f05724c652f853"
+  },
+  "inputs": {
+    "results\\MG12H3\\ring_feasibility\\o0_a0_Omega10.npz": "050a428549f119ed363b8de52315d9ebc891b79588660dbcc3e36d2395cfb6ab"
+  },
+  "cap_seconds": 180,
+  "workers": 1,
+  "development_only": true,
+  "production_approved": false,
+  "omegas": [
+    10,
+    40,
+    160,
+    640
+  ],
+  "benchmark_seed": 18200
+}
