@@ -1,6 +1,6 @@
-# MG183 proposed G population/tick pilot (awaiting PI approval)
+# MG183 registered G population/tick pilot
 
-MG182development hasverifiedscaling andbenchmarkcost. This draft isconcrete andreadyforapproval; no sciencejobsregistered orstarted.
+MG182development hasverifiedscaling andbenchmarkcost. PI approval: go ahead with the pilot test. The criteria and budget below are approved unchanged from the MG182 readiness proposal. Scientific source/input bindings and fresh seeds are registered and published before launch. The historical filename retains its draft suffix for link continuity.
 
 **Primary population question:**doesincreasingOmega improvevisibilityofthelocalizedGfeature atfixedconcentrations/geometry/sourcekinetics? Omega10,40,160,500sites,samefiniteLOCAL/LOCALbathstates andnormalizers. Rebuildfromunroundedconcentrations;homogeneouscontrolpreserves perspeciesmass. All7species retained butGdirectsignedprojection isprimary. Initialroundingandfinite-countR4drift differwithOmegaandare reported,notmislabellednoise.
 
@@ -14,6 +14,6 @@ MG182development hasverifiedscaling andbenchmarkcost. This draft isconcrete andr
 
 **Compute:**pointforecast~1.43hourswallat8busyworkers,fromactualupper-Omegapairedtickandshortsingleprobes. Conservativeadmissionforecastpoint,totalworkerceiling86400seconds(24corehours),perjob10800secondsandcontrollerwall10800seconds(3hours). Wallwatchdoginterruptscontrollerwhichterminatesonlyitsownactiveworkersandrecordsallstops. Coupledthroughputmeasuredonefulltick,notlongrunorparallelscaling;singleContrastoverhead/diskcontentionmayraiseactualtime. No automaticretry/replacement/exclusionforbudgetstop. Proposedanalysisallowance600secondsafterrun.
 
-**Retention:**atleast8GBfreediskrequired;localrawcap2GB. Allobservations,per-tickinitial/final/reservationavailability/histograms/RNGcheckpointsandselectedfirst-ticktraceslocal. All24jobscompleteorreportpartial. Publiconlycompactcriteria/source/ledger/aggregateprofiles/estimates/manifests,nofullbulkarchives. Sourceapproval-gatedrunner `src/run_mg183_gpopulation.py` refusesregisterwithoutPIapproval.jsonandcompletedMG182checks. No approvalfileexistsnow.
+**Retention:**atleast8GBfreediskrequired;localrawcap2GB. Allobservations,per-tickinitial/final/reservationavailability/histograms/RNGcheckpointsandselectedfirst-ticktraceslocal. All24jobscompleteorreportpartial. Publiconlycompactcriteria/source/ledger/aggregateprofiles/estimates/manifests,nofullbulkarchives. Sourceapproval-gatedrunner `src/run_mg183_gpopulation.py` refusesregisterwithoutPIapproval.jsonandcompletedMG182checks. Approval is recorded in results/MG12H3/G_population_pilot/approval.json.
 
-**Approval sought:**thispilotcriteriaand24jobbudgetonly. ItdoesnotauthorizeT.1/1extension,Omega640science,kineticparameterchanges,X/Yacquisitionpolicyoroldverdictclosure. G remainsblockingforfullparticleclaim.
+**Approved scope:**thispilotcriteriaand24jobbudgetonly. ItdoesnotauthorizeT.1/1extension,Omega640science,kineticparameterchanges,X/Yacquisitionpolicyoroldverdictclosure. G remainsblockingforfullparticleclaim.

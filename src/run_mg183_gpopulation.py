@@ -4,7 +4,7 @@ for k in ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS','NUMEXPR_NU
 import sys,time,json,hashlib,traceback,shutil
 from pathlib import Path
 import numpy as np
-from mg182_gscale import setup,projection,ROOT
+from mg182_gscale import setup,projection,ROOT,PATH
 from mg12h3_pattern_persistence import homogenize
 from mg12h3_contrast_estimator import Contrast,tick,aggregate_audit
 from mg12h3_tick_coupling import pair,replay
@@ -14,15 +14,31 @@ from runner import seed_for
 from prepare_mg182 import OUT as DEVELOPMENT
 PUBLIC=ROOT/'results/MG12H3/G_population_pilot';RAW=ROOT/'local_raw/MG183_G_population'
 FILES=['src/run_mg183_gpopulation.py','src/score_mg183_gpopulation.py','spec/MG183_G_population_pilot_draft.md','src/mg182_gscale.py','src/mg12h3_sparse.py','src/mg12h3_contrast_estimator.py','src/mg12h3_tick_coupling.py','src/mg12h3_pattern_persistence.py','src/mg12h3_finer_precision.py','src/mg10e2c1_pool.py']
-def binding():return {p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in FILES}
+def binding():return {p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in FILES+[str(PATH.relative_to(ROOT))]}
 def read(p):return json.loads(Path(p).read_text(encoding='utf-8'))
 def register():
  approval=PUBLIC/'approval.json'
  if not approval.exists():raise RuntimeError('Scientific production requires PI approval of the concrete readiness criteria and budget; preparation does not authorize this run.')
- p=read(approval);assert p['duration']==.01 and p['worker_cap']==86400 and p['workers']==8 and p['replicates_per_condition']==4;assert read(DEVELOPMENT/'separate_check.json')['passed'];assert not(PUBLIC/'plan.json').exists();jobs=[]
+ p=read(approval);assert p['duration']==.01 and p['worker_cap']==86400 and p['workers']==8 and p['replicates_per_condition']==4;assert read(DEVELOPMENT/'separate_check.json')['passed'];assert not(PUBLIC/'plan.json').exists();jobs=[];used=set()
+ def collect(v):
+  if isinstance(v,dict):
+   for k,x in v.items():
+    if 'seed' in k.lower():collect_seed(x)
+    else:collect(x)
+  elif isinstance(v,list):
+   for x in v:collect(x)
+ def collect_seed(v):
+  if type(v) is int:used.add(v)
+  elif isinstance(v,(list,dict)):
+   for x in (v.values() if isinstance(v,dict) else v):collect_seed(x)
+ for file in (ROOT/'results').rglob('*.json'):
+  if file!=PUBLIC/'plan.json':collect(read(file))
  for omega in(160,40,10):
   for ci,condition in enumerate(('prepared','homogeneous')):
-   for r in range(4):jobs.append(dict(id=f'Omega{omega}_{condition}_r{r}',omega=omega,condition=condition,replicate=r,seed=seed_for(12,omega,ci,18300,r),paired=omega==160,sentinel=r==0))
+   for r in range(4):
+    nonce=0;seed=seed_for(12,omega,ci,18300,r,nonce)
+    while seed in used:nonce+=1;seed=seed_for(12,omega,ci,18300,r,nonce)
+    used.add(seed);jobs.append(dict(id=f'Omega{omega}_{condition}_r{r}',omega=omega,condition=condition,replicate=r,seed=seed,seed_nonce=nonce,paired=omega==160,sentinel=r==0))
  assert len({j['seed'] for j in jobs})==24;atomic_json(PUBLIC/'plan.json',dict(jobs=jobs,source=binding(),approval=p,duration=.01,delta=.0001,fine_delta=.00002,observations=.001,worker_cap=86400,job_cap=10800,workers=8,storage_cap=2000000000,forecast=read(DEVELOPMENT/'proposal.json')['job_forecast_seconds']))
 def worker(job,directory):
  directory=Path(directory);plan=read(PUBLIC/'plan.json');assert plan['source']==binding() and job in plan['jobs'];path=directory/job['id'];path.mkdir(exist_ok=False);start=time.perf_counter();deadline=start+plan['job_cap']-10
@@ -62,6 +78,8 @@ def run():
  try:ledger=pool_run(p['jobs'],RAW/'production',Path(__file__).resolve(),ROOT,p['worker_cap'],workers=8,timeout=p['job_cap'],forecast={j['id']:p['forecast'][str(j['omega'])] for j in p['jobs']})
  except KeyboardInterrupt:
   ledger=read(RAW/'production'/'ledger.json');atomic_json(PUBLIC/'attempt.json',dict(status='STOPPED',elapsed_seconds=time.perf_counter()-start,charged_worker_seconds=ledger['charged_worker_seconds'],stop_reason='WALL CAP' if wall_stop.is_set() else 'INTERRUPTED'));raise
+ except BaseException:
+  ledger=read(RAW/'production'/'ledger.json') if (RAW/'production'/'ledger.json').exists() else {};atomic_json(PUBLIC/'attempt.json',dict(status='FAILED',elapsed_seconds=time.perf_counter()-start,charged_worker_seconds=ledger.get('charged_worker_seconds',0),error=traceback.format_exc()));raise
  finally:timer.cancel()
  done=len(ledger['records'])==24 and all(x['status']=='COMPLETE' and x['returncode']==0 for x in ledger['records']);atomic_json(PUBLIC/'attempt.json',dict(status='COMPLETE' if done else 'STOPPED',elapsed_seconds=time.perf_counter()-start,charged_worker_seconds=ledger['charged_worker_seconds'],stop_reason=ledger['stop_reason']))
 if __name__=='__main__':

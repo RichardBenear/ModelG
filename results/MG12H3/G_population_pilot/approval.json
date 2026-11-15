@@ -1,0 +1,14 @@
+{
+  "stage": "MG183",
+  "authorization": "PI: go ahead with the pilot test",
+  "duration": 0.01,
+  "worker_cap": 86400,
+  "workers": 8,
+  "replicates_per_condition": 4,
+  "wall_cap_seconds": 10800,
+  "job_cap_seconds": 10800,
+  "analysis_cap_seconds": 600,
+  "raw_cap_bytes": 2000000000,
+  "scope": "Omega10/40/160,prepared+homogeneous,T.01;limitedpairedtickcheck160;noT.1orOmega640science",
+  "previous_results_unchanged": true
+}
