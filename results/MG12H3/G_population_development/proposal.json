@@ -1,0 +1,34 @@
+{
+  "stage": "MG183",
+  "status": "DRAFT_AWAITING_PI_APPROVAL",
+  "duration": 0.01,
+  "omegas": [
+    10,
+    40,
+    160
+  ],
+  "coarse_delta": 0.0001,
+  "top_fine_delta": 2e-05,
+  "replicates_per_condition": 4,
+  "conditions": [
+    "prepared",
+    "homogeneous"
+  ],
+  "jobs": 24,
+  "workers": 8,
+  "job_forecast_seconds": {
+    "10": 119.18162999791093,
+    "40": 650.5149998702109,
+    "160": 4394.421639997745
+  },
+  "forecast_worker_seconds": 41312.946158926934,
+  "forecast_wall_hours": 1.434477297184963,
+  "worker_cap": 86400,
+  "job_cap": 10800,
+  "wall_cap": 10800,
+  "raw_cap": 2000000000,
+  "analysis_cap_seconds": 600,
+  "production_started": false,
+  "extended_T0_1_point_wall_hours": 14.34477297184963,
+  "limits": "Short initial-state throughput projections, not guaranteed runtime or G detectability. T.01 does not address prior T.1/1 loss directly."
+}
