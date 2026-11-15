@@ -2755,3 +2755,7 @@ MG184 preparation and separate same-author checks passed; numerical gate fixture
 
 ## MG185 PI approved 2026-11-15
 PI approves MG185 specification and100worker-hour cap. Freeze results/MG185_Phase2_G/plan.json before publication/launch. Numerical qualification first; automatic main only on both prespecified G comparisons passing. No retries/replacements; raw local only. MG186 not included.
+
+
+## MG185 continuation 1 — PI authorized
+Infrastructure-only storage-race fix and checkpoint continuation approved by PI. Preserve original failures and36complete runs; resume8prefixes plus136original pending jobs. Same seeds/criteria/denominators and remaining original budget. See spec/MG185_continuation_1.md; no scientific rescore or closure.

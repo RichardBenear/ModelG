@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "condition": "prepared",
+      "mean": -0.0011444465485237476,
+      "CI95": [
+        -0.011870183496621162,
+        0.009581290399573667
+      ],
+      "margin": 0.02101085178852956,
+      "classification": "EQUIVALENT_IN_SCOPE"
+    },
+    {
+      "condition": "homogeneous",
+      "mean": -0.002305021826483178,
+      "CI95": [
+        -0.00968863075901234,
+        0.005078587106045983
+      ],
+      "margin": 0.02101085178852956,
+      "classification": "EQUIVALENT_IN_SCOPE"
+    }
+  ],
+  "does_not_validate_T1000_all_observables": true
+}

@@ -1,3 +1,11 @@
+# MG185 continuation approved and registered
+
+PI "Do the fix and restart" authorized infrastructure-only continuation. Source src/resume_mg185.py, amendment spec/MG185_continuation_1.md; plan results/MG185_Phase2_G/continuation_plan.json. Storage scan fixed for atomic rename races; tests passed.36completed preserved;8prefixes verified/resume,136unstarted same seeds. Prior main charge and wall time deducted, no added budget. Freeze/publish before launch, then local_raw/MG185_Phase2_G/continuation ledger. Final analysis must join36originalcomplete+144continuation by job ID; old scorer alone is incomplete. No original artifact replaced, no scientific change or replacement trajectory.
+
+# MG185 STOPPED — storage-monitor race, no restart
+
+Status checked after PI observed no Python processes. Qualification48/48complete and both G checks PASS. Main36/180complete,8failed/interrupted,136notstarted. First failure: storage monitor stat() raced atomic ledger.json.tmp rename (FileNotFoundError); controller stopped remaining active jobs as specified. Not budget exhaustion, clipping, or scientific failure. Raw retained; no rerun/replacement. See results/MG185_Phase2_G/stopped_status.json and local ledgers. Needs documented infrastructure fix and prospective continuation plan preserving seeds/checkpoints/denominators; do not blindly rerun immutable driver. Prior running handoff superseded.
+
 # MG185 RUNNING — eight workers verified
 
 Approved/frozen registration1af6bff published before draws. Hidden controller PID24708; launch record results/MG185_Phase2_G/controller_launch.json. Qualification ledger has eight active jobs; all eight first checkpoints reached modeltime10/100 with zero clips, no controller error/stop. 40 qualification jobs queued. Main180jobs automatic only on both prespecified G comparisons passing. Raw local_raw/MG185_Phase2_G; do NOT rerun register/run or replace trajectories. Check qualification_attempt.json, qualification.json, main_attempt.json and local ledgers for current status. Point forecast~6.5h total at8workers, cap100workerh unchanged. Report only after separate recomputation; no G persistence conclusion yet.

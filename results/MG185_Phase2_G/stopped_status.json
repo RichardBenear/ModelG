@@ -1,0 +1,13 @@
+{
+  "status": "STOPPED_INFRASTRUCTURE_ERROR",
+  "qualification_complete": 48,
+  "qualification_passed": true,
+  "main_complete": 36,
+  "main_interrupted_or_failed": 8,
+  "main_not_started": 136,
+  "root_cause": "Storage scan raced atomic rename of ledger.json.tmp; FileNotFoundError, not a model or numerical failure.",
+  "first_failure_id": "main_Omega300_d0_prepared_r06",
+  "first_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\rbene\\.codex\\.chatgpt-projects\\g-p-6ae095a6c94c819198efcd6d84f02c03\\archive_work\\ModelG_Public\\src\\run_mg185_phase2_G.py\", line 49, in worker\n    if sum(p.stat().st_size for p in RAW.rglob('*') if p.is_file())>plan['storage_cap']:raise RuntimeError('Local10GBcap')\n       ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\rbene\\.codex\\.chatgpt-projects\\g-p-6ae095a6c94c819198efcd6d84f02c03\\archive_work\\ModelG_Public\\src\\run_mg185_phase2_G.py\", line 49, in <genexpr>\n    if sum(p.stat().st_size for p in RAW.rglob('*') if p.is_file())>plan['storage_cap']:raise RuntimeError('Local10GBcap')\n           ~~~~~~^^\n  File \"C:\\Users\\rbene\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\pathlib\\_local.py\", line 515, in stat\n    return os.stat(self, follow_symlinks=follow_symlinks)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\\\Users\\\\rbene\\\\.codex\\\\.chatgpt-projects\\\\g-p-6ae095a6c94c819198efcd6d84f02c03\\\\archive_work\\\\ModelG_Public\\\\local_raw\\\\MG185_Phase2_G\\\\main\\\\ledger.json.tmp'\n",
+  "restart_performed": false,
+  "raw_retained_local": true
+}
