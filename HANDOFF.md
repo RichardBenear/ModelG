@@ -1,3 +1,7 @@
+# MG185 continuation RUNNING — eight resumed workers advancing
+
+Fix/continuation73a469a published before resumed draws. Hidden controllerPID21216; results/MG185_Phase2_G/continuation_launch.json. Eight active runs verified advancing beyond original checkpoints: fourOmega100controls900->910, threeOmega300prepared230->240, one220->230;zero clips/no stderr/stop.36originalcompleted untouched.144outstanding jobs in continuation plan;136notstarted queued. Prior charged runtime counts against original cap. Read local_raw/MG185_Phase2_G/continuation/ledger.json and progress files; do not rerun launch/register. Final full-study analysis must join original36complete+continuation144 by jobID, retain initial failure history. Raw local only; no new scientific verdict or closure.
+
 # MG185 continuation approved and registered
 
 PI "Do the fix and restart" authorized infrastructure-only continuation. Source src/resume_mg185.py, amendment spec/MG185_continuation_1.md; plan results/MG185_Phase2_G/continuation_plan.json. Storage scan fixed for atomic rename races; tests passed.36completed preserved;8prefixes verified/resume,136unstarted same seeds. Prior main charge and wall time deducted, no added budget. Freeze/publish before launch, then local_raw/MG185_Phase2_G/continuation ledger. Final analysis must join36originalcomplete+144continuation by job ID; old scorer alone is incomplete. No original artifact replaced, no scientific change or replacement trajectory.
