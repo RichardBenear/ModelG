@@ -34,7 +34,7 @@ def run():
   for index,(omega,duration,paired) in enumerate(jobs):
    c=cases[omega];seed=18200+index;rng=np.random.default_rng(seed);before=json.dumps(rng.bit_generator.state);t=time.perf_counter()
    if paired:
-    out=pair(c['model'],c['pop'],c['pop'],[duration,duration/5],[0,duration],seed,deadline=deadline,rng=rng,sentinel=True);replay(c['model'],c['pop'],c['pop'],[duration,duration/5],[0,duration],out);final=out['counts'][:,-1];atomic_json(RAW/f'benchmark_{index}_paired.json',out)
+    out=pair(c['model'],c['pop'],c['pop'],[duration,duration/5],[0,duration],seed,deadline=deadline,rng=rng,sentinel=True);replay(c['model'],c['pop'],c['pop'],[duration,duration/5],[0,duration],out);final=out['counts'][:,-1];atomic_json(RAW/f'benchmark_{index}_paired.json',json.loads(json.dumps(out,default=lambda x:x.tolist() if isinstance(x,np.ndarray) else x.item())))
    else:
     out=tick(c['model'],c['pop'],duration,rng,deadline=deadline,trace=True);a=c['pop'].copy().ravel();end=a.copy();hist=np.zeros(len(c['model'].channels),np.int64)
     for event in out['trace']:
