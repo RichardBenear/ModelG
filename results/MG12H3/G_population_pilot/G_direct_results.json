@@ -1,0 +1,1196 @@
+{
+  "population_estimates": [
+    {
+      "omega": 10,
+      "time": 0.0,
+      "prepared": {
+        "n": 4,
+        "mean": 0.503213335631875,
+        "sd": 0.0,
+        "ci95": [
+          0.503213335631875,
+          0.503213335631875
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": -0.03709747915074991,
+        "sd": 0.0,
+        "ci95": [
+          -0.03709747915074991,
+          -0.03709747915074991
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.5403108147826249,
+        "ci95": [
+          0.5403108147826249,
+          0.5403108147826249
+        ],
+        "df": null,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": null
+    },
+    {
+      "omega": 10,
+      "time": 0.001,
+      "prepared": {
+        "n": 4,
+        "mean": 0.484100146966696,
+        "sd": 0.08120361708873867,
+        "ci95": [
+          0.3548870713768088,
+          0.6133132225565832
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.05257412464861465,
+        "sd": 0.10464156296738808,
+        "ci95": [
+          -0.11393395307375272,
+          0.21908220237098203
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.43152602231808135,
+        "ci95": [
+          0.2670226631306212,
+          0.5960293815055415
+        ],
+        "df": 5.651612492207192,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 4.123849167396018
+    },
+    {
+      "omega": 10,
+      "time": 0.002,
+      "prepared": {
+        "n": 4,
+        "mean": 0.4677421337789466,
+        "sd": 0.1056449679849056,
+        "ci95": [
+          0.29963741476122807,
+          0.6358468527966651
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.08216297691015469,
+        "sd": 0.13039374839733345,
+        "ci95": [
+          -0.1253225744994751,
+          0.2896485283197845
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.3855791568687919,
+        "ci95": [
+          0.1780989742731087,
+          0.5930593394644751
+        ],
+        "df": 5.7525078168598025,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 2.9570371402612197
+    },
+    {
+      "omega": 10,
+      "time": 0.003,
+      "prepared": {
+        "n": 4,
+        "mean": 0.5786012225932137,
+        "sd": 0.0891701476078076,
+        "ci95": [
+          0.43671161919515383,
+          0.7204908259912735
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.0603519942157115,
+        "sd": 0.10996971685565746,
+        "ci95": [
+          -0.1146343653345103,
+          0.2353383537659333
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.5182492283775022,
+        "ci95": [
+          0.3432246026228546,
+          0.6932738541321498
+        ],
+        "df": 5.754291688528709,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 4.71265402144973
+    },
+    {
+      "omega": 10,
+      "time": 0.004,
+      "prepared": {
+        "n": 4,
+        "mean": 0.5662493114922549,
+        "sd": 0.10486295747211993,
+        "ci95": [
+          0.39938894570809047,
+          0.7331096772764193
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.052061920534160616,
+        "sd": 0.2081353330835801,
+        "ci95": [
+          -0.27912784035131377,
+          0.38325168141963506
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.5141873909580943,
+        "ci95": [
+          0.2026863341528386,
+          0.8256884477633499
+        ],
+        "df": 4.430822275673575,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 2.4704473927625448
+    },
+    {
+      "omega": 10,
+      "time": 0.005,
+      "prepared": {
+        "n": 4,
+        "mean": 0.5169927846455279,
+        "sd": 0.21951867609300035,
+        "ci95": [
+          0.16768958480899698,
+          0.8662959844820588
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.1100341355711909,
+        "sd": 0.26170239232816933,
+        "ci95": [
+          -0.30639277020322664,
+          0.5264610413456084
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.406958649074337,
+        "ci95": [
+          -0.014034519617615482,
+          0.8279518177662895
+        ],
+        "df": 5.823716486234053,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 1.5550436717598644
+    },
+    {
+      "omega": 10,
+      "time": 0.006,
+      "prepared": {
+        "n": 4,
+        "mean": 0.48996137949366736,
+        "sd": 0.24001558743609758,
+        "ci95": [
+          0.10804301977034703,
+          0.8718797392169877
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.10687366245684957,
+        "sd": 0.3489167253447524,
+        "ci95": [
+          -0.448330709255796,
+          0.6620780341694952
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.38308771703681777,
+        "ci95": [
+          -0.15153582758698025,
+          0.9177112616606158
+        ],
+        "df": 5.3197309007482945,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 1.0979345190698504
+    },
+    {
+      "omega": 10,
+      "time": 0.007,
+      "prepared": {
+        "n": 4,
+        "mean": 0.45962862412327304,
+        "sd": 0.20439069379151595,
+        "ci95": [
+          0.1343974199776245,
+          0.7848598282689216
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.042523595109319814,
+        "sd": 0.38586682726849114,
+        "ci95": [
+          -0.5714766342768655,
+          0.6565238244955051
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.41710502901395324,
+        "ci95": [
+          -0.16078630016751688,
+          0.9949963581954233
+        ],
+        "df": 4.5605912432498705,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 1.0809559141597993
+    },
+    {
+      "omega": 10,
+      "time": 0.008,
+      "prepared": {
+        "n": 4,
+        "mean": 0.508239202496483,
+        "sd": 0.2575339894700707,
+        "ci95": [
+          0.0984451558594116,
+          0.9180332491335544
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.07400937916243058,
+        "sd": 0.3567264170252351,
+        "ci95": [
+          -0.4936219547671957,
+          0.6416407130920568
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.43422982333405247,
+        "ci95": [
+          -0.11725488034618292,
+          0.9857145270142879
+        ],
+        "df": 5.459149367881907,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 1.217262873198804
+    },
+    {
+      "omega": 10,
+      "time": 0.009000000000000001,
+      "prepared": {
+        "n": 4,
+        "mean": 0.4792049632173808,
+        "sd": 0.3477536302870948,
+        "ci95": [
+          -0.07414866471079629,
+          1.032558591145558
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.21777622319398582,
+        "sd": 0.3733128772753044,
+        "ci95": [
+          -0.3762478703059291,
+          0.8118003166939007
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.261428740023395,
+        "ci95": [
+          -0.3635270605399702,
+          0.8863845405867602
+        ],
+        "df": 5.970070856756446,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 0.700293924847926
+    },
+    {
+      "omega": 10,
+      "time": 0.01,
+      "prepared": {
+        "n": 4,
+        "mean": 0.5598812699507838,
+        "sd": 0.33515353838931056,
+        "ci95": [
+          0.026577199975779453,
+          1.093185339925788
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.2124394695152125,
+        "sd": 0.39285924002828637,
+        "ci95": [
+          -0.4126872489471891,
+          0.8375661879776142
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.34744180043557127,
+        "ci95": [
+          -0.288168119868054,
+          0.9830517207391966
+        ],
+        "df": 5.854694027554355,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 0.884392589087519
+    },
+    {
+      "omega": 40,
+      "time": 0.0,
+      "prepared": {
+        "n": 4,
+        "mean": 0.4997606202358916,
+        "sd": 0.0,
+        "ci95": [
+          0.4997606202358916,
+          0.4997606202358916
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": -0.008632360413499584,
+        "sd": 0.0,
+        "ci95": [
+          -0.008632360413499584,
+          -0.008632360413499584
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.5083929806493912,
+        "ci95": [
+          0.5083929806493912,
+          0.5083929806493912
+        ],
+        "df": null,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": null
+    },
+    {
+      "omega": 40,
+      "time": 0.001,
+      "prepared": {
+        "n": 4,
+        "mean": 0.5052199996648604,
+        "sd": 0.027497093752547767,
+        "ci95": [
+          0.4614659874554351,
+          0.5489740118742857
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.039265494890137836,
+        "sd": 0.03412520211816601,
+        "ci95": [
+          -0.015035316808880227,
+          0.0935663065891559
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.46595450477472256,
+        "ci95": [
+          0.4117433960226184,
+          0.5201656135268267
+        ],
+        "df": 5.740394445866459,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 13.654263589743811
+    },
+    {
+      "omega": 40,
+      "time": 0.002,
+      "prepared": {
+        "n": 4,
+        "mean": 0.47850819325815086,
+        "sd": 0.08707214163711939,
+        "ci95": [
+          0.3399569855350315,
+          0.6170594009812702
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.001992082229191044,
+        "sd": 0.05983306727414409,
+        "ci95": [
+          -0.09321567971102125,
+          0.09719984416940335
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.4765161110289598,
+        "ci95": [
+          0.3431241267076319,
+          0.6099080953502877
+        ],
+        "df": 5.316643530102682,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 7.9640929796503785
+    },
+    {
+      "omega": 40,
+      "time": 0.003,
+      "prepared": {
+        "n": 4,
+        "mean": 0.44257519496667924,
+        "sd": 0.07615110176628923,
+        "ci95": [
+          0.32140179873695274,
+          0.5637485911964057
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.027021360788846586,
+        "sd": 0.12117353309109112,
+        "ci95": [
+          -0.16579277055314506,
+          0.21983549213083825
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.41555383417783265,
+        "ci95": [
+          0.23215450724219241,
+          0.5989531611134729
+        ],
+        "df": 5.049921014754448,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 3.4294108917781885
+    },
+    {
+      "omega": 40,
+      "time": 0.004,
+      "prepared": {
+        "n": 4,
+        "mean": 0.4286421329337621,
+        "sd": 0.07976730779775461,
+        "ci95": [
+          0.3017145459420437,
+          0.5555697199254804
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.04873662593571132,
+        "sd": 0.15505082027968303,
+        "ci95": [
+          -0.19798382912947443,
+          0.29545708100089707
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.37990550699805076,
+        "ci95": [
+          0.14781143086701942,
+          0.6119995831290821
+        ],
+        "df": 4.484052339176225,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 2.450199917116023
+    },
+    {
+      "omega": 40,
+      "time": 0.005,
+      "prepared": {
+        "n": 4,
+        "mean": 0.4248425397025342,
+        "sd": 0.11882137674164048,
+        "ci95": [
+          0.23577121400242262,
+          0.6139138654026458
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.0829518281934822,
+        "sd": 0.10130095321312554,
+        "ci95": [
+          -0.07824059394396048,
+          0.24414425033092485
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.34189071150905204,
+        "ci95": [
+          0.14969281502322535,
+          0.5340886079948788
+        ],
+        "df": 5.85352841389051,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 3.374999944864816
+    },
+    {
+      "omega": 40,
+      "time": 0.006,
+      "prepared": {
+        "n": 4,
+        "mean": 0.3611652094098172,
+        "sd": 0.14605942574896455,
+        "ci95": [
+          0.12875206949645054,
+          0.5935783493231839
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.10522575576410537,
+        "sd": 0.10510873853366565,
+        "ci95": [
+          -0.06202570253567158,
+          0.2724772140638823
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.25593945364571186,
+        "ci95": [
+          0.030283095346192807,
+          0.48159581194523093
+        ],
+        "df": 5.450115675755008,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 2.4349969109726888
+    },
+    {
+      "omega": 40,
+      "time": 0.007,
+      "prepared": {
+        "n": 4,
+        "mean": 0.35529560924500364,
+        "sd": 0.13773880694149176,
+        "ci95": [
+          0.1361224306223972,
+          0.57446878786761
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.08696243128251101,
+        "sd": 0.17232185049171192,
+        "ci95": [
+          -0.18724008692603683,
+          0.3611649494910589
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.2683331779624926,
+        "ci95": [
+          -0.004776122423735929,
+          0.5414424783487212
+        ],
+        "df": 5.722209164999161,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 1.5571628159564042
+    },
+    {
+      "omega": 40,
+      "time": 0.008,
+      "prepared": {
+        "n": 4,
+        "mean": 0.35785031754115165,
+        "sd": 0.16757551683548963,
+        "ci95": [
+          0.09120027533654929,
+          0.624500359745754
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.1070739882925568,
+        "sd": 0.13404641870217973,
+        "ci95": [
+          -0.10622377667511282,
+          0.3203717532602264
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.25077632924859483,
+        "ci95": [
+          -0.0148684391359028,
+          0.5164210976330925
+        ],
+        "df": 5.72393879907643,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 1.8708170772227946
+    },
+    {
+      "omega": 40,
+      "time": 0.009000000000000001,
+      "prepared": {
+        "n": 4,
+        "mean": 0.3839892909064257,
+        "sd": 0.21198232991038277,
+        "ci95": [
+          0.04667809960200203,
+          0.7213004822108493
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.12124958992151665,
+        "sd": 0.12867422585303914,
+        "ci95": [
+          -0.08349981740414196,
+          0.32599899724717524
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.26273970098490906,
+        "ci95": [
+          -0.057025531106767724,
+          0.5825049330765859
+        ],
+        "df": 4.946475720834884,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 2.0418984395910664
+    },
+    {
+      "omega": 40,
+      "time": 0.01,
+      "prepared": {
+        "n": 4,
+        "mean": 0.4385263506310649,
+        "sd": 0.18409948063497897,
+        "ci95": [
+          0.14558299465529462,
+          0.7314697066068352
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.12716078330665226,
+        "sd": 0.1196760459828089,
+        "ci95": [
+          -0.0632705118778576,
+          0.3175920784911621
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.3113655673244126,
+        "ci95": [
+          0.03161785551286328,
+          0.5911132791359619
+        ],
+        "df": 5.151313307831489,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 2.601736753311012
+    },
+    {
+      "omega": 160,
+      "time": 0.0,
+      "prepared": {
+        "n": 4,
+        "mean": 0.4949569998975505,
+        "sd": 0.0,
+        "ci95": [
+          0.4949569998975505,
+          0.4949569998975505
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": -0.0006784207363142479,
+        "sd": 0.0,
+        "ci95": [
+          -0.0006784207363142479,
+          -0.0006784207363142479
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.49563542063386473,
+        "ci95": [
+          0.49563542063386473,
+          0.49563542063386473
+        ],
+        "df": null,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": null
+    },
+    {
+      "omega": 160,
+      "time": 0.001,
+      "prepared": {
+        "n": 4,
+        "mean": 0.49704530192552304,
+        "sd": 0.025667968153973306,
+        "ci95": [
+          0.4562018367176398,
+          0.5378887671334063
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.03541875369110675,
+        "sd": 0.03670505683776746,
+        "ci95": [
+          -0.02298718256819421,
+          0.09382468995040771
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.4616265482344163,
+        "ci95": [
+          0.4052255867711844,
+          0.5180275096976482
+        ],
+        "df": 5.367882233981589,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 12.576647143600885
+    },
+    {
+      "omega": 160,
+      "time": 0.002,
+      "prepared": {
+        "n": 4,
+        "mean": 0.4794019259534332,
+        "sd": 0.033853858025925825,
+        "ci95": [
+          0.4255328832563203,
+          0.533270968650546
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.029899065331573473,
+        "sd": 0.050603887850879166,
+        "ci95": [
+          -0.05062301263045133,
+          0.11042114329359828
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.4495028606218597,
+        "ci95": [
+          0.3723036138133843,
+          0.5267021074303351
+        ],
+        "df": 5.237212880504838,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 8.882773235654664
+    },
+    {
+      "omega": 160,
+      "time": 0.003,
+      "prepared": {
+        "n": 4,
+        "mean": 0.47879093723235067,
+        "sd": 0.04122886036519621,
+        "ci95": [
+          0.4131866200622009,
+          0.5443952544025004
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.0037725908178127005,
+        "sd": 0.060092579514599266,
+        "ci95": [
+          -0.0918481130078059,
+          0.0993932946434313
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.47501834641453794,
+        "ci95": [
+          0.38298215801443497,
+          0.567054534814641
+        ],
+        "df": 5.312021497978478,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 7.904775435694752
+    },
+    {
+      "omega": 160,
+      "time": 0.004,
+      "prepared": {
+        "n": 4,
+        "mean": 0.46879453136411603,
+        "sd": 0.03380268718658869,
+        "ci95": [
+          0.4150069128912966,
+          0.5225821498369354
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.011940860287945897,
+        "sd": 0.05773311618159279,
+        "ci95": [
+          -0.07992541085438264,
+          0.10380713143027444
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.45685367107617014,
+        "ci95": [
+          0.3700075864067469,
+          0.5436997557455934
+        ],
+        "df": 4.840556370036808,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 7.913199586164553
+    },
+    {
+      "omega": 160,
+      "time": 0.005,
+      "prepared": {
+        "n": 4,
+        "mean": 0.44478224894543517,
+        "sd": 0.031200790954628646,
+        "ci95": [
+          0.39513482799768285,
+          0.4944296698931875
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": 0.008172783642347144,
+        "sd": 0.04368860027486651,
+        "ci95": [
+          -0.061345528621547844,
+          0.07769109590624212
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.43660946530308803,
+        "ci95": [
+          0.36921374370389276,
+          0.5040051869022832
+        ],
+        "df": 5.428460024044925,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 9.993670260804025
+    },
+    {
+      "omega": 160,
+      "time": 0.006,
+      "prepared": {
+        "n": 4,
+        "mean": 0.4327656126208016,
+        "sd": 0.049059454377293005,
+        "ci95": [
+          0.3547010729596626,
+          0.5108301522819406
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": -0.011564393871821892,
+        "sd": 0.04500582615227073,
+        "ci95": [
+          -0.0831787064491018,
+          0.060049918705458026
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.4443300064926235,
+        "ci95": [
+          0.36273094344853707,
+          0.5259290695367099
+        ],
+        "df": 5.9559215269899575,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 9.872721922475035
+    },
+    {
+      "omega": 160,
+      "time": 0.007,
+      "prepared": {
+        "n": 4,
+        "mean": 0.44242440616993217,
+        "sd": 0.06378441877817428,
+        "ci95": [
+          0.3409291622322797,
+          0.5439196501075846
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": -0.038466175102674666,
+        "sd": 0.050984060106055606,
+        "ci95": [
+          -0.11959319195912839,
+          0.04266084175377906
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.48089058127260687,
+        "ci95": [
+          0.3797997312721945,
+          0.5819814312730192
+        ],
+        "df": 5.722229436694043,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 9.432175081236602
+    },
+    {
+      "omega": 160,
+      "time": 0.008,
+      "prepared": {
+        "n": 4,
+        "mean": 0.4295377215102264,
+        "sd": 0.07396301203766874,
+        "ci95": [
+          0.3118460643167392,
+          0.5472293787037136
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": -0.05104588102794181,
+        "sd": 0.0680062533092502,
+        "ci95": [
+          -0.1592590058180663,
+          0.05716724376218268
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.48058360253816823,
+        "ci95": [
+          0.35744654153946526,
+          0.6037206635368711
+        ],
+        "df": 5.958190216836347,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 7.066756057752109
+    },
+    {
+      "omega": 160,
+      "time": 0.009000000000000001,
+      "prepared": {
+        "n": 4,
+        "mean": 0.41882830523336645,
+        "sd": 0.07048450408819394,
+        "ci95": [
+          0.30667173042573326,
+          0.5309848800409996
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": -0.07011981773380556,
+        "sd": 0.08565818305126226,
+        "ci95": [
+          -0.20642110181823187,
+          0.06618146635062076
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.488948122967172,
+        "ci95": [
+          0.3520016193052331,
+          0.6258946266291109
+        ],
+        "df": 5.7855247909229,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 5.708130916979179
+    },
+    {
+      "omega": 160,
+      "time": 0.01,
+      "prepared": {
+        "n": 4,
+        "mean": 0.4018368856858699,
+        "sd": 0.07865652133237219,
+        "ci95": [
+          0.2766768078355095,
+          0.5269969635362303
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "control": {
+        "n": 4,
+        "mean": -0.07616196272432203,
+        "sd": 0.11475777687332954,
+        "ci95": [
+          -0.2587671942309037,
+          0.10644326878225967
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "difference": {
+        "estimate": 0.4779988484101919,
+        "ci95": [
+          0.3022673853058646,
+          0.6537303115145192
+        ],
+        "df": 5.309117639195374,
+        "assumption": "Welch t interval, independent conditions, small n"
+      },
+      "control_sd_snr": 4.16528501539212
+    }
+  ],
+  "paired_tick_checks": [
+    {
+      "condition": "prepared",
+      "time": 0.005,
+      "difference": {
+        "n": 4,
+        "mean": 0.002206555539805685,
+        "sd": 0.003756736438682604,
+        "ci95": [
+          -0.003771250459800421,
+          0.00818436153941179
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "margin": 0.024638066950777377,
+      "classification": "EQUIVALENT_IN_SCOPE"
+    },
+    {
+      "condition": "prepared",
+      "time": 0.01,
+      "difference": {
+        "n": 4,
+        "mean": 0.0045982926041793215,
+        "sd": 0.006175381810710254,
+        "ci95": [
+          -0.005228117909427923,
+          0.014424703117786566
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "margin": 0.024638066950777377,
+      "classification": "EQUIVALENT_IN_SCOPE"
+    },
+    {
+      "condition": "homogeneous",
+      "time": 0.005,
+      "difference": {
+        "n": 4,
+        "mean": -0.0007216369186196707,
+        "sd": 0.001985294066970472,
+        "ci95": [
+          -0.003880682802786144,
+          0.0024374089655468025
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "margin": 0.024638066950777377,
+      "classification": "EQUIVALENT_IN_SCOPE"
+    },
+    {
+      "condition": "homogeneous",
+      "time": 0.01,
+      "difference": {
+        "n": 4,
+        "mean": -0.0013233633653982856,
+        "sd": 0.002357796722996434,
+        "ci95": [
+          -0.005075144100253958,
+          0.0024284173694573865
+        ],
+        "assumption": "t interval, small n; not exact distribution-free coverage"
+      },
+      "margin": 0.024638066950777377,
+      "classification": "EQUIVALENT_IN_SCOPE"
+    }
+  ],
+  "marginal_endpoints_checked": 3200,
+  "full_particle_persistence_claim": false,
+  "variance_scaling_qualified": false,
+  "limits": "Direct fixed-geometry G contrasts; n4 per condition. T.01 only, conditional model, no long-horizon G conclusion."
+}

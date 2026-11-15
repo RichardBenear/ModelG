@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "completed_jobs": 24,
+  "marginal_endpoints": 3200,
+  "coarse_or_single_reservation_checks": 2400,
+  "RNG_continuity_checks": 2400,
+  "ordered_sentinel_traces": 6,
+  "ordered_sentinel_events": 2907624,
+  "projection_estimates": 33,
+  "paired_tick_intervals": 4,
+  "max_projection_mean_difference": 2.886579864025407e-15,
+  "max_CI_difference": 5.662137425588298e-15,
+  "elapsed_seconds": 12.558481899963226,
+  "limits": "Independent sparse ledger, centered projection/statistics and chronological sentinel replay; shared input fields/model/Student reference and same author, not external replication. Fine reservations replayed in sentinel segments, not all fine ticks."
+}
