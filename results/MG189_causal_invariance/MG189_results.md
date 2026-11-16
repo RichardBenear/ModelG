@@ -1,5 +1,7 @@
 # MG189 small-system causal-invariance study
 
+**Status: PI CLOSED, 2026-11-15.** Richard Benear accepted closure with the reported qualifications; no scientific result or criterion changed.
+
 The small-system study found that independent Model G events commute, but the same final species counts do not determine a unique causal history. A two-event example already shows the distinction: create a G and then convert either that newly created G or an older G into X; the final counts match, while one history has a causal edge and the other does not. Scheduler statistics move toward continuous-time behavior as strict ticks shrink, but the finest tested tick remains statistically inconclusive under the fixed all-summary rule. This establishes conflict-free commutation in the tested cases and failure of count-level finite-history uniqueness; it does not establish or refute full Wolfram-style causal invariance, Lorentz invariance, quantum behavior, or particle-scale scheduler independence.
 
 ## Study and interpretation
@@ -75,4 +77,4 @@ This is same-author verification with shared fixtures, NumPy/SciPy and reference
 
 **Practical conclusion:** retain the update scheduler and tick size as explicit model assumptions. The evidence supports commuting independent events and convergence toward SSA for several causal summaries as ticks shrink, while count-level causal-history uniqueness fails. Full statistical scheduler invariance remains unqualified at the prespecified precision. Neither a Lorentz-invariance claim nor a quantum/gravity connection follows from these results.
 
-The registered small study ends here. No rule redesign, sample extension, particle run or large-system bridge is launched. PI closure is pending. [Implementation specification](../../spec/MG189_causal_invariance.md), [verification](verification.json), [complete run record](attempt.json).
+The registered small study ends here. No rule redesign, sample extension, particle run or large-system bridge is launched. PI closed MG189 on 2026-11-15; see [closure record](closure.json). [Implementation specification](../../spec/MG189_causal_invariance.md), [verification](verification.json), [complete run record](attempt.json).

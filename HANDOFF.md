@@ -1,3 +1,7 @@
+# MG189 PI CLOSED — 2026-11-15
+
+Richard Benear: "go ahead and close MG189". Closure recorded in results/MG189_causal_invariance/closure.json and MG189_results.md. Findings unchanged: tested independent events commute; count-level finite-history causal uniqueness fails; full Wolfram causal completion remains unresolved; finest strict-tick and random-sweep statistical qualification remain inconclusive. No rescore, rule change, new simulation or follow-up authorization. Previous MG189 closure-pending entries below are historical and superseded by this explicit sign-off. MG185/MG187/MG188 statuses unchanged.
+
 # MG189 reviewer causal-invariance study complete — PI closure pending
 
 Reviewer outline spec/causal_invariance_study_plan.md pulled at3c78226. PI-adoptedD1–D4 implemented in spec/MG189_causal_invariance.md, source/seed freeze dedce91 published before evaluation. Onecore,188.852seconds sampling/exhaustive work,~21.64seconds final audit; raw28.0343MBlocal. No particle runs or legacy-engine edits.40960paths=8192each SSA,strict.02/.005/.001,randomchannel-sweep.02;4sites12initialactive tokens,horizon.1,Omega1,h1.

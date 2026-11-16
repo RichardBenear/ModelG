@@ -2779,3 +2779,8 @@ PI requested reviewer causal_invariance_study_plan.md with adoptedD1–D4. Imple
 
 ## MG189 complete — PI closure pending
 1192independentpairsPASS;25conflictcountjoinswithin2,noneidentityjoinswithin2;no neverjoinproof. All three bounded fixtures failcount-level finitehistorygraphuniqueness;restrictedidentitypairsagree. MinimalR1/R2witnessneedsnoR4. FullWolframcausalcompletionnotsettled. T4acceptedreverseplaypasses1024000ticks;proposalcompetitionfallswithdelta. T5coarse/mediumstrictDIFFERENT,fineststrictandrandomsweepINCONCLUSIVE;finest32/32binnedTVequivalent,but4/32meansinconclusive. No tuning or extension.40960paths1198767eventsauditedPASS,fullrawlocal. Report results/MG189_causal_invariance/MG189_results.md;no particle,quantum orrelativisticqualification.
+
+
+## MG189 PI CLOSED — 2026-11-15
+
+PI Richard Benear: "go ahead and close MG189". Closed with the published qualified outcome: independent-event commutation supported on tested cases; count-level finite-history graph uniqueness fails; full Wolfram causal completion unresolved; finest-tick and random-sweep statistical comparisons inconclusive overall. Criteria, samples, numerical results and earlier stages unchanged. No new work authorized. Closure record: results/MG189_causal_invariance/closure.json; report: results/MG189_causal_invariance/MG189_results.md.

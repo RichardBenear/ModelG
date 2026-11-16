@@ -1477,3 +1477,8 @@ Richard (2026-11-13 15:56 UTC, project thread): "I sign off on all eight."
 - **MG12-H3 noise-aware shape instrument (MG161):** CLOSED as conditional synthetic benchmark SUPPORTED. The dependent P1 application stays exploratory; MG160-P1's score is not changed.
 
 All eight results, criteria and data are unchanged; nothing is rescored. These closures were recorded because each report ended "PI closure pending" and closure is never inferred from an instruction to proceed. MG162A/B was already closed (see MG163). No production is authorized by this record. Recorded by Claude at the PI's request.
+
+
+## MG189 PI CLOSED — 2026-11-15
+
+PI Richard Benear: "go ahead and close MG189". Closed with the published qualified outcome: independent-event commutation supported on tested cases; count-level finite-history graph uniqueness fails; full Wolfram causal completion unresolved; finest-tick and random-sweep statistical comparisons inconclusive overall. Criteria, samples, numerical results and earlier stages unchanged. No new work authorized. Closure record: results/MG189_causal_invariance/closure.json; report: results/MG189_causal_invariance/MG189_results.md.
