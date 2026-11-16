@@ -34,7 +34,7 @@ For any stationary, localized solution in any dimension with constant sources:
 
 This is MG001's identity. Nothing in it depends on dimension. It fails only if the diffusion terms do not integrate to
 zero, either because of flux through an outer boundary or because the Laplacian is modified. The broadened-core
-variant replaces ∇ with δ(r)∇², which does not integrate to zero.
+variant replaces ∇² with δ(r)∇², which does not integrate to zero.
 
 ## Method
 
