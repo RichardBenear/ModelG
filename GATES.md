@@ -2788,3 +2788,7 @@ PI Richard Benear: "go ahead and close MG189". Closed with the published qualifi
 
 ## MG190 gravity preparation / D3 source confirmation
 PI supplied SQK gravity-gradient outline; D3 confirmed from LaViolette2020p15 and Pulver–LaViolette2013eq28 before gravity-production registration. Positive-mass-like Gwell isdeficit; predicted v*dGbg/dx<0. Negativecore doesnot establish netmass; standardperiodic integralidentity retained. Preparation only: spatialsourceODE checks,backgrounds,nullbenchmarks,oneworker180seconds,fullrawlocal. No gradientparticle study launched. See spec/MG190_gravity_preparation.md and spec/MG190_D3_source_check.md. Need concrete fullstudycriteria/budget afterpreflight,especially zero-gradient extrema/finitehorizonarrival and criticality-arm backgroundleakage.
+
+
+## MG190 preparation complete; MG191 draft only
+D3confirmedfromprimarytext;expecteddownbackgroundG. Spatialforcingadapter/16background/nullbenchmarkchecksPASS,existingkernel/referenceunchanged. No gravity-gradientparticle runs. Outlineall-phasefinitearrivalgate needsrevision:exactmaxzero slope,settlinghorizonnotjustified. Proposedoffsetphases/smallerladder/drift-firstP1 and2workerhcap in spec/MG191_gravity_gradient_draft.md awaitPIapproval. CbackgroundGleak quantified,nonlinearwindowstillrequiresqualification. Readiness results/MG190_gravity_preparation/MG190_readiness.md. No gravityverdict or newmassmonopoleclaim.

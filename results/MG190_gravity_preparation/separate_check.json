@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "backgrounds": 16,
+  "maximum_direct_stencil_residual": 7.894414011389017e-10,
+  "threshold_matches_repository": true,
+  "source_and_reference_hashes_unchanged": true,
+  "criticality_gradient_leakage": [
+    {
+      "eps": 0.00025,
+      "C_to_A_G_gradient": 0.0006318093825130835
+    },
+    {
+      "eps": 0.0005,
+      "C_to_A_G_gradient": 0.0006318094633828877
+    },
+    {
+      "eps": 0.001,
+      "C_to_A_G_gradient": 0.000631809432506756
+    }
+  ],
+  "external_replication": false,
+  "shared_dependencies": [
+    "NumPy",
+    "same background solutions and equations"
+  ],
+  "no_gradient_particle_runs": true
+}
