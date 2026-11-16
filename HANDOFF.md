@@ -1,3 +1,9 @@
+# MG191 RUNNING — 104 production jobs after qualification
+
+PI-approved source/input freeze af28841 published before qualification/gradientintegration. HiddencontrollerPID39420 (results/MG191_gravity_gradient/controller_launch.json). All31qualificationjobs COMPLETE,no executionfailures. Coarse eps .00025/.0005/.001 admitted. Fine uniforma upperlevels +.0005/+ .001 failed fixed viability (qa_h0.1_e0.0005 andqa_h0.1_e0.001);all16Hfinegradientjobs excluded prospectively.104remaining productionjobs running,8workers/thread1,first8productionjobs complete,8active,nostop/stderr atverification. ExclusionsmeanP4meshqualificationcannotpassasdesigned;coarsegradient/null/criticality/leveldata stillrunandmustbereported withthatlimit, no silentfineepsreplacement. No scientificverdict until completeaudit.
+
+Inspect publicattempt.json and local_raw/MG191_gravity_gradient/qualification/ledger.json,production/ledger.json plus */progress.json. Do not rerunregister/run orreplacefailed/unqualifiedcases. Qualification summary compactpublic;allfullGXYcheckpoints staylocal. Mainbudget6000worker-seconds,qualification600,pre-run60,analysis540=7200total;1hactivewall,600/job,10GBraw. Fullpost-run independent core/shape/velocityreconstruction required. MG189closed;no priorresultschanged.
+
 # MG191 PI approved and registered — launch after published freeze
 
 PI approves changes/budget and says "Go ahead with the run." Approval results/MG191_gravity_gradient/approval.json. Frozen implementation: src/run_mg191.py,src/mg191_gravity.py; spec/MG191_gravity_gradient_draft.md plus MG191_implementation_contract.md. Plan has120productionjobs,31qualificationjobs (16uniformviability+15backgroundstability),31hashedlocalinputbackgrounds. No gradientparticle evaluation before published freeze. Null/development checks passed:16offset/reflectedphases,stabilitybothmeshes,wrappedvelocity/losttrack,storage temporaryrename race. No stochasticseeds.
