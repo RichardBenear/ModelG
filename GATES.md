@@ -2784,3 +2784,7 @@ PI requested reviewer causal_invariance_study_plan.md with adoptedD1–D4. Imple
 ## MG189 PI CLOSED — 2026-11-15
 
 PI Richard Benear: "go ahead and close MG189". Closed with the published qualified outcome: independent-event commutation supported on tested cases; count-level finite-history graph uniqueness fails; full Wolfram causal completion unresolved; finest-tick and random-sweep statistical comparisons inconclusive overall. Criteria, samples, numerical results and earlier stages unchanged. No new work authorized. Closure record: results/MG189_causal_invariance/closure.json; report: results/MG189_causal_invariance/MG189_results.md.
+
+
+## MG190 gravity preparation / D3 source confirmation
+PI supplied SQK gravity-gradient outline; D3 confirmed from LaViolette2020p15 and Pulver–LaViolette2013eq28 before gravity-production registration. Positive-mass-like Gwell isdeficit; predicted v*dGbg/dx<0. Negativecore doesnot establish netmass; standardperiodic integralidentity retained. Preparation only: spatialsourceODE checks,backgrounds,nullbenchmarks,oneworker180seconds,fullrawlocal. No gradientparticle study launched. See spec/MG190_gravity_preparation.md and spec/MG190_D3_source_check.md. Need concrete fullstudycriteria/budget afterpreflight,especially zero-gradient extrema/finitehorizonarrival and criticality-arm backgroundleakage.

@@ -1,0 +1,26 @@
+{
+  "source": {
+    "src/gravity_mg190.py": "a9e0cc436a0bc8691f43e9cca13aa50692b72dc6d183c07b274ebe388110311f",
+    "spec/MG190_gravity_preparation.md": "2cc114248e96a34011c9a4769fddb228b9f28e4790fc217d31ff43ea8d9eec00",
+    "src/lattice.py": "11aa7c565dba5e8449ab727075fbc86718634f8d5ad4cbeafef89281f2ae6f04",
+    "src/runner.py": "15d583bdebb03cc2cd7029ea31487d8ca9f99770abf2939d8717569f0ffe84ed",
+    "results/MG003/ref_profiles.npz": "29ab3fb9105e45378c12ac5cf1e52fcc911d4ee42f6b4261e24b78420a702e5b"
+  },
+  "seconds_cap": 180,
+  "workers": 1,
+  "no_gradient_particle_runs": true,
+  "eps": [
+    0.0,
+    0.00025,
+    0.0005,
+    0.001,
+    0.0025,
+    0.005,
+    0.01,
+    0.02
+  ],
+  "reference_PDF_sha256": {
+    "model_g_2013.pdf": "8d1facee08abdddf57973a55f6fc1cea4909dddaaa733c062cc6e7016f95a9dd",
+    "origin_gravity_2020.pdf": "7dd31ac402ff8151900ddde06dc9ae36662cbc513c4b88530ca0fffddaba5052"
+  }
+}
