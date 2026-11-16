@@ -2796,3 +2796,8 @@ D3confirmedfromprimarytext;expecteddownbackgroundG. Spatialforcingadapter/16back
 
 ## MG191 PI approved and registered
 PI: "I approve of the changes and the budget. Go ahead with the run." RevisedP1*,offsetphases,smallladder and7200chargedseconds approved. Freezeplan/source/backgroundhashes before integration.31qualificationjobs first;up to120productionjobs conditional on fixed viability/stability. P1*/P4* margins unchanged;arrival descriptive/censored.8workers/thread1,rawlocalonly,nonreplacement. See spec/MG191_implementation_contract.md and results/MG191_gravity_gradient/plan.json. No scientificverdict or closure implied.
+
+
+## MG191 COMPLETE — UNRESOLVED, PI closure pending
+
+31qualification jobs and104admittedproduction trajectories completed without execution errors.16Hfinegradientjobs excluded by fixeduniform-source viability atupperlevels.0/24A and0/24R exceed10xnullfloor;P4notavailable,soUNRESOLVED ratherthanSUPPORT/CONTRADICTION/NORESOLVEDRESPONSE. RawcoarsesignmostlydownG,notqualified.8/16levelcontrolsabovefloor;P2/P3unqualified.4288fieldcheckpoints/428920snapshots independently remeasured andverified;raw3.05008GBlocalonly,budgetmet. No retries,gatechanges/nullsubtraction or newrun. Report results/MG191_gravity_gradient/MG191_results.md. PIclosurepending.

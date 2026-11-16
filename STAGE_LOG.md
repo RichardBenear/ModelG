@@ -1482,3 +1482,8 @@ All eight results, criteria and data are unchanged; nothing is rescored. These c
 ## MG189 PI CLOSED — 2026-11-15
 
 PI Richard Benear: "go ahead and close MG189". Closed with the published qualified outcome: independent-event commutation supported on tested cases; count-level finite-history graph uniqueness fails; full Wolfram causal completion unresolved; finest-tick and random-sweep statistical comparisons inconclusive overall. Criteria, samples, numerical results and earlier stages unchanged. No new work authorized. Closure record: results/MG189_causal_invariance/closure.json; report: results/MG189_causal_invariance/MG189_results.md.
+
+
+## MG191 COMPLETE — UNRESOLVED, PI closure pending
+
+31qualification jobs and104admittedproduction trajectories completed without execution errors.16Hfinegradientjobs excluded by fixeduniform-source viability atupperlevels.0/24A and0/24R exceed10xnullfloor;P4notavailable,soUNRESOLVED ratherthanSUPPORT/CONTRADICTION/NORESOLVEDRESPONSE. RawcoarsesignmostlydownG,notqualified.8/16levelcontrolsabovefloor;P2/P3unqualified.4288fieldcheckpoints/428920snapshots independently remeasured andverified;raw3.05008GBlocalonly,budgetmet. No retries,gatechanges/nullsubtraction or newrun. Report results/MG191_gravity_gradient/MG191_results.md. PIclosurepending.

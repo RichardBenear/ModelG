@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "raw_segments": 4288,
+  "raw_snapshots": 428920,
+  "trajectories": 120,
+  "independent_zero_crossings_via_tiled_peak_and_sign_changes": true,
+  "maximum_core_measurement_error": 2.842170943040401e-14,
+  "checkpoint_continuity": true,
+  "shape_and_identity_flags_recomputed": true,
+  "mobility_recomputed_by_lstsq": true,
+  "input_and_source_hashes_unchanged": true,
+  "manifest_sha256": "b734316ea433a3a9a531f241535d4478870a1f0aff36a96d070cb7379e915306",
+  "seconds": 88.71795019996352,
+  "external_replication": false,
+  "shared_dependencies": [
+    "NumPy/SciPy",
+    "same cached reference and frozen detector thresholds"
+  ],
+  "limits": "Nonuniform eigenvalue calculations are those of registered qualification, not independently re-solved here. This saved-field audit checks numerical records, not physical gravity."
+}

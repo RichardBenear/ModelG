@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "recomputed_frozen_gate": {
+    "classification": "UNRESOLVED",
+    "P1_supported": false,
+    "P4_supported": false,
+    "P2": "NOT_QUALIFIED_NO_RESOLVED_SOURCE_CASES",
+    "P3": "NOT_QUALIFIED_NO_RESOLVED_SOURCE_OR_CRITICALITY_CASES",
+    "reasons": [
+      "No source/reversed cases exceeded the fixed ten-times-null floor",
+      "Both refinement amplitudes excluded by uniform-source viability, so no fine gradient response exists for mesh comparison",
+      "Level-control drift above matching null floor in some cases"
+    ],
+    "not_contradicted": true,
+    "no_true_zero_response_claim": true
+  },
+  "mirror_maximum_velocity_sum": 5.556323401367046e-11,
+  "level_median_flags": 8,
+  "level_maximum_flags": 8,
+  "criticality_to_source_speed_ratios_descriptive_only": [
+    {
+      "eps": 0.00025,
+      "median": 0.9945290662250446,
+      "range": [
+        0.10032302334932479,
+        7.070896414034838
+      ]
+    },
+    {
+      "eps": 0.0005,
+      "median": 0.5731348384395113,
+      "range": [
+        0.05258423523518251,
+        3.890393041759582
+      ]
+    },
+    {
+      "eps": 0.001,
+      "median": 0.3672919591114491,
+      "range": [
+        0.05406539448806477,
+        2.596404444489297
+      ]
+    }
+  ],
+  "no_new_runs": true
+}
