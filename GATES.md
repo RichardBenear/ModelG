@@ -2837,3 +2837,9 @@ Descriptive study (no hypothesis gates), run by Claude at the PI's request; repo
 ## MG193 PI CLOSED — 2026-11-16
 
 PI Richard Benear, 2026-11-16 09:48 America/Denver: "On D3, I'll go with your 'coding fix'. I sign off on MG193." Closed as reported: a = 14 window b in [28.99517, 29.41534] (both FOLD), all edges qualified and confirmed by time checks under the registered §6 wording (D3 accepted as an implementation fix, not a rescore); registered b-lines at a = 12, 13, 15, 16 UNMAPPED; recommended 1D operating point (14, 29.20526). Post-hoc strip map remains descriptive. No result changed.
+
+## MG194 REGISTERED — gravity drift confirmation and two-particle interaction (continuum 1D)
+
+PI approval: Richard Benear, 2026-11-16 11:48 America/Denver ("yes", adopting D1–D4). Specification `spec/MG194_two_particle_gravity.md`, frozen with this commit before computation; implementation `src/mg194_two_particle.py`. Run by Claude in the cloud, cap 3 core-hours, at most 4 processes.
+- Part A at (a, b) = (14, 29.20526): A0 numerics (STOP; residual, continuation mu_a within 1e-3, nulls < 1e-12); A1 gate: every eps > 0 run at x0 = +-L/16, +-3L/16 within 10% of mu_a da/dx with core depth within 5%. CONFIRMED / NOT CONFIRMED.
+- Part B, two particles at d = 8.00..30.00 step 0.25: B0 numerics (STOP); B1 primary sign pattern OSCILLATORY (>= 3 zeros, gaps 1.533 +- 25%) / MONOTONIC ATTRACTION / MONOTONIC REPULSION / UNRESOLVED, registered prediction OSCILLATORY; B2 gate: weighted fit kappa within 10% of 0.4608 and k within 5% of 2.0491. B3 linear response, B4 equilibria, B5 non-oscillating bias reported.
