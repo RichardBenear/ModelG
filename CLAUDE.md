@@ -9,16 +9,16 @@ rules, and testing step by step whether the rules reproduce Model G's particles 
 as a pre-registered research programme with formal gates. See `README.md` (charter), `InitialPlan.md`, `GATES.md`,
 `STAGE_LOG.md`, and `spec/GLOSSARY_AND_ASSUMPTIONS.md` for every symbol and assumption (Ω, b, h, τ, λ*, etc.).
 
-## Active roles (effective 2026-11-06, MG039)
+## Active roles (effective 2026-11-16, protocol version 2)
 
-- **PI: Richard Benear.** Scientific direction, modeling choices, registration, budgets, amendments and closure.
-- **ChatGPT / Codex: research and implementation lead.** Planning, code, validation, authorized runs, analysis, recomputation and documentation. Not restricted to read-only review.
-- **Claude / other reviewer: optional external review when requested.** No standing requirement to execute or approve each stage.
+- **PI: Richard Benear.** Final scientific direction, modeling choices, approval of registrations, amendments and compute budgets, closure sign-off, and assignment of AI roles.
+- **AI collaborators: ChatGPT / Codex and Claude.** Either can take any role the PI assigns per study (direction suggestions, design, implementation, runs, analysis, recomputation, documentation, review). No AI signs off closures or approves compute. One AI owns each active study at a time and writes a handoff before a switch.
+- **Two tracks:** exploratory (PI go-ahead, logged in `explore/LOG.md`, 2 core-hour default cap, cannot support claims alone) and confirmatory (the registered gate workflow below).
 
 Read [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md), the authoritative prospective role and review policy. Historical role descriptions in old specifications and reports do not override it.
 
 ## Rules of the protocol
-1. Gate criteria, predictions and null controls are written into `GATES.md` and committed **before** the run that tests
+1. For confirmatory studies, gate criteria, predictions and null controls are written into `GATES.md` and committed **before** the run that tests
    them. Anything a gate leaves open is written down as a pre-run implementation specification, also before the run.
 2. A registered result is never re-scored after the data are seen. Deviations, design flaws and budget overruns are
    recorded explicitly, not smoothed over. A new idea becomes a new, separately registered study.
