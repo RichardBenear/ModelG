@@ -2847,3 +2847,7 @@ PI approval: Richard Benear, 2026-11-16 11:48 America/Denver ("yes", adopting D1
 ## MG194 COMPLETE — Part A CONFIRMED; Part B OSCILLATORY, decay law SUPPORTED (PI closure pending)
 
 Report `results/MG194_two_particle/MG194_results.md`. A0 PASS (continuation mu_a agrees to 2e-7; nulls < 2e-16); A1 PASS: all four new placements plus linearity within 3.3% of mu_a da/dx (mu_a = -0.0551286), depth change <= 2.9%. B0 PASS (floor 1.9e-15; 89/89 resolved; L = 200 identical at d = 30). B1 OSCILLATORY: 14 zeros in [8, 30], gaps 1.491-1.551. B2 SUPPORTED: kappa 0.45987 (-0.2%), k 2.04804 (-0.05%). Reported: 7 stable / 7 unstable alternating pair equilibria (stable 9.491 ... 27.858, spacing ~3.07); naive linear-response zeros within 0.10 but amplitude off 2-5x; small short-range attractive non-oscillating component (weakly determined). Separate check agrees. About 1 core-hour of 3.
+
+## MG194 PI CLOSED — 2026-11-16
+
+PI Richard Benear, 2026-11-16 12:32 America/Denver: "I approve closure." Closed as reported: Part A CONFIRMED; Part B OSCILLATORY with decay law SUPPORTED. No result changed.

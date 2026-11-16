@@ -136,4 +136,4 @@ depth −9.47.
   `adjoint_bstar.npz` and `pair_eq_*.npz` (the 14 equilibrium states). Figure:
   `paper/figures/MG194_two_particle.png`.
 
-PI closure pending.
+**PI CLOSED 2026-11-16** (Richard Benear, 12:32 America/Denver: "I approve closure.").

@@ -1,4 +1,4 @@
-# MG194 COMPLETE — gravity drift CONFIRMED; two-particle force OSCILLATORY (PI closure pending)
+# MG194 PI CLOSED 2026-11-16 — gravity drift CONFIRMED; two-particle force OSCILLATORY
 
 Run by Claude at PI request. At (a, b) = (14, 29.20526): drift down a source gradient matches linear response within 3.3% at four new placements (Part A CONFIRMED). Two particles: force alternates sign every ~1.53 in separation and decays as exp(-0.460 d), matching the tail eigenvalues (B1 OSCILLATORY, B2 SUPPORTED); 7 stable bound separations spaced ~3.07 in [8, 30]; no long-range attraction in 1D. Report results/MG194_two_particle/MG194_results.md. Natural next: far-field G monopole in 2D/3D (gravity plan study 3). EX001 (exploratory) preceded Part A.
 
