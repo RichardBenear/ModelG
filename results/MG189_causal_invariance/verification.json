@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "paths": 40960,
+  "events": 1198767,
+  "stoichiometry_sites_and_unique_token_use": true,
+  "trace_edges_rederived": true,
+  "causal_metrics_recomputed_with_adjacency_matrices": true,
+  "mean_intervals_checked_with_Scipy_ttest": true,
+  "TV_recomputed_with_digitized_counter": true,
+  "all_comparisons": 128,
+  "elapsed_seconds": 21.63989579997724,
+  "external_replication": false,
+  "shared_dependencies": [
+    "frozen fixture and summary definitions",
+    "NumPy/SciPy"
+  ],
+  "limits": "Initial hazard/generator check and finite isomorphism witnesses are in original evaluator; independent saved-trace audit does not constitute external replication or continuum proof."
+}

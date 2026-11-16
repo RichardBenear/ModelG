@@ -1,0 +1,1028 @@
+[
+  {
+    "fixture": "F2",
+    "identity": false,
+    "convention": 0,
+    "equal_depth": false,
+    "state": "((('G', 0), 1), (('X', 0), 2), (('Y', 0), 1))",
+    "branch1": [],
+    "branch2": [
+      {
+        "rule": "R2",
+        "site": 0,
+        "dest": 0,
+        "inputs": [
+          [
+            "i0",
+            "G",
+            0
+          ]
+        ],
+        "outputs": [
+          [
+            "39357944e27c2a09ee550706492d5c614614eaf4fd148a01912bb91551faaf9d:0",
+            "X",
+            0
+          ]
+        ],
+        "edges": [
+          [],
+          []
+        ]
+      },
+      {
+        "rule": "R2r",
+        "site": 0,
+        "dest": 0,
+        "inputs": [
+          [
+            "39357944e27c2a09ee550706492d5c614614eaf4fd148a01912bb91551faaf9d:0",
+            "X",
+            0
+          ]
+        ],
+        "outputs": [
+          [
+            "9a129260ce01952185fa0ae013ce0141a8d116427b7d9e184bbb00e5de5412af:0",
+            "G",
+            0
+          ]
+        ],
+        "edges": [
+          [
+            [
+              0,
+              "X",
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              "X",
+              1
+            ]
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fixture": "F2",
+    "identity": false,
+    "convention": 0,
+    "equal_depth": true,
+    "state": "((('G', 0), 1), (('X', 0), 3), (('Y', 0), 1))",
+    "branch1": [
+      {
+        "rule": "R1",
+        "site": 0,
+        "dest": 0,
+        "inputs": [],
+        "outputs": [
+          [
+            "e7e19061ac17b43f4bb960f923bc3f09726ceb0d284f9ccf509f0b2bb465a92e:0",
+            "G",
+            0
+          ]
+        ],
+        "edges": [
+          [],
+          []
+        ]
+      },
+      {
+        "rule": "R2",
+        "site": 0,
+        "dest": 0,
+        "inputs": [
+          [
+            "e7e19061ac17b43f4bb960f923bc3f09726ceb0d284f9ccf509f0b2bb465a92e:0",
+            "G",
+            0
+          ]
+        ],
+        "outputs": [
+          [
+            "2513f2f45085e355522135170f179905a14e7df5914f4cc0adca5be8bc38a4a6:0",
+            "X",
+            0
+          ]
+        ],
+        "edges": [
+          [
+            [
+              0,
+              "G",
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              "G",
+              1
+            ]
+          ]
+        ]
+      }
+    ],
+    "branch2": [
+      {
+        "rule": "R1",
+        "site": 0,
+        "dest": 0,
+        "inputs": [],
+        "outputs": [
+          [
+            "e7e19061ac17b43f4bb960f923bc3f09726ceb0d284f9ccf509f0b2bb465a92e:0",
+            "G",
+            0
+          ]
+        ],
+        "edges": [
+          [],
+          []
+        ]
+      },
+      {
+        "rule": "R2",
+        "site": 0,
+        "dest": 0,
+        "inputs": [
+          [
+            "i0",
+            "G",
+            0
+          ]
+        ],
+        "outputs": [
+          [
+            "39357944e27c2a09ee550706492d5c614614eaf4fd148a01912bb91551faaf9d:0",
+            "X",
+            0
+          ]
+        ],
+        "edges": [
+          [],
+          []
+        ]
+      }
+    ]
+  },
+  {
+    "fixture": "F2",
+    "identity": false,
+    "convention": 1,
+    "equal_depth": false,
+    "state": "((('G', 0), 1), (('X', 0), 2), (('Y', 0), 1))",
+    "branch1": [],
+    "branch2": [
+      {
+        "rule": "R2",
+        "site": 0,
+        "dest": 0,
+        "inputs": [
+          [
+            "i0",
+            "G",
+            0
+          ]
+        ],
+        "outputs": [
+          [
+            "39357944e27c2a09ee550706492d5c614614eaf4fd148a01912bb91551faaf9d:0",
+            "X",
+            0
+          ]
+        ],
+        "edges": [
+          [],
+          []
+        ]
+      },
+      {
+        "rule": "R2r",
+        "site": 0,
+        "dest": 0,
+        "inputs": [
+          [
+            "39357944e27c2a09ee550706492d5c614614eaf4fd148a01912bb91551faaf9d:0",
+            "X",
+            0
+          ]
+        ],
+        "outputs": [
+          [
+            "9a129260ce01952185fa0ae013ce0141a8d116427b7d9e184bbb00e5de5412af:0",
+            "G",
+            0
+          ]
+        ],
+        "edges": [
+          [
+            [
+              0,
+              "X",
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              "X",
+              1
+            ]
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fixture": "F2",
+    "identity": false,
+    "convention": 1,
+    "equal_depth": true,
+    "state": "((('G', 0), 1), (('X', 0), 3), (('Y', 0), 1))",
+    "branch1": [
+      {
+        "rule": "R1",
+        "site": 0,
+        "dest": 0,
+        "inputs": [],
+        "outputs": [
+          [
+            "e7e19061ac17b43f4bb960f923bc3f09726ceb0d284f9ccf509f0b2bb465a92e:0",
+            "G",
+            0
+          ]
+        ],
+        "edges": [
+          [],
+          []
+        ]
+      },
+      {
+        "rule": "R2",
+        "site": 0,
+        "dest": 0,
+        "inputs": [
+          [
+            "e7e19061ac17b43f4bb960f923bc3f09726ceb0d284f9ccf509f0b2bb465a92e:0",
+            "G",
+            0
+          ]
+        ],
+        "outputs": [
+          [
+            "2513f2f45085e355522135170f179905a14e7df5914f4cc0adca5be8bc38a4a6:0",
+            "X",
+            0
+          ]
+        ],
+        "edges": [
+          [
+            [
+              0,
+              "G",
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              "G",
+              1
+            ]
+          ]
+        ]
+      }
+    ],
+    "branch2": [
+      {
+        "rule": "R1",
+        "site": 0,
+        "dest": 0,
+        "inputs": [],
+        "outputs": [
+          [
+            "e7e19061ac17b43f4bb960f923bc3f09726ceb0d284f9ccf509f0b2bb465a92e:0",
+            "G",
+            0
+          ]
+        ],
+        "edges": [
+          [],
+          []
+        ]
+      },
+      {
+        "rule": "R2",
+        "site": 0,
+        "dest": 0,
+        "inputs": [
+          [
+            "i0",
+            "G",
+            0
+          ]
+        ],
+        "outputs": [
+          [
+            "39357944e27c2a09ee550706492d5c614614eaf4fd148a01912bb91551faaf9d:0",
+            "X",
+            0
+          ]
+        ],
+        "edges": [
+          [],
+          []
+        ]
+      }
+    ]
+  },
+  {
+    "fixture": "F3",
+    "identity": false,
+    "convention": 0,
+    "equal_depth": false,
+    "state": "((('G', 0), 1), (('X', 0), 2), (('Y', 1), 1))",
+    "branch1": [],
+    "branch2": [
+      {
+        "rule": "R2",
+        "site": 0,
+        "dest": 0,
+        "inputs": [
+          [
+            "i0",
+            "G",
+            0
+          ]
+        ],
+        "outputs": [
+          [
+            "39357944e27c2a09ee550706492d5c614614eaf4fd148a01912bb91551faaf9d:0",
+            "X",
+            0
+          ]
+        ],
+        "edges": [
+          [],
+          []
+        ]
+      },
+      {
+        "rule": "R2r",
+        "site": 0,
+        "dest": 0,
+        "inputs": [
+          [
+            "39357944e27c2a09ee550706492d5c614614eaf4fd148a01912bb91551faaf9d:0",
+            "X",
+            0
+          ]
+        ],
+        "outputs": [
+          [
+            "9a129260ce01952185fa0ae013ce0141a8d116427b7d9e184bbb00e5de5412af:0",
+            "G",
+            0
+          ]
+        ],
+        "edges": [
+          [
+            [
+              0,
+              "X",
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              "X",
+              1
+            ]
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fixture": "F3",
+    "identity": false,
+    "convention": 0,
+    "equal_depth": true,
+    "state": "((('G', 0), 1), (('X', 0), 3), (('Y', 1), 1))",
+    "branch1": [
+      {
+        "rule": "R1",
+        "site": 0,
+        "dest": 0,
+        "inputs": [],
+        "outputs": [
+          [
+            "e7e19061ac17b43f4bb960f923bc3f09726ceb0d284f9ccf509f0b2bb465a92e:0",
+            "G",
+            0
+          ]
+        ],
+        "edges": [
+          [],
+          []
+        ]
+      },
+      {
+        "rule": "R2",
+        "site": 0,
+        "dest": 0,
+        "inputs": [
+          [
+            "e7e19061ac17b43f4bb960f923bc3f09726ceb0d284f9ccf509f0b2bb465a92e:0",
+            "G",
+            0
+          ]
+        ],
+        "outputs": [
+          [
+            "2513f2f45085e355522135170f179905a14e7df5914f4cc0adca5be8bc38a4a6:0",
+            "X",
+            0
+          ]
+        ],
+        "edges": [
+          [
+            [
+              0,
+              "G",
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              "G",
+              1
+            ]
+          ]
+        ]
+      }
+    ],
+    "branch2": [
+      {
+        "rule": "R1",
+        "site": 0,
+        "dest": 0,
+        "inputs": [],
+        "outputs": [
+          [
+            "e7e19061ac17b43f4bb960f923bc3f09726ceb0d284f9ccf509f0b2bb465a92e:0",
+            "G",
+            0
+          ]
+        ],
+        "edges": [
+          [],
+          []
+        ]
+      },
+      {
+        "rule": "R2",
+        "site": 0,
+        "dest": 0,
+        "inputs": [
+          [
+            "i0",
+            "G",
+            0
+          ]
+        ],
+        "outputs": [
+          [
+            "39357944e27c2a09ee550706492d5c614614eaf4fd148a01912bb91551faaf9d:0",
+            "X",
+            0
+          ]
+        ],
+        "edges": [
+          [],
+          []
+        ]
+      }
+    ]
+  },
+  {
+    "fixture": "F3",
+    "identity": false,
+    "convention": 1,
+    "equal_depth": false,
+    "state": "((('G', 0), 1), (('X', 0), 2), (('Y', 1), 1))",
+    "branch1": [],
+    "branch2": [
+      {
+        "rule": "R2",
+        "site": 0,
+        "dest": 0,
+        "inputs": [
+          [
+            "i0",
+            "G",
+            0
+          ]
+        ],
+        "outputs": [
+          [
+            "39357944e27c2a09ee550706492d5c614614eaf4fd148a01912bb91551faaf9d:0",
+            "X",
+            0
+          ]
+        ],
+        "edges": [
+          [],
+          []
+        ]
+      },
+      {
+        "rule": "R2r",
+        "site": 0,
+        "dest": 0,
+        "inputs": [
+          [
+            "39357944e27c2a09ee550706492d5c614614eaf4fd148a01912bb91551faaf9d:0",
+            "X",
+            0
+          ]
+        ],
+        "outputs": [
+          [
+            "9a129260ce01952185fa0ae013ce0141a8d116427b7d9e184bbb00e5de5412af:0",
+            "G",
+            0
+          ]
+        ],
+        "edges": [
+          [
+            [
+              0,
+              "X",
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              "X",
+              1
+            ]
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fixture": "F3",
+    "identity": false,
+    "convention": 1,
+    "equal_depth": true,
+    "state": "((('G', 0), 1), (('X', 0), 3), (('Y', 1), 1))",
+    "branch1": [
+      {
+        "rule": "R1",
+        "site": 0,
+        "dest": 0,
+        "inputs": [],
+        "outputs": [
+          [
+            "e7e19061ac17b43f4bb960f923bc3f09726ceb0d284f9ccf509f0b2bb465a92e:0",
+            "G",
+            0
+          ]
+        ],
+        "edges": [
+          [],
+          []
+        ]
+      },
+      {
+        "rule": "R2",
+        "site": 0,
+        "dest": 0,
+        "inputs": [
+          [
+            "e7e19061ac17b43f4bb960f923bc3f09726ceb0d284f9ccf509f0b2bb465a92e:0",
+            "G",
+            0
+          ]
+        ],
+        "outputs": [
+          [
+            "2513f2f45085e355522135170f179905a14e7df5914f4cc0adca5be8bc38a4a6:0",
+            "X",
+            0
+          ]
+        ],
+        "edges": [
+          [
+            [
+              0,
+              "G",
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              "G",
+              1
+            ]
+          ]
+        ]
+      }
+    ],
+    "branch2": [
+      {
+        "rule": "R1",
+        "site": 0,
+        "dest": 0,
+        "inputs": [],
+        "outputs": [
+          [
+            "e7e19061ac17b43f4bb960f923bc3f09726ceb0d284f9ccf509f0b2bb465a92e:0",
+            "G",
+            0
+          ]
+        ],
+        "edges": [
+          [],
+          []
+        ]
+      },
+      {
+        "rule": "R2",
+        "site": 0,
+        "dest": 0,
+        "inputs": [
+          [
+            "i0",
+            "G",
+            0
+          ]
+        ],
+        "outputs": [
+          [
+            "39357944e27c2a09ee550706492d5c614614eaf4fd148a01912bb91551faaf9d:0",
+            "X",
+            0
+          ]
+        ],
+        "edges": [
+          [],
+          []
+        ]
+      }
+    ]
+  },
+  {
+    "fixture": "F4",
+    "identity": false,
+    "convention": 0,
+    "equal_depth": false,
+    "state": "((('G', 0), 1), (('G', 1), 1), (('G', 2), 1), (('X', 0), 2), (('X', 1), 2), (('X', 2), 1), (('X', 3), 1), (('Y', 0), 1), (('Y', 1), 1), (('Y', 3), 1))",
+    "branch1": [],
+    "branch2": [
+      {
+        "rule": "R2",
+        "site": 0,
+        "dest": 0,
+        "inputs": [
+          [
+            "i0",
+            "G",
+            0
+          ]
+        ],
+        "outputs": [
+          [
+            "39357944e27c2a09ee550706492d5c614614eaf4fd148a01912bb91551faaf9d:0",
+            "X",
+            0
+          ]
+        ],
+        "edges": [
+          [],
+          []
+        ]
+      },
+      {
+        "rule": "R2r",
+        "site": 0,
+        "dest": 0,
+        "inputs": [
+          [
+            "39357944e27c2a09ee550706492d5c614614eaf4fd148a01912bb91551faaf9d:0",
+            "X",
+            0
+          ]
+        ],
+        "outputs": [
+          [
+            "9a129260ce01952185fa0ae013ce0141a8d116427b7d9e184bbb00e5de5412af:0",
+            "G",
+            0
+          ]
+        ],
+        "edges": [
+          [
+            [
+              0,
+              "X",
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              "X",
+              1
+            ]
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fixture": "F4",
+    "identity": false,
+    "convention": 0,
+    "equal_depth": true,
+    "state": "((('G', 0), 1), (('G', 1), 1), (('G', 2), 1), (('X', 0), 3), (('X', 1), 2), (('X', 2), 1), (('X', 3), 1), (('Y', 0), 1), (('Y', 1), 1), (('Y', 3), 1))",
+    "branch1": [
+      {
+        "rule": "R1",
+        "site": 0,
+        "dest": 0,
+        "inputs": [],
+        "outputs": [
+          [
+            "e7e19061ac17b43f4bb960f923bc3f09726ceb0d284f9ccf509f0b2bb465a92e:0",
+            "G",
+            0
+          ]
+        ],
+        "edges": [
+          [],
+          []
+        ]
+      },
+      {
+        "rule": "R2",
+        "site": 0,
+        "dest": 0,
+        "inputs": [
+          [
+            "e7e19061ac17b43f4bb960f923bc3f09726ceb0d284f9ccf509f0b2bb465a92e:0",
+            "G",
+            0
+          ]
+        ],
+        "outputs": [
+          [
+            "2513f2f45085e355522135170f179905a14e7df5914f4cc0adca5be8bc38a4a6:0",
+            "X",
+            0
+          ]
+        ],
+        "edges": [
+          [
+            [
+              0,
+              "G",
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              "G",
+              1
+            ]
+          ]
+        ]
+      }
+    ],
+    "branch2": [
+      {
+        "rule": "R1",
+        "site": 0,
+        "dest": 0,
+        "inputs": [],
+        "outputs": [
+          [
+            "e7e19061ac17b43f4bb960f923bc3f09726ceb0d284f9ccf509f0b2bb465a92e:0",
+            "G",
+            0
+          ]
+        ],
+        "edges": [
+          [],
+          []
+        ]
+      },
+      {
+        "rule": "R2",
+        "site": 0,
+        "dest": 0,
+        "inputs": [
+          [
+            "i0",
+            "G",
+            0
+          ]
+        ],
+        "outputs": [
+          [
+            "39357944e27c2a09ee550706492d5c614614eaf4fd148a01912bb91551faaf9d:0",
+            "X",
+            0
+          ]
+        ],
+        "edges": [
+          [],
+          []
+        ]
+      }
+    ]
+  },
+  {
+    "fixture": "F4",
+    "identity": false,
+    "convention": 1,
+    "equal_depth": false,
+    "state": "((('G', 0), 1), (('G', 1), 1), (('G', 2), 1), (('X', 0), 2), (('X', 1), 2), (('X', 2), 1), (('X', 3), 1), (('Y', 0), 1), (('Y', 1), 1), (('Y', 3), 1))",
+    "branch1": [],
+    "branch2": [
+      {
+        "rule": "R2",
+        "site": 0,
+        "dest": 0,
+        "inputs": [
+          [
+            "i0",
+            "G",
+            0
+          ]
+        ],
+        "outputs": [
+          [
+            "39357944e27c2a09ee550706492d5c614614eaf4fd148a01912bb91551faaf9d:0",
+            "X",
+            0
+          ]
+        ],
+        "edges": [
+          [],
+          []
+        ]
+      },
+      {
+        "rule": "R2r",
+        "site": 0,
+        "dest": 0,
+        "inputs": [
+          [
+            "39357944e27c2a09ee550706492d5c614614eaf4fd148a01912bb91551faaf9d:0",
+            "X",
+            0
+          ]
+        ],
+        "outputs": [
+          [
+            "9a129260ce01952185fa0ae013ce0141a8d116427b7d9e184bbb00e5de5412af:0",
+            "G",
+            0
+          ]
+        ],
+        "edges": [
+          [
+            [
+              0,
+              "X",
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              "X",
+              1
+            ]
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fixture": "F4",
+    "identity": false,
+    "convention": 1,
+    "equal_depth": true,
+    "state": "((('G', 0), 1), (('G', 1), 1), (('G', 2), 1), (('X', 0), 3), (('X', 1), 2), (('X', 2), 1), (('X', 3), 1), (('Y', 0), 1), (('Y', 1), 1), (('Y', 3), 1))",
+    "branch1": [
+      {
+        "rule": "R1",
+        "site": 0,
+        "dest": 0,
+        "inputs": [],
+        "outputs": [
+          [
+            "e7e19061ac17b43f4bb960f923bc3f09726ceb0d284f9ccf509f0b2bb465a92e:0",
+            "G",
+            0
+          ]
+        ],
+        "edges": [
+          [],
+          []
+        ]
+      },
+      {
+        "rule": "R2",
+        "site": 0,
+        "dest": 0,
+        "inputs": [
+          [
+            "e7e19061ac17b43f4bb960f923bc3f09726ceb0d284f9ccf509f0b2bb465a92e:0",
+            "G",
+            0
+          ]
+        ],
+        "outputs": [
+          [
+            "2513f2f45085e355522135170f179905a14e7df5914f4cc0adca5be8bc38a4a6:0",
+            "X",
+            0
+          ]
+        ],
+        "edges": [
+          [
+            [
+              0,
+              "G",
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              "G",
+              1
+            ]
+          ]
+        ]
+      }
+    ],
+    "branch2": [
+      {
+        "rule": "R1",
+        "site": 0,
+        "dest": 0,
+        "inputs": [],
+        "outputs": [
+          [
+            "e7e19061ac17b43f4bb960f923bc3f09726ceb0d284f9ccf509f0b2bb465a92e:0",
+            "G",
+            0
+          ]
+        ],
+        "edges": [
+          [],
+          []
+        ]
+      },
+      {
+        "rule": "R2",
+        "site": 0,
+        "dest": 0,
+        "inputs": [
+          [
+            "i0",
+            "G",
+            0
+          ]
+        ],
+        "outputs": [
+          [
+            "39357944e27c2a09ee550706492d5c614614eaf4fd148a01912bb91551faaf9d:0",
+            "X",
+            0
+          ]
+        ],
+        "edges": [
+          [],
+          []
+        ]
+      }
+    ]
+  }
+]

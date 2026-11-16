@@ -1,0 +1,2677 @@
+{
+  "comparisons": [
+    {
+      "method": "tick.02",
+      "convention": 0,
+      "metric": "R1",
+      "SSA_mean": 5.595458984375,
+      "other_mean": 5.587158203125,
+      "difference": -0.00830078125,
+      "CI95_family": [
+        -0.13968691231061525,
+        0.12308534981061525
+      ],
+      "margin": 0.27977294921875,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0125732421875,
+      "TV_bounds95_family": [
+        0,
+        0.07803401710694999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.02",
+      "convention": 0,
+      "metric": "R2",
+      "SSA_mean": 0.550537109375,
+      "other_mean": 0.488525390625,
+      "difference": -0.06201171875,
+      "CI95_family": [
+        -0.10105552322206693,
+        -0.022967914277933064
+      ],
+      "margin": 0.05,
+      "mean_status": "INCONCLUSIVE",
+      "binned_TV": 0.0408935546875,
+      "TV_bounds95_family": [
+        0,
+        0.10635432960694999
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "tick.02",
+      "convention": 0,
+      "metric": "R2r",
+      "SSA_mean": 0.0179443359375,
+      "other_mean": 0.01806640625,
+      "difference": 0.0001220703125,
+      "CI95_family": [
+        -0.007423998451313027,
+        0.007668139076313027
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.00048828125,
+      "TV_bounds95_family": [
+        0,
+        0.06594905616944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.02",
+      "convention": 0,
+      "metric": "R3",
+      "SSA_mean": 5.91552734375,
+      "other_mean": 5.7476806640625,
+      "difference": -0.1678466796875,
+      "CI95_family": [
+        -0.2173265987649415,
+        -0.11836676061005849
+      ],
+      "margin": 0.2957763671875,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0472412109375,
+      "TV_bounds95_family": [
+        0,
+        0.11270198585694999
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "tick.02",
+      "convention": 0,
+      "metric": "R4",
+      "SSA_mean": 0.09130859375,
+      "other_mean": 0.0679931640625,
+      "difference": -0.0233154296875,
+      "CI95_family": [
+        -0.040012486974211205,
+        -0.006618372400788795
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.018310546875,
+      "TV_bounds95_family": [
+        0,
+        0.08377132179444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.02",
+      "convention": 0,
+      "metric": "R5",
+      "SSA_mean": 0.188232421875,
+      "other_mean": 0.1767578125,
+      "difference": -0.011474609375,
+      "CI95_family": [
+        -0.03475233968138207,
+        0.011803120931382072
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.010986328125,
+      "TV_bounds95_family": [
+        0,
+        0.07644710304444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.02",
+      "convention": 0,
+      "metric": "H_G",
+      "SSA_mean": 1.122802734375,
+      "other_mean": 0.9815673828125,
+      "difference": -0.1412353515625,
+      "CI95_family": [
+        -0.1991284025003236,
+        -0.08334230062467639
+      ],
+      "margin": 0.056140136718750004,
+      "mean_status": "DIFFERENT",
+      "binned_TV": 0.0526123046875,
+      "TV_bounds95_family": [
+        0,
+        0.11807307960694999
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "tick.02",
+      "convention": 0,
+      "metric": "H_X",
+      "SSA_mean": 0.3966064453125,
+      "other_mean": 0.3917236328125,
+      "difference": -0.0048828125,
+      "CI95_family": [
+        -0.04037023376839335,
+        0.030604608768393347
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.01220703125,
+      "TV_bounds95_family": [
+        0,
+        0.07766780616944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.02",
+      "convention": 0,
+      "metric": "H_Y",
+      "SSA_mean": 16.8916015625,
+      "other_mean": 12.0108642578125,
+      "difference": -4.8807373046875,
+      "CI95_family": [
+        -5.096893876525913,
+        -4.664580732849087
+      ],
+      "margin": 0.844580078125,
+      "mean_status": "DIFFERENT",
+      "binned_TV": 0.2587890625,
+      "TV_bounds95_family": [
+        0.19332828758055,
+        0.32424983741945
+      ],
+      "distribution_status": "DIFFERENT"
+    },
+    {
+      "method": "tick.02",
+      "convention": 0,
+      "metric": "events",
+      "SSA_mean": 30.77001953125,
+      "other_mean": 25.4703369140625,
+      "difference": -5.2996826171875,
+      "CI95_family": [
+        -5.585332914160188,
+        -5.014032320214812
+      ],
+      "margin": 1.5385009765625002,
+      "mean_status": "DIFFERENT",
+      "binned_TV": 0.0692138671875,
+      "TV_bounds95_family": [
+        0.0037530922680500123,
+        0.13467464210695
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "tick.02",
+      "convention": 0,
+      "metric": "depth",
+      "SSA_mean": 5.1026611328125,
+      "other_mean": 3.6220703125,
+      "difference": -1.4805908203125,
+      "CI95_family": [
+        -1.5359673811574162,
+        -1.4252142594675838
+      ],
+      "margin": 0.255133056640625,
+      "mean_status": "DIFFERENT",
+      "binned_TV": 0.3668212890625,
+      "TV_bounds95_family": [
+        0.30136051414305,
+        0.43228206398195
+      ],
+      "distribution_status": "DIFFERENT"
+    },
+    {
+      "method": "tick.02",
+      "convention": 0,
+      "metric": "layer_width",
+      "SSA_mean": 14.71484375,
+      "other_mean": 14.737060546875,
+      "difference": 0.022216796875,
+      "CI95_family": [
+        -0.12308374001217129,
+        0.1675173337621713
+      ],
+      "margin": 0.7357421875000001,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.006591796875,
+      "TV_bounds95_family": [
+        0,
+        0.07205257179444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.02",
+      "convention": 0,
+      "metric": "mean_in",
+      "SSA_mean": 0.5146754767882527,
+      "other_mean": 0.41674890423683425,
+      "difference": -0.0979265725514184,
+      "CI95_family": [
+        -0.10245433814653149,
+        -0.09339880695630531
+      ],
+      "margin": 0.05,
+      "mean_status": "DIFFERENT",
+      "binned_TV": 0.447509765625,
+      "TV_bounds95_family": [
+        0.38204899070555,
+        0.51297054054445
+      ],
+      "distribution_status": "DIFFERENT"
+    },
+    {
+      "method": "tick.02",
+      "convention": 0,
+      "metric": "max_in",
+      "SSA_mean": 1.0223388671875,
+      "other_mean": 1.011474609375,
+      "difference": -0.0108642578125,
+      "CI95_family": [
+        -0.01855991671008263,
+        -0.00316859891491737
+      ],
+      "margin": 0.051116943359375,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0096435546875,
+      "TV_bounds95_family": [
+        0,
+        0.07510432960694999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.02",
+      "convention": 0,
+      "metric": "mean_out",
+      "SSA_mean": 0.5146754767882527,
+      "other_mean": 0.41674890423683425,
+      "difference": -0.0979265725514184,
+      "CI95_family": [
+        -0.10245433814653149,
+        -0.09339880695630531
+      ],
+      "margin": 0.05,
+      "mean_status": "DIFFERENT",
+      "binned_TV": 0.447509765625,
+      "TV_bounds95_family": [
+        0.38204899070555,
+        0.51297054054445
+      ],
+      "distribution_status": "DIFFERENT"
+    },
+    {
+      "method": "tick.02",
+      "convention": 0,
+      "metric": "max_out",
+      "SSA_mean": 1.138916015625,
+      "other_mean": 1.09619140625,
+      "difference": -0.042724609375,
+      "CI95_family": [
+        -0.06775055962980793,
+        -0.017698659120192067
+      ],
+      "margin": 0.05694580078125,
+      "mean_status": "INCONCLUSIVE",
+      "binned_TV": 0.022216796875,
+      "TV_bounds95_family": [
+        0,
+        0.08767757179444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.02",
+      "convention": 1,
+      "metric": "R1",
+      "SSA_mean": 5.595458984375,
+      "other_mean": 5.587158203125,
+      "difference": -0.00830078125,
+      "CI95_family": [
+        -0.13968691231061525,
+        0.12308534981061525
+      ],
+      "margin": 0.27977294921875,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0125732421875,
+      "TV_bounds95_family": [
+        0,
+        0.07803401710694999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.02",
+      "convention": 1,
+      "metric": "R2",
+      "SSA_mean": 0.550537109375,
+      "other_mean": 0.488525390625,
+      "difference": -0.06201171875,
+      "CI95_family": [
+        -0.10105552322206693,
+        -0.022967914277933064
+      ],
+      "margin": 0.05,
+      "mean_status": "INCONCLUSIVE",
+      "binned_TV": 0.0408935546875,
+      "TV_bounds95_family": [
+        0,
+        0.10635432960694999
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "tick.02",
+      "convention": 1,
+      "metric": "R2r",
+      "SSA_mean": 0.0179443359375,
+      "other_mean": 0.01806640625,
+      "difference": 0.0001220703125,
+      "CI95_family": [
+        -0.007423998451313027,
+        0.007668139076313027
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.00048828125,
+      "TV_bounds95_family": [
+        0,
+        0.06594905616944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.02",
+      "convention": 1,
+      "metric": "R3",
+      "SSA_mean": 5.91552734375,
+      "other_mean": 5.7476806640625,
+      "difference": -0.1678466796875,
+      "CI95_family": [
+        -0.2173265987649415,
+        -0.11836676061005849
+      ],
+      "margin": 0.2957763671875,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0472412109375,
+      "TV_bounds95_family": [
+        0,
+        0.11270198585694999
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "tick.02",
+      "convention": 1,
+      "metric": "R4",
+      "SSA_mean": 0.09130859375,
+      "other_mean": 0.0679931640625,
+      "difference": -0.0233154296875,
+      "CI95_family": [
+        -0.040012486974211205,
+        -0.006618372400788795
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.018310546875,
+      "TV_bounds95_family": [
+        0,
+        0.08377132179444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.02",
+      "convention": 1,
+      "metric": "R5",
+      "SSA_mean": 0.188232421875,
+      "other_mean": 0.1767578125,
+      "difference": -0.011474609375,
+      "CI95_family": [
+        -0.03475233968138207,
+        0.011803120931382072
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.010986328125,
+      "TV_bounds95_family": [
+        0,
+        0.07644710304444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.02",
+      "convention": 1,
+      "metric": "H_G",
+      "SSA_mean": 1.122802734375,
+      "other_mean": 0.9815673828125,
+      "difference": -0.1412353515625,
+      "CI95_family": [
+        -0.1991284025003236,
+        -0.08334230062467639
+      ],
+      "margin": 0.056140136718750004,
+      "mean_status": "DIFFERENT",
+      "binned_TV": 0.0526123046875,
+      "TV_bounds95_family": [
+        0,
+        0.11807307960694999
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "tick.02",
+      "convention": 1,
+      "metric": "H_X",
+      "SSA_mean": 0.3966064453125,
+      "other_mean": 0.3917236328125,
+      "difference": -0.0048828125,
+      "CI95_family": [
+        -0.04037023376839335,
+        0.030604608768393347
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.01220703125,
+      "TV_bounds95_family": [
+        0,
+        0.07766780616944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.02",
+      "convention": 1,
+      "metric": "H_Y",
+      "SSA_mean": 16.8916015625,
+      "other_mean": 12.0108642578125,
+      "difference": -4.8807373046875,
+      "CI95_family": [
+        -5.096893876525913,
+        -4.664580732849087
+      ],
+      "margin": 0.844580078125,
+      "mean_status": "DIFFERENT",
+      "binned_TV": 0.2587890625,
+      "TV_bounds95_family": [
+        0.19332828758055,
+        0.32424983741945
+      ],
+      "distribution_status": "DIFFERENT"
+    },
+    {
+      "method": "tick.02",
+      "convention": 1,
+      "metric": "events",
+      "SSA_mean": 30.77001953125,
+      "other_mean": 25.4703369140625,
+      "difference": -5.2996826171875,
+      "CI95_family": [
+        -5.585332914160188,
+        -5.014032320214812
+      ],
+      "margin": 1.5385009765625002,
+      "mean_status": "DIFFERENT",
+      "binned_TV": 0.0692138671875,
+      "TV_bounds95_family": [
+        0.0037530922680500123,
+        0.13467464210695
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "tick.02",
+      "convention": 1,
+      "metric": "depth",
+      "SSA_mean": 5.0684814453125,
+      "other_mean": 3.6068115234375,
+      "difference": -1.461669921875,
+      "CI95_family": [
+        -1.5164720096365558,
+        -1.4068678341134442
+      ],
+      "margin": 0.253424072265625,
+      "mean_status": "DIFFERENT",
+      "binned_TV": 0.3743896484375,
+      "TV_bounds95_family": [
+        0.30892887351805,
+        0.43985042335695
+      ],
+      "distribution_status": "DIFFERENT"
+    },
+    {
+      "method": "tick.02",
+      "convention": 1,
+      "metric": "layer_width",
+      "SSA_mean": 14.850830078125,
+      "other_mean": 14.839599609375,
+      "difference": -0.01123046875,
+      "CI95_family": [
+        -0.15454263154707343,
+        0.13208169404707343
+      ],
+      "margin": 0.7425415039062501,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.006591796875,
+      "TV_bounds95_family": [
+        0,
+        0.07205257179444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.02",
+      "convention": 1,
+      "metric": "mean_in",
+      "SSA_mean": 0.5094214591049162,
+      "other_mean": 0.4120707173115053,
+      "difference": -0.09735074179341091,
+      "CI95_family": [
+        -0.10175670830462566,
+        -0.09294477528219616
+      ],
+      "margin": 0.05,
+      "mean_status": "DIFFERENT",
+      "binned_TV": 0.4508056640625,
+      "TV_bounds95_family": [
+        0.38534488914305,
+        0.51626643898195
+      ],
+      "distribution_status": "DIFFERENT"
+    },
+    {
+      "method": "tick.02",
+      "convention": 1,
+      "metric": "max_in",
+      "SSA_mean": 1.0,
+      "other_mean": 1.0,
+      "difference": 0.0,
+      "CI95_family": [
+        0.0,
+        0.0
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0,
+      "TV_bounds95_family": [
+        0,
+        0.06546077491944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.02",
+      "convention": 1,
+      "metric": "mean_out",
+      "SSA_mean": 0.5094214591049162,
+      "other_mean": 0.4120707173115053,
+      "difference": -0.09735074179341091,
+      "CI95_family": [
+        -0.10175670830462566,
+        -0.09294477528219616
+      ],
+      "margin": 0.05,
+      "mean_status": "DIFFERENT",
+      "binned_TV": 0.4508056640625,
+      "TV_bounds95_family": [
+        0.38534488914305,
+        0.51626643898195
+      ],
+      "distribution_status": "DIFFERENT"
+    },
+    {
+      "method": "tick.02",
+      "convention": 1,
+      "metric": "max_out",
+      "SSA_mean": 1.0,
+      "other_mean": 1.0,
+      "difference": 0.0,
+      "CI95_family": [
+        0.0,
+        0.0
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0,
+      "TV_bounds95_family": [
+        0,
+        0.06546077491944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.005",
+      "convention": 0,
+      "metric": "R1",
+      "SSA_mean": 5.595458984375,
+      "other_mean": 5.60888671875,
+      "difference": 0.013427734375,
+      "CI95_family": [
+        -0.1178392502724332,
+        0.1446947190224332
+      ],
+      "margin": 0.27977294921875,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.008544921875,
+      "TV_bounds95_family": [
+        0,
+        0.07400569679444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.005",
+      "convention": 0,
+      "metric": "R2",
+      "SSA_mean": 0.550537109375,
+      "other_mean": 0.550537109375,
+      "difference": 0.0,
+      "CI95_family": [
+        -0.039922717455586613,
+        0.039922717455586613
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.004638671875,
+      "TV_bounds95_family": [
+        0,
+        0.07009944679444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.005",
+      "convention": 0,
+      "metric": "R2r",
+      "SSA_mean": 0.0179443359375,
+      "other_mean": 0.02001953125,
+      "difference": 0.0020751953125,
+      "CI95_family": [
+        -0.005635445147063302,
+        0.009785835772063302
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.002685546875,
+      "TV_bounds95_family": [
+        0,
+        0.06814632179444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.005",
+      "convention": 0,
+      "metric": "R3",
+      "SSA_mean": 5.91552734375,
+      "other_mean": 5.87548828125,
+      "difference": -0.0400390625,
+      "CI95_family": [
+        -0.09104812424930601,
+        0.010969999249306014
+      ],
+      "margin": 0.2957763671875,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0098876953125,
+      "TV_bounds95_family": [
+        0,
+        0.07534847023194999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.005",
+      "convention": 0,
+      "metric": "R4",
+      "SSA_mean": 0.09130859375,
+      "other_mean": 0.08251953125,
+      "difference": -0.0087890625,
+      "CI95_family": [
+        -0.026715818806490224,
+        0.009137693806490224
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.009521484375,
+      "TV_bounds95_family": [
+        0,
+        0.07498225929444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.005",
+      "convention": 0,
+      "metric": "R5",
+      "SSA_mean": 0.188232421875,
+      "other_mean": 0.182861328125,
+      "difference": -0.00537109375,
+      "CI95_family": [
+        -0.02882544120975431,
+        0.01808325370975431
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0054931640625,
+      "TV_bounds95_family": [
+        0,
+        0.07095393898194999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.005",
+      "convention": 0,
+      "metric": "H_G",
+      "SSA_mean": 1.122802734375,
+      "other_mean": 1.077392578125,
+      "difference": -0.04541015625,
+      "CI95_family": [
+        -0.10499610937756701,
+        0.01417579687756701
+      ],
+      "margin": 0.056140136718750004,
+      "mean_status": "INCONCLUSIVE",
+      "binned_TV": 0.014892578125,
+      "TV_bounds95_family": [
+        0,
+        0.08035335304444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.005",
+      "convention": 0,
+      "metric": "H_X",
+      "SSA_mean": 0.3966064453125,
+      "other_mean": 0.406005859375,
+      "difference": 0.0093994140625,
+      "CI95_family": [
+        -0.026213711072230736,
+        0.045012539197230736
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.00732421875,
+      "TV_bounds95_family": [
+        0,
+        0.07278499366944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.005",
+      "convention": 0,
+      "metric": "H_Y",
+      "SSA_mean": 16.8916015625,
+      "other_mean": 15.5115966796875,
+      "difference": -1.3800048828125,
+      "CI95_family": [
+        -1.6213909307751555,
+        -1.1386188348498445
+      ],
+      "margin": 0.844580078125,
+      "mean_status": "DIFFERENT",
+      "binned_TV": 0.101806640625,
+      "TV_bounds95_family": [
+        0.03634586570555001,
+        0.16726741554445
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "tick.005",
+      "convention": 0,
+      "metric": "events",
+      "SSA_mean": 30.77001953125,
+      "other_mean": 29.3153076171875,
+      "difference": -1.4547119140625,
+      "CI95_family": [
+        -1.7630250333999422,
+        -1.1463987947250578
+      ],
+      "margin": 1.5385009765625002,
+      "mean_status": "INCONCLUSIVE",
+      "binned_TV": 0.0390625,
+      "TV_bounds95_family": [
+        0,
+        0.10452327491944999
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "tick.005",
+      "convention": 0,
+      "metric": "depth",
+      "SSA_mean": 5.1026611328125,
+      "other_mean": 4.7008056640625,
+      "difference": -0.40185546875,
+      "CI95_family": [
+        -0.4664964593759467,
+        -0.3372144781240533
+      ],
+      "margin": 0.255133056640625,
+      "mean_status": "DIFFERENT",
+      "binned_TV": 0.1285400390625,
+      "TV_bounds95_family": [
+        0.06307926414305001,
+        0.19400081398195
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "tick.005",
+      "convention": 0,
+      "metric": "layer_width",
+      "SSA_mean": 14.71484375,
+      "other_mean": 14.7364501953125,
+      "difference": 0.0216064453125,
+      "CI95_family": [
+        -0.12368658563628393,
+        0.16689947626128393
+      ],
+      "margin": 0.7357421875000001,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.005126953125,
+      "TV_bounds95_family": [
+        0,
+        0.07058772804444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.005",
+      "convention": 0,
+      "metric": "mean_in",
+      "SSA_mean": 0.5146754767882527,
+      "other_mean": 0.491160454840114,
+      "difference": -0.023515021948138648,
+      "CI95_family": [
+        -0.028107015809989266,
+        -0.01892302808628803
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.1114501953125,
+      "TV_bounds95_family": [
+        0.04598942039305001,
+        0.17691097023195
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "tick.005",
+      "convention": 0,
+      "metric": "max_in",
+      "SSA_mean": 1.0223388671875,
+      "other_mean": 1.0203857421875,
+      "difference": -0.001953125,
+      "CI95_family": [
+        -0.010790395078795836,
+        0.006884145078795836
+      ],
+      "margin": 0.051116943359375,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.003173828125,
+      "TV_bounds95_family": [
+        0,
+        0.06863460304444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.005",
+      "convention": 0,
+      "metric": "mean_out",
+      "SSA_mean": 0.5146754767882527,
+      "other_mean": 0.491160454840114,
+      "difference": -0.023515021948138648,
+      "CI95_family": [
+        -0.028107015809989266,
+        -0.01892302808628803
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.1114501953125,
+      "TV_bounds95_family": [
+        0.04598942039305001,
+        0.17691097023195
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "tick.005",
+      "convention": 0,
+      "metric": "max_out",
+      "SSA_mean": 1.138916015625,
+      "other_mean": 1.11767578125,
+      "difference": -0.021240234375,
+      "CI95_family": [
+        -0.04745301706166177,
+        0.0049725483116617696
+      ],
+      "margin": 0.05694580078125,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0108642578125,
+      "TV_bounds95_family": [
+        0,
+        0.07632503273194999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.005",
+      "convention": 1,
+      "metric": "R1",
+      "SSA_mean": 5.595458984375,
+      "other_mean": 5.60888671875,
+      "difference": 0.013427734375,
+      "CI95_family": [
+        -0.1178392502724332,
+        0.1446947190224332
+      ],
+      "margin": 0.27977294921875,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.008544921875,
+      "TV_bounds95_family": [
+        0,
+        0.07400569679444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.005",
+      "convention": 1,
+      "metric": "R2",
+      "SSA_mean": 0.550537109375,
+      "other_mean": 0.550537109375,
+      "difference": 0.0,
+      "CI95_family": [
+        -0.039922717455586613,
+        0.039922717455586613
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.004638671875,
+      "TV_bounds95_family": [
+        0,
+        0.07009944679444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.005",
+      "convention": 1,
+      "metric": "R2r",
+      "SSA_mean": 0.0179443359375,
+      "other_mean": 0.02001953125,
+      "difference": 0.0020751953125,
+      "CI95_family": [
+        -0.005635445147063302,
+        0.009785835772063302
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.002685546875,
+      "TV_bounds95_family": [
+        0,
+        0.06814632179444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.005",
+      "convention": 1,
+      "metric": "R3",
+      "SSA_mean": 5.91552734375,
+      "other_mean": 5.87548828125,
+      "difference": -0.0400390625,
+      "CI95_family": [
+        -0.09104812424930601,
+        0.010969999249306014
+      ],
+      "margin": 0.2957763671875,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0098876953125,
+      "TV_bounds95_family": [
+        0,
+        0.07534847023194999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.005",
+      "convention": 1,
+      "metric": "R4",
+      "SSA_mean": 0.09130859375,
+      "other_mean": 0.08251953125,
+      "difference": -0.0087890625,
+      "CI95_family": [
+        -0.026715818806490224,
+        0.009137693806490224
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.009521484375,
+      "TV_bounds95_family": [
+        0,
+        0.07498225929444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.005",
+      "convention": 1,
+      "metric": "R5",
+      "SSA_mean": 0.188232421875,
+      "other_mean": 0.182861328125,
+      "difference": -0.00537109375,
+      "CI95_family": [
+        -0.02882544120975431,
+        0.01808325370975431
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0054931640625,
+      "TV_bounds95_family": [
+        0,
+        0.07095393898194999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.005",
+      "convention": 1,
+      "metric": "H_G",
+      "SSA_mean": 1.122802734375,
+      "other_mean": 1.077392578125,
+      "difference": -0.04541015625,
+      "CI95_family": [
+        -0.10499610937756701,
+        0.01417579687756701
+      ],
+      "margin": 0.056140136718750004,
+      "mean_status": "INCONCLUSIVE",
+      "binned_TV": 0.014892578125,
+      "TV_bounds95_family": [
+        0,
+        0.08035335304444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.005",
+      "convention": 1,
+      "metric": "H_X",
+      "SSA_mean": 0.3966064453125,
+      "other_mean": 0.406005859375,
+      "difference": 0.0093994140625,
+      "CI95_family": [
+        -0.026213711072230736,
+        0.045012539197230736
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.00732421875,
+      "TV_bounds95_family": [
+        0,
+        0.07278499366944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.005",
+      "convention": 1,
+      "metric": "H_Y",
+      "SSA_mean": 16.8916015625,
+      "other_mean": 15.5115966796875,
+      "difference": -1.3800048828125,
+      "CI95_family": [
+        -1.6213909307751555,
+        -1.1386188348498445
+      ],
+      "margin": 0.844580078125,
+      "mean_status": "DIFFERENT",
+      "binned_TV": 0.101806640625,
+      "TV_bounds95_family": [
+        0.03634586570555001,
+        0.16726741554445
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "tick.005",
+      "convention": 1,
+      "metric": "events",
+      "SSA_mean": 30.77001953125,
+      "other_mean": 29.3153076171875,
+      "difference": -1.4547119140625,
+      "CI95_family": [
+        -1.7630250333999422,
+        -1.1463987947250578
+      ],
+      "margin": 1.5385009765625002,
+      "mean_status": "INCONCLUSIVE",
+      "binned_TV": 0.0390625,
+      "TV_bounds95_family": [
+        0,
+        0.10452327491944999
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "tick.005",
+      "convention": 1,
+      "metric": "depth",
+      "SSA_mean": 5.0684814453125,
+      "other_mean": 4.6744384765625,
+      "difference": -0.39404296875,
+      "CI95_family": [
+        -0.45796487637112027,
+        -0.33012106112887973
+      ],
+      "margin": 0.253424072265625,
+      "mean_status": "DIFFERENT",
+      "binned_TV": 0.123779296875,
+      "TV_bounds95_family": [
+        0.05831852195555001,
+        0.18924007179445
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "tick.005",
+      "convention": 1,
+      "metric": "layer_width",
+      "SSA_mean": 14.850830078125,
+      "other_mean": 14.8538818359375,
+      "difference": 0.0030517578125,
+      "CI95_family": [
+        -0.14027928554884903,
+        0.14638280117384903
+      ],
+      "margin": 0.7425415039062501,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0052490234375,
+      "TV_bounds95_family": [
+        0,
+        0.07070979835694999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.005",
+      "convention": 1,
+      "metric": "mean_in",
+      "SSA_mean": 0.5094214591049162,
+      "other_mean": 0.48626865744320785,
+      "difference": -0.023152801661708355,
+      "CI95_family": [
+        -0.027616651518201276,
+        -0.018688951805215435
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.11279296875,
+      "TV_bounds95_family": [
+        0.04733219383055001,
+        0.17825374366945
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "tick.005",
+      "convention": 1,
+      "metric": "max_in",
+      "SSA_mean": 1.0,
+      "other_mean": 1.0,
+      "difference": 0.0,
+      "CI95_family": [
+        0.0,
+        0.0
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0,
+      "TV_bounds95_family": [
+        0,
+        0.06546077491944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.005",
+      "convention": 1,
+      "metric": "mean_out",
+      "SSA_mean": 0.5094214591049162,
+      "other_mean": 0.48626865744320785,
+      "difference": -0.023152801661708355,
+      "CI95_family": [
+        -0.027616651518201276,
+        -0.018688951805215435
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.11279296875,
+      "TV_bounds95_family": [
+        0.04733219383055001,
+        0.17825374366945
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "tick.005",
+      "convention": 1,
+      "metric": "max_out",
+      "SSA_mean": 1.0,
+      "other_mean": 1.0,
+      "difference": 0.0,
+      "CI95_family": [
+        0.0,
+        0.0
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0,
+      "TV_bounds95_family": [
+        0,
+        0.06546077491944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 0,
+      "metric": "R1",
+      "SSA_mean": 5.595458984375,
+      "other_mean": 5.6063232421875,
+      "difference": 0.0108642578125,
+      "CI95_family": [
+        -0.11989071962809361,
+        0.1416192352530936
+      ],
+      "margin": 0.27977294921875,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0086669921875,
+      "TV_bounds95_family": [
+        0,
+        0.07412776710694999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 0,
+      "metric": "R2",
+      "SSA_mean": 0.550537109375,
+      "other_mean": 0.5526123046875,
+      "difference": 0.0020751953125,
+      "CI95_family": [
+        -0.037927863951578454,
+        0.042078254576578454
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0028076171875,
+      "TV_bounds95_family": [
+        0,
+        0.06826839210694999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 0,
+      "metric": "R2r",
+      "SSA_mean": 0.0179443359375,
+      "other_mean": 0.0208740234375,
+      "difference": 0.0029296875,
+      "CI95_family": [
+        -0.004862159254185307,
+        0.010721534254185306
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0035400390625,
+      "TV_bounds95_family": [
+        0,
+        0.06900081398194999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 0,
+      "metric": "R3",
+      "SSA_mean": 5.91552734375,
+      "other_mean": 5.9124755859375,
+      "difference": -0.0030517578125,
+      "CI95_family": [
+        -0.054338049163650246,
+        0.048234533538650246
+      ],
+      "margin": 0.2957763671875,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0045166015625,
+      "TV_bounds95_family": [
+        0,
+        0.06997737648194999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 0,
+      "metric": "R4",
+      "SSA_mean": 0.09130859375,
+      "other_mean": 0.0965576171875,
+      "difference": 0.0052490234375,
+      "CI95_family": [
+        -0.013235983824959132,
+        0.023734030699959132
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.00390625,
+      "TV_bounds95_family": [
+        0,
+        0.06936702491944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 0,
+      "metric": "R5",
+      "SSA_mean": 0.188232421875,
+      "other_mean": 0.1796875,
+      "difference": -0.008544921875,
+      "CI95_family": [
+        -0.031836523999155285,
+        0.014746680249155285
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.00732421875,
+      "TV_bounds95_family": [
+        0,
+        0.07278499366944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 0,
+      "metric": "H_G",
+      "SSA_mean": 1.122802734375,
+      "other_mean": 1.112548828125,
+      "difference": -0.01025390625,
+      "CI95_family": [
+        -0.07035573509255785,
+        0.04984792259255786
+      ],
+      "margin": 0.056140136718750004,
+      "mean_status": "INCONCLUSIVE",
+      "binned_TV": 0.0068359375,
+      "TV_bounds95_family": [
+        0,
+        0.07229671241944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 0,
+      "metric": "H_X",
+      "SSA_mean": 0.3966064453125,
+      "other_mean": 0.411865234375,
+      "difference": 0.0152587890625,
+      "CI95_family": [
+        -0.020769813709649643,
+        0.05128739183464964
+      ],
+      "margin": 0.05,
+      "mean_status": "INCONCLUSIVE",
+      "binned_TV": 0.006103515625,
+      "TV_bounds95_family": [
+        0,
+        0.07156429054444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 0,
+      "metric": "H_Y",
+      "SSA_mean": 16.8916015625,
+      "other_mean": 16.681640625,
+      "difference": -0.2099609375,
+      "CI95_family": [
+        -0.46036466419003297,
+        0.04044278919003297
+      ],
+      "margin": 0.844580078125,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.01318359375,
+      "TV_bounds95_family": [
+        0,
+        0.07864436866944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 0,
+      "metric": "events",
+      "SSA_mean": 30.77001953125,
+      "other_mean": 30.5745849609375,
+      "difference": -0.1954345703125,
+      "CI95_family": [
+        -0.5132016229864146,
+        0.12233248236141459
+      ],
+      "margin": 1.5385009765625002,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.009033203125,
+      "TV_bounds95_family": [
+        0,
+        0.07449397804444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 0,
+      "metric": "depth",
+      "SSA_mean": 5.1026611328125,
+      "other_mean": 5.0465087890625,
+      "difference": -0.05615234375,
+      "CI95_family": [
+        -0.12465686531764729,
+        0.012352177817647289
+      ],
+      "margin": 0.255133056640625,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.025390625,
+      "TV_bounds95_family": [
+        0,
+        0.09085139991944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 0,
+      "metric": "layer_width",
+      "SSA_mean": 14.71484375,
+      "other_mean": 14.73291015625,
+      "difference": 0.01806640625,
+      "CI95_family": [
+        -0.12626171466806793,
+        0.16239452716806793
+      ],
+      "margin": 0.7357421875000001,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.00048828125,
+      "TV_bounds95_family": [
+        0,
+        0.06594905616944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 0,
+      "metric": "mean_in",
+      "SSA_mean": 0.5146754767882527,
+      "other_mean": 0.5111450295533452,
+      "difference": -0.0035304472349074745,
+      "CI95_family": [
+        -0.00814285700871618,
+        0.0010819625389012306
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0146484375,
+      "TV_bounds95_family": [
+        0,
+        0.08010921241944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 0,
+      "metric": "max_in",
+      "SSA_mean": 1.0223388671875,
+      "other_mean": 1.0240478515625,
+      "difference": 0.001708984375,
+      "CI95_family": [
+        -0.0075496776402979564,
+        0.010967646390297956
+      ],
+      "margin": 0.051116943359375,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0013427734375,
+      "TV_bounds95_family": [
+        0,
+        0.06680354835694999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 0,
+      "metric": "mean_out",
+      "SSA_mean": 0.5146754767882527,
+      "other_mean": 0.5111450295533452,
+      "difference": -0.0035304472349074745,
+      "CI95_family": [
+        -0.00814285700871618,
+        0.0010819625389012306
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0146484375,
+      "TV_bounds95_family": [
+        0,
+        0.08010921241944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 0,
+      "metric": "max_out",
+      "SSA_mean": 1.138916015625,
+      "other_mean": 1.142822265625,
+      "difference": 0.00390625,
+      "CI95_family": [
+        -0.023537749509206566,
+        0.03135024950920656
+      ],
+      "margin": 0.05694580078125,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0029296875,
+      "TV_bounds95_family": [
+        0,
+        0.06839046241944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 1,
+      "metric": "R1",
+      "SSA_mean": 5.595458984375,
+      "other_mean": 5.6063232421875,
+      "difference": 0.0108642578125,
+      "CI95_family": [
+        -0.11989071962809361,
+        0.1416192352530936
+      ],
+      "margin": 0.27977294921875,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0086669921875,
+      "TV_bounds95_family": [
+        0,
+        0.07412776710694999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 1,
+      "metric": "R2",
+      "SSA_mean": 0.550537109375,
+      "other_mean": 0.5526123046875,
+      "difference": 0.0020751953125,
+      "CI95_family": [
+        -0.037927863951578454,
+        0.042078254576578454
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0028076171875,
+      "TV_bounds95_family": [
+        0,
+        0.06826839210694999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 1,
+      "metric": "R2r",
+      "SSA_mean": 0.0179443359375,
+      "other_mean": 0.0208740234375,
+      "difference": 0.0029296875,
+      "CI95_family": [
+        -0.004862159254185307,
+        0.010721534254185306
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0035400390625,
+      "TV_bounds95_family": [
+        0,
+        0.06900081398194999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 1,
+      "metric": "R3",
+      "SSA_mean": 5.91552734375,
+      "other_mean": 5.9124755859375,
+      "difference": -0.0030517578125,
+      "CI95_family": [
+        -0.054338049163650246,
+        0.048234533538650246
+      ],
+      "margin": 0.2957763671875,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0045166015625,
+      "TV_bounds95_family": [
+        0,
+        0.06997737648194999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 1,
+      "metric": "R4",
+      "SSA_mean": 0.09130859375,
+      "other_mean": 0.0965576171875,
+      "difference": 0.0052490234375,
+      "CI95_family": [
+        -0.013235983824959132,
+        0.023734030699959132
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.00390625,
+      "TV_bounds95_family": [
+        0,
+        0.06936702491944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 1,
+      "metric": "R5",
+      "SSA_mean": 0.188232421875,
+      "other_mean": 0.1796875,
+      "difference": -0.008544921875,
+      "CI95_family": [
+        -0.031836523999155285,
+        0.014746680249155285
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.00732421875,
+      "TV_bounds95_family": [
+        0,
+        0.07278499366944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 1,
+      "metric": "H_G",
+      "SSA_mean": 1.122802734375,
+      "other_mean": 1.112548828125,
+      "difference": -0.01025390625,
+      "CI95_family": [
+        -0.07035573509255785,
+        0.04984792259255786
+      ],
+      "margin": 0.056140136718750004,
+      "mean_status": "INCONCLUSIVE",
+      "binned_TV": 0.0068359375,
+      "TV_bounds95_family": [
+        0,
+        0.07229671241944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 1,
+      "metric": "H_X",
+      "SSA_mean": 0.3966064453125,
+      "other_mean": 0.411865234375,
+      "difference": 0.0152587890625,
+      "CI95_family": [
+        -0.020769813709649643,
+        0.05128739183464964
+      ],
+      "margin": 0.05,
+      "mean_status": "INCONCLUSIVE",
+      "binned_TV": 0.006103515625,
+      "TV_bounds95_family": [
+        0,
+        0.07156429054444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 1,
+      "metric": "H_Y",
+      "SSA_mean": 16.8916015625,
+      "other_mean": 16.681640625,
+      "difference": -0.2099609375,
+      "CI95_family": [
+        -0.46036466419003297,
+        0.04044278919003297
+      ],
+      "margin": 0.844580078125,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.01318359375,
+      "TV_bounds95_family": [
+        0,
+        0.07864436866944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 1,
+      "metric": "events",
+      "SSA_mean": 30.77001953125,
+      "other_mean": 30.5745849609375,
+      "difference": -0.1954345703125,
+      "CI95_family": [
+        -0.5132016229864146,
+        0.12233248236141459
+      ],
+      "margin": 1.5385009765625002,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.009033203125,
+      "TV_bounds95_family": [
+        0,
+        0.07449397804444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 1,
+      "metric": "depth",
+      "SSA_mean": 5.0684814453125,
+      "other_mean": 5.010498046875,
+      "difference": -0.0579833984375,
+      "CI95_family": [
+        -0.12552276894410455,
+        0.009555972069104551
+      ],
+      "margin": 0.253424072265625,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0250244140625,
+      "TV_bounds95_family": [
+        0,
+        0.09048518898194999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 1,
+      "metric": "layer_width",
+      "SSA_mean": 14.850830078125,
+      "other_mean": 14.87744140625,
+      "difference": 0.026611328125,
+      "CI95_family": [
+        -0.11563691149025374,
+        0.16885956774025374
+      ],
+      "margin": 0.7425415039062501,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0018310546875,
+      "TV_bounds95_family": [
+        0,
+        0.06729182960694999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 1,
+      "metric": "mean_in",
+      "SSA_mean": 0.5094214591049162,
+      "other_mean": 0.5055725404588076,
+      "difference": -0.00384891864610859,
+      "CI95_family": [
+        -0.008316358437891174,
+        0.0006185211456739932
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0155029296875,
+      "TV_bounds95_family": [
+        0,
+        0.08096370460694999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 1,
+      "metric": "max_in",
+      "SSA_mean": 1.0,
+      "other_mean": 0.9998779296875,
+      "difference": -0.0001220703125,
+      "CI95_family": [
+        -0.0005551523366181821,
+        0.00031101171161818206
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0001220703125,
+      "TV_bounds95_family": [
+        0,
+        0.06558284523194999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 1,
+      "metric": "mean_out",
+      "SSA_mean": 0.5094214591049162,
+      "other_mean": 0.5055725404588076,
+      "difference": -0.00384891864610859,
+      "CI95_family": [
+        -0.008316358437891174,
+        0.0006185211456739932
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0155029296875,
+      "TV_bounds95_family": [
+        0,
+        0.08096370460694999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "tick.001",
+      "convention": 1,
+      "metric": "max_out",
+      "SSA_mean": 1.0,
+      "other_mean": 0.9998779296875,
+      "difference": -0.0001220703125,
+      "CI95_family": [
+        -0.0005551523366181821,
+        0.00031101171161818206
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0001220703125,
+      "TV_bounds95_family": [
+        0,
+        0.06558284523194999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 0,
+      "metric": "R1",
+      "SSA_mean": 5.595458984375,
+      "other_mean": 5.5914306640625,
+      "difference": -0.0040283203125,
+      "CI95_family": [
+        -0.1357136331183543,
+        0.1276569924933543
+      ],
+      "margin": 0.27977294921875,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0118408203125,
+      "TV_bounds95_family": [
+        0,
+        0.07730159523194999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 0,
+      "metric": "R2",
+      "SSA_mean": 0.550537109375,
+      "other_mean": 0.570068359375,
+      "difference": 0.01953125,
+      "CI95_family": [
+        -0.020589887381092867,
+        0.05965238738109287
+      ],
+      "margin": 0.05,
+      "mean_status": "INCONCLUSIVE",
+      "binned_TV": 0.018798828125,
+      "TV_bounds95_family": [
+        0,
+        0.08425960304444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 0,
+      "metric": "R2r",
+      "SSA_mean": 0.0179443359375,
+      "other_mean": 0.0234375,
+      "difference": 0.0054931640625,
+      "CI95_family": [
+        -0.0025365450367973337,
+        0.013522873161797334
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.006103515625,
+      "TV_bounds95_family": [
+        0,
+        0.07156429054444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 0,
+      "metric": "R3",
+      "SSA_mean": 5.91552734375,
+      "other_mean": 5.90576171875,
+      "difference": -0.009765625,
+      "CI95_family": [
+        -0.06126171517412921,
+        0.04173046517412921
+      ],
+      "margin": 0.2957763671875,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0025634765625,
+      "TV_bounds95_family": [
+        0,
+        0.06802425148194999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 0,
+      "metric": "R4",
+      "SSA_mean": 0.09130859375,
+      "other_mean": 0.094970703125,
+      "difference": 0.003662109375,
+      "CI95_family": [
+        -0.014749155811089067,
+        0.022073374561089067
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.003173828125,
+      "TV_bounds95_family": [
+        0,
+        0.06863460304444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 0,
+      "metric": "R5",
+      "SSA_mean": 0.188232421875,
+      "other_mean": 0.19384765625,
+      "difference": 0.005615234375,
+      "CI95_family": [
+        -0.01826729416448654,
+        0.02949776291448654
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0028076171875,
+      "TV_bounds95_family": [
+        0,
+        0.06826839210694999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 0,
+      "metric": "H_G",
+      "SSA_mean": 1.122802734375,
+      "other_mean": 1.1138916015625,
+      "difference": -0.0089111328125,
+      "CI95_family": [
+        -0.06944275020479293,
+        0.05162048457979293
+      ],
+      "margin": 0.056140136718750004,
+      "mean_status": "INCONCLUSIVE",
+      "binned_TV": 0.0067138671875,
+      "TV_bounds95_family": [
+        0,
+        0.07217464210694999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 0,
+      "metric": "H_X",
+      "SSA_mean": 0.3966064453125,
+      "other_mean": 0.40087890625,
+      "difference": 0.0042724609375,
+      "CI95_family": [
+        -0.03107083137293535,
+        0.03961575324793535
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0054931640625,
+      "TV_bounds95_family": [
+        0,
+        0.07095393898194999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 0,
+      "metric": "H_Y",
+      "SSA_mean": 16.8916015625,
+      "other_mean": 16.309326171875,
+      "difference": -0.582275390625,
+      "CI95_family": [
+        -0.8301891536962084,
+        -0.3343616275537916
+      ],
+      "margin": 0.844580078125,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.04296875,
+      "TV_bounds95_family": [
+        0,
+        0.10842952491944999
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 0,
+      "metric": "events",
+      "SSA_mean": 30.77001953125,
+      "other_mean": 30.20361328125,
+      "difference": -0.56640625,
+      "CI95_family": [
+        -0.8824177221388798,
+        -0.2503947778611202
+      ],
+      "margin": 1.5385009765625002,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0142822265625,
+      "TV_bounds95_family": [
+        0,
+        0.07974300148194999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 0,
+      "metric": "depth",
+      "SSA_mean": 5.1026611328125,
+      "other_mean": 4.943359375,
+      "difference": -0.1593017578125,
+      "CI95_family": [
+        -0.22665864486266907,
+        -0.09194487076233092
+      ],
+      "margin": 0.255133056640625,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0517578125,
+      "TV_bounds95_family": [
+        0,
+        0.11721858741944999
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 0,
+      "metric": "layer_width",
+      "SSA_mean": 14.71484375,
+      "other_mean": 14.716796875,
+      "difference": 0.001953125,
+      "CI95_family": [
+        -0.14305892230081815,
+        0.14696517230081815
+      ],
+      "margin": 0.7357421875000001,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0009765625,
+      "TV_bounds95_family": [
+        0,
+        0.06643733741944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 0,
+      "metric": "mean_in",
+      "SSA_mean": 0.5146754767882527,
+      "other_mean": 0.5059085736605081,
+      "difference": -0.00876690312774453,
+      "CI95_family": [
+        -0.013378278951347933,
+        -0.004155527304141126
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0426025390625,
+      "TV_bounds95_family": [
+        0,
+        0.10806331398194999
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 0,
+      "metric": "max_in",
+      "SSA_mean": 1.0223388671875,
+      "other_mean": 1.023193359375,
+      "difference": 0.0008544921875,
+      "CI95_family": [
+        -0.008315959938975857,
+        0.010024944313975857
+      ],
+      "margin": 0.051116943359375,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0015869140625,
+      "TV_bounds95_family": [
+        0,
+        0.06704768898194999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 0,
+      "metric": "mean_out",
+      "SSA_mean": 0.5146754767882527,
+      "other_mean": 0.5059085736605081,
+      "difference": -0.00876690312774453,
+      "CI95_family": [
+        -0.013378278951347933,
+        -0.004155527304141126
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0426025390625,
+      "TV_bounds95_family": [
+        0,
+        0.10806331398194999
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 0,
+      "metric": "max_out",
+      "SSA_mean": 1.138916015625,
+      "other_mean": 1.140625,
+      "difference": 0.001708984375,
+      "CI95_family": [
+        -0.025622399344731345,
+        0.029040368094731345
+      ],
+      "margin": 0.05694580078125,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0015869140625,
+      "TV_bounds95_family": [
+        0,
+        0.06704768898194999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 1,
+      "metric": "R1",
+      "SSA_mean": 5.595458984375,
+      "other_mean": 5.5914306640625,
+      "difference": -0.0040283203125,
+      "CI95_family": [
+        -0.1357136331183543,
+        0.1276569924933543
+      ],
+      "margin": 0.27977294921875,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0118408203125,
+      "TV_bounds95_family": [
+        0,
+        0.07730159523194999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 1,
+      "metric": "R2",
+      "SSA_mean": 0.550537109375,
+      "other_mean": 0.570068359375,
+      "difference": 0.01953125,
+      "CI95_family": [
+        -0.020589887381092867,
+        0.05965238738109287
+      ],
+      "margin": 0.05,
+      "mean_status": "INCONCLUSIVE",
+      "binned_TV": 0.018798828125,
+      "TV_bounds95_family": [
+        0,
+        0.08425960304444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 1,
+      "metric": "R2r",
+      "SSA_mean": 0.0179443359375,
+      "other_mean": 0.0234375,
+      "difference": 0.0054931640625,
+      "CI95_family": [
+        -0.0025365450367973337,
+        0.013522873161797334
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.006103515625,
+      "TV_bounds95_family": [
+        0,
+        0.07156429054444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 1,
+      "metric": "R3",
+      "SSA_mean": 5.91552734375,
+      "other_mean": 5.90576171875,
+      "difference": -0.009765625,
+      "CI95_family": [
+        -0.06126171517412921,
+        0.04173046517412921
+      ],
+      "margin": 0.2957763671875,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0025634765625,
+      "TV_bounds95_family": [
+        0,
+        0.06802425148194999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 1,
+      "metric": "R4",
+      "SSA_mean": 0.09130859375,
+      "other_mean": 0.094970703125,
+      "difference": 0.003662109375,
+      "CI95_family": [
+        -0.014749155811089067,
+        0.022073374561089067
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.003173828125,
+      "TV_bounds95_family": [
+        0,
+        0.06863460304444999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 1,
+      "metric": "R5",
+      "SSA_mean": 0.188232421875,
+      "other_mean": 0.19384765625,
+      "difference": 0.005615234375,
+      "CI95_family": [
+        -0.01826729416448654,
+        0.02949776291448654
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0028076171875,
+      "TV_bounds95_family": [
+        0,
+        0.06826839210694999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 1,
+      "metric": "H_G",
+      "SSA_mean": 1.122802734375,
+      "other_mean": 1.1138916015625,
+      "difference": -0.0089111328125,
+      "CI95_family": [
+        -0.06944275020479293,
+        0.05162048457979293
+      ],
+      "margin": 0.056140136718750004,
+      "mean_status": "INCONCLUSIVE",
+      "binned_TV": 0.0067138671875,
+      "TV_bounds95_family": [
+        0,
+        0.07217464210694999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 1,
+      "metric": "H_X",
+      "SSA_mean": 0.3966064453125,
+      "other_mean": 0.40087890625,
+      "difference": 0.0042724609375,
+      "CI95_family": [
+        -0.03107083137293535,
+        0.03961575324793535
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0054931640625,
+      "TV_bounds95_family": [
+        0,
+        0.07095393898194999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 1,
+      "metric": "H_Y",
+      "SSA_mean": 16.8916015625,
+      "other_mean": 16.309326171875,
+      "difference": -0.582275390625,
+      "CI95_family": [
+        -0.8301891536962084,
+        -0.3343616275537916
+      ],
+      "margin": 0.844580078125,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.04296875,
+      "TV_bounds95_family": [
+        0,
+        0.10842952491944999
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 1,
+      "metric": "events",
+      "SSA_mean": 30.77001953125,
+      "other_mean": 30.20361328125,
+      "difference": -0.56640625,
+      "CI95_family": [
+        -0.8824177221388798,
+        -0.2503947778611202
+      ],
+      "margin": 1.5385009765625002,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0142822265625,
+      "TV_bounds95_family": [
+        0,
+        0.07974300148194999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 1,
+      "metric": "depth",
+      "SSA_mean": 5.0684814453125,
+      "other_mean": 4.9093017578125,
+      "difference": -0.1591796875,
+      "CI95_family": [
+        -0.2256451809577356,
+        -0.0927141940422644
+      ],
+      "margin": 0.253424072265625,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0513916015625,
+      "TV_bounds95_family": [
+        0,
+        0.11685237648194999
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 1,
+      "metric": "layer_width",
+      "SSA_mean": 14.850830078125,
+      "other_mean": 14.8558349609375,
+      "difference": 0.0050048828125,
+      "CI95_family": [
+        -0.13811056439849875,
+        0.14812033002349875
+      ],
+      "margin": 0.7425415039062501,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0010986328125,
+      "TV_bounds95_family": [
+        0,
+        0.06655940773194999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 1,
+      "metric": "mean_in",
+      "SSA_mean": 0.5094214591049162,
+      "other_mean": 0.5004922580615364,
+      "difference": -0.008929201043379797,
+      "CI95_family": [
+        -0.013393170411937085,
+        -0.00446523167482251
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0416259765625,
+      "TV_bounds95_family": [
+        0,
+        0.10708675148194999
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 1,
+      "metric": "max_in",
+      "SSA_mean": 1.0,
+      "other_mean": 1.0,
+      "difference": 0.0,
+      "CI95_family": [
+        0.0,
+        0.0
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0,
+      "TV_bounds95_family": [
+        0,
+        0.06546077491944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 1,
+      "metric": "mean_out",
+      "SSA_mean": 0.5094214591049162,
+      "other_mean": 0.5004922580615364,
+      "difference": -0.008929201043379797,
+      "CI95_family": [
+        -0.013393170411937085,
+        -0.00446523167482251
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0416259765625,
+      "TV_bounds95_family": [
+        0,
+        0.10708675148194999
+      ],
+      "distribution_status": "INCONCLUSIVE"
+    },
+    {
+      "method": "sweep.02",
+      "convention": 1,
+      "metric": "max_out",
+      "SSA_mean": 1.0,
+      "other_mean": 1.0,
+      "difference": 0.0,
+      "CI95_family": [
+        0.0,
+        0.0
+      ],
+      "margin": 0.05,
+      "mean_status": "EQUIVALENT",
+      "binned_TV": 0.0,
+      "TV_bounds95_family": [
+        0,
+        0.06546077491944999
+      ],
+      "distribution_status": "EQUIVALENT"
+    }
+  ],
+  "verdict": [
+    {
+      "method": "tick.02",
+      "classification": "DIFFERENT_IN_SOME_SUMMARIES",
+      "mean_counts": {
+        "EQUIVALENT": 17,
+        "INCONCLUSIVE": 3,
+        "DIFFERENT": 12
+      },
+      "distribution_counts": {
+        "EQUIVALENT": 16,
+        "INCONCLUSIVE": 8,
+        "DIFFERENT": 8
+      }
+    },
+    {
+      "method": "tick.005",
+      "classification": "DIFFERENT_IN_SOME_SUMMARIES",
+      "mean_counts": {
+        "EQUIVALENT": 24,
+        "INCONCLUSIVE": 4,
+        "DIFFERENT": 4
+      },
+      "distribution_counts": {
+        "EQUIVALENT": 22,
+        "INCONCLUSIVE": 10
+      }
+    },
+    {
+      "method": "tick.001",
+      "classification": "INCONCLUSIVE",
+      "mean_counts": {
+        "EQUIVALENT": 28,
+        "INCONCLUSIVE": 4
+      },
+      "distribution_counts": {
+        "EQUIVALENT": 32
+      }
+    },
+    {
+      "method": "sweep.02",
+      "classification": "INCONCLUSIVE",
+      "mean_counts": {
+        "EQUIVALENT": 28,
+        "INCONCLUSIVE": 4
+      },
+      "distribution_counts": {
+        "EQUIVALENT": 24,
+        "INCONCLUSIVE": 8
+      }
+    }
+  ],
+  "metrics": [
+    "R1",
+    "R2",
+    "R2r",
+    "R3",
+    "R4",
+    "R5",
+    "H_G",
+    "H_X",
+    "H_Y",
+    "events",
+    "depth",
+    "layer_width",
+    "mean_in",
+    "max_in",
+    "mean_out",
+    "max_out"
+  ],
+  "paths_per_method": 8192,
+  "tick_counts": [
+    {
+      "method": "SSA",
+      "ticks": 0,
+      "ticks_with_rejected_competition": 0,
+      "rejected_proposals": 0,
+      "conflict_fraction": null
+    },
+    {
+      "method": "tick.02",
+      "ticks": 40960,
+      "ticks_with_rejected_competition": 13205,
+      "rejected_proposals": 15915,
+      "conflict_fraction": 0.3223876953125
+    },
+    {
+      "method": "tick.005",
+      "ticks": 163840,
+      "ticks_with_rejected_competition": 4839,
+      "rejected_proposals": 4931,
+      "conflict_fraction": 0.029534912109375
+    },
+    {
+      "method": "tick.001",
+      "ticks": 819200,
+      "ticks_with_rejected_competition": 1072,
+      "rejected_proposals": 1075,
+      "conflict_fraction": 0.00130859375
+    },
+    {
+      "method": "sweep.02",
+      "ticks": 0,
+      "ticks_with_rejected_competition": 0,
+      "rejected_proposals": 0,
+      "conflict_fraction": null
+    }
+  ],
+  "initial_checks": {
+    "open_bridge_hazard": 333.0,
+    "maximum_drift_error": 0.0,
+    "falling_factorial_pair_factor_checked": true
+  }
+}

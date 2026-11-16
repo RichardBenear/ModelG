@@ -1,0 +1,514 @@
+[
+  {
+    "fixture": "F2",
+    "rules": [
+      "R2r",
+      "R3"
+    ],
+    "inputs": [
+      [
+        "i1"
+      ],
+      [
+        "i1"
+      ]
+    ],
+    "shared": [
+      "i1"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  },
+  {
+    "fixture": "F2",
+    "rules": [
+      "R2r",
+      "R5"
+    ],
+    "inputs": [
+      [
+        "i1"
+      ],
+      [
+        "i1"
+      ]
+    ],
+    "shared": [
+      "i1"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  },
+  {
+    "fixture": "F2",
+    "rules": [
+      "R2r",
+      "R4"
+    ],
+    "inputs": [
+      [
+        "i1"
+      ],
+      [
+        "i1",
+        "i2",
+        "i3"
+      ]
+    ],
+    "shared": [
+      "i1"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  },
+  {
+    "fixture": "F2",
+    "rules": [
+      "R3",
+      "R5"
+    ],
+    "inputs": [
+      [
+        "i1"
+      ],
+      [
+        "i1"
+      ]
+    ],
+    "shared": [
+      "i1"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  },
+  {
+    "fixture": "F2",
+    "rules": [
+      "R3",
+      "R4"
+    ],
+    "inputs": [
+      [
+        "i1"
+      ],
+      [
+        "i1",
+        "i2",
+        "i3"
+      ]
+    ],
+    "shared": [
+      "i1"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  },
+  {
+    "fixture": "F2",
+    "rules": [
+      "R5",
+      "R4"
+    ],
+    "inputs": [
+      [
+        "i1"
+      ],
+      [
+        "i1",
+        "i2",
+        "i3"
+      ]
+    ],
+    "shared": [
+      "i1"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  },
+  {
+    "fixture": "F2",
+    "rules": [
+      "R2r",
+      "R3"
+    ],
+    "inputs": [
+      [
+        "i2"
+      ],
+      [
+        "i2"
+      ]
+    ],
+    "shared": [
+      "i2"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  },
+  {
+    "fixture": "F2",
+    "rules": [
+      "R2r",
+      "R5"
+    ],
+    "inputs": [
+      [
+        "i2"
+      ],
+      [
+        "i2"
+      ]
+    ],
+    "shared": [
+      "i2"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  },
+  {
+    "fixture": "F2",
+    "rules": [
+      "R2r",
+      "R4"
+    ],
+    "inputs": [
+      [
+        "i2"
+      ],
+      [
+        "i1",
+        "i2",
+        "i3"
+      ]
+    ],
+    "shared": [
+      "i2"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  },
+  {
+    "fixture": "F2",
+    "rules": [
+      "R3",
+      "R5"
+    ],
+    "inputs": [
+      [
+        "i2"
+      ],
+      [
+        "i2"
+      ]
+    ],
+    "shared": [
+      "i2"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  },
+  {
+    "fixture": "F2",
+    "rules": [
+      "R3",
+      "R4"
+    ],
+    "inputs": [
+      [
+        "i2"
+      ],
+      [
+        "i1",
+        "i2",
+        "i3"
+      ]
+    ],
+    "shared": [
+      "i2"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  },
+  {
+    "fixture": "F2",
+    "rules": [
+      "R5",
+      "R4"
+    ],
+    "inputs": [
+      [
+        "i2"
+      ],
+      [
+        "i1",
+        "i2",
+        "i3"
+      ]
+    ],
+    "shared": [
+      "i2"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  },
+  {
+    "fixture": "F3",
+    "rules": [
+      "R2",
+      "H_G"
+    ],
+    "inputs": [
+      [
+        "i0"
+      ],
+      [
+        "i0"
+      ]
+    ],
+    "shared": [
+      "i0"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  },
+  {
+    "fixture": "F3",
+    "rules": [
+      "R2r",
+      "R3"
+    ],
+    "inputs": [
+      [
+        "i1"
+      ],
+      [
+        "i1"
+      ]
+    ],
+    "shared": [
+      "i1"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  },
+  {
+    "fixture": "F3",
+    "rules": [
+      "R2r",
+      "R5"
+    ],
+    "inputs": [
+      [
+        "i1"
+      ],
+      [
+        "i1"
+      ]
+    ],
+    "shared": [
+      "i1"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  },
+  {
+    "fixture": "F3",
+    "rules": [
+      "R2r",
+      "H_X"
+    ],
+    "inputs": [
+      [
+        "i1"
+      ],
+      [
+        "i1"
+      ]
+    ],
+    "shared": [
+      "i1"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  },
+  {
+    "fixture": "F3",
+    "rules": [
+      "R3",
+      "R5"
+    ],
+    "inputs": [
+      [
+        "i1"
+      ],
+      [
+        "i1"
+      ]
+    ],
+    "shared": [
+      "i1"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  },
+  {
+    "fixture": "F3",
+    "rules": [
+      "R3",
+      "H_X"
+    ],
+    "inputs": [
+      [
+        "i1"
+      ],
+      [
+        "i1"
+      ]
+    ],
+    "shared": [
+      "i1"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  },
+  {
+    "fixture": "F3",
+    "rules": [
+      "R5",
+      "H_X"
+    ],
+    "inputs": [
+      [
+        "i1"
+      ],
+      [
+        "i1"
+      ]
+    ],
+    "shared": [
+      "i1"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  },
+  {
+    "fixture": "F3",
+    "rules": [
+      "R2r",
+      "R3"
+    ],
+    "inputs": [
+      [
+        "i2"
+      ],
+      [
+        "i2"
+      ]
+    ],
+    "shared": [
+      "i2"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  },
+  {
+    "fixture": "F3",
+    "rules": [
+      "R2r",
+      "R5"
+    ],
+    "inputs": [
+      [
+        "i2"
+      ],
+      [
+        "i2"
+      ]
+    ],
+    "shared": [
+      "i2"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  },
+  {
+    "fixture": "F3",
+    "rules": [
+      "R2r",
+      "H_X"
+    ],
+    "inputs": [
+      [
+        "i2"
+      ],
+      [
+        "i2"
+      ]
+    ],
+    "shared": [
+      "i2"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  },
+  {
+    "fixture": "F3",
+    "rules": [
+      "R3",
+      "R5"
+    ],
+    "inputs": [
+      [
+        "i2"
+      ],
+      [
+        "i2"
+      ]
+    ],
+    "shared": [
+      "i2"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  },
+  {
+    "fixture": "F3",
+    "rules": [
+      "R3",
+      "H_X"
+    ],
+    "inputs": [
+      [
+        "i2"
+      ],
+      [
+        "i2"
+      ]
+    ],
+    "shared": [
+      "i2"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  },
+  {
+    "fixture": "F3",
+    "rules": [
+      "R5",
+      "H_X"
+    ],
+    "inputs": [
+      [
+        "i2"
+      ],
+      [
+        "i2"
+      ]
+    ],
+    "shared": [
+      "i2"
+    ],
+    "count_join_within2": true,
+    "identity_join_within2": false
+  }
+]

@@ -2775,3 +2775,7 @@ All150prepared histories, original-track loss, censor980. Pre-fit source/spec3b3
 
 ## MG189 causal-invariance registration
 PI requested reviewer causal_invariance_study_plan.md with adoptedD1–D4. Implementation spec/MG189_causal_invariance.md fixes onecore/1800seconds/1GBraw, boundedF2depth3/F3F4depth2, T1joins<=2, T2allinitialdisjointpairs, T3identity/countreconvergence with labeledDAGiso, T4rejectedcompetition andacceptedreverse replay. T5five schedulers8192paths each, means5%max(reference,1),coarsenedTV10% with fixed simultaneous bounds. Predictions: independentordersPASS,countlevelglobalinvarianceFAIL,finerticksimprove statistical agreement butmayremaininconclusive. Finite nonjoins are not neverjoins; no particle/relativity/quantum qualification. Freeze source/seed manifest and publish beforeevaluation. No automatic tuning or extension; PIclosureseparate.
+
+
+## MG189 complete — PI closure pending
+1192independentpairsPASS;25conflictcountjoinswithin2,noneidentityjoinswithin2;no neverjoinproof. All three bounded fixtures failcount-level finitehistorygraphuniqueness;restrictedidentitypairsagree. MinimalR1/R2witnessneedsnoR4. FullWolframcausalcompletionnotsettled. T4acceptedreverseplaypasses1024000ticks;proposalcompetitionfallswithdelta. T5coarse/mediumstrictDIFFERENT,fineststrictandrandomsweepINCONCLUSIVE;finest32/32binnedTVequivalent,but4/32meansinconclusive. No tuning or extension.40960paths1198767eventsauditedPASS,fullrawlocal. Report results/MG189_causal_invariance/MG189_results.md;no particle,quantum orrelativisticqualification.
