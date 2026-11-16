@@ -1,3 +1,7 @@
+# MG194 COMPLETE — gravity drift CONFIRMED; two-particle force OSCILLATORY (PI closure pending)
+
+Run by Claude at PI request. At (a, b) = (14, 29.20526): drift down a source gradient matches linear response within 3.3% at four new placements (Part A CONFIRMED). Two particles: force alternates sign every ~1.53 in separation and decays as exp(-0.460 d), matching the tail eigenvalues (B1 OSCILLATORY, B2 SUPPORTED); 7 stable bound separations spaced ~3.07 in [8, 30]; no long-range attraction in 1D. Report results/MG194_two_particle/MG194_results.md. Natural next: far-field G monopole in 2D/3D (gravity plan study 3). EX001 (exploratory) preceded Part A.
+
 # MG193 PI CLOSED 2026-11-16 — continuum 1D existence window mapped
 
 Run by Claude at PI request (protocol v2). At a = 14 the soliton exists and is stable for b in [28.99517, 29.41534] (both folds); recommended 1D operating point a = 14, b = 29.20526 (margins 0.21 in b, -0.44%/+0.49% in a). Published b = 29 is 0.005 above the lower fold and 0.011% below the a fold. Registered b-lines at other a unmapped (design flaw); post hoc the strip widens with a (0.42 at a = 14, 1.25 at a = 16). PI accepted D3 as a coding fix and signed off 2026-11-16. Report results/MG193_existence_window/MG193_results.md. Suggested next: repeat MG192's dynamic check at (14, 29.205).
