@@ -2771,3 +2771,7 @@ One pass only,90prepared histories, no simulations or instrument refinement.29Om
 
 ## MG188 lifetime analysis complete — PI closure pending
 All150prepared histories, original-track loss, censor980. Pre-fit source/spec3b32715. Primary multiplier9.37471 per+1000Omega, conditional95%6.22612–14.9283; prespecified diagnostics compatible. Noevent10000 meanunmeasured; extrapolation not measured lifetime. Secondary solitary endpoint factor16.6382 disclosed. Report results/MG188_lifetime/MG188_results.md. No new simulations or prior rescore.
+
+
+## MG189 causal-invariance registration
+PI requested reviewer causal_invariance_study_plan.md with adoptedD1–D4. Implementation spec/MG189_causal_invariance.md fixes onecore/1800seconds/1GBraw, boundedF2depth3/F3F4depth2, T1joins<=2, T2allinitialdisjointpairs, T3identity/countreconvergence with labeledDAGiso, T4rejectedcompetition andacceptedreverse replay. T5five schedulers8192paths each, means5%max(reference,1),coarsenedTV10% with fixed simultaneous bounds. Predictions: independentordersPASS,countlevelglobalinvarianceFAIL,finerticksimprove statistical agreement butmayremaininconclusive. Finite nonjoins are not neverjoins; no particle/relativity/quantum qualification. Freeze source/seed manifest and publish beforeevaluation. No automatic tuning or extension; PIclosureseparate.

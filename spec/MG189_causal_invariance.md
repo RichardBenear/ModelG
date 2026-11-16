@@ -1,0 +1,43 @@
+# MG189 small-system causal-invariance study — implementation registration
+
+Implements the PI-adopted reviewer outline causal_invariance_study_plan.md (D1–D4). PI requested that study; this bounded implementation uses one local core, at most1800seconds total and1GBraw. No particles, large-system bridge or existing engine modifications. Freeze/publish code, fixtures, seeds, gates before evaluation. Failure/inconclusive is retained; no tuning/replacement/automatic extension. Full raw local only. PI closes the stage.
+
+## Rules, identities and graphs
+
+Use the open MG185 active kinetics: external→G rate14Ω/site; G→X rateG; X→G rate0.1X; X→Y+Z rate29X; 2X+Y→3X rateX(X−1)Y/Ω²; X→W rate0.9X. Transport G/X/Y to each neighboring site at1/1/12 per token for h=1. A/B are chemostats, not a shared causal token. Z/W remain explicit passive output tokens and participate in both state comparisons. No nonexistent G→external channel (q−p=0). T1–T4 ignore rates, T5 usesΩ=1. Unordered catalyst pairs have weight2/Ω² so summed labeled hazards equal the falling-factorial convention.
+
+Primary R4 replaces both catalyst X and Y with three fresh X identities; causal edges from all inputs. All other consumed/moved tokens similarly get fresh outputs. A token's new ID is deterministically named from rule/site/input IDs/output rank, and a local source occurrence index for zero-input events. This lets disjoint event permutations produce the same identities, without introducing a global serial-ID artifact. Identity state equality is literal equality of these canonical live token IDs/species/sites; count equality forgets IDs but retains species/sites (including Z/W). Identity matching is stricter and may be sensitive to this convention; do not infer universal invariance from bounded identity-rich agreement.
+
+Event graph node labels keep rule and input/output species roles, not absolute site names. Edges preserve species multiplicities when multiple input tokens have the same producing event. Initial tokens have no producer; no artificial causal edge via an inexhaustible bath. Compare directed labeled DAGs up to event relabeling, never by raw event index.
+
+Read-only sensitivity: on the same primary event histories, omit R4 edges from catalyst X and carry each catalyst's previous causal producer through two X outputs; only the third X is attributed to R4. This is an ancestry-only read-only counterfactual with primary reservation/kinetics/identity state grouping held fixed, not a second validated rewriting dynamics. Report this limit explicitly. Count dynamics unchanged; no extra random draws.
+
+## Fixtures and bounded exhaustive tests
+
+F1: two sites, oneG/site; selected independent G→X events. F2: one site,G1X2Y1; all reactions; depth3. F3: two sites,(G1X2) at0,Y1 at1; reactions+transport; depth2. F4: four-site ring: site0G1X2Y1, site1G1X2Y1, site2G1X1, site3X1Y1 (12active tokens); depth2. F2 has no self transport; F3 has one unique neighbor, not double-counted parallel ring links. All counts initially integer, no passive outputs initially.
+
+T1: every overlapping pair of initial matches atF2/F3, count-level and identity-rich join search through at most2 additional events on each branch. Classify joined or not joined within bound. Never claim unjoinable forever from finite depth. Preserve all conflict pairs and witness inputs.
+
+T2: every disjoint pair of initial matches atF1/F4, both event orders. Require same identity state and graph primary/sensitivity. This exhausts two-event reorderings only, not arbitrary-length schedules.
+
+T3: enumerate every history prefix through the fixed depths, capped at200000histories/fixture and1000000distinct states across both versions. Include zero-length prefix; report all-depth and equal-event-depth reconvergence separately to expose unequal-length cycles. Aggregate pair counts exactly by final state and canonical labeled graph, avoiding quadratic pair iteration. Preserve a mismatching witness for each fixture/state mode where found. Report completed depth and pair denominators; no universal confluence claim. Primary prediction: independent commutations pass, overall count-level causal invariance fails; identity-rich result may be more restrictive.
+
+T4 uses the primary T5 strict trajectories. Accepted matches always reserve disjoint pre-tick participants; newly produced tokens cannot act in that tick. Verify every accepted set has disjoint reservations and replay its accepted events in reverse order with an explicit event-index mapping: identity states and DAG edges must agree. Conflict rate means fraction of ticks containing rejected overlapping proposals, not conflicts among accepted events. Compare three tick sizes descriptively; no forced monotonic pass criterion from sampling noise.
+
+## T5 schedulers, samples, summaries and margins
+
+F4,Ω=1,h=1,horizon0.1.8192independent paths/method: exact rate-weighted continuous-time SSA; strict ticks0.02,0.005,0.001; random sequential channel sweep with step0.02. Five methods40960paths. One library thread. All seed streams registered from stage18900, collision checked internally and against prior seed-key records before draws. No common-random-number or scheduler-coupling assumption.
+
+Strict implementation: independent exponential clocks for all enabled pre-tick identity matches; source proposals Poisson; discard overlapping proposals after the first accepted use of a token; withhold outputs until next tick. This is the frozen-availability process used by the sparse strict engine. A match has one possible firing per pre-tick token tuple. Verify aggregated identity hazards and active count increments against the existing OpenBridge generator. Reverse replay tests accepted event bookkeeping.
+
+Random sequential means a uniformly randomized channel order each0.02window, with an exact single-channel SSA for the full window applied in-place to the current state before moving to the next channel. Products can act in later channels in that window. This rate-preserving split approximation is a distinct finite-step update assumption; it is not uniformly random, rate-blind rule selection. Any disagreement is specific to this comparator, not every random sequential algorithm.
+
+For each path and both ancestry conventions: event counts for six reactions and three transport species; total event count; longest causal-chain node count; maximum same-depth layer occupancy (called layer width, not maximum poset antichain); mean/max in-degree and mean/max out-degree. Degree counts count distinct neighboring events; species multiplicities remain edge labels. Distribution summaries use fixed bins [0,0.1,0.25,0.5,1,2,3,4,6,10,20,40,80,infinity].
+
+Compare each approximate scheduler against SSA. Mean equivalence: two-sample Welch CI inside±0.05*max(SSA mean,1). The one-unit floor makes rare rule-count absolute tolerance0.05, explicitly not5%relative accuracy there. Use Bonferroni95% across all scheduler/summary/convention mean comparisons. Distribution equivalence: binned TV plus two multinomial concentration radii <=0.10, with Bonferroni95%simultaneous allocation over all scheduler/summary/convention comparisons. These are separate95%families (not a joint95%claim). Fixed bins test coarsened distributions only. All comparisons must qualify for a scheduler-level statistical pass; failure of precision is INCONCLUSIVE, while a CI wholly outside the mean margin or a TV lower bound above0.10 is DIFFERENT. Intermediate overlap is inconclusive. No adaptive sample increase. Report individual classifications, not just global verdict.
+
+## Verification and interpretation
+
+Exact small DAG canonicalization cross-checked with NetworkX isomorphism on sampled deterministic witnesses, plus independent initial hazard sums/generator equality, dependent-chain/disjoint/same-count-cycle fixtures, reverse tick replay, and separate histogram/CI recomputation from stored scalar summaries. Full traces and arrays local only, compact witnesses/results public. Source hash and seed manifest before draws. Deadline/errors retain partial status and block complete statistical qualification.
+
+An explicit counterexample disproves exact invariance under these conventions. Exhaustive bounded agreement only qualifies the tested cases. Statistical non-equivalence at finite tick does not prove a nonvanishing continuum limit; finest-tick equivalence is limited to these summaries/horizon. Statistical causal-summary agreement does not establish graph-isomorphism invariance, particle bridge validity, Lorentz invariance, quantum entanglement or gravity. End after one report; any rule redesign or larger bridge needs its own stage.
