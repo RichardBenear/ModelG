@@ -132,3 +132,10 @@ existence window before choosing those placements. It is recorded here as such.
     `soliton_adjoint_L100_N1024.npz` (soliton and adjoint), `trajectories.npz` (position series).
 
 PI closure pending.
+
+## Addendum 2026-11-16 (after PI closure sign-off; no result changed)
+
+The closeness of b = 29 to the 1D continuum lower edge was already on record before MG192. The Phase 2 protocol (MG003,
+`spec/phase2_protocol_v1.3.4.md` §2) lists an operational continuum lower edge b_s = 28.993 in 1D, 0.024% below b = 29,
+and notes that b = 29 is near the edge only in 1D (2D 27.343, 3D 26.972). The fold in a found post hoc here is the same
+edge, approached in a different direction. I should have cited this, and checked it when designing P2.

@@ -2811,3 +2811,13 @@ PI Richard Benear approved 2026-11-15 21:27 America/Denver ("I approve."). Run b
 ## MG192 COMPLETE — UNRESOLVED (PI closure pending)
 
 P0 PASS. P1 SUPPORTED: mu_a=-0.0598475 (uncertainty 6e-12; the soliton drifts toward lower G). P3 CONSISTENT with published -0.0599 (0.09%). Separate continuation check agrees to <2e-7. P2 FAIL: x0=0 runs within 0.6% of prediction (linearity 1.9997, nulls <1e-17), but x0=L/8 runs dissolved, so registered outcome UNRESOLVED. Post-hoc (not registered): uniform-a continuation shows a fold at about a=14*(1+1.1e-4); the published b=29 continuum soliton sits ~0.011% from its existence edge, and the L/8 placements (+0.07%, +0.14%) lay beyond it. P4: mu_w=mu_a exactly (adjoint identity), so the drift is not G-specific; mu_b/mu_a=-0.146. About 0.7 core-hours, cloud, one core. Report results/MG192_gravity_mobility/MG192_results.md.
+
+
+## MG192 PI CLOSED — 2026-11-16
+
+PI Richard Benear, 2026-11-16 06:14 America/Denver: "Yes, I sign off on those interesting results." Closed as reported: UNRESOLVED (P0 pass, P1 SUPPORTED, P2 fail because off-centre particles dissolved beyond the 1D fold, P3 CONSISTENT, P4 drift not G-specific). An addendum in the report notes that the near-edge position of b=29 in 1D was already on record (MG003 continuum b_s=28.993). No result changed.
+
+
+## MG193 REGISTERED — continuum 1D existence/stability window in (a,b)
+
+PI approval 2026-11-16 06:14 America/Denver ("Go ahead with the existence-window mapping."). Run by Claude. Frozen spec: spec/MG193_existence_window.md. Descriptive map, no hypothesis gates. Uses the MG192 spectral discretization (L=100, N=1024): continuation in b at a=12..16 and in a at b=29, Newton in the even subspace, even/odd eigenvalues, edges labelled FOLD / STABILITY LOSS / TURING / DECAY. Qualification: a=14 edges reproduced within 1e-3 in b at N=2048 and L=200; time-dependent inside/outside checks at each a=14 and b=29 edge; perturbed-stability run at the recommended point. Cap 4 core-hours, at most 4 processes.
