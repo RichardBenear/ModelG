@@ -1,3 +1,9 @@
+# MG191 PI approved and registered — launch after published freeze
+
+PI approves changes/budget and says "Go ahead with the run." Approval results/MG191_gravity_gradient/approval.json. Frozen implementation: src/run_mg191.py,src/mg191_gravity.py; spec/MG191_gravity_gradient_draft.md plus MG191_implementation_contract.md. Plan has120productionjobs,31qualificationjobs (16uniformviability+15backgroundstability),31hashedlocalinputbackgrounds. No gradientparticle evaluation before published freeze. Null/development checks passed:16offset/reflectedphases,stabilitybothmeshes,wrappedvelocity/losttrack,storage temporaryrename race. No stochasticseeds.
+
+Budget7200chargedseconds total:qualification600,production6000,pre-runconservativecharge60,analysis540 remaining. Max8workers/thread1,600/job,1hcontrollerwall,10GBrawlocal/20GBfree. Backgroundinputarraysbuiltonce duringregistration andhashed;scientificeligibilityonlyafterfreeze. Qualification31jobs first; commoncoarseeps must passbotha/bextremes/stability, fineHmatchingfineextremes. <2commoncoarseeps blocksproduction; otherwise preregisteredadmittedgrid only. No replacement/tuning/extension. Rawlocal_raw/MG191_gravity_gradient; inspect publicattempt.json andlocalqualification/productionledgers; never rerun register/run iflaunchalreadyexists. Separate savedfieldrecomputation required beforeverdict. MG189closed;MG190/D3unchanged.
+
 # MG190 gravity preparation complete — D3 confirmed, MG191 draft awaits design approval
 
 PI supplied spec/sqk_gravity_gradient_study_plan.md atc5ece36, D1–D5 adopted. D3 checked directly in author-hosted LaViolette2020chapter pp14–16 and Pulver–LaViolette2013 §§4.2–4.3/eq28. Positive-mass-like Gwell is deficit; expected v*dGbg/dx<0. Source confirmation spec/MG190_D3_source_check.md with URLs/page anchors/localPDFhashes. Distinguish negative core from net full-domain mass; ordinary stationary periodic integralG=0, no silentdelta variant. PDFcopies local only.

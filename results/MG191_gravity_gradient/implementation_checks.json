@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "checks": [
+    "16 offset-phase core centers within .02",
+    "uniform backgrounds stable at both meshes"
+  ],
+  "development_only_not_qualification": true,
+  "null_eigen_benchmarks": [
+    {
+      "h": 0.2,
+      "stability": {
+        "passed": true,
+        "maximum_real": -0.19505622319518715,
+        "rightmost": [
+          [
+            -0.19505622319525856,
+            0.0
+          ],
+          [
+            -0.19505622319518715,
+            0.0
+          ],
+          [
+            -0.19752057798987563,
+            0.0
+          ],
+          [
+            -0.19752057798993533,
+            0.0
+          ],
+          [
+            -0.19793812479152495,
+            0.0
+          ],
+          [
+            -0.1979381247992943,
+            0.0
+          ]
+        ],
+        "near_zero_maximum_real": -0.19505622319524787,
+        "maximum_eigenpair_residual": 3.983768757814769e-10,
+        "local_extrema_maxima": [
+          -0.19505622319525018,
+          -0.19505622319525018
+        ],
+        "seconds": 0.6160584000172094,
+        "numerical_not_rigorous_spectral_certificate": true
+      }
+    },
+    {
+      "h": 0.1,
+      "stability": {
+        "passed": true,
+        "maximum_real": -0.19515496990413195,
+        "rightmost": [
+          [
+            -0.19515496990413195,
+            0.0
+          ],
+          [
+            -0.19515496990497622,
+            0.0
+          ],
+          [
+            -0.19682426867849964,
+            0.0
+          ],
+          [
+            -0.19682426867955854,
+            0.0
+          ],
+          [
+            -0.19905272374687666,
+            0.0
+          ],
+          [
+            -0.19905272374412697,
+            0.0
+          ]
+        ],
+        "near_zero_maximum_real": -0.1951549699049613,
+        "maximum_eigenpair_residual": 8.034782432183485e-10,
+        "local_extrema_maxima": [
+          -0.19515496990498796,
+          -0.19515496990498796
+        ],
+        "seconds": 3.67116209998494,
+        "numerical_not_rigorous_spectral_certificate": true
+      }
+    }
+  ],
+  "synthetic_checks": [
+    "16 reflected phase pairs preserve core measurements and template symmetry",
+    "periodic unwrap velocity exact; lost original never supplies valid late velocities",
+    "temporary-ledger rename race does not crash or inflate storage count"
+  ],
+  "no_gradient_particle_runs": true
+}

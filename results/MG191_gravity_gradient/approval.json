@@ -1,0 +1,15 @@
+{
+  "PI": "Richard Benear",
+  "date": "2026-11-15",
+  "instruction": "I approve of the changes and the budget. Go ahead with the run.",
+  "approved_worker_seconds": 7200,
+  "workers_max": 8,
+  "criteria": "spec/MG191_gravity_gradient_draft.md",
+  "implementation": "spec/MG191_implementation_contract.md",
+  "approved_changes": [
+    "drift-first P1 with censored arrival",
+    "offset eight phases",
+    "smaller epsilon ladder with qualification first"
+  ],
+  "full_raw_local_only": true
+}

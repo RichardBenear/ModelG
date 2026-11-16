@@ -2792,3 +2792,7 @@ PI supplied SQK gravity-gradient outline; D3 confirmed from LaViolette2020p15 an
 
 ## MG190 preparation complete; MG191 draft only
 D3confirmedfromprimarytext;expecteddownbackgroundG. Spatialforcingadapter/16background/nullbenchmarkchecksPASS,existingkernel/referenceunchanged. No gravity-gradientparticle runs. Outlineall-phasefinitearrivalgate needsrevision:exactmaxzero slope,settlinghorizonnotjustified. Proposedoffsetphases/smallerladder/drift-firstP1 and2workerhcap in spec/MG191_gravity_gradient_draft.md awaitPIapproval. CbackgroundGleak quantified,nonlinearwindowstillrequiresqualification. Readiness results/MG190_gravity_preparation/MG190_readiness.md. No gravityverdict or newmassmonopoleclaim.
+
+
+## MG191 PI approved and registered
+PI: "I approve of the changes and the budget. Go ahead with the run." RevisedP1*,offsetphases,smallladder and7200chargedseconds approved. Freezeplan/source/backgroundhashes before integration.31qualificationjobs first;up to120productionjobs conditional on fixed viability/stability. P1*/P4* margins unchanged;arrival descriptive/censored.8workers/thread1,rawlocalonly,nonreplacement. See spec/MG191_implementation_contract.md and results/MG191_gravity_gradient/plan.json. No scientificverdict or closure implied.
