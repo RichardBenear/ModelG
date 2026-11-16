@@ -2821,3 +2821,15 @@ PI Richard Benear, 2026-11-16 06:14 America/Denver: "Yes, I sign off on those in
 ## MG193 REGISTERED — continuum 1D existence/stability window in (a,b)
 
 PI approval 2026-11-16 06:14 America/Denver ("Go ahead with the existence-window mapping."). Run by Claude. Frozen spec: spec/MG193_existence_window.md. Descriptive map, no hypothesis gates. Uses the MG192 spectral discretization (L=100, N=1024): continuation in b at a=12..16 and in a at b=29, Newton in the even subspace, even/odd eigenvalues, edges labelled FOLD / STABILITY LOSS / TURING / DECAY. Qualification: a=14 edges reproduced within 1e-3 in b at N=2048 and L=200; time-dependent inside/outside checks at each a=14 and b=29 edge; perturbed-stability run at the recommended point. Cap 4 core-hours, at most 4 processes.
+
+## MG193 COMPLETE — window mapped at a = 14; PI closure pending
+
+Descriptive study (no hypothesis gates), run by Claude at the PI's request; report `results/MG193_existence_window/MG193_results.md`.
+- a = 14: soliton exists and is linearly stable for b in [28.99517, 29.41534]; both edges FOLD; no stability loss before either fold. Centre b* = 29.20526.
+- a-windows: [13.87748, 14.00160] at b = 29 and [13.93819, 14.06803] at b*; all edges FOLD.
+- Registered b-lines at a = 12, 13, 15, 16 unreachable by the registered route (a-window at b* too narrow): UNMAPPED (design flaw D4).
+- Qualification: N = 2048 and L = 200 edges agree within 6e-6 (limit 1e-3); all edges qualified. Tolerance 1e-9 at N = 2048 (D1).
+- Time checks (T = 500): all four edges confirmed; low-b/high-a outside runs dissolve, high-b/low-a outside runs replicate. Verdicts apply the registered §6 wording; the driver's extra "exactly one minimum" condition mislabelled inside runs (D3, both labels kept; PI to judge).
+- Recommended 1D operating point a = 14, b = 29.20526 (margins 0.21009 in b; -0.44%/+0.49% in a); perturbed run PASS under registered wording.
+- Post hoc, not registered: strip widens with a (width 0.15, 0.42, 0.79, 1.25 at a = 13, 14, 15, 16).
+- Interrupted attempts 1-2 preserved (D2). About 2.4 core-hours of the 4 cap.

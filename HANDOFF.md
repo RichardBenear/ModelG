@@ -1,3 +1,7 @@
+# MG193 COMPLETE — continuum 1D existence window mapped; PI closure pending
+
+Run by Claude at PI request (protocol v2). At a = 14 the soliton exists and is stable for b in [28.99517, 29.41534] (both folds); recommended 1D operating point a = 14, b = 29.20526 (margins 0.21 in b, -0.44%/+0.49% in a). Published b = 29 is 0.005 above the lower fold and 0.011% below the a fold. Registered b-lines at other a unmapped (design flaw); post hoc the strip widens with a (0.42 at a = 14, 1.25 at a = 16). Deviation D3 (time-check verdict coding) needs a PI judgement. Report results/MG193_existence_window/MG193_results.md. Suggested next: repeat MG192's dynamic check at (14, 29.205).
+
 # MG191 COMPLETE — UNRESOLVED; PI closure pending
 
 All31qualification jobs completed;14/16uniformviability and15/15backgroundstability passed. Fineuppera14.007/14.014 failed original-track/shape viability, prospectively excluding16Hgradientjobs. All104admittedproductionjobs complete,noexecutionfailure/retry/capstop. Public results/MG191_gravity_gradient/MG191_results.md,decision_exports.json,verification.json andper_run_results.csv. Frozen scientificverdictUNRESOLVED:0/24A and0/24R cases exceed fixed10xnull floor;no finegradientjobs available forP4. NotCONTRADICTED andnotNORESOLVEDRESPONSE acrossbothmeshes. SourcevalidationD3 remainsunchanged.

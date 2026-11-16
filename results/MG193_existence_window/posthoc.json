@@ -1,0 +1,114 @@
+{
+ "note": "post hoc; not registered tests",
+ "verdicts": {
+  "b_low_inside": {
+   "driver": "CHANGED",
+   "registered_wording": "PERSISTS",
+   "start_depth": -8.46250142083715,
+   "final_depth": -8.462501420837121,
+   "final_minima": 3
+  },
+  "b_low_outside": {
+   "driver": "DISSOLVED",
+   "registered_wording": "DISSOLVED",
+   "start_depth": -8.462501420837686,
+   "final_depth": 1.3944401189291966e-12,
+   "final_minima": 0
+  },
+  "b_high_inside": {
+   "driver": "CHANGED",
+   "registered_wording": "PERSISTS",
+   "start_depth": -10.135969784414861,
+   "final_depth": -10.135969784414817,
+   "final_minima": 3
+  },
+  "b_high_outside": {
+   "driver": "CHANGED",
+   "registered_wording": "CHANGED",
+   "start_depth": -10.135969784414844,
+   "final_depth": -10.34877358298672,
+   "final_minima": 9
+  },
+  "a_high_inside_b29": {
+   "driver": "CHANGED",
+   "registered_wording": "PERSISTS",
+   "start_depth": -8.613716102102458,
+   "final_depth": -8.613716102102464,
+   "final_minima": 3
+  },
+  "a_high_outside_b29": {
+   "driver": "DISSOLVED",
+   "registered_wording": "DISSOLVED",
+   "start_depth": -8.629217057748445,
+   "final_depth": 1.3855583347321954e-12,
+   "final_minima": 0
+  },
+  "a_low_inside_b29": {
+   "driver": "CHANGED",
+   "registered_wording": "PERSISTS",
+   "start_depth": -9.919603753468294,
+   "final_depth": -9.919603753468294,
+   "final_minima": 3
+  },
+  "a_low_outside_b29": {
+   "driver": "CHANGED",
+   "registered_wording": "CHANGED",
+   "start_depth": -9.90312851363602,
+   "final_depth": -10.172649965301982,
+   "final_minima": 13
+  }
+ },
+ "strip": {
+  "13.0": {
+   "reached": true,
+   "start_b": 25.976381702928194,
+   "b_c": 26.6247286569376,
+   "b_low": 25.96615757039035,
+   "b_high": 26.11849505832637,
+   "width": 0.15233748793601976,
+   "edge_low": "FOLD",
+   "edge_high": "FOLD"
+  },
+  "12.0": {
+   "reached": false,
+   "failed_at": [
+    12.95,
+    25.81493784547435
+   ],
+   "why": "noconv"
+  },
+  "15.0": {
+   "reached": true,
+   "start_b": 32.43413600108181,
+   "b_c": 33.669187406677054,
+   "b_low": 32.13694449982201,
+   "b_high": 32.926885482282984,
+   "width": 0.7899409824609762,
+   "edge_low": "FOLD",
+   "edge_high": "FOLD"
+  },
+  "16.0": {
+   "reached": true,
+   "start_b": 35.66301315015862,
+   "b_c": 37.50005455835519,
+   "b_low": 35.39635352319787,
+   "b_high": 36.65099525636742,
+   "width": 1.2546417331695565,
+   "edge_low": "FOLD",
+   "edge_high": "FOLD"
+  }
+ },
+ "stationary_start_minima": {
+  "b_low_inside": 3,
+  "b_high_inside": 3,
+  "a_high_inside_b29": 3,
+  "a_low_inside_b29": 3
+ },
+ "recommended_perturbed": {
+  "start_minima": 3,
+  "driver_ok": false,
+  "registered_wording_ok": true
+ },
+ "strip_slope_db_da": 3.2288771490768085,
+ "wall_seconds": 1491.6789903640747
+}
