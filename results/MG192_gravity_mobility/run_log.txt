@@ -1,0 +1,150 @@
+MG192 run started 2026-11-16 04:29:52 UTC
+platform Linux-6.18.44-fc-v470-x86_64-with-glibc2.39 python 3.13.18 numpy 2.5.3 scipy 1.18.1
+[L100_N1024] stationary soliton
+    Newton it 0: max|F| = 1.451e+02
+    Newton it 1: max|F| = 2.918e-01
+    Newton it 2: max|F| = 2.754e-02
+    Newton it 3: max|F| = 2.261e-03
+    Newton it 4: max|F| = 2.133e-05
+    Newton it 5: max|F| = 1.955e-09
+    Newton it 6: max|F| = 4.112e-12
+    Newton it 7: max|F| = 4.150e-12
+    Newton it 8: max|F| = 3.922e-12
+    Newton it 9: max|F| = 5.627e-12
+    Newton it 10: max|F| = 3.922e-12
+    Newton it 11: max|F| = 5.173e-12
+    Newton it 12: max|F| = 3.809e-12
+    Newton it 13: max|F| = 4.377e-12
+    Newton it 14: max|F| = 5.116e-12
+    Newton it 15: max|F| = 3.903e-12
+    Newton it 16: max|F| = 6.082e-12
+    Newton it 17: max|F| = 5.855e-12
+    Newton it 18: max|F| = 5.571e-12
+    Newton it 19: max|F| = 5.798e-12
+    Newton it 20: max|F| = 6.594e-12
+    Newton it 21: max|F| = 6.651e-12
+    Newton it 22: max|F| = 5.116e-12
+    Newton it 23: max|F| = 3.865e-12
+    Newton it 24: max|F| = 4.178e-12
+    Newton it 25: max|F| = 6.594e-12
+    Newton it 26: max|F| = 3.979e-12
+    Newton it 27: max|F| = 4.093e-12
+    Newton it 28: max|F| = 5.343e-12
+    Newton it 29: max|F| = 4.263e-12
+    Newton it 30: max|F| = 4.718e-12
+    Newton it 31: max|F| = 5.343e-12
+    Newton it 32: max|F| = 4.889e-12
+    Newton it 33: max|F| = 5.457e-12
+    Newton it 34: max|F| = 6.196e-12
+    Newton it 35: max|F| = 4.547e-12
+    Newton it 36: max|F| = 7.560e-12
+    Newton it 37: max|F| = 5.343e-12
+    Newton it 38: max|F| = 5.059e-12
+    Newton it 39: max|F| = 3.922e-12
+[L100_N1024] residual 4.889e-12; eigen-decomposition (3N = 3072)
+[L100_N1024] eig took 21.0 s
+[L100_N1024] lambda0 = -2.474e-12+0.000e+00j; max Re(other) = -0.042176
+[L100_N1024] core {'G': -0.16087948440144118, 'X': -8.358321455665369, 'Y': 0.9292163097750561}; mobilities {'mu_a': -0.05984747258830683, 'mu_b': 0.008758447720137189, 'mu_w': -0.059847472567294335}; adjoint edge ratio 6.97e-10
+[L100_N2048] stationary soliton
+    Newton it 0: max|F| = 3.260e+02
+    Newton it 1: max|F| = 3.251e-01
+    Newton it 2: max|F| = 2.162e-02
+    Newton it 3: max|F| = 1.491e-03
+    Newton it 4: max|F| = 9.378e-06
+    Newton it 5: max|F| = 3.885e-10
+    Newton it 6: max|F| = 1.813e-11
+    Newton it 7: max|F| = 1.825e-11
+    Newton it 8: max|F| = 1.842e-11
+    Newton it 9: max|F| = 2.353e-11
+    Newton it 10: max|F| = 2.149e-11
+    Newton it 11: max|F| = 1.790e-11
+    Newton it 12: max|F| = 1.813e-11
+    Newton it 13: max|F| = 2.174e-11
+    Newton it 14: max|F| = 2.913e-11
+    Newton it 15: max|F| = 1.887e-11
+    Newton it 16: max|F| = 1.776e-11
+    Newton it 17: max|F| = 2.319e-11
+    Newton it 18: max|F| = 1.944e-11
+    Newton it 19: max|F| = 2.007e-11
+    Newton it 20: max|F| = 1.916e-11
+    Newton it 21: max|F| = 2.291e-11
+    Newton it 22: max|F| = 2.279e-11
+    Newton it 23: max|F| = 2.052e-11
+    Newton it 24: max|F| = 2.717e-11
+    Newton it 25: max|F| = 2.842e-11
+    Newton it 26: max|F| = 1.847e-11
+    Newton it 27: max|F| = 2.660e-11
+    Newton it 28: max|F| = 2.257e-11
+    Newton it 29: max|F| = 1.929e-11
+    Newton it 30: max|F| = 2.694e-11
+    Newton it 31: max|F| = 2.996e-11
+    Newton it 32: max|F| = 2.734e-11
+    Newton it 33: max|F| = 2.166e-11
+    Newton it 34: max|F| = 2.234e-11
+    Newton it 35: max|F| = 2.410e-11
+    Newton it 36: max|F| = 2.518e-11
+    Newton it 37: max|F| = 2.484e-11
+    Newton it 38: max|F| = 2.234e-11
+    Newton it 39: max|F| = 2.035e-11
+[L100_N2048] residual 1.953e-11; eigen-decomposition (3N = 6144)
+[L100_N2048] eig took 223.8 s
+[L100_N2048] lambda0 = 0.000e+00+0.000e+00j; max Re(other) = -0.042176
+[L100_N2048] core {'G': -0.16087948440144473, 'X': -8.358321455764633, 'Y': 0.9292163097833179}; mobilities {'mu_a': -0.05984747258834891, 'mu_b': 0.008758447720200856, 'mu_w': -0.059847472567279514}; adjoint edge ratio 6.98e-10
+[L200_N2048] stationary soliton
+    Newton it 0: max|F| = 1.451e+02
+    Newton it 1: max|F| = 2.918e-01
+    Newton it 2: max|F| = 2.754e-02
+    Newton it 3: max|F| = 2.261e-03
+    Newton it 4: max|F| = 2.133e-05
+    Newton it 5: max|F| = 1.958e-09
+    Newton it 6: max|F| = 4.661e-12
+    Newton it 7: max|F| = 5.627e-12
+    Newton it 8: max|F| = 4.832e-12
+    Newton it 9: max|F| = 5.286e-12
+    Newton it 10: max|F| = 4.889e-12
+    Newton it 11: max|F| = 5.286e-12
+    Newton it 12: max|F| = 4.889e-12
+    Newton it 13: max|F| = 8.868e-12
+    Newton it 14: max|F| = 7.987e-12
+    Newton it 15: max|F| = 5.400e-12
+    Newton it 16: max|F| = 7.731e-12
+    Newton it 17: max|F| = 8.242e-12
+    Newton it 18: max|F| = 8.242e-12
+    Newton it 19: max|F| = 7.105e-12
+    Newton it 20: max|F| = 4.718e-12
+    Newton it 21: max|F| = 5.599e-12
+    Newton it 22: max|F| = 4.206e-12
+    Newton it 23: max|F| = 5.571e-12
+    Newton it 24: max|F| = 5.514e-12
+    Newton it 25: max|F| = 5.627e-12
+    Newton it 26: max|F| = 5.372e-12
+    Newton it 27: max|F| = 6.423e-12
+    Newton it 28: max|F| = 6.025e-12
+    Newton it 29: max|F| = 4.604e-12
+    Newton it 30: max|F| = 4.945e-12
+    Newton it 31: max|F| = 6.537e-12
+    Newton it 32: max|F| = 5.230e-12
+    Newton it 33: max|F| = 4.718e-12
+    Newton it 34: max|F| = 4.206e-12
+    Newton it 35: max|F| = 4.377e-12
+    Newton it 36: max|F| = 5.343e-12
+    Newton it 37: max|F| = 4.427e-12
+    Newton it 38: max|F| = 5.741e-12
+    Newton it 39: max|F| = 6.196e-12
+[L200_N2048] residual 4.661e-12; eigen-decomposition (3N = 6144)
+[L200_N2048] eig took 212.5 s
+[L200_N2048] lambda0 = -6.821e-13+0.000e+00j; max Re(other) = -0.042176
+[L200_N2048] core {'G': -0.16087948440139144, 'X': -8.358321455663091, 'Y': 0.9292163097747874}; mobilities {'mu_a': -0.05984747259461946, 'mu_b': 0.008758447767878333, 'mu_w': -0.05984747259463105}; adjoint edge ratio 2.30e-15
+P0: {'a': True, 'b': True, 'c': True, 'd': True, 'profile_diff_N': 9.92645965425254e-11, 'mobility_rel_diff_N': {'mu_a': 7.030781888275536e-13, 'mu_b': 7.2693042248705125e-12, 'mu_w': 2.476541906106413e-13}, 'mobility_rel_diff_L': {'mu_a': 1.0547854005523133e-10, 'mu_b': 5.4508682242118136e-09, 'mu_w': 4.567731108991314e-10}, 'core_rel_err': {'G': 0.0007485440904275098, 'X': 0.0002007828151472215, 'Y': 0.0008426776612300601}, 'pass': True}
+P1: {'mu_a': -0.05984747258830683, 'numerical_uncertainty': 6.3126240346100815e-12, 'ratio': 9480601451.976618, 'label': 'SUPPORTED'}
+P3: {'mu_a': -0.05984747258830683, 'published': -0.0599, 'rel_diff': 0.0008769183922064986, 'label': 'CONSISTENT'}
+P4: {'mu_b': 0.008758447720137189, 'mu_w': -0.059847472567294335, 'mu_b_over_mu_a': -0.14634615868220371, 'mu_w_over_mu_a': 0.9999999996488992, 'mobility_per_unit_background_G_slope_a_arm': 0.05386272532947615, 'note': 'v = mu * d(param)/dx; for the a arm v = -mu_a*0.9 * (-dG_bg/dx)'}
+dynamic eps=0.001 x0=0.0: v=-5.233567e-05 predicted=-5.264459e-05 (93 s)
+dynamic eps=0.001 x0=12.5: v=-2.546442e-08 predicted=-3.722534e-05 (92 s)
+dynamic eps=0.002 x0=0.0: v=-1.046556e-04 predicted=-1.052892e-04 (98 s)
+dynamic eps=0.002 x0=12.5: v=-6.671665e-10 predicted=-7.445069e-05 (101 s)
+dynamic eps=0.0 x0=0.0: v=6.478263e-19 predicted=-0.000000e+00 (73 s)
+dynamic eps=0.0 x0=12.5: v=7.222320e-18 predicted=-0.000000e+00 (74 s)
+dt check (dt=0.001): v=-5.233566e-05
+P2: rel_err [0.005868026171358526, 0.9993159387152165, 0.006017018330246802, 0.9999910388136831], null_ok True, linearity [1.9997002567811706, 0.02619995171861301], pass False
+OUTCOME: UNRESOLVED  (wall 1413 s)
