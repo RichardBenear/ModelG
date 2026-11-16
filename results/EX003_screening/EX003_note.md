@@ -46,7 +46,7 @@ The slow rate follows about 0.97 √ε. The oscillating (Turing) tail does not c
 
 ## 3D particles along the family
 
-The EX002 radial solver was continued in ε from 1 to 0.01 in 30 steps. Every step converged (residual ≤ 7e-10), with
+The EX002 radial solver was continued in ε from 1 to 0.01 in 30 steps. Every step converged (residual ≤ 8e-10), with
 outer radius at least 12 slow lengths and a zero-flux outer boundary.
 
 | ε | Core φ_X | Core φ_G | Net G | G inside r < 12 | G outside r ≥ 12 | Halo amplitude C (fit r φ_G = C e^(−κr), κ fitted) | Halo sign |
