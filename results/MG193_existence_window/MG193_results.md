@@ -172,4 +172,4 @@ verdicts are in the table above and in D3.
   the raw histories by `mg193_posthoc.py`. Both share the model equations and NumPy/SciPy with the driver. This is
   same-author work, not external replication.
 
-PI closure pending.
+**PI CLOSED 2026-11-16** (Richard Benear, 09:48 America/Denver: "On D3, I'll go with your 'coding fix'. I sign off on MG193."). D3 accepted as an implementation fix.

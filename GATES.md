@@ -2833,3 +2833,7 @@ Descriptive study (no hypothesis gates), run by Claude at the PI's request; repo
 - Recommended 1D operating point a = 14, b = 29.20526 (margins 0.21009 in b; -0.44%/+0.49% in a); perturbed run PASS under registered wording.
 - Post hoc, not registered: strip widens with a (width 0.15, 0.42, 0.79, 1.25 at a = 13, 14, 15, 16).
 - Interrupted attempts 1-2 preserved (D2). About 2.4 core-hours of the 4 cap.
+
+## MG193 PI CLOSED — 2026-11-16
+
+PI Richard Benear, 2026-11-16 09:48 America/Denver: "On D3, I'll go with your 'coding fix'. I sign off on MG193." Closed as reported: a = 14 window b in [28.99517, 29.41534] (both FOLD), all edges qualified and confirmed by time checks under the registered §6 wording (D3 accepted as an implementation fix, not a rescore); registered b-lines at a = 12, 13, 15, 16 UNMAPPED; recommended 1D operating point (14, 29.20526). Post-hoc strip map remains descriptive. No result changed.

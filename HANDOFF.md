@@ -1,6 +1,6 @@
-# MG193 COMPLETE — continuum 1D existence window mapped; PI closure pending
+# MG193 PI CLOSED 2026-11-16 — continuum 1D existence window mapped
 
-Run by Claude at PI request (protocol v2). At a = 14 the soliton exists and is stable for b in [28.99517, 29.41534] (both folds); recommended 1D operating point a = 14, b = 29.20526 (margins 0.21 in b, -0.44%/+0.49% in a). Published b = 29 is 0.005 above the lower fold and 0.011% below the a fold. Registered b-lines at other a unmapped (design flaw); post hoc the strip widens with a (0.42 at a = 14, 1.25 at a = 16). Deviation D3 (time-check verdict coding) needs a PI judgement. Report results/MG193_existence_window/MG193_results.md. Suggested next: repeat MG192's dynamic check at (14, 29.205).
+Run by Claude at PI request (protocol v2). At a = 14 the soliton exists and is stable for b in [28.99517, 29.41534] (both folds); recommended 1D operating point a = 14, b = 29.20526 (margins 0.21 in b, -0.44%/+0.49% in a). Published b = 29 is 0.005 above the lower fold and 0.011% below the a fold. Registered b-lines at other a unmapped (design flaw); post hoc the strip widens with a (0.42 at a = 14, 1.25 at a = 16). PI accepted D3 as a coding fix and signed off 2026-11-16. Report results/MG193_existence_window/MG193_results.md. Suggested next: repeat MG192's dynamic check at (14, 29.205).
 
 # MG191 COMPLETE — UNRESOLVED; PI closure pending
 
