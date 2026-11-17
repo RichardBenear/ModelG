@@ -1,0 +1,99 @@
+arm C {'eps': 1.0, 'b': 29.000011220022188, 'R': 60.0, 'W': -1.0, 'sigma': 2.0, 'ok': True, 'residuals': [np.float64(9.131362332936988e-12), np.float64(6.290967746735987e-12)], 'IG_base': -6.5477395084784505e-09, 'IG_with_sink': -0.11111109259085347, 'IX_with_sink': -1.111111135221789, 'IG_pred': -0.11111111111111112, 'rel_err': -1.6668231882233098e-07, 'kappa_slow_linear': 0.5141331547822353, 'tail_dG': {'C': -0.004239985667077017, 'kappa': 0.7949535433316688}, 'frac_dG_beyond_1_over_kappa': 0.7075839153967463, 'core_phiX': -14.634893231523902}
+arm C {'eps': 0.03, 'b': 28.980682421168922, 'R': 89.28493001808863, 'W': -1.0, 'sigma': 2.0, 'ok': True, 'residuals': [np.float64(6.394884621840902e-12), np.float64(5.7696070143720135e-12)], 'IG_base': -3.4608684666426193e-06, 'IG_with_sink': -3.703706475762753, 'IX_with_sink': -4.703706696381837, 'IG_pred': -3.7037037037037046, 'rel_err': 7.48455943102577e-07, 'kappa_slow_linear': 0.1680014756909266, 'tail_dG': {'C': -0.008613747538297445, 'kappa': 0.16800154640777415}, 'frac_dG_beyond_1_over_kappa': 0.7617647167412815, 'core_phiX': -14.684681505392083}
+fold eps 1.0: b0 29.00001 b_fold 29.93008 b_c 30.04409
+arm G eps 1.0: b 29.96428 T 400 front 97.4 final IG -561.727 outside 497.101 tail {'C': -15089909.218116263, 'kappa': 0.26889247583867065}
+    {'t0': 0.0, 'front0': 5.675, 'front1': 5.825, 'dSdt': 0.7417, 'IG_mean': -0.0971, 'IG_pred': -0.0824, 'IG_outside_mean': 4.5153}
+    {'t0': 20.0, 'front0': 5.825, 'front1': 7.175, 'dSdt': 0.399, 'IG_mean': -0.0409, 'IG_pred': -0.0443, 'IG_outside_mean': 3.6741}
+    {'t0': 40.0, 'front0': 7.225, 'front1': 8.975, 'dSdt': 4.8861, 'IG_mean': -0.5074, 'IG_pred': -0.5429, 'IG_outside_mean': 0.2233}
+    {'t0': 60.0, 'front0': 8.975, 'front1': 13.375, 'dSdt': 16.247, 'IG_mean': -1.6992, 'IG_pred': -1.8052, 'IG_outside_mean': 1.544}
+    {'t0': 80.0, 'front0': 13.425, 'front1': 16.875, 'dSdt': 45.3954, 'IG_mean': -4.6306, 'IG_pred': -5.0439, 'IG_outside_mean': -1.7032}
+    {'t0': 100.0, 'front0': 16.925, 'front1': 21.575, 'dSdt': 93.6602, 'IG_mean': -10.4807, 'IG_pred': -10.4067, 'IG_outside_mean': 9.2937}
+    {'t0': 120.0, 'front0': 21.625, 'front1': 26.375, 'dSdt': 154.3167, 'IG_mean': -16.1083, 'IG_pred': -17.1463, 'IG_outside_mean': -3.1922}
+    {'t0': 140.0, 'front0': 27.425, 'front1': 32.425, 'dSdt': 244.6937, 'IG_mean': -27.8008, 'IG_pred': -27.1882, 'IG_outside_mean': 16.6184}
+    {'t0': 160.0, 'front0': 32.475, 'front1': 37.275, 'dSdt': 408.6769, 'IG_mean': -42.8964, 'IG_pred': -45.4085, 'IG_outside_mean': 11.3937}
+    {'t0': 180.0, 'front0': 37.325, 'front1': 42.175, 'dSdt': 472.0827, 'IG_mean': -51.9206, 'IG_pred': -52.4536, 'IG_outside_mean': 1.2544}
+    {'t0': 200.0, 'front0': 43.175, 'front1': 48.225, 'dSdt': 685.7466, 'IG_mean': -77.3159, 'IG_pred': -76.1941, 'IG_outside_mean': 40.9169}
+    {'t0': 220.0, 'front0': 48.275, 'front1': 53.125, 'dSdt': 943.5234, 'IG_mean': -99.5754, 'IG_pred': -104.8359, 'IG_outside_mean': 23.3086}
+    {'t0': 240.0, 'front0': 53.175, 'front1': 58.975, 'dSdt': 1027.5958, 'IG_mean': -112.672, 'IG_pred': -114.1773, 'IG_outside_mean': 0.8277}
+    {'t0': 260.0, 'front0': 59.225, 'front1': 64.175, 'dSdt': 1292.0535, 'IG_mean': -148.3207, 'IG_pred': -143.5615, 'IG_outside_mean': 61.6324}
+    {'t0': 280.0, 'front0': 64.225, 'front1': 69.075, 'dSdt': 1728.7248, 'IG_mean': -186.1649, 'IG_pred': -192.0805, 'IG_outside_mean': 67.3903}
+    {'t0': 300.0, 'front0': 70.275, 'front1': 75.175, 'dSdt': 1949.8167, 'IG_mean': -207.1383, 'IG_pred': -216.6463, 'IG_outside_mean': -5.5273}
+    {'t0': 320.0, 'front0': 75.275, 'front1': 80.175, 'dSdt': 2053.4683, 'IG_mean': -234.6922, 'IG_pred': -228.1631, 'IG_outside_mean': 9.6449}
+    {'t0': 340.0, 'front0': 81.175, 'front1': 86.275, 'dSdt': 2612.048, 'IG_mean': -293.9249, 'IG_pred': -290.2276, 'IG_outside_mean': 102.323}
+    {'t0': 360.0, 'front0': 86.375, 'front1': 91.225, 'dSdt': 3176.4351, 'IG_mean': -340.4075, 'IG_pred': -352.9372, 'IG_outside_mean': 112.5582}
+    {'t0': 380.0, 'front0': 92.375, 'front1': 97.325, 'dSdt': 3397.5229, 'IG_mean': -364.0752, 'IG_pred': -377.5025, 'IG_outside_mean': -0.8491}
+fold eps 1.0: b0 29.00001 b_fold 29.93008 b_c 30.04409
+arm G eps 1.0_fine: b 29.96428 T 400 front 96.0 final IG -292.926 outside -394.452 tail {'C': 2.800963170508573, 'kappa': 1067804.520762286}
+    {'t0': 0.0, 'front0': 5.6875, 'front1': 5.8125, 'dSdt': 0.7676, 'IG_mean': -0.0997, 'IG_pred': -0.0853, 'IG_outside_mean': 4.4737}
+    {'t0': 20.0, 'front0': 5.8375, 'front1': 7.1875, 'dSdt': 0.3491, 'IG_mean': -0.0362, 'IG_pred': -0.0388, 'IG_outside_mean': 4.2033}
+    {'t0': 40.0, 'front0': 7.2125, 'front1': 8.9125, 'dSdt': 4.6513, 'IG_mean': -0.4822, 'IG_pred': -0.5168, 'IG_outside_mean': -1.0048}
+    {'t0': 60.0, 'front0': 8.9625, 'front1': 13.3375, 'dSdt': 15.3423, 'IG_mean': -1.6117, 'IG_pred': -1.7047, 'IG_outside_mean': 2.7855}
+    {'t0': 80.0, 'front0': 13.4375, 'front1': 16.8375, 'dSdt': 42.2645, 'IG_mean': -4.3586, 'IG_pred': -4.6961, 'IG_outside_mean': -1.2341}
+    {'t0': 100.0, 'front0': 16.8875, 'front1': 21.5375, 'dSdt': 95.0682, 'IG_mean': -10.4633, 'IG_pred': -10.5631, 'IG_outside_mean': 8.4185}
+    {'t0': 120.0, 'front0': 21.5875, 'front1': 26.3125, 'dSdt': 143.222, 'IG_mean': -15.2373, 'IG_pred': -15.9136, 'IG_outside_mean': -2.3695}
+    {'t0': 140.0, 'front0': 26.3625, 'front1': 31.1125, 'dSdt': 255.3742, 'IG_mean': -28.3519, 'IG_pred': -28.3749, 'IG_outside_mean': 19.5316}
+    {'t0': 160.0, 'front0': 32.3125, 'front1': 37.0625, 'dSdt': 364.2263, 'IG_mean': -38.036, 'IG_pred': -40.4696, 'IG_outside_mean': -1.4029}
+    {'t0': 180.0, 'front0': 37.1625, 'front1': 42.0375, 'dSdt': 456.4634, 'IG_mean': -52.5531, 'IG_pred': -50.7182, 'IG_outside_mean': 11.0898}
+    {'t0': 200.0, 'front0': 42.0875, 'front1': 46.8875, 'dSdt': 713.8939, 'IG_mean': -76.5925, 'IG_pred': -79.3215, 'IG_outside_mean': 31.4062}
+    {'t0': 220.0, 'front0': 47.9875, 'front1': 52.8625, 'dSdt': 828.3865, 'IG_mean': -88.3728, 'IG_pred': -92.0429, 'IG_outside_mean': -23.5609}
+    {'t0': 240.0, 'front0': 52.9875, 'front1': 57.9125, 'dSdt': 987.1884, 'IG_mean': -114.0452, 'IG_pred': -109.6876, 'IG_outside_mean': 33.5081}
+    {'t0': 260.0, 'front0': 57.9625, 'front1': 62.8125, 'dSdt': 1388.8796, 'IG_mean': -150.5979, 'IG_pred': -154.32, 'IG_outside_mean': 75.1282}
+    {'t0': 280.0, 'front0': 64.0125, 'front1': 68.8625, 'dSdt': 1604.3239, 'IG_mean': -169.9596, 'IG_pred': -178.2582, 'IG_outside_mean': -3.8489}
+    {'t0': 300.0, 'front0': 68.9625, 'front1': 73.7875, 'dSdt': 1681.3705, 'IG_mean': -193.6369, 'IG_pred': -186.8189, 'IG_outside_mean': 49.101}
+    {'t0': 320.0, 'front0': 73.8625, 'front1': 79.8375, 'dSdt': 2270.4066, 'IG_mean': -249.0518, 'IG_pred': -252.2674, 'IG_outside_mean': 92.9222}
+    {'t0': 340.0, 'front0': 79.9625, 'front1': 84.8125, 'dSdt': 2633.7443, 'IG_mean': -279.385, 'IG_pred': -292.6383, 'IG_outside_mean': 26.2204}
+    {'t0': 360.0, 'front0': 84.8875, 'front1': 90.7625, 'dSdt': 2677.3429, 'IG_mean': -298.3806, 'IG_pred': -297.4825, 'IG_outside_mean': 3.389}
+    {'t0': 380.0, 'front0': 90.9375, 'front1': 95.9375, 'dSdt': 3155.4599, 'IG_mean': -362.4762, 'IG_pred': -350.6067, 'IG_outside_mean': 95.7421}
+fold eps 0.03: b0 28.98068 b_fold 29.88749 b_c 30.02407
+/tmp/claude-0/-home-user/75e79fee-47ca-52d6-b1a9-688347fc6bf3/scratchpad/mg/src/ex003_screening.py:67: RuntimeWarning: overflow encountered in exp
+  rr = least_squares(lambda p: (p[0] * np.exp(-p[1] * r[m]) - y) / (np.abs(y) + 1e-300),
+/tmp/claude-0/-home-user/75e79fee-47ca-52d6-b1a9-688347fc6bf3/scratchpad/mg/src/ex003_screening.py:67: RuntimeWarning: overflow encountered in multiply
+  rr = least_squares(lambda p: (p[0] * np.exp(-p[1] * r[m]) - y) / (np.abs(y) + 1e-300),
+/tmp/claude-0/-home-user/75e79fee-47ca-52d6-b1a9-688347fc6bf3/scratchpad/mg/src/ex003_screening.py:67: RuntimeWarning: overflow encountered in divide
+  rr = least_squares(lambda p: (p[0] * np.exp(-p[1] * r[m]) - y) / (np.abs(y) + 1e-300),
+arm G eps 0.03: b 29.92846 T 400 front 82.6 final IG -6356.482 outside 4464.143 tail {'C': 1637076445845.9766, 'kappa': 0.33361679299683683}
+    {'t0': 0.0, 'front0': 5.625, 'front1': 5.825, 'dSdt': 0.4278, 'IG_mean': -0.6682, 'IG_pred': -1.5845, 'IG_outside_mean': 13.1962}
+    {'t0': 20.0, 'front0': 5.825, 'front1': 7.225, 'dSdt': 0.5255, 'IG_mean': -0.8495, 'IG_pred': -1.9464, 'IG_outside_mean': 14.9666}
+    {'t0': 40.0, 'front0': 7.225, 'front1': 9.075, 'dSdt': 5.0169, 'IG_mean': -5.3343, 'IG_pred': -18.581, 'IG_outside_mean': 20.7342}
+    {'t0': 60.0, 'front0': 9.075, 'front1': 13.375, 'dSdt': 15.4432, 'IG_mean': -19.2623, 'IG_pred': -57.197, 'IG_outside_mean': 49.7242}
+    {'t0': 80.0, 'front0': 13.475, 'front1': 16.825, 'dSdt': 34.7111, 'IG_mean': -51.6589, 'IG_pred': -128.5596, 'IG_outside_mean': 98.2947}
+    {'t0': 100.0, 'front0': 16.875, 'front1': 20.225, 'dSdt': 75.9943, 'IG_mean': -112.4815, 'IG_pred': -281.4604, 'IG_outside_mean': 177.6884}
+    {'t0': 120.0, 'front0': 21.375, 'front1': 24.875, 'dSdt': 116.5294, 'IG_mean': -211.9378, 'IG_pred': -431.5903, 'IG_outside_mean': 292.3245}
+    {'t0': 140.0, 'front0': 24.925, 'front1': 29.575, 'dSdt': 153.4232, 'IG_mean': -345.466, 'IG_pred': -568.2342, 'IG_outside_mean': 426.6194}
+    {'t0': 160.0, 'front0': 29.625, 'front1': 34.025, 'dSdt': 258.9583, 'IG_mean': -523.3112, 'IG_pred': -959.1049, 'IG_outside_mean': 578.2659}
+    {'t0': 180.0, 'front0': 34.225, 'front1': 37.775, 'dSdt': 336.3055, 'IG_mean': -763.558, 'IG_pred': -1245.5759, 'IG_outside_mean': 791.0886}
+    {'t0': 200.0, 'front0': 37.825, 'front1': 42.425, 'dSdt': 383.8471, 'IG_mean': -1021.5748, 'IG_pred': -1421.656, 'IG_outside_mean': 978.9211}
+    {'t0': 220.0, 'front0': 42.475, 'front1': 47.075, 'dSdt': 587.9028, 'IG_mean': -1336.3072, 'IG_pred': -2177.418, 'IG_outside_mean': 1213.1782}
+    {'t0': 240.0, 'front0': 47.175, 'front1': 50.675, 'dSdt': 645.7305, 'IG_mean': -1735.0722, 'IG_pred': -2391.5945, 'IG_outside_mean': 1568.4325}
+    {'t0': 260.0, 'front0': 51.825, 'front1': 55.375, 'dSdt': 735.4003, 'IG_mean': -2119.46, 'IG_pred': -2723.7049, 'IG_outside_mean': 1736.625}
+    {'t0': 280.0, 'front0': 55.425, 'front1': 60.075, 'dSdt': 1083.336, 'IG_mean': -2612.8419, 'IG_pred': -4012.3557, 'IG_outside_mean': 2098.482}
+    {'t0': 300.0, 'front0': 60.175, 'front1': 64.825, 'dSdt': 1023.0288, 'IG_mean': -3148.4881, 'IG_pred': -3788.9956, 'IG_outside_mean': 2531.7664}
+    {'t0': 320.0, 'front0': 64.875, 'front1': 68.375, 'dSdt': 1307.3139, 'IG_mean': -3670.4246, 'IG_pred': -4841.9032, 'IG_outside_mean': 2771.8534}
+    {'t0': 340.0, 'front0': 69.525, 'front1': 73.125, 'dSdt': 1571.2569, 'IG_mean': -4375.9585, 'IG_pred': -5819.47, 'IG_outside_mean': 3326.3607}
+    {'t0': 360.0, 'front0': 73.175, 'front1': 77.825, 'dSdt': 1541.8638, 'IG_mean': -4994.2976, 'IG_pred': -5710.6065, 'IG_outside_mean': 3559.9487}
+    {'t0': 380.0, 'front0': 77.875, 'front1': 82.575, 'dSdt': 2181.4942, 'IG_mean': -5739.0403, 'IG_pred': -8079.6083, 'IG_outside_mean': 4140.2573}
+fold eps 0.01: b0 28.98020 b_fold 29.88192 b_c 30.02357
+/usr/local/lib/python3.13/site-packages/scipy/optimize/_lsq/trf.py:527: RuntimeWarning: overflow encountered in dot
+  cost_new = 0.5 * np.dot(f_new, f_new)
+arm G eps 0.01: b 29.92441 T 400 front 79.6 final IG -11176.027 outside 7426.397 tail {'C': 25009616310.191387, 'kappa': 0.28560573127626004}
+    {'t0': 0.0, 'front0': 5.625, 'front1': 5.825, 'dSdt': 0.3943, 'IG_mean': -1.8566, 'IG_pred': -4.3816, 'IG_outside_mean': 14.7934}
+    {'t0': 20.0, 'front0': 5.825, 'front1': 7.275, 'dSdt': 0.7096, 'IG_mean': -2.1683, 'IG_pred': -7.8841, 'IG_outside_mean': 16.0531}
+    {'t0': 40.0, 'front0': 7.325, 'front1': 10.225, 'dSdt': 5.2588, 'IG_mean': -8.0758, 'IG_pred': -58.431, 'IG_outside_mean': 28.2115}
+    {'t0': 60.0, 'front0': 10.325, 'front1': 13.525, 'dSdt': 16.2206, 'IG_mean': -26.9341, 'IG_pred': -180.2291, 'IG_outside_mean': 65.0712}
+    {'t0': 80.0, 'front0': 13.625, 'front1': 16.925, 'dSdt': 37.7005, 'IG_mean': -71.9822, 'IG_pred': -418.894, 'IG_outside_mean': 136.741}
+    {'t0': 100.0, 'front0': 16.975, 'front1': 21.425, 'dSdt': 78.1651, 'IG_mean': -159.475, 'IG_pred': -868.501, 'IG_outside_mean': 256.4528}
+    {'t0': 120.0, 'front0': 21.525, 'front1': 24.925, 'dSdt': 109.5768, 'IG_mean': -300.6044, 'IG_pred': -1217.5195, 'IG_outside_mean': 426.3606}
+    {'t0': 140.0, 'front0': 24.975, 'front1': 29.575, 'dSdt': 147.5368, 'IG_mean': -503.0165, 'IG_pred': -1639.2977, 'IG_outside_mean': 631.5586}
+    {'t0': 160.0, 'front0': 29.625, 'front1': 33.025, 'dSdt': 234.9017, 'IG_mean': -779.933, 'IG_pred': -2610.0187, 'IG_outside_mean': 904.8542}
+    {'t0': 180.0, 'front0': 34.125, 'front1': 37.675, 'dSdt': 329.9666, 'IG_mean': -1150.7511, 'IG_pred': -3666.2954, 'IG_outside_mean': 1198.1154}
+    {'t0': 200.0, 'front0': 37.775, 'front1': 42.225, 'dSdt': 358.48, 'IG_mean': -1593.2705, 'IG_pred': -3983.1107, 'IG_outside_mean': 1595.0966}
+    {'t0': 220.0, 'front0': 42.325, 'front1': 45.825, 'dSdt': 452.8839, 'IG_mean': -2110.194, 'IG_pred': -5032.0438, 'IG_outside_mean': 1944.2483}
+    {'t0': 240.0, 'front0': 45.875, 'front1': 50.425, 'dSdt': 668.2744, 'IG_mean': -2752.6718, 'IG_pred': -7425.2713, 'IG_outside_mean': 2404.1931}
+    {'t0': 260.0, 'front0': 50.525, 'front1': 53.975, 'dSdt': 687.75, 'IG_mean': -3512.0358, 'IG_pred': -7641.6665, 'IG_outside_mean': 2992.104}
+    {'t0': 280.0, 'front0': 54.025, 'front1': 58.575, 'dSdt': 763.8669, 'IG_mean': -4321.345, 'IG_pred': -8487.4105, 'IG_outside_mean': 3388.0132}
+    {'t0': 300.0, 'front0': 58.625, 'front1': 63.125, 'dSdt': 1032.7953, 'IG_mean': -5252.335, 'IG_pred': -11475.5038, 'IG_outside_mean': 4056.0552}
+    {'t0': 320.0, 'front0': 63.225, 'front1': 66.775, 'dSdt': 1184.8803, 'IG_mean': -6369.0806, 'IG_pred': -13165.337, 'IG_outside_mean': 4712.357}
+    {'t0': 340.0, 'front0': 66.825, 'front1': 71.375, 'dSdt': 1176.4651, 'IG_mean': -7515.0488, 'IG_pred': -13071.8346, 'IG_outside_mean': 5387.6174}
+    {'t0': 360.0, 'front0': 71.475, 'front1': 74.875, 'dSdt': 1437.536, 'IG_mean': -8748.9552, 'IG_pred': -15972.6219, 'IG_outside_mean': 6040.2402}
+    {'t0': 380.0, 'front0': 74.925, 'front1': 79.575, 'dSdt': 1847.3313, 'IG_mean': -10222.4182, 'IG_pred': -20525.9037, 'IG_outside_mean': 6849.4381}
+done 128.56845951080322
