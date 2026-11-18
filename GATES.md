@@ -2851,3 +2851,11 @@ Report `results/MG194_two_particle/MG194_results.md`. A0 PASS (continuation mu_a
 ## MG194 PI CLOSED — 2026-11-16
 
 PI Richard Benear, 2026-11-16 12:32 America/Denver: "I approve closure." Closed as reported: Part A CONFIRMED; Part B OSCILLATORY with decay law SUPPORTED. No result changed.
+
+## MG195 REGISTERED — inverse-square attraction in the conserved-G test model (3D axisymmetric)
+
+PI approval: Richard Benear, 2026-11-18 10:30 America/Denver ("yes", adopting D1–D4). Specification `spec/MG195_inverse_square.md`, frozen with this commit before computation; implementation `src/mg195_inverse_square.py`. Run by Claude in the cloud, cap 2 core-hours, at most 4 processes. Model is our EX008 construction, not LaViolette's.
+- Points P1 ("G feeds X", k = 0.2), P2 ("G feeds Y", k = 0.2), P3 ("G feeds X", k = 0.05); pairs at d = 18, 22, 27, 33, 40. Prediction v = μM/(4πd²) from the R = 120 radial solve.
+- Per point SUPPORTED iff residual ≤ 1e-8, v < 0 above the null floor (10·max|v_C1|) at all d, |v/pred − 1| ≤ 0.05 for d ≥ 22, exponent over d = 22–40 within 2.00 ± 0.10. UNRESOLVED on non-convergence or relative grid/far change > 2% (P1, d = 22). Otherwise NOT SUPPORTED.
+- C2 (λ(G∞ − G), λ = 0.01): v(40) within a factor 2 of the Yukawa prediction μM/(4π)e^(−κd)(1/d² + κ/d) and below 0.5 × the P1 inverse-square prediction. Study verdict INVERSE-SQUARE CONFIRMED iff P1–P3 SUPPORTED and C2 passes; otherwise per point.
+- Pre-registration corrections to the draft (C2 exchange form and its 0.092 factor; floor split into absolute and relative parts) are listed in the spec header.
