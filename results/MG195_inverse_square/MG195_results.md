@@ -1,6 +1,6 @@
 # MG195 results: inverse-square attraction in the conserved-G test model
 
-**Status: COMPLETE, PI closure pending.** Registered study (spec `spec/MG195_inverse_square.md`, GATES entry, commit
+**Status: PI CLOSED 2026-11-18 (Richard Benear: "go ahead and sign off"), as reported.** Registered study (spec `spec/MG195_inverse_square.md`, GATES entry, commit
 f72adf2d, before any run). Run by Claude in the cloud (Linux, Python 3, NumPy/SciPy versions in the platform line
 below), 4 processes, wall 478 s, about 0.5 core-hours of the 2 core-hour cap. Model is our EX008 construction, not
 LaViolette's.

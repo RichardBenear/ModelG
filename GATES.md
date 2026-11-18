@@ -2863,3 +2863,7 @@ PI approval: Richard Benear, 2026-11-18 10:30 America/Denver ("yes", adopting D1
 ## MG195 COMPLETE — P1 SUPPORTED, P2 SUPPORTED, P3 UNRESOLVED, C2 PASS; study verdict per point (PI closure pending)
 
 Report `results/MG195_inverse_square/MG195_results.md`. All 27 pair solves converged (residual ≤ 7.4e-12); grid and far-boundary changes 0.07% and 0.14%. P1 and P2: v/prediction 0.978–0.990 for d ≥ 22, exponents 1.984 and 1.981. P3: null floor 4.7e-6 (from C1 at d = 18; the short-range Turing interaction was larger than the spec assumed) exceeds all P3 predictions, so UNRESOLVED; P3 also ratio 0.927 at d = 22 and exponent 1.883. C2: v(40) / Yukawa prediction = 1.003, and 0.096 of P1. Post-hoc C1 subtraction (not scored) gives P3 ratios 0.995–0.997 and exponent 2.003. Separate recomputation agrees (speeds to 1e-6; M by flux to 1e-4). About 0.5 core-hours of 2.
+
+## MG195 PI CLOSED — 2026-11-18
+
+PI Richard Benear, 2026-11-18 11:06 America/Denver: "go ahead and sign off." Closed as reported: P1 SUPPORTED, P2 SUPPORTED, P3 UNRESOLVED (null floor set by the short-range Turing interaction), C2 PASS; study verdict per point. No result changed.
