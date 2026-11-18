@@ -78,5 +78,5 @@ Newton steps. Under 0.05 core-hours.
 ## Files
 - Code: `src/ex005_model_g2.py` (driver), `src/ex005_check.py`, `src/ex005_figure.py`.
 - Results: `results.json`, `check.json`, `run_log.txt`.
-- Not committed: profiles `profile_k*_s*.npz` (2 MB). The driver regenerates them in under 2 minutes.
+- Profiles: `profile_k*_s*.npz` (268 KB in total, committed).
 - Platform: Linux, Python 3.13, NumPy 2.5.3, SciPy 1.18.1.
